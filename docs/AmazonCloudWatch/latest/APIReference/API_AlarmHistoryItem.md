@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # AlarmHistoryItem
-<a name="API_AlarmHistoryItem"></a>
 
 Represents the history of a specific alarm.
 

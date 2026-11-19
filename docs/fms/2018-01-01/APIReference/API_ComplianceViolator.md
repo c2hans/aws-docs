@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Complian
 ---
 
 # ComplianceViolator
-<a name="API_ComplianceViolator"></a>
 
 Details of the resource that is not protected by the policy.
 

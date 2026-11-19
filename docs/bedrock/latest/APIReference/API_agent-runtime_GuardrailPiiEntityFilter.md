@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailPiiEntityFilter
-<a name="API_agent-runtime_GuardrailPiiEntityFilter"></a>
 
 The Guardrail filter to identify and remove personally identifiable information (PII).
 

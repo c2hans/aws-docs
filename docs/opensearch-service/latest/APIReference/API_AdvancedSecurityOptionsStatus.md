@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AdvancedSecurityOptionsStatus
-<a name="API_AdvancedSecurityOptionsStatus"></a>
 
 The status of fine-grained access control settings for a domain.
 

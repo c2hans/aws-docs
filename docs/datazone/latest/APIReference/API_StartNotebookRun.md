@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_StartNo
 ---
 
 # StartNotebookRun
-<a name="API_StartNotebookRun"></a>
 
 Starts a notebook run in Amazon SageMaker Unified Studio. A notebook run represents the execution of an [Amazon SageMaker notebook](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks.html) within a project. You can configure compute, network, timeout, and environment settings for the run.
 

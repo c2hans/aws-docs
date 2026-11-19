@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops07-b
 ---
 
 # OPS07-BP03 Perform knowledge management
-<a name="ops07-bp03"></a>
 
  Teams lose time and repeat mistakes when the knowledge they need is scattered or out of date. Knowledge management gives your organization a single, searchable place for cross-organization knowledge and a process to keep that information current. When people find accurate information quickly, they make better decisions, onboard faster, and depend less on individual memory.
 

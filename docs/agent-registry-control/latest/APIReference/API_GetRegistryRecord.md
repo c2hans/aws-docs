@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # GetRegistryRecord
-<a name="API_GetRegistryRecord"></a>
 
 Retrieves the details of a registry record
 

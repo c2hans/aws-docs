@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # NegateReservedInstanceAction
-<a name="API_AWSBCMPricingCalculator_NegateReservedInstanceAction"></a>
 
  Represents an action to remove a Reserved Instance from a bill scenario.
 

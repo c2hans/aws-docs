@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Fr
 ---
 
 # Framework
-<a name="API_Framework"></a>
 
  The file that's used to structure and automate AWS Audit Manager assessments for a given compliance standard.
 

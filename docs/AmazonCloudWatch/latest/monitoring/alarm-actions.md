@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Alarm actions
-<a name="alarm-actions"></a>
 
 You can specify what actions an alarm takes when it changes state between the OK, ALARM, and INSUFFICIENT\_DATA states.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AttachmentContent
-<a name="API_AttachmentContent"></a>
 
 A structure that includes attributes that describe a document attachment.
 

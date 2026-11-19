@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetStatement.html
 ---
 
 # GetStatement
-<a name="API_GetStatement"></a>
 
 Retrieves the statement.
 

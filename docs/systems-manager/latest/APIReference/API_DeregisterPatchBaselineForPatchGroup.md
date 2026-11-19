@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeregisterPatchBaselineForPatchGroup
-<a name="API_DeregisterPatchBaselineForPatchGroup"></a>
 
 Removes a patch group from a patch baseline.
 

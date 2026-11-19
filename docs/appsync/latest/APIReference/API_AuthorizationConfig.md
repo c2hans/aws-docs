@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Authoriz
 ---
 
 # AuthorizationConfig
-<a name="API_AuthorizationConfig"></a>
 
 The authorization configuration in case the HTTP endpoint requires authorization.
 

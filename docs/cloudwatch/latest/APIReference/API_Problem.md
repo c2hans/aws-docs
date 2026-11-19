@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Probl
 ---
 
 # Problem
-<a name="API_Problem"></a>
 
 Describes a problem that is detected by correlating observations.
 

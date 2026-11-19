@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Conversa
 ---
 
 # ConversationalAnalytics
-<a name="API_ConversationalAnalytics"></a>
 
 Contains the conversational analytics configuration and state for a contact.
 

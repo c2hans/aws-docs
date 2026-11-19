@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AlarmD
 ---
 
 # AlarmDetails
-<a name="API_AlarmDetails"></a>
 
 The details of the alarm to monitor during the AMI update.
 

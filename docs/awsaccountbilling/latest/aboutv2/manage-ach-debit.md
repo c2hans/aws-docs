@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Managing ACH direct debit
-<a name="manage-ach-debit"></a>
 
 You can add a US bank account to your AWS account to make payments by ACH direct debit. You can use any personal or business bank account, provided that the account is located at a bank in the United States and payments are in USD.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL08-BP05 Deploy changes with automation
-<a name="rel_tracking_change_management_automated_changemgmt"></a>
 
  Deployments and patching are automated to eliminate negative impact.
 

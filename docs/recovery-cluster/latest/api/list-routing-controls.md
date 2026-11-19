@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/list-routing
 ---
 
 # List routing controls
-<a name="list-routing-controls"></a>
 
 The following is an example of a request to list the routing controls in a control panel, and the response.
 

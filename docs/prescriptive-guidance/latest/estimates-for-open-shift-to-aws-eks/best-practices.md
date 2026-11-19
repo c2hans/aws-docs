@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 **General best practices:**
 + Work backwards from workload requirements to design well-architected clusters

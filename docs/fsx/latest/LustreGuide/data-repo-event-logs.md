@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/data-repo-event-l
 ---
 
 # Data repository event logs
-<a name="data-repo-event-logs"></a>
 
 You can turn on logging to CloudWatch Logs to log information about any failures experienced while importing or exporting files using import, export, data repository tasks and restore events. For more information, see [Logging with Amazon CloudWatch Logs](cw-event-logging.md).
 

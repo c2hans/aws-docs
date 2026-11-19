@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mediapackag
 ---
 
 # mediapackage-packagingconfiguration-tagged
-<a name="mediapackage-packagingconfiguration-tagged"></a>
 
 Checks if AWS Elemental MediaPackage packaging configuration resources have tags. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

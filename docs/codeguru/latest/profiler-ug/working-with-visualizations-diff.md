@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Comparing two time ranges
-<a name="working-with-visualizations-diff"></a>
 
 The CodeGuru Profiler **Compare** option allows you to view differences between two different time ranges of the same profiling group. It can be used for overview, hotspots, and inspect visualizations. This feature is not available for the heap summary visualization.
 

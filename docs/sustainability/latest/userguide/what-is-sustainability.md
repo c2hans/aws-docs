@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/what-is-
 ---
 
 # What is AWS Sustainability?
-<a name="what-is-sustainability"></a>
 
 Welcome to the AWS Sustainability user guide.
 

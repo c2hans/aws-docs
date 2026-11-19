@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/lam-invoke
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Example: Invoke a Lambda function
-<a name="lam-invoke-action-example-workflow"></a>
 
 The following example workflow includes the **AWS Lambda invoke** action, along with a deploy action. The workflow sends out a Slack notification indicating that a deployment has started, and then deploys an application into AWS using an CloudFormation template. The workflow consists of the following building blocks that run sequentially:
 + A **trigger** – This trigger starts the workflow run automatically when you push a change to your source repository. For more information about triggers, see [Starting a workflow run automatically using triggers](workflows-add-trigger.md).

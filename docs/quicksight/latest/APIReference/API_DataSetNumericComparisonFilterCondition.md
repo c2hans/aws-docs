@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetNumericComparisonFilterCondition
-<a name="API_DataSetNumericComparisonFilterCondition"></a>
 
 A filter condition that compares numeric values using operators like `EQUALS`, `GREATER_THAN`, or `LESS_THAN`.
 

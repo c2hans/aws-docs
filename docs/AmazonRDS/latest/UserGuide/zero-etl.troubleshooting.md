@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.trou
 ---
 
 # Troubleshooting Amazon RDS zero-ETL integrations
-<a name="zero-etl.troubleshooting"></a>
 
 You can check the state of a zero-ETL integration by querying the [SVV\_INTEGRATION](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_INTEGRATION.html) system table in the analytics destination. If the `state` column has a value of `ErrorState`, it means something's wrong. For more information, see [Monitoring integrations using system tables for Amazon Redshift](zero-etl.describingmonitoring.md#zero-etl.monitoring).
 

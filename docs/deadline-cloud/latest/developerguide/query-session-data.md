@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/que
 ---
 
 # Querying session statistics aggregated data using the AWS CLI
-<a name="query-session-data"></a>
 
 To track costs, analyze resource usage, or identify which users are consuming the most resources, you can use the AWS Command Line Interface (AWS CLI) to query aggregated session statistics for your AWS Deadline Cloud (Deadline Cloud) farms. The session statistics API provides data about costs, runtime, and usage that you can group by various dimensions such as queue, fleet, instance type, or user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DataProvider
 ---
 
 # DataProviderSettings
-<a name="API_DataProviderSettings"></a>
 
 Provides information that defines a data provider.
 

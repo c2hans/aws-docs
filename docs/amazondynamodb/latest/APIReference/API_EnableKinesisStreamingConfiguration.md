@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_E
 ---
 
 # EnableKinesisStreamingConfiguration
-<a name="API_EnableKinesisStreamingConfiguration"></a>
 
 Enables setting the configuration for Kinesis Streaming.
 

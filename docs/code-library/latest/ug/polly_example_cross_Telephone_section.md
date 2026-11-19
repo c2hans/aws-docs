@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/polly_example_cro
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Convert text to speech and back to text using an AWS SDK
-<a name="polly_example_cross_Telephone_section"></a>
 
 The following code example shows how to:
 + Use Amazon Polly to synthesize a plain text (UTF-8) input file to an audio file.

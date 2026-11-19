@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-data.htm
 ---
 
 # Turning data into a knowledge base
-<a name="kb-how-data"></a>
 
 To create a knowledge base, connect to a supported data source that you want your knowledge base to be able to access. Your knowledge base will be able to respond to user queries or generate responses based on the retrieved data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpo
 ---
 
 # Requirements for resources you add as accelerator endpoints
-<a name="about-endpoints-caveats"></a>
 
 Be aware of the following requirements and limitations for different types of resources that you can add as endpoints for standard accelerators in AWS Global Accelerator. Some requirements apply regardless of the type of resource that you add.
 

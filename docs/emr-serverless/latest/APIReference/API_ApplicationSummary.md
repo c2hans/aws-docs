@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_A
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 The summary of attributes associated with an application.
 

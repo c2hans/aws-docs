@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrivateDn
 ---
 
 # PrivateDnsNameOptionsRequest
-<a name="API_PrivateDnsNameOptionsRequest"></a>
 
 Describes the options for instance hostnames.
 

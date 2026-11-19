@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Da
 ---
 
 # DataSetEntry
-<a name="API_DataSetEntry"></a>
 
 A data set is an AWS resource with one or more revisions.
 

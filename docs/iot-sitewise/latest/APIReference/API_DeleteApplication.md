@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes an application by ID
 

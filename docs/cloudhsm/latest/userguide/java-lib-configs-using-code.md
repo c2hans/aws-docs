@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-lib-confi
 ---
 
 # Configure the AWS CloudHSM `CloudHsmProvider` class using code
-<a name="java-lib-configs-using-code"></a>
 
 As of Client SDK version 5.8.0, you can also configure the AWS CloudHSM `CloudHsmProvider` class using Java code. The way to do this is using an object of `CloudHsmProviderConfig` class. You can build this object using `CloudHsmProviderConfigBuilder`.
 

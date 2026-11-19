@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Vocab
 ---
 
 # VocabularyInfo
-<a name="API_VocabularyInfo"></a>
 
 Provides information about a custom vocabulary, including the language of the custom vocabulary, when it was last modified, its name, and the processing state.
 

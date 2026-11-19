@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-setup-emx.html
 ---
 
 # Setting up automatic input failover with MediaConnect inputs
-<a name="aif-setup-emx"></a>
 
 To use MediaConnect inputs with automatic input failover, you must set up both the inputs and the MediaLive channels in a specific way.
 

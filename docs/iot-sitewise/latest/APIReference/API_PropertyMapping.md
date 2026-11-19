@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pro
 ---
 
 # PropertyMapping
-<a name="API_PropertyMapping"></a>
 
 Maps a property from an interface asset model to a property in the asset model where the interface is applied.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tim
 ---
 
 # TimeInterval
-<a name="API_TimeInterval"></a>
 
 Contains a time interval with a start time and an end time. Use a time interval to restrict an operation, such as a search, to a specific time range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/video-gen-access.h
 ---
 
 # Video generation access and usage
-<a name="video-gen-access"></a>
 
 Generating a video with Amazon Nova Reel is an asynchronous process that typically takes about 90 seconds for a 6 second video and approximately 14-17 minutes for a 2 minute video. After initiating the generation of a video, the video is written to an Amazon S3 bucket in your account. Because Amazon Bedrock writes a file to an Amazon S3 bucket on your behalf, the AWS role that you use needs permissions configured to allow the appropriate Amazon Bedrock and Amazon S3 actions and the `s3:PutObject` action. The minimum action permissions required to generate a video are:
 + `bedrock:InvokeModel`

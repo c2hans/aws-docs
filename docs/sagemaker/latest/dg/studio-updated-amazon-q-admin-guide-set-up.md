@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-amazo
 ---
 
 # Set up Amazon Q Developer for your users
-<a name="studio-updated-amazon-q-admin-guide-set-up"></a>
 
 Amazon Q Developer is a generative AI conversational assistant. You can set up Amazon Q Developer within a new domain or an existing domain. Use the following information to set up Amazon Q Developer.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC01-BP04 Keep up-to-date with security threats
-<a name="sec_securely_operate_updated_threats"></a>
 
  To help you define and implement appropriate controls, recognize attack vectors by staying up to date with the latest security threats. Consume AWS Managed Services to make it easier to receive notification of unexpected or unusual behavior in your AWS accounts. Investigate using AWS Partner tools or third-party threat information feeds as part of your security information flow. The [Common Vulnerabilities and Exposures (CVE) List ](https://cve.mitre.org/) list contains publicly disclosed cyber security vulnerabilities that you can use to stay up to date.
 

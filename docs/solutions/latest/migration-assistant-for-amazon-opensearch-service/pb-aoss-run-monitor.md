@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 7: Run and monitor the workflow
-<a name="pb-aoss-run-monitor"></a>
 
 Before submitting, confirm both clusters are reachable and authenticated:
 

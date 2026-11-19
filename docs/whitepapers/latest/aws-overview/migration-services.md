@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migratio
 ---
 
 # ![AWS Migration and Transfer category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/migration-transfer-icon.jpg)Migration and transfer
-<a name="migration-services"></a>
 
 AWS offers a wide range of migration tools, guidance, services, and programs to help you assess, migrate and modernize applications and data from building the business case to leveraging AWS services to deliver new experiences.
 

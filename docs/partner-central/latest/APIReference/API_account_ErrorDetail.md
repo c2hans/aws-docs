@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ErrorDetail
-<a name="API_account_ErrorDetail"></a>
 
 Contains detailed information about an error that occurred during an operation.
 

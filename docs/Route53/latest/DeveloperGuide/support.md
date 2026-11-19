@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/support.ht
 ---
 
 # .support
-<a name="support"></a>
 
 Used by businesses, groups, or charities that offer any kind of support, including customer, product, or system support or emotional, financial, or spiritual support.
 

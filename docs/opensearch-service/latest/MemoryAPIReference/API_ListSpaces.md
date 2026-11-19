@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # ListSpaces
-<a name="API_ListSpaces"></a>
 
 Lists the spaces in your account in the current Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/define-iam-l2.html
 ---
 
 # Define permissions for L2 constructs with the AWS CDK
-<a name="define-iam-l2"></a>
 
 Define AWS Identity and Access Management (IAM) roles and policies for L2 constructs when using the AWS Cloud Development Kit (AWS CDK).
 

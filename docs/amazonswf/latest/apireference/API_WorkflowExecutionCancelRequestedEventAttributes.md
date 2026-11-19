@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionCancelRequestedEventAttributes
-<a name="API_WorkflowExecutionCancelRequestedEventAttributes"></a>
 
 Provides the details of the `WorkflowExecutionCancelRequested` event.
 

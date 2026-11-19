@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Layer.
 ---
 
 # Layer
-<a name="API_Layer"></a>
 
 An object representing an Amazon ECR image layer.
 

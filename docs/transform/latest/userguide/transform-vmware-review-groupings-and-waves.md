@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Migration planning
-<a name="transform-vmware-review-groupings-and-waves"></a>
 
 Migration planning within AWS Transform for migrations is a collaborative chat-based experience for planning large migrations. AWS Transform agents apply AWS Prescriptive Guidance to guide customers from analysis of on-premises data to finalized migration wave plans.
 

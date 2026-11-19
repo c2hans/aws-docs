@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Instance
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 The description of an Amazon EC2 instance.
 

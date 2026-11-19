@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsi
 ---
 
 # GetInsights
-<a name="API_GetInsights"></a>
 
 Lists and describes insights for the specified insight ARNs.
 

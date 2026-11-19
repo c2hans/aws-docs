@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-cloudw
 ---
 
 # Amazon CloudWatch events
-<a name="events-ref-cloudwatch"></a>
 
 CloudWatch sends service events directly to EventBridge.
 

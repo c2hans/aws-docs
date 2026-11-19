@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Histo
 ---
 
 # HistogramVisual
-<a name="API_HistogramVisual"></a>
 
 A histogram.
 

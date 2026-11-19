@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_serverless_conn
 ---
 
 # Connecting to an Amazon RDS database in a Lambda function
-<a name="example_serverless_connect_RDS_Lambda_section"></a>
 
 The following code examples show how to implement a Lambda function that connects to an RDS database. The function makes a simple database request and returns the result.
 

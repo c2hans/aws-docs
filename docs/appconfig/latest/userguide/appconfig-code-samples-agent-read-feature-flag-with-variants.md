@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cod
 ---
 
 # Using AWS AppConfig Agent to retrieve a feature flag with variants
-<a name="appconfig-code-samples-agent-read-feature-flag-with-variants"></a>
 
 Each of the following samples includes comments about the actions performed by the code.
 

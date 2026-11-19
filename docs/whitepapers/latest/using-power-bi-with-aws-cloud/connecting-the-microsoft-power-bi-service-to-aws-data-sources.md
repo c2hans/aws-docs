@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Connecting the Microsoft Power BI service to AWS data sources
-<a name="connecting-the-microsoft-power-bi-service-to-aws-data-sources"></a>
 
 Microsoft Power BI service (SaaS) can be connected directly to internet-accessible data sources, or to private data sources in an Amazon VPC. Connection to private data sources requires an application component called Microsoft on-premises data gateway. The Microsoft on-premises data gateway is downloaded and installed on an Amazon EC2 instance in the VPC and configured with Microsoft Power BI credentials. The gateway establishes an outbound connection to the Microsoft Azure Service Bus over the internet, and is configured in Microsoft Power BI to connect to data sources that it can access. Larger deployments can use multiple on-premises data gateways to balance load or increase fault tolerance.
 

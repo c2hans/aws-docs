@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-data
 ---
 
 # Protecting data using encryption
-<a name="security-data-protection-encryption"></a>
 
 You can use different forms of data encryption to protect your Elastic Beanstalk data. Data protection refers to protecting data while *in transit* (as it travels to and from Elastic Beanstalk) and *at rest* (while it is stored in AWS data centers).
 

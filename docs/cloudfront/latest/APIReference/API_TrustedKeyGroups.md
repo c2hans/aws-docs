@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Trust
 ---
 
 # TrustedKeyGroups
-<a name="API_TrustedKeyGroups"></a>
 
 A list of key groups whose public keys CloudFront can use to verify the signatures of signed URLs and signed cookies.
 

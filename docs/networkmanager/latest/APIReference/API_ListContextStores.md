@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListContextStores
-<a name="API_ListContextStores"></a>
 
 Returns the context stores in your account. You can optionally return only the context stores in a specific global network.
 

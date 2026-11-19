@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-tiered-sto
 ---
 
 # How log segments are copied to tiered storage for a Amazon MSK topic
-<a name="msk-tiered-storage-retention-rules"></a>
 
 When you enable tiered storage for a new or existing topic, Apache Kafka copies closed log segments from primary storage to tiered storage.
 + Apache Kafka only copies closed log segments. It copies all messages within the log segment to tiered storage.

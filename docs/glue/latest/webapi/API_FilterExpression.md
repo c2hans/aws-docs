@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FilterExpression.
 ---
 
 # FilterExpression
-<a name="API_FilterExpression"></a>
 
 Specifies a filter expression.
 

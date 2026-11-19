@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Use the solution
-<a name="use-the-solution"></a>
 
 This section provides a user guide for the solution.
 

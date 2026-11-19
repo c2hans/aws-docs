@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationScore
-<a name="API_EvaluationScore"></a>
 
 Information about scores of a contact evaluation item (section or question).
 

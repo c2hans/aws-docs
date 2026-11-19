@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSp
 ---
 
 # RouteSpanSpeedLimitDetails
-<a name="API_RouteSpanSpeedLimitDetails"></a>
 
 Details about the speed limit corresponding to the span.
 

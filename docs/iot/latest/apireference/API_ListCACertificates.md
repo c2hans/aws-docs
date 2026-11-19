@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListCACertif
 ---
 
 # ListCACertificates
-<a name="API_ListCACertificates"></a>
 
 Lists the CA certificates registered for your AWS account.
 

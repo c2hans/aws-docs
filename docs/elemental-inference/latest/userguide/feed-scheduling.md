@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Scheduling changes to Elemental Inference feeds
-<a name="feed-scheduling"></a>
 
 With feed scheduling, you can set up a change to a feed's configuration ahead of time, and Elemental Inference applies the change at the time that you specify. You don't need to build your own automation, such as an AWS Lambda function that's triggered by Amazon EventBridge.
 

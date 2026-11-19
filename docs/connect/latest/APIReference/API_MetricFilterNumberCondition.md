@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricFi
 ---
 
 # MetricFilterNumberCondition
-<a name="API_MetricFilterNumberCondition"></a>
 
 A numeric comparison condition for metric filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredSlackServiceDetails
-<a name="API_RegisteredSlackServiceDetails"></a>
 
 Details specific to a registered Slack workspace.
 

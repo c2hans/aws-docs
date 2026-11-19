@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networki
 ---
 
 # AWS services for Amazon ECS networking troubleshooting
-<a name="networking-troubleshooting"></a>
 
 The following services and features can help you to gain insights about your network and service configurations. You can use this information to troubleshoot networking issues and better optimize your services.
 

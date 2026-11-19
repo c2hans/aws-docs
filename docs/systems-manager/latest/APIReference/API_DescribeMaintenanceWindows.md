@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeMaintenanceWindows
-<a name="API_DescribeMaintenanceWindows"></a>
 
 Retrieves the maintenance windows in an AWS account.
 

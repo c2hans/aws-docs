@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-api-stat
 ---
 
 # SPARQL query cancellation
-<a name="sparql-api-status-cancel"></a>
 
 To get the status of SPARQL queries, use HTTP `GET` or `POST` to make a request to the `https://{{your-neptune-endpoint}}:{{port}}/sparql/status` endpoint.
 

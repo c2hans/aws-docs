@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-delet
 ---
 
 # Delete a Provisioned Throughput or cancel auto renew
-<a name="prov-thru-delete"></a>
 
 Your Provisioned Throughput will automatically renew at the end of each commitment term, maintaining your current input and output tokens configurations.
 

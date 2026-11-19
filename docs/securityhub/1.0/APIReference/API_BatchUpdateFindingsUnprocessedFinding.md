@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUp
 ---
 
 # BatchUpdateFindingsUnprocessedFinding
-<a name="API_BatchUpdateFindingsUnprocessedFinding"></a>
 
 A finding from a `BatchUpdateFindings` request that Security Hub CSPM was unable to update.
 

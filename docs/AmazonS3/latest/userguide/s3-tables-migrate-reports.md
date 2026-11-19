@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-migr
 ---
 
 # Migration reports and statistics
-<a name="s3-tables-migrate-reports"></a>
 
 ## Migration statistics
 <a name="s3-tables-migrate-statistics"></a>

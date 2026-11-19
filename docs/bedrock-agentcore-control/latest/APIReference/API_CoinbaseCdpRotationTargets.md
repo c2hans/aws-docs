@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CoinbaseCdpRotationTargets
-<a name="API_CoinbaseCdpRotationTargets"></a>
 
 Specifies the service-managed Coinbase CDP secrets to rotate.
 

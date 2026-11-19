@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # .vectors.remove algorithm
-<a name="vectors-remove"></a>
 
 The `.vectors.remove` algorithm is used to remove the embedding from a node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLevelIntentClassificationResultItem
-<a name="API_ConversationLevelIntentClassificationResultItem"></a>
 
 The item listing the evaluation of intent level success or failure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UserDet
 ---
 
 # UserDetails
-<a name="API_UserDetails"></a>
 
 The user details of a project member.
 

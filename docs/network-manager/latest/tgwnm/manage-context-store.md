@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/manage-cont
 ---
 
 # View, update, and delete a context store
-<a name="manage-context-store"></a>
 
 View the details of a context store, update its description, or delete it from a global network.
 

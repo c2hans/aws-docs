@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppAssessmentComplianceDrifts
-<a name="API_ListAppAssessmentComplianceDrifts"></a>
 
 List of compliance drifts that were detected while running an assessment.
 

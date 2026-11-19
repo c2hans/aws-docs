@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/toLower-function.
 ---
 
 # toLower
-<a name="toLower-function"></a>
 
 `toLower` formats a string in all lowercase. `toLower` skips rows containing null values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaEffectiveRecommendationPreferences
-<a name="API_LambdaEffectiveRecommendationPreferences"></a>
 
  Describes the effective recommendation preferences for Lambda functions.
 

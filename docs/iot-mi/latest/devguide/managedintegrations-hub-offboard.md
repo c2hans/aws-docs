@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Offboard managed integrations hub
-<a name="managedintegrations-hub-offboard"></a>
 
 ## Overview of Hub SDK offboard process
 <a name="hub-offboarding-overview"></a>

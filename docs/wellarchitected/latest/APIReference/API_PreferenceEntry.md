@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PreferenceEntry
-<a name="API_PreferenceEntry"></a>
 
 A single Well-Architected Agent preference and its current state.
 

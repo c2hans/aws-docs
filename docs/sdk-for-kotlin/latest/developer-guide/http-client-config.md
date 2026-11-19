@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ht
 ---
 
 # HTTP client configuration
-<a name="http-client-config"></a>
 
 By default, the AWS SDK for Kotlin uses an HTTP client based on [OkHttp](https://square.github.io/okhttp). You can override the HTTP client and its configuration by supplying an explicitly configured client.
 

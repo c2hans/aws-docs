@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Updating firmware
-<a name="migrate-topic-firmware"></a>
 
 ## Step A: Update the firmware
 <a name="migrate-topic-firmware-update"></a>

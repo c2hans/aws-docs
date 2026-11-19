@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListPaymentCredentialProviders
-<a name="API_ListPaymentCredentialProviders"></a>
 
 Lists all payment credential providers in the account.
 

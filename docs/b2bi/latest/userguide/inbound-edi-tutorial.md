@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/inbound-edi-tutori
 ---
 
 # Inbound EDI tutorial
-<a name="inbound-edi-tutorial"></a>
 
 This tutorial guides you through setting up an inbound B2B Data Interchange workflow using AWS B2B Data Interchange. You'll learn how to transform incoming X12 EDI documents (specifically 850 Purchase Orders) into JSON format, making them easier to process in your downstream applications.
 

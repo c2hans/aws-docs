@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/channel-id.html
 ---
 
 # Transcribing multi-channel audio
-<a name="channel-id"></a>
 
 If your audio has two channels, you can use channel identification to transcribe the speech from each channel separately. Amazon Transcribe doesn't currently support audio with more than two channels.
 

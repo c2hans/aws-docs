@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/eventbridge.html
 ---
 
 # Managing AWS B2B Data Interchange events using Amazon EventBridge
-<a name="eventbridge"></a>
 
 Amazon EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. Event-driven architecture is a style of building loosely-coupled software systems that work together by emitting and responding to events. Events represent an operation that succeeds or fails.
 

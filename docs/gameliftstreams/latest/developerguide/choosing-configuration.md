@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/ch
 ---
 
 # Choosing a configuration in Amazon GameLift Streams
-<a name="choosing-configuration"></a>
 
  This guide can help you choose the optimal runtime environment and configuration settings for streaming your applications and games through Amazon GameLift Streams. The configuration settings directly impact your content's performance and the costs associated with running it on Amazon GameLift Streams. There are several options to support a wide variety of applications and graphical fidelity.
 

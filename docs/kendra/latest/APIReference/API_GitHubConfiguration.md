@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_GitHubCon
 ---
 
 # GitHubConfiguration
-<a name="API_GitHubConfiguration"></a>
 
 Provides the configuration information to connect to GitHub as your data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Test Control Actions
-<a name="testing-language-actions-test-control"></a>
 
 Special actions that control test execution flow and debugging.
 

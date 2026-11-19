@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSEC01-BP03 Restrict DSP outbound traffic to authorized SSPs only
-<a name="advsec01-bp03"></a>
 
  DSPs transmit bid responses containing pricing signals, audience segment data, and creative selection decisions to SSP endpoints. If outbound traffic isn't restricted to authorized destinations, this data can leak to unauthorized parties and expose competitive intelligence.
 

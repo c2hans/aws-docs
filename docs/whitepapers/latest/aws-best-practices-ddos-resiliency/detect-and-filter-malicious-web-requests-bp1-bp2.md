@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Detect and filter malicious web requests (BP1, BP2)
-<a name="detect-and-filter-malicious-web-requests-bp1-bp2"></a>
 
  When your application runs on AWS, you can use Amazon CloudFront (and its HTTP caching capability), AWS WAF, and Shield Advanced Automatic Application layer protection to help prevent unnecessary requests reach your origin during application layer DDoS attacks.
 

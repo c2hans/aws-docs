@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/result
 ---
 
 # Results and output
-<a name="results-and-output"></a>
 
 Online evaluation results are automatically saved to Amazon CloudWatch. By default, the service writes them as JSON log entries to a dedicated CloudWatch log group.
 

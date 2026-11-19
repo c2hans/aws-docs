@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-access-gr
 ---
 
 # Using Amazon S3 Access Grants with Amazon EMR
-<a name="emr-access-grants"></a>
 
 ## S3 Access Grants overview for Amazon EMR
 <a name="emr-access-grants-overview"></a>

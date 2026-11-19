@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # GetSubscription
-<a name="API_GetSubscription"></a>
 
 Returns the details of a flat-rate pricing subscription, including its current status, associated resources, and any pending scheduled changes.
 

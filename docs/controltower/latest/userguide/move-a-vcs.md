@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/move-a-vcs
 ---
 
 # Move AFT from AWS CodeCommit to another VCS provider
-<a name="move-a-vcs"></a>
 
 This section provides an overview of how you can move AWS Control Tower Account Factory for Terraform (AFT) from AWS CodeCommit as your version control system (VCS) to another VCS provider.
 

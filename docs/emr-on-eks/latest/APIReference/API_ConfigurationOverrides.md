@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Confi
 ---
 
 # ConfigurationOverrides
-<a name="API_ConfigurationOverrides"></a>
 
 A configuration specification to be used to override existing configurations.
 

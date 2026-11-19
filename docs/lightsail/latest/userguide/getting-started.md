@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/getting-start
 ---
 
 # Getting started with virtual private servers on Lightsail
-<a name="getting-started"></a>
 
 In Lightsail, an instance is a virtual private server (also called a virtual machine). You create and manage Lightsail instances in the AWS Cloud. When you create an instance, you choose an image that has an operating system (OS) on it. You can also choose an instance image that has an application or development stack on it, including the base OS.
 

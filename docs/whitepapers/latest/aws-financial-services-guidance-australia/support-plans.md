@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Support plans
-<a name="support-plans"></a>
 
  Customers can take advantage of [Support](https://aws.amazon.com/premiumsupport/plans/) plans that are designed to give customers the right mix of tools and access to expertise so that customers can be successful with AWS while optimizing performance, managing risk, and keeping costs under control.
 

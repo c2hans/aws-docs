@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/security-authz.h
 ---
 
 # Configuring authorization and authentication to secure your GraphQL APIs
-<a name="security-authz"></a>
 
 AWS AppSync offers the following authorization types to secure GraphQL APIs: API keys, Lambda, IAM, OpenID Connect, and Cognito User Pools. Each option provides a different method of security:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryItem
-<a name="API_InventoryItem"></a>
 
 Information collected from managed nodes based on your inventory policy document
 

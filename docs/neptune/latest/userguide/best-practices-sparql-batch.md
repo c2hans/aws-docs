@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Choosing Between FILTER, FILTER...IN, and VALUES in Your Queries
-<a name="best-practices-sparql-batch"></a>
 
 There are three basic ways to inject values in SPARQL queries:   `FILTER`,   `FILTER...IN`,   and   `VALUES`.
 

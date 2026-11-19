@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyReplic
 ---
 
 # ModifyReplicationInstance
-<a name="API_ModifyReplicationInstance"></a>
 
 Modifies the replication instance to apply new settings. You can change one or more parameters by specifying these parameters and the new values in the request.
 

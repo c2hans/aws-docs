@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Payment Cryptography
-<a name="list_payment-cryptography"></a>
 
 AWS Payment Cryptography (service prefix: `payment-cryptography`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

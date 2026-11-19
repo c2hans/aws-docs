@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/using-the-
 ---
 
 # Using the dashboard
-<a name="using-the-dashboard"></a>
 
 The following sections explain how to use the AWS Marketplace **Procurement insights** dashboard.
 

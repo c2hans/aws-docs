@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Writer Palmyra X4
-<a name="model-parameters-palmyra-x4"></a>
 
 Writer Palmyra X4 is a model with a context window of up to 128,000 tokens. This model excels in processing and understanding complex tasks, making it ideal for workflow automation, coding tasks, and data analysis.
 + Provider — Writer

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Netw
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 This structure specifies the network configuration for an ECS task.
 

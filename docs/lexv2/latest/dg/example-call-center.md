@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/example-call-center.html
 ---
 
 # Call center agent assistant
-<a name="example-call-center"></a>
 
 In this tutorial, you use Amazon Lex V2 with Amazon Kendra to build an agent assist bot that assists customer support agents and publish it as a web application. Amazon Kendra is an enterprise search service that uses machine learning to search through documents to find answers. For more information about Amazon Kendra, see [the *Amazon Kendra Developer Guide*](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html).
 

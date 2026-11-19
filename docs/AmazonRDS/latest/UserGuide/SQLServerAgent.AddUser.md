@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServerAgen
 ---
 
 # Adding a user to the SQLAgentUser role
-<a name="SQLServerAgent.AddUser"></a>
 
 To allow an additional login or user to use SQL Server Agent, log in as the master user and do the following:
 

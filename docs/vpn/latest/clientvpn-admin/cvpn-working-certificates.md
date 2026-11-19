@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN client certificate revocation lists
-<a name="cvpn-working-certificates"></a>
 
 Client VPN client certificate revocation lists are used to revoke access to a Client VPN endpoint for specific client certificates. You can either generate a revocation list or import an existing list. You can also export your current list a revocation list file. Generating a list is performed using the OpenVPN software on either Linux/macOS or on Windows. Importing and exporting can be done using either the Amazon VPC Console or by using the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/managing-ag
 ---
 
 # Managing agreement renewals
-<a name="managing-agreement-renewals"></a>
 
 Agreements created from a private offer with renewal terms renew automatically at their end date unless the seller or buyer opts out. Use the **Agreements** page and the agreement's **Renewal details** tab to monitor and manage renewals.
 

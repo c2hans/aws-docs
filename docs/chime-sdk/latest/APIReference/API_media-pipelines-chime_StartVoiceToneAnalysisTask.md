@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # StartVoiceToneAnalysisTask
-<a name="API_media-pipelines-chime_StartVoiceToneAnalysisTask"></a>
 
 Starts a voice tone analysis task. For more information about voice tone analysis, see [Using Amazon Chime SDK voice analytics](https://docs.aws.amazon.com/chime-sdk/latest/dg/voice-analytics.html) in the *Amazon Chime SDK Developer Guide*.
 

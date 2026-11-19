@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesApplicationManagerAdminAccess
-<a name="AmazonWorkSpacesApplicationManagerAdminAccess"></a>
 
 **Description**: Provides administrator access for packaging an application in Amazon WorkSpaces Application Manager.
 

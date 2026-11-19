@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_C
 ---
 
 # ColumnMetadata
-<a name="API_ColumnMetadata"></a>
 
 Contains the metadata for a column.
 

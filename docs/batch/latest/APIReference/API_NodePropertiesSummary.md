@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeProper
 ---
 
 # NodePropertiesSummary
-<a name="API_NodePropertiesSummary"></a>
 
 An object that represents the properties of a node that's associated with a multi-node parallel job.
 

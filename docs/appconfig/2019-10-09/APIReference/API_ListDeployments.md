@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Li
 ---
 
 # ListDeployments
-<a name="API_ListDeployments"></a>
 
 Lists the deployments for an environment in descending deployment number order.
 

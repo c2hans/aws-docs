@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-moni
 ---
 
 # Tracking quantum tasks from the Amazon Braket SDK
-<a name="braket-monitor-tasks-sdk"></a>
 
 The command `device.run(…​)` defines a quantum task with a unique quantum task ID. You can query and track the status with `task.state()` as shown in the following example.
 

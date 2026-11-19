@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.c2287320-a14f-5190-9e68-fd6a88942f1d"></a>

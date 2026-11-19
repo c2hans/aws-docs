@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeHoursOfOperation
-<a name="API_DescribeHoursOfOperation"></a>
 
 Describes the hours of operation.
 

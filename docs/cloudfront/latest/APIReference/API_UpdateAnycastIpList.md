@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateAnycastIpList
-<a name="API_UpdateAnycastIpList"></a>
 
 Updates an Anycast static IP list.
 

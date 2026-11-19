@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UntagResour
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
  Removes a tag from the specified flow.
 

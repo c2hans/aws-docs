@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeLaun
 ---
 
 # DescribeLaunchConfigurationTemplates
-<a name="API_DescribeLaunchConfigurationTemplates"></a>
 
 Lists all Launch Configuration Templates, filtered by Launch Configuration Template IDs
 

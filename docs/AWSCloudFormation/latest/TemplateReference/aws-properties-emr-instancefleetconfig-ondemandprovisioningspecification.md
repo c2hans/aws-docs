@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::InstanceFleetConfig OnDemandProvisioningSpecification
-<a name="aws-properties-emr-instancefleetconfig-ondemandprovisioningspecification"></a>
 
  The launch specification for On-Demand Instances in the instance fleet, which determines the allocation strategy.
 

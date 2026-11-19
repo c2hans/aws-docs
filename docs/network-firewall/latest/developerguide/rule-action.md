@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Defining rule actions in AWS Network Firewall
-<a name="rule-action"></a>
 
 The rule action setting tells AWS Network Firewall how to handle a packet that matches the rule's match criteria.
 

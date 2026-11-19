@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-tut
 ---
 
 # Step 5: Empty your S3 Express One Zone directory bucket
-<a name="s3-express-tutoiral-Empty"></a>
 
 You can empty your Amazon S3 directory bucket by using the Amazon S3 console.
 

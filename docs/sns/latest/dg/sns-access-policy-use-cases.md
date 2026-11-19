@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-case
 ---
 
 # Example cases for Amazon SNS access control
-<a name="sns-access-policy-use-cases"></a>
 
 This section describes a few examples of typical use cases for access control.
 

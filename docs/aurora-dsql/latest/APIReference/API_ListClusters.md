@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_List
 ---
 
 # ListClusters
-<a name="API_ListClusters"></a>
 
 Retrieves information about a list of clusters.
 

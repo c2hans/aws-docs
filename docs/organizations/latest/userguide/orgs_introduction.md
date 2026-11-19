@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_intr
 ---
 
 # What is AWS Organizations?
-<a name="orgs_introduction"></a>
 
 **Centrally manage your environment as you scale your AWS resources**
 

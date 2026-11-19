@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Templ
 ---
 
 # TemplateSourceEntity
-<a name="API_TemplateSourceEntity"></a>
 
 The source entity of the template.
 

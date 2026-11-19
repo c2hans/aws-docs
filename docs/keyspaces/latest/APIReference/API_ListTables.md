@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_ListTa
 ---
 
 # ListTables
-<a name="API_ListTables"></a>
 
 The `ListTables` operation returns a list of tables for a specified keyspace.
 

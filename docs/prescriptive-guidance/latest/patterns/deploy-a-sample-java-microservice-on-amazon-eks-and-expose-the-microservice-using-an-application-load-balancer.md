@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy a sample Java microservice on Amazon EKS and expose the microservice using an Application Load Balancer
-<a name="deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer"></a>
 
 *Vijay Thompson and Akkamahadevi Hiremath, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupBackupPlanLifecycleDetails
-<a name="API_AwsBackupBackupPlanLifecycleDetails"></a>
 
 Provides lifecycle details for the backup plan. A lifecycle defines when a backup is transitioned to cold storage and when it expires.
 

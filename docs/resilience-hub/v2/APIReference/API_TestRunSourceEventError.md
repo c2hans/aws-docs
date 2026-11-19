@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunSourceEventError
-<a name="API_TestRunSourceEventError"></a>
 
 Describes an error that prevented event collection from a test run monitoring source.
 

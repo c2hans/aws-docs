@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/partners.h
 ---
 
 # .partners
-<a name="partners"></a>
 
 Used by law firms, investors, and a variety of companies. Also used for social websites that build relationships.
 

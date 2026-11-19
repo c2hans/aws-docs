@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/updating-metric-at
 ---
 
 # Updating an Amazon Personalize metric attribution
-<a name="updating-metric-attribution"></a>
 
  When you update a metric attribution, you can add and remove metrics and modify its output configuration. You can update a metric attribution with the Amazon Personalize console, AWS Command Line Interface, or AWS SDKS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DirectJDBCSource.
 ---
 
 # DirectJDBCSource
-<a name="API_DirectJDBCSource"></a>
 
 Specifies the direct JDBC source connection.
 

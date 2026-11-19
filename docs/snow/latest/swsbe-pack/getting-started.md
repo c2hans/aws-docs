@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/getting-started.h
 ---
 
 # Getting started with Snow Family devices
-<a name="getting-started"></a>
 
 With an AWS Snowball Edge device, you can access the storage and compute power of the AWS Cloud locally and cost effectively in places where connecting to the internet might not be an option. You can also transfer hundreds of terabytes or petabytes of data between your on-premises data centers and Amazon Simple Storage Service (Amazon S3).
 

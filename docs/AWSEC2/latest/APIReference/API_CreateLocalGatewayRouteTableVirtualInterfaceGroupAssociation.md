@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLoc
 ---
 
 # CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation
-<a name="API_CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation"></a>
 
  Creates a local gateway route table virtual interface group association.
 

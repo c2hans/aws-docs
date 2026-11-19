@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/delete-glue-fed
 ---
 
 # Deleting a federated catalog
-<a name="delete-glue-fed-catalog"></a>
 
  You can delete the federated catalogs that you created in the AWS Glue Data Catalog using the `glue:DeleteCatalog` operation or the AWS Lake Formation console.
 

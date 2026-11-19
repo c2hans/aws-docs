@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/security_iam_troublesh
 ---
 
 # Troubleshooting AWS Site-to-Site VPN identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Site-to-Site VPN and IAM.
 

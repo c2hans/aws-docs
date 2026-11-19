@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/build-sampl
 ---
 
 # Tutorial: Build and run the sample IDT test suite
-<a name="build-sample-suite"></a>
 
 The AWS IoT Device Tester download includes the source code for a sample test suite. You can complete this tutorial to build and run the sample test suite to understand how you can use IDT for AWS IoT Greengrass to run custom test suites.
 

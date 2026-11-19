@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-chat
 ---
 
 # Working with chat
-<a name="working-with-chat-desktop"></a>
 
 Chat is the primary way you interact with AWS Quick on desktop. You can ask questions, get help with tasks, analyze files, create documents, generate visualizations, and work with your connected services through natural language. The following sections describe the chat features available in the desktop application.
 

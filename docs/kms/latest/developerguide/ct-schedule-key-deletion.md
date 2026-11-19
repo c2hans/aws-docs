@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-schedule-ke
 ---
 
 # ScheduleKeyDeletion
-<a name="ct-schedule-key-deletion"></a>
 
 These examples show AWS CloudTrail log entries for the [ScheduleKeyDeletion](https://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html) operation.
 

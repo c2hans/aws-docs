@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetEngineSta
 ---
 
 # GetEngineStatus
-<a name="API_GetEngineStatus"></a>
 
 Retrieves the status of the graph database on the host.
 

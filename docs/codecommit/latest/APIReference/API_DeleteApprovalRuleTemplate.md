@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Delet
 ---
 
 # DeleteApprovalRuleTemplate
-<a name="API_DeleteApprovalRuleTemplate"></a>
 
 Deletes a specified approval rule template. Deleting a template does not remove approval rules on pull requests already created with the template.
 

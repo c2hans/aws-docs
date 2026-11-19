@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # The Role of the AWS AD Connector with Amazon WorkSpaces
-<a name="ad-connector-role-with-workspaces"></a>
 
 The [AWS AD Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html) is an AWS Directory Service that acts as a proxy service for an Active Directory. It does not store or cache any user credentials, but forwards authentication or lookup requests to your Active Directory—on-premises or on AWS. Unless you are using AWS Managed Microsoft AD, it is also the only way to register your Active Directory (on-premises or extended to AWS) for use with Amazon WorkSpaces (WorkSpaces).
 

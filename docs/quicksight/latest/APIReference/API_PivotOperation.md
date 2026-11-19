@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotOperation
-<a name="API_PivotOperation"></a>
 
 A transform operation that pivots data by converting row values into columns.
 

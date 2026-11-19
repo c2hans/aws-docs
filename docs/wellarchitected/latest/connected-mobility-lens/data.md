@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Data
-<a name="data"></a>
 
 | CMSUS\_7: Are you optimizing data ingestion? |
 | --- |

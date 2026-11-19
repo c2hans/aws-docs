@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Model customization
-<a name="genops05"></a>
 
 | GENOPS05: How do you determine when to execute Gen AI model customization? |
 | --- |

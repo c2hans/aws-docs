@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-configura
 ---
 
 # How job configurations work
-<a name="jobs-configurations-details"></a>
 
 You use the rollout and abort configurations when you're deploying a job, and the timeout and retry configurations for job execution. The following sections show more information about how these configurations work.
 

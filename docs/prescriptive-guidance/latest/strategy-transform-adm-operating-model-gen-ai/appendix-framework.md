@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Appendix A: Sample framework of AI vision for ADM
-<a name="appendix-framework"></a>
 
 Organizations can adapt this sample framework of an AI vision for application development and maintenance (ADM) to articulate their transformation goals. The sample includes an introduction, a clear mission statement, quantifiable objectives, and strategic initiatives that are aligned with measurable success metrics.
 

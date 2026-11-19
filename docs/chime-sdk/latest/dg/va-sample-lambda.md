@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-sample-lambda.htm
 ---
 
 # Voice analytics example Lambda function for the Amazon Chime SDK
-<a name="va-sample-lambda"></a>
 
 The Python code in the following example processes notifications received from a Voice Connector. You can add the code to an AWS Lambda function. You can also use it to trigger your Amazon SQS queue, Amazon SNS topic, or Amazon Kinesis Data Stream. You can then store the notifications in an `EventTable` for future processing. For the exact notification formats, see [Understanding notifications for the Amazon Chime SDK](va-notification-targets.md).
 

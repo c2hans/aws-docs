@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Descr
 ---
 
 # DescribeScalingPlans
-<a name="API_DescribeScalingPlans"></a>
 
 Describes one or more of your scaling plans.
 

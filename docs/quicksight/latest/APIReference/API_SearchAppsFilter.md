@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchAppsFilter
-<a name="API_SearchAppsFilter"></a>
 
 A filter to apply when searching for apps.
 

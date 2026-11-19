@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 An object containing the `ruleName` and `matchingKeys`.
 

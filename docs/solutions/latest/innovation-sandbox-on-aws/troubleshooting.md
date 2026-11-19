@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides information about known issues and instructions to mitigate known errors. If these instructions do not resolve your issue, see the [Contact AWS Support](contact-aws-support.md) section to open an AWS Support case for this solution.
 

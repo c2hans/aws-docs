@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/creating-namespaces.
 ---
 
 # Creating an AWS Cloud Map namespace to group application services
-<a name="creating-namespaces"></a>
 
 You can create a namespace to group services for your application under a friendly name that allows for the discovery of application resources through API calls or DNS queries.
 

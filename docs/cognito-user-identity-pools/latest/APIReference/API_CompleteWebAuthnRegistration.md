@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CompleteWebAuthnRegistration
-<a name="API_CompleteWebAuthnRegistration"></a>
 
 Completes registration of a passkey authenticator for the currently signed-in user.
 

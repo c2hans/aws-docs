@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 ---
 
 # 2 – Modernize deployment of the analytics jobs and applications
-<a name="design-principle-2"></a>
 
  **How do you deploy jobs and applications in a controlled and reproducible way?** Using modern development practices, such as continuous integration/continuous delivery (CI/CD), can help ensure that changes are rolled out in a controlled and repeatable way.
 

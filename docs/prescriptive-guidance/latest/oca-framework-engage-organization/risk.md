@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 4.5 Risk mitigation implementation
-<a name="risk"></a>
 
 ## Overview
 <a name="risk-overview"></a>

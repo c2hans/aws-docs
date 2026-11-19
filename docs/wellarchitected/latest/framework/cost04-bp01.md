@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost04-
 ---
 
 # COST04-BP01 Define network and data transfer infrastructure costs
-<a name="cost04-bp01"></a>
 
  Data transfer cost depends on the path traffic takes through your network, and shared network components spread those charges across many workloads. Document your network architecture and the transfer pricing that applies to each path so you can attribute cost to the workloads that drive it.
 

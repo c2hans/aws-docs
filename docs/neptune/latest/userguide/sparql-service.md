@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-service.
 ---
 
 # SPARQL federated queries in Neptune using the `SERVICE` extension
-<a name="sparql-service"></a>
 
 Amazon Neptune fully supports the SPARQL federated query extension that uses the `SERVICE` keyword. (For more information, see [SPARQL 1.1 Federated Query](https://www.w3.org/TR/sparql11-federated-query/).)
 

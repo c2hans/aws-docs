@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenseSpecificationsForResource
-<a name="API_ListLicenseSpecificationsForResource"></a>
 
 Describes the license configurations for the specified resource.
 

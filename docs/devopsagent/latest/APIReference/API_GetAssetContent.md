@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetA
 ---
 
 # GetAssetContent
-<a name="API_GetAssetContent"></a>
 
 Gets an asset's content as a zip bundle
 

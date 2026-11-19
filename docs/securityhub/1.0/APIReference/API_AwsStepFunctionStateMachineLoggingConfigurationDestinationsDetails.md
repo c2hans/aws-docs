@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsStep
 ---
 
 # AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails
-<a name="API_AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails"></a>
 
  An array of objects that describes where your execution history events will be logged.
 

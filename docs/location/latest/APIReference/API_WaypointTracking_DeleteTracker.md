@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DeleteTracker
-<a name="API_WaypointTracking_DeleteTracker"></a>
 
 Deletes a tracker resource from your AWS account.
 

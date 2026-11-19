@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evidently-l
 ---
 
 # evidently-launch-description
-<a name="evidently-launch-description"></a>
 
 Checks if Amazon CloudWatch Evidently launches have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist or is an empty string.
 

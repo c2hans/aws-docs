@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectDominantLanguageItemResult
-<a name="API_BatchDetectDominantLanguageItemResult"></a>
 
 The result of calling the [BatchDetectDominantLanguage](API_BatchDetectDominantLanguage.md) operation. The operation returns one object for each document that is successfully processed by the operation.
 

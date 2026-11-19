@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/blueprint_workflow_troubl
 ---
 
 # Troubleshooting blueprint errors in AWS Glue
-<a name="blueprint_workflow_troubleshoot"></a>
 
 If you encounter errors when using AWS Glue blueprints, use the following solutions to help you find the source of the problems and fix them.
 

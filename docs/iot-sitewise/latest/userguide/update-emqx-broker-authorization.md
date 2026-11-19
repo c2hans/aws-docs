@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-emq
 ---
 
 # Update the EMQX deployment configuration for authorization
-<a name="update-emqx-broker-authorization"></a>
 
 **To update the EMQX deployment configuration for authorization**
 

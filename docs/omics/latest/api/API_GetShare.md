@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetShare.html
 ---
 
 # GetShare
-<a name="API_GetShare"></a>
 
 Retrieves the metadata for the specified resource share.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_R
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 A Recommendation for an Account
 

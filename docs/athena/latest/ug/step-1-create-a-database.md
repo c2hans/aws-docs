@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/step-1-create-a-databas
 ---
 
 # Step 1: Create a database
-<a name="step-1-create-a-database"></a>
 
 You first need to create a database in Athena.
 

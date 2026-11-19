@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListAttachments
-<a name="API_ListAttachments"></a>
 
 Returns a list of core network attachments.
 

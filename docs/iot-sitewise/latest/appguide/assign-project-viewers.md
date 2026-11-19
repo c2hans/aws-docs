@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/appguide/assign-proj
 The SiteWise Monitor feature is not available to new customers. Existing customers can continue to use the service as normal. For more information, see [SiteWise Monitor availability change](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/iotsitewise-monitor-availability-change.html)
 
 # Assign project viewers
-<a name="assign-project-viewers"></a>
 
 As a project owner or portal administrator, you typically assign viewers to your project after you define a set of dashboards to provide a common view of asset properties and alarms to those viewers.
 

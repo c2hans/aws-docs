@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-Grafana-API
 ---
 
 # Dashboard Versions API
-<a name="v13-Grafana-API-DashboardVersions"></a>
 
 Use the Dashboard Versions API to retrieve dashboard versions and restore a dashboard to a specified version.
 

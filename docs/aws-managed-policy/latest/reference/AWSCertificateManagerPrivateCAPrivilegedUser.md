@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCertificateManagerPrivateCAPrivilegedUser
-<a name="AWSCertificateManagerPrivateCAPrivilegedUser"></a>
 
 **Description**: Provides privileged certificate user access to AWS Certificate Manager Private Certificate Authority
 

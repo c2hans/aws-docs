@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-chat-for-data
 ---
 
 # Chat for data prep
-<a name="canvas-chat-for-data-prep"></a>
 
 **Important**
 For administrators:

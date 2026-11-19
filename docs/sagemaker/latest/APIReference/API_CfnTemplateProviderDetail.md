@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CfnTem
 ---
 
 # CfnTemplateProviderDetail
-<a name="API_CfnTemplateProviderDetail"></a>
 
  Details about a CloudFormation template provider configuration and associated provisioning information.
 

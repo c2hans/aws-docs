@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Key concepts
-<a name="msk-data-delivery-iceberg-concepts"></a>
 
 This section describes the key concepts behind Amazon MSK Data Delivery.
 + **Data freshness vs. throughput** — A Channel needs at least 2.4 MBps of uncompressed throughput for the minimum 5-minute freshness. For lower-throughput topics, increase freshness (up to 15 minutes) so the service can accumulate enough data for efficient delivery and inline compaction.

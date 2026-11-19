@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessOpenAiModelConfig
-<a name="API_HarnessOpenAiModelConfig"></a>
 
 Configuration for an OpenAI model provider. Requires an API key stored in AgentCore Identity.
 

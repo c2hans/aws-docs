@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DbServerPatc
 ---
 
 # DbServerPatchingDetails
-<a name="API_DbServerPatchingDetails"></a>
 
 The scheduling details for the quarterly maintenance window. Patching and system updates take place during the maintenance window.
 

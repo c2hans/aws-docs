@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SourceConfig
 ---
 
 # SourceConfiguration
-<a name="API_SourceConfiguration"></a>
 
 Configuration for a migration source environment.
 

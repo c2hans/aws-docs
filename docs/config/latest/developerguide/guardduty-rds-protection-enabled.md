@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/guardduty-r
 ---
 
 # guardduty-rds-protection-enabled
-<a name="guardduty-rds-protection-enabled"></a>
 
 Checks if Amazon Relational Database Service (Amazon RDS) protection is enabled for an Amazon GuardDuty detector in your account. The rule is NON\_COMPLIANT if the Amazon RDS protection feature in Amazon GuardDuty is not enabled for you account.
 

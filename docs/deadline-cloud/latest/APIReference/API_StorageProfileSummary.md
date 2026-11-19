@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StorageProfileSummary
-<a name="API_StorageProfileSummary"></a>
 
 The details of a storage profile.
 

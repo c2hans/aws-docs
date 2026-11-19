@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-insigh
 ---
 
 # Connecting to Insightly in AWS Glue Studio
-<a name="connecting-to-data-insightly"></a>
 
 Insightly is a CRM \+ light project-management platform. Because you are an Insightly user, you can connect AWS Glue to your Insightly account. You can then use Insightly as a data source in your AWS Glue ETL jobs to transfer data between Insightly and AWS services or other supported applications.
 

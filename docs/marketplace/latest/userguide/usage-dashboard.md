@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/usage-dashb
 ---
 
 # Usage dashboard
-<a name="usage-dashboard"></a>
 
 The Usage dashboard provides visualizations and fine-grained data for customers using SaaS and server usage-based products. AWS Marketplace sellers can use this dashboard to track customer consumption across usage-based products to make decisions on product support, pricing, conversion from public to private offers, and product discontinuation. The dashboard provides data from the last 6 months, which is a rolling window.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListSegmentDefinitions
-<a name="API_connect-customer-profiles_ListSegmentDefinitions"></a>
 
 Lists all segment definitions under a domain.
 

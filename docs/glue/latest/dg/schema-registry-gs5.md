@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/schema-registry-gs5.html
 ---
 
 # Updating a schema or registry
-<a name="schema-registry-gs5"></a>
 
 Once created you can edit your schemas, schema versions, or registry.
 

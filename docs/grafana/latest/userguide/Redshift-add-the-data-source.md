@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-add-th
 ---
 
 # Manually adding the Amazon Redshift data source
-<a name="Redshift-add-the-data-source"></a>
 
 ## Prerequisites
 <a name="Redshift-prerequisites"></a>

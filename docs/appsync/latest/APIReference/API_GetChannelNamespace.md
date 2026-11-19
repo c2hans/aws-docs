@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetChann
 ---
 
 # GetChannelNamespace
-<a name="API_GetChannelNamespace"></a>
 
 Retrieves the channel namespace for a specified `Api`.
 

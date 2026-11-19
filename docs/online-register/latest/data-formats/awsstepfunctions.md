@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Step Functions
-<a name="awsstepfunctions"></a>
 
 AWS Step Functions provides the following APIs for data retrieval.
 

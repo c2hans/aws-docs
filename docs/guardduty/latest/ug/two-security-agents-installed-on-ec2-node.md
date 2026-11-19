@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/two-security-agents-
 ---
 
 # Two security agents on same underlying host
-<a name="two-security-agents-installed-on-ec2-node"></a>
 
 Amazon EC2 instances can support multiple types of workloads. When you configure automated security agent on an Amazon EC2 instance, the same EC2 instance might have another security agent through EKS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 ---
 
 # Example: WorkSpaces Applications fleet machine role cross-service confused deputy prevention
-<a name="example-fleet-machine"></a>
 
 **Example `aws:SourceAccount` Conditional:**
 ****

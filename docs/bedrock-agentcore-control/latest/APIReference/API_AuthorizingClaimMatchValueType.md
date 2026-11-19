@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AuthorizingClaimMatchValueType
-<a name="API_AuthorizingClaimMatchValueType"></a>
 
 Defines the value or values to match for and the relationship of the match.
 

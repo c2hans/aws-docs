@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Enterprise multi-account architecture for running agentic AI in production on AWS
-<a name="introduction"></a>
 
 *Vineet Singh, Cristian Balint, Natalia Cummings, Florian Gauter, and Mehdi Nemlaghi, Amazon Web Services*
 
 Deploying AI agents into production introduces a class of infrastructure requirements that conventional workload patterns do not have. Agents require shared model gateways isolated from individual workloads, unified observability across agent reasoning and tool invocations, and platform-enforced cost controls for agentic AI consumption.
 
-This guide provides an enterprise multi-account architecture for running agentic AI workloads in production on AWS. It defines the full account topology, from management root through security, observability, shared tooling, and per-environment workload and gateway accounts, with the governance, cost controls, and CI/CD automation that production deployments require. Use this guide to establish the account boundaries, governance controls, and operational foundations your organization needs to run agents in production at scale. A companion infrastructure-as-code repository accompanies this guide to accelerate deployment.
+This guide provides an enterprise multi-account architecture for running agentic AI workloads in production on AWS. It defines the full account topology, from management root through security, observability, shared tooling, and per-environment workload and gateway accounts, with the governance, cost controls, and CI/CD automation that production deployments require. Use this guide to establish the account boundaries, governance controls, and operational foundations your organization needs to run agents in production at scale. Use AWS CloudFormation, AWS CDK, or Terraform to implement this architecture, following the infrastructure-as-code guidance in the *Best practices* section.
 
 ## Intended audience
 <a name="intended-audience"></a>

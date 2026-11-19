@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # CloudFormation Use cases for AMS Accelerate
-<a name="acc-tag-tools-cf-ex"></a>
 
 This section lists commonly performed actions with CloudFormation.
 

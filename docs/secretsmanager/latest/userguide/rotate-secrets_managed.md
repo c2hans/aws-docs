@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-s
 ---
 
 # Managed rotation for AWS Secrets Manager secrets
-<a name="rotate-secrets_managed"></a>
 
 Some services offer *managed rotation*, where the service configures and manages rotation for you. With managed rotation, you don't use an AWS Lambda function to update the secret and the credentials in the database.
 

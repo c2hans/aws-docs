@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates a new application. An application is the top-level organizational unit that supports IAM Identity Center integration.
 

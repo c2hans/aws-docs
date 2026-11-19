@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Compute Optimizer Dashboard
-<a name="compute-optimizer-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

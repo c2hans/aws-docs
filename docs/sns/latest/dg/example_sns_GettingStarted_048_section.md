@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_GettingStarted
 ---
 
 # Create a messaging topic and publish messages
-<a name="example_sns_GettingStarted_048_section"></a>
 
 The following code example shows how to:
 + Create an Amazon SNS topic

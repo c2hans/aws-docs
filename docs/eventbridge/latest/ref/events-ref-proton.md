@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-proton
 ---
 
 # AWS Proton events
-<a name="events-ref-proton"></a>
 
 AWS Proton sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: Account enrollment and environment validation failures
-<a name="problem-account-enrollment-and-environment-validation-failures"></a>
 
 When you enroll new or existing accounts in the solution, you can encounter [Core pipeline errors](problem-core-pipeline-failure.md) during the **Prepare** stage of the pipeline. Failures during this stage typically indicate an issue with enrolling the account into AWS Organizations or AWS Control Tower.
 

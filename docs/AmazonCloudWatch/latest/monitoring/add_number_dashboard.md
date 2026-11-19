@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_n
 ---
 
 # Adding a number widget to a CloudWatch dashboard
-<a name="add_number_dashboard"></a>
 
 **Note**
  Only the new interface supports the sparkline feature. When you create a number widget, the sparkline feature is automatically included.

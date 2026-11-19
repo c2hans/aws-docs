@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/field-level-e
 ---
 
 # Client-side field level encryption
-<a name="field-level-encryption"></a>
 
 Amazon DocumentDB client-side field level encryption (FLE) allows you to encrypt sensitive data in your client applications before it is transferred to a Amazon DocumentDB cluster. Sensitive data remains encrypted when it is stored and processed in a cluster and is decrypted at the client application when retrieved.
 

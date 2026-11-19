@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionCodeLocati
 ---
 
 # FunctionCodeLocation
-<a name="API_FunctionCodeLocation"></a>
 
 Details about a function's deployment package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagInstanceP
 ---
 
 # TagInstanceProfile
-<a name="API_TagInstanceProfile"></a>
 
 Adds one or more tags to an IAM instance profile. If a tag with the same key name already exists, then that tag is overwritten with the new value.
 

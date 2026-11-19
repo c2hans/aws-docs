@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Storage considerations for large VDI migrations
-<a name="storage-considerations"></a>
 
 User profiles or virtual hard disk (VHD) files for Citrix user personalization layer (UPL) will require some form of Server Message Block (SMB) file storage, ideally in close proximity to the VDIs. You can use [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html) to address this requirement.
 

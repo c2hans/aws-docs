@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_Capacity.html
 ---
 
 # Capacity
-<a name="API_Capacity"></a>
 
 Information about the capacity of the connector, whether it is auto scaled or provisioned.
 

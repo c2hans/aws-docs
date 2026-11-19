@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/repositorylin
 ---
 
 # View repository link details
-<a name="repositorylinks-view-details"></a>
 
 You can use the **get-repository-link** command in the AWS Command Line Interface (AWS CLI) to view details about a repository link.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-codesourc
 ---
 
 # **eb codesource**
-<a name="eb3-codesource"></a>
 
 ## Description
 <a name="eb3-codesourcedescription"></a>

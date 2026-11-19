@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeNotification
-<a name="API_DescribeNotification"></a>
 
 Retrieves detailed information about a specific notification, including its content, priority, recipients, and metadata.
 

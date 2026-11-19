@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/best-practices.html
 ---
 
 # Best practices for developing and deploying cloud infrastructure with the AWS CDK
-<a name="best-practices"></a>
 
 With the AWS CDK, developers or administrators can define their cloud infrastructure by using a supported programming language. CDK applications should be organized into logical units, such as API, database, and monitoring resources, and optionally have a pipeline for automated deployments. The logical units should be implemented as constructs including the following:
 + Infrastructure (such as Amazon S3 buckets, Amazon RDS databases, or an Amazon VPC network)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Using AWS Support self-service runbooks
-<a name="automation-tutorial-support-runbooks"></a>
 
 This section describes how to use some of the self-service automations created by the AWS Support team. These automations help you manage your AWS resources.
 

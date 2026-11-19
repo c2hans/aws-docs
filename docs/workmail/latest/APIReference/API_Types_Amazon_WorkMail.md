@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_Types_A
 ---
 
 # Amazon WorkMail
-<a name="API_Types_Amazon_WorkMail"></a>
 
 The following data types are supported by Amazon WorkMail:
 +  [AccessControlRule](API_AccessControlRule.md)

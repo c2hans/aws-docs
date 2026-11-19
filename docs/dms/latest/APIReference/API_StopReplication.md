@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StopReplicat
 ---
 
 # StopReplication
-<a name="API_StopReplication"></a>
 
 For a given AWS DMS Serverless replication configuration, AWS DMS stops any and all ongoing AWS DMS Serverless replications. This command doesn't deprovision the stopped replications.
 

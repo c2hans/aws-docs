@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateAu
 ---
 
 # UpdateAutomatedReasoningPolicy
-<a name="API_UpdateAutomatedReasoningPolicy"></a>
 
 Updates an existing Automated Reasoning policy with new rules, variables, or configuration. This creates a new version of the policy while preserving the previous version.
 

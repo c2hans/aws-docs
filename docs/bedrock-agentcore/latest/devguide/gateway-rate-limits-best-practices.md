@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Rate limit best practices
-<a name="gateway-rate-limits-best-practices"></a>
 
 This topic provides guidance on designing, deploying, and operating rate limits effectively on your gateway.
 

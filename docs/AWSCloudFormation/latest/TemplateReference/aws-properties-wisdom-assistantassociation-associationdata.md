@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AssistantAssociation AssociationData
-<a name="aws-properties-wisdom-assistantassociation-associationdata"></a>
 
 A union type that currently has a single argument, which is the knowledge base ID.
 

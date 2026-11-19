@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/unde
 ---
 
 # Understanding the Canonical Data Model (CDM)
-<a name="understanding-the-canonical-data-model-cdm"></a>
 
 The Canonical Data Model (CDM) is the standardized data structure used by . When you onboard your supply chain data, it must be transformed into CDM format so that can process it for planning, forecasting, and operational insights.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/access-with-servi
 ---
 
 # Access a service network through a service-network endpoint
-<a name="access-with-service-network-endpoint"></a>
 
 You can access a service network using a service-network endpoint. A service-network endpoint provides private access to resource configurations and services in the service network.
 

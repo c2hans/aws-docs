@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/additional-info.h
 ---
 
 # Additional information
-<a name="additional-info"></a>
 
 This section provides a reference of supported, but deprecated Amazon FSx features.
 

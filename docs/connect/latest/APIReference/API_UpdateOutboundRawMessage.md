@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateOu
 ---
 
 # UpdateOutboundRawMessage
-<a name="API_UpdateOutboundRawMessage"></a>
 
 Contains the raw body content of an outbound email draft.
 

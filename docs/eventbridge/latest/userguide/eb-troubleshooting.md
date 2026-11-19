@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-troubles
 ---
 
 # Troubleshooting Amazon EventBridge
-<a name="eb-troubleshooting"></a>
 
 You can use the topics in this section to troubleshoot Amazon EventBridge issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Enabling CloudWatch metrics, alarms, and dashboard
-<a name="enabling-cloudwatch-metrics-alarms-and-dashboard"></a>
 
 There are four CloudFormation template parameters for CloudWatch functionality.
 

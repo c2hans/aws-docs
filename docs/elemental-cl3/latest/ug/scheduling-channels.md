@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/scheduling-chann
 ---
 
 # Starting channels using a schedule
-<a name="scheduling-channels"></a>
 
 You can schedule channels to run once or repeatedly, and for a specified duration. Schedules must be at least 60 seconds in duration, with at least one minute between scheduled runs.
 

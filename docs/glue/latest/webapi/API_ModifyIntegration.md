@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ModifyIntegration
 ---
 
 # ModifyIntegration
-<a name="API_ModifyIntegration"></a>
 
 Modifies a Zero-ETL integration in the caller's account.
 

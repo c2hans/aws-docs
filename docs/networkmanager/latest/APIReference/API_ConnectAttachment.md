@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectAttachment
-<a name="API_ConnectAttachment"></a>
 
 Describes a core network Connect attachment.
 

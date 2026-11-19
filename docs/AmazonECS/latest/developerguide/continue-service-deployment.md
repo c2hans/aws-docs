@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/continue
 ---
 
 # Continuing service deployments
-<a name="continue-service-deployment"></a>
 
 When a pause lifecycle hook is configured for an Amazon ECS service deployment, the deployment pauses at the configured lifecycle stage and waits for an explicit action. Use the `ContinueServiceDeployment` API to either continue the deployment to the next lifecycle stage or roll back to the previous service revision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Getting started with AWS SAM
-<a name="serverless-getting-started"></a>
 
 Get started with AWS SAM by reviewing and completing the topics in this section. [AWS SAM prerequisites](prerequisites.md) provides detailed instructions on setting up an AWS account, creating IAM users, creating key access, and installing and configuring the AWS SAM CLI. After completing the prerequisites, you can choose your development approach:
 + [Install the AWS SAM CLI](install-sam-cli.md), which you can do on Linux, Windows, and macOS operating systems.

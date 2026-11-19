@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 ---
 
 # Register a delegated administrator for Quick Setup
-<a name="quick-setup-register-delegated-administrator"></a>
 
 Use the following procedure to register a delegated administrator for Quick Setup.
 

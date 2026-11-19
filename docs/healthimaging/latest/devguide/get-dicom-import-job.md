@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/get-dicom-
 ---
 
 # Getting import job properties
-<a name="get-dicom-import-job"></a>
 
 Use the `GetDICOMImportJob` action to learn more about AWS HealthImaging import job properties. For instance, after starting an import job, you can run `GetDICOMImportJob` to find the status of the job. Once the `jobStatus` returns as `COMPLETED`, you're ready to access your [image sets](getting-started-concepts.md#concept-image-set).
 

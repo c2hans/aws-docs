@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/enabling-disabling-l
 ---
 
 # Enabling channel encoder logs
-<a name="enabling-disabling-logs"></a>
 
 You enable channel encoder logs for an individual channel on the MediaLive console. You enable logging and set the logging level (error, warning, info, or debug) on a per channel basis. The channel must be idle in order to enable or disable logging.
 

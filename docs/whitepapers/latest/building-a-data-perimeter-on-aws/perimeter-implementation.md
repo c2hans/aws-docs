@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perim
 ---
 
 # Perimeter implementation
-<a name="perimeter-implementation"></a>
 
 This section describes the complete perimeter solution by evaluating each perimeter authorization condition and how the different policy types are used to achieve it. Each section will describe the overall solution for that objective, provide links to detailed policy examples, explain how exceptions can be implemented, and demonstrate how the controls prevent the unintended access pattern.
 

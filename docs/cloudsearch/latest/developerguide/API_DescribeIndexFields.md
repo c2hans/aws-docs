@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DescribeIndexFields
-<a name="API_DescribeIndexFields"></a>
 
 ## Description
 <a name="API_DescribeIndexFields_Description"></a>

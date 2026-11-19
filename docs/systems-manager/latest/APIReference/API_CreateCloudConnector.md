@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CreateCloudConnector
-<a name="API_CreateCloudConnector"></a>
 
 Creates a cloud connector that establishes a connection between Systems Manager and a third-party cloud environment.
 

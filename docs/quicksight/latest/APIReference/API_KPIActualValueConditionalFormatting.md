@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIAc
 ---
 
 # KPIActualValueConditionalFormatting
-<a name="API_KPIActualValueConditionalFormatting"></a>
 
 The conditional formatting for the actual value of a KPI visual.
 

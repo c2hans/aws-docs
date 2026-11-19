@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_RemoveProfilePermi
 ---
 
 # RemoveProfilePermission
-<a name="API_RemoveProfilePermission"></a>
 
 Removes cross-account permissions from a signing profile.
 

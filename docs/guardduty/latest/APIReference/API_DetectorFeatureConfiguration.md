@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectorFeatureConfiguration
-<a name="API_DetectorFeatureConfiguration"></a>
 
 Contains information about a GuardDuty feature.
 

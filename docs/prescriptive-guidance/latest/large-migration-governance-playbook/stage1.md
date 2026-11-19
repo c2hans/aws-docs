@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Stage 1: Initializing a large migration
-<a name="stage1"></a>
 
 It is important to define the governance model early in the migrate phase and then conduct a kickoff meeting so that you can share it with the entire project team before you start migrating applications. If the governance model is already set up, skip to [Stage 2: Implementing a large migration project](stage-2-implementing-a-large-migration.md), where you will use the project governance tools and model established in stage 1. Establishing the right participants, communication formats, and meeting content at the outset allows you to focus on accelerating the migration. Ineffective planning for project meetings and communication can cause the team to spend too much time in meetings or providing status updates, rather than working on the migration.
 

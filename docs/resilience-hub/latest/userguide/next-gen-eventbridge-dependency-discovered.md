@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # New dependency discovered event
-<a name="next-gen-eventbridge-dependency-discovered"></a>
 
 The following is an example event emitted when dependency discovery identifies a new dependency for your service. This event is emitted after a stabilization period to reduce noise during initial discovery.
 

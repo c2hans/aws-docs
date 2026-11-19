@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ccft/latest/releasenotes/what-is-ccftrn.
 ---
 
 # Customer Carbon Footprint Tool Release Notes
-<a name="what-is-ccftrn"></a>
 
 The Customer Carbon Footprint Tool (CCFT) release notes provide details about Customer Carbon Footprint Tool releases. This includes new features, updates, fixes related to the service, console, and calculation. When we release any updates to the Customer Carbon Footprint Tool service, release notes are published describing the content of the release.
 

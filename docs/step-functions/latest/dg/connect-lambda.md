@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-lambda.
 ---
 
 # Invoke an AWS Lambda function with Step Functions
-<a name="connect-lambda"></a>
 
 Learn how to use Step Functions to invoke Lambda functions either synchronously or asynchronously as part of an event-driven serverless application.
 

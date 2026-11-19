@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/hangup.html
 ---
 
 # Hangup
-<a name="hangup"></a>
 
 Sends a `Hangup` value with a `SipStatusCode` to any leg of a call.
 

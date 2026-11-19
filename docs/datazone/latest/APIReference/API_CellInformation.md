@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CellInf
 ---
 
 # CellInformation
-<a name="API_CellInformation"></a>
 
 The information about a cell in a notebook run in Amazon SageMaker Unified Studio.
 

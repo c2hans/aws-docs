@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileCa
 ---
 
 # DeleteFileCache
-<a name="API_DeleteFileCache"></a>
 
 Deletes an Amazon File Cache resource. After deletion, the cache no longer exists, and its data is gone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetTimeSeriesService
 ---
 
 # GetTimeSeriesServiceStatistics
-<a name="API_GetTimeSeriesServiceStatistics"></a>
 
 Get an aggregation of service statistics defined by a specific time range.
 

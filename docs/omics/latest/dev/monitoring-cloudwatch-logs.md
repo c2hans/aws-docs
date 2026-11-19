@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/monitoring-cloudwatch-l
 ---
 
 # Monitoring HealthOmics with CloudWatch Logs
-<a name="monitoring-cloudwatch-logs"></a>
 
 HealthOmics generates a variety of logs to help you understand and troubleshoot your runs. Logs are available in two places: CloudWatch and Amazon S3.
 

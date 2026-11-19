@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-calend
 ---
 
 # Connecting to Calendly in AWS Glue Studio
-<a name="connecting-to-data-calendly"></a>
 
 Calendly is a scheduling and meeting-automation platform. Because you are a Calendly user, you can connect AWS Glue to your Calendly account. You can then use Calendly as a data source in your AWS Glue ETL jobs to transfer data between Calendly and AWS services or other supported applications.
 

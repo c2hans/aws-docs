@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Configure your Classic Load Balancer
-<a name="elb-configure-load-balancer"></a>
 
 After you create a Classic Load Balancer, you can change its configuration. For example, you can update the load balancer attributes, subnets, and security groups.Load balancer attributes
 

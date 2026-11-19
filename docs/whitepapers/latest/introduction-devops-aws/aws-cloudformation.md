@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # CloudFormation
-<a name="aws-cloudformation"></a>
 
 AWS CloudFormation is a service that enables developers to create AWS resources in an orderly and predictable fashion. Resources are written in text files using JSON or YAML format. The templates require a specific syntax and structure that depends on the types of resources being created and managed. You author your resources in JSON or YAML with any code editor such as [AWS Cloud9](https://aws.amazon.com/cloud9/), check it into a version control system, and then CloudFormation builds the specified services in safe, repeatable manner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEnvironmentStatus
-<a name="API_DescribeEnvironmentStatus"></a>
 
 Gets status information for an AWS Cloud9 development environment.
 

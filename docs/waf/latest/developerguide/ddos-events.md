@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-events.ht
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Viewing AWS Shield Advanced events
-<a name="ddos-events"></a>
 
 This page provides instructions for accessing information about events in Shield Advanced.
 

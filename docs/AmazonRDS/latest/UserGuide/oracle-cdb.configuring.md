@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb.co
 ---
 
 # Configuring an RDS for Oracle CDB
-<a name="oracle-cdb.configuring"></a>
 
 Configuring a CDB is similar to configuring a non-CDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/S
 ---
 
 # Configure secure access and restrict access to content
-<a name="SecurityAndPrivateContent"></a>
 
 CloudFront provides several options for securing content that it delivers. The following are some ways you can use CloudFront to secure and restrict access to content:
 + Configure HTTPS connections

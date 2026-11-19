@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DateRan
 ---
 
 # DateRange
-<a name="API_DateRange"></a>
 
 A date range for the date filter.
 

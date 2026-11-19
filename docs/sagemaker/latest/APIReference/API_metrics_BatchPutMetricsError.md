@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metric
 ---
 
 # BatchPutMetricsError
-<a name="API_metrics_BatchPutMetricsError"></a>
 
 An error that occured when putting the metric data.
 

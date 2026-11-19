@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-down
 ---
 
 # Download saved query results
-<a name="view-download-cloudtrail-lake-query-results"></a>
 
 After you save query results, you need to be able to locate the file containing the query results. CloudTrail delivers your query results to an Amazon S3 bucket that you specify when you save the query results.
 

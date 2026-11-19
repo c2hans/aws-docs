@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteL
 ---
 
 # DeleteListing
-<a name="API_DeleteListing"></a>
 
 Deletes a listing (a record of an asset at a given time).
 

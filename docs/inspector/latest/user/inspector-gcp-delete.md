@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-gcp-dele
 ---
 
 # Deleting a Google Cloud Platform connector in Amazon Inspector
-<a name="inspector-gcp-delete"></a>
 
 You can delete a Google Cloud Platform (GCP) connector when you no longer want Amazon Inspector to scan resources in that GCP organization.
 

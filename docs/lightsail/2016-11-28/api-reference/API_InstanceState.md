@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceState
-<a name="API_InstanceState"></a>
 
 Describes the virtual private server (or *instance*) status.
 

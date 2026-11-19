@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 A resource that is used to connect third-party source providers with services like CodePipeline.
 

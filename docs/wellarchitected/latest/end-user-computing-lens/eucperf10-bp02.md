@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF10-BP02 Enable self-service WorkSpaces Personal management capabilities, and allow users to request changes by an administrator
-<a name="eucperf10-bp02"></a>
 
  The WorkSpaces Personal self-service options allow users to ramp up or down instance performance over time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SsmDocument.
 ---
 
 # SsmDocument
-<a name="API_SsmDocument"></a>
 
 AWS Systems Manager Document.
 

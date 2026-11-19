@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CacheReportFilter
-<a name="API_CacheReportFilter"></a>
 
 A list of filter parameters and associated values that determine which files are included or excluded from a cache report created by a `StartCacheReport` request. Multiple instances of the same filter parameter are combined with an OR operation, while different parameters are combined with an AND operation.
 

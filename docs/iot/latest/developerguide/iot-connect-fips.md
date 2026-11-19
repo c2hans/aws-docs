@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-fi
 ---
 
 # Connect to AWS IoT FIPS endpoints
-<a name="iot-connect-fips"></a>
 
 AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips/). FIPS compliant endpoints are different from standard AWS endpoints. To interact with AWS IoT in a FIPS-compliant manner, you must use the endpoints described below with your FIPS compliant client. The AWS IoT console is not FIPS compliant.
 

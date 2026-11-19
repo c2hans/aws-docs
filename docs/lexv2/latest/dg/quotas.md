@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/quotas.html
 ---
 
 # Quotas
-<a name="quotas"></a>
 
 Service quotas, also referred to as limits, are the maximum number of service resources allowed for your AWS account. For more information, see [AWS service quotas ](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the *AWS general reference*.
 

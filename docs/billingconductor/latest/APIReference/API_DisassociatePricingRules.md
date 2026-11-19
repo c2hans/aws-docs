@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DisassociatePricingRules
-<a name="API_DisassociatePricingRules"></a>
 
  Disassociates a list of pricing rules from a pricing plan.
 

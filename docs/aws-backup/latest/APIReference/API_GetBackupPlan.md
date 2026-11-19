@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBa
 ---
 
 # GetBackupPlan
-<a name="API_GetBackupPlan"></a>
 
 Returns `BackupPlan` details for the specified `BackupPlanId`. The details are the body of a backup plan in JSON format, in addition to plan metadata.
 

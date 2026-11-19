@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ARG-step-create-vide
 ---
 
 # Create the video outputs
-<a name="ARG-step-create-video"></a>
 
 If you want to include video in the HLS output group, then follow this procedure for each video encode.
 

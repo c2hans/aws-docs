@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeHandshake
-<a name="API_DescribeHandshake"></a>
 
 Returns details for a handshake. A handshake is the secure exchange of information between two AWS accounts: a sender and a recipient.
 

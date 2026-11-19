@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/personalize_code_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon Personalize using AWS SDKs
-<a name="personalize_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Personalize with AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_List
 ---
 
 # ListAnomaliesForInsightFilters
-<a name="API_ListAnomaliesForInsightFilters"></a>
 
  Specifies one or more service names that are used to list anomalies.
 

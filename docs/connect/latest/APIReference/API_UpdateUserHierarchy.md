@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserHierarchy
-<a name="API_UpdateUserHierarchy"></a>
 
 Assigns the specified hierarchy group to the specified user.
 

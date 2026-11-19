@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/export-re
 ---
 
 # Exporting AWS Data Exchange asset revisions to an S3 bucket as a provider (console)
-<a name="export-rev-s3-console-pro"></a>
 
 As a provider of AWS Data Exchange data products, you can use the AWS Data Exchange console to export AWS Data Exchange assets to an S3 bucket using the following instructions.
 

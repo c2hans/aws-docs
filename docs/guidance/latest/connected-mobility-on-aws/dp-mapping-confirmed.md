@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Mapping is confirmed, not inferred
-<a name="dp-mapping-confirmed"></a>
 
 An auto-match action proposes pairings by exact normalized match first, then by shortest producer name containing the canonical name, then the inverse. It is deliberately naive, and is labelled as a starting point rather than an answer.
 

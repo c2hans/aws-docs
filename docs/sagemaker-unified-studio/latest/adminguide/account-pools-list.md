@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # List account pools for a domain
-<a name="account-pools-list"></a>
 
 To use the AWS CLI to view the account pools in a domain, use the `list-account-pools` command.
 + Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `list-account-pools` command with the following format, where the domain ID is a required argument.

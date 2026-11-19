@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/opensearc
 ---
 
 # Integration with Amazon OpenSearch Service
-<a name="opensearch-integration"></a>
 
 **Integration type:** Subscriber
 

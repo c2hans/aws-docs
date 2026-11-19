@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.Non-
 ---
 
 # Moving a DB instance not in a VPC into a VPC
-<a name="USER_VPC.Non-VPC2VPC"></a>
 
 Some legacy DB instances on the EC2-Classic platform are not in a VPC. If your DB instance is not in a VPC, you can use the AWS Management Console to easily move your DB instance into a VPC. Before you can move a DB instance not in a VPC, into a VPC, you must create the VPC.
 

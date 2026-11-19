@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminScopeFilter
-<a name="API_AdminScopeFilter"></a>
 
 Determines which accounts and organizational units are in an administrator's scope. This is the reference form, which includes display metadata.
 

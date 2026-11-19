@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/mkt-custom-se
 ---
 
 # Entering custom settings
-<a name="mkt-custom-settings"></a>
 
 After you enter the system configuration settings, you enter settings for the Amazon S3 bucket used to upload and store custom EULAs.
 

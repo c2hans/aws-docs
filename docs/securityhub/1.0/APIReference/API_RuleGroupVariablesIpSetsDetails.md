@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupVariablesIpSetsDetails
-<a name="API_RuleGroupVariablesIpSetsDetails"></a>
 
 A list of IP addresses and address ranges, in CIDR notation.
 

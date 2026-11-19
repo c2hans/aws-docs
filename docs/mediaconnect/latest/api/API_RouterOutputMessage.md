@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutputMessage
-<a name="API_RouterOutputMessage"></a>
 
 A message associated with a router output.
 

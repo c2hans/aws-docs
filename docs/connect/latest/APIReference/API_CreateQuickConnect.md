@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateQu
 ---
 
 # CreateQuickConnect
-<a name="API_CreateQuickConnect"></a>
 
 Creates a quick connect for the specified Connect Customer instance.
 

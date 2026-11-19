@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Directory
 ---
 
 # DirectoryServiceAuthenticationRequest
-<a name="API_DirectoryServiceAuthenticationRequest"></a>
 
 Describes the Active Directory to be used for client authentication.
 

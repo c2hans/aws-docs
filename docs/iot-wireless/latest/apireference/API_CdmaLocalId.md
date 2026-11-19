@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cdm
 ---
 
 # CdmaLocalId
-<a name="API_CdmaLocalId"></a>
 
 CDMA local ID information, which corresponds to the local identification parameters of a CDMA cell.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This guide provides detailed information on the Amazon Transcribe API, including operations, request and response syntax, data types, and error codes. For more information about Amazon Transcribe, refer to the [Amazon Transcribe Developer Guide](https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html).
 

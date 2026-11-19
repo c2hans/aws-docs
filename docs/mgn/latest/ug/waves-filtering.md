@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/waves-filtering.html
 ---
 
 # Filtering migration waves
-<a name="waves-filtering"></a>
 
 Use filtering to easily filter your waves by one or multiple properties.
 

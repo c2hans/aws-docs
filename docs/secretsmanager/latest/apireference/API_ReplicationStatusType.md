@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # ReplicationStatusType
-<a name="API_ReplicationStatusType"></a>
 
 A replication object consisting of a `RegionReplicationStatus` object and includes a Region, KMSKeyId, status, and status message.
 

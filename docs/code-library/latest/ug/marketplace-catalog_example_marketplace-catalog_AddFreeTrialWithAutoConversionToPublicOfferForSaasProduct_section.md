@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_AddFreeTrialWithAutoConversionToPublicOfferForSaasProduct_section"></a>
 
 The following code examples show how to add a free trial to the public offer of a SaaS subscription product. When the free trial ends, it converts to a paid subscription at the rates in the offer. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
 

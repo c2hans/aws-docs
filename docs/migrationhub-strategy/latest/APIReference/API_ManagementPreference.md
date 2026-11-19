@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ManagementPreference
-<a name="API_ManagementPreference"></a>
 
  Preferences for migrating an application to AWS.
 

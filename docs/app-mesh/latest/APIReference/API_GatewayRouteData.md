@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteData
-<a name="API_GatewayRouteData"></a>
 
 An object that represents a gateway route returned by a describe operation.
 

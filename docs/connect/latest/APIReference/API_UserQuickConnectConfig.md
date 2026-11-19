@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserQuic
 ---
 
 # UserQuickConnectConfig
-<a name="API_UserQuickConnectConfig"></a>
 
 Contains information about the quick connect configuration settings for a user. The contact flow must be of type Transfer to Agent.
 

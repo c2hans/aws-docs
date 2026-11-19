@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-kerber
 ---
 
 # Setting up AWS Managed Active Directory
-<a name="oracle-kerberos-setting-up"></a>
 
 Use AWS Managed Active Directory to set up Kerberos authentication for an Oracle DB instance. To set up Kerberos authentication, complete the following steps:
 + [Step 1: Create a directory using the AWS Managed Active Directory](#oracle-kerberos.setting-up.create-directory)

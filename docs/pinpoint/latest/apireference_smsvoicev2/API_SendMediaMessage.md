@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SendMediaMessage
-<a name="API_SendMediaMessage"></a>
 
 Creates a new multimedia message (MMS) and sends it to a recipient's phone number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ca
 ---
 
 # CancelMetadataTransferJob
-<a name="API_CancelMetadataTransferJob"></a>
 
 Cancels the metadata transfer job.
 

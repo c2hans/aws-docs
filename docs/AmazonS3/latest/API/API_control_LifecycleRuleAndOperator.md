@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Lifecycl
 ---
 
 # LifecycleRuleAndOperator
-<a name="API_control_LifecycleRuleAndOperator"></a>
 
 The container for the Outposts bucket lifecycle rule and operator.
 

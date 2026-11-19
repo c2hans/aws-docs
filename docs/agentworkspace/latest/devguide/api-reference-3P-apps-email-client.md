@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK Email API
-<a name="api-reference-3P-apps-email-client"></a>
 
 The Connect Customer SDK provides an `EmailClient` which serves as an interface that your app can use to subscribe to email contact events and make email contact requests.
 

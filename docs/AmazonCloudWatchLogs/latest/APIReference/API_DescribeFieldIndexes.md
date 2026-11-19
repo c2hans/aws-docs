@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeFieldIndexes
-<a name="API_DescribeFieldIndexes"></a>
 
 Returns a list of field indexes discovered in log data. By default, the response includes the `DEFAULT`, `CUSTOM`, and `INACTIVE` index categories. To return indexes from other categories, use the `indexCategories` parameter.
 

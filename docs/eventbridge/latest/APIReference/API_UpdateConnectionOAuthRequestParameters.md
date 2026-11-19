@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Upda
 ---
 
 # UpdateConnectionOAuthRequestParameters
-<a name="API_UpdateConnectionOAuthRequestParameters"></a>
 
 The OAuth request parameters to use for the connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Event.html
 ---
 
 # Event
-<a name="API_Event"></a>
 
  This data type is used as a response element in the [DescribeEvents](API_DescribeEvents.md) action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/endpoints.html
 ---
 
 # Finding connection endpoints
-<a name="endpoints"></a>
 
 Your application connects to your cluster using the endpoint. An endpoint is a cluster's unique address. Use the cluster's *Cluster Endpoint* for all operations.
 

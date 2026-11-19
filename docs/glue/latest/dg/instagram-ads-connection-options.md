@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/instagram-ads-connection-
 ---
 
 # Instagram Ads connection options
-<a name="instagram-ads-connection-options"></a>
 
 The following are connection options for Instagram Ads:
 + `ENTITY_NAME`(String) - (Required) Used for read. The name of your object in Instagram Ads.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # LoadBalancerDescription
-<a name="API_LoadBalancerDescription"></a>
 
 Information about a load balancer.
 

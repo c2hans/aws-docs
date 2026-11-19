@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-custom-templates
 ---
 
 # Using pre-annotation and post-annotation Lambda functions
-<a name="sms-custom-templates-step3-lambda-requirements"></a>
 
 Use these topics to learn about the syntax of the requests sent to pre-annotation and post-annotation Lambda functions, and the required response syntax that Ground Truth uses in custom labeling workflows.
 

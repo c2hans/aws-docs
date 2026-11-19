@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Q: What are the most popular GitOps tools for Amazon EKS?**
 

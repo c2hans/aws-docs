@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_AccountL
 ---
 
 # AccountLimit
-<a name="API_AccountLimit"></a>
 
 A complex type that contains the type of limit that you specified in the request and the current value for that limit.
 

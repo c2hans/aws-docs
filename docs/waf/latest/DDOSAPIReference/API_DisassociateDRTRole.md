@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Disassoc
 ---
 
 # DisassociateDRTRole
-<a name="API_DisassociateDRTRole"></a>
 
 Removes the Shield Response Team's (SRT) access to your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_NewAso
 ---
 
 # NewAsoDetail
-<a name="API_NewAsoDetail"></a>
 
 Details new Autonomous System Organizations (ASOs) used either at the resource or account level.
 

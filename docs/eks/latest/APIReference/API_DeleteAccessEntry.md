@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteAccess
 ---
 
 # DeleteAccessEntry
-<a name="API_DeleteAccessEntry"></a>
 
 Deletes an access entry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/do
 ---
 
 # AWS Encryption SDK for .NET examples
-<a name="dot-net-examples"></a>
 
 The following examples show the basic coding patterns that you use when programming with the AWS Encryption SDK for .NET. Specifically, you instantiate the AWS Encryption SDK and the material providers library. Then, before calling each method, you instantiate an object that defines the input for the method. This is much like the coding pattern you use in the SDK for .NET.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/data-transformation.
 ---
 
 # Transform source data in Amazon Data Firehose
-<a name="data-transformation"></a>
 
 Amazon Data Firehose can invoke your Lambda function to transform incoming source data and deliver the transformed data to destinations. You can enable Amazon Data Firehose data transformation when you create your Firehose stream.
 

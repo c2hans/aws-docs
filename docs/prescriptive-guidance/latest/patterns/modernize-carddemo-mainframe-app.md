@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Modernize the CardDemo mainframe application by using AWS Transform
-<a name="modernize-carddemo-mainframe-app"></a>
 
 *Santosh Kumar Singh and Cheryl du Preez, Amazon Web Services*
 

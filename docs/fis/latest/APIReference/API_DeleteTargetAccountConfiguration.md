@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_DeleteTarget
 ---
 
 # DeleteTargetAccountConfiguration
-<a name="API_DeleteTargetAccountConfiguration"></a>
 
 Deletes the specified target account configuration of the experiment template.
 

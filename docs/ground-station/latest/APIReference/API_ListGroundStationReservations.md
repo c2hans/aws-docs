@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListGroundStationReservations
-<a name="API_ListGroundStationReservations"></a>
 
 Returns a list of reservations for a specified ground station.
 

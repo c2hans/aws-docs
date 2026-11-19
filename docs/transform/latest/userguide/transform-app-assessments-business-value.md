@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 ---
 
 # Business value assessments
-<a name="transform-app-assessments-business-value"></a>
 
 AWS Transform evaluates the broader business value of migration beyond infrastructure cost savings. The business value assessment quantifies benefits across the pillars of the AWS Cloud Value Framework, so you can present a business case that reflects the full value of moving to AWS, not just the change in run-rate cost.
 

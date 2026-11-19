@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialMapConfiguration
-<a name="API_GeospatialMapConfiguration"></a>
 
 The configuration of a `GeospatialMapVisual`.
 

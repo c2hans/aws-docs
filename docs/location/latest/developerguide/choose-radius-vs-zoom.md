@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/choose-ra
 ---
 
 # How to decide between radius and zoom for a static map
-<a name="choose-radius-vs-zoom"></a>
 
 In this topic, you will learn how to choose between using `radius` or `zoom` when generating static maps with Amazon Location Service. The `radius` parameter provides more precise control over the area of coverage, making it ideal for customer-facing applications where you know the exact coverage area. The `zoom` parameter is better suited for geospatial analysis when you want to adjust the level of detail displayed.
 

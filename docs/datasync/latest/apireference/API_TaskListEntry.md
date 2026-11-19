@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskLis
 ---
 
 # TaskListEntry
-<a name="API_TaskListEntry"></a>
 
 Represents a single entry in a list of tasks. `TaskListEntry` returns an array that contains a list of tasks when the [ListTasks](https://docs.aws.amazon.com/datasync/latest/userguide/API_ListTasks.html) operation is called. A task includes the source and destination file systems to sync and the options to use for the tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Delegati
 ---
 
 # DelegationSet
-<a name="API_DelegationSet"></a>
 
 A complex type that lists the name servers in a delegation set, as well as the `CallerReference` and the `ID` for the delegation set.
 

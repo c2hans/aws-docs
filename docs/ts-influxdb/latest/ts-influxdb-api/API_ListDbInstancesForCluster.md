@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_L
 ---
 
 # ListDbInstancesForCluster
-<a name="API_ListDbInstancesForCluster"></a>
 
 Returns a list of Timestream for InfluxDB clusters.
 

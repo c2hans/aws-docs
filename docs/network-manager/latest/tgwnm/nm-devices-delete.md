@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices-
 ---
 
 # Delete a device using AWS Network Manager
-<a name="nm-devices-delete"></a>
 
 Delete any device from your global network that's no longer needed or is no longer available.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/troublesho
 ---
 
 # Troubleshooting build issues on C\+\+ producer SDK for Raspberry Pi
-<a name="troubleshoot-rpi"></a>
 
 If you encounter a build issue and want to try different CMake arguments, make sure to perform a clean build. Delete the `open-source`, `dependency`, and `build` folders before you try again.
 

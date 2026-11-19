@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedAgUiDescriptorFields
-<a name="API_UpdatedAgUiDescriptorFields"></a>
 
 The set of AG-UI descriptor fields that can be individually updated.
 

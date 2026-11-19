@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Instanc
 ---
 
 # InstancesToExclude
-<a name="API_InstancesToExclude"></a>
 
 User-specified instances that must not be stopped. These instances will not appear in the list of instances that AWS recommends to stop in order to free up capacity.
 

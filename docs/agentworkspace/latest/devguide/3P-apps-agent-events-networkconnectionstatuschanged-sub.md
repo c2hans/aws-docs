@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Subscribe a callback function when the Connect Customer agent workspace agent's network connection status changes
-<a name="3P-apps-agent-events-networkconnectionstatuschanged-sub"></a>
 
 Subscribes a callback function to be invoked whenever the agent's network connection status changes in the Connect Customer agent workspace.
 

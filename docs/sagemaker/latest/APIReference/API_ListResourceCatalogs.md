@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListRe
 ---
 
 # ListResourceCatalogs
-<a name="API_ListResourceCatalogs"></a>
 
  Lists Amazon SageMaker Catalogs based on given filters and orders. The maximum number of `ResourceCatalog`s viewable is 1000.
 

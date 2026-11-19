@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Key principles
-<a name="key-principles"></a>
 
  Although pricing models vary across services, it’s worthwhile to review key principles and best practices that are broadly applicable.
 

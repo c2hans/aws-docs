@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/example_comprehend_
 ---
 
 # Run an Amazon Comprehend topic modeling job on sample data using an AWS SDK
-<a name="example_comprehend_Usage_TopicModeler_section"></a>
 
 The following code example shows how to:
 + Run an Amazon Comprehend topic modeling job on sample data.

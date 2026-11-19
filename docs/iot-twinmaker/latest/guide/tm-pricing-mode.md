@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-pricing-mo
 ---
 
 # Switch AWS IoT TwinMaker pricing modes
-<a name="tm-pricing-mode"></a>
 
 AWS IoT TwinMaker currently has three pricing modes, basic, standard or tiered bundle. Standard pricing mode is set as the default pricing mode.
 

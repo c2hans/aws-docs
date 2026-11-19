@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost06-
 ---
 
 # COST06-BP03 Select resource type, size, and number automatically based on metrics
-<a name="cost06-bp03"></a>
 
  Use metrics from the running workload to adjust resource type, size, and number as conditions shift. Drive these adjustments through a feedback loop, such as managed automatic scaling, automatic storage tiering, or custom code in the workload.
 

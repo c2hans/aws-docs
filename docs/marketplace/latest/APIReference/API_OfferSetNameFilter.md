@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetNameFilter
-<a name="API_OfferSetNameFilter"></a>
 
 Allows filtering on the `Name` of an offer set.
 

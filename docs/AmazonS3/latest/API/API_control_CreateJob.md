@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateJo
 ---
 
 # CreateJob
-<a name="API_control_CreateJob"></a>
 
 This operation creates an S3 Batch Operations job.
 

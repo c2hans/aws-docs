@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationConnection
-<a name="API_WaypointOptimizationConnection"></a>
 
 This contains information such as distance and duration from one waypoint to the next waypoint in the sequence.
 

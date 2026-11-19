@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # VectorEnrichmentJobConfig
-<a name="API_geospatial_VectorEnrichmentJobConfig"></a>
 
 It contains configs such as ReverseGeocodingConfig and MapMatchingConfig.
 

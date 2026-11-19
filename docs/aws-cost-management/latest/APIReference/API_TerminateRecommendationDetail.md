@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TerminateRecommendationDetail
-<a name="API_TerminateRecommendationDetail"></a>
 
 Details on termination recommendation.
 

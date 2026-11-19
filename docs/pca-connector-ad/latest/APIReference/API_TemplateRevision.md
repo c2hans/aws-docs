@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # TemplateRevision
-<a name="API_TemplateRevision"></a>
 
 The revision version of the template. Template updates will increment the minor revision. Re-enrolling all certificate holders will increment the major revision.
 

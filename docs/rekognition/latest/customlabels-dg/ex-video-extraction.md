@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/ex-vi
 ---
 
 # Detecting Custom Labels in videos
-<a name="ex-video-extraction"></a>
 
 The following example shows how you can use `DetectCustomLabels` with frames extracted from a video. The code has been tested with video files in *mov* and *mp4* format.
 

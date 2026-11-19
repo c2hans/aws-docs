@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Key differences
-<a name="query-differences"></a>
 
 The following table lists the key differences between Solr and OpenSearch search features.
 

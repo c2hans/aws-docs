@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListCloudAut
 ---
 
 # ListCloudAutonomousVmClusters
-<a name="API_ListCloudAutonomousVmClusters"></a>
 
 Lists all Autonomous VM clusters in a specified Cloud Exadata infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # OutputConfig
-<a name="API_OutputConfig"></a>
 
  The configuration that specifies where evaluation results should be written for monitoring and analysis.
 

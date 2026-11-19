@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-chat-h
 ---
 
 # Managing chat history
-<a name="sonic-chat-history"></a>
 
 Amazon Nova 2 Sonic responses include ASR (Automatic Speech Recognition) transcripts for both user and assistant voices. Storing chat history is a best practice—not only for logging purposes but also for resuming sessions when the connection is unexpectedly closed. This allows the client to send context back to Nova Sonic to continue the conversation seamlessly.
 

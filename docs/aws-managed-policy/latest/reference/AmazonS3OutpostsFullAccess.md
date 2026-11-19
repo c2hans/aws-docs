@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3OutpostsFullAccess
-<a name="AmazonS3OutpostsFullAccess"></a>
 
 **Description**: Provides full access to Amazon S3 on Outposts via the AWS Management Console.
 

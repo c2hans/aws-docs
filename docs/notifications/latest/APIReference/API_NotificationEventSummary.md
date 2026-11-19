@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_No
 ---
 
 # NotificationEventSummary
-<a name="API_NotificationEventSummary"></a>
 
 Describes a short summary and metadata for a `NotificationEvent`.
 

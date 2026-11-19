@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.htm
 ---
 
 # GetObjectAcl
-<a name="API_GetObjectAcl"></a>
 
 **Note**
 This operation is not supported for directory buckets.

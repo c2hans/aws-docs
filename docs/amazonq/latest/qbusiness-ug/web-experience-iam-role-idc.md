@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-experien
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # IAM role for an Amazon Q Business web experience using IAM Identity Center
-<a name="web-experience-iam-role-idc"></a>
 
 **Important**
 This page only applies to Amazon Q Business web experiences connected to IAM Identity Center-integrated Amazon Q Business applications.

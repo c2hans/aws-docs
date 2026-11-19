@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_S
 ---
 
 # SelfManagedKafkaAccessConfigurationVpc
-<a name="API_SelfManagedKafkaAccessConfigurationVpc"></a>
 
 This structure specifies the VPC subnets and security groups for the stream, and whether a public IP address is to be used.
 

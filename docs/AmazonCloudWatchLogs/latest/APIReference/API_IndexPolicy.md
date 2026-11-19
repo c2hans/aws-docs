@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # IndexPolicy
-<a name="API_IndexPolicy"></a>
 
 This structure contains information about one field index policy in this account.
 

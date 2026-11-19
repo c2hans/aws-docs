@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Interaction steps
-<a name="interaction-steps"></a>
 
  This section details how to configure AWS Network Firewall to interoperate with this solution, create example objects, and a rule that references these objects.
 +  Create an ANFW rule group to hold the resultant rules created by the solution.

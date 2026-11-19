@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Cost-informed agents
-<a name="gencost05"></a>
 
 | GENCOST05: How do you optimize agent workflows for cost? |
 | --- |

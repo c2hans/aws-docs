@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-syn
 ---
 
 # Remove users and groups from your sync scope
-<a name="manage-sync-remove-users-groups-configurable-ADsync"></a>
 
 For more information about what happens when you remove users and groups from your sync scope, see [How configurable AD sync works](how-it-works-configurable-ADsync.md).
 

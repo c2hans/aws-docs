@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_AutoSc
 ---
 
 # AutoScalingGroupProvider
-<a name="API_AutoScalingGroupProvider"></a>
 
 The details of the Auto Scaling group for the capacity provider.
 

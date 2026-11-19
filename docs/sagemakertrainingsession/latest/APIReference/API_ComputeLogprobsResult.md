@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ComputeLogprobsResult
-<a name="API_ComputeLogprobsResult"></a>
 
 The result of a compute-logprobs operation.
 

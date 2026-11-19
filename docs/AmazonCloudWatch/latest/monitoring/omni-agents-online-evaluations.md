@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Online evaluations
-<a name="omni-agents-online-evaluations"></a>
 
 On-demand evaluation scores a trace when you ask. An **online evaluation** scores your traffic continuously: you choose the agents to watch, the evaluators to run, and how much traffic to sample, and CloudWatch Omni evaluates matching traces as they arrive. Quality regressions surface in your evaluation trends without anyone running a check. Online evaluation is the continuous-monitoring stage of the evaluation workflow described in [Evaluate agent quality](omni-agents-evaluate.md).
 

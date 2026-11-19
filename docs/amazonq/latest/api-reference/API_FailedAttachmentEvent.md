@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_FailedA
 ---
 
 # FailedAttachmentEvent
-<a name="API_FailedAttachmentEvent"></a>
 
 A failed file upload during web experience chat.
 

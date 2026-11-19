@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-monitoring.htm
 ---
 
 # Monitor MediaTailor CDN operations and performance
-<a name="cdn-monitoring"></a>
 
 Effective monitoring of your AWS Elemental MediaTailor and content delivery network (CDN) integration ensures reliable content delivery, optimal performance, and quick issue detection. This monitoring approach applies to all MediaTailor implementations including server-side ad insertion (SSAI), channel assembly, and combined workflows.
 

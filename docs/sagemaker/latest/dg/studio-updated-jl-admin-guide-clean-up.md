@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-ad
 ---
 
 # Delete unused resources
-<a name="studio-updated-jl-admin-guide-clean-up"></a>
 
 To avoid incurring additional costs running JupyterLab, we recommend deleting unused resources in the following order:
 

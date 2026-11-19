@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_IssueA
 ---
 
 # IssueArtifactItem
-<a name="API_IssueArtifactItem"></a>
 
 A summary of an artifact returned in list responses.
 

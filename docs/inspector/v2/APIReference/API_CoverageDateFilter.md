@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CoverageDa
 ---
 
 # CoverageDateFilter
-<a name="API_CoverageDateFilter"></a>
 
 Contains details of a coverage date filter.
 

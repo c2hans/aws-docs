@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Firewall behavior with a Classic Network Firewall policy
-<a name="firewall-behavior-classic"></a>
 
 When a firewall uses a Classic Network Firewall policy, it inspects traffic with a stateless rules engine and a stateful rules engine. For new firewalls, we recommend a Next Generation policy instead; see [Firewall behavior with a Next Generation policy](firewall-behavior-v2.md).
 

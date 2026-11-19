@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_JSONMappi
 ---
 
 # JSONMappingParameters
-<a name="API_JSONMappingParameters"></a>
 
 For a SQL-based Kinesis Data Analytics application, provides additional mapping information when JSON is the record format on the streaming source.
 

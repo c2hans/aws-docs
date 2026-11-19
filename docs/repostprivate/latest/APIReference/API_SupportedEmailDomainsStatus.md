@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/repostprivate/latest/APIReference/API_Su
 ---
 
 # SupportedEmailDomainsStatus
-<a name="API_SupportedEmailDomainsStatus"></a>
 
 ## Contents
 <a name="API_SupportedEmailDomainsStatus_Contents"></a>

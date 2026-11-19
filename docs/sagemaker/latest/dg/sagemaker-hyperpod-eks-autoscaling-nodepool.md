@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Create a NodePool
-<a name="sagemaker-hyperpod-eks-autoscaling-nodepool"></a>
 
 The `NodePool` sets constraints on the nodes that can be created by Karpenter and the pods that can run on those nodes. The `NodePool` can be configured to do things like:
 + Limit node creation to certain zones, instance types, and computer architectures.

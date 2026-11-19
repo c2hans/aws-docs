@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-refre
 ---
 
 # Instance refresh example events and patterns
-<a name="instance-refresh-eventbridge-events"></a>
 
 Using Amazon EventBridge, you can create *rules* that match incoming *events* and route them to *targets* for processing.
 

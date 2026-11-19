@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # RejectResourceGroupingRecommendations
-<a name="API_RejectResourceGroupingRecommendations"></a>
 
 Rejects resource grouping recommendations.
 

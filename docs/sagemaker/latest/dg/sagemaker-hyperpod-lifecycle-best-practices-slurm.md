@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-l
 ---
 
 # Customizing SageMaker HyperPod clusters using lifecycle scripts
-<a name="sagemaker-hyperpod-lifecycle-best-practices-slurm"></a>
 
 SageMaker HyperPod offers always up-and-running compute clusters, which are highly customizable as you can write lifecycle scripts to tell SageMaker HyperPod how to set up the cluster resources. The following topics are best practices for preparing lifecycle scripts to set up SageMaker HyperPod clusters with open source workload manager tools.
 

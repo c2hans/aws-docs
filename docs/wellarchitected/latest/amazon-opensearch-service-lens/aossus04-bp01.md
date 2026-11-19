@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSUS04-BP01 Consolidate OpenSearch Service domain environments
-<a name="aossus04-bp01"></a>
 
  Reduce costs, improve resource utilization, and enhance data protection by consolidating development and test workloads into fewer OpenSearch Service domains with implemented security features.
 

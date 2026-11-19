@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev-sq
 ---
 
 # Deleting a CEV for RDS Custom for SQL Server
-<a name="custom-cev-sqlserver-deleting"></a>
 
 You can delete a CEV using the AWS Management Console or the AWS CLI. Typically, this task takes a few minutes.
 

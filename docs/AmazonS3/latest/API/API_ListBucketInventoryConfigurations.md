@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketInvent
 ---
 
 # ListBucketInventoryConfigurations
-<a name="API_ListBucketInventoryConfigurations"></a>
 
 Returns a list of S3 Inventory configurations for the bucket. You can have up to 1,000 inventory configurations per bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MySqlDataPro
 ---
 
 # MySqlDataProviderSettings
-<a name="API_MySqlDataProviderSettings"></a>
 
 Provides information that defines a MySQL data provider.
 

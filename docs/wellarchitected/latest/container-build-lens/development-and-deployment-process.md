@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Development and deployment process
-<a name="development-and-deployment-process"></a>
 
  Look for opportunities to reduce your sustainability impact by making changes to your development, test, and deployment practices.
 

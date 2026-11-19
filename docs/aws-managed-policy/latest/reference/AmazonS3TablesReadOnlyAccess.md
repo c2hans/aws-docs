@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3TablesReadOnlyAccess
-<a name="AmazonS3TablesReadOnlyAccess"></a>
 
 **Description**: Provides read only access to all S3 table buckets.
 

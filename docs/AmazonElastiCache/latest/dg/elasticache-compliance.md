@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/elasticache-
 ---
 
 # Compliance validation for Amazon ElastiCache
-<a name="elasticache-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS services as part of multiple AWS compliance programs, such as SOC, PCI, FedRAMP, and HIPAA.
 

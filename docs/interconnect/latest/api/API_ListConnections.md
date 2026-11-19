@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_ListConnecti
 ---
 
 # ListConnections
-<a name="API_ListConnections"></a>
 
 Lists all connection objects to which the caller has access.
 

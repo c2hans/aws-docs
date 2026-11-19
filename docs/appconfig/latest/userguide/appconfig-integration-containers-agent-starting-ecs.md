@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-int
 ---
 
 # Starting the AWS AppConfig agent for Amazon ECS integration
-<a name="appconfig-integration-containers-agent-starting-ecs"></a>
 
 The AWS AppConfig Agent sidecar container is automatically available in your Amazon ECS environment. To use it, you must start it, as described in the following procedure.
 

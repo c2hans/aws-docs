@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/integr
 ---
 
 # AWS services that you can use with Application Auto Scaling
-<a name="integrated-services-list"></a>
 
 Application Auto Scaling integrates with other AWS services so that you can add scaling capabilities to meet your application's demand. Auto scaling is an optional feature of the service that is disabled by default in almost all cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_PutApp
 ---
 
 # PutAppInstanceUserExpirationSettings
-<a name="API_PutAppInstanceUserExpirationSettings"></a>
 
 Sets the number of days before the `AppInstanceUser` is automatically deleted.
 

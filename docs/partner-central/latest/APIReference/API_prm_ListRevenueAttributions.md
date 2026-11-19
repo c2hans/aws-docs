@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListRevenueAttributions
-<a name="API_prm_ListRevenueAttributions"></a>
 
 Returns a paginated list of revenue attributions with optional filters.
 

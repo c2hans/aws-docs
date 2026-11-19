@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSavingsPlansFullAccess
-<a name="AWSSavingsPlansFullAccess"></a>
 
 **Description**: Provides full access to Savings Plans service
 

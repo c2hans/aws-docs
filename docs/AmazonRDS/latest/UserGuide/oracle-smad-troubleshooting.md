@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-smad-t
 ---
 
 # Troubleshooting self-managed Active Directory for Amazon RDS for Oracle
-<a name="oracle-smad-troubleshooting"></a>
 
 Use the following information to resolve common problems with self-managed Active Directory (AD) for Amazon RDS for Oracle. To see the events that Amazon RDS emits for your DB instance, run [describe-events](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-events.html) or open the **Logs & events** tab of the DB instance in the console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Enable Digital Messaging Channels in Amazon Connect Customer
-<a name="enable-digital-messaging-amazon-connect"></a>
 
 Publication date: **November 23, 2021 ([Diagram history](diagram-history.md))**
 

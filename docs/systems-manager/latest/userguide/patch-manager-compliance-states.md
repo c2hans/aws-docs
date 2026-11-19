@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Patch compliance state values
-<a name="patch-manager-compliance-states"></a>
 
 The information about patches for a managed node include a report of the state, or status, of each individual patch.
 

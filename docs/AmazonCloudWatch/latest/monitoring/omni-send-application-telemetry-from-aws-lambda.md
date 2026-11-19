@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Send application telemetry from AWS Lambda
-<a name="omni-send-application-telemetry-from-aws-lambda"></a>
 
 Lambda functions send traces and logs to CloudWatch without a collector. Turn on active tracing so Lambda records the service segments, add a trace SDK for spans around your handler logic, and emit structured logs that join their traces.
 

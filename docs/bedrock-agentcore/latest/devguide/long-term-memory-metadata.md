@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-t
 ---
 
 # Structured metadata for long-term memories
-<a name="long-term-memory-metadata"></a>
 
 Metadata filtering in Amazon Bedrock AgentCore Memory lets you add structured attributes to your long-term memory records. You can use those attributes to narrow which records are returned during retrieval. Namespaces already isolate memories by primary entity (user, tenant, patient, client). However, within a single namespace, a broad semantic search returns everything that’s close in meaning. With metadata filtering, you can retrieve only results that match specific attribute values. For example, you can retrieve only high-priority records, only records from a particular department, or only records created within a given time range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseBlueprints
-<a name="API_GetRelationalDatabaseBlueprints"></a>
 
 Returns a list of available database blueprints in Amazon Lightsail. A blueprint describes the major engine version of a database.
 

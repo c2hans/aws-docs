@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # OpenAI GPT-5.4
-<a name="model-evaluation-type-kb-prompt-gpt-5-4"></a>
 
 Prompts used with OpenAI GPT-5.4.
 

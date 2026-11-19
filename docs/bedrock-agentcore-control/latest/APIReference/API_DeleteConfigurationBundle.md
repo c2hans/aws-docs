@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteConfigurationBundle
-<a name="API_DeleteConfigurationBundle"></a>
 
 Deletes a configuration bundle and all of its versions.
 

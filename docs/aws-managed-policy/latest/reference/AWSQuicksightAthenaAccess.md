@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuicksightAthenaAccess
-<a name="AWSQuicksightAthenaAccess"></a>
 
 **Description**: Quicksight access to Athena API and S3 buckets used for Athena query results
 

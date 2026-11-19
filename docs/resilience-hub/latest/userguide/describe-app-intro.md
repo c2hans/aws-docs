@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/describe
 ---
 
 # Get started by adding an application
-<a name="describe-app-intro"></a>
 
 Get started with AWS Resilience Hub by describing the details of your AWS application and running a report to assess resiliency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryTimeline
-<a name="API_CanaryTimeline"></a>
 
 This structure contains information about when the canary was created and modified.
 

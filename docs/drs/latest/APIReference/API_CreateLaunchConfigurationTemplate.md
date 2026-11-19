@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateLaunch
 ---
 
 # CreateLaunchConfigurationTemplate
-<a name="API_CreateLaunchConfigurationTemplate"></a>
 
 Creates a new Launch Configuration Template.
 

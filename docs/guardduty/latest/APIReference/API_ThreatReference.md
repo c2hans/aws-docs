@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Threat
 ---
 
 # ThreatReference
-<a name="API_ThreatReference"></a>
 
 Contains a reference to a MITRE ATT&CK tactic or technique.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-trai
 ---
 
 # Creating a trained model in AWS Clean Rooms ML
-<a name="create-trained-model"></a>
 
 Prerequisites:
 + An AWS account with access to AWS Clean Rooms

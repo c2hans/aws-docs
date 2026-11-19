@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # EXPONENT
-<a name="recipe-actions.functions.EXPONENT"></a>
 
 Returns Euler’s number raised to the *n*th degree in a new column.
 

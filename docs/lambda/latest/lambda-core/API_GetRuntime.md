@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_GetRuntime
 ---
 
 # GetRuntime
-<a name="API_GetRuntime"></a>
 
 Retrieves the configuration and metadata of a runtime.
 

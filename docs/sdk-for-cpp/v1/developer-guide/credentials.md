@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/credentia
 ---
 
 # Authenticating with AWS using AWS SDK for C\+\+
-<a name="credentials"></a>
 
 You must establish how your code authenticates with AWS when developing with AWS services. You can configure programmatic access to AWS resources in different ways depending on the environment and the AWS access available to you. For choices on all primary methods of authentication, and guidance on configuring it for the SDK, see [Authentication and access](https://docs.aws.amazon.com/sdkref/latest/guide/access.html) in the *AWS SDKs and Tools Reference Guide*.
 

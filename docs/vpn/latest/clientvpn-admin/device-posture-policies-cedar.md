@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # How Client VPN uses Cedar
-<a name="device-posture-policies-cedar"></a>
 
 A Client VPN authorization policy is made up of one or more Cedar `permit` and `forbid` statements. A connection is allowed only if it satisfies at least one `permit` statement and is not matched by any `forbid` statement. A `forbid` statement always takes precedence.
 

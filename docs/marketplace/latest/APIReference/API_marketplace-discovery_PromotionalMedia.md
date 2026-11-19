@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PromotionalMedia
-<a name="API_marketplace-discovery_PromotionalMedia"></a>
 
 Embedded promotional media for a product, such as images or videos. Each element contains exactly one media type.
 

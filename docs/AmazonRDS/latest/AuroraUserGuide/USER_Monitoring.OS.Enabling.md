@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Mo
 ---
 
 # Setting up and enabling Enhanced Monitoring
-<a name="USER_Monitoring.OS.Enabling"></a>
 
 To use Enhanced Monitoring, you must create an IAM role, and then enable Enhanced Monitoring.
 

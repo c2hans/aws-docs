@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/currentDate.h
 ---
 
 # $currentDate
-<a name="currentDate"></a>
 
 The `$currentDate` operator is used to set the value of a field to the current date and time. This operator is useful for automatically updating a field with the current timestamp when a document is inserted or updated.
 

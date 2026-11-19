@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCr
 ---
 
 # ListCrossAccountAttachments
-<a name="API_ListCrossAccountAttachments"></a>
 
 List the cross-account attachments that have been created in AWS Global Accelerator.
 

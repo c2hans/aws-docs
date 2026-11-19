@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Calibrate and test
-<a name="custom-car-testing"></a>
 
 Before deploying a model, calibrate the vehicle’s steering and throttle through the AWS DeepRacer console.
 

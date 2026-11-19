@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ReportD
 ---
 
 # ReportDestinationS3
-<a name="API_ReportDestinationS3"></a>
 
 Specifies the Amazon S3 bucket where DataSync uploads your [task report](https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html).
 

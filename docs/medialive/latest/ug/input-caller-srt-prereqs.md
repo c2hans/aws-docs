@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-caller-srt-pre
 ---
 
 # Get ready
-<a name="input-caller-srt-prereqs"></a>
 
 1. Obtain the following information from the operator of the upstream system:
    + The IP address and port of the content, including the stream if the upstream system uses that. For example, **192.0.2.120:7001** with stream **mycontent**.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-gpp-ou
 ---
 
 # Supported source captions and output captions in a GPP output container
-<a name="captions-gpp-output-container"></a>
 
 To read this table, find the type of container and captions from your input. The supported captions formats for this *output *container are then shown in the last column.
 

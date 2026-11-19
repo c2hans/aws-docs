@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-replicas-
 ---
 
 # Modifying the RDS for Db2 replica mode
-<a name="db2-replicas-changing-replica-mode"></a>
 
 You can change the replica mode of an existing Db2 replica between read-only and standby modes. This flexibility allows you to adapt your replica configuration based on changing requirements for read workloads or disaster recovery needs.
 

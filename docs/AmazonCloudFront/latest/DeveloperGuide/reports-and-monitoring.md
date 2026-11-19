@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/r
 ---
 
 # Reports, metrics, and logs
-<a name="reports-and-monitoring"></a>
 
 CloudFront provides several options for reporting, monitoring, and logging your CloudFront resources. You can complete the following tasks:
 + View and download reports to see usage and activity for your CloudFront distributions, including billing reports, cache statistics, popular content, and top referrers.

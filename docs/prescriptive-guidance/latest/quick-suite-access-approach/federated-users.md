@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Granting Quick access to federated users
-<a name="federated-users"></a>
 
 When you use federated identities, you can manage users with an external identity provider (IdP) to authenticate users when they sign in to AWS Quick. Quick supports identity federation with SAML 2.0. Many external IdPs, such as Okta and Ping, use this standard. You can also use AWS IAM Identity Center as your external IdP for a SAML 2.0 federation approach to Quick access. However, we recommend the built-in service integration discussed in [IAM Identity Center integration](iam-identity-center-integration.md) in this guide instead of the federated user approach. If you use IAM Identity Center, the federated user approach is only recommended if you cannot use IAM Identity Center integration due to current feature limitations.
 

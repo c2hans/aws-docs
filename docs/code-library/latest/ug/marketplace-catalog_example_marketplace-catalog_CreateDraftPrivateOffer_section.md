@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a draft private offer for an AMI or SaaS product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_CreateDraftPrivateOffer_section"></a>
 
 The following code examples show how to create a draft private offer for an AMI or SaaS product so you can review it internally before publishing to buyers.
 

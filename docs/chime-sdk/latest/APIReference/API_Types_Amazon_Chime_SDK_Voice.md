@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Types_
 ---
 
 # Amazon Chime SDK Voice
-<a name="API_Types_Amazon_Chime_SDK_Voice"></a>
 
 The following data types are supported by Amazon Chime SDK Voice:
 +  [Address](API_voice-chime_Address.md)

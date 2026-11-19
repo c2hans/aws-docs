@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Configure data source authentication for SiteWise Edge
-<a name="configure-source-authentication-ggv2"></a>
 
 If your OPC UA server requires authentication credentials to connect, you can use AWS Secrets Manager to create and deploy a secret to your SiteWise Edge gateway. AWS Secrets Manager encrypts secrets on the device to keep your user name and password secure until you need to use them. For more information about the AWS IoT Greengrass secret manager component, see [Secret manager](https://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 

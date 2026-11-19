@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadC
 ---
 
 # ReadClientCredentialsGrantMetadata
-<a name="API_ReadClientCredentialsGrantMetadata"></a>
 
 Read-only metadata for OAuth2 client credentials grant authentication configuration.
 

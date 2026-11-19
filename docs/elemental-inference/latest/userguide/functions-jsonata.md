@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # JSONata reference for functions
-<a name="functions-jsonata"></a>
 
 This section is a reference for the syntax, operators, and built-in functions you can use in a function's request and response expressions. For information about what to put in each expression, see [Writing function expressions](functions-expressions.md).
 

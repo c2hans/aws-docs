@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetResourceSnapshot
-<a name="API_GetResourceSnapshot"></a>
 
 Use this action to retrieve a specific snapshot record.
 

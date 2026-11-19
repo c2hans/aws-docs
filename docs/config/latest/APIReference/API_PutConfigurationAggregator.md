@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfig
 ---
 
 # PutConfigurationAggregator
-<a name="API_PutConfigurationAggregator"></a>
 
 Creates and updates the configuration aggregator with the selected source accounts and regions. The source account can be individual account(s) or an organization.
 

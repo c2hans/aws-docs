@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CopySnapshot
-<a name="API_CopySnapshot"></a>
 
 Makes a copy of an existing snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Hi
 ---
 
 # HierarchicalChunkingLevelConfiguration
-<a name="API_agent_HierarchicalChunkingLevelConfiguration"></a>
 
 Token settings for a layer in a hierarchical chunking configuration.
 

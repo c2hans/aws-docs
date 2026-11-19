@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-get-c
 ---
 
 # get-connection
-<a name="oct-get-connection"></a>
 
 The **get-connection** command returns the status of the service link connection between the Outposts server and the Outpost service in the AWS Region for the Outposts server.
 

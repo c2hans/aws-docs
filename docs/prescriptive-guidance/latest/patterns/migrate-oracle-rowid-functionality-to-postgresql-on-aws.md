@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle ROWID functionality to PostgreSQL on AWS
-<a name="migrate-oracle-rowid-functionality-to-postgresql-on-aws"></a>
 
 *Rakesh Raghav and Ramesh Pathuri, Amazon Web Services*
 

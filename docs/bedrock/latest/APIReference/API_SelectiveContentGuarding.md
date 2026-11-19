@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Selectiv
 ---
 
 # SelectiveContentGuarding
-<a name="API_SelectiveContentGuarding"></a>
 
 Selective content guarding controls for enforced guardrails.
 

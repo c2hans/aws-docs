@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeFilter
 ---
 
 # DescribeFilter
-<a name="API_DescribeFilter"></a>
 
 Describes a filter's properties.
 

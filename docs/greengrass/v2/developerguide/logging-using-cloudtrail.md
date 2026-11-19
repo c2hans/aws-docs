@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/logging-usi
 ---
 
 # Log AWS IoT Greengrass V2 API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS IoT Greengrass V2 is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in AWS IoT Greengrass Version 2. CloudTrail captures all API calls for AWS IoT Greengrass as events. The calls that are captured include calls from the AWS IoT Greengrass console and code calls to the AWS IoT Greengrass API operations.
 

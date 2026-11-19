@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Handling sequences in active-active replication
-<a name="Appendix.PostgreSQL.CommonDBATasks.pgactive.handle-sequences"></a>
 
 An RDS for PostgreSQL DB instance with the `pgactive` extension uses two different sequence mechanisms to generate unique values.
 

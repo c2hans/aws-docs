@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/2120-sdp-audio.
 ---
 
 # Format of an SDP file for audio
-<a name="2120-sdp-audio"></a>
 
 ```
 v=0

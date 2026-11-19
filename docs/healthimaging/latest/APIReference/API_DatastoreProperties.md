@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Da
 ---
 
 # DatastoreProperties
-<a name="API_DatastoreProperties"></a>
 
 The properties associated with the data store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/starting-router-i
 ---
 
 # Starting a router I/O in MediaConnect
-<a name="starting-router-io"></a>
 
 Before you can deliver content through the router, you must first start the router I/O that you want to use. This action changes the router input or output status to `Active`.
 

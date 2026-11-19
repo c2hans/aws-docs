@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-erro
 ---
 
 # Error mitigation techniques
-<a name="braket-error-mitigation"></a>
 
 Quantum error mitigation is a set of techniques aimed at reducing the effects of errors in quantum computers.
 

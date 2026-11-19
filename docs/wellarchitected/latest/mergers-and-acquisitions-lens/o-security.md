@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Security
-<a name="o-security"></a>
 
  In mergers and acquisitions, the security pillar focuses on the security capabilities that are required to protect the application, identities, and data as they move between systems during integration. It is important to assess the security posture of the target organization and identify any gaps or vulnerabilities that may exist. This includes a review of the network infrastructure, applications, privileged access, monitoring, protection of data, security policies and procedures. There are several important security considerations during a mergers and acquisitions integration:
 

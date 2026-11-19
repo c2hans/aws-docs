@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_List
 ---
 
 # ListSubscriptions
-<a name="API_iotdata_ListSubscriptions"></a>
 
 Returns a list of all subscriptions for MQTT clients with active sessions, including offline clients with persistent sessions.
 

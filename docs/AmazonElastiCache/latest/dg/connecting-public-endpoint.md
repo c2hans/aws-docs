@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/connecting-p
 ---
 
 # Connect to a cache with a public endpoint
-<a name="connecting-public-endpoint"></a>
 
 All public endpoint connections require IAM authentication and TLS 1.3. There are three ways to generate the IAM authentication token:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-work
 ---
 
 # Troubleshoot issues for WorkSpaces Personal
-<a name="amazon-workspaces-troubleshooting"></a>
 
 The following information can help you troubleshoot issues with your WorkSpaces.
 

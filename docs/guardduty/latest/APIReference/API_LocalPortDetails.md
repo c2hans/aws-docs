@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_LocalP
 ---
 
 # LocalPortDetails
-<a name="API_LocalPortDetails"></a>
 
 Contains information about the port for the local connection.
 

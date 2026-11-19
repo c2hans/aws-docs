@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5161-release
 ---
 
 # Amazon EMR release 5.16.1
-<a name="emr-5161-release"></a>
 
 ## 5.16.1 application versions
 <a name="emr-5161-app-versions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_NlpCo
 ---
 
 # NlpConfiguration
-<a name="API_NlpConfiguration"></a>
 
 The natural language processing (NLP) configuration for a data store.
 

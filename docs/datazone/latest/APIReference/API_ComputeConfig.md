@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Compute
 ---
 
 # ComputeConfig
-<a name="API_ComputeConfig"></a>
 
 The compute configuration for a notebook run in Amazon SageMaker Unified Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS KMS documentation
 <a name="resources-docs"></a>

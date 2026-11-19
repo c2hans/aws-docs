@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUserPe
 ---
 
 # DeleteUserPermissionsBoundary
-<a name="API_DeleteUserPermissionsBoundary"></a>
 
 Deletes the permissions boundary for the specified IAM user.
 

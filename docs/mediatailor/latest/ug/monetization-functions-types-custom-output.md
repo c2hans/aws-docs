@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Custom output
-<a name="monetization-functions-types-custom-output"></a>
 
 ## When to use
 <a name="monetization-functions-types-custom-output-when"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd03-b
 ---
 
 # FND03-BP03 Establish centralized event monitoring and response
-<a name="fnd03-bp03"></a>
 
  AWS Health is the authoritative source of information about service events, scheduled changes, and account-specific notifications that affect your AWS resources. In a multi-account environment, these events arrive per account by default, so no single team has organization-wide visibility. This best practice covers aggregating AWS Health events across your organization into a central view, routing them through automation, and responding to them consistently.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/use-lambda-actions.
 ---
 
 # Use the AWS FIS aws:lambda:function actions
-<a name="use-lambda-actions"></a>
 
 You can use the **aws:lambda:function** actions to inject faults into invocations of your AWS Lambda functions.
 

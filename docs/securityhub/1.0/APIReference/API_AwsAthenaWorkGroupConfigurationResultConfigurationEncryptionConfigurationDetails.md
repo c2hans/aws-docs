@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAthe
 ---
 
 # AwsAthenaWorkGroupConfigurationResultConfigurationEncryptionConfigurationDetails
-<a name="API_AwsAthenaWorkGroupConfigurationResultConfigurationEncryptionConfigurationDetails"></a>
 
  Specifies the method used to encrypt the user’s data stores in the Athena workgroup.
 

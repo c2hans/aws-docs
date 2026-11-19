@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-trusted-i
 ---
 
 # Using Identity based federation with Delta Lake tables
-<a name="emr-trusted-identity-auth-delta-lake"></a>
 
 ## Overview
 <a name="identity-federation-delta-tables"></a>

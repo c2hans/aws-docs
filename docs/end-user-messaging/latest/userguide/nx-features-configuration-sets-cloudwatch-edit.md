@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Edit an Amazon CloudWatch event destination in AWS End User Messaging
-<a name="nx-features-configuration-sets-cloudwatch-edit"></a>
 
 Use the AWS End User Messaging console or AWS CLI to edit a CloudWatch event destination.
 

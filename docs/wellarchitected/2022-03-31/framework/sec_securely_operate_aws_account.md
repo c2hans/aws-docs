@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC01-BP02 Secure AWS account
-<a name="sec_securely_operate_aws_account"></a>
 
 There are a number of aspects to securing your AWS accounts, including the securing of, and not using the [root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), and keeping your contact information up-to-date. You can use [AWS Organizations](https://aws.amazon.com/organizations/) to centrally manage and govern your accounts as you grow and scale your workloads in AWS. AWS Organizations helps you manage accounts, set controls, and configure services across your accounts.
 

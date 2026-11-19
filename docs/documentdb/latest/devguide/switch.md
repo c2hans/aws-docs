@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/switch.html
 ---
 
 # $switch
-<a name="switch"></a>
 
 New from version 4.0.
 

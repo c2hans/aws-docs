@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Overview
-<a name="overview"></a>
 
 This is the conceptual process of migrating Oracle databases to AWS using Oracle XTTS and RMAN incremental backups with AWS Snowball, Direct Connect, and FSx for Lustre.
 

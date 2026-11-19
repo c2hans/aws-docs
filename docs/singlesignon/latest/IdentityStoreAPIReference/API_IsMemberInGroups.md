@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # IsMemberInGroups
-<a name="API_IsMemberInGroups"></a>
 
 Checks the user's membership in all requested groups and returns if the member exists in all queried groups.
 

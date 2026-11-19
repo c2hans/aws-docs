@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # Requesting dedicated long codes
-<a name="phone-numbers-request-long-code"></a>
 
 A long code (also referred to as a long virtual number, or LVN) is a standard phone number that contains up to 12 digits, depending on the country that it's based in. Long codes are typically meant for low-volume, person-to-person communication. In some countries, you can use long codes for sending test messages, or for sending low volumes of messages to your customers. In other countries, including the United States, senders are prohibited from using long codes to send Application-to-Person (A2P) messages, which includes the messages that you send from AWS End User Messaging SMS.
 

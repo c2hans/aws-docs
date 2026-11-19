@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetLoggingCo
 ---
 
 # GetLoggingConfiguration
-<a name="API_GetLoggingConfiguration"></a>
 
 Returns the [LoggingConfiguration](API_LoggingConfiguration.md) for the specified web ACL.
 

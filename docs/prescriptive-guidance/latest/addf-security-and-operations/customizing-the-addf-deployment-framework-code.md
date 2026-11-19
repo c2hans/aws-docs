@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Customizing the ADDF deployment framework code
-<a name="customizing-the-addf-deployment-framework-code"></a>
 
 The ADDF deployment framework and its orchestration and deployment logic can be fully customized to meet any requirements. However, we suggest you either refrain from customizing or minimize your changes for the following reasons:
 + **Keep upstream compatibility** – Upstream compatibility makes it easier to update ADDF for the latest features and security updates. Changing the framework breaks native backwards compatibility with SeedFarmer, CodeSeeder, and any ADDF core modules.

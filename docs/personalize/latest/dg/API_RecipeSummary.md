@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RecipeSummary.
 ---
 
 # RecipeSummary
-<a name="API_RecipeSummary"></a>
 
 Provides a summary of the properties of a recipe. For a complete listing, call the [DescribeRecipe](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecipe.html) API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-s
 ---
 
 # Delete a trigger from a CodeDeploy deployment group
-<a name="monitoring-sns-event-notifications-delete-trigger"></a>
 
 Because there is a limit of 10 triggers per deployment group, you might want to delete triggers if they are no longer being used. You cannot undo the deletion of a trigger, but you can re-create one.
 

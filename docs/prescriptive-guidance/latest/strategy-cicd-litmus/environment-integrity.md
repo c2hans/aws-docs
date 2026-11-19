@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Environment integrity
-<a name="environment-integrity"></a>
 
 As many developers know, one change in code can sometimes create a [butterfly effect](https://www.americanscientist.org/article/understanding-the-butterfly-effect) (American Scientist article), where a small deviation that is seemingly unrelated sets off a chain reaction that causes unexpected results. Developers must then fully investigate to discover the root cause.
 

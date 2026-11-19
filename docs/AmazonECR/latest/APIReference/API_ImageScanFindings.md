@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageS
 ---
 
 # ImageScanFindings
-<a name="API_ImageScanFindings"></a>
 
 The details of an image scan.
 

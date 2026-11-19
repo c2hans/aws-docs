@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-
 ---
 
 # CodePipeline pipeline structure reference
-<a name="reference-pipeline-structure"></a>
 
 You can use CodePipeline to structure a CI/CD pipeline of automated steps that accomplish tasks that build, test, and deploy your application source code. This reference section provides details about the JSON structure and parameters in your pipeline. For a high-level list of concepts that describe how pipelines are used, see [CodePipeline concepts](concepts.md).
 

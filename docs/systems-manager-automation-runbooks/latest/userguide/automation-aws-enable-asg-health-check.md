@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableAutoScalingGroupELBHealthCheck`
-<a name="automation-aws-enable-asg-health-check"></a>
 
 **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_PlatformApplication.h
 ---
 
 # PlatformApplication
-<a name="API_PlatformApplication"></a>
 
 Platform application object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # DeleteHumanLoop
-<a name="API_DeleteHumanLoop"></a>
 
 Deletes the specified human loop for a flow definition.
 

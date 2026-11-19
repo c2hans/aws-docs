@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PutAlarm
-<a name="API_PutAlarm"></a>
 
 Creates or updates an alarm, and associates it with the specified metric.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Sy
 ---
 
 # SyntheticDataColumnProperties
-<a name="API_SyntheticDataColumnProperties"></a>
 
 Properties that define how a specific data column should be handled during synthetic data generation, including its name, type, and role in predictive modeling.
 

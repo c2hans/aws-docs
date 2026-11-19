@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_EC2M
 ---
 
 # EC2ManagedInstance
-<a name="API_EC2ManagedInstance"></a>
 
 Represents an EC2 instance managed by WorkSpaces.
 

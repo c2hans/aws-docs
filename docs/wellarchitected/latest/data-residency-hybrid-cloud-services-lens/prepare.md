@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Prepare
-<a name="prepare"></a>
 
 | DRHCOPS04 Which operational considerations do you make when designing your data residency workloads for operations in hybrid edge? |
 | --- |

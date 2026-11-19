@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-multiplex.ht
 ---
 
 # Using MediaLive multiplex to create an MPTS
-<a name="feature-multiplex"></a>
 
 You can set up a MediaLive multiplex to create a multi-program transport stream (MPTS). You might be interested in MediaLive multiplex if you are a service provider who has experience in distributing transport stream (TS) content over RTP or UDP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Security Incident Response
-<a name="awssecurityincidentresponse"></a>
 
 AWS Security Incident Response provides the following APIs for data retrieval.
 

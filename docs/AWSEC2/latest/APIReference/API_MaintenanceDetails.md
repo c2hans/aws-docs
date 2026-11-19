@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Maintenan
 ---
 
 # MaintenanceDetails
-<a name="API_MaintenanceDetails"></a>
 
 Details for Site-to-Site VPN tunnel endpoint maintenance events.
 

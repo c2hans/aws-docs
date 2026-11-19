@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-encryp
 ---
 
 # Data encryption in Amazon Q Developer
-<a name="data-encryption"></a>
 
 This topic provides information specific to Amazon Q Developer about encryption in transit and encryption at rest.
 

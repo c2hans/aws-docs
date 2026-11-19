@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DataBindingValueFilter
-<a name="API_DataBindingValueFilter"></a>
 
 A filter used to match specific data binding values based on criteria. This filter allows searching for data bindings by asset, asset model, asset property, or asset model property.
 

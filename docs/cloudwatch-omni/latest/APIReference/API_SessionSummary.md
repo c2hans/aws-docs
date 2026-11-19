@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # SessionSummary
-<a name="API_SessionSummary"></a>
 
 Summary information about a query session, including its identifier, name, and activity timestamps.
 

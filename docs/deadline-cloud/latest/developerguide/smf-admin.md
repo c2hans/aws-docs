@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/smf
 ---
 
 # Run host configuration scripts with administrator privileges
-<a name="smf-admin"></a>
 
 Host configuration scripts allow you to perform administrative tasks, such as software installation, on the workers in your fleet. These scripts run with elevated privileges (`sudo` on Linux, Administrator on Windows), giving you the flexibility to configure your workers for your system.
 

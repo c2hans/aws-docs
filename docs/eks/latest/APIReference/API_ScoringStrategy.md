@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ScoringStrat
 ---
 
 # ScoringStrategy
-<a name="API_ScoringStrategy"></a>
 
 The scoring strategy configuration for the NodeResourcesFit scheduler plugin.
 

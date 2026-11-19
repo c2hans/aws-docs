@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3Destinati
 ---
 
 # S3DestinationProperties
-<a name="API_S3DestinationProperties"></a>
 
  The properties that are applied when Amazon S3 is used as a destination.
 

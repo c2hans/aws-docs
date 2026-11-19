@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/compliance
 ---
 
 # Compliance validation for AWS HealthImaging
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS HealthImaging as part of multiple AWS compliance programs. For HealthImaging, this includes HIPAA.
 

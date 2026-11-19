@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Scalin
 ---
 
 # ScalingConfiguration
-<a name="API_ScalingConfiguration"></a>
 
 Contains the scaling configuration of an Aurora Serverless v1 DB cluster.
 

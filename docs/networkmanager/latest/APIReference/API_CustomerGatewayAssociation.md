@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CustomerGatewayAssociation
-<a name="API_CustomerGatewayAssociation"></a>
 
 Describes the association between a customer gateway, a device, and a link.
 

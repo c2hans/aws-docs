@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/config-files.htm
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Config files and named profiles
-<a name="config-files"></a>
 
 This page covers how the SDK reads shared AWS configuration files and how to use named profiles to manage different environments. It includes the following topics:
 + [Shared config files](#shared-config-files) explains which files the SDK reads and their format.

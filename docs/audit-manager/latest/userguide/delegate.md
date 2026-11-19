@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegate.
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Delegations in AWS Audit Manager
-<a name="delegate"></a>
 
 As you navigate through the assessment process in AWS Audit Manager, you might encounter situations where you need help from subject matter experts to review and validate the collected evidence. This is where the concept of delegations comes into play.
 

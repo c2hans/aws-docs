@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/livechatai-reading-from-e
 ---
 
 # Reading from LiveChatAI entities
-<a name="livechatai-reading-from-entities"></a>
 
 **Prerequisites**
 

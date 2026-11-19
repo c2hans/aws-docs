@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sendgrid-reading-from-ent
 ---
 
 # Reading from SendGrid entities
-<a name="sendgrid-reading-from-entities"></a>
 
 **Prerequisite**
 

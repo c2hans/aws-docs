@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS02-BP03 Implement centralized logging to aggregate logs from all components of your advertising stack
-<a name="advops02-bp03"></a>
 
  Aggregate logs from every component of your advertising stack into a centralized store. Aggregate logs from components such as third-party integrations, custom applications, managed connectivity services, and agentic AI workflows.
 

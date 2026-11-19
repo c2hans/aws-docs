@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Enco
 ---
 
 # EncoderConfigurationSummary
-<a name="API_EncoderConfigurationSummary"></a>
 
 Summary information about an EncoderConfiguration.
 

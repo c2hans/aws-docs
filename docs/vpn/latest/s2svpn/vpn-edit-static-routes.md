@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-edit-static-routes
 ---
 
 # Edit static routes for an AWS Site-to-Site VPN connection
-<a name="vpn-edit-static-routes"></a>
 
 For a Site-to-Site VPN connection on a virtual private gateway that's configured for static routing, you can add or remove static routes from your VPN configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Generative AI capabilities
-<a name="generative-ai-capabilities"></a>
 
 |  |
 | --- |

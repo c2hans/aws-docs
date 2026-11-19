@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Tips and troubleshooting
-<a name="genai-tips"></a>
 
 ## Get better answers
 <a name="get-better-answers"></a>

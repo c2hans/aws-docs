@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/security.encryp
 ---
 
 # Encryption at rest for azimuth elevation ephemeris
-<a name="security.encryption-at-rest-azimuth-elevation"></a>
 
 ## Key policy requirements for azimuth elevation ephemeris
 <a name="w2aac62c22c31b3"></a>

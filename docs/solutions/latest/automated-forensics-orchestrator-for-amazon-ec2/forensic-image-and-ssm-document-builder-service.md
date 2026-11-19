@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Forensic image and SSM Document builder service
-<a name="forensic-image-and-ssm-document-builder-service"></a>
 
 The forensic image builder pipeline creates the forensic AMI with necessary forensic tools needed to perform forensic investigation. The diagram below represents the overall implementation.
 

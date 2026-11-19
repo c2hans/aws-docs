@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateExport
-<a name="API_DataExports_CreateExport"></a>
 
 Creates a data export and specifies the data query, the delivery preference, and any optional resource tags.
 

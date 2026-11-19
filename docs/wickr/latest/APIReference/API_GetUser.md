@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetUser.ht
 ---
 
 # GetUser
-<a name="API_GetUser"></a>
 
 Retrieves detailed information about a specific user in a Wickr network, including their profile, status, and activity history.
 

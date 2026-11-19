@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-syntax-emp.html
 ---
 
 # The syntax for the paths for the outputs
-<a name="hls-syntax-emp"></a>
 
 An HLS output always includes three categories of files:
 

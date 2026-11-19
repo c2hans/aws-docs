@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ListPolicyTemplates
-<a name="API_ListPolicyTemplates"></a>
 
 Returns a paginated list of all policy templates in the specified policy store.
 

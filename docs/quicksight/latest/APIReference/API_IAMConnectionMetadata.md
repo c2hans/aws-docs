@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_IAMCo
 ---
 
 # IAMConnectionMetadata
-<a name="API_IAMConnectionMetadata"></a>
 
 Authentication metadata for IAM-based connections, used for first-party AWS service integrations.
 

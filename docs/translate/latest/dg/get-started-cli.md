@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/get-started-cli.html
 ---
 
 # Getting started (AWS CLI)
-<a name="get-started-cli"></a>
 
 In the following exercise, you use the AWS command line interface (AWS CLI) to translate text. To complete the exercise, you need to be familiar with the CLI and have a text editor. For more information, see [Install and configure the AWS Command Line Interface (AWS CLI)](setting-up.md#setup-awscli).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-fail
 ---
 
 # Find the cause of a failed image build with failure context
-<a name="image-failure-context"></a>
 
 When an image build fails, Image Builder reports the failure in the image `state`. The state carries a message that describes the failure in `reason`, and structured **failure context** in `failureContext`.
 

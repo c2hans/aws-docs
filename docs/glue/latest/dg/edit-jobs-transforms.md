@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-jobs-transforms.html
 ---
 
 # Transform data with AWS Glue managed transforms
-<a name="edit-jobs-transforms"></a>
 
  AWS Glue Studio provides two types of transforms:
 +  **AWS Glue-native transforms** - available to all users and are managed by AWS Glue.

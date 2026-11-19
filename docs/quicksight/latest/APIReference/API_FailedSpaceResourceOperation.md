@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Faile
 ---
 
 # FailedSpaceResourceOperation
-<a name="API_FailedSpaceResourceOperation"></a>
 
 A resource operation that failed.
 

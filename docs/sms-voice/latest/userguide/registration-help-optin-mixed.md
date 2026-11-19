@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Mixed use-case opt-in
-<a name="registration-help-optin-mixed"></a>
 
 Use this pattern when your campaign sends **both transactional and marketing** messages. Carrier compliance requires that marketing and transactional consent are collected in separate checkboxes — a single checkbox cannot cover both. The user must be able to opt into transactional only, marketing only, both, or neither.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBotAlias
-<a name="API_DescribeBotAlias"></a>
 
 Get information about a specific bot alias.
 

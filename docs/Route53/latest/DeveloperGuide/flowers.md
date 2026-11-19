@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/flowers.ht
 ---
 
 # .flowers
-<a name="flowers"></a>
 
 **Important**
 You can no longer use Route 53 to register new .flowers domains or transfer .flowers domains to Route 53. We'll continue to support .flowers domains that are already registered with Route 53.

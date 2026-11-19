@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateJob.ht
 ---
 
 # UpdateJob
-<a name="API_UpdateJob"></a>
 
 Updates supported fields of the specified job.
 

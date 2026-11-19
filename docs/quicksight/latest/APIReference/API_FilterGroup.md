@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterGroup
-<a name="API_FilterGroup"></a>
 
 A grouping of individual filters. Filter groups are applied to the same group of visuals.
 

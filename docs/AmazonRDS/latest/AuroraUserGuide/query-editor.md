@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/query-e
 ---
 
 # Using the Aurora query editor
-<a name="query-editor"></a><a name="query_editor"></a>
+<a name="query_editor"></a>
 
  The Aurora query editor lets you run SQL statements on your Aurora DB cluster through the AWS Management Console. You can run SQL queries, data manipulation (DML) statements, and data definition (DDL) statements. Using the console interface lets you perform database maintenance, produce reports, and conduct SQL experiments. You can avoid setting up the network configuration to connect to your DB cluster from a separate client system such as an EC2 instance or a laptop computer.
 

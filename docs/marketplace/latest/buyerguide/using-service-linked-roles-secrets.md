@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/using-serv
 ---
 
 # Service-linked role to configure and launch products in AWS Marketplace
-<a name="using-service-linked-roles-secrets"></a>
 
 AWS Marketplace uses the service-linked role named `AWSServiceRoleForMarketplaceDeployment` to allow AWS Marketplace to manage deployment-related parameters, which are stored as secrets in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html), on your behalf. These secrets can be referenced by sellers in CloudFormation templates, which you can launch when configuring products that have Quick Launch enabled in AWS Marketplace.
 

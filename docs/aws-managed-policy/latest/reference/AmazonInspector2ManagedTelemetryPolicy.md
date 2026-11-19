@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonInspector2ManagedTelemetryPolicy
-<a name="AmazonInspector2ManagedTelemetryPolicy"></a>
 
 **Description**: Grants permissions to communicate with Inspector2 Telemetry Channel
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codec-outputs-s
 ---
 
 # Audio codecs and supported conversions
-<a name="codec-outputs-supported-conversions"></a>
 
 Generally, Elemental Live can convert any audio codec that is supported as a source to any audio codec that is supported as an output. However, there are some constraints, as follows.
 + Constraint when Dolby Digital with Atmos is the source. Conversion to another codec isn't supported. You can only pass through this source codec.

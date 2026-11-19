@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/vpc-troubleshooting-gui
 ---
 
 # Troubleshooting VPC networking
-<a name="vpc-troubleshooting-guide"></a>
 
 **Topics**
 + [Network monitoring and troubleshooting](#vpc-network-monitoring-troubleshooting)

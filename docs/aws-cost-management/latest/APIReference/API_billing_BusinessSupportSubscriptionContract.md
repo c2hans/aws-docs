@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BusinessSupportSubscriptionContract
-<a name="API_billing_BusinessSupportSubscriptionContract"></a>
 
 A Business Support subscription contract for an account.
 

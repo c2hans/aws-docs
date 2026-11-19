@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-iot.html
 ---
 
 # Internet of Things services
-<a name="sns-event-sources-iot"></a>
 
 The following table descrives how Amazon SNS integrates with AWS IoT services, such as AWS IoT Core, AWS IoT Device Defender, AWS IoT Events, and AWS IoT Greengrass, to provide notifications for IoT events and alerts.
 

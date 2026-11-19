@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/remov
 ---
 
 # Removing a data table widget from a CloudWatch dashboard
-<a name="remove_table_dashboard"></a>
 
 **To remove a data table widget to a dashboard**
 

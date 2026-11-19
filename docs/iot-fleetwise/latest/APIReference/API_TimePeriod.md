@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ti
 ---
 
 # TimePeriod
-<a name="API_TimePeriod"></a>
 
 The length of time between state template updates.
 

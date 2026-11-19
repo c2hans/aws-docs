@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/manag
 ---
 
 # Managing an Amazon Rekognition Custom Labels model
-<a name="managing-model"></a>
 
 An Amazon Rekognition Custom Labels model is a mathematical model that predicts the presence of objects, scenes, and concepts in new images. It does this by finding patterns in images used to train the model. This section shows you how to train a model, evaluate its performance, and make improvements. It also shows you how to make a model available for use and how to delete a model when you no longer need it.
 

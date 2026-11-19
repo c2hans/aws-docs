@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ex
 ---
 
 # Experienced with AWS
-<a name="govcloud-experienced"></a>
 
 The following table lists additional resources for users experienced with AWS:
 

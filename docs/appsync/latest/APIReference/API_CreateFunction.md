@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateFu
 ---
 
 # CreateFunction
-<a name="API_CreateFunction"></a>
 
 Creates a `Function` object.
 

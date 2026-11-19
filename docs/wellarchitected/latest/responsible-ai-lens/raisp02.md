@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # AI system baking
-<a name="raisp02"></a>
 
 | RAISP02: How will you design the core AI system to meet the release criteria (baking)? |
 | --- |

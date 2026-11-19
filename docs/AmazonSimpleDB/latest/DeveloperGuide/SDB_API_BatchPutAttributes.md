@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # BatchPutAttributes
-<a name="SDB_API_BatchPutAttributes"></a>
 
 ## Description
 <a name="SDB_API_BatchPutAttributes_Description"></a>

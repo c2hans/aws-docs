@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowExecutionOutputEvent
-<a name="API_agent-runtime_FlowExecutionOutputEvent"></a>
 
 Contains information about the outputs produced by the flow during a flow execution.
 

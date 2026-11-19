@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_EbsConfigura
 ---
 
 # EbsConfiguration
-<a name="API_EbsConfiguration"></a>
 
 The Amazon EBS configuration of a cluster instance.
 

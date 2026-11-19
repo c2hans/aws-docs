@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchStopJobRun.h
 ---
 
 # BatchStopJobRun
-<a name="API_BatchStopJobRun"></a>
 
 Stops one or more job runs for a specified job definition.
 

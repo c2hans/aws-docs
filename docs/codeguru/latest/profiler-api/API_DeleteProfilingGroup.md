@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DeleteP
 ---
 
 # DeleteProfilingGroup
-<a name="API_DeleteProfilingGroup"></a>
 
 Deletes a profiling group.
 

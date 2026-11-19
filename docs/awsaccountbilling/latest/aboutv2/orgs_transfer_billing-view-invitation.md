@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_tr
 ---
 
 # Viewing invitations
-<a name="orgs_transfer_billing-view-invitation"></a>
 
 When you sign in to your organization's management account, you can view recent invitations you have sent or received.
 

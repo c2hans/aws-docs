@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAcc
 ---
 
 # PutAccountSettingDefault
-<a name="API_PutAccountSettingDefault"></a>
 
 Modifies an account setting for all users on an account for whom no individual account setting has been specified. Account settings are set on a per-Region basis.
 

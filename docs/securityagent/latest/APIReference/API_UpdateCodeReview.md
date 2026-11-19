@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateCodeReview
-<a name="API_UpdateCodeReview"></a>
 
 Updates an existing code review configuration.
 

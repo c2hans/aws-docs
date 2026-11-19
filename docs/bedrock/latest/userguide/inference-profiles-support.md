@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profi
 ---
 
 # Supported Regions and models for inference profiles
-<a name="inference-profiles-support"></a>
 
 For a list of Region codes and endpoints supported in Amazon Bedrock, see [Amazon Bedrock endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bedrock_region). This topic describes predefined inference profiles that you can use and the Regions and models that support application inference profiles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # Resetting a Simple AD user password
-<a name="simple_ad_manage_users_groups_reset_password"></a>
 
 Users must adhere to password policies as defined in the Active Directory. Sometimes this can get the best of users, including the Active Directory administrator, and they forget their password. When this happens, you can quickly reset the user's password using Directory Service if the user resides in Simple AD.
 

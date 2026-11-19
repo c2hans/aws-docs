@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/mtgs-sdk-notificatio
 ---
 
 # Understanding Amazon Chime SDK event notifications
-<a name="mtgs-sdk-notifications"></a>
 
 The Amazon Chime SDK supports sending meeting event notifications to Amazon EventBridge, Amazon Simple Queue Service (SQS), and Amazon Simple Notification Service (SNS).
 

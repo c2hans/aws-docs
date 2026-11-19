@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/gitlab-runner
 ---
 
 # Self-managed GitLab runners in AWS CodeBuild
-<a name="gitlab-runner"></a>
 
 GitLab provides two execution modes to run GitLab jobs in your CI/CD pipeline. One mode is GitLab-hosted runners, which are managed by GitLab and fully integrated with GitLab. The other mode is self-managed runners, which allows you to bring your own customized environment to run jobs in the GitLab CI/CD pipeline.
 

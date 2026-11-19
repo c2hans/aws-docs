@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-gi
 ---
 
 # Remove a GitHub Enterprise integration
-<a name="remove-github-enterprise"></a>
 
 Remove a GitHub Enterprise integration when you no longer need AWS Security Agent to access repositories from a specific GHE instance.
 

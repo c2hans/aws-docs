@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobTopicV2OverridePermissions
-<a name="API_AssetBundleImportJobTopicV2OverridePermissions"></a>
 
 An object that contains a list of permissions to be applied to a list of topic IDs.
 

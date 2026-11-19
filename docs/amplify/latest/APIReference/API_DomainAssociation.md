@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DomainAs
 ---
 
 # DomainAssociation
-<a name="API_DomainAssociation"></a>
 
 Describes the association between a custom domain and an Amplify app.
 

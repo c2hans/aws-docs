@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # QueryInsightsResponse
-<a name="API_query_QueryInsightsResponse"></a>
 
 Provides various insights and metrics related to the query that you executed.
 

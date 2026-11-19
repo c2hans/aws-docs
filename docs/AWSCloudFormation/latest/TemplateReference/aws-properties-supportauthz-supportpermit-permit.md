@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SupportAuthZ::SupportPermit Permit
-<a name="aws-properties-supportauthz-supportpermit-permit"></a>
 
 The grant definition for a support permit: the actions AWS Support is authorized to perform, the resources they apply to, and optional time-window conditions. `Permit` is a property of the [AWS::SupportAuthZ::SupportPermit](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-supportauthz-supportpermit.html) resource.
 

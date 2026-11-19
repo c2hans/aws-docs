@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-sta
 ---
 
 # Step 3: Distribute Tokens
-<a name="getting-started-distribute-tokens"></a>
 
 Now that you have a stage, create and distribute the tokens that clients use to join it. Each client needs a participant token to join a stage and send or receive video. Applications that use a `RealTimeConnection` also need a connection token.
 

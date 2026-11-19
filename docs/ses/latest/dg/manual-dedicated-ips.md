@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/manual-dedicated-ips.html
 ---
 
 # Dedicated IP addresses (standard) in Amazon SES
-<a name="manual-dedicated-ips"></a>
 
 *Dedicated IP addresses (standard)* are dedicated IP addresses that you manually set up and manage in SES. They are different from those that are set up and managed automatically using the SES feature [Dedicated IP addresses (managed) for Amazon SES](managed-dedicated-sending.md). In addition to allowing you full control over your sending reputation using dedicated IP addresses, dedicated IPs (standard) enable you to fully manage your dedicated IPs, including warming them up, scaling them out, and IP pool management.
 

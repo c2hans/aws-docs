@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropa
 ---
 
 # Connect Studio JupyterLab notebooks to Amazon S3 Access Grants with Training and Processing jobs
-<a name="trustedidentitypropagation-s3-access-grants-jobs"></a>
 
 Use the following information to grant Amazon S3 Access Grants to access data in Amazon SageMaker Training and Processing jobs.
 

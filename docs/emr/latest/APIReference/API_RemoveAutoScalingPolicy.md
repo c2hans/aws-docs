@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveAutoSc
 ---
 
 # RemoveAutoScalingPolicy
-<a name="API_RemoveAutoScalingPolicy"></a>
 
 Removes an automatic scaling policy from a specified instance group within an Amazon EMR cluster.
 

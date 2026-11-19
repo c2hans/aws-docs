@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-gcp-setu
 ---
 
 # Configuring Google Cloud Platform to integrate with Amazon Inspector
-<a name="inspector-gcp-setup-gcp"></a>
 
 The Google Cloud Platform (GCP) setup configures your environment so that Amazon Inspector and AWS Config can authenticate to GCP and receive resource change notifications. You run one setup script in your GCP environment. The same script sets up GCP for AWS Config, AWS Security Hub, AWS Security Hub CSPM, and Amazon Inspector. When you download it from the Amazon Inspector console, the file is named `inspector-gcp-setup.sh`. From the AWS Security Hub console, the file is named `securityhub-gcp-setup.sh`. To set up GCP for Amazon Inspector, run it with `ENABLE_INSPECTOR=true`.
 
@@ -125,14 +124,14 @@ $ gcloud iam workload-identity-pools providers create-oidc connector-oidc-{{acco
   --issuer-uri="{{token-issuer-url}}" \
   --allowed-audiences="https://sts.googleapis.com" \
   --attribute-mapping="google.subject=assertion.sub,attribute.aws_role=assertion.sub" \
-  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{account-id}}:role/AWSConfigThirdPartyCloudFederationRole', 'arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty', 'arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty']"
+  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty', 'arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty']"
 ```
 
 **VM scanning only:** Add the Amazon EC2 Systems Manager federation role to the attribute condition.
 
 ```
   --allowed-audiences="https://sts.googleapis.com" \
-  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{account-id}}:role/AWSConfigThirdPartyCloudFederationRole', 'arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty', 'arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty', 'arn:aws:iam::{{account-id}}:role/Inspector2SSMFederationRole-{{organization-id}}']"
+  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty', 'arn:aws:iam::{{account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty', 'arn:aws:iam::{{account-id}}:role/Inspector2SSMFederationRole-{{organization-id}}']"
 ```
 
 If the provider already exists, for example from an earlier AWS Security Hub or AWS Security Hub CSPM setup, run `gcloud iam workload-identity-pools providers update-oidc` with the same arguments and `--no-disabled`. Keep any role ARN that is already in the attribute condition. The pool must contain only this provider. If the pool has another provider, the setup script stops.
@@ -151,7 +150,7 @@ Key values:
 + **Issuer** – Your token issuer URL from IAM outbound identity federation.
 + **Audience** – `https://sts.googleapis.com`.
 + **Subject** – The ARN of an IAM role in your AWS account, not an assumed-role session ARN. The attribute mapping copies the subject to `attribute.aws_role`, and the attribute condition admits only the listed roles:
-  + `AWSConfigThirdPartyCloudFederationRole` and the `AWSServiceRoleForConfigThirdParty` service-linked role, which AWS Config uses.
+  + The `AWSServiceRoleForConfigThirdParty` service-linked role, which AWS Config uses.
   + The `AWSServiceRoleForAmazonInspector2ThirdParty` service-linked role, which Amazon Inspector uses. The script adds it with `ENABLE_INSPECTOR=true`.
   + `Inspector2SSMFederationRole-{{organization-id}}`, which Amazon EC2 Systems Manager uses to install the Amazon Inspector VM Scanner on your VMs. The script adds it when you list VM projects.
 + **Workload identity pool provider** – `projects/{{project-number}}/locations/global/workloadIdentityPools/connector-pool-{{account-id}}/providers/connector-oidc-{{account-id}}`. You provide this value when you create the AWS Config connector for GCP.

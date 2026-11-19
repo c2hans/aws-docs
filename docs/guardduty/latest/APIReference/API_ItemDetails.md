@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ItemDe
 ---
 
 # ItemDetails
-<a name="API_ItemDetails"></a>
 
 Contains detailed information about where a threat was detected.
 

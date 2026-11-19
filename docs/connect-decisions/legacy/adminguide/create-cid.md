@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/crea
 ---
 
 # Step 1: Assign an IAM Identity Center User profile
-<a name="create-cid"></a>
 
 To create an instance and use the AWS Supply Chain service, you need to either connect an existing IAM Identity Center user profile or create a new one.
 

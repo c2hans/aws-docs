@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapTruckOptions
-<a name="API_RoadSnapTruckOptions"></a>
 
 Travel mode options when the provided travel mode is `Truck`.
 

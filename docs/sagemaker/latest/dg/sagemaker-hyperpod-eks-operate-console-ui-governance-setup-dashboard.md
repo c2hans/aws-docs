@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Dashboard setup
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-setup-dashboard"></a>
 
 Use the following information to get set up with Amazon SageMaker HyperPod Amazon CloudWatch Observability EKS add-on. This sets you up with a detailed visual dashboard that provides a view into metrics for your EKS cluster hardware, team allocation, and tasks.
 

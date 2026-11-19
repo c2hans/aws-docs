@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/components.html
 ---
 
 # Understanding the components of an Amazon Chime SDK application
-<a name="components"></a>
 
 To embed real-time audio, video, and screen-sharing capabilities into your Amazon Chime SDK applications, you use these components:
 + **The Amazon Chime SDK client library for JavaScript**, the client-side SDK that you integrate into your browser or Electron web application. You do that by adding the [ Amazon Chime SDK for JavaScript NPM package](https://www.npmjs.com/package/amazon-chime-sdk-js) as a dependency. This package leverages the [MediaDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) and [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) APIs to join meetings and exchange audio, video, and to share content with other attendees. It gives you a control surface for managing the different types of media and the ability to bind those resources to your application's user interfaces.

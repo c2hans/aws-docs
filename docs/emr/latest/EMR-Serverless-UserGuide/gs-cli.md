@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/gs-c
 ---
 
 # Getting started from the AWS CLI
-<a name="gs-cli"></a>
 
 Get started with EMR Serverless from the AWS CLI with commands to create an application, run jobs, check job run output, and delete your resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/archive-snapshot.ht
 ---
 
 # Archive an Amazon EBS snapshot
-<a name="archive-snapshot"></a>
 
 You can archive any snapshot that is in the `completed` state and that you own in your account. You can't archive snapshots that are in the `pending` or `error` states, or snapshots that are shared with you. For more information, see [Considerations and limitations for archiving Amazon EBS snapshots](snapshot-archive-considerations.md).
 

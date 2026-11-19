@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_S3File.
 ---
 
 # S3File
-<a name="API_S3File"></a>
 
 A single Amazon Simple Storage Service object to import as a notebook cell.
 

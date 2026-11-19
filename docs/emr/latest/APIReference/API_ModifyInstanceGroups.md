@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ModifyInstan
 ---
 
 # ModifyInstanceGroups
-<a name="API_ModifyInstanceGroups"></a>
 
 ModifyInstanceGroups modifies the number of nodes and configuration settings of an instance group. The input parameters include the new target instance count for the group and the instance group ID. The call will either succeed or fail atomically.
 

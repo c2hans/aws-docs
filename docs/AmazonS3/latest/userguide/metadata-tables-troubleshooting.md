@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Troubleshooting S3 Metadata
-<a name="metadata-tables-troubleshooting"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon S3 Metadata.
 

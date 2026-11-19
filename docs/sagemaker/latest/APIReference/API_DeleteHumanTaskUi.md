@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteHumanTaskUi
-<a name="API_DeleteHumanTaskUi"></a>
 
 Use this operation to delete a human task user interface (worker task template).
 

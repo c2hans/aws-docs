@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Logging.html
 ---
 
 # Logging
-<a name="API_Logging"></a>
 
 An object representing the logging configuration for resources in your cluster.
 

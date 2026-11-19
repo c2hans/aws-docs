@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetRevenueAttributionAllocation
-<a name="API_prm_GetRevenueAttributionAllocation"></a>
 
 Retrieves a single allocation by its RevenueAttributionAllocationId. Supports optional point-in-time version queries.
 

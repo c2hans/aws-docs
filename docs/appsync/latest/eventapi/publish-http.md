@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/publish-http.htm
 ---
 
 # Publish events via HTTP
-<a name="publish-http"></a>
 
 AWS AppSync Events allows you to publish events via your API’s HTTP endpoint using a POST operation. Publishing is the only supported action over the endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Kiro User Activity Dashboard
-<a name="kiro-user-activity-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

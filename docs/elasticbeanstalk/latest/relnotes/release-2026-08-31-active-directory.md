@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Active Directory domain join for Windows Server environments on August 31, 2026
-<a name="release-2026-08-31-active-directory"></a>
 
 AWS Elastic Beanstalk now supports automatically joining the Windows Server instances in your environment to an Active Directory domain that you manage with AWS Directory Service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentSession
-<a name="API_PaymentSession"></a>
 
 A payment session for managing payment transactions.
 

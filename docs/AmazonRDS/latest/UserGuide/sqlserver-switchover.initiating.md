@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-swi
 ---
 
 # Initiating the SQL Server switchover
-<a name="sqlserver-switchover.initiating"></a>
 
 You can switch over an RDS for SQL Server read replica to the primary role, and the former primary DB instance to a replica role.
 

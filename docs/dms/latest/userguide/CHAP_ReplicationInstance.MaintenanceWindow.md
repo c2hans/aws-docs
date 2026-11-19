@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationIns
 ---
 
 # Working with the AWS DMS maintenance window
-<a name="CHAP_ReplicationInstance.MaintenanceWindow"></a>
 
 Every AWS DMS replication instance has a weekly maintenance window during which any available system changes are applied. You can think of the maintenance window as an opportunity to control when modifications and software patching occurs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bitAnd.html
 ---
 
 # $bitAnd
-<a name="bitAnd"></a>
 
 New from version 8.0.1.
 

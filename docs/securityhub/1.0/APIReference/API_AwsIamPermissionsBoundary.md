@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamP
 ---
 
 # AwsIamPermissionsBoundary
-<a name="API_AwsIamPermissionsBoundary"></a>
 
 Information about the policy used to set the permissions boundary for an IAM principal.
 

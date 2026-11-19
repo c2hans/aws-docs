@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/apply-ota-task-co
 ---
 
 # Apply configuration settings to OTA tasks
-<a name="apply-ota-task-configuration"></a>
 
 Once the configuration is created, you'll receive a `taskConfigurationId` that is added to your `CreateOtaTask` request along with additional configurations:
 

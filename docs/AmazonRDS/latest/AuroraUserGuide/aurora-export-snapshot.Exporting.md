@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Creating snapshot export tasks
-<a name="aurora-export-snapshot.Exporting"></a>
 
 Create snapshot export tasks to export data from your snapshot to an Amazon S3 bucket. You can have up to five concurrent DB snapshot export tasks in progress per AWS account.
 

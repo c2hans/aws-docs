@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inhe
 ---
 
 # InheritedAdditionalAnalyses
-<a name="API_InheritedAdditionalAnalyses"></a>
 
 Contains the inherited additional analyses constraint and its sources from parent tables.
 

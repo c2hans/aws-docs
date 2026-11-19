@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DeleteMountT
 ---
 
 # DeleteMountTarget
-<a name="API_DeleteMountTarget"></a>
 
 Deletes the specified mount target.
 

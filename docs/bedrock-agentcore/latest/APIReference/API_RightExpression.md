@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # RightExpression
-<a name="API_RightExpression"></a>
 
 Right expression of the `eventMetadata`filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeR
 ---
 
 # DescribeRetentionConfigurations
-<a name="API_DescribeRetentionConfigurations"></a>
 
 Returns the details of one or more retention configurations. If the retention configuration name is not specified, this operation returns the details for all the retention configurations for that account.
 

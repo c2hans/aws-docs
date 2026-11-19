@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/tm-sharing.html
 ---
 
 # Share a traffic mirror target
-<a name="tm-sharing"></a>
 
 A traffic mirror target can be owned by an AWS account that is different from the traffic mirror source.
 

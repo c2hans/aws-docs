@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/secu
 ---
 
 # How AWS IoT Device Defender works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS IoT Device Defender, learn what IAM features are available to use with AWS IoT Device Defender.
 

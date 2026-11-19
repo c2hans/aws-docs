@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Re
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 A resource tag.
 

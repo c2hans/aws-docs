@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-gs-apm-payload-
 ---
 
 # Payload Requirements For Ingesting APM Alerts with EventBridge
-<a name="idr-gs-apm-payload-requirements"></a>
 
 **Where does Incident Detection and Response ingest APM alerts from?**
 

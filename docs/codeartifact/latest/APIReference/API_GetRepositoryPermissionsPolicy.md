@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Get
 ---
 
 # GetRepositoryPermissionsPolicy
-<a name="API_GetRepositoryPermissionsPolicy"></a>
 
  Returns the resource policy that is set on a repository.
 

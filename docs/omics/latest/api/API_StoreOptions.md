@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_StoreOptions.html
 ---
 
 # StoreOptions
-<a name="API_StoreOptions"></a>
 
 Settings for a store.
 

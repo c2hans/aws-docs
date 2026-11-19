@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gorgias-support.html
 ---
 
 # AWS Glue support for Gorgias
-<a name="gorgias-support"></a>
 
 AWS Glue supports Gorgias as follows:
 

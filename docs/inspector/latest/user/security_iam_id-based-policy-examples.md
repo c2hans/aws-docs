@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/security_iam_id-ba
 ---
 
 # Identity-based policy examples for Amazon Inspector
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Amazon Inspector resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

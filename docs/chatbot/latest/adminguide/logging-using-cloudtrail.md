@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/logging-using-
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Logging Amazon Q Developer in chat applications API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 **Note**
 AWS Chatbot has integrated with Amazon Q Developer. [Learn more](service-rename.md)

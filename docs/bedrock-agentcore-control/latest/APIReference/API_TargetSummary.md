@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TargetSummary
-<a name="API_TargetSummary"></a>
 
 Contains summary information about a gateway target. A target represents an endpoint that the gateway can connect to.
 

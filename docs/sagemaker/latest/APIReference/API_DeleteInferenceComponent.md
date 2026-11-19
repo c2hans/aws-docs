@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteInferenceComponent
-<a name="API_DeleteInferenceComponent"></a>
 
 Deletes an inference component.
 

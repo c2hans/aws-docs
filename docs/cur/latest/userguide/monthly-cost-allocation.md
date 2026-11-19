@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/monthly-cost-alloca
 ---
 
 # Downloading a monthly cost allocation report
-<a name="monthly-cost-allocation"></a>
 
 **Important**
 The monthly cost allocation report feature will be unavailable at a later date. We recommend that you use the AWS Cost and Usage Reports instead.

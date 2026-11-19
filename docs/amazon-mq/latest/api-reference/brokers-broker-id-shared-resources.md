@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-b
 ---
 
 # Shared Resources
-<a name="brokers-broker-id-shared-resources"></a>
 
 You can retrieve information about the networking resources shared to a broker for private networking. Use this API to check the status of shared resources and retrieve DNS names for use in your broker configuration.
 

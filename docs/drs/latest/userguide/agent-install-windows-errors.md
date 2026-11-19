@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-install-windo
 ---
 
 # Windows agent installation errors
-<a name="agent-install-windows-errors"></a>
 
 This page covers errors that you might encounter when you install the AWS Elastic Disaster Recovery agent on Windows source servers. Each section describes the error message, its cause, and the resolution.
 

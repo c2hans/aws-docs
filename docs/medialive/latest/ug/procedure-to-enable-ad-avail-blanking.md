@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/procedure-to-enable-
 ---
 
 # Enabling blanking
-<a name="procedure-to-enable-ad-avail-blanking"></a>
 
 Follow this procedure if you want to enable the ad avail blanking feature in a MediaLive channel.
 

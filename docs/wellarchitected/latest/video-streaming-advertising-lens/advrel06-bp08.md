@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL06-BP08 Decouple innovative format rendering from core ad delivery pipeline
-<a name="advrel06-bp08"></a>
 
  Innovative format rendering logic adds complexity that does not belong in the critical path of standard ad delivery. A squeeze-back rendering failure must not affect standard pre-roll ad serving.
 

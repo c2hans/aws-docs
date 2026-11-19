@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteU
 ---
 
 # DeleteUsageLimit
-<a name="API_DeleteUsageLimit"></a>
 
 Deletes a usage limit from a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-and-input-switch
 ---
 
 # Automatic input failover and input switching
-<a name="aif-and-input-switching"></a>
 
 When you implement automatic input failover in MediaLive, you can still implement input switching.
 

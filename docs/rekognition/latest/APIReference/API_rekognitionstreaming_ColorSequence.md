@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ColorSequence
-<a name="API_rekognitionstreaming_ColorSequence"></a>
 
 A color sequence to be displayed on the user’s screen.
 

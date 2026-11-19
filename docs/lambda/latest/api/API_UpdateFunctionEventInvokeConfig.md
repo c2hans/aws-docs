@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_UpdateFunctionEven
 ---
 
 # UpdateFunctionEventInvokeConfig
-<a name="API_UpdateFunctionEventInvokeConfig"></a>
 
 Updates the configuration for asynchronous invocation for a function, version, or alias.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # Hashing functions
-<a name="CWL_QuerySyntax-hash-functions"></a>
 
 You can use hashing functions in `fields` and `filter` commands.
 

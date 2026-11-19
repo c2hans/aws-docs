@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/routes-for-cr
 ---
 
 # Integration options
-<a name="routes-for-crm-integration"></a>
 
 You can use the following integration options:
 + **The AWS Partner CRM connector (Salesforce only)** – A no-code solution for integrating Salesforce with AWS Partner Central and AWS Marketplace. For information about integrating the connector, refer to [What is the AWS Partner CRM connector for Salesforce?](aws-partner-crm-connector.md) later in this guide.

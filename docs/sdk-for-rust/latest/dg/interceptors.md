@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/interceptors.html
 ---
 
 # Configuring interceptors in the AWS SDK for Rust
-<a name="interceptors"></a>
 
 You can use interceptors to hook into the execution of API requests and responses. Interceptors are open-ended mechanisms in which the SDK calls code that you write to inject behavior into the request/response lifecycle. This way, you can modify an in-flight request, debug request processing, view errors, and more.
 

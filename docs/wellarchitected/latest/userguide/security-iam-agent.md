@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/securit
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # AWS Well-Architected Agent access model
-<a name="security-iam-agent"></a>
 
 AWS Well-Architected Agent uses customer-managed IAM roles for cross-account resource discovery and service-linked roles for organization-wide onboarding. The customer-managed roles (through a pass-role and role-chaining model, described in this section) give you full control over the permissions that AWS WA Agent has in your environment and support the cross-account access patterns required for multi-account infrastructure analysis. In addition, AWS WA Agent uses two service-linked roles, the `` role and the `` role, which are created when you enable the agent's organization integration. For details about these service-linked roles, see [Using service-linked roles for AWS Well-Architected](using-service-linked-roles.md).
 

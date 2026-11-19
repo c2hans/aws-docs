@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ar
 ---
 
 # ArtifactMetadataItem
-<a name="API_ArtifactMetadataItem"></a>
 
 Contains metadata about an artifact.
 

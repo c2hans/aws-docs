@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreSn
 ---
 
 # RestoreSnapshotFromRecycleBin
-<a name="API_RestoreSnapshotFromRecycleBin"></a>
 
 Restores a snapshot from the Recycle Bin. For more information, see [Restore snapshots from the Recycle Bin](https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-working-with-snaps.html#recycle-bin-restore-snaps) in the *Amazon EBS User Guide*.
 

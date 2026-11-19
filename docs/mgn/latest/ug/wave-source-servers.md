@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-source-servers.html
 ---
 
 # Source servers
-<a name="wave-source-servers"></a>
 
 The **Source servers** tab shows migration metrics aggregating statuses as well as a list of all the wave's associated source servers.
 

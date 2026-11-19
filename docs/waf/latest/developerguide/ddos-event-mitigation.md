@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-event-mit
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How AWS Shield mitigates events
-<a name="ddos-event-mitigation"></a>
 
 This page introduces how AWS Shield event mitigation works.
 

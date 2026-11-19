@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncrypt
 ---
 
 # PutBucketEncryption
-<a name="API_PutBucketEncryption"></a>
 
 This operation configures default encryption and Amazon S3 Bucket Keys for an existing bucket. You can also [block encryption types](https://docs.aws.amazon.com/AmazonS3/latest/API/API_BlockedEncryptionTypes.html) using this operation.
 

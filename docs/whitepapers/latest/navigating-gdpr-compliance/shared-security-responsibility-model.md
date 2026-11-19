@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Shared Security Responsibility Model
-<a name="shared-security-responsibility-model"></a>
 
 AWS follows a shared responsibility model for security and compliance. Under this model, AWS is responsible for the "Security OF the Cloud". This includes protecting the infrastructure that runs AWS services, such as data centers, networks, hardware, and the foundational software that supports services like [Amazon Simple Storage Service (Amazon S3](https://aws.amazon.com/s3/)) and [Amazon DynamoDB](https://aws.amazon.com/dynamodb/).
 

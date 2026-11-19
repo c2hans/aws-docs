@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/timestream-
 ---
 
 # Security pillar
-<a name="security"></a>
 
 The [security pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/security.html) helps you understand how to apply the shared responsibility model when using Timestream for InfluxDB.
 

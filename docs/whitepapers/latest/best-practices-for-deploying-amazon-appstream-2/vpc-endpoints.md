@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # VPC endpoints
-<a name="vpc-endpoints"></a>
 
 ## Amazon S3 VPC endpoint
 <a name="amazon-s3-vpc-endpoint"></a>

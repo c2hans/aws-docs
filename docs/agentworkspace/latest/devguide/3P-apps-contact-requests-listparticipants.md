@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # List all participants for a contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-listparticipants"></a>
 
 Retrieves all participants associated with a specific contact.
 

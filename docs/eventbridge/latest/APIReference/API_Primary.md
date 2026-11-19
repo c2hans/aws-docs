@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Prim
 ---
 
 # Primary
-<a name="API_Primary"></a>
 
 The primary Region of the endpoint.
 

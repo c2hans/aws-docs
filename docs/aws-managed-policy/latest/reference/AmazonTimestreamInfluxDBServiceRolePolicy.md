@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonTimestreamInfluxDBServiceRolePolicy
-<a name="AmazonTimestreamInfluxDBServiceRolePolicy"></a>
 
 **Description**: Provides full administrative access to create, update, delete and list Amazon Timestream InfluxDB instances and create and list parameter groups. Please refer to documentation for additional permissions needed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/assign-opport
 ---
 
 # Assigning an opportunity to another user
-<a name="assign-opportunity"></a>
 
 The following steps explain how to assign an opportunity to another user in your Partner Central account.
 

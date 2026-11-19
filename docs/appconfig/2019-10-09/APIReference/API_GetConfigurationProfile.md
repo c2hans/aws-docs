@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetConfigurationProfile
-<a name="API_GetConfigurationProfile"></a>
 
 Retrieves information about a configuration profile.
 

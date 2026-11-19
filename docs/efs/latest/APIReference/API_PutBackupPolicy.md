@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_PutBackupPol
 ---
 
 # PutBackupPolicy
-<a name="API_PutBackupPolicy"></a>
 
 Updates the file system's backup policy. Use this action to start or stop automatic backups of the file system.
 

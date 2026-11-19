@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceState
-<a name="API_ServiceState"></a>
 
 A structure that contains information about the current state of a service, including its latest change events such as deployments and other state-changing activities.
 

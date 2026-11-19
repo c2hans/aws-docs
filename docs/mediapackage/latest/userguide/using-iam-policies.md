@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/using-iam-
 ---
 
 # Resource-based policy examples
-<a name="using-iam-policies"></a>
 
 A resource policy is an access policy option available for granting permission to your MediaPackage resources. [Resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_resource-based) are JSON policy documents.
 

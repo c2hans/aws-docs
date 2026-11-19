@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A structure that contains information about a tag.
 

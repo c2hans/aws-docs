@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSA
 ---
 
 # ROSASharedVPCEndpointPolicy
-<a name="ROSASharedVPCEndpointPolicy"></a>
 
 **Description**: Allows the Red Hat OpenShift Service on AWS (ROSA) installer to configure VPC Endpoints and Security Groups. Intended to be used on a shared VPC.
 

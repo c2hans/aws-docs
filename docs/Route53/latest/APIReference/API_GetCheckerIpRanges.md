@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetCheck
 ---
 
 # GetCheckerIpRanges
-<a name="API_GetCheckerIpRanges"></a>
 
 Route 53 does not perform authorization for this API because it retrieves information that is already available to the public.
 

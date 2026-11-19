@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/topics-attrib.html
 ---
 
 # Configuring delivery status logging using the AWS Management Console
-<a name="topics-attrib"></a>
 
 This topic explains how to enable message delivery status logging for Amazon SNS topics, including configuring logging settings, assigning IAM roles, and verifying that CloudWatch Logs capture delivery logs for monitoring and troubleshooting.
 

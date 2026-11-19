@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToTh
 ---
 
 # AddThingToThingGroup
-<a name="API_AddThingToThingGroup"></a>
 
 Adds a thing to a thing group.
 

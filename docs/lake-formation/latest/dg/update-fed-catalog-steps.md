@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/update-fed-cata
 ---
 
 # Updating a federated catalog
-<a name="update-fed-catalog-steps"></a>
 
 You can update a Amazon Redshift federated catalog in the Data Catalog using the Lake Formation console, the AWS CLI or the [UpdateCatalog](https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateCatalog.html) API operation.
 

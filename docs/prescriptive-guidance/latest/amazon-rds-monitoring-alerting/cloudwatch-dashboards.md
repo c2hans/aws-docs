@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # CloudWatch alarms and dashboards
-<a name="cloudwatch-dashboards"></a>
 
 You can use [Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) to watch a specific Amazon RDS metric over a period of time. For example, you can monitor `FreeStorageSpace`, and then perform one or more actions if the value of the metric breaches the threshold that you set. If you set the threshold to 250 MB and the free storage space is 200 MB (less than the threshold), the alarm will be activated and can trigger an action to automatically provision additional storage for the Amazon RDS DB instance. The alarm can also  send a notification SMS to the DBA by using Amazon Simple Notification Service (Amazon SNS). The following diagram illustrates this process.
 

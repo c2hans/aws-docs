@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartReplica
 ---
 
 # StartReplication
-<a name="API_StartReplication"></a>
 
 Starts replication for a stopped Source Server. This action would make the Source Server protected again and restart billing for it.
 

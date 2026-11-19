@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogAnalytic
 ---
 
 # Analyzing log data with CloudWatch Log Analytics
-<a name="LogAnalytics"></a>
 
 Log Analytics is a unified console experience in Amazon CloudWatch Logs that brings together log analysis capabilities in one place. You can query and analyze log data with CloudWatch Logs Insights, stream logs in real time with Live Tail, and identify your top contributors with CloudWatch Contributor Insights. Log Analytics is the default experience for analyzing logs in the CloudWatch Logs console.
 

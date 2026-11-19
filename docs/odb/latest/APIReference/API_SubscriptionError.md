@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_Subscription
 ---
 
 # SubscriptionError
-<a name="API_SubscriptionError"></a>
 
 Information about an error that occurred during the subscription process.
 

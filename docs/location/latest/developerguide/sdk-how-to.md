@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/sdk-how-t
 ---
 
 # Developer tutorials
-<a name="sdk-how-to"></a>
 
 Use this section to learn how to use various aspects of the Amazon Location Service SDK.
 

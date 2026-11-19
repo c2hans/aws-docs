@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/mo
 ---
 
 # Module 4: Add a GraphQL API service and a database
-<a name="module-four"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAcc
 ---
 
 # PutAccountSetting
-<a name="API_PutAccountSetting"></a>
 
 Modifies an account setting. Account settings are set on a per-Region basis.
 

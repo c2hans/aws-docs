@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Tagging.html
 ---
 
 # Monitoring costs with cost allocation tags
-<a name="Tagging"></a>
 
 When you add cost allocation tags to your resources in Amazon ElastiCache, you can track costs by grouping expenses on your invoices by resource tag values.
 

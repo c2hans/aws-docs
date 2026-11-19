@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-getting-started
 ---
 
 # Setting Up
-<a name="edge-getting-started-step1"></a>
 
 Before you begin using SageMaker Edge Manager to manage models on your device fleets, you must first create IAM Roles for both SageMaker AI and AWS IoT. You will also want to create at least one Amazon S3 bucket where you will store your pre-trained model, the output of your SageMaker Neo compilation job, as well as input data from your edge devices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Control planes and data planes
-<a name="control-planes-and-data-planes"></a>
 
  AWS separates most services into control plane and data plane components. These terms originate from the world of networking, specifically routers. The router’s primary function is moving packets around based on rules; this is its data plane. Those rules are created and distributed from the router’s control plane.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup MonetizationConfig
-<a name="aws-properties-wafv2-rulegroup-monetizationconfig"></a>
 
 The monetization configuration for a web ACL or rule group. Specifies the payment settlement options (self-managed crypto wallets in `CryptoConfig`, a connected account in `ConnectedAccountConfigs`, or both) and the currency mode for artificial intelligence (AI) bot monetization. You must provide this configuration when any rule in the web ACL or rule group uses the `Monetize` action.
 

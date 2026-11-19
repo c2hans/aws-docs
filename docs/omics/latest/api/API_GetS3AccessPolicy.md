@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetS3AccessPolicy.h
 ---
 
 # GetS3AccessPolicy
-<a name="API_GetS3AccessPolicy"></a>
 
 Retrieves details about an access policy on a given store.
 

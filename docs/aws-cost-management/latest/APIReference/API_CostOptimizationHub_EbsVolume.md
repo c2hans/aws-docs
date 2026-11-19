@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EbsVolume
-<a name="API_CostOptimizationHub_EbsVolume"></a>
 
 Describes the Amazon Elastic Block Store volume configuration of the current and recommended resource configuration for a recommendation.
 

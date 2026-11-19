@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dail
 ---
 
 # DailyRecurrence
-<a name="API_DailyRecurrence"></a>
 
 Daily recurrence
 

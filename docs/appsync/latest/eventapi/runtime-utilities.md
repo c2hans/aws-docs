@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/runtime-utilitie
 ---
 
 # Runtime utilities
-<a name="runtime-utilities"></a>
 
 The runtime library provides utilities to control or modify the runtime properties of your handlers and functions.
 

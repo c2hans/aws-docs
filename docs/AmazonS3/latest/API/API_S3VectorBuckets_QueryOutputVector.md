@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # QueryOutputVector
-<a name="API_S3VectorBuckets_QueryOutputVector"></a>
 
 Contains the key and optional distance, relevance scores, and metadata for a vector returned by the `QueryVectors` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessEndpoint
-<a name="API_CreateVerifiedAccessEndpoint"></a>
 
 An AWS Verified Access endpoint is where you define your application along with an optional endpoint-level access policy.
 

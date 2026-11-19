@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ExtendedMessageTemplateData
-<a name="API_amazon-q-connect_ExtendedMessageTemplateData"></a>
 
 The extended data of a message template.
 

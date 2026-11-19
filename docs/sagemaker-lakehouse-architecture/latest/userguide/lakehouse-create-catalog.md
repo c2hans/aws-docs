@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Creating a catalog
-<a name="lakehouse-create-catalog"></a>
 
 You can create a catalog for your Redshift Managed Storage (RMS) objects.
 

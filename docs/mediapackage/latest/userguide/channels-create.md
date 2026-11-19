@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/channels-c
 ---
 
 # Creating a channel in AWS Elemental MediaPackage
-<a name="channels-create"></a>
 
 These steps show how to create a channel in MediaPackage to start receiving content streams. Later, you add an origin endpoint to the channel. This endpoint is the access point for content playback requests. We recommend that you spread out channels between channel groups, such as putting redundant channels in the same AWS Region in different channel groups.
 

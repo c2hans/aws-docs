@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Input to an API Gateway Lambda authorizer
-<a name="api-gateway-lambda-authorizer-input"></a>
 
 The following section explains the format of the input from API Gateway to a Lambda authorizer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-trusted-i
 ---
 
 # Using Identity based federation with Iceberg tables
-<a name="emr-trusted-identity-auth-iceberg"></a>
 
 ## Overview
 <a name="identity-federation-iceberg-tables"></a>

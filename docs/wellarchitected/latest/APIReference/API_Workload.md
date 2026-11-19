@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Workload
-<a name="API_Workload"></a>
 
 A workload return object.
 

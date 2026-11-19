@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/timeseries-forecasti
 ---
 
 # Batch forecasting
-<a name="timeseries-forecasting-batch"></a>
 
 Batch forecasting, also known as offline inferencing, generates model predictions on a batch of observations. Batch inference is a good option for large datasets or if you don't need an immediate response to a model prediction request.
 

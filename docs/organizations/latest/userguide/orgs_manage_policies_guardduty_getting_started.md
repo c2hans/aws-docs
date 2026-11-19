@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with Amazon GuardDuty policies
-<a name="orgs_manage_policies_guardduty_getting_started"></a>
 
 Before you configure Amazon GuardDuty policies, ensure you understand the prerequisites and implementation requirements. This topic guides you through the process of setting up and managing these policies in your organization.
 

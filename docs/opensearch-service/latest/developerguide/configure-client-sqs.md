@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using an OpenSearch Ingestion pipeline with Amazon Simple Queue Service
-<a name="configure-client-sqs"></a>
 
 You can use the Amazon Simple Queue Service (Amazon SQS) source plugin to ingest data directly from Amazon SQS queue messages into Amazon OpenSearch Service domains and Amazon OpenSearch Serverless collections. The pipeline polls messages from one or more Amazon SQS queues, parses the message body as structured data, and indexes the content into OpenSearch – no intermediate storage such as Amazon S3 is required.
 

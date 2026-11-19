@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DatabaseResp
 ---
 
 # DatabaseResponse
-<a name="API_DatabaseResponse"></a>
 
 Describes a database in a Fleet Advisor collector inventory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-action-lam
 ---
 
 # Invoke Lambda function action
-<a name="receiving-email-action-lambda"></a>
 
 The Lambda action calls your code through a Lambda function and, optionally, notifies you through Amazon SNS. This action has the following options and requirements.
 

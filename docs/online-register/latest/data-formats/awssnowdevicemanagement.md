@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Snow Device Management
-<a name="awssnowdevicemanagement"></a>
 
 AWS Snow Device Management provides the following APIs for data retrieval.
 

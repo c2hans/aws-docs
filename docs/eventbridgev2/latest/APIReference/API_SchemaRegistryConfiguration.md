@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Sc
 ---
 
 # SchemaRegistryConfiguration
-<a name="API_SchemaRegistryConfiguration"></a>
 
 Schema registry settings used to encode open-format (Avro/Protobuf) events.
 

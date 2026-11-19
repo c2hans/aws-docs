@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListG
 ---
 
 # ListGroups
-<a name="API_ListGroups"></a>
 
 Lists all user groups in Amazon Quick Sight.
 

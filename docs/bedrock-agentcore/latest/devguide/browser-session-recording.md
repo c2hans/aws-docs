@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Session Recording and Replay
-<a name="browser-session-recording"></a>
 
 Browser session recording and replay provides comprehensive observability for debugging, auditing, or training purposes. When you create a browser with session recording enabled, Amazon Bedrock AgentCore automatically captures browser interactions and stores them in your specified Amazon S3 bucket for later analysis.
 

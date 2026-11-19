@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/mi
 ---
 
 # Migrating your AWS Encryption SDK
-<a name="migration"></a>
 
 The AWS Encryption SDK supports multiple interoperable [programming language implementations](programming-languages.md), each of which is developed in an open-source repository on GitHub. As a [best practice](best-practices.md), we recommend that you use the latest version of the AWS Encryption SDK for each language.
 

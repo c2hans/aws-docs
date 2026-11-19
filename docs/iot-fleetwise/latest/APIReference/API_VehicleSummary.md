@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ve
 ---
 
 # VehicleSummary
-<a name="API_VehicleSummary"></a>
 
 Information about a vehicle.
 

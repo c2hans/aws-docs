@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionInfo
-<a name="API_WorkflowExecutionInfo"></a>
 
 Contains information about a workflow execution.
 

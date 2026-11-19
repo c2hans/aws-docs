@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-edge-gg
 ---
 
 # Deploy the Amazon Kinesis Video Streams Edge Agent to AWS IoT Greengrass
-<a name="gs-edge-gg"></a>
 
 This section provides a comprehensive guide to use Amazon Kinesis Video Streams with AWS IoT Greengrass. By combining these services, you can efficiently stream video from edge devices to the cloud, enabling a wide range of applications in IoT, surveillance, and more.
 

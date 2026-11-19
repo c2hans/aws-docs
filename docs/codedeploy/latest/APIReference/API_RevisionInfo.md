@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Revis
 ---
 
 # RevisionInfo
-<a name="API_RevisionInfo"></a>
 
 Information about an application revision.
 

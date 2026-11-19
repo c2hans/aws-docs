@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-summary.ht
 ---
 
 # Summary dashboard in Amazon GuardDuty
-<a name="guardduty-summary"></a>
 
 The GuardDuty **Summary** dashboard provides an aggregated view of the GuardDuty findings generated in your AWS account in the current AWS Region.
 

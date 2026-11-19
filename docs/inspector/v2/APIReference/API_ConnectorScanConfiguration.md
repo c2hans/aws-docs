@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ConnectorS
 ---
 
 # ConnectorScanConfiguration
-<a name="API_ConnectorScanConfiguration"></a>
 
 The scan settings that Amazon Inspector applies to resources discovered through a connector.
 

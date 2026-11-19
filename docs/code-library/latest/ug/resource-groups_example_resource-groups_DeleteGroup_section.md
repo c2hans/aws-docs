@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/resource-groups_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteGroup` with a CLI
-<a name="resource-groups_example_resource-groups_DeleteGroup_section"></a>
 
 The following code examples show how to use `DeleteGroup`.
 

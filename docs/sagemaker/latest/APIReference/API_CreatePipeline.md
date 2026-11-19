@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreatePipeline
-<a name="API_CreatePipeline"></a>
 
 Creates a pipeline using a JSON pipeline definition.
 

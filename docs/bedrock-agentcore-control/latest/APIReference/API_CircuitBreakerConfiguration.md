@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CircuitBreakerConfiguration
-<a name="API_CircuitBreakerConfiguration"></a>
 
 Specifies whether the circuit breaker monitors failures for the targets in a fallback chain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_ListMoun
 ---
 
 # ListMountTargetsDescription
-<a name="API_S3Files_ListMountTargetsDescription"></a>
 
 Contains information about a mount target returned in list operations.
 

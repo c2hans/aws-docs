@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-access-
 ---
 
 # Overview of managing access permissions to your CloudWatch Logs resources
-<a name="iam-access-control-overview-cwl"></a>
 
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:

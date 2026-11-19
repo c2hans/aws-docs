@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-
 ---
 
 # Cluster Configuration
-<a name="cluster-config-nw-rhel"></a>
 
 The following sections provide details on the resources, groups and constraints necessary to ensure high availability of SAP Central Services.
 

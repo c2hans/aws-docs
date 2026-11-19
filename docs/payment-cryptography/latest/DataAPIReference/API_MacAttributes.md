@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # MacAttributes
-<a name="API_MacAttributes"></a>
 
 Parameters that are required for DUKPT, HMAC, or EMV MAC generation or verification.
 

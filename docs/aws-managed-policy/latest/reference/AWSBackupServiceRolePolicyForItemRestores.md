@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupServiceRolePolicyForItemRestores
-<a name="AWSBackupServiceRolePolicyForItemRestores"></a>
 
 **Description**: Policy containing permissions necessary for AWS Backup to restore individual items in a recovery point
 

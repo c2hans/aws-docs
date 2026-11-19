@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Vision
-<a name="vision"></a>
 
 As highlighted in the previous section, our definition of a Cloud Operating Model is one that builds, matures, and optimizes one or more cloud environments. It does this by maturing the existing (IT) operating model to adopt and be adept in utilizing cloud-first ways of working that support your targeted business outcomes.
 

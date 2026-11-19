@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Outbound
 ---
 
 # OutboundAdditionalRecipients
-<a name="API_OutboundAdditionalRecipients"></a>
 
 Information about the additional recipients of outbound email.
 

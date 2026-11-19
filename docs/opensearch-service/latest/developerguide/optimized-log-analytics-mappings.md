@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Mappings and index templates
-<a name="optimized-log-analytics-mappings"></a>
 
 This topic shows how to model logs, OpenTelemetry data, and security findings for the Optimized engine. The core choice is straightforward: use `object` for one structured value, `nested` for a list of objects whose fields must stay correlated, `multi_value` for a list of scalar values, and `flat_object` for an open-ended key/value bag.
 

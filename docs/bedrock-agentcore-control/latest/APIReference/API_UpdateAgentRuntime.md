@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateAgentRuntime
-<a name="API_UpdateAgentRuntime"></a>
 
 Updates an existing Amazon Secure Agent.
 

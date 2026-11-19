@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DescribeContactVersion
-<a name="API_DescribeContactVersion"></a>
 
 Describes a specific version of a contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # ListTagsForResource
-<a name="API_meeting-chime_ListTagsForResource"></a>
 
 Returns a list of the tags available for the specified resource.
 

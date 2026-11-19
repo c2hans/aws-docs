@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-lambda-
 ---
 
 # Run AWS Lambda functions
-<a name="run-lambda-functions"></a>
 
 **Note**
 AWS IoT Greengrass doesn't currently support this feature on Windows core devices.
@@ -31,7 +30,7 @@ Your core devices and Lambda functions must meet the following requirements for 
 + <a name="core-device-lambda-function-requirements"></a>Your core device must meet the requirements to run Lambda functions. If you want the core device to run containerized Lambda functions, the device must meet the requirements to do so. For more information, see [Lambda function requirements](setting-up.md#greengrass-v2-lambda-requirements).
 + You must install the programming languages that the Lambda function uses on your core devices.
 **Tip**
-You can create a component that installs the programming language, and then specify that component as a dependency of your Lambda function component. Greengrass supports all Lambda supported versions of Python, Node.js, and Java runtimes. Greengrass doesn't apply any additional restrictions on deprecated Lambda runtime versions. You can run Lambda functions that use these deprecated runtimes on AWS IoT Greengrass, but you can't create them in AWS Lambda. For more information about AWS IoT Greengrass support for Lambda runtimes, see [Run AWS Lambda functions](#run-lambda-functions).
+You can create a component that installs the programming language, and then specify that component as a dependency of your Lambda function component. Greengrass supports all Lambda supported versions of Python, Node.js, and Java runtimes. Greengrass doesn't apply any additional restrictions on deprecated Lambda runtime versions. You can run Lambda functions that use these deprecated runtimes on AWS IoT Greengrass, but you can't create them in AWS Lambda. For more information about AWS IoT Greengrass support for Lambda runtimes, see [Run AWS Lambda functions](run-lambda-functions.md).
 
 ## Configure Lambda function lifecycle
 <a name="lambda-lifecycle"></a>

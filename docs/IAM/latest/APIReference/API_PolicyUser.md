@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyUser.h
 ---
 
 # PolicyUser
-<a name="API_PolicyUser"></a>
 
 Contains information about a user that a managed policy is attached to.
 

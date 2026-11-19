@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/classification
 ---
 
 # Classification Results - Export Configuration
-<a name="classification-export-configuration"></a>
 
 The Export Configuration resource for classification results provides access to settings for storing data classification results in an Amazon Simple Storage Service (Amazon S3) bucket. A *data classification result*, also referred to as a *sensitive data discovery result*, is a record that logs details about the analysis that Amazon Macie performed on an Amazon S3 object to determine whether the object contains sensitive data.
 

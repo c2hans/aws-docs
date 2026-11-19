@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 ---
 
 # Setting up Trusted Language Extensions in your Aurora PostgreSQL DB cluster
-<a name="PostgreSQL_trusted_language_extension-setting-up"></a>
 
 The following steps assume that your Aurora PostgreSQL DB cluster is associated with a custom DB cluster parameter group. You can use the AWS Management Console or the AWS CLI for these steps.
 

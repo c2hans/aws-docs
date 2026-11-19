@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Additional
-<a name="dashboard-additional"></a>
 
 This section covers the following dashboards:
 

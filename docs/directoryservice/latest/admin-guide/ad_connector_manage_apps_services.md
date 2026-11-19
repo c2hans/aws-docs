@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Access to AWS applications and services from AD Connector
-<a name="ad_connector_manage_apps_services"></a>
 
 You can allow your AD Connector access to AWS applications and services for your connected Active Directory. Some of the supported AWS applications and services include:
 + Amazon Chime

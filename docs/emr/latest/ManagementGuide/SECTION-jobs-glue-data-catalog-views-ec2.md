@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/SECTION-jobs-
 ---
 
 # Working with Glue Data Catalog views in Amazon EMR
-<a name="SECTION-jobs-glue-data-catalog-views-ec2"></a>
 
 **Note**
 Creating and managing AWS Glue Data Catalog views for use with EMR on EC2 is available with [Amazon EMR release 7.10.0](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-7100-release.html) and later.

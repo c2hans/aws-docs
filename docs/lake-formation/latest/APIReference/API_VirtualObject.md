@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_V
 ---
 
 # VirtualObject
-<a name="API_VirtualObject"></a>
 
 An object that defines an Amazon S3 object to be deleted if a transaction cancels, provided that `VirtualPut` was called before writing the object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RerankingMetadataSelectiveModeConfiguration
-<a name="API_agent_RerankingMetadataSelectiveModeConfiguration"></a>
 
 Configures the metadata fields to include or exclude during the reranking process when using selective mode.
 

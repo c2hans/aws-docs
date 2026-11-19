@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds
 ---
 
 # Using shards and metrics with DynamoDB Streams and Kinesis Data Streams
-<a name="kds_using-shards-and-metrics"></a>
 
 ## Shard management considerations for Kinesis Data Streams
 <a name="kds_using-shards-and-metrics.shardmanagment"></a>

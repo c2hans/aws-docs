@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html
 ---
 
 # Work with DHCP option sets
-<a name="DHCPOptionSet"></a>
 
 Use the following procedures to view and work with DHCP option sets. For more information about how DHCP option sets work, see [DHCP option set concepts](DHCPOptionSetConcepts.md).
 

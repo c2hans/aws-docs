@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FindMatchesParame
 ---
 
 # FindMatchesParameters
-<a name="API_FindMatchesParameters"></a>
 
 The parameters to configure the find matches transform.
 

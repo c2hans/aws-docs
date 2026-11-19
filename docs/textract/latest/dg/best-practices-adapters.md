@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/best-practices-adapte
 ---
 
 # Best practices for Amazon Textract Custom Queries
-<a name="best-practices-adapters"></a>
 
  Amazon Textract lets you customize the output of its pretrained Queries feature by training and using an adapter for its base model. With Amazon Textract Custom Queries, you can use your own documents and train an adapter to customize the base model, while keeping control over your proprietary documents. When creating queries for your adapters, use the following best practices. For more information about adapters, see [Customizing your Queries Responses](textract-using-adapters.md).
 

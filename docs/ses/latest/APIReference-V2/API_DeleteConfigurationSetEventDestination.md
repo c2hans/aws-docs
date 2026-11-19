@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteCon
 ---
 
 # DeleteConfigurationSetEventDestination
-<a name="API_DeleteConfigurationSetEventDestination"></a>
 
 Delete an event destination.
 

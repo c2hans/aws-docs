@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/glossary.
 ---
 
 # Glossary
-<a name="glossary"></a>
 
 **API Version**
 Services have one or more API versions, and which version you are using dictates which operations and parameters are valid. API versions are formatted like a date. For example, the latest API version for Amazon S3 is `2006-03-01`. [Specify a version](guide_configuration.md#cfg-version) when you configure a client object.

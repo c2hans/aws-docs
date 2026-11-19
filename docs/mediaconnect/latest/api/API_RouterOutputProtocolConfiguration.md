@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutputProtocolConfiguration
-<a name="API_RouterOutputProtocolConfiguration"></a>
 
 The protocol configuration settings for a router output.
 

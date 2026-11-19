@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # Spigot class
-<a name="aws-glue-api-crawler-pyspark-transforms-spigot"></a>
 
 Writes sample records to a specified destination to help you verify the transformations performed by your AWS Glue job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_C
 ---
 
 # Content
-<a name="API_Content"></a>
 
 An object that represents the content of the email, and optionally a character set specification.
 

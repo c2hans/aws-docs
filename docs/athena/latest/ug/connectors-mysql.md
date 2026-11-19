@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-mysql.html
 ---
 
 # Amazon Athena MySQL connector
-<a name="connectors-mysql"></a>
 
 The Amazon Athena Lambda MySQL connector enables Amazon Athena to access MySQL databases.
 

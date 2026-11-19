@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-cr
 ---
 
 # Create a .NET modernization job
-<a name="dotnet-web-create-job"></a>
 
 After you create or select your workspace, create a .NET modernization job:
 

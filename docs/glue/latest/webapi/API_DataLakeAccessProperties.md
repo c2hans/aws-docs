@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataLakeAccessPro
 ---
 
 # DataLakeAccessProperties
-<a name="API_DataLakeAccessProperties"></a>
 
 Input properties to configure data lake access for your catalog resource in the AWS Glue Data Catalog.
 

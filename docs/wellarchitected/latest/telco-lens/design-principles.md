@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/design
 ---
 
 # Design principles
-<a name="design-principles"></a>
 
  The following design principles can assist you to achieve and maintain efficient telco workloads in the cloud:
 +  **Design for high availability and resilience:** Build fault-tolerant architectures with redundancy and failover mechanisms to provide continuous service availability. Use managed services and serverless offerings to reduce maintenance overhead and improve resilience. Implement automated infrastructure provisioning and recovery processes to quickly respond to and mitigate service disruptions.

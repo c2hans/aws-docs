@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Associating an IAM role with an Amazon Aurora MySQL DB cluster
-<a name="AuroraMySQL.Integrating.Authorizing.IAM.AddRoleToDBCluster"></a>
 
 To permit database users in an Amazon Aurora DB cluster to access other AWS services, you associate the IAM role that you created in [Creating an IAM role to allow Amazon Aurora to access AWS services](AuroraMySQL.Integrating.Authorizing.IAM.CreateRole.md) with that DB cluster. You can also have AWS create a new IAM role by associating the service directly.
 

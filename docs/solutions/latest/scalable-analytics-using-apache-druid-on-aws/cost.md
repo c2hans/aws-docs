@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this guidance. As of the latest revision, the costs for running this guidance with the default settings (small usage profile) in the US East (N. Virginia) Region is approximately **$714.46 per month**, for a medium usage profile in the US East (N. Virginia) Region is approximately **$2,202.47 per month**, and for a large usage profile in the US East (N. Virginia) Region is approximately **$13,645.27 per month**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetProvisionedConc
 ---
 
 # GetProvisionedConcurrencyConfig
-<a name="API_GetProvisionedConcurrencyConfig"></a>
 
 Retrieves the provisioned concurrency configuration for a function's alias or version.
 

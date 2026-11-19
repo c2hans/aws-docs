@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # ConfluenceDocumentResource
-<a name="API_ConfluenceDocumentResource"></a>
 
 A Confluence document (page) integrated as a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/do
 ---
 
 # AWS Encryption SDK for .NET
-<a name="dot-net"></a>
 
 The AWS Encryption SDK for .NET is a client-side encryption library for developers who are writing applications in C\# and other .NET programming languages. It is supported on Windows, macOS, and Linux.
 

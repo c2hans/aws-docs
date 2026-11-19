@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html
 ---
 
 # Managed automation with integrated services
-<a name="acm-services"></a>
 
 AWS Certificate Manager supports a growing number of AWS services that can use ACM certificates directly.
 

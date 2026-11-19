@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StatusCoun
 ---
 
 # StatusCounts
-<a name="API_StatusCounts"></a>
 
 The status counts.
 

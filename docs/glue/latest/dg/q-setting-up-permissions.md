@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/q-setting-up-permissions.
 ---
 
 # Configuring IAM permissions
-<a name="q-setting-up-permissions"></a>
 
 This topic describes the IAM permissions that you configure for the Amazon Q chat experience, and the AWS Glue Studio notebook experience.
 

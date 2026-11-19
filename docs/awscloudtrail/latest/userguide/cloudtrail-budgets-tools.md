@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Using AWS Budgets to manage costs
-<a name="cloudtrail-budgets-tools"></a>
 
 AWS Budgets a feature of AWS Billing and Cost Management, allows you to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount.
 

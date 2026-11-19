@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sy
 ---
 
 # Use `ListIdentityPoolUsage` with an AWS SDK
-<a name="cognito-sync_example_cognito-sync_ListIdentityPoolUsage_section"></a>
 
 The following code example shows how to use `ListIdentityPoolUsage`.
 

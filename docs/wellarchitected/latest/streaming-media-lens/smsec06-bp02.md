@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSEC06-BP02 Select a content protection scheme that meets business objectives
-<a name="smsec06-bp02"></a>
 
 Organizations must choose the appropriate content protection technology based on their specific business requirements, content value, target platforms, and commercial obligations. The selection should balance security requirements with user experience, cost considerations, and technical complexity.
 

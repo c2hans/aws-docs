@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config TelemetrySinkData
-<a name="aws-properties-groundstation-config-telemetrysinkdata"></a>
 
  Contains configuration data for a telemetry sink. The specific data structure depends on the sink type being configured.
 

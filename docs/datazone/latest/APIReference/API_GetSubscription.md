@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetSubs
 ---
 
 # GetSubscription
-<a name="API_GetSubscription"></a>
 
 Gets a subscription in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/PutLexiconSample.html
 ---
 
 # PutLexicon
-<a name="PutLexiconSample"></a>
 
 The following Java code sample show how to use Java-based applications to store a pronunciation lexicon in an AWS Region.
 

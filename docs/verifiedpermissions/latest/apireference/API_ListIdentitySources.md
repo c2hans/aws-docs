@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ListIdentitySources
-<a name="API_ListIdentitySources"></a>
 
 Returns a paginated list of all of the identity sources defined in the specified policy store.
 

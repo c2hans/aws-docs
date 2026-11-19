@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refer
 ---
 
 # ReferenceLineDataConfiguration
-<a name="API_ReferenceLineDataConfiguration"></a>
 
 The data configuration of the reference line.
 

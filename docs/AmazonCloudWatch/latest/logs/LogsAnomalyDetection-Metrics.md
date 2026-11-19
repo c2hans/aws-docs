@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomaly
 ---
 
 # Metrics published by log anomaly detectors
-<a name="LogsAnomalyDetection-Metrics"></a>
 
 CloudWatch Logs publishes the **AnomalyCount** metric to CloudWatch metrics. This metric is published to the `AWS/Logs` namespace.
 

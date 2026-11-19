@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/supply.htm
 ---
 
 # .supply
-<a name="supply"></a>
 
 Used by businesses that sell goods online.
 

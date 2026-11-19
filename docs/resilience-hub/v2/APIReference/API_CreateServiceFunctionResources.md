@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateServiceFunctionResources
-<a name="API_CreateServiceFunctionResources"></a>
 
 Associates resources with a service function.
 

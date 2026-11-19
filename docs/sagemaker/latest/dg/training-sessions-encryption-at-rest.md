@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-en
 ---
 
 # Encryption at rest for SageMaker AI Training Sessions
-<a name="training-sessions-encryption-at-rest"></a>
 
 SageMaker AI Training Sessions encrypts all of your data at rest. Your training and sampling operation request and response data, and your training session checkpoints (including LoRA adapter weights), are stored in Amazon S3 using server-side encryption. You do not need to perform any additional configuration to ensure that your data is encrypted at rest.
 

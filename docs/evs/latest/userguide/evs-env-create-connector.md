@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-create-conn
 ---
 
 # Create a connector
-<a name="evs-env-create-connector"></a>
 
 Create a connector so that Amazon Elastic VMware Service can communicate with a VMware Cloud Foundation (VCF) management appliance, such as VCF Operations, SDDC Manager, or vCenter Server. You can create a connector with the Amazon EVS console or the AWS CLI. The procedure is the same for every connector type. Only the type, the appliance, and the secret keys differ.
 

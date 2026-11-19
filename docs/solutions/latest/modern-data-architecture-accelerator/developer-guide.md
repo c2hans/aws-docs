@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 ## Setting up MDAA Dev Environment
 <a name="setting-up-mdaa-dev-environment"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Lambda
 ---
 
 # LambdaFunctionStartedEventAttributes
-<a name="API_LambdaFunctionStartedEventAttributes"></a>
 
 Provides the details of the `LambdaFunctionStarted` event. It isn't set for other event types.
 

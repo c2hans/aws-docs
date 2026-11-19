@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/gpu-support.html
 ---
 
 # GPU Support
-<a name="gpu-support"></a>
 
 Eksctl supports selecting GPU instance types for nodegroups. Simply supply a compatible instance type to the create command, or via the config file.
 

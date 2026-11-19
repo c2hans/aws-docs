@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AccessPo
 ---
 
 # AccessPoint
-<a name="API_control_AccessPoint"></a>
 
 An access point used to access a bucket.
 

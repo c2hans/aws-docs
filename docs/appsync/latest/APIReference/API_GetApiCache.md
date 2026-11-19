@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetApiCa
 ---
 
 # GetApiCache
-<a name="API_GetApiCache"></a>
 
 Retrieves an `ApiCache` object.
 

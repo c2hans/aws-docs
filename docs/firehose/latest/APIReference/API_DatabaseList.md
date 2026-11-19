@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseList
-<a name="API_DatabaseList"></a>
 
 The structure used to configure the list of database patterns in source database endpoint for Firehose to read from.
 

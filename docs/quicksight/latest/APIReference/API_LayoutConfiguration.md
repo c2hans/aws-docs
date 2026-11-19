@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Layou
 ---
 
 # LayoutConfiguration
-<a name="API_LayoutConfiguration"></a>
 
 The configuration that determines what the type of layout will be used on a sheet.
 

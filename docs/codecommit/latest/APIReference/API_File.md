@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_File.
 ---
 
 # File
-<a name="API_File"></a>
 
 Returns information about a file in a repository.
 

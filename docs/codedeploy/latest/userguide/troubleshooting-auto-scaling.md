@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshoot
 ---
 
 # Troubleshoot Amazon EC2 Auto Scaling issues
-<a name="troubleshooting-auto-scaling"></a>
 
 **Topics**
 + [General Amazon EC2 Auto Scaling troubleshooting](#troubleshooting-auto-scaling-general)

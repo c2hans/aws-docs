@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonNimbleStudio-StudioAdmin
-<a name="AmazonNimbleStudio-StudioAdmin"></a>
 
 **Description**: This policy grants access to Amazon Nimble Studio resources associated with the studio admin and related studio resources in other services. Attach this policy to the Admin role associated with your studio.
 

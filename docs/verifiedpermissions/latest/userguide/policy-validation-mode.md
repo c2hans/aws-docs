@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Enabling Amazon Verified Permissions policy validation mode
-<a name="policy-validation-mode"></a>
 
 You can set the policy validation mode in Verified Permissions to control whether policy changes are validated against the [schema](schema.md) in your policy store.
 

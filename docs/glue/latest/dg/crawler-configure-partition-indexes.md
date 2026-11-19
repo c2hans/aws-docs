@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crawler-configure-partiti
 ---
 
 # Generating partition indexes
-<a name="crawler-configure-partition-indexes"></a>
 
 The Data Catalog supports creating partition indexes to provide efficient lookup for specific partitions. For more information, see [Creating partition indexes](https://docs.aws.amazon.com/glue/latest/dg/partition-indexes.html). The AWS Glue crawler creates partition indexes for Amazon S3 and Delta Lake targets by default.
 

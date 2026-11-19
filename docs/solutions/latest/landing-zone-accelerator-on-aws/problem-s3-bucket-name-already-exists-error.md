@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: "S3 bucket name already exists" error
-<a name="problem-s3-bucket-name-already-exists-error"></a>
 
 This solution creates Amazon S3 buckets during deployment. Some of these buckets (such as those deployed along with the [Centralized logging](centralized-logging.md) infrastructure) are mandatory. Others (such as the report destination buckets created for Cost and Usage Reports and AWS Audit Manager) deploy based on your defined configuration.
 

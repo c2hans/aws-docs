@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/interact-wi
 ---
 
 # Interact with device shadows
-<a name="interact-with-shadows"></a>
 
 Greengrass core devices can interact with [AWS IoT device shadows](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html) using components. A *shadow* is a JSON document that stores the current or desired state information for an AWS IoT thing. Shadows can make a device’s state available to other AWS IoT Greengrass components whether the device is connected to AWS IoT or not. Each AWS IoT device has its own classic, unnamed shadow. You can also create multiple named shadows for each device.
 

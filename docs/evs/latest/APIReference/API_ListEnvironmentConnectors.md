@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ListEnvironm
 ---
 
 # ListEnvironmentConnectors
-<a name="API_ListEnvironmentConnectors"></a>
 
 Lists the connectors within an environment. Returns the status of each connector and its applicable checks, among other connector details.
 

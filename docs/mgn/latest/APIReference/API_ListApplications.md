@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListApplicat
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Retrieves all applications or multiple applications by ID.
 

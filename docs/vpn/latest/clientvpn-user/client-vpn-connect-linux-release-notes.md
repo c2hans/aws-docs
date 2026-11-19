@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-con
 ---
 
 # AWS Client VPN for Linux release notes
-<a name="client-vpn-connect-linux-release-notes"></a>
 
 The following table contains the release notes and download links for the current and previous versions of AWS Client VPN for Linux.
 

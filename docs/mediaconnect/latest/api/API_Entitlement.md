@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Entitlement.
 ---
 
 # Entitlement
-<a name="API_Entitlement"></a>
 
  The settings for a flow entitlement.
 

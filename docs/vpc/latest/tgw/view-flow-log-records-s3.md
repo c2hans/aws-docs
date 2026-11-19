@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-flow-log-records-s3.
 ---
 
 # View AWS Transit Gateway Flow Logs records in Amazon S3
-<a name="view-flow-log-records-s3"></a>
 
 **To view flow log records published to Amazon S3**
 

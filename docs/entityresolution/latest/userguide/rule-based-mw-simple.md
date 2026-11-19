@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/rule-b
 ---
 
 # Creating a rule-based matching workflow with the Simple rule type
-<a name="rule-based-mw-simple"></a>
 
 **Prerequisites**
 

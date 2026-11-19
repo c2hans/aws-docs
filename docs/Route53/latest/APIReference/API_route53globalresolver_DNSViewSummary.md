@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DNSViewSummary
-<a name="API_route53globalresolver_DNSViewSummary"></a>
 
 Summary information about a DNS view.
 

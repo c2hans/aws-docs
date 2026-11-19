@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/how-it-works.co
 ---
 
 # Understand AWS Ground Station Core components
-<a name="how-it-works.core"></a>
 
  This section provides detailed definitions for the core components of AWS Ground Station.
 

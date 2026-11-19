@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EventTriggerContext
-<a name="API_connect-outbound-campaigns-v2_EventTriggerContext"></a>
 
 Contains context data for an event trigger, including the originating source event and the channel context.
 

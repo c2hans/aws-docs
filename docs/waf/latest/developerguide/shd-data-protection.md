@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/shd-data-prote
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Protecting your data in Shield
-<a name="shd-data-protection"></a>
 
 This section explains how the AWS shared responsibility model applies to data protection in Shield.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-syste
 ---
 
 # `ALTER SYSTEM`
-<a name="alter-system-syntax-support"></a>
 
  With `ALTER SYSTEM`, you can set or reset the subset of configuration parameters that Aurora DSQL supports at the system level.
 

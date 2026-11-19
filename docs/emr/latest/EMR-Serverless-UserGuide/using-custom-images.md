@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/usin
 ---
 
 # Using custom images with EMR Serverless
-<a name="using-custom-images"></a>
 
 **Topics**
 + [Use a custom Python version](#image-python)

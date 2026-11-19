@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-bugbus
 ---
 
 # AWS BugBust events
-<a name="events-ref-bugbust"></a>
 
 AWS BugBust sends service events to EventBridge via AWS CloudTrail.
 

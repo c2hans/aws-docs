@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  This section provides documentation for the Amazon CodeGuru Profiler API operations.
 
@@ -16,4 +15,4 @@ Amazon CodeGuru Profiler currently supports applications written in all Java vir
 
  For more information, see [What is Amazon CodeGuru Profiler](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/what-is-codeguru-profiler.html) in the *Amazon CodeGuru Profiler User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

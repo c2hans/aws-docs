@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step E: Complete node configuration
-<a name="install-lv-ig-complete"></a>
 
 You have now installed and performed the basic initial configuration of Elemental Live. Use the following table to determine which guide to use to complete the node configuration.
 

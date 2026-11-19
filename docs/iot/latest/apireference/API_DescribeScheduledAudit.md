@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeSche
 ---
 
 # DescribeScheduledAudit
-<a name="API_DescribeScheduledAudit"></a>
 
 Gets information about a scheduled audit.
 

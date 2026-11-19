@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLCandidate
-<a name="API_AutoMLCandidate"></a>
 
 Information about a candidate produced by an AutoML training job, including its status, steps, and other properties.
 

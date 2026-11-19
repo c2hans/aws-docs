@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.Documen
 ---
 
 # Using Amazon DocumentDB (with MongoDB compatibility) as a source for AWS DMS
-<a name="CHAP_Source.DocumentDB"></a>
 
 For information about versions of Amazon DocumentDB (with MongoDB compatibility) that AWS DMS supports as a source, see [Sources for AWS DMS](CHAP_Introduction.Sources.md).
 

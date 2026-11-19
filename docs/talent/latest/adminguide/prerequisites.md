@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/prerequisites.h
 ---
 
 # Prerequisites for Amazon Connect Talent
-<a name="prerequisites"></a>
 
 Before you set up Amazon Connect Talent, review the following requirements.
 

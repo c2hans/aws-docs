@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/environme
 ---
 
 # Environment status
-<a name="environment-status"></a>
 
 The **Environment Status** page displays the deployed software and hosts within the product. It includes information such as software version, module names, and other system information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchAttributeFi
 ---
 
 # SearchAttributeFilter
-<a name="API_SearchAttributeFilter"></a>
 
 A filter that compares an attribute value using an operator.
 

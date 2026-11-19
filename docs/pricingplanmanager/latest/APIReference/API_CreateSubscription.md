@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # CreateSubscription
-<a name="API_CreateSubscription"></a>
 
 Creates a flat-rate pricing subscription for the specified resources.
 

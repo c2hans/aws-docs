@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-sles-ha-operati
 ---
 
 # Operations
-<a name="ase-sles-ha-operations"></a>
 
 This section covers the following topics.
 

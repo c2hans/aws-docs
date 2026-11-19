@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceRegistry
-<a name="API_ServiceRegistry"></a>
 
 The details for the service registry.
 

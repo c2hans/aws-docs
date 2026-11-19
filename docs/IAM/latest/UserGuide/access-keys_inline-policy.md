@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-keys_inline-
 ---
 
 # Control the use of access keys by attaching an inline policy to an IAM user
-<a name="access-keys_inline-policy"></a>
 
 As a best practice we recommend that [workloads use temporary credentials with IAM roles](best-practices.md#bp-workloads-use-roles) to access AWS. IAM users with access keys should be assigned least privilege access and have [multi-factor authentication (MFA)](id_credentials_mfa.md) enabled. For more information about assuming IAM roles, see [Methods to assume a role](id_roles_manage-assume.md).
 

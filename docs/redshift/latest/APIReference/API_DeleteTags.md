@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteT
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 Deletes tags from a resource. You must provide the ARN of the resource from which you want to delete the tag or tags.
 

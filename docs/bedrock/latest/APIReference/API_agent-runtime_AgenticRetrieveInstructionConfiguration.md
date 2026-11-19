@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveInstructionConfiguration
-<a name="API_agent-runtime_AgenticRetrieveInstructionConfiguration"></a>
 
 The retrieval instruction, identified by its ID and optional version, to apply to this request.
 

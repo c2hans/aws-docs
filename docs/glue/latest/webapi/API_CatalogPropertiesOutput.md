@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogProperties
 ---
 
 # CatalogPropertiesOutput
-<a name="API_CatalogPropertiesOutput"></a>
 
 Property attributes that include configuration properties for the catalog resource.
 

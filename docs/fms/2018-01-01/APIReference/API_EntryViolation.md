@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EntryVio
 ---
 
 # EntryViolation
-<a name="API_EntryViolation"></a>
 
 Detailed information about an entry violation in a network ACL. The violation is against the network ACL specification inside the Firewall Manager network ACL policy. This data object is part of `InvalidNetworkAclEntriesViolation`.
 

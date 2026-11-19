@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyU
 ---
 
 # ModifyUsageLimit
-<a name="API_ModifyUsageLimit"></a>
 
 Modifies a usage limit in a cluster. You can't modify the feature type or period of a usage limit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageSummary
-<a name="API_ImageSummary"></a>
 
 An image summary.
 

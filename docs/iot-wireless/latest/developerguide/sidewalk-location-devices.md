@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Configuring the position of Sidewalk devices
-<a name="sidewalk-location-devices"></a>
 
 When you add your device to AWS IoT Core for Amazon Sidewalk, you can enable positioning and specify a destination for the location data. After you configure your device position, you can retrieve the location data using the AWS IoT Wireless API, the AWS CLI, or by subscribing to an MQTT topic.
 

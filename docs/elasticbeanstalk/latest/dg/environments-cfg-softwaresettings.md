@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Environment variables and other software settings
-<a name="environments-cfg-softwaresettings"></a>
 
 The **Configure updates, monitoring, and logging** configuration page lets you configure the software on the Amazon Elastic Compute Cloud (Amazon EC2) instances that run your application. You can configure environment variables, AWS X-Ray debugging, instance log storing and streaming, and platform-specific settings.
 

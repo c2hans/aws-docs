@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/tams-input-troubl
 ---
 
 # Troubleshooting TAMS inputs
-<a name="tams-input-troubleshooting"></a>
 
 If you encounter issues when processing TAMS content, the following information can help you identify and resolve common problems:
 

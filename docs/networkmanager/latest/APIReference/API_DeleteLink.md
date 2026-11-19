@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteLink
-<a name="API_DeleteLink"></a>
 
 Deletes an existing link. You must first disassociate the link from any devices and customer gateways.
 

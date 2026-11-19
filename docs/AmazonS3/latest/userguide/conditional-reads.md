@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-re
 ---
 
 # How to retrieve or copy objects based on metadata with conditional reads
-<a name="conditional-reads"></a>
 
 With conditional reads, you can add an additional header to your read request in order to add preconditions to your S3 operation. If these preconditions are not met the read request will fail.
 

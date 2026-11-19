@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/cloudwatch_me
 ---
 
 # CodeBuild CloudWatch metrics
-<a name="cloudwatch_metrics-codebuild"></a>
 
  The following metrics can be tracked per AWS account or build project. For more information about using CloudWatch with CodeBuild, see [Monitor CodeBuild builds with CloudWatch](monitoring-builds.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_OptI
 ---
 
 # OptInFeature
-<a name="API_OptInFeature"></a>
 
 ## Contents
 <a name="API_OptInFeature_Contents"></a>

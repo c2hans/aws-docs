@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_DeletePermis
 ---
 
 # DeletePermission
-<a name="API_DeletePermission"></a>
 
 Deletes the specified customer managed permission in the AWS Region in which you call this operation. You can delete a customer managed permission only if it isn't attached to any resource share. The operation deletes all versions associated with the customer managed permission.
 

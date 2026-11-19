@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-next-step
 ---
 
 # Step 6: Next steps
-<a name="gs-next-steps"></a>
 
 Now that you have familiarized yourself with scaling plans and some of its features, you may want to try creating your own scaling plan template using CloudFormation.
 

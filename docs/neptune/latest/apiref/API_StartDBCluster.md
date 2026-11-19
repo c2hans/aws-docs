@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_StartDBCluster
 ---
 
 # StartDBCluster
-<a name="API_StartDBCluster"></a>
 
 Starts an Amazon Neptune DB cluster that was stopped using the Amazon console, the Amazon CLI stop-db-cluster command, or the StopDBCluster API.
 

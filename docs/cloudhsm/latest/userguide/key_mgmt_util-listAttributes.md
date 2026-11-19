@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # List the attributes of an AWS CloudHSM key using KMU
-<a name="key_mgmt_util-listAttributes"></a>
 
 Use the **listAttributes** command in the AWS CloudHSM key\_mgmt\_util to list the attributes of an AWS CloudHSM key and the constants that represent them. You use these constants to identify the attributes in [getAttribute](key_mgmt_util-getAttribute.md) and [setAttribute](key_mgmt_util-setAttribute.md) commands. For help interpreting the key attributes, see the [AWS CloudHSM key attribute reference for KMU](key-attribute-table.md).
 

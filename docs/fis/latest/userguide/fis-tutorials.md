@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-tutorials.html
 ---
 
 # Tutorials for AWS Fault Injection Service
-<a name="fis-tutorials"></a>
 
 The following tutorials show you how to create and run experiments using AWS Fault Injection Service (AWS FIS).
 

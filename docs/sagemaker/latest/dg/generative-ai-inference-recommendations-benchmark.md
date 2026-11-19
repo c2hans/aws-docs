@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Benchmark generative AI inference endpoints
-<a name="generative-ai-inference-recommendations-benchmark"></a>
 
 The SageMaker AI benchmarking service measures the performance of large language models (LLMs) hosted on SageMaker AI endpoints. It runs benchmarks using NVIDIA AIPerf, producing metrics such as request latency, throughput, time to first token, and inter-token latency.
 

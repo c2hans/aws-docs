@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-idc-start
 ---
 
 # Getting started with AWS IAM Identity Center and Amazon EMR
-<a name="emr-idc-start"></a>
 
 This section helps you configure Amazon EMR to integrate with AWS IAM Identity Center.
 

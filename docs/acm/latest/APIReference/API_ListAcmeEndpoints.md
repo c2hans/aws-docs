@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeEndp
 ---
 
 # ListAcmeEndpoints
-<a name="API_ListAcmeEndpoints"></a>
 
 Retrieves a list of ACME endpoints in your account. Use this operation to view all configured ACME endpoints and their current status.
 

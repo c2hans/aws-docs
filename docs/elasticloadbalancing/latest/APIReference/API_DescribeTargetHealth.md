@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeTargetHealth
-<a name="API_DescribeTargetHealth"></a>
 
 Describes the health of the specified targets or all of your targets.
 

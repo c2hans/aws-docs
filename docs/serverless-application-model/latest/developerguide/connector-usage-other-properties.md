@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Define resources by using other supported properties in AWS SAM
-<a name="connector-usage-other-properties"></a>
 
 For both source and destination resources, when defined within the same template, use the `Id` property. Optionally, a `Qualifier` can be added to narrow the scope of your defined resource. When the resource is not within the same template, use a combination of supported properties.
 + For a list of supported property combinations for source and destination resources, see [Supported source and destination resource types for connectors](reference-sam-connector.md#supported-connector-resource-types).

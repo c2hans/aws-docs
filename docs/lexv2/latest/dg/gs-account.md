@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/gs-account.html
 ---
 
 # Step 1: Set up an AWS Account and create an administrator User
-<a name="gs-account"></a>
 
 Before you use Amazon Lex V2 for the first time, complete the following tasks:
 

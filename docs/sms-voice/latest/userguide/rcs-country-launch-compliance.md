@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-country-l
 ---
 
 # RCS country launch compliance guide
-<a name="rcs-country-launch-compliance"></a>
 
 This guide helps you prepare a compliant RCS country launch registration that passes carrier review on the first submission. It covers the specific requirements that carriers evaluate during the review process, with examples of compliant and non-compliant submissions.
 

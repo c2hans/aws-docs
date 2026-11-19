@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetA
 ---
 
 # GetAccountUsage
-<a name="API_GetAccountUsage"></a>
 
 Retrieves monthly account usage metrics and limits for the AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PutItemInput
 ---
 
 # PutItemInput
-<a name="API_PutItemInput"></a>
 
 The input for the DynamoActionVS action that specifies the DynamoDB table to which the message data will be written.
 

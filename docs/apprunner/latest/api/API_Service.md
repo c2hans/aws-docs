@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_Service.html
 ---
 
 # Service
-<a name="API_Service"></a>
 
 Describes an AWS App Runner service. It can describe a service in any state, including deleted services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-iam.htm
 ---
 
 # Configuring IAM
-<a name="cdc-iam"></a>
 
 CDC streams require two separate sets of IAM permissions:
 + **Caller permissions** – The IAM principal that calls the CDC stream API operations (`CreateStream`, `GetStream`, `DeleteStream`, `ListStreams`) needs permission for these actions and for `iam:PassRole`.

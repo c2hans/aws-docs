@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # AWS Transform MGN
-<a name="app-mobility-ams"></a>
 
 *Last update: June 3, 2024*
 

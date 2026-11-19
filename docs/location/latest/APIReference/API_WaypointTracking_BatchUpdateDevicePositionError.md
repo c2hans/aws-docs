@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # BatchUpdateDevicePositionError
-<a name="API_WaypointTracking_BatchUpdateDevicePositionError"></a>
 
 Contains error details for each device that failed to update its position.
 

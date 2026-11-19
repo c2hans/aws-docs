@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dms-replica
 ---
 
 # dms-replication-not-public
-<a name="dms-replication-not-public"></a>
 
 Checks if AWS Database Migration Service (AWS DMS) replication instances are public. The rule is NON\_COMPLIANT if PubliclyAccessible field is set to true.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdatePartnerAccount
-<a name="API_UpdatePartnerAccount"></a>
 
 Updates properties of a partner account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/zero-etl-limitation
 ---
 
 # Limitations for zero-ETL integration in Oracle Database@AWS
-<a name="zero-etl-limitations"></a>
 
 Note the following general limitations:
 

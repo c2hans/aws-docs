@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/delete.html
 ---
 
 # Delete Amazon Data Lifecycle Manager policies
-<a name="delete"></a>
 
 Keep the following in mind when deleting Amazon Data Lifecycle Manager policies:
 + If you delete a policy, the snapshots or AMIs created by that policy are not automatically deleted. If you no longer need the snapshots or AMIs, you must delete them manually.

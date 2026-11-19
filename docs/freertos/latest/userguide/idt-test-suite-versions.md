@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-test-suite
 ---
 
 # Maintain test suite versions
-<a name="idt-test-suite-versions"></a>
 
 IDT for FreeRTOS organizes test resources into test suites and test groups:
 + A test suite is the set of test groups used to verify that a device works with particular versions of FreeRTOS.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/cli-and-api
 ---
 
 # Command Line and API Access
-<a name="cli-and-api-access"></a>
 
 You can use the command line interface (CLI), Query API, or REST interfaces to access AWS GovCloud (US) services. You can also use a language-specific software development kit (SDK). For more information about the CLI and SDK tools, see [Tools for Amazon Web Services](https://aws.amazon.com/tools/).
 

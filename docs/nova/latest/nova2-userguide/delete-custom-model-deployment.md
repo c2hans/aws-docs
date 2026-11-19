@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/delete-custo
 ---
 
 # Delete a custom model deployment
-<a name="delete-custom-model-deployment"></a>
 
 After you are finished using your model for on-demand inference, you can delete the deployment. After you delete the deployment, you can't use it for on-demand inference but it doesn't delete the underlying custom model.
 

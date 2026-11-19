@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Cr
 ---
 
 # CreateAccount
-<a name="API_CreateAccount"></a>
 
 Creates an AWS account that is automatically a member of the organization whose credentials made the request. This is an asynchronous request that AWS performs in the background. Because `CreateAccount` operates asynchronously, it can return a successful completion message even though account initialization might still be in progress. You might need to wait a few minutes before you can successfully access the account. To check the status of the request, do one of the following:
 + Use the `Id` value of the `CreateAccountStatus` response element from this operation to provide as a parameter to the [DescribeCreateAccountStatus](API_DescribeCreateAccountStatus.md) operation.

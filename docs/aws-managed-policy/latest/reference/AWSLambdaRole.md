@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaRole
-<a name="AWSLambdaRole"></a>
 
 **Description**: Default policy for AWS Lambda service role.
 

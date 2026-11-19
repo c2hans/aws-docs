@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/security-lak
 ---
 
 # Amazon Security Lake
-<a name="security-lake"></a>
 
 Amazon Security Lake automatically centralizes security data from AWS environments, software as a service (SaaS) providers, on premises and cloud sources into a purpose-built data lake stored in your AWS account. With Security Lake, you can get a more complete understanding of your security data across your entire organization. Security Lake has adopted the Open Cybersecurity Schema Framework (OCSF), an open source security event schema. With OCSF support, the service normalizes and combines security data from AWS and a broad range of enterprise security data sources.
 

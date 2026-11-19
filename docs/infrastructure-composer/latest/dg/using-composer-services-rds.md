@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Using Infrastructure Composer with Amazon Relational Database Service (Amazon RDS)
-<a name="using-composer-services-rds"></a>
 
 AWS Infrastructure Composer features an integration with Amazon Relational Database Service (Amazon RDS). Using the **RDS Database (External)** enhanced component card in Infrastructure Composer, you can connect your application to Amazon RDS DB clusters, instances, and proxies that are defined on another CloudFormation or AWS Serverless Application Model (AWS SAM) template.
 

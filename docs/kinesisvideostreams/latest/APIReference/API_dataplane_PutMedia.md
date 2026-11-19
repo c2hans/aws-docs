@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # PutMedia
-<a name="API_dataplane_PutMedia"></a>
 
  Use this API to send media data to a Kinesis video stream.
 

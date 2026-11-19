@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Run Prompt management code samples
-<a name="prompt-management-code-ex"></a>
 
 To try out some code samples for Prompt management, choose the tab for your preferred method, and then follow the steps: The following code samples assume that you've set up your credentials to use the AWS API. If you haven't, refer to [Get started with the API](getting-started-api.md).
 

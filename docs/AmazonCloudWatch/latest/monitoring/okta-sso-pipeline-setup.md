@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/okta-
 ---
 
 # CloudWatch pipelines configuration for Okta SSO
-<a name="okta-sso-pipeline-setup"></a>
 
 Collects log data from Okta SSO using OAuth2 authentication.
 

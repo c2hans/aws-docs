@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/modify-temp-restore
 ---
 
 # Modify the restore period for a temporarily restored Amazon EBS snapshot
-<a name="modify-temp-restore-period"></a>
 
 When you restore a snapshot temporarily, you must specify the number of days for which the snapshot is to remain restored in your account. After the restore period expires, the snapshot is automatically removed from the standard tier.
 

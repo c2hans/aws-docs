@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CloudWa
 ---
 
 # CloudWatchLogsLogGroupArnConfigDetails
-<a name="API_CloudWatchLogsLogGroupArnConfigDetails"></a>
 
  The Amazon Resource Name (ARN) and other details of the Amazon CloudWatch Logs log group that Amazon Route 53 is publishing logs to.
 

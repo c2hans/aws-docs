@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # What is AMS Accelerate?
-<a name="what-is-acc"></a>
 
 Welcome to AMS Accelerate for Amazon Web Services (AWS). AMS Accelerate provides a range of operational services to help you achieve operational excellence on AWS. Whether you're just getting started in the cloud, looking to augment your current team, or need a long-term operational solution, Accelerate can help you meet your operational goals in the cloud. Leveraging AWS services and a library of automations, configurations, and runbooks, we provide an end-to-end operational solution for both new and existing AWS environments.
 

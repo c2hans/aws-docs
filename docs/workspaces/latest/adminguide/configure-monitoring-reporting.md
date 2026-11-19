@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/configure-m
 ---
 
 # Monitoring WorkSpaces Pools
-<a name="configure-monitoring-reporting"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your WorkSpaces Pools.
 

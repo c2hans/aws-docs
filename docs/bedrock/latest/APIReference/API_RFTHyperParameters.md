@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RFTHyper
 ---
 
 # RFTHyperParameters
-<a name="API_RFTHyperParameters"></a>
 
  Hyperparameters for controlling the reinforcement fine-tuning training process, including learning settings and evaluation intervals.
 

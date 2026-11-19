@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDataSet
-<a name="API_DescribeDataSet"></a>
 
 Describes a dataset.
 

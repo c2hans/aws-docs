@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/data-at
 ---
 
 # Terms of use and data attribution for data providers
-<a name="data-attribution"></a>
 
 Before you use a data provider, be sure you can comply with all applicable legal requirements, including license terms applicable to the use of the provider.
 

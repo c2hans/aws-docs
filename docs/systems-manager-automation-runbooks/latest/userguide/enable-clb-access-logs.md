@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-EnableCLBAccessLogs`
-<a name="enable-clb-access-logs"></a>
 
 **Description**
 

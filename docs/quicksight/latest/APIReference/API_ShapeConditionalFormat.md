@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Shape
 ---
 
 # ShapeConditionalFormat
-<a name="API_ShapeConditionalFormat"></a>
 
 The shape conditional formatting of a filled map visual.
 

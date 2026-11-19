@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DeleteDomain
-<a name="API_DeleteDomain"></a>
 
 ## Description
 <a name="API_DeleteDomain_Description"></a>

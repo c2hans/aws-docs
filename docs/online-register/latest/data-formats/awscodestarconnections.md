@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS CodeStar Connections
-<a name="awscodestarconnections"></a>
 
 AWS CodeStar Connections provides the following APIs for data retrieval.
 

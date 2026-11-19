@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchHo
 ---
 
 # SearchHoursOfOperationOverrides
-<a name="API_SearchHoursOfOperationOverrides"></a>
 
 Searches the hours of operation overrides.
 

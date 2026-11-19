@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceBundl
 ---
 
 # WorkspaceBundle
-<a name="API_WorkspaceBundle"></a>
 
 Describes a WorkSpace bundle.
 

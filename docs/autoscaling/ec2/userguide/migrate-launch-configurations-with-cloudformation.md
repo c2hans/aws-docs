@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/migrate-launch
 ---
 
 # Migrate AWS CloudFormation stacks to launch templates
-<a name="migrate-launch-configurations-with-cloudformation"></a>
 
 You can migrate your existing CloudFormation stack templates from launch configurations to launch templates. To do this, add a launch template directly to an existing stack template and then associate the launch template with the Auto Scaling group in the stack template. Then, use your modified template to update your stack.
 

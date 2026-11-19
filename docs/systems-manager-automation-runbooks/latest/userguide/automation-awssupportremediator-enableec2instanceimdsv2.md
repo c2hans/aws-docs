@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableEc2InstanceImdsv2`
-<a name="automation-awssupportremediator-enableec2instanceimdsv2"></a>
 
 **Description**
 

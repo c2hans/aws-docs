@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AI-Enabled Audio Insight Processing Pipeline
-<a name="ai-audio-insight-pipeline"></a>
 
 Publication date: **June 20, 2022 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_TimeRang
 ---
 
 # TimeRange
-<a name="API_TimeRange"></a>
 
 The time range.
 

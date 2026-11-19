@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Parameter groups for Amazon RDS
-<a name="USER_WorkingWithParamGroups"></a>
 
 *Database parameters* specify how the database is configured. For example, database parameters can specify the amount of resources, such as memory, to allocate to a database.
 

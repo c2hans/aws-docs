@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Workload tiered Nodepools: Right capacity for the right workload
-<a name="6-1-separate-node-pools-by-application-usage"></a>
 
 Isolate workloads into dedicated NodePools based on their characteristics — this prevents low-priority batch jobs from blocking expensive on-demand capacity meant for production, and allows tailored cost strategies per workload type.
 

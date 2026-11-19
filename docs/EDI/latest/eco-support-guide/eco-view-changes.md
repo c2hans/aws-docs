@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-view-ch
 ---
 
 # View your EDI accounts' change records
-<a name="eco-view-changes"></a>
 
 To view your EDI account change records, submit a ticket with ECO or use the Amazon Athena console.
 

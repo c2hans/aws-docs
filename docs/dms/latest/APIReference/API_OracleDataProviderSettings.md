@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_OracleDataPr
 ---
 
 # OracleDataProviderSettings
-<a name="API_OracleDataProviderSettings"></a>
 
 Provides information that defines an Oracle data provider.
 

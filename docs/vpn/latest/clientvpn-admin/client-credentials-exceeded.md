@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-creden
 ---
 
 # Troubleshooting AWS Client VPN: Client returns a credentials exceed max size error in Client VPN — federated authentication
-<a name="client-credentials-exceeded"></a>
 
 **Problem**
 I use federated authentication for my Client VPN endpoint. When clients enter their user name and password in the SAML-based identity provider (IdP) browser window, they get an error that the credentials exceed the maximum supported size.

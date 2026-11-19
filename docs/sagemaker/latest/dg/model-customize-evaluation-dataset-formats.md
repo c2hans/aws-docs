@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-eval
 ---
 
 # Supported Dataset Formats for Bring-Your-Own-Dataset (BYOD) Tasks
-<a name="model-customize-evaluation-dataset-formats"></a>
 
 The Custom Scorer and LLM-as-judge evaluation types require a custom dataset JSONL file located in AWS S3. You must provide the file as a JSON Lines file adhering to one of the following supported formats. The examples in this doc are expanded for clarity.
 

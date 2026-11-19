@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *January 2017*
 

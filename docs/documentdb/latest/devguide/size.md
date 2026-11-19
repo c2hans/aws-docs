@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/size.html
 ---
 
 # $size
-<a name="size"></a>
 
 The `$size` operator is used to return the count of items within an array field. This can be used to determine the number of elements in an array stored in a document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appli
 ---
 
 # Recommended metrics
-<a name="application-insights-recommended-metrics"></a>
 
 The following table lists the recommended metrics for each component type.
 

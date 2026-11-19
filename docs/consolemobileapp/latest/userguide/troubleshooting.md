@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/consolemobileapp/latest/userguide/troubl
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 In this section, you’ll find answers to some common questions and concerns.
 

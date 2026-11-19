@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metric
 ---
 
 # BatchGetMetrics
-<a name="API_metrics_BatchGetMetrics"></a>
 
 Used to retrieve training metrics from SageMaker.
 

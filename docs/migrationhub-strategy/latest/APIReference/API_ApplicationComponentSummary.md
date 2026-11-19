@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ApplicationComponentSummary
-<a name="API_ApplicationComponentSummary"></a>
 
  Contains the summary of application components.
 

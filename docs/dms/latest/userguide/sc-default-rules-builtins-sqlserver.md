@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-default-rules-bu
 ---
 
 # Built-in function and system object rules
-<a name="sc-default-rules-builtins-sqlserver"></a>
 
 DMS Schema Conversion applies default rules to convert Microsoft SQL Server built-in functions and system objects when it converts a source schema to Amazon Aurora PostgreSQL or Amazon RDS for PostgreSQL. The following sections list the source objects in each category and show how DMS Schema Conversion converts each one.
 

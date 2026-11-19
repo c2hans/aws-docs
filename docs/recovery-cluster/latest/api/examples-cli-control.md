@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/examples-cli
 ---
 
 # CLI Examples for the Recovery Control Configuration API
-<a name="examples-cli-control"></a>
 
 This section includes CLI examples for working with the APIs for Recovery Control Configuration with Amazon Application Recovery Controller (ARC).
 

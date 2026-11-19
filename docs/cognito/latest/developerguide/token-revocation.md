@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/token-revo
 ---
 
 # Ending user sessions with token revocation
-<a name="token-revocation"></a>
 
 You can revoke refresh tokens and end user sessions with the following methods. When you revoke a refresh token, all access tokens that were previously issued by that refresh token become invalid. The other refresh tokens issued to the user are not affected.
 

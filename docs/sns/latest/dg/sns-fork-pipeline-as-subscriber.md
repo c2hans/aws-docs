@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-fork-pipeline-as-subsc
 ---
 
 # Fanout Amazon SNS events to AWS Event Fork Pipelines
-<a name="sns-fork-pipeline-as-subscriber"></a>
 
 |  |
 | --- |

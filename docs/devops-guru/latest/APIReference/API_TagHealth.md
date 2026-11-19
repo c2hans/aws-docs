@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_TagH
 ---
 
 # TagHealth
-<a name="API_TagHealth"></a>
 
  Information about the health of AWS resources in your account that are specified by an AWS tag *key*.
 

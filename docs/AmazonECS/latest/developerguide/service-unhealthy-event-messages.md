@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Amazon ECS service unhealthy event messages
-<a name="service-unhealthy-event-messages"></a>
 
 The following are examples of service unhealthy event messages.
 

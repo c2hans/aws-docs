@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Unified data access governance in a data mesh
-<a name="unified-data-access-governance"></a>
 
 Publication date: **February 13, 2023 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoho-crm-connection-optio
 ---
 
 # Zoho CRM connection options
-<a name="zoho-crm-connection-options"></a>
 
 The following are connection options for Zoho CRM:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Zoho CRM.

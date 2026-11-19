@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/vpc-out-caseA.html
 ---
 
 # Use case A – no VPC inputs
-<a name="vpc-out-caseA"></a>
 
 This use case applies if the MediaLive channel won't have inputs that use the VPC:
 + No MediaConnect inputs

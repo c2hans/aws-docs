@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/listeners.html
 ---
 
 # Listeners for your VPC Lattice service
-<a name="listeners"></a>
 
 Before you start using your VPC Lattice service, you must add a *listener*. A listener is a process that checks for connection requests, using the protocol and port that you configure. The rules that you define for a listener determine how the service routes requests to its registered targets.
 

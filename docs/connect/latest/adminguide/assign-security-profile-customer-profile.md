@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/assign-securit
 ---
 
 # Security profile permissions for Connect Customer Customer Profiles
-<a name="assign-security-profile-customer-profile"></a>
 
 Assign permissions for your agents' security profiles so that they can perform such tasks as searching for profiles and viewing customer details, associating contact records to profiles, editing profiles, and creating and saving new profiles. The topics in the section help you assign permissions by updating permissions for agents, flows, and calculated attributes. There is also information to help you troubleshoot an error should you happen to encounter it while updating permissions.
 

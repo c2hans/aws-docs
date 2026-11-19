@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UserAccessLoggingSettingsSummary
-<a name="API_UserAccessLoggingSettingsSummary"></a>
 
 The summary of user access logging settings.
 

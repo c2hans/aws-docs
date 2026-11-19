@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessGateway
-<a name="API_GetWirelessGateway"></a>
 
 Gets information about a wireless gateway.
 

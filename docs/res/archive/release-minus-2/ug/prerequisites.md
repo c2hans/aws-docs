@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/prerequis
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 **Topics**
 + [Create an AWS account with an administrative user](#aws-account)

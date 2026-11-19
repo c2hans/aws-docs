@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringScheduleSummary
-<a name="API_MonitoringScheduleSummary"></a>
 
 Summarizes the monitoring schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase2Int
 ---
 
 # Phase2IntegrityAlgorithmsRequestListValue
-<a name="API_Phase2IntegrityAlgorithmsRequestListValue"></a>
 
 Specifies the integrity algorithm for the VPN tunnel for phase 2 IKE negotiations.
 

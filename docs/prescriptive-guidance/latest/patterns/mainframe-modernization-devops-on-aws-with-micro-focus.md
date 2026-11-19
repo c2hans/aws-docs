@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Mainframe modernization: DevOps on AWS with Rocket Software Enterprise Suite
-<a name="mainframe-modernization-devops-on-aws-with-micro-focus"></a>
 
 *Kevin Yung, Amazon Web Services*
 

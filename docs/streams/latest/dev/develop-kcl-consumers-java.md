@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/develop-kcl-consumers
 ---
 
 # Develop consumers with KCL in Java
-<a name="develop-kcl-consumers-java"></a>
 
 ## Prerequisites
 <a name="develop-kcl-consumers-java-prerequisites"></a>

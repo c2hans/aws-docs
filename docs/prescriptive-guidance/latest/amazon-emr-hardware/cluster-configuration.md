@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Amazon EMR cluster configuration
-<a name="cluster-configuration"></a>
 
 With Amazon EMR, it can take only a few minutes to set up a cluster to process and analyze data with big data frameworks. However, before you implement the cluster, you must prepare the storage, define the limits of your operation, and determine the most efficient distribution of your workload.
 

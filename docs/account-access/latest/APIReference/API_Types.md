@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_T
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Account Access API contains several data types that various actions use. This section describes each data type in detail.
 

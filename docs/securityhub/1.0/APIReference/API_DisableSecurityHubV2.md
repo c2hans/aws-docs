@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disable
 ---
 
 # DisableSecurityHubV2
-<a name="API_DisableSecurityHubV2"></a>
 
 Disable the service for the current AWS Region or specified AWS Region. Disabling the service also disables all opt-in features that are currently enabled in that Region.
 

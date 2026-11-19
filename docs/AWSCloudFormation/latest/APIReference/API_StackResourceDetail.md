@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackResourceDetail
-<a name="API_StackResourceDetail"></a>
 
 Contains detailed information about the specified stack resource.
 

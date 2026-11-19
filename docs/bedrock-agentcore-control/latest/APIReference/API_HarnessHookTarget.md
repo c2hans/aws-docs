@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessHookTarget
-<a name="API_HarnessHookTarget"></a>
 
 The target that receives lifecycle hook events. Specify one target type.
 

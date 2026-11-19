@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/esc_seller_
 ---
 
 # Listing and Selling in AWS Marketplace for AWS European Sovereign Cloud
-<a name="esc_seller_guide"></a>
 
  AWS Marketplace in the AWS European Sovereign Cloud (ESC) enables you to offer your products to customers who require enhanced data sovereignty, residency, and operational control within the European Union. ESC is designed to help EU-based organizations meet strict regulatory requirements while using cloud computing services. For full comparison between AWS Marketplace in Commercial region and AWS Marketplace in ESC refer to [this documentation](https://docs.aws.eu/esc/latest/userguide/marketplace.html).
 

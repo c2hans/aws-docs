@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateWorkloadEstimateUsageError
-<a name="API_AWSBCMPricingCalculator_BatchCreateWorkloadEstimateUsageError"></a>
 
  Represents an error that occurred during a batch create operation for workload estimate usage.
 

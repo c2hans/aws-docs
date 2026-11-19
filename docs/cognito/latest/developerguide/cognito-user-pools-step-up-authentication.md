@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Authentication levels with ACR and AMR claims
-<a name="cognito-user-pools-step-up-authentication"></a>
 
 **Note**
 Authentication levels with ACR and AMR claims is rolling out gradually. This feature might not yet be available to your user pool. If the behavior described here isn't available, check back later as the rollout continues.
@@ -18,9 +17,9 @@ The `acr` and `amr` claims follow the definitions in the OpenID Connect Core spe
 
 Step-up authentication is a common use case for these claims. In step-up authentication, your application requires a user to authenticate with a stronger method before they perform a sensitive operation. To decide whether to prompt, your application compares the `acr` level and the `auth_time` claim in the user's ID token against the level and freshness that the operation requires, and requests step-up only when they aren't already met. When step-up is needed, redirect the user to the managed login authorize or login endpoint with `acr_values`, or call the `USER_AUTH` API flow with `TARGET_ACR_VALUES`. For an example, see the [Step-up authentication](cognito-scenarios.md#scenario-step-up-authentication) scenario.
 
-You can request ACR and AMR from any Amazon Cognito sign-in entry point. The mechanics for each entry point are documented with that entry point.
+Amazon Cognito adds `acr` and `amr` claims to the tokens from any sign-in entry point, but you can request a specific authentication level only with managed login or the API. The mechanics for each entry point are documented with that entry point.
 + SDK and API sign-in — Request a target level in the `USER_AUTH` flow with the `TARGET_ACR_VALUES` and `MAX_AGE` parameters. For the parameters and step-up behavior, see [Step-up authentication with the USER\_AUTH flow](authentication-flows-selection-sdk.md#cognito-user-pools-step-up-user-auth).
-+ Managed login and hosted UI — Pass the `acr_values` and `max_age` parameters on the authorize and login endpoints. For details, see the [authorize endpoint](authorization-endpoint.md#authorization-endpoint-step-up) and [login endpoint](login-endpoint.md#login-endpoint-step-up).
++ Managed login — Pass the `acr_values` and `max_age` parameters on the authorize and login endpoints. Step-up authentication requires managed login and isn't supported in the hosted UI (classic). For details, see the [authorize endpoint](authorization-endpoint.md#authorization-endpoint-step-up) and [login endpoint](login-endpoint.md#login-endpoint-step-up), and [Hosted UI (classic) behavior](#cognito-user-pools-step-up-hosted-ui-classic).
 + Federated sign-in — Amazon Cognito derives the ACR and AMR values of a federated user from the identity provider (IdP) response and maps them with the `AcrMapping` field. For OIDC identity providers, see [Step-up authentication for federated users](cognito-user-pools-oidc-idp.md#cognito-user-pools-step-up-federation).
 
 Requesting step-up authentication requires the Essentials or Plus feature plan. For more information, see [Feature plan requirements](#cognito-user-pools-step-up-authentication-tiers).
@@ -29,6 +28,7 @@ Requesting step-up authentication requires the Essentials or Plus feature plan. 
 + [Authentication levels and methods](#cognito-user-pools-step-up-authentication-concepts)
 + [Configuring ACR level names](#cognito-user-pools-step-up-acr-configuration)
 + [Feature plan requirements](#cognito-user-pools-step-up-authentication-tiers)
++ [Hosted UI (classic) behavior](#cognito-user-pools-step-up-hosted-ui-classic)
 + [Your responsibilities for step-up authentication](#cognito-user-pools-step-up-responsibilities)
 
 ## Authentication levels and methods
@@ -151,6 +151,18 @@ The behavior when you request step-up authentication on an insufficient feature 
 + The managed login authorize endpoint silently ignores `acr_values` and proceeds with normal authentication, without an error.
 
 For more information about feature plans, see [User pool feature plans](cognito-sign-in-feature-plans.md).
+
+## Hosted UI (classic) behavior
+<a name="cognito-user-pools-step-up-hosted-ui-classic"></a>
+
+Step-up authentication and accurate authentication levels require managed login. If your user pool domain uses the hosted UI (classic):
++ Amazon Cognito silently ignores the `acr_values` and `max_age` parameters and proceeds with normal sign-in. It doesn't return an error.
++ Tokens contain `acr` and `amr` claims with default values:
+  + Local users: `acr` is level 1 (`urn:cognito:loa:1`, or the custom name for level 1 in your `AcrConfiguration`), even if the user completed MFA.
+  + OIDC and social federated users: `acr` and `amr` are derived from the identity provider response.
+  + SAML federated users: `acr` is level 1 and `amr` is `["fed"]`.
+
+If your application relies on `acr` or `amr`, set the branding version of your domain to managed login. For more information, see [Setting up managed login](cognito-user-pools-managed-login.md#set-up-managed-login).
 
 ## Your responsibilities for step-up authentication
 <a name="cognito-user-pools-step-up-responsibilities"></a>

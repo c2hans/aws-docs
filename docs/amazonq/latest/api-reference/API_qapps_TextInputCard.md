@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_T
 ---
 
 # TextInputCard
-<a name="API_qapps_TextInputCard"></a>
 
 A card in an Amazon Q App that allows the user to input text.
 

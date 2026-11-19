@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Traffic Capture and Replay
-<a name="traffic-capture-replay"></a>
 
 The Capture Proxy relays HTTP requests into a durable, scalable Apache Kafka stream before forwarding them to the source cluster. The Traffic Replayer consumes records from Apache Kafka, reconstructs them into HTTP requests, applies replay-time transformations and authentication behavior, and sends them to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. This replication can test the performance of the new target, keep the clusters synchronized, and illustrate differences between a source and target. Users can explore the progress and performance of the replay through Amazon CloudWatch metrics and through the Migration Console by querying results, which are output as rotating JSON files.
 

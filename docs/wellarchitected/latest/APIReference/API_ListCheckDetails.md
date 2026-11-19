@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListCheckDetails
-<a name="API_ListCheckDetails"></a>
 
 List of Trusted Advisor check details by account related to the workload.
 

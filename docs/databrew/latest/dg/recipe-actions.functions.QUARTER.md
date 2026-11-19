@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # QUARTER
-<a name="recipe-actions.functions.QUARTER"></a>
 
 Creates a new column containing the date-based quarter from a string that represents a date.
 

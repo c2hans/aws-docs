@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ge
 ---
 
 # GetSecurityRequirementPack
-<a name="API_GetSecurityRequirementPack"></a>
 
 Retrieves information about a security requirement pack.
 

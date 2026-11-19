@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pingi
 ---
 
 # CloudWatch pipelines configuration for Ping Identity PingAccess
-<a name="pingidentity-pingaccess-pipeline-setup"></a>
 
 The Ping Identity PingAccess setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

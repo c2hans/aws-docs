@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/tutorial-build-rag
 ---
 
 # Build a RAG application using Amazon Bedrock Knowledge Bases
-<a name="tutorial-build-rag-with-bedrock"></a>
 
 Many enterprises accumulate large repositories of documents on their NFS and SMB file shares — product manuals, policy documents, contracts, research reports, engineering specifications, and user-generated content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VideoStandardGenerativeField
-<a name="API_data-automation_VideoStandardGenerativeField"></a>
 
 Settings for generating descriptions of video.
 

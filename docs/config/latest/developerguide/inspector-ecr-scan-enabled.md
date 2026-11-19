@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/inspector-e
 ---
 
 # inspector-ecr-scan-enabled
-<a name="inspector-ecr-scan-enabled"></a>
 
 Checks if Amazon Inspector V2 ECR scanning is activated for your single or multi-account environment to detect potential software vulnerabilities in your container images. The rule is NON\_COMPLIANT if ECR scanning is not activated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/exporting-
 ---
 
 # Exporting logs from Amazon Cognito user pools
-<a name="exporting-quotas-and-usage"></a>
 
 You can configure your user pool to send detailed logs of some additional activity to another AWS service, like a CloudWatch log group. These logs are of a finer granularity than those in AWS CloudTrail, and can be useful to troubleshoot your user pool and analyze user sign-in activity with [threat protection](cognito-user-pool-settings-threat-protection.md). When you want to stream logs of SMS and email notification errors, your user pool sends `ERROR`-level logs to a CloudWatch log group. When you want to stream logs of user sign-in activity, your user pool sends `INFO`-level logs to a log group, a Amazon Data Firehose stream, or an Amazon S3 bucket. You can combine both options in a user pool.
 

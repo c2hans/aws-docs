@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AuditManager::Assessment Scope
-<a name="aws-properties-auditmanager-assessment-scope"></a>
 
 The `Scope` property type specifies the wrapper that contains the AWS accounts and services that are in scope for the assessment.
 

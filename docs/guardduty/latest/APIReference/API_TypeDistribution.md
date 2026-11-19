@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TypeDi
 ---
 
 # TypeDistribution
-<a name="API_TypeDistribution"></a>
 
 Contains the number and percentage of findings of a finding type.
 

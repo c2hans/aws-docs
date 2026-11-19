@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchGetFi
 ---
 
 # BatchGetField
-<a name="API_connect-cases_BatchGetField"></a>
 
 Returns the description for the list of fields in the request parameters.
 

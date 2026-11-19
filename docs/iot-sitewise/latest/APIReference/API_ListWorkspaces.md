@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListWorkspaces
-<a name="API_ListWorkspaces"></a>
 
 Retrieves a paginated list of workspaces. Use the `nextToken` parameter to retrieve additional results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/compliance
 ---
 
 # Compliance validation for Amazon Comprehend Medical
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of Amazon Comprehend Medical as part of multiple AWS compliance programs. These include PCI, FedRAMP, HIPAA, and others. You can download third-party audit reports using AWS Artifact. For more information, see [Downloading Reports in AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/downloading-documents.html).
 

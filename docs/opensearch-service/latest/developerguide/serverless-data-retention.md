@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Managing data retention for NextGen time series collections
-<a name="serverless-data-retention"></a>
 
 With a NextGen time series collection, you control how long OpenSearch Serverless retains data in an index before it deletes the data. You set this retention period with the `index.data.retention` index setting. You can use this setting to control storage costs and to meet data compliance requirements.
 

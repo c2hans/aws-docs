@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ma
 ---
 
 # MappingRule
-<a name="API_MappingRule"></a>
 
 A single mapping entry for each supported specifier or sub-field.
 

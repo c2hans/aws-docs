@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Troubleshooting cross-Region replicas for Amazon Aurora MySQL
-<a name="AuroraMySQL.Replication.CrossRegion.Troubleshooting"></a>
 
  Following you can find a list of common error messages that you might encounter when creating an Amazon Aurora cross-Region read replica, and how to resolve the specified errors.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/res/latest/ug/res-ready-ami.html
 End of development notice: AWS is discontinuing development of Research and Engineering Studio on AWS (RES). 2026.09 is the final release, supported through September 30, 2027. RES remains open source and keeps running in your account. For more information, see [RES end of support](res-end-of-support.md).
 
 # Configure RES-ready AMIs
-<a name="res-ready-ami"></a>
 
 With RES-ready Amazon Machine Images (AMIs), you can pre-install RES dependencies for virtual desktop instances (VDIs) on your custom AMIs. Using RES-ready AMIs improve boot times for VDI instances using the pre-baked images. Using EC2 Image Builder, you can build and register your AMIs as new software stacks. For more information on Image Builder, see the [ Image Builder User Guide](https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html).
 

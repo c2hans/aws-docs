@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteAPIKey
 ---
 
 # DeleteAPIKey
-<a name="API_DeleteAPIKey"></a>
 
 Deletes the specified API key.
 

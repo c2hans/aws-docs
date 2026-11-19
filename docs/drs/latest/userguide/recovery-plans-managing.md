@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-mana
 ---
 
 # Editing and deleting recovery plans
-<a name="recovery-plans-managing"></a>
 
 Use `update-recovery-plan` to change a plan's name or description, and the step commands to change its steps. Editing a plan does not affect an execution that is already running, because an execution runs against the copy of the plan that was taken when it started. Your edits apply to the next execution that you start.
 

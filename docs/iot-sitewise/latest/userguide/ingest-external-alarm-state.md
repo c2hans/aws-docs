@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ingest-ext
 ---
 
 # Ingest an external alarm state in AWS IoT SiteWise
-<a name="ingest-external-alarm-state"></a>
 
 External alarms are alarms that you evaluate outside of AWS IoT SiteWise. You can use external alarms when you have a data source that reports alarm state that you want to ingest to AWS IoT SiteWise.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Manage and Configure Assets with AWS Config
-<a name="manage-and-configure-assets-with-aws-config"></a>
 
 [AWS Config](https://aws.amazon.com/config/) provides a detailed view of the configuration of many types of AWS resources in your AWS account. This includes how the resources are related to one another, and how they were previously configured, so you can see how the configurations and relationships change over time.
 

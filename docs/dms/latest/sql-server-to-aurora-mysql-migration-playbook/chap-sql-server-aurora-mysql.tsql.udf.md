@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # User-defined functions for T-SQL
-<a name="chap-sql-server-aurora-mysql.tsql.udf"></a>
 
 This topic provides reference content comparing user-defined functions (UDFs) in Microsoft SQL Server 2019 and Amazon Aurora MySQL. It explains the capabilities, limitations, and key differences between UDFs in these two database systems. You’ll learn about the types of UDFs supported, their behavior, and important considerations when migrating from SQL Server to Aurora MySQL.
 

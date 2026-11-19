@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accept
 ---
 
 # AcceptAdministratorInvitation
-<a name="API_AcceptAdministratorInvitation"></a>
 
 Accepts the invitation to be a member account and get monitored by a GuardDuty administrator account that sent the invitation.
 

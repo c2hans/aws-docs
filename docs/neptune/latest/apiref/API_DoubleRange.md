@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DoubleRange.ht
 ---
 
 # DoubleRange
-<a name="API_DoubleRange"></a>
 
 A range of double values.
 

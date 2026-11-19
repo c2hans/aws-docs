@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/beanstalk.html
 ---
 
 # AL2023 on AWS Elastic Beanstalk
-<a name="beanstalk"></a>
 
  AWS Elastic Beanstalk is a service for deploying and scaling web applications and services. Upload your code and Elastic Beanstalk automatically handles the deployment — from capacity provisioning, load balancing, and auto scaling to application health monitoring. For more information, see [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_NotebookExec
 ---
 
 # NotebookExecutionSummary
-<a name="API_NotebookExecutionSummary"></a>
 
 Details for a notebook execution. The details include information such as the unique ID and status of the notebook execution.
 

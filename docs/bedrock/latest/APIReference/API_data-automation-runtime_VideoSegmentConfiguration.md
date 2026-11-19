@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VideoSegmentConfiguration
-<a name="API_data-automation-runtime_VideoSegmentConfiguration"></a>
 
 Used to set your start and end timestamp for what portion of a video you'd like to detect. The minimum segement length is 5 minutes.
 

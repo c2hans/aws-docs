@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddMaintenan
 ---
 
 # AddMaintenance
-<a name="API_AddMaintenance"></a>
 
  Create a maintenance setting for a flow.
 

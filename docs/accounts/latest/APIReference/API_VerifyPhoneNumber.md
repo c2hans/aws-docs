@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_VerifyP
 ---
 
 # VerifyPhoneNumber
-<a name="API_VerifyPhoneNumber"></a>
 
 Completes verification of the primary contact phone number for the specified AWS account by submitting the one-time passcode (OTP) that was delivered by [SendPhoneNumberVerification](API_SendPhoneNumberVerification.md). You do not supply a phone number in the request; the operation verifies the number that the code was sent to. To use this operation, you must have the `account:VerifyPhoneNumber` IAM permission.
 

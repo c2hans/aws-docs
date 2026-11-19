@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/deploy-agent-pr
 ---
 
 # Create an alias for your agent
-<a name="deploy-agent-proc"></a>
 
 The following procedure shows you how to create an alias and a version for your agent. After you create an alias, you can use the agent in your application by making an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt).
 

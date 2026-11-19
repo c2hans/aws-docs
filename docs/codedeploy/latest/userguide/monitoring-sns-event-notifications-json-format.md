@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-s
 ---
 
 # JSON data formats for CodeDeploy triggers
-<a name="monitoring-sns-event-notifications-json-format"></a>
 
 You can use the JSON output that is created when a trigger for a deployment or instance is activated in a custom notification workflow, such as sending messages to Amazon SQS queues or invoking a function in AWS Lambda.
 

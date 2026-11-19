@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # GitLab Access Token
-<a name="mes-partner-GitLabAccessToken"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c33b3"></a>

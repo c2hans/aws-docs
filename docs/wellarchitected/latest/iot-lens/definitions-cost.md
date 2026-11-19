@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/definiti
 ---
 
 # Definitions
-<a name="definitions-cost"></a>
 
  There are four focus areas for cost optimization:
 + [ Practice Cloud Financial Management ](practice-cloud-financial-management.md)

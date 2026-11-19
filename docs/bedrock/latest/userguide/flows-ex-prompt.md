@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-ex-prompt
 ---
 
 # Create a flow with a single prompt
-<a name="flows-ex-prompt"></a>
 
 The following image shows a flow consisting of a single prompt, defined inline in the node. The prompt generates a playlist of songs from a JSON object input that includes the genre and the number of songs to include in the playlist.
 

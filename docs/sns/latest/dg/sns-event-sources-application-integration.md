@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-applicat
 ---
 
 # Application integration services
-<a name="sns-event-sources-application-integration"></a>
 
 The following table describes how Amazon SNS integrates with application integration services such as EventBridge and AWS Step Functions, enabling real-time data routing and notifications for business-critical applications.
 

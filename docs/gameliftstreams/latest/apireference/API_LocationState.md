@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # LocationState
-<a name="API_LocationState"></a>
 
 Represents a location and its corresponding stream capacity and status.
 

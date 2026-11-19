@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 If you have previously deployed the solution, use the following instructions to upgrade your solution to the latest version:
 

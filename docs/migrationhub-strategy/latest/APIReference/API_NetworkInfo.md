@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # NetworkInfo
-<a name="API_NetworkInfo"></a>
 
  Information about the server's network for which the assessment was run.
 

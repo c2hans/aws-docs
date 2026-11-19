@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesThinClientFullAccess
-<a name="AmazonWorkSpacesThinClientFullAccess"></a>
 
 **Description**: Provides full access to Amazon WorkSpaces Thin Client as well as limited access to required related services
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteQuot
 ---
 
 # DeleteQuotaShare
-<a name="API_DeleteQuotaShare"></a>
 
 Deletes the specified quota share. You must first disable submissions for the share by updating the state to `DISABLED` using the [UpdateQuotaShare](API_UpdateQuotaShare.md) operation. All jobs in the share are eventually terminated when you delete a quota share.
 

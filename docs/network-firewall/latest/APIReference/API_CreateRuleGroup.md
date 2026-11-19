@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CreateRuleGroup
-<a name="API_CreateRuleGroup"></a>
 
 Creates the specified stateless or stateful rule group, which includes the rules for network traffic inspection, a capacity setting, and tags.
 
@@ -254,7 +253,7 @@ Required: No
 
  ** [Capacity](#API_CreateRuleGroup_RequestSyntax) **   <a name="networkfirewall-CreateRuleGroup-request-Capacity"></a>
 The maximum operating resources that this rule group can use. Rule group capacity is fixed at creation. When you update a rule group, you are limited to this capacity. When you reference a rule group from a firewall policy, Network Firewall reserves this capacity for the rule group.
-You can retrieve the capacity that would be required for a rule group before you create the rule group by calling [CreateRuleGroup](#API_CreateRuleGroup) with `DryRun` set to `TRUE`.
+You can retrieve the capacity that would be required for a rule group before you create the rule group by calling [CreateRuleGroup](API_CreateRuleGroup.md) with `DryRun` set to `TRUE`.
 You can't change or exceed this capacity when you update the rule group, so leave room for your rule group to grow.
  **Capacity for a stateless rule group**
 For a stateless rule group, the capacity required is the sum of the capacity requirements of the individual rules that you expect to have in the rule group.

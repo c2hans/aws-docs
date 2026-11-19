@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/populate-dc-other-service
 ---
 
 # Integrating with other AWS services
-<a name="populate-dc-other-services"></a>
 
  While you can use AWS Glue crawlers to populate the AWS Glue Data Catalog, there are several AWS services that can automatically integrate with and populate the catalog for you. The following sections provide more information about the specific use cases supported by AWS services that can populate the Data Catalog.
 

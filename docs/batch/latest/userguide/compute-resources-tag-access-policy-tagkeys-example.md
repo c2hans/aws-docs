@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/compute-resources
 ---
 
 # Example: Restrict the compute resource tag keys a principal can set
-<a name="compute-resources-tag-access-policy-tagkeys-example"></a>
 
 The following identity-based policy, which you attach to an IAM user or role, allows a principal to create and update compute environments, but only when every tag key in `computeResources.tags` is `CostCenter`, `Team`, or `Project`. Requests that set any other tag key are denied.
 

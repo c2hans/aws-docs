@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/amplitude-reading-from-en
 ---
 
 # Reading from Amplitude entities
-<a name="amplitude-reading-from-entities"></a>
 
 **Prerequisites**
 

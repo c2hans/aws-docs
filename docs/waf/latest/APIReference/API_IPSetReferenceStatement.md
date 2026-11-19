@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_IPSetReferen
 ---
 
 # IPSetReferenceStatement
-<a name="API_IPSetReferenceStatement"></a>
 
 A rule statement used to detect web requests coming from particular IP addresses or address ranges. To use this, create an [IPSet](API_IPSet.md) that specifies the addresses you want to detect, then use the ARN of that set in this statement. To create an IP set, see [CreateIPSet](API_CreateIPSet.md).
 

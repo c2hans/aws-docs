@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon RDS
-<a name="amazonrds"></a>
 
 Amazon RDS provides the following APIs for data retrieval.
 

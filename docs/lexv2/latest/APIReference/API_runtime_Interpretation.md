@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_In
 ---
 
 # Interpretation
-<a name="API_runtime_Interpretation"></a>
 
 An object containing information about an intent that Amazon Lex determined might satisfy the user's utterance. The intents are ordered by the confidence score.
 

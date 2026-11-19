@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Deploying a Node.js Express application to Elastic Beanstalk
-<a name="create_deploy_nodejs_express"></a>
 
 This section walks you through deploying a sample application to Elastic Beanstalk using the Elastic Beanstalk Command Line Interface (EB CLI) and then updating the application to use the [Express](http://expressjs.com/) framework.
 

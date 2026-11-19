@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Use an Amazon S3 bucket for input and output
-<a name="automatic-model-tuning-ex-bucket"></a>
 
 Set up a S3 bucket to upload training datasets and save training output data for your hyperparameter tuning job.
 

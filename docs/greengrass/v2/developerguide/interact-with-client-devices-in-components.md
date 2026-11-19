@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/interact-wi
 ---
 
 # Interact with client devices in components
-<a name="interact-with-client-devices-in-components"></a>
 
 You can develop custom Greengrass components that interact with client devices connected to a core device. For example, you can develop components that do the following:
 + Act on MQTT messages from client devices and send data to AWS Cloud destinations.

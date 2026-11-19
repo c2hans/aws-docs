@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CustomLineItemBillingPeriodRange
-<a name="API_CustomLineItemBillingPeriodRange"></a>
 
 The billing period range in which the custom line item request will be applied.
 

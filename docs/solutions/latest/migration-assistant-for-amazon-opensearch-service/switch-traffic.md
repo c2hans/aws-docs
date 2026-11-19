@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Switch traffic to the target
-<a name="switch-traffic"></a>
 
 Switching traffic is the cutover step that completes every migration scenario. This phase moves clients off the source and onto the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection while keeping a rollback path available.
 

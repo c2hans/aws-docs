@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_acco
 ---
 
 # Protecting member accounts from closure with AWS Organizations
-<a name="orgs_account_close_policy"></a>
 
 To protect member accounts from accidental closure, create an IAM policy that specifies which accounts are exempt. This policy prevents closure of protected member accounts.
 

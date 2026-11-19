@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.
 ---
 
 # PutEvents
-<a name="API_UBS_PutEvents"></a>
 
 Records item interaction event data. For more information see [Recording item interaction events](https://docs.aws.amazon.com/personalize/latest/dg/recording-item-interaction-events.html).
 

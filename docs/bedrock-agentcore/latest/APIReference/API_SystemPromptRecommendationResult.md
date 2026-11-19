@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SystemPromptRecommendationResult
-<a name="API_SystemPromptRecommendationResult"></a>
 
 The result of a system prompt recommendation, containing the optimized prompt.
 

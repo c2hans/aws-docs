@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_GetFailbackR
 ---
 
 # GetFailbackReplicationConfiguration
-<a name="API_GetFailbackReplicationConfiguration"></a>
 
 Lists all Failback ReplicationConfigurations, filtered by Recovery Instance ID.
 

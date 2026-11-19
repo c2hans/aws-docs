@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetModelPropertyBindingValue
-<a name="API_AssetModelPropertyBindingValue"></a>
 
 Contains information about an `assetModelProperty` binding value.
 

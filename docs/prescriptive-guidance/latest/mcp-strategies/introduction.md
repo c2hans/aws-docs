@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strateg
 ---
 
 # Model Context Protocol strategies on AWS
-<a name="introduction"></a>
 
 *Alex Torres (AWS), Sreeja Das, Saikat Gomes, and Mike Haken, Amazon Web Services*
 

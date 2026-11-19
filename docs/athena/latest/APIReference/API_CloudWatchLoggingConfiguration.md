@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CloudWatc
 ---
 
 # CloudWatchLoggingConfiguration
-<a name="API_CloudWatchLoggingConfiguration"></a>
 
 Configuration settings for delivering logs to Amazon CloudWatch log groups.
 

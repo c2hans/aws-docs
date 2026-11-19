@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-config
 ---
 
 # Disabling DNSSEC signing
-<a name="dns-configuring-dnssec-disable"></a>
 
 The steps for disabling DNSSEC signing in Route 53 vary, depending on the chain of trust that your hosted zone is part of.
 

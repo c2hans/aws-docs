@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBraketJobsExecutionPolicy
-<a name="AmazonBraketJobsExecutionPolicy"></a>
 
 **Description**: Grants access to AWS services and resources necessary for executing an Amazon Braket Job including S3, Cloudwatch, IAM and Braket
 

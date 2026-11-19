@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gener
 ---
 
 # GeneratedAnswerResult
-<a name="API_GeneratedAnswerResult"></a>
 
 The QA result that is made from generated answer.
 

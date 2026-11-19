@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ev
 ---
 
 # EventBusV2SystemMetadata
-<a name="API_EventBusV2SystemMetadata"></a>
 
 Customer-controllable system metadata attached to events forwarded to the downstream event bus.
 

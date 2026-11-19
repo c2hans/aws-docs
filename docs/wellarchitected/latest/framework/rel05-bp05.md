@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP05 Set client timeouts
-<a name="rel05-bp05"></a>
 
  A call with no timeout can wait forever and hold resources while a dependency is impaired. Set both connection and request timeouts on every call across a process boundary, verify them, and do not rely on framework defaults. Framework defaults do not reflect your workload and are often infinite or far higher than your service goals allow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Re-architecting as microservices in Linux containers
-<a name="refactor-linux-micro"></a>
 
 A microservices architecture is an approach to developing a single application as a suite of small services. Each service runs in its own process and communicates with other services through lightweight mechanisms. This approach breaks down a monolithic application into smaller services, where each service serves a single purpose and is deployed as a container.
 

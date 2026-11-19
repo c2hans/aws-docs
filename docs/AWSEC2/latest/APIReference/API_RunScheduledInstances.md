@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunSchedu
 ---
 
 # RunScheduledInstances
-<a name="API_RunScheduledInstances"></a>
 
 Launches the specified Scheduled Instances.
 

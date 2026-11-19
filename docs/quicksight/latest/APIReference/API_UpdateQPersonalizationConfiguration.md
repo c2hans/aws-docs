@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateQPersonalizationConfiguration
-<a name="API_UpdateQPersonalizationConfiguration"></a>
 
 Updates a personalization configuration.
 

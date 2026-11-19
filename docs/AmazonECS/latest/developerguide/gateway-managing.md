@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-
 ---
 
 # Create and manage an Amazon ECS Gateway
-<a name="gateway-managing"></a>
 
 An Amazon ECS Gateway is an account-level resource that holds the ingress configuration and security standards that connected services inherit. The platform team creates gateways, configures networking policies, and associates them with target Amazon ECS clusters. Application teams then opt in their services and the services then connect to the compatible gateways on the cluster. For more information, see [Connect Amazon ECS services to a gateway](gateway-connect-service.md).
 
@@ -128,7 +127,7 @@ You can change the following settings at any time.
 ## Associate a gateway with Amazon ECS clusters
 <a name="gateway-associate-cluster"></a>
 
-A cluster's services can use a gateway only after you associate the gateway with their cluster. A gateway and the clusters it serves must be in the same AWS Region and account. Associating a gateway does not route any traffic on its own. It does not change how existing services receive traffic. Services in this cluster opt in separately, and start using the gateway on their next deployment.
+A cluster's services can use a gateway only after you associate the gateway with their cluster. A gateway and the clusters it serves must be in the same AWS Region and account. Associating a gateway does not route any traffic on its own. Services in this cluster opt in separately, and start using the gateway on their next deployment. A service that opts in without an access type filter also connects to a gateway you associate later, on its next deployment. Associating an internet-facing gateway can then make that service reachable from the internet.
 
 **To associate a gateway with a cluster**
 
@@ -143,7 +142,7 @@ Associations are many-to-many. You can associate a gateway with up to 10,000 clu
 When a service with a gateway connector is deployed, Amazon ECS evaluates the gateways associated with its cluster. The service connects to compatible gateways based on its access type, VPC, and Availability Zones. Plan subnet coverage carefully, because it decides a gateway's reach. A gateway serves only the services in the VPC and Availability Zones that its subnets cover. Narrow coverage leaves the rest of the services in the cluster unable to use it. For more information, see [How Amazon ECS selects compatible gateways](gateway-connect-service.md#gateway-select-compatible).
 
 **Note**
-When you associate a gateway with a cluster, existing services are not affected until their next deployment. Adding another gateway to a cluster does not automatically connect services that are already running.
+When you associate a gateway with a cluster, existing services are not affected until their next deployment. On that deployment, a service that's already running connects to the new gateway if the gateway matches its access type filter, VPC, and Availability Zones. The service itself doesn't need to change.
 
 **To list a gateway's cluster associations**
 

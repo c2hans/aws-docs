@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/health-api.html
 ---
 
 # Integrating AWS Health with other systems using the AWS Health API
-<a name="health-api"></a>
 
 AWS Health is a RESTful web service that uses HTTPS as a transport and JSON as a message serialization format. Your application code can make requests directly to the AWS Health API. When you use the REST API directly, you must write the necessary code to sign and authenticate your requests. For more information about the AWS Health operations and parameters, see the [AWS Health API Reference](https://docs.aws.amazon.com/health/latest/APIReference/).
 

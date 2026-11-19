@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchActionConnectors
-<a name="API_SearchActionConnectors"></a>
 
 Searches for action connectors in the specified AWS account using filters. You can search by connector name, type, or user permissions.
 

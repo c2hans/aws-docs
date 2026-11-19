@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityG
 ---
 
 # SecurityGroupReference
-<a name="API_SecurityGroupReference"></a>
 
 Describes a VPC with a security group that references your security group.
 

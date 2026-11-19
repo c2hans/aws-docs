@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Properties included in an Amazon ECS service revision
-<a name="service-revision-property"></a>
 
 The following properties are included in a service revision.
 

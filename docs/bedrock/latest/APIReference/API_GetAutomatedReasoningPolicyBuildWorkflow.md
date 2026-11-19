@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAutom
 ---
 
 # GetAutomatedReasoningPolicyBuildWorkflow
-<a name="API_GetAutomatedReasoningPolicyBuildWorkflow"></a>
 
 Retrieves detailed information about an Automated Reasoning policy build workflow, including its status, configuration, and metadata.
 

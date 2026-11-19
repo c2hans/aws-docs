@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseMetricData
-<a name="API_GetRelationalDatabaseMetricData"></a>
 
 Returns the data points of the specified metric for a database in Amazon Lightsail.
 

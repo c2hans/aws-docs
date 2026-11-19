@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Delet
 ---
 
 # DeleteDBClusterSnapshot
-<a name="API_DeleteDBClusterSnapshot"></a>
 
 Deletes a cluster snapshot. If the snapshot is being copied, the copy operation is terminated.
 

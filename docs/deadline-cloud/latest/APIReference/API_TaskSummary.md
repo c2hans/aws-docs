@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_T
 ---
 
 # TaskSummary
-<a name="API_TaskSummary"></a>
 
 The details of a task.
 

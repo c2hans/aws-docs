@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteMembership
-<a name="API_DeleteMembership"></a>
 
 Deletes a specified membership. All resources under a membership must be deleted.
 

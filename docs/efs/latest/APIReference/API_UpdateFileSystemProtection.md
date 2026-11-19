@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystemProtection
-<a name="API_UpdateFileSystemProtection"></a>
 
 Updates protection on the file system.
 

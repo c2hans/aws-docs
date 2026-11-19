@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/acknowled
 ---
 
 # Application Capabilities: IAM Roles, Resource Policies, and Nested Applications
-<a name="acknowledging-application-capabilities"></a>
 
 Before you can deploy an application, the AWS Serverless Application Repository checks the application’s template for IAM roles, AWS resource policies, and nested applications that the template specifies that it should create. IAM resources, such as an IAM role with full access, can modify any resource in your AWS account. Therefore, we recommend that you review the permissions associated with the application before proceeding so that you don't unintentionally create resources with escalated permissions. To ensure that you've done so, you must acknowledge that the application contains capabilities before the AWS Serverless Application Repository can deploy the application on your behalf.
 

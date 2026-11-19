@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnknownNodeInputFlowValidationDetails
-<a name="API_agent_UnknownNodeInputFlowValidationDetails"></a>
 
 Details about an unknown input for a node.
 

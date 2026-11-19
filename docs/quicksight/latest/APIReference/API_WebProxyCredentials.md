@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WebPr
 ---
 
 # WebProxyCredentials
-<a name="API_WebProxyCredentials"></a>
 
 The credentials for authenticating with a web proxy server.
 

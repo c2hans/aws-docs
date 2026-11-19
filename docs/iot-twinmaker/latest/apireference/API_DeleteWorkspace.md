@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_De
 ---
 
 # DeleteWorkspace
-<a name="API_DeleteWorkspace"></a>
 
 Deletes a workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2038-data-enab
 ---
 
 # Enable SMPTE 2038
-<a name="s2038-data-enable"></a>
 
 You must set up the input to ingest the SMPTE 2038 ancillary data.
 

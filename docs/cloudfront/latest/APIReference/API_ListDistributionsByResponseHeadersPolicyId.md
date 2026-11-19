@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByResponseHeadersPolicyId
-<a name="API_ListDistributionsByResponseHeadersPolicyId"></a>
 
 Gets a list of distribution IDs for distributions that have a cache behavior that's associated with the specified response headers policy.
 

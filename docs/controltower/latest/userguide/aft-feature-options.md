@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-featur
 ---
 
 # Enable feature options
-<a name="aft-feature-options"></a>
 
 AFT offers feature options based on best practices. You can opt-in to these features, by means of feature flags, during AFT deployment. Refer to [Provision a new account with AFT](aft-provision-account.md) for more information about AFT input configuration parameters.
 

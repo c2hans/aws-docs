@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Observability and monitoring for agentic systems
-<a name="agentops05"></a>
 
 Observability in agentic systems requires capturing not just infrastructure metrics, but also agent reasoning steps, decision paths, and workflow execution patterns. Traditional monitoring approaches must be extended to provide visibility into agent behavior, tool invocations, and multi-agent interactions.
 

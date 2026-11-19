@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_HandlerC
 ---
 
 # HandlerConfig
-<a name="API_HandlerConfig"></a>
 
 The configuration for a handler.
 

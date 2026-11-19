@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-frame
 ---
 
 # TensorFlow Framework Processor
-<a name="processing-job-frameworks-tensorflow"></a>
 
 TensorFlow is an open-source machine learning and artificial intelligence library. The `TensorFlowProcessor` in the Amazon SageMaker Python SDK provides you with the ability to run processing jobs with TensorFlow scripts. When you use the `TensorFlowProcessor`, you can leverage an Amazon-built Docker container with a managed TensorFlow environment so that you don't need to bring your own container.
 

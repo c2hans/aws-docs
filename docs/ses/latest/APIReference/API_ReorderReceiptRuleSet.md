@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ReorderRecei
 ---
 
 # ReorderReceiptRuleSet
-<a name="API_ReorderReceiptRuleSet"></a>
 
 Reorders the receipt rules within a receipt rule set.
 

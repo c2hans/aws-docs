@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateAutono
 ---
 
 # UpdateAutonomousDatabase
-<a name="API_UpdateAutonomousDatabase"></a>
 
 Updates the properties of an Autonomous Database.
 

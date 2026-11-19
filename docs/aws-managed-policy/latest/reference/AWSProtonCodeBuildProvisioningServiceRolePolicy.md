@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSProtonCodeBuildProvisioningServiceRolePolicy
-<a name="AWSProtonCodeBuildProvisioningServiceRolePolicy"></a>
 
 **Description**: Allows AWS Proton to manage Proton resource provisioning using CodeBuild and other AWS services on your behalf.
 

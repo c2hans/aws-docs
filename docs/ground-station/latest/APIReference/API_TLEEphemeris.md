@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TLEEphemeris
-<a name="API_TLEEphemeris"></a>
 
 Two-line element set (TLE) ephemeris.
 

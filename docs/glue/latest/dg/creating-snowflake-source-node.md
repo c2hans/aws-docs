@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-snowflake-source
 ---
 
 # Creating a Snowflake source node
-<a name="creating-snowflake-source-node"></a>
 
 ## Permissions needed
 <a name="creating-snowflake-source-node-permissions"></a>

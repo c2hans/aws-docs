@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantConfiguration
-<a name="API_ParticipantConfiguration"></a>
 
  The configuration of the participant.
 

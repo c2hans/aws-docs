@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomAuthC
 ---
 
 # CustomAuthCredentials
-<a name="API_CustomAuthCredentials"></a>
 
 The custom credentials required for custom authentication.
 

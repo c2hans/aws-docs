@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UserJobsFirst
-<a name="API_UserJobsFirst"></a>
 
 Allows setting a specific user's job to run first.
 

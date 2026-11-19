@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Accepting prior hooks automatically
-<a name="firewall-rule-groups-accept-prior-hooks"></a>
 
 Because the firewall engine is drop by default, a connection reaches a rule's hook only if it was accepted at every earlier hook. Without help, allowing a single kind of traffic can require you to author several rules: one for the *target hook* (the hook where your match rule applies), plus one for each earlier hook that the connection must pass first.
 

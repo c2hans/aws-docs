@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateTrustStore
-<a name="API_UpdateTrustStore"></a>
 
 Updates a trust store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/getting-st
 ---
 
 # Get started with AWS Control Tower from the console
-<a name="getting-started-from-console"></a>
 
 This getting started procedure is intended for AWS Control Tower administrators. Follow this procedure when you're ready to set up your landing zone using the AWS Control Tower console. From start to finish, it should take about half an hour. This procedure requires some prerequisites and three main steps.
 

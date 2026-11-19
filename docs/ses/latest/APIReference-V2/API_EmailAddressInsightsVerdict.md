@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_EmailAddr
 ---
 
 # EmailAddressInsightsVerdict
-<a name="API_EmailAddressInsightsVerdict"></a>
 
 Contains the overall validation verdict for an email address.
 

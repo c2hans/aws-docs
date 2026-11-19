@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sh-finding-
 ---
 
 # Enabling cross-Region aggregation
-<a name="sh-finding-aggregation-enable"></a>
 
 You must enable cross-Region aggregation from the AWS Region that you want to designate as the home Region.
 

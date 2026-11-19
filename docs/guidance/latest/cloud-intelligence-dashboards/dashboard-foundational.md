@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Foundational
-<a name="dashboard-foundational"></a>
 
 Foundational Dashboards require CUR [Data Exports](data-exports.md) or Legacy CUR.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/byo-bedrock-kb-tr
 ---
 
 # Troubleshooting
-<a name="byo-bedrock-kb-troubleshooting"></a>
 
 ## Troubleshoot access denied errors
 <a name="byo-bedrock-kb-access-denied"></a>

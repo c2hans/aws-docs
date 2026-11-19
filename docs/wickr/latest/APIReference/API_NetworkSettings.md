@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_NetworkSet
 ---
 
 # NetworkSettings
-<a name="API_NetworkSettings"></a>
 
 Contains network-level configuration settings that apply to all users and security groups within a Wickr network.
 

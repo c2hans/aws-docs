@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/sp.h
 ---
 
 # Supply Planning
-<a name="sp"></a>
 
 The following APIs are used in AWS Supply Chain to create and manage supply plans.
 

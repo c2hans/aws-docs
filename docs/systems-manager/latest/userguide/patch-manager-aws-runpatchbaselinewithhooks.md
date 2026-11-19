@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # SSM Command document for patching: `AWS-RunPatchBaselineWithHooks`
-<a name="patch-manager-aws-runpatchbaselinewithhooks"></a>
 
 AWS Systems Manager supports `AWS-RunPatchBaselineWithHooks`, a Systems Manager document (SSM document) for Patch Manager. This SSM document performs patching operations on managed nodes for both security related and other types of updates.
 

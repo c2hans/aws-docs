@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Get an AWS CloudHSM key attribute using KMU
-<a name="key_mgmt_util-getAttribute"></a>
 
 Use the **getAttribute** command in the AWS CloudHSM key\_mgmt\_util to write one or all of the attribute values for an AWS CloudHSM key to a file. If the attribute you specify does not exist for the key type, such as the modulus of an AES key, **getAttribute** returns an error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/standardize
 ---
 
 # Using standardized contracts in AWS Marketplace
-<a name="standardized-license-terms"></a>
 
 When you [prepare your product](product-preparation.md) as an AWS Marketplace seller, you need to determine which end user license agreement (EULA) will govern the use of your product. You can use the following:
 + Your own EULA.

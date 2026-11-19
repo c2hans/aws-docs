@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/integrating-a
 ---
 
 # Getting started with Amazon Athena
-<a name="integrating-athena-getting-started"></a>
 
 To integrate HealthLake with Amazon Athena, you must set up permissions. To do this, you'll create an Athena user, group or role, and grant them access to FHIR resources located within a HealthLake data store.
 + [Granting a user, group, or role access to a HealthLake data store (AWS Lake Formation Console)](#getting-started-athena-admin)

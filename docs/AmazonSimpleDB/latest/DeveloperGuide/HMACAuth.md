@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/HMA
 ---
 
 # HMAC-SHA Signature
-<a name="HMACAuth"></a>
 
 **Topics**
 + [Required Authentication Information](#RequiredAuthInfo)

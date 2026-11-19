@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkPositioning
-<a name="API_SidewalkPositioning"></a>
 
 The Positioning object of the Sidewalk device.
 

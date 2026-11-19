@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/concat_
 ---
 
 # \|\| (Concatenation) operator
-<a name="concat_op"></a>
 
 Concatenates two expressions on either side of the \|\| symbol and returns the concatenated expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security.html
 ---
 
 # Security in AWS Elastic Disaster Recovery
-<a name="security"></a>
 
 ## Overview
 <a name="security-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetOrganizat
 ---
 
 # GetOrganizationsAccessReport
-<a name="API_GetOrganizationsAccessReport"></a>
 
 Retrieves the service last accessed data report for AWS Organizations that was previously generated using the ` [GenerateOrganizationsAccessReport](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateOrganizationsAccessReport.html) ` operation. This operation retrieves the status of your report job and the report contents.
 

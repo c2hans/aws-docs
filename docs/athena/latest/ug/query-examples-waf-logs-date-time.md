@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-examples-waf-logs
 ---
 
 # Query using date and time
-<a name="query-examples-waf-logs-date-time"></a>
 
 The examples in this section include queries that use date and time values.
 + [Return the timestamp field in human-readable ISO 8601 format](#waf-example-return-human-readable-timestamp)

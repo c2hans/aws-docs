@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateStage.ht
 ---
 
 # CreateStage
-<a name="API_CreateStage"></a>
 
 Creates a new Stage resource that references a pre-existing Deployment for the API.
 

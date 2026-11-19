@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_S3Object.ht
 ---
 
 # S3Object
-<a name="API_S3Object"></a>
 
 The Amazon S3 location of a deployment artifact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/media-se
 ---
 
 # ![AWS Media Services category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/media-services-icon.jpg)Media
-<a name="media-services"></a>
 
 AWS offers the most purpose-built media services, software, and appliances of any cloud to make creating, transforming, and delivering digital content fast and easy.
 

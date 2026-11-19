@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkPorts
-<a name="API_NetworkPorts"></a>
 
 Contains information about the ports that network activity involved. A port value can be a single port, a range such as `51000-51010`, or a comma-separated list such as `443,8080`.
 

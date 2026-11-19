@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # LocationConfiguration
-<a name="API_LocationConfiguration"></a>
 
 A remote location where a multi-location fleet can deploy game servers for game hosting.
 

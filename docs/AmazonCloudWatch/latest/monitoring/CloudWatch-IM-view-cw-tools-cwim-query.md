@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Use the Internet Monitor query interface
-<a name="CloudWatch-IM-view-cw-tools-cwim-query"></a>
 
 An option for understanding more about internet traffic for your AWS application is to use the Internet Monitor *query interface*. To use the query interface, you create a query with data filters that you choose, and then run the query to return a subset of your Internet Monitor data. Exploring the data that the query returns can give you insights into how your application is performing on the internet.
 

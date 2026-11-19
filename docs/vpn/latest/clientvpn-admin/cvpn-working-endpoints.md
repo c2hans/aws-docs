@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN endpoints
-<a name="cvpn-working-endpoints"></a>
 
 All AWS Client VPN sessions establish communication with a Client VPN endpoint. You can manage the Client VPN endpoint to create, modify, view, and delete client VPN sessions with that endpoint. Endpoints can be created and modified using either the Amazon VPC Console or by using the AWS CLI.
 

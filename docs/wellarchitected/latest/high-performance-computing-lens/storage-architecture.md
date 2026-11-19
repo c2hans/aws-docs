@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Storage architecture
-<a name="storage-architecture"></a>
 
 | HPCPERF04: How do you select your storage solution? |
 | --- |

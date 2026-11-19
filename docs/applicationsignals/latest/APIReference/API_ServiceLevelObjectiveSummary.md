@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceLevelObjectiveSummary
-<a name="API_ServiceLevelObjectiveSummary"></a>
 
 A structure that contains information about one service level objective (SLO) created in Application Signals.
 

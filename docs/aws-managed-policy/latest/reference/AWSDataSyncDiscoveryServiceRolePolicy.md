@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataSyncDiscoveryServiceRolePolicy
-<a name="AWSDataSyncDiscoveryServiceRolePolicy"></a>
 
 **Description**: Allows DataSync Discovery to integrate with other AWS services on your behalf.
 

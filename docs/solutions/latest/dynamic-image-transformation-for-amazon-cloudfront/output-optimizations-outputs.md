@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Output optimizations (`outputs`)
-<a name="output-optimizations-outputs"></a>
 
 The `outputs` array configures auto-optimization. Each `type` (`quality`, `format`, `autosize`) can appear at most once. Each output accepts an optional `fallback` object that defines the value used when device detection cannot determine the browser’s capabilities.
 

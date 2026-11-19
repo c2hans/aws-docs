@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Create a Router
-<a name="set-up-routers-create"></a>
 
 This request creates a new router to correspond to a router that is connected to HD-SDI inputs on one or more AWS Elemental Live nodes. (The same router can have connections to several nodes.)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DetachInstancesFromLoadBalancer
-<a name="API_DetachInstancesFromLoadBalancer"></a>
 
 Detaches the specified instances from a Lightsail load balancer.
 

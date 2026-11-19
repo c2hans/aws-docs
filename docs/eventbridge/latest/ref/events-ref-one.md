@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-one.ht
 ---
 
 # Amazon One Enterprise events
-<a name="events-ref-one"></a>
 
 Amazon One Enterprise sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

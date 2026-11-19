@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Stromasys Charon family of emulators
-<a name="app-mobility-stromasys"></a>
 
 *Last update: June 3, 2024*
 

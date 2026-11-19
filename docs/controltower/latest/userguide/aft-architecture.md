@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-archit
 ---
 
 # AFT Architecture
-<a name="aft-architecture"></a>
 
 ## Order of operations
 <a name="aft-operation"></a>

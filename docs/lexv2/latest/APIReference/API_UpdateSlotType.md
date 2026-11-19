@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateSlot
 ---
 
 # UpdateSlotType
-<a name="API_UpdateSlotType"></a>
 
 Updates the configuration of an existing slot type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player.ht
 ---
 
 # IVS Player SDK
-<a name="player"></a>
 
 To use Amazon Interactive Video Service (IVS), you must use the Amazon IVS Player. The Player is a cross-platform suite of SDKs for playback of Amazon IVS streams. It is designed to leverage the Amazon IVS architecture and optimized for Amazon IVS playback.
 

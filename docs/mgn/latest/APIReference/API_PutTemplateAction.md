@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_PutTemplateA
 ---
 
 # PutTemplateAction
-<a name="API_PutTemplateAction"></a>
 
 Put template post migration custom action.
 

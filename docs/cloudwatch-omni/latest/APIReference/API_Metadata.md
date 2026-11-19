@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Metadata
-<a name="API_Metadata"></a>
 
 Descriptive information about a context graph node or edge, as opposed to its identity and structure. Returned only when the request sets includeMetadata.
 

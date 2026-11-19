@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSchedule
-<a name="API_UpdateSchedule"></a>
 
 Modifies the definition of an existing DataBrew schedule.
 

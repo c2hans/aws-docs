@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-d
 ---
 
 # FreeRTOS Over-the-Air Updates
-<a name="freertos-ota-dev"></a>
 
 **Note**
 See [AWS IoT Over-the-Air (OTA)](https://www.freertos.org/ota/index.html) on the FreeRTOS website for recent information on performing Over-the-air (OTA) updates.

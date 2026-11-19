@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations
 ---
 
 # Integration with partner products and services
-<a name="integrations-partners"></a>
 
 CodeDeploy has built-in integration for the following partner products and services:
 

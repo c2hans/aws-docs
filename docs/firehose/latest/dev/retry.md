@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/retry.html
 ---
 
 # Handle data delivery failures
-<a name="retry"></a>
 
 Each Amazon Data Firehose destination has its own data delivery failure handling.
 

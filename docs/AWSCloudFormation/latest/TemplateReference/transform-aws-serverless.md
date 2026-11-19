@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `AWS::Serverless` transform
-<a name="transform-aws-serverless"></a>
 
 This topic describes how to use the `AWS::Serverless` transform to process a template written in the AWS Serverless Application Model (AWS SAM) syntax and transform it into a compliant CloudFormation template.
 

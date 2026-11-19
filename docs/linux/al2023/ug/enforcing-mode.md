@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/enforcing-mode.html
 ---
 
 # Change to `enforcing` mode
-<a name="enforcing-mode"></a>
 
 When you run SELinux in `enforcing` mode, the SELinux utility is `enforcing` the configured policy. SELinux governs the capabilities of select applications by allowing or denying access based on the policy’s rules.
 

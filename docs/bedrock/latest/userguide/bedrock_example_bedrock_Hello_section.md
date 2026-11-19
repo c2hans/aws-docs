@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock_example
 ---
 
 # Hello Amazon Bedrock
-<a name="bedrock_example_bedrock_Hello_section"></a>
 
 The following code examples show how to get started using Amazon Bedrock.
 

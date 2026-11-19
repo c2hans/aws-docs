@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/creating-
 ---
 
 # Creating a data grant on AWS Data Exchange containing file-based data
-<a name="creating-a-data-grant-file-based-data"></a>
 
 The following topics describe the process of creating a data set and a new data grant containing file-based data on AWS Data Exchange by using the AWS Data Exchange console. The process has the following steps:
 

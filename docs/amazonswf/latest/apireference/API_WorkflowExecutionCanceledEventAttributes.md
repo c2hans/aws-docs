@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionCanceledEventAttributes
-<a name="API_WorkflowExecutionCanceledEventAttributes"></a>
 
 Provides the details of the `WorkflowExecutionCanceled` event.
 

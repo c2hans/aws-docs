@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Example: Automating startup and shutdown of SAP systems
-<a name="system-start"></a>
 
 A typical productive SAP system consists of multiple Amazon EC2 instances that host several critical SAP components, such as SAP database servers, SAP application servers, SAP Central Services and SAP enqueue replication services. SAP customers also integrate their core SAP systems with other mission-critical solutions, such as archiving engines, tax management solutions, content servers, and job management systems. The startup and shutdown procedure for such a complex and tightly integrated SAP solution requires following a specific sequence of tasks.
 

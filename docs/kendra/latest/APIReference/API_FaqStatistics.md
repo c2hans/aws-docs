@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FaqStatis
 ---
 
 # FaqStatistics
-<a name="API_FaqStatistics"></a>
 
 Provides statistical information about the FAQ questions and answers for an index.
 

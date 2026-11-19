@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DBMo
 ---
 
 # DBModDiscoveryAndAssessment
-<a name="DBModDiscoveryAndAssessment"></a>
 
 **Description**: Discovery and Assessment permissions for database connector used in database modernization
 

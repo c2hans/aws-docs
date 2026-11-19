@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SetV2Logging
 ---
 
 # SetV2LoggingOptions
-<a name="API_SetV2LoggingOptions"></a>
 
 Sets the logging options for the V2 logging service.
 

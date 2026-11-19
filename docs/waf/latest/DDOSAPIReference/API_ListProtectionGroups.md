@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListProt
 ---
 
 # ListProtectionGroups
-<a name="API_ListProtectionGroups"></a>
 
 Retrieves [ProtectionGroup](API_ProtectionGroup.md) objects for the account. You can retrieve all protection groups or you can provide filtering criteria and retrieve just the subset of protection groups that match the criteria.
 

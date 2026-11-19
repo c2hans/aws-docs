@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/CloudWatch-usin
 ---
 
 # Using the PromQL query option
-<a name="CloudWatch-using-promql"></a>
 
 **Note**
 The **PromQL** query type is only available with Grafana workspaces that are running Grafana version 13 and later.

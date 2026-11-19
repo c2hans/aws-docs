@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  **Overview**
 
@@ -34,4 +33,4 @@ When accessing the Lambda management console or Lambda API endpoints, whether th
 
 Root certificates from the first two authorities are available from [Amazon trust services](https://www.amazontrust.com/repository/), but keeping your computer up-to-date is the more straightforward solution. To learn more about ACM-provided certificates, see [AWS Certificate Manager FAQs.](http://aws.amazon.com/certificate-manager/faqs/#certificates)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

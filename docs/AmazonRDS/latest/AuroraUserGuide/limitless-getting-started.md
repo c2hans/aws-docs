@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Getting started with Aurora PostgreSQL Limitless Database
-<a name="limitless-getting-started"></a>
 
 You perform the following actions to get started with Aurora PostgreSQL Limitless Database:
 

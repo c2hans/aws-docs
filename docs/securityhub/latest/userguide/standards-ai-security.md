@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/standards-a
 ---
 
 # AI Security Best Practices standard in Security Hub CSPM
-<a name="standards-ai-security"></a>
 
 The AI Security Best Practices standard is a set of automated security checks that detect when deployed AI resources do not align with security best practices. Developed by AWS security experts, this standard provides a curated set of controls that help you identify areas where your AI workloads deviate from recommended security configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/cw-metri
 ---
 
 # Amazon SWF Metrics for CloudWatch
-<a name="cw-metrics"></a>
 
 Amazon SWF now provides metrics for CloudWatch that you can use to track your workflows and activities and set alarms on threshold values that you choose. You can view metrics using the AWS Management Console. For more information, see [Viewing Amazon SWF Metrics for CloudWatch using the AWS Management Console](cw-metrics-console.md).
 

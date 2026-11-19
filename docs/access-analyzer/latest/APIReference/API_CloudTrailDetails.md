@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CloudTrailDetails
-<a name="API_CloudTrailDetails"></a>
 
 Contains information about CloudTrail access.
 

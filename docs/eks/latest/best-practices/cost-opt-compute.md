@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt-compu
 ---
 
 # Compute and Autoscaling
-<a name="cost-opt-compute"></a>
 
 As a developer, you’ll make estimates about your application’s resource requirements, e.g. CPU and memory, but if you’re not continually adjusting them they may become outdated which could increase your costs and worsen performance and reliability. Continually adjusting an application’s resource requirements is more important than getting them right the first time.
 

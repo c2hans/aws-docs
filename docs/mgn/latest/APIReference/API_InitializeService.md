@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_InitializeSe
 ---
 
 # InitializeService
-<a name="API_InitializeService"></a>
 
 Initialize Application Migration Service.
 

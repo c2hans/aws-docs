@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ServerSideEncryp
 ---
 
 # ServerSideEncryptionConfiguration
-<a name="API_ServerSideEncryptionConfiguration"></a>
 
 Specifies the default server-side-encryption configuration.
 

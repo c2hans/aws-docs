@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-dfe-eng
 ---
 
 # The Amazon Neptune alternative query engine (DFE)
-<a name="neptune-dfe-engine"></a>
 
 Amazon Neptune has an alternative query engine known as the Data Flow Engine (DFE). DFE uses DB instance resources such as CPU cores, memory, and I/O more efficiently than the original Neptune engine.
 

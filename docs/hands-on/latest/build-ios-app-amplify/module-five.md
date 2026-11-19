@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/mo
 ---
 
 # Module 5: Add the Ability to Store Images
-<a name="module-five"></a>
 
 |  |  |
 | --- |--- |

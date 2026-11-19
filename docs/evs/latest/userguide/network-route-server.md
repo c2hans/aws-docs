@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/network-route-serve
 ---
 
 # Set up VPC Route Server and on-premises connectivity
-<a name="network-route-server"></a>
 
 Amazon Elastic VMware Service uses Amazon VPC Route Server for dynamic routing between NSX and your VPC underlay network by using Border Gateway Protocol (BGP). Create a route server with endpoints and peers in your VPC, and then optionally connect your on-premises network through a transit gateway. You can use the Amazon VPC console or the AWS CLI. The VPC Route Server tutorial in the * Amazon VPC User Guide* has the steps for both.
 

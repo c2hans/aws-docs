@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/deletevif
 ---
 
 # Delete a Direct Connect virtual interface
-<a name="deletevif"></a>
 
 Delete one or more virtual interfaces. Before you can delete a connection, you must delete its virtual interface. Deleting a virtual interface stops Direct Connect data transfer charges associated with the virtual interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/donut-chart.html
 ---
 
 # Using donut charts
-<a name="donut-chart"></a>
 
 Use donut charts to compare values for items in a dimension. The best use for this type of chart is to show a percentage of a total amount.
 

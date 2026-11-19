@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-connecting-ex
 ---
 
 # Connect to data sources
-<a name="canvas-connecting-external"></a>
 
 In Amazon SageMaker Canvas, you can import data from a location outside of your local file system through an AWS service, a SaaS platform, or other databases using JDBC connectors. For example, you might want to import tables from a data warehouse in Amazon Redshift, or you might want to import Google Analytics data.
 

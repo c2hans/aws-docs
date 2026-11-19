@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Work
 ---
 
 # WorkerComputeConfiguration
-<a name="API_WorkerComputeConfiguration"></a>
 
  The configuration of the compute resources for workers running an analysis with the AWS Clean Rooms SQL analytics engine.
 

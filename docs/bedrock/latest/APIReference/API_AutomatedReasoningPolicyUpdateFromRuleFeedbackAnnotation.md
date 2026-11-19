@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyUpdateFromRuleFeedbackAnnotation
-<a name="API_AutomatedReasoningPolicyUpdateFromRuleFeedbackAnnotation"></a>
 
 An annotation for updating the policy based on feedback about how specific rules performed during testing or real-world usage.
 

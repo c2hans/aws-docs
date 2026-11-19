@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/infrast
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 | SaaS SEC 2: How are you ensuring that tenant resources are protected from cross-tenant access? |
 | --- |

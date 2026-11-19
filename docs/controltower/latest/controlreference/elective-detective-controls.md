@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ele
 ---
 
 # Elective controls with detective behavior
-<a name="elective-detective-controls"></a>
 
 The following elective controls have detective behavior.
 

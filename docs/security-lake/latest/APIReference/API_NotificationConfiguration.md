@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_No
 ---
 
 # NotificationConfiguration
-<a name="API_NotificationConfiguration"></a>
 
 Specify the configurations you want to use for subscriber notification to notify the subscriber when new data is written to the data lake for sources that the subscriber consumes in Security Lake.
 

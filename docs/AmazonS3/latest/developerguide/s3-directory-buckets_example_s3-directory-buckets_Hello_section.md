@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-direct
 ---
 
 # Hello Amazon S3 directory buckets
-<a name="s3-directory-buckets_example_s3-directory-buckets_Hello_section"></a>
 
 The following code example shows how to get started using Amazon S3 directory buckets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentStageGroupByKey
-<a name="API_AnalyticsIntentStageGroupByKey"></a>
 
 Contains the category by which the intent stage analytics and the values for that category were grouped.
 

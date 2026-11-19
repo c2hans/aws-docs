@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-sma
 ---
 
 # Token validation using AWS Lambda
-<a name="reference-smart-on-fhir-token-validation"></a>
 
 When you create a HealthLake SMART on FHIR enabled data store, you must provide the ARN of the AWS Lambda function in the `CreateFHIRDatastore` request. The ARN of the Lambda function is specified in `IdentityProviderConfiguration` object using the `IdpLambdaArn` parameter.
 

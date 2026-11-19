@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/docrev-orc-sap-
 ---
 
 # Document revisions
-<a name="docrev-orc-sap-nw-lx"></a>
 
 | Date | Change |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/deploy-overview.htm
 ---
 
 # Deploy
-<a name="deploy-overview"></a>
 
 You can deploy an Amazon Elastic VMware Service environment in three ways.
 

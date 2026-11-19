@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteApplicationAuthenticationMethod
-<a name="API_DeleteApplicationAuthenticationMethod"></a>
 
 Deletes an authentication method from an application.
 

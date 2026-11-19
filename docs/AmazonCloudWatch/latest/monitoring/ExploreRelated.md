@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Explo
 ---
 
 # Explore related telemetry
-<a name="ExploreRelated"></a>
 
 Computer systems can generate a large amount of telemetry, including both metrics and logs, and complex systems even more so. When looking at a specific set of telemetry, it can be a challenge to find other telemetry related to your initial set. It can take advanced training to gain the skills needed to find issues and troubleshoot them. Because systems are complex, understanding what is going on can involve viewing metrics and logs from many different services and resources, requiring context switching and navigating between systems.
 

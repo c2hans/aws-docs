@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr-use-cases
 ---
 
 # Common use cases in Amazon ECR
-<a name="ecr-use-cases"></a>
 
 Amazon ECR is a fully-managed Docker container registry service offered by AWS. It provides a secure and scalable repository for storing and distributing Docker container images, making it an essential component in containerized application deployments. Amazon ECR simplifies the process of building, distributing, and running containerized applications across various AWS services and on-premises environments.
 

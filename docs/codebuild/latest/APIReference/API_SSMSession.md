@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_SSMSes
 ---
 
 # SSMSession
-<a name="API_SSMSession"></a>
 
 Contains information about the Session Manager session.
 

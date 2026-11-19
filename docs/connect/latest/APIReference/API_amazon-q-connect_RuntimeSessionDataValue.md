@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # RuntimeSessionDataValue
-<a name="API_amazon-q-connect_RuntimeSessionDataValue"></a>
 
 A union type that specifies the data stored on the session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Request processing workflow
-<a name="request-processing-workflow"></a>
 
  **Lambda processing steps:**
 

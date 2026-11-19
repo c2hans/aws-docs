@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricin
 ---
 
 # SaaS product pricing in AWS Marketplace
-<a name="saas-pricing-models"></a>
 
 After a buyer purchases your software as a service (SaaS) product on AWS Marketplace, AWS Marketplace provides you with their billing identiﬁer. You use the billing identifier to call the AWS Marketplace Entitlement Service and the AWS Marketplace Metering Service. Then, customers access the product in your AWS environment or through a virtual private cloud (VPC) endpoint connection that you create. This topic provides a list of SaaS pricing models for AWS Marketplace.
 

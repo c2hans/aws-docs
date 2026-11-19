@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfig
 ---
 
 # CreateConfigurationSetEventDestination
-<a name="API_CreateConfigurationSetEventDestination"></a>
 
 Creates a configuration set event destination.
 

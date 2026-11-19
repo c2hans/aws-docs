@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_HTTP_En
 ---
 
 # Setting up bearer token authentication
-<a name="CWL_HTTP_Endpoints_BearerTokenAuth"></a>
 
 **Note**
 This page covers bearer token authentication for CloudWatch Logs. For CloudWatch Metrics bearer token authentication, see [Setting up bearer token authentication for Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTLP-MetricsBearerTokenAuth.html) in the *CloudWatch User Guide*. For traces bearer token authentication, see [Setting up bearer token authentication for traces](https://docs.aws.amazon.com/xray/latest/devguide/xray-opentelemetry-bearer-token.html) in the *X-Ray Developer Guide*. Each service requires its own API key.

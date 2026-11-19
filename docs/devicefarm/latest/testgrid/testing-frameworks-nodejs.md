@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/testing-frame
 ---
 
 # Using Device Farm desktop browser testing with Node.js
-<a name="testing-frameworks-nodejs"></a>
 
 Device Farm desktop browser testing can be used alongside the AWS SDK for JavaScript in Node.js and W3C WebDriver Specification compatible libraries, such as the official Selenium WebDriver package and Webdriver.IO.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storag
 ---
 
 # Data file requirements
-<a name="data-file-requirements"></a>
 
 Before you deploy your SAS server on AWS, we recommend that you prepare your data files to meet important requirements. We recommend that your data files are:
 + Permanently and consistently referenceable by the same path/location

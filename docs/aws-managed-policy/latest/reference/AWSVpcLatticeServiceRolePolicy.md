@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSV
 ---
 
 # AWSVpcLatticeServiceRolePolicy
-<a name="AWSVpcLatticeServiceRolePolicy"></a>
 
 **Description**: Allows VPC Lattice to access AWS resources on your behalf.
 

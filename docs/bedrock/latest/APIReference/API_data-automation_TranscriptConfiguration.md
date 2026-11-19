@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # TranscriptConfiguration
-<a name="API_data-automation_TranscriptConfiguration"></a>
 
 Configuration for transcript options. This option allows you to enable speaker labeling and channel labeling.
 

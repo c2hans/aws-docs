@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/prepare-dat
 ---
 
 # Preparing data tables in Databricks
-<a name="prepare-data-databricks"></a>
 
 You can query data tables that are stored in Databricks by sharing them with AWS Clean Rooms through the Delta Sharing open protocol. AWS Clean Rooms connects to Databricks using JSON Web Token (JWT) exchange, so you don't need to store any long-lived secrets.
 

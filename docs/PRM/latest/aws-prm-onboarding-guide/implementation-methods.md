@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/impl
 ---
 
 # Implementation Methods
-<a name="implementation-methods"></a>
 
 Partner Revenue Measurement supports the following implementation methods. Choose the method that best fits your product type and architecture.
 

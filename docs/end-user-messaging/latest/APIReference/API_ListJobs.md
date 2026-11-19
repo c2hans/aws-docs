@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Retrieves a paginated list of the asynchronous jobs in your account. You can filter the results by status, brand profile, or operation type.
 

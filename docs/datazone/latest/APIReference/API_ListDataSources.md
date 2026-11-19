@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListDat
 ---
 
 # ListDataSources
-<a name="API_ListDataSources"></a>
 
 Lists data sources in Amazon DataZone.
 

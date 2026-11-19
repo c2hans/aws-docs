@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetQueryStatistics
-<a name="API_GetQueryStatistics"></a>
 
 Retrieves statistics on the planning and execution of a query.
 

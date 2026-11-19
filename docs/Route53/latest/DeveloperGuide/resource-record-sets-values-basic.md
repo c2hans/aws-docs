@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for simple records
-<a name="resource-record-sets-values-basic"></a>
 
 When you create simple records, you specify the following values.
 

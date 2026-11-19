@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetDateRangeFilterCondition
-<a name="API_DataSetDateRangeFilterCondition"></a>
 
 A filter condition that filters date values within a specified range.
 

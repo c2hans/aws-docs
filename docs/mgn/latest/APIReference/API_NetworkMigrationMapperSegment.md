@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationMapperSegment
-<a name="API_NetworkMigrationMapperSegment"></a>
 
 ## Contents
 <a name="API_NetworkMigrationMapperSegment_Contents"></a>

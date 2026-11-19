@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # EXPLAIN joins for Amazon Redshift query plans
-<a name="explain-joins"></a>
 
 Amazon Redshift uses different join operators to retrieve data based on the following:
 + The physical design of the tables that are being joined

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelCard
-<a name="API_DescribeModelCard"></a>
 
 Describes the content, creation time, and security configuration of an Amazon SageMaker Model Card.
 

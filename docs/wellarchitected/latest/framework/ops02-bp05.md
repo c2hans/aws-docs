@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02-b
 ---
 
 # OPS02-BP05 Regularly analyze workload traces
-<a name="ops02-bp05"></a>
 
  A trace shows the path a request takes through your workload. Trace analysis looks at these paths at the scale of your entire architecture. While metrics quantify changes and logs record what each component did, traces show how the parts of your workload behaved together: which service added latency, which dependency returned an error, and which interaction pattern is drifting.
 

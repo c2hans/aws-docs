@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/code
 ---
 
 # Getting started with CodeCatalyst and the Toolkit for VS Code
-<a name="codecatalyst-setup"></a>
 
 To get started working with CodeCatalyst in VS Code, follow these procedures.
 

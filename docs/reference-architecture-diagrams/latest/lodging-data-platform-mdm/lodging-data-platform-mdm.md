@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/l
 ---
 
 # Lodging Data Platform with Master Data Management
-<a name="lodging-data-platform-mdm"></a>
 
 Publication date: **October 7, 2022 ([Diagram history](#ldpmdm-history))**
 

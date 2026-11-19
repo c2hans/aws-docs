@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallDescription
-<a name="API_UpdateFirewallDescription"></a>
 
 Modifies the description for the specified firewall. Use the description to help you identify the firewall when you're working with it.
 

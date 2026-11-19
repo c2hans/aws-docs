@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # OpenSearchReservedInstances
-<a name="API_CostOptimizationHub_OpenSearchReservedInstances"></a>
 
 The OpenSearch reserved instances recommendation details.
 

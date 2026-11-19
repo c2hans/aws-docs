@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportAutoScalingGroupRecommendations
-<a name="API_ExportAutoScalingGroupRecommendations"></a>
 
 Exports optimization recommendations for Auto Scaling groups.
 

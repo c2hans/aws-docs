@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/graphql-properti
 ---
 
 # Additional properties of GraphQL
-<a name="graphql-properties"></a>
 
 GraphQL consists of several design principles to maintain simplicity and robustness at scale.
 

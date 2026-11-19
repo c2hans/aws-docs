@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UntagResourc
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
  Deletes specified tags from a resource in the current region.
 

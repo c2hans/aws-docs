@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/eks-private-cluster.ht
 ---
 
 # EKS Fully-Private Cluster
-<a name="eks-private-cluster"></a>
 
 eksctl supports creation of fully-private clusters that have no outbound internet access and have only private subnets. VPC endpoints are used to enable private access to AWS services.
 

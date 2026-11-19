@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-dynamics-365-su
 ---
 
 # AWS Glue support for Microsoft Dynamics 365
-<a name="microsoft-dynamics-365-support"></a>
 
 AWS Glue supports Microsoft Dynamics 365 as follows:
 

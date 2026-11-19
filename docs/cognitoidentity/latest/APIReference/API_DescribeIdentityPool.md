@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # DescribeIdentityPool
-<a name="API_DescribeIdentityPool"></a>
 
 Gets details about the requested identity pool, including pool name and ID, description, tags, and identity provviders.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsage.ht
 ---
 
 # UpdateUsage
-<a name="API_UpdateUsage"></a>
 
 Grants a temporary extension to the remaining quota of a usage plan associated with a specified API key.
 

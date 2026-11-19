@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Business drivers and technical guiding principles
-<a name="business-drivers-technical-guiding-principles"></a>
 
 ## Business drivers
 <a name="business-drivers"></a>

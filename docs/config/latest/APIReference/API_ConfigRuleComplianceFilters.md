@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigRul
 ---
 
 # ConfigRuleComplianceFilters
-<a name="API_ConfigRuleComplianceFilters"></a>
 
 Filters the compliance results based on account ID, region, compliance type, and rule name.
 

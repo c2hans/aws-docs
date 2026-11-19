@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/generative-qna.html
 ---
 
 # AMAZON.QnAIntent
-<a name="generative-qna"></a>
 
 **Note**
 Before you can take advantage of the generative AI features, you must fulfill the following prerequisites

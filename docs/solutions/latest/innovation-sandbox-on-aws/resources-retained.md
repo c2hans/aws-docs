@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Resources retained after deletion
-<a name="resources-retained"></a>
 
 Some resources, which contain customer data, are not deleted automatically when you uninstall the stacks. The cost of these resources is minimal, and you can manually delete these resources.
 

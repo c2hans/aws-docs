@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/sql-high
 ---
 
 # View states for Amazon EC2 High Availability for SQL Server
-<a name="sql-high-availability-view"></a>
 
 You can view the Amazon EC2 High Availability for SQL Server (SQL HA) current and historical states. Use one of the following methods:
 

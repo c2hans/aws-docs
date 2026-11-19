@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-serv
 ---
 
 # Service-linked role for Amazon Bedrock AgentCore payments
-<a name="buyer-service-linked-role-agentic-commerce"></a>
 
 AWS Marketplace uses the `AWSServiceRoleForMarketplaceAgenticCommerce` service-linked role to process payments that you make through AgentCore payments, a capability of Amazon Bedrock AgentCore. The role reads product, offer, and agreement details, creates and accepts purchase agreements, and meters usage.
 

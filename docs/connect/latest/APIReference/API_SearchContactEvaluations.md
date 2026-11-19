@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCo
 ---
 
 # SearchContactEvaluations
-<a name="API_SearchContactEvaluations"></a>
 
 Searches contact evaluations in an Connect Customer instance, with optional filtering.
 

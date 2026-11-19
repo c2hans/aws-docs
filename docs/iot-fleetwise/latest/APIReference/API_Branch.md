@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Br
 ---
 
 # Branch
-<a name="API_Branch"></a>
 
 A group of signals that are defined in a hierarchical structure.
 

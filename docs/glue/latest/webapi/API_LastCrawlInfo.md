@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_LastCrawlInfo.htm
 ---
 
 # LastCrawlInfo
-<a name="API_LastCrawlInfo"></a>
 
 Status and error information about the most recent crawl.
 

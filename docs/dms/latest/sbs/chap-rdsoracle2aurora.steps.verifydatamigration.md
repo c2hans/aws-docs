@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.ste
 ---
 
 # Step 10: Verify That Your Data Migration Completed Successfully
-<a name="chap-rdsoracle2aurora.steps.verifydatamigration"></a>
 
 When the migration task completes, you can compare your task results with the expected results.
 

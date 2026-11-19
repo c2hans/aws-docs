@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Aurora PostgreSQL Limitless Database functions
-<a name="limitless-monitoring-functions"></a>
 
 The following table shows the new functions for Aurora PostgreSQL Limitless Database.
 

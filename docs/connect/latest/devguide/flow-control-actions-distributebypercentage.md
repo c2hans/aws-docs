@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # DistributeByPercentage
-<a name="flow-control-actions-distributebypercentage"></a>
 
 Returns a random number between 1 and 100 (inclusive) as its result, allowing comparisons against it.
 

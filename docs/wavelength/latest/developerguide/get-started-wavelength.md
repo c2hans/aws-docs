@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wavelength/latest/developerguide/get-sta
 ---
 
 # Get started with AWS Wavelength
-<a name="get-started-wavelength"></a>
 
 The following diagram shows the resources that you need to configure to get started using AWS Wavelength.
 + A VPC in your Region

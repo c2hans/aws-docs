@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateUser
-<a name="API_UpdateUser"></a>
 
 Updates an Amazon Quick Sight user.
 

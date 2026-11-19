@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS
 <a name="9999999999999999aws-.176e4dd3-b384-5563-8877-d7c30810ec0d"></a>

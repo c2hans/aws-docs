@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/downg
 ---
 
 # Downgrades in Elemental Live
-<a name="downgrades-lv-upg"></a>
 
 This section describes how to downgrade the AWS Elemental Live software version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteSto
 ---
 
 # DeleteStoredQuery
-<a name="API_DeleteStoredQuery"></a>
 
 Deletes the stored query for a single AWS account and a single AWS Region.
 

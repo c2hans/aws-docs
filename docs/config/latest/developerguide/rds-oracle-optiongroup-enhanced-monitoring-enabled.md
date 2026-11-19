@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-oracle-
 ---
 
 # rds-oracle-optiongroup-enhanced-monitoring-enabled
-<a name="rds-oracle-optiongroup-enhanced-monitoring-enabled"></a>
 
 Checks if Amazon RDS Oracle option groups have enhanced monitoring enabled. The rule is NON\_COMPLIANT if configuration.item.OptionName is not equal to 'OEM\_AGENT' or 'STATSPACK'.
 

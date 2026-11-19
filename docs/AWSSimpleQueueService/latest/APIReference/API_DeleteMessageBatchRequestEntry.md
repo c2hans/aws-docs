@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # DeleteMessageBatchRequestEntry
-<a name="API_DeleteMessageBatchRequestEntry"></a>
 
 Encloses a receipt handle and an identifier for it.
 

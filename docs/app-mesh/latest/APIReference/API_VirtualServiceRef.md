@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualServiceRef
-<a name="API_VirtualServiceRef"></a>
 
 An object that represents a virtual service returned by a list operation.
 

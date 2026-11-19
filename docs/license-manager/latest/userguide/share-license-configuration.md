@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/share-l
 ---
 
 # Share a self-managed license in License Manager
-<a name="share-license-configuration"></a>
 
 You can use AWS Resource Access Manager to share your self-managed licenses with any AWS account or through AWS Organizations. For more information, see [Sharing your AWS resources](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html) in the *AWS RAM User Guide*.
 

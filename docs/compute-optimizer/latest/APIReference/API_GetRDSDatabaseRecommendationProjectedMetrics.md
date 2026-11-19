@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetRDSDatabaseRecommendationProjectedMetrics
-<a name="API_GetRDSDatabaseRecommendationProjectedMetrics"></a>
 
  Returns the projected metrics of Aurora and RDS database recommendations.
 
@@ -41,7 +40,7 @@ Type: Integer
 Required: Yes
 
  ** [recommendationPreferences](#API_GetRDSDatabaseRecommendationProjectedMetrics_RequestSyntax) **   <a name="computeoptimizer-GetRDSDatabaseRecommendationProjectedMetrics-request-recommendationPreferences"></a>
-Describes the recommendation preferences to return in the response of a [GetAutoScalingGroupRecommendations](API_GetAutoScalingGroupRecommendations.md), [GetEC2InstanceRecommendations](API_GetEC2InstanceRecommendations.md), [GetEC2RecommendationProjectedMetrics](API_GetEC2RecommendationProjectedMetrics.md), [GetRDSDatabaseRecommendations](API_GetRDSDatabaseRecommendations.md), and [GetRDSDatabaseRecommendationProjectedMetrics](#API_GetRDSDatabaseRecommendationProjectedMetrics) request.
+Describes the recommendation preferences to return in the response of a [GetAutoScalingGroupRecommendations](API_GetAutoScalingGroupRecommendations.md), [GetEC2InstanceRecommendations](API_GetEC2InstanceRecommendations.md), [GetEC2RecommendationProjectedMetrics](API_GetEC2RecommendationProjectedMetrics.md), [GetRDSDatabaseRecommendations](API_GetRDSDatabaseRecommendations.md), and [GetRDSDatabaseRecommendationProjectedMetrics](API_GetRDSDatabaseRecommendationProjectedMetrics.md) request.
 Type: [RecommendationPreferences](API_RecommendationPreferences.md) object
 Required: No
 

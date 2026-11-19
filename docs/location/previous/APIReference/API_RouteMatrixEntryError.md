@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Route
 ---
 
 # RouteMatrixEntryError
-<a name="API_RouteMatrixEntryError"></a>
 
 An error corresponding to the calculation of a route between the `DeparturePosition` and `DestinationPosition`.
 

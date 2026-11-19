@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-cloudwa
 ---
 
 # Using Amazon CloudWatch Contributor Insights with Route 53 Global Resolver data
-<a name="gr-cloudwatch-contributor-insights"></a>
 
 Amazon CloudWatch Contributor Insights analyzes log data to create time series that display contributor data. You can see metrics about the top-N contributors, the total number of unique contributors, and their usage. This information helps you find the highest-impact contributors to a system. With Route 53 Global Resolver DNS query logs, you can use Contributor Insights to identify your top query sources, the most-blocked domains, the noisiest access tokens, and other high-impact contributors to your DNS traffic. For more information, see [Using Contributor Insights to analyze high-cardinality data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html).
 

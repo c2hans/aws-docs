@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InlineAgentReturnControlPayload
-<a name="API_agent-runtime_InlineAgentReturnControlPayload"></a>
 
 Contains information to return from the action group that the agent has predicted to invoke.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Application migration
-<a name="application-migration"></a>
 
 The application migration workstream integrates outputs from other workstreams with the migration of production applications to the AWS Cloud. This workstream guides your resources and leads you through application migration challenges, best practices, agile frameworks, tools, and processes that can be successfully applied to any large-scale migration effort.
 

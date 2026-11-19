@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Mak
 ---
 
 # Making REST Requests
-<a name="MakingRESTRequests"></a>
 
 **Topics**
 + [About REST Requests](#AboutRESTRequests)

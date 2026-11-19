@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # DeleteGroupingConfiguration
-<a name="API_DeleteGroupingConfiguration"></a>
 
 Deletes the grouping configuration for this account. This removes all custom grouping attribute definitions that were previously configured.
 

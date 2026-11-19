@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopEd
 ---
 
 # StopEdgePackagingJob
-<a name="API_StopEdgePackagingJob"></a>
 
 Request to stop an edge packaging job.
 

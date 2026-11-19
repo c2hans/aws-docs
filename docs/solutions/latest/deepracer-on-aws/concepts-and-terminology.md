@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/concep
 ---
 
 # Concepts and terminology
-<a name="concepts-and-terminology"></a>
 
  **DeepRacer on AWS**
 

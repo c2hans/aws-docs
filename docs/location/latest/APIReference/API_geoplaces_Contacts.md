@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # Contacts
-<a name="API_geoplaces_Contacts"></a>
 
 A list of potential contact methods for the place or result.
 

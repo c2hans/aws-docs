@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Configuring SQL\*Plus to use SSL with an RDS for Oracle DB instance
-<a name="Appendix.Oracle.Options.SSL.ClientConfiguration"></a>
 
 Before you can connect to an RDS for Oracle DB instance that uses the Oracle SSL option, you must configure SQL\*Plus before connecting.
 

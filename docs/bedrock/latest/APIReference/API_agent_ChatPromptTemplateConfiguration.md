@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ch
 ---
 
 # ChatPromptTemplateConfiguration
-<a name="API_agent_ChatPromptTemplateConfiguration"></a>
 
 Contains configurations to use a prompt in a conversational format. For more information, see [Create a prompt using Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-create.html).
 

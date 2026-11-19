@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Infrastructure access
-<a name="dssec05"></a>
 
  Controlling how and from where operators access infrastructure is a core sovereignty concern. Operator access introduces risk when access paths span jurisdictions, when privileges persist beyond immediate need, or when regional teams lack the authority and tooling to operate independently. Sovereign workloads require access models that verify identity, validate access location through layered controls, enforce just-in-time privileges, and reduce interactive access through automation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/setup-environment/module
 ---
 
 # Module 1: Create Your AWS Account
-<a name="module-one"></a>
 
 |  |  |
 | --- |--- |

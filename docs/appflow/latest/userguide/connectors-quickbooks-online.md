@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-quic
 ---
 
 # QuickBooks Online connector for Amazon AppFlow
-<a name="connectors-quickbooks-online"></a>
 
 QuickBooks Online is a cloud-based accounting solution for businesses. If you're a QuickBooks Online user, your account contains data about your accounts, customers, invoices, and more. You can use Amazon AppFlow to transfer data from QuickBooks Online to certain AWS services or other supported applications.
 

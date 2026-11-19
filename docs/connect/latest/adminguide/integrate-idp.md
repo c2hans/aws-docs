@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-idp.
 ---
 
 # Integrate your identity provider (IdP) with a Connect Customer Global Resiliency SAML sign in endpoint
-<a name="integrate-idp"></a>
 
 To enable your agents to sign in once and be logged into both AWS Regions to process contacts from the current active Region, you need to configure IAM settings to use the global sign in SAML endpoint.
 

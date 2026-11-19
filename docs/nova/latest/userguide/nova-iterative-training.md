@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-iterative-tra
 ---
 
 # Iterative Training
-<a name="nova-iterative-training"></a>
 
 ## Overview
 <a name="nova-iterative-overview"></a>

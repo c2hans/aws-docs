@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DefaultError
 ---
 
 # DefaultErrorDetails
-<a name="API_DefaultErrorDetails"></a>
 
 Provides error information about a schema conversion operation.
 

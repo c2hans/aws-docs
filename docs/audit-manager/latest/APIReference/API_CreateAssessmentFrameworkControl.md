@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Cr
 ---
 
 # CreateAssessmentFrameworkControl
-<a name="API_CreateAssessmentFrameworkControl"></a>
 
  The control entity attributes that uniquely identify an existing control to be added to a framework in AWS Audit Manager.
 

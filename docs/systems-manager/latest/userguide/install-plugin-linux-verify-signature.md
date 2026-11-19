@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/install
 ---
 
 # Verify the signature of the Session Manager plugin
-<a name="install-plugin-linux-verify-signature"></a>
 
 The Session Manager plugin RPM and Debian installer packages for Linux instances are cryptographically signed. You can use a public key to verify that the plugin binary and package is original and unmodified. If the file is altered or damaged, the verification fails. You can verify the signature of the installer package using the GNU Privacy Guard (GPG) tool. The following information is for Session Manager plugin versions 1.2.707.0 or later.
 

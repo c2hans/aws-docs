@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # List and describe systems
-<a name="next-gen-list-describe-systems"></a>
 
 **To view your systems (console)**
 

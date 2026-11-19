@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsCr
 ---
 
 # Creating an S3 on Outposts access point
-<a name="S3OutpostsCreateAccessPoint"></a>
 
 To access your Amazon S3 on Outposts bucket, you must create and configure an access point.
 

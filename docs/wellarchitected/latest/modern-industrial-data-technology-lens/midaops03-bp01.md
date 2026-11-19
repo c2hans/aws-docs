@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAOPS03-BP01 Define meaningful KPIs and metrics
-<a name="midaops03-bp01"></a>
 
  Manufacturing and industrial organizations require comprehensive visibility into the health and performance of their data-driven operations. Proper definition and monitoring of KPIs verify that manufacturing processes remain efficient, reliable, and aligned with business objective.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AllowedC
 ---
 
 # AllowedCapabilities
-<a name="API_AllowedCapabilities"></a>
 
 Information about the capabilities enabled for participants of the contact.
 

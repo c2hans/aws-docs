@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/usi
 ---
 
 # Testing and debugging with the AWS SDK for Swift
-<a name="using-testing-debugging"></a>
 
 ## Logging
 <a name="using-logging"></a>

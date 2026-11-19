@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-q
 ---
 
 # Amazon SageMaker HyperPod quickstart
-<a name="sagemaker-hyperpod-quickstart"></a>
 
 This quickstart guides you through creating your first HyperPod cluster with Slurm and Amazon EKS (EKS) orchestrations. Choose the orchestration that best fits your infrastructure needs to get started with SageMaker HyperPod.
 

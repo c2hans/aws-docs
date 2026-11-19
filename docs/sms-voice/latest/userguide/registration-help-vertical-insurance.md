@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Insurance Brokers
-<a name="registration-help-vertical-insurance"></a>
 
 This guide covers A2P SMS registration requirements specific to insurance brokers, agencies, and Managing General Agents (MGAs). Insurance messaging is permitted but requires careful attention to how your use case is described and how consent is collected.
 

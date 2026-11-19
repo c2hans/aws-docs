@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_R
 ---
 
 # ReserveContact
-<a name="API_ReserveContact"></a>
 
 Reserves a contact using specified parameters.
 

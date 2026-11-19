@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/user-en
 ---
 
 # User engagement and geomarketing applications
-<a name="user-engagement-geomarketing"></a>
 
 The following is an illustration of a user engagement and geomarketing application architecture using Amazon Location:
 

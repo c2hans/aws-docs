@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Core concepts for AgentCore payments
-<a name="payments-concepts"></a>
 
 ## Key personas
 <a name="_key_personas"></a>

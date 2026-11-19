@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIOp
 ---
 
 # KPIOptions
-<a name="API_KPIOptions"></a>
 
 The options that determine the presentation of a KPI visual.
 

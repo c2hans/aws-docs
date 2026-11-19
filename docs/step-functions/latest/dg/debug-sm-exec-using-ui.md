@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/debug-sm-exec-u
 ---
 
 # Examining state machine executions in Step Functions
-<a name="debug-sm-exec-using-ui"></a>
 
 In this tutorial, you will learn how to inspect the execution information displayed on the *Execution Details* page and view the reason for a failed execution. Then, you'll learn how to access different iterations of a `Map` state execution. Finally, you'll learn how to configure the columns on the **Table view** and apply suitable filters to view only the information of interest to you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # StartArchiveSearch
-<a name="API_StartArchiveSearch"></a>
 
 Initiates a search across emails in the specified archive.
 

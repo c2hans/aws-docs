@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/format-tables-hea
 ---
 
 # Headers
-<a name="format-tables-headers"></a>
 
 ## Expand all headers
 <a name="format-tables-headers-expand"></a>

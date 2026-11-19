@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # AWS CodeBuild
-<a name="API_Type_Resource_ACB"></a>
 
 ****AWS CodeBuild objects****
 + [AwsCodeBuildProjectArtifactsDetails](API_AwsCodeBuildProjectArtifactsDetails.md)

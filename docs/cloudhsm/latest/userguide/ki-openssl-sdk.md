@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-openssl-sdk
 ---
 
 # Known issues for the OpenSSL Dynamic Engine for AWS CloudHSM
-<a name="ki-openssl-sdk"></a>
 
 These are the known issues for OpenSSL Dynamic Engine for AWS CloudHSM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplic
 ---
 
 # AddApplicationInputProcessingConfiguration
-<a name="API_AddApplicationInputProcessingConfiguration"></a>
 
 Adds an [InputProcessingConfiguration](API_InputProcessingConfiguration.md) to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is [Amazon Lambda](https://docs.aws.amazon.com/lambda/).
 

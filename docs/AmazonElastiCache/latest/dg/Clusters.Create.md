@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Cre
 ---
 
 # Creating a cluster for Valkey or Redis OSS
-<a name="Clusters.Create"></a>
 
 The following examples show how to create a Valkey or Redis OSS cluster using the AWS Management Console, AWS CLI and ElastiCache API.
 

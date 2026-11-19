@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/anom-detec
 ---
 
 # Enable anomaly detection on sensors of an asset
-<a name="anom-detection-sensors-asset"></a>
 
 ## Create a computation model (AWS CLI)
 <a name="create-computation-model"></a>

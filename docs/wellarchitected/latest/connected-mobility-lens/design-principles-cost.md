@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Design principles
-<a name="design-principles-cost"></a>
 
 In addition to the general Well-Architected cost optimization design principles, there are some design principles specific for cost optimization for connected mobility:
 

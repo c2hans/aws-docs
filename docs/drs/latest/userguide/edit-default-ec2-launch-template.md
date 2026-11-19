@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/edit-default-ec2-la
 ---
 
 # Editing the default EC2 launch template
-<a name="edit-default-ec2-launch-template"></a>
 
  To edit the default EC2 launch template, follow these steps:
 

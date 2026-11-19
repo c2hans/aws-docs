@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-test-r
 ---
 
 # 'Test report using the AWS CLI' sample
-<a name="sample-test-report-cli"></a>
 
 Tests that you specify in your buildspec file are run during your build. This sample shows you how to use the AWS CLI to incorporate tests into builds in CodeBuild. You can use JUnit to create unit tests, or you can use another tool to create configuration tests. You can then evaluate the test results to fix issues or optimize your application.
 

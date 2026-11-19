@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Oper
 ---
 
 # AWS Marketplace Discovery
-<a name="API_Operations_AWS_Marketplace_Discovery"></a>
 
 The following actions are supported by AWS Marketplace Discovery:
 +  [GetListing](API_marketplace-discovery_GetListing.md)

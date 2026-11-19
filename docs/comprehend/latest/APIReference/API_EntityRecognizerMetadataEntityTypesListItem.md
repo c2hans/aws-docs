@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerMetadataEntityTypesListItem
-<a name="API_EntityRecognizerMetadataEntityTypesListItem"></a>
 
 Individual item from the list of entity types in the metadata of an entity recognizer.
 

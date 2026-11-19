@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/email-reports-fro
 ---
 
 # Configuring email report settings for a Quick Sight dashboard
-<a name="email-reports-from-dashboard"></a>
 
 |  |
 | --- |

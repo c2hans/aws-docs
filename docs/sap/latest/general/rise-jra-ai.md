@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-jra-ai.html
 ---
 
 # Artificial Intelligence
-<a name="rise-jra-ai"></a>
 
  [Amazon Bedrock](https://aws.amazon.com/bedrock/) and [SAP Generative AI Hub](https://help.sap.com/docs/ai-launchpad/sap-ai-launchpad/generative-ai-hub) combine through Joint Reference Architecture (JRA) to provide enterprise-grade AI capabilities for RISE with SAP environments. This integration addresses the need for intelligent process automation while maintaining system security and clean core principles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DeleteCode
 ---
 
 # DeleteCodeSecurityScanConfiguration
-<a name="API_DeleteCodeSecurityScanConfiguration"></a>
 
 Deletes a code security scan configuration.
 

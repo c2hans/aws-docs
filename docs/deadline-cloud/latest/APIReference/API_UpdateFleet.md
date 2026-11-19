@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateFleet
-<a name="API_UpdateFleet"></a>
 
 Updates a fleet.
 

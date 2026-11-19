@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/reamaze-support.html
 ---
 
 # AWS Glue support for Re:amaze
-<a name="reamaze-support"></a>
 
 AWS Glue supports Re:amaze as follows:
 

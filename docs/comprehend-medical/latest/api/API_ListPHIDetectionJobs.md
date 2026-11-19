@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ListPH
 ---
 
 # ListPHIDetectionJobs
-<a name="API_ListPHIDetectionJobs"></a>
 
 Gets a list of protected health information (PHI) detection jobs that you have submitted.
 

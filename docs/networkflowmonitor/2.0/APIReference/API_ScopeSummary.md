@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # ScopeSummary
-<a name="API_ScopeSummary"></a>
 
 A summary of information about a scope, including the ARN, target ID, and AWS Region.
 

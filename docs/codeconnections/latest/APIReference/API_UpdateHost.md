@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # UpdateHost
-<a name="API_UpdateHost"></a>
 
 Updates a specified host with the provided configurations.
 

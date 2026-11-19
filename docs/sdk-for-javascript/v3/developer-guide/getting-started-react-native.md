@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/ge
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Getting started in React Native
-<a name="getting-started-react-native"></a>
 
 This tutorial shows you how you can create a React Native app using [React Native CLI](https://reactnative.dev/docs/environment-setup).
 

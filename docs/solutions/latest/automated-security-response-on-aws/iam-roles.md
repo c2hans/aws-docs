@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # IAM roles
-<a name="iam-roles"></a>
 
 AWS Identity and Access Management (IAM) roles allow customers to assign granular access policies and permissions to services and users in the AWS Cloud. This solution creates IAM roles that grant the solution’s automated functions access to perform remediation actions within a narrow scope set of permissions specific to each remediation.
 

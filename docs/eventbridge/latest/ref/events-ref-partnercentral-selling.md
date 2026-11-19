@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-partne
 ---
 
 # AWS Partner Central Selling events
-<a name="events-ref-partnercentral-selling"></a>
 
 Partner Central Selling sends service events directly to EventBridge.
 

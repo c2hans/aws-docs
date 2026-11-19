@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Linux-based platform updates on January 23, 2019
-<a name="release-2019-01-23-linux"></a>
 
 This release applies security updates to Linux-based platforms for AWS Elastic Beanstalk, and updates platform configurations. The release includes Node.js, PHP, Python, and Ruby updates, some cross-platform updates, and, for certain AWS Regions, support for additional Amazon EC2 instance types.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/acm_example_acm_E
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ExportCertificate` with an AWS SDK or CLI
-<a name="acm_example_acm_ExportCertificate_section"></a>
 
 The following code examples show how to use `ExportCertificate`.
 

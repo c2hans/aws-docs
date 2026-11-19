@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-
 ---
 
 # Temporarily remove instances from your Auto Scaling group
-<a name="as-enter-exit-standby"></a>
 
 You can put an instance that is in the `InService` state into the `Standby` state, update or troubleshoot the instance, and then return the instance to service. Instances that are on standby are still part of the Auto Scaling group, but they do not actively handle load balancer traffic.
 

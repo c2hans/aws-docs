@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Amazon CodeCatalyst for the AWS Toolkit for Visual Studio with Amazon Q
-<a name="codecatalyst"></a>
 
 ## What is Amazon CodeCatalyst?
 <a name="codecatalyst-intro"></a>

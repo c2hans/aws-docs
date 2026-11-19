@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Discovering and Protecting Data at Scale with Amazon Macie
-<a name="discovering-and-protecting-data-at-scale-with-amazon-macie"></a>
 
 Article 32 of the GDPR states that “[…] the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: […]
 

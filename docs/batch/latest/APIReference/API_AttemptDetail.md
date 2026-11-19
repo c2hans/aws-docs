@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_AttemptDet
 ---
 
 # AttemptDetail
-<a name="API_AttemptDetail"></a>
 
 An object that represents a job attempt.
 

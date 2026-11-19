@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CustomerSummary
-<a name="API_CustomerSummary"></a>
 
 An object that contains a `Customer` object's subset of fields.
 

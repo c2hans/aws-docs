@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Build cloud capability across your organization
-<a name="build-cloud-capability-across-organization"></a>
 
 As you prepare to offer cloud as a service for your organization, you should consider identifying an owner who will sponsor the cloud adoption and they can build a team with the appropriate skill sets to deploy, operate, and govern the environment. As part of your foundation journey, we will be providing an estimated level of effort and the skill sets needed for building and operating each of the capabilities. To maximize the gains/outputs from your cloud initiatives, the [Cloud Adoption Framework Governance perspective](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/governance-perspective.html) includes details to help you identify what needs to be done in these area.
 

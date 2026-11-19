@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smpte-2038-requireme
 ---
 
 # A well-formed SMPTE 2038 stream
-<a name="smpte-2038-requirements"></a>
 
 For MediaLive to extract and process the data appropriately, the SMPTE 2038 stream in the input must meet certain criteria:
 + The SMPTE 2038 stream must be present in every PMT.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Lis
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeArtifact.
 

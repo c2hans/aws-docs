@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityM
 ---
 
 # CapacityManagerDataExportResponse
-<a name="API_CapacityManagerDataExportResponse"></a>
 
  Contains information about a Capacity Manager data export configuration, including export settings, delivery status, and recent export activity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_CreateR
 ---
 
 # CreateRenewal
-<a name="API_CreateRenewal"></a>
 
 Creates a renewal contract for the specified Outpost.
 

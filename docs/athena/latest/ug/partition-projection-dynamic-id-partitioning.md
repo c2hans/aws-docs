@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-dy
 ---
 
 # Use dynamic ID partitioning
-<a name="partition-projection-dynamic-id-partitioning"></a>
 
 When your data is partitioned by a property with high cardinality or when the values cannot be known in advance, you can use the `injected` projection type. Examples of such properties are user names, and IDs of devices or products. When you use the `injected` projection type to configure a partition key, Athena uses values from the query itself to compute the set of partitions that will be read.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-windows-volu
 ---
 
 # How volumes are attached and mapped for Amazon EC2 Windows instances
-<a name="ec2-windows-volumes"></a>
 
 **Note**
 This topic applies to Windows instances only.

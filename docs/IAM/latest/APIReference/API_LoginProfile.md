@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_LoginProfile
 ---
 
 # LoginProfile
-<a name="API_LoginProfile"></a>
 
 Contains the user name and password create date for a user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeResultStream
-<a name="API_streaming_MedicalScribeResultStream"></a>
 
 Result stream where you will receive the output events. The details are provided in the `MedicalScribeTranscriptEvent` object.
 

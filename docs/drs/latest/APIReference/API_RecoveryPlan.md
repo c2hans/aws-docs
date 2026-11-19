@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlan
-<a name="API_RecoveryPlan"></a>
 
 A Recovery Plan resource.
 

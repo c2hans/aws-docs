@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/share-cus
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Sharing a custom framework in AWS Audit Manager
-<a name="share-custom-framework"></a>
 
 You can use the framework sharing feature of AWS Audit Manager to quickly replicate the custom frameworks that you create. You can share your custom frameworks with another AWS account, or replicate your frameworks into another AWS Region under your own account. The recipient can then access your custom framework and use it to create assessments. They can do this without having to repeat any of your configuration efforts for that framework.
 

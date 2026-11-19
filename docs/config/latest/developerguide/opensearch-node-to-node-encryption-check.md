@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/opensearch-
 ---
 
 # opensearch-node-to-node-encryption-check
-<a name="opensearch-node-to-node-encryption-check"></a>
 
 Check if Amazon OpenSearch Service nodes are encrypted end to end. The rule is NON\_COMPLIANT if the node-to-node encryption is not enabled on the domain
 

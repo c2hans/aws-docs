@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/buildkite-run
 ---
 
 # Compute images supported with the CodeBuild-hosted Buildkite runner
-<a name="buildkite-runner-update-yaml.images"></a>
 
 In the label you configured in [Self-managed Buildkite runner in AWS CodeBuild](buildkite-runner.md), you can override your Amazon EC2 environment settings by using the values in the first three columns. CodeBuild provides the following Amazon EC2 compute images. For more information about
 

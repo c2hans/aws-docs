@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DisassociateContract
-<a name="API_billing_DisassociateContract"></a>
 
 Removes the association between a private pricing contract and your AWS account. The account must have been associated with the contract previously. This operation is idempotent, so retrying is safe.
 

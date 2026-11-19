@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/display-login
 ---
 
 # View a currently configured AWS Client VPN login banner
-<a name="display-login-banner"></a>
 
 Use the following steps to view a currently configured Client VPN client login banner.
 

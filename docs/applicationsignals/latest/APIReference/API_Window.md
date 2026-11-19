@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Window
-<a name="API_Window"></a>
 
 The object that defines the time length of an exclusion window.
 

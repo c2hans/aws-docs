@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-readi
 ---
 
 # Appendix B: Example ORR questions
-<a name="appendix-b-example-orr-questions"></a>
 
 These are a few example questions that you can use to get started building your own ORR program.
 

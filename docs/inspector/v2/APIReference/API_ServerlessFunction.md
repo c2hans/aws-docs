@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Serverless
 ---
 
 # ServerlessFunction
-<a name="API_ServerlessFunction"></a>
 
 Contains details about a serverless function involved in a finding.
 

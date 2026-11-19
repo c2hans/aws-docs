@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Security
-<a name="security"></a>
 
 A central code inspection, compilation, and reporting mechanism can provide great security benefits and reduce time to market by freeing application developers from writing this task.
 

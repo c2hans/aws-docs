@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_EventSubscript
 ---
 
 # EventSubscription
-<a name="API_EventSubscription"></a>
 
 Contains the results of a successful invocation of the [DescribeEventSubscriptions](API_DescribeEventSubscriptions.md) action.
 

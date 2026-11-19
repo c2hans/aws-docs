@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/ivs-control
 ---
 
 # Security Hub CSPM controls for Amazon IVS
-<a name="ivs-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon Interactive Video Service (IVS) service and resources.
 

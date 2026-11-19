@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateCluste
 ---
 
 # UpdateClusterSlurmConfigurationRequest
-<a name="API_UpdateClusterSlurmConfigurationRequest"></a>
 
 Additional options related to the Slurm scheduler.
 

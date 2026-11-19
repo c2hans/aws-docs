@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # How Network Firewall filters traffic with a Next Generation policy
-<a name="firewall-policy-processing-v2"></a>
 
 A Next Generation policy doesn't use stateless rule groups. Traffic travels through a firewall engine and then an IPS engine.
 

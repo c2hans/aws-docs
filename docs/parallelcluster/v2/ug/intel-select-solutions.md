@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/intel-select-solut
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Intel Select Solutions
-<a name="intel-select-solutions"></a>
 
 AWS ParallelCluster is available as an Intel Select Solution for simulation and modeling. Configurations are verified to meet the standards set by the [Intel HPC Platform Specification](https://www.intel.com/content/www/us/en/high-performance-computing/hpc-platform-specification.html), use specific Intel instance types, and are configured to use the [Elastic Fabric Adapter](efa.md) (EFA) networking interface. AWS ParallelCluster is the first cloud solution to meet the requirements for the Intel Select Solutions program. Supported instance types include `c5n.18xlarge`, `m5n.24xlarge`, and `r5n.24xlarge`. A sample configuration compatible with the Intel Select Solutions standard is provided below.
 

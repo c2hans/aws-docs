@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DAYOFMO
 ---
 
 # DAYOFMONTH function
-<a name="DAYOFMONTH"></a>
 
 The DAYOFMONTH function returns the day of month of the date/timestamp (a value between 1 and 31, depending on the month and year).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Capacit
 ---
 
 # CapacityTaskFailure
-<a name="API_CapacityTaskFailure"></a>
 
 The capacity tasks that failed.
 

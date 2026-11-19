@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-pool-li
 ---
 
 # View all phone pools in AWS End User Messaging SMS
-<a name="phone-pool-list"></a>
 
 You can use the [describe-pools](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/describe-pools.html) CLI to view information about existing pools.
 

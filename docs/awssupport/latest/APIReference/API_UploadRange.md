@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Uploa
 ---
 
 # UploadRange
-<a name="API_UploadRange"></a>
 
 The range of part indexes for which to return presigned upload URLs from [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md).
 

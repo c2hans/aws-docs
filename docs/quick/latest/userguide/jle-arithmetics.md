@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/jle-arithmetics.h
 ---
 
 # Arithmetics
-<a name="jle-arithmetics"></a>
 
 The following table shows arithmetic expressions that can be used with JSON expression language.
 

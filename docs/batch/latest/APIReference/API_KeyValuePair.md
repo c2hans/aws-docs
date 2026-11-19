@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_KeyValuePa
 ---
 
 # KeyValuePair
-<a name="API_KeyValuePair"></a>
 
 A key-value pair object.
 

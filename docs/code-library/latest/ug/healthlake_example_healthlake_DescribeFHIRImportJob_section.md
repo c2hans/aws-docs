@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/healthlake_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DescribeFHIRImportJob` with an AWS SDK or CLI
-<a name="healthlake_example_healthlake_DescribeFHIRImportJob_section"></a>
 
 The following code examples show how to use `DescribeFHIRImportJob`.
 

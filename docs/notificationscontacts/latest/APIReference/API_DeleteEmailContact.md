@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # DeleteEmailContact
-<a name="API_DeleteEmailContact"></a>
 
 Deletes an email contact.
 

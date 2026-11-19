@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchGetAssetPropertyValueHistorySkippedEntry
-<a name="API_BatchGetAssetPropertyValueHistorySkippedEntry"></a>
 
 Contains information for an entry that has been processed by the previous [BatchGetAssetPropertyValueHistory](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchGetAssetPropertyValue.html) request.
 

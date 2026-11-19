@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Generative AI pricing model
-<a name="gencost02"></a>
 
 | GENCOST02: How do you select a cost-effective pricing model (for example, provisioned, on-demand, hosted, or batch)? |
 | --- |

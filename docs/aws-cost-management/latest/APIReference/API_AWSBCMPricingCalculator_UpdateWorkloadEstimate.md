@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateWorkloadEstimate
-<a name="API_AWSBCMPricingCalculator_UpdateWorkloadEstimate"></a>
 
  Updates an existing workload estimate.
 

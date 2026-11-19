@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-returnco
 ---
 
 # Return control to the agent developer by sending elicited information in an InvokeAgent response
-<a name="agents-returncontrol"></a>
 
 Rather than sending the information that your agent has elicited from the user to a Lambda function for fulfillment, you can instead choose to return control to the agent developer by sending the information in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response. You can configure return of control to the agent developer when creating or updating an action group. Through the API, you specify `RETURN_CONTROL` as the `customControl` value in the `actionGroupExecutor` object in a [CreateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [UpdateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request. For more information, see [Add an action group to your agent in Amazon Bedrock](agents-action-add.md).
 

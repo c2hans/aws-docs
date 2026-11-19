@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WabaPhoneNumberSetupFinalization
-<a name="API_WabaPhoneNumberSetupFinalization"></a>
 
 The registration details for a linked phone number.
 

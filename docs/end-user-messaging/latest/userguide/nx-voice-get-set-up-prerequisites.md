@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Prerequisites
-<a name="nx-voice-get-set-up-prerequisites"></a>
 
 Before you begin, complete the following:
 

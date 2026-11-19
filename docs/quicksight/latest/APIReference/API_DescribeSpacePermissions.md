@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeSpacePermissions
-<a name="API_DescribeSpacePermissions"></a>
 
 Describes the permissions for an Amazon QuickSight space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Anomaly
 ---
 
 # AnomalyInstance
-<a name="API_AnomalyInstance"></a>
 
 The specific duration in which the metric is flagged as anomalous.
 

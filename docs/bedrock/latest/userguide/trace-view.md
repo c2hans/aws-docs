@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/trace-view.html
 ---
 
 # View the trace
-<a name="trace-view"></a>
 
 The following describes how to view the trace. Choose the tab for your preferred method, and then follow the steps:
 

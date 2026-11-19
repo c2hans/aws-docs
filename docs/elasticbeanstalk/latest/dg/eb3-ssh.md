@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-ssh.html
 ---
 
 # **eb ssh**
-<a name="eb3-ssh"></a>
 
 ## Description
 <a name="eb3-sshdescription"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # GenerateMacEmvPinChange
-<a name="API_GenerateMacEmvPinChange"></a>
 
 Generates an issuer script mac for EMV payment cards that use offline PINs as the cardholder verification method (CVM).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AutomationExecution
-<a name="API_AutomationExecution"></a>
 
 The Systems Manager automation document process to start as the runbook at the beginning of the incident.
 

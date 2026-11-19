@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # AWS Organizational Change Acceleration (OCA) 6-Point Framework – 6. Make Culture Change Stick
-<a name="introduction"></a>
 
 *Tierra Jennings-Hill, Melanie Gladwell, and Nicole Lenz, Amazon Web Services*
 

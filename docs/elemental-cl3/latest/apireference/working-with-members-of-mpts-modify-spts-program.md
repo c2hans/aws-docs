@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # PUT: Modify an SPTS Program
-<a name="working-with-members-of-mpts-modify-spts-program"></a>
 
 Change the PID map and program number of the specified MPTS member.
 

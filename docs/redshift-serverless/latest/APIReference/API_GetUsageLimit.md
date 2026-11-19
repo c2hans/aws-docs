@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetUsageLimit
-<a name="API_GetUsageLimit"></a>
 
 Returns information about a usage limit.
 

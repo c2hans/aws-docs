@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTOPS02-BP02 Implement infrastructure deployment and update automation for your Microsoft workload
-<a name="msftops02-bp02"></a>
 
  Set up Infrastructure as Code (IaC) to apply patterns to the infrastructure of your Microsoft workload. You can use AWS CloudFormation to help model and deploy the required AWS resources based on templates. Third-party solutions, such as Terraform, are also useful for the case.
 

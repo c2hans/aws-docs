@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Amazon Bedrock AgentCore Memory examples
-<a name="memory-examples"></a>
 
 You can use AgentCore Memory with a variety of SDKS and agent frameworks.
 

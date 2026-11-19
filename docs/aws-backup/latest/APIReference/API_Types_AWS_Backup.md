@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Types
 ---
 
 # AWS Backup
-<a name="API_Types_AWS_Backup"></a>
 
 The following data types are supported by AWS Backup:
 +  [AdvancedBackupSetting](API_AdvancedBackupSetting.md)

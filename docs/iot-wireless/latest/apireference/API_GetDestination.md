@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetDestination
-<a name="API_GetDestination"></a>
 
 Gets information about a destination.
 

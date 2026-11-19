@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetAccount.htm
 ---
 
 # GetAccount
-<a name="API_GetAccount"></a>
 
 Gets information about the current Account resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Rep
 ---
 
 # RepositoryExternalConnectionInfo
-<a name="API_RepositoryExternalConnectionInfo"></a>
 
  Contains information about the external connection of a repository.
 

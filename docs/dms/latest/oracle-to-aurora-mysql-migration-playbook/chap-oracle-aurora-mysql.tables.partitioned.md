@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle local and global partitioned indexes and MySQL partitioned indexes
-<a name="chap-oracle-aurora-mysql.tables.partitioned"></a>
 
 With AWS DMS, you can migrate data from Oracle databases using local and global partitioned indexes and from MySQL databases using partitioned indexes. Partitioned indexes facilitate operations on large datasets by logically dividing data into smaller subsets, improving performance and manageability.
 

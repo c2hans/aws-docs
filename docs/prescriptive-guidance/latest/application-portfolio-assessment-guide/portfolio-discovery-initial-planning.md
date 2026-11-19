@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Discovery acceleration and initial planning
-<a name="portfolio-discovery-initial-planning"></a>
 
 This first stage of portfolio assessment focuses on the initial steps of obtaining and analyzing data at the portfolio level. The main objective is to identify business drivers and collect general data from applications and infrastructure to obtain an initial view of the portfolio. This data includes high-level technical and business attributes such as application names, environment, product versions, criticality, performance values, and others, as described in the [data requirements](understanding-initial-assessment-data-requirements.md) section. Completing this stage is key to understanding the scope of the project, identifying initial migration candidates, and informing the business case.
 

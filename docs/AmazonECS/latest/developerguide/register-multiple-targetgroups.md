@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/register
 ---
 
 # Registering multiple target groups with an Amazon ECS service
-<a name="register-multiple-targetgroups"></a>
 
 Your Amazon ECS service can serve traffic from multiple load balancers and expose multiple load balanced ports when you specify multiple target groups in a service definition.
 

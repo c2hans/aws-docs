@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bitsAnyClear.
 ---
 
 # $bitsAnyClear
-<a name="bitsAnyClear"></a>
 
 The `$bitsAnyClear` operator in Amazon DocumentDB is used to match the documents where any of the specified bit in a field are cleared (set to 0). This can be useful for performing bitwise operations on field values stored in documents.
 

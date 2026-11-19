@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jl-lcc-debug.html
 ---
 
 # Debug lifecycle configurations
-<a name="jl-lcc-debug"></a>
 
 The following topics show how to get information about and debug your lifecycle configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/containment
 ---
 
 # Containment only
-<a name="containment-only-template"></a>
 
 Use this template if you want the service to isolate compromised resources during an incident but don't need forensic data collection from running instances.
 

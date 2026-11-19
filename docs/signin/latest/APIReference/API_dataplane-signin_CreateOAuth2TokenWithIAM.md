@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # CreateOAuth2TokenWithIAM
-<a name="API_dataplane-signin_CreateOAuth2TokenWithIAM"></a>
 
 Exchanges client credentials for an OAuth 2.0 access token scoped to a resource, which you can use to access AWS services from applications.
 

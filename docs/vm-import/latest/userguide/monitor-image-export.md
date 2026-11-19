@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/monitor-image
 ---
 
 # Monitor an export image task
-<a name="monitor-image-export"></a>
 
 After you start an image export using VM Import/Export, you can monitor the export operation.
 

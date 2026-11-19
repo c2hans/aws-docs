@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use conditional operations in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_ConditionalOperations_section"></a>
 
 The following code examples show how to use conditional operations in DynamoDB.
 + Implement conditional writes to prevent overwriting data.

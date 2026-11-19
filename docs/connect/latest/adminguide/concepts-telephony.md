@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/concepts-telep
 ---
 
 # The voice channel in Connect Customer
-<a name="concepts-telephony"></a>
 
 **Important**
 Trying to contact Amazon for support? See [Amazon Customer Service](https://www.amazon.com/gp/help/customer/display.html) (Amazon orders and deliveries) or [AWS Support](https://aws.amazon.com/premiumsupport/) (Amazon Web Services).

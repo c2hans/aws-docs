@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-packages.
 ---
 
 # New Packages in AL2023
-<a name="new-packages"></a>
 
 **Topics**
 + [New packages in AL2023.12 since AL1](new-AL1-AL2023.12.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Work
 ---
 
 # WorkLinkServiceRolePolicy
-<a name="WorkLinkServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and Resources used or managed by Amazon WorkLink
 

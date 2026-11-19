@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Amazon Elastic Compute Cloud (EC2) instance
-<a name="component-configuration-examples-ec2"></a>
 
 The following example shows a component configuration in JSON format for an Amazon EC2 instance.
 

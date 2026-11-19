@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/queue-mode.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Multiple queue mode
-<a name="queue-mode"></a>
 
 AWS ParallelCluster version 2.9.0 introduced multiple queue mode. Multiple queue mode is supported when [`scheduler`](cluster-definition.md#scheduler) is set to `slurm` and the [`queue_settings`](cluster-definition.md#queue-settings) setting is defined. This mode allows different instance types to coexist in the compute nodes. The compute resources that contain the different instance types can scale up or down as needed. In queue mode, up to five (5) queues are supported, and each [`[queue]` section](queue-section.md) can refer to up to three (3) [`[compute_resource]` sections](compute-resource-section.md). Each of these [`[queue]` sections](queue-section.md) is a partition in Slurm Workload Manager. For more information, see [Slurm guide for multiple queue mode](multiple-queue-mode-slurm-user-guide.md) and [Multiple queue mode tutorial](tutorial-mqm.md).
 

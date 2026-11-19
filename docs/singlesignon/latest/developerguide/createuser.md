@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/creat
 ---
 
 # CreateUser
-<a name="createuser"></a>
 
 You can create new users from a POST request using the IAM Identity Center SCIM implementation `/Users` endpoint. See the Examples section.
 

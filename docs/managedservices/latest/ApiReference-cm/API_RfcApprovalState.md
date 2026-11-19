@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcApprovalState
-<a name="API_RfcApprovalState"></a>
 
 The status of the approvals for the RFC.
 

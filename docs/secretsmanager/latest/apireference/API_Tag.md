@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A structure that contains information about a tag.
 

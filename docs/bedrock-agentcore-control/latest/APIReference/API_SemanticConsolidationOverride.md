@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SemanticConsolidationOverride
-<a name="API_SemanticConsolidationOverride"></a>
 
 Contains semantic consolidation override configuration.
 

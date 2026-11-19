@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-teradata-connect
 ---
 
 # Creating a Teradata Vantage connection
-<a name="creating-teradata-connection"></a>
 
 To connect to Teradata Vantage from AWS Glue, you will need to create and store your Teradata credentials in an AWS Secrets Manager secret, then associate that secret with a AWS Glue Teradata connection.
 

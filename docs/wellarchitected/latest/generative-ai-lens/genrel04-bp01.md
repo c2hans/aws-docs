@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENREL04-BP01 Implement a prompt catalog
-<a name="genrel04-bp01"></a>
 
  Prompt catalogs store and manage prompts and prompt versions. They act as a reliable store for prompts for generative AI workloads.
 

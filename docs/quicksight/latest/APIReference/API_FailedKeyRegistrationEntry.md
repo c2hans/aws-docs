@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Faile
 ---
 
 # FailedKeyRegistrationEntry
-<a name="API_FailedKeyRegistrationEntry"></a>
 
 An entry that appears when a `KeyRegistration` update to Quick Sight fails.
 

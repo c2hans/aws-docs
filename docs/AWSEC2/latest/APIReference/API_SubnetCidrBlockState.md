@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetCid
 ---
 
 # SubnetCidrBlockState
-<a name="API_SubnetCidrBlockState"></a>
 
 Describes the state of a CIDR block.
 

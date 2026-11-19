@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord RegistryRecordCredentialProviderUnion
-<a name="aws-properties-agentregistry-registryrecord-registryrecordcredentialproviderunion"></a>
 
 The credential provider details for a registry record. Exactly one member is populated, matching the configured credential provider type.
 

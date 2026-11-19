@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Sample AppSync API to query forensic details
-<a name="sample-appsync-api-to-query-forensic-details"></a>
 
 To query forensic information, [AppSync](https://aws.amazon.com/appsync/) provides the following queries.
 

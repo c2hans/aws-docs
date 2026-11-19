@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/milesto
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Generating a milestone report
-<a name="milestone-report"></a>
 
 You can generate a milestone report. The report contains the responses to the workload questions, your notes, and any high and medium risks that were present when the milestone was saved.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CalculatedAttributeDimension
-<a name="API_connect-customer-profiles_CalculatedAttributeDimension"></a>
 
 Object that segments on Customer Profile's Calculated Attributes.
 

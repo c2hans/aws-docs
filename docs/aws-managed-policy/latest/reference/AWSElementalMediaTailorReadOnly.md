@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaTailorReadOnly
-<a name="AWSElementalMediaTailorReadOnly"></a>
 
 **Description**: Provides read only access to AWS Elemental MediaTailor resources
 

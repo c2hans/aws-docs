@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Answer
-<a name="API_Answer"></a>
 
 An answer of the question.
 

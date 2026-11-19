@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateRulesOfI
 ---
 
 # UpdateRulesOfIpGroup
-<a name="API_UpdateRulesOfIpGroup"></a>
 
 Replaces the current rules of the specified IP access control group with the specified rules.
 

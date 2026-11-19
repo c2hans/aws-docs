@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TrafficMi
 ---
 
 # TrafficMirrorFilter
-<a name="API_TrafficMirrorFilter"></a>
 
 Describes the Traffic Mirror filter.
 

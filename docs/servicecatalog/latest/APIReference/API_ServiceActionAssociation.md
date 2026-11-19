@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # ServiceActionAssociation
-<a name="API_ServiceActionAssociation"></a>
 
 A self-service action association consisting of the Action ID, the Product ID, and the Provisioning Artifact ID.
 

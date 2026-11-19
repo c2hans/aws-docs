@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-testing.html
 ---
 
 # Testing Lambda durable functions
-<a name="durable-testing"></a>
 
 Use the Durable Execution testing SDKs to run and inspect executions both locally and in the cloud. For authoring tests, assertions, the cloud runner, SAM CLI integration, and complete examples, see [Testing](https://docs.aws.amazon.com/durable-execution/testing/) in the AWS Durable Execution SDK Developer Guide.
 

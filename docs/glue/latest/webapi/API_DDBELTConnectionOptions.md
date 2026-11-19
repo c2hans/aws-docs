@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DDBELTConnectionO
 ---
 
 # DDBELTConnectionOptions
-<a name="API_DDBELTConnectionOptions"></a>
 
 Specifies connection options for DynamoDB ELT (Extract, Load, Transform) operations. This structure contains configuration parameters for connecting to and extracting data from DynamoDB tables using the ELT connector.
 

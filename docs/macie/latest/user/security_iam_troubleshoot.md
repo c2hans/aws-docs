@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/security_iam_troublesh
 ---
 
 # Troubleshooting identity and access management for Macie
-<a name="security_iam_troubleshoot"></a>
 
 The following information can help you diagnose and fix common issues that you might encounter when working with Amazon Macie and AWS Identity and Access Management (IAM).
 

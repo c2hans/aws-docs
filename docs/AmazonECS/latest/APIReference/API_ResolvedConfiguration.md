@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Resolv
 ---
 
 # ResolvedConfiguration
-<a name="API_ResolvedConfiguration"></a>
 
 The resolved configuration for a service revision, which contains the actual resources your service revision uses, such as which target groups serve traffic.
 

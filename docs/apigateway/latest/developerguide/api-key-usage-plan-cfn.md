@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-key
 ---
 
 # Create and configure API keys and usage plans with CloudFormation
-<a name="api-key-usage-plan-cfn"></a>
 
  You can use CloudFormation to require API keys on API methods and create a usage plan for an API. The example CloudFormation template does the following:
 + Creates an API Gateway API with `GET` and `POST` methods.

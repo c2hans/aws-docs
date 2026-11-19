@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for knowledge management
-<a name="generative-ai-capabilities-knowledge-mgmt"></a>
 
 In any software development organization, knowledge is a critical asset. The knowledge management capability, powered by generative AI, enhances how this asset is captured, organized, and used. Traditional knowledge management systems often contain too much information, contain outdated content, or are difficult to search in order to quickly find relevant information.
 

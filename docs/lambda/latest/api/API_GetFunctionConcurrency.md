@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionConcurr
 ---
 
 # GetFunctionConcurrency
-<a name="API_GetFunctionConcurrency"></a>
 
 Returns details about the reserved concurrency configuration for a function. To set a concurrency limit for a function, use [PutFunctionConcurrency](API_PutFunctionConcurrency.md).
 

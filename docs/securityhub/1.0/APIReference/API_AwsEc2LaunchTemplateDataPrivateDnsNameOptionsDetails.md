@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetails
-<a name="API_AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetails"></a>
 
  Describes the options for Amazon EC2 instance hostnames.
 

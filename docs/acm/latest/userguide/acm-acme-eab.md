@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-acme-eab.html
 ---
 
 # External account bindings
-<a name="acm-acme-eab"></a>
 
 External account bindings (EABs) are credentials that authorize ACME clients to register accounts with an ACME endpoint. An ACME client cannot request certificates from an endpoint without first registering an account, and registration requires valid EAB credentials. When a PKI administrator creates an EAB, they associate it with an IAM role that controls what certificate operations the ACME client can perform. The administrator then distributes the EAB credentials out-of-band to the teams or systems that need certificates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sta
 ---
 
 # StartFuotaTask
-<a name="API_StartFuotaTask"></a>
 
 Starts a FUOTA task.
 

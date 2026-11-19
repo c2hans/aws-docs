@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListTopicsV2
-<a name="API_ListTopicsV2"></a>
 
 Lists all of the Q topics in the specified AWS account in an AWS Region.
 

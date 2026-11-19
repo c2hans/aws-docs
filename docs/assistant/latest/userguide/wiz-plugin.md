@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/wiz-plugin.ht
 ---
 
 # Configuring the AWS assistant Wiz plugin
-<a name="wiz-plugin"></a>
 
 Wiz is a cloud security platform that provides security posture management, risk assessment and prioritization, and vulnerability management. If you use Wiz to evaluate and monitor your AWS applications, you can use the plugin in the AWS assistant to access insights from Wiz without leaving the AWS Management Console.
 

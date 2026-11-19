@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobTopicV2OverrideTags
-<a name="API_AssetBundleImportJobTopicV2OverrideTags"></a>
 
 An object that contains a list of tags to be assigned to a list of topic IDs.
 

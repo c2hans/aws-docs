@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/fleet-quotas.htm
 ---
 
 # Quotas for EC2 Fleet and Spot Fleet
-<a name="fleet-quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific.
 

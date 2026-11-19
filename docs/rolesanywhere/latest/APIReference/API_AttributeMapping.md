@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_At
 ---
 
 # AttributeMapping
-<a name="API_AttributeMapping"></a>
 
 A mapping applied to the authenticating end-entity certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/setting-up-sso.ht
 ---
 
 # Using IAM Identity Center
-<a name="setting-up-sso"></a>
 
 |  |
 | --- |
@@ -71,7 +70,7 @@ Before you create your Quick subscription in an additional Region, complete the 
 
 1. If your organization uses an external identity provider, add the target Region's Assertion Consumer Service (ACS) URL to your identity provider configuration. For more information, see [Multi-Region workforce access](https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-workforce-access.html) in the *AWS IAM Identity Center User Guide*.
 
-1. Confirm that the target Region is a supported Quick signup Region. For a list of supported Regions, see [Supported AWS Regions for AWS Quick](regions.md#regions-qs).
+1. Confirm that the target Region is a supported Quick signup Region. For a list of supported Regions, see [URLs, endpoints, and IP addresses](regions.md#regions-qs).
 
 #### To create a subscription in an additional Region
 <a name="idc-multi-region-create"></a>

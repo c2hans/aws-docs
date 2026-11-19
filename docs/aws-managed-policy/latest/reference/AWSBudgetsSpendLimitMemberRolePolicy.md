@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBudgetsSpendLimitMemberRolePolicy
-<a name="AWSBudgetsSpendLimitMemberRolePolicy"></a>
 
 **Description**: Grants the AWS Budgets service permissions to describe, stop, and terminate resources in a member account to enforce spend limit actions.
 

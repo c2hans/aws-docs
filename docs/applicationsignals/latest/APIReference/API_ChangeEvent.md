@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ChangeEvent
-<a name="API_ChangeEvent"></a>
 
 A structure that contains information about a change event that occurred for a service, such as a deployment or configuration change.
 

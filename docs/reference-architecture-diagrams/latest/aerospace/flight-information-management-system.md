@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Flight Information Management System (FIMS)
-<a name="flight-information-management-system"></a>
 
 Publication date: **February 2, 2022 ([Diagram history](diagram-history.md))**
 

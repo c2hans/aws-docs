@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/process-msgs.html
 ---
 
 # Understanding Amazon Chime SDK live transcription messages
-<a name="process-msgs"></a>
 
 The Amazon Chime SDK service shares transcription information with attendees by sending `TranscriptEvent` objects in data messages. A `TranscriptEvent` delivers a `Transcript` or a `TranscriptionStatus`.
 

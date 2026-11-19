@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeInstanceProperties
-<a name="API_DescribeInstanceProperties"></a>
 
 An API operation used by the Systems Manager console to display information about Systems Manager managed nodes.
 

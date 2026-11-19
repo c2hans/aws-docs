@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # WorkSpaces Applications Windows Client Release Notes
-<a name="client-release-versions"></a>
 
 The WorkSpaces Applications client is a native application that is designed for users who require additional functionality during their WorkSpaces Applications streaming sessions. The following table describes the latest updates that are available in released versions of the WorkSpaces Applications client.
 

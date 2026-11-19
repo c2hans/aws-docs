@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/applica
 ---
 
 # Attribute-Based Application Entitlements Using a Third-Party SAML 2.0 Identity Provider
-<a name="application-entitlements-saml"></a>
 
 Application entitlements control access to specific applications within your WorkSpaces Applications stacks. This works by using SAML 2.0 attribute assertions from a third-party SAML 2.0 identity provider. The assertion is matched to a value when a user identity federates to a WorkSpaces Applications SAML application. If the entitlement is true, and the attribute name and value match, access is entitled for the user identity to one or more applications within the stack.
 

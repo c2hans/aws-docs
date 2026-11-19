@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetContextGraph
-<a name="API_GetContextGraph"></a>
 
 Queries the context graph with filtering, traversal, and pagination support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Reco
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 Represents a recommendation with all its properties and metadata
 

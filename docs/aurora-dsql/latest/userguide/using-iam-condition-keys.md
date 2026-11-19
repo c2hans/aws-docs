@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/using-iam-c
 ---
 
 # Using IAM condition keys with Amazon Aurora DSQL
-<a name="using-iam-condition-keys"></a>
 
 The `Condition` element (or `Condition` block) specifies the conditions under which a policy statement is in effect. You build conditional expressions using [condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html) such as `StringEquals` or `StringLike` to match keys in the policy against values in the request. Condition keys are different from resource ARN scoping, which restricts actions to specific resources using the `Resource` element.
 

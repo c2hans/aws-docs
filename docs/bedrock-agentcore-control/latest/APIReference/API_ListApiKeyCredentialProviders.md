@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListApiKeyCredentialProviders
-<a name="API_ListApiKeyCredentialProviders"></a>
 
 Lists all API key credential providers in your account.
 

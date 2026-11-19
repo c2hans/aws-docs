@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # IntermediateStorage
-<a name="API_agent_IntermediateStorage"></a>
 
 A location for storing content from data sources temporarily as it is processed by custom components in the ingestion pipeline.
 

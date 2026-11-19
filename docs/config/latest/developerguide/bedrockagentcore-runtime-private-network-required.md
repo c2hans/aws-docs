@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/bedrockagen
 ---
 
 # bedrockagentcore-runtime-private-network-required
-<a name="bedrockagentcore-runtime-private-network-required"></a>
 
 Checks if an Amazon Bedrock AgentCore runtime is configured with public network access. The rule is NON\_COMPLIANT if the runtime has NetworkMode set to PUBLIC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_FilterC
 ---
 
 # FilterClause
-<a name="API_FilterClause"></a>
 
 A search filter clause in Amazon DataZone.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** and **   <a name="datazone-Type-FilterClause-and"></a>
 The 'and' search filter clause in Amazon DataZone.
-Type: Array of [FilterClause](#API_FilterClause) objects
+Type: Array of [FilterClause](API_FilterClause.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
 
@@ -26,7 +25,7 @@ Required: No
 
  ** or **   <a name="datazone-Type-FilterClause-or"></a>
 The 'or' search filter clause in Amazon DataZone.
-Type: Array of [FilterClause](#API_FilterClause) objects
+Type: Array of [FilterClause](API_FilterClause.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
 

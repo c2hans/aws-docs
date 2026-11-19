@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/component-
 ---
 
 # List and view component details
-<a name="component-details"></a>
 
 This section describes how you can find information and view details for the components that you use in your EC2 Image Builder recipes.
 

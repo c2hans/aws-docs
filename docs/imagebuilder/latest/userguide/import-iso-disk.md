@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/import-iso
 ---
 
 # Import verified Windows ISO disk images with Image Builder
-<a name="import-iso-disk"></a>
 
 A Windows operating system ISO file is a disk image file that contains the complete installation package for a specific version of the Windows operating system. Microsoft provides official Windows operating system ISO files for download, either directly from their website or through authorized resellers. To avoid potential malware or unauthorized versions, obtain the ISO files from a trusted and legitimate source.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Input MulticastSource
-<a name="aws-properties-medialive-input-multicastsource"></a>
 
 A multicast source for a multicast input. A source has a multicast URL and an optional source IP address. For SMPTE 2022-7 seamless protection switching, the source also has a secondary URL and an optional secondary source IP address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BrowserActionResult
-<a name="API_BrowserActionResult"></a>
 
 The result of a browser action execution. Exactly one member is set, matching the action that was performed.
 

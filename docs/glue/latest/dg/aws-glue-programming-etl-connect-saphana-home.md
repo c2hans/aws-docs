@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # SAP HANA connections
-<a name="aws-glue-programming-etl-connect-saphana-home"></a>
 
 You can use AWS Glue for Spark to read from and write to tables in SAP HANA in AWS Glue 4.0 and later versions. You can define what to read from SAP HANA with a SQL query. You connect to SAP HANA using JDBC credentials stored in AWS Secrets Manager through a AWS Glue SAP HANA connection.
 

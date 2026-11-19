@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteV
 ---
 
 # DeleteVirtualGateway
-<a name="API_DeleteVirtualGateway"></a>
 
 Deletes an existing virtual gateway. You cannot delete a virtual gateway if any gateway routes are associated to it.
 

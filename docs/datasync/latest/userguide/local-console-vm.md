@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/local-console-
 ---
 
 # Performing maintenance on your agent
-<a name="local-console-vm"></a>
 
 While AWS manages your AWS DataSync agent once it's deployed and activated, there might be cases where you need to change your agent's settings or troubleshoot an issue. Here are some examples of why you'd work with your agent through its local console:
 + Manually assign an IP address to the agent.

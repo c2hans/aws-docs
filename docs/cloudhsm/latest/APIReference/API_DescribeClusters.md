@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Describ
 ---
 
 # DescribeClusters
-<a name="API_DescribeClusters"></a>
 
 Gets information about AWS CloudHSM clusters.
 

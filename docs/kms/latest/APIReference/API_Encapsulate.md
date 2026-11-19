@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_Encapsulate.
 ---
 
 # Encapsulate
-<a name="API_Encapsulate"></a>
 
 Generates a shared secret and its encapsulated (ciphertext) form using the public key of an ML-KEM KMS key pair. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM), specified in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) on the NIST website, is a post-quantum algorithm for establishing a shared secret between two parties.
 

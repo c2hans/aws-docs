@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Trans
 ---
 
 # TranscriptionJob
-<a name="API_TranscriptionJob"></a>
 
 Provides detailed information about a transcription job.
 

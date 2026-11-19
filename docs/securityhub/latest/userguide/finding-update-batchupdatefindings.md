@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/finding-upd
 ---
 
 # BatchUpdateFindings for customers
-<a name="finding-update-batchupdatefindings"></a>
 
 AWS Security Hub CSPM customers, and entities acting on their behalf, can use the [BatchUpdateFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update information related to the processing of Security Hub CSPM findings from finding providers. As a customer, you can use this operation directly. SIEM, ticketing, incident management, and SOAR tools can also use this operation on behalf of a customer.
 

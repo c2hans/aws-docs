@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/glos-chap.html
 ---
 
 # Nova Act glossary
-<a name="glos-chap"></a>
 
  [A](#a) \| [B](#b) \| [C](#c) \| [H](#h) \| [I](#i) \| [M](#m) \| [O](#o) \| [S](#s) \| [T](#t) \| [U](#u) \| [W](#w)
 

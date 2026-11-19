@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/example_firehose_Put
 ---
 
 # Use `PutRecordBatch` with an AWS SDK or CLI
-<a name="example_firehose_PutRecordBatch_section"></a>
 
 The following code examples show how to use `PutRecordBatch`.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/creating-a
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Creating an agent
-<a name="creating-an-agent"></a>
 
 This topic walks through creating a AWS FinOps Agent agent in the AWS FinOps Agent console. The wizard has five steps: name your agent, choose what AWS resources the agent can access, give the web app access to your agent, third-party integrations (optional), and review and create.
 

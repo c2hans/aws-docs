@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SyncInputJobAttachmentsSessionActionDefinitionSummary
-<a name="API_SyncInputJobAttachmentsSessionActionDefinitionSummary"></a>
 
 The summary of the session action definition for syncing input job attachments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # SendMessage
-<a name="API_SendMessage"></a>
 
 Delivers a message to the specified queue.
 

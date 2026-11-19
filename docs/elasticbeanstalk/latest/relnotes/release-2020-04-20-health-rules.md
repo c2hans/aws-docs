@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk support for load balancer enhanced health rule customization on April 20, 2020
-<a name="release-2020-04-20-health-rules"></a>
 
 AWS Elastic Beanstalk added the ability to ignore HTTP 4xx errors returned by the load balancer when determining your environment's health.
 

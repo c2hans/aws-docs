@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeException
-<a name="API_DataLakeException"></a>
 
 The details for an Amazon Security Lake exception.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteAp
 ---
 
 # DeleteApiKey
-<a name="API_DeleteApiKey"></a>
 
 Deletes an API key.
 

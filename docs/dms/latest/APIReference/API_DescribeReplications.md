@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplications
-<a name="API_DescribeReplications"></a>
 
 Provides details on replication progress by returning status information for one or more provisioned AWS DMS Serverless replications.
 

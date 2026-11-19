@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-locate-sd-sch
 ---
 
 # Schema for reporting the location of sensitive data
-<a name="findings-locate-sd-schema"></a>
 
 Amazon Macie uses standardized JSON structures to store information about where it finds sensitive data in Amazon Simple Storage Service (Amazon S3) objects. The structures are used by sensitive data findings and sensitive data discovery results. For sensitive data findings, the structures are part of the JSON schema for findings. To review the complete JSON schema for findings, see [Findings](https://docs.aws.amazon.com/macie/latest/APIReference/findings-describe.html) in the *Amazon Macie API Reference*. To learn more about sensitive data discovery results, see [Storing and retaining sensitive data discovery results](discovery-results-repository-s3.md).
 

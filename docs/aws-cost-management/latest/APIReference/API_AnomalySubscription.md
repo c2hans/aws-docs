@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AnomalySubscription
-<a name="API_AnomalySubscription"></a>
 
 An `AnomalySubscription` resource (also referred to as an alert subscription) sends notifications about specific anomalies that meet an alerting criteria defined by you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteProfile
-<a name="API_connect-customer-profiles_DeleteProfile"></a>
 
 Deletes the standard customer profile and all data pertaining to the profile.
 

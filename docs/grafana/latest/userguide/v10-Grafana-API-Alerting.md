@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 ---
 
 # Alerting API
-<a name="v10-Grafana-API-Alerting"></a>
 
 **Note**
 This section only applies to classic alerting. For more information, see [Overview](v10-alerting-overview.md).

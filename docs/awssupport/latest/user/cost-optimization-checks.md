@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/cost-optimization
 ---
 
 # Cost optimization
-<a name="cost-optimization-checks"></a>
 
 You can use the following checks for the cost optimization category.
 

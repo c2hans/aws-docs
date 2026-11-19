@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/billing-columns.htm
 ---
 
 # Billing details
-<a name="billing-columns"></a>
 
 Columns under the **bill** header in AWS Cost and Usage Reports are static fields that appear in all Cost and Usage Reports. You can use the billing line items in the report to find details about the specific bill covered by the report, such as the charge type and the beginning and end of the billing period. This includes the following columns:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Un
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a resource.
 

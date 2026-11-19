@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListMLInputChannels
-<a name="API_ListMLInputChannels"></a>
 
 Returns a list of ML input channels.
 

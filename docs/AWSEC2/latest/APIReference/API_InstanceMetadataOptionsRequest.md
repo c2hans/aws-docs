@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceM
 ---
 
 # InstanceMetadataOptionsRequest
-<a name="API_InstanceMetadataOptionsRequest"></a>
 
 The metadata options for the instance.
 

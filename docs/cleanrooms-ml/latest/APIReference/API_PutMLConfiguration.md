@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pu
 ---
 
 # PutMLConfiguration
-<a name="API_PutMLConfiguration"></a>
 
 Assigns information about an ML configuration.
 

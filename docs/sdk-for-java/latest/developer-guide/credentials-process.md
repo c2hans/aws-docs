@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Load credentials from an external process using the AWS SDK for Java 2.x
-<a name="credentials-process"></a>
 
 **Warning**
 The following describes a method of sourcing temporary credentials from an external process. This can potentially be dangerous, so proceed with caution. We recommend that you use other credential providers if at all possible. If using this option, we recommend that you make sure the `config` file is as locked down as possible using security best practices for your operating system.
@@ -150,7 +149,7 @@ S3Client s3 = S3Client.builder()
 
 Before you can authenticate requests with IAM Roles Anywhere, you first need to gather the required information and download the [credential helper tool](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html). By following the [Getting started](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/getting-started.html) instructions in the IAM Roles Anywhere User Guide, you can create the necessary artifacts.
 
-The SDK for Java doesn't have a dedicated credentials provider to retrieve temporary credentials from IAM Roles Anywhere, but you can use the credential helper tool along with one of the options to [retrieve credentials from an external process](#credentials-process).
+The SDK for Java doesn't have a dedicated credentials provider to retrieve temporary credentials from IAM Roles Anywhere, but you can use the credential helper tool along with one of the options to [retrieve credentials from an external process](credentials-process.md).
 
 ### Use the `credential_process` setting in a profile
 <a name="credentials-iam-roles-anywhere-config"></a>

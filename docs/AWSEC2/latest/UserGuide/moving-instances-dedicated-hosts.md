@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/moving-instances
 ---
 
 # Modify Amazon EC2 Dedicated Host tenancy and affinity for an Amazon EC2 instance
-<a name="moving-instances-dedicated-hosts"></a>
 
 You can change the tenancy of an instance after you have launched it. You can also modify the affinity for your instance to target a specific host or allow it to launch on any available dedicated host with matching attributes in your account. To modify either instance tenancy or affinity, the instance must be in the `stopped` state.
 

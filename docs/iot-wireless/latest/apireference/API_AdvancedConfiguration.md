@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Adv
 ---
 
 # AdvancedConfiguration
-<a name="API_AdvancedConfiguration"></a>
 
 Optional configuration for customizing position estimates, including parameters that affect the accuracy and uncertainty of WiFi and cellular-based location estimates.
 

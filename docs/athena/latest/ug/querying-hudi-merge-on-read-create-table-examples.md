@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-hudi-merge-on-
 ---
 
 # Merge on read (MoR) create table examples
-<a name="querying-hudi-merge-on-read-create-table-examples"></a>
 
 Hudi creates two tables in the metastore for MoR: a table for snapshot queries, and a table for read optimized queries. Both tables are queryable. In Hudi versions prior to 0.5.1, the table for read optimized queries had the name that you specified when you created the table. Starting in Hudi version 0.5.1, the table name is suffixed with `_ro` by default. The name of the table for snapshot queries is the name that you specified appended with `_rt`.
 

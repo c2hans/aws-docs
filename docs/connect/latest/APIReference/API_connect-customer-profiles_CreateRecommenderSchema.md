@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateRecommenderSchema
-<a name="API_connect-customer-profiles_CreateRecommenderSchema"></a>
 
 Creates a recommender schema. A recommender schema defines the set of data columns available for training recommenders and filters under a domain.
 

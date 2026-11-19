@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-attachme
 ---
 
 # Set up attachment scanning in Connect Customer
-<a name="setup-attachment-scanning"></a>
 
 **Note**
 This topic is for developers who are familiar with Lambda. If you're new to Lambda, see [Getting started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) in the AWS *Lambda Developer's Guide*.

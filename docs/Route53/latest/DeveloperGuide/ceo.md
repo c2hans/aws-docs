@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ceo.html
 ---
 
 # .ceo
-<a name="ceo"></a>
 
 Used for information about CEOs and their equals.
 

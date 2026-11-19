@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 ---
 
 # Multiplex: describe program
-<a name="multiplexes-multiplexid-programs-programname"></a>
 
 ## URI
 <a name="multiplexes-multiplexid-programs-programname-url"></a>

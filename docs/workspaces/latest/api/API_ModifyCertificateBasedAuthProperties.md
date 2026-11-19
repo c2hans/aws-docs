@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyCertific
 ---
 
 # ModifyCertificateBasedAuthProperties
-<a name="API_ModifyCertificateBasedAuthProperties"></a>
 
 Modifies the properties of the certificate-based authentication you want to use with your WorkSpaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdsP
 ---
 
 # AdsPersonalizationTimeouts
-<a name="API_AdsPersonalizationTimeouts"></a>
 
 The timeout settings for ad decision server interactions during ad personalization.
 

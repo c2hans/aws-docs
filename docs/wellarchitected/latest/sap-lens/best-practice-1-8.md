@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 1.8 – Use automated response and recovery techniques to react to monitoring alerts
-<a name="best-practice-1-8"></a>
 
 Automate responses to events to reduce errors caused by manual processes, and to ensure prompt and consistent responses.
 

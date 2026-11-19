@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/connect-aws-cl
 ---
 
 # Connect to an AWS Client VPN endpoint using an AWS provided client
-<a name="connect-aws-client-vpn-connect"></a>
 
 You can connect to a Client VPN endpoint using the AWS provided client, which is supported on Windows, macOS, and Ubuntu. You can use the client in two ways — through the graphical user interface (GUI) or the command line interface (CLI). The AWS provided client also supports up to five concurrent connections as well as OpenVPN directives.
 

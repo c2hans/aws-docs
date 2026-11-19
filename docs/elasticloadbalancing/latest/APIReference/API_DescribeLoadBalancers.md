@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeLoadBalancers
-<a name="API_DescribeLoadBalancers"></a>
 
 Describes the specified load balancers or all of your load balancers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Authori
 ---
 
 # AuthorizedTokenIssuer
-<a name="API_AuthorizedTokenIssuer"></a>
 
 The authorized token issuer for the Amazon Redshift IAM Identity Center application.
 

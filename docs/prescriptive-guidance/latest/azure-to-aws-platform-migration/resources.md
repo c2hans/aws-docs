@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Resources
 <a name="resources.1d16c49d-68b6-5e6f-8a4f-e8f576c4c55a"></a>

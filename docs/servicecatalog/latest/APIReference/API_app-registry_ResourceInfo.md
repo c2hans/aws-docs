@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # ResourceInfo
-<a name="API_app-registry_ResourceInfo"></a>
 
 The information about the resource.
 

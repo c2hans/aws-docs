@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateD
 ---
 
 # DateDimensionField
-<a name="API_DateDimensionField"></a>
 
 The dimension type field with date type columns.
 

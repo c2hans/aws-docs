@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Mode
 ---
 
 # ModerationLabel
-<a name="API_ModerationLabel"></a>
 
 Provides information about a single type of inappropriate, unwanted, or offensive content found in an image or video. Each type of moderated content has a label within a hierarchical taxonomy. For a list of moderation labels in Amazon Rekognition, see [Using the image and video moderation APIs](https://docs.aws.amazon.com/rekognition/latest/dg/moderation.html#moderation-api). For more information, see [Moderating content](https://docs.aws.amazon.com/rekognition/latest/dg/moderation.html).
 

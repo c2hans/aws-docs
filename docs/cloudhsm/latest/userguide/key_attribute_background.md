@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_attribute_
 ---
 
 # Trusted key attributes in AWS CloudHSM
-<a name="key_attribute_background"></a>
 
 The following attributes allow you to mark an AWS CloudHSM key as trusted, specify a data key can only be wrapped and unwrapped with a trusted key, and control what a data key can do after it is unwrapped:
 + `CKA_TRUSTED`: Apply this attribute (in addition to `CKA_UNWRAP_TEMPLATE`) to the key that will wrap data keys to specify that an admin or crypto officer (CO) has done the necessary diligence and trusts this key. Only an admin or CO can set `CKA_TRUSTED`. The crypto user (CU) owns the key, but only a CO can set its `CKA_TRUSTED` attribute.

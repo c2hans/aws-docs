@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMemoryDBFullAccess
-<a name="AmazonMemoryDBFullAccess"></a>
 
 **Description**: Provides full access to Amazon MemoryDB via the AWS Management Console.
 

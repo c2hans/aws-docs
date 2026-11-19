@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/al
 ---
 
 # AWS Encryption SDK algorithms reference
-<a name="algorithms-reference"></a>
 
 |  |
 | --- |

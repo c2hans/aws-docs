@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html
 ---
 
 # Subscribe
-<a name="API_Subscribe"></a>
 
 Subscribes an endpoint to an Amazon SNS topic. If the endpoint type is HTTP/S or email, or if the endpoint and the topic are not in the same AWS account, the endpoint owner must run the `ConfirmSubscription` action to confirm the subscription.
 

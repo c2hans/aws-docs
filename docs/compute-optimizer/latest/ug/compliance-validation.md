@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/compliance-v
 ---
 
 # Compliance validation for AWS Compute Optimizer
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS Compute Optimizer as part of multiple AWS compliance programs. AWS Compute Optimizer is FedRAMP authorized for GovCloud and is in scope for that compliance program.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-deregistrati
 ---
 
 # Protect an Amazon EC2 AMI from deregistration
-<a name="ami-deregistration-protection"></a>
 
 You can turn on *deregistration protection* on an AMI to prevent accidental or malicious deletion. When you turn on deregistration protection, the AMI can’t be deregistered by any user, regardless of their IAM permissions. If you want to deregister the AMI, you must first turn off the deregistration protection on it.
 

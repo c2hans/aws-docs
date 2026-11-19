@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-gpu-ami.htm
 ---
 
 # Use a GPU workload AMI
-<a name="batch-gpu-ami"></a>
 
 To run GPU workloads on your AWS Batch compute resources, you must use an AMI with GPU support. For more information, see [Working with GPUs on Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html) and [Amazon ECS-optimized AMIs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html) in *Amazon Elastic Container Service Developer Guide*.
 

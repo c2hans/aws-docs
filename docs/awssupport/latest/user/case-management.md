@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/case-management.h
 ---
 
 # Case management
-<a name="case-management"></a>
 
 **Note**
 You can revert to the legacy method of case management by choosing **Use the old experience** in the banner at the top of the Support Center console. For more information, see [Legacy experience: Creating support cases and case management](case-management-legacy.md).

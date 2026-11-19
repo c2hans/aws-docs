@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration Distribution
-<a name="aws-properties-imagebuilder-distributionconfiguration-distribution"></a>
 
 Defines the settings for a specific Region in the distribution configuration. Only the `Region` property is required. To configure the output image for that Region, include the data type that matches the type of image being distributed:
 +  `AmiDistributionConfiguration`

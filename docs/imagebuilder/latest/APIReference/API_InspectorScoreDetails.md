@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ins
 ---
 
 # InspectorScoreDetails
-<a name="API_InspectorScoreDetails"></a>
 
 Information about the factors that influenced the score that Amazon Inspector assigned for a finding.
 

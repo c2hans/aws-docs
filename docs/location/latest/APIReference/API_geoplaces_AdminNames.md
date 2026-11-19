@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # AdminNames
-<a name="API_geoplaces_AdminNames"></a>
 
 The official administrative names for an address component, returned when `AddressNamesMode` is set to `Administrative`.
 

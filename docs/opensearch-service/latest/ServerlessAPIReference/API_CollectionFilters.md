@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CollectionFilters
-<a name="API_CollectionFilters"></a>
 
 A list of filter keys that you can use for LIST, UPDATE, and DELETE requests to OpenSearch Serverless collections.
 

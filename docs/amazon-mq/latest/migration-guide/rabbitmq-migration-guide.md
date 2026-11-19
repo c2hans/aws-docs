@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/rabbitm
 ---
 
 # Migrating to Amazon MQ for RabbitMQ
-<a name="rabbitmq-migration-guide"></a>
 
  Amazon MQ supports migration from self managed Classic Mirrored Queues to Amazon MQ managed Classic Mirrored Queues on all supported cluster instances running RabbitMQ version `3.10.x` or higher.
 

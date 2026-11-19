@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Ec2InstanceA
 ---
 
 # Ec2InstanceAttributes
-<a name="API_Ec2InstanceAttributes"></a>
 
 Provides information about the Amazon EC2 instances in a cluster grouped by category. For example, key name, subnet ID, IAM instance profile, and so on.
 

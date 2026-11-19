@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.3] Use artifact repositories with enforced authentication and authorization
-<a name="dl.scm.3-use-artifact-repositories-with-enforced-authentication-and-authorization"></a>
 
  **Category:** FOUNDATIONAL
 

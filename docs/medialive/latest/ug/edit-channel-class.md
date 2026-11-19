@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/edit-channel-class.h
 ---
 
 # Update the channel class—pipeline redundancy
-<a name="edit-channel-class"></a>
 
 You can change the channel class of an existing channel in order to enable or disable pipeline redundancy in the channel.
 

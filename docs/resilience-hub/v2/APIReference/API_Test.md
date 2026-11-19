@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Test.
 ---
 
 # Test
-<a name="API_Test"></a>
 
 Represents a test created for a service by configuring a test template.
 

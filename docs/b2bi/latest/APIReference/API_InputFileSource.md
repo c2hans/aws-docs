@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_InputFileSo
 ---
 
 # InputFileSource
-<a name="API_InputFileSource"></a>
 
 The input file to use for an outbound transformation.
 

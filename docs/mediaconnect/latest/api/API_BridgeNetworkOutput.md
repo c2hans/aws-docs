@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BridgeNetwor
 ---
 
 # BridgeNetworkOutput
-<a name="API_BridgeNetworkOutput"></a>
 
  The output of the bridge. A network output is delivered to your premises.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_TemplateSu
 ---
 
 # TemplateSummary
-<a name="API_connect-cases_TemplateSummary"></a>
 
 Template summary information.
 

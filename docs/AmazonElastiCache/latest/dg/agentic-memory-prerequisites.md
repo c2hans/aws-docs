@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 ---
 
 # Prerequisites
-<a name="agentic-memory-prerequisites"></a>
 
 To implement agentic memory with ElastiCache for Valkey, you need:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # StopVectorEnrichmentJob
-<a name="API_geospatial_StopVectorEnrichmentJob"></a>
 
 Stops the Vector Enrichment job for a given job ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon WorkSpaces AgentAccess MCP Server
-<a name="amazonworkspacesagentaccessmcpserver"></a>
 
 Amazon WorkSpaces AgentAccess MCP Server provides the following APIs for data retrieval.
 

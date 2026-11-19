@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_GetTemplat
 ---
 
 # GetTemplate
-<a name="API_connect-cases_GetTemplate"></a>
 
 Returns the details for the requested template. Other template APIs are:
 +  [CreateTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_CreateTemplate.html)

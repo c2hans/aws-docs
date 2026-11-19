@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/lake-formatio
 ---
 
 # Lake Formation full table access for Amazon EMR on EC2
-<a name="lake-formation-unfiltered-ec2-access"></a>
 
 With Amazon EMR releases 7.8.0 and higher, you can leverage AWS Lake Formation with Glue Data Catalog where the job runtime role has full table permissions without the limitations of fine-grained access control. This capability allows you to read and write to tables that are protected by Lake Formation from your Amazon EMR on EC2 Spark batch and interactive jobs. See the following sections to learn more about Lake Formation and how to use it with Amazon EMR on EC2.
 

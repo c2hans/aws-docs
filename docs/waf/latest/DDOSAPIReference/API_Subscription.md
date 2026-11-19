@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Subscrip
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 Information about the AWS Shield Advanced subscription for an account.
 

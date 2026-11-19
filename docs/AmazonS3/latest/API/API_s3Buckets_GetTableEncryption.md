@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableEncryption
-<a name="API_s3Buckets_GetTableEncryption"></a>
 
 Gets the encryption configuration for a table.
 

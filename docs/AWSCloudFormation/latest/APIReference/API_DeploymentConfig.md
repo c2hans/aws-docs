@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeploymentConfig
-<a name="API_DeploymentConfig"></a>
 
 The deployment configuration for a stack operation, including the deployment mode.
 

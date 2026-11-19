@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/shadow-schedules
 ---
 
 # Creating a custom shadow copy schedule
-<a name="shadow-schedules"></a>
 
 Shadow copy schedules use scheduled task triggers in Microsoft Windows to specify when shadow copies are automatically taken. A shadow copy schedule can have multiple triggers, providing you with a lot of scheduling flexibility. Only one shadow copy schedule can exist at a time. Before you can create a shadow copy schedule, you must first set the amount of [shadow copy storage](shadow-copy-storage.md).
 

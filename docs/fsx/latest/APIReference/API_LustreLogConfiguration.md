@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_LustreLogCon
 ---
 
 # LustreLogConfiguration
-<a name="API_LustreLogConfiguration"></a>
 
 The configuration for Lustre logging used to write the enabled logging events for your Amazon FSx for Lustre file system or Amazon File Cache resource to Amazon CloudWatch Logs.
 

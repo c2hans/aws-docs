@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessTokenUsage
-<a name="API_HarnessTokenUsage"></a>
 
 Token usage counts for the invocation.
 

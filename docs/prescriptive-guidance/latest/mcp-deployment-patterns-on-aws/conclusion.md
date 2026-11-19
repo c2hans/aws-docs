@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Next steps
-<a name="conclusion"></a>
 
 Deploying MCP servers on AWS provides organizations with flexible, scalable, and secure infrastructure for AI-powered applications. This prescriptive guidance presents several deployment patterns, each designed for specific operational requirements, cost constraints, and scaling needs.
 

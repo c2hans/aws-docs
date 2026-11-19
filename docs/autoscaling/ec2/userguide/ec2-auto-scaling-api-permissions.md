@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Amazon EC2 Auto Scaling API permissions
-<a name="ec2-auto-scaling-api-permissions"></a>
 
 You must grant users permission to call the Amazon EC2 Auto Scaling API actions they need, as described in [Policy actions for Amazon EC2 Auto Scaling](control-access-using-iam.md#security_iam_service-with-iam-id-based-policies-actions). In addition, for some Amazon EC2 Auto Scaling actions, you must grant users permission to call specific actions from other AWS APIs.
 

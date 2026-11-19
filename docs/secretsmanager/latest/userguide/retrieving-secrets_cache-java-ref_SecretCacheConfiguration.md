@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # SecretCacheConfiguration
-<a name="retrieving-secrets_cache-java-ref_SecretCacheConfiguration"></a>
 
 Cache configuration options for a [SecretCache](retrieving-secrets_cache-java-ref_SecretCache.md), such as max cache size and Time to Live (TTL) for cached secrets.
 

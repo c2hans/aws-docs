@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Volume
 ---
 
 # VolumeFrom
-<a name="API_VolumeFrom"></a>
 
 Details on a data volume from another container in the same task definition.
 

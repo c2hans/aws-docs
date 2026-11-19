@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 ---
 
 # Amazon EC2 Instance Metadata Service
-<a name="sdk-utilities-ec2-imds"></a>
 
  You can use the AWS SDK for Go to access the [Amazon EC2 Instance Metadata Service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html). The [feature/ec2/imds](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/feature/ec2/imds) Go package provides a [Client](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/feature/ec2/imds#Client) type that can be used to access the Amazon EC2 Instance Metadata Service. The `Client` and associated operations can be used similar to the other AWS service clients provided by the SDK. To learn more information on how to configure the SDK, and use service clients see [Configure the SDK](configure-gosdk.md) and [Use the AWS SDK for Go v2 with AWS services](use-services.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationNfs
-<a name="API_DescribeLocationNfs"></a>
 
 Provides details about how an AWS DataSync transfer location for a Network File System (NFS) file server is configured.
 

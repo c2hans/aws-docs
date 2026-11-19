@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Message and event format in AWS End User Messaging Social
-<a name="managing-event-destination-dlrs"></a>
 
 The JSON object for an event contains the AWS event header and WhatsApp JSON payload. For a list of the JSON WhatsApp notification payload and values, see [Webhooks Notification Payload Reference](https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks/components) and [Message Status](https://developers.facebook.com/docs/whatsapp/conversation-types#message-status) in the *WhatsApp Business Platform Cloud API Reference*.
 

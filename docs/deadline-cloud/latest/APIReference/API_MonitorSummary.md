@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_M
 ---
 
 # MonitorSummary
-<a name="API_MonitorSummary"></a>
 
 Provides information about a monitor in Deadline Cloud.
 

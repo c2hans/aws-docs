@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Step 4. Test the solution
-<a name="step-4.-test-the-solution"></a>
 
  After all the components and configurations that integrate your video delivery workload with the solution are in place, you can use the demo website to test the end-to-end workflow.
 

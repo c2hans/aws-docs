@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC09-BP01 Verify that your instances are configured as expected
-<a name="eucsec09-bp01"></a>
 
  Unexpected configuration changes to end user systems can help you identify possible threat actors. Users should not need to reconfigure applications or operating systems for the daily use of their application portfolio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-d
 ---
 
 # Developing deciders in Amazon SWF
-<a name="swf-dg-dev-deciders"></a>
 
 A decider is an implementation of the coordination logic of your workflow type that runs during the execution of your workflow. You can run multiple deciders for a single workflow type.
 

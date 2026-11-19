@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Operational notes
-<a name="rd-operations"></a>
 
 ## Authentication and authorisation
 <a name="rd-auth"></a>

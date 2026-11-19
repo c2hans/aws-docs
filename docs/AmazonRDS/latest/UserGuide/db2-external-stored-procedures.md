@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-external-
 ---
 
 # External stored procedures for Amazon RDS for Db2
-<a name="db2-external-stored-procedures"></a>
 
 You can create external routines and register them with your Amazon RDS for Db2 databases as external stored procedures. Currently, RDS for Db2 only supports Java-based routines for external stored procedures.
 

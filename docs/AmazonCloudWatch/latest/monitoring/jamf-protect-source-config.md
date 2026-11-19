@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/jamf-
 ---
 
 # Source configuration for Jamf Protect
-<a name="jamf-protect-source-config"></a>
 
 ## Integrating with Jamf Protect
 <a name="jamf-protect-integration"></a>

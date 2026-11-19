@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ssm-documen
 ---
 
 # ssm-document-not-public
-<a name="ssm-document-not-public"></a>
 
 Checks if AWS Systems Manager documents owned by the account are public. The rule is NON\_COMPLIANT if Systems Manager documents with the owner 'Self' are public.
 

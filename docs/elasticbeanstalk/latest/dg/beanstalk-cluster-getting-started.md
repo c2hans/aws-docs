@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/beanstalk-clu
 ---
 
 # Getting started with Beanstalk Cluster
-<a name="beanstalk-cluster-getting-started"></a>
 
 In this tutorial, you create an Elastic Beanstalk application and a Beanstalk Cluster environment. You omit the application version so that Elastic Beanstalk deploys its prebuilt sample container image. You then wait for the environment to become ready, retrieve its URL, and terminate it. Alternatively, you can get started in the AWS Management Console, which provides a fully guided experience, or point your AI agent at the [Beanstalk Cluster](beanstalk-cluster.md) documentation.
 

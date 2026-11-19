@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contai
 ---
 
 # ContainerDefinition
-<a name="API_ContainerDefinition"></a>
 
 Container definitions are used in task definitions to describe the different containers that are launched as part of a task.
 

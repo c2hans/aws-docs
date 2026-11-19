@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aurora-repl
 ---
 
 # Aurora Replicas
-<a name="aurora-replicas"></a>
 
 In Multi-AZ deployments, Aurora creates additional Aurora compute instances that interact with the underlying storage layer, which spans multiple Availability Zones. These other DB instances are read-only and are known as [Aurora Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html#Aurora.Replication.Replicas). They are also referred to as reader instances when discussing the ways that you can combine writer and reader DB instances within a cluster. One benefit of Aurora Replicas is that you can offload some of the work for read-intensive applications by using the reader instances to process SELECT queries.
 

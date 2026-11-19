@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/phone-numbers.html
 ---
 
 # Managing phone numbers in Amazon Chime SDK
-<a name="phone-numbers"></a>
 
 The topics in this section explain how to manage phone numbers for use with the Amazon Chime SDK.
 

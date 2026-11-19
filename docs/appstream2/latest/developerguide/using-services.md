@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/using-s
 ---
 
 # Using AWS services
-<a name="using-services"></a>
 
 ## AWS Identity and Access Management
 <a name="aws-identity-and-access-management"></a>

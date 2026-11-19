@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dis
 ---
 
 # DisassociateTimeSeriesFromAssetProperty
-<a name="API_DisassociateTimeSeriesFromAssetProperty"></a>
 
 Disassociates a time series (data stream) from an asset property.
 

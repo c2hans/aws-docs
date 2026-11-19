@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_InboundE
 ---
 
 # InboundEmailContent
-<a name="API_InboundEmailContent"></a>
 
 Information about email body content.
 

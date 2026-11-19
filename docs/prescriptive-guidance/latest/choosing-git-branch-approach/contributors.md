@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 ## Authoring
 <a name="authoring"></a>

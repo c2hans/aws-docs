@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Secure setup and operation
-<a name="secure-setup-and-operation"></a>
 
 Autonomous Driving Data Framework (ADDF) should be treated as a custom piece of software that requires ongoing maintenance and care by a dedicated DevOps and security team in your organization. This section describes security-related common tasks that help you set up and operate ADDF throughout its lifecycle.
 

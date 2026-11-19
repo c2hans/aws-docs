@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Getting Started
-<a name="getting-set-up"></a>
 
 The AWS Toolkit for Visual Studio makes your AWS services and resources available from the Visual Studio integrated development environment (IDE).
 

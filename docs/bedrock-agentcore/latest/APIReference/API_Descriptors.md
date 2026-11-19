@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Descriptors
-<a name="API_Descriptors"></a>
 
  Contains the descriptor configuration for a registry record. Only the field that matches the record's `descriptorType` is populated.
 

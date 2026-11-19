@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-va
 ---
 
 # Validate domain ownership for AWS Certificate Manager public certificates
-<a name="domain-ownership-validation"></a>
 
 Before the Amazon certificate authority (CA) can issue a certificate for your site, AWS Certificate Manager (ACM) must prove that you own or control all of the domain names that you specify in your request. You can choose to prove your ownership with Domain Name System (DNS) validation, email validation, or HTTP validation when you request a certificate.
 

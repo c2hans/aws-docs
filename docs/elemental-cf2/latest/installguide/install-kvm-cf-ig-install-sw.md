@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/installguide/instal
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # Step D: Install the AWS Elemental Software
-<a name="install-kvm-cf-ig-install-sw"></a>
 
 1. Use SCP to move each AWS Elemental software installer (`.run` file) to the /home/elemental directory on the appropriate KVM. Use the *elemental* user credentials.
 

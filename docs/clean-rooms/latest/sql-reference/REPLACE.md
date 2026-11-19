@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/REPLACE
 ---
 
 # REPLACE function
-<a name="REPLACE"></a>
 
 Replaces all occurrences of a set of characters within an existing string with other specified characters.
 

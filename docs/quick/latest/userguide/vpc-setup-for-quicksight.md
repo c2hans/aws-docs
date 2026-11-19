@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-setup-for-qui
 ---
 
 # Setting up a VPC to use with AWS Quick
-<a name="vpc-setup-for-quicksight"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/chaining-
 ---
 
 # Chaining credential providers in the SDK for PHP
-<a name="chaining-providers"></a>
 
 You can chain credential providers by using the `Aws\Credentials\CredentialProvider::chain()` function. This function accepts a variadic number of arguments, each of which are credential provider functions. This function then returns a new function that’s the composition of the provided functions, such that they are invoked one after the other until one of the providers returns a promise that is fulfilled successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/
 ---
 
 # Document history
-<a name="elpg-history"></a>
 
 The following table describes important changes to the AWS IoT ExpressLink Programmer's Guide starting with v1.0. We also update the documentation to address any errors found or feedback received.
 

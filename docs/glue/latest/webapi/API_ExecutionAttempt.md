@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ExecutionAttempt.
 ---
 
 # ExecutionAttempt
-<a name="API_ExecutionAttempt"></a>
 
 A run attempt for a column statistics task run.
 

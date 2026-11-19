@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Stage 4: Operate
-<a name="stage-4"></a>
 
 You've built a resilient application and tested it. Now the daily reality is keeping it running. But in a startup, you can't watch all operations, and you shouldn't try to. The key is to stay alert to what matters without providing too many metrics or overburdening your team.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-guid
 ---
 
 # Integrate agent assist with step-by-step guides
-<a name="integrate-guides-with-ai-agents"></a>
 
 To help agents get to solutions faster, agent assist can offer agents the [step-by-step guide](step-by-step-guided-experiences.md) that resolves a customer's issue. You can set this up in two ways:
 + **Tag your guides**: with interactive responses, the AI agent searches your tagged guides and offers a button that starts the matching guide. For more information, see [Tag step-by-step guides so the AI agent can find them](#integrate-guides-tag).

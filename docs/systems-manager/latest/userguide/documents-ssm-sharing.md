@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/documen
 ---
 
 # Sharing SSM documents
-<a name="documents-ssm-sharing"></a>
 
 You can share AWS Systems Manager (SSM) documents with other accounts in the same AWS Region in two ways. For new document sharing, we recommend using AWS Resource Access Manager (AWS RAM). With AWS RAM, you can share a document with an entire organization or organizational unit (OU) in AWS Organizations, or with individual AWS accounts. You can also manage all of your shares from the AWS RAM console. For more information, see [Share an SSM document using AWS RAM](#ssm-share-using-ram).
 

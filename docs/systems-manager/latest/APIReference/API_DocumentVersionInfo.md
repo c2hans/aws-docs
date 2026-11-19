@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentVersionInfo
-<a name="API_DocumentVersionInfo"></a>
 
 Version information about the document.
 

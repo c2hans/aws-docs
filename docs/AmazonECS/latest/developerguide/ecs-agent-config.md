@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agen
 ---
 
 # Amazon ECS container agent configuration
-<a name="ecs-agent-config"></a>
 
 **Applies to**: EC2 instances
 

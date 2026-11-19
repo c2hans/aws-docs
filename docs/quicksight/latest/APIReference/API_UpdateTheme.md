@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTheme
-<a name="API_UpdateTheme"></a>
 
 Updates a theme.
 

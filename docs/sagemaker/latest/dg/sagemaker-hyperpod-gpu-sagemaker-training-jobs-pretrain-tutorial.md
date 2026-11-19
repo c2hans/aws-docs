@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-g
 ---
 
 # SageMaker training jobs pre-training tutorial (GPU)
-<a name="sagemaker-hyperpod-gpu-sagemaker-training-jobs-pretrain-tutorial"></a>
 
 This tutorial guides you through the process of setting up and running a pre-training job using SageMaker training jobs with GPU instances.
 + Set up your environment

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ge
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
  Retrieves the JSON text of the resource-based policy document attached to the CloudTrail event data store, dashboard, or channel.
 

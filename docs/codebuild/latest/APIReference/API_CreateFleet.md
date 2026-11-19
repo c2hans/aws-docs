@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Create
 ---
 
 # CreateFleet
-<a name="API_CreateFleet"></a>
 
 Creates a compute fleet.
 

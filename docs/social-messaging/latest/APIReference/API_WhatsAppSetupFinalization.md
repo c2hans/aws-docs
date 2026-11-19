@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppSetupFinalization
-<a name="API_WhatsAppSetupFinalization"></a>
 
 The details of linking a WhatsApp Business Account to your AWS account.
 

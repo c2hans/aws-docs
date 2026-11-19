@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/denseRank.htm
 ---
 
 # $denseRank
-<a name="denseRank"></a>
 
 New from version 8.0.2.
 

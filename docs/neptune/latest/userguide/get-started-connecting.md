@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-con
 ---
 
 # Connecting to an Amazon Neptune cluster
-<a name="get-started-connecting"></a>
 
 After creating a Neptune cluster, you must set up network access so that your applications can reach the cluster endpoint. The following sections describe the network connectivity options. For more information about querying your data after you connect, see [Accessing graph data](get-started-access-graph.md).
 

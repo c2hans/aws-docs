@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Hybrid cloud cost calculation example
-<a name="hybrid-cloud-cost-calculation-example"></a>
 
  This example is a hybrid cloud use case of AWS Outposts rack, deployed on-premises and connected to AWS Cloud using AWS Direct Connect. Outposts extends the existing VPC from the selected AWS Region to the customer data center. Selected AWS services required to run on-premises (for example, Amazon Elastic Kubernetes Service (Amazon EKS)) are available on Outposts inside the Outpost Availability Zone, deployed inside a separate subnet.
 

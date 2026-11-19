@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # RevokeRevision
-<a name="API_RevokeRevision"></a>
 
 This operation revokes subscribers' access to a revision.
 

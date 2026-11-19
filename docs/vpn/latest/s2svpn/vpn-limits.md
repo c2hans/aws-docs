@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-limits.html
 ---
 
 # AWS Site-to-Site VPN quotas
-<a name="vpn-limits"></a>
 
 Your AWS account has the following quotas, formerly referred to as limits, related to Site-to-Site VPN. Unless otherwise noted, each quota is Region-specific. You can request increases for some quotas, and other quotas cannot be increased.
 

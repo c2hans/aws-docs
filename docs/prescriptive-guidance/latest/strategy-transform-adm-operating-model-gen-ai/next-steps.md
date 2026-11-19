@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This strategic document explores how generative AI influences each layer of the application development and maintenance (ADM) operating model. It describes how potential benefits can be achieved such as increased development velocity, reduced production defects, and improved customer satisfaction scores. To begin your organization's AI-powered software development lifecycle (SDLC) journey and implement its target operating model for next generation ADM, use the following steps.
 

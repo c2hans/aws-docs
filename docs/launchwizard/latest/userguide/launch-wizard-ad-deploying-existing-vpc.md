@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Deploy Active Directory to an existing VPC (Console)
-<a name="launch-wizard-ad-deploying-existing-vpc"></a>
 
 You can use AWS Launch Wizard to deploy Active Directory to an existing virtual private cloud (VPC) as a self-managed directory on Amazon Elastic Compute Cloud instances, extend your existing active directory into an existing VPC with Amazon EC2 instances, or create an AWS Directory Service for Microsoft Active Directory directory in an existing VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Dedicated
 ---
 
 # DedicatedIpPool
-<a name="API_DedicatedIpPool"></a>
 
 Contains information about a dedicated IP pool.
 

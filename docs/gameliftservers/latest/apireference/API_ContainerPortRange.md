@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerPortRange
-<a name="API_ContainerPortRange"></a>
 
 A set of one or more port numbers that can be opened on the container, and the supported network protocol.
 

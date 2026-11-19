@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-cr
 ---
 
 # Creating a repository creation template in Amazon ECR
-<a name="repository-creation-templates-create"></a>
 
 You can create a repository creation template to define the settings to use for repositories created by Amazon ECR on your behalf during pull through cache, create on push, or replication actions. Once the repository creation template is created, all new repositories created will have the settings applied. This doesn't have any effect on any previously created repositories.
 

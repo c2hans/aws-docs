@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionExecutionOutput
-<a name="API_ActionExecutionOutput"></a>
 
 Output details listed for an action execution, such as the action execution result.
 

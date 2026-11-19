@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeH
 ---
 
 # DescribeHosts
-<a name="API_DescribeHosts"></a>
 
 Describes the specified Dedicated Hosts or all your Dedicated Hosts.
 

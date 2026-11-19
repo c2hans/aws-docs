@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DecreaseNodeGroupsInGlobalReplicationGroup
-<a name="API_DecreaseNodeGroupsInGlobalReplicationGroup"></a>
 
 Decreases the number of node groups in a Global datastore
 

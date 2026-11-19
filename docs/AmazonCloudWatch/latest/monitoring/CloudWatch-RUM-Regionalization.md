@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Regionalization
-<a name="CloudWatch-RUM-Regionalization"></a>
 
 This section illustrates strategies for using CloudWatch RUM with applications in different Regions.
 

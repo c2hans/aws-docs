@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineDriftTypes
-<a name="API_EnabledBaselineDriftTypes"></a>
 
 The types of drift that can be detected for an enabled baseline.
 +  AWS Control Tower detects inheritance drift on the enabled baselines that target OUs: `AWSControlTowerBaseline` and `BackupBaseline`.

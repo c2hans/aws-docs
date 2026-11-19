@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # CertificateSubjectType
-<a name="API_CertificateSubjectType"></a>
 
 The metadata used to create the certificate signing request.
 

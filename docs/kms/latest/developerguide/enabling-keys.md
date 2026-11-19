@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/enabling-keys.
 ---
 
 # Enable and disable keys
-<a name="enabling-keys"></a>
 
 You can disable and re-enable customer managed keys. When you create a KMS key, it is enabled by default. If you disable a KMS key, it cannot be used in any [cryptographic operation](kms-cryptography.md#cryptographic-operations) until you re-enable it.
 

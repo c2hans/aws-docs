@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/view-comman
 ---
 
 # Step 3: (Optional) View available commands in the C3R encryption client
-<a name="view-commands"></a>
 
 Use this procedure to familiarize yourself with the available commands in the C3R encryption client.
 

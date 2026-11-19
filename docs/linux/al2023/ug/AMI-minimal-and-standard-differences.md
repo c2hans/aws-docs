@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/AMI-minimal-and-standard
 ---
 
 # Comparing AL2023 standard and minimal AMIs
-<a name="AMI-minimal-and-standard-differences"></a>
 
 You can launch an Amazon EC2 instance with either a standard (default) or minimal AL2023 AMI. For instructions on how to launch an Amazon EC2 instance with the standard or minimal AMI type, see [AL2023 on Amazon EC2](ec2.md).
 

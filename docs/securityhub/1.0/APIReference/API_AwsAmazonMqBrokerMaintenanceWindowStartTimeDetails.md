@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAmaz
 ---
 
 # AwsAmazonMqBrokerMaintenanceWindowStartTimeDetails
-<a name="API_AwsAmazonMqBrokerMaintenanceWindowStartTimeDetails"></a>
 
  The scheduled time period (UTC) during which Amazon MQ begins to apply pending updates or patches to the broker.
 

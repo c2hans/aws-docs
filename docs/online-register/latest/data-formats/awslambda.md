@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsl
 ---
 
 # Data retrieval APIs for AWS Lambda
-<a name="awslambda"></a>
 
 AWS Lambda provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Cost optimization techniques for Amazon OpenSearch Service
-<a name="cost-optimization"></a>
 
 The following are some of the most commonly used techniques to optimize cost while using Amazon OpenSearch Service — both Managed Clusters and Serverless. Since every workload is unique, evaluate these strategies against your specific usage patterns and validate them in a test environment before applying to production.
 

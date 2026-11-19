@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_GetInstance.htm
 ---
 
 # GetInstance
-<a name="API_GetInstance"></a>
 
 Gets information about a specified instance.
 

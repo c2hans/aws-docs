@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Finland
-<a name="nx-reg-short-fi"></a>
 
 To send messages that use a short code in Finland, you must complete the Finland short code registration.
 

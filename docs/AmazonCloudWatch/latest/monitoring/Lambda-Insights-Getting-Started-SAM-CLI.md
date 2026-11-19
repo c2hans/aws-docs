@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Use the AWS SAM CLI to enable Lambda Insights on an existing Lambda function
-<a name="Lambda-Insights-Getting-Started-SAM-CLI"></a>
 
 Follow these steps to use the AWS SAM AWS CLI to enable Lambda Insights on an existing Lambda function.
 

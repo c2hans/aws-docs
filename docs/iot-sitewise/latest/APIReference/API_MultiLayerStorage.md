@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mul
 ---
 
 # MultiLayerStorage
-<a name="API_MultiLayerStorage"></a>
 
 Contains information about the storage destination.
 

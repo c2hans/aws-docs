@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/readinessc
 ---
 
 # GetReadinessCheckStatus
-<a name="readinesschecks-readinesscheckname-status"></a>
 
 ## URI
 <a name="readinesschecks-readinesscheckname-status-url"></a>

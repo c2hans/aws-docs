@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Kines
 ---
 
 # KinesisStreamConfig
-<a name="API_KinesisStreamConfig"></a>
 
 Contains information about the Amazon Kinesis data stream where you are sending real-time log data.
 

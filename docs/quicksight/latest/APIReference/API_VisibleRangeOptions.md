@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visib
 ---
 
 # VisibleRangeOptions
-<a name="API_VisibleRangeOptions"></a>
 
 The range options for the data zoom scroll bar.
 

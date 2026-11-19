@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ReceiptRuleS
 ---
 
 # ReceiptRuleSetMetadata
-<a name="API_ReceiptRuleSetMetadata"></a>
 
 Information about a receipt rule set.
 

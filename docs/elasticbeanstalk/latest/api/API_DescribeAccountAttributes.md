@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeAccountAttributes
-<a name="API_DescribeAccountAttributes"></a>
 
 Returns attributes related to AWS Elastic Beanstalk that are associated with the calling AWS account.
 

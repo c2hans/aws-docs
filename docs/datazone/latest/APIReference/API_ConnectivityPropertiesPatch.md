@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Connect
 ---
 
 # ConnectivityPropertiesPatch
-<a name="API_ConnectivityPropertiesPatch"></a>
 
 Contains the connectivity settings to update on an existing connection. Include only the fields you want to change.
 

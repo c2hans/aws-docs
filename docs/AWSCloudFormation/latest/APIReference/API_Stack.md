@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Stack
-<a name="API_Stack"></a>
 
 The `Stack` data type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Work with requests and responses
-<a name="lambda-generating-http-responses"></a>
 
 To use Lambda@Edge requests and responses, see the following topics:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Accelerat
 ---
 
 # AcceleratorCountRequest
-<a name="API_AcceleratorCountRequest"></a>
 
 The minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips) on an instance. To exclude accelerator-enabled instance types, set `Max` to `0`.
 

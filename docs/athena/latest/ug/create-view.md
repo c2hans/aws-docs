@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-view.html
 ---
 
 # CREATE VIEW and CREATE PROTECTED MULTI DIALECT VIEW
-<a name="create-view"></a>
 
 A view is a logical table that can be referenced by future queries. Views do not contain any data and do not write data. Instead, the query specified by the view runs each time you reference the view by another query.
 + `CREATE VIEW` creates an Athena view from a specified `SELECT` query. Athena views work within Athena. For more information about Athena views, see [Work with views](views.md).

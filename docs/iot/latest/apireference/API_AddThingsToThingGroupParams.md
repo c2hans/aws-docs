@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingsToT
 ---
 
 # AddThingsToThingGroupParams
-<a name="API_AddThingsToThingGroupParams"></a>
 
 Parameters used when defining a mitigation action that move a set of things to a thing group.
 

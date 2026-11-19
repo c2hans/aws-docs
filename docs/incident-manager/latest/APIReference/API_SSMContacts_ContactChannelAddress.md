@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ContactChannelAddress
-<a name="API_SSMContacts_ContactChannelAddress"></a>
 
 The details that Incident Manager uses when trying to engage the contact channel.
 

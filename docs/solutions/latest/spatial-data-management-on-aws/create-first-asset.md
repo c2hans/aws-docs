@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Create Your First Asset
-<a name="create-first-asset"></a>
 
 Assets are versioned collections of files that represent a logical unit of spatial data.
 

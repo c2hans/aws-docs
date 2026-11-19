@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/create-ia
 ---
 
 # Create the IAM roles for AWS Security Agent
-<a name="create-iam-role"></a>
 
 AWS Security Agent assumes IAM service roles in your account. It uses these roles to call its own APIs on behalf of web application users and to reach the AWS resources that you want it to assess. If you schedule penetration tests, Amazon EventBridge Scheduler also assumes a role in your account to start the scheduled runs. There are three roles:
 +  **Application role** – One per application. AWS Security Agent assumes this role to give web application users permission to call AWS Security Agent APIs.

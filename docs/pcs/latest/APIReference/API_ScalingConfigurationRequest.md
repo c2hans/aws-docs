@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ScalingConfi
 ---
 
 # ScalingConfigurationRequest
-<a name="API_ScalingConfigurationRequest"></a>
 
 Specifies the boundaries of the compute node group auto scaling.
 

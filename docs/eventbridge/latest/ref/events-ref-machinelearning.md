@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-machin
 ---
 
 # Amazon Machine Learning events
-<a name="events-ref-machinelearning"></a>
 
 Amazon ML sends service events to EventBridge via AWS CloudTrail.
 

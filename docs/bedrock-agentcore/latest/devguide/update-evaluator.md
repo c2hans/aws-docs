@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/update
 ---
 
 # Update evaluator
-<a name="update-evaluator"></a>
 
 The `UpdateEvaluator` API modifies an existing custom evaluator’s configuration, description, or evaluation level. This asynchronous operation is only allowed on unlocked evaluators.
 

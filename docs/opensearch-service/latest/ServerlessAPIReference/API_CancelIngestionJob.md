@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CancelIngestionJob
-<a name="API_CancelIngestionJob"></a>
 
 Cancels an in-progress ingestion job. Documents that were already indexed before the cancellation remain in the index.
 

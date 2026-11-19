@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Unregister a Quick Connect interceptor in Connect Customer agent workspace
-<a name="3P-apps-contact-interceptor-remove-quick-connect"></a>
 
 Unregisters an interceptor that you registered with `addOpenQuickConnectInterceptor`. Pass the same interceptor reference and the same `contactId` that you used at registration.
 

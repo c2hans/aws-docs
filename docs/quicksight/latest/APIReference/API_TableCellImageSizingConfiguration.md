@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableCellImageSizingConfiguration
-<a name="API_TableCellImageSizingConfiguration"></a>
 
 The sizing options for the table image configuration.
 

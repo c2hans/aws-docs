@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingT
 ---
 
 # UpdateThingType
-<a name="API_UpdateThingType"></a>
 
 Updates a thing type.
 

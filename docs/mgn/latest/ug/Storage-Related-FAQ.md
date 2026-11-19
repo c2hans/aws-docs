@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Storage-Related-FAQ.html
 ---
 
 # Storage questions
-<a name="Storage-Related-FAQ"></a>
 
 This section contains answers to frequently asked questions about storage options in AWS Transform MGN.
 

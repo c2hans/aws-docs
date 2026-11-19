@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/enable-trusted-a
 ---
 
 # Enable trusted access in Reachability Analyzer
-<a name="enable-trusted-access"></a>
 
 When you enable trusted access, Reachability Analyzer deploys the [AWSServiceRoleForReachabilityAnalyzer](using-service-linked-roles.md) service-linked role and the required [cross-account access roles](cross-account-access-roles.md) to all accounts in your organization.
 

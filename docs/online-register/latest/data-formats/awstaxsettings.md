@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 ---
 
 # Data retrieval APIs for AWS Tax Settings
-<a name="awstaxsettings"></a>
 
 AWS Tax Settings provides the following APIs for data retrieval.
 

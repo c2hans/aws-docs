@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildS
 ---
 
 # BuildSummary
-<a name="API_BuildSummary"></a>
 
 Contains summary information about a batch build group.
 

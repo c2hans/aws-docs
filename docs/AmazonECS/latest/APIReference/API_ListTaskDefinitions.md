@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTa
 ---
 
 # ListTaskDefinitions
-<a name="API_ListTaskDefinitions"></a>
 
 Returns a list of task definitions that are registered to your account. You can filter the results by family name with the `familyPrefix` parameter or by status with the `status` parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/whatsapp-integrat
 ---
 
 # WhatsApp integration
-<a name="whatsapp-integration"></a>
 
 With the WhatsApp connector, you can send and manage messages through WhatsApp Business directly in AWS Quick through natural language.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateProject
-<a name="API_UpdateProject"></a>
 
 Modifies the specified project name, given the project ARN and a new name.
 

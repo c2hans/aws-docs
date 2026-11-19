@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/ibhow-sema
 ---
 
 # Semantic versioning in Image Builder
-<a name="ibhow-semantic-versioning"></a>
 
 Image Builder uses semantic versioning to organize resources and ensure that they have unique IDs. The semantic version has four nodes:
 

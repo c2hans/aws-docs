@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLPartialFailureReason
-<a name="API_AutoMLPartialFailureReason"></a>
 
 The reason for a partial failure of an AutoML job.
 

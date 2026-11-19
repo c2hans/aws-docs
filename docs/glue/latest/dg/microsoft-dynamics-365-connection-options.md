@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-dynamics-365-co
 ---
 
 # Microsoft Dynamics 365 CRM connection option reference
-<a name="microsoft-dynamics-365-connection-options"></a>
 
 The following are connection options for Microsoft Dynamics 365 CRM:
 +  `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Microsoft Dynamics 365 CRM.

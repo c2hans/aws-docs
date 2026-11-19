@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-eks
 ---
 
 # Restore an Amazon EKS cluster
-<a name="restoring-eks"></a>
 
 You can restore EKS cluster backups using the AWS Backup console or CLI. EKS backups are composite recovery points that include both EKS cluster state and persistent volume backups.
 

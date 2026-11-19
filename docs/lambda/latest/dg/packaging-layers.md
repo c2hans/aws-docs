@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/packaging-layers.html
 ---
 
 # Packaging your layer content
-<a name="packaging-layers"></a>
 
 A Lambda layer is a .zip file archive that contains supplementary code or data. Layers usually contain library dependencies, a [custom runtime](runtimes-custom.md), or configuration files.
 

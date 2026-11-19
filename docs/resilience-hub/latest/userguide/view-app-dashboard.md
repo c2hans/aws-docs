@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/view-app
 ---
 
 # AWS Resilience Hub dashboard
-<a name="view-app-dashboard"></a>
 
 The dashboard provides a comprehensive view of the resilience status of your application portfolio. The dashboard aggregates and organizes resilience events (for example, unavailable database or failed resilience validation), alerts, and insights from services such as CloudWatch and AWS Fault Injection Service (AWS FIS).
 

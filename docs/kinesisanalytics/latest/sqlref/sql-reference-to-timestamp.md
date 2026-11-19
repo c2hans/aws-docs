@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # TO\_TIMESTAMP
-<a name="sql-reference-to-timestamp"></a>
 
 Converts a Unix timestamp to a SQL timestamp in 'YYYY-MM-DD HH:MM:SS' format.
 

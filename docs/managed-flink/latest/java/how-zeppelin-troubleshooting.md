@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-t
 ---
 
 # Troubleshoot Studio notebooks for Managed Service for Apache Flink
-<a name="how-zeppelin-troubleshooting"></a>
 
 This section contains troubleshooting information for Studio notebooks.
 

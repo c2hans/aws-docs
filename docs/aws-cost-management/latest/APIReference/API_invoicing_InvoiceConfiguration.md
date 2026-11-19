@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceConfiguration
-<a name="API_invoicing_InvoiceConfiguration"></a>
 
 Specifies the supported document types and attachment types for invoice delivery to a procurement portal.
 

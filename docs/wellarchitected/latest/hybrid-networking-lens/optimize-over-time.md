@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Optimize over time
-<a name="optimize-over-time"></a>
 
  Continuous optimization of hybrid networking costs requires regular evaluation of new services, features, and pricing models. Organizations should regularly review their networking architecture, usage patterns, and costs to identify opportunities for improvement and cost reduction.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSImportExportFullAccess
-<a name="AWSImportExportFullAccess"></a>
 
 **Description**: Provides read and write access to the jobs created under the AWS account.
 

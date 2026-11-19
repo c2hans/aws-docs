@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_LinkedSe
 ---
 
 # LinkedService
-<a name="API_LinkedService"></a>
 
 If a health check or hosted zone was created by another service, `LinkedService` is a complex type that describes the service that created the resource. When a resource is created by another service, you can't edit or delete it using Amazon Route 53.
 

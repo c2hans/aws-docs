@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-sma
 ---
 
 # Using fine-grained authorization with a SMART on FHIR enabled HealthLake data store
-<a name="reference-smart-on-fhir-fine-grained-authorization"></a>
 
 [Scopes](reference-smart-on-fhir-oauth-scopes.md#smart-on-fhir-scopes-rest) alone do not provide you with the necessary specificity about what data a requester is authorized to access in a data store. Using fine-grained authorization enables a higher level of specificity when granting access to a SMART on FHIR enabled HealthLake data store. To use fine-grained authorization, set `FineGrainedAuthorizationEnabled` equal to `True` in the `IdentityProviderConfiguration` parameter of your `CreateFHIRDatastore` request.
 

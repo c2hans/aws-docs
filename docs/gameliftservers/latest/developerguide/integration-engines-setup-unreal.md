@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Integrate Amazon GameLift Servers into an Unreal Engine project
-<a name="integration-engines-setup-unreal"></a>
 
 Learn how to integrate the Amazon GameLift Servers SDK for Unreal Engine into your game projects to access the full server SDK feature set.
 

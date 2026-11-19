@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Provision
 ---
 
 # ProvisionedBandwidth
-<a name="API_ProvisionedBandwidth"></a>
 
 Reserved. If you need to sustain traffic greater than the [documented limits](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html#vpc-limits-gateways), contact AWS Support.
 

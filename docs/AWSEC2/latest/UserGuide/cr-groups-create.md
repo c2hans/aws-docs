@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-groups-create
 ---
 
 # Create a group
-<a name="cr-groups-create"></a>
 
 You can create a group to organize your Capacity Reservations. After you create a group, you can [add Capacity Reservations to the group](cr-groups-add.md).
 

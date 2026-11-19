@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListArchiveSearches
-<a name="API_ListArchiveSearches"></a>
 
 Returns a list of email archive search jobs.
 

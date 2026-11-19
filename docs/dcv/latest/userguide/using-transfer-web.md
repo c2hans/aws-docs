@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-transfer-web.
 ---
 
 # Transferring files using web browser
-<a name="using-transfer-web"></a>
 
 The steps for uploading, downloading, and renaming files are the same across all supported web browsers.
 

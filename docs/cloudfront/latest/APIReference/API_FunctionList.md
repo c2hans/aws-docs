@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Funct
 ---
 
 # FunctionList
-<a name="API_FunctionList"></a>
 
 A list of CloudFront functions.
 

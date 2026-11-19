@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateLifecyclePolicy
-<a name="API_CreateLifecyclePolicy"></a>
 
 Creates a lifecycle policy resource.
 

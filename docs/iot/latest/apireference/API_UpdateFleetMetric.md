@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateFleetM
 ---
 
 # UpdateFleetMetric
-<a name="API_UpdateFleetMetric"></a>
 
 Updates the data for a fleet metric.
 

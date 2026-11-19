@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # File system configurations for AgentCore Runtime
-<a name="runtime-filesystem-configurations"></a>
 
 AgentCore Runtime supports persistent file systems through the `filesystemConfigurations` parameter. Each configuration mounts storage at a path you specify. You don’t need custom mount code, privileged containers, or download orchestration.
 

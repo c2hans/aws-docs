@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_De
 ---
 
 # DeleteSession
-<a name="API_runtime_DeleteSession"></a>
 
 Removes session information for a specified bot, alias, and user ID.
 

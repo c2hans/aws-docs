@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_NotInEx
 ---
 
 # NotInExpression
-<a name="API_NotInExpression"></a>
 
 Specifies that a value is not in the expression.
 

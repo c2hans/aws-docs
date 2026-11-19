@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Use `DescribeIdentityPool` with a CLI
-<a name="cognito-identity_example_cognito-identity_DescribeIdentityPool_section"></a>
 
 The following code examples show how to use `DescribeIdentityPool`.
 

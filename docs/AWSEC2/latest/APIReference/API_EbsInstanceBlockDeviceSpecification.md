@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsInstan
 ---
 
 # EbsInstanceBlockDeviceSpecification
-<a name="API_EbsInstanceBlockDeviceSpecification"></a>
 
 Describes information used to set up an EBS volume specified in a block device mapping.
 

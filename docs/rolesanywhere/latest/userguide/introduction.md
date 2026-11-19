@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduct
 ---
 
 # What is AWS Identity and Access Management Roles Anywhere?
-<a name="introduction"></a>
 
 You can use AWS Identity and Access Management Roles Anywhere to obtain [temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) for workloads such as servers, containers, and applications that run outside of AWS. Your workloads can use the same [IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) and [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that you use with AWS applications to access AWS resources. Using IAM Roles Anywhere means you don't need to manage long-term AWS credentials for workloads running outside of AWS.
 

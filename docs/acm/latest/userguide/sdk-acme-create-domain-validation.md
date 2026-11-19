@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-create-dom
 ---
 
 # Creating an ACME domain validation
-<a name="sdk-acme-create-domain-validation"></a>
 
 The following example shows how to use the [CreateAcmeDomainValidation](https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeDomainValidation.html) function.
 

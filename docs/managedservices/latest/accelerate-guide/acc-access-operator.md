@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # How AMS accesses your account
-<a name="acc-access-operator"></a>
 
 AMS Accelerate operators can access your account console and instances, in certain circumstances.
 

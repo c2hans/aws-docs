@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_CsvCo
 ---
 
 # CsvConfiguration
-<a name="API_CsvConfiguration"></a>
 
 A delimited data format where the column separator can be a comma and the record separator is a newline character.
 

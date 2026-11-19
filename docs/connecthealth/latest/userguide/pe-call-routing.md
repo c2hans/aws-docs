@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/pe-call-r
 ---
 
 # How a patient call is handled
-<a name="pe-call-routing"></a>
 
 When a patient calls, the agentic capabilities for patient access handle the call as one conversation. This topic describes what happens during a call.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon FinSpace API
-<a name="amazonfinspaceapi"></a>
 
 Amazon FinSpace API provides the following APIs for data retrieval.
 

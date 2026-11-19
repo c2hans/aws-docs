@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # NetworkResourceUtilization
-<a name="API_NetworkResourceUtilization"></a>
 
 The network field that contains a list of network metrics that are associated with the current instance.
 

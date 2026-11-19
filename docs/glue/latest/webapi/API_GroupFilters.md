@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GroupFilters.html
 ---
 
 # GroupFilters
-<a name="API_GroupFilters"></a>
 
 Specifies a group of filters with a logical operator that determines how the filters are combined to evaluate routing conditions.
 

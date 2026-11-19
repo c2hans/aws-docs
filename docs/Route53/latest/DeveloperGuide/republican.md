@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/republican
 ---
 
 # .republican
-<a name="republican"></a>
 
 Used for information about the Republican Party. Also used by officials running for elected office, elected officials, political enthusiasts, consultants, and advisors.
 

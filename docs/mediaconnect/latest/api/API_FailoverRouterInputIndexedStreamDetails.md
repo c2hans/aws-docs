@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FailoverRout
 ---
 
 # FailoverRouterInputIndexedStreamDetails
-<a name="API_FailoverRouterInputIndexedStreamDetails"></a>
 
 Configuration details for an indexed stream in a failover router input setup.
 

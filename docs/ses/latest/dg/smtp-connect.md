@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/smtp-connect.html
 ---
 
 # Connecting to an Amazon SES SMTP endpoint
-<a name="smtp-connect"></a>
 
 To send email using the Amazon SES SMTP interface, you connect to an SMTP endpoint. For a complete list of Amazon SES SMTP endpoints, see [Amazon Simple Email Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ses.html) in the *AWS General Reference*.
 

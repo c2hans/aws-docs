@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Range.
 ---
 
 # Range
-<a name="API_Range"></a>
 
 A range of integer values.
 

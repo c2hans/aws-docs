@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AzurePr
 ---
 
 # AzureProviderConfiguration
-<a name="API_AzureProviderConfiguration"></a>
 
 The configuration for connecting to an Azure environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 ---
 
 # Product lineage
-<a name="product_lineage"></a>
 
 *Product lineage* refers to the relationship established between products and their previous versions or alternate products. Demand Planning uses product lineage information to create surrogate histories for these products, which serve as forecast inputs for demand predictions.
 

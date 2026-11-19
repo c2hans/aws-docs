@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer X12SplitOptions
-<a name="aws-properties-b2bi-transformer-x12splitoptions"></a>
 
 Contains options for splitting X12 EDI files into smaller units. This is useful for processing large EDI files more efficiently.
 

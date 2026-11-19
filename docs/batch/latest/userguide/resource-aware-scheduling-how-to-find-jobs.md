@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/resource-aware-sc
 ---
 
 # Find the jobs that require a specific consumable resource
-<a name="resource-aware-scheduling-how-to-find-jobs"></a>
 
 Batch lets you retrieve a list of jobs that require a specific consumable resource.
 

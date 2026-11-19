@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEntityAggregates
-<a name="API_DescribeEntityAggregates"></a>
 
 Returns the number of entities that are affected by each of the specified events.
 
@@ -12,7 +11,12 @@ Returns the number of entities that are affected by each of the specified events
 
 ```
 {
-   "eventArns": [ "{{string}}" ]
+   "eventArns": [ "{{string}}" ],
+   "filter": {
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
+      }
+   }
 }
 ```
 
@@ -29,6 +33,11 @@ Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Length Constraints: Maximum length of 1600.
 Pattern: `arn:aws(-[a-z]+(-[a-z]+)?)?:health:[^:]*:[^:]*:event(?:/[\w-]+){3}`
+Required: No
+
+ ** [filter](#API_DescribeEntityAggregates_RequestSyntax) **   <a name="AWSHealth-DescribeEntityAggregates-request-filter"></a>
+Values to narrow the results returned.
+Type: [EntityAggregateFilter](API_EntityAggregateFilter.md) object
 Required: No
 
 ## Response Syntax

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Hiera
 ---
 
 # HierarchyFilterNode
-<a name="API_HierarchyFilterNode"></a>
 
 A node in the selection tree of a `HierarchyFilter`. Each node records the values that are selected at one level of the hierarchy. Nodes nest through `Children` to record selections at deeper levels.
 
@@ -22,7 +21,7 @@ Required: Yes
 
  ** Children **   <a name="QS-Type-HierarchyFilterNode-Children"></a>
 The nodes that record the selections at the next level of the hierarchy. You can specify a maximum of 1,000 children per node.
-Type: Array of [HierarchyFilterNode](#API_HierarchyFilterNode) objects
+Type: Array of [HierarchyFilterNode](API_HierarchyFilterNode.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 Required: No
 

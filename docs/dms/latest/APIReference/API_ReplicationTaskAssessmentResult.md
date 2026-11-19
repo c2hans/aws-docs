@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTaskAssessmentResult
-<a name="API_ReplicationTaskAssessmentResult"></a>
 
  The task assessment report in JSON format.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/addon-compat.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Verify Amazon EKS add-on version compatibility with a cluster
-<a name="addon-compat"></a>
 
 Before you create an Amazon EKS add-on you need to verify that the Amazon EKS add-on version is compatible with your cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Initialize Performance Monitor for multiple accounts
-<a name="CloudWatch-PerformanceMonitor-multi-account"></a>
 
 To monitor VPCs across multiple accounts in your organization, you must turn on trusted access to grant CloudWatch permission to discover resources in your organization.
 

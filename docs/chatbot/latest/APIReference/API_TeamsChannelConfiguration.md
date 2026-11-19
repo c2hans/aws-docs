@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_TeamsCha
 ---
 
 # TeamsChannelConfiguration
-<a name="API_TeamsChannelConfiguration"></a>
 
 An Amazon Q Developer configuration for Microsoft Teams.
 

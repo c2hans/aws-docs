@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetOperationsForResource
-<a name="API_GetOperationsForResource"></a>
 
 Gets operations for a specific resource (an instance or a static IP).
 

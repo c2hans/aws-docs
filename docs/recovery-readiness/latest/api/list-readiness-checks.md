@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/list-readi
 ---
 
 # List readiness checks
-<a name="list-readiness-checks"></a>
 
 The following is an example of a request to list the readiness checks in an account, and the response.
 

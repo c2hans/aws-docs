@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/well-arc
 ---
 
 # Well-Architected design principles
-<a name="well-architected-design-principles"></a>
 
 This section describes the design principles, best practices, and improvement suggestions that are relevant when designing and operating your SAP workload.
 

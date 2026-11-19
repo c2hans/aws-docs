@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # HealthStatus
-<a name="API_budgets_HealthStatus"></a>
 
 Provides information about the current operational state of a billing view resource, including its ability to access and update based on its associated billing view.
 

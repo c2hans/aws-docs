@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_EnrichmentSo
 ---
 
 # EnrichmentSourceS3Configuration
-<a name="API_EnrichmentSourceS3Configuration"></a>
 
 S3 configuration for the source import file to be enriched.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Data management
-<a name="data-management"></a>
 
 |  EUCPERF05: How do you choose storage solutions that maximize performance efficiency in your EUC environment?  |
 | --- |

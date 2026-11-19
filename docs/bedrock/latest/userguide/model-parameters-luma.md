@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Luma AI models
-<a name="model-parameters-luma"></a>
 
 This section describes the request parameters and response fields for Luma AI models. Use this information to make inference calls to Luma AI models with the [StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html) operation. This section also includes Python code examples that shows how to call Luma AI models. To use a model in an inference operation, you need the model ID for the model.
 + Model ID: luma.ray-v2:0

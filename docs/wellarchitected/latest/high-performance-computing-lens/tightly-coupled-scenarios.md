@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Tightly coupled scenarios
-<a name="tightly-coupled-scenarios"></a>
 
  Tightly coupled applications consist of parallel processes that are dependent on each other to carry out the calculation. These applications can vary in size and total run time, but the main common theme is the requirement for all processes to complete their tasks. Unlike a loosely coupled computation, all processes of a tightly coupled simulation iterate together and require communication with one another.
 

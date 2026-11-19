@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Descriptiv
 ---
 
 # DescriptiveBotBuilderSpecification
-<a name="API_DescriptiveBotBuilderSpecification"></a>
 
 Contains specifications for the descriptive bot building feature.
 

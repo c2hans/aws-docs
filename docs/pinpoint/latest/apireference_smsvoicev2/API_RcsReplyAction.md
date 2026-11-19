@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsReplyAction
-<a name="API_RcsReplyAction"></a>
 
 A suggested reply action that sends predefined text and postback data when tapped by the recipient.
 

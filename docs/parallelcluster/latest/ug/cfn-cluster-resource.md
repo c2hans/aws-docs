@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/cfn-cluster-re
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Cluster resource
-<a name="cfn-cluster-resource"></a>
 
 The CloudFormation cluster resource is formatted as shown in the following CloudFormation template snippet:
 

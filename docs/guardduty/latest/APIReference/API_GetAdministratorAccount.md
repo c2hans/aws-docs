@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetAdm
 ---
 
 # GetAdministratorAccount
-<a name="API_GetAdministratorAccount"></a>
 
 Provides the details of the GuardDuty administrator account associated with the current GuardDuty member account.
 

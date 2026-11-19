@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # The role of goals in chaos engineering adoption
-<a name="goals-chaos-engineering"></a>
 
 It's common for the initial goals to emerge organically from grassroots chaos engineering efforts within an organization. Driven by a need to address their own recurring issues, these teams or groups often explore chaos-engineering practices without explicit approval or prioritization from higher levels.
 

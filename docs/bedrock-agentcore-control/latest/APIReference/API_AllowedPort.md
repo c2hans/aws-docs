@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AllowedPort
-<a name="API_AllowedPort"></a>
 
 A port or port range that is reachable through the runtime's session URL. Specify exactly one of `port` or `portRange`.
 

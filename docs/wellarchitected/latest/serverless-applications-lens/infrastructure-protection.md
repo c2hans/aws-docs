@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 For scenarios where your serverless application needs to interact with other components deployed in a virtual private cloud (VPC) or applications residing on-premises, it’s important to ensure that networking boundaries are considered.
 

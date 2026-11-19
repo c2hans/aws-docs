@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what
 ---
 
 # What is the CloudFormation Command Line Interface (CFN-CLI)?
-<a name="what-is-cloudformation-cli"></a>
 
 The *CloudFormation Command Line Interface (CFN-CLI)* is an open-source tool that enables you to develop and test AWS and third-party extensions, such as resource types or modules, and register them for use in CloudFormation. The CloudFormation CLI provides a consistent way to model and provision both AWS and third-party extensions through CloudFormation. The CloudFormation CLI includes commands to manage each step of creating your extensions. For more information about CloudFormation CLI commands see, [CloudFormation CLI reference](resource-type-cli.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Manage demand and supply resources
-<a name="manage-demand-and-supply-resources"></a>
 
 | CONTAINER\_BUILD\_COST\_07: How do you minimize cost for your containerized application during startup time? |
 | --- |

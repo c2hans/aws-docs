@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vss-iam-reqs.htm
 ---
 
 # Use an IAM managed policy to grant permissions for VSS based snapshots
-<a name="vss-iam-reqs"></a>
 
 The AWSEC2VssSnapshotPolicy managed policy enables Systems Manager to perform the following actions on your Windows instance:
 + Create and tag EBS snapshots

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorFeaturesDetails
-<a name="API_AwsGuardDutyDetectorFeaturesDetails"></a>
 
  Describes which features are activated for the detector.
 

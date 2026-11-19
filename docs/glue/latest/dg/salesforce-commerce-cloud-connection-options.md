@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-commerce-cloud
 ---
 
 # Salesforce Commerce Cloud connection option reference
-<a name="salesforce-commerce-cloud-connection-options"></a>
 
 The following are connection options for Salesforce Commerce Cloud:
 +  `ENTITY_NAME`(String) - (Required) Used for Read. The name of your Object in Salesforce Commerce Cloud.

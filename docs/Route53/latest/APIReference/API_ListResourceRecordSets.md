@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListReso
 ---
 
 # ListResourceRecordSets
-<a name="API_ListResourceRecordSets"></a>
 
 Lists the resource record sets in a specified hosted zone.
 

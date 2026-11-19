@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
 Updates the specified group metadata and attributes in the specified identity store.
 

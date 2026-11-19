@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/capability-role.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS capability IAM role
-<a name="capability-role"></a>
 
 EKS Capabilities require a capability IAM role (or capability role) to be configured. Capabilities use this role to perform actions on AWS services and to access Kubernetes resources in your cluster through automatically created access entries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AuthCha
 ---
 
 # AuthChallengeRequest
-<a name="API_AuthChallengeRequest"></a>
 
 A request made by Amazon Q Business to a third paty authentication server to authenticate a custom plugin user.
 

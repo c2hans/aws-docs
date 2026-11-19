@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-action
 ---
 
 # Asking Amazon Q to troubleshoot your resources
-<a name="chat-actions-troubleshooting"></a>
 
 This conversational experience is now part of the AWS assistant.
 

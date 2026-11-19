@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/mobile-feature-av
 ---
 
 # Feature availability at a glance
-<a name="mobile-feature-availability"></a>
 
 The following tables summarize feature availability on mobile compared to desktop. Availability is one of the following.
 + Available: works on mobile.

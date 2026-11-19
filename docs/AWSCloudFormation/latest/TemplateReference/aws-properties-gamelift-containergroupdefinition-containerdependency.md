@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerGroupDefinition ContainerDependency
-<a name="aws-properties-gamelift-containergroupdefinition-containerdependency"></a>
 
 A container's dependency on another container in the same container group. The dependency impacts how the dependent container is able to start or shut down based on the status of the other container.
 

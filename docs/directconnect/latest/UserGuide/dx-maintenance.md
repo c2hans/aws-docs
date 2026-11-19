@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/dx-mainte
 ---
 
 # Direct Connect maintenance
-<a name="dx-maintenance"></a>
 
 Direct Connect is committed to ensuring service security, availability, and scalability. To maintain these standards, periodic maintenance is required on the hardware network devices. Direct Connect maintenance is divided into two types - **planned** and **emergency**.
 

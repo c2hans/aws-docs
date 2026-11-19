@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Microsoft SQL Server database to Amazon EC2 using MGN
-<a name="migrate-microsoft-sql-server-to-amazon-ec2-using-aws-mgn"></a>
 
 *Senthil Ramasamy, Amazon Web Services*
 

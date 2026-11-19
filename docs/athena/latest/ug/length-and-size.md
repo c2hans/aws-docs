@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/length-and-size.html
 ---
 
 # Get the length and size of JSON arrays
-<a name="length-and-size"></a>
 
 To get the length and size of JSON arrays, you can use the `json_array_length` and `json_size` functions.
 

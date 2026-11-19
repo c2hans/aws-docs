@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # KTH\_LARGEST\_UNIQUE
-<a name="recipe-actions.functions.KTH_LARGEST_UNIQUE"></a>
 
  Returns the *k*th largest unique number from the selected source columns in a new column.
 

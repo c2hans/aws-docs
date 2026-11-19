@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Datetim
 ---
 
 # TIMESTAMP\_NTZ
-<a name="Datetime_types-TIMESTAMP_NTZ"></a>
 
 Use the TIMESTAMP\_NTZ data type to store complete timestamp values that include the date, the time of day, without the local time zone.
 

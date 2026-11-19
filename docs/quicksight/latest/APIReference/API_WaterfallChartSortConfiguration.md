@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallChartSortConfiguration
-<a name="API_WaterfallChartSortConfiguration"></a>
 
 The sort configuration of a waterfall visual.
 

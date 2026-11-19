@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rl_install.ht
 ---
 
 # Install EC2Rescue on an Amazon EC2 Linux instance
-<a name="ec2rl_install"></a>
 
 The EC2Rescue for Linux tool can be installed on an Amazon EC2 Linux instance that meets the following prerequisites.
 

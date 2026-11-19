@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage-storage.htm
 ---
 
 # Enabling session storage
-<a name="manage-storage"></a>
 
 Session storage is a folder on the Amazon DCV server that clients can access when they're connected to a specific Amazon DCV session. When you enable session storage for a session, clients can download files from, and upload files to, the specified folder. This feature enables clients to share files while connected to a session.
 

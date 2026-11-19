@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-logi
 ---
 
 # Logging in to the Jupyter Notebook server on a DLAMI instance
-<a name="setup-jupyter-login"></a>
 
 After you [connect your client to the Jupyter Notebook server on your DLAMI instance](setup-jupyter-connect.md), you can log in to the server.
 

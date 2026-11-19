@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/quickstar
 ---
 
 # Quickstart: Run a threat model
-<a name="quickstart-threat-model"></a>
 
 This quickstart walks you through running your first threat model with AWS Security Agent. A threat model analyzes your application’s architecture and produces a **system overview** (how AWS Security Agent understands your system) and a set of **threats** (how it could be attacked, each with a severity level, STRIDE classification, and recommendations). You can run a threat model on design documents (**scope docs**) to define the focus, source code (**sources**) to provide context about your existing system, or both.
 

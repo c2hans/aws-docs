@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/transforms
 ---
 
 # Transform data (transforms)
-<a name="transforms"></a>
 
 *Transforms* are mathematical expressions that map asset properties' data points from one form to another. A transform expression consists of asset property variables, literals, operators, and functions. The transformed data points hold a one-to-one relationship with the input data points. AWS IoT SiteWise calculates a new transformed data point each time any of the input properties receives a new data point.
 

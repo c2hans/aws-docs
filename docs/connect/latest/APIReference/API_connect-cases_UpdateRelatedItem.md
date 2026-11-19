@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateRelatedItem
-<a name="API_connect-cases_UpdateRelatedItem"></a>
 
 Updates the content of a related item associated with a case. The following related item types are supported:
 +  **Comment** - Update the text content of an existing comment

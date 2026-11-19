@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcme
 ---
 
 # DescribeAcmeDomainValidation
-<a name="API_DescribeAcmeDomainValidation"></a>
 
 Returns detailed metadata about the specified domain validation, including its status, domain scope, and DNS resource records required for validation.
 

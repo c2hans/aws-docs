@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTrafficMirrorFilterNetworkServices
-<a name="API_ModifyTrafficMirrorFilterNetworkServices"></a>
 
 Allows or restricts mirroring network services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_LogSetup.htm
 ---
 
 # LogSetup
-<a name="API_LogSetup"></a>
 
 An object representing the enabled or disabled Kubernetes control plane logs for your cluster.
 

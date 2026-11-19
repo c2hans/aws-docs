@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-for-
 ---
 
 # Fields for an input switch
-<a name="schedule-fields-for-ips"></a>
 
 This section describes how to complete the fields for these three types of input switches:
 + A switch to a static live input

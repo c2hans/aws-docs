@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryOutput
-<a name="API_ProtectedQueryOutput"></a>
 
 Contains details about the protected query output.
 

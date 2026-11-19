@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Exe
 ---
 
 # ExecutionTrigger
-<a name="API_ExecutionTrigger"></a>
 
 The interaction or event that started a pipeline execution.
 

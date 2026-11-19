@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateTrigger.htm
 ---
 
 # CreateTrigger
-<a name="API_CreateTrigger"></a>
 
 Creates a new trigger.
 

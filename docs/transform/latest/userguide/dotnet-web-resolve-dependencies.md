@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-re
 ---
 
 # Resolving package dependencies to prepare for transformation
-<a name="dotnet-web-resolve-dependencies"></a>
 
 In the *Prepare for transformation* phase, you will:
 + Select repositories for transformation.

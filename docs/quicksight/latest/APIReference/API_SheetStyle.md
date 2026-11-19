@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetStyle
-<a name="API_SheetStyle"></a>
 
 The theme display options for sheets.
 

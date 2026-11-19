@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/2120-sdp-ancill
 ---
 
 # Format of an SDP file for ancillary data
-<a name="2120-sdp-ancillary"></a>
 
 ```
 v=0

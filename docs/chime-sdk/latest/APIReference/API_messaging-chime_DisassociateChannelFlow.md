@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DisassociateChannelFlow
-<a name="API_messaging-chime_DisassociateChannelFlow"></a>
 
 Disassociates a channel flow from all its channels. Once disassociated, all messages to that channel stop going through the channel flow processor.
 

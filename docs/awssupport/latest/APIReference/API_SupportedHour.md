@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Suppo
 ---
 
 # SupportedHour
-<a name="API_SupportedHour"></a>
 
 Time range object with `startTime` and `endTime` range in RFC 3339 format. `'HH:mm:ss.SSS'`.
 

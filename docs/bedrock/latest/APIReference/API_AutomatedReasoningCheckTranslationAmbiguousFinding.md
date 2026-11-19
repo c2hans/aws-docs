@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckTranslationAmbiguousFinding
-<a name="API_AutomatedReasoningCheckTranslationAmbiguousFinding"></a>
 
 Indicates that the input has multiple valid logical interpretations, requiring additional context or clarification.
 

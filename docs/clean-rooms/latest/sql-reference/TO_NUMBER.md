@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TO_NUMB
 ---
 
 # TO\_NUMBER
-<a name="TO_NUMBER"></a>
 
 TO\_NUMBER converts a string to a numeric (decimal) value.
 

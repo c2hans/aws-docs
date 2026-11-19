@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Account structure
-<a name="gameops02"></a>
 
 |  GAMEOPS02: How do you structure your AWS accounts for hosting your game environments?  |
 | --- |

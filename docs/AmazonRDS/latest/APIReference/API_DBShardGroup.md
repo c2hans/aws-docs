@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBShar
 ---
 
 # DBShardGroup
-<a name="API_DBShardGroup"></a>
 
 Contains the details for an Amazon RDS DB shard group.
 

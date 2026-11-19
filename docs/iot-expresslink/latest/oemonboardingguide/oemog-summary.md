@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ---
 
 # Summary
-<a name="oemog-summary"></a>
 
 To summarize, ExpressLink modules come pre-provisioned with a unique identifier and a certificate signed by the module manufacturer Certificate Authority (CA), ready to authenticate with AWS IoT Core.
 

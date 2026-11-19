@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # CardHolderVerificationValue
-<a name="API_CardHolderVerificationValue"></a>
 
 Card data parameters that are required to generate a cardholder verification value for the payment card.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptRes
 ---
 
 # AcceptReservedInstancesExchangeQuote
-<a name="API_AcceptReservedInstancesExchangeQuote"></a>
 
 Accepts the Convertible Reserved Instance exchange quote described in the [GetReservedInstancesExchangeQuote](API_GetReservedInstancesExchangeQuote.md) call.
 

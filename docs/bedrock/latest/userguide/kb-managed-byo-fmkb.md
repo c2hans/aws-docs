@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-byo-
 ---
 
 # Amazon Quick integration with managed knowledge bases
-<a name="kb-managed-byo-fmkb"></a>
 
 You can connect a managed Amazon Bedrock knowledge base to Amazon Quick as a knowledge source. Amazon Quick uses the provided IAM actions on your knowledge base to pull data from your index. You can connect up to 2 managed knowledge bases per Amazon Quick instance. Access control list (ACL)-enabled connectors are supported — Amazon Quick automatically passes the user's identity for document-level access control.
 

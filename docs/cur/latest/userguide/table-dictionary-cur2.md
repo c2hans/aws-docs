@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Cost and Usage Report (CUR) 2.0
-<a name="table-dictionary-cur2"></a>
 
 The CUR 2.0 table provides the same information as Cost and Usage Reports (CUR) with a few improvements.
 

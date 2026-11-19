@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Genomics Data Transfer, Analytics, and Machine Learning using AWS Services
-<a name="welcome"></a>
 
 **Publication date: November 23, 2020 ([Document Revisions](document-revisions.md))**
 

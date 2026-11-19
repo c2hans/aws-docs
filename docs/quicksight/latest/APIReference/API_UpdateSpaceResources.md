@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateSpaceResources
-<a name="API_UpdateSpaceResources"></a>
 
 Adds or removes resources from an Amazon QuickSight space.
 

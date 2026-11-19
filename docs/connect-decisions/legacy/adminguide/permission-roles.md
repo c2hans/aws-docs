@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/perm
 ---
 
 # Updating user permissions
-<a name="permission-roles"></a>
 
 To update the user permission role for the current AWS Supply Chain users, follow these steps.
 

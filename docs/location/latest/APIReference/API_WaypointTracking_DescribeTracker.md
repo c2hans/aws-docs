@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DescribeTracker
-<a name="API_WaypointTracking_DescribeTracker"></a>
 
 Retrieves the tracker resource details.
 

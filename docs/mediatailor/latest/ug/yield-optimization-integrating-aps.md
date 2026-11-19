@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Integrating with APS
-<a name="yield-optimization-integrating-aps"></a>
 
 At launch, Yield Optimization uses Amazon Publisher Services (APS) as the programmatic ad provider, with additional demand sources coming over time. To enable Yield Optimization, you need an APS Publisher ID from an active APS Streaming TV publisher account.
 

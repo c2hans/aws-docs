@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # IngestionJobSortBy
-<a name="API_agent_IngestionJobSortBy"></a>
 
 The parameters of sorting the data.
 

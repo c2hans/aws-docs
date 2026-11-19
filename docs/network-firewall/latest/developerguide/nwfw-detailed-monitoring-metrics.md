@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Flow and alert log metrics in the firewall monitoring dashboard
-<a name="nwfw-detailed-monitoring-metrics"></a>
 
 The firewall monitoring dashboard provides multiple options for viewing key metrics about your firewall.
 

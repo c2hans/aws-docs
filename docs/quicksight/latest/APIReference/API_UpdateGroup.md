@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
 Changes a group description.
 

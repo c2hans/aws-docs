@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.cl
 ---
 
 # Client:ClientRead
-<a name="wait-event.clientread"></a>
 
 The `Client:ClientRead` event occurs when RDS for PostgreSQL is waiting to receive data from the client.
 

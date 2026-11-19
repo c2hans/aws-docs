@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-ch
 ---
 
 # Changing the replica owner
-<a name="replication-change-owner"></a>
 
 In replication, the owner of the source object also owns the replica by default. However, when the source and destination buckets are owned by different AWS accounts, you might want to change the replica ownership. For example, you might want to change the ownership to restrict access to object replicas. In your replication configuration, you can add optional configuration settings to change replica ownership to the AWS account that owns the destination buckets.
 
@@ -372,4 +371,4 @@ The profiles that you use for this procedure must have the necessary permissions
 ### Using the AWS SDKs
 <a name="replication-ex3-sdk"></a>
 
- For a code example to add a replication configuration, see [Using the AWS SDKs](replication-walkthrough1.md#replication-ex1-sdk). You must modify the replication configuration appropriately. For conceptual information, see [Changing the replica owner](#replication-change-owner).
+ For a code example to add a replication configuration, see [Using the AWS SDKs](replication-walkthrough1.md#replication-ex1-sdk). You must modify the replication configuration appropriately. For conceptual information, see [Changing the replica owner](replication-change-owner.md).

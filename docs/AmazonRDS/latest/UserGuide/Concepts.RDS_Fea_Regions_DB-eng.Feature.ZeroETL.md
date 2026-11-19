@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_
 ---
 
 # Supported Regions and DB engines for Amazon RDS zero-ETL integrations
-<a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.ZeroETL"></a>
 
 RDS zero-ETL integrations is a fully managed solution for making transactional data available in Amazon Redshift or Amazon SageMaker after it's written to an Amazon RDS DB instance. For more information, see [Amazon RDS zero-ETL integrations](zero-etl.md).
 

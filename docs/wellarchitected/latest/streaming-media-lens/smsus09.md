@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Development and deployment
-<a name="smsus09"></a>
 
 The engineering process behind a streaming service carries its own resource footprint, dominated by idle non-production environments.
 

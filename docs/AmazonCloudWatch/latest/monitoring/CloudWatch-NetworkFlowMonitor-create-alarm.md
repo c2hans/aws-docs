@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create alarms with Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-create-alarm"></a>
 
 You can create Amazon CloudWatch alarms based on Network Flow Monitor metrics, just as you can for other CloudWatch metrics.
 

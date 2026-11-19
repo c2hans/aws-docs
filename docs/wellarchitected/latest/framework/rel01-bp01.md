@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01-b
 ---
 
 # REL01-BP01 Aware of service quotas and constraints
-<a name="rel01-bp01"></a>
 
  Cloud services set quotas on how many resources you can provision and how fast you can call operations. Some quotas you can raise on request. Others are fixed by the resource itself and cannot change. To plan capacity, track which quotas apply to your workload and how close your usage runs to each quota.
 

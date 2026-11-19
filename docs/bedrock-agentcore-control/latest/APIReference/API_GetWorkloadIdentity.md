@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetWorkloadIdentity
-<a name="API_GetWorkloadIdentity"></a>
 
 Retrieves information about a workload identity.
 

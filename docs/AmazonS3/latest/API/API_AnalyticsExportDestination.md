@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnalyticsExportD
 ---
 
 # AnalyticsExportDestination
-<a name="API_AnalyticsExportDestination"></a>
 
 Where to publish the analytics results.
 

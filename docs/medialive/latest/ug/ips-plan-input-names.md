@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-plan-input-names
 ---
 
 # Plan the input and input attachment names
-<a name="ips-plan-input-names"></a>
 
 You should plan the names for the input and the input attachment. Here are some tips:
 + Use the same name for the input and input attachments.

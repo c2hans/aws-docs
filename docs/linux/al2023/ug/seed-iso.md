@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/seed-iso.html
 ---
 
 # NoCloud (`seed.iso`) `cloud-init` configuration for Amazon Linux 2023 on KVM and VMware
-<a name="seed-iso"></a>
 
  This section covers how to create and use a `seed.iso` image to configure Amazon Linux 2023 running on KVM or VMware. Because KVM and VMware environments do not have [Amazon EC2 Instance Meta Data Service (IMDS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service), an alternate method of configuring Amazon Linux 2023 is required, and providing a `seed.iso` image is one of those methods.
 

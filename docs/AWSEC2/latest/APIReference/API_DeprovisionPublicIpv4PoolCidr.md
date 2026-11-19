@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deprovisi
 ---
 
 # DeprovisionPublicIpv4PoolCidr
-<a name="API_DeprovisionPublicIpv4PoolCidr"></a>
 
 Deprovision a CIDR from a public IPv4 pool.
 

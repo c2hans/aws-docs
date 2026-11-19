@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configu
 ---
 
 # Configurable values
-<a name="configurable-values"></a>
 
 You can set the value of the following broker configuration options by modifying the broker configuration file in the AWS Management Console.
 

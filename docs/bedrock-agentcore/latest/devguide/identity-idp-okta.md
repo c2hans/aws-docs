@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Okta
-<a name="identity-idp-okta"></a>
 
 Okta can be configured as an identity provider for accessing AgentCore Gateway and Runtime, or an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate and authorize agent users with Okta as the identity provider and authorization server, or your agents to obtain credentials to access resources authorized by Okta.
 

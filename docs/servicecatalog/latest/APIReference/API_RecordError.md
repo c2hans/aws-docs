@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_R
 ---
 
 # RecordError
-<a name="API_RecordError"></a>
 
 The error code and description resulting from an operation.
 

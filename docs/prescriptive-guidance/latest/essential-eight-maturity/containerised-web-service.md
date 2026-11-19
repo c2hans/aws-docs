@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Workload example: Containerised web service
-<a name="containerised-web-service"></a>
 
 This workload is an example of [Theme 2: Manage immutable infrastructure through secure pipelines](theme-2.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of AWS services used while running this solution. As of August 2026, costs primarily depend on the resources used, data processed, transferred, and stored.
 

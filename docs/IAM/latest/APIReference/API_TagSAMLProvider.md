@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagSAMLProvi
 ---
 
 # TagSAMLProvider
-<a name="API_TagSAMLProvider"></a>
 
 Adds one or more tags to a Security Assertion Markup Language (SAML) identity provider. For more information about these providers, see [About SAML 2.0-based federation ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html). If a tag with the same key name already exists, then that tag is overwritten with the new value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-iam-cred
 ---
 
 # IAM credentials
-<a name="jdbc-v3-driver-iam-credentials"></a>
 
 You can use your IAM credentials with the JDBC driver to connect to Amazon Athena by setting the following connection parameters.
 

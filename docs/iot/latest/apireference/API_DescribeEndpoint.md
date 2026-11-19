@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndp
 ---
 
 # DescribeEndpoint
-<a name="API_DescribeEndpoint"></a>
 
 Returns or creates a unique endpoint specific to the AWS account making the call.
 

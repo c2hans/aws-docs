@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListEvent
 ---
 
 # ListEventLogConfigurations
-<a name="API_ListEventLogConfigurations"></a>
 
 List all event log configurations for an account.
 

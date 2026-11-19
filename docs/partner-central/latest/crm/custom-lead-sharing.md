@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/custom-lead-s
 ---
 
 # Lead sharing
-<a name="custom-lead-sharing"></a>
 
 ## How AWS shares leads
 <a name="how-aws-shares-leads"></a>

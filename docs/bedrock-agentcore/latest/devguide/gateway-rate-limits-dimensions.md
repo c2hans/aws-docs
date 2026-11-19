@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Rate limit dimensions
-<a name="gateway-rate-limits-dimensions"></a>
 
 Dimension keys determine how the gateway groups traffic into rate limit buckets. Each dimension key references a value from the request context. The gateway resolves these values at runtime to find the matching rate limit entry.
 

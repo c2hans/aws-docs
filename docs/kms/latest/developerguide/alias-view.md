@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-view.htm
 ---
 
 # Find the alias name and alias ARN for a KMS key
-<a name="alias-view"></a>
 
 Aliases make it easy to recognize KMS keys in the AWS KMS console. You can view the aliases for a KMS key in the AWS KMS console or by using the [ListAliases](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListAliases.html) operation. The [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation, which returns the properties of a KMS key, does not include aliases.
 

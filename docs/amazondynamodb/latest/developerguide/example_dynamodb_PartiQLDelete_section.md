@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Delete DynamoDB data using PartiQL DELETE statements with an AWS SDK
-<a name="example_dynamodb_PartiQLDelete_section"></a>
 
 The following code example shows how to delete data using PartiQL DELETE statements.
 

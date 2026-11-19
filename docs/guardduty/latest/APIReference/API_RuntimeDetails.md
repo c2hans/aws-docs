@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Runtim
 ---
 
 # RuntimeDetails
-<a name="API_RuntimeDetails"></a>
 
 Information about the process and any required context values for a specific finding.
 

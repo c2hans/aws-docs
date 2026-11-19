@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/codin
 ---
 
 # Set up OpenTelemetry for OpenAI Codex
-<a name="coding-agents-codex"></a>
 
 OpenAI Codex emits OpenTelemetry (OTel) metrics about token usage, per-turn latency, API requests, tool calls, and approvals. When you send these metrics to Amazon CloudWatch, they populate the Codex tab of the Coding Agent Insights dashboards. For more information about the dashboards, see [Coding Agent Insights](coding-agents-insights.md).
 

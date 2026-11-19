@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 3.7 Sustainability plan
-<a name="sustainability"></a>
 
 ## Overview
 <a name="sustainability-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Availa
 ---
 
 # AvailabilityZone
-<a name="API_AvailabilityZone"></a>
 
 Contains Availability Zone information.
 

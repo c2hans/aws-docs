@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FailoverRout
 ---
 
 # FailoverRouterInputProtocolConfiguration
-<a name="API_FailoverRouterInputProtocolConfiguration"></a>
 
 Protocol configuration settings for failover router inputs.
 

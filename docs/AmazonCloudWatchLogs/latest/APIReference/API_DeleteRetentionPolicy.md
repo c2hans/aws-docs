@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteRetentionPolicy
-<a name="API_DeleteRetentionPolicy"></a>
 
 Deletes the specified retention policy.
 

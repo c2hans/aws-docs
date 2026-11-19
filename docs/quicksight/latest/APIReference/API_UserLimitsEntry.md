@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UserL
 ---
 
 # UserLimitsEntry
-<a name="API_UserLimitsEntry"></a>
 
 Identifies a user for the `BatchDescribeUserLimits` operation.
 

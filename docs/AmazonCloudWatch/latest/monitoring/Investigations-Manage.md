@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Manage your current investigations
-<a name="Investigations-Manage"></a>
 
 You can view a list of your current investigations, end active investigations, re-open archived investigations, rename, and delete investigations. You can take these actions on individual investigations, or in bulk.
 

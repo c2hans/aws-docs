@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ResponseStream
-<a name="API_runtime_ResponseStream"></a>
 
 Definition of content in the response stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableB
 ---
 
 # TableBucketMaintenanceSettings
-<a name="API_s3Buckets_TableBucketMaintenanceSettings"></a>
 
 Contains details about the maintenance settings for the table bucket.
 

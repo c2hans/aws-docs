@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateOpsMetadata
-<a name="API_UpdateOpsMetadata"></a>
 
  AWS Systems Manager calls this API operation when you edit OpsMetadata in Application Manager.
 

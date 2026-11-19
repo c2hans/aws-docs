@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteS
 ---
 
 # DeleteStepDetails
-<a name="API_DeleteStepDetails"></a>
 
 The name of the step, used to identify the delete step.
 

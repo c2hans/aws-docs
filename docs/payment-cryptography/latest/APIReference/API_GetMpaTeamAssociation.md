@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetMpaTeamAssociation
-<a name="API_GetMpaTeamAssociation"></a>
 
 Returns the Multi-Party Approval (MPA) team association for a protected operation.
 

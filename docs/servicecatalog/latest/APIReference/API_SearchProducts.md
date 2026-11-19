@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # SearchProducts
-<a name="API_SearchProducts"></a>
 
 Gets information about the products to which the caller has access.
 

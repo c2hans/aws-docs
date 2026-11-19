@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskFil
 ---
 
 # TaskFilter
-<a name="API_TaskFilter"></a>
 
 You can use API filters to narrow down the list of resources returned by `ListTasks`. For example, to retrieve all tasks on a source location, you can use `ListTasks` with filter name `LocationId` and `Operator Equals` with the ARN for the location.
 

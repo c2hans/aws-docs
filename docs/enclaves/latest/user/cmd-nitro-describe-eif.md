@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/cmd-nitro-describe-
 ---
 
 # nitro-cli describe-eif
-<a name="cmd-nitro-describe-eif"></a>
 
 Describes the specified enclave image file (`.eif`). The output is a static description of the enclave image file that includes the enclave image file version, build measurements, signing certificate information, the result of the CRC and signature check, and the metadata added at build time.
 

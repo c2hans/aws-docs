@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/pa
 ---
 
 # Pagination
-<a name="pagination"></a>
 
 Many AWS operations return paginated results when the payload is too large to return in a single response. The AWS SDK for Kotlin includes [extensions](https://kotlinlang.org/docs/extensions.html) to the service client interface that auto paginate the results for you. You only have to write the code that processes the results.
 

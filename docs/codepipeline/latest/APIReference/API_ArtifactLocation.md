@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Art
 ---
 
 # ArtifactLocation
-<a name="API_ArtifactLocation"></a>
 
 Represents information about the location of an artifact.
 

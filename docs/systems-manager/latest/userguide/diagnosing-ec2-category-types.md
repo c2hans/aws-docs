@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/diagnos
 ---
 
 # Categories of diagnosable unmanaged EC2 instance issues
-<a name="diagnosing-ec2-category-types"></a>
 
 This topic lists the major categories of EC2 management issues, and the specific issues in each category, that Systems Manager can help you diagnose and remediate. Note that for some of the issues, Systems Manager can identify the issue, but not provide automatic remediation. In those cases, the Systems Manager console directs you to information to help you manually resolve an issue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/i
 ---
 
 # Using job execution roles with Amazon EMR on EKS
-<a name="iam-execution-role"></a>
 
 To use the `StartJobRun` command to submit a job run on an EKS cluster, you must first onboard a job execution role to be used with a virtual cluster. For more information, see [Create a job execution role](creating-job-execution-role.md) in [Setting up Amazon EMR on EKS](setting-up.md). You can also follow the instructions in the [Create IAM Role for job execution](https://www.eksworkshop.com/advanced/430_emr_on_eks/prereqs/#create-iam-role-for-job-execution) section of the Amazon EMR on EKS Workshop.
 

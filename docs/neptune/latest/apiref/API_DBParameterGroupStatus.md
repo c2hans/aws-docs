@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBParameterGro
 ---
 
 # DBParameterGroupStatus
-<a name="API_DBParameterGroupStatus"></a>
 
 The status of the DB parameter group.
 

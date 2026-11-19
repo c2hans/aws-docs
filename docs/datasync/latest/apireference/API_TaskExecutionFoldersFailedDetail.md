@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskExe
 ---
 
 # TaskExecutionFoldersFailedDetail
-<a name="API_TaskExecutionFoldersFailedDetail"></a>
 
 The number of directories that DataSync fails to list, prepare, transfer, verify, and delete during your task execution.
 

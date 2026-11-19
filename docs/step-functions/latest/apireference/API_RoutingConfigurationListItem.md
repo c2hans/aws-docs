@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_R
 ---
 
 # RoutingConfigurationListItem
-<a name="API_RoutingConfigurationListItem"></a>
 
 Contains details about the routing configuration of a state machine alias. In a routing configuration, you define an array of objects that specify up to two state machine versions. You also specify the percentage of traffic to be routed to each version.
 

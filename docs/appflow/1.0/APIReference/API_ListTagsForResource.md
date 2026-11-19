@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ListTagsFor
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
  Retrieves the tags that are associated with a specified flow.
 

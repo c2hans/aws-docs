@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # Group
-<a name="API_Group"></a>
 
  The object containing information about distinct imports or groups for Strategy Recommendations.
 

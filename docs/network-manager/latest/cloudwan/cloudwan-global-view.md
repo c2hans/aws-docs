@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View AWS Cloud WAN global network information
-<a name="cloudwan-global-view"></a>
 
 View details about a Cloud WAN global network. On the Details page of the global network you can add or modify tags as needed.
 

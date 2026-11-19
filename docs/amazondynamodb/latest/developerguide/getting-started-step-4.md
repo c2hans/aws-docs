@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/get
 ---
 
 # Step 4: Update data in a DynamoDB table
-<a name="getting-started-step-4"></a>
 
 In this step, you update an item that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can use the DynamoDB console or the AWS CLI to update the `AlbumTitle` of an item in the `Music` table by specifying `Artist`, `SongTitle`, and the updated `AlbumTitle`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/endpoints.html
 ---
 
 # Configuring client endpoints in the AWS SDK for Rust
-<a name="endpoints"></a>
 
 When the AWS SDK for Rust calls an AWS service, one of its first steps is to determine where to route the request. This process is known as endpoint resolution.
 

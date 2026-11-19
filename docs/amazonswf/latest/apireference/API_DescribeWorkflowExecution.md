@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Descri
 ---
 
 # DescribeWorkflowExecution
-<a name="API_DescribeWorkflowExecution"></a>
 
 Returns information about the specified workflow execution including its type and some statistics.
 

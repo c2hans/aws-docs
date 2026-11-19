@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListPipelines
-<a name="API_ListPipelines"></a>
 
 Lists pipelines in a workspace. To get complete details about a pipeline, use [DescribePipeline](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribePipeline.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Grounding and Retrieval Augmented Generation
-<a name="grounding-and-rag"></a>
 
 Trust, accuracy, and explainability are essential to deploying AI systems in enterprise production environments. Foundation models (FMs) offer impressive general capabilities. However, they're trained on large-scale public corpora and often lack awareness of proprietary data, business rules, or recent changes.
 

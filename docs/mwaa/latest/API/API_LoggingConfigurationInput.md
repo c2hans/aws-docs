@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_LoggingConfiguration
 ---
 
 # LoggingConfigurationInput
-<a name="API_LoggingConfigurationInput"></a>
 
 Defines the Apache Airflow log types to send to CloudWatch Logs.
 

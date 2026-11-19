@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-metadata.html
 ---
 
 # `cdk metadata`
-<a name="ref-cli-cmd-metadata"></a>
 
 Display metadata associated with a CDK stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # How to migrate your code from AWS SDK for Java 1.x to 2.x
-<a name="migration-howto"></a>
 
 You can migrate your existing SDK for Java 1.x applications in a couple ways.
 

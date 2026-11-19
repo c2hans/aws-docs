@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ResultField
-<a name="API_ResultField"></a>
 
 Contains one field from one log event returned by a CloudWatch Logs Insights query, along with the value of that field.
 

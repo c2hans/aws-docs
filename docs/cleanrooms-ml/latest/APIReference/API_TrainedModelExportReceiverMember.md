@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelExportReceiverMember
-<a name="API_TrainedModelExportReceiverMember"></a>
 
 Provides information about the member who will receive trained model exports.
 

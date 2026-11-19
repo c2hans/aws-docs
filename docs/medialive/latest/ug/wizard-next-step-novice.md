@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/wizard-next-step-nov
 ---
 
 # Next steps—novice users
-<a name="wizard-next-step-novice"></a>
 
 If you are new to the world of video streaming and have fairly modest requirements, you might find that the workflow wizard implements all the features you need, and that the **Workflow Details** page gives you the monitoring details and runtime controls you require.
 

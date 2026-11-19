@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/databas
 ---
 
 # Database authentication with Amazon Aurora
-<a name="database-authentication"></a>
 
  Amazon Aurora supports several ways to authenticate database users.
 

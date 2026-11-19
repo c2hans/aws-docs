@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-share-encode
 ---
 
 # Sharing encodes among outputs
-<a name="feature-share-encode"></a>
 
 You can share a single encode among several outputs within one MediaLive channel. You can clone an encode so that it serves as the basis for a new encode within the channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide covered architectural and organizational patterns, trade-offs for key decisions, and governance concerns related to micro-frontends. The following tables summarize the trade-offs of practices discussed in this guide across these dimensions:
 + **Autonomy** ‒ Each micro-frontend team's ability to independently evolve their implementation and release to end users.

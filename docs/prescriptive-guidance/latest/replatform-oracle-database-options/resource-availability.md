@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Resource availability
-<a name="resource-availability"></a>
 
 Your replatforming choice might depend on the AWS Region you are using and the resources required by your business. Both Amazon RDS for Oracle and Amazon RDS Custom for Oracle use AWS services, but not all of the services are available in all AWS Regions. AWS services also vary in supported engine versions and instance classes. Amazon RDS for Oracle provides more choices in AWS Regions and instance classes than Amazon RDS Custom for Oracle. This is because Amazon RDS Custom for Oracle is still in the process of expanding.
 

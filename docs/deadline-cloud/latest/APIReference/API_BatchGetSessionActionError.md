@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetSessionActionError
-<a name="API_BatchGetSessionActionError"></a>
 
 The error details for a session action that could not be retrieved in a batch get operation.
 

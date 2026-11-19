@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/hybrid.html
 ---
 
 # Using PennyLane with Amazon Braket
-<a name="hybrid"></a>
 
 Hybrid algorithms are algorithms that contain both classical and quantum instructions. The classical instructions are ran on classical hardware (an EC2 instance or your laptop), and the quantum instructions are ran either on a simulator or on a quantum computer. We recommend that you run hybrid algorithms using the Hybrid Jobs feature. For more information, see [When to use Amazon Braket Jobs](braket-jobs.md#braket-jobs-use).
 

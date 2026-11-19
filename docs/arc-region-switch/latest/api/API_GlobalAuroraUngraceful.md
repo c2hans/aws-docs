@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GlobalA
 ---
 
 # GlobalAuroraUngraceful
-<a name="API_GlobalAuroraUngraceful"></a>
 
 Configuration for an Aurora global database execution block in ungraceful mode.
 

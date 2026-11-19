@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Bu
 ---
 
 # Button
-<a name="API_runtime_Button"></a>
 
 A button that appears on a response card show to the user.
 

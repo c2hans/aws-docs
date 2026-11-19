@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnNam
 ---
 
 # ColumnNamesMatchPattern
-<a name="dqdl-rule-types-ColumnNamesMatchPattern"></a>
 
 Checks whether the names of all columns in the primary dataset match the given regular expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.h
 ---
 
 # Block
-<a name="API_Block"></a>
 
 A `Block` represents items that are recognized in a document within a group of pixels close to each other. The information returned in a `Block` object depends on the type of operation. In text detection for documents (for example [DetectDocumentText](API_DetectDocumentText.md)), you get information about the detected words and lines of text. In text analysis (for example [AnalyzeDocument](API_AnalyzeDocument.md)), you can also get information about the fields, tables, and selection elements that are detected in the document.
 

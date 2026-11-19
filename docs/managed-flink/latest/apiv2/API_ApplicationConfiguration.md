@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationConfiguration
-<a name="API_ApplicationConfiguration"></a>
 
 Specifies the creation parameters for a Managed Service for Apache Flink application.
 

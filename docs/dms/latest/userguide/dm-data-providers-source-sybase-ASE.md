@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-data-providers-s
 ---
 
 # Using a SAP ASE (Sybase ASE) database as a source in AWS DMS Schema Conversion
-<a name="dm-data-providers-source-sybase-ASE"></a>
 
 You can use SAP ASE (Sybase ASE) databases as a migration source in DMS Schema Conversion.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_W
 ---
 
 # WebContentFilteringPolicy
-<a name="API_WebContentFilteringPolicy"></a>
 
 The policy that specifies which URLs end users are allowed to access or which URLs or domain categories they are restricted from accessing for enhanced security.
 

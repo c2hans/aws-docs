@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Ignor
 ---
 
 # IgnoreNearExpected
-<a name="API_IgnoreNearExpected"></a>
 
 Configuration for threshold settings that determine when values near expected values should be ignored during anomaly detection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListCust
 ---
 
 # ListCustomModels
-<a name="API_ListCustomModels"></a>
 
 Returns a list of the custom models that you have created with the `CreateModelCustomizationJob` operation.
 

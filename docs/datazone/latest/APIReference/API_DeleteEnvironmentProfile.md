@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteE
 ---
 
 # DeleteEnvironmentProfile
-<a name="API_DeleteEnvironmentProfile"></a>
 
 Deletes an environment profile in Amazon DataZone.
 

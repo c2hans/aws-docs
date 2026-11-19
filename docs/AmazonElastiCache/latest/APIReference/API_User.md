@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # User
-<a name="API_User"></a>
 
 ## Contents
 <a name="API_User_Contents"></a>

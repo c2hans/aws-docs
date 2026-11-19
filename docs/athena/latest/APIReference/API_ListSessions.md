@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListSessi
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Lists the sessions in a workgroup that are in an active state like `CREATING`, `CREATED`, `IDLE`, or `BUSY`. Newer sessions are listed first; older sessions are listed later.
 

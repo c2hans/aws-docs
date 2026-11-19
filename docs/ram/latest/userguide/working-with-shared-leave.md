@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared
 ---
 
 # Leaving a resource share
-<a name="working-with-shared-leave"></a>
 
 If you no longer need access to resources that are shared with you, you can leave a resource share at any time. When you leave a resource share, you lose access to the shared resources.
 

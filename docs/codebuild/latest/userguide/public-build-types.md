@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/public-build-
 ---
 
 # Public build data types
-<a name="public-build-types"></a>
 
 **Note**
 The CodeBuild public build API is not contained in the AWS CLI or AWS SDKs.

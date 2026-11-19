@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # FlowFilter
-<a name="API_FlowFilter"></a>
 
 Defines the scope a flow operation. You can use up to 20 filters to configure a single flow operation.
 

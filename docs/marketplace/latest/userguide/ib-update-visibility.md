@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ib-update-v
 ---
 
 # Updating EC2 Image Builder product visibility
-<a name="ib-update-visibility"></a>
 
 As an AWS Marketplace seller, you can update your product visibility to change which buyers can view your product in AWS Marketplace. If the visibility status is set to **Public**, your product is visible to all AWS Marketplace buyers. If your product visibility is set to **Limited**, your product is visible only to the AWS account IDs that you allowlist. You can also manage and update this allowlist of AWS account IDs that can see your product. The following sections show you how to update your product visibility and **Limited** visibility allowlist.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationS3LogsConfiguration
-<a name="API_OrganizationS3LogsConfiguration"></a>
 
 Describes whether S3 data event logs will be automatically enabled for new members of the organization.
 

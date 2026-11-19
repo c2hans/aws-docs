@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Call an API method with a compressed payload in API Gateway
-<a name="api-gateway-make-request-with-compressed-payload"></a>
 
 To make an API request with a compressed payload, the client must set the `Content-Encoding` header with one of the [supported content codings](api-gateway-enable-compression.md#api-gateway-supported-content-encodings).
 

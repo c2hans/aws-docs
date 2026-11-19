@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetPartition.html
 ---
 
 # GetPartition
-<a name="API_GetPartition"></a>
 
 Retrieves information about a specified partition.
 

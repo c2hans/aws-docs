@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blo
 ---
 
 # Capacity Blocks for ML
-<a name="ec2-capacity-blocks"></a>
 
 Capacity Blocks for ML allow you to reserve GPU-based accelerated computing instances on a future date to support your short duration machine learning (ML) workloads. Instances that run inside a Capacity Block are automatically placed close together inside [ Amazon EC2 UltraClusters](https://aws.amazon.com/ec2/ultraclusters/), for low-latency, petabit-scale, non-blocking networking.
 

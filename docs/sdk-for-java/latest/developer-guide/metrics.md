@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/metr
 ---
 
 # Publish SDK metrics from the AWS SDK for Java 2.x
-<a name="metrics"></a>
 
 With the AWS SDK for Java 2.x you can collect metrics about the service clients and requests in your application, analyze the output in Amazon CloudWatch Logs, and then act on it.
 

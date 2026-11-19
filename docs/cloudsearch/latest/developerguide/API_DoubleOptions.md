@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Do
 ---
 
 # DoubleOptions
-<a name="API_DoubleOptions"></a>
 
 ## Description
 <a name="API_DoubleOptions_Description"></a>

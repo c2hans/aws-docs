@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/configguide/ready-c
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # General Information
-<a name="ready-cf-cg-gen"></a>
 
 **CPU-only and GPU-enabled**
 There are two processing architectures for AWS Elemental Server: CPU-only and GPU-enabled.

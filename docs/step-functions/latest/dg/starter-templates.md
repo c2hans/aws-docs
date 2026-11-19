@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/starter-templat
 ---
 
 # Deploy a state machine using a starter template for Step Functions
-<a name="starter-templates"></a>
 
 To deploy state machines for a variety of example use cases and patterns, you can choose one of the following starter templates in the [AWS Step Functions console](https://console.aws.amazon.com/states/home?region=us-east-1#/). These starter templates are ready-to-run sample projects that automatically create the workflow prototype and definition, and all related AWS resources for the project.
 

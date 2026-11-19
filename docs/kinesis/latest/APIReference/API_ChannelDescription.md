@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelD
 ---
 
 # ChannelDescription
-<a name="API_ChannelDescription"></a>
 
 Describes the configuration and current status of a channel.
 

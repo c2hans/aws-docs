@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateIcebergTabl
 ---
 
 # UpdateIcebergTableInput
-<a name="API_UpdateIcebergTableInput"></a>
 
 Contains the update operations to be applied to an existing Iceberg table inAWS Glue Data Catalog, defining the new state of the table metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # Migrating a Db2 for LUW database to Amazon EC2
-<a name="introduction"></a>
 
 *Feng Cai, Venkatesan Govindan, and Shunan Xiang, Amazon Web Services*
 

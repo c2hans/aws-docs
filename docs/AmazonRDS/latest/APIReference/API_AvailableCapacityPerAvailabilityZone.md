@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Availa
 ---
 
 # AvailableCapacityPerAvailabilityZone
-<a name="API_AvailableCapacityPerAvailabilityZone"></a>
 
 Contains the unused capacity of a DB capacity reservation in one Availability Zone.
 

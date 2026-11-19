@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GuardrailPolicyResult
-<a name="API_amazon-q-connect_GuardrailPolicyResult"></a>
 
 Per-policy guardrail assessment result. Captures which policy triggered, its outcome, and a policy-specific detail string.
 

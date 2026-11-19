@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # EngagementCustomerProjectDetails
-<a name="API_EngagementCustomerProjectDetails"></a>
 
 Provides comprehensive details about a customer project associated with an Engagement. This may include information such as project goals, timelines, and specific customer requirements.
 

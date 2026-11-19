@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_PutR
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Attaches a resource-based policy to an entity. Examples of an entity include: `AmiProduct` and `ContainerProduct`.
 

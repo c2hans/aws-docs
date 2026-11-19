@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailA
 ---
 
 # GetEmailAddressInsights
-<a name="API_GetEmailAddressInsights"></a>
 
 Provides validation insights about a specific email address, including syntax validation, DNS record checks, mailbox existence, and other deliverability factors.
 

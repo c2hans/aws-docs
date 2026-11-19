@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListFunctionEventI
 ---
 
 # ListFunctionEventInvokeConfigs
-<a name="API_ListFunctionEventInvokeConfigs"></a>
 
 Retrieves a list of configurations for asynchronous invocation for a Lambda Event Function. To retrieve more configurations, use the `Marker` parameter.
 

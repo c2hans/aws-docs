@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Cost and billing management best practices for AWS KMS
-<a name="cost"></a>
 
 AWS services offer the flexibility to manage your costs while meeting business requirements. This section covers pricing for key storage in AWS Key Management Service (AWS KMS) and provides recommendations to reduce costs, such as key caching. You can also review KMS key usage to identify additional opportunities to reduce costs.
 

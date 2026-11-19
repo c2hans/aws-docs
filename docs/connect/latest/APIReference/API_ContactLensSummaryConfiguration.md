@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactL
 ---
 
 # ContactLensSummaryConfiguration
-<a name="API_ContactLensSummaryConfiguration"></a>
 
 The conversational analytics summary configuration for a contact.
 

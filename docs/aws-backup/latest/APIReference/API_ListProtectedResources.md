@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListP
 ---
 
 # ListProtectedResources
-<a name="API_ListProtectedResources"></a>
 
 Returns an array of resources with recovery points created by AWS Backup (regardless of the recovery point's [status](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRecoveryPoint.html#Backup-DescribeRecoveryPoint-response-Status)), including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
 

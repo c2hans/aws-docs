@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainU
 ---
 
 # DomainUnitSummary
-<a name="API_DomainUnitSummary"></a>
 
 The summary of the domain unit.
 

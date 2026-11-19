@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Total
 ---
 
 # TotalAggregationOption
-<a name="API_TotalAggregationOption"></a>
 
 The total aggregation settings map of a field id.
 

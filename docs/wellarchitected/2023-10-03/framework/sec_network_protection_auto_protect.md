@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC05-BP03 Automate network protection
-<a name="sec_network_protection_auto_protect"></a>
 
  Automate protection mechanisms to provide a self-defending network based on threat intelligence and anomaly detection. For example, intrusion detection and prevention tools that can adapt to current threats and reduce their impact. A web application firewall is an example of where you can automate network protection, for example, by using the AWS WAF Security Automations solution ([https://github.com/awslabs/aws-waf-security-automations](https://github.com/awslabs/aws-waf-security-automations)) to automatically block requests originating from IP addresses associated with known threat actors.
 

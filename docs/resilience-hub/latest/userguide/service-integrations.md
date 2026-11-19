@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/service-
 ---
 
 # Working with other services
-<a name="service-integrations"></a>
 
 This section describes AWS services that interact with AWS Resilience Hub.
 

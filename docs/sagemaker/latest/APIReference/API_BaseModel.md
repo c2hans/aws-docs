@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BaseMo
 ---
 
 # BaseModel
-<a name="API_BaseModel"></a>
 
 Identifies the foundation model that was used as the starting point for model customization.
 

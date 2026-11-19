@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/automated-disc
 ---
 
 # Automated Sensitive Data Discovery - Accounts
-<a name="automated-discovery-accounts"></a>
 
 The Accounts resource for automated sensitive data discovery provides access to the status of automated sensitive data discovery for accounts that are centrally managed as an organization in Amazon Macie. If you're the Macie administrator for an organization, you can use this resource to check or change the status of automated sensitive data discovery for individual accounts in your organization. If you have a member account, you can use this resource to check the status of automated sensitive data discovery for your account. Contact your Macie administrator if you want to change the status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Calculati
 ---
 
 # CalculationStatistics
-<a name="API_CalculationStatistics"></a>
 
 Contains statistics for a notebook calculation.
 

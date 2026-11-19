@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/ppe-procedure-imag
 ---
 
 # Detecting personal protective equipment in an image
-<a name="ppe-procedure-image"></a>
 
 To detect Personal Protective Equipment (PPE) on persons in an image, use the [DetectProtectiveEquipment](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectProtectiveEquipment.html) non-storage API operation.
 

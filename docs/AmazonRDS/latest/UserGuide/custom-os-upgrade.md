@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-os-upg
 ---
 
 # RDS Custom for SQL Server Operating system updates
-<a name="custom-os-upgrade"></a>
 
 RDS Custom for SQL Server provides the following methods to apply operating system updates to your RDS Provided Engine Version (RPEV) instances:
 + *system-update maintenance actions*

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListProm
 ---
 
 # ListPromptRouters
-<a name="API_ListPromptRouters"></a>
 
 Retrieves a list of prompt routers.
 

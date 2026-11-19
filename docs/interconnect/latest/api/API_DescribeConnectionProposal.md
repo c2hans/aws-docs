@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_DescribeConn
 ---
 
 # DescribeConnectionProposal
-<a name="API_DescribeConnectionProposal"></a>
 
 Describes the details of a connection proposal generated at a partner's portal. This proposal is delivered in the form of an Activation Key.
 

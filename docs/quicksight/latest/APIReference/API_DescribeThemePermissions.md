@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeThemePermissions
-<a name="API_DescribeThemePermissions"></a>
 
 Describes the read and write permissions for a theme.
 

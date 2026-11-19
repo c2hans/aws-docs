@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateUser
-<a name="API_CreateUser"></a>
 
 Creates a new user in the user pool.
 

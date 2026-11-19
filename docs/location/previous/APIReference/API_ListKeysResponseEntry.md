@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListK
 ---
 
 # ListKeysResponseEntry
-<a name="API_ListKeysResponseEntry"></a>
 
 An API key resource listed in your AWS account.
 

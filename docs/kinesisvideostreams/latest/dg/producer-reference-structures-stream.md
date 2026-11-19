@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-r
 ---
 
 # Kinesis video stream structures
-<a name="producer-reference-structures-stream"></a>
 
 You can use the following structures to provide data to an instance of a Kinesis video stream.
 

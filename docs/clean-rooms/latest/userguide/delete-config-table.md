@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/delete-conf
 ---
 
 # Deleting a configured table
-<a name="delete-config-table"></a>
 
 You can delete a configured table that you own. This action cannot be undone and affects all related resources.
 

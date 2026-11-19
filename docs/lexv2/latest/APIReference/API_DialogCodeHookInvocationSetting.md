@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogCode
 ---
 
 # DialogCodeHookInvocationSetting
-<a name="API_DialogCodeHookInvocationSetting"></a>
 
 Settings that specify the dialog code hook that is called by Amazon Lex at a step of the conversation.
 

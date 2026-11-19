@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Deploy WebSocket APIs in API Gateway
-<a name="apigateway-set-up-websocket-deployment"></a>
 
  After creating your WebSocket API, you must deploy it to make it available for your users to invoke.
 

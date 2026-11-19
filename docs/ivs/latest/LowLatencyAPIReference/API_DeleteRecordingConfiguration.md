@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_De
 ---
 
 # DeleteRecordingConfiguration
-<a name="API_DeleteRecordingConfiguration"></a>
 
 Deletes the recording configuration for the specified ARN.
 

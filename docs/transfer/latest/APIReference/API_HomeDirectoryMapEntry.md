@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_HomeDir
 ---
 
 # HomeDirectoryMapEntry
-<a name="API_HomeDirectoryMapEntry"></a>
 
 Represents an object that contains entries and targets for `HomeDirectoryMappings`.
 

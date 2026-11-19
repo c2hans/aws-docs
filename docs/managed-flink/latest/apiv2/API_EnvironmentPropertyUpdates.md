@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Environme
 ---
 
 # EnvironmentPropertyUpdates
-<a name="API_EnvironmentPropertyUpdates"></a>
 
 Describes updates to the execution property groups for a Managed Service for Apache Flink application or a Studio notebook.
 

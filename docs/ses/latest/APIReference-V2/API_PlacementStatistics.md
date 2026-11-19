@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Placement
 ---
 
 # PlacementStatistics
-<a name="API_PlacementStatistics"></a>
 
 An object that contains inbox placement data for an email provider.
 

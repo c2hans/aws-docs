@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListProfileNotifications
-<a name="API_ListProfileNotifications"></a>
 
 List profile notifications.
 

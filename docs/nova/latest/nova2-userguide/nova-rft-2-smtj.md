@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-rft-2-s
 ---
 
 # Reinforcement fine-tuning (RFT) on Nova 2.0 on SageMaker Training Jobs
-<a name="nova-rft-2-smtj"></a>
 
 ## Overview
 <a name="nova-rft-overview"></a>

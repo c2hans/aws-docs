@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetE
 ---
 
 # GetExportTask
-<a name="API_GetExportTask"></a>
 
 Retrieves a specified export task.
 

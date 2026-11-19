@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DeleteConfigurationSetEventDestination
-<a name="API_DeleteConfigurationSetEventDestination"></a>
 
 Delete an event destination.
 

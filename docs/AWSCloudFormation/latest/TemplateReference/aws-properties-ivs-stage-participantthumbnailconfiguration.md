@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::Stage ParticipantThumbnailConfiguration
-<a name="aws-properties-ivs-stage-participantthumbnailconfiguration"></a>
 
 Object specifying a configuration of thumbnails for recorded video from an individual participant.
 

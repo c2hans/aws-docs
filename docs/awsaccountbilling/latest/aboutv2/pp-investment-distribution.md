@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/pp-inve
 ---
 
 # Understanding investment distribution
-<a name="pp-investment-distribution"></a>
 
 Investment distribution assigns a percentage of the total investment amount to each eligible investment account on your Private Pricing contract. You configure distribution percentages to control how much each investment account receives.
 + Each investment account receives a percentage of the total investment amount.

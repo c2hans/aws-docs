@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala GlueArgParser APIs
-<a name="glue-etl-scala-apis-glue-util-glueargparser"></a>
 
 **Package: com.amazonaws.services.glue.util**
 

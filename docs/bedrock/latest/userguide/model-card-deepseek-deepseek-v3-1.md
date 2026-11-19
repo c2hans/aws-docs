@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deep
 ---
 
 # DeepSeek-V3.1
-<a name="model-card-deepseek-deepseek-v3-1"></a>
 
 ## ![DeepSeek logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/deepseek.png) DeepSeek — DeepSeek-V3.1
 <a name="model-card-deepseek-deepseek-v3-1-header"></a>

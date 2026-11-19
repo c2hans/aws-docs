@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Sc
 ---
 
 # ScopeDetails
-<a name="API_ScopeDetails"></a>
 
 Details about the scope of the notifications such as the affected resources.
 

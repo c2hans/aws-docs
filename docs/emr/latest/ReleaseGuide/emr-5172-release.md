@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5172-release
 ---
 
 # Amazon EMR release 5.17.2
-<a name="emr-5172-release"></a>
 
 ## 5.17.2 application versions
 <a name="emr-5172-app-versions"></a>

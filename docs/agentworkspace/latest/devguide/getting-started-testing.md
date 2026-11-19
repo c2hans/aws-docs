@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/getting-s
 ---
 
 # Test your application for Connect Customer agent workspace locally
-<a name="getting-started-testing"></a>
 
 Once you have a minimal version of the app that you want to use in the Connect Customer agent workspace with the Connect Customer SDK that you want to test in the agent workspace, run your app locally and create an application in the AWS console with an * AccessUrl* using the localhost endpoint, like `http://localhost:3000` .
 

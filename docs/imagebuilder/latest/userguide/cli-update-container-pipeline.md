@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/cli-update
 ---
 
 # Update container image pipelines from the AWS CLI
-<a name="cli-update-container-pipeline"></a>
 
 To update a container image pipeline, use a JSON file as input to the [update-image-pipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/update-image-pipeline.html) command in the AWS CLI. In AWS Tools for PowerShell, run the [Update-EC2IBImagePipeline](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-EC2IBImagePipeline.html) cmdlet. To configure the update, you must have Amazon Resource Names (ARNs) to reference the following existing resources:
 + Image pipeline to update

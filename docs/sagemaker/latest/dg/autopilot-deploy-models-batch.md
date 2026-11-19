@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-deploy-mod
 ---
 
 # Run batch inference jobs
-<a name="autopilot-deploy-models-batch"></a>
 
 Batch inferencing, also known as offline inferencing, generates model predictions on a batch of observations. Batch inference is a good option for large datasets or if you don't need an immediate response to a model prediction request. By contrast, online inference ([real-time inferencing](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-deploy-models.html#autopilot-deploy-models-realtime)) generates predictions in real time. You can make batch inferences from an Autopilot model using the [SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/), the Autopilot user interface (UI), the [AWS SDK for Python (boto3)](https://aws.amazon.com/sdk-for-python/), or the AWS Command Line Interface ([AWS CLI](https://docs.aws.amazon.com/cli/)).
 

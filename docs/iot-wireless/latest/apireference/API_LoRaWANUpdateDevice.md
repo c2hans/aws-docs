@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANUpdateDevice
-<a name="API_LoRaWANUpdateDevice"></a>
 
 LoRaWAN object for update functions.
 

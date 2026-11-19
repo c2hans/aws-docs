@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds
 ---
 
 # Getting started with Kinesis Data Streams for Amazon DynamoDB
-<a name="kds_gettingstarted"></a>
 
 This section describes how to use Kinesis Data Streams for Amazon DynamoDB tables with the Amazon DynamoDB console, the AWS Command Line Interface (AWS CLI), and the API.
 

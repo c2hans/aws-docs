@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-logi
 ---
 
 # Login issues with Quick Sight
-<a name="troubleshoot-login"></a>
 
 Use the following section to help you troubleshoot login and access issues with the Quick Sight console.
 

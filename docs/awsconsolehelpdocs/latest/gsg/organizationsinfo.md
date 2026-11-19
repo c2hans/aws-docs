@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/organizati
 ---
 
 # Accessing organization information in the AWS Management Console
-<a name="organizationsinfo"></a>
 
 If you have the necessary permissions, you can access information about your AWS organizations from the console.
 

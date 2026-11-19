@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 ---
 
 # Delete tags from a keyspace
-<a name="Tagging.Operations.existing.keyspace.drop"></a>
 
 ------
 #### [ Console ]

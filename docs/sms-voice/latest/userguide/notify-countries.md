@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-countr
 ---
 
 # Notify supported countries
-<a name="notify-countries"></a>
 
 The countries available for Notify messaging depend on your Notify configuration's tier:
 + **Basic tier** – A curated set of countries optimized for reliability and quality.

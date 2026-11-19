@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-targ
 ---
 
 # Managing targets in EventBridge Scheduler
-<a name="managing-targets"></a>
 
  The following topics describe how to use templated, and universal targets with EventBridge Scheduler, and provides a list of supported AWS services that you can configure using EventBridge Scheduler's universal target parameter.
 

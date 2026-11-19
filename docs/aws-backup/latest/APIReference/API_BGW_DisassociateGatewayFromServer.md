@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_D
 ---
 
 # DisassociateGatewayFromServer
-<a name="API_BGW_DisassociateGatewayFromServer"></a>
 
 Disassociates a backup gateway from the specified server. After the disassociation process finishes, the gateway can no longer access the virtual machines on the server.
 

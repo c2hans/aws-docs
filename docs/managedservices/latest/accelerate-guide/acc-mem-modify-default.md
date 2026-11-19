@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Modifying the Accelerate alarm default configuration
-<a name="acc-mem-modify-default"></a>
 
 While you can't modify the default configuration profile, you can provide overrides to the defaults by specifying a configuration block in your customization profile with the same **ConfigurationID** as the default configuration block. If you do this, your whole configuration block overwrites the default configuration block for which tagging configuration to apply.
 

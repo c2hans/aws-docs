@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreateDataProtectionSettings
-<a name="API_CreateDataProtectionSettings"></a>
 
 Creates a data protection settings resource that can be associated with a web portal.
 

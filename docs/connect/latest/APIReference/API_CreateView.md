@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateVi
 ---
 
 # CreateView
-<a name="API_CreateView"></a>
 
 Creates a new view with the possible status of `SAVED` or `PUBLISHED`.
 

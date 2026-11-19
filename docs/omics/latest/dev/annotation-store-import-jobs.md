@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/annotation-store-import
 ---
 
 # Creating import jobs for HealthOmics annotation stores
-<a name="annotation-store-import-jobs"></a>
 
 **Important**
 AWS HealthOmics variant stores and annotation stores are no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS HealthOmics variant store and annotation store availability change](variant-store-availability-change.md).

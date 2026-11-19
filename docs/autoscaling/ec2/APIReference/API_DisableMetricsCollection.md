@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Disable
 ---
 
 # DisableMetricsCollection
-<a name="API_DisableMetricsCollection"></a>
 
 Disables group metrics collection for the specified Auto Scaling group.
 

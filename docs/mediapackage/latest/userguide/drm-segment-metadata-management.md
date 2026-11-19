@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/drm-segmen
 ---
 
 # Managing DRM segment metadata in AWS Elemental MediaPackage
-<a name="drm-segment-metadata-management"></a>
 
 AWS Elemental MediaPackage includes DRM segment metadata boxes (SEIG and SGPD) in CMAF container segments by default. These boxes contain key rotation metadata that helps players manage DRM key changes during playback. However, some devices and players don't support these metadata boxes, which can cause compatibility issues.
 

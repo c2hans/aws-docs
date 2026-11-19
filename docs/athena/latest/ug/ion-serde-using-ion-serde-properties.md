@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ion-serde-using-ion-ser
 ---
 
 # Amazon Ion SerDe property reference
-<a name="ion-serde-using-ion-serde-properties"></a>
 
 This topic contains information about the SerDe properties for `CREATE TABLE` statements in Athena. For more information and examples of Amazon Ion SerDe property usage, see [SerDe properties](https://github.com/amzn/ion-hive-serde/blob/master/docs/serde-properties.md) in the Amazon Ion Hive SerDe documentation on [GitHub](https://github.com/amzn/ion-hive-serde/tree/master/docs).
 

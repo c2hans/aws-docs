@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Game server processes
-<a name="game-server-processes"></a>
 
  The following diagram illustrates a typical game server architecture. It describes the logical relationship between a game server instance and the game server processes that host game sessions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-srv.htm
 ---
 
 # `/srv` (Server Payload)
-<a name="filesystem-slash-srv"></a>
 
  The `/srv` directory is managed by the administrator of the system and Amazon Linux 2023 places no restrictions on how this directory is organized.
 

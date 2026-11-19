@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Implementation
-<a name="implementation"></a>
 
 In this strategy, *architecture* refers to the technical implementation of your encryption standards. This section includes information about how AWS services, such as [AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) and [AWS CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html), can help you implement your data-at-rest encryption strategy according to your policy and standards.
 

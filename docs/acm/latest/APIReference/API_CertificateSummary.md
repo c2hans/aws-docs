@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateS
 ---
 
 # CertificateSummary
-<a name="API_CertificateSummary"></a>
 
 This structure is returned in the response object of [ListCertificates](API_ListCertificates.md) action.
 

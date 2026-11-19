@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Define your specific problem
-<a name="raiuc01"></a>
 
 | RAIUC01: How do you define the specific problem you are trying to solve? |
 | --- |

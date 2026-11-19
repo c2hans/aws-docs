@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/support-tool-s
 ---
 
 # AWS CloudHSM Client SDK 5 support tool
-<a name="support-tool-sdk5"></a>
 
 The script for AWS CloudHSM Client SDK 5 extracts the following information:
 + The configuration file for the Client SDK 5 component

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFleetHistory
-<a name="API_DescribeFleetHistory"></a>
 
 Describes the events for the specified EC2 Fleet during the specified time.
 

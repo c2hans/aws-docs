@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/applications-m2-defi
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # AWS Mainframe Modernization application definition reference
-<a name="applications-m2-definition"></a>
 
 In AWS Mainframe Modernization, you configure migrated mainframe applications in an application definition JSON file, which is specific to the runtime engine you choose. An application definition contains both general information and engine-specific information. This topic describes both the AWS Transform for mainframe and Rocket Software (formerly Micro Focus) application definitions and identifies all required and optional elements.
 

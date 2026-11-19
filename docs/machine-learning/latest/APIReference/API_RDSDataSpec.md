@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RDSDataSpec
-<a name="API_RDSDataSpec"></a>
 
 The data specification of an Amazon Relational Database Service (Amazon RDS) `DataSource`.
 

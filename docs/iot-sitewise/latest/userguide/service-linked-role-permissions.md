@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/service-li
 ---
 
 # Service-linked role permissions for AWS IoT SiteWise
-<a name="service-linked-role-permissions"></a>
 
 AWS IoT SiteWise uses the service-linked role named **AWSServiceRoleForIoTSiteWise**. AWS IoT SiteWise uses this service-linked role to deploy SiteWise Edge gateways (which run on AWS IoT Greengrass) and perform logging.
 

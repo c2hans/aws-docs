@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # MemberIndex
-<a name="API_MemberIndex"></a>
 
 An index is the data store used by AWS Resource Explorer to hold information about your AWS resources that the service discovers.
 

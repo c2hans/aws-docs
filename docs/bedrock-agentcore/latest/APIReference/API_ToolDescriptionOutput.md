@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolDescriptionOutput
-<a name="API_ToolDescriptionOutput"></a>
 
 The output for a single tool description recommendation.
 

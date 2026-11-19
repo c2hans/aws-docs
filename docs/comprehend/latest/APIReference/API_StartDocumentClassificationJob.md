@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Start
 ---
 
 # StartDocumentClassificationJob
-<a name="API_StartDocumentClassificationJob"></a>
 
 Starts an asynchronous document classification job using a custom classification model. Use the `DescribeDocumentClassificationJob` operation to track the progress of the job.
 

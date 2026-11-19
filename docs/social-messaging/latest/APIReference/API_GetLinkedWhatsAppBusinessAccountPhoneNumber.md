@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # GetLinkedWhatsAppBusinessAccountPhoneNumber
-<a name="API_GetLinkedWhatsAppBusinessAccountPhoneNumber"></a>
 
 Retrieve the WABA account id and phone number details of a WhatsApp business account phone number.
 

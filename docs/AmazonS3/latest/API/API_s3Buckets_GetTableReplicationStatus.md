@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableReplicationStatus
-<a name="API_s3Buckets_GetTableReplicationStatus"></a>
 
 Retrieves the replication status for a table, including the status of replication to each destination. This operation provides visibility into replication health and progress.
 

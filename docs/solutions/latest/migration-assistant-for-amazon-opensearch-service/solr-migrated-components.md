@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Migrated components
-<a name="solr-migrated-components"></a>
 
 The following table summarizes what the solution migrates from an Apache Solr source and what you must handle separately.
 

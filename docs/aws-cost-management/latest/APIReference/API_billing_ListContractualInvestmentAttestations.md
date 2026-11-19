@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListContractualInvestmentAttestations
-<a name="API_billing_ListContractualInvestmentAttestations"></a>
 
 Lists the investment attestations submitted under a specific private pricing contract. Use this operation to track attestation status, including the terminal statuses `DISBURSED`, `REJECTED`, and `CANCELLED`. This operation is read-only and paginated.
 

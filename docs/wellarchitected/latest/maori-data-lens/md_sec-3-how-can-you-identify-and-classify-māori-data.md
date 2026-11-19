@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
 ---
 
 # MD\_SEC 3: How can you identify and classify Māori data?
-<a name="md_sec-3-how-can-you-identify-and-classify-māori-data"></a>
 
  Organisations may wish to understand what Māori data they hold and have a method to classify Māori data to protect it with security controls and practices. Once the data has been classified and appropriate metadata is captured, you can govern and use that data in appropriate ways.
 +  **MD\_SEC03-BP01: Develop an understanding of what Māori data is**. Create an easy-to-understand definition of Māori data for your organisation. Having a definition of Māori data can help determine what additional considerations are relevant to your organisation or application. Piloting this and testing this with your customers facilitates a mutually-agreed upon definition, which is implementable for your organisation.

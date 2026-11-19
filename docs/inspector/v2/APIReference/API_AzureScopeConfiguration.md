@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AzureScope
 ---
 
 # AzureScopeConfiguration
-<a name="API_AzureScopeConfiguration"></a>
 
 The scope of Azure resources that Amazon Inspector scans, defined separately for VM, container image, and serverless scanning. Returned as part of a connector's configuration.
 

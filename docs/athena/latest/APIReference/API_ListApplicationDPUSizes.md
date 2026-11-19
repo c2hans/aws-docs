@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListAppli
 ---
 
 # ListApplicationDPUSizes
-<a name="API_ListApplicationDPUSizes"></a>
 
 Returns the supported DPU sizes for the supported application runtimes (for example, `Athena notebook version 1`).
 

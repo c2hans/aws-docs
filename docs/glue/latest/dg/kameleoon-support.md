@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kameleoon-support.html
 ---
 
 # AWS Glue support for Kameleoon
-<a name="kameleoon-support"></a>
 
 AWS Glue supports Kameleoon as follows:
 

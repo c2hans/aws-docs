@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/fulfi
 ---
 
 # Data mapping example for fulfillment
-<a name="fulfillment_scenario"></a>
 
 Below is an example to map brick and mortar or online sales to outbound order line dataset and optimize the historical demand setup. Use this example to structure your data for accurate forecasting. Review the configurations in this example to make sure your forecasting models capture the different fulfillment scenarios.
 

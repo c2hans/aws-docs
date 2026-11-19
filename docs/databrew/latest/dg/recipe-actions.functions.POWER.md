@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # POWER
-<a name="recipe-actions.functions.POWER"></a>
 
 Returns the value of a number to the power of the exponent in a new column.
 

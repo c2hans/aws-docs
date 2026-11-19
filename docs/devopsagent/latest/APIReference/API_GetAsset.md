@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetA
 ---
 
 # GetAsset
-<a name="API_GetAsset"></a>
 
 Gets an asset from the specified agent space
 

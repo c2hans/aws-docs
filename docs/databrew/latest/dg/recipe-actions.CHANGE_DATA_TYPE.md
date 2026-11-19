@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.CHANGE
 ---
 
 # CHANGE\_DATA\_TYPE
-<a name="recipe-actions.CHANGE_DATA_TYPE"></a>
 
 Changes the data type of an existing column.
 

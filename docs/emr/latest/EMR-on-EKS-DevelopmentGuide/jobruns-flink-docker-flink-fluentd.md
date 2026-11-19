@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Customizing Docker images for Flink and FluentD
-<a name="jobruns-flink-docker-flink-fluentd"></a>
 
 Take the following steps to customize Docker images for Amazon EMR on EKS with Apache Flink or FluentD images. These include technical guidance for getting a base image, customizing it, publishing it, and submitting a workload.
 

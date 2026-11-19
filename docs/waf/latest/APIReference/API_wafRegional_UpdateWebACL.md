@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # UpdateWebACL
-<a name="API_wafRegional_UpdateWebACL"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -24,7 +23,7 @@ To create and configure a `WebACL`, perform the following steps:
 
 1. Create a `WebACL`. See [CreateWebACL](API_wafRegional_CreateWebACL.md).
 
-1. Use `GetChangeToken` to get the change token that you provide in the `ChangeToken` parameter of an [UpdateWebACL](#API_wafRegional_UpdateWebACL) request.
+1. Use `GetChangeToken` to get the change token that you provide in the `ChangeToken` parameter of an [UpdateWebACL](API_wafRegional_UpdateWebACL.md) request.
 
 1. Submit an `UpdateWebACL` request to specify the `Rules` that you want to include in the `WebACL`, to specify the default action, and to associate the `WebACL` with an Amazon CloudFront distribution.
 
@@ -32,7 +31,7 @@ To create and configure a `WebACL`, perform the following steps:
 
    If you already have a rule group associated with a web ACL and want to submit an `UpdateWebACL` request to exclude certain rules from that rule group, you must first remove the rule group from the web ACL, the re-insert it again, specifying the excluded rules. For details, see [ActivatedRule:ExcludedRules](API_wafRegional_ActivatedRule.md#WAF-Type-wafRegional_ActivatedRule-ExcludedRules).
 
-Be aware that if you try to add a RATE\_BASED rule to a web ACL without setting the rule type when first creating the rule, the [UpdateWebACL](#API_wafRegional_UpdateWebACL) request will fail because the request tries to add a REGULAR rule (the default rule type) with the specified ID, which does not exist.
+Be aware that if you try to add a RATE\_BASED rule to a web ACL without setting the rule type when first creating the rule, the [UpdateWebACL](API_wafRegional_UpdateWebACL.md) request will fail because the request tries to add a REGULAR rule (the default rule type) with the specified ID, which does not exist.
 
 For more information about how to use the AWS WAF API to allow or block HTTP requests, see the [AWS WAF Developer Guide](https://docs.aws.amazon.com/waf/latest/developerguide/).
 

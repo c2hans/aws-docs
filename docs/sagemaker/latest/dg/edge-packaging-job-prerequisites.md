@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-packaging-job-p
 ---
 
 # Complete prerequisites
-<a name="edge-packaging-job-prerequisites"></a>
 
 To package a model, you must do the following:
 

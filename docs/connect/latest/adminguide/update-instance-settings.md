@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-instanc
 ---
 
 # Update settings for your Connect Customer instance
-<a name="update-instance-settings"></a>
 
 To update the instance settings:
 

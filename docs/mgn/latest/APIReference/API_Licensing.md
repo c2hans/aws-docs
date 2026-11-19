@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Licensing.ht
 ---
 
 # Licensing
-<a name="API_Licensing"></a>
 
 Configure Licensing.
 

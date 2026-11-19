@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 ---
 
 # Modifying a Neptune Analytics graph
-<a name="managing-modifying"></a>
 
  You can change the settings of a Neptune Analytics graph to accomplish tasks such as changing public connectivity or its provisioned-memory.
 

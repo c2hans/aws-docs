@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-test
 ---
 
 # Test your guardrail
-<a name="guardrails-test"></a>
 
 After you create a guardrail, a *working draft* (`DRAFT`) version is available. The working draft is a version of the guardrail that you can continually edit and iterate upon until you reach a satisfactory configuration for your use case. You can test and benchmark the working draft or other versions of the guardrail to ensure that the configurations meet your use-case requirements. Edit configurations in the working draft and test different prompts to see how well the guardrail evaluates and intercepts the prompts or responses.
 

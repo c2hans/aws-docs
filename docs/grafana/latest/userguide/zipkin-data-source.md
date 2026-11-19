@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/zipkin-data-sou
 ---
 
 # Connect to a Zipkin data source
-<a name="zipkin-data-source"></a>
 
  Zipkin is an open source, distributed tracing system. Add the Zipkin data source to be able to query your traces in Explore in Amazon Managed Grafana
 

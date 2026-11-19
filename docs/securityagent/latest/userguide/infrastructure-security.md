@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/infrastru
 ---
 
 # Infrastructure security in AWS Security Agent
-<a name="infrastructure-security"></a>
 
 As a managed service, AWS Security Agent is protected by AWS global network security. For information about AWS security services and how AWS protects infrastructure, see [AWS Cloud Security](https://aws.amazon.com/security/). To design your AWS environment using the best practices for infrastructure security, see [Security](https://aws.amazon.com/architecture/security-identity-compliance/) in the *AWS Well-Architected Framework*.
 

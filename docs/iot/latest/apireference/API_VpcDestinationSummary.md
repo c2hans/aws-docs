@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_VpcDestinati
 ---
 
 # VpcDestinationSummary
-<a name="API_VpcDestinationSummary"></a>
 
 The summary of a virtual private cloud (VPC) destination.
 

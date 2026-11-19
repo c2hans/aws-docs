@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolVnfcRe
 ---
 
 # GetSolVnfcResourceInfoMetadata
-<a name="API_GetSolVnfcResourceInfoMetadata"></a>
 
 The metadata of a network function.
 

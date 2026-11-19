@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/which-ephemeris
 ---
 
 # Understand which ephemeris is used
-<a name="which-ephemeris-is-used"></a>
 
  Ephemerides have a *priority*, *expiration time*, and *enabled* flag. Together, these determine which ephemeris is used for tracking during a contact.
 

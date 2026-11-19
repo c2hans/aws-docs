@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # Operating System Requirements
-<a name="sap-nw-pacemaker-sles-os-settings"></a>
 
 This section outlines the required operating system configurations for SUSE Linux Enterprise Server for SAP (SLES for SAP) cluster nodes. Note that this is not a comprehensive list of configuration requirements for running SAP on AWS, but rather focuses specifically on cluster management prerequisites.
 

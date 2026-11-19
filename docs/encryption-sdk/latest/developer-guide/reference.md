@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/re
 ---
 
 # AWS Encryption SDK reference
-<a name="reference"></a>
 
 |  |
 | --- |

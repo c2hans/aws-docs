@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/limits.
 ---
 
 # AWS Service Catalog default service quotas
-<a name="limits"></a>
 
 Your AWS account has the following default quotas for AWS Organizations, constraint, portfolio, product, provisioned product, regional, service action, and TagOptions.
 

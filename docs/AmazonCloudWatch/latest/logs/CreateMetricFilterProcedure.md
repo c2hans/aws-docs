@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateMetri
 ---
 
 # Create a metric filter for a log group
-<a name="CreateMetricFilterProcedure"></a>
 
 To create a metric filter for a log group, follow these steps. The metric won't be visible until there are some data points for it.
 

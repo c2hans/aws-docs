@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Step 4: Analyze data
-<a name="step-4-analyze-data"></a>
 
  After your application sends data (or the sample data are sent) to the pipeline, you can go into the Analytic Studio to view dashboard and query data.
 

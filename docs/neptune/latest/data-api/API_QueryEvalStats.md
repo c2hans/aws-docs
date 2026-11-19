@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_QueryEvalSta
 ---
 
 # QueryEvalStats
-<a name="API_QueryEvalStats"></a>
 
 Structure to capture query statistics such as how many queries are running, accepted or waiting and their details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
 ---
 
 # Step D: Set up licenses
-<a name="install-cl3-license"></a>
 
 At this point, the software is installed but it is not yet enabled.
 

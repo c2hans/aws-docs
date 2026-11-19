@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Agent Builder
-<a name="agent-builder-1"></a>
 
 The Agent Builder provides a platform for creating, deploying, and managing production-ready AI agents on Amazon Bedrock AgentCore. This section describes the technical components and implementation details.
 

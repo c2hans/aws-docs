@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Create a simple pipeline (S3 bucket)
-<a name="tutorials-simple-s3"></a>
 
 The easiest way to create a pipeline is to use the **Create pipeline** wizard in the AWS CodePipeline console.
 

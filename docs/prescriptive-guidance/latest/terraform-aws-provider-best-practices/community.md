@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Best practices for community modules
-<a name="community"></a>
 
 Using modules effectively helps you manage complex Terraform configurations and promote reuse. This section covers recommended practices for community modules, dependencies, sources, abstraction, and contributions.
 

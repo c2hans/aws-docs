@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proper
 ---
 
 # PropertyNameQuery
-<a name="API_PropertyNameQuery"></a>
 
 Part of the `SuggestionQuery` type. Specifies a hint for retrieving property names that begin with the specified text.
 

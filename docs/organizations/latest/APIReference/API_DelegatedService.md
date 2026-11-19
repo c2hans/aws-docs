@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DelegatedService
-<a name="API_DelegatedService"></a>
 
 Contains information about the AWS service for which the account is a delegated administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Set up AWS Private CA Connector for AD
-<a name="ad_connector_pca_connector"></a>
 
 You can integrate your self-managed Active Directory with AWS Private Certificate Authority using AD Connector to issue and manage certificates for your AD domain-joined users, groups, and machines. AWS Private CA Connector for AD provides a fully managed AWS Private CA as a drop-in replacement for your self-managed enterprise CAs without requiring you to deploy, patch, or update local agents or proxy servers.
 

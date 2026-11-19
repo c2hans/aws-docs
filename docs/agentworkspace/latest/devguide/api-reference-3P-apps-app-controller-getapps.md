@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Get all active application information in Connect Customer agent workspace
-<a name="api-reference-3P-apps-app-controller-getapps"></a>
 
 Returns the application information for the active application instances that share the AppManager of the calling instance in the Connect Customer agent workspace. When the calling instance has a scope (contact or idle), the result includes only the instances that have the same scope and the instances that have no scope.
 

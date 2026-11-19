@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Emission data forms
-<a name="data_form_updates"></a>
 
 You can use the emission data forms to collect scope 1, 2, and 3 emissions from your partner network at the granularity level of a country or facility. The following are the data request emission forms available.
 + Supplier Emissions by country

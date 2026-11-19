@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CreateFirewallPolicyV2
-<a name="API_CreateFirewallPolicyV2"></a>
 
 Creates a Next Generation policy according to the specifications.
 

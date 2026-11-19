@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-testing.h
 ---
 
 # Test voice, chat, and task experiences in Connect Customer
-<a name="chat-testing"></a>
 
 To learn what the voice, chat, and task experiences are like for your agents and customers, you can test them without doing any development.
 

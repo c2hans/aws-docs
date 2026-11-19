@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedide
 ---
 
 # Prerequisites and considerations
-<a name="trustedidentitypropagation-overall-prerequisites"></a>
 
 Before you set up trusted identity propagation, review the following prerequisites and considerations.
 

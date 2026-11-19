@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # AttendeeFeatures
-<a name="API_meeting-chime_AttendeeFeatures"></a>
 
 Lists the maximum number of attendees allowed into the meeting.
 

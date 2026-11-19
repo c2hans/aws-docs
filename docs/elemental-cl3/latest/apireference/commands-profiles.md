@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Profiles
-<a name="commands-profiles"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/folders-scaled.ht
 ---
 
 # Creating Quick scaled folders with the Quick APIs
-<a name="folders-scaled"></a>
 
 You can use the AWS Quick APIs to create special scaled folders that can be shared with up to 3000 namespaces. Each namespace that is added to a folder can contain up to 100 principals. A *principal* is a user or a group of users. After you create a scaled folder and add the principals that you want, any QuickSight asset can be added to the folder. It can then be shared to every principal in the namespaces that the folder principals are assigned to. This streamlines the process to share Quick assets with thousands of users.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Lambda
-<a name="sam-property-graphqlapi-datasource-lambda"></a>
 
 Configure an AWS Lambda Event Function as a data source for your GraphQL API resolver.
 

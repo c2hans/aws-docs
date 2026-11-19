@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/how-it-work
 ---
 
 # How application settings persistence works
-<a name="how-it-works-app-settings-persistence"></a>
 
 Persistent application settings are saved to a Virtual Hard Disk (VHD) file. This file is created the first time a user streams an application from a directory on which application settings persistence is enabled. If the WorkSpace Pool associated with the directory is based on an image that contains default application and Windows settings, the default settings are used for the user's first streaming session.
 

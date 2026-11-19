@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeAccountCustomization
-<a name="describe-account-customization"></a>
 
 Use the `DescribeAccountCustomization` API operation to describe the customizations associated with the provided AWS account and AWS Quick Sight namespace in an AWS Region. Following is an example AWS CLI command for this operation.
 

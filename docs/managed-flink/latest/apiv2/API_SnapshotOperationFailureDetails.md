@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotO
 ---
 
 # SnapshotOperationFailureDetails
-<a name="API_SnapshotOperationFailureDetails"></a>
 
 Provides a description of the snapshot operation failure.
 

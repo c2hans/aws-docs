@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Encry
 ---
 
 # EncryptionEntities
-<a name="API_EncryptionEntities"></a>
 
 Complex data type for field-level encryption profiles that includes all of the encryption entities.
 

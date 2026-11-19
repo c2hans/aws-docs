@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRolePolicyForBackupReports
-<a name="AWSServiceRolePolicyForBackupReports"></a>
 
 **Description**: Provides AWS Backup permissions to create compliance reports on your behalf
 

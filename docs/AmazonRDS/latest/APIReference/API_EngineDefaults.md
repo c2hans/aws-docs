@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Engine
 ---
 
 # EngineDefaults
-<a name="API_EngineDefaults"></a>
 
 Contains the result of a successful invocation of the `DescribeEngineDefaultParameters` action.
 

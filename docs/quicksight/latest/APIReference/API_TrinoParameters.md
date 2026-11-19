@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Trino
 ---
 
 # TrinoParameters
-<a name="API_TrinoParameters"></a>
 
 The parameters that are required to connect to a Trino data source.
 

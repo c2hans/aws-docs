@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryValues
-<a name="API_bcmDashboards_CostCategoryValues"></a>
 
 Specifies the values and match options for cost category-based filtering in cost and usage queries.
 

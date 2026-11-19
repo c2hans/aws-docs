@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Appendix: Sample queries for PL/SQL object counts
-<a name="appendix"></a>
 
 Use the sample queries in this section to get PL/SQL object counts for your Oracle and SQL Server databases. You can wrap these queries in a script to collect the necessary data. To optimize, create a common user across all databases.
 

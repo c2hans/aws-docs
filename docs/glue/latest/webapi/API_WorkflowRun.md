@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_WorkflowRun.html
 ---
 
 # WorkflowRun
-<a name="API_WorkflowRun"></a>
 
 A workflow run is an execution of a workflow providing all the runtime information.
 

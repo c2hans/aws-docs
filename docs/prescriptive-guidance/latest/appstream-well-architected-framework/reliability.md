@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Reliability pillar
-<a name="reliability"></a>
 
 The [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html) of the AWS Well-Architected Framework addresses how well a system maintains its intended functionality and performance levels during expected operational periods throughout its lifespan. It provides comprehensive guidelines for building and maintaining dependable systems on AWS, including strategies for testing and validation across all stages of the workload lifecycle.
 

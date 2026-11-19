@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTrustedAdvisorReportingServiceRolePolicy
-<a name="AWSTrustedAdvisorReportingServiceRolePolicy"></a>
 
 **Description**: Service Policy for Trusted Advisor Multi-account Reporting
 

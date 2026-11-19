@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/tag-based-acce
 ---
 
 # Apply tag-based access control in Connect Customer
-<a name="tag-based-access-control"></a>
 
 You use tag-based access controls to configure granular access to specific resources based on assigned resource tags. You can configure tag-based access controls by using the API/SDK or the Connect Customer admin website for supported resources.
 

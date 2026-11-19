@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ba
 ---
 
 # BatchDeleteRumMetricDefinitions
-<a name="API_BatchDeleteRumMetricDefinitions"></a>
 
 Removes the specified metrics from being sent to an extended metrics destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchGroupPatchBaselineMapping
-<a name="API_PatchGroupPatchBaselineMapping"></a>
 
 The mapping between a patch group and the patch baseline the patch group is registered with.
 

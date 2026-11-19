@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/oauth-aut
 ---
 
 # OAuth 2.1 authentication for AWS MCP Server
-<a name="oauth-authentication"></a>
 
 AWS MCP Server supports OAuth 2.1 authorization through AWS Sign-in. OAuth-compatible MCP clients can connect directly to AWS MCP Server. No local proxy software is required. Such clients include Claude Code, Cursor, Gemini CLI, Kiro, Visual Studio Code, and GitHub Copilot. For an overview of how OAuth works with AWS Sign-in, see [OAuth with AWS Sign-in overview](https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html) and [AWS MCP Server](https://docs.aws.amazon.com/signin/latest/userguide/aws-mcp-server.html) in the *AWS Sign-in User Guide*.
 

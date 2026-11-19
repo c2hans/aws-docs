@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle SGA and PGA memory sizing and PostgreSQL memory buffers
-<a name="chap-oracle-aurora-pg.configuration.memory"></a>
 
 With AWS DMS, you can optimize database performance by properly sizing memory components like Oracle’s System Global Area (SGA) and Program Global Area (PGA), as well as PostgreSQL’s memory buffers.
 

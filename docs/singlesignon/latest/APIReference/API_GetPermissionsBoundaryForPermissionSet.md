@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetPermissionsBoundaryForPermissionSet
-<a name="API_GetPermissionsBoundaryForPermissionSet"></a>
 
 Obtains the permissions boundary for a specified [PermissionSet](API_PermissionSet.md).
 

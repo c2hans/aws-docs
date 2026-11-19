@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Data types for ANSI SQL
-<a name="chap-sql-server-aurora-pg.sql.datatypes"></a>
 
 This topic provides reference information about data type compatibility between Microsoft SQL Server 2019 and Amazon Aurora PostgreSQL. You can use this information to understand how various SQL Server data types map to their PostgreSQL equivalents during migration
 

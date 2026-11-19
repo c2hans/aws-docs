@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/backup-pre
 ---
 
 # Prerequisites
-<a name="backup-prerequisites"></a>
 
 Before you can set up AWS Backup for your AWS Control Tower resources, you must have an existing AWS Organizations organization. If you've already set up your AWS Control Tower landing zone, that serves as your existing organization.
 

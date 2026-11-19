@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetStepIdentifier
-<a name="API_BatchGetStepIdentifier"></a>
 
 The identifiers for a step.
 

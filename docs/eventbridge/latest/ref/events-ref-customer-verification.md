@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-custom
 ---
 
 # AWS Customer Verification Service events
-<a name="events-ref-customer-verification"></a>
 
 AWS Customer Verification Service sends service events to EventBridge via AWS CloudTrail.
 

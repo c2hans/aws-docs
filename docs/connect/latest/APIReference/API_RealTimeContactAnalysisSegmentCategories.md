@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentCategories
-<a name="API_RealTimeContactAnalysisSegmentCategories"></a>
 
 The matched category rules.
 

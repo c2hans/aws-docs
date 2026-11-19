@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/create-new-ontap-u
 ---
 
 # Creating ONTAP users
-<a name="create-new-ontap-users"></a>
 
 **To create a new SVM or file system user (ONTAP CLI)**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetTaskT
 ---
 
 # GetTaskTemplate
-<a name="API_GetTaskTemplate"></a>
 
 Gets details about a specific task template in the specified Connect Customer instance.
 

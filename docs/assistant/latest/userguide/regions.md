@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/regions.html
 ---
 
 # Supported AWS Regions for the AWS assistant
-<a name="regions"></a>
 
 This topic lists the AWS Regions where you can use the AWS assistant. For more information about Regions, see [Specify which AWS Regions your account can use](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 

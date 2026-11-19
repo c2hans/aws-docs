@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/userguide/troubleshoot-call
 This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is the on-premises version of Wickr, see [Enterprise Administration Guide](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
 
 # Troubleshoot voice and video call issues
-<a name="troubleshoot-calls"></a>
 
 This section helps you troubleshoot common voice and video call issues with AWS Wickr. Most call quality and connectivity problems are caused by network configuration. If the steps below don't resolve your issue, contact your Wickr network administrator.
 

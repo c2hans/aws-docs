@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CreateBr
 ---
 
 # CreateBranch
-<a name="API_CreateBranch"></a>
 
 Creates a new branch for an Amplify app.
 

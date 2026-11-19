@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ValidationExceptionField
-<a name="API_BillingAndCostManagementRecommendedActions_ValidationExceptionField"></a>
 
 Provides specific details about why a particular field failed validation.
 

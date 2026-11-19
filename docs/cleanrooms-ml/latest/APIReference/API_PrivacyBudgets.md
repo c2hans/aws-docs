@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pr
 ---
 
 # PrivacyBudgets
-<a name="API_PrivacyBudgets"></a>
 
 The privacy budget information that controls access to Clean Rooms ML input channels.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ---
 
 # Fluent setters differences between version 1 and version 2 of the SDK for Java
-<a name="dynamodb-migrate-fluent-setters"></a>
 
 You can use POJOs with fluent setters in the DynamoDB mapping API for V1 and with V2 since version 2.30.29.
 

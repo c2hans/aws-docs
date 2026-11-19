@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Configure Amazon EC2 Auto Scaling resources with CloudFormation
-<a name="quickref-ec2-auto-scaling"></a>
 
 The following examples show different snippets to include in templates for use with Amazon EC2 Auto Scaling.
 

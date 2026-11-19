@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Upload
 ---
 
 # UploadLayerPart
-<a name="API_UploadLayerPart"></a>
 
 Uploads an image layer part to Amazon ECR.
 

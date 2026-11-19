@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingCustomIconCondition
-<a name="API_ConditionalFormattingCustomIconCondition"></a>
 
 Determines the custom condition for an icon set.
 

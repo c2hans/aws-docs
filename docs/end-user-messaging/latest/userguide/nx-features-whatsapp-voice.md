@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # WhatsApp Voice
-<a name="nx-features-whatsapp-voice"></a>
 
 WhatsApp calling lets your business place and receive voice calls with WhatsApp users directly in the WhatsApp conversation, using the same business phone number that you use for messaging. A customer can move from a chat to a live voice call without leaving WhatsApp.
 

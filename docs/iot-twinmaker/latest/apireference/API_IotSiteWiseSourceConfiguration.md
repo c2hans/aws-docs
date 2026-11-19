@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Io
 ---
 
 # IotSiteWiseSourceConfiguration
-<a name="API_IotSiteWiseSourceConfiguration"></a>
 
 The metadata transfer job AWS IoT SiteWise source configuration.
 

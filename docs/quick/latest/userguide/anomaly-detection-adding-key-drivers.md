@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/anomaly-detection
 ---
 
 # Using contribution analysis for key drivers
-<a name="anomaly-detection-adding-key-drivers"></a>
 
 AWS Quick Sight can identify the dimensions (categories) that contribute to outliers in measures (metrics) between two points in time. The key driver that contributes to an outlier helps you to answer the question: What happened to cause this anomaly?
 

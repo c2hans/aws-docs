@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/lang-id-stream.html
 ---
 
 # Language identification with streaming transcriptions
-<a name="lang-id-stream"></a>
 
 Streaming language identification can identify the dominant language spoken in your media stream. Amazon Transcribe requires a minimum of one second of speech to identify the language.
 

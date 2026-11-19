@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Converged ad sales system cost reduction
-<a name="advcost07"></a>
 
  Publishers maintaining parallel sales planning stacks for linear TV (upfront and scatter, with age-gender guarantees) and digital (audience-based and impression-level) incur duplicated infrastructure costs for inventory management, order management, pricing engines, and forecasting models. Converging these into a unified system reduces redundant compute, storage, and operational overhead while enabling cross-channel yield optimization that increases revenue per infrastructure dollar.
 

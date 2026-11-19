@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Step 4. Configure Your Website for Integration with Amazon WorkSpaces Applications
-<a name="configure-website-for-integration"></a>
 
 The following sections provide information about how to configure your webpage to host embedded WorkSpaces Applications streaming sessions.
 

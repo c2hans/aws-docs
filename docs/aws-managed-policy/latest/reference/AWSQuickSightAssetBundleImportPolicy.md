@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightAssetBundleImportPolicy
-<a name="AWSQuickSightAssetBundleImportPolicy"></a>
 
 **Description**: Provides the set of permissions required to perform QuickSight Asset Bundle Import Operations
 

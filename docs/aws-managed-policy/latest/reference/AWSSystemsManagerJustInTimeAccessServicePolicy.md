@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerJustInTimeAccessServicePolicy
-<a name="AWSSystemsManagerJustInTimeAccessServicePolicy"></a>
 
 **Description**: Provides access to AWS resources managed or used by the AWS Systems Manager just in time access framework.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PostC
 ---
 
 # PostCommentForPullRequest
-<a name="API_PostCommentForPullRequest"></a>
 
 Posts a comment on a pull request.
 

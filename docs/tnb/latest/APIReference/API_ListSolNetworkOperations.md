@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolNetwo
 ---
 
 # ListSolNetworkOperations
-<a name="API_ListSolNetworkOperations"></a>
 
 Lists details for a network operation, including when the operation started and the status of the operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/example-test-gpu.
 ---
 
 # Test GPU functionality
-<a name="example-test-gpu"></a>
 
 The following example job definition tests if the GPU workload AMI described in [Use a GPU workload AMI](batch-gpu-ami.md) is configured properly. This example job definition runs the TensorFlow deep MNIST classifier [example](https://github.com/tensorflow/tensorflow/blob/r1.8/tensorflow/examples/tutorials/mnist/mnist_deep.py) from GitHub.
 

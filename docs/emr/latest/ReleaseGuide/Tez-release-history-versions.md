@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Tez-release-hist
 ---
 
 # Tez release notes by version
-<a name="Tez-release-history-versions"></a>
 
 **Topics**
 + [Amazon EMR 7.10.0 - Tez release notes](Tez-release-history-7100.md)

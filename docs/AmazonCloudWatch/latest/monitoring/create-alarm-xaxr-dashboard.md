@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 ---
 
 # Adding an alarm from a different account to a CloudWatch cross-account dashboard
-<a name="create-alarm-xaxr-dashboard"></a>
 
 1. Sign in to the monitoring account.
 

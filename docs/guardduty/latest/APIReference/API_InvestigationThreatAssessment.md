@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationThreatAssessment
-<a name="API_InvestigationThreatAssessment"></a>
 
 Contains a threat assessment. The members that are set depend on the `AnalysisType` of the record.
 

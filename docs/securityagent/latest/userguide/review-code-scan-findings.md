@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-co
 ---
 
 # Review findings from a code review
-<a name="review-code-scan-findings"></a>
 
 After a code review run completes, review the run summary and security findings to understand vulnerabilities in your source code. Each finding contains a description, severity rating, code locations, risk reasoning, and suggested fixes to help you prioritize and address security issues.
 

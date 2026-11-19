@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeCertif
 ---
 
 # RevokeCertificate
-<a name="API_RevokeCertificate"></a>
 
 Revokes a public ACM certificate. You can only revoke certificates that have been previously exported.
 

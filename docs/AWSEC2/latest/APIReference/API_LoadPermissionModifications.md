@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LoadPermi
 ---
 
 # LoadPermissionModifications
-<a name="API_LoadPermissionModifications"></a>
 
 Describes modifications to the load permissions of an Amazon FPGA image (AFI).
 

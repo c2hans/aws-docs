@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create automated pull requests for Terraform-managed AWS infrastructure by using GitHub Actions
-<a name="create-automated-pull-requests-for-terraform-managed-aws-infrastructure"></a>
 
 *Matt Padgett, Ashish Bhatt, Ashwin Divakaran, Sandip Gangapadhyay, and Prafful Gupta, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/unset-stage.h
 ---
 
 # $unset
-<a name="unset-stage"></a>
 
 New from version 8.0
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # StopProductSubscription
-<a name="API_StopProductSubscription"></a>
 
 Stops a product subscription for a user with the specified identity provider.
 

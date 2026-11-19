@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v0.5/programmers
 ---
 
 # 6 Event handling
-<a name="elpg-event-handling"></a>
 
 Events are asynchronous messages on one of the subscribed topics that the ExpressLink module has received and queued. They can also be error messages that reflect an unexpected change in the module's internal state.
 

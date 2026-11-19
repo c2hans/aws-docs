@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cluster-dashboard.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View aggregated data about cluster resources with the EKS Dashboard
-<a name="cluster-dashboard"></a>
 
 ## What is the Amazon EKS Dashboard?
 <a name="_what_is_the_amazon_eks_dashboard"></a>

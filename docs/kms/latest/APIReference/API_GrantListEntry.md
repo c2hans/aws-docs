@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GrantListEnt
 ---
 
 # GrantListEntry
-<a name="API_GrantListEntry"></a>
 
 Contains information about a grant.
 

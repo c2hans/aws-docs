@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-extensions
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Customizing SDK behavior with plugins and interceptors
-<a name="using-extensions"></a>
 
 When you invoke an operation, the SDK processes it through its request pipeline. The pipeline handles stages such as serialization, signing, sending an HTTP request, and deserialization. Some applications need to observe or adjust that behavior. Plugins and interceptors customize different parts of this process.
 + A *plugin* is a setup function that receives the configuration object before the SDK creates the pipeline. Use a plugin to change configuration, such as the Region, or to register other custom configurations.

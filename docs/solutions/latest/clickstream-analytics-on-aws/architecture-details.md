@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Architecture details
-<a name="architecture-details"></a>
 
 This section describes the components and AWS services that make up this guidance and the architecture details on how these components work together.

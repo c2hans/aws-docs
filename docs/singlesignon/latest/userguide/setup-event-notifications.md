@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/setup-even
 ---
 
 # Set up event notifications
-<a name="setup-event-notifications"></a>
 
 To receive IAM Identity Center Identity Store event notifications, you create an Amazon EventBridge rule that selects the events that you want and sends them to a target. Then you test the rule.
 

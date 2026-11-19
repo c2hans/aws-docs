@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationCodeGenerationJobDetails
-<a name="API_NetworkMigrationCodeGenerationJobDetails"></a>
 
 Details about a network migration code generation job.
 

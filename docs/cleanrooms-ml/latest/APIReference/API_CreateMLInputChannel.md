@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Cr
 ---
 
 # CreateMLInputChannel
-<a name="API_CreateMLInputChannel"></a>
 
 Provides the information to create an ML input channel. An ML input channel is the result of a query that can be used for ML modeling.
 

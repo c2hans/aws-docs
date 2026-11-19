@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/sign-in.html
 ---
 
 # Signing in to Amazon Chime
-<a name="sign-in"></a>
 
 The steps in this section explain how to sign in to the Amazon Chime desktop client and web app. For information about signing in to the Amazon Chime mobile app, see [Signing in to the mobile app](mobile-sign-in.md), later in this guide.
 

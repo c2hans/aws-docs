@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF04-BP04 Choose data storage based on access patterns
-<a name="perf_right_database_solution_access_patterns"></a>
 
  Use the access patterns of the workload to decide which services and technologies to use. In addition to non-functional requirements such as performance and scale, access patterns heavily influence the choice of the database and storage solutions. The first dimension is the need for transactions, ACID compliance, and consistent reads. Not every database supports these and most of the NoSQL databases provide an eventual consistency model. The second important dimension would be the distribution of write and reads over time and space. Globally distributed applications need to consider the traffic patterns, latency and access requirements in order to identify the optimal storage solution. The third crucial aspect to choose is the query pattern flexibility, random access patterns, and one-time queries. Considerations around highly specialized query functionality for text and natural language processing, time series, and graphs must also be taken into account.
 

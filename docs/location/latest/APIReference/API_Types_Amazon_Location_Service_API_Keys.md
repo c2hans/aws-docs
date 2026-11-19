@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Types_A
 ---
 
 # Amazon Location Service API Keys
-<a name="API_Types_Amazon_Location_Service_API_Keys"></a>
 
 The following data types are supported by Amazon Location Service API Keys:
 +  [AndroidApp](API_geoapikeys_AndroidApp.md)

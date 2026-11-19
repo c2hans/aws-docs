@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # MutationActionSetStateParameter
-<a name="API_MutationActionSetStateParameter"></a>
 
 Represents the state configuration when an action modifies a property of another element within the same component.
 

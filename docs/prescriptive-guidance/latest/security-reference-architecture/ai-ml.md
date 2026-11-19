@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AI/ML for security
-<a name="ai-ml"></a>
 
 Artificial intelligence and machine learning (AI/ML) are transforming businesses. AI/ML has been a focus for Amazon for over 20 years, and many of the capabilities customers use with AWS, including security services, are driven by AI/ML. This means you can build securely on AWS without requiring your security or application development teams to have expertise in AI/ML.
 

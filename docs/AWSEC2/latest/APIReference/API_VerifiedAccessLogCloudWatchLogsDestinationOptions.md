@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessLogCloudWatchLogsDestinationOptions
-<a name="API_VerifiedAccessLogCloudWatchLogsDestinationOptions"></a>
 
 Options for CloudWatch Logs as a logging destination.
 

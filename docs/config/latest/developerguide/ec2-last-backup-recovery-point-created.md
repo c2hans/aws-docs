@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-last-ba
 ---
 
 # ec2-last-backup-recovery-point-created
-<a name="ec2-last-backup-recovery-point-created"></a>
 
 Checks if a recovery point was created for Amazon Elastic Compute Cloud (Amazon EC2) instances. The rule is NON\_COMPLIANT if the Amazon EC2 instance does not have a corresponding recovery point created within the specified time period.
 

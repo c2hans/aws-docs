@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/troubleshoot-hosts.
 ---
 
 # Troubleshoot hosts
-<a name="troubleshoot-hosts"></a>
 
 Host problems might occur when you create, add, upgrade, or connect to ESX hosts in an Amazon Elastic VMware Service environment. This page applies to both deployment modes. For host creation problems during a Self-deployed deployment, see [Troubleshoot Self-deployed deployments](troubleshoot-self-deployed.md).
 

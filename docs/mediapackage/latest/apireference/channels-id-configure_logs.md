@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/channel
 ---
 
 # Channels id Configure\_logs
-<a name="channels-id-configure_logs"></a>
 
 Configures access logs for a channel. For information about access logs, see [Access logging](https://docs.aws.amazon.com/mediapackage/latest/ug/access-logging.html).
 

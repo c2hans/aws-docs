@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/add-data-
 ---
 
 # Add data sets to AWS Data Exchange
-<a name="add-data-sets"></a>
 
 **Note**
 Data sets added via the Catalog API change set of type `AddDataSets` default to the publishing method of the product.

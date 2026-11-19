@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/plan-your
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [cost](cost.md), [network security](security-1.md), [quotas](quotas.md), and other considerations prior to deploying the guidance.
 

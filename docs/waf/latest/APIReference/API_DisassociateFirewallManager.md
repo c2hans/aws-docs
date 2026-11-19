@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateFirewallManager
-<a name="API_DisassociateFirewallManager"></a>
 
 Do not use.
 

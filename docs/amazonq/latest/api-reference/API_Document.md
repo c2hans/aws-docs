@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # Document
-<a name="API_Document"></a>
 
 A document in an Amazon Q Business application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AWSManagedRu
 ---
 
 # AWSManagedRulesBotControlRuleSet
-<a name="API_AWSManagedRulesBotControlRuleSet"></a>
 
 Details for your use of the Bot Control managed rule group, `AWSManagedRulesBotControlRuleSet`. This configuration is used in `ManagedRuleGroupConfig`.
 

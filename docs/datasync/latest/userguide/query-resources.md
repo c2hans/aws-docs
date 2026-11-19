@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/query-resource
 ---
 
 # Filtering AWS DataSync resources
-<a name="query-resources"></a>
 
 You can filter your AWS DataSync locations and tasks by using the `ListLocations` and `ListTasks` API operations in the AWS CLI. For example, retrieve a list of your most recent tasks.
 

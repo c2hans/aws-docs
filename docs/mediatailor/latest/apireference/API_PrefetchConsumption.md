@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Pref
 ---
 
 # PrefetchConsumption
-<a name="API_PrefetchConsumption"></a>
 
 For single prefetch, describes how and when that MediaTailor places prefetched ads into upcoming ad breaks.
 

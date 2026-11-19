@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ApplicationA
 ---
 
 # ApplicationAggregatedStatus
-<a name="API_ApplicationAggregatedStatus"></a>
 
 Application aggregated status.
 

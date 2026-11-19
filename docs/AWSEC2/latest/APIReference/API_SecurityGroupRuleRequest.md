@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityG
 ---
 
 # SecurityGroupRuleRequest
-<a name="API_SecurityGroupRuleRequest"></a>
 
 Describes a security group rule.
 

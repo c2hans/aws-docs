@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate data from an on-premises Hadoop environment to Amazon S3 using DistCp with AWS PrivateLink for Amazon S3
-<a name="migrate-data-from-an-on-premises-hadoop-environment-to-amazon-s3-using-distcp-with-aws-privatelink-for-amazon-s3"></a>
 
 *Jason Owens, Andres Cantor, Jeff Klopfenstein, Bruno Rocha Oliveira, and Samuel Schmidt, Amazon Web Services*
 

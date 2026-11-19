@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ef
 ---
 
 # EffectivePolicyValidationError
-<a name="API_EffectivePolicyValidationError"></a>
 
 Contains details about the validation errors that occurred when generating or enforcing an [effective policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_effective.html), such as which policies contributed to the error and location of the error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-terminate
 ---
 
 # **eb terminate**
-<a name="eb3-terminate"></a>
 
 ## Description
 <a name="eb3-terminatedescription"></a>

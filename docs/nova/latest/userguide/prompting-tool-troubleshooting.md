@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-tool-tro
 ---
 
 # Troubleshooting tool calls
-<a name="prompting-tool-troubleshooting"></a>
 
 You might see different errors when working with tools and Amazon Nova models. Here are a few examples and tips to help you troubleshoot.
 

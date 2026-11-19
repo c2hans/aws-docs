@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateE
 ---
 
 # UpdateEnvironmentBlueprint
-<a name="API_UpdateEnvironmentBlueprint"></a>
 
 Updates an environment blueprint in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/application-source-server-
 ---
 
 # Review source server alerts
-<a name="application-source-server-migration-metrics-alerts"></a>
 
 The source server **Alerts** migration metric presents an aggregated overview of the application associated servers alerts. You can look up an individual source server **Alerts** status at the **Source servers** table at the bottom of the page.
 

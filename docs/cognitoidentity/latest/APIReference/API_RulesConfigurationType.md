@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # RulesConfigurationType
-<a name="API_RulesConfigurationType"></a>
 
 A container for rules.
 

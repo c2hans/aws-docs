@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/json-schema-v
 ---
 
 # Using JSON schema validation
-<a name="json-schema-validation"></a>
 
 Using the `$jsonSchema` evaluation query operator, you can validate documents being inserted into your collections.
 

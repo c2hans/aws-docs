@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-page-insights-co
 ---
 
 # Facebook Page Insights connection options
-<a name="facebook-page-insights-connection-options"></a>
 
 The following are connection options for Facebook Page Insights:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Facebook Page Insights.

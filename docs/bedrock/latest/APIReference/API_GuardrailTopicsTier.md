@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailTopicsTier
-<a name="API_GuardrailTopicsTier"></a>
 
 The tier that your guardrail uses for denied topic filters.
 

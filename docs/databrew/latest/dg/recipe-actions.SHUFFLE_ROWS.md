@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SHUFFL
 ---
 
 # SHUFFLE\_ROWS
-<a name="recipe-actions.SHUFFLE_ROWS"></a>
 
 Shuffles values in a given column. The shuffling can occur with values grouped by a secondary column.
 

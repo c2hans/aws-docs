@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/rekognition/index.html
 title: 'Amazon Rekognition Documentation'
 canonical_url: https://docs.aws.amazon.com/rekognition/
 source: aws-documentation
-generated_on: 2026-11-17
+generated_on: 2026-11-18
 ---
 
 # Amazon Rekognition Documentation

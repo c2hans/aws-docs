@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeReposi
 ---
 
 # CodeRepositoryDetails
-<a name="API_CodeRepositoryDetails"></a>
 
 Contains details about a code repository associated with a finding.
 

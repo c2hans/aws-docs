@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-vgw.html
 ---
 
 # Detach and delete a virtual private gateway in AWS Site-to-Site VPN
-<a name="delete-vgw"></a>
 
 If you no longer require a virtual private gateway for your VPC, you can detach it from the VPC.
 

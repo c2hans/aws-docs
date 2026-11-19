@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/change-acc
 ---
 
 # Change the name of an enrolled account
-<a name="change-account-name"></a>
 
 Follow the procedure in this section to change the name of an enrolled AWS Control Tower account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListJob
 ---
 
 # ListJobRuns
-<a name="API_ListJobRuns"></a>
 
 Lists job runs.
 

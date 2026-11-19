@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/modul
 ---
 
 # Reference module resources in CloudFormation templates
-<a name="module-ref-resources"></a>
 
 In CloudFormation templates, you often need to set properties on one resource based on the name or property of another resource. For more information, see [Referencing resources](resources-section-structure.md#using-cross-resource-references).
 

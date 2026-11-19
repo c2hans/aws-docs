@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-contro
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Bot Control example: Allowing a specific blocked bot
-<a name="waf-bot-control-example-allow-blocked-bot"></a>
 
 It's possible for a bot to be blocked by more than one of the Bot Control rules. Run through the following procedure for each blocking rule.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RUM::AppMonitor
-<a name="aws-resource-rum-appmonitor"></a>
 
 Creates a CloudWatch RUM app monitor, which you can use to collect telemetry data from your application and send it to CloudWatch RUM. The data includes performance and reliability information such as page load time, client-side errors, and user behavior.
 
@@ -118,7 +117,7 @@ A name for the app monitor. This parameter is required.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Platform`  <a name="cfn-rum-appmonitor-platform"></a>
-Property description not available.
+The platform type for this app monitor. Valid values are `Web` for web applications , `Android` for Android applications, and `iOS` for IOS applications.
 *Required*: No
 *Type*: String
 *Allowed values*: `Web | Android | iOS`

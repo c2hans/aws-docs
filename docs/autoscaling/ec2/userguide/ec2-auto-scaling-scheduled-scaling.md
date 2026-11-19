@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Scheduled scaling for Amazon EC2 Auto Scaling
-<a name="ec2-auto-scaling-scheduled-scaling"></a>
 
 With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes. You create scheduled actions that increase or decrease your group's desired capacity at specific times.
 

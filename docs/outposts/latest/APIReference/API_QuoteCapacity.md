@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_QuoteCa
 ---
 
 # QuoteCapacity
-<a name="API_QuoteCapacity"></a>
 
 A capacity requirement for a quote. Specifies the type of capacity, the unit, and the quantity.
 

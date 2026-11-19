@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-pyth
 ---
 
 # Code example: Data preparation using ResolveChoice, Lambda, and ApplyMapping
-<a name="aws-glue-programming-python-samples-medicaid"></a>
 
 The dataset that is used in this example consists of Medicare Provider payment data that was downloaded from two [Data.CMS.gov](https://data.cms.gov) data sets: "Inpatient Prospective Payment System Provider Summary for the Top 100 Diagnosis-Related Groups - FY2011" and "Inpatient Charge Data FY 2011". After downloading the data, we modified the dataset to introduce a couple of erroneous records at the end of the file. This modified file is located in a public Amazon S3 bucket at `s3://awsglue-datasets/examples/medicare/Medicare_Hospital_Provider.csv`.
 

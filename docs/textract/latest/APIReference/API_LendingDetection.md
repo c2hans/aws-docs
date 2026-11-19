@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Lending
 ---
 
 # LendingDetection
-<a name="API_LendingDetection"></a>
 
 The results extracted for a lending document.
 

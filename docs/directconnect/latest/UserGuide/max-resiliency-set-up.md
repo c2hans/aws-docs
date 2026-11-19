@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/max-resil
 ---
 
 # Configure Direct Connect for maximum resiliency with the AWS Direct Connect Resiliency Toolkit
-<a name="max-resiliency-set-up"></a>
 
 In this example, the Direct Connect Resiliency Toolkit is used to configure a maximum resiliency model
 

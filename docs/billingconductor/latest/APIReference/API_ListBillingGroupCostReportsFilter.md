@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListBillingGroupCostReportsFilter
-<a name="API_ListBillingGroupCostReportsFilter"></a>
 
 The filter used to retrieve specific `BillingGroupCostReportElements`.
 

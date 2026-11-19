@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kommo-reading-from-entiti
 ---
 
 # Reading from Kommo entities
-<a name="kommo-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_FailedR
 ---
 
 # FailedReportOutput
-<a name="API_FailedReportOutput"></a>
 
 Information about a report generation that failed.
 

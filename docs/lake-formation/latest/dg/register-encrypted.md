@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/register-encryp
 ---
 
 # Registering an encrypted Amazon S3 location
-<a name="register-encrypted"></a>
 
 Lake Formation integrates with [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) (AWS KMS) to enable you to more easily set up other integrated services to encrypt and decrypt data in Amazon Simple Storage Service (Amazon S3) locations.
 

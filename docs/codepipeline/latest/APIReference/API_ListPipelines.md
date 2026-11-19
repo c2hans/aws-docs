@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListPipelines
-<a name="API_ListPipelines"></a>
 
 Gets a summary of all of the pipelines associated with your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IterableFormListI
 ---
 
 # IterableFormListItem
-<a name="API_IterableFormListItem"></a>
 
 A summary of an item in an iterable form.
 

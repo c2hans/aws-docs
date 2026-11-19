@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/isoDayOfWeek.
 ---
 
 # $isoDayOfWeek
-<a name="isoDayOfWeek"></a>
 
 The `$isoDayOfWeek` operator in Amazon DocumentDB returns the ISO day of the week for a date as an integer value. The ISO week date system defines each week starting on a Monday and ending on a Sunday, with week 1 being the week that contains the year's first Thursday.
 

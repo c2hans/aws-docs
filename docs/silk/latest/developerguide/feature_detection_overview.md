@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/feature_detec
 ---
 
 # How to detect a feature
-<a name="feature_detection_overview"></a>
 
 There are several ways to detect features. You can write your own feature detection scripts, or you can use a helper library. Both methods are demonstrated below.
 

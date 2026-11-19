@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Reducing MTTD
-<a name="reducing-mttd"></a>
 
  Reducing the MTTD of a failure means discovering the failure as quickly as possible. Shortening the MTTD is based on observability, or how you've instrumented your workload to understand its state. Customers should monitor their *Customer Experience* metrics in their workload's critical subsystems as a way to proactively identify when a problem occurs (refer to [Appendix 1 – MTTD and MTTR critical metrics](appendix-1-mttd-and-mttr-critical-metrics.md) for more information about these metrics. ). Customers can use [Amazon CloudWatch Synthetics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html) to create *canaries* that monitor your APIs and consoles to proactively measure the user experience. There are a number of other health check mechanisms that can be used to minimize the MTTD, such as [Elastic Load Balancing (ELB) health checks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-elb-healthcheck.html), [Amazon Route 53 health checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html), and more. (See [Amazon Builders' Library – Implementing health checks](https://aws.amazon.com/builders-library/implementing-health-checks/).)
 

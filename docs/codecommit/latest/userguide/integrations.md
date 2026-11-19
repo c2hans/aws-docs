@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/integrations
 ---
 
 # Product and service integrations with AWS CodeCommit
-<a name="integrations"></a>
 
 By default, CodeCommit is integrated with a number of AWS services. You can also use CodeCommit with products and services outside of AWS. The following information can help you configure CodeCommit to integrate with the products and services you use.
 

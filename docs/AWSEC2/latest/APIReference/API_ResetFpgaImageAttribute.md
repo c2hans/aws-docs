@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetFpga
 ---
 
 # ResetFpgaImageAttribute
-<a name="API_ResetFpgaImageAttribute"></a>
 
 Resets the specified attribute of the specified Amazon FPGA Image (AFI) to its default value. You can only reset the load permission attribute.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Identity and Access Management (IAM) \| Delete Entity or Policy (Read-Write Permissions)
-<a name="management-advanced-identity-and-access-management-iam-delete-entity-or-policy-read-write-permissions"></a>
 
 Delete Identity and Access Management (IAM) role or policy created with change type ct-1n9gfnog5x7fl.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/ephemeral-disk
 ---
 
 # Using ephemeral storage with EC2 gateways
-<a name="ephemeral-disk-cache"></a>
 
 This section describes steps you need to take to prevent data loss when you select an ephemeral disk as storage for your gateway's cache.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DocumentAttribute
-<a name="API_qapps_DocumentAttribute"></a>
 
 A document attribute or metadata field.
 

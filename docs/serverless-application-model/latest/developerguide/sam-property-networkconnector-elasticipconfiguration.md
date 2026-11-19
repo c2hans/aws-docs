@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ElasticIpConfiguration
-<a name="sam-property-networkconnector-elasticipconfiguration"></a>
 
 Specifies whether the service assigns an Elastic IP address to each of the network connector's elastic network interfaces (ENIs). With `ServiceManaged`, the service allocates a service-managed Elastic IP address in your account for each ENI and associates it with that ENI. Each address stays the same for the life of its ENI, and the service releases it when it deletes the ENI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-compatibili
 ---
 
 # NuGet compatibility
-<a name="nuget-compatibility"></a>
 
  This guide contains information about CodeArtifact's compatibility with different NuGet tools and versions.
 

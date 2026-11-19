@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteDatabase.ht
 ---
 
 # DeleteDatabase
-<a name="API_DeleteDatabase"></a>
 
 Removes a specified database from a Data Catalog.
 

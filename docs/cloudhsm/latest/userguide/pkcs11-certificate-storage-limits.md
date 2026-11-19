@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certifi
 ---
 
 # Certificate storage limits
-<a name="pkcs11-certificate-storage-limits"></a>
 
  The following limits apply to certificate storage. You can't change these limits. The maximum number of stored certificates applies to each cluster. The read and write rate limits apply to each HSM, so the total rate that a cluster supports increases as you add HSMs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/sales-opera
 ---
 
 # Dashboards for sales operations
-<a name="sales-operations"></a>
 
 AWS Marketplace provides multiple dashboards to help you track your sales data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_FirehoseActi
 ---
 
 # FirehoseAction
-<a name="API_FirehoseAction"></a>
 
 Describes an action that writes data to an Amazon Kinesis Firehose stream.
 

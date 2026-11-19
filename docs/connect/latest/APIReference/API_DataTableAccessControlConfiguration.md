@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableAccessControlConfiguration
-<a name="API_DataTableAccessControlConfiguration"></a>
 
 A data table access control configuration.
 

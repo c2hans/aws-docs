@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/secu
 ---
 
 # How Amazon Route 53 Global Resolver works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Route 53 Global Resolver, learn what IAM features are available to use with Route 53 Global Resolver.
 

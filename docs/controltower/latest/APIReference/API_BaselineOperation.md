@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Bas
 ---
 
 # BaselineOperation
-<a name="API_BaselineOperation"></a>
 
 An object of shape `BaselineOperation`, returning details about the specified `Baseline` operation ID.
 

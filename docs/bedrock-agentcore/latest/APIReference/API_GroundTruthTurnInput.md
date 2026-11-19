@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GroundTruthTurnInput
-<a name="API_GroundTruthTurnInput"></a>
 
 The input for a ground truth conversation turn.
 

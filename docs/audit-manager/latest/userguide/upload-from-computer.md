@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/upload-fr
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Uploading manual evidence files from your browser
-<a name="upload-from-computer"></a>
 
 You can manually upload evidence files from your browser into your Audit Manager assessment. This enables you to supplement the automatically collected evidence with additional supporting materials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyGroupResponse
-<a name="API_PropertyGroupResponse"></a>
 
 The property group response
 

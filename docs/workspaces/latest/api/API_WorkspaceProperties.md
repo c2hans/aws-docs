@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspacePrope
 ---
 
 # WorkspaceProperties
-<a name="API_WorkspaceProperties"></a>
 
 Describes a WorkSpace.
 

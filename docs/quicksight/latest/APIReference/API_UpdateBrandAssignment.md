@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateBrandAssignment
-<a name="API_UpdateBrandAssignment"></a>
 
 Updates a brand assignment.
 

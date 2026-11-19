@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-resources
 ---
 
 # Set up AWS managed views in Connect Customer
-<a name="view-resources-managed-view"></a>
 
 Connect Customer includes a set of AWS managed views. Choose a tab to see how to configure each one.
 

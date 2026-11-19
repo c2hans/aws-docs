@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Acquisition report
-<a name="acquisition-report"></a>
 
  You can use the acquisition report to get insights into how new users arrive at your website or app for the first time, as well as the sources of everyday traffic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # How Amazon SQS fair queues work
-<a name="sqs-fair-queues-detailed"></a>
 
  Amazon SQS fair queues automatically mitigate the noisy-neighbor impact in multi-tenant queues by preventing a single tenant from slowing down message processing for other tenants. When fair queues detect that one tenant is using a disproportionate share of the queue's consumer capacity, they prioritize delivery of messages from quiet tenants.
 

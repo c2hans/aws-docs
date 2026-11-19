@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-
 ---
 
 # Creating an Amazon ECS Express Mode service
-<a name="express-service-create-full"></a>
 
 An Amazon ECS Express Mode service reduces the complexity of deploying containerized applications by providing sensible defaults and automating the configuration of supporting AWS services. Instead of managing configuration parameters across multiple services, an Express Mode service requires only a container image, task execution role and infrastructure role to get started.
 

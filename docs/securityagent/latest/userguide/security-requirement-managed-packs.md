@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/security-
 ---
 
 # AWS managed security requirement packs
-<a name="security-requirement-managed-packs"></a>
 
 An AWS managed security requirement pack is a collection of security requirements that AWS creates and maintains, based on industry standards and best practices. You enable a managed pack to evaluate your applications against its requirements during design reviews and code reviews, without writing requirements yourself.
 

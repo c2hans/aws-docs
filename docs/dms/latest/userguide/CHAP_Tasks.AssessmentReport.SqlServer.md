@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # Sql Server assessments
-<a name="CHAP_Tasks.AssessmentReport.SqlServer"></a>
 
 This section describes individual premigration assessments for migration tasks that use a Microsoft SQL Server source endpoint.
 

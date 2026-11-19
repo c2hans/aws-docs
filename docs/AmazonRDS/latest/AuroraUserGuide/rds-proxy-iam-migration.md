@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-pro
 ---
 
 # Moving from standard IAM authentication to end-to-end IAM authentication for RDS Proxy
-<a name="rds-proxy-iam-migration"></a>
 
  If you currently use standard IAM authentication for RDS Proxy, where clients authenticate to the proxy using IAM but the proxy connects to the database using secrets, you can migrate to end-to-end IAM authentication where both client-to-proxy and proxy-to-database connections use IAM authentication.
 

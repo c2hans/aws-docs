@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ebs-in-back
 ---
 
 # ebs-in-backup-plan
-<a name="ebs-in-backup-plan"></a>
 
 Check if Amazon Elastic Block Store (Amazon EBS) volumes are added in backup plans of AWS Backup. The rule is NON\_COMPLIANT if Amazon EBS volumes are not included in backup plans.
 

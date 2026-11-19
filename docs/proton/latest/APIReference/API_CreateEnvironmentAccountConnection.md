@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_CreateEnv
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # CreateEnvironmentAccountConnection
-<a name="API_CreateEnvironmentAccountConnection"></a>
 
 Create an environment account connection in an environment account so that environment infrastructure resources can be provisioned in the environment account from a management account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Understand how the results of your model evaluation job are saved in Amazon S3
-<a name="model-evaluation-report-s3"></a>
 
 The output from a model evaluation job is saved in the Amazon S3 bucket you specified when you created the model evaluation job. Results of model evaluation jobs are saved as JSON line files (`.jsonl`).
 

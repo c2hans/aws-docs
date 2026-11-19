@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BridgeNetwor
 ---
 
 # BridgeNetworkSource
-<a name="API_BridgeNetworkSource"></a>
 
  The source of the bridge. A network source originates at your premises.
 

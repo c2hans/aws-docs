@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/mana
 ---
 
 # Managing client-side LDAPS
-<a name="manage-ldap-client-side"></a>
 
 Use these commands to manage your LDAPS configuration.
 

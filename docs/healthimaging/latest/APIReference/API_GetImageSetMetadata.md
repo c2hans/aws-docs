@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Ge
 ---
 
 # GetImageSetMetadata
-<a name="API_GetImageSetMetadata"></a>
 
 Get metadata attributes for an image set.
 

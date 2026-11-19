@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSec
 ---
 
 # CreateSecurityGroup
-<a name="API_CreateSecurityGroup"></a>
 
 Creates a security group.
 

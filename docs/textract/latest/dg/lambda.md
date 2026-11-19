@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/lambda.html
 ---
 
 # Detecting text with an AWS Lambda function
-<a name="lambda"></a>
 
 AWS Lambda is a compute service that you can use to run code without provisioning or managing servers. You can call Amazon Textract API operations from within an AWS Lambda function. The following instructions show how to create a Lambda function in Python that calls [DetectDocumentText](https://docs.aws.amazon.com/textract/latest/APIReference/API_DetectDocumentText.html).
 

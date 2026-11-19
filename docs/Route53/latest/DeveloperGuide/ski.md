@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ski.html
 ---
 
 # .ski
-<a name="ski"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

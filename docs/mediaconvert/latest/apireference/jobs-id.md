@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs-id
 ---
 
 # Jobs id
-<a name="jobs-id"></a>
 
 ## URI
 <a name="jobs-id-url"></a>

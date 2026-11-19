@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/timeouts.html
 ---
 
 # Configuring timeouts in the AWS SDK for Rust
-<a name="timeouts"></a>
 
 The AWS SDK for Rust provides several settings for managing AWS service request timeouts and stalled data streams. These help your application behave optimally when unexpected delays and failures occur in the network.
 

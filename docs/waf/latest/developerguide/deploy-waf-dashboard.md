@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/deploy-waf-das
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Creating a DDoS dashboard in CloudWatch and setting CloudWatch alarms
-<a name="deploy-waf-dashboard"></a>
 
 This page provides instructions for creating a DDoS dashboard in CloudWatch and setting CloudWatch alarms.
 

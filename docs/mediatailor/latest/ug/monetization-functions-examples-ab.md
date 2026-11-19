@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Example 2: A/B traffic split
-<a name="monetization-functions-examples-ab"></a>
 
 ## Scenario
 <a name="monetization-functions-examples-ab-scenario"></a>

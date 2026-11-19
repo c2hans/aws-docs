@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotVisual
-<a name="API_BoxPlotVisual"></a>
 
 A box plot.
 

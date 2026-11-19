@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application Tag
-<a name="aws-properties-emrserverless-application-tag"></a>
 
 A map of key-value pairs to help you manage EMR Serverless resources. One resource can have a maximum of 50 tags. For more information, see [Tagging resources](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/tagging.html).
 

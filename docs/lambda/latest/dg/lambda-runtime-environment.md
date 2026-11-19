@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environm
 ---
 
 # Understanding the Lambda execution environment lifecycle
-<a name="lambda-runtime-environment"></a>
 
 Lambda execution environments run function invocations for up to 15 minutes by default, and durable functions can run for up to one year. Durable functions share the same basic lifecycle and add state management capabilities for long-running workflows.
 

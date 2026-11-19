@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Selector
-<a name="API_marketplace-discovery_Selector"></a>
 
 A selector used to choose a specific configuration within a configurable upfront rate card.
 

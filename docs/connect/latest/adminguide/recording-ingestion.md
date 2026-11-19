@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 ---
 
 # Recording ingestion and conversational analytics
-<a name="recording-ingestion"></a>
 
 This guide provides instructions for importing voice recordings from third-party voice systems into Connect Customer and generating conversational analytics.
 

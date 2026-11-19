@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-740-release.
 ---
 
 # Amazon EMR release 7.4.0
-<a name="emr-740-release"></a>
 
 ## 7.4.0 supported lifecycle
 <a name="emr-740-supported-lifecycle"></a>

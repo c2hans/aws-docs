@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix E: Optimizing data transfer, cost, and performance
-<a name="appendix-e-optimizing-data-transfer-cost-and-performance"></a>
 
  When transferring genomics data to long term storage, filter and validate the data before data transfer to Amazon S3. You can create a run completion tracker that starts an AWS DataSync task run to transfer the run data to an Amazon S3 bucket. The run completion tracker script can be run as a cron job. An inclusion filter can be used when running a DataSync task run, to only include a given run folder. Exclusion filters can be used to exclude files from data transfer. In addition, consider Incorporating a zero-bite file as a flag when uploading the data. Technicians can then indicate when a run has passed a manual QA check by placing an empty file in the data folder. Then, the run completion tracker will only trigger a sync task if the success file is present.
 

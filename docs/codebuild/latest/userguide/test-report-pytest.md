@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-report-p
 ---
 
 # Set up test reporting with pytest
-<a name="test-report-pytest"></a>
 
 The following procedure demonstrates how to set up test reporting in AWS CodeBuild with the [pytest testing framework](https://docs.pytest.org/).
 

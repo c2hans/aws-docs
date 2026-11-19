@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Expression
-<a name="API_AWSBCMPricingCalculator_Expression"></a>
 
  Represents a complex filtering expression for cost and usage data.
 
@@ -12,7 +11,7 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 
  ** and **   <a name="awscostmanagement-Type-AWSBCMPricingCalculator_Expression-and"></a>
  A list of expressions to be combined with AND logic.
-Type: Array of [Expression](#API_AWSBCMPricingCalculator_Expression) objects
+Type: Array of [Expression](API_AWSBCMPricingCalculator_Expression.md) objects
 Required: No
 
  ** costCategories **   <a name="awscostmanagement-Type-AWSBCMPricingCalculator_Expression-costCategories"></a>
@@ -27,12 +26,12 @@ Required: No
 
  ** not **   <a name="awscostmanagement-Type-AWSBCMPricingCalculator_Expression-not"></a>
  An expression to be negated.
-Type: [Expression](#API_AWSBCMPricingCalculator_Expression) object
+Type: [Expression](API_AWSBCMPricingCalculator_Expression.md) object
 Required: No
 
  ** or **   <a name="awscostmanagement-Type-AWSBCMPricingCalculator_Expression-or"></a>
  A list of expressions to be combined with OR logic.
-Type: Array of [Expression](#API_AWSBCMPricingCalculator_Expression) objects
+Type: Array of [Expression](API_AWSBCMPricingCalculator_Expression.md) objects
 Required: No
 
  ** tags **   <a name="awscostmanagement-Type-AWSBCMPricingCalculator_Expression-tags"></a>

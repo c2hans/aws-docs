@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListenerConfig
 ---
 
 # ListenerConfig
-<a name="API_ListenerConfig"></a>
 
 Listener configuration for the protocols (HTTP, HTTPS, or both) accepted by the gateway.
 

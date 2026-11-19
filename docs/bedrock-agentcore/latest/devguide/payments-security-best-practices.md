@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Security in Amazon Bedrock AgentCore payments
-<a name="payments-security-best-practices"></a>
 
 The following best practices can help you prevent security incidents when using Amazon Bedrock AgentCore payments. Preventative controls stop unsafe actions before they happen. Detective controls surface unexpected activity so you can respond to it.
 

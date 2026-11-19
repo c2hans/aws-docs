@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/examples_
 ---
 
 # Code examples with guidance for the AWS SDK for PHP
-<a name="examples_index"></a>
 
 This section contains code examples that demonstrate common AWS scenarios that use the AWS SDK for PHP.
 

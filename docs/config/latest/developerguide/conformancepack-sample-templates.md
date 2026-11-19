@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/conformance
 ---
 
 # Conformance Pack Sample Templates for AWS Config
-<a name="conformancepack-sample-templates"></a>
 
 Here are the conformance pack YAML templates that you see in AWS Config console. Within each conformance pack template, you can use one or more AWS Config rules and remediation actions. The AWS Config rules listed within the conformance pack can be AWS Config managed rules and/or AWS Config custom rules. You can download all the conformance pack templates from [GitHub](https://github.com/awslabs/aws-config-rules/tree/master/aws-config-conformance-packs).
 

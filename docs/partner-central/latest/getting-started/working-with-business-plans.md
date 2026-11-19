@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/w
 ---
 
 # Business plans
-<a name="working-with-business-plans"></a>
 
 Use a business plan to align your AWS partnership activities with measurable goals for the year. A plan describes your strategy, sets goals, and organizes the work that supports them. If you have an AWS partner development team, you can develop the plan with them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecuti
 ---
 
 # SendDurableExecutionCallbackHeartbeat
-<a name="API_SendDurableExecutionCallbackHeartbeat"></a>
 
 Sends a heartbeat signal for a long-running callback operation to prevent timeout. Use this API to extend the callback timeout period while the external operation is still in progress.
 

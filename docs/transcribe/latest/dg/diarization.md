@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/diarization.html
 ---
 
 # Partitioning speakers (diarization)
-<a name="diarization"></a>
 
 With speaker diarization, you can distinguish between different speakers in your transcription output. Amazon Transcribe can differentiate between a maximum of 30 unique speakers and labels the text from each unique speaker with a unique value (`spk_0` through `spk_29`).
 

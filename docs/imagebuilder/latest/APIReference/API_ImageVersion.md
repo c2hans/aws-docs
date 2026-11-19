@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageVersion
-<a name="API_ImageVersion"></a>
 
 The defining characteristics of a specific version of an Image Builder image.
 

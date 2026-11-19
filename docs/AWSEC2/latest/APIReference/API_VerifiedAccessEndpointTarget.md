@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessEndpointTarget
-<a name="API_VerifiedAccessEndpointTarget"></a>
 
 Describes the targets for the specified Verified Access endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/xyz.html
 ---
 
 # .xyz
-<a name="xyz"></a>
 
 Used as a general extension for any purpose.
 

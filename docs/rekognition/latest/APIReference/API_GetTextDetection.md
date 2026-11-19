@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetT
 ---
 
 # GetTextDetection
-<a name="API_GetTextDetection"></a>
 
 Gets the text detection results of a Amazon Rekognition Video analysis started by [StartTextDetection](API_StartTextDetection.md).
 

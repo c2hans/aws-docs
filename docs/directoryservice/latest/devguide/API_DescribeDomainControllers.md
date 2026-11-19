@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeDomainControllers
-<a name="API_DescribeDomainControllers"></a>
 
 Provides information about any domain controllers in your directory.
 
@@ -43,7 +42,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** [NextToken](#API_DescribeDomainControllers_RequestSyntax) **   <a name="DirectoryService-DescribeDomainControllers-request-NextToken"></a>
-The *DescribeDomainControllers.NextToken* value from a previous call to [DescribeDomainControllers](#API_DescribeDomainControllers). Pass null if this is the first call.
+The *DescribeDomainControllers.NextToken* value from a previous call to [DescribeDomainControllers](API_DescribeDomainControllers.md). Pass null if this is the first call.
 Type: String
 Required: No
 
@@ -83,7 +82,7 @@ List of the [DomainController](API_DomainController.md) objects that were retrie
 Type: Array of [DomainController](API_DomainController.md) objects
 
  ** [NextToken](#API_DescribeDomainControllers_ResponseSyntax) **   <a name="DirectoryService-DescribeDomainControllers-response-NextToken"></a>
-If not null, more results are available. Pass this value for the `NextToken` parameter in a subsequent call to [DescribeDomainControllers](#API_DescribeDomainControllers) retrieve the next set of items.
+If not null, more results are available. Pass this value for the `NextToken` parameter in a subsequent call to [DescribeDomainControllers](API_DescribeDomainControllers.md) retrieve the next set of items.
 Type: String
 
 ## Errors

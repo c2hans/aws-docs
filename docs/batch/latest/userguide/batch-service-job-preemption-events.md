@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-service-job
 ---
 
 # Service job preemption events
-<a name="batch-service-job-preemption-events"></a>
 
 Preemption events are published whenever a preemption sequence starts or completes. A started event is created when preemption is first triggered to reclaim borrowed capacity. A completed event is created when the preemption sequence finishes and includes a summary of the preempted attempts.
 

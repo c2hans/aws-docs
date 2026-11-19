@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_AclConfig
 ---
 
 # AclConfiguration
-<a name="API_AclConfiguration"></a>
 
 Provides information about the column that should be used for filtering the query response by groups.
 

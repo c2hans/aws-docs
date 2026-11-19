@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Wor
 ---
 
 # Working with items and attributes in DynamoDB
-<a name="WorkingWithItems"></a>
 
 In Amazon DynamoDB, an *item* is a collection of attributes. Each attribute has a name and a value. An attribute value can be a scalar, a set, or a document type. For more information, see [Amazon DynamoDB: How it works](HowItWorks.md).
 

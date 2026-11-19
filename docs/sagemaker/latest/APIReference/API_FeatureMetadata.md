@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Featur
 ---
 
 # FeatureMetadata
-<a name="API_FeatureMetadata"></a>
 
 The metadata for a feature. It can either be metadata that you specify, or metadata that is updated automatically.
 

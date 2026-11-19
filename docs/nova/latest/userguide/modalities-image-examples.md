@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/modalities-image-e
 ---
 
 # Image understanding examples
-<a name="modalities-image-examples"></a>
 
 The following example shows how to send a image prompt to Amazon Nova Model with [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html).
 

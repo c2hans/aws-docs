@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserRefe
 ---
 
 # UserReference
-<a name="API_UserReference"></a>
 
 Information about the user.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobQueue ServiceEnvironmentOrder
-<a name="aws-properties-batch-jobqueue-serviceenvironmentorder"></a>
 
 Specifies the order of a service environment for a job queue. This determines the priority order when multiple service environments are associated with the same job queue.
 

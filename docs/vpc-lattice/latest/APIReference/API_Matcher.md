@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Matc
 ---
 
 # Matcher
-<a name="API_Matcher"></a>
 
 Describes the codes to use when checking for a successful response from a target for health checks.
 

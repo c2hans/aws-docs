@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCo
 ---
 
 # GetCommit
-<a name="API_GetCommit"></a>
 
 Returns information about a commit, including commit message and committer information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_Destination.
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Represents the destination of the message, consisting of To:, CC:, and BCC: fields.
 

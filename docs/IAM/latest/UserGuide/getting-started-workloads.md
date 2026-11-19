@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-wor
 ---
 
 # Create an IAM user for workloads that can't use IAM roles
-<a name="getting-started-workloads"></a>
 
 **Important**
 As a [best practice](best-practices.md#lock-away-credentials), we recommend you require your human users to use [temporary credentials](id_credentials_temp.md) when accessing AWS.

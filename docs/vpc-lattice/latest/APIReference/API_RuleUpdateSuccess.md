@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Rule
 ---
 
 # RuleUpdateSuccess
-<a name="API_RuleUpdateSuccess"></a>
 
 Describes a successful rule update.
 

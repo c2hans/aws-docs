@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ReputationOp
 ---
 
 # ReputationOptions
-<a name="API_ReputationOptions"></a>
 
 Contains information about the reputation settings for a configuration set.
 

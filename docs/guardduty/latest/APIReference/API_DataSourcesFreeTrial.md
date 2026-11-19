@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DataSo
 ---
 
 # DataSourcesFreeTrial
-<a name="API_DataSourcesFreeTrial"></a>
 
 Contains information about which data sources are enabled for the GuardDuty member account.
 

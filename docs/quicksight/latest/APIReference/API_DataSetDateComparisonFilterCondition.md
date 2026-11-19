@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetDateComparisonFilterCondition
-<a name="API_DataSetDateComparisonFilterCondition"></a>
 
 A filter condition that compares date values using operators like `BEFORE`, `AFTER`, or their inclusive variants.
 

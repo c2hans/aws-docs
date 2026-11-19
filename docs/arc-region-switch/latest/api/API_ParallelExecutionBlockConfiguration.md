@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Paralle
 ---
 
 # ParallelExecutionBlockConfiguration
-<a name="API_ParallelExecutionBlockConfiguration"></a>
 
 Configuration for steps that should be executed in parallel during a Region switch.
 

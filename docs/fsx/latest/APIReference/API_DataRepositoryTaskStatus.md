@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DataReposito
 ---
 
 # DataRepositoryTaskStatus
-<a name="API_DataRepositoryTaskStatus"></a>
 
 Provides the task status showing a running total of the total number of files to be processed, the number successfully processed, and the number of files the task failed to process.
 

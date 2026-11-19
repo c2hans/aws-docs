@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/building-
 ---
 
 # Building third-party services in the Connect Customer agent workspace
-<a name="building-3P-services"></a>
 
 ## What is a third-party (3P) service?
 <a name="building-3P-services-what-is"></a>

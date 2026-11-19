@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalDeparture
-<a name="API_RouteRentalDeparture"></a>
 
 Details corresponding to the departure for the leg.
 

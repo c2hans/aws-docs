@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteFunctionEven
 ---
 
 # DeleteFunctionEventInvokeConfig
-<a name="API_DeleteFunctionEventInvokeConfig"></a>
 
 Deletes the configuration for asynchronous invocation for a function, version, or alias.
 

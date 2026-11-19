@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # IncomingKeyMaterial
-<a name="API_IncomingKeyMaterial"></a>
 
 Parameter information of the incoming WrappedKeyBlock containing the transaction key.
 

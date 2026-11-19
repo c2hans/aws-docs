@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ValidA
 ---
 
 # ValidAdditionalStorageOptions
-<a name="API_ValidAdditionalStorageOptions"></a>
 
 Contains the valid options for additional storage volumes for a DB instance.
 

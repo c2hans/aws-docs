@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_Credential.html
 ---
 
 # Credential
-<a name="API_Credential"></a>
 
 Contains credential information for an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-distributi
 ---
 
 # SageMaker Studio image support policy
-<a name="sagemaker-distribution"></a>
 
 **Important**
 Currently, all packages in SageMaker Distribution images are licensed for use with Amazon SageMaker AI and do not require additional commercial licenses. However, this might be subject to change in the future, and we recommend reviewing the licensing terms regularly for any updates.

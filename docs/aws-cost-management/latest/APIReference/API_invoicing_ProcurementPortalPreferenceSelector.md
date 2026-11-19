@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProcurementPortalPreferenceSelector
-<a name="API_invoicing_ProcurementPortalPreferenceSelector"></a>
 
 Specifies criteria for selecting which invoices should be processed using a particular procurement portal preference.
 

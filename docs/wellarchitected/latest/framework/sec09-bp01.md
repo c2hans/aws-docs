@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec09-b
 ---
 
 # SEC09-BP01 Implement secure key and certificate management
-<a name="sec09-bp01"></a>
 
  Digital certificates and their private keys establish trust in network communications and prove the identity of services, devices, and users. Proper certificate management means that you provision, distribute, renew, and revoke certificates without exposing private key material or letting certificates lapse. Automate these tasks, as manual certificate handling can cause security incidents.
 

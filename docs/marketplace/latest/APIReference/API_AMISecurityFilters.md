@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AMIS
 ---
 
 # AMISecurityFilters
-<a name="API_AMISecurityFilters"></a>
 
 Filters that apply to assessments performed against the AMI Security framework.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gener
 ---
 
 # GenerateEmbedUrlForRegisteredUser
-<a name="API_GenerateEmbedUrlForRegisteredUser"></a>
 
 Generates an embed URL that you can use to embed an AWS Quick experience in your website. This action can be used for any type of user registered in an AWS Quick account. Before you use this action, make sure that you have configured the relevant AWS Quick resource and permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/building-a-
 ---
 
 # Building a Zero-Copy-Ready Data Cloud for Interoperability with AWS Analytics Services
-<a name="introduction"></a>
 
 *Avijit Goswami, Will Cavin, Nidhi Gupta, Abhijeet Jangam, Olawale Oladehin, and Mahdi Sajjadpour, Amazon Web Services*
 

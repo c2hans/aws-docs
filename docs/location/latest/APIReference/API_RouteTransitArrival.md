@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitArrival
-<a name="API_RouteTransitArrival"></a>
 
 Details corresponding to the arrival for the leg.
 

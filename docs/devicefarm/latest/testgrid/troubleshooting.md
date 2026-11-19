@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/troubleshooti
 ---
 
 # Troubleshooting Device Farm desktop browser testing
-<a name="troubleshooting"></a>
 
 In this section, you'll find some common problems you can run into and how to address them.
 

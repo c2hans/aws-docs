@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-local-
 ---
 
 # Set up Remote IDE
-<a name="remote-access-local-ide-setup"></a>
 
 After administrators complete the instructions in [Connect your Remote IDE to SageMaker spaces with remote access](remote-access.md), you can connect your Remote IDE to your remote SageMaker spaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatefulRulesOptionsDetails
-<a name="API_RuleGroupSourceStatefulRulesOptionsDetails"></a>
 
 A rule option for a stateful rule.
 

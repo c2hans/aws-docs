@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionStreamDetail
-<a name="API_IngestionStreamDetail"></a>
 
 Details about an ingestion stream.
 

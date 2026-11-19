@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Temporary tables for ANSI SQL
-<a name="chap-sql-server-aurora-mysql.sql.temporarytables"></a>
 
 This topic provides reference content for temporary table functionality between Microsoft SQL Server and MySQL, specifically in the context of migrating from SQL Server 2019 to Amazon Aurora MySQL. You’ll gain insight into how temporary tables are created, stored, and managed in both database systems.
 

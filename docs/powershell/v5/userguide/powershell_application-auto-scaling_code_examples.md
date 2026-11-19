@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Application Auto Scaling examples using Tools for PowerShell V5
-<a name="powershell_application-auto-scaling_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS Tools for PowerShell V5 with Application Auto Scaling.
 

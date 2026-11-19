@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-c
 ---
 
 # Condition keys for resource metrics configuration access
-<a name="iam-cw-condition-keys-resource-arn"></a>
 
 This topic explains how the `cloudwatch:ResourceArn` condition key works and how to use it to limit the resources that a principal can enable or disable detailed monitoring for.
 

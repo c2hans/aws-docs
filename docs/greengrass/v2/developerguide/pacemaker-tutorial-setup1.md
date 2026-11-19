@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/pacemaker-t
 ---
 
 # Active/passive AWS IoT Greengrass V2 service
-<a name="pacemaker-tutorial-setup1"></a>
 
 In this setup, you run AWS IoT Greengrass V2 as a systemd service on one instance at a time. Pacemaker manages the DRBD replication, filesystem mount, and AWS IoT Greengrass V2 service as ordered resources. If the primary instance fails, Pacemaker promotes the standby instance's DRBD to primary, mounts the filesystem, and starts AWS IoT Greengrass V2.
 

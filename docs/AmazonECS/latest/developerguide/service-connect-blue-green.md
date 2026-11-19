@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Service Connect resources for Amazon ECS blue/green, linear, and canary deployments
-<a name="service-connect-blue-green"></a>
 
 When using Service Connect with blue/green deployments, you need to configure specific components to enable proper traffic routing between the blue and green service revisions. This section explains the required components and their configuration.
 

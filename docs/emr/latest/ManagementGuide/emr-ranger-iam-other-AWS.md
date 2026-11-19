@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-ia
 ---
 
 # IAM role for other AWS services for Amazon EMR integration
-<a name="emr-ranger-iam-other-AWS"></a>
 
 This role provides users who are not trusted execution engines with credentials to interact with AWS services, if needed. Do not use this IAM role to allow access to Amazon S3 data, unless it's data that should be accessible by all users.
 

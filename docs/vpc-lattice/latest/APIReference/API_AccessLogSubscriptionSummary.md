@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Acce
 ---
 
 # AccessLogSubscriptionSummary
-<a name="API_AccessLogSubscriptionSummary"></a>
 
 Summary information about an access log subscription.
 

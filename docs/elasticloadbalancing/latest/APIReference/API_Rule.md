@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Information about a rule.
 

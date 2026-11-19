@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/trou
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 If you need help with this solution, contact Support to open a support case for this solution.
 

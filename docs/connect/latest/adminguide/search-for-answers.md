@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-for-ans
 ---
 
 # Search for content using Connect Customer agent assist
-<a name="search-for-answers"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Restore options for SQL Server databases on Amazon EC2
-<a name="restore-options"></a>
 
 The following sections provide several database restore options for SQL Server on Amazon Elastic Compute Cloud (Amazon EC2), when your backups are on premises.
 

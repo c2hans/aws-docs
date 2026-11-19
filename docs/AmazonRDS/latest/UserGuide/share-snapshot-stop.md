@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/share-snapsho
 ---
 
 # Stopping snapshot sharing for Amazon RDS
-<a name="share-snapshot-stop"></a>
 
 To stop sharing a DB snapshot, you remove permission from the target AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/vpc-connection-arn.
 ---
 
 # Vpc-connection arn
-<a name="vpc-connection-arn"></a>
 
 ## URI
 <a name="vpc-connection-arn-url"></a>

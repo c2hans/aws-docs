@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Resource Tagger use cases in AMS Accelerate
-<a name="acc-rt-using"></a>
 
 This section lists commonly performed actions with Resource Tagger.
 

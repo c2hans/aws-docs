@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/managing-proj
 ---
 
 # Deleting a Device Farm desktop browser testing project
-<a name="managing-projects-deleting"></a>
 
 To delete a project using the AWS CLI, you need the project ARN.
 

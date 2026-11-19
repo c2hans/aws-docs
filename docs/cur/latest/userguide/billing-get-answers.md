@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/billing-get-answers
 ---
 
 # Getting help with your exports and reports
-<a name="billing-get-answers"></a>
 
 There are many resources available for you to get help with your AWS Billing and Cost Management, AWS Data Exports, and AWS Cost and Usage Reports questions.
 + [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/): This is the quickest way to find answers to questions about your exports and reports. We recommend you start here.

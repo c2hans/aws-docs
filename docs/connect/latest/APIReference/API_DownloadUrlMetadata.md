@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Download
 ---
 
 # DownloadUrlMetadata
-<a name="API_DownloadUrlMetadata"></a>
 
 Metadata used to download the attached file.
 

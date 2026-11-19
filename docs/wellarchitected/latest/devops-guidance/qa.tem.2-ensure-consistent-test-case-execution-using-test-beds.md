@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.TEM.2] Ensure consistent test case execution using test beds
-<a name="qa.tem.2-ensure-consistent-test-case-execution-using-test-beds"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/taxi.html
 ---
 
 # .taxi
-<a name="taxi"></a>
 
 Used by cab, chauffeur, and shuttle companies.
 

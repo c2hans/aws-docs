@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Considerations when switching capacity modes in DynamoDB
-<a name="bp-switching-capacity-modes"></a>
 
 When you create a DynamoDB table, you must select either on-demand or provisioned capacity mode.
 

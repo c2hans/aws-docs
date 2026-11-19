@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteWirelessDevice
-<a name="API_DeleteWirelessDevice"></a>
 
 Deletes a wireless device.
 

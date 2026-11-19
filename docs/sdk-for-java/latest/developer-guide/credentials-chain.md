@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Default credentials provider chain in the AWS SDK for Java 2.x
-<a name="credentials-chain"></a>
 
 The default credentials provider chain in the AWS SDK for Java 2.x automatically searches for AWS credentials in a predefined sequence of locations, allowing applications to authenticate with AWS services without explicitly specifying credential sources.
 

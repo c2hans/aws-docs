@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Deployment In China
-<a name="deployment-in-china"></a>
 
 **Note**
 For deployments in AWS China Regions, please note there are specific regional considerations and limitations. For all other AWS Regions, please follow the [standard deployment guide](deployment-in-global-regions.md)

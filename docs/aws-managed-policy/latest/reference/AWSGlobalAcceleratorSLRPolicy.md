@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGlobalAcceleratorSLRPolicy
-<a name="AWSGlobalAcceleratorSLRPolicy"></a>
 
 **Description**: Policy granting permissions to AWS Global Accelerator to manage EC2 Elastic Network Interfaces and Security Groups.
 

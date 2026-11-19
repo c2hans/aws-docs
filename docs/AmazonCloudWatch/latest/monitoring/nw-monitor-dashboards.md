@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # Network Synthetic Monitor dashboards
-<a name="nw-monitor-dashboards"></a>
 
 You can use dashboards in Network Synthetic Monitor to determine if a network issue is caused by AWS, by using the network health indicator (NHI), and view probe round-trip time and packet loss. You can view this information and metrics for monitors, as well as for individual probes.
 

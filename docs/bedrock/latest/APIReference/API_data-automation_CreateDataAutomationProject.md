@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # CreateDataAutomationProject
-<a name="API_data-automation_CreateDataAutomationProject"></a>
 
 Creates a data automation project.
 

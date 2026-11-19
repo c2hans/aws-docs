@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CustomPluginFileDes
 ---
 
 # CustomPluginFileDescription
-<a name="API_CustomPluginFileDescription"></a>
 
 Details about a custom plugin file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/security_iam_
 ---
 
 # Amazon Elastic Container Registry Identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Amazon ECR resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

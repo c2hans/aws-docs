@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Definition
-<a name="oe-definition"></a>
 
  There are four best practice areas for operational excellence in the cloud:
 +  **Organization**

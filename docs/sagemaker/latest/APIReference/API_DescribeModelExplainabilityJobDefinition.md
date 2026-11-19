@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelExplainabilityJobDefinition
-<a name="API_DescribeModelExplainabilityJobDefinition"></a>
 
 Returns a description of a model explainability job definition.
 

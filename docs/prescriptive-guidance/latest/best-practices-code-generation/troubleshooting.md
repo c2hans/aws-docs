@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Troubleshooting code generation scenarios in Amazon Q Developer
-<a name="troubleshooting"></a>
 
 You might encounter the following common code generation issues when using Amazon Q Developer. Choose a link to see the resolution:
 + [Empty code generation](#suggestions-troubleshooting)

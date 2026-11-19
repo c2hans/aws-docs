@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/websockets.html
 ---
 
 # Using WebSockets to receive messages in Amazon Chime SDK messaging
-<a name="websockets"></a>
 
  You can use the [Amazon Chime JS SDK](https://github.com/aws/amazon-chime-sdk-js) to receive messages using WebSockets, or you can use the WebSocket client library of your choice.
 

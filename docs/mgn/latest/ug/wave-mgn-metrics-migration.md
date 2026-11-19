@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-mgn-metrics-migration
 ---
 
 # Review the migration status of applications in a wave
-<a name="wave-mgn-metrics-migration"></a>
 
 The application **Migration status** metric provides an aggregated overview of the migration status of the wave's associated applications. You can look up an individual application's **Migration status** in the **Applications** table.
 

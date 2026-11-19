@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateExpo
 ---
 
 # UpdateExport
-<a name="API_UpdateExport"></a>
 
 Updates the password used to protect an export zip archive.
 

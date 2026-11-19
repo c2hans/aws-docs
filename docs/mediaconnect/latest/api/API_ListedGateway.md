@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedGatewa
 ---
 
 # ListedGateway
-<a name="API_ListedGateway"></a>
 
  A summary of a gateway, including its name, ARN, and status.
 

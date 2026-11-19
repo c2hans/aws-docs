@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSOrigi
 ---
 
 # OpenZFSOriginSnapshotConfiguration
-<a name="API_OpenZFSOriginSnapshotConfiguration"></a>
 
 The snapshot configuration used when creating an Amazon FSx for OpenZFS volume from a snapshot.
 

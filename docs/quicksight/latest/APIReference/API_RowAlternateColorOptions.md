@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RowAl
 ---
 
 # RowAlternateColorOptions
-<a name="API_RowAlternateColorOptions"></a>
 
 Determines the row alternate color options.
 

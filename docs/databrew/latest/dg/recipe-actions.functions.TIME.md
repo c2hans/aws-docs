@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # TIME
-<a name="recipe-actions.functions.TIME"></a>
 
 Creates a new column containing the time value, from the source columns or values provided.
 

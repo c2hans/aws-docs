@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ano-best-p
 ---
 
 # Best practices
-<a name="ano-best-practices"></a>
 
 ## Understand the minimum date range
 <a name="understanding-minimum-date-range"></a>

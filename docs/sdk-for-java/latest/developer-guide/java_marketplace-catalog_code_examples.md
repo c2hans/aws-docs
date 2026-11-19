@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/java
 ---
 
 # AWS Marketplace Catalog API examples using SDK for Java 2.x
-<a name="java_marketplace-catalog_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Java 2.x with AWS Marketplace Catalog API.
 

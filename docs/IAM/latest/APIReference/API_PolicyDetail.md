@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyDetail
 ---
 
 # PolicyDetail
-<a name="API_PolicyDetail"></a>
 
 Contains information about an IAM policy, including the policy document.
 

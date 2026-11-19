@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListNotificationConfigurations
-<a name="API_ListNotificationConfigurations"></a>
 
 Returns a list of abbreviated `NotificationConfigurations` according to specified filters, in reverse chronological order (newest first).
 

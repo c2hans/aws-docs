@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # CreateMemoryDetail
-<a name="API_CreateMemoryDetail"></a>
 
 The memory as `CreateMemory` acknowledges it: its identifiers. The memory isn't searchable yet when the call returns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Ide
 ---
 
 # IdeConfiguration
-<a name="API_IdeConfiguration"></a>
 
 Information about the configuration of an integrated development environment (IDE) for a Dev Environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html
 ---
 
 # AWS Glue job run statuses on the console
-<a name="view-job-runs"></a>
 
 You can view the status of an AWS Glue extract, transform, and load (ETL) job while it is running or after it has stopped. You can view the status using the AWS Glue console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-policies
 ---
 
 # Evaluating compliance for an account
-<a name="tag-policies-orgs-finding-noncompliant-tags"></a>
 
 You can evaluate the compliance of an account in your organization with its effective tag policy.
 

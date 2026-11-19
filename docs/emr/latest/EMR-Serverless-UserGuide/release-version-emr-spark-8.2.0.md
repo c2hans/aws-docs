@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/rele
 ---
 
 # `AWS runtime for Apache Spark` (emr-spark-8.2.0)
-<a name="release-version-emr-spark-8.2.0"></a>
 
 The following table lists the application versions available with `AWS runtime for Apache Spark` (emr-spark-8.2.0).
 

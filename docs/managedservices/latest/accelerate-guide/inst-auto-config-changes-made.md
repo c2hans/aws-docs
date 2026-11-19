@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Automated instance configuration changes
-<a name="inst-auto-config-changes-made"></a>
 
 The AMS Accelerate instance configuration automation makes the following changes in your account:
 

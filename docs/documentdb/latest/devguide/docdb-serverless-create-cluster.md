@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverl
 ---
 
 # Creating a cluster that uses Amazon DocumentDB serverless
-<a name="docdb-serverless-create-cluster"></a>
 
 ## Creating an Amazon DocumentDB serverless cluster
 <a name="w2aac51c17b5"></a>

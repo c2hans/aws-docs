@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Execut
 ---
 
 # ExecutionTimeFilter
-<a name="API_ExecutionTimeFilter"></a>
 
 Used to filter the workflow executions in visibility APIs by various time-based rules. Each parameter, if specified, defines a rule that must be satisfied by each returned query result. The parameter values are in the [Unix Time format](https://en.wikipedia.org/wiki/Unix_time). For example: `"oldestDate": 1325376070.`
 

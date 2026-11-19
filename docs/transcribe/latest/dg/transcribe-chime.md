@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/transcribe-chime.ht
 ---
 
 # Transcribing your Amazon Chime calls in real time
-<a name="transcribe-chime"></a>
 
 Amazon Transcribe is integrated with the Amazon Chime SDK, facilitating real-time transcriptions of your Amazon Chime calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-model-deployment
 ---
 
 # Deploy the model to Amazon EC2
-<a name="ex1-model-deployment"></a>
 
 To get predictions, deploy your model to Amazon EC2 using Amazon SageMaker AI.
 

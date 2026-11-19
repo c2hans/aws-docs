@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Co
 ---
 
 # Copying an encrypted DB cluster snapshot by using the AWS CLI or Amazon RDS API
-<a name="USER_CopyDBClusterSnapshot.Encrypted.CrossRegion"></a>
 
 Use the procedures in the following sections to copy an encrypted DB cluster snapshot by using the AWS Management Console, AWS CLI, or Amazon RDS API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicies
 ---
 
 # ListPoliciesGrantingServiceAccessEntry
-<a name="API_ListPoliciesGrantingServiceAccessEntry"></a>
 
 Contains details about the permissions policies that are attached to the specified identity (user, group, or role).
 

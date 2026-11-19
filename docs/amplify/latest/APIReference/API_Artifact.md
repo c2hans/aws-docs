@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Artifact
 ---
 
 # Artifact
-<a name="API_Artifact"></a>
 
 Describes an artifact.
 

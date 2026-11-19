@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/managed-
 ---
 
 # Managed Application Platform and Lifecycle Management
-<a name="managed-application-platform-and-lifecycle-management"></a>
 
 Elastic Beanstalk accepts your application as source code, a Dockerfile, or a pre-built container image, and takes ongoing operational responsibility for the running environment. You define the application. AWS handles deploying, scaling, patching, monitoring, and upgrading the platform underneath it. That responsibility does not expire, does not require renewal, and does not shift back to you when the platform evolves.
 

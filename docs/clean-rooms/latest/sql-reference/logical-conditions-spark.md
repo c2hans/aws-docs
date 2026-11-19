@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/logical
 ---
 
 # Logical conditions
-<a name="logical-conditions-spark"></a>
 
 Logical conditions combine the result of two conditions to produce a single result. All logical conditions are binary operators with a Boolean return type.
 

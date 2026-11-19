@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using auto-optimize in the console
-<a name="auto-optimize-console"></a>
 
 You can use the Amazon OpenSearch Service console to create vector ingestion jobs, monitor their progress, view optimization recommendations, and build indexes based on those recommendations.
 

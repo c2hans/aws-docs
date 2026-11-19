@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DateDimension
-<a name="API_connect-customer-profiles_DateDimension"></a>
 
 Object that segments on various Customer Profile's date fields.
 

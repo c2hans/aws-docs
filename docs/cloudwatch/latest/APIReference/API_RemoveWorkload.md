@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Remov
 ---
 
 # RemoveWorkload
-<a name="API_RemoveWorkload"></a>
 
 Remove workload from a component.
 

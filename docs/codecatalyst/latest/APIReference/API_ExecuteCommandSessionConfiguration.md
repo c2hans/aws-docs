@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Exe
 ---
 
 # ExecuteCommandSessionConfiguration
-<a name="API_ExecuteCommandSessionConfiguration"></a>
 
 Information about the commands that will be run on a Dev Environment when an SSH session begins.
 

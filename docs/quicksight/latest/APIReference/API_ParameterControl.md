@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterControl
-<a name="API_ParameterControl"></a>
 
 The control of a parameter that users can interact with in a dashboard or an analysis.
 

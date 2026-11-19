@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListDatasetExportJobs
-<a name="API_ListDatasetExportJobs"></a>
 
 Retrieves a paginated list of dataset export jobs for a workspace.
 

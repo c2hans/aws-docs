@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.ste
 ---
 
 # Step 6: Validate the Schema Conversion
-<a name="chap-rdsoracle2aurora.steps.validateschemaconversion"></a>
 
 To validate the schema conversion, you compare the objects found in the Oracle and Aurora MySQL databases using SQL Workbench/J.
 

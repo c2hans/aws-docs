@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_EbsVolume.ht
 ---
 
 # EbsVolume
-<a name="API_EbsVolume"></a>
 
 EBS block device that's attached to an Amazon EC2 instance.
 

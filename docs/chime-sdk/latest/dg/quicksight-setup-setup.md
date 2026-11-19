@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/quicksight-setup-set
 ---
 
 # Configuring an Quick dashboard for the Amazon Chime SDK
-<a name="quicksight-setup-setup"></a>
 
 Once you set up the data lake, you can configure an Quick dashboard with pre-defined metrics that visualize your data. You can use the following dashboards:
 + **Transcribe Call Analytics \+ Voice Analytics**. Metrics include summary and detailed visuals for turn-by-turn transcripts, issues detected, outcomes, entity detection, and voice profile ID matches.

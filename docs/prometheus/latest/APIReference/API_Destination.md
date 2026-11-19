@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Desti
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Where to send the metrics from a scraper.
 

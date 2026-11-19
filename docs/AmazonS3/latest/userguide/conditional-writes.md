@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-wr
 ---
 
 # How to prevent object overwrites with conditional writes
-<a name="conditional-writes"></a>
 
 By using conditional writes, you can add an additional header to your `WRITE` requests to specify preconditions for your Amazon S3 operation. To conditionally write objects, add the HTTP `If-None-Match` or `If-Match` header.
 

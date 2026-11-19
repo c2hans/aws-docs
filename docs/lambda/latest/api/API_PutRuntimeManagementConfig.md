@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PutRuntimeManageme
 ---
 
 # PutRuntimeManagementConfig
-<a name="API_PutRuntimeManagementConfig"></a>
 
 Sets the runtime management configuration for a function's version. For more information, see [Runtime updates](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html).
 

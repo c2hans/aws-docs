@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/defaul
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Default rooms
-<a name="default-rooms"></a>
 
 When the super administrator has enabled the default room option, network administrators can create rooms managed by a bot. This bot will automatically add users to a room. If users leave the room, they will be re-added.
 

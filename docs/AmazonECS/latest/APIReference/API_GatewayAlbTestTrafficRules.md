@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayAlbTestTrafficRules
-<a name="API_GatewayAlbTestTrafficRules"></a>
 
 The rules that route test traffic to services behind a gateway during progressive deployments.
 

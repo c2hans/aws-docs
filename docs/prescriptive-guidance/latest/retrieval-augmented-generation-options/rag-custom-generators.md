@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Generators for RAG workflows
-<a name="rag-custom-generators"></a>
 
 [Large language models (LLMs)](https://aws.amazon.com/what-is/large-language-model/) are very large [deep learning](https://aws.amazon.com/what-is/deep-learning/) models that are pretrained on vast amounts of data. They are incredibly flexible. LLMs can perform varied tasks, such as answering questions, summarizing documents, translating languages, and completing sentences. They have the potential to disrupt content creation and the way people use search engines and virtual assistants. While not perfect, LLMs demonstrate a remarkable ability to make predictions based on a relatively small prompt or number of inputs.
 

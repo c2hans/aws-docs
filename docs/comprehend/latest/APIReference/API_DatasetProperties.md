@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetProperties
-<a name="API_DatasetProperties"></a>
 
 Properties associated with the dataset.
 

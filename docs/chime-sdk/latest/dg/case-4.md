@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/case-4.html
 ---
 
 # Receiving caller input for the Amazon Chime SDK PSTN audio service
-<a name="case-4"></a>
 
 You use the `ReceiveDigits` action to collect inbound DTMF digits and match them against a regular expression. When the SIP media application receives digits that match the regular expression, it invokes a AWS Lambda function with an `ACTION_SUCCESSFUL` event. The collected digits appear in the `ReceivedDigits` value in the `ActionData` object.
 

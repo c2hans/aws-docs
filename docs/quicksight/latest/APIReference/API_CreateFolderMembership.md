@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateFolderMembership
-<a name="API_CreateFolderMembership"></a>
 
 Adds an asset, such as a dashboard, analysis, or dataset into a folder.
 

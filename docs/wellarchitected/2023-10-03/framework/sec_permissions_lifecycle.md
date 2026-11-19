@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC03-BP06 Manage access based on lifecycle
-<a name="sec_permissions_lifecycle"></a>
 
  Integrate access controls with operator and application lifecycle and your centralized federation provider. For example, remove a user’s access when they leave the organization or change roles.
 

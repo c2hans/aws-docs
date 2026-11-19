@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ev
 ---
 
 # Alignment with the AWS Well-Architected Framework
-<a name="well-architected-framework"></a>
 
 The [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) describes key concepts, design principles, and architectural best practices for designing and running workloads in the AWS Cloud. This section describes how the decision tree in this guide supports the overall benefits of the AWS Well-Architected Framework and its six pillars.
 

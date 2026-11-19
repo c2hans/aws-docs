@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminDisableUser
-<a name="API_AdminDisableUser"></a>
 
 Deactivates a user profile and revokes all access tokens for the user. A deactivated user can't sign in, but still appears in the responses to `ListUsers` API requests.
 

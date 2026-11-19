@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Tulip Next-Gen MES on AWS
-<a name="tulip-next-gen-mes"></a>
 
 Publication date: **October 11, 2022 ([Diagram history](#tulip-diagram-history))**
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/helm.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy applications with Helm on Amazon EKS
-<a name="helm"></a>
 
 The Helm package manager for Kubernetes helps you install and manage applications on your Kubernetes cluster. For more information, see the [Helm documentation](https://docs.helm.sh/). This topic helps you install and run the Helm binaries so that you can install and manage charts using the Helm CLI on your local system.
 

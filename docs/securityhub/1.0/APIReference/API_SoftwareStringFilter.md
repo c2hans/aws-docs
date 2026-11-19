@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Softwar
 ---
 
 # SoftwareStringFilter
-<a name="API_SoftwareStringFilter"></a>
 
 Enables filtering of software packages based on string field values.
 

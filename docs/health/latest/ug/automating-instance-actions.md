@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/automating-instance-act
 ---
 
 # Running operations on EC2 instances automatically in response to events in AWS Health
-<a name="automating-instance-actions"></a>
 
 You can automate actions that respond to scheduled events for your Amazon EC2 instances. When AWS Health sends an event to your AWS account, your EventBridge rule can then invoke targets, such as AWS Systems Manager Automation documents, to automate actions on your behalf.
 

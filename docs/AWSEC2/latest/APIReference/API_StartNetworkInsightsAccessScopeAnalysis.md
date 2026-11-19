@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartNetw
 ---
 
 # StartNetworkInsightsAccessScopeAnalysis
-<a name="API_StartNetworkInsightsAccessScopeAnalysis"></a>
 
 Starts analyzing the specified Network Access Scope.
 

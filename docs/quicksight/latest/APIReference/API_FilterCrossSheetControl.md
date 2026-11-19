@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterCrossSheetControl
-<a name="API_FilterCrossSheetControl"></a>
 
 A control from a filter that is scoped across more than one sheet. This represents your filter control on a sheet
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ContentAssociationSummary
-<a name="API_amazon-q-connect_ContentAssociationSummary"></a>
 
 Summary information about a content association.
 

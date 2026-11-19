@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Notifications
-<a name="observability-alerting-notifications"></a>
 
 Notifications deliver your alerts to external destinations such as Amazon SNS, Slack, Microsoft Teams, email, and custom webhooks. Classic monitors send notifications through actions on their triggers. This page describes how to configure notification channels and actions.
 

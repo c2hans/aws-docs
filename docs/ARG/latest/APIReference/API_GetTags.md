@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetTags.html
 ---
 
 # GetTags
-<a name="API_GetTags"></a>
 
 Returns a list of tags that are associated with a resource group, specified by an Amazon resource name (ARN).
 

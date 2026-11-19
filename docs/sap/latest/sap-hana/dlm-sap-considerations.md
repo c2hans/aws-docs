@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/dlm-sap-consideratio
 ---
 
 # Considerations
-<a name="dlm-sap-considerations"></a>
 
 Only the following configurations are supported.
 + SAP HANA 2.0 SPS 05 and later with multi-tenant configuration.

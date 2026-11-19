@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnsatisfiedConnectionConditionsFlowValidationDetails
-<a name="API_agent_UnsatisfiedConnectionConditionsFlowValidationDetails"></a>
 
 Details about unsatisfied conditions for a connection. A condition is unsatisfied if it can never be true, for example two branches of condition node cannot be simultaneously true.
 

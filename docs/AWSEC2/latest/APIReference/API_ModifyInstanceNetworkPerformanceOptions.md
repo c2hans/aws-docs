@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceNetworkPerformanceOptions
-<a name="API_ModifyInstanceNetworkPerformanceOptions"></a>
 
 Change the configuration of the network performance options for an existing instance.
 

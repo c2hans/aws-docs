@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/gs-st
 ---
 
 # Step 5: Stop your model
-<a name="gs-step-stop-model"></a>
 
 In this step you stop running your model. You are charged for the amount of time your model is running. If you have finished using the model, you should stop it.
 

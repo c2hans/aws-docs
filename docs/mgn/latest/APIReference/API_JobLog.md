@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_JobLog.html
 ---
 
 # JobLog
-<a name="API_JobLog"></a>
 
 Job log.
 

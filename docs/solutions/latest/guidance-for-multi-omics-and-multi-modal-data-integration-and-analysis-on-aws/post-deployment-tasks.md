@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Post-deployment tasks
-<a name="post-deployment-tasks"></a>
 
  After the stack has successfully deployed, complete these post-deployment tasks.
 
@@ -12,7 +11,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 
  Use the following steps to deploy this guidance on AWS. For detailed instructions, follow the links for each step.
 
-[Step 1. Confirm crawler completion](#post-deployment-tasks)
+[Step 1. Confirm crawler completion](post-deployment-tasks.md)
 
 [Step 2. Confirm Omics resource creation](#step-2.-confirm-omics-resource-creation)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeReservedCacheNodesOfferings
-<a name="API_DescribeReservedCacheNodesOfferings"></a>
 
 Lists available reserved cache node offerings.
 

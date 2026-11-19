@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Best practices
-<a name="best-practices-cost"></a>
 
  **Practice Cloud Financial Management**
 + [ HPCCOST01-BP01 Use the right tools to collect and analyze the data you need. ](practice-cloud-financial-management.md#hpccost01-bp01)

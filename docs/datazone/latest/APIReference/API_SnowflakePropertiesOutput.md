@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakePropertiesOutput
-<a name="API_SnowflakePropertiesOutput"></a>
 
 Contains the Snowflake-specific settings returned for an existing connection, including the current role, identity mapping, lineage sync state, and connection status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-rich-card
 ---
 
 # Sending RCS rich cards
-<a name="rcs-rich-cards"></a>
 
 A rich card combines media, text, and suggested actions into a single structured message. Recipients see the card as a native UI element in their messaging client, providing an app-like experience. Use rich cards to present information that encourages interaction, such as product details, booking confirmations, or promotional offers.
 

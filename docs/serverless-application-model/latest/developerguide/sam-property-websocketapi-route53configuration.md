@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Route53Configuration
-<a name="sam-property-websocketapi-route53configuration"></a>
 
 Configures the Route53 record sets for an API.
 

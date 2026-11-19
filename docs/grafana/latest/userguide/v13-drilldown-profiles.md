@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-drilldown-p
 ---
 
 # Profiles Drilldown
-<a name="v13-drilldown-profiles"></a>
 
 The Profiles Drilldown app integrates with Pyroscope, the open-source continuous profiling platform, providing a queryless experience for browsing and analyzing profiling data.
 

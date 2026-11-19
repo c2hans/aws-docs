@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_P
 ---
 
 # PermissionOutput
-<a name="API_qapps_PermissionOutput"></a>
 
 The permission granted to the Amazon Q App.
 

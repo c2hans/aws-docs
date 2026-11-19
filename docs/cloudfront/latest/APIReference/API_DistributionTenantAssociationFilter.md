@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionTenantAssociationFilter
-<a name="API_DistributionTenantAssociationFilter"></a>
 
 Filter by the associated distribution ID or connection group ID.
 

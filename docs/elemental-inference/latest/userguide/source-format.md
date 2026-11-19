@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/sou
 ---
 
 # Step B: Format the source media
-<a name="source-format"></a>
 
 Make sure that the source media meets the requirements.
 

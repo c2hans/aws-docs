@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # JobMetrics
-<a name="API_JobMetrics"></a>
 
 An object containing `inputRecords`, `totalRecordsProcessed`, `matchIDs`, and `recordsNotProcessed`.
 

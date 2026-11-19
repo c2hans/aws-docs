@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # PerformanceInsightsMetric
-<a name="API_PerformanceInsightsMetric"></a>
 
 This data type helps to determine Performance Insights metric to render for the insight.
 

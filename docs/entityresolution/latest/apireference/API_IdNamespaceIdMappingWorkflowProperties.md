@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdNamespaceIdMappingWorkflowProperties
-<a name="API_IdNamespaceIdMappingWorkflowProperties"></a>
 
 An object containing `idMappingType`, `providerProperties`, and `ruleBasedProperties`.
 

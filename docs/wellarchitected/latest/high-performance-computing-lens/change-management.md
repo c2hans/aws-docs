@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Change management
-<a name="change-management"></a>
 
 | HPCREL02: How do you reliably manage software packages and dependencies across users? |
 | --- |

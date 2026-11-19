@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ExportReadSetJobDet
 ---
 
 # ExportReadSetJobDetail
-<a name="API_ExportReadSetJobDetail"></a>
 
 Details about a read set export job.
 

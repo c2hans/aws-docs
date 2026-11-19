@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteUnusedSecurityGroup`
-<a name="automation-aws-delete-ec2-security-group"></a>
 
  **Description**
 

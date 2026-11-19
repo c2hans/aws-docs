@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Clou
 ---
 
 # CloudWatchMetricsDataSummary
-<a name="API_CloudWatchMetricsDataSummary"></a>
 
 Contains information about the analyzed metrics that displayed anomalous behavior.
 

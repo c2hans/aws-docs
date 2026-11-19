@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-deployment-prer
 ---
 
 # Deployment prerequisite checklist
-<a name="evs-deployment-prereq-checklist"></a>
 
 Use the following tables to collect the values that you need to deploy an Amazon Elastic VMware Service environment that runs VMware Cloud Foundation (VCF). The checklist has one table for each topic. Your environment deployment fails if a required value is missing or does not meet its requirement.
 

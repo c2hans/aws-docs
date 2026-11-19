@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_CapabilityS
 ---
 
 # CapabilitySummary
-<a name="API_CapabilitySummary"></a>
 
 Returns the capability summary details. A trading capability contains the information required to transform incoming EDI documents into JSON or XML outputs.
 

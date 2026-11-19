@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troublesho
 ---
 
 # Troubleshoot storage settings for AWS IoT SiteWise
-<a name="troubleshoot-storage-configuration"></a>
 
 Use the following information to troubleshoot and resolve issues with the storage configuration.
 

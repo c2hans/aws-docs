@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sns_example_sns_H
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello Amazon SNS
-<a name="sns_example_sns_Hello_section"></a>
 
 The following code examples show how to get started using Amazon SNS.
 

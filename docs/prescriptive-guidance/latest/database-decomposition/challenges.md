@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Common challenges and managing responsibilities for database decomposition
-<a name="challenges"></a>
 
 Database decomposition is a complex process that requires careful planning, execution, and management. As organizations seek to modernize their data infrastructure, they often encounter a myriad of challenges that can impact the success of their projects. This section describes the common hurdles and introduces a structured approach to overcoming these obstacles.
 

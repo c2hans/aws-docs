@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPhon
 ---
 
 # ListPhoneNumbersSummary
-<a name="API_ListPhoneNumbersSummary"></a>
 
 Information about phone numbers that have been claimed to your Connect Customer instance or traffic distribution group.
 

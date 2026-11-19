@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateProvisioningPreferences
-<a name="API_UpdateProvisioningPreferences"></a>
 
 The user-defined preferences that will be applied when updating a provisioned product. Not all preferences are applicable to all provisioned product types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansPurchaseRecommendation
-<a name="API_SavingsPlansPurchaseRecommendation"></a>
 
 Contains your request parameters, Savings Plan Recommendations Summary, and Details.
 

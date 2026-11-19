@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Describe
 ---
 
 # DescribeLimits
-<a name="API_DescribeLimits"></a>
 
 Describes the shard limits and usage for the account.
 

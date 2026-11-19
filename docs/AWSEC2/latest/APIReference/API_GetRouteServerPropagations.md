@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetRouteS
 ---
 
 # GetRouteServerPropagations
-<a name="API_GetRouteServerPropagations"></a>
 
 Gets information about the route propagations for the specified route server.
 

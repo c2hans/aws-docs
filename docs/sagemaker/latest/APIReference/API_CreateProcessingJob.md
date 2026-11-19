@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateProcessingJob
-<a name="API_CreateProcessingJob"></a>
 
 Creates a processing job.
 

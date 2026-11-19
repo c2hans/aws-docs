@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/concurrency.html
 ---
 
 # Concurrency in the AWS SDK for Rust
-<a name="concurrency"></a>
 
 The AWS SDK for Rust doesn't provide concurrency control but users have many options for implementing their own.
 
@@ -80,6 +79,9 @@ async fn main() {
 
 **Note**
  In these examples, we won't be handling errors, and we assume that the example bucket has no objects with keys that look like file paths. Thus, we won't cover creating nested directories.
+
+**Note**
+For production bulk downloads, consider the Transfer Manager for Amazon S3, which downloads objects concurrently and manages that concurrency for you. For more information, see [Using the Transfer Manager for Amazon S3](transfer-manager-s3.md).
 
 Because of the architecture of modern computers, we can rewrite this program to be much more efficient. We'll do that in a later example, but first, let's learn a few more concepts.
 

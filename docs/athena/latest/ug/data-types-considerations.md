@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/data-types-consideratio
 ---
 
 # Considerations for data types
-<a name="data-types-considerations"></a>
 
 ## Size limits
 <a name="data-types-considerations-size"></a>

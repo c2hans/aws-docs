@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_InstanceSummary
 ---
 
 # InstanceSummary
-<a name="API_InstanceSummary"></a>
 
 A complex type that contains information about the instances that you registered by using a specified service.
 

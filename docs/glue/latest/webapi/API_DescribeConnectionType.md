@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DescribeConnectio
 ---
 
 # DescribeConnectionType
-<a name="API_DescribeConnectionType"></a>
 
 The `DescribeConnectionType` API provides full details of the supported options for a given connection type in AWS Glue. The response includes authentication configuration details that show supported authentication types and properties, and RestConfiguration for custom REST-based connection types registered via `RegisterConnectionType`.
 

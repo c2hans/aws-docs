@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FleetAttributeCapability
-<a name="API_FleetAttributeCapability"></a>
 
 Defines the fleet's capability name, minimum, and maximum.
 

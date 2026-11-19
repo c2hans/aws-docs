@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_InboundEdiO
 ---
 
 # InboundEdiOptions
-<a name="API_InboundEdiOptions"></a>
 
 Contains options for processing inbound EDI files. These options allow for customizing how incoming EDI documents are processed.
 

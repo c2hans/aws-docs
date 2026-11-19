@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Configure container lifecycle hooks
-<a name="lifecycle-hooks"></a>
 
 During a graceful container shutdown, your application should respond to a `SIGTERM` signal by starting its shutdown so that clients don't experience any downtime. Your application should run cleanup procedures such as the following:
 + Saving data

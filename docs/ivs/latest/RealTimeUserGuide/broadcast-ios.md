@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-i
 ---
 
 # IVS Broadcast SDK: iOS Guide \| Real-Time Streaming
-<a name="broadcast-ios"></a>
 
 The IVS real-time streaming iOS broadcast SDK enables participants to send and receive video on iOS.
 

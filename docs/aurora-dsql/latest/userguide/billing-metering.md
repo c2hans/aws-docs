@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/billing-met
 ---
 
 # How billing works in Aurora DSQL
-<a name="billing-metering"></a>
 
 With Amazon Aurora DSQL, you only pay for what you use with no upfront costs. This section explains how Aurora DSQL meters your database activity and translates it into charges on your AWS bill. For current pricing by Region, see the [Aurora DSQL pricing page](https://aws.amazon.com/rds/aurora/dsql/pricing/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListDa
 ---
 
 # ListDataQualityJobDefinitions
-<a name="API_ListDataQualityJobDefinitions"></a>
 
 Lists the data quality job definitions in your account.
 

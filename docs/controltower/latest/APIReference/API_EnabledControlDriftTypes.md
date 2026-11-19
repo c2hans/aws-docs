@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlDriftTypes
-<a name="API_EnabledControlDriftTypes"></a>
 
 Defines the various categories of drift that can occur for an enabled control resource.
 

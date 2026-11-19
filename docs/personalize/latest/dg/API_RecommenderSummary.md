@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RecommenderSum
 ---
 
 # RecommenderSummary
-<a name="API_RecommenderSummary"></a>
 
 Provides a summary of the properties of the recommender.
 

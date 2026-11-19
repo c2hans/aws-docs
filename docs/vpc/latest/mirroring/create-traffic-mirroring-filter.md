@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirr
 ---
 
 # Create, modify, or delete a traffic mirror filter
-<a name="create-traffic-mirroring-filter"></a>
 
 Use a traffic mirror filter and its rules to determine the traffic that is mirrored. A traffic mirror filter contains one or more traffic mirror rules. For more information, see [Understand traffic mirror filter concepts](traffic-mirroring-filters.md).
 

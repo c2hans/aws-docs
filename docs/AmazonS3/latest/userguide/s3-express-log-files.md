@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-log
 ---
 
 # CloudTrail log file examples for directory buckets
-<a name="s3-express-log-files"></a>
 
 A CloudTrail log file includes information about the requested API operation, the date and time of the operation, request parameters, and so on. This topic features examples for CloudTrail data events and management events for directory buckets.
 

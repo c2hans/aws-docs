@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-lo
 ---
 
 # Use Elastic Load Balancing to distribute incoming application traffic in your Auto Scaling group
-<a name="autoscaling-load-balancer"></a>
 
 Elastic Load Balancing automatically distributes your incoming application traffic across all the EC2 instances that you are running. Elastic Load Balancing helps to manage incoming requests by optimally routing traffic so that no one instance is overwhelmed. To use Elastic Load Balancing with your Auto Scaling group, [attach the load balancer to your Auto Scaling group](attach-load-balancer-asg.md). This registers the group with the load balancer, which acts as a single point of contact for all incoming web traffic to your Auto Scaling group.
 

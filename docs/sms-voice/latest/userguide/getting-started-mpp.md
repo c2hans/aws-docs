@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/getting-start
 ---
 
 # Message part preview
-<a name="getting-started-mpp"></a>
 
 A single SMS message can contain up to 140 bytes of information. When a message contains more than the maximum number of characters, the message is split into multiple parts. Depending on the recipient's mobile carrier and device, multiple messages might be displayed as a single message, or as a sequence of separate messages.
 

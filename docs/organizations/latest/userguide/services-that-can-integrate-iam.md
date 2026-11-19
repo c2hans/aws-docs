@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Identity and Access Management and AWS Organizations
-<a name="services-that-can-integrate-iam"></a>
 
 AWS Identity and Access Management is a web service for securely controlling access to AWS services.
 

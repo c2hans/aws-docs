@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Neptune openCypher exceptions
-<a name="access-graph-opencypher-exceptions"></a>
 
 When working with openCypher on Amazon Neptune, a variety of exceptions may occur. Below are common exceptions you may receive, either from the HTTPS endpoint or from the Bolt driver (all exceptions from the Bolt driver are reported as Server State Exceptions). Where the remedy is to retry the request, see [Exception Handling and Retries](transactions-exceptions.md) for guidance on developing an effective retry strategy.
 

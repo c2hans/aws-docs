@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/how-it-works-stora
 ---
 
 # Understanding non-storage and storage API operations
-<a name="how-it-works-storage-non-storage"></a>
 
 Amazon Rekognition provides two types of API operations. They are non-storage operations where no information is stored by Amazon Rekognition, and storage operations where certain facial information is stored by Amazon Rekognition.
 

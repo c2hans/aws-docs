@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskTi
 ---
 
 # OtaTaskTimeoutConfig
-<a name="API_OtaTaskTimeoutConfig"></a>
 
 Over-the-air (OTA) task timeout config.
 

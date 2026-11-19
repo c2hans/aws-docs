@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/bigquery-redshift-next-st
 ---
 
 # Migration from a BigQuery project to Amazon Redshift next steps
-<a name="bigquery-redshift-next-steps"></a>
 
 After you migrate your BigQuery project to Amazon Redshift, you can explore several other resources:
 + Get started with Amazon Redshift. For more information, see [Amazon Redshift Getting Started Guide](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html).

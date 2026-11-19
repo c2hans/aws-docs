@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DestinationDetails
-<a name="API_DestinationDetails"></a>
 
 Configuration details of either a CloudWatch Logs destination or Kinesis Data Firehose destination.
 

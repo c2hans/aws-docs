@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/ter
 ---
 
 # Amazon Verified Permissions and Cedar policy language terms and concepts
-<a name="terminology"></a>
 
 You should understand the following concepts to use Amazon Verified Permissions.
 

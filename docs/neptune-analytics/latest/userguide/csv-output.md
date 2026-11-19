@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/csv-o
 ---
 
 # Sample CSV output
-<a name="csv-output"></a>
 
  Given the following CSV file:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/edit-cu
 ---
 
 # Edit a Amazon MQ for RabbitMQ Configuration Revision
-<a name="edit-current-rabbitmq-configuration-console"></a>
 
  The following instructions describe how to edit a configuration revision for your broker.
 

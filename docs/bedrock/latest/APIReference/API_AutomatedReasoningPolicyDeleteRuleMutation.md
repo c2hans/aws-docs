@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteRuleMutation
-<a name="API_AutomatedReasoningPolicyDeleteRuleMutation"></a>
 
 A mutation operation that removes a rule from the policy definition during the build process.
 

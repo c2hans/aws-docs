@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListLinksRespo
 ---
 
 # ListLinksResponseStructure
-<a name="API_ListLinksResponseStructure"></a>
 
 Describes a link.
 

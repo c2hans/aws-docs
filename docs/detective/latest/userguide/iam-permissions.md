@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/iam-permissio
 ---
 
 # Step 2: Adding the required IAM permissions to your account in Detective
-<a name="iam-permissions"></a>
 
 This topic explains the details of the AWS Identity and Access Management (IAM) permissions policy that you must add to your IAM identity.
 

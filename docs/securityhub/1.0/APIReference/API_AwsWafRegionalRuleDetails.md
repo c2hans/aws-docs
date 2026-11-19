@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalRuleDetails
-<a name="API_AwsWafRegionalRuleDetails"></a>
 
 Provides information about an AWS WAF Regional rule. This rule identifies the web requests that you want to allow, block, or count.
 

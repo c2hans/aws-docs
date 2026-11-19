@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Perform batch operations
-<a name="ddb-mapper-batch"></a>
 
 Batch operations read or write many items across one or more tables in a single call. DynamoDB Mapper exposes two batch operations on the **mapper** itself (not on a table):
 +  [`batchGetItem`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): retrieve many items by key.

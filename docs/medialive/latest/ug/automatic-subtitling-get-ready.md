@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/automatic-subtitling
 ---
 
 # Get ready
-<a name="automatic-subtitling-get-ready"></a>
 
 ## Pricing
 <a name="automatic-subtitling-pricing"></a>

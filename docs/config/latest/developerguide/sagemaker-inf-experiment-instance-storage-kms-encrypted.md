@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-i
 ---
 
 # sagemaker-inf-experiment-instance-storage-kms-encrypted
-<a name="sagemaker-inf-experiment-instance-storage-kms-encrypted"></a>
 
 Checks whether a SageMaker inference experiment is configured with a customer-managed AWS KMS key for instance storage volume encryption. The rule is NON\_COMPLIANT if KmsKey is not set or is empty.
 

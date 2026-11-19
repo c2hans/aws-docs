@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecove
 ---
 
 # DeleteRecoveryInstance
-<a name="API_DeleteRecoveryInstance"></a>
 
 Deletes a single Recovery Instance by ID. This deletes the Recovery Instance resource from Elastic Disaster Recovery. The Recovery Instance must be disconnected first in order to delete it.
 

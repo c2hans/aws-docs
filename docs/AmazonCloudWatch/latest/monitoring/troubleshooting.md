@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/troub
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section covers common issues you might encounter when working with CloudWatch pipelines and their solutions.
 

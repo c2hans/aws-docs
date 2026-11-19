@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_WaitAndCon
 ---
 
 # WaitAndContinueSpecification
-<a name="API_WaitAndContinueSpecification"></a>
 
 Specifies the prompts that Amazon Lex uses while a bot is waiting for customer input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/add-repositories.html
 ---
 
 # Add repositories on an AL2 instance
-<a name="add-repositories"></a>
 
 This information applies to AL2. For information about AL2023, see [Deterministic upgrades through versioned repositories on AL2023](https://docs.aws.amazon.com/linux/al2023/ug/deterministic-upgrades.html) in the *Amazon Linux 2023 User Guide*.
 

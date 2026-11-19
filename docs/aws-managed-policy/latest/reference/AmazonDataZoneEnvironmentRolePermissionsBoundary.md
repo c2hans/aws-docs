@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneEnvironmentRolePermissionsBoundary
-<a name="AmazonDataZoneEnvironmentRolePermissionsBoundary"></a>
 
 **Description**: Amazon DataZone creates IAM roles for Environments to perform data analytics actions, and uses this policy when creating these roles to define the boundary of their permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best
 ---
 
 # Best practices for a multi-account environment
-<a name="orgs_best-practices"></a>
 
 Follow these recommendations to help walk you through setting up and managing a multi-account environment in AWS Organizations.
 

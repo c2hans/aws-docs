@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.
 ---
 
 # Deleting a general purpose bucket
-<a name="delete-bucket"></a>
 
 You can delete an empty Amazon S3 general purpose bucket. For information about emptying a general purpose bucket, see [Emptying a general purpose bucket](empty-bucket.md).
 

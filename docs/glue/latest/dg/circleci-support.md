@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/circleci-support.html
 ---
 
 # AWS Glue support for CircleCI
-<a name="circleci-support"></a>
 
 AWS Glue supports CircleCI as follows:
 

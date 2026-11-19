@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteImageBuilder
-<a name="API_DeleteImageBuilder"></a>
 
 Deletes the specified image builder and releases the capacity.
 

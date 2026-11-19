@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/servi
 ---
 
 # Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell
-<a name="service_code_examples"></a>
 
 The following command line examples demonstrate how to perform individual CloudFormation actions with the AWS CLI and PowerShell. These examples include only the most commonly used actions. For a complete list, see [cloudformation](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/) in the *AWS CLI Command Reference*.
 

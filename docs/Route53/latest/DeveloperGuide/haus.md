@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/haus.html
 ---
 
 # .haus
-<a name="haus"></a>
 
 Used by real estate and construction industries. "Haus" is a German word that means "house."
 

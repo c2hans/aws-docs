@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/compute-resources
 ---
 
 # Example: Allow compute resource tags for specific keys and values
-<a name="compute-resources-tag-access-policy-example"></a>
 
 The following identity-based policy allows a principal to create and update compute environments only when the request sets the `CostCenter` compute resource tag to `engineering`. The `Allow` statement requires that value, and the `Deny` statement uses the `Null` operator on `batch:ComputeResourcesTag/CostCenter` to reject any request that omits the `CostCenter` tag. AWS Batch populates `batch:ComputeResourcesTag/{{tag-key}}` only when a request includes `computeResources.tags`.
 

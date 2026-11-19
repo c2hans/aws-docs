@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/trend-micro.htm
 ---
 
 # Trend Micro
-<a name="trend-micro"></a>
 
 The following are the requirements and connection instructions for using Trend Micro with Amazon AppFlow.
 

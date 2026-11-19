@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 ---
 
 # Best practices for large migrations
-<a name="best-practices"></a>
 
 Large migrations can become challenging, depending on factors that govern how an organization functions. This section covers some of the key factors that can simplify large migrations if addressed during the initial phases of the effort and tracked throughout the project.
 

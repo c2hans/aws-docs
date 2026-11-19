@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Daemon events
-<a name="managed-daemons-events"></a>
 
 Amazon ECS sends daemon events to to provide visibility into daemon task management and deployment lifecycle changes. You can use these events to monitor daemon health, track deployment progress, and trigger automated workflows.
 

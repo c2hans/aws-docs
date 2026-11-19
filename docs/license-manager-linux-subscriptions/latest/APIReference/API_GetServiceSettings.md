@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # GetServiceSettings
-<a name="API_GetServiceSettings"></a>
 
 Lists the Linux subscriptions service settings for your account.
 

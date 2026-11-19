@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps-iframe
 ---
 
 # Iframe permissions for third-party applications
-<a name="3p-apps-iframe-permissions"></a>
 
 When you configure third-party applications, you can specify `iframe` permission settings. You can change these permissions after creating the application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # CreateAccessSource
-<a name="API_route53globalresolver_CreateAccessSource"></a>
 
 Creates an access source for a DNS view. An access source defines which traffic is allowed to send DNS queries to the Route 53 Global Resolver, along with the permitted DNS protocols. You can define the allowed source in one of two ways: specify an IP address or CIDR range with `cidr` to allow queries by source IP, or specify an AWS Cloud WAN segment with `segment` (together with the associated core network endpoint) to allow queries from that segment instead of a CIDR range.
 

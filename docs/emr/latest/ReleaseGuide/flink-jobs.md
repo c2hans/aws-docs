@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-jobs.html
 ---
 
 # Working with Flink jobs in Amazon EMR
-<a name="flink-jobs"></a>
 
 There are several ways to interact with Flink on Amazon EMR: through the console, the Flink interface found on the ResourceManager Tracking UI, and at the command line. You can submit a JAR file to a Flink application with any of these. Once submit a JAR file, it becomes a job that is managed by the Flink JobManager. The JobManager is located on the YARN node that hosts the Flink session Application Master daemon.
 

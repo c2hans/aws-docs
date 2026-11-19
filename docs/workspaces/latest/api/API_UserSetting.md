@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UserSetting.ht
 ---
 
 # UserSetting
-<a name="API_UserSetting"></a>
 
 Information about the user's permission settings.
 

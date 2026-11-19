@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Setting up Kerberos authentication using Active Directory security groups for Babelfish
-<a name="babelfish-kerberos-securityad"></a>
 
 Starting from Babelfish version 4.2.0, you can setup Kerberos authentication for Babelfish with Active Directory security groups. The following are prerequisites to complete for setting up Kerberos authentication using Active Directory:
 +  You must follow all the steps mentioned at [Kerberos authentication with Babelfish](babelfish-active-directory.md).

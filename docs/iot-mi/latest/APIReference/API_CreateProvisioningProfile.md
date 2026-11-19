@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreatePro
 ---
 
 # CreateProvisioningProfile
-<a name="API_CreateProvisioningProfile"></a>
 
 Create a provisioning profile for executing device provisioning flows. The provisioning profile is a document that defines the set of resources and policies applied to a device during the provisioning process.
 

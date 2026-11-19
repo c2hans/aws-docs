@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIREL01: Have you planned for events that impact your software development infrastructure and challenge your recovery plans?
-<a name="fsirel01"></a>
 
  Financial services institutions are increasingly relying on continuous integration (CI) and deployment (CD) pipelines to accelerate development and deployment. Often the only way to change production systems is through the pipeline to ensure that quality controls, security guard rails, and standards are maintained as part of the change management process.
 

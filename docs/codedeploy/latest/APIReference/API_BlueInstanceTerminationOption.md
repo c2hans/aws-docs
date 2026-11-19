@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueI
 ---
 
 # BlueInstanceTerminationOption
-<a name="API_BlueInstanceTerminationOption"></a>
 
 Information about whether instances in the original environment are terminated when a blue/green deployment is successful. `BlueInstanceTerminationOption` does not apply to Lambda deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Unit.ht
 ---
 
 # Unit
-<a name="API_Unit"></a>
 
 The details of the policy of creating an environment.
 

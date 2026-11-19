@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_B
 ---
 
 # BatchPermissionsFailureEntry
-<a name="API_BatchPermissionsFailureEntry"></a>
 
 A list of failures when performing a batch grant or batch revoke operation.
 

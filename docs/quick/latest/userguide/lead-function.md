@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/lead-function.htm
 ---
 
 # lead
-<a name="lead-function"></a>
 
 The `lead` function calculates the lead (following) value for a measure based on specified partitions and sorts.
 

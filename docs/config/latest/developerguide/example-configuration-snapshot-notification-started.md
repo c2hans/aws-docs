@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/example-con
 ---
 
 # Example Configuration Snapshot Delivery Started Notification
-<a name="example-configuration-snapshot-notification-started"></a>
 
 The following is an example notification that AWS Config sends when AWS Config starts delivering the configuration snapshot for your account.
 

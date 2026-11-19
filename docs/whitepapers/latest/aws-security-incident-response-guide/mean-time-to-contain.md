@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Mean time to contain
-<a name="mean-time-to-contain"></a>
 
  *Mean time to contain* is the average time it takes to contain a possible security incident. Specifically, this is the time between initial alert or discovery of a possible security incident and the completion of responsive actions that effectively prevents the attacker or compromised systems from doing further harm.
 

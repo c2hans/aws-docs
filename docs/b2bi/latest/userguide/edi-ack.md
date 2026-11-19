@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/edi-ack.html
 ---
 
 # EDI acknowledgements
-<a name="edi-ack"></a>
 
 B2B Data Interchange automatically generates acknowledgements that you can return to your trading partner to communicate that the file was received and to report errors. The generated acknowledgement is stored in your Amazon S3 bucket alongside the transformed EDI, and an event is emitted by the B2B Data Interchange service to Amazon EventBridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Monitor Launch Wizard for SAP deployments
-<a name="launch-wizard-sap-monitoring"></a>
 
 You can monitor your Launch Wizard for SAP deployments using the AWS Launch Wizard console and AWS CLI.
 

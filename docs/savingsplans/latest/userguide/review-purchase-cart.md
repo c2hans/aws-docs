@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/review-pur
 ---
 
 # Reviewing and finalizing Savings Plans purchases
-<a name="review-purchase-cart"></a>
 
 The Savings Plans **Carts** page keeps your commitments until you're ready to make a purchase.<a name="review-cart-howto"></a>
 

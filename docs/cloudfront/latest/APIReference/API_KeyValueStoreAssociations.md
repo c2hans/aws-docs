@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyVa
 ---
 
 # KeyValueStoreAssociations
-<a name="API_KeyValueStoreAssociations"></a>
 
 The key value store associations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Concepts
-<a name="sap-hana-pacemaker-sles-concepts"></a>
 
 ## SAP – SAP HANA and Hana System Replication
 <a name="_sap_sap_hana_and_hana_system_replication"></a>

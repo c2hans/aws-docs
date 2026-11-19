@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/use-cfn-template.html
 ---
 
 # Import an existing AWS CloudFormation template
-<a name="use-cfn-template"></a>
 
 Import resources from an AWS CloudFormation template into your AWS Cloud Development Kit (AWS CDK) applications by using the [`cloudformation-include.CfnInclude`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.cloudformation_include-readme.html) construct to convert resources to L1 constructs.
 

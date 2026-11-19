@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_networ
 ---
 
 # Create a security group to support EFA communications
-<a name="working-with_networking_efa_create-sg"></a>
 
 ------
 #### [ AWS CLI ]

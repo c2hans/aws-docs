@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # StartResourceGroupingRecommendationTask
-<a name="API_StartResourceGroupingRecommendationTask"></a>
 
 Starts grouping recommendation task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-job-defini
 ---
 
 # Create a single-node job definition with multiple containers on Amazon EC2 resources
-<a name="create-job-definition-single-node-multi-container"></a>
 
 Complete the following steps to create a single-node job definition with multiple containers on Amazon Elastic Compute Cloud (Amazon EC2) resources.
 

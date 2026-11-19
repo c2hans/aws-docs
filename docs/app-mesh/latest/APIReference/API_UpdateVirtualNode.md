@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateV
 ---
 
 # UpdateVirtualNode
-<a name="API_UpdateVirtualNode"></a>
 
 Updates an existing virtual node in a specified service mesh.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/use-meetings-view.html
 ---
 
 # Using Meetings view
-<a name="use-meetings-view"></a>
 
 The following sections explain how to use the **Meetings** view in the Amazon Chime mobile app.
 

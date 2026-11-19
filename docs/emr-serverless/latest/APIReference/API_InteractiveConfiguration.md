@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_I
 ---
 
 # InteractiveConfiguration
-<a name="API_InteractiveConfiguration"></a>
 
 The configuration to use to enable the different types of interactive use cases in an application.
 

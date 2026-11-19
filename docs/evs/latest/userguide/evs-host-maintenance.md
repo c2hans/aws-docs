@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-host-maintenanc
 ---
 
 # Host maintenance and retirement events
-<a name="evs-host-maintenance"></a>
 
 Amazon Elastic VMware Service hosts run on EC2 bare metal instances, and AWS performs scheduled maintenance on these instances. You’re responsible for the VMware Cloud Foundation (VCF) software on the host, for monitoring host health, and for replacing a host before a scheduled event or after a host failure. What a scheduled event does to your data depends on whether the host has local storage or is diskless.
 

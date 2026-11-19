@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Policy generation: per-policy validation
-<a name="policy-generation-validation"></a>
 
 When using the policy authoring service to generate policies from natural language, validation and analysis occur **per individual policy** during generation.
 

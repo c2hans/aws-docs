@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # MatchItem
-<a name="API_connect-customer-profiles_MatchItem"></a>
 
 The Match group object.
 

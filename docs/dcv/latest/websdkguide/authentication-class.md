@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/authentication-cl
 ---
 
 # Authentication Class
-<a name="authentication-class"></a>
 
 The Authentication Class must be used to obtain an authentication token by calling the [`authenticate` method](dcv-module.md#authenticate) of the `dcv` module. For an example showing how to use it, see the [Getting started](establish-connection.md#auth-conn) section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopHy
 ---
 
 # StopHyperParameterTuningJob
-<a name="API_StopHyperParameterTuningJob"></a>
 
 Stops a running hyperparameter tuning job and all running training jobs that the tuning job launched.
 

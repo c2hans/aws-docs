@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentIdentifier
-<a name="API_DocumentIdentifier"></a>
 
 Describes the name of a SSM document.
 

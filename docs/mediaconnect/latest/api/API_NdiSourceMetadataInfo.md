@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiSourceMet
 ---
 
 # NdiSourceMetadataInfo
-<a name="API_NdiSourceMetadataInfo"></a>
 
  Comprehensive information about the NDI® source that's associated with a flow. This includes the currently active NDI source, a list of all discovered NDI senders, metadata about the media streams, and any relevant status messages.
 

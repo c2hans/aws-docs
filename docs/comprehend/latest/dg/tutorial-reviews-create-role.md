@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/tutorial-reviews-cr
 ---
 
 # Step 2: (CLI only) creating an IAM role for Amazon Comprehend
-<a name="tutorial-reviews-create-role"></a>
 
 This step is necessary only if you are using the AWS Command Line Interface (AWS CLI) to complete this tutorial. If you are using the Amazon Comprehend console to run the analysis jobs, skip to [Step 3: Running analysis jobs on documents in Amazon S3](tutorial-reviews-analysis.md).
 

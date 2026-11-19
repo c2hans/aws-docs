@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-auto-term
 ---
 
 # Using an auto-termination policy for Amazon EMR cluster cleanup
-<a name="emr-auto-termination-policy"></a>
 
 An auto-termination policy lets you orchestrate cluster cleanup without the need to monitor and manually terminate unused clusters. When you add an auto-termination policy to a cluster, you specify the amount of idle time after which the cluster should automatically shut down.
 

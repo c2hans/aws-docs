@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/router-input-fail
 ---
 
 # Source failover and merge for router inputs in MediaConnect
-<a name="router-input-failover"></a>
 
 MediaConnect supports two types of redundancy configurations for router inputs: **Failover** and **Merge**.
 

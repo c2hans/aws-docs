@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HttpPostLifecycleHookAction
-<a name="API_HttpPostLifecycleHookAction"></a>
 
 A lifecycle hook action that sends an HTTP `POST` request to the agent's container. The path and port can't conflict with a path that your agent already serves for AgentCore Runtime, such as the protocol's invocation path or the health check path.
 

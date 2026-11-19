@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # Complete prerequisites
-<a name="tutorial-stock-data-kplkcl-begin"></a>
 
 The following are requirements for completing the [Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md).
 

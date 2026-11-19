@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaLiveFullAccess
-<a name="AWSElementalMediaLiveFullAccess"></a>
 
 **Description**: Provides full access to AWS Elemental MediaLive resources
 

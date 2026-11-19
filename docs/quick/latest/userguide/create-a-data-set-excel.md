@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-data-set
 ---
 
 # Creating a dataset using a Microsoft Excel file
-<a name="create-a-data-set-excel"></a>
 
 To create a dataset using a Microsoft Excel file data source, upload an .xlsx file from a local or networked drive. The data is imported into [SPICE](spice.md).
 

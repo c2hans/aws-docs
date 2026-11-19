@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetServiceSettings
-<a name="API_GetServiceSettings"></a>
 
 Gets the License Manager settings for the current Region.
 

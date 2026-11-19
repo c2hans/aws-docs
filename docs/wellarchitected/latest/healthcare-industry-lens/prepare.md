@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Prepare
-<a name="prepare"></a>
 
 | HCL\_OPS1. Have you defined a formal risk management program? |
 | --- |

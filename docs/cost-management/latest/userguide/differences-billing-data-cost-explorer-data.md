@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/differe
 ---
 
 # Knowing the differences between Billing and Cost Explorer data
-<a name="differences-billing-data-cost-explorer-data"></a>
 
 ## Billing data
 <a name="billing-data"></a>

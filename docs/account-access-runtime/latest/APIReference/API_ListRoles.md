@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 ---
 
 # ListRoles
-<a name="API_ListRoles"></a>
 
 Returns the roles that you are entitled to access within a tenant. The results are paginated. Use a returned role with `GetRoleCredentials` to obtain temporary credentials. This operation requires the `account_access:read_only` scope.
 

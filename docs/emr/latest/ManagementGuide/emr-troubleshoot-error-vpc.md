@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # VPC errors during Amazon EMR cluster operations
-<a name="emr-troubleshoot-error-vpc"></a>
 
 The following errors are common to VPC configuration in Amazon EMR.
 

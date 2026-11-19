@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/column-stats-notes.html
 ---
 
 # Considerations and limitations
-<a name="column-stats-notes"></a>
 
 The following considerations and limitations apply to generating column statistics.
 

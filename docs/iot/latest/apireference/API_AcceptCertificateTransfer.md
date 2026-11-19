@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AcceptCertif
 ---
 
 # AcceptCertificateTransfer
-<a name="API_AcceptCertificateTransfer"></a>
 
 Accepts a pending certificate transfer. The default state of the certificate is INACTIVE.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetAutomationExecution
-<a name="API_GetAutomationExecution"></a>
 
 Get detailed information about a particular Automation execution.
 

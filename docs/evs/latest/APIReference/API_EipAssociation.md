@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_EipAssociati
 ---
 
 # EipAssociation
-<a name="API_EipAssociation"></a>
 
 An Elastic IP address association with the elastic network interface in the VLAN subnet.
 

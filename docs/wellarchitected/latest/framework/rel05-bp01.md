@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP01 Implement graceful degradation to transform applicable hard dependencies into soft dependencies
-<a name="rel05-bp01"></a>
 
  A component with a hard dependency fails when the dependency fails. Graceful degradation converts hard dependencies into soft dependencies, so a component continues to deliver its core function even when a dependency is unhealthy. The component might return stale data, alternate data, or a reduced response, but it does not fail outright.
 

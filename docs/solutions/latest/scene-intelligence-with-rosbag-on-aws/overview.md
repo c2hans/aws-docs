@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Extract sensor data and apply object detection with custom business logic
-<a name="overview"></a>
 
 Scene Intelligence with Rosbag on AWS provides an end-to-end solution for extracting sensor data from [rosbag](http://wiki.ros.org/rosbag) files generated from autonomous driving use cases. This solution guides users through a sample use case to demonstrate how the processing occurs and where custom logic can be applied to the extracted data. You can use this solution to:
 + Stage sample rosbag files

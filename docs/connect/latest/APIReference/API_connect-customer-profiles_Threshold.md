@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Threshold
-<a name="API_connect-customer-profiles_Threshold"></a>
 
 The threshold for the calculated attribute.
 

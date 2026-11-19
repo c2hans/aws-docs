@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/extended-client-library-ja
 ---
 
 # Amazon SNS Extended Client Library for Java
-<a name="extended-client-library-java"></a>
 
 ## Prerequisites
 <a name="prereqs-sns-extended-client-library"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ln.html
 ---
 
 # $ln
-<a name="ln"></a>
 
 New from version 4.0.
 

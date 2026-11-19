@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/build-server-app.htm
 ---
 
 # Building a server application for the Amazon Chime SDK
-<a name="build-server-app"></a>
 
 The information in the following section explains how to build an Amazon Chime SDK server application. Each section provides example code as needed, and you can adapt that code to meet your needs.
 

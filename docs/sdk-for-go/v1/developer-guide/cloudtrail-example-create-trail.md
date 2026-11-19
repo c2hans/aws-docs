@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/cloudtrail
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Creating a CloudTrail Trail
-<a name="cloudtrail-example-create-trail"></a>
 
 This example uses the [CreateTrail](https://docs.aws.amazon.com/sdk-for-go/api/service/cloudtrail/#CloudTrail.CreateTrail) operation to create a CloudTrail trail in the `us-west-2` region. It requires two inputs, the name of the trail and the name of the bucket in which CloudTrail stores information. If the bucket does not have the proper policy, include the **-p** flag to attach the correct policy to the bucket.
 

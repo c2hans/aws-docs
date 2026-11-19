@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/mes-onboarding/mes
 ---
 
 # Step 1: Discuss your integration with Secrets Manager
-<a name="mes-step1"></a>
 
 *Duration: approximately one week*
 

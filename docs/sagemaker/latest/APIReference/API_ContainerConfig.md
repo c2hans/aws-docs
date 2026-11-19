@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Contai
 ---
 
 # ContainerConfig
-<a name="API_ContainerConfig"></a>
 
 The configuration used to run the application image container.
 

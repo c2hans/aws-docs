@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Achieving security and compliance for semiconductor development environments on AWS
-<a name="security-compliance"></a>
 
 AWS has developed best practice guidance to implement security controls and published reference architectures to address semiconductor industry needs. This section discusses how to use the AWS recommended designs and reference architectures to help achieve security and compliance for your mission-critical workloads on AWS.
 

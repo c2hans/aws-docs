@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/delete-verifie
 ---
 
 # Delete a Verified Access group
-<a name="delete-verified-access-group"></a>
 
 When you are finished with a Verified Access group, you can delete it. You can't delete a group if there are associated Verified Access endpoints.
 

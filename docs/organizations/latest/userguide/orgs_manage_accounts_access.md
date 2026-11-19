@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Accessing member accounts in an organization with AWS Organizations
-<a name="orgs_manage_accounts_access"></a>
 
 When you create an account in your organization, in addition to the root user, AWS Organizations automatically creates an IAM role that is by default named `OrganizationAccountAccessRole`. You can specify a different name when you create it, however we recommend that you name it consistently across all of your accounts. AWS Organizations doesn't create any other users or roles.
 

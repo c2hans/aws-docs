@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_Q
 ---
 
 # QueueMember
-<a name="API_QueueMember"></a>
 
 The details of a queue member.
 

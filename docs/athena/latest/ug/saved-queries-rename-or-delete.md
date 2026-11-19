@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries-rename-or
 ---
 
 # Rename or delete a saved query
-<a name="saved-queries-rename-or-delete"></a>
 
 **To rename or delete a saved query already displayed in the query editor**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/your-ec2-ami-usa
 ---
 
 # View your AMI usage
-<a name="your-ec2-ami-usage"></a>
 
 If you share your Amazon Machine Images (AMIs) with other AWS accounts—whether with specific AWS accounts, organizations, organizational units (OUs), or publicly—you can see how these AMIs are used by creating AMI usage reports. The reports provide visibility into:
 + The AWS accounts that are using your AMIs in EC2 instances, EC2 launch templates, Image Builder image recipes, or Image Builder container recipes

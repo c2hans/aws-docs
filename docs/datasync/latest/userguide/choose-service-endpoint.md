@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/choose-service
 ---
 
 # Choosing a service endpoint for your AWS DataSync agent
-<a name="choose-service-endpoint"></a>
 
 A [service endpoint](https://docs.aws.amazon.com/general/latest/gr/rande.html#datasync-region) is how your AWS DataSync [agent communicates with the DataSync service](networking-datasync.md#2-network-between-agent-service). DataSync supports the following types of service endpoints:
 + **Public service endpoint** – Data is sent over the public internet.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNOPS02-BP01 Use IP address management tool
-<a name="hnops02-bp01"></a>
 
  Use IP Address Manager tool to automate workflows to efficiently manage IP addresses. It helps to organize and monitor the IP address space and automatically allocate CIDRs using specific business rules.
 

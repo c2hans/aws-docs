@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/dcv-server-imaging
 ---
 
 # Amazon DCV server imaging
-<a name="dcv-server-imaging"></a>
 
 Counters in this set provide information about the subsystems responsible for screen grabbing, encoding and delivery.
 

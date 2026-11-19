@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard-aler
 ---
 
 # View and edit alerts
-<a name="model-dashboard-alerts"></a>
 
 The Model Dashboard displays alerts you configured in Amazon CloudWatch. You can modify the alert criteria within the dashboard itself. The alert criteria depend upon two parameters:
 + **Datapoints to alert**: Within the evaluation period, how many execution failures raise an alert.

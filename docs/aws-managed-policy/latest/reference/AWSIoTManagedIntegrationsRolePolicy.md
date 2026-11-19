@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTManagedIntegrationsRolePolicy
-<a name="AWSIoTManagedIntegrationsRolePolicy"></a>
 
 **Description**: Provides managed integrations for AWS IoT Device Management permission to publish logs and metrics on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopS
 ---
 
 # StopSentimentDetectionJob
-<a name="API_StopSentimentDetectionJob"></a>
 
 Stops a sentiment detection job in progress.
 

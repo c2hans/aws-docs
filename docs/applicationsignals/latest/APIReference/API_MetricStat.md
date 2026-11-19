@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # MetricStat
-<a name="API_MetricStat"></a>
 
 This structure defines the metric to be used as the service level indicator, along with the statistics, period, and unit.
 

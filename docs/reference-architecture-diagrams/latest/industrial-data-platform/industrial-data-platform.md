@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Industrial Data Platform on AWS
-<a name="industrial-data-platform"></a>
 
 Publication date: **May 21, 2021 ([Diagram history](#idp-diagram-history))**
 

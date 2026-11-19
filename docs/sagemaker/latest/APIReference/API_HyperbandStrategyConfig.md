@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Hyperb
 ---
 
 # HyperbandStrategyConfig
-<a name="API_HyperbandStrategyConfig"></a>
 
 The configuration for `Hyperband`, a multi-fidelity based hyperparameter tuning strategy. `Hyperband` uses the final and intermediate results of a training job to dynamically allocate resources to utilized hyperparameter configurations while automatically stopping under-performing configurations. This parameter should be provided only if `Hyperband` is selected as the `StrategyConfig` under the `HyperParameterTuningJobConfig` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-versio
 ---
 
 # EC2Config version history
-<a name="ec2config-version-details"></a>
 
 The following table describes the released versions of EC2Config. For information about the updates for SSM Agent, see [Systems Manager SSM Agent Release Notes](https://github.com/aws/amazon-ssm-agent/blob/master/RELEASENOTES.md).
 

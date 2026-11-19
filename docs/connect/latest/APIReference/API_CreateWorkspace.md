@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateWo
 ---
 
 # CreateWorkspace
-<a name="API_CreateWorkspace"></a>
 
 Creates a workspace that defines the user experience by mapping views to pages. Workspaces can be assigned to users or routing profiles.
 

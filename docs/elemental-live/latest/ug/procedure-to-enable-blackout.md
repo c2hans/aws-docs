@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/procedure-to-en
 ---
 
 # Procedure to enable blackout
-<a name="procedure-to-enable-blackout"></a>
 
 **To enable blackout**
 

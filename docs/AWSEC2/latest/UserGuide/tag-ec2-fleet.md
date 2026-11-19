@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tag-ec2-fleet.ht
 ---
 
 # Tag a new or existing EC2 Fleet request and the instances and volumes it launches
-<a name="tag-ec2-fleet"></a>
 
 To help categorize and manage your EC2 Fleet requests and the instances and volumes that it launches, you can tag them with custom metadata. You can assign a tag to an EC2 Fleet request when you create it, or afterward. Similarly, you can assign a tag to the instances and volumes when they're launched by the fleet, or afterward.
 

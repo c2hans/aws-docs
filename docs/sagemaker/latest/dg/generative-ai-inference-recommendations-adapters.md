@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Get recommendations for models with LoRA adapters
-<a name="generative-ai-inference-recommendations-adapters"></a>
 
 Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning technique that trains a small set of adapter weights on top of a frozen base model. You can serve many adapters that share a single base model on one endpoint. This is more cost-effective than deploying a separate copy of the model for each fine-tuned variant.
 

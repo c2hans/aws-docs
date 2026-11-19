@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-job-re
 ---
 
 # Editing default values for job results settings
-<a name="edit-job-results-settings"></a>
 
 **Note**
 The **Results destination in Amazon S3** can't be within the same S3 bucket as any data source.

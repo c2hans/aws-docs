@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-instan
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy an Amazon EKS local cluster on AWS Outposts configured with EC2 instance store
-<a name="eks-outposts-instance-store-local-cluster-create"></a>
 
 This topic provides instructions for deploying a local Amazon EKS cluster on an AWS Outpost configured with EC2 instance store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeletePublishingDestination
-<a name="API_DeletePublishingDestination"></a>
 
 Deletes the publishing definition with the specified `destinationId`.
 

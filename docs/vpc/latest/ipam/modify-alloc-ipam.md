@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/modify-alloc-ipam.html
 ---
 
 # Modify an IPAM pool allocation
-<a name="modify-alloc-ipam"></a>
 
 You can modify the description of an IPAM pool allocation using the console or the AWS CLI. Refer to the [modify-ipam-pool-allocation](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-ipam-pool-allocation.html) documentation for more API details.
 

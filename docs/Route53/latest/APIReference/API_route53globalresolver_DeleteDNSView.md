@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DeleteDNSView
-<a name="API_route53globalresolver_DeleteDNSView"></a>
 
 Deletes a DNS view. This operation cannot be undone.
 

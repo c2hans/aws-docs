@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-io-characterist
 ---
 
 # Amazon EBS I/O characteristics and monitoring
-<a name="ebs-io-characteristics"></a>
 
 On a given volume configuration, certain I/O characteristics drive the performance behavior for your EBS volumes.
 + SSD-backed volumes, General Purpose SSD (`gp2` and `gp3`) and Provisioned IOPS SSD (`io1` and `io2`), deliver consistent performance whether an I/O operation is random or sequential.

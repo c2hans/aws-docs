@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Cisco Security Platform API Key
-<a name="mes-partner-CiscoSecurityPlatformApiKey"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c17b3"></a>

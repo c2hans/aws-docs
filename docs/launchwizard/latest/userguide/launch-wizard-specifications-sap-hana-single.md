@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapHanaSingle
-<a name="launch-wizard-specifications-sap-hana-single"></a>
 
 The following is an example of the specifications required to create a SAP HANA single-node deployment with HANA database software installed:
 

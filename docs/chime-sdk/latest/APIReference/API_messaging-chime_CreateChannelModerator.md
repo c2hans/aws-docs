@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # CreateChannelModerator
-<a name="API_messaging-chime_CreateChannelModerator"></a>
 
 Creates a new `ChannelModerator`. A channel moderator can:
 + Add and remove other members of the channel.

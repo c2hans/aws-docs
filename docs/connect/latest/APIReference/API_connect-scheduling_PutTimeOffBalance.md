@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PutTimeOffBalance
-<a name="API_connect-scheduling_PutTimeOffBalance"></a>
 
 Sets the time off balance for one user and shift activity. The value replaces the existing balance rather than adjusting it, so you can safely retry the call. This operation can't remove a balance. To remove one, upload a blank balance in the Connect Customer admin website. For more information, see [Import an agent's time off balance](https://docs.aws.amazon.com/connect/latest/adminguide/upload-timeoff-balance.html) in the *Connect Customer Administrator Guide*.
 

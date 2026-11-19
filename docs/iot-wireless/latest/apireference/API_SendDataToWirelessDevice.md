@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sen
 ---
 
 # SendDataToWirelessDevice
-<a name="API_SendDataToWirelessDevice"></a>
 
 Sends a decrypted application data frame to a device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartRecover
 ---
 
 # StartRecoveryRequestSourceServer
-<a name="API_StartRecoveryRequestSourceServer"></a>
 
 An object representing the Source Server to recover.
 

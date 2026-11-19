@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSpotFleetInstances
-<a name="API_DescribeSpotFleetInstances"></a>
 
 Describes the running instances for the specified Spot Fleet.
 

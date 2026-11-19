@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/what-is-gw.html
 ---
 
 # What is Amazon DCV Connection Gateway?
-<a name="what-is-gw"></a>
 
 **Note**
 Amazon DCV was previously known as NICE DCV.

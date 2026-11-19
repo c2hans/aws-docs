@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Business goal identification
-<a name="cost-business-goal-identification"></a>
 
 **Topics**
 + [MLCOST01-BP01 Define overall return on investment (ROI) and opportunity cost](mlcost01-bp01.md)

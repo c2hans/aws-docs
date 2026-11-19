@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/design-udp-package.h
 ---
 
 # Organize encodes in a UDP output group
-<a name="design-udp-package"></a>
 
 A UDP output group can contain the following:
 + One or more outputs.

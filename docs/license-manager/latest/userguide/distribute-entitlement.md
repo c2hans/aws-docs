@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/distrib
 ---
 
 # Distribute License Manager entitlements
-<a name="distribute-entitlement"></a>
 
 If you are a license administrator operating in the management account of your organization with [all features](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html) enabled, you can distribute entitlements to your organization from your granted licenses by creating a grant. For more information about AWS Organizations, see [AWS Organizations terminology and concepts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # QueryParameters
-<a name="API_bcmDashboards_QueryParameters"></a>
 
 Defines the data retrieval parameters for a widget.
 

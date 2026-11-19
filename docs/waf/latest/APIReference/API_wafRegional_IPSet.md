@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # IPSet
-<a name="API_wafRegional_IPSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -31,7 +30,7 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** Name **   <a name="WAF-Type-wafRegional_IPSet-Name"></a>
-A friendly name or description of the [IPSet](#API_wafRegional_IPSet). You can't change the name of an `IPSet` after you create it.
+A friendly name or description of the [IPSet](API_wafRegional_IPSet.md). You can't change the name of an `IPSet` after you create it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `.*\S.*`

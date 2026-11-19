@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchedFace
-<a name="API_SearchedFace"></a>
 
 Provides face metadata such as FaceId, BoundingBox, Confidence of the input face used for search.
 

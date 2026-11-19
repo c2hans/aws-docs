@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-i
 ---
 
 # Modify network interface attributes
-<a name="modify-network-interface-attributes"></a>
 
 You can change the following network interface attributes:
 + Description

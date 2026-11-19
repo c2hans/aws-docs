@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueDes
 ---
 
 # QueueDescription
-<a name="API_QueueDescription"></a>
 
 A description of a queue. Returned by [CreateQueue](API_CreateQueue.md), [UpdateQueue](API_UpdateQueue.md), and [DescribeQueue](API_DescribeQueue.md).
 

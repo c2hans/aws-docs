@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateRecove
 ---
 
 # CreateRecoveryPlanStep
-<a name="API_CreateRecoveryPlanStep"></a>
 
 Creates a step in a Recovery Plan. A step is either `SERVER` type (servers to recover in parallel) or `WAIT` type (timed pause between steps).
 

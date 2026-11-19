@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetUsage.html
 ---
 
 # GetUsage
-<a name="API_GetUsage"></a>
 
 Gets the usage data of a usage plan in a specified time interval.
 

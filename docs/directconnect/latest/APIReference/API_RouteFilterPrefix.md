@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ro
 ---
 
 # RouteFilterPrefix
-<a name="API_RouteFilterPrefix"></a>
 
 Information about a route filter prefix that a customer can advertise through Border Gateway Protocol (BGP) over a public virtual interface.
 

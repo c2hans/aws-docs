@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BatchPu
 ---
 
 # BatchPutScheduledUpdateGroupAction
-<a name="API_BatchPutScheduledUpdateGroupAction"></a>
 
 Creates or updates one or more scheduled scaling actions for an Auto Scaling group.
 

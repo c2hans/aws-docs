@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refer
 ---
 
 # ReferenceLineDynamicDataConfiguration
-<a name="API_ReferenceLineDynamicDataConfiguration"></a>
 
 The dynamic configuration of the reference line data configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS02-BP06 Implement distributed tracing for automated and agent-driven advertising operations
-<a name="advops02-bp06"></a>
 
  As advertising operations increasingly use AI agents for bid optimization, creative selection, campaign management, and brand safety monitoring, implement distributed tracing to maintain visibility into multi-step automated workflows. Distributed tracing enables rapid root cause analysis when automated decisions produce unexpected outcomes and provides an audit trail for agent-driven actions across the advertising value chain.
 

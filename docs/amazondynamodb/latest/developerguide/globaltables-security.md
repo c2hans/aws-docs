@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/glo
 ---
 
 # DynamoDB global tables security
-<a name="globaltables-security"></a>
 
 Global tables replicas are DynamoDB tables, so you use the same methods for controlling access to replicas that you do for single-Region tables, including AWS Identity and Access Management (IAM) identity policies and resource-based policies.
 

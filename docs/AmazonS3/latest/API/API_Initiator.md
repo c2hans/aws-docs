@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Initiator.html
 ---
 
 # Initiator
-<a name="API_Initiator"></a>
 
 Container element that identifies who initiated the multipart upload.
 

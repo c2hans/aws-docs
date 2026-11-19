@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-sdb.ht
 ---
 
 # Amazon SimpleDB events
-<a name="events-ref-sdb"></a>
 
 Amazon SimpleDB sends service events to EventBridge via AWS CloudTrail.
 

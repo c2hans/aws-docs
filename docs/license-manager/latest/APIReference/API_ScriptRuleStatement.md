@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ScriptRuleStatement
-<a name="API_ScriptRuleStatement"></a>
 
 Rule statement that uses a script to evaluate license asset conditions.
 

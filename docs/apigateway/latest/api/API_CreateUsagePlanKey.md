@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateUsagePla
 ---
 
 # CreateUsagePlanKey
-<a name="API_CreateUsagePlanKey"></a>
 
 Creates a usage plan key for adding an existing API key to a usage plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_MatchRa
 ---
 
 # MatchRationaleItem
-<a name="API_MatchRationaleItem"></a>
 
 A rationale indicating why this item was matched by search.
 

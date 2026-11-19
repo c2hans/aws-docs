@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/managin
 ---
 
 # Request additional private devices in AWS Device Farm
-<a name="managing-private-device-instance"></a>
 
 In AWS Device Farm, you can request an additional private device instances to be added to your fleet. You can also view and change the settings of existing private device instances in your fleet. For more information about private devices, see [Private devices in AWS Device Farm](working-with-private-devices.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # IncomingDiffieHellmanTr31KeyBlock
-<a name="API_IncomingDiffieHellmanTr31KeyBlock"></a>
 
 Parameter information of a TR31KeyBlock wrapped using an ECDH derived key.
 

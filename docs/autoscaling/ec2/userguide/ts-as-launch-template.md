@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ts-as-launch-t
 ---
 
 # Troubleshoot Amazon EC2 Auto Scaling: Launch templates
-<a name="ts-as-launch-template"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when trying to specify a launch template for your Auto Scaling group.
 

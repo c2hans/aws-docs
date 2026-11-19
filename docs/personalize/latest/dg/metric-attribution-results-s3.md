@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/metric-attribution
 ---
 
 # Publishing metric attribution reports to Amazon S3
-<a name="metric-attribution-results-s3"></a>
 
 For all bulk data, if you provide an Amazon S3 bucket when you create your metric attribution, you can choose to publish metric reports to your Amazon S3 bucket each time you create a dataset import job for interactions data.
 

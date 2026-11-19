@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_FormTyp
 ---
 
 # FormTypeData
-<a name="API_FormTypeData"></a>
 
 The details of the metadata form type.
 

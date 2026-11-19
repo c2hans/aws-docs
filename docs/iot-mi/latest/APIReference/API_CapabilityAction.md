@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Capabilit
 ---
 
 # CapabilityAction
-<a name="API_CapabilityAction"></a>
 
 Action for an AWS capability, containing the action parameters for control.
 

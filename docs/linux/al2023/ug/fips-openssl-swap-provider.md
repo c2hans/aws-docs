@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/fips-openssl-swap-provid
 ---
 
 # Swap OpenSSL FIPS providers on AL2023
-<a name="fips-openssl-swap-provider"></a>
 
 This section explains how to switch between the `latest` and `certified` OpenSSL FIPS providers on AL2023.
 

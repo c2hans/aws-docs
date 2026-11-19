@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-desc
 ---
 
 # mon-describe-alarms-for-metric
-<a name="cli-mon-describe-alarms-for-metric"></a>
 
 ## Description
 <a name="w2aab9c27b3"></a>

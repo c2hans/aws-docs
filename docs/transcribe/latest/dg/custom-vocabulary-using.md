@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary-u
 ---
 
 # Using a custom vocabulary
-<a name="custom-vocabulary-using"></a>
 
 Once your custom vocabulary is created, you can include it in your transcription requests; refer to the following sections for examples.
 

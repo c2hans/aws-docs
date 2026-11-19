@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendedActionFilter
-<a name="API_automation_RecommendedActionFilter"></a>
 
 A filter used to narrow down recommended action results based on specific criteria.
 

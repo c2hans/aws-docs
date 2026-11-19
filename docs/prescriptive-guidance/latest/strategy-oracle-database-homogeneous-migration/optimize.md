@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Phase 4: Operate and optimize
-<a name="optimize"></a>
 
 After you move your database to AWS, follow AWS best practices for monitoring, alerting, backups, and license management. If you rehosted Oracle Database on Amazon EC2, you are responsible for setting up monitoring, alerting, backups, high availability, and disaster recovery solutions. If you migrated to Amazon RDS for Oracle, many of these configurations are managed by Amazon RDS, and you can set them up on the AWS Management Console.
 

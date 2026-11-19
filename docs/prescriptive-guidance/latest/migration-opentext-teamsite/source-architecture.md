@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Source architecture
-<a name="source-architecture"></a>
 
 The following diagram shows a typical OpenText Customer Experience application architecture that uses OpenText core components, custom functionalities connected to the OpenText core components, and databases, files, and repositories. Although an OpenText architecture varies for each customer implementation, the diagram shows the typical components and these are covered by this guide.
 

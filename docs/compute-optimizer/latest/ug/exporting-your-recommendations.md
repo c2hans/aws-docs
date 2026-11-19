@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/exporting-yo
 ---
 
 # Exporting your recommendations
-<a name="exporting-your-recommendations"></a>
 
 This section provides you with instructions on how to export your AWS Compute Optimizer recommendations. Recommendations are exported in a CSV file, and its metadata in a JSON file.
 

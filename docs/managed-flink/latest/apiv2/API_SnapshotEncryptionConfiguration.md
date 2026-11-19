@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotE
 ---
 
 # SnapshotEncryptionConfiguration
-<a name="API_SnapshotEncryptionConfiguration"></a>
 
 Specifies the encryption configuration of snapshot data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Int
 ---
 
 # What is Amazon DynamoDB?
-<a name="Introduction"></a>
 
  Amazon DynamoDB is a serverless, fully managed, distributed NoSQL database with single-digit millisecond performance at any scale.
 

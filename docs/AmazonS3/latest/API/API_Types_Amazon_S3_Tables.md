@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_Amazon_S3_
 ---
 
 # Amazon S3 Tables
-<a name="API_Types_Amazon_S3_Tables"></a>
 
 The following data types are supported by Amazon S3 Tables:
 +  [DataMigrationOverview](API_s3Buckets_DataMigrationOverview.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-create.h
 ---
 
 # Creating a run cache
-<a name="workflow-cache-create"></a>
 
 When you create a run cache, you specify an Amazon S3 location for the cache data. This data must be immediately accessible. Call caching doesn't retrieve objects archived in Glacier (such as GFR and GDA storage classes).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/trust-data-iam
 ---
 
 # Verified Access example policies
-<a name="trust-data-iam-add-pol"></a>
 
 You can use Verified Access policies to grant access to your applications to specific users and devices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetCollaborationIdNamespaceAssociation
-<a name="API_GetCollaborationIdNamespaceAssociation"></a>
 
 Retrieves an ID namespace association from a specific collaboration.
 

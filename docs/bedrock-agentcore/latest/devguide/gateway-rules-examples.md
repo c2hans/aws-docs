@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Gateway rules API examples
-<a name="gateway-rules-examples"></a>
 
 The following examples show how to manage gateway rules using the AWS CLI and AWS Python SDK (Boto3).
 

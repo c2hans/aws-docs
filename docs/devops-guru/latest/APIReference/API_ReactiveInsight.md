@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reac
 ---
 
 # ReactiveInsight
-<a name="API_ReactiveInsight"></a>
 
  Information about a reactive insight. This object is returned by `ListInsights`.
 

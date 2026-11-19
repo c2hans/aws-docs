@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_Faile
 ---
 
 # FailedReason
-<a name="API_s3outposts_FailedReason"></a>
 
 The failure reason, if any, for a create or delete endpoint operation.
 

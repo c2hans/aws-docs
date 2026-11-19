@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetPropertyBindingValueFilter
-<a name="API_AssetPropertyBindingValueFilter"></a>
 
 A filter used to match data bindings based on a specific asset property. This filter helps identify all computation models referencing a particular property of an asset in their data bindings.
 

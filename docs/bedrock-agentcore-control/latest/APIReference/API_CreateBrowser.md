@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateBrowser
-<a name="API_CreateBrowser"></a>
 
 Creates a custom browser.
 

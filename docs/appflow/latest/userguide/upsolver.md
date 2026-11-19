@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/upsolver.html
 ---
 
 # Upsolver
-<a name="upsolver"></a>
 
 The following are the requirements and connection instructions for using Upsolver with Amazon AppFlow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_SseKmsEncryptedO
 ---
 
 # SseKmsEncryptedObjects
-<a name="API_SseKmsEncryptedObjects"></a>
 
 A container for filter information for the selection of S3 objects encrypted with AWS KMS.
 

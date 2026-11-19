@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-ingest-w
 ---
 
 # Using AWS Distro for OpenTelemetry as a collector
-<a name="AMP-ingest-with-adot"></a>
 
 This section describes how to configure the AWS Distro for OpenTelemetry (ADOT) Collector to scrape from a Prometheus-instrumented application, and send the metrics to Amazon Managed Service for Prometheus. For more information about the ADOT Collector, see [AWS Distro for OpenTelemetry](https://aws.amazon.com/otel/).
 

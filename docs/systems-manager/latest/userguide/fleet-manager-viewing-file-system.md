@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Viewing the OS file system using Fleet Manager
-<a name="fleet-manager-viewing-file-system"></a>
 
 You can use Fleet Manager to view the OS file system on a Systems Manager managed node.
 

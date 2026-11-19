@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEOPS03-BP05 Pre-scale infrastructure required to support peak requirements
-<a name="gameops03-bp05"></a>
 
  Scale infrastructure ahead of large-scale game events to make sure that you can handle the sudden increase in player demand.
 

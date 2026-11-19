@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutAttachment.htm
 ---
 
 # PutAttachment
-<a name="API_PutAttachment"></a>
 
 Attaches a form to an asset or an iterable form item in AWS Glue Data Catalog. If an attachment with the same name already exists, it is overwritten.
 

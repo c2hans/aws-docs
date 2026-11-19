@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateThemeForStack
-<a name="API_CreateThemeForStack"></a>
 
 Creates custom branding that customizes the appearance of the streaming application catalog page.
 

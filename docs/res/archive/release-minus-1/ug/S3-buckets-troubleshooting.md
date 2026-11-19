@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/S3-bucket
 ---
 
 # Troubleshooting
-<a name="S3-buckets-troubleshooting"></a>
 
 **How to check if a bucket fails to mount on a VDI**
 

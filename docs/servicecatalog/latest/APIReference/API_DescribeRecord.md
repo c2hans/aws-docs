@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeRecord
-<a name="API_DescribeRecord"></a>
 
 Gets information about the specified request operation.
 

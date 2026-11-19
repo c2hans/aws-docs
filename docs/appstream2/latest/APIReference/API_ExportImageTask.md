@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Expor
 ---
 
 # ExportImageTask
-<a name="API_ExportImageTask"></a>
 
 Information about an export image task, including its current state, timestamps, and any error details.
 

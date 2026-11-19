@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # StartInstanceOnboardingJob
-<a name="API_connect-outbound-campaigns_StartInstanceOnboardingJob"></a>
 
 Starts the workflow to onboard an Connect Customer instance to outbound campaigns.
 

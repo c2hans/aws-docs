@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/cloudshell-
 ---
 
 # Obtaining IAM permissions for AWS CloudShell
-<a name="cloudshell-permissions"></a>
 
 Using the access management resources provided by AWS Identity and Access Management, administrators can grant permissions to IAM users so they can access AWS CloudShell and use the environment's features.
 

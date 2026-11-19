@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Anti-patterns for adopting a multicloud strategy
-<a name="misconceptions"></a>
 
 As outlined in the previous section, there are valid reasons for adopting a multicloud strategy. There are also misconceptions (or anti-patterns) that do not justify adopting a multicloud environment. These include:
 + **Improved resilience** – Some FIs decide on a multicloud approach to reduce service disruption in the event that their primary CSP has an outage. Multicloud failover presumes that an application can be switched over to another cloud. However, this requires the company to maintain full portability between two CSPs, which adds complexity, risk, and additional work that make true portability nearly impossible. Adopting a multicloud strategy to improve resilience often adds complexity and is likely to reduce resilience instead of enhancing it.

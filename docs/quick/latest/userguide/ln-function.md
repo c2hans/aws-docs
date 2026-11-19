@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ln-function.html
 ---
 
 # Ln
-<a name="ln-function"></a>
 
 `ln` returns the natural logarithm of a given expression.
 

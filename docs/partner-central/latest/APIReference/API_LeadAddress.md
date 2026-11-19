@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # LeadAddress
-<a name="API_LeadAddress"></a>
 
 The address information for a lead customer, including city, state or region, postal code, and country code.
 

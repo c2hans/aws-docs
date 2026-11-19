@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-tgw-connect-attachme
 ---
 
 # View Connect attachments and Connect peers in AWS Transit Gateway
-<a name="view-tgw-connect-attachments"></a>
 
 View your Connect attachments and Connect peers.
 

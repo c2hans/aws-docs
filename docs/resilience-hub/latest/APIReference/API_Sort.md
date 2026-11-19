@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # Sort
-<a name="API_Sort"></a>
 
 Indicates the sorting order of the fields in the metrics.
 

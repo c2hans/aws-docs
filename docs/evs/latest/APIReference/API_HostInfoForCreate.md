@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_HostInfoForC
 ---
 
 # HostInfoForCreate
-<a name="API_HostInfoForCreate"></a>
 
 An object that represents a host.
 

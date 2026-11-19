@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/update-dc-c
 ---
 
 # Updating the Delivery Channel
-<a name="update-dc-console"></a>
 
 When you update the delivery channel, you can set the following options:
 + The Amazon S3 bucket where AWS Config sends configuration snapshots and configuration history files.

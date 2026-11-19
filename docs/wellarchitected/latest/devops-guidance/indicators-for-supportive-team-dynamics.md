@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for supportive team dynamics
-<a name="indicators-for-supportive-team-dynamics"></a>
 
 Create a collaborative atmosphere that emphasizes ownership and shared accountability and organizes teams to serve their internal and external customers.
 

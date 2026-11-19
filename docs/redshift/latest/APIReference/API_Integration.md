@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Integra
 ---
 
 # Integration
-<a name="API_Integration"></a>
 
 ## Contents
 <a name="API_Integration_Contents"></a>

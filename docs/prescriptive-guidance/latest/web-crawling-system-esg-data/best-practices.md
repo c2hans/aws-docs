@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Best practices for ethical web crawlers
-<a name="best-practices"></a>
 
 This section discusses best practices and key ethical considerations for building a web-crawling application that collects environmental, social, and governance (ESG) data. By adhering to these best practices, you can protect your project and organization and contribute to a more responsible and sustainable web ecosystem. This approach helps you access valuable data and use it for research, business, and innovation in a way that respects all stakeholders.
 

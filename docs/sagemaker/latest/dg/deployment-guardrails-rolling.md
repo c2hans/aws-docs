@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deployment-guardrail
 ---
 
 # Use rolling deployments
-<a name="deployment-guardrails-rolling"></a>
 
 When you update your endpoint, you can specify a rolling deployment to gradually shift traffic from your old fleet to a new fleet. You can control the size of the traffic shifting steps, as well as specify an evaluation period to monitor the new instances for issues before terminating instances from the old fleet. With rolling deployments, instances on the old fleet are cleaned up after each traffic shift to the new fleet, reducing the amount of additional instances needed to update your endpoint. This is useful especially for accelerated instances that are in high demand.
 

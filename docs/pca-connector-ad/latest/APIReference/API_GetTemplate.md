@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # GetTemplate
-<a name="API_GetTemplate"></a>
 
 Retrieves a certificate template that the connector uses to issue certificates from a private CA.
 

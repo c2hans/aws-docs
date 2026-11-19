@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargat
 ---
 
 # DeleteFargateProfile
-<a name="API_DeleteFargateProfile"></a>
 
 Deletes an AWS Fargate profile.
 

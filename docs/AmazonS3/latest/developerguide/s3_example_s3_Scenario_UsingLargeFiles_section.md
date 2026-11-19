@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Upload or download large files to and from Amazon S3 using an AWS SDK
-<a name="s3_example_s3_Scenario_UsingLargeFiles_section"></a>
 
 The following code examples show how to upload or download large files to and from Amazon S3.
 

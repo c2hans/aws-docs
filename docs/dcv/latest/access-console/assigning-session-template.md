@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/assigning-sess
 ---
 
 # Assigning a session template to users or groups
-<a name="assigning-session-template"></a>
 
 In order for users to create sessions, they must first have a session template assigned to them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/deletin
 ---
 
 # Deleting parameters from Parameter Store
-<a name="deleting-parameters"></a>
 
 This topic describes how to delete parameters that you have created in Parameter Store, a tool in AWS Systems Manager.
 

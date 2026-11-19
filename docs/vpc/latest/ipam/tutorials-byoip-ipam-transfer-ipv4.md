@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-ipam-tra
 ---
 
 # Tutorial: Transfer a BYOIP IPv4 CIDR to IPAM
-<a name="tutorials-byoip-ipam-transfer-ipv4"></a>
 
 Follow these steps to transfer an existing IPv4 CIDR to IPAM. If you already have an IPv4 BYOIP CIDR with AWS, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM.
 

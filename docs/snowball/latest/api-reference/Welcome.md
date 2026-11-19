@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS Snowball Edge
 <a name="Welcome_Amazon_Import_Export_Snowball"></a>

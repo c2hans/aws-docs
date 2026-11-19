@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyValue
-<a name="API_PropertyValue"></a>
 
 An object that contains information about a value for a time series property.
 

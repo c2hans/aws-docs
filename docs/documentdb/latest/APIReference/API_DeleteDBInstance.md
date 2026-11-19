@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Delet
 ---
 
 # DeleteDBInstance
-<a name="API_DeleteDBInstance"></a>
 
 Deletes a previously provisioned instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/kinesis-rule-a
 ---
 
 # Kinesis Data Streams
-<a name="kinesis-rule-action"></a>
 
 The Kinesis Data Streams (`kinesis`) action writes data from an MQTT message to Amazon Kinesis Data Streams.
 

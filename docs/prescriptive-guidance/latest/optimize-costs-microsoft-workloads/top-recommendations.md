@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Top recommendations for optimizing costs
-<a name="top-recommendations"></a>
 
 ## Overview
 <a name="top-recommendations-overview"></a>

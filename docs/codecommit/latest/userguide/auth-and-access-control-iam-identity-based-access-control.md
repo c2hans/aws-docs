@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-acc
 ---
 
 # Using identity-based policies (IAM Policies) for CodeCommit
-<a name="auth-and-access-control-iam-identity-based-access-control"></a>
 
 The following examples of identity-based policies demonstrate how an account administrator can attach permissions policies to IAM identities (users, groups, and roles) to grant permissions to perform operations on CodeCommit resources.
 

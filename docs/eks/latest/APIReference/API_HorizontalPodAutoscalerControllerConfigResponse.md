@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_HorizontalPo
 ---
 
 # HorizontalPodAutoscalerControllerConfigResponse
-<a name="API_HorizontalPodAutoscalerControllerConfigResponse"></a>
 
 The horizontal pod autoscaler controller configuration for the Kubernetes controller manager.
 

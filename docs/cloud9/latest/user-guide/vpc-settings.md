@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/vpc-settings.ht
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # VPC settings for AWS Cloud9 Development Environments
-<a name="vpc-settings"></a>
 
 Every AWS Cloud9 development environment associated with an Amazon Virtual Private Cloud (Amazon VPC) must meet specific VPC requirements. These environments include EC2 environments, and SSH environments that are associated with AWS Cloud compute instances that run within a VPC. Examples include Amazon EC2 and Amazon Lightsail instances.
 

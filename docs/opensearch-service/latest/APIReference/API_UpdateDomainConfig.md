@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UpdateDomainConfig
-<a name="API_UpdateDomainConfig"></a>
 
 Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.
 

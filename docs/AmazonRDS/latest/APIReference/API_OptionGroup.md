@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # OptionGroup
-<a name="API_OptionGroup"></a>
 
 ## Contents
 <a name="API_OptionGroup_Contents"></a>

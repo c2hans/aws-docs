@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/record-legs.html
 ---
 
 # Recording audio tracks
-<a name="record-legs"></a>
 
 You can record just the incoming or outgoing tracks of call, or both tracks of a call.
 

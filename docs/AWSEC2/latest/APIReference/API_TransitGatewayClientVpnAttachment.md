@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayClientVpnAttachment
-<a name="API_TransitGatewayClientVpnAttachment"></a>
 
 Describes a Transit Gateway attachment for a Client VPN endpoint.
 

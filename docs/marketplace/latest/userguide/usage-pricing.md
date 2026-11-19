@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/usage-prici
 ---
 
 # Usage pricing
-<a name="usage-pricing"></a>
 
 A usage pricing model, also known as *pay as you go* pricing, enables you to offer products to customers who only pay for what they use.
 
-Usage pricing private offers support multi-currency pricing in EUR, GBP, AUD, and JPY.
+Usage pricing private offers support multi-currency pricing in EUR, GBP, AUD, JPY, CAD, SGD, and NZD.
 
 As a seller, you can choose one of the following usage categories:
 + **Users**

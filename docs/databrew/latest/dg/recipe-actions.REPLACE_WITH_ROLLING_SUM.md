@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_WITH\_ROLLING\_SUM
-<a name="recipe-actions.REPLACE_WITH_ROLLING_SUM"></a>
 
 Replaces each value in a column with the rolling sum from a previous "window" of rows.
 

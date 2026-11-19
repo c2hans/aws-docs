@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/salesforce.html
 ---
 
 # Salesforce connector for Amazon AppFlow
-<a name="salesforce"></a>
 
 Salesforce provides customer relationship management (CRM) software that help you with sales, customer service, e-commerce, and more. If you're a Salesforce user, you can connect Amazon AppFlow to your Salesforce account. Then, you can use Salesforce as a data source or destination in your flows. Run these flows to transfer data between Salesforce and AWS services or other supported applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkInterfaceSecurityGroup
-<a name="API_AwsEc2NetworkInterfaceSecurityGroup"></a>
 
 A security group associated with the network interface.
 

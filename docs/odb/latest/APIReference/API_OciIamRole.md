@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OciIamRole.h
 ---
 
 # OciIamRole
-<a name="API_OciIamRole"></a>
 
 Information about an AWS Identity and Access Management (IAM) service role used for Autonomous Database integration with Oracle Cloud Infrastructure (OCI).
 

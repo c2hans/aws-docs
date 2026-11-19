@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetContent
-<a name="API_AssetContent"></a>
 
 Content for an asset: a single file, a zip bundle, or a source URL to import from
 

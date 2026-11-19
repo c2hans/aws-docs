@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Microservice Extractor for .NET
-<a name="awsmicroserviceextractorfor.net"></a>
 
 AWS Microservice Extractor for .NET provides the following APIs for data retrieval.
 

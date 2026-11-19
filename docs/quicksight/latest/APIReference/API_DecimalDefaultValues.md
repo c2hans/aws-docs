@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Decim
 ---
 
 # DecimalDefaultValues
-<a name="API_DecimalDefaultValues"></a>
 
 The default values of the `DecimalParameterDeclaration`.
 

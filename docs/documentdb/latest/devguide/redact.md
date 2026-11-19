@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/redact.html
 ---
 
 # $redact
-<a name="redact"></a>
 
 The `$redact` aggregation stage in Amazon DocumentDB is used to selectively include or exclude content from the output documents based on the values of specified fields. This is particularly useful in scenarios where you need to control the visibility of sensitive data based on access levels or user permissions.
 

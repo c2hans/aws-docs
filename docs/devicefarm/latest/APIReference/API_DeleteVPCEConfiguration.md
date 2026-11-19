@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteVPCEConfiguration
-<a name="API_DeleteVPCEConfiguration"></a>
 
 Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.
 

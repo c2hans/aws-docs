@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2Delet
 ---
 
 # EC2DeleteRouteAction
-<a name="API_EC2DeleteRouteAction"></a>
 
 Information about the DeleteRoute action in Amazon EC2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixOrigin
-<a name="API_RouteMatrixOrigin"></a>
 
 The start position for the route in World Geodetic System (WGS 84) format: [longitude, latitude].
 

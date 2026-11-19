@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PutDa
 ---
 
 # PutDataSetRefreshProperties
-<a name="API_PutDataSetRefreshProperties"></a>
 
 Creates or updates the dataset refresh properties for the dataset.
 

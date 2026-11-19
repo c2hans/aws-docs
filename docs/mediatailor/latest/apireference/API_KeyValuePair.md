@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_KeyV
 ---
 
 # KeyValuePair
-<a name="API_KeyValuePair"></a>
 
 For `SCTE35_ENHANCED` output, defines a key and corresponding value. MediaTailor generates these pairs within the `EXT-X-ASSET`tag.
 

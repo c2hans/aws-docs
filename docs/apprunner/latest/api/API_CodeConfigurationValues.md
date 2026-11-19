@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_CodeConfigurati
 ---
 
 # CodeConfigurationValues
-<a name="API_CodeConfigurationValues"></a>
 
 Describes the basic configuration needed for building and running an AWS App Runner service. This type doesn't support the full set of possible configuration options. Fur full configuration capabilities, use a `apprunner.yaml` file in the source code repository.
 

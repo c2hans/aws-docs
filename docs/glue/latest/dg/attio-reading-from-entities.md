@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/attio-reading-from-entiti
 ---
 
 # Reading from Attio entities
-<a name="attio-reading-from-entities"></a>
 
 **Prerequisites**
 

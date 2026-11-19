@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Comp
 ---
 
 # Composition
-<a name="API_Composition"></a>
 
 Object specifying a Composition resource.
 

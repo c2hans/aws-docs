@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-config-cust
 ---
 
 # Associate VLAN subnets with a route table
-<a name="evs-env-config-custom-rt"></a>
 
 After your environment deploys, you must explicitly associate each Amazon Elastic VMware Service VLAN subnet with a route table in your VPC. NSX connectivity fails if your VLAN subnets are not explicitly associated with a VPC route table. You can use the Amazon VPC console or the AWS CLI.
 

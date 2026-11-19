@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-msk-permissions.ht
 ---
 
 # Configuring Lambda permissions for Amazon MSK event source mappings
-<a name="with-msk-permissions"></a>
 
 To access the Amazon MSK cluster, your Event Function and event source mapping need permissions to perform various Amazon MSK API actions. Add these permissions to the function's [execution role](lambda-intro-execution-role.md). If your users need access, add the required permissions to the identity policy for the user or role.
 

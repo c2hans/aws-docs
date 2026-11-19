@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RetryS
 ---
 
 # RetryStrategy
-<a name="API_RetryStrategy"></a>
 
 The retry strategy to use when a training job fails due to an `InternalServerError`. `RetryStrategy` is specified as part of the `CreateTrainingJob` and `CreateHyperParameterTuningJob` requests. You can add the `StoppingCondition` parameter to the request to limit the training time for the complete job.
 

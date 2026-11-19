@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-
 ---
 
 # ![AWS Machine Learning category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/ml-icon.jpg)Machine Learning (ML) and Artificial Intelligence (AI)
-<a name="machine-learning"></a>
 
 AWS helps you at every stage of your ML adoption journey with the most comprehensive set ML services and purpose-built infrastructure. Our pretrained AI services provide ready-made intelligence for your applications and workflows.
 

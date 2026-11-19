@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_We
 ---
 
 # WebSourceConfiguration
-<a name="API_agent_WebSourceConfiguration"></a>
 
 The configuration of the URL/URLs for the web content that you want to crawl. You should be authorized to crawl the URLs.
 

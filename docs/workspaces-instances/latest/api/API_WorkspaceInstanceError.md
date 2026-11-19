@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Work
 ---
 
 # WorkspaceInstanceError
-<a name="API_WorkspaceInstanceError"></a>
 
 Captures errors specific to WorkSpace Instance operations.
 

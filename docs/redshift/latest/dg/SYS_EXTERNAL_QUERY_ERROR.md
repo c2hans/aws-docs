@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/SYS_EXTERNAL_QUERY_ER
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SYS\_EXTERNAL\_QUERY\_ERROR
-<a name="SYS_EXTERNAL_QUERY_ERROR"></a>
 
 You can query the system view SYS\_EXTERNAL\_QUERY\_ERROR to get information about Redshift Spectrum scan errors. SYS\_EXTERNAL\_QUERY\_ERROR displays a sample of logged errors. The default is 10 entries per query.
 

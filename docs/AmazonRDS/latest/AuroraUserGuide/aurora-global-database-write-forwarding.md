@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Using write forwarding in an Amazon Aurora global database
-<a name="aurora-global-database-write-forwarding"></a>
 
 You can reduce the number of endpoints that you need to manage for applications running on your Aurora global database, by using *write forwarding*. With write forwarding enabled, secondary clusters in an Aurora global database forward SQL statements that perform write operations to the primary cluster. The primary cluster updates the source and then propagates resulting changes back to all secondary AWS Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudconfig
 ---
 
 # Supplemental Information and Related Resources for AWS Config
-<a name="cloudconfig-resources"></a>
 
 The following related resources can help you as you work with this service.
 + **[AWS Config](https://aws.amazon.com/config/)** – The primary web page for information about AWS Config.

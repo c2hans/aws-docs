@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Data schema
-<a name="data-schema"></a>
 
 This article explains the data schema and format in Clickstream Analytics on AWS. This guidance uses an **event-based** data model to store and analyze clickstream data. Every activity (such as click and view) on the clients is modeled as an event with dimensions, and each dimension represents a parameter of the event. Dimensions are common for all events.
 

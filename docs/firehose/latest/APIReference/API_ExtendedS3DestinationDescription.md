@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Extende
 ---
 
 # ExtendedS3DestinationDescription
-<a name="API_ExtendedS3DestinationDescription"></a>
 
 Describes a destination in Amazon S3.
 

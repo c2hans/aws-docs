@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/protection-plans-run
 ---
 
 # Runtime Monitoring configuration
-<a name="protection-plans-runtime-monitoring"></a>
 
 The Runtime Monitoring container has a parent-child structure with the following sub-features:
 + Runtime Monitoring (EKS)

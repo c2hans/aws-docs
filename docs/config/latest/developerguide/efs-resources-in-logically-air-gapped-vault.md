@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/efs-resourc
 ---
 
 # efs-resources-in-logically-air-gapped-vault
-<a name="efs-resources-in-logically-air-gapped-vault"></a>
 
 Checks if Amazon Elastic File System (Amazon EFS) File Systems are in a logically air-gapped vault. The rule is NON\_COMPLIANT if an Amazon EFS File System is not in a logically air-gapped vault within the specified time period.
 

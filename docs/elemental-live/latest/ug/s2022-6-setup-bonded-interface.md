@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2022-6-setup-b
 ---
 
 # Get ready: Remove bonded interfaces
-<a name="s2022-6-setup-bonded-interface"></a>
 
 Read this section if you plan to implement redundant outputs with SMPTE 2022-6.
 

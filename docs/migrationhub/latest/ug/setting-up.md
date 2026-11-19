@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/setting-up.html
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Setting up AWS Migration Hub
-<a name="setting-up"></a>
 
 Before you use AWS Migration Hub for the first time, if you have not done so, complete the following tasks:
 

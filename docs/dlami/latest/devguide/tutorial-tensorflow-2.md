@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-tensorflo
 ---
 
 # TensorFlow 2
-<a name="tutorial-tensorflow-2"></a>
 
 This tutorial shows how to activate TensorFlow 2 on an instance running the Deep Learning AMI with Conda (DLAMI on Conda) and run a TensorFlow 2 program.
 

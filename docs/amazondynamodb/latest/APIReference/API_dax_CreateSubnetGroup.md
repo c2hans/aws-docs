@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # CreateSubnetGroup
-<a name="API_dax_CreateSubnetGroup"></a>
 
 Creates a new subnet group.
 

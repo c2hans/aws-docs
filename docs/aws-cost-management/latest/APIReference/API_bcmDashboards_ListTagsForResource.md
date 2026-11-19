@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListTagsForResource
-<a name="API_bcmDashboards_ListTagsForResource"></a>
 
 Returns a list of all tags associated with a specified dashboard resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Batch dataset runner
-<a name="dataset-evaluations-batch"></a>
 
 The `BatchEvaluationRunner` delegates span collection and evaluation entirely to the service via the `StartBatchEvaluation` and `GetBatchEvaluation` APIs. After invoking your agent for each scenario, the runner submits a batch job and polls until it completes, returning aggregate results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNot
 ---
 
 # UpdateNotebookMetadata
-<a name="API_UpdateNotebookMetadata"></a>
 
 Updates the metadata for a notebook.
 

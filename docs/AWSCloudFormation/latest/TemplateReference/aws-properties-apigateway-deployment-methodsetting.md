@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::Deployment MethodSetting
-<a name="aws-properties-apigateway-deployment-methodsetting"></a>
 
 The `MethodSetting` property type configures settings for all methods in a stage. If you modify this property type, you must create a new deployment for your API.
 

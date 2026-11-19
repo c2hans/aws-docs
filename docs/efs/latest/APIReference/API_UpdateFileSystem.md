@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystem
-<a name="API_UpdateFileSystem"></a>
 
 Updates the throughput mode or the amount of provisioned throughput of an existing file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASUS03-BP01 Implement edge data and cross-region movement strategies
-<a name="midasus03-bp01."></a>
 
  Implement strategies that process information at the edge when possible and strategically manage cross-Region transfers in manufacturing environments. This approach reduces unnecessary network traffic, lowers energy consumption, and improves operational efficiency in factory environments.
 

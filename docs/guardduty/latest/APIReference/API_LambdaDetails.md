@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Lambda
 ---
 
 # LambdaDetails
-<a name="API_LambdaDetails"></a>
 
 Information about the Lambda function involved in the finding.
 

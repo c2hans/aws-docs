@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ListBuilds
-<a name="API_ListBuilds"></a>
 
  **This API works with the following fleet types:** EC2
 

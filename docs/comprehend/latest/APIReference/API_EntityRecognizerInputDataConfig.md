@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerInputDataConfig
-<a name="API_EntityRecognizerInputDataConfig"></a>
 
 Specifies the format and location of the input data.
 

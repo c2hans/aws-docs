@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Definition
-<a name="cost-def"></a>
 
  There are five best practice areas for cost optimization in the cloud:
 +  **Practice Cloud Financial Management**

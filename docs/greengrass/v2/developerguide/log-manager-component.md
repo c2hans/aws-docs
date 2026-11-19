@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager
 ---
 
 # Log manager
-<a name="log-manager-component"></a>
 
 **Warning**
 We recommend upgrading to Log manager v2.3.5 or later. Version 2.3.5 optimizes Log manager configuration writes, reducing IO operations and improving log upload speed, overall device performance and possibly extending device life.

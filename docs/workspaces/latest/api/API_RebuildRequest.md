@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RebuildRequest
 ---
 
 # RebuildRequest
-<a name="API_RebuildRequest"></a>
 
 Describes the information used to rebuild a WorkSpace.
 

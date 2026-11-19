@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/configura
 ---
 
 # Configuration guide
-<a name="configuration-guide"></a>
 
 This configuration guide provides post-deployment instructions for a technical audience on how to further customize and integrate with the Research and Engineering Studio on AWS product.
 

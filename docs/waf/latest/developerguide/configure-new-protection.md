@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/configure-new-
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Adding AWS Shield Advanced protection to AWS resources
-<a name="configure-new-protection"></a>
 
 Follow the guidance in this section to add Shield Advanced protection to one or more resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/scoping-policies-
 ---
 
 # Setting granular access to AWS services through IAM
-<a name="scoping-policies-iam-interface"></a>
 
 |  |
 | --- |

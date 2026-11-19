@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ThrottlingEx
 ---
 
 # ThrottlingException
-<a name="API_ThrottlingException"></a>
 
 The operation could not be performed because the service is throttling requests. This exception is thrown when the service endpoint receives too many concurrent requests.
 

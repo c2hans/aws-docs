@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # DocumentAclMembership
-<a name="API_agent-runtime_DocumentAclMembership"></a>
 
 The membership entry for a document access control list (ACL), containing conditions and their logical relation.
 

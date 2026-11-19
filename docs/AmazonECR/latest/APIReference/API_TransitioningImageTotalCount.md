@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Transi
 ---
 
 # TransitioningImageTotalCount
-<a name="API_TransitioningImageTotalCount"></a>
 
 The total count of images transitioning to a storage class.
 

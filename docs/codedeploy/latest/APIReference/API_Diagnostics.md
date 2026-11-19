@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Diagn
 ---
 
 # Diagnostics
-<a name="API_Diagnostics"></a>
 
 Diagnostic information about executable scripts that are part of a deployment.
 

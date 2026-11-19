@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Condit
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 Contains information about the condition.
 

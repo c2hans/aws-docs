@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelEnf
 ---
 
 # ModelEnforcement
-<a name="API_ModelEnforcement"></a>
 
 Model-specific information for the enforced guardrail configuration.
 

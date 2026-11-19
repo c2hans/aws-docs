@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Use
 ---
 
 # UserIdentity
-<a name="API_UserIdentity"></a>
 
 Information about a user whose activity is recorded in an event for a space.
 

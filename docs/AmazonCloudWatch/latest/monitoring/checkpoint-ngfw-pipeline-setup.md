@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/check
 ---
 
 # CloudWatch pipelines configuration for Check Point NGFW
-<a name="checkpoint-ngfw-pipeline-setup"></a>
 
 The Check Point NGFW setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

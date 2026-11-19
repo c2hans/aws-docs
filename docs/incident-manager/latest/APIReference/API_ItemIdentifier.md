@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ItemIdentifier
-<a name="API_ItemIdentifier"></a>
 
 Details and type of a related item.
 

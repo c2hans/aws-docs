@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/create-captions-enco
 ---
 
 # Create captions encodes
-<a name="create-captions-encodes"></a>
 
 As the final step in setting up captions in a MediaLive channel, you must set up the captions in each output group. For each output and captions format that you identified, follow the procedure that applies to the format category:
 + [Create embedded or object captions encodes](output-embedded-and-more.md)

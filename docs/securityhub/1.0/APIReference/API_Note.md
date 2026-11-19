@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Note.ht
 ---
 
 # Note
-<a name="API_Note"></a>
 
 A user-defined note added to a finding.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/migration-hub_exa
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListApplications` with an AWS SDK
-<a name="migration-hub_example_migration-hub_ListApplications_section"></a>
 
 The following code example shows how to use `ListApplications`.
 

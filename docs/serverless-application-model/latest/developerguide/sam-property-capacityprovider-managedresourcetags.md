@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ManagedResourceTags
-<a name="sam-property-capacityprovider-managedresourcetags"></a>
 
 Applies explicit tags to the Amazon Elastic Compute Cloud instances and other resources that the capacity provider provisions and manages on your behalf.
 

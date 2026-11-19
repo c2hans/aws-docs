@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/modules.html
 ---
 
 # Modules
-<a name="modules"></a>
 
 Modules are configurable components that process RTB traffic flowing through your links. You can use modules to implement rate limiting, filtering, error handling, and other traffic management capabilities. RTB Fabric provides built-in modules that are available at no additional charge, and you can configure them using the RTB Fabric API.
 

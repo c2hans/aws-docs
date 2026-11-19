@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # LanguageWithScore
-<a name="API_streaming_LanguageWithScore"></a>
 
 The language code that represents the language identified in your audio, including the associated confidence score. If you enabled channel identification in your request and each channel contained a different language, you will have more than one `LanguageWithScore` result.
 

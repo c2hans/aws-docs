@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html
 ---
 
 # Create your first Lambda function
-<a name="getting-started"></a>
 
 To get started with Lambda, use the Lambda console to create a function. In a few minutes, you can create and deploy a function and test it in the console.
 

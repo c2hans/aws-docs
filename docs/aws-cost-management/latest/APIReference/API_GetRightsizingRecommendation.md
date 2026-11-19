@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetRightsizingRecommendation
-<a name="API_GetRightsizingRecommendation"></a>
 
 Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances.
 

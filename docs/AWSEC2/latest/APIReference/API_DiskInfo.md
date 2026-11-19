@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DiskInfo.
 ---
 
 # DiskInfo
-<a name="API_DiskInfo"></a>
 
 Describes a disk.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/versioning.html
 ---
 
 # AWS CDK versioning and stability
-<a name="versioning"></a>
 
 This topic provides reference information on how the AWS Cloud Development Kit (AWS CDK) handles versioning.
 

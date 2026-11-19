@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Using AWS Services to Strengthen Compliance and Governance
-<a name="using-aws-services-to-strengthen-compliance-and-governance"></a>
 
 To meet regulatory obligations such as those under the GDPR, organizations must combine technical, operational, and organizational safeguards. AWS provides a suite of services that help customers implement and manage these safeguards across multi-account cloud environments. The following sections explain how specific AWS services can support key areas of a security and compliance strategy:
 + [**AWS Control Tower**](https://aws.amazon.com/controltower/) – for setting up and governing secure multi-account environments with built-in guardrails.

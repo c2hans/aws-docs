@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/api-sdk-refe
 ---
 
 # API and SDK reference
-<a name="api-sdk-reference"></a>
 
 This section provides complete technical reference documentation for Amazon Nova APIs and SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-api-refe
 ---
 
 # Using SPARQL UPDATE UNLOAD to delete data from Neptune
-<a name="sparql-api-reference-unload"></a>
 
 Neptune also provides a custom SPARQL operation, `UNLOAD`, for removing data that is specified in a remote source. `UNLOAD` can be regarded as a counterpart to the `LOAD` operation. Its syntax is:
 

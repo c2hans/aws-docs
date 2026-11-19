@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/b
 ---
 
 # Working with Amazon S3 by using the AWS Toolkit for JetBrains
-<a name="building-S3"></a>
 
 The following topics describe how to use the AWS Toolkit for JetBrains to work with Amazon S3 buckets and objects in an AWS account.
 

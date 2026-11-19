@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-i
 ---
 
 # Zooming in on the database load chart
-<a name="performance-insights-zoom-db-load"></a>
 
 You can use other features of the Performance Insights user interface to help analyze performance data.
 

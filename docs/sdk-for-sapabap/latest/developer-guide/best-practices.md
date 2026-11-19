@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/b
 ---
 
 # Best practices for IAM Security
-<a name="best-practices"></a>
 
 The IAM administrator will be responsible for the following three key areas.
 + Ensuring that the SAP system can authenticate itself with Amazon EC2 metadata or Secret Key credentials.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connect-data-source-ser
 ---
 
 # Use the AWS Serverless Application Repository to deploy a data source connector
-<a name="connect-data-source-serverless-app-repo"></a>
 
 To deploy a data source connector, you can use the [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo/) instead of using a AWS Glue connection.
 

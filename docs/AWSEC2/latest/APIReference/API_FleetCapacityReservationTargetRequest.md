@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetCapa
 ---
 
 # FleetCapacityReservationTargetRequest
-<a name="API_FleetCapacityReservationTargetRequest"></a>
 
 Describes the target Capacity Reservations or Capacity Reservation Resource Groups for an EC2 Fleet that launches into reserved capacity. You can specify Capacity Reservation IDs or a Capacity Reservation Resource Group ARN, but not both.
 

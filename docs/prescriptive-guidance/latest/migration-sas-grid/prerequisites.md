@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Assumptions and prerequisites
-<a name="prerequisites"></a>
 
 To migrate SAS Grid to AWS, you must meet the assumptions and requirements discussed in this section. The migration of SAS software may require expert skills in SAS administration, system administration, and AWS administration. If you need help with determining the scope of migration for your SAS Grid environment, we recommend that you contact SAS professional services for the following assessments:
 + Current SAS Grid workload assessment

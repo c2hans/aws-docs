@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Testing the migration
-<a name="test"></a>
 
 Before you migrate your source machines into the target infrastructure, you should test your CloudEndure Migration configuration. The **Test Mode** workflow launches and runs a target machine in the target infrastructure for the source machine you selected for testing. By testing your migration configuration, you can verify that your source machines are working properly in the target environment. The CloudEndure User Console displays the test results. You can run **Test Mode** after the Initial Sync stage has been completed.
 

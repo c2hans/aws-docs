@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Limit
 ---
 
 # LimitsPerLabelSetEntry
-<a name="API_LimitsPerLabelSetEntry"></a>
 
 This structure contains the information about the limits that apply to time series that match one label set.
 

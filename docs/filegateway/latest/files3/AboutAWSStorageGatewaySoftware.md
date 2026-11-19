@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/AboutAWSStorag
 ---
 
 # Working with open-source components for AWS Storage Gateway
-<a name="AboutAWSStorageGatewaySoftware"></a>
 
 This section describes the third-party tools and licenses that we depend on to deliver AWS Storage Gateway functionality.
 

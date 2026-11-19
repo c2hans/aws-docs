@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-v
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Viewing recommendations in AWS Well-Architected Agent
-<a name="agent-view-rec"></a>
 
 ## Console
 <a name="agent-view-rec-console"></a>

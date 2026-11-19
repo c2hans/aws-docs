@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Using Microsoft Power BI with the AWS Cloud
-<a name="using-power-bi-with-aws-cloud"></a>
 
 Publication date: **November 03, 2021** ([Document revisions](document-revisions.md))
 

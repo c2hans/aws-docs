@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetAccountActivity
-<a name="API_freetier_GetAccountActivity"></a>
 
  Returns a specific activity record that is available to the customer.
 

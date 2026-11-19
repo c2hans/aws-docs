@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Manage Networking Flexible Cost Allocation within an AWS Organization
-<a name="networking-flex-cost-allocation-orgs"></a>
 
 If you are using AWS Organizations to manage accounts in your organization, you can use an [AWS Organizations declarative policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative.html) to configure Networking Flexible Cost Allocation (FCA) for member accounts in the organization. For more information about the FCA service attribute in Amazon EC2 policies, see [Supported attributes for Amazon EC2 policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ec2.html#orgs_manage_policies_ec2-supported-controls) in the *AWS Organizations User Guide*.
 

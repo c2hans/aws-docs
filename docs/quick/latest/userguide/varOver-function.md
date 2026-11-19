@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/varOver-function.
 ---
 
 # varOver
-<a name="varOver-function"></a>
 
 The `varOver` function calculates the variance of the specified measure, partitioned by the chosen attribute or attributes, based on a sample.
 

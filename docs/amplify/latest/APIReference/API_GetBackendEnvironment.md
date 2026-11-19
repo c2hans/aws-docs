@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetBacke
 ---
 
 # GetBackendEnvironment
-<a name="API_GetBackendEnvironment"></a>
 
 Returns a backend environment for an Amplify app.
 

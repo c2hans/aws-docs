@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Example 4: Testing APS directly (Postman / curl)
-<a name="yield-optimization-examples-apstest"></a>
 
 Use this example to test the APS endpoint directly outside of MediaTailor to verify that your Publisher ID and bid parameters produce a valid response. Paste this into Postman or use `curl` to confirm APS is returning bids before configuring your MediaTailor template.
 

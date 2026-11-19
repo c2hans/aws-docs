@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetDomainObjectType
-<a name="API_connect-customer-profiles_GetDomainObjectType"></a>
 
 Return a DomainObjectType for the input Domain and ObjectType names.
 

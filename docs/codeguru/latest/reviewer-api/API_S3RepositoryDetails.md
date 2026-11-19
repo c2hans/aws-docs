@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_S3Repos
 ---
 
 # S3RepositoryDetails
-<a name="API_S3RepositoryDetails"></a>
 
 Specifies the name of an S3 bucket and a `CodeArtifacts` object that contains the S3 object keys for a source code .zip file and for a build artifacts .zip file that contains .jar or .class files.
 

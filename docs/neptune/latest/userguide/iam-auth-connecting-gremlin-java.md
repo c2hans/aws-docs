@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to Amazon Neptune databases using IAM with Gremlin Java
-<a name="iam-auth-connecting-gremlin-java"></a>
 
 Here is an example of how to connect to Neptune using the Gremlin Java API with Sig4 signing (it assumes general knowledge about using Maven). This example uses the [Amazon Neptune SigV4 Signer](https://github.com/aws/amazon-neptune-sigv4-signer) library to assist in request signing. First, define the dependencies as part of the `pom.xml` file:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jl-lcc-create.html
 ---
 
 # Lifecycle configuration creation
-<a name="jl-lcc-create"></a>
 
 This topic includes instructions for creating and associating a lifecycle configuration with JupyterLab. You use the AWS Command Line Interface (AWS CLI) or the AWS Management Console to automate customization for your JupyterLab environment.
 

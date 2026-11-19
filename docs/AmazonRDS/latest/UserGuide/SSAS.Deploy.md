@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSAS.Deploy.h
 ---
 
 # Deploying SSAS projects on Amazon RDS
-<a name="SSAS.Deploy"></a>
 
 On RDS, you can't deploy SSAS projects directly by using SQL Server Management Studio (SSMS). To deploy projects, use an RDS stored procedure.
 

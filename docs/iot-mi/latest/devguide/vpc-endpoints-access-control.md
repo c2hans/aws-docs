@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/vpc-endpoints-acc
 ---
 
 # Controlling access to services over VPC endpoints
-<a name="vpc-endpoints-access-control"></a>
 
 A VPC endpoint policy is an IAM resource policy that you attach to an interface VPC endpoint when you create or modify the endpoint. If you don't attach a policy when you create an endpoint, we attach a default policy for you that allows full access to the service. An endpoint policy doesn't override or replace IAM user policies or service-specific policies. It's a separate policy for controlling access from the endpoint to the specified service.
 

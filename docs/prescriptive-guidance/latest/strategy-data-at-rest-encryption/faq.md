@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions when defining your encryption standards or when creating your encryption infrastructure in the implementation phase.
 

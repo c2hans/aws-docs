@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 02-Write-Data.cs
-<a name="DAX.client.run-application-dotnet.02-Write-Data"></a>
 
 The `02-Write-Data.cs` program writes test data to `TryDaxTable`.
 

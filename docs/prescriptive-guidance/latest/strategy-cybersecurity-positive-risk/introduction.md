@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Positive risk within cybersecurity
-<a name="introduction"></a>
 
 *Greg Bell, Amazon Web Services*
 

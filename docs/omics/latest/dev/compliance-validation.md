@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/compliance-validation.h
 ---
 
 # Compliance validation for AWS HealthOmics
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS HealthOmics as part of multiple AWS compliance programs. This includes HIPAA, FedRAMP, and others. The following table shows compliance certifications for the HealthOmics service.
 

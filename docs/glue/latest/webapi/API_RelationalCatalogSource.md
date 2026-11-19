@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RelationalCatalog
 ---
 
 # RelationalCatalogSource
-<a name="API_RelationalCatalogSource"></a>
 
 Specifies a Relational database data source in the AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteDat
 ---
 
 # DeleteDataCatalog
-<a name="API_DeleteDataCatalog"></a>
 
 Deletes a data catalog.
 

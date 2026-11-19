@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Communication plan for the delivery layers
-<a name="communication-delivery-layers"></a>
 
 The communications and meetings for the delivery governance layers are typically designed to facilitate the migration activities and coordinate across the portfolio and migration workstreams. There are communications that are intended to facilitate project management and communications that are intended to inform or help application owners and other owners of migration tasks, as defined in a responsible, accountable, consulted, informed (RACI) matrix.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSto
 ---
 
 # CreateStoreImageTask
-<a name="API_CreateStoreImageTask"></a>
 
 Stores an AMI as a single object in an Amazon S3 bucket.
 

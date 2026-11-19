@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteFleet
-<a name="API_DeleteFleet"></a>
 
 Deletes the specified fleet.
 

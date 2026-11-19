@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/amzn2-al2023-ami.html
 ---
 
 # Comparing packages installed on Amazon Linux 2 and Amazon Linux 2023 AMIs
-<a name="amzn2-al2023-ami"></a>
 
 A comparison of the RPMs present on the Amazon Linux 2 and AL2023 standard AMIs.
 

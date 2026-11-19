@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRo
 ---
 
 # RouteRoundaboutEnterStepDetails
-<a name="API_RouteRoundaboutEnterStepDetails"></a>
 
 Details about the roundabout leg.
 

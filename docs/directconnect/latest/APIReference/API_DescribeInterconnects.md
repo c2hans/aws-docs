@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeInterconnects
-<a name="API_DescribeInterconnects"></a>
 
 Lists the interconnects owned by the AWS account or only the specified interconnect.
 

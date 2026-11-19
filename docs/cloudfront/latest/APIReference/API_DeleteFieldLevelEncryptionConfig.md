@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteFieldLevelEncryptionConfig
-<a name="API_DeleteFieldLevelEncryptionConfig"></a>
 
 Remove a field-level encryption configuration.
 

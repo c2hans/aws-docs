@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-run-
 ---
 
 # Running quantum tasks during a reservation
-<a name="braket-run-quantum-task-with-reservation"></a>
 
 After obtaining a valid reservation ARN from [Create a reservation](https://docs.aws.amazon.com/braket/latest/developerguide/braket-reservations.html#braket-create-a-reservation), you can create quantum tasks to run during the reservation. Quantum tasks and hybrid jobs submitted with a reservation ARN will not show up in a device queue. Tasks submitted before reservation start time will remain in the `QUEUED` state until your reservation begins.
 

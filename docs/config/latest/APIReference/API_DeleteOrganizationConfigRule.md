@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteOrg
 ---
 
 # DeleteOrganizationConfigRule
-<a name="API_DeleteOrganizationConfigRule"></a>
 
 Deletes the specified organization AWS Config rule and all of its evaluation results from all member accounts in that organization.
 

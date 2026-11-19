@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Tag policies and AWS Organizations
-<a name="services-that-can-integrate-tag-policies"></a>
 
 *Tag policies* are a type of policy in AWS Organizations that can help you standardize tags across resources in your organization's accounts. For more information about tag policies, see [Tag policies](orgs_manage_policies_tag-policies.md).
 

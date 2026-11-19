@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateVPCConnection
-<a name="API_UpdateVPCConnection"></a>
 
 Updates a VPC connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ---
 
 # Aurora DSQL dialect for Hibernate
-<a name="SECTION_program-with-dsql-dialect-for-hibernate"></a>
 
 The Amazon Aurora DSQL dialect for Hibernate integrates Hibernate object-relational mapping (ORM) with Aurora DSQL. With the dialect, your Java applications can use the ORM capabilities of Hibernate while taking advantage of the distributed architecture and high availability of Aurora DSQL. For Java Database Connectivity (JDBC), the dialect uses the PostgreSQL JDBC Driver internally, and the Aurora DSQL JDBC Connector for IAM authentication. For more information, see the [Aurora DSQL Dialect for Hibernate](https://github.com/awslabs/aurora-dsql-orms/tree/main/java/hibernate) and the [Aurora DSQL JDBC Connector](https://github.com/awslabs/aurora-dsql-connectors/tree/main/java/jdbc) on the GitHub website, and the [PostgreSQL JDBC Driver website](https://jdbc.postgresql.org/).
 

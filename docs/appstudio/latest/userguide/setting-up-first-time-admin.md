@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/setting-up-fi
 ---
 
 # Creating and setting up an App Studio instance for the first time
-<a name="setting-up-first-time-admin"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

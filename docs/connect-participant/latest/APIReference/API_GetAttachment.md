@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # GetAttachment
-<a name="API_connect-participant_GetAttachment"></a>
 
 Provides a pre-signed URL for download of a completed attachment. This is an asynchronous API for use with active contacts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/hive-metastore-iam-acce
 ---
 
 # Allow access to the Athena Data Connector for External Hive Metastore
-<a name="hive-metastore-iam-access"></a>
 
 The permission policy examples in this topic demonstrate required allowed actions and the resources for which they are allowed. Examine these policies carefully and modify them according to your requirements before you attach similar permissions policies to IAM identities.
 +  [Example Policy to Allow an IAM Principal to Query Data Using Athena Data Connector for External Hive Metastore](#hive-using-iam)

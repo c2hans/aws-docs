@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionCodeSig
 ---
 
 # GetFunctionCodeSigningConfig
-<a name="API_GetFunctionCodeSigningConfig"></a>
 
 Returns the code signing configuration for the specified function.
 

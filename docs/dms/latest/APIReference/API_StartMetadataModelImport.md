@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadat
 ---
 
 # StartMetadataModelImport
-<a name="API_StartMetadataModelImport"></a>
 
 Queues an import of metadata models (database objects such as tables, views, and procedures) from your data provider into the metadata tree. If other requests created by `Start*` operations are already in the migration project's queue, the import begins after they complete.
 

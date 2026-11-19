@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-personalized-email-ap
 ---
 
 # Using templates to send personalized email with the Amazon SES API
-<a name="send-personalized-email-api"></a>
 
 In Amazon SES you can send templated email either by using a *stored template* or by using an *inline template*.
 + **Stored template** – Refers to the [`Template`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html) resource that is created and saved in SES by using the `CreateEmailTemplate` operation in the Amazon SES v2 API. The template contains the subject and body of the email containing variables (placeholders) inline with the written content. The name of the stored template and the dynamic data to the placeholder variables in the template are provided when calling either the `SendEmail` or `SendBulkEmail` v2 API operations.

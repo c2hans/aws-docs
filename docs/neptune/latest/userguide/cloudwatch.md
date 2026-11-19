@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cloudwatch.html
 ---
 
 # Monitoring Neptune Using Amazon CloudWatch
-<a name="cloudwatch"></a>
 
 Amazon Neptune and Amazon CloudWatch are integrated so that you can gather and analyze performance metrics. You can monitor these metrics using the CloudWatch console, the AWS Command Line Interface (AWS CLI), or the CloudWatch API.
 

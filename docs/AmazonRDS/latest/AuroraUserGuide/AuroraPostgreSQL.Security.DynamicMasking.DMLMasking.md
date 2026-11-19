@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Understanding masking behavior in DML operations
-<a name="AuroraPostgreSQL.Security.DynamicMasking.DMLMasking"></a>
 
 `pg_columnmask` applies consistently across all DML operations, including INSERT, UPDATE, DELETE, and MERGE statements. When you execute these operations, Aurora PostgreSQL masks data according to a core principle – any data read from storage is masked according to the current user's applicable policies.
 

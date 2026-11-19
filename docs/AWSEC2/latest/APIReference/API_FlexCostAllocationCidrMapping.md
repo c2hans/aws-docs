@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FlexCostA
 ---
 
 # FlexCostAllocationCidrMapping
-<a name="API_FlexCostAllocationCidrMapping"></a>
 
 Maps a CIDR range to a label for cost allocation reporting.
 

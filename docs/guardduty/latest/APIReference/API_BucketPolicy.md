@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Bucket
 ---
 
 # BucketPolicy
-<a name="API_BucketPolicy"></a>
 
 Contains information on the current bucket policies for the S3 bucket.
 

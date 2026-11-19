@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ChannelLabelingConfiguration
-<a name="API_data-automation_ChannelLabelingConfiguration"></a>
 
 Enables or disables channel labeling. Channel labeling, when enabled will assign a number to each audio channel, and indicate which channel is being used in each portion of the transcript. This appears in the response as "ch\_0" for the first channel, and "ch\_1" for the second.
 

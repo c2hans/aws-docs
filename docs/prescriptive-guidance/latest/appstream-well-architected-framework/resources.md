@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS documentation
 <a name="resources-docs"></a>

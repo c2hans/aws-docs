@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-kvp.html
 ---
 
 # Form Data (Key-Value Pairs)
-<a name="how-it-works-kvp"></a>
 
 Amazon Textract can extract form data from documents as key-value pairs. For example, in the following text, Amazon Textract can identify a key (*Name:*) and a value (*Ana Carolina*).
 

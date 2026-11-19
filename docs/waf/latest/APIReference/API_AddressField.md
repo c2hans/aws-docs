@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AddressField
 ---
 
 # AddressField
-<a name="API_AddressField"></a>
 
 The name of a field in the request payload that contains part or all of your customer's primary physical address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Data processing infrastructure
-<a name="data-processing-infrastructure"></a>
 
 | MIDAPERF03: How do you measure performance of infrastructure that processes your data? |
 | --- |

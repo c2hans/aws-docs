@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/config-guides.html
 ---
 
 # Using Amazon Chime SDK Voice Connector configuration guides
-<a name="config-guides"></a>
 
 We test Amazon Chime SDK Voice Connectors on a wide range of private branch exchange, session border controller, and contact center systems. We publish those tested configurations in a set of Configuration Guides.
 

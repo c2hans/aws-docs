@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/troublesho
 ---
 
 # My domain is suspended (status is ClientHold)
-<a name="troubleshooting-domain-suspended"></a>
 
 If Amazon Route 53 suspends your domain, the domain becomes unavailable on the internet. You can use either of the following methods to determine whether a domain has been suspended:
 + On the **Registered domains** page of the Route 53 console, find the domain name in the **Alerts** table at the bottom of the page. If the value of the **Status** column is **clientHold**, the domain has been suspended.

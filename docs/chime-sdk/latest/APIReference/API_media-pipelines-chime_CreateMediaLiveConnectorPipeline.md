@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # CreateMediaLiveConnectorPipeline
-<a name="API_media-pipelines-chime_CreateMediaLiveConnectorPipeline"></a>
 
 Creates a media live connector pipeline in an Amazon Chime SDK meeting.
 

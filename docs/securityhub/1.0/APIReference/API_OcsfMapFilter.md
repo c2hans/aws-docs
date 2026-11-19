@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfMap
 ---
 
 # OcsfMapFilter
-<a name="API_OcsfMapFilter"></a>
 
 Enables filtering of security findings based on map field values in OCSF.
 

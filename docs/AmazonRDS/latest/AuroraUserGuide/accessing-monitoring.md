@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/accessi
 ---
 
 # Viewing cluster status
-<a name="accessing-monitoring"></a>
 
 Using the Amazon RDS console, you can quickly access the status of your DB cluster.
 

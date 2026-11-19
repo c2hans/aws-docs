@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/CAN_JSON_PARSE.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # CAN\_JSON\_PARSE function
-<a name="CAN_JSON_PARSE"></a>
 
 The CAN\_JSON\_PARSE function parses data in JSON format and returns `true` if the result can be converted to a `SUPER` value using the JSON\_PARSE function.
 

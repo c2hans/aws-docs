@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Control Tower managed organizations
-<a name="control-tower-managed-organizations"></a>
 
 The Innovation Sandbox on AWS solution creates an account pool organizational unit (default: InnovationSandboxAccountPool) when you deploy the Account Pool Stack. This OU is created through AWS Organizations and is not managed by Control Tower. This OU and all nested OUs do not need to be registered with Control Tower.
 

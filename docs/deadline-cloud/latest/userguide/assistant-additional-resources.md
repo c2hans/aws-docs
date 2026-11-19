@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assistan
 ---
 
 # Additional resources
-<a name="assistant-additional-resources"></a>
 
 The following resources provide additional information related to the Deadline Cloud assistant:
 + [What is Amazon Bedrock?](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) in the *Amazon Bedrock User Guide*

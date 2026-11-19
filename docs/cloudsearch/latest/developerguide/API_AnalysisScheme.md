@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_An
 ---
 
 # AnalysisScheme
-<a name="API_AnalysisScheme"></a>
 
 ## Description
 <a name="API_AnalysisScheme_Description"></a>

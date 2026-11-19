@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, refer to:
 +  [CFD Workshop](https://cfd-on-pcluster.workshop.aws/)

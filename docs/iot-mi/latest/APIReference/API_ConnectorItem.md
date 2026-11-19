@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Connector
 ---
 
 # ConnectorItem
-<a name="API_ConnectorItem"></a>
 
 Structure describing a connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-sharing.ht
 ---
 
 # Sharing Quick Sight Topics
-<a name="topics-sharing"></a>
 
 |  |
 | --- |

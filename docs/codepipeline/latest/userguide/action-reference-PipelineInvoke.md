@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS CodePipeline invoke action reference
-<a name="action-reference-PipelineInvoke"></a>
 
 You use a CodePipeline invoke action to simplify triggering downstream pipeline executions and passing pipeline variables and source revisions between pipelines.
 

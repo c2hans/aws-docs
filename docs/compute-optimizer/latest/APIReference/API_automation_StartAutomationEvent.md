@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # StartAutomationEvent
-<a name="API_automation_StartAutomationEvent"></a>
 
  Initiates a one-time, on-demand automation for the specified recommended action.
 

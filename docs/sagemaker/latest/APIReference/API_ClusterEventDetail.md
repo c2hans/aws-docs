@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterEventDetail
-<a name="API_ClusterEventDetail"></a>
 
 Detailed information about a specific event in a HyperPod cluster.
 

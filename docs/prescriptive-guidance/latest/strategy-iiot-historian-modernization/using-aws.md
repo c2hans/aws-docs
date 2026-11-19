@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Using AWS
-<a name="using-aws"></a>
 
 AWS services are designed to provide cost-effective, secure, and reliable performance in the cloud. AWS can help organizations reduce costs, increase agility, improve scalability, and reduce the complexity of managing a cloud infrastructure. This helps organizations focus on their core business and innovation. The following are some of the benefits of using AWS:
 + **Cost savings** – AWS services can help you reduce on-premises hardware and infrastructure costs because you only pay for the services you use. Improvements in staff productivity, operational resilience and business agility are additional financial benefits. For more information, see [Five things you should do to create an accurate on-premises vs cloud comparison model](https://aws.amazon.com/blogs/aws-cloud-financial-management/five-things-you-should-do-to-create-an-accurate-on-premises-vs-cloud-comparison-model/) (AWS blog post).

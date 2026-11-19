@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-how-it-wor
 ---
 
 # How Topics work
-<a name="topics-how-it-works"></a>
 
 A Topic in Quick Sight consists of four layers:
 

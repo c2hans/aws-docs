@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSEC02-BP02 Track OpenSearch Service API calls
-<a name="aossec02-bp02"></a>
 
  Monitor and log all API calls made to your OpenSearch Service, which provides visibility into access and empowers your team to take swift action against unauthorized activity.
 

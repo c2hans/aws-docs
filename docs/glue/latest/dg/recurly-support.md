@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/recurly-support.html
 ---
 
 # AWS Glue support for Recurly
-<a name="recurly-support"></a>
 
 AWS Glue supports Recurly as follows:
 

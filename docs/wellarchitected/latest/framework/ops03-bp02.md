@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03-b
 ---
 
 # OPS03-BP02 Test and validate any and all changes
-<a name="ops03-bp02"></a>
 
  Test every change before it reaches production, including application code, infrastructure, configuration, security controls, and operational procedures. When you run tests immediately after each change, defects are cheap to fix and developers get fast feedback.
 

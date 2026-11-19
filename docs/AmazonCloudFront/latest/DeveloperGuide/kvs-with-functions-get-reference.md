@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Get a reference to a key value store
-<a name="kvs-with-functions-get-reference"></a>
 
 To work with the key value stores programmatically, you need the `ETag` and the name of the key value store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Adapter
 ---
 
 # AdapterOverview
-<a name="API_AdapterOverview"></a>
 
 Contains information on the adapter, including the adapter ID, Name, Creation time, and feature types.
 

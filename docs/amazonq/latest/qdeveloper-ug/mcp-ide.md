@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/mcp-ide.htm
 ---
 
 # MCP configuration for Q Developer in the IDE
-<a name="mcp-ide"></a>
 
 This page covers IDE-specific options for configuring MCP servers.
 

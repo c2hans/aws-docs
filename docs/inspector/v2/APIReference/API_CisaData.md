@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisaData.h
 ---
 
 # CisaData
-<a name="API_CisaData"></a>
 
 The Cybersecurity and Infrastructure Security Agency (CISA) details for a specific vulnerability.
 

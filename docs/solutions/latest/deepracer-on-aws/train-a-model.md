@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/train-
 ---
 
 # Train a model
-<a name="train-a-model"></a>
 
 Training is how the model learns optimal driving behaviors by repeatedly interacting with the simulated track environment. During training, the vehicle explores different actions (steering angles and speeds) in response to various track states (camera images), receiving rewards based on a user-defined reward function that incentivizes desired behaviors like staying on the center-line or completing laps quickly. This trial-and-error allows the model to discover which actions maximize rewards, refining its neural network weights with each training iteration until it converges on a policy that consistently navigates the track successfully.
 

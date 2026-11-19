@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.
 ---
 
 # Specifying conditions: Using custom tags
-<a name="UsingWithRDS.IAM.SpecifyingCustomTags"></a>
 
 Amazon RDS supports specifying conditions in an IAM policy using custom tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # KeyTypeResult
-<a name="API_KeyTypeResult"></a>
 
 The result of a key type action.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/infra-
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Infrastructure release notes
-<a name="infra-release-notes"></a>
 
 The infrastructure release notes provide details about the infrastructure versions that are supported by Wickr Enterprise.
 

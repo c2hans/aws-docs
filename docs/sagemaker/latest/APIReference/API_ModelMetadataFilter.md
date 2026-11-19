@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelM
 ---
 
 # ModelMetadataFilter
-<a name="API_ModelMetadataFilter"></a>
 
 Part of the search expression. You can specify the name and value (domain, task, framework, framework version, task, and model).
 

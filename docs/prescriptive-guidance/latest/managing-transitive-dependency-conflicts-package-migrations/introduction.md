@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-tr
 ---
 
 # Managing transitive dependency conflicts during package migrations
-<a name="introduction"></a>
 
 *Tom Ron, David Guardiola, Mike Kight, and Anisha Salunkhe, Amazon Web Services*
 

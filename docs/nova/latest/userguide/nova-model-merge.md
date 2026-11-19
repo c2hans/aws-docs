@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-model-merge.h
 ---
 
 # Model Merge
-<a name="nova-model-merge"></a>
 
 **Important**
  Throughout this doc, we will reference "base model" as one of the two models. It can be the original foundation model (e.g. Nova Lite 2.0) if no [iterative training](nova-iterative-training.md) was run, or the output of the previous [iterative training](nova-iterative-training.md) run.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Cost example 1
-<a name="cost-example-1"></a>
 
 Cost example 1 covers a use case of approximately 1,000 viewers viewing a live event for about one hour with a **SD-540p** encoding profile selected in the CloudFormation template. This cost example is based on the following factors:
 + Pricing Region: US-East-1, assuming standard pricing (no free-tier or discounts).

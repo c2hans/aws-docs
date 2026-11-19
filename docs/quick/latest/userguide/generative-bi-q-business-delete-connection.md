@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/generative-bi-q-b
 ---
 
 # Disconnect an Amazon Q Business application from an AWS Quick account
-<a name="generative-bi-q-business-delete-connection"></a>
 
 Quick account admins can use the following procedure to disconnect an Amazon Q Business application from a Quick account.
 

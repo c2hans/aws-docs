@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_O
 ---
 
 # OverallVolume
-<a name="API_OverallVolume"></a>
 
 An object that contains information about email that was sent from the selected domain.
 

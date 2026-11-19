@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Observability
-<a name="msk-replicator-observability"></a>
 
 This section describes how to monitor MSK Replicator using Amazon CloudWatch metrics and how to troubleshoot common issues.
 

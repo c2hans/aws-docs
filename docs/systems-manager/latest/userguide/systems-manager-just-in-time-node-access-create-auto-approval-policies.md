@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Create an auto-approval policy for just-in-time node access
-<a name="systems-manager-just-in-time-node-access-create-auto-approval-policies"></a>
 
 Auto-approval policies use the Cedar policy language to define which users can automatically connect to the specified nodes without manual approval. An auto-approval policy contains multiple `permit` statements specifying the `principal` and `resource`. Each statement includes a `when` clause defining the conditions for automatic approval.
 

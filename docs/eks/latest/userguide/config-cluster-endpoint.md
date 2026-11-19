@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/config-cluster-endp
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure network access to cluster API server endpoint
-<a name="config-cluster-endpoint"></a>
 
 You can modify your cluster API server endpoint access using the AWS Management Console or AWS CLI in the following sections.
 

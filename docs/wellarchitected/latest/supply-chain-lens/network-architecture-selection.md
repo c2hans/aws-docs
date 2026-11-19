@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Network architecture selection
-<a name="network-architecture-selection"></a>
 
 | SCPERF04: How do you select your network architecture for supply chain application? |
 | --- |

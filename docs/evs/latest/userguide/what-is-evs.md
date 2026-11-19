@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html
 ---
 
 # What is Amazon EVS?
-<a name="what-is-evs"></a>
 
 Amazon Elastic VMware Service (Amazon EVS) allows you to run VMware Cloud Foundation (VCF) workloads directly on AWS. Amazon EVS runs VCF on bare-metal Amazon EC2 instances inside your own Amazon Virtual Private Cloud (VPC). Your teams keep the same VCF tools, skills, and operating procedures that they use on premises. You don’t need to re-platform, refactor applications, or retrain staff, and you can bring your existing VCF subscription with its portability entitlement.
 

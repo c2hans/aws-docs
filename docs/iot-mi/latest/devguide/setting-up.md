@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/setting-up.html
 ---
 
 # Set up Managed Integrations
-<a name="setting-up"></a>
 
 The following sections guide you through initial setup for using managed integrations for AWS IoT Device Management.
 

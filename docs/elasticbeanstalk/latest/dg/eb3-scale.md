@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-scale.htm
 ---
 
 # **eb scale**
-<a name="eb3-scale"></a>
 
 ## Description
 <a name="eb3-scaledescription"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # KinesisFirehoseDestinationDetails
-<a name="API_KinesisFirehoseDestinationDetails"></a>
 
 The configuration details of the Kinesis Data Firehose destination.
 

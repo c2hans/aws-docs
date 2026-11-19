@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Impo
 ---
 
 # ImportTaskSummary
-<a name="API_ImportTaskSummary"></a>
 
 Details about an import task.
 

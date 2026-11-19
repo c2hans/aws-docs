@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PostC
 ---
 
 # PostCommentReply
-<a name="API_PostCommentReply"></a>
 
 Posts a comment in reply to an existing comment on a comparison between commits or a pull request.
 

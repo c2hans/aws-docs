@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Work
 ---
 
 # WorkerComputeConfigurationProperties
-<a name="API_WorkerComputeConfigurationProperties"></a>
 
 The configuration properties that define the compute environment settings for workers in AWS Clean Rooms. These properties enable customization of the underlying compute environment to optimize performance for your specific workloads.
 

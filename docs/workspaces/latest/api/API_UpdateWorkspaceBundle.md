@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateWorkspac
 ---
 
 # UpdateWorkspaceBundle
-<a name="API_UpdateWorkspaceBundle"></a>
 
 Updates a WorkSpace bundle with a new image. For more information about updating WorkSpace bundles, see [ Update a Custom WorkSpaces Bundle](https://docs.aws.amazon.com/workspaces/latest/adminguide/update-custom-bundle.html).
 

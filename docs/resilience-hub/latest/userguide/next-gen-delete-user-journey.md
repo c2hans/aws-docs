@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Delete a user journey
-<a name="next-gen-delete-user-journey"></a>
 
 **To delete a user journey (console)**
 

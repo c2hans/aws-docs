@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteTabl
 ---
 
 # RouteTableAssociation
-<a name="API_RouteTableAssociation"></a>
 
 Describes an association between a route table and a subnet or gateway.
 

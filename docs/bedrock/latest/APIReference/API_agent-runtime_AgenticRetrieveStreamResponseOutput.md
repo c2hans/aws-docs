@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveStreamResponseOutput
-<a name="API_agent-runtime_AgenticRetrieveStreamResponseOutput"></a>
 
 The streaming output for agentic retrieval, containing results, traces, and errors.
 

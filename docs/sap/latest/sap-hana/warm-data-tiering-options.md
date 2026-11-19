@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/warm-data-tiering-op
 ---
 
 # Warm Data Tiering Options
-<a name="warm-data-tiering-options"></a>
 
 The following sections discuss the warm data tiering options you have on AWS.
 

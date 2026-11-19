@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/metrics.html
 ---
 
 # Using CloudWatch metrics for Transfer Family servers
-<a name="metrics"></a>
 
 **Note**
  You can also get metrics for Transfer Family from within the Transfer Family console itself. For details, see [Monitoring usage in the console](monitor-usage-transfer-console.md)

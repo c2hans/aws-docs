@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-assets
 ---
 
 # Managing assets in a AWS Quick Free or Plus account
-<a name="standalone-assets"></a>
 
 In a AWS Quick Free or Plus account, assets represent the resources created and used within your account – including chat agents, spaces, automations, and other AI-powered tools. The Assets page in the Manage Account interface lets administrators view, search, filter, and manage all assets across the account.
 

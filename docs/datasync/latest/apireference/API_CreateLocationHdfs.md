@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationHdfs
-<a name="API_CreateLocationHdfs"></a>
 
 Creates a transfer *location* for a Hadoop Distributed File System (HDFS). AWS DataSync can use this location as a source or destination for transferring data.
 

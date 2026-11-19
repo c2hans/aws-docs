@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterDetails
-<a name="API_AwsRedshiftClusterDetails"></a>
 
 Details about an Amazon Redshift cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Using the devicefarm-cli tool in custom test environments
-<a name="custom-test-environments-hosts-software-cli"></a>
 
 The test host uses a standardized version management tool called ` devicefarm-cli` to select software versions. This tool is separate from the AWS CLI and only available on the Device Farm test host. With `devicefarm-cli`, you can switch to any pre-installed software version on the test host. This provides a straightforward way to maintain your Device Farm test spec file over time and gives you a predictable mechanism to upgrade software versions in the future.
 

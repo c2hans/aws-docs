@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GitL
 ---
 
 # GitLabConfiguration
-<a name="API_GitLabConfiguration"></a>
 
 Configuration for GitLab project integration.
 

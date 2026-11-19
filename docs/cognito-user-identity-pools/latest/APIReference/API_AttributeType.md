@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AttributeType
-<a name="API_AttributeType"></a>
 
 The name and value of a user attribute.
 

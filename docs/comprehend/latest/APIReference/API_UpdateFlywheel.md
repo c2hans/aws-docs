@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Updat
 ---
 
 # UpdateFlywheel
-<a name="API_UpdateFlywheel"></a>
 
 Update the configuration information for an existing flywheel.
 

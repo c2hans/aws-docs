@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-permissi
 ---
 
 # Managing access to a table or database with Lake Formation
-<a name="grant-permissions-tables"></a>
 
 If your table buckets are integrated with the AWS analytics service using Lake Formation, then Lake Formation manages access to your tables and requires that each IAM principal (user or role) be authorized to perform actions them. Lake Formation uses its own permissions model (Lake Formation permissions) that enables fine-grained access control for Data Catalog resources.
 

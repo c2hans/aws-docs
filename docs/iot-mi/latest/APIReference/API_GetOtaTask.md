@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetOtaTas
 ---
 
 # GetOtaTask
-<a name="API_GetOtaTask"></a>
 
 Get details of the over-the-air (OTA) task by its task id.
 

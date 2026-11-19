@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 ---
 
 # Authentication API
-<a name="v10-Grafana-API-Authentication"></a>
 
 Use the Authentication API to work with authentication keys in an Amazon Managed Grafana workspace.
 

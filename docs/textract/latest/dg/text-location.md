@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/text-location.html
 ---
 
 # Locating Items on a Document Page
-<a name="text-location"></a>
 
 Amazon Textract operations return the location and geometry of items found on a document page. [DetectDocumentText](https://docs.aws.amazon.com/textract/latest/APIReference/API_DetectDocumentText.html) and [GetDocumentTextDetection](https://docs.aws.amazon.com/textract/latest/APIReference/API_GetDocumentTextDetection.html) return the location and geometry for lines and words, while [AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/APIReference/API_AnalyzeDocument.html) and [GetDocumentAnalysis](https://docs.aws.amazon.com/textract/latest/APIReference/API_GetDocumentAnalysis.html) return the location and geometry of key-value pairs, tables, cells, and selection elements.
 

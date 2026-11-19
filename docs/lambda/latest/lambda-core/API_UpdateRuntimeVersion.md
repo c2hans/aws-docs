@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateRunt
 ---
 
 # UpdateRuntimeVersion
-<a name="API_UpdateRuntimeVersion"></a>
 
 Updates the runtime version release notes. The runtime version must be in the ACTIVE state. The runtime version image is immutable. To change the runtime contents, create a new runtime version.
 

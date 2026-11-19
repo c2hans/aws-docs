@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeRe
 ---
 
 # CodeRepository
-<a name="API_CodeRepository"></a>
 
 A Git repository that SageMaker AI automatically displays to users for cloning in the JupyterServer application.
 

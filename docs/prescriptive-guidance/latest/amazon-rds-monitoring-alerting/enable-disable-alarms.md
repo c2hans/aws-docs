@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Specifying actions, enabling, and disabling alarms
-<a name="enable-disable-alarms"></a>
 
 You can use a CloudWatch alarm to specify what actions the alarm should take when it changes between the `OK`, `ALARM`, and `INSUFFICIENT_DATA` states. CloudWatch has built-in integration with SNS topics and several additional action categories that are not applicable to Amazon RDS metrics, such as Amazon Elastic Compute Cloud (Amazon EC2) actions or Amazon EC2 Auto Scaling group actions. EventBridge is generally used to write rules and define targets that take actions when the alarm is triggered for Amazon RDS metrics. CloudWatch sends events to EventBridge every time a CloudWatch alarm changes its state. You can use these alarm state change events to trigger an event target in EventBridge. For more information, see [Alarm events and EventBridge](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-and-eventbridge.html) in the CloudWatch documentation.
 

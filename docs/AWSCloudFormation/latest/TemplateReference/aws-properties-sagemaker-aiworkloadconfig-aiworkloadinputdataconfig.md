@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::AIWorkloadConfig AIWorkloadInputDataConfig
-<a name="aws-properties-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig"></a>
 
 A channel of input data for an AI workload configuration. Each channel has a name and a data source.
 

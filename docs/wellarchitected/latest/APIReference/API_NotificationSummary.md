@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # NotificationSummary
-<a name="API_NotificationSummary"></a>
 
 A notification summary return object.
 

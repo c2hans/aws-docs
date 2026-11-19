@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Upgrad
 ---
 
 # UpgradeTarget
-<a name="API_UpgradeTarget"></a>
 
 The version of the database engine that a DB instance can be upgraded to.
 

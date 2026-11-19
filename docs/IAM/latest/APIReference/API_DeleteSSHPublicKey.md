@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSSHPub
 ---
 
 # DeleteSSHPublicKey
-<a name="API_DeleteSSHPublicKey"></a>
 
 Deletes the specified SSH public key.
 

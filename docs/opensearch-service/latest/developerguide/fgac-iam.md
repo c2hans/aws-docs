@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Tutorial: Configure a domain with an IAM master user and Amazon Cognito authentication
-<a name="fgac-iam"></a>
 
 This tutorial covers a popular Amazon OpenSearch Service use case for [fine-grained access control](fgac.md): an IAM master user with Amazon Cognito authentication for OpenSearch Dashboards.
 

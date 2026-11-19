@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicy
-<a name="API_LifecyclePolicy"></a>
 
 Defines a lifecycle policy resource: its identity, status, execution role, resource type, rules, resource selection, timestamps, and tags.
 

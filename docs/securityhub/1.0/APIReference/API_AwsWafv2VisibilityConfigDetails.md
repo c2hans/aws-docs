@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2VisibilityConfigDetails
-<a name="API_AwsWafv2VisibilityConfigDetails"></a>
 
  Defines and enables Amazon CloudWatch metrics and web request sample collection.
 

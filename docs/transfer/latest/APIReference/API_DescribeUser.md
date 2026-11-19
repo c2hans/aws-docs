@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeUser
-<a name="API_DescribeUser"></a>
 
 Describes the user assigned to the specific file transfer protocol-enabled server, as identified by its `ServerId` property.
 

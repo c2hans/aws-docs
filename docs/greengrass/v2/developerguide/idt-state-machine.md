@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/idt-state-m
 ---
 
 # Configure the IDT state machine
-<a name="idt-state-machine"></a>
 
 **Important**
 Starting in IDT v4.5.1, this state machine is deprecated. We strongly recommend that you use the new test orchestrator. For more information, see [Configure the IDT test orchestrator](idt-test-orchestrator.md).

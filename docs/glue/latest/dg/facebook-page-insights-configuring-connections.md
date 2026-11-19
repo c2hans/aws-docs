@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-page-insights-co
 ---
 
 # Configuring Facebook Page Insights connections
-<a name="facebook-page-insights-configuring-connections"></a>
 
 To configure a Facebook Page Insights connection:
 

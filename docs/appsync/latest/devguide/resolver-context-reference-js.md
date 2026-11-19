@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-context
 ---
 
 # AWS AppSync JavaScript resolver context object reference
-<a name="resolver-context-reference-js"></a>
 
 AWS AppSync defines a set of variables and functions for working with request and response handlers. This makes logical operations on data easier with GraphQL. This document describes those functions and provides examples.
 

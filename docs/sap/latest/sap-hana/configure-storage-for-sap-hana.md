@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/configure-storage-fo
 ---
 
 # Configure SAP HANA Filesystems
-<a name="configure-storage-for-sap-hana"></a>
 
 ## Overview
 <a name="_overview"></a>

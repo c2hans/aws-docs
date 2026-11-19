@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchOmniAWSIntegrationPolicyV2
-<a name="CloudWatchOmniAWSIntegrationPolicyV2"></a>
 
 **Description**: Grants Amazon CloudWatch permissions to gather AWS resource metadata and telemetry data in your account.
 

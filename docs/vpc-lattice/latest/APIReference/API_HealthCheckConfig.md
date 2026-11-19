@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Heal
 ---
 
 # HealthCheckConfig
-<a name="API_HealthCheckConfig"></a>
 
 Describes the health check configuration of a target group. Health check configurations aren't used for target groups of type `LAMBDA` or `ALB`.
 

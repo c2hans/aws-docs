@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/msck-repair-table.html
 ---
 
 # MSCK REPAIR TABLE
-<a name="msck-repair-table"></a>
 
 Use the `MSCK REPAIR TABLE` command to update the metadata in the catalog after you add Hive compatible partitions.
 

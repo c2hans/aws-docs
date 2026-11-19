@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # CrossZoneLoadBalancing
-<a name="API_CrossZoneLoadBalancing"></a>
 
 Information about the `CrossZoneLoadBalancing` attribute.
 

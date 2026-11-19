@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticBeanstalkEnvironmentTier
-<a name="API_AwsElasticBeanstalkEnvironmentTier"></a>
 
 Contains information about the tier of the environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/sns-guidan
 ---
 
 # Guidance on subscribing to SNS Topics
-<a name="sns-guidance"></a>
 
 Subscribe to SNS topics to get information about your AWS Control Tower environment.
 

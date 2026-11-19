@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Get a configuration bundle
-<a name="configuration-bundles-get"></a>
 
 Retrieve a configuration bundle to inspect its metadata or read the full configuration content of a specific version. Two operations are available:
 +  **GetConfigurationBundle** — Returns the latest version of a bundle. If `branchName` is specified, returns the latest version on that branch. If omitted, returns the latest version on the `mainline` branch. Use this to read the current active configuration.

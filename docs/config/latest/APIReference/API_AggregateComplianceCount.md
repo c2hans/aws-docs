@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateComplianceCount
-<a name="API_AggregateComplianceCount"></a>
 
 Returns the number of compliant and noncompliant rules for one or more accounts and regions in an aggregator.
 

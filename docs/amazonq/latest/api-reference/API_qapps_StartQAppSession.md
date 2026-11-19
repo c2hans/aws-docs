@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_S
 ---
 
 # StartQAppSession
-<a name="API_qapps_StartQAppSession"></a>
 
 Starts a new session for an Amazon Q App, allowing inputs to be provided and the app to be run.
 

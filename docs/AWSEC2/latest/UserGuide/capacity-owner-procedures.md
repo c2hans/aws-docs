@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-owner-p
 ---
 
 # Interruptible Capacity Reservations for capacity owners
-<a name="capacity-owner-procedures"></a>
 
 The capacity owner is the account that owns the source Capacity Reservation and creates the interruptible Capacity Reservation to share unused capacity with other teams while retaining control to reclaim it when needed.
 

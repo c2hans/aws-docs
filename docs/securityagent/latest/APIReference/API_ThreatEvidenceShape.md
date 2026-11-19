@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatEvidenceShape
-<a name="API_ThreatEvidenceShape"></a>
 
 Source code file supporting a threat.
 

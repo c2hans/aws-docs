@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/launch-template-suppor
 ---
 
 # Launch Template support for Managed Nodegroups
-<a name="launch-template-support"></a>
 
 eksctl supports launching managed nodegroups using a provided [EC2 Launch Template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html). This enables multiple customization options for nodegroups including providing custom AMIs and security groups, and passing user data for node bootstrapping.
 

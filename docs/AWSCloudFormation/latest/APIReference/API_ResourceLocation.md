@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceLocation
-<a name="API_ResourceLocation"></a>
 
 The location of the resource in a stack template.
 

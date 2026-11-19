@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampleConfig
-<a name="API_SampleConfig"></a>
 
 The configuration for generating text samples from the model.
 

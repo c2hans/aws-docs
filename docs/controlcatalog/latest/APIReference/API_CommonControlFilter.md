@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_C
 ---
 
 # CommonControlFilter
-<a name="API_CommonControlFilter"></a>
 
 An optional filter that narrows the results to a specific objective.
 

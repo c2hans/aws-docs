@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/step-3-po
 ---
 
 # Step 3: Populate the chatbot with your questions and answers
-<a name="step-3-populate-the-chatbot-with-your-questions-and-answers"></a>
 
 Create or upload question and answer data through the content designer before sharing the QnABot on AWS with your end users. Your data is stored in Amazon OpenSearch Service, which allows the data to be crawled when end users ask questions using either an Amazon Lex client UI or an Amazon Alexa hands-free device.
 

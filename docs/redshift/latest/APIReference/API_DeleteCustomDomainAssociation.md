@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteC
 ---
 
 # DeleteCustomDomainAssociation
-<a name="API_DeleteCustomDomainAssociation"></a>
 
 Contains information about deleting a custom domain association for a cluster.
 

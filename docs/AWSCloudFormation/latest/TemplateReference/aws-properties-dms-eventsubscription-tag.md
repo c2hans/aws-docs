@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::EventSubscription Tag
-<a name="aws-properties-dms-eventsubscription-tag"></a>
 
 A user-defined key-value pair that describes metadata added to an AWS DMS resource and that is used by operations such as the following:
 +  `AddTagsToResource`

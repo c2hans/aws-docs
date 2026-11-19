@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/security_iam_
 ---
 
 # How AWS Client VPN works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Client VPN, learn what IAM features are available to use with Client VPN.
 

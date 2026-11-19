@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEREL03-BP03 Monitor infrastructure events over time to measure impact on player behavior
-<a name="gamerel03-bp03"></a>
 
  Monitor your game server process, game server instance metrics, and game experience metrics to determine the root cause of issues. In addition to monitoring CPU and memory, you can also set up monitoring for network metrics related to network limitations of EC2 instances to alert you of issues such as exceeding bandwidth, packets-per-second, or other network-level issues that may indicate your server resources are under provisioned.
 

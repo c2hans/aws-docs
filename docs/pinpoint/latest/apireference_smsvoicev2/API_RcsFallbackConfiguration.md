@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsFallbackConfiguration
-<a name="API_RcsFallbackConfiguration"></a>
 
 Configuration for SMS or MMS fallback when RCS delivery fails or the TimeToLive expires without delivery confirmation.
 

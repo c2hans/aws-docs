@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Log
 ---
 
 # LogSubscription
-<a name="API_LogSubscription"></a>
 
 Represents a log subscription, which tracks real-time data from a chosen log group to a specified destination.
 

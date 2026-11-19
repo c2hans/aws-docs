@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.
 ---
 
 # Creating an Amazon SNS platform application
-<a name="mobile-push-send-register"></a>
 
 To send notifications from Amazon SNS to mobile endpoints—whether directly or through subscriptions to a topic—you must first create a platform application. After registering the app with AWS, you need to create an endpoint for both the app and the mobile device. This endpoint allows Amazon SNS to send messages to the device.
 

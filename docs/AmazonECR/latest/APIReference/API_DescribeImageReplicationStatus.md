@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeImageReplicationStatus
-<a name="API_DescribeImageReplicationStatus"></a>
 
 Returns the replication status for a specified image.
 

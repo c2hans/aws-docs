@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RoutingInformationNextHop
-<a name="API_RoutingInformationNextHop"></a>
 
 Information about the next hop for a route in the core network.
 

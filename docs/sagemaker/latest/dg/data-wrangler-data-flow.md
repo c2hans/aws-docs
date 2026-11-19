@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-data-f
 ---
 
 # Create and Use a Data Wrangler Flow
-<a name="data-wrangler-data-flow"></a>
 
 Use an Amazon SageMaker Data Wrangler flow, or a *data flow*, to create and modify a data preparation pipeline. The data flow connects the datasets, transformations, and analyses, or *steps*, you create and can be used to define your pipeline.
 

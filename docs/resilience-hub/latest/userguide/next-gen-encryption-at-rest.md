@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Encryption at rest
-<a name="next-gen-encryption-at-rest"></a>
 
 All Next generation Resilience Hub data is encrypted at rest.
 

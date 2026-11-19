@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 ---
 
 # Choosing an AWS storage service
-<a name="choosing-aws-storage-service"></a>
 
 **Taking the first step**
 

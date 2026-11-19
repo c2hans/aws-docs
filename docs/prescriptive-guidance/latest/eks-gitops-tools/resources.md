@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Resources
-<a name="resources"></a>
 
 The following resources provide official documentation, practical guides, case studies, and in-depth analyses that can help you make an informed decision when choosing a GitOps tool for your EKS cluster. They cover various aspects of GitOps, including implementation strategies, best practices, comparisons between different tools, and real-world experiences.
 

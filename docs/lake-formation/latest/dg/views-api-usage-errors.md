@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-api-usage
 ---
 
 # View creation failure scenarios during asynchronous operations
-<a name="views-api-usage-errors"></a>
 
 The following examples are representative of the types of errors that may result from `CreateTable` or `UpdateTable` view API calls. They are not exhaustive as the error surface of SQL query failures is quite large.
 

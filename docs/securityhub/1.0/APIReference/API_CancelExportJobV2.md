@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CancelE
 ---
 
 # CancelExportJobV2
-<a name="API_CancelExportJobV2"></a>
 
 Cancels a findings export job that is in progress. Security Hub transitions a running job to the `CANCELLED` state and returns the `ExportJobId` and its new `Status`. Canceling a job that is already in the `CANCELLED` state succeeds and returns the same result, so you can safely retry a cancel request.
 

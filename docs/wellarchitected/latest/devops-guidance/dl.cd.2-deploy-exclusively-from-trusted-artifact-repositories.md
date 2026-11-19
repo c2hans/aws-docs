@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CD.2] Deploy exclusively from trusted artifact repositories
-<a name="dl.cd.2-deploy-exclusively-from-trusted-artifact-repositories"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Criteri
 ---
 
 # Criteria
-<a name="API_Criteria"></a>
 
 Defines the parameters and conditions used to evaluate and filter security findings or resources.
 

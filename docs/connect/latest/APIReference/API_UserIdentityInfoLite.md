@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserIden
 ---
 
 # UserIdentityInfoLite
-<a name="API_UserIdentityInfoLite"></a>
 
 The user's first name and last name.
 

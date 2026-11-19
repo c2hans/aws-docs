@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Identity and access management
-<a name="identity-and-access-management"></a>
 
 | SCSEC03: How do you manage and control access to supply chain systems and data for partners, vendors, and third parties? |
 | --- |

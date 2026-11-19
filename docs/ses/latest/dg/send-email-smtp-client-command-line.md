@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-smtp-client-com
 ---
 
 # Testing your connection to the Amazon SES SMTP interface using the command line
-<a name="send-email-smtp-client-command-line"></a>
 
 You can use the methods described in this section from the command line to test your connection to the Amazon SES SMTP endpoint, validate your SMTP credentials, and troubleshoot connection issues. These procedures use tools and libraries that are included with most common operating systems.
 

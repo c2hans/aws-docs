@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-time-s
 ---
 
 # Set the time reference on your EC2 instance or any internet-connected device to use the public Amazon Time Sync Service
-<a name="configure-time-sync"></a>
 
 You can set your instance, or any internet-connected device such as your local computer or an on-prem server, to use the public Amazon Time Sync Service, which is accessible over the internet at `time.aws.com`. You can use the public Amazon Time Sync Service as a backup for the local Amazon Time Sync Service and to connect resources outside of AWS to the Amazon Time Sync Service.
 

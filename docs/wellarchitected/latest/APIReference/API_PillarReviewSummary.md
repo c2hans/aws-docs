@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PillarReviewSummary
-<a name="API_PillarReviewSummary"></a>
 
 A pillar review summary of a lens review.
 

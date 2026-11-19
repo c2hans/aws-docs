@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/loader-message.
 ---
 
 # Neptune Loader Error and Feed Messages
-<a name="loader-message"></a>
 
 The following messages are returned by the `status` endpoint of the Neptune Loader. For more information, see [Get-Status API](load-api-reference-status.md).
 

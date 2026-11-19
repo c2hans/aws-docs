@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Describ
 ---
 
 # DescribeDeliveryStream
-<a name="API_DescribeDeliveryStream"></a>
 
 Describes the specified Firehose stream and its status. For example, after your Firehose stream is created, call `DescribeDeliveryStream` to see whether the Firehose stream is `ACTIVE` and therefore ready for data to be sent to it.
 

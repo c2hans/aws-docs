@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Set up the initial code for Amazon Location
-<a name="qs-ios-create-app-initial-code"></a>
 
 This page provides the initial code for a sample iOS application that integrates with the Amazon Location Service. With this code as a starting point, you can build location-aware iOS apps leveraging features like maps, geocoding, geofencing, tracking, and routing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ru
 ---
 
 # Run an ASP.NET Core web API Docker container on an Amazon EC2 Linux instance
-<a name="run-an-asp-net-core-web-api-docker-container-on-an-amazon-ec2-linux-instance"></a>
 
 *Vijai Anand Ramalingam and Sreelaxmi Pai, Amazon Web Services*
 

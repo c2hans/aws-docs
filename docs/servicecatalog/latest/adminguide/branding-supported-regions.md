@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/brandin
 ---
 
 # AWS Region support for console branding preferences
-<a name="branding-supported-regions"></a>
 
 AWS Service Catalog supports console branding preferences in the AWS Regions listed in the table below.
 

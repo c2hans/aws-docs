@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Interoperability reference architecture
-<a name="interoperability-architectures"></a>
 
  HL7 v2, HL7 v3, and HL7 FHIR are three of the most common healthcare messaging standards used today. This section highlights architectures for each.
 

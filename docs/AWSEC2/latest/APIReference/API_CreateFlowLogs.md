@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFlo
 ---
 
 # CreateFlowLogs
-<a name="API_CreateFlowLogs"></a>
 
 Creates one or more flow logs to capture information about IP traffic for a specific network interface, subnet, or VPC.
 

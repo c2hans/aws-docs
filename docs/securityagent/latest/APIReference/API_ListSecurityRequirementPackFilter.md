@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListSecurityRequirementPackFilter
-<a name="API_ListSecurityRequirementPackFilter"></a>
 
 Filter criteria for listing security requirement packs.
 

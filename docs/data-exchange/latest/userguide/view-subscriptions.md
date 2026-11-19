@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/view-subs
 ---
 
 # Viewing your AWS Data Exchange subscriptions
-<a name="view-subscriptions"></a>
 
 View your subscriptions through the AWS Data Exchange console.
 

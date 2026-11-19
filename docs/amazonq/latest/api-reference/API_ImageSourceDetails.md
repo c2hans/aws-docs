@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ImageSo
 ---
 
 # ImageSourceDetails
-<a name="API_ImageSourceDetails"></a>
 
 Details about an image source, including its identifier and format.
 

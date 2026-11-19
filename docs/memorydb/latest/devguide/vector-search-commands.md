@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # Vector search commands
-<a name="vector-search-commands"></a>
 
 Following are a list of supported commands for vector search.
 

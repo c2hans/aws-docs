@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ConfigurableUpfrontPricingTermConfiguration
-<a name="API_marketplace-agreements_ConfigurableUpfrontPricingTermConfiguration"></a>
 
 Defines a prepaid payment model that allows buyers to configure the entitlements they want to purchase and the duration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.
 ---
 
 # Resources and conditions for Elastic Beanstalk actions
-<a name="AWSHowTo.iam.policies.actions"></a>
 
 This section describes the resources and conditions that you can use in policy statements to grant permissions that allow specific Elastic Beanstalk actions to be performed on specific Elastic Beanstalk resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Se
 ---
 
 # SearchByAttributeValue
-<a name="API_SearchByAttributeValue"></a>
 
 The search input attribute value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/create-vpc-attachment.htm
 ---
 
 # Create a VPC attachment in AWS Transit Gateway
-<a name="create-vpc-attachment"></a>
 
 **To create a VPC attachment using the console**
 

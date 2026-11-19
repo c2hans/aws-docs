@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Billing report (monthly)
-<a name="monthly-billing"></a>
 
 ## Billing charges details
 <a name="billing-charges-details"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Policy structure
-<a name="policy-structure"></a>
 
 A policy is a single JSON object containing the `transformations` array, the `outputs` array, or both. The following skeleton shows the overall shape; the detailed sections below define the `smartCrop`, `contentModeration`, and `outputs` values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scalin
 ---
 
 # Delete a scaling policy
-<a name="endpoint-auto-scaling-delete"></a>
 
 If you no longer need a scaling policy, you can delete it at any time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_CreateFilter.h
 ---
 
 # CreateFilter
-<a name="API_CreateFilter"></a>
 
 Creates a recommendation filter. For more information, see [Filtering recommendations and user segments](https://docs.aws.amazon.com/personalize/latest/dg/filter.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DomainValida
 ---
 
 # DomainValidation
-<a name="API_DomainValidation"></a>
 
 Contains information about the validation of each domain name in the certificate.
 

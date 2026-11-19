@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/triaging-me
 ---
 
 # Triaging metrics
-<a name="triaging-metrics"></a>
 +  Findings received
   +  Unit: Count
   +  Description: The number of findings sent to triaging.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetLicenseConversionTask
-<a name="API_GetLicenseConversionTask"></a>
 
 Gets information about the specified license type conversion task.
 

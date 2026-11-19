@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow TaskPropertiesObject
-<a name="aws-properties-appflow-flow-taskpropertiesobject"></a>
 
  A map used to store task-related information. The execution service looks for particular information based on the `TaskType`.
 

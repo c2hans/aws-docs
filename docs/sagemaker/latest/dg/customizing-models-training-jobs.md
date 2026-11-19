@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-t
 ---
 
 # SageMaker AI Training Jobs
-<a name="customizing-models-training-jobs"></a>
 
 [Amazon SageMaker AI Training Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html) is a fully managed service that you can use to efficiently train AI/ML models at scale. With SageMaker AI Training Jobs, you can select and manage compute instances for model customization. You have full control over instance type and configuration. Jobs are ephemeral — instances are provisioned for the duration of training and released when complete. For more information about SageMaker AI Training Jobs, see [Train a Model with Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/train-model.html).
 

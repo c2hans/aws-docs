@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadA
 ---
 
 # ReadAuthConfig
-<a name="API_ReadAuthConfig"></a>
 
 Read-only authentication configuration containing non-sensitive authentication details for action connectors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListGatewayRules
-<a name="API_ListGatewayRules"></a>
 
 Lists all rules for a gateway.
 

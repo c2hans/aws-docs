@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeDataset
-<a name="API_DescribeDataset"></a>
 
 Retrieves information about a dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogConn
 ---
 
 # DatadogConnectorProfileCredentials
-<a name="API_DatadogConnectorProfileCredentials"></a>
 
  The connector-specific credentials required by Datadog.
 

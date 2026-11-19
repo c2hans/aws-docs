@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteRe
 ---
 
 # RouteRef
-<a name="API_RouteRef"></a>
 
 An object that represents a route returned by a list operation.
 

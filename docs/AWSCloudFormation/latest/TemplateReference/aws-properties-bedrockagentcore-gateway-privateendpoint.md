@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway PrivateEndpoint
-<a name="aws-properties-bedrockagentcore-gateway-privateendpoint"></a>
 
 The private endpoint configuration for a gateway target. Defines how the gateway connects to private resources in your VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeFlo
 ---
 
 # DescribeFlow
-<a name="API_DescribeFlow"></a>
 
  Provides a description of the specified flow.
 

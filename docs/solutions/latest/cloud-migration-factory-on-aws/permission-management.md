@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Permission management
-<a name="permission-management"></a>
 
 The Cloud Migration Factory on AWS solution provides granular role-based access control to the data and automation functions available in the solution, underlying this is Amazon Cognito, providing the user directory and authentication engine.
 

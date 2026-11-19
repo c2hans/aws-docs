@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/oracle-netsuite-connector
 ---
 
 # Limitations and notes for Oracle NetSuite connector
-<a name="oracle-netsuite-connector-limitations"></a>
 
 The following are limitations or notes for the Oracle NetSuite connector:
 + The values of the access\_token and refresh\_token parameters are in JSON Web Token (JWT) format. The access token is valid for 60 minutes whereas the refresh\_token is valid for seven days.

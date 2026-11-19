@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryPipelines TelemetryPipeline
-<a name="aws-properties-observabilityadmin-telemetrypipelines-telemetrypipeline"></a>
 
 Represents a complete telemetry pipeline resource with configuration, status, and metadata for data processing and transformation.
 

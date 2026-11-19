@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The Amazon S3 location for storing data. This structure defines where in Amazon S3 data is stored.
 

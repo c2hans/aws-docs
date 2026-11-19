@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-update.h
 ---
 
 # Updating a run cache
-<a name="workflow-cache-update"></a>
 
 You can change the cache name, description, tags, or cache behavior, but not the S3 location for the cache.
 

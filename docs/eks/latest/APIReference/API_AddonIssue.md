@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonIssue.h
 ---
 
 # AddonIssue
-<a name="API_AddonIssue"></a>
 
 An issue related to an add-on.
 

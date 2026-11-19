@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AdvancedSecurityOptionsInput
-<a name="API_AdvancedSecurityOptionsInput"></a>
 
 Options for enabling and configuring fine-grained access control. For more information, see [Fine-grained access control in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html).
 

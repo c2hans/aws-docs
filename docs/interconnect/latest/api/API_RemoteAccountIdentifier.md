@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_RemoteAccoun
 ---
 
 # RemoteAccountIdentifier
-<a name="API_RemoteAccountIdentifier"></a>
 
 The types of identifiers that may be needed for remote account specification.
 

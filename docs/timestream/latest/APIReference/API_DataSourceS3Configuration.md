@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_DataS
 ---
 
 # DataSourceS3Configuration
-<a name="API_DataSourceS3Configuration"></a>
 
 ## Contents
 <a name="API_DataSourceS3Configuration_Contents"></a>

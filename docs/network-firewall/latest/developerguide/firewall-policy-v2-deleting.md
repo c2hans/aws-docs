@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Deleting a Next Generation policy in AWS Network Firewall
-<a name="firewall-policy-v2-deleting"></a>
 
 To delete a Next Generation policy, first remove it from any firewalls that use it, then delete it.
 

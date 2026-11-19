@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec05-b
 ---
 
 # SEC05-BP01 Create network layers
-<a name="sec05-bp01"></a>
 
  Group your workload components into network layers based on their data sensitivity and access needs. Separate components that must accept traffic from the internet, such as public web endpoints, from those that only communicate internally, such as databases. This grouping creates boundaries where you place controls to restrict the paths an unauthorized user can take toward sensitive systems.
 

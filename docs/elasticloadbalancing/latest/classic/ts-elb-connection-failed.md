@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/ts-e
 ---
 
 # Troubleshoot a Classic Load Balancer: Client connectivity
-<a name="ts-elb-connection-failed"></a>
 
 ## Clients cannot connect to an internet-facing load balancer
 <a name="client-cannot-connect"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationCodeGenerationsFilters
-<a name="API_ListNetworkMigrationCodeGenerationsFilters"></a>
 
 Filters for listing code generation jobs.
 

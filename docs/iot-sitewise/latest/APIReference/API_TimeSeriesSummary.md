@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tim
 ---
 
 # TimeSeriesSummary
-<a name="API_TimeSeriesSummary"></a>
 
 Contains a summary of a time series (data stream).
 

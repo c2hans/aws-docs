@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kustomer-configuring-conn
 ---
 
 # Configuring Kustomer connections
-<a name="kustomer-configuring-connections"></a>
 
 To configure a Kustomer connection:
 

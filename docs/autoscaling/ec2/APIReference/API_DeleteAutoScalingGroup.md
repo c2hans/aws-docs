@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteA
 ---
 
 # DeleteAutoScalingGroup
-<a name="API_DeleteAutoScalingGroup"></a>
 
 Deletes the specified Auto Scaling group.
 

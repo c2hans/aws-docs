@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.CA.4] Enable iterative internal auditing practices
-<a name="ag.ca.4-enable-iterative-internal-auditing-practices"></a>
 
  **Category:** RECOMMENDED
 

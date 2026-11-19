@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListMitigati
 ---
 
 # ListMitigationActions
-<a name="API_ListMitigationActions"></a>
 
 Gets a list of all mitigation actions that match the specified filter criteria.
 

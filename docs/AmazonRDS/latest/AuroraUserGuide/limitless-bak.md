@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Backing up and restoring Aurora PostgreSQL Limitless Database
-<a name="limitless-bak"></a>
 
 You can back up and restore a DB cluster that uses Aurora PostgreSQL Limitless Database.
 

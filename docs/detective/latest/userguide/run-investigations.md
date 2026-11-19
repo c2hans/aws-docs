@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/run-investiga
 ---
 
 # Running a Detective Investigation
-<a name="run-investigations"></a>
 
 Use **Run investigation** to analyze resources such as IAM users and IAM roles and to generate an investigation report. The generated report details anomalous behavior that indicates potential compromise.
 

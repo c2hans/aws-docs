@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeSe
 ---
 
 # DescribeServiceJob
-<a name="API_DescribeServiceJob"></a>
 
 The details of a service job.
 

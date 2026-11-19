@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-real-time-
 ---
 
 # Getting real-time item recommendations
-<a name="getting-real-time-item-recommendations"></a>
 
  You can get real-time item recommendations from an Amazon Personalize recommender or custom campaign with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or AWS SDKs.
 

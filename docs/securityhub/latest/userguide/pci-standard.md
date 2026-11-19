@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standar
 ---
 
 # PCI DSS in Security Hub CSPM
-<a name="pci-standard"></a>
 
 The Payment Card Industry Data Security Standard (PCI DSS) is a third-party compliance framework that provides a set of rules and guidelines for safely handling credit and debit card information. The PCI Security Standards Council (SSC) creates and updates this framework.
 

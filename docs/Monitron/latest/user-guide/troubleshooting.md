@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/troubleshooti
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Troubleshooting Amazon Monitron device issues
-<a name="troubleshooting"></a>
 
 If you have problems with one of your Amazon Monitron devices, use these suggestions to troubleshoot the problem. Then, if you're still having trouble, contact AWS Support.
 

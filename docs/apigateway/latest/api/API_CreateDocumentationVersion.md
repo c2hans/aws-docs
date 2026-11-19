@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDocument
 ---
 
 # CreateDocumentationVersion
-<a name="API_CreateDocumentationVersion"></a>
 
 Creates a documentation version
 

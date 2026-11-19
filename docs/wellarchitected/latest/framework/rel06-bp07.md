@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP07 Monitor end-to-end tracing of requests through your system
-<a name="rel06-bp07"></a>
 
  In a distributed system, a single request touches many components, and a failure or slowdown in any one of them affects the whole. Tracing follows each request across those components so you can pinpoint where errors and latency originate. This shortens root-cause discovery and reduces the mean time to resolve incidents.
 

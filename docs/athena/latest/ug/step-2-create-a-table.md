@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/step-2-create-a-table.h
 ---
 
 # Step 2: Create a table
-<a name="step-2-create-a-table"></a>
 
 Now that you have a database, you can create an Athena table for it. The table that you create will be based on sample Amazon CloudFront log data in the location `s3://athena-examples-{{myregion}}/cloudfront/plaintext/`, where {{myregion}} is your current AWS Region.
 

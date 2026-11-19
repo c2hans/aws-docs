@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ssm-co
 ---
 
 # Amazon EC2 Systems Manager Contacts events
-<a name="events-ref-ssm-contacts"></a>
 
 SSM Contacts sends service events to EventBridge via AWS CloudTrail.
 

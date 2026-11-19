@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Filtering events for a subscriber
-<a name="eb-custom-bus-filtering"></a>
 
 A filter selects which events a subscriber receives. Attach a `FilterConfiguration` to the subscriber with one or more filters, each naming a `Scope` and a `Pattern` in EventBridge event pattern syntax. For example, a `DATA` filter with the pattern `{"detail":{"amount":[{"numeric":[">",500]}]}}` delivers only orders over 500 published with `PutEvents`. This page describes the filter model; for the pattern operators, see [Amazon EventBridge event patterns](eb-event-patterns.md). Subscriber filters do not support wildcard matching.
 

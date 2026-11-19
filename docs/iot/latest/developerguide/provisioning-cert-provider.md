@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/provisioning-c
 ---
 
 # Self-managed certificate signing using AWS IoT Core certificate provider
-<a name="provisioning-cert-provider"></a>
 
 You can create an AWS IoT Core certificate provider to sign certificate signing requests (CSRs) in AWS IoT fleet provisioning. A certificate provider references a Lambda function and the [`CreateCertificateFromCsr` MQTT API for fleet provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html#create-cert-csr). The Lambda function accepts a CSR and returns a signed client certificate.
 

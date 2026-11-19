@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/metric-attribution
 ---
 
 # Viewing graphs of metric data in CloudWatch
-<a name="metric-attribution-results-cloudwatch"></a>
 
 **Important**
  After you create a metric attribution and record events or import incremental bulk data, you will incur some monthly CloudWatch cost per metric. For information about CloudWatch pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page. To stop sending metrics to CloudWatch, [delete the metric attribution](deleting-metric-attribution.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Validat
 ---
 
 # ValidationException
-<a name="API_ValidationException"></a>
 
 The input parameters for the request are invalid.
 

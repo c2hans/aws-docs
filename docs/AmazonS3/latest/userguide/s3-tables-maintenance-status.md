@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-main
 ---
 
 # S3 Tables maintenance job status
-<a name="s3-tables-maintenance-status"></a>
 
 S3 Tables maintenance jobs run periodically for your S3 tables or table buckets. You can query the status of these jobs with the `GetTableMaintenanceJobStatus` API.
 

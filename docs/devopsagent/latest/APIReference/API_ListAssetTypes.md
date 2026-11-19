@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListAssetTypes
-<a name="API_ListAssetTypes"></a>
 
 Lists the supported asset types
 

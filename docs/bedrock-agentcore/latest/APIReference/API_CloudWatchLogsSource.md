@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CloudWatchLogsSource
-<a name="API_CloudWatchLogsSource"></a>
 
 The configuration for reading agent traces from CloudWatch Logs.
 

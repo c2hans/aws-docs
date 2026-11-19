@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # What are foundation model evaluations?
-<a name="clarify-foundation-model-evaluate-whatis"></a>
 
 FMEval can help you quantify model risks, such as inaccurate, toxic, or biased content. Evaluating your LLM helps you comply with international guidelines around responsible generative AI, such as the [ISO 42001](https://aistandardshub.org/ai-standards/information-technology-artificial-intelligence-management-system/) AI Management System Standard and the NIST AI Risk Management Framework.
 

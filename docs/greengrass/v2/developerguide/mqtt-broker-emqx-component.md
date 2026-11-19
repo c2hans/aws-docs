@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker
 ---
 
 # MQTT 5 broker (EMQX)
-<a name="mqtt-broker-emqx-component"></a>
 
 The EMQX MQTT broker component (`aws.greengrass.clientdevices.mqtt.EMQX`) handles MQTT messages between client devices and a Greengrass core device. This component provides a modified version of the [EMQX MQTT 5.0 broker](https://www.emqx.com/en/mqtt/mqtt5). Deploy this MQTT broker to use MQTT 5 features in communication between client devices and a core device. For more information about how to choose an MQTT broker, see [Choose an MQTT broker](choose-local-mqtt-broker.md).
 

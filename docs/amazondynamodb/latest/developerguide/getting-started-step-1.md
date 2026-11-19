@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/get
 ---
 
 # Step 1: Create a table in DynamoDB
-<a name="getting-started-step-1"></a>
 
 In this step, you create a `Music` table in Amazon DynamoDB. The table has the following details:
 + Partition key — `Artist`

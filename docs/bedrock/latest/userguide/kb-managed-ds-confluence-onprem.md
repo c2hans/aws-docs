@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-c
 ---
 
 # Confluence Data Center
-<a name="kb-managed-ds-confluence-onprem"></a>
 
 Atlassian Confluence is a collaborative work-management tool for sharing, storing, and working on documents and pages. You can connect your self-managed Confluence Server or Data Center instance as a data source for your managed knowledge base to crawl pages, blog posts, and their attachments. Because a Confluence Data Center instance runs on your own infrastructure, the connector reaches it over a private network path that you define with a VPC configuration.
 

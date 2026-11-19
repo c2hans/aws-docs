@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernation-enab
 ---
 
 # Configure a Linux AMI to support hibernation
-<a name="hibernation-enabled-AMI"></a>
 
 The following Linux AMIs can support hibernating an Amazon EC2 instance, provided you complete the additional configuration steps described in this section.
 

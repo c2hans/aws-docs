@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_PutAccountSe
 ---
 
 # PutAccountSettings
-<a name="API_PutAccountSettings"></a>
 
 Creates or updates account-level EVS settings for your AWS account in the specified AWS Region.
 

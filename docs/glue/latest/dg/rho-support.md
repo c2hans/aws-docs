@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rho-support.html
 ---
 
 # AWS Glue support for Rho
-<a name="rho-support"></a>
 
 AWS Glue supports Rho as follows:
 

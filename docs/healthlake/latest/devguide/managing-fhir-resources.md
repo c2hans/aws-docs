@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Managing FHIR resources in AWS HealthLake
-<a name="managing-fhir-resources"></a>
 
 Use FHIR R4 RESTful API interactions to manage FHIR resources in a HealthLake data store. The following sections describe all HealthLake-supported FHIR R4 RESTful API interactions available for FHIR resource management. For information about HealthLake data store capabilities and which portions of the FHIR specification it supports, see [FHIR R4 Capability Statement for AWS HealthLake](reference-fhir-capability-statement.md).
 

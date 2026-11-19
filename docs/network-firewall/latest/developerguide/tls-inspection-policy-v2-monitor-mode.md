@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # TLS inspection in monitor mode
-<a name="tls-inspection-policy-v2-monitor-mode"></a>
 
 Monitor mode changes only how the firewall rules, the IPS rules, and the firewall default action are *enforced*. In monitor mode, none of them drop or reject traffic—each records what it would have done instead. Monitor mode doesn't change the TLS proxy. For how monitor mode affects the engines, see [Policy mode: enforce and monitor](firewall-policy-v2-policy-mode.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListDisc
 ---
 
 # ListDiscoveredResources
-<a name="API_ListDiscoveredResources"></a>
 
 Returns an array of resources in the organization's accounts that are available to be associated with a resource set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TransactionDescription
-<a name="API_TransactionDescription"></a>
 
 A structure that contains information about a transaction.
 

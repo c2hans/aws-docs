@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Exch
 ---
 
 # ExchangedParticipantToken
-<a name="API_ExchangedParticipantToken"></a>
 
 Object specifying an exchanged participant token in a stage, created when an original participant token is updated.
 

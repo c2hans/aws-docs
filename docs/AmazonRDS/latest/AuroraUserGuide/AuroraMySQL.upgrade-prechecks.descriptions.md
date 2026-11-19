@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Precheck descriptions for upgrading Aurora MySQL version 2 to version 3
-<a name="AuroraMySQL.upgrade-prechecks.descriptions"></a>
 
 The following prechecks run when you upgrade an Aurora MySQL DB cluster from version 2 (compatible with MySQL 5.7) to version 3 (compatible with MySQL 8.0). For prechecks that run during upgrades from Aurora MySQL version 3 to version 8.4, see [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](AuroraMySQL.upgrade-prechecks-v3-to-v84.descriptions.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Infrastructure OU – Shared Services account
-<a name="shared-services"></a>
 
 The following diagram illustrates the AWS security services that are configured in the Shared Services account.
 

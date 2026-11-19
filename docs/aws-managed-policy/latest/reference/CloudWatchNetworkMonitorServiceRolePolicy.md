@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchNetworkMonitorServiceRolePolicy
-<a name="CloudWatchNetworkMonitorServiceRolePolicy"></a>
 
 **Description**: Allows CloudWatch Network Monitor to access and manage EC2 and VPC resources, publish data to CloudWatch and access other required services on your behalf.
 

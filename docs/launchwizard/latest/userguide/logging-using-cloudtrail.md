@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/logging-us
 ---
 
 # Logging AWS Launch Wizard API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Launch Wizard is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures API calls for AWS Launch Wizard as events. The calls captured include calls from the AWS Management Console and code calls to the AWS Launch Wizard API operations. Using the information collected by CloudTrail, you can determine the request that was made to AWS Launch Wizard, the IP address from which the request was made, when it was made, and additional details.
 

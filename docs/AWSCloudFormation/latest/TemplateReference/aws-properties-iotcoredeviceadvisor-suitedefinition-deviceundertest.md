@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTCoreDeviceAdvisor::SuiteDefinition DeviceUnderTest
-<a name="aws-properties-iotcoredeviceadvisor-suitedefinition-deviceundertest"></a>
 
 Information of a test device. A thing ARN, certificate ARN or device role ARN is required.
 

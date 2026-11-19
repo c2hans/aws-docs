@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Investigate performance issues by using the Spark UI
-<a name="investigate"></a>
 
 Before you apply any best practices to tune performance of your AWS Glue jobs, we highly recommended that you profile the performance and identify the bottlenecks. This will help you focus on the right things.
 

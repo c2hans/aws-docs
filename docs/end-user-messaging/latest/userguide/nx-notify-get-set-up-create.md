@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Step 2: Create a Notify configuration
-<a name="nx-notify-get-set-up-create"></a>
 
 A Notify configuration is the central resource for Notify, and both sending modes require one. It represents your brand identity and messaging settings, including your display name, use case, enabled channels, enabled countries, and tier. When you create a configuration, AWS automatically validates your account, configures fraud protection, and sets tier-appropriate limits.
 

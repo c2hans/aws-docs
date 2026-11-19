@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CREATE FUNCTION
-<a name="sql-reference-create-function"></a>
 
 Amazon Kinesis Data Analytics provides a number of [Functions](sql-reference-functions.md), and also allows users to extend its capabilities by means of user-defined functions (UDFs). Amazon Kinesis Data Analytics supports UDFs defined in SQL only.
 

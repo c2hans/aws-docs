@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Serv
 ---
 
 # ServiceNetworkEndpointAssociation
-<a name="API_ServiceNetworkEndpointAssociation"></a>
 
 Describes the association between a service network and a VPC endpoint.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/redshift_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with serverless data warehouses using the CLI
-<a name="redshift_example_redshift_GettingStarted_038_section"></a>
 
 The following code example shows how to:
 + Use secrets-manager CreateSecret

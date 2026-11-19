@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Network modules
-<a name="network-modules"></a>
 
 Network modules create the necessary resources for other modules and components to communicate with each other.
 

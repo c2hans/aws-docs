@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/view-res
 ---
 
 # Viewing resources of AWS Resilience Hub application
-<a name="view-resources"></a>
 
 **To view resources of your application**
 

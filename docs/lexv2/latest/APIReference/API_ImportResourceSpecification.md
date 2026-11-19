@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ImportReso
 ---
 
 # ImportResourceSpecification
-<a name="API_ImportResourceSpecification"></a>
 
 Provides information about the bot or bot locale that you want to import. You can specify the `botImportSpecification` or the `botLocaleImportSpecification`, but not both.
 

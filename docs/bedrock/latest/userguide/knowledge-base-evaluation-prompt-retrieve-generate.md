@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Creating a prompt dataset for retrieve-and-generate RAG evaluation jobs
-<a name="knowledge-base-evaluation-prompt-retrieve-generate"></a>
 
 A retrieve-and-generate evaluation jobs require a prompt dataset using JSON lines format. You can have up to 1000 prompts in your dataset
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_S
 ---
 
 # S3RecordingDetails
-<a name="API_S3RecordingDetails"></a>
 
 Details about an S3 recording `Config` used in a contact.
 

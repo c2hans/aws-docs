@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Enhanced
 ---
 
 # EnhancedMetrics
-<a name="API_EnhancedMetrics"></a>
 
 Represents enhanced metrics types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_cr
 ---
 
 # Creating a compute node group in AWS PCS
-<a name="working-with_cng_create"></a>
 
 This topic describes how to create a compute node group in AWS Parallel Computing Service (AWS PCS). When you create a compute node group, you choose how to configure its compute nodes. With standard configuration, you specify the AMI, security groups, and SSH key pair on the compute node group. These are called instance settings. With launch template configuration, you also use a custom Amazon EC2 launch template, for Amazon EC2 settings that aren't available as instance settings, such as network interfaces or capacity reservations.
 

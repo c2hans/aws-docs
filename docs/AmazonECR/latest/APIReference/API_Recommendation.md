@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Recomm
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 Details about the recommended course of action to remediate the finding.
 

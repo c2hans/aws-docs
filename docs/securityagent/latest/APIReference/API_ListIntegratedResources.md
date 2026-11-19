@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListIntegratedResources
-<a name="API_ListIntegratedResources"></a>
 
 Lists the integrated resources for an agent space, optionally filtered by integration or resource type.
 

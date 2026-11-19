@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Que
 ---
 
 # Paginating table query results in DynamoDB
-<a name="Query.Pagination"></a>
 
 DynamoDB *paginates* the results from `Query` operations. With pagination, the `Query` results are divided into "pages" of data that are 1 MB in size (or less). An application can process the first page of results, then the second page, and so on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EfficiencyMetricsByGroup
-<a name="API_CostOptimizationHub_EfficiencyMetricsByGroup"></a>
 
 Contains cost efficiency metrics for a specific group over time. The group is defined by the grouping dimension specified in the request, such as account ID, AWS Region.
 

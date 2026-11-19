@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # System-level optimizations
-<a name="system-optimizations"></a>
 
 System optimizations focus on **how the inference serving infrastructure is configured and orchestrated** — independent of the model itself. These techniques operate at the serving engine, cluster, and request-scheduling layers to maximize hardware utilization, reduce latency, and increase throughput.
 

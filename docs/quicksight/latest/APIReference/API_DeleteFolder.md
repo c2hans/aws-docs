@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteFolder
-<a name="API_DeleteFolder"></a>
 
 Deletes an empty folder.
 

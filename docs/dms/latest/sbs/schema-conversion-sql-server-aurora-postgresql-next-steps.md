@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Migration from SQL Server databases to Aurora PostgreSQL with DMS schema conversion next steps
-<a name="schema-conversion-sql-server-aurora-postgresql-next-steps"></a>
 
 After you migrate your SQL Server database to Aurora PostgreSQL using DMS Schema Conversion, you can explore several other resources:
 + Use AWS DMS to migrate your source data. For more information, see the [Database Migration Service User Guide](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html).

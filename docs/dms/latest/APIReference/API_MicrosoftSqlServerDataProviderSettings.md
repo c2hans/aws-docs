@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MicrosoftSql
 ---
 
 # MicrosoftSqlServerDataProviderSettings
-<a name="API_MicrosoftSqlServerDataProviderSettings"></a>
 
 Provides information that defines a Microsoft SQL Server data provider.
 

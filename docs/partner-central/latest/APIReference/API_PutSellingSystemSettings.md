@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PutSellingSystemSettings
-<a name="API_PutSellingSystemSettings"></a>
 
 Updates the currently set system settings, which include the IAM Role used for resource snapshot jobs.
 

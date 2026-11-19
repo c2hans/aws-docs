@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SSHPublicKey
 ---
 
 # SSHPublicKeyMetadata
-<a name="API_SSHPublicKeyMetadata"></a>
 
 Contains information about an SSH public key, without the key's body or fingerprint.
 

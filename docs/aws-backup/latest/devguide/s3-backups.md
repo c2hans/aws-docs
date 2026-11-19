@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.ht
 ---
 
 # Amazon S3 backups
-<a name="s3-backups"></a>
 
 ## Overview
 <a name="s3-backup-overview"></a>

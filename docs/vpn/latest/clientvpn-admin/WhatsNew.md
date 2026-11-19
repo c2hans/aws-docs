@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/WhatsNew.html
 ---
 
 # Document history for the Client VPN User Guide
-<a name="WhatsNew"></a>
 
 The following table describes the AWS Client VPN Administrator Guide updates.
 
@@ -25,4 +24,4 @@ The following table describes the AWS Client VPN Administrator Guide updates.
 | [Configurable VPN ports](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-create.html) | You can specify a supported VPN port number for your AWS Client VPN endpoint. | January 16, 2020 |
 | [Support for multi-factor authentication (MFA)](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-rules.html) | Your AWS Client VPN endpoint supports MFA if it's enabled for your Active Directory. | September 30, 2019 |
 | [Support for split-tunnel](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html) | You can enable split-tunnel on your AWS Client VPN endpoint. | July 24, 2019 |
-| [Initial release](#WhatsNew) | This release introduces AWS Client VPN. | December 18, 2018 |
+| [Initial release](WhatsNew.md) | This release introduces AWS Client VPN. | December 18, 2018 |

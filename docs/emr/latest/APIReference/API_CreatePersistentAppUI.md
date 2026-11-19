@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_CreatePersis
 ---
 
 # CreatePersistentAppUI
-<a name="API_CreatePersistentAppUI"></a>
 
 Creates a persistent application user interface.
 

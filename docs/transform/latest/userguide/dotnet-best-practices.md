@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-best-p
 ---
 
 # Best practices for .NET transformations
-<a name="dotnet-best-practices"></a>
 
 Follow this guidance for better .NET modernization outcomes with AWS Transform. These best practices apply to the .NET conversational AI assistant, currently available for Visual Studio IDE.
 

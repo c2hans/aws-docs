@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-pol
 ---
 
 # IAM Access Analyzer policy generation
-<a name="access-analyzer-policy-generation"></a>
 
 As an administrator or developer, you might grant permissions to IAM entities (users or roles) beyond what they require. IAM provides several options to help you refine the permissions that you grant.
 

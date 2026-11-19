@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallPolicyModifiedViolation
-<a name="API_NetworkFirewallPolicyModifiedViolation"></a>
 
 Violation detail for AWS Network Firewall for a firewall policy that has a different [NetworkFirewallPolicyDescription](API_NetworkFirewallPolicyDescription.md) than is required by the Firewall Manager policy.
 

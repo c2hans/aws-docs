@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/capacity-plann
 ---
 
 # Capacity planning in Connect Customer
-<a name="capacity-planning"></a>
 
 A capacity plan helps you determine how many agents your contact center needs. It uses forecasts and scenario inputs to set staffing targets for a given time period.
 

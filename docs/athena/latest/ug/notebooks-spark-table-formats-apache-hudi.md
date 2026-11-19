@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-table-f
 ---
 
 # Use Apache Hudi tables in Athena for Spark
-<a name="notebooks-spark-table-formats-apache-hudi"></a>
 
 [**Apache Hudi**](https://hudi.apache.org/) is an open-source data management framework that simplifies incremental data processing. Record-level insert, update, upsert, and delete actions are processed with greater precision, which reduces overhead.
 

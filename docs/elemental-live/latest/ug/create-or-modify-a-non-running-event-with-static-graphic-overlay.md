@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/create-or-modif
 ---
 
 # Create or modify a non-running event with static graphic overlay
-<a name="create-or-modify-a-non-running-event-with-static-graphic-overlay"></a>
 
 Create or modify an Elemental Live event and include one or more static graphic overlays. This description assumes that you are familiar with the XML body for a live\_event aside from the data for the graphic overlay.
 

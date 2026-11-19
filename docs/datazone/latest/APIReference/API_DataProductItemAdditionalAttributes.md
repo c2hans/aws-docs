@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataPro
 ---
 
 # DataProductItemAdditionalAttributes
-<a name="API_DataProductItemAdditionalAttributes"></a>
 
 The additional attributes of an Amazon DataZone data product.
 

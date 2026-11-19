@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CapacityReservationTarget
-<a name="API_CapacityReservationTarget"></a>
 
 Information about the target Capacity Reservation or Capacity Reservation group for the instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/a2a-quotas.htm
 ---
 
 # Quotas and limitations for agent-to-agent collaboration
-<a name="a2a-quotas"></a>
 
 This page lists the requirements, service quotas, and design constraints for agent-to-agent collaboration in Connect Customer.
 

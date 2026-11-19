@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/flink-2-2.html
 ---
 
 # Amazon Managed Service for Apache Flink 2.2
-<a name="flink-2-2"></a>
 
 Amazon Managed Service for Apache Flink now supports Apache Flink version 2.2. This is the first major version upgrade for the service. This page covers the capabilities introduced in Flink 2.2, along with important considerations for upgrading from Flink 1.x.
 

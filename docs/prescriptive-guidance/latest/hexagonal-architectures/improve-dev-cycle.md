@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Improving the development cycle
-<a name="improve-dev-cycle"></a>
 
 Developing software for the cloud introduces new challenges for software engineers, because it is very hard to replicate the runtime environment locally on the development machine. A straightforward way to validate the software is to deploy it to the cloud and test it there. However, this approach involves a lengthy feedback cycle, especially when the software architecture contains multiple serverless deployments. Improving this feedback cycle shortens the time to develop features, which reduces the time to market significantly.
 

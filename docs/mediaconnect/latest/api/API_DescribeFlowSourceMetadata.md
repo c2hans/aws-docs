@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeFlow
 ---
 
 # DescribeFlowSourceMetadata
-<a name="API_DescribeFlowSourceMetadata"></a>
 
  The `DescribeFlowSourceMetadata` API is used to view information about the flow's source transport stream and programs. This API displays status messages about the flow's source as well as details about the program's video, audio, and other data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DeleteListener
-<a name="API_DeleteListener"></a>
 
 Deletes the specified listener.
 

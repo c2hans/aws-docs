@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/viewing
 ---
 
 # Tutorial: List your geofence collection resources
-<a name="viewing-geofence-collections"></a>
 
 You can view your geofence collection list using the Amazon Location console, the AWS CLI, or the Amazon Location APIs:
 

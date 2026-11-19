@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_JobDet
 ---
 
 # JobDetails
-<a name="API_JobDetails"></a>
 
 The number of documents successfully and unsuccessfully processed during a translation job.
 

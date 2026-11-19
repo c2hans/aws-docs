@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-user
 ---
 
 # Creating a user script
-<a name="create-user-script"></a>
 
 The user script must contain an entrypoint function (in other words, a handler). You can name your user script file with any valid Python filename.
 

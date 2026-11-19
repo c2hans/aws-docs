@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyNet
 ---
 
 # ModifyNetworkingFlexCostAllocationPolicy
-<a name="API_ModifyNetworkingFlexCostAllocationPolicy"></a>
 
 Modifies a flex cost allocation policy. Changing a policy document or `ShowBackEnabled` creates a new version of the policy. Changing only the description doesn't create a new version.
 

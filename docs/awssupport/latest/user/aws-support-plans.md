@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans
 ---
 
 # AWS Support Plans
-<a name="aws-support-plans"></a>
 
 AWS offers the following AWS Support Plans for you to choose from based on your business needs.
 + Basic

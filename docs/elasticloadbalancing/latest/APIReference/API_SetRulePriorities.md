@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # SetRulePriorities
-<a name="API_SetRulePriorities"></a>
 
 Sets the priorities of the specified rules.
 

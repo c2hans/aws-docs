@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Remove one or more metadata tag from the specified AWS resource.
 

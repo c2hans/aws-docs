@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/apps.ht
 ---
 
 # Apps in AWS Device Farm
-<a name="apps"></a>
 
 The following sections contain information about app behaviors in Device Farm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSConfigThirdPartyServiceRolePolicy
-<a name="AWSConfigThirdPartyServiceRolePolicy"></a>
 
 **Description**: Provides permissions for AWS Config to inventory and evaluate compliance of third-party cloud resources.
 

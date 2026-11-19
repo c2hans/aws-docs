@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/events.html
 ---
 
 # Monitoring events by using Amazon EventBridge
-<a name="events"></a>
 
 Amazon EventBridge events describe changes in DataSync resources. You can set up rules to match these events and route them to one or more target functions or streams. Events are emitted on a best-effort basis.
 

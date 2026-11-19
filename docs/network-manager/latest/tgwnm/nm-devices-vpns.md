@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices-
 ---
 
 # View VPNs using AWS Network Manager
-<a name="nm-devices-vpns"></a>
 
 The VPNs page displays a list of your VPN connections for a device.
 

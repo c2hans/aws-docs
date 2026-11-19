@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/compatible-kafka-ve
 ---
 
 # Compatible Apache Kafka Versions
-<a name="compatible-kafka-versions"></a>
 
 The Apache Kafka versions to which you can update the cluster.
 

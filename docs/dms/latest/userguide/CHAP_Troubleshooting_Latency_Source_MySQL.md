@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshootin
 ---
 
 # MySQL Endpoint Troubleshooting
-<a name="CHAP_Troubleshooting_Latency_Source_MySQL"></a>
 
 This section contains replication scenarios specific to MySQL. AWS DMS scans the MySQL binary log periodically to replicate changes. This process can increase latency in the following scenarios:
 

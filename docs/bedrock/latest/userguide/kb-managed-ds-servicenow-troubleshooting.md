@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-s
 ---
 
 # Troubleshoot a ServiceNow data source
-<a name="kb-managed-ds-servicenow-troubleshooting"></a>
 
 Use this page to diagnose common issues with ServiceNow authentication and syncing.
 

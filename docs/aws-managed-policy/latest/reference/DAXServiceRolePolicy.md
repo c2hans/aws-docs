@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DAXS
 ---
 
 # DAXServiceRolePolicy
-<a name="DAXServiceRolePolicy"></a>
 
 **Description**: This policy allows DAX to create and manage Network interface, Security group, Subnet and Vpc on behalf of customer
 

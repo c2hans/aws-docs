@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityF
 ---
 
 # SetIdentityFeedbackForwardingEnabled
-<a name="API_SetIdentityFeedbackForwardingEnabled"></a>
 
 Given an identity (an email address or a domain), enables or disables whether Amazon SES forwards bounce and complaint notifications as email. Feedback forwarding can only be disabled when Amazon Simple Notification Service (Amazon SNS) topics are specified for both bounces and complaints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveRetention
-<a name="API_ArchiveRetention"></a>
 
 The retention policy for an email archive that specifies how long emails are kept before being automatically deleted.
 

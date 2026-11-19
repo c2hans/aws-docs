@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CloudExadata
 ---
 
 # CloudExadataInfrastructureSummary
-<a name="API_CloudExadataInfrastructureSummary"></a>
 
 Information about an Exadata infrastructure.
 

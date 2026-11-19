@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Send notifications for an Amazon RDS for SQL Server database instance by using an on-premises SMTP server and Database Mail
-<a name="send-notifications-for-an-amazon-rds-for-sql-server-database-instance-by-using-an-on-premises-smtp-server-and-database-mail"></a>
 
 *Nishad Mankar, Amazon Web Services*
 

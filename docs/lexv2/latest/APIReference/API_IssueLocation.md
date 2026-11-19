@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IssueLocat
 ---
 
 # IssueLocation
-<a name="API_IssueLocation"></a>
 
 Specifies the location of an identified issue within the bot configuration.
 

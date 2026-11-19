@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteCustomDetectionRuleOrgConfiguration
-<a name="API_DeleteCustomDetectionRuleOrgConfiguration"></a>
 
 Deletes the organization-level configuration for a custom detection rule. This operation is available only to the delegated administrator account.
 

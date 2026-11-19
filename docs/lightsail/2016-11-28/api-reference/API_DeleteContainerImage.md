@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteContainerImage
-<a name="API_DeleteContainerImage"></a>
 
 Deletes a container image that is registered to your Amazon Lightsail container service.
 

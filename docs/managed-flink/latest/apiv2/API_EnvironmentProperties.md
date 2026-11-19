@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Environme
 ---
 
 # EnvironmentProperties
-<a name="API_EnvironmentProperties"></a>
 
 Describes execution properties for a Managed Service for Apache Flink application.
 

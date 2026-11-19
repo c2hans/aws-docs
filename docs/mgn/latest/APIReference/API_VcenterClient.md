@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_VcenterClien
 ---
 
 # VcenterClient
-<a name="API_VcenterClient"></a>
 
 vCenter client.
 

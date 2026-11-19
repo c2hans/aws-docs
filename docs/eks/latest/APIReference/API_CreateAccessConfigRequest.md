@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAccess
 ---
 
 # CreateAccessConfigRequest
-<a name="API_CreateAccessConfigRequest"></a>
 
 The access configuration information for the cluster.
 

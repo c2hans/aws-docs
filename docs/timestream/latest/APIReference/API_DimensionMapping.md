@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Dimen
 ---
 
 # DimensionMapping
-<a name="API_DimensionMapping"></a>
 
 ## Contents
 <a name="API_DimensionMapping_Contents"></a>

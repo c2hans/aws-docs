@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/creating-other
 ---
 
 # Configuring transfers with other cloud object storage
-<a name="creating-other-cloud-object-location"></a>
 
 With AWS DataSync, you can transfer data between [AWS storage services](transferring-aws-storage.md) and the following cloud object storage providers:
 + [Wasabi Cloud Storage](https://docs.wasabi.com/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Customization guide
-<a name="customization-guide"></a>
 
 ## Managing Cognito user pool
 <a name="managing-cognito-user-pool"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdkoption
 ---
 
 # General configuration using `Aws::SDKOptions` in the AWS SDK for C\+\+
-<a name="sdkoptions"></a>
 
 The [`Aws::SDKOptions`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/struct_aws_1_1_s_d_k_options.html) struct contains SDK configuration options. `Aws::SDKOptions` focuses on general SDK configuration, whereas the [`ClientConfiguration`](client-config.md) struct focuses on configuration of communicating with AWS services.
 

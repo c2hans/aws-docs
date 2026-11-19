@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ActiveIns
 ---
 
 # ActiveInstance
-<a name="API_ActiveInstance"></a>
 
 Describes a running instance in a Spot Fleet.
 

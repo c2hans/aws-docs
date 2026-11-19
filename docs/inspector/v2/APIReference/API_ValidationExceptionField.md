@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Validation
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 An object that describes a validation exception.
 

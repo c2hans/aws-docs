@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteThemeForStack
-<a name="API_DeleteThemeForStack"></a>
 
 Deletes custom branding that customizes the appearance of the streaming application catalog page.
 

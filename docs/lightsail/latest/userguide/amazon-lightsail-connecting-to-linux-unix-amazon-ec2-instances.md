@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Connect to a Linux Amazon EC2 instance created from a Lightsail snapshot
-<a name="amazon-lightsail-connecting-to-linux-unix-amazon-ec2-instances"></a>
 
 After a Linux or Unix instance is created in Amazon Elastic Compute Cloud (Amazon EC2) from an Amazon Lightsail snapshot, you can connect to the instance via SSH similar to how you connected to the source Lightsail instance. To authenticate to your instance, use either the default Lightsail key pair for the source instance’s AWS Region, or your own key pair. This guide shows you how to connect to your Linux or Unix instance in EC2 using PuTTY.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListComp
 ---
 
 # ListComplianceStatus
-<a name="API_ListComplianceStatus"></a>
 
 Returns an array of `PolicyComplianceStatus` objects. Use `PolicyComplianceStatus` to get a summary of which member accounts are protected by the specified policy.
 

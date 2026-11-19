@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Next steps and resources
-<a name="next-steps-and-resources"></a>
 
 Amazon DynamoDB is designed to be a high-performance NoSQL database. Because of its low cost, high performance, automatic scaling, and other features, it is a good alternative to an relational database system (RDBMS). By following best practices, using indexes, choosing the right partition keys, and carefully designing the table structure, you can get the best out of DynamoDB. You can use [DynamoDB Accelerator (DAX)](https://docs.amazonaws.cn/en_us/amazondynamodb/latest/developerguide/DAX.html) for high-frequency read operations and benefit from fast in-memory performance. If you are looking for an alternative to an RDBMS, consider DynamoDB for its cost and performance benefits.
 

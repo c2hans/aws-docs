@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-lin
 ---
 
 # MCP configuration in the CLI
-<a name="command-line-mcp-config-CLI"></a>
 
 This page covers CLI-specific options for configuring MCP servers.
 

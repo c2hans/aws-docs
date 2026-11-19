@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/getting-started-step
 ---
 
 # Step 7: Create an HLS output group
-<a name="getting-started-step5"></a>
 
 Once you have set up the input, you continue with the channel creation by creating an output group. In this tutorial, you set up an HLS output group.
 

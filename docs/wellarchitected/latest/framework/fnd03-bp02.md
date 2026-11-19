@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd03-b
 ---
 
 # FND03-BP02 Establish central, cross-account observability capabilities
-<a name="fnd03-bp02"></a>
 
  Central, cross-account observability brings telemetry from every account in your environment into a shared location. Foundation, workload, and security teams can read it without signing into each account. This best practice covers the architecture, automation, and access model needed to architect a single, consistent view of operations across a multi-account environment.
 

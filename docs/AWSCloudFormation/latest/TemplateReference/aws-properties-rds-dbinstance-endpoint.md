@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBInstance Endpoint
-<a name="aws-properties-rds-dbinstance-endpoint"></a>
 
 This data type represents the information you need to connect to an Amazon RDS DB instance. This data type is used as a response element in the following actions:
 +  `CreateDBInstance`

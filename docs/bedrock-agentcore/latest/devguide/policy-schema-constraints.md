@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Schema constraints
-<a name="policy-schema-constraints"></a>
 
 Policies for Amazon Bedrock AgentCore Gateway must validate against a specific Cedar schema that is automatically generated from the Gateway’s MCP tool manifest. This schema defines what’s possible in your policies.
 

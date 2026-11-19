@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-am
 ---
 
 # Backup and restore SAP HANA workloads to Amazon S3
-<a name="aws-backint-agent-amazon-s3"></a>
 
 This section provides information about setting up and using AWS Backint agent to backup and restore your SAP HANA workloads to Amazon S3.
 

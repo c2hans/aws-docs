@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # AWS WAF
-<a name="aws-waf"></a>
 
 You can use AWS WAF as a source to help protect your application from vulnerability attacks such as cross-site scripting, SQL injections, or DDoS. For the robust network approach, configure AWS WAF in front of the Application Load Balancer and define AWS WAF rules that should be followed across the organization. This will help ensure that any traffic reaching services hosted across the organization meets security best practices and that security is checked before traffic enters the organization's environment.
 

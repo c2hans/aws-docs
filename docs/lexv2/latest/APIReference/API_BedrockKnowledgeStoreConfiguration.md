@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BedrockKno
 ---
 
 # BedrockKnowledgeStoreConfiguration
-<a name="API_BedrockKnowledgeStoreConfiguration"></a>
 
 Contains details about the configuration of a Amazon Bedrock knowledge base.
 

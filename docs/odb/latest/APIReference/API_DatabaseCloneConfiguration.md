@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DatabaseClon
 ---
 
 # DatabaseCloneConfiguration
-<a name="API_DatabaseCloneConfiguration"></a>
 
 The configuration for creating an Autonomous Database as a clone of an existing database.
 

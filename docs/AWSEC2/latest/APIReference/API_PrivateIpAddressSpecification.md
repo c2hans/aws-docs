@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrivateIp
 ---
 
 # PrivateIpAddressSpecification
-<a name="API_PrivateIpAddressSpecification"></a>
 
 Describes a secondary private IPv4 address for a network interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-ddb-example.html
 ---
 
 # Tutorial: Using AWS Lambda with Amazon DynamoDB streams
-<a name="with-ddb-example"></a>
 
  In this tutorial, you create a Lambda Event Function to consume events from an Amazon DynamoDB stream.
 

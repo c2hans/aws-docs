@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Advanced analysis controls for managing bots
-<a name="advanced-analysis-controls"></a>
 
 Some bots employ advanced deception tools to actively evade detection. These bots mimic human behavior in order to perform a specific activity, such as scalping. These bots have a purpose, and it is usually linked to a big monetary reward.
 

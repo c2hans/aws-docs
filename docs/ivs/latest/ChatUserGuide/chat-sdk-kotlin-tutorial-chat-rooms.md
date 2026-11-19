@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-kotlin
 ---
 
 # IVS Chat Client Messaging SDK: Kotlin Coroutines Tutorial Part 1: Chat Rooms
-<a name="chat-sdk-kotlin-tutorial-chat-rooms"></a>
 
 This is the first of a two-part tutorial. You will learn the essentials of working with the Amazon IVS Chat Messaging SDK by building a fully functional Android app using the [Kotlin](https://kotlinlang.org/) programming language and [coroutines](https://kotlinlang.org/docs/coroutines-overview.html). We call the app *Chatterbox*.
 

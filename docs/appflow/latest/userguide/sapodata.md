@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.html
 ---
 
 # SAP OData connector for Amazon AppFlow
-<a name="sapodata"></a>
 
 The Amazon AppFlow SAP OData connector provides the ability to fetch, create, and update records exposed by SAP S/4HANA and SAP on premises systems through OData APIs.
 

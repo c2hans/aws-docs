@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeInstanceRefreshes
-<a name="API_DescribeInstanceRefreshes"></a>
 
 Gets information about the instance refreshes for the specified Auto Scaling group from the previous six weeks.
 

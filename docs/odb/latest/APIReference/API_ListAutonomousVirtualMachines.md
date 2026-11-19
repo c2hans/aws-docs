@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousVirtualMachines
-<a name="API_ListAutonomousVirtualMachines"></a>
 
 Lists all Autonomous VMs in an Autonomous VM cluster.
 

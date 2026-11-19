@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/profile-panel
 ---
 
 # Viewing and interacting with Detective profile panels
-<a name="profile-panels"></a>
 
 Each entity profile on the Amazon Detective console consists of a set of profile panels. A profile panel is a visualization that provides general details or highlights specific activity associated with an entity. Profile panels use different types of visualizations to present different types of information. They can also provide links to additional details or to other profiles.
 

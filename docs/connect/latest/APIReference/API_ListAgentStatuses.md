@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAgen
 ---
 
 # ListAgentStatuses
-<a name="API_ListAgentStatuses"></a>
 
 Lists agent statuses.
 

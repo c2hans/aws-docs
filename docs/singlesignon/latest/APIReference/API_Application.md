@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_App
 ---
 
 # Application
-<a name="API_Application"></a>
 
 A structure that describes an application that uses IAM Identity Center for access management.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Get started
-<a name="msk-data-delivery-iceberg-getting-started"></a>
 
 **Topics**
 + [Supported configurations](msk-data-delivery-iceberg-supported-configs.md)

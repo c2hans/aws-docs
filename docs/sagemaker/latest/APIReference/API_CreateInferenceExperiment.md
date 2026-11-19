@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateInferenceExperiment
-<a name="API_CreateInferenceExperiment"></a>
 
  Creates an inference experiment using the configurations specified in the request.
 

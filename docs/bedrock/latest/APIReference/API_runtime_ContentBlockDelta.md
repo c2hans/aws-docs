@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ContentBlockDelta
-<a name="API_runtime_ContentBlockDelta"></a>
 
 A block of content in a streaming response.
 

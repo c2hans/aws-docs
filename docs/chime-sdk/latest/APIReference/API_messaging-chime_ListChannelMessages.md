@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelMessages
-<a name="API_messaging-chime_ListChannelMessages"></a>
 
 List all the messages in a channel. Returns a paginated list of `ChannelMessages`. By default, sorted by creation timestamp in descending order.
 

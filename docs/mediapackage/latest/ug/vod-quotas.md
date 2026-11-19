@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/vod-quotas.html
 ---
 
 # VOD content quotas
-<a name="vod-quotas"></a>
 
 This section describes the quotas for video on demand (VOD) content in AWS Elemental MediaPackage. For information about requesting an increase to soft quotas, see [AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html). Hard quotas can't be changed.
 

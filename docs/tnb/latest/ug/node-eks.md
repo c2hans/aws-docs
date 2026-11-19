@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-eks.html
 ---
 
 # AWS.Compute.EKS
-<a name="node-eks"></a>
 
 Provide the name of the cluster, the desired Kubernetes version, and a role that allows the Kubernetes control plane to manage the AWS resources required for your NFs. Multus container network interface (CNI) plugins are enabled. You can attach multiple network interfaces and apply advanced network configuration to the Kubernetes-based network functions. You also specify the cluster endpoint access and the subnets for your cluster.
 

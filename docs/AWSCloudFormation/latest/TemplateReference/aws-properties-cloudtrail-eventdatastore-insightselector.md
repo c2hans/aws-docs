@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudTrail::EventDataStore InsightSelector
-<a name="aws-properties-cloudtrail-eventdatastore-insightselector"></a>
 
 A JSON string that contains a list of Insights types that are logged on an event data store.
 

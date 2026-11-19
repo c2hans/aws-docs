@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-troubleshooting.
 ---
 
 # Troubleshoot Errors
-<a name="neo-troubleshooting"></a>
 
 This section contains information about how to understand and prevent common errors, the error messages they generate, and guidance on how to resolve these errors. Before moving on, ask yourself the following questions:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # SetTypeDefaultVersion
-<a name="API_SetTypeDefaultVersion"></a>
 
 Specify the default version of an extension. The default version of an extension will be used in CloudFormation operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/c
 ---
 
 # Specifying custom pod templates with interactive endpoints
-<a name="custom-pod-templates"></a>
 
 You can create interactive endpoints where you specify custom pod templates for drivers and executors. *Pod templates* are specifications that determine how to run each pod. You can use pod template files to define the configurations of driver or executor pods that Spark configurations don't support. Pod templates are currently supported in Amazon EMR releases 6.3.0 and greater.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sysprep-using.ht
 ---
 
 # Create an AMI using Windows Sysprep with EC2Config
-<a name="sysprep-using"></a>
 
 When you create an image from an instance with the EC2Config service installed, EC2Config performs specific tasks as the image is prepared. This includes working with Windows Sysprep. For more information, see [Windows Sysprep phases](ami-create-win-sysprep.md#sysprep-phases).
 

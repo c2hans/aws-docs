@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormQuestionTypeProperties
-<a name="API_EvaluationFormQuestionTypeProperties"></a>
 
 Information about properties for a question in an evaluation form. The question type properties must be either for a numeric question or a single select question.
 

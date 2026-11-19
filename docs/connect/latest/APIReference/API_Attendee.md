@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attendee
 ---
 
 # Attendee
-<a name="API_Attendee"></a>
 
 The attendee information, including attendee ID and join token.
 

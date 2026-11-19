@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Discover Logs
-<a name="observability-analyze-logs"></a>
 
 The Discover Logs page provides a dedicated interface for exploring and analyzing log data in your OpenSearch Service observability workspace. You can write PPL queries to filter and aggregate log data, create visualizations directly from query results, and add those visualizations to dashboards. The page also provides natural language query assistance powered by the OpenSearch AI assistant.
 

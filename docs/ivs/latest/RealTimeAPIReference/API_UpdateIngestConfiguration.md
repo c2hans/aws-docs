@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Upda
 ---
 
 # UpdateIngestConfiguration
-<a name="API_UpdateIngestConfiguration"></a>
 
 Updates a specified IngestConfiguration. Only the stage ARN attached to the IngestConfiguration can be updated. An IngestConfiguration that is active cannot be updated.
 

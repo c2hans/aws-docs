@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-prod
 ---
 
 # Productboard connector for Amazon AppFlow
-<a name="connectors-productboard"></a>
 
 Productboard is a product management solution. If you're a Productboard user, your account contains data about the projects in your roadmap, such as products, features, and status. You can use Amazon AppFlow to transfer data from Productboard to certain AWS services or other supported applications.
 

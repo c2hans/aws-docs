@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Access points for directory buckets naming rules, restrictions, and limitations
-<a name="access-points-directory-buckets-restrictions-limitations-naming-rules"></a>
 
 Access points simplify managing data access at scale for shared datasets in Amazon S3. The following topics provide information about access point naming rules and restrictions and limitations.
 

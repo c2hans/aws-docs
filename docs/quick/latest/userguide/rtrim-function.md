@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/rtrim-function.ht
 ---
 
 # Rtrim
-<a name="rtrim-function"></a>
 
 `rtrim` removes following blank space from a string.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # VectorSearchRerankingConfiguration
-<a name="API_agent-runtime_VectorSearchRerankingConfiguration"></a>
 
 Contains configurations for reranking the retrieved results.
 

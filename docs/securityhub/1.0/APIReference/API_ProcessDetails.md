@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Process
 ---
 
 # ProcessDetails
-<a name="API_ProcessDetails"></a>
 
 The details of process-related information about a finding.
 

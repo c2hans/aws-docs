@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/source-data-t
 ---
 
 # Amazon EKS audit logs
-<a name="source-data-types-EKS"></a>
 
 Amazon EKS audit logs is an optional data source package that can be added to your Detective behavior graph. You can view the available optional source packages, and their status in your account, from the **Settings** page in the console or through the Detective API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-getting-sta
 ---
 
 # Getting started
-<a name="acxd-getting-started"></a>
 
 This guide walks you through setting up authentication and making your first Agentic CX Designer SDK API call.
 

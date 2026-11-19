@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-perfor
 ---
 
 # Configure burstable performance instances
-<a name="burstable-performance-instances-how-to"></a>
 
 The steps for launching, monitoring, and modifying burstable performance instances (T instances) are similar. The key difference is the default credit specification when they launch.
 

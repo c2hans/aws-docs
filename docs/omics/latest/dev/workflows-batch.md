@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-batch.html
 ---
 
 # Batch runs in HealthOmics
-<a name="workflows-batch"></a>
 
 AWS HealthOmics batch runs let you submit multiple runs in a single API request. Each run in the batch shares a common base configuration but can have different inputs and run-specific parameters. Batch runs reduce submission overhead and simplify lifecycle management for large-scale workflow processing.
 

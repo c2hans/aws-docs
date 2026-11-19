@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/sql-high
 ---
 
 # Amazon EC2 High Availability for SQL Server on Amazon EC2
-<a name="sql-high-availability"></a>
 
 Amazon EC2 High Availability for SQL Server (SQL HA) allows you to configure Amazon EC2 instances running license-included SQL Server as part of a HA cluster to reduce licensing costs. This feature identifies the SQL Server standby (also known as passive) instances in your SQL HA deployments and waives SQL Server licensing fees for them, allowing you to pay only Windows rates for these standby instances while maintaining your HA configuration.
 

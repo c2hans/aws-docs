@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Li
 ---
 
 # ListRevisionAssets
-<a name="API_ListRevisionAssets"></a>
 
 This operation lists a revision's assets sorted alphabetically in descending order.
 

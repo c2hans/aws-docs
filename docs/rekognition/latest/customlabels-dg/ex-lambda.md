@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/ex-la
 ---
 
 # Analyzing images with an AWS Lambda function
-<a name="ex-lambda"></a>
 
 AWS Lambda is a compute service that lets you run code without provisioning or managing servers. For example, you can analyze images submitted from a mobile application without having to create a server to host the application code. The following instructions show how to create a Lambda function in Python that calls [DetectCustomLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels). The function analyzes a supplied image and returns a list of labels found in the image. The instructions include example Python code showing how to call the Lambda function with an image in an Amazon S3 bucket, or an image supplied from a local computer.
 

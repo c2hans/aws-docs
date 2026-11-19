@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteAgentSpace
-<a name="API_DeleteAgentSpace"></a>
 
 Deletes an agent space and all of its associated resources, including pentests, findings, and artifacts.
 

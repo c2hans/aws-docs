@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeDeliveryDestinations
-<a name="API_DescribeDeliveryDestinations"></a>
 
 Retrieves a list of the delivery destinations that have been created in the account.
 

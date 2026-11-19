@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DynamoDbTable
-<a name="API_CostOptimizationHub_DynamoDbTable"></a>
 
 The DynamoDB table recommendation details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ProfilingResultsO
 ---
 
 # ProfilingResultsOptions
-<a name="API_ProfilingResultsOptions"></a>
 
 The configuration for writing profiling results.
 

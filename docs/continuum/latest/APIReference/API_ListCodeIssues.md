@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListCo
 ---
 
 # ListCodeIssues
-<a name="API_ListCodeIssues"></a>
 
 Lists the issues in an environment in descending issueId order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/zonal-shift.html
 ---
 
 # Support for Zonal Shift in EKS clusters
-<a name="zonal-shift"></a>
 
 EKS now supports Amazon Application Recovery Controller (ARC) zonal shift and zonal autoshift that enhances the resiliency of multi-AZ cluster environments. With AWS Zonal Shift, customers can shift in-cluster traffic away from an impaired availability zone, ensuring new Kubernetes pods and nodes are launched in healthy availability zones only.
 

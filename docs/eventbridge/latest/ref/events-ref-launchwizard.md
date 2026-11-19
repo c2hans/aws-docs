@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-launch
 ---
 
 # AWS Launch Wizard events
-<a name="events-ref-launchwizard"></a>
 
 Launch Wizard sends service events to EventBridge via AWS CloudTrail.
 

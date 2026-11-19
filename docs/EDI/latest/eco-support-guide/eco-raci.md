@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-raci.ht
 ---
 
 # EDI Cloud Operations roles and responsibilities
-<a name="eco-raci"></a>
 
 The ECO responsible, accountable, consulted, and informed, or RACI, matrix assigns primary responsibility either to you or ECO for a variety of activities.
 

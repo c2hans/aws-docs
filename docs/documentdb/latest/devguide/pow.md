@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/pow.html
 ---
 
 # $pow
-<a name="pow"></a>
 
 Introduced in 8.0
 

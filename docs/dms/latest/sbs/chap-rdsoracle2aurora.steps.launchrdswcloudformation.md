@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.ste
 ---
 
 # Step 1: Launch the RDS Instances in a VPC by Using the AWS CloudFormation Template
-<a name="chap-rdsoracle2aurora.steps.launchrdswcloudformation"></a>
 
 Before you begin, you’ll need to download an AWS CloudFormation template. Follow these instructions:
 

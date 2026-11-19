@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-iam-
 ---
 
 # Controlling access using IAM
-<a name="ce-iam-access"></a>
 
 You can use AWS Identity and Access Management (IAM) to manage access to your Cost Management preferences for individual users. You can then grant or revoke access on an individual level for each IAM role or user. You’ll need to add the following actions in order to be able to view and edit preferences: `ce:GetPreferences`, `ce:UpdatePreferences`, `ce:GetDimensionValues`, and `ce:GetApproximateUsageRecords`.
 

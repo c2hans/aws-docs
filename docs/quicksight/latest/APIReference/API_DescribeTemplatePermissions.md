@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTemplatePermissions
-<a name="API_DescribeTemplatePermissions"></a>
 
 Describes read and write permissions on a template.
 

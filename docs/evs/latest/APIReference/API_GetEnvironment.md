@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_GetEnvironme
 ---
 
 # GetEnvironment
-<a name="API_GetEnvironment"></a>
 
 Returns a description of the specified environment.
 

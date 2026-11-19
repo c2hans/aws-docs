@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Retent
 ---
 
 # RetentionPolicy
-<a name="API_RetentionPolicy"></a>
 
 The retention policy for data stored on an Amazon Elastic File System volume.
 

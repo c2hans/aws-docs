@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/CannotCr
 ---
 
 # Troubleshoot the Docker `API error (500): devmapper` in Amazon ECS
-<a name="CannotCreateContainerError"></a>
 
 The following Docker error indicates that the thin pool storage on your container instance is full, and that the Docker daemon cannot create new containers:
 

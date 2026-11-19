@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-msk-configure.html
 ---
 
 # Configuring Amazon MSK event sources for Lambda
-<a name="with-msk-configure"></a>
 
 To use an Amazon MSK cluster as an event source for your Lambda Event Function, you create an [event source mapping](invocation-eventsourcemapping.md) that connects the two resources. This page describes how to create an event source mapping for Amazon MSK.
 

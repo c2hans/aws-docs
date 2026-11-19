@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/central-con
 ---
 
 # Understanding central configuration in Security Hub CSPM
-<a name="central-configuration-intro"></a>
 
 **Note**
 Central configuration is a legacy feature. Security Hub CSPM declarative policies are replacing it as the way to manage Security Hub CSPM across an organization. If your organization currently uses central configuration, you can continue to use the information in this section. For more information about declarative policies, see [Managing accounts with declarative policies in Security Hub CSPM](accounts-orgs-policies.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fivetran-configuring.html
 ---
 
 # Configuring Fivetran
-<a name="fivetran-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Fivetran, you must meet the following requirements:
 

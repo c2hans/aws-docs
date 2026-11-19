@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PostgreSQLCatalog
 ---
 
 # PostgreSQLCatalogTarget
-<a name="API_PostgreSQLCatalogTarget"></a>
 
 Specifies a target that uses Postgres SQL.
 

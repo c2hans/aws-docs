@@ -3,4 +3,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Document history
-<a name="document-history"></a>

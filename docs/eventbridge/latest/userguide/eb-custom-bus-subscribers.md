@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Subscribing to events on a Custom Event Bus
-<a name="eb-custom-bus-subscribers"></a>
 
 A subscriber is one resource that says which events you want and where to send them. You create it with `CreateSubscriber`, naming the bus, the filters, and one target. It watches that bus, keeps the events that match its filters, optionally transforms each one, and delivers it to exactly one target. To fan an event out to several targets, create one subscriber for each target on the same bus.
 

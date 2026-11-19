@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_CreateIn
 ---
 
 # Use `CreateInternetGateway` with a CLI
-<a name="example_ec2_CreateInternetGateway_section"></a>
 
 The following code examples show how to use `CreateInternetGateway`.
 

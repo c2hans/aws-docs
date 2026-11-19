@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Fleet
 ---
 
 # Fleet
-<a name="API_Fleet"></a>
 
 Describes a fleet.
 

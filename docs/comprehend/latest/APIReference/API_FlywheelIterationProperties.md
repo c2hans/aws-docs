@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Flywh
 ---
 
 # FlywheelIterationProperties
-<a name="API_FlywheelIterationProperties"></a>
 
 The configuration properties of a flywheel iteration.
 

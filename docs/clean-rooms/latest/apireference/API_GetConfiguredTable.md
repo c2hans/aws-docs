@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetConfiguredTable
-<a name="API_GetConfiguredTable"></a>
 
 Retrieves a configured table.
 

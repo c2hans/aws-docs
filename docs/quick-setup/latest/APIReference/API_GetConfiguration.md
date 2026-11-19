@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_GetC
 ---
 
 # GetConfiguration
-<a name="API_GetConfiguration"></a>
 
 Returns details about the specified configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LambdaFunctionSucceededEventDetails
-<a name="API_LambdaFunctionSucceededEventDetails"></a>
 
 Contains details about a Lambda function that successfully terminated during an execution.
 

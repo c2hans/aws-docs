@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SSES3.ht
 ---
 
 # SSES3
-<a name="API_control_SSES3"></a>
 
 ## Contents
 <a name="API_control_SSES3_Contents"></a>

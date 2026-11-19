@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/APIReference/API_JobStep.html
 ---
 
 # JobStep
-<a name="API_JobStep"></a>
 
 Provides information related to a job step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-specify
 ---
 
 # Specify CPU options for an Amazon EC2 instance
-<a name="instance-specify-cpu-options"></a>
 
 You can specify CPU options during or after instance launch.
 

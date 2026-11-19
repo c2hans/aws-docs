@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodesEncounterContext
-<a name="API_MedicalCodesEncounterContext"></a>
 
 Encounter context for a medical coding job. All fields are optional.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Create a pipeline in CodePipeline that uses resources from another AWS account
-<a name="pipelines-create-cross-account"></a>
 
 You might want to create a pipeline that uses resources created or managed by another AWS account. For example, you might want to use one account for your pipeline and another for your CodeDeploy resources.
 

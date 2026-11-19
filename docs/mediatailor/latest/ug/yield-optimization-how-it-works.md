@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # How Yield Optimization works
-<a name="yield-optimization-how-it-works"></a>
 
 This page explains the internal mechanics of Yield Optimization: when it triggers, how timing works, and how it interacts with other MediaTailor features.
 

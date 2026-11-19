@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Attach
 ---
 
 # AttachmentStateChange
-<a name="API_AttachmentStateChange"></a>
 
 An object representing a change in state for a task attachment.
 

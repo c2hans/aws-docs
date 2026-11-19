@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_RetainRule.h
 ---
 
 # RetainRule
-<a name="API_RetainRule"></a>
 
  **[Custom snapshot and AMI policies only]** Specifies a retention rule for snapshots created by snapshot policies, or for AMIs created by AMI policies.
 

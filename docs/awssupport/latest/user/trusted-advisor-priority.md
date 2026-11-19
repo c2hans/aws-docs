@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-p
 ---
 
 # Get started with AWS Trusted Advisor Priority
-<a name="trusted-advisor-priority"></a>
 
 Trusted Advisor Priority helps you secure and optimize your AWS account to follow AWS best practices. With Trusted Advisor Priority, your AWS account team can proactively monitor your account and create prioritized recommendations when they identify opportunities for you.
 

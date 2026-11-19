@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-format
 ---
 
 # AWS Lake Formation API
-<a name="aws-lake-formation-api"></a>
 
 **Note**
 Updated [API Reference](https://docs.aws.amazon.com/lake-formation/latest/APIReference/Welcome.html) for the AWS Lake Formation service is now available.

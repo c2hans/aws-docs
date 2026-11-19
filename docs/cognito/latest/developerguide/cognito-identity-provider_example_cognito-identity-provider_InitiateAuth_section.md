@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Use `InitiateAuth` with an AWS SDK or CLI
-<a name="cognito-identity-provider_example_cognito-identity-provider_InitiateAuth_section"></a>
 
 The following code examples show how to use `InitiateAuth`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mariadb-impor
 ---
 
 # Importing data to an Amazon RDS for MariaDB DB instance with reduced downtime
-<a name="mariadb-importing-data-reduced-downtime"></a>
 
 In some cases, you might need to import data from an external MariaDB database that supports a live application to an RDS for MariaDB DB instance. Use the following procedure to minimize the impact on availability of applications. This procedure can also help if you are working with a very large database. Using this procedure, you can reduce the cost of the import by reducing the amount of data that is passed across the network to AWS.
 

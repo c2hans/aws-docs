@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/closing-a-c
 ---
 
 # Closing a case
-<a name="closing-a-case"></a>
 
  For AWS supported cases, choose **Close Case** on the case details page to permanently close the case at any status. A case typically reaches the status **Ready to Close** before it is permanently closed. If you close a case prematurely at any other status than **Ready to Close**, you are requesting that AWS Security Incident Response engineers will stop working on this AWS supported case.
 

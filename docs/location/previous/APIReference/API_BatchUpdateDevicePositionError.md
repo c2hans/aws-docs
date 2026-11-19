@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchUpdateDevicePositionError
-<a name="API_BatchUpdateDevicePositionError"></a>
 
 Contains error details for each device that failed to update its position.
 

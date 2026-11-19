@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobContainerConfig
-<a name="API_RecommendationJobContainerConfig"></a>
 
 Specifies mandatory fields for running an Inference Recommender job directly in the [CreateInferenceRecommendationsJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateInferenceRecommendationsJob.html) API. The fields specified in `ContainerConfig` override the corresponding fields in the model package. Use `ContainerConfig` if you want to specify these fields for the recommendation job but don't want to edit them in your model package.
 

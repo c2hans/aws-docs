@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Run automations from command prompt
-<a name="run-automations-from-command-prompt"></a>
 
 Although we recommend running automation jobs through the web interface, you can run automation scripts manually from a command line on the automation server. This provides additional options where organizations cannot or do not want to use the combination of AWS CMF Credentials Manager, AWS Secrets Manager and AWS Systems Manager in the environment, or if Cloud Migration Factory on AWS users need to provide multi-factor authentication (MFA) one-time access codes to logon to Cloud Migration Factory on AWS.
 

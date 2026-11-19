@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Statistics.h
 ---
 
 # Statistics
-<a name="API_Statistics"></a>
 
 A map of key-value pairs for all supported statistics. For issues with missing or unexpected values for this API, consult [ Fleet indexing troubleshooting guide](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-indexing-troubleshooting.html).
 

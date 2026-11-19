@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Tra
 ---
 
 # Track Export Status
-<a name="TrackingExportStatus"></a>
 
  After starting an export, you can track its progress using the `get-export` command with the export ARN returned by `start-domain-export`:
 

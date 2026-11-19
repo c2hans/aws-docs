@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Application Discovery Service (Application Discovery Service) helps you plan application migration projects. It automatically identifies servers, virtual machines (VMs), and network dependencies in your on-premises data centers. For more information, see the [AWS Application Discovery Service FAQ](http://aws.amazon.com/application-discovery/faqs/).
 
@@ -34,4 +33,4 @@ This guide is intended for use with the [AWS Application Discovery Service User 
 **Important**
 All data is handled according to the [AWS Privacy Policy](https://aws.amazon.com/privacy/). You can operate Application Discovery Service offline to inspect collected data before it is shared with the service.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

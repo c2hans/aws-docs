@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MetricValue.
 ---
 
 # MetricValue
-<a name="API_MetricValue"></a>
 
 The value to be compared with the `metric`.
 

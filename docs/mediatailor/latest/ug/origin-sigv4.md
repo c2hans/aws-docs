@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/origin-sigv4.html
 ---
 
 # Securing AWS Elemental MediaTailor origin interactions with SigV4
-<a name="origin-sigv4"></a>
 
 Signature Version 4 (SigV4) is a signing protocol used to authenticate MediaTailor requests to supported origins over HTTPS. MediaTailor only supports HTTPS communication and does not allow HTTP connections. With SigV4 signing, MediaTailor includes a signed authorization header in the HTTPS origin request to MediaTailor Channel Assembly, Amazon S3 and AWS Elemental MediaPackage version 2.
 

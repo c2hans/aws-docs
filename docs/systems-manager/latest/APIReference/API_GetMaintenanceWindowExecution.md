@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetMaintenanceWindowExecution
-<a name="API_GetMaintenanceWindowExecution"></a>
 
 Retrieves details about a specific a maintenance window execution.
 

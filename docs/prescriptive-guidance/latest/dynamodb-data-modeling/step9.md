@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 9. Deploy the data model
-<a name="step9"></a>
 
 ## Objective
 <a name="obj9"></a>

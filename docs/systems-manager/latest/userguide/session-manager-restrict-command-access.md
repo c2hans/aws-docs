@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 ---
 
 # Step 5: (Optional) Restrict access to commands in a session
-<a name="session-manager-restrict-command-access"></a>
 
 You can restrict the commands that a user can run in an AWS Systems Manager Session Manager session by using a custom `Session` type AWS Systems Manager (SSM) document. In the document, you define the command that is run when the user starts a session and the parameters that the user can provide to the command. The `Session` document `schemaVersion` must be 1.0, and the `sessionType` of the document must be `InteractiveCommands`. You can then create AWS Identity and Access Management (IAM) policies that allow users to access only the `Session` documents that you define. For more information about using IAM policies to restrict access to commands in a session, see [IAM policy examples for interactive commands](#interactive-command-policy-examples).
 

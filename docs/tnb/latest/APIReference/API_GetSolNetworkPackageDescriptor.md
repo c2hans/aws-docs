@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkPackageDescriptor
-<a name="API_GetSolNetworkPackageDescriptor"></a>
 
 Gets the content of the network service descriptor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/docu
 ---
 
 # Document history
-<a name="document-history"></a>
 
 This topic describes important changes to the AWS SDK for Java Developer Guide over the course of its history.
 

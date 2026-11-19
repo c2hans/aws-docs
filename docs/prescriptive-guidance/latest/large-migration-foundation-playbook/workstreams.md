@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Workstreams in a large migration
-<a name="workstreams"></a>
 
 Large migration projects typically consist of multiple workstreams, and each workstream has a clear scope of tasks. Each workstream is independent but also supports the other workstreams to accomplish the same goal – migrate servers at scale. This section discusses the standard core workstreams for large migrations as well as common supporting workstreams.
 

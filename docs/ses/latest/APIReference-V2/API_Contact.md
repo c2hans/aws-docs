@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Contact.h
 ---
 
 # Contact
-<a name="API_Contact"></a>
 
 A contact is the end-user who is receiving the email.
 

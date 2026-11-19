@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetImp
 ---
 
 # TestSetImportInputLocation
-<a name="API_TestSetImportInputLocation"></a>
 
 Contains information about the Amazon S3 location from which the test set is imported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-adfs-cre
 ---
 
 # AD FS credentials
-<a name="jdbc-v3-driver-adfs-credentials"></a>
 
 A SAML-based authentication mechanism that enables authentication to Athena using Microsoft Active Directory Federation Services (AD FS). This method assumes that the user has already set up a federation between Athena and AD FS.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Get started with your cloud services provider
-<a name="get-started-cloud-services"></a>
 
 When you start using cloud services you will need to decide on the region in which you will be mainly operating your cloud services. An AWS Region is a physical location around the world where data centers. AWS calls each group of logical data centers an Availability Zone (AZ). Each region consists of multiple, isolated, and physically separate AZs within a geographic area. Customers choose a region based on where it makes sense for their workloads and the customer’s security, risk and compliance posture. In order to choose appropriately, you can consider:
 + Proximity to your location (headquarters)

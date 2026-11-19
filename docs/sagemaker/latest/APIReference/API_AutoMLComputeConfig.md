@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLComputeConfig
-<a name="API_AutoMLComputeConfig"></a>
 
 **Note**
 This data type is intended for use exclusively by SageMaker Canvas and cannot be used in other contexts at the moment.

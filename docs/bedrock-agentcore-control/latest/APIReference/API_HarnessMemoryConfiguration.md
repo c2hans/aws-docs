@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessMemoryConfiguration
-<a name="API_HarnessMemoryConfiguration"></a>
 
 The memory configuration for a harness.
 

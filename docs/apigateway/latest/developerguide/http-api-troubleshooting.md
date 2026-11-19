@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Troubleshooting issues with HTTP APIs in API Gateway
-<a name="http-api-troubleshooting"></a>
 
 The following topics provide troubleshooting advice for errors and issues that you might encounter when using HTTP APIs.
 

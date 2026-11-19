@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrac
 ---
 
 # Amazon IVS Multitrack Video: Broadcast Software Integration Guide
-<a name="multitrack-video-sw-integration"></a>
 
 ## Introduction
 <a name="multitrack-video-sw-integration-intro"></a>

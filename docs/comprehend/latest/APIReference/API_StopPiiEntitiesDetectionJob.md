@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopP
 ---
 
 # StopPiiEntitiesDetectionJob
-<a name="API_StopPiiEntitiesDetectionJob"></a>
 
 Stops a PII entities detection job in progress.
 

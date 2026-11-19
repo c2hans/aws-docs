@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImageSoftwareMetadata
-<a name="API_ImageSoftwareMetadata"></a>
 
 Describes the software metadata for an image, such as the installed NVIDIA GRID driver version.
 

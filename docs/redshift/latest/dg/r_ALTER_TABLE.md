@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ALTER TABLE
-<a name="r_ALTER_TABLE"></a>
 
 This command changes the definition of a Amazon Redshift table or Amazon Redshift Spectrum external table. This command updates the values and properties set by [CREATE TABLE](r_CREATE_TABLE_NEW.md) or [CREATE EXTERNAL TABLE](r_CREATE_EXTERNAL_TABLE.md). You can use ALTER TABLE on a view for row-level security (RLS).
 

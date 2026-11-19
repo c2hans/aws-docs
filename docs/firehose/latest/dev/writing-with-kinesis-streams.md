@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-kinesis
 ---
 
 # Configure source settings for Amazon Kinesis Data Streams
-<a name="writing-with-kinesis-streams"></a>
 
 Configure the source settings for Amazon Kinesis Data Streams to send information to a Firehose stream as following.
 

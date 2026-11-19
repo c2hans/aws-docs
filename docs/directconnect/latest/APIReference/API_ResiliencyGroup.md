@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Re
 ---
 
 # ResiliencyGroup
-<a name="API_ResiliencyGroup"></a>
 
 Information about a resiliency group.
 

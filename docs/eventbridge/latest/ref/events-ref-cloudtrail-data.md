@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-cloudt
 ---
 
 # AWS CloudTrail Data Service events
-<a name="events-ref-cloudtrail-data"></a>
 
 CloudTrail Data Service sends service events to EventBridge via AWS CloudTrail.
 

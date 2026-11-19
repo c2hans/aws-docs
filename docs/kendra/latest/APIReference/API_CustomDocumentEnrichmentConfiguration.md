@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_CustomDoc
 ---
 
 # CustomDocumentEnrichmentConfiguration
-<a name="API_CustomDocumentEnrichmentConfiguration"></a>
 
 Provides the configuration information for altering document metadata and content during the document ingestion process.
 

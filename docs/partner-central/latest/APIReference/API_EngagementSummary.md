@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # EngagementSummary
-<a name="API_EngagementSummary"></a>
 
 An object that contains an `Engagement`'s subset of fields.
 

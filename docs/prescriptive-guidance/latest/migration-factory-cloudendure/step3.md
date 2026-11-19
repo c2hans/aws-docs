@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Step 3. Validate the migration
-<a name="step3"></a>
 
 After installing the replication agent on the source machines, you monitor the status of data replication and resolve issues such as permissions or network performance.
 

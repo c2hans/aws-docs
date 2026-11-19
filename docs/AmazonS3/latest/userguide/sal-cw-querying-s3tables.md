@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/sal-cw-queryin
 ---
 
 # Querying access logs in S3 Tables
-<a name="sal-cw-querying-s3tables"></a>
 
 When you enable the Amazon S3 Tables integration, Amazon CloudWatch Logs delivers your server access logs in Apache Iceberg format to the `aws-cloudwatch` managed table bucket. Because the data is in Iceberg format, you can query it with any tool that supports Apache Iceberg, including:
 + **Amazon Athena** – Run SQL queries directly from the Athena console using the S3 Tables catalog.

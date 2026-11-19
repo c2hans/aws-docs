@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_F
 ---
 
 # FailureException
-<a name="API_FailureException"></a>
 
 Represents a failure a contributor insights operation.
 

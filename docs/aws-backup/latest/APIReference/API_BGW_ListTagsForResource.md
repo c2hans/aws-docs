@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_L
 ---
 
 # ListTagsForResource
-<a name="API_BGW_ListTagsForResource"></a>
 
 Lists the tags applied to the resource identified by its Amazon Resource Name (ARN).
 

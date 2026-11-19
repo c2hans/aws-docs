@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPolic
 ---
 
 # IpamPolicyDocument
-<a name="API_IpamPolicyDocument"></a>
 
 Information about an IPAM policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyVisa
-<a name="API_SessionKeyVisa"></a>
 
 Parameters to derive session key for Visa payment card for ARQC verification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListRecommendationTemplates
-<a name="API_ListRecommendationTemplates"></a>
 
 Lists the recommendation templates for the AWS Resilience Hub applications.
 

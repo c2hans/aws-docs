@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/considerations-limitati
 ---
 
 # Considerations and limitations for Athena views
-<a name="considerations-limitations-views"></a>
 
 Athena views have the following considerations and limitations.
 

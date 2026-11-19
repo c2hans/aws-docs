@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-p
 ---
 
 # Managing container product pricing on AWS Marketplace
-<a name="container-pricing"></a>
 
 As an AWS Marketplace seller, you can manage and update container product pricing. For container products, you can list free products, Bring Your Own License model (BYOL) products, and paid products for Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), and AWS Fargate. You can set only one price per product. You can add or update pricing dimensions. Depending on your pricing model, you can add contract and usage dimensions. You can also update your pricing terms or your refund policy. For more information, see the following sections.
 

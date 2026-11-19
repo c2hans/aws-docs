@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Creating an AgentCore Code Interpreter
-<a name="code-interpreter-create"></a>
 
 You can create a Code Interpreter using the Amazon Bedrock AgentCore console, AWS CLI, or AWS SDK.
 

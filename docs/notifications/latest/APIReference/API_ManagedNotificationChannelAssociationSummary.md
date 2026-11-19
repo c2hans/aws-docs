@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedNotificationChannelAssociationSummary
-<a name="API_ManagedNotificationChannelAssociationSummary"></a>
 
 Provides a summary of channel associations for a managed notification configuration.
 

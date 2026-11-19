@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-j
 ---
 
 # Data feed tables overview
-<a name="data-feed-joining"></a>
 
 AWS Marketplace provides data feeds as a set of tables that you can join together to provide more context for your queries.
 

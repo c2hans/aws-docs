@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 1. Identify the use cases and logical data model
-<a name="step1"></a>
 
 ## Objectives
 <a name="obj1"></a>

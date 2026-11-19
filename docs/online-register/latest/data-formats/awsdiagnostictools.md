@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS Diagnostic tools
-<a name="awsdiagnostictools"></a>
 
 AWS Diagnostic tools provides the following APIs for data retrieval.
 

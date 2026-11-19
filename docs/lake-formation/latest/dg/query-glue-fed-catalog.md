@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/query-glue-fed-
 ---
 
 # Querying federated catalogs
-<a name="query-glue-fed-catalog"></a>
 
 After you grant permissions to other principals, they can sign in and start querying the tables in the federated catalogs using Athena.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # CreateFirewallRuleGroup
-<a name="API_route53resolver_CreateFirewallRuleGroup"></a>
 
 Creates an empty DNS Firewall rule group for filtering DNS network traffic in a VPC. You can add rules to the new rule group by calling [CreateFirewallRule](API_route53resolver_CreateFirewallRule.md).
 

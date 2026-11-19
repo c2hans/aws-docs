@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_EMRContainer
 ---
 
 # EMRContainersConfig
-<a name="API_EMRContainersConfig"></a>
 
 The EMR container configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/insightly-connection-opti
 ---
 
 # Insightly connection options
-<a name="insightly-connection-options"></a>
 
 The following are connection options for Insightly:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Insightly object to read.

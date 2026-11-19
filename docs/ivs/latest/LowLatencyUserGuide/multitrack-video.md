@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrac
 ---
 
 # Amazon IVS Multitrack Video
-<a name="multitrack-video"></a>
 
 Multitrack video is a new, low-latency streaming paradigm supported by Amazon Interactive Video Service (IVS) and services that use Amazon IVS.
 

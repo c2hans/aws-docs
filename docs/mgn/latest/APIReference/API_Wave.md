@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Wave.html
 ---
 
 # Wave
-<a name="API_Wave"></a>
 
 ## Contents
 <a name="API_Wave_Contents"></a>

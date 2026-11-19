@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Connected Aircraft Solution Architecture
-<a name="connected-aircraft-solution-architecture"></a>
 
 Publication date: **September 22, 2022 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-infe
 ---
 
 # Custom Inference Code with Hosting Services
-<a name="your-algorithms-inference-code"></a>
 
 This section explains how Amazon SageMaker AI interacts with a Docker container that runs your own inference code for hosting services. Use this information to write inference code and create a Docker image.
 

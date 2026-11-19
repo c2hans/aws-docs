@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-rese
 ---
 
 # Working with reservations
-<a name="braket-reservations"></a>
 
 Reservations give you exclusive access to the quantum device of your choice. You can schedule a reservation at your convenience, so you know exactly when your workload starts and ends execution. Reservations are available in 1-hour increments for all Braket devices and can be cancelled up to 48 hours in advance, at no additional charge. We recommend queuing quantum tasks and hybrid jobs for an upcoming reservation in advance, using your Braket Direct Reservation ARN, or submitting workloads during your reservation.
 

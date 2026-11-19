@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-c
 ---
 
 # Creating a cluster for Amazon ECS Managed Instances
-<a name="create-cluster-managed-instances"></a>
 
 You create a cluster to define the infrastructure your tasks and services run on.
 

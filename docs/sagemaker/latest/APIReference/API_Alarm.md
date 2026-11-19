@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Alarm.
 ---
 
 # Alarm
-<a name="API_Alarm"></a>
 
 An Amazon CloudWatch alarm configured to monitor metrics on an endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataSource.html
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 A data source (an AWS Glue table) for which you want data quality results.
 

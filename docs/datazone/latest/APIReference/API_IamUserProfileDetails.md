@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_IamUser
 ---
 
 # IamUserProfileDetails
-<a name="API_IamUserProfileDetails"></a>
 
 The details of the IAM user profile.
 

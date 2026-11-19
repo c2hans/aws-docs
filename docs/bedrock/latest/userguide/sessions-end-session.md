@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/sessions-end-se
 ---
 
 # End a session when the user ends the conversation
-<a name="sessions-end-session"></a>
 
 When the conversations are finished and any agent tasks are completed, end the session with the [EndSession](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_EndSession.html) API operation. After you end a session, you can still access its content but you can’t add to it or restart it.
 

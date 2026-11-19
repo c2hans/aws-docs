@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListSinksIte
 ---
 
 # ListSinksItem
-<a name="API_ListSinksItem"></a>
 
 A structure that contains information about one of this monitoring account's sinks.
 

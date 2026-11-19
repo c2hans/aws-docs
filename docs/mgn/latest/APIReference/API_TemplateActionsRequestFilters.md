@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_TemplateActi
 ---
 
 # TemplateActionsRequestFilters
-<a name="API_TemplateActionsRequestFilters"></a>
 
 Template post migration custom action filters.
 

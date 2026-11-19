@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Machine learning reference architecture
-<a name="machine-learning-reference-architecture"></a>
 
 This section depicts a typical machine learning lifecycle and data flow.
 

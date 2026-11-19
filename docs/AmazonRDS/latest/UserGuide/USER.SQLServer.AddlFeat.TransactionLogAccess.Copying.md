@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER.SQLServe
 ---
 
 # Copying transaction log backups
-<a name="USER.SQLServer.AddlFeat.TransactionLogAccess.Copying"></a>
 
 To copy a set of available transaction log backups for an individual database to your Amazon S3 bucket, call the `rds_tlog_backup_copy_to_S3` stored procedure. The `rds_tlog_backup_copy_to_S3` stored procedure will initiate a new task to copy transaction log backups.
 

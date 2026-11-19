@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ke
 ---
 
 # Implementing least privileged permissions
-<a name="keystore-least-privilege"></a>
 
 When using a key store and AWS KMS Hierarchical keyrings, we recommend that you follow the principle of least privilege by defining the following roles:
 

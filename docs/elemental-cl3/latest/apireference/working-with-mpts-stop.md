@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # DELETE Stop: Stop an MPTS
-<a name="working-with-mpts-stop"></a>
 
 Stop an MPTS output. If the specified MPTS output is currently running, it will stop. If the specified MPTS output is currently idle, it will simply remain idle.
 

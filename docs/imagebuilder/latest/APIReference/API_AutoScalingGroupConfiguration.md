@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Aut
 ---
 
 # AutoScalingGroupConfiguration
-<a name="API_AutoScalingGroupConfiguration"></a>
 
 Identifies the Amazon EC2 Auto Scaling group that Image Builder takes the build instance from, and how long Image Builder waits when the group has no instance available.
 

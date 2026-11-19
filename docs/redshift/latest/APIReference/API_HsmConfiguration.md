@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_HsmConf
 ---
 
 # HsmConfiguration
-<a name="API_HsmConfiguration"></a>
 
 Returns information about an HSM configuration, which is an object that describes to Amazon Redshift clusters the information they require to connect to an HSM where they can store database encryption keys.
 

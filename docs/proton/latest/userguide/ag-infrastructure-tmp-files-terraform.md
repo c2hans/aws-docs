@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-infrastructur
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Terraform IaC files
-<a name="ag-infrastructure-tmp-files-terraform"></a>
 
 Learn how to use Terraform infrastructure as code (IaC) files with AWS Proton. [Terraform](https://www.terraform.io/) is a widely used open-source IaC engine that was developed by [HashiCorp](https://www.hashicorp.com/). Terraform modules are developed in HashiCorp's HCL language, and support several backend infrastructures providers, including Amazon Web Services.
 

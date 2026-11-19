@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/set-up-real-t
 ---
 
 # Setting up real-time notifications for AWS Partner Central and AWS Marketplace events
-<a name="set-up-real-time-notifications"></a>
 
 The following topics explain how to set up real-time EventBridge notifications for AWS Partner Central and AWS Marketplace events. You can set up notifications in Salesforce by configuring a connected app, or you can use AWS CloudFormation templates.
 

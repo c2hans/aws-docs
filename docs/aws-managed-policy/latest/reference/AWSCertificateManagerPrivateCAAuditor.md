@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCertificateManagerPrivateCAAuditor
-<a name="AWSCertificateManagerPrivateCAAuditor"></a>
 
 **Description**: Provides auditor access to AWS Certificate Manager Private Certificate Authority
 

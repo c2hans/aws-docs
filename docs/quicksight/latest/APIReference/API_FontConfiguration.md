@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FontC
 ---
 
 # FontConfiguration
-<a name="API_FontConfiguration"></a>
 
 Configures the display properties of the given text.
 

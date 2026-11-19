@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Sharing CloudTrail log files between AWS accounts
-<a name="cloudtrail-sharing-logs"></a>
 
 This section explains how to share CloudTrail log files between multiple AWS accounts. The approach you use to share logs between AWS accounts depends on the configuration of your S3 bucket. These are the options for sharing log files:
 + **[Bucket owner enforced](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-ownership-existing-bucket.html)** – [S3 Object Ownership](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) is an Amazon S3 bucket-level setting that you can use to control ownership of objects uploaded to your bucket and to disable or enable access control lists (ACLs). By default, Object Ownership is set to the **Bucket owner enforced** setting and all ACLs are disabled. When ACLs are disabled, the bucket owner owns all the objects in the bucket and manages access to data exclusively using access management policies. When the **Bucket owner enforced** option is set, access is managed through the bucket policy, eliminating the need for users to assume a role.

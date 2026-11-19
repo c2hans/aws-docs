@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-in-vpc.htm
 ---
 
 # Provide network connectivity for your Auto Scaling instances using Amazon VPC
-<a name="asg-in-vpc"></a>
 
 Amazon Virtual Private Cloud (Amazon VPC) is a service that lets you launch AWS resources such as Auto Scaling groups in a logically isolated virtual network that you define.
 

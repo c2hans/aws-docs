@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_ia
 ---
 
 # Manage access to Amazon Q Developer for third-party integration
-<a name="security_iam_manage-access-with-kms-policies"></a>
 
 For third-party integrations, you must use the AWS Key Management Service (KMS) to manage access to Amazon Q Developer instead of IAM policies that are neither identity-based or resource-based.
 

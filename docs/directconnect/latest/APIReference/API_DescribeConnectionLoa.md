@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeConnectionLoa
-<a name="API_DescribeConnectionLoa"></a>
 
 **Note**
 Deprecated. Use [DescribeLoa](API_DescribeLoa.md) instead.

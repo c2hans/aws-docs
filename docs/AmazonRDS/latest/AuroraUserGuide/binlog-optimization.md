@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/binlog-
 ---
 
 # Optimizing binary log replication for Aurora MySQL
-<a name="binlog-optimization"></a>
 
  Following, you can learn how to optimize binary log replication performance and troubleshoot related issues in Aurora MySQL.
 

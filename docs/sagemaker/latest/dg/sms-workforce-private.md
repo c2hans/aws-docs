@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-privat
 ---
 
 # Private workforce
-<a name="sms-workforce-private"></a>
 
  A **private workforce** is a group of workers that *you* choose. These can be employees of your company or a group of subject matter experts from your industry. For example, if the task is to label medical images, you could create a private workforce of people knowledgeable about the images in question.
 

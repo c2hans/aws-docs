@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # MOD
-<a name="recipe-actions.functions.MOD"></a>
 
 Returns the percent that one number is of another number in a new column.
 

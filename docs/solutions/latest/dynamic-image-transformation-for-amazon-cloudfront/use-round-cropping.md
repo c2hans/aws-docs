@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Use round cropping
-<a name="use-round-cropping"></a>
 
 This solution can crop images in a circular pattern. To activate round cropping on an image, add the **roundCrop** property to the **edits** property in the [image request](use-the-solution-with-a-frontend-application.md).
 +  **roundCrop(optional, boolean \|\| object)** - Activates the round cropping feature for an original image. If the value is true, then the feature returns a circular cropped image that’s centered from the original image and has a diameter of the smallest edge of the original image. For example:

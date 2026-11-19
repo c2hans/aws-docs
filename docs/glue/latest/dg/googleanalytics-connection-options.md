@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleanalytics-connectio
 ---
 
 # Google Analytics 4 connection options
-<a name="googleanalytics-connection-options"></a>
 
 The following are connection options for Google Analytics 4:
 +  `ENTITY_NAME`(String) - (Required) Used for Read. The name of your Object in Google Analytics 4.

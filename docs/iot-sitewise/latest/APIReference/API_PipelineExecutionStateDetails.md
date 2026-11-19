@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pip
 ---
 
 # PipelineExecutionStateDetails
-<a name="API_PipelineExecutionStateDetails"></a>
 
 Additional information about the current execution status. Populated when the execution has terminated.
 

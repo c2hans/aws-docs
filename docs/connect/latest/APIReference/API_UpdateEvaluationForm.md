@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateEv
 ---
 
 # UpdateEvaluationForm
-<a name="API_UpdateEvaluationForm"></a>
 
 Updates details about a specific evaluation form version in the specified Connect Customer instance. Question and section identifiers cannot be duplicated within the same evaluation form.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobMember
-<a name="API_JobMember"></a>
 
 The details for a job member.
 

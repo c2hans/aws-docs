@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/us
 ---
 
 # Use an HTTP proxy
-<a name="using-http-proxy"></a>
 
 To access AWS through proxy servers using the AWS SDK for Kotlin, you can configure either JVM system properties or environment variables. If both are provided, the JVM system properties take precedence.
 

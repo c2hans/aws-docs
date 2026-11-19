@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # ResetDistributionCache
-<a name="API_ResetDistributionCache"></a>
 
 Deletes currently cached content from your Amazon Lightsail content delivery network (CDN) distribution.
 

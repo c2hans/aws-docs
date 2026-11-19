@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/berlin.htm
 ---
 
 # .berlin (city of Berlin in Germany)
-<a name="berlin"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

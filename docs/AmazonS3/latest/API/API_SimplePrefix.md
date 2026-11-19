@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_SimplePrefix.htm
 ---
 
 # SimplePrefix
-<a name="API_SimplePrefix"></a>
 
 To use simple format for S3 keys for log objects, set SimplePrefix to an empty object.
 

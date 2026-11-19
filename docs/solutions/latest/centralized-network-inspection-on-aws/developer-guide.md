@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
  This section provides the source code for the guidance and [additional customizations](configuring-resources-for-network-firewall.md#codebuild-validation-stage).
 

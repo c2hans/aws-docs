@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Put
 ---
 
 # PutJobSuccessResult
-<a name="API_PutJobSuccessResult"></a>
 
 Represents the success of a job as returned to the pipeline by a job worker. Used for custom actions only.
 

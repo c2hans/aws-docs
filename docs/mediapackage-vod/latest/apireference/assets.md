@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/ass
 ---
 
 # Assets
-<a name="assets"></a>
 
 ## URI
 <a name="assets-url"></a>

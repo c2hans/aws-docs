@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Create a replicator
-<a name="msk-replicator-create-op"></a>
 
 Before you create an MSK Replicator, make sure you have the [IAM permissions required to create an MSK Replicator](msk-replicator-create-iam-perms.md) and have completed [Prepare source and target clusters](msk-replicator-prepare-clusters.md).
 

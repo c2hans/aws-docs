@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Performing tertiary analysis with data lakes using AWS Glue and Amazon Athena
-<a name="performing-tertiary-analysis-with-data-lakes-using-aws-glue-and-amazon-athena"></a>
 
  Genomic tertiary analysis can be performed on data in an Amazon S3 data lake using AWS Glue, Amazon Athena, and Amazon SageMaker AI Jupyter notebooks.
 

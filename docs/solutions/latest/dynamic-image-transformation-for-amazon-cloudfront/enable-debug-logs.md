@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Enable debug logs
-<a name="enable-debug-logs"></a>
 
  **Problem:** Need detailed logging information for troubleshooting image processing issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # DisableDefaultKeyReplicationRegions
-<a name="API_DisableDefaultKeyReplicationRegions"></a>
 
 Disables [Multi-Region key replication](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/keys-multi-region-replication.html) settings for the specified AWS Regions in your AWS account, preventing new keys from being automatically replicated to those regions.
 

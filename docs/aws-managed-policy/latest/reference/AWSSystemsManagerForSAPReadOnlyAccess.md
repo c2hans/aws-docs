@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerForSAPReadOnlyAccess
-<a name="AWSSystemsManagerForSAPReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS Systems Manager for SAP service
 

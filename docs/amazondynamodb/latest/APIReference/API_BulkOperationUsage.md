@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BulkOperationUsage
-<a name="API_BulkOperationUsage"></a>
 
 Contains the bytes used during a bulk operation, including a breakdown for the table and its indexes.
 

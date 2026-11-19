@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Logging Amazon Simple Queue Service API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 CloudTrail allows you to log and monitor Amazon SQS operations using two event types: data events and management events. This makes it easy to track and audit Amazon SQS activity in your account.
 

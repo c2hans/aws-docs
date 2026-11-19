@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CryptoX402PaymentInput
-<a name="API_CryptoX402PaymentInput"></a>
 
 The input for a crypto X402 payment.
 

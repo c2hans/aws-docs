@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeEffectiveInstanceAssociations
-<a name="API_DescribeEffectiveInstanceAssociations"></a>
 
 All associations for the managed nodes.
 

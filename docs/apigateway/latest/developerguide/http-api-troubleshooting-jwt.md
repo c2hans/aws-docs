@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Troubleshooting issues with HTTP API JWT authorizers
-<a name="http-api-troubleshooting-jwt"></a>
 
 The following provides troubleshooting advice for errors and issues that you might encounter when using JSON Web Token (JWT) authorizers with HTTP APIs.
 

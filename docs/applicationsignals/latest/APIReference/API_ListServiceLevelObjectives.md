@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ListServiceLevelObjectives
-<a name="API_ListServiceLevelObjectives"></a>
 
 Returns a list of SLOs created in this account.
 

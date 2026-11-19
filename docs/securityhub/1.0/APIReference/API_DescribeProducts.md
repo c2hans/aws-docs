@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Describ
 ---
 
 # DescribeProducts
-<a name="API_DescribeProducts"></a>
 
 Returns information about product integrations in Security Hub CSPM.
 

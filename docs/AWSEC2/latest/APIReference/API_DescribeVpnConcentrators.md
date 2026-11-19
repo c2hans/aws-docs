@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVpnConcentrators
-<a name="API_DescribeVpnConcentrators"></a>
 
 Describes one or more of your VPN concentrators.
 

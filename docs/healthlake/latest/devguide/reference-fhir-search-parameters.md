@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR R4 search parameters for HealthLake
-<a name="reference-fhir-search-parameters"></a>
 
 Use FHIR [`search`](https://hl7.org/fhir/R4/http.html#search) interaction to search a set of FHIR resources in a HealthLake data store based on some filter criteria. The `search` interaction can be performed using either a `GET` or `POST` request. For searches that involve personally identifiable information (PII) or protected health information (PHI), it's recommended to use `POST` requests, as PII and PHI is added as part of the request body and is encrypted in transit.
 
@@ -11,7 +10,7 @@ Use FHIR [`search`](https://hl7.org/fhir/R4/http.html#search) interaction to sea
 The FHIR `search` interaction described in this chapter is built in conformance to the HL7 FHIR R4 standard for health care data exchange. Because it is a representation of a HL7 FHIR service, it is not offered through AWS CLI and AWS SDKs. For more information, see [`search`](https://hl7.org/fhir/R4/http.html#search) in the **FHIR R4 RESTful API documentation**.
 You can also query HealthLake data stores with SQL using Amazon Athena. For more information, see Integrating.
 
-HealthLake supports the following subset of FHIR R4 search parameters. For more information, see [FHIR R4 search parameters for HealthLake](#reference-fhir-search-parameters).
+HealthLake supports the following subset of FHIR R4 search parameters. For more information, see [FHIR R4 search parameters for HealthLake](reference-fhir-search-parameters.md).
 
 ## Supported search parameter types
 <a name="search-parameter-types"></a>

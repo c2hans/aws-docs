@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnumCon
 ---
 
 # EnumConfigurationOptions
-<a name="API_EnumConfigurationOptions"></a>
 
  The options for customizing a security control parameter that is an enum.
 

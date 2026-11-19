@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Col
 ---
 
 # ColumnInfo
-<a name="API_ColumnInfo"></a>
 
 A description of the column in the query results.
 

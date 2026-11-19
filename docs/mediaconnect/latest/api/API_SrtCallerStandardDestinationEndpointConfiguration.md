@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SrtCallerSta
 ---
 
 # SrtCallerStandardDestinationEndpointConfiguration
-<a name="API_SrtCallerStandardDestinationEndpointConfiguration"></a>
 
 The configuration settings for a destination endpoint that uses SRT in caller mode.
 

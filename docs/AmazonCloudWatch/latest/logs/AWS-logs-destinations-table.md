@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-de
 ---
 
 # Supported log destinations and permissions
-<a name="AWS-logs-destinations-table"></a>
 
 The following table shows which destinations each AWS service supports for sending logs, and which permissions version is required.
 

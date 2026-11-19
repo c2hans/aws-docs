@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/bind-hsm.html
 ---
 
 # Bind the hardware security module to the Snow device
-<a name="bind-hsm"></a>
 
 Each Snow device can be bound to one hardware security module (HSM) to secure and encrypt the data on the Snow device.
 

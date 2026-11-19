@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeEdgeDeploymentPlan
-<a name="API_DescribeEdgeDeploymentPlan"></a>
 
 Describes an edge deployment plan with deployment status per stage.
 

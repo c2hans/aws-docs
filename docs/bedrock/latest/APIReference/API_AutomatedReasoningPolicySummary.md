@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicySummary
-<a name="API_AutomatedReasoningPolicySummary"></a>
 
 Contains summary information about an Automated Reasoning policy, including metadata and timestamps.
 

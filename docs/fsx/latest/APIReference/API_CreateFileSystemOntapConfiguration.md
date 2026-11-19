@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystemOntapConfiguration
-<a name="API_CreateFileSystemOntapConfiguration"></a>
 
 The ONTAP configuration properties of the FSx for ONTAP file system that you are creating.
 

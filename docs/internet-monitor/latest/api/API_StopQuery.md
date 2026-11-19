@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_StopQuer
 ---
 
 # StopQuery
-<a name="API_StopQuery"></a>
 
 Stop a query that is progress for a specific monitor.
 

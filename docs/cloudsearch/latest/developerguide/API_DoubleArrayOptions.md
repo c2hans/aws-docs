@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Do
 ---
 
 # DoubleArrayOptions
-<a name="API_DoubleArrayOptions"></a>
 
 ## Description
 <a name="API_DoubleArrayOptions_Description"></a>

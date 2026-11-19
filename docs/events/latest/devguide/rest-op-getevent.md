@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-getevent.
 ---
 
 # GetEvent
-<a name="rest-op-getevent"></a>
 
 Gets one event, with the same fields as a list entry. Not filtered by date, so a link to an event keeps working after it ends. No sign-in is needed.
 

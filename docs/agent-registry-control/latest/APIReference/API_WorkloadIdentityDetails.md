@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # WorkloadIdentityDetails
-<a name="API_WorkloadIdentityDetails"></a>
 
 The workload identity details associated with a source resource. Present on the source details of a provenance entry when the upstream resource has a workload identity configured.
 

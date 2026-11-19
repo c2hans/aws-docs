@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListK
 ---
 
 # ListKnowledgeBases
-<a name="API_ListKnowledgeBases"></a>
 
 Lists all knowledge bases in an Amazon QuickSight account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/compute_resource_
 ---
 
 # Compute resource AMIs
-<a name="compute_resource_AMIs"></a>
 
 By default, AWS Batch managed compute environments use a recent, approved version of the Amazon ECS optimized AMI for compute resources. However, you might want to create your own AMI to use for your managed and unmanaged compute environments. If you require any of the following, we recommend you create your own AMI:
 + Increasing the storage size of your AMI root or data volumes.

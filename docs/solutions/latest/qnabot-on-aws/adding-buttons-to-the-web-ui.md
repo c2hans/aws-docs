@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/adding-bu
 ---
 
 # Adding buttons to the web UI
-<a name="adding-buttons-to-the-web-ui"></a>
 
 You can add buttons to your chatbot’s answers to help guide your end user by suggesting what they might want to do next.
 

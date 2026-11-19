@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Graph.
 ---
 
 # Graph
-<a name="API_Graph"></a>
 
 A behavior graph in Detective.
 

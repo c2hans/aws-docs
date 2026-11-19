@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Queue downlink messages to send to LoRaWAN devices
-<a name="lorawan-downlink-queue"></a>
 
 Cloud-hosted applications and other AWS services can send downlink messages to your wireless devices. Downlink messages are messages that are sent from AWS IoT Core for LoRaWAN to your wireless device. You can schedule and send downlink messages for each device that you've onboarded to AWS IoT Core for LoRaWAN.
 

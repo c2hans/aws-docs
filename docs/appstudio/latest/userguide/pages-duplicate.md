@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/pages-duplica
 ---
 
 # Duplicating a page
-<a name="pages-duplicate"></a>
 
 Use the following procedure to duplicate a page in an application in App Studio.
 

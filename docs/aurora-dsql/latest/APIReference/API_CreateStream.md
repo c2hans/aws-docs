@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Crea
 ---
 
 # CreateStream
-<a name="API_CreateStream"></a>
 
 Creates a new change data capture (CDC) stream for an Aurora DSQL cluster. The stream captures database changes and delivers them to the specified target destination.
 

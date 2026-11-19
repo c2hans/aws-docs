@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Da
 ---
 
 # DataType
-<a name="API_DataType"></a>
 
 An object that specifies the data type of a property.
 
@@ -24,7 +23,7 @@ Required: No
 
  ** nestedType **   <a name="tm-Type-DataType-nestedType"></a>
 The nested type in the data type.
-Type: [DataType](#API_DataType) object
+Type: [DataType](API_DataType.md) object
 Required: No
 
  ** relationship **   <a name="tm-Type-DataType-relationship"></a>

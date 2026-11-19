@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-cop
 ---
 
 # Copy agent shifts
-<a name="scheduling-copy-agent-shifts"></a>
 
 Contact center managers, supervisors, and schedulers can copy shifts from one agent to another agent or to that same agent. They can copy shifts one day at a time or multiple days at a time. For example, copy the schedule for agent A for this week to next week, or copy agent A's schedule for the next two weeks to agent B.
 

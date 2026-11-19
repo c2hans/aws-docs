@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/payment
 ---
 
 # Pay invoices in installments with AWS Financing
-<a name="payment-financing"></a>
 
 You can use Financing to pay your select AWS Marketplace purchases in installments up to 48 months. You will apply through the AWS Billing and Cost Management console, and applications are reviewed by our partnering lender. After your application is approved, you can immediate pay select AWS Marketplace invoices using financing in the **Payments** page of the Billing and Cost Management console. All financing decisions are at the sole discretion of the partnering lender.
 

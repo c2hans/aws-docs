@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Network access control configuration reference for OpenSearch UI applications
-<a name="application-network-access-reference"></a>
 
 The following sections provide policy examples for each network access control that OpenSearch UI supports. Each example includes the AWS Command Line Interface (AWS CLI) commands to apply it. For an explanation of how OpenSearch UI evaluates these policies, and for a step by step walkthrough of the most common task, see [Restricting network access to OpenSearch UI applications](application-network-access.md).
 

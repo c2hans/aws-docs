@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Use `CreateInvalidation` with a CLI
-<a name="example_cloudfront_CreateInvalidation_section"></a>
 
 The following code examples show how to use `CreateInvalidation`.
 

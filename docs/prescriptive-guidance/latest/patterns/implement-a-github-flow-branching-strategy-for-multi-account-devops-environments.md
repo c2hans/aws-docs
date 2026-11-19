@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement a GitHub Flow branching strategy for multi-account DevOps environments
-<a name="implement-a-github-flow-branching-strategy-for-multi-account-devops-environments"></a>
 
 *Mike Stephens and Abhilash Vinod, Amazon Web Services*
 

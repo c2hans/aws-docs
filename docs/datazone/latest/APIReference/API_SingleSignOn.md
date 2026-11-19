@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SingleS
 ---
 
 # SingleSignOn
-<a name="API_SingleSignOn"></a>
 
 The single sign-on details in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubDiscoveryAccess
-<a name="AWSMigrationHubDiscoveryAccess"></a>
 
 **Description**: Policy allows AWSMigrationHubService to call AWSApplicationDiscoveryService on behalf of the customer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CustomInpu
 ---
 
 # CustomInputContent
-<a name="API_connect-cases_CustomInputContent"></a>
 
 Represents the content of a `Custom` related item.
 

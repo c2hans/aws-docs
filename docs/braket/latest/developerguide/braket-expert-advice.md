@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-expe
 ---
 
 # Getting Expert advice
-<a name="braket-expert-advice"></a>
 
 Connect with quantum computing experts directly in the Braket management console to get additional guidance around your workloads.
 

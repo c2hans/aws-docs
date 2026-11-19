@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # VpcConfig
-<a name="sam-property-capacityprovider-vpcconfig"></a>
 
 Configures the VPC settings for a capacity provider, including the subnets and security groups where EC2 instances will be launched.
 

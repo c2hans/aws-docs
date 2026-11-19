@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # MessageStartEvent
-<a name="API_runtime_MessageStartEvent"></a>
 
 The start of a message.
 

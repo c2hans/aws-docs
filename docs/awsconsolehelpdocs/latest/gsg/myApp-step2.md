@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/myApp-step
 ---
 
 # Viewing applications in myApplications
-<a name="myApp-step2"></a>
 
 You can view your applications from myApplications or the Services menu. If viewing your applications from myApplications, you can view them across all AWS Regions or specific AWS Regions and their relevant information in a card or table view.
 

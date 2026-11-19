@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Correctio
 ---
 
 # Correction
-<a name="API_Correction"></a>
 
 A corrected misspelled word in a query.
 

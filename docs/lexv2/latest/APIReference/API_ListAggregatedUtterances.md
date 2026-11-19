@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListAggreg
 ---
 
 # ListAggregatedUtterances
-<a name="API_ListAggregatedUtterances"></a>
 
 Provides a list of utterances that users have sent to the bot.
 

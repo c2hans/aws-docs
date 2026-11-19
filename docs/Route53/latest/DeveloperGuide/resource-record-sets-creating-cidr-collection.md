@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Creating a CIDR collection with CIDR locations and blocks
-<a name="resource-record-sets-creating-cidr-collection"></a>
 
 To get started, create a CIDR collection and add CIDR blocks and locations to it.<a name="CIDR-collection-creating-procedure"></a>
 

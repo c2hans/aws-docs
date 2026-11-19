@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/whats-new-in-
 ---
 
 # Managing Amazon EMR clusters with the console
-<a name="whats-new-in-console"></a>
 
 The console offers an updated interface that provides you with an intuitive way to manage your Amazon EMR environment and gives you convenient access to documentation, product information, and other resources.
 

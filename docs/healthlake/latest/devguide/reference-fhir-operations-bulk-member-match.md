@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # `$bulk-member-match` operation for HealthLake
-<a name="reference-fhir-operations-bulk-member-match"></a>
 
 AWS HealthLake supports the `$bulk-member-match` operation for processing multiple member match requests asynchronously. This operation enables healthcare organizations to efficiently match hundreds of members' unique identifiers across different healthcare systems using demographic and coverage information in a single bulk request. This capability is essential for large-scale payer-to-payer data exchange, member transitions, and CMS compliance requirements and follows the FHIR [specification](https://build.fhir.org/ig/HL7/davinci-epdx/OperationDefinition-BulkMemberMatch.html).
 

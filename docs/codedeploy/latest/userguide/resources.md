@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/resources.ht
 ---
 
 # CodeDeploy resources
-<a name="resources"></a>
 
 The following related resources can help you as you work with CodeDeploy.
 

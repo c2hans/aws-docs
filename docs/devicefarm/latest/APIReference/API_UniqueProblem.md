@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Uniqu
 ---
 
 # UniqueProblem
-<a name="API_UniqueProblem"></a>
 
 A collection of one or more problems, grouped by their result.
 

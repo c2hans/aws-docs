@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # UpdateSubnetGroup
-<a name="API_dax_UpdateSubnetGroup"></a>
 
 Modifies an existing subnet group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # AWS Optimization and Licensing Assessment
-<a name="aws-ola"></a>
 
 ## Overview
 <a name="aws-ola-overview"></a>

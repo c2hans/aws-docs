@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteS3AccessPolic
 ---
 
 # DeleteS3AccessPolicy
-<a name="API_DeleteS3AccessPolicy"></a>
 
 Deletes an access policy for the specified store.
 

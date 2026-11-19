@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # ExecutionListItem
-<a name="API_ExecutionListItem"></a>
 
 Contains details about an execution.
 

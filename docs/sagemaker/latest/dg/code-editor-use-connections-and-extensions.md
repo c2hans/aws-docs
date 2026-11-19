@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-use-conn
 ---
 
 # Code Editor Connections and Extensions
-<a name="code-editor-use-connections-and-extensions"></a>
 
 Code Editor supports IDE connections to AWS services as well as extensions available in the [Open VSX Registry](https://open-vsx.org/).
 

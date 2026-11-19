@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/performance-insig
 ---
 
 # Performance warnings and recommendations
-<a name="performance-insights"></a>
 
 FSx for Lustre displays a warning for CloudWatch metrics when one of these metrics approaches or crosses a predetermined threshold for multiple consecutive data points. These warnings provide you with actionable recommendations that you can use to optimize your file system's performance.
 

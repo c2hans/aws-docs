@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/deploy-troubleshoot.html
 ---
 
 # Troubleshoot AWS CDK deployments
-<a name="deploy-troubleshoot"></a>
 
 Troubleshoot common issues when deploying AWS Cloud Development Kit (AWS CDK) applications.
 

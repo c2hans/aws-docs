@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Aut
 ---
 
 # AuthenticationMethodItem
-<a name="API_AuthenticationMethodItem"></a>
 
 A structure that describes an authentication method and its type.
 

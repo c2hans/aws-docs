@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Q Connect
-<a name="API_Types_Amazon_Q_Connect"></a>
 
 The following data types are supported by Amazon Q Connect:
 +  [AgentAttributes](API_amazon-q-connect_AgentAttributes.md)

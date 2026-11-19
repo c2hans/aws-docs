@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # SuccessfulCampaignStateResponse
-<a name="API_connect-outbound-campaigns_SuccessfulCampaignStateResponse"></a>
 
 The state response when the campaign is successful.
 

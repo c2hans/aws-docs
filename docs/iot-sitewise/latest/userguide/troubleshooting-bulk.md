@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troublesho
 ---
 
 # Troubleshooting bulk import and export operations
-<a name="troubleshooting-bulk"></a>
 
 To handle and diagnose errors produced during a transfer job, see the AWS IoT TwinMaker **GetMetadataTransferJob** API:
 

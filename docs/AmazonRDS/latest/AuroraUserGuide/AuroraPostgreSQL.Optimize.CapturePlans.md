@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Capturing Aurora PostgreSQL execution plans
-<a name="AuroraPostgreSQL.Optimize.CapturePlans"></a>
 
 Aurora PostgreSQL query plan management offers two different modes for capturing query execution plans, automatic or manual. You choose the mode by setting the value of the `apg_plan_mgmt.capture_plans_baselines` to `automatic` or to `manual`. You can capture execution plans for specific SQL statements by using manual plan capture. Alternatively, you can capture all (or the slowest) plans that are executed two or more times as your application runs by using automatic plan capture.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeEksA
 ---
 
 # DescribeEksAnywhereSubscription
-<a name="API_DescribeEksAnywhereSubscription"></a>
 
 Returns descriptive information about a subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_C
 ---
 
 # CommitTransaction
-<a name="API_CommitTransaction"></a>
 
 Ends a SQL transaction started with the `BeginTransaction` operation and commits the changes.
 

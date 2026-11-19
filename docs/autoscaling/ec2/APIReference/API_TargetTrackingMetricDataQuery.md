@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TargetT
 ---
 
 # TargetTrackingMetricDataQuery
-<a name="API_TargetTrackingMetricDataQuery"></a>
 
 The metric data to return. Also defines whether this call is returning data for one metric only, or whether it is performing a math expression on the values of returned metric statistics to create a new time series. A time series is a series of data points, each of which is associated with a timestamp.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLoc
 ---
 
 # CreateLocalGatewayVirtualInterfaceGroup
-<a name="API_CreateLocalGatewayVirtualInterfaceGroup"></a>
 
 Create a local gateway virtual interface group.
 

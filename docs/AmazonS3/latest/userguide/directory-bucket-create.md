@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Creating directory buckets in an Availability Zone
-<a name="directory-bucket-create"></a>
 
 To start using the Amazon S3 Express One Zone storage class, you create a directory bucket. The S3 Express One Zone storage class can be used only with directory buckets. The S3 Express One Zone storage class supports low-latency use cases and provides faster data processing within a single Availability Zone. If your application is performance sensitive and benefits from single-digit millisecond `PUT` and `GET` latencies, we recommend creating a directory bucket so that you can use the S3 Express One Zone storage class.
 

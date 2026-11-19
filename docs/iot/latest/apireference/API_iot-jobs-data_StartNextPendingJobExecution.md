@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # StartNextPendingJobExecution
-<a name="API_iot-jobs-data_StartNextPendingJobExecution"></a>
 
 Gets and starts the next pending (status IN\_PROGRESS or QUEUED) job execution for a thing.
 

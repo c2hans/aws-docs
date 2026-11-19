@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AutoUpgradeMetada
 ---
 
 # AutoUpgradeMetadata
-<a name="API_AutoUpgradeMetadata"></a>
 
 The auto-upgrade assessment information for a job configured with `GlueVersion=auto`.
 

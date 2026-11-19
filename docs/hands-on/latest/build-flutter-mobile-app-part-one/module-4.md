@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app
 ---
 
 # Module 4: Add Amplify storage
-<a name="module-4"></a>
 
 ## Overview
 <a name="overview"></a>

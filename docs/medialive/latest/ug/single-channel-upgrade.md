@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/single-channel-upgra
 ---
 
 # Setting up a single-pipeline channel with upgrade options
-<a name="single-channel-upgrade"></a>
 
 When you followed the [guidelines](pipeline-redundancy-guidelines.md) for implementing pipeline redundancy in a MediaLive channel, you might have decided that you want to create the channel without pipeline redundancy. But you might want to allow for easy upgrade to pipeline redundancy later.
 

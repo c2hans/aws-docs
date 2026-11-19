@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/troubleshootin
 ---
 
 # Troubleshooting Amazon Keyspaces (for Apache Cassandra)
-<a name="troubleshooting"></a>
 
 This guide covers troubleshooting steps for various scenarios when working with Amazon Keyspaces (for Apache Cassandra). It includes information on resolving general errors, connection issues, capacity management problems, and Data Definition Language (DDL) errors.
 + **General errors**

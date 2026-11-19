@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteMemoryStrategyInput
-<a name="API_DeleteMemoryStrategyInput"></a>
 
 Input for deleting a memory strategy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-CreateServiceNowIncident`
-<a name="automation-aws-createservicenowincident"></a>
 
  **Description**
 

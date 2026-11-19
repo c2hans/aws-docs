@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_
 ---
 
 # How AWS CloudTrail works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to CloudTrail, learn what IAM features are available to use with CloudTrail.
 

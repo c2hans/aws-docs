@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/developing-consumers-
 ---
 
 # Develop shared-throughput consumers with the AWS SDK for Java
-<a name="developing-consumers-with-sdk"></a>
 
 One of the methods for developing custom Kinesis Data Streams consumers with shared throughout is to use the Amazon Kinesis Data Streams APIs with the AWS SDK for Java. This section describes using the Kinesis Data Streams APIs with the AWS SDK for Java. You can call the Kinesis Data Streams APIs using other different programming languages. For more information about all available AWS SDKs, see [Start Developing with Amazon Web Services](https://aws.amazon.com/developers/getting-started/).
 

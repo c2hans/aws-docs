@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ExternalSourcesGenerationConfiguration
-<a name="API_agent-runtime_ExternalSourcesGenerationConfiguration"></a>
 
 Contains the generation configuration of the external source wrapper object.
 

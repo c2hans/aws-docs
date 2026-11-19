@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/create-object-
 ---
 
 # Configuring DataSync transfers with an object storage system
-<a name="create-object-location"></a>
 
 With AWS DataSync, you can transfer data between your object storage system and the following AWS storage services:
 + [Amazon S3](create-s3-location.md)

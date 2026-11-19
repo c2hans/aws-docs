@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/customizing-the-kubele
 ---
 
 # Customizing kubelet configuration
-<a name="customizing-the-kubelet"></a>
 
 System resources can be reserved through the configuration of the kubelet. This is recommended, because in the case of resource starvation the kubelet might not be able to evict pods and eventually make the node become `NotReady`. To do this, config files can include the `kubeletExtraConfig` field which accepts a free form yaml that will be embedded into the `kubelet.yaml`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePh
 ---
 
 # UpdatePhoneNumberMetadata
-<a name="API_UpdatePhoneNumberMetadata"></a>
 
 Updates a phone number’s metadata.
 

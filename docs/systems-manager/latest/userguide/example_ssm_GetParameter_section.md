@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `GetParameter` with an AWS SDK or CLI
-<a name="example_ssm_GetParameter_section"></a>
 
 The following code examples show how to use `GetParameter`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elas
 ---
 
 # ElastiCacheServiceRolePolicy
-<a name="ElastiCacheServiceRolePolicy"></a>
 
 **Description**: This policy allows ElastiCache to manage AWS resources on your behalf as necessary for managing your cache
 

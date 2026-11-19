@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StringFilterExpression
-<a name="API_StringFilterExpression"></a>
 
 Searches for a particular string.
 

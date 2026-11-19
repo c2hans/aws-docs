@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/migrationguide/m
 ---
 
 # Migrating to AWS Elemental Server version 2.18
-<a name="migrate-server-218"></a>
 
 This procedure describes how to upgrade an appliance that is running AWS Elemental Server from a version below 2.18.0 and migrate them to version 2.18.0 or higher.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Query
 ---
 
 # QueryRange
-<a name="API_QueryRange"></a>
 
 Defines a time range for dependency query data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6-ex
 ---
 
 # Example dual-stack VPC configuration
-<a name="vpc-migrate-ipv6-example"></a>
 
 With a dual-stack configuration, you can use both IPv4 and IPv6 addresses for communication between resources in your VPC and resources over the internet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntitiesDetectionJobProperties
-<a name="API_EntitiesDetectionJobProperties"></a>
 
 Provides information about an entities detection job.
 

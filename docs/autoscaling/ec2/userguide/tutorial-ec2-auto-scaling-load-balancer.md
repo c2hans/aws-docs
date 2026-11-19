@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/tutorial-ec2-a
 ---
 
 # Tutorial: Set up a scaled and load-balanced application
-<a name="tutorial-ec2-auto-scaling-load-balancer"></a>
 
 **Important**
 Before you explore this tutorial, we recommend that you first review the following introductory tutorial: [Create your first Auto Scaling group](create-your-first-auto-scaling-group.md).

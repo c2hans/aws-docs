@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Use Lambda log parser JSON file
-<a name="use-lambda-log-parser-json-file"></a>
 
 ## Use Lambda log parser JSON file for HTTP Flood protection
 <a name="use-lambda-log-parser-json-file-for-http-flood-protection"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Session management
-<a name="code-interpreter-session-characteristics"></a>
 
 The AgentCore Code Interpreter sessions have the following characteristics:
 

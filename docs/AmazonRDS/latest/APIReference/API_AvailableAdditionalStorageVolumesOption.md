@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Availa
 ---
 
 # AvailableAdditionalStorageVolumesOption
-<a name="API_AvailableAdditionalStorageVolumesOption"></a>
 
 Contains the available options for additional storage volumes for a DB instance class.
 

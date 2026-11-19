@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-dat
 ---
 
 # Access instance metadata for an EC2 instance
-<a name="instancedata-data-retrieval"></a>
 
 You can access EC2 instance metadata from inside of the instance itself or from the EC2 console, API, SDKs, or the AWS CLI. To get the current instance metadata settings for an instance from the console or command line, see [Query instance metadata options for existing instances](#query-IMDS-existing-instances).
 

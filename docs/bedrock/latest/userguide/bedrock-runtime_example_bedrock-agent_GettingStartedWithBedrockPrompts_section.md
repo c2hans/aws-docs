@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # An end-to-end example showing how to create and invoke Amazon Bedrock managed prompts using an AWS SDK
-<a name="bedrock-runtime_example_bedrock-agent_GettingStartedWithBedrockPrompts_section"></a>
 
 The following code example shows how to:
 + Create a managed prompt.

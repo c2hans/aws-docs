@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InstanceRequirements
-<a name="API_InstanceRequirements"></a>
 
 The requirements for Amazon EC2 instance types in a capacity provider.
 

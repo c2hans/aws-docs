@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/tagging
 ---
 
 # Tagging Your Amazon WorkSpaces Applications Resources
-<a name="tagging-basic"></a>
 
 AWS enables you to assign metadata to your AWS resources in the form of tags. You can use these tags to help manage your WorkSpaces Applications image builders, images, fleets, and stacks, and also organize data, including billing data.
 

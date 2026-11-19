@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RoutingPolicyAssociationDetail
-<a name="API_RoutingPolicyAssociationDetail"></a>
 
 Information about a routing policy association.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/working-with-bot
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Use both SDKs in one application
-<a name="working-with-boto3-coexistence"></a>
 
 You can use the AWS SDK for Python v4 and AWS SDK for Python (Boto3) together in the same application. The most common reasons to combine both SDKs are the following:
 + A service or feature that you need isn't available in the AWS SDK for Python v4 yet, so you use Boto3 for it and the AWS SDK for Python v4 for the rest of the application.

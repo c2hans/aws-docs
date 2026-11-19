@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kameleoon-connection-opti
 ---
 
 # Kameleoon connection options
-<a name="kameleoon-connection-options"></a>
 
 The following are connection options for Kameleoon:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Kameleoon object to read.

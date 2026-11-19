@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/permissions-user.html
 ---
 
 # Identity-based IAM policies for HealthOmics
-<a name="permissions-user"></a>
 
 To grant users in your account access to HealthOmics, you use identity-based policies in AWS Identity and Access Management (IAM). Identity-based policies can apply directly to IAM users, or to IAM groups and roles that are associated with a user. You can also grant users in another account permission to assume a role in your account and access your HealthOmics resources.
 

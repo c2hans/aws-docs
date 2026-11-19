@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_RequestImpactStatist
 ---
 
 # RequestImpactStatistics
-<a name="API_RequestImpactStatistics"></a>
 
 Statistics that describe how the incident has impacted a service.
 

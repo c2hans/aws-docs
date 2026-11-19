@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-sql-
 ---
 
 # SQL capabilities for minimum aggregation and comparison controls
-<a name="custom-sql-capabilities"></a>
 
 The following table lists the supported and unsupported SQL constructs and functions when a custom analysis rule uses minimum aggregation thresholds and comparison controls in the Spark analytics engine. Function categories follow the AWS Clean Rooms Spark SQL reference.
 

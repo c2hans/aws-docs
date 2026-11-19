@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Pro
 ---
 
 # ProximityResourceTypeEventConfiguration
-<a name="API_ProximityResourceTypeEventConfiguration"></a>
 
 Proximity resource type event configuration object for enabling or disabling topic.
 

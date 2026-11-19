@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Replaceme
 ---
 
 # ReplacementTemplate
-<a name="API_ReplacementTemplate"></a>
 
 An object which contains `ReplacementTemplateData` to be used for a specific `BulkEmailEntry`.
 

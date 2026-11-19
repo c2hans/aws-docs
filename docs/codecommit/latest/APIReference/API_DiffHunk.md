@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DiffH
 ---
 
 # DiffHunk
-<a name="API_DiffHunk"></a>
 
 A contiguous run of changed lines from a blob diff, together with any surrounding unchanged context lines. Hunks are returned in order from the start of the file to the end. Adjacent or overlapping hunks are merged into a single hunk in the response.
 

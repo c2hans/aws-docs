@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate ColumnClassificationDetails
-<a name="aws-properties-cleanrooms-analysistemplate-columnclassificationdetails"></a>
 
 Contains classification information for data columns, including mappings that specify how columns should be handled during synthetic data generation and privacy analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/manual-deploys.
 ---
 
 # Deploying an application to Amplify without a Git repository
-<a name="manual-deploys"></a>
 
 Manual deployments enable you to publish your web app with Amplify Hosting without connecting a Git provider. You can drag and drop a zipped folder from your desktop and host your site in seconds. Alternatively, you can reference assets in an Amazon S3 bucket or specify a public URL to the location where your files are stored.
 

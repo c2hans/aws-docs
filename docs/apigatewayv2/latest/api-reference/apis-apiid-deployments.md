@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Deployments
-<a name="apis-apiid-deployments"></a>
 
 Represents the collection of deployments for an API.
 

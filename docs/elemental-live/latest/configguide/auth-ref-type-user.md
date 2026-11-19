@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/auth-r
 ---
 
 # Authentication user types
-<a name="auth-ref-type-user"></a>
 
 This table describes the types of users available with authentication.
 

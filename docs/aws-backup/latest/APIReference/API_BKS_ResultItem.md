@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_R
 ---
 
 # ResultItem
-<a name="API_BKS_ResultItem"></a>
 
 This is an object representing the item returned in the results of a search for a specific resource type.
 

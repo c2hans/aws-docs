@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Massive Scale Real-Time Messaging for Multiplayer Games
-<a name="massive-scale-real-time-messaging-multiplayer-games"></a>
 
 Publication date: **November 11, 2020 ([Diagram history](#messaging-history))**
 

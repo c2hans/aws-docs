@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-process-shu
 ---
 
 # Delete your Auto Scaling infrastructure
-<a name="as-process-shutdown"></a>
 
 To completely delete your scaling infrastructure, complete the following tasks.
 

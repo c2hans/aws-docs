@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataQualityRul
 ---
 
 # GetDataQualityRuleset
-<a name="API_GetDataQualityRuleset"></a>
 
 Returns an existing ruleset by identifier or name.
 

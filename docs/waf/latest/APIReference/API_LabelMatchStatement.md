@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_LabelMatchSt
 ---
 
 # LabelMatchStatement
-<a name="API_LabelMatchStatement"></a>
 
 A rule statement to match against labels that have been added to the web request by rules that have already run in the web ACL.
 

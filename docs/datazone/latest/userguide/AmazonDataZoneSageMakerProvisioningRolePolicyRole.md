@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/AmazonDataZone
 ---
 
 # AmazonDataZoneSageMakerProvisioningRolePolicyRole-<domainAccountId>
-<a name="AmazonDataZoneSageMakerProvisioningRolePolicyRole"></a>
 
 The `AmazonDataZoneSageMakerProvisioningRolePolicyRole` role has the `AmazonDataZoneSageMakerProvisioningRolePolicy` and the `AmazonDataZoneRedshiftGlueProvisioningPolicy` attached. This role grants Amazon DataZone permissions required to interoperate with AWS Glue, Amazon Redshift, and Amazon Sagemaker.
 

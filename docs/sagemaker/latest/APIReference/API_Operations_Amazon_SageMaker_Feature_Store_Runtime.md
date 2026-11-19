@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operat
 ---
 
 # Amazon SageMaker Feature Store Runtime
-<a name="API_Operations_Amazon_SageMaker_Feature_Store_Runtime"></a>
 
 The following actions are supported by Amazon SageMaker Feature Store Runtime:
 +  [BatchGetRecord](API_feature_store_BatchGetRecord.md)

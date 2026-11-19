@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_GetMicro
 ---
 
 # GetMicrosoftTeamsChannelConfiguration
-<a name="API_GetMicrosoftTeamsChannelConfiguration"></a>
 
 Returns a Microsoft Teams channel configuration in an AWS account.
 

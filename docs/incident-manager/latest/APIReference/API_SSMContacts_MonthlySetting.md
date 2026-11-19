@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # MonthlySetting
-<a name="API_SSMContacts_MonthlySetting"></a>
 
 Information about on-call rotations that recur monthly.
 

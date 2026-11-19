@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListResolverEndpoints
-<a name="API_route53resolver_ListResolverEndpoints"></a>
 
 Lists all the Resolver endpoints that were created using the current AWS account.
 

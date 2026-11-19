@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/aws-marketp
 ---
 
 # AMI product checklist for AWS Marketplace
-<a name="aws-marketplace-listing-checklist"></a>
 
 Before submitting your Amazon Machine Image (AMI) product to AWS, use this checklist to validate your submission. Following these requirements will help ensure an efficient publication process.
 

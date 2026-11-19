@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ssm-sa
 ---
 
 # AWS Systems Manager for SAP events
-<a name="events-ref-ssm-sap"></a>
 
 Systems Manager for SAP sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

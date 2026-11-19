@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AmazonConnectGuideAssociationData
-<a name="API_amazon-q-connect_AmazonConnectGuideAssociationData"></a>
 
 Content association data for a [step-by-step guide](https://docs.aws.amazon.com/connect/latest/adminguide/step-by-step-guided-experiences.html).
 

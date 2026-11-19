@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Comparing scenarios
-<a name="comparing-scenarios"></a>
 
 |
 |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 AWS resources can be tagged for a variety of purposes, from implementing a cost allocation strategy to supporting automation or authorizing access to AWS resources. Implementing a tagging strategy can be challenging for some organizations, owing to the number of stakeholder groups involved and considerations such as data sourcing and tag governance.
 

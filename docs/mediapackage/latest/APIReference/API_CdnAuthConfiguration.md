@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cdn
 ---
 
 # CdnAuthConfiguration
-<a name="API_CdnAuthConfiguration"></a>
 
 The settings to enable CDN authorization headers in MediaPackage.
 

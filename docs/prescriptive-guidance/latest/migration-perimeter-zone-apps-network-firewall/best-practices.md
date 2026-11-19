@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 We recommend the following best practices for migrating your perimeter zone applications to the AWS Cloud:
 + Design your target architecture to support third-party network firewalls, only if you can expose the firewalls to the application VPC network over a Gateway Load Balancer.

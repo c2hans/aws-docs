@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html
 ---
 
 # Query AWS CloudTrail logs
-<a name="cloudtrail-logs"></a>
 
 AWS CloudTrail is a service that records AWS API calls and events for Amazon Web Services accounts.
 

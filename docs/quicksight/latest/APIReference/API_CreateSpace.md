@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateSpace
-<a name="API_CreateSpace"></a>
 
 Creates a new Amazon QuickSight space. A space is a collection of resources that can be used to organize and manage QuickSight assets.
 

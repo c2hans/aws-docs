@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_cross_Serverles
 ---
 
 # Transform data for your application with S3 Object Lambda
-<a name="example_cross_ServerlessS3DataTransformation_section"></a>
 
 The following code example shows how to transform data for your application with S3 Object Lambda.
 

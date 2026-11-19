@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/sa
 ---
 
 # Data key caching example code
-<a name="sample-cache-example-code"></a>
 
 This code sample creates a simple implementation of data key caching with a [local cache](data-caching-details.md#simplecache) in Java and Python. The code creates two instances of a local cache: one for [data producers](#caching-producer) that are encrypting data and another for [data consumers](#caching-consumer) (AWS Lambda functions) that are decrypting data. For details about the implementation of data key caching in each language, see the [Javadoc](https://aws.github.io/aws-encryption-sdk-java/) and [Python documentation](https://aws-encryption-sdk-python.readthedocs.io/en/latest/) for the AWS Encryption SDK.
 

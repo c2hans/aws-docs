@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/target-groups.html
 ---
 
 # Target groups in VPC Lattice
-<a name="target-groups"></a>
 
 A VPC Lattice target group is a collection of targets, or compute resources, that run your application or service. The supported target types include EC2 instances, IP addresses, Lambda functions, Application Load Balancers, Amazon ECS tasks, and Kubernetes Pods. You can also attach existing services to your target groups. For more information about using Kubernetes with VPC Lattice, see the [AWS Gateway API Controller User Guide](https://www.gateway-api-controller.eks.aws.dev/).
 

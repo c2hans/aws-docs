@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-in
 ---
 
 # Connect to your Linux instance using an SSH client
-<a name="connect-linux-inst-ssh"></a>
 
 You can use Secure Shell (SSH) to connect to your Linux instance from your local computer. For more information about other options, see [Connect to your EC2 instance](connect.md).
 

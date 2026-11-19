@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Funne
 ---
 
 # FunnelChartSortConfiguration
-<a name="API_FunnelChartSortConfiguration"></a>
 
 The sort configuration of a `FunnelChartVisual`.
 

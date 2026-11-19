@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/fips-mode-container.html
 ---
 
 # Enable FIPS Mode in an AL2027 Container
-<a name="fips-mode-container"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

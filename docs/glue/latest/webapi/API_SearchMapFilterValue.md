@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchMapFilterVa
 ---
 
 # SearchMapFilterValue
-<a name="API_SearchMapFilterValue"></a>
 
 A map filter value. Currently supports string comparison only.
 

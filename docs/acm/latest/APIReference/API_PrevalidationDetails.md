@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_Prevalidatio
 ---
 
 # PrevalidationDetails
-<a name="API_PrevalidationDetails"></a>
 
 Contains details about the prevalidation configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Using variables with Lambda invoke actions
-<a name="tutorials-lambda-variables"></a>
 
 A Lambda invoke action can use variables from another action as part of its input and return new variables along with its output. For information about variables for actions in CodePipeline, see [Variables reference](reference-variables.md).
 

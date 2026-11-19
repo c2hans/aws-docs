@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Security considerations for data in generative AI
-<a name="security"></a>
 
 Introducing generative AI into enterprise workflows brings both opportunities and new security risks to the data lifecycle. Data is the fuel of generative AI, and protecting that data (as well as safeguarding the outputs and the model itself) is paramount. Key security considerations span traditional data concerns, such as privacy and governance. There are also additional concerns that are unique to AI/ML, such as hallucinations, data poisoning attacks, adversarial prompts, and model inversion attacks. The [OWASP Top 10 for LLM applications](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) (OWASP website) can help you dive deeper into threats that are specific to generative AI. The following section outlines major risks and mitigation strategies at each stage and focuses primarily on data considerations.
 

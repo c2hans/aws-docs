@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ColumnError.html
 ---
 
 # ColumnError
-<a name="API_ColumnError"></a>
 
 Encapsulates a column name that failed and the reason for failure.
 

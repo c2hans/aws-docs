@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 3.1 Change strategy and plan
-<a name="change"></a>
 
 ## Overview
 <a name="change-overview"></a>

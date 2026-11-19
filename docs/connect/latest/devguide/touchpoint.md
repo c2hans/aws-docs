@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/touchpoint.html
 ---
 
 # Touchpoint
-<a name="touchpoint"></a>
 
 Touchpoint is a drop-in conversational UI and SDK for Amazon Connect Customer — a single widget for chat, voice, and voice-mini, plus **Live Sync**, the native technology that keeps a voice or chat conversation in sync with your on-screen interface.
 

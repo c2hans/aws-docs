@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UnusedAccessFindingsStatistics
-<a name="API_UnusedAccessFindingsStatistics"></a>
 
 Provides aggregate statistics about the findings for the specified unused access analyzer.
 

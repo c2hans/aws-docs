@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 During the initial planning and integration stages, we recommend the following best practices:
 + Before integration, thoroughly understand the workload and processes that need to be migrated or automated. This helps in identifying the most critical jobs for migration and in planning their scheduling and automation using Control-M.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Ta
 ---
 
 # TableMember
-<a name="API_TableMember"></a>
 
 The properties of a table.
 

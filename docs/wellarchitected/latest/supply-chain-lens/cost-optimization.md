@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  The cost optimization pillar provides guidance on managing resources efficiently and aligning supply chain costs with business objectives. It focuses on optimizing resource utilization across materials, transportation, and warehousing while balancing speed-to-market requirements. By implementing strategic cost management practices, organizations can maximize the economic benefits of cloud-based deployments while maintaining competitive advantage in supply chain operations.
 

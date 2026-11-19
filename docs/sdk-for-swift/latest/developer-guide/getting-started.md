@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/get
 ---
 
 # Getting started with the AWS SDK for Swift
-<a name="getting-started"></a>
 
 Learn how to install, set up, and use the SDK to create an application to access an AWS resource programmatically.
 

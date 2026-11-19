@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceDefinition
-<a name="API_ResourceDefinition"></a>
 
 A resource included in a generated template. This data type is used with the `CreateGeneratedTemplate` and `UpdateGeneratedTemplate` API actions.
 

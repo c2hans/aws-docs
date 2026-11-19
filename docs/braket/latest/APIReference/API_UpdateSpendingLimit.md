@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_UpdateSpe
 ---
 
 # UpdateSpendingLimit
-<a name="API_UpdateSpendingLimit"></a>
 
 Updates an existing spending limit. You can modify the spending amount or time period. Changes take effect immediately.
 

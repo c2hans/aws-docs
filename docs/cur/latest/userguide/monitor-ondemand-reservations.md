@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/monitor-ondemand-re
 ---
 
 # Monitoring your On-Demand capacity reservations
-<a name="monitor-ondemand-reservations"></a>
 
 Capacity reservations enable you to reserve capacity for your Amazon EC2 instances for any duration in a specific Availability Zone. This enables you to create and manage capacity reservations separately from the billing discounts offered by Regional Reserved Instances (RI). To benefit from billing discounts, you can use Regional RIs in combination with capacity reservations.
 

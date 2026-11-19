@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # VpcTransitConfigurationResponse
-<a name="API_VpcTransitConfigurationResponse"></a>
 
 The VPC transit configuration details for a stream group location, including the Transit Gateway information needed to complete the VPC attachment setup.
 

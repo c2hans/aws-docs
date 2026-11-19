@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-
 ---
 
 # Asia/Oceania
-<a name="registrar-tld-list-asiaoceania"></a>
 
 You can use the following top-level domains (TLDs) for Asia and Oceania to register domains with Amazon Route 53.
 

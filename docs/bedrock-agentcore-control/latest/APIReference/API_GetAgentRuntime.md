@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetAgentRuntime
-<a name="API_GetAgentRuntime"></a>
 
 Gets an Amazon Bedrock AgentCore Runtime.
 

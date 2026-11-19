@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Input
 ---
 
 # InputSource
-<a name="API_InputSource"></a>
 
 Identifies an input source by its identifier and type.
 

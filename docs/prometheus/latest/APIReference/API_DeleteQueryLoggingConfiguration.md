@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Delet
 ---
 
 # DeleteQueryLoggingConfiguration
-<a name="API_DeleteQueryLoggingConfiguration"></a>
 
 Deletes the query logging configuration for the specified workspace.
 

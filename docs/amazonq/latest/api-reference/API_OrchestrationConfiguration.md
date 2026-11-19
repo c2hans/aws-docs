@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Orchest
 ---
 
 # OrchestrationConfiguration
-<a name="API_OrchestrationConfiguration"></a>
 
 Configuration information required to enable chat orchestration for your Amazon Q Business application.
 

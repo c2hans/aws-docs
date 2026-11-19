@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-functions-chapte
 ---
 
 # AWS Lambda Event Functions (formerly Lambda functions)
-<a name="lambda-functions-chapter"></a>
 
 **Tip**
 Join Serverless experts for free hands-on workshops to learn how to build Serverless applications with best practices. [Sign up for free serverless workshops](https://aws-experience.com/amer/smb/events/series/Get-Hands-On-With-Serverless?trk=188abe3e-9f94-4e84-aefb-398d944ad567%26sc_channel%3del) on the AWS Experience website.
@@ -33,7 +32,7 @@ To serve HTTP traffic directly from a standard web server, use Lambda Web Functi
 ## Event Functions and durable functions
 <a name="whatis-function-types"></a>
 
-[Lambda functions](#lambda-functions-chapter) run for up to 15 minutes per invocation by default and are ideal for event-driven tasks like processing API requests, handling file uploads, or responding to database changes. On Lambda Managed Instances, functions can run for up to 90 minutes for asynchronous and event source mapping (ESM) invocations. [Durable functions](durable-functions.md) extend this model for workloads that need to run longer and survive interruptions. They automatically checkpoint their progress so they resume reliably after failures, and they can run for up to one year when invoked asynchronously. Use durable functions when you need multi-step workflows, human-in-the-loop approvals, or coordination across services over extended periods.
+[Lambda functions](lambda-functions-chapter.md) run for up to 15 minutes per invocation by default and are ideal for event-driven tasks like processing API requests, handling file uploads, or responding to database changes. On Lambda Managed Instances, functions can run for up to 90 minutes for asynchronous and event source mapping (ESM) invocations. [Durable functions](durable-functions.md) extend this model for workloads that need to run longer and survive interruptions. They automatically checkpoint their progress so they resume reliably after failures, and they can run for up to one year when invoked asynchronously. Use durable functions when you need multi-step workflows, human-in-the-loop approvals, or coordination across services over extended periods.
 
 ## How Lambda works
 <a name="how-lambda-works"></a>

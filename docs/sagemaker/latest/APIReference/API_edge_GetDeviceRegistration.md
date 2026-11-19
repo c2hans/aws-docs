@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_G
 ---
 
 # GetDeviceRegistration
-<a name="API_edge_GetDeviceRegistration"></a>
 
 Use to check if a device is registered with SageMaker Edge Manager.
 

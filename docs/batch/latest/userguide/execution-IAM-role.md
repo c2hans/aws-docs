@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/execution-IAM-rol
 ---
 
 # AWS Batch IAM execution role
-<a name="execution-IAM-role"></a>
 
 The execution role grants the Amazon ECS container agent and AWS Fargate agent permission to make AWS API calls on your behalf.
 

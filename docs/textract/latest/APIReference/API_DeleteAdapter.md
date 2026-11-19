@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAdapter
-<a name="API_DeleteAdapter"></a>
 
 Deletes an Amazon Textract adapter. Takes an AdapterId and deletes the adapter specified by the ID.
 

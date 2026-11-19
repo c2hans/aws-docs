@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # OwnerFilter
-<a name="API_OwnerFilter"></a>
 
 The container for the owner information to filter by.
 

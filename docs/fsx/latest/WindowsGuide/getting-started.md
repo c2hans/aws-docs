@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.
 ---
 
 # Getting started with Amazon FSx for Windows File Server
-<a name="getting-started"></a>
 
 Following, you can learn how to get started using FSx for Windows File Server. This getting started exercise includes the following steps.
 

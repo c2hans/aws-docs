@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/conf
 ---
 
 # Configuring service clients for the AWS SDK for Java 2.x externally
-<a name="configuring-service-clients-ext"></a>
 
 Many configuration settings can be handled outside of your code. When you handle configuration externally, it can apply to all your applications in the same Java process. Most configuration settings can be set as either environment variables, JVM system properties, or in a separate shared AWS `config` file. The shared `config` file can maintain separate sets of settings, called profiles, to provide different configurations for different environments or tests.
 

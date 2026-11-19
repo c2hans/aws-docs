@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ---
 
 # In-Scope AWS Services
-<a name="dop-02-in-scope-services"></a>
 
 The following list contains AWS services and features that are in scope for the exam. This list is non-exhaustive and is subject to change. AWS offerings appear in categories that align with the offerings' primary functions:
 

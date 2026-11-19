@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.NT.1] Evaluate code quality through static testing
-<a name="qa.nt.1-evaluate-code-quality-through-static-testing"></a>
 
  **Category:** FOUNDATIONAL
 

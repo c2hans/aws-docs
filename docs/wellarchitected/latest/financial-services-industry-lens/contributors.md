@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this version of the Well-Architected FSI Lens document include:
 +  Sanjay Ohri, Principal Program Manager, Worldwide Financial Services, Amazon Web Services

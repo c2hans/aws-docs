@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 2. Providing an industrial isolation zone between environments
-<a name="industrial-isolation"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Trunk branching strategy
-<a name="trunk-branching-strategy"></a>
 
 Trunk-based development is a software development practice in which all developers work on a single branch, typically called the `trunk` or `main` branch. The idea behind this approach is to keep the code base in a continuously releasable state by integrating code changes frequently and relying on automated testing and continuous integration.
 

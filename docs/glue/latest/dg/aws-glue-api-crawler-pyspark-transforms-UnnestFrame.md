@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # UnnestFrame class
-<a name="aws-glue-api-crawler-pyspark-transforms-UnnestFrame"></a>
 
 Unnests a `DynamicFrame`, flattens nested objects to top-level elements, and generates join keys for array objects.
 

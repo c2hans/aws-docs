@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ComponentConfiguration
-<a name="API_ComponentConfiguration"></a>
 
 The configuration for a component within a configuration bundle. The component type is inferred from the component identifier ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteMeteredProduct
-<a name="API_DeleteMeteredProduct"></a>
 
 Deletes a metered product.
 

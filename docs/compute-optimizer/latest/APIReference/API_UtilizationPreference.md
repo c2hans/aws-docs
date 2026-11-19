@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # UtilizationPreference
-<a name="API_UtilizationPreference"></a>
 
  The preference to control the resource’s CPU utilization threshold, CPU utilization headroom, and memory utilization headroom.
 

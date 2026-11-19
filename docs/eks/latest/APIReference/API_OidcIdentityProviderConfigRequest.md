@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_OidcIdentity
 ---
 
 # OidcIdentityProviderConfigRequest
-<a name="API_OidcIdentityProviderConfigRequest"></a>
 
 An object representing an OpenID Connect (OIDC) configuration. Before associating an OIDC identity provider to your cluster, review the considerations in [Authenticating users for your cluster from an OIDC identity provider](https://docs.aws.amazon.com/eks/latest/userguide/authenticate-oidc-identity-provider.html) in the *Amazon EKS User Guide*.
 

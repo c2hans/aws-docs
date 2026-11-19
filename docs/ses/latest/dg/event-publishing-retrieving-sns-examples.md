@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/event-publishing-retrievin
 ---
 
 # Examples of event data that Amazon SES publishes to Amazon SNS
-<a name="event-publishing-retrieving-sns-examples"></a>
 
 This section provides examples of the types of email sending event records that Amazon SES publishes to Amazon SNS.
 

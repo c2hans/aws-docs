@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/Tr
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Amazon Transcribe examples
-<a name="Transcribe-examples"></a>
 
 Amazon Transcribe makes it easy for developers to add speech to text capabilities to their applications.
 

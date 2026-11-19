@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/boutique.h
 ---
 
 # .boutique
-<a name="boutique"></a>
 
 Used for information about boutiques and small specialty shops.
 

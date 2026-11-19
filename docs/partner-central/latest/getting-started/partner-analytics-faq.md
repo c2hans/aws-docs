@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Partner Analytics and Seller Insights Frequently Asked Questions (FAQs)
-<a name="partner-analytics-faq"></a>
 
 Review the below FAQs for answers to common questions.
 

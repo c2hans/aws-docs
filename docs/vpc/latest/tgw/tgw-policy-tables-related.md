@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-related
 ---
 
 # Related resources for transit gateway policy tables
-<a name="tgw-policy-tables-related"></a>
 
 For more information, see the following resources:
 + [Transit gateway route tables in AWS Transit Gateway](tgw-route-tables.md)

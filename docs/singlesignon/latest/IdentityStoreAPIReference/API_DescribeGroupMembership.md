@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DescribeGroupMembership
-<a name="API_DescribeGroupMembership"></a>
 
 Retrieves membership metadata and attributes from `MembershipId` in an identity store.
 

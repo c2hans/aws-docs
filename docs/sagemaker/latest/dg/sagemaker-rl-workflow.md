@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-rl-workflo
 ---
 
 # Sample RL Workflow Using Amazon SageMaker AI RL
-<a name="sagemaker-rl-workflow"></a>
 
 The following example describes the steps for developing RL models using Amazon SageMaker AI RL.
 

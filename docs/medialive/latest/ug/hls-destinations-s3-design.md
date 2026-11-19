@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-destinations-s3-
 ---
 
 # Design the path for the output destination
-<a name="hls-destinations-s3-design"></a>
 
 Perform this step if you haven't yet designed the full destination path or paths. If you've already designed the paths, go to [Complete the fields on the Console](hls-destinations-s3-specify.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateQueue
-<a name="API_UpdateQueue"></a>
 
 Updates a queue.
 

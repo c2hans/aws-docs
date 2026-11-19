@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Pr
 ---
 
 # ProviderInput
-<a name="API_ProviderInput"></a>
 
 The provider-specific input for creating an integration. This is a union type that contains provider-specific configuration.
 

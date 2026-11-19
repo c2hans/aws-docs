@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # MetadataConfigurationForReranking
-<a name="API_agent-runtime_MetadataConfigurationForReranking"></a>
 
 Contains configurations for the metadata to use in reranking.
 

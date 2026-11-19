@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-edit.html
 ---
 
 # Configuring a Link device
-<a name="device-edit"></a>
 
 The Link device has properties that control how it behaves when it is streaming. You should set these properties every time you get ready for a new video event.
 

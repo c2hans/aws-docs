@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kms-examp
 ---
 
 # Encrypting and decrypting AWS KMS data keys using the AWS SDK for PHP Version 3
-<a name="kms-example-encrypt"></a>
 
 Data keys are encryption keys that you can use to encrypt data, including large amounts of data and other data encryption keys.
 

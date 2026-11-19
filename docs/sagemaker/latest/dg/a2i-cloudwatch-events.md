@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-cloudwatch-event
 ---
 
 # Use Amazon CloudWatch Events in Amazon Augmented AI
-<a name="a2i-cloudwatch-events"></a>
 
 **Note**
 Amazon SageMaker A2I is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for A2I, but we do not plan to introduce new features.

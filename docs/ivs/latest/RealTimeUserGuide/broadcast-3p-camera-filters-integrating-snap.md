@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-3
 ---
 
 # Using Snap with the IVS Broadcast SDK
-<a name="broadcast-3p-camera-filters-integrating-snap"></a>
 
 This document explains how to use Snap’s Camera Kit SDK with the IVS broadcast SDK.
 

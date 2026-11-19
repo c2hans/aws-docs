@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # SourceSecurityGroup
-<a name="API_SourceSecurityGroup"></a>
 
 Information about a source security group.
 

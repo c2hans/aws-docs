@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_V
 ---
 
 # VectorIndexUpdate
-<a name="API_VectorIndexUpdate"></a>
 
 A vector index to be added to or removed from a table.
 

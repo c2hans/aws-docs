@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeO
 ---
 
 # DescribeOrganizationConformancePacks
-<a name="API_DescribeOrganizationConformancePacks"></a>
 
 Returns a list of organization conformance packs.
 

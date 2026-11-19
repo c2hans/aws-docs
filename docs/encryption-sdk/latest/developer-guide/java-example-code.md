@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ja
 ---
 
 # AWS Encryption SDK for Java examples
-<a name="java-example-code"></a>
 
 The following examples show you how to use the AWS Encryption SDK for Java to encrypt and decrypt data. These examples show how to use version 3.*x* and later of the AWS Encryption SDK for Java. Version 3.*x* of the AWS Encryption SDK for Java requires the AWS SDK for Java 2.x. Version 3.*x* of the AWS Encryption SDK for Java replaces [master key providers](concepts.md#master-key-provider) with [keyrings](concepts.md#keyring). For examples that use earlier versions, find your release in the [Releases](https://github.com/aws/aws-encryption-sdk-java/releases) list of the [aws-encryption-sdk-java](https://github.com/aws/aws-encryption-sdk-java/) repository on GitHub.
 

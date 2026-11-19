@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Out
 ---
 
 # OutputHeaderConfiguration
-<a name="API_OutputHeaderConfiguration"></a>
 
 The settings for what common media server data (CMSD) headers AWS Elemental MediaPackage includes in responses to the CDN.
 

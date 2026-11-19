@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeploymentDetails
-<a name="API_DeploymentDetails"></a>
 
 Information about the most recent deployment for the container fleet.
 

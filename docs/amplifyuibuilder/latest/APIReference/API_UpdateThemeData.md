@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UpdateThemeData
-<a name="API_UpdateThemeData"></a>
 
 Saves the data binding information for a theme.
 

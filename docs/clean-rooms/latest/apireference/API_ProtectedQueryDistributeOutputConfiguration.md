@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryDistributeOutputConfiguration
-<a name="API_ProtectedQueryDistributeOutputConfiguration"></a>
 
  Specifies the configuration for distributing protected query results to multiple receivers, including S3 and collaboration members.
 

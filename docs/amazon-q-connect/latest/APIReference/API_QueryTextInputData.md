@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # QueryTextInputData
-<a name="API_amazon-q-connect_QueryTextInputData"></a>
 
 Information about the text to search for.
 

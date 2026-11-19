@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Understanding AI-derived facts in incident reports
-<a name="Investigations-IncidentReports-ai-facts"></a>
 
 AI-derived facts form the foundation of CloudWatch investigations incident reports, representing information that the AI system considers objectively true or highly probable based on comprehensive analysis of your AWS environment. These facts emerge through a sophisticated process that combines machine learning pattern recognition with systematic verification methods, creating a robust framework for incident analysis that maintains the operational rigor required for production environments.
 

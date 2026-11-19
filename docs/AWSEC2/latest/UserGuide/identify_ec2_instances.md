@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/identify_ec2_ins
 ---
 
 # Detect whether a host is an EC2 instance
-<a name="identify_ec2_instances"></a>
 
 You might need to know whether your application or website is running on an EC2 instance, especially if you have a mixed computing environment. You can use one of the following options to determine whether the host for your application or website is an EC2 instance.
 

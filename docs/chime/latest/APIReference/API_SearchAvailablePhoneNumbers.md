@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/APIReference/API_SearchAvai
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # SearchAvailablePhoneNumbers
-<a name="API_SearchAvailablePhoneNumbers"></a>
 
 Searches for phone numbers that can be ordered. For US numbers, provide at least one of the following search filters: `AreaCode`, `City`, `State`, or `TollFreePrefix`. If you provide `City`, you must also provide `State`. Numbers outside the US only support the `PhoneNumberType` filter, which you must use.
 

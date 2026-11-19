@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/tr
 ---
 
 # Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files
-<a name="transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files"></a>
 
 *Bruno Sahinoglu, Abhijit Kshirsagar, and Ivan Schuster, Amazon Web Services*
 

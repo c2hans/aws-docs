@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Phase 4: Transform - Incubate and scale new ways of working
-<a name="phase-4"></a>
 
 This phase focuses on replicating success patterns to scale, building lasting capabilities, reprioritizing and reinforcing performance KPIs** **and expectations, and operating at scale based on outputs from the transformation roadmap. Leaders take ownership of the methods and frameworks that best replicate accelerated outcomes for their use cases and lines of business to make sure that cultural changes stick. This phase is illustrated in the following diagram.
 

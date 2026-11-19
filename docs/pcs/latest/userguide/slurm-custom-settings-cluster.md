@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-custom-settin
 ---
 
 # Custom Slurm settings for AWS PCS clusters
-<a name="slurm-custom-settings-cluster"></a>
 
 The following custom Slurm settings are supported at the cluster level:
 + [AccountingStorageEnforce](https://slurm.schedmd.com/slurm.conf.html#OPT_AccountingStorageEnforce)

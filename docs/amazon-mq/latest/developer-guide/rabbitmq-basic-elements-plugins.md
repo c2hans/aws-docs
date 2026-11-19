@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Plugins
-<a name="rabbitmq-basic-elements-plugins"></a>
 
 Amazon MQ for RabbitMQ also supports the following plugins.
 + [RabbitMQ management plugin](#rabbitmq-management-plugin)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_Netwo
 ---
 
 # NetworkInterface
-<a name="API_s3outposts_NetworkInterface"></a>
 
 The container for the network interface.
 

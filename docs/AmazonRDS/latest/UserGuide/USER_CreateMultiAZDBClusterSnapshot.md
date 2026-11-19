@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateMu
 ---
 
 # Creating a Multi-AZ DB cluster snapshot for Amazon RDS
-<a name="USER_CreateMultiAZDBClusterSnapshot"></a>
 
 When you create a Multi-AZ DB cluster snapshot, make sure to identify which Multi-AZ DB cluster you are going to back up, and then give your DB cluster snapshot a name so you can restore from it later. You can also share a Multi-AZ DB cluster snapshot. For instructions, see [Sharing a DB snapshot for Amazon RDS](USER_ShareSnapshot.md).
 

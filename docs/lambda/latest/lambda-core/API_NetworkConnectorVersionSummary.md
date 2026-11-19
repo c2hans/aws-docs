@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_NetworkCon
 ---
 
 # NetworkConnectorVersionSummary
-<a name="API_NetworkConnectorVersionSummary"></a>
 
 Summary information about a single version of a network connector returned by `ListNetworkConnectorVersions`. Each configuration update creates a new immutable version; this shape describes one such version. To retrieve the full configuration of a version, call `GetNetworkConnector` with a version-qualified identifier.
 

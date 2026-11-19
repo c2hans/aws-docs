@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/rever
 ---
 
 # Revert stack imports into CloudFormation StackSets
-<a name="revert-stackset-import"></a>
 
 If you have unwanted changes in your stack instance, you can revert the stack instance import.
 

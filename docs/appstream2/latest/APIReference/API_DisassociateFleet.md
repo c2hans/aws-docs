@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Disas
 ---
 
 # DisassociateFleet
-<a name="API_DisassociateFleet"></a>
 
 Disassociates the specified fleet from the specified stack.
 

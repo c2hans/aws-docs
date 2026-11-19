@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Live View
-<a name="browser-dcv-integration"></a>
 
 Amazon Bedrock AgentCore’s Live View is powered by [AWS DCV](https://docs.aws.amazon.com/dcv/). Each browser session launches a dedicated DCV server that streams the browser interface and enables real-time user interaction.
 

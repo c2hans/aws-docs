@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Building .NET Lambda Event Functions with Native AOT compilation in AWS SAM
-<a name="build-dotnet7"></a>
 
 Build and package your .NET 8 AWS Lambda Event Functions with the AWS Serverless Application Model (AWS SAM), utilizing Native Ahead-of-Time (AOT) compilation to improve AWS Lambda cold-start times.
 

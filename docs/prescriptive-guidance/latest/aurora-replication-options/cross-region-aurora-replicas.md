@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aurora-repl
 ---
 
 # Cross-Region Aurora Replicas
-<a name="cross-region-aurora-replicas"></a>
 
 With Amazon Aurora MySQL-Compatible Edition clusters, you can use cross-Region Aurora Replicas to create a replica of your primary DB cluster in another AWS Region by using the database engine native replication mechanism. Aurora MySQL-Compatible Edition uses binary log (binlog) replication. This kind of replication is based on the change data capture (CDC) process. CDC identifies and tracks changes to data in a database. Changes to the database on the primary are recorded in a change log file, which is transferred to the machine that runs the Aurora Replica in the second Region. A process on the secondary machine reads these change logs and generates SQL statements that are then applied to the secondary database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects-t
 ---
 
 # Create Custom Project Templates
-<a name="sagemaker-projects-templates-custom"></a>
 
 **Important**
 As of October 28, 2024, the AWS CodeCommit templates have been removed. For new projects, select from the available project templates that use third-party Git repositories. For more information, see [MLOps Project Templates](sagemaker-projects-templates.md).

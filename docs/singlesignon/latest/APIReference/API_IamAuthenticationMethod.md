@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Iam
 ---
 
 # IamAuthenticationMethod
-<a name="API_IamAuthenticationMethod"></a>
 
 A structure that describes details for authentication that uses IAM.
 

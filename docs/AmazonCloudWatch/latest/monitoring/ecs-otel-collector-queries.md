@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 ---
 
 # Example PromQL queries
-<a name="ecs-otel-collector-queries"></a>
 
 Metric names contain periods, so put them in quotation marks inside braces, as in the following examples.
 

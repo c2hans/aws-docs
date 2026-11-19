@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListRoleAlia
 ---
 
 # ListRoleAliases
-<a name="API_ListRoleAliases"></a>
 
 Lists the role aliases registered in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListIndexes
-<a name="API_ListIndexes"></a>
 
 Retrieves a list of all of the indexes in AWS Regions that are currently collecting resource information for AWS Resource Explorer.
 

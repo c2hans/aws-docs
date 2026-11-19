@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.R
 ---
 
 # Reserved nodes
-<a name="CacheNodes.Reserved"></a>
 
 **Topics**
 + [Managing costs with reserved nodes](#reserved-nodes)

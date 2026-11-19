@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationPrecomputedInferenceSource
-<a name="API_EvaluationPrecomputedInferenceSource"></a>
 
 A summary of a model used for a model evaluation job where you provide your own inference response data.
 

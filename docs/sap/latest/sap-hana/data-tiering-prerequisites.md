@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/data-tiering-prerequ
 ---
 
 # Prerequisites
-<a name="data-tiering-prerequisites"></a>
 
 ## Specialized Knowledge
 <a name="data-tiering-specialized-knowledge"></a>

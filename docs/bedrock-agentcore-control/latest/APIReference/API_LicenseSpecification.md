@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LicenseSpecification
-<a name="API_LicenseSpecification"></a>
 
 A license configuration to associate with the instances.
 

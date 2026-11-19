@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
 ## Geospatial and Mapping
 <a name="geospatial-and-mapping"></a>

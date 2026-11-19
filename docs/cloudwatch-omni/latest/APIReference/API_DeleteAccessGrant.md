@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteAccessGrant
-<a name="API_DeleteAccessGrant"></a>
 
 Removes an existing AccessGrant, revoking the access it granted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/service_co
 ---
 
 # Code examples for HealthImaging using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use HealthImaging with an AWS software development kit (SDK).
 

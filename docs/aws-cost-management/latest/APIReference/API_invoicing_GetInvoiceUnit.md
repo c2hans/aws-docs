@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetInvoiceUnit
-<a name="API_invoicing_GetInvoiceUnit"></a>
 
 This retrieves the invoice unit definition.
 

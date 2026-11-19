@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/state-m
 ---
 
 # Understanding how State Manager works
-<a name="state-manager-about"></a>
 
 State Manager is a secure and scalable service that automates the process of keeping managed nodes in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) infrastructure in a state that you define.
 

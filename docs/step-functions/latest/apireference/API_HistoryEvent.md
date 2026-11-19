@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_H
 ---
 
 # HistoryEvent
-<a name="API_HistoryEvent"></a>
 
 Contains details about the events of an execution.
 

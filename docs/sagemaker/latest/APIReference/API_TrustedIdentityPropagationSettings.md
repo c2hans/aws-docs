@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Truste
 ---
 
 # TrustedIdentityPropagationSettings
-<a name="API_TrustedIdentityPropagationSettings"></a>
 
 The Trusted Identity Propagation (TIP) settings for the SageMaker domain. These settings determine how user identities from IAM Identity Center are propagated through the domain to TIP enabled AWS services.
 

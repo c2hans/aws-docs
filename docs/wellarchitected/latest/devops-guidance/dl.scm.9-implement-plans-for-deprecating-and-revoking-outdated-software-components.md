@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.9] Implement plans for deprecating and revoking outdated software components
-<a name="dl.scm.9-implement-plans-for-deprecating-and-revoking-outdated-software-components"></a>
 
  **Category:** RECOMMENDED
 

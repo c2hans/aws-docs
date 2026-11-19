@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldValueInput
-<a name="API_connect-cases_FieldValueInput"></a>
 
 A field and the value to set for it.
 

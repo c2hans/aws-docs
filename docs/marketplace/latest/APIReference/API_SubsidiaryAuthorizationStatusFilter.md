@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationStatusFilter
-<a name="API_SubsidiaryAuthorizationStatusFilter"></a>
 
 The filter for subsidiary authorization statuses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Encryption
 ---
 
 # EncryptionSetting
-<a name="API_EncryptionSetting"></a>
 
 The object representing the passwords that were used to encrypt the data related to the bot recommendation, as well as the AWS KMS key ARN used to encrypt the associated metadata.
 

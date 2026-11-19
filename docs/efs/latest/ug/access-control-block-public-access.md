@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/access-control-block-publi
 ---
 
 # Blocking public access to EFS file systems
-<a name="access-control-block-public-access"></a>
 
 The Amazon EFS block public access feature provides settings to help you manage public access to EFS file systems. By default, new EFS file systems don't allow public access. However, you can modify file system policies to allow public access.
 

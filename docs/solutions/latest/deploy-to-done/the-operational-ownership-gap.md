@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/the-oper
 ---
 
 # The Operational Ownership Gap
-<a name="the-operational-ownership-gap"></a>
 
 Now that you have seen the deployment experience, consider why it matters at organizational scale.
 

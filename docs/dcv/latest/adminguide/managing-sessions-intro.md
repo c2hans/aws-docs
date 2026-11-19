@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/managing-sessions-
 ---
 
 # Understanding Amazon DCV sessions
-<a name="managing-sessions-intro"></a>
 
 Amazon DCV offers two types of sessions—console sessions and virtual sessions. The following table summarizes the differences betweeen the two types of sessions.
 

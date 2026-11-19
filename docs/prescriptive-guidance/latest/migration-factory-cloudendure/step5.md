@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Step 5. Cut over
-<a name="step5"></a>
 
 The last step in a typical rehost migration is to schedule a cutover window and prepare the resources to support the cutover.
 

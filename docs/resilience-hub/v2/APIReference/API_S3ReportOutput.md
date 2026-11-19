@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_S3Rep
 ---
 
 # S3ReportOutput
-<a name="API_S3ReportOutput"></a>
 
 S3 location where report was written.
 

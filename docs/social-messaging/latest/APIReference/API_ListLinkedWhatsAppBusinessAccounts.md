@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # ListLinkedWhatsAppBusinessAccounts
-<a name="API_ListLinkedWhatsAppBusinessAccounts"></a>
 
 List all WhatsApp Business Accounts linked to your AWS account.
 

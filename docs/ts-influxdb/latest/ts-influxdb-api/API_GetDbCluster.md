@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_G
 ---
 
 # GetDbCluster
-<a name="API_GetDbCluster"></a>
 
 Retrieves information about a Timestream for InfluxDB cluster.
 

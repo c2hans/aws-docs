@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Dataso
 ---
 
 # DatasourcePackageUsageInfo
-<a name="API_DatasourcePackageUsageInfo"></a>
 
 Information on the usage of a data source package in the behavior graph.
 

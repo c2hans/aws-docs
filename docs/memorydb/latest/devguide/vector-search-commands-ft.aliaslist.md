@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.\_ALIASLIST
-<a name="vector-search-commands-ft.aliaslist"></a>
 
 List the index aliases.
 

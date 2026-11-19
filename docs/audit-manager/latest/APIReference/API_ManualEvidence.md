@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ma
 ---
 
 # ManualEvidence
-<a name="API_ManualEvidence"></a>
 
  Evidence that's manually added to a control in AWS Audit Manager. `manualEvidence` can be one of the following: `evidenceFileName`, `s3ResourcePath`, or `textResponse`.
 

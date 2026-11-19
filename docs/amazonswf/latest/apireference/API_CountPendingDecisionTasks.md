@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CountP
 ---
 
 # CountPendingDecisionTasks
-<a name="API_CountPendingDecisionTasks"></a>
 
 Returns the estimated number of decision tasks in the specified task list. The count returned is an approximation and isn't guaranteed to be exact. If you specify a task list that no decision task was ever scheduled in then `0` is returned.
 

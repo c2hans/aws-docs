@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/definiti
 ---
 
 # Definitions
-<a name="definitions"></a>
 
 | Term | Description | Examples (if applicable) |
 | --- | --- | --- |

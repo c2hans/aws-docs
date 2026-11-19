@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-components
 ---
 
 # Create an endpoint with GPU partitions
-<a name="inference-components-accelerator-partitioning-create"></a>
 
 To create a partitioned endpoint, you declare a partition layout on the production variant of an endpoint configuration, and then create an endpoint from that configuration. SageMaker AI partitions the accelerators while it launches the instances for the endpoint.
 

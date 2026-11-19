@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CaCer
 ---
 
 # CaCertificatesBundleS3Location
-<a name="API_CaCertificatesBundleS3Location"></a>
 
 The CA certificates bundle location in Amazon S3.
 

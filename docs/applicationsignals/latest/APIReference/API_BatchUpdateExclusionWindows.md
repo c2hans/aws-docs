@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchUpdateExclusionWindows
-<a name="API_BatchUpdateExclusionWindows"></a>
 
 Add or remove time window exclusions for one or more Service Level Objectives (SLOs).
 

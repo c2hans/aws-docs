@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/choosing-repo
 ---
 
 # Choosing your report template
-<a name="choosing-report-template"></a>
 
 A report template defines the information that your report plan includes in your report. When you automate your reports using a *report plan*, AWS Backup Audit Manager provides you reports for the previous 24 hours. AWS Backup Audit Manager creates these reports between the hours of 1 and 5 AM UTC. It offers the following report templates.
 

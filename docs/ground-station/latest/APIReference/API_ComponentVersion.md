@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ComponentVersion
-<a name="API_ComponentVersion"></a>
 
 Version information for agent components.
 

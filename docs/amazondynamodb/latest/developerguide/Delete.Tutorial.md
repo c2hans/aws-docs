@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Del
 ---
 
 # Deleting a DynamoDB table backup
-<a name="Delete.Tutorial"></a>
 
 This section describes how to use the AWS Management Console or the AWS Command Line Interface (AWS CLI) to delete an Amazon DynamoDB table backup.
 

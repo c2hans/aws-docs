@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-FileSize.
 ---
 
 # FileSize
-<a name="dqdl-rule-types-FileSize"></a>
 
  The FileSize ruletype allows you to ensure that files meet a certain file size criteria. This is useful for following use cases:
 

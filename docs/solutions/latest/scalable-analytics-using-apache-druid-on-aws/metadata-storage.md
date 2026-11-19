@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Metadata storage
-<a name="metadata-storage"></a>
 
 By default, the guidance deploys an Amazon Aurora PostgreSQL cluster in an isolated subnet to serve as metadata storage for the Druid cluster, ensuring TLS connectivity to secure communication with the DB cluster. It also generates a secret to store the credentials of the DB cluster’s master user. For example, for credentials for the master user of Amazon Aurora cluster.
 

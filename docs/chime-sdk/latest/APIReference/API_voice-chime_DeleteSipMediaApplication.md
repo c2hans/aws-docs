@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteSipMediaApplication
-<a name="API_voice-chime_DeleteSipMediaApplication"></a>
 
 Deletes a SIP media application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListK
 ---
 
 # ListKeyValueStores
-<a name="API_ListKeyValueStores"></a>
 
 Specifies the key value stores to list.
 

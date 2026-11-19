@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 ---
 
 # Creating pipelines
-<a name="Creating-pipelines"></a>
 
 CloudWatch pipelines supports creating pipelines for both logs and metrics data. The following sections describe how to create each type of pipeline.
 

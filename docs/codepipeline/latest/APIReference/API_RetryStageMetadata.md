@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Ret
 ---
 
 # RetryStageMetadata
-<a name="API_RetryStageMetadata"></a>
 
 The details of a specific automatic retry on stage failure, including the attempt number and trigger.
 

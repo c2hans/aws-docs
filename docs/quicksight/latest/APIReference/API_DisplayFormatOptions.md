@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Displ
 ---
 
 # DisplayFormatOptions
-<a name="API_DisplayFormatOptions"></a>
 
 A structure that represents additional options for display formatting.
 

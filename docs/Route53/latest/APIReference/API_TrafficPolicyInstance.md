@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_TrafficP
 ---
 
 # TrafficPolicyInstance
-<a name="API_TrafficPolicyInstance"></a>
 
 A complex type that contains settings for the new traffic policy instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/spot-instances.html
 ---
 
 # Spot instances
-<a name="spot-instances"></a>
 
 ## Managed Nodegroups
 <a name="_managed_nodegroups"></a>

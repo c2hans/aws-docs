@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_GetTargetRes
 ---
 
 # GetTargetResourceType
-<a name="API_GetTargetResourceType"></a>
 
 Gets information about the specified resource type.
 

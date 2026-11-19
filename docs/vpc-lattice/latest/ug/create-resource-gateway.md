@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/create-resource-ga
 ---
 
 # Create a resource gateway in VPC Lattice
-<a name="create-resource-gateway"></a>
 
 Use the console to create a resource gateway.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::ConfigurationBundle ComponentConfiguration
-<a name="aws-properties-bedrockagentcore-configurationbundle-componentconfiguration"></a>
 
 The configuration for a component within a configuration bundle. The component type is inferred from the component identifier ARN.
 

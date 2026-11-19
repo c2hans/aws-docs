@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # Type system (response mapping)
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-typed-values-responses"></a>
 
 When receiving a response from DynamoDB, AWS AppSync automatically converts it into GraphQL and JSON primitive types. Each attribute in DynamoDB is decoded and returned in the response mapping context.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/async-notification-pa
 ---
 
 # Amazon Textract Results Notification
-<a name="async-notification-payload"></a>
 
 Amazon Textract sends the status of an analysis request to an Amazon Simple Notification Service (Amazon SNS) topic. To get the notification from an Amazon SNS topic, use an Amazon SQS queue or an AWS Lambda function. For more information, see [Calling Amazon Textract Asynchronous Operations](api-async.md). For an example, see [Detecting or Analyzing Text in a Multipage Document](async-analyzing-with-sqs.md).
 

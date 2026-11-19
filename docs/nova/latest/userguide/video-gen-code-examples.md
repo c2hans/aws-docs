@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/video-gen-code-exa
 ---
 
 # Single-shot video generation examples
-<a name="video-gen-code-examples"></a>
 
 The following examples provide sample code for various single-shot (6 seconds) video generation tasks.
 

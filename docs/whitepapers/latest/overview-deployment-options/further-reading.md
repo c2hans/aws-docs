@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Further Reading
-<a name="further-reading"></a>
 
  For additional information, see:
 +  [AWS Whitepapers page](https://aws.amazon.com/whitepapers/)

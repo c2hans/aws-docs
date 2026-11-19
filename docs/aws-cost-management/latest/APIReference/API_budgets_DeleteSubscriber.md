@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteSubscriber
-<a name="API_budgets_DeleteSubscriber"></a>
 
 Deletes a subscriber.
 

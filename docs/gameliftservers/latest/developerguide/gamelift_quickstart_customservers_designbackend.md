@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Build a backend service for Amazon GameLift Servers
-<a name="gamelift_quickstart_customservers_designbackend"></a>
 
 We recommend that you implement a game client service that authenticates your players and communicates with the Amazon GameLift Servers API. By implementing a custom game client service, you can:
 + Customize authentication for your players.

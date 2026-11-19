@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingStartingNodesFlowValidationDetails
-<a name="API_agent_MissingStartingNodesFlowValidationDetails"></a>
 
 Details about missing starting nodes (such as FlowInputNode) in the flow.
 

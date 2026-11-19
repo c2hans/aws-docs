@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Considerations for certification strategy
-<a name="certification-strategy"></a>
 
 Matter enables interoperability between different smart home devices and platforms. However, certifying with Matter may not be the right choice for every device manufacturer. The costs of implementation and certification may not make practical or financial sense, depending on the device type and use cases. This section explores some of the key reasons why a manufacturer might choose not to certify certain devices with Matter.
 

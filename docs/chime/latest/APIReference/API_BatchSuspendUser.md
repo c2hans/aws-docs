@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchSuspe
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # BatchSuspendUser
-<a name="API_BatchSuspendUser"></a>
 
 Suspends up to 50 users from a `Team` or `EnterpriseLWA` Amazon Chime account. For more information about different account types, see [Managing Your Amazon Chime Accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
 
@@ -75,7 +74,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [UserErrors](#API_BatchSuspendUser_ResponseSyntax) **   <a name="chime-BatchSuspendUser-response-UserErrors"></a>
-If the [BatchSuspendUser](#API_BatchSuspendUser) action fails for one or more of the user IDs in the request, a list of the user IDs is returned, along with error codes and error messages.
+If the [BatchSuspendUser](API_BatchSuspendUser.md) action fails for one or more of the user IDs in the request, a list of the user IDs is returned, along with error codes and error messages.
 Type: Array of [UserError](API_UserError.md) objects
 
 ## Errors

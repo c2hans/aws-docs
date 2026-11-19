@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentPostContactSummary
-<a name="API_RealTimeContactAnalysisSegmentPostContactSummary"></a>
 
 Information about the post-contact summary for a real-time contact segment.
 

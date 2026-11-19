@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # FindingSummary
-<a name="API_FindingSummary"></a>
 
 Contains information about a finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeDeclaration
-<a name="API_ActionTypeDeclaration"></a>
 
 The parameters for the action type definition that are provided when the action type is created or updated.
 

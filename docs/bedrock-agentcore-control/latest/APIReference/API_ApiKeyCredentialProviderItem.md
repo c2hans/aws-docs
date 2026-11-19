@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ApiKeyCredentialProviderItem
-<a name="API_ApiKeyCredentialProviderItem"></a>
 
 Contains information about an API key credential provider.
 

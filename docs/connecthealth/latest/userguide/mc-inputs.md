@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/mc-inputs
 ---
 
 # Medical coding inputs
-<a name="mc-inputs"></a>
 
 A medical coding job requires the clinical documentation and an output location in the request body, and your domain ID in the request path. Two optional context objects describe the encounter and the patient. An optional `datasetId` names a site-specific dataset to code against.
 

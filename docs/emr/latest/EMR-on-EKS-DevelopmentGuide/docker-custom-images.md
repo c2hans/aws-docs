@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/d
 ---
 
 # Customizing Docker images for Amazon EMR on EKS
-<a name="docker-custom-images"></a>
 
 You can use customized Docker images with Amazon EMR on EKS. Customizing the Amazon EMR on EKS runtime image provides the following benefits:
 + Package application dependencies and runtime environment into a single immutable container that promotes portability and simplifies dependency management for each workload.

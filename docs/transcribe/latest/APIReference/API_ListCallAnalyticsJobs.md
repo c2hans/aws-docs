@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListC
 ---
 
 # ListCallAnalyticsJobs
-<a name="API_ListCallAnalyticsJobs"></a>
 
 Provides a list of Call Analytics jobs that match the specified criteria. If no criteria are specified, all Call Analytics jobs are returned.
 

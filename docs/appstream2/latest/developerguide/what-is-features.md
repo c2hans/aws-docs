@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is
 ---
 
 # Features of Amazon WorkSpaces Applications
-<a name="what-is-features"></a>
 
 Using Amazon WorkSpaces Applications provides the following advantages:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Athena
 ---
 
 # AthenaStepMetadata
-<a name="API_AthenaStepMetadata"></a>
 
 The query execution identifier and the result output location for the Amazon Athena query that an Athena step runs.
 

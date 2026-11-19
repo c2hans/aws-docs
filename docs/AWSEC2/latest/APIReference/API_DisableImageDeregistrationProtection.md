@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIm
 ---
 
 # DisableImageDeregistrationProtection
-<a name="API_DisableImageDeregistrationProtection"></a>
 
 Disables deregistration protection for an AMI. When deregistration protection is disabled, the AMI can be deregistered.
 

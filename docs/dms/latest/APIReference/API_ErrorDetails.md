@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ErrorDetails
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Provides error information about a project.
 

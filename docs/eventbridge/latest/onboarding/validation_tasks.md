@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/onboarding/validation
 ---
 
 # Validation tasks
-<a name="validation_tasks"></a>
 
 The validation tasks in this topic are to ensure that you have considered different scenarios that customer may encounter when they consume events. For example, customers may request that the event sources are created in different AWS Regions.
 

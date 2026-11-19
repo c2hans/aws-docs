@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 ---
 
 # Wait
-<a name="journey-flow-block-wait"></a>
 
 ## Description
 <a name="journey-flow-block-wait-description"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallStatefulRuleGroupOverride
-<a name="API_NetworkFirewallStatefulRuleGroupOverride"></a>
 
 The setting that allows the policy owner to change the behavior of the rule group within a policy.
 

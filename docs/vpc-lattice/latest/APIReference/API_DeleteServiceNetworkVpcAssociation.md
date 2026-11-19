@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteServiceNetworkVpcAssociation
-<a name="API_DeleteServiceNetworkVpcAssociation"></a>
 
 Disassociates the VPC from the service network. You can't disassociate the VPC if there is a create or update association in progress.
 

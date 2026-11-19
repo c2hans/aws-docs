@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Managing assertions (console)
-<a name="next-gen-managing-assertions-console"></a>
 
 **To manage assertions (console)**
 

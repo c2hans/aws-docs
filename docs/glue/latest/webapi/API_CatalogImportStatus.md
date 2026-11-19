@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogImportStat
 ---
 
 # CatalogImportStatus
-<a name="API_CatalogImportStatus"></a>
 
 A structure containing migration status information.
 

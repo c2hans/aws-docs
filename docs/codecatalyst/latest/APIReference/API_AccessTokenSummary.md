@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Acc
 ---
 
 # AccessTokenSummary
-<a name="API_AccessTokenSummary"></a>
 
 Information about a specified personal access token (PAT).
 

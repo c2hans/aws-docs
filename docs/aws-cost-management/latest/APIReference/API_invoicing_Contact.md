@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Contact
-<a name="API_invoicing_Contact"></a>
 
 Represents contact information for a person or role associated with the procurement portal preference.
 

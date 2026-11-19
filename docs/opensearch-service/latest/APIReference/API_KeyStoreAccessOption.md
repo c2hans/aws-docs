@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # KeyStoreAccessOption
-<a name="API_KeyStoreAccessOption"></a>
 
 The configuration parameters to enable access to the key store required by the package.
 

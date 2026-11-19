@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/dashboa
 ---
 
 # Getting started with dashboards
-<a name="dashboards-getting-started"></a>
 
 AWS Billing and Cost Management Dashboards are collections of widgets that visualize your cost and usage data. Each dashboard can contain up to 20 widgets, which can show costs, usage, and savings plans and reserved instances coverage and utilization, budgets data, cost efficiency metrics, and detected cost anomalies. One of the powerful features of dashboards is that they can be shared within or outside your organization, allowing for collaborative cost management.
 

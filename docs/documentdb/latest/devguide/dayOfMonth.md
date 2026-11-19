@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dayOfMonth.ht
 ---
 
 # $dayOfMonth
-<a name="dayOfMonth"></a>
 
 The `$dayOfMonth` aggregation operator in Amazon DocumentDB retrieves the day of the month (from 1 to 31) for a given date. This operator is useful for grouping, filtering, or extracting the day of the month from date fields in your documents.
 

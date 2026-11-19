@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupsFo
 ---
 
 # ListGroupsForUser
-<a name="API_ListGroupsForUser"></a>
 
 Lists the IAM groups that the specified IAM user belongs to.
 

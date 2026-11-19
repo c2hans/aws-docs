@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-c
 ---
 
 # Connection states in EventBridge
-<a name="eb-target-connection-states"></a>
 
 Below are the connection statuses returned by EventBridge when creating or re-authorizing a connection.
 

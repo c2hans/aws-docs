@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Address
-<a name="API_Address"></a>
 
 Specifies the end `Customer`'s address details associated with the `Opportunity`.
 

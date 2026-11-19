@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloud
 ---
 
 # How CloudFormation works
-<a name="cloudformation-overview"></a>
 
 This topic describes how CloudFormation works and introduces you to the key concepts you'll need to know about as you use it.
 

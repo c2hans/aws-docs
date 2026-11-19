@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-de
 ---
 
 # Determining pending maintenance
-<a name="db-cluster-determine-pending-maintenance"></a>
 
 Maintenance most often involves updates to the following resources in your cluster:
 + Operating system (OS) of instances in the cluster

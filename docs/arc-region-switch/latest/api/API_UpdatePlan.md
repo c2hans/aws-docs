@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UpdateP
 ---
 
 # UpdatePlan
-<a name="API_UpdatePlan"></a>
 
 Updates an existing Region switch plan. You can modify the plan's description, workflows, execution role, recovery time objective, associated alarms, and triggers.
 

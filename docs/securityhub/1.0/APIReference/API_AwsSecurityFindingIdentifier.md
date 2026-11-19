@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecu
 ---
 
 # AwsSecurityFindingIdentifier
-<a name="API_AwsSecurityFindingIdentifier"></a>
 
 Identifies which finding to get the finding history for.
 

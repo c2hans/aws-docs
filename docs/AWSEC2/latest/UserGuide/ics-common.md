@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ics-common.html
 ---
 
 # Common screenshots to troubleshoot unreachable Windows instances
-<a name="ics-common"></a>
 
 You can use the following information to help you troubleshoot an unreachable Windows instance based on screenshots returned by the service.
 + [Log on screen (Ctrl\+Alt\+Delete)](#logon-screen)

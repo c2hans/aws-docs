@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/cross-account-replication.
 ---
 
 # Replicating EFS file systems across AWS accounts
-<a name="cross-account-replication"></a>
 
 You can replicate EFS file systems across AWS accounts. Replicating across accounts enhances the overall resilience and reliability of your disaster recovery (DR) strategies and can help you meet corporate compliance mandates.
 

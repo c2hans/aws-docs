@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatModel
-<a name="API_ThreatModel"></a>
 
 Represents a threat model configuration that defines the parameters for automated threat analysis, including target assets and logging configuration.
 

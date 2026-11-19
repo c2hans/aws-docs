@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeResourcePolicy
-<a name="API_DescribeResourcePolicy"></a>
 
 Retrieves a resource policy that you created in a [PutResourcePolicy](API_PutResourcePolicy.md) request.
 

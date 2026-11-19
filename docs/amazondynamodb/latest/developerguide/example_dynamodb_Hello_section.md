@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Hello DynamoDB
-<a name="example_dynamodb_Hello_section"></a>
 
 The following code examples show how to get started using DynamoDB.
 

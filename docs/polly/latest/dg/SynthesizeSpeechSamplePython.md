@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/SynthesizeSpeechSamplePy
 ---
 
 # SynthesizeSpeech
-<a name="SynthesizeSpeechSamplePython"></a>
 
 The following Python code example uses the AWS SDK for Python (Boto) synthesize speech with shorter texts for near real-time processing. For more information, see the reference for the [SynthesizeSpeech](https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html) operation.
 

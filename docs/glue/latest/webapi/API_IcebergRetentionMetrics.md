@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergRetentionM
 ---
 
 # IcebergRetentionMetrics
-<a name="API_IcebergRetentionMetrics"></a>
 
 Snapshot retention metrics for Iceberg for the optimizer run.
 

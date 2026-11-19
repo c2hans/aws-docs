@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GetMessageTemplate
-<a name="API_amazon-q-connect_GetMessageTemplate"></a>
 
 Retrieves the Amazon Q in Connect message template. The message template identifier can contain an optional qualifier, for example, `<message-template-id>:<qualifier>`, which is either an actual version number or an Amazon Q Connect managed qualifier `$ACTIVE_VERSION` \| `$LATEST`. If it is not supplied, then `$LATEST` is assumed implicitly.
 

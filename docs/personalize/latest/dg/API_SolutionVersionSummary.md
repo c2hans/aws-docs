@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_SolutionVersio
 ---
 
 # SolutionVersionSummary
-<a name="API_SolutionVersionSummary"></a>
 
 Provides a summary of the properties of a solution version. For a complete listing, call the [DescribeSolutionVersion](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSolutionVersion.html) API.
 

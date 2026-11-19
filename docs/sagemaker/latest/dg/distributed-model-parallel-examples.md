@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-pa
 ---
 
 # Amazon SageMaker AI model parallelism library v1 examples
-<a name="distributed-model-parallel-examples"></a>
 
 This page provides a list of blogs and Jupyter notebooks that present practical examples of implementing the SageMaker model parallelism (SMP) library v1 to run distributed training jobs on SageMaker AI.
 

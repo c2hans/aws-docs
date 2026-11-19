@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Training a model using Neptune ML
-<a name="machine-learning-on-graphs-model-training"></a>
 
 After you have processed the data that you exported from Neptune for model training, you can start a model-training job using a command like the following:
 

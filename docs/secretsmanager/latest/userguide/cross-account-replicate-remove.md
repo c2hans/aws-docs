@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/cross-ac
 ---
 
 # Stop cross-account replication
-<a name="cross-account-replicate-remove"></a>
 
 Either account can stop cross-account replication at any time, and there is no required order between the two accounts:
 + The primary-account owner stops replication with [`DisassociateCrossAccountReplica`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DisassociateCrossAccountReplica.html).

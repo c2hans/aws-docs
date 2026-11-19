@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BooleanColumnStat
 ---
 
 # BooleanColumnStatisticsData
-<a name="API_BooleanColumnStatisticsData"></a>
 
 Defines column statistics supported for Boolean data columns.
 

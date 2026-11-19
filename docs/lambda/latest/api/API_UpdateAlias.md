@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_UpdateAlias.html
 ---
 
 # UpdateAlias
-<a name="API_UpdateAlias"></a>
 
 Updates the configuration of a Lambda Event Function [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html).
 

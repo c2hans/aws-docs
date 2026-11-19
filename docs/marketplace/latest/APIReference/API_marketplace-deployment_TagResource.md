@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # TagResource
-<a name="API_marketplace-deployment_TagResource"></a>
 
 Tags a resource.
 

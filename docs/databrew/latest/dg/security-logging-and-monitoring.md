@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/security-logging-and-
 ---
 
 # Logging and monitoring in DataBrew
-<a name="security-logging-and-monitoring"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of DataBrew and your AWS solutions. You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multipoint failure if one occurs. AWS provides several tools for monitoring your DataBrew resources and responding to potential incidents:
 

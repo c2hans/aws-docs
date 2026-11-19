@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # CellSignals
-<a name="API_WaypointTracking_CellSignals"></a>
 
 The cellular network communication infrastructure that the device uses.
 

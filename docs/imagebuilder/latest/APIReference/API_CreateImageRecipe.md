@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateImageRecipe
-<a name="API_CreateImageRecipe"></a>
 
 Creates a new image recipe. Image recipes define how images are configured, tested, and assessed.
 

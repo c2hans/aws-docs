@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_example_cross
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Build an Amazon Transcribe streaming app
-<a name="ses_example_cross_TranscriptionStreamingApp_section"></a>
 
 The following code example shows how to build an app that records, transcribes, and translates live audio in real-time, and emails the results.
 

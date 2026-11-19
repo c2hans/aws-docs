@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetApplicationAssignmentConfiguration
-<a name="API_GetApplicationAssignmentConfiguration"></a>
 
 Retrieves the configuration of [PutApplicationAssignmentConfiguration](API_PutApplicationAssignmentConfiguration.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/operation
 ---
 
 # Operations
-<a name="operations"></a>
 
 The AWS Serverless Application Repository REST API includes the following operations.
 + [CreateApplication](applications.md#CreateApplication)

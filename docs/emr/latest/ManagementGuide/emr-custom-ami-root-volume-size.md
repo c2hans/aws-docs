@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-custom-am
 ---
 
 # Customizing the Amazon EBS root device volume
-<a name="emr-custom-ami-root-volume-size"></a>
 
 You can set your volume type and other attributes, depending on your use case and cost requirements. You can accept default values or make customizations.
 

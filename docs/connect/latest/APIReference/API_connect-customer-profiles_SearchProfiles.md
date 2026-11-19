@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SearchProfiles
-<a name="API_connect-customer-profiles_SearchProfiles"></a>
 
 Searches for profiles within a specific domain using one or more predefined search keys (e.g., \_fullName, \_phone, \_email, \_account, etc.) and/or custom-defined search keys. A search key is a data type pair that consists of a `KeyName` and `Values` list.
 

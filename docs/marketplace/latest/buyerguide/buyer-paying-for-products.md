@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-payi
 ---
 
 # Paying for products in AWS Marketplace
-<a name="buyer-paying-for-products"></a>
 
 At the beginning of the month, you receive a bill from Amazon Web Services (AWS) for your AWS Marketplace charges. For software products, the bill includes a calculation of the hourly fee for the software multiplied by the number of hours any Amazon Machine Image (AMI) instance with this software runs. You also receive a bill for usage of infrastructure services such as Amazon Elastic Compute Cloud (Amazon EC2), Amazon Simple Storage Service, Amazon Elastic Block Store (Amazon EBS), and for bandwidth.
 
@@ -104,7 +103,7 @@ Your AWS Marketplace purchases are displayed in the currency that you specified 
 
 The following hierarchy determines which currency is used for your AWS Marketplace invoices:
 
-1. **Private offer currency (highest priority):** If you accept a private offer with [non-USD currency](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-private-offers-subscribing-fixed-exchange-rate.html) (EUR, GBP, AUD, or JPY), invoices will always be generated in the offer currency, overriding all other currency preferences.
+1. **Private offer currency (highest priority):** If you accept a private offer with [non-USD currency](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-private-offers-subscribing-fixed-exchange-rate.html) (EUR, GBP, AUD, JPY, CAD, SGD, or NZD), invoices will always be generated in the offer currency, overriding all other currency preferences.
 
 1. **Payment profile currency:** You can create service-specific payment profiles to set different currencies for AWS Marketplace invoices compared to other AWS services. For more information, see [Managing your payment profiles](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-paymentprofiles.html) in the *AWS Billing User Guide*.
 
@@ -129,7 +128,7 @@ The following tables show the billing methods for contract and usage-based prici
 | Usage (pay as you go) | Billed monthly at 00:00 UTC on the second or third day of the month, combined with other AWS charges. |
 
 **Note**
-Private offers can be invoiced in multiple currencies (USD, EUR, GBP, AUD, JPY, INR) based on the currency agreed upon between buyer and seller. You may receive separate invoices for each currency if you have private offers in different currencies.
+Private offers can be invoiced in multiple currencies (USD, EUR, GBP, AUD, JPY, CAD, SGD, NZD, INR) based on the currency agreed upon between buyer and seller. You may receive separate invoices for each currency if you have private offers in different currencies.
 
 ### Public subscriptions (self-serve purchases)
 <a name="public-subscriptions"></a>

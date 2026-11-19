@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/unwind.html
 ---
 
 # $unwind
-<a name="unwind"></a>
 
 The `$unwind` operator is used to deconstruct an array field from the input documents to output a document for each element. This can be useful when you want to perform operations on the individual elements of an array, such as filtering, sorting, or transforming the data.
 

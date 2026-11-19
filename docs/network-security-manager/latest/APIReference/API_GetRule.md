@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # GetRule
-<a name="API_GetRule"></a>
 
 Retrieves the details of the specified rule.
 

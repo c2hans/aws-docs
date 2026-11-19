@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 4. Robust pipelines and promotion
-<a name="pipelines-promotion"></a>
 
 Pipelines provide many options for hyperparameter tuning, AutoML, and processing routines. Pipelines are logged from end to end. Robust pipelines can run training in parallel across multiple instances and frameworks, scaling load sizes as needed. Robust pipelines can promote models into production, deploying in real-time, streaming, and batch. These deployments can support single-model or multi-model inference.
 

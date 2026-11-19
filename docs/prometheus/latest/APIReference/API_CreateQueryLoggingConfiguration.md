@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Creat
 ---
 
 # CreateQueryLoggingConfiguration
-<a name="API_CreateQueryLoggingConfiguration"></a>
 
 Creates a query logging configuration for the specified workspace. This operation enables logging of queries that exceed the specified QSP threshold.
 

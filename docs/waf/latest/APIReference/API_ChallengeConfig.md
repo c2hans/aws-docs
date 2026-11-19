@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ChallengeCon
 ---
 
 # ChallengeConfig
-<a name="API_ChallengeConfig"></a>
 
 Specifies how AWS WAF should handle `Challenge` evaluations. This is available at the web ACL level and in each rule.
 

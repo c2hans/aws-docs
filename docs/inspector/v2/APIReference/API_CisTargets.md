@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisTargets
 ---
 
 # CisTargets
-<a name="API_CisTargets"></a>
 
 The CIS targets.
 

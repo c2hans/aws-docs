@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-interactive-
 ---
 
 # Interactive sessions API
-<a name="aws-glue-api-interactive-sessions"></a>
 
 The interactive sessions API describes the AWS Glue API related to using AWS Glue interactive sessions to build and test extract, transform, and load (ETL) scripts for data integration.
 

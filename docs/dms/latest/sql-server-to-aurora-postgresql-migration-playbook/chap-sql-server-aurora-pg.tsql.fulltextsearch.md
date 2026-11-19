@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Full-text search for T-SQL
-<a name="chap-sql-server-aurora-pg.tsql.fulltextsearch"></a>
 
 This topic provides reference information about full-text search capabilities in Microsoft SQL Server and PostgreSQL, which is relevant to migrating from SQL Server 2019 to Amazon Aurora PostgreSQL. It explains the differences in how these database systems implement full-text search functionality, including index creation, query syntax, and performance optimization techniques.
 

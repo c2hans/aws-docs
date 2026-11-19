@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-as
 ---
 
 # Assigning image-level labels to an image
-<a name="md-assign-image-level-labels"></a>
 
 You use image-level labels to train models that classify images into categories. An image-level label indicates that an image contains an object, scene or concept. For example, the following image shows a river. If your model classifies images as containing rivers, you would add a *river* image-level label. For more information, see [Purposing datasets](md-dataset-purpose.md).
 

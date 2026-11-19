@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualNodeSpec
-<a name="API_VirtualNodeSpec"></a>
 
 An object that represents the specification of a virtual node.
 

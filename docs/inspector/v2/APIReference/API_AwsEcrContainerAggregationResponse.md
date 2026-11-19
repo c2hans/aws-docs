@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsEcrCont
 ---
 
 # AwsEcrContainerAggregationResponse
-<a name="API_AwsEcrContainerAggregationResponse"></a>
 
 An aggregation of information about Amazon ECR containers.
 

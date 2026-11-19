@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/capacity-management-can
 ---
 
 # Cancel a capacity reservation
-<a name="capacity-management-cancelling-a-capacity-reservation"></a>
 
 If you no longer want to use a capacity reservation, you can cancel it. Queries that are still running in the workgroups that were using the reservation will be allowed to finish, but other queries in the workgroup will no longer use the reservation.
 

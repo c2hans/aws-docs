@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiTransportModeDetails
-<a name="API_RouteTaxiTransportModeDetails"></a>
 
 Transport mode details for the taxi leg.
 

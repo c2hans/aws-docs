@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionR
 ---
 
 # ActionReviewPayloadFieldAllowedValue
-<a name="API_ActionReviewPayloadFieldAllowedValue"></a>
 
 Information about the field values that an end user can use to provide to Amazon Q Business for Amazon Q Business to perform the requested plugin action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Vulnerable
 ---
 
 # VulnerablePackage
-<a name="API_VulnerablePackage"></a>
 
 Information on the vulnerable package identified by a finding.
 

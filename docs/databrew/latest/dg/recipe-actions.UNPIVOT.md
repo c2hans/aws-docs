@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.UNPIVO
 ---
 
 # UNPIVOT
-<a name="recipe-actions.UNPIVOT"></a>
 
 Converts all the column values in a selected row into individual rows with values.
 

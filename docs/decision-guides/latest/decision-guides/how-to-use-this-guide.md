@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/h
 ---
 
 # How to use this guide
-<a name="how-to-use-this-guide"></a>
 
 This guide organizes all AWS decision guides into a decision tree. Start with your high-level goal, then navigate to the section that matches your needs.
 

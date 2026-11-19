@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StepExecution
-<a name="API_StepExecution"></a>
 
 Detailed information about an the execution state of an Automation step.
 

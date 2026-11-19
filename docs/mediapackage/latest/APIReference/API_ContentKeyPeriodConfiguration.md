@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Con
 ---
 
 # ContentKeyPeriodConfiguration
-<a name="API_ContentKeyPeriodConfiguration"></a>
 
 The configuration that controls the content key period timing information that MediaPackage signals to your DRM key provider.
 

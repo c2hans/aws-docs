@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingsOutput
-<a name="API_FindingsOutput"></a>
 
 The configuration for a findings export: the output format, an optional set of filters, and the fields to include.
 

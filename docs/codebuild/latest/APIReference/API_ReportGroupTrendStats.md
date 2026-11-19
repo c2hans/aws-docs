@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Report
 ---
 
 # ReportGroupTrendStats
-<a name="API_ReportGroupTrendStats"></a>
 
 Contains trend statistics for a set of reports. The actual values depend on the type of trend being collected. For more information, see [GetReportGroupTrend](API_GetReportGroupTrend.md).
 

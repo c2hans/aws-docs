@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-s
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Sharing agent profiles in AWS Well-Architected Agent
-<a name="agent-share-profile"></a>
 
 Share an agent profile with other AWS accounts, an organization, or an organizational unit (OU) so that your team members can view and act on its recommendations. To share a profile, the profile owner attaches a resource-based policy to it in the AWS WA Agent console, with the API, or with the AWS CLI. The policy covers the profile, its goals and application context, and every recommendation in it.
 

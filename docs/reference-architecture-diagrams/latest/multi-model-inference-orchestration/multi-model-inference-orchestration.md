@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Multi-Model Inference Workflow Orchestration
-<a name="multi-model-inference-orchestration"></a>
 
 Publication date: **March 28, 2022 ([Diagram history](#diagram-history))**
 

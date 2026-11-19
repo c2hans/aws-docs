@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # DurableConfig
-<a name="sam-property-function-durableconfig"></a>
 
 Configures durable execution settings for AWS Lambda functions. Durable functions can run for up to one year and automatically checkpoint progress, enabling long-running workflows and fault-tolerant applications. For more information about durable functions, see [Lambda durable functions](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html) in the *AWS Lambda Developer Guide*.
 

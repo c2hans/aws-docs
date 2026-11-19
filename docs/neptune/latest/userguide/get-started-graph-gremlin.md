@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-gra
 ---
 
 # Using Gremlin to access graph data in Amazon Neptune
-<a name="get-started-graph-gremlin"></a>
 
 You can use the Gremlin Console to experiment with TinkerPop graphs and queries in a REPL (read-eval-print loop) environment.
 

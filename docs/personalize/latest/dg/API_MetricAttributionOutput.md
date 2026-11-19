@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_MetricAttribut
 ---
 
 # MetricAttributionOutput
-<a name="API_MetricAttributionOutput"></a>
 
 The output configuration details for a metric attribution.
 

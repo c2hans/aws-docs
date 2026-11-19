@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/th
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Handle service client responses
-<a name="the-response-object"></a>
 
 After a service client method has been called, it returns a response object instance of an interface with the name associated with the client method. For example, if you use the {{ AbcCommand}} client method, the response object is of {{AbcResponse}} (interface) type.
 

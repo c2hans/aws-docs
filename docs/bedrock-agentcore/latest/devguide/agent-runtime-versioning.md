@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agent-
 ---
 
 # AgentCore Runtime versioning and endpoints
-<a name="agent-runtime-versioning"></a>
 
 Amazon Bedrock AgentCore implements automatic versioning for AgentCore Runtimes and lets you manage different configurations using endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AggFu
 ---
 
 # AggFunction
-<a name="API_AggFunction"></a>
 
 The definition of an Agg function.
 

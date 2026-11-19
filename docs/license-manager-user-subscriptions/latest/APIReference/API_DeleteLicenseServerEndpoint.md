@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # DeleteLicenseServerEndpoint
-<a name="API_DeleteLicenseServerEndpoint"></a>
 
 Deletes a `LicenseServerEndpoint` resource.
 

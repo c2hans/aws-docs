@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeClientVpnRoutes
-<a name="API_DescribeClientVpnRoutes"></a>
 
 Describes the routes for the specified Client VPN endpoint.
 

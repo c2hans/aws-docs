@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create a custom connector to a data source
-<a name="CloudWatch_MultiDataSources-Connect-Custom"></a>
 
  This topic describes how to connect a custom data source to CloudWatch. You can connect a custom data source to CloudWatch in two ways:
 +  Using a sample template that CloudWatch provides. You can use either JavaScript or Python with this template. These templates include sample Lambda code that will be useful to you when you create your Lambda function. You can then modify the Lambda function from the template to connect to your custom data source.

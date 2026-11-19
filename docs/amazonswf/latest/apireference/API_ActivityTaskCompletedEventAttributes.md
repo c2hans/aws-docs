@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTaskCompletedEventAttributes
-<a name="API_ActivityTaskCompletedEventAttributes"></a>
 
 Provides the details of the `ActivityTaskCompleted` event.
 

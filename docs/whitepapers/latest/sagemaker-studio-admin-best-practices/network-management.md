@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Network management
-<a name="network-management"></a>
 
  To set up the SageMaker AI Studio domain, you need to specify the VPC network, subnets, and security groups. When specifying the VPC and subnets, ensure that you allocate IPs considering the usage volume and expected growth that is discussed in the following sections.
 

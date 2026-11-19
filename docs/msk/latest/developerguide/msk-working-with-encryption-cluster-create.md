@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-working-wi
 ---
 
 # Specify encryption settings when creating a Amazon MSK cluster
-<a name="msk-working-with-encryption-cluster-create"></a>
 
 This process describes how to specify encryption settings when creating a Amazon MSK cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vwo-configuring.html
 ---
 
 # Configuring VWO
-<a name="vwo-configuring"></a>
 
 Before you can use AWS Glue to transfer data from VWO, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/download-network-package.h
 ---
 
 # Download a network package from AWS TNB
-<a name="download-network-package"></a>
 
 Learn how to download a network package from the AWS TNB network service catalog.
 

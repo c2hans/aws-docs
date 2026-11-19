@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Subscribe to expiration warning cleared event in Connect Customer agent workspace
-<a name="3P-apps-activity-onexpirationwarningcleared"></a>
 
 Subscribes a callback function to be invoked when the agent has acknowledged the expiration warning and chooses to update their session.
 

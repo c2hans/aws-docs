@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/APIReference/API_ResetPerso
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # ResetPersonalPIN
-<a name="API_ResetPersonalPIN"></a>
 
 Resets the personal meeting PIN for the specified user on an Amazon Chime account. Returns the [User](API_User.md) object with the updated personal meeting PIN.
 

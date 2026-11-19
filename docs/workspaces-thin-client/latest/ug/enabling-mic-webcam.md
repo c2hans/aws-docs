@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/enablin
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html).
 
 # Enabling the microphone and webcam
-<a name="enabling-mic-webcam"></a>
 
 Your WorkSpaces Thin Client device can connect to your audio and visual devices. To use your microphone and webcam within a virtual desktop session, you will need to enable permissions in your Windows Settings, on the virtual desktop toolbar, and your browser settings.
 

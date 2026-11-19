@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MarketplacePunchOutPreference
-<a name="API_invoicing_MarketplacePunchOutPreference"></a>
 
 Represents the AWS Marketplace PunchOut configuration for a procurement portal preference.
 

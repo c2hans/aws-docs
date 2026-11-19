@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetIdFilter
-<a name="API_OfferSetIdFilter"></a>
 
 Allows filtering on the `OfferSetId` of an offer.
 

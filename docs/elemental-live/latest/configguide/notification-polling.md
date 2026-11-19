@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/notifi
 ---
 
 # Simple Network Management Protocol (SNMP) polling
-<a name="notification-polling"></a>
 
 Rather than passively receiving SNMP traps from AWS Elemental Live, you can actively poll the SNMP interface.
 

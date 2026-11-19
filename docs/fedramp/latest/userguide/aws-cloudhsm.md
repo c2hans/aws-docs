@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/aws-cloudhsm.ht
 ---
 
 # AWS CloudHSM
-<a name="aws-cloudhsm"></a>
 
 This guide provides security configuration requirements and implementation examples for AWS CloudHSM in accordance with FedRAMP requirements.
 

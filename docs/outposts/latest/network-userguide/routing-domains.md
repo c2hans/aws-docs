@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/routin
 ---
 
 # Multiple local gateway routing domains
-<a name="routing-domains"></a>
 
 Multiple local gateway (LGW) routing domains is a feature available on second-generation AWS Outposts racks that enables you to create up to 10 isolated routing domains with independent network paths to your on-premises network. This capability enables both customer-owned IP (CoIP) and direct VPC routing (DVR) configurations to coexist on the same Outpost, with each routing domain configured independently for either CoIP or DVR mode.
 

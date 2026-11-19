@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscriptionGrantSummary
-<a name="API_SubscriptionGrantSummary"></a>
 
 The details of the subscription grant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/custom-tag.html
 ---
 
 # Placing a custom tag in your text
-<a name="custom-tag"></a>
 
 *<mark>*
 

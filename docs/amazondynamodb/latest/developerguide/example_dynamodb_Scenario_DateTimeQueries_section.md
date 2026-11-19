@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query DynamoDB tables using date and time patterns with an AWS SDK
-<a name="example_dynamodb_Scenario_DateTimeQueries_section"></a>
 
 The following code examples show how to query tables using date and time patterns.
 + Store and query date/time values in DynamoDB.

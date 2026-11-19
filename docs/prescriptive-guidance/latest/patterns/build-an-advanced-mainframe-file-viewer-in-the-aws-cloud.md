@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build an advanced mainframe file viewer in the AWS Cloud
-<a name="build-an-advanced-mainframe-file-viewer-in-the-aws-cloud"></a>
 
 *Boopathy GOPALSAMY and Jeremiah O'Connor, Amazon Web Services*
 

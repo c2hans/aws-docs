@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/what-is-amazon-linux.html
 ---
 
 # What is Amazon Linux 1?
-<a name="what-is-amazon-linux"></a>
 
  The Amazon Linux AMI, also called AL1, was a Linux image provided by AWS for use on Amazon Elastic Compute Cloud (Amazon EC2).
 

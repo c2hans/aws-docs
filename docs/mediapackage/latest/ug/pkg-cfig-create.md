@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-create.h
 ---
 
 # Creating a packaging configuration
-<a name="pkg-cfig-create"></a>
 
 Create a packaging configuration to define how AWS Elemental MediaPackage prepares content for delivery from an asset.
 

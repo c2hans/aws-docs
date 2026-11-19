@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Create network analyzer configuration and add resources
-<a name="network-analyzer-create-resources"></a>
 
 Before you can stream trace messages, create a network analyzer configuration and add the resources you want to monitor to this configuration. A LoRaWAN network analyzer configuration is a set of settings and rules that define how network analyzer should capture and analyze traffic in a LoRaWAN network. It specifies the types of information and messages that should be included in the network trace, and any filtering or processing rules that should be applied.
 

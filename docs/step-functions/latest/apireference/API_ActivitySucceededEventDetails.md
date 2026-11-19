@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivitySucceededEventDetails
-<a name="API_ActivitySucceededEventDetails"></a>
 
 Contains details about an activity that successfully terminated during an execution.
 

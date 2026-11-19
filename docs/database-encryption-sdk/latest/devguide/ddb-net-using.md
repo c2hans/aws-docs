@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Using the .NET client-side encryption library for DynamoDB
-<a name="ddb-net-using"></a>
 
 This topic explains some of the functions and helper classes in version 3.*x* of the .NET client-side encryption library for DynamoDB.
 

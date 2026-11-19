@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Cutover stage
-<a name="cutover-stage"></a>
 
 When you migrate components that store data, you need to consider if data consistency is a key requirement. If it is, then you may need to lock the source environment (such as a database lock) prior to starting the cutover process. Locking the database can ensure that no new transactions are made to the source environment. However, locking may require a larger downtime window.
 

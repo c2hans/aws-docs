@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/lambda-deploy.html
 ---
 
 # AWS Lambda Deploy Function task
-<a name="lambda-deploy"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

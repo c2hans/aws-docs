@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-starte
 ---
 
 # Step 2: Install and configure the Lustre client on your instance before mounting your cache
-<a name="getting-started-step2"></a>
 
 To mount your cache from your Amazon EC2 instance, first install the Lustre 2.12 client.
 

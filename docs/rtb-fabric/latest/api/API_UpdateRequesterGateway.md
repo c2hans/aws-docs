@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UpdateRequeste
 ---
 
 # UpdateRequesterGateway
-<a name="API_UpdateRequesterGateway"></a>
 
 Updates a requester gateway.
 

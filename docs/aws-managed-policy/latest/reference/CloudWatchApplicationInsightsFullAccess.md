@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchApplicationInsightsFullAccess
-<a name="CloudWatchApplicationInsightsFullAccess"></a>
 
 **Description**: Provides full access to CloudWatch Application Insights and required dependencies.
 

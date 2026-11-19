@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/relnotes-2016.03.html
 ---
 
 # AL1 version 2016.03 release notes
-<a name="relnotes-2016.03"></a>
 
 **Warning**
  Amazon Linux 1 (AL1, formerly Amazon Linux AMI) is no longer supported. This guide is available only for reference purposes.

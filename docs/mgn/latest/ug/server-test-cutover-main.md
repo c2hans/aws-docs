@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/server-test-cutover-main.h
 ---
 
 # Manage test and cutover instances
-<a name="server-test-cutover-main"></a>
 
 The **Test and cutover** menu allows you to manage your test and cutover instances. For a more in-depth step-by-step guide to launching test and cutover instances, see the [Launching test and cutover instances documentation](launching-test-servers.md).
 + **Launch test instances** – Choose this option to launch a test instance for this server.

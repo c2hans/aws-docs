@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Pre-installed libraries
-<a name="code-interpreter-preinstalled-libraries"></a>
 
 The AgentCore Code Interpreter comes with pre-installed libraries for both Python and Node.js. These libraries are available immediately without requiring additional installation.
 

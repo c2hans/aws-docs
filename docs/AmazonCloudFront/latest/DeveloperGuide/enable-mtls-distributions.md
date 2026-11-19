@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Enable mutual TLS for CloudFront distributions
-<a name="enable-mtls-distributions"></a>
 
 ## Prerequisites and requirements
 <a name="mtls-prerequisites-requirements"></a>

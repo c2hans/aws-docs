@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/persona-reading-from-enti
 ---
 
 # Reading from Persona entities
-<a name="persona-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCer
 ---
 
 # GetCertificateAuthorityCertificate
-<a name="API_GetCertificateAuthorityCertificate"></a>
 
 Retrieves the certificate and certificate chain for your private certificate authority (CA) or one that has been shared with you. Both the certificate and the chain are base64 PEM-encoded. The chain does not include the CA certificate. Each certificate in the chain signs the one before it.
 

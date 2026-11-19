@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-con
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS Provisioned Control Plane
-<a name="eks-provisioned-control-plane"></a>
 
 ## Overview
 <a name="_overview"></a>

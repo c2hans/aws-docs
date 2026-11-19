@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchPlaceIndexForSuggestions
-<a name="API_SearchPlaceIndexForSuggestions"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [`Suggest`](/location/latest/APIReference/API_geoplaces_Suggest.html) or [`Autocomplete`](/location/latest/APIReference/API_geoplaces_Autocomplete.html) unless you require Grab data.

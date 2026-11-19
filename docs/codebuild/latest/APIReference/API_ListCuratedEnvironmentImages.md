@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListCu
 ---
 
 # ListCuratedEnvironmentImages
-<a name="API_ListCuratedEnvironmentImages"></a>
 
 Gets information about Docker images that are managed by AWS CodeBuild.
 

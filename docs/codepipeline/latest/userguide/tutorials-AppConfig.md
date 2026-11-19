@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Create a pipeline that uses AWS AppConfig as a deployment provider
-<a name="tutorials-AppConfig"></a>
 
 In this tutorial, you configure a pipeline that continuously delivers configuration files using AWS AppConfig as the deployment action provider in your deployment stage.
 

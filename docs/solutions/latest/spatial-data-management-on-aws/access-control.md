@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Access Management
-<a name="access-control"></a>
 
 ## Overview
 <a name="overview"></a>

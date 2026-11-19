@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # How service request management works in Accelerate
-<a name="how-sr-management-work"></a>
 
 Service requests are handled by the on-call AMS Accelerate operations team.
 

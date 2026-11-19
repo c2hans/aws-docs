@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeReviewJobTask
-<a name="API_CodeReviewJobTask"></a>
 
 Represents an individual security test task within a code review job. Each task targets a specific risk type and executes independently.
 

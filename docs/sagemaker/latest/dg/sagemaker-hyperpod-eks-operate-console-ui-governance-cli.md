@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Example HyperPod task governance AWS CLI commands
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-cli"></a>
 
 You can use HyperPod with EKS through Kubectl or through HyperPod custom CLI. You can use these commands through Studio or AWS CLI. The following provides SageMaker HyperPod task governance examples, on how to view cluster details using the HyperPod AWS CLI commands. For more information, including how to install, see the [HyperPod CLI Github repository](https://github.com/aws/sagemaker-hyperpod-cli).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-configuration.
 ---
 
 # Configuration
-<a name="bb-configuration"></a>
 
 This section covers Blocks for application settings and secrets.
 

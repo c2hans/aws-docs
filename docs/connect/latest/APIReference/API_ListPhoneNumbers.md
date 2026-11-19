@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPhon
 ---
 
 # ListPhoneNumbers
-<a name="API_ListPhoneNumbers"></a>
 
 Provides information about the phone numbers for the specified Connect Customer instance.
 

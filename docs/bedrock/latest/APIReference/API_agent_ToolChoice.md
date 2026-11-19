@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_To
 ---
 
 # ToolChoice
-<a name="API_agent_ToolChoice"></a>
 
 Defines which tools the model should request when invoked. For more information, see [Use a tool to complete an Amazon Bedrock model response](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 

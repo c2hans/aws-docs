@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/deploy-with-edo.htm
 ---
 
 # Deploy with the EVS Deployment Orchestrator
-<a name="deploy-with-edo"></a>
 
 This page applies to Self-deployed environments that run VCF 9.x. For how EVS-deployed environments (VCF 5.2.x) differ, see [Differences between deployment modes](deployment-mode-differences.md).
 

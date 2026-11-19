@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sale.html
 ---
 
 # .sale
-<a name="sale"></a>
 
 Used by e-commerce websites.
 

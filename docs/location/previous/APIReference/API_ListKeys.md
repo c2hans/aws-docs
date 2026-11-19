@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListK
 ---
 
 # ListKeys
-<a name="API_ListKeys"></a>
 
 Lists API key resources in your AWS account.
 

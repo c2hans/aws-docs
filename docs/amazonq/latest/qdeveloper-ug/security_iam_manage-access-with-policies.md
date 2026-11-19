@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_ia
 ---
 
 # Manage access to Amazon Q Developer with policies
-<a name="security_iam_manage-access-with-policies"></a>
 
 **Note**
 The information on this page pertains to accessing Amazon Q Developer. For information about managing access to Amazon Q Business, see [Identity-based policy examples for Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/security_iam_id-based-policy-examples.html) in the *Amazon Q Business User Guide*.

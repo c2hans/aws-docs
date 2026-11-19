@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster.html
 ---
 
 # ListClusters, CreateCluster, UpdateCluster
-<a name="cluster"></a>
 
 ## URI
 <a name="cluster-url"></a>

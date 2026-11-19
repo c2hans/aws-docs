@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/jamf-
 ---
 
 # CloudWatch pipelines configuration for Jamf Pro
-<a name="jamf-pro-pipeline-setup"></a>
 
 Collects computer inventory data from Jamf Pro using OAuth2 Client Credentials authentication.
 

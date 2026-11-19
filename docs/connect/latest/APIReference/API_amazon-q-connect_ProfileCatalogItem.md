@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ProfileCatalogItem
-<a name="API_amazon-q-connect_ProfileCatalogItem"></a>
 
 Contains information about a catalog item, including its identifier, name, price, and other attributes that are used in recommendations.
 

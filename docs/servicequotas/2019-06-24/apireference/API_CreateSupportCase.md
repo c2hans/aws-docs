@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # CreateSupportCase
-<a name="API_CreateSupportCase"></a>
 
 Creates a Support case for an existing quota increase request. This call only creates a Support case if the request has a `Pending` status.
 

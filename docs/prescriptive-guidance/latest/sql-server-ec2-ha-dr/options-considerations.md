@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # HA/DR options and considerations
-<a name="options-considerations"></a>
 
 Although the possibility of an AWS Availability Zone or Region going completely offline is extremely rare, we recommend a multi-pronged approach to backup and recovery in the event of a disaster for redundancy and to minimize data loss. Backup and recovery processes should include the appropriate level of granularity to meet the recovery time objective (RTO) and recovery point objective (RPO) for the workload and to support business processes, and are often dependent on the application. In the case of databases, AWS also supports all Microsoft recommendations for SQL Server setup and configuration for high availability and disaster recovery (HA/DR). Different editions of SQL Server support various HA/DR options, and you should consider special cases such as very large databases (VLDBs) on a case-by-case basis. As with any DR configuration, testing is essential to ensure that each application meets its service-level agreements (SLAs) for HA/DR. For your test/development environment, consider using [SQL Server Developer edition](https://docs.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15), which is free but comes with limitations.
 

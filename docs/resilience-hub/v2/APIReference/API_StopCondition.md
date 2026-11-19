@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_StopC
 ---
 
 # StopCondition
-<a name="API_StopCondition"></a>
 
 A CloudWatch alarm that automatically stops a test run if it breaches its threshold.
 

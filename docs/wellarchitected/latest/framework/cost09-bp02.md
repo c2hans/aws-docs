@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost09-
 ---
 
 # COST09-BP02 Continuously review and optimize the workload
-<a name="cost09-bp02"></a>
 
  Cloud providers release new services, features, and pricing models continuously. Each release can make part of your workload cheaper to run. A workload you never revisit drifts from the most cost-effective design. Continuous review turns those releases into savings: decide whether to adopt new capabilities, replace components, or keep the current design.
 

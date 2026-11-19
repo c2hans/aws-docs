@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ScheduledTriggerProperties
-<a name="API_connect-customer-profiles_ScheduledTriggerProperties"></a>
 
 Specifies the configuration details of a scheduled-trigger flow that you define. Currently, these settings only apply to the scheduled-trigger type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystemOpenZFSConfiguration
-<a name="API_UpdateFileSystemOpenZFSConfiguration"></a>
 
 The configuration updates for an Amazon FSx for OpenZFS file system.
 

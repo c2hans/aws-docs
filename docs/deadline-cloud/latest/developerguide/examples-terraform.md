@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Deploy Deadline Cloud farms with Terraform
-<a name="examples-terraform"></a>
 
 The [terraform](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/terraform) directory in the deadline-cloud-samples repository on the GitHub website contains Terraform configurations that deploy Deadline Cloud farms with `awscc_deadline_*` resources from the AWSCC provider. For a comparison of Terraform with CloudFormation and the AWS CDK, see [Manage Deadline Cloud infrastructure as code](infrastructure-as-code.md).
 

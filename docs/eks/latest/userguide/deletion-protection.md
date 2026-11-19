@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/deletion-protection
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Protect EKS clusters from accidental deletion
-<a name="deletion-protection"></a>
 
 Accidentally deleting an EKS cluster may impair Kubernetes cluster operations.
 

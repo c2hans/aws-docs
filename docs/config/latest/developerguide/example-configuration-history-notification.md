@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/example-con
 ---
 
 # Example Configuration History Delivery Notification
-<a name="example-configuration-history-notification"></a>
 
 The configuration history is a collection of the configuration items for a resource type over a time period. The following is an example notification that AWS Config sends when the configuration history for a CloudTrail trail resource is delivered for your account.
 

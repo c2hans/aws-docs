@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-
 ---
 
 # Query performance factors for Amazon Redshift
-<a name="query-performance-factors"></a>
 
 A number of factors can affect query performance. The following aspects of your data, cluster, and database operations all play a part in how quickly your queries are processed:
 + [Table properties](#table-properties)

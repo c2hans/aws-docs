@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-tut
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Tutorial: Deploy a serverless application
-<a name="deploy-tut-lambda"></a>
 
 In this tutorial, you learn how to build, test, and deploy a serverless application as a CloudFormation stack using a workflow.
 

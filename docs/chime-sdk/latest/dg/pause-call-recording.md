@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pause-call-recording
 ---
 
 # PauseCallRecording
-<a name="pause-call-recording"></a>
 
 The `PauseCallRecording` action pauses recording of a call leg. Each time you pause a recording, the recording captures a tone that indicates the pause. When you pause, the recording continues, but it only captures silence. Pausing the recording does not affect the total duration of the recording. You can pause and resume recording as often as needed.
 

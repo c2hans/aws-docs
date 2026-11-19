@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_AccountE
 ---
 
 # AccountEnforcedGuardrailOutputConfiguration
-<a name="API_AccountEnforcedGuardrailOutputConfiguration"></a>
 
 Account enforced guardrail output configuration.
 

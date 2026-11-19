@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-customize-dn
 ---
 
 # Custom DNS
-<a name="nodegroup-customize-dns"></a>
 
 There are two ways of overwriting the DNS server IP address used for all the internal and external DNS lookups. This is the equivalent of the `--cluster-dns` flag for the `kubelet`.
 

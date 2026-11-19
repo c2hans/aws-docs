@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AssociateContract
-<a name="API_billing_AssociateContract"></a>
 
 Private Pricing contracts let eligible payer accounts manage private pricing agreements with AWS. This operation associates a private pricing contract with the caller's AWS account. The caller must be a payer (management) account listed on the contract. This operation is idempotent, so retrying a request that already succeeded is safe.
 

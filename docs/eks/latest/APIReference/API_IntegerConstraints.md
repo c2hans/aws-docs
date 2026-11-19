@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_IntegerConst
 ---
 
 # IntegerConstraints
-<a name="API_IntegerConstraints"></a>
 
 Constraints for an integer parameter specifying allowed range.
 

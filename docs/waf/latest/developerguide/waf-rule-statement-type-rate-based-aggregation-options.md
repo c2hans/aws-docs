@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-state
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Aggregating rate-based rules in AWS WAF
-<a name="waf-rule-statement-type-rate-based-aggregation-options"></a>
 
 This section explains your options for aggregating requests.
 

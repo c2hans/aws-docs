@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Can't I use the AWS CDK without understanding layers?**
 

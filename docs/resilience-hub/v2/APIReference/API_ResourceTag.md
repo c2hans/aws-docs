@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Resou
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 A tag key-value pair used for resource discovery.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Warni
 ---
 
 # WarningsListItem
-<a name="API_WarningsListItem"></a>
 
 The system identified one of the following warnings while processing the input document:
 + The document to classify is plain text, but the classifier is a native document model.

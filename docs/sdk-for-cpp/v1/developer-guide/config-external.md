@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/config-ex
 ---
 
 # Configuring AWS SDK for C\+\+ service clients externally
-<a name="config-external"></a>
 
 Many configuration settings can be handled outside of your code. When configuration is handled externally, the configuration is applied across all of your applications. Most configuration settings can be set as either environment variables or in a separate shared AWS `config` file. The shared `config` file can maintain separate sets of settings, called profiles, to provide different configurations for different environments or tests.
 

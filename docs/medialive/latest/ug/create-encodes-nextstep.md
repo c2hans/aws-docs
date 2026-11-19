@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/create-encodes-nexts
 ---
 
 # Next step
-<a name="create-encodes-nextstep"></a>
 
 After you have created all the output groups, outputs, and output encodes, you are ready to save the channel.
 

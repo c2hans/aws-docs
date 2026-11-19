@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Phase 2: Plan
-<a name="plan"></a>
 
 After you gather information about the database during the preparation phase, you decide the migration strategy in the planning phase. There are seven common migration strategies (7 Rs):
 + Rehost

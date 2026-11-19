@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testin
 ---
 
 # Tools to use
-<a name="tools"></a>
 
 ## k6
 <a name="k6"></a>

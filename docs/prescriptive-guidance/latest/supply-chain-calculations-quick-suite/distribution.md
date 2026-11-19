@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Distribution and warehousing
-<a name="distribution"></a>
 
 These calculations help you evaluate the throughput of your supply chain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/update
 ---
 
 # Update existing gateway with Policy Engine
-<a name="update-gateway-with-policy"></a>
 
 Associate a policy engine with an existing gateway:
 

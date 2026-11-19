@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Delet
 ---
 
 # DeleteMap
-<a name="API_DeleteMap"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend upgrading to the Maps API V2 unless you require `Grab` data.

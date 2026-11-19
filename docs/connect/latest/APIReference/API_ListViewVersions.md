@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListView
 ---
 
 # ListViewVersions
-<a name="API_ListViewVersions"></a>
 
 Returns all the available versions for the specified Connect Customer instance and view identifier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/what-is
 ---
 
 # What is the AWS Elemental MediaConvert API?
-<a name="what-is"></a>
 
 This is the AWS Elemental MediaConvert REST API Reference. It provides information about each MediaConvert REST operation, including its URL, and its response and request contents.
 

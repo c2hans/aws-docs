@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveUserFr
 ---
 
 # RemoveUserFromGroup
-<a name="API_RemoveUserFromGroup"></a>
 
 Removes the specified user from the specified group.
 

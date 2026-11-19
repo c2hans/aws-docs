@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/suspen
 ---
 
 # Turn off scheduled scaling for a scalable target
-<a name="suspend-scheduled-scaling"></a>
 
 You can temporarily turn off scheduled scaling without deleting your scheduled actions. For more information, see [Suspend and resume scaling for Application Auto Scaling](application-auto-scaling-suspend-resume-scaling.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateTrustStore
-<a name="API_CreateTrustStore"></a>
 
 Creates a trust store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/honeycomb-configuring.htm
 ---
 
 # Configuring Honeycomb
-<a name="honeycomb-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Honeycomb, you must meet the following requirements:
 

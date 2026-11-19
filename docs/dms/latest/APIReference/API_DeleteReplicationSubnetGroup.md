@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplic
 ---
 
 # DeleteReplicationSubnetGroup
-<a name="API_DeleteReplicationSubnetGroup"></a>
 
 Deletes a subnet group.
 

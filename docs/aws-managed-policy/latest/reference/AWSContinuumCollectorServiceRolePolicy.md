@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSContinuumCollectorServiceRolePolicy
-<a name="AWSContinuumCollectorServiceRolePolicy"></a>
 
 **Description**: Grants Amazon Continuum access to AWS services for discovering and reading configuration, assessing network reachability and security posture data in your account.
 

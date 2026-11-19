@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ApplicationA
 ---
 
 # ApplicationAttribute
-<a name="API_ApplicationAttribute"></a>
 
 Application details defined during the web ACL creation process. Application attributes help AWS WAF give recommendations for protection packs.
 

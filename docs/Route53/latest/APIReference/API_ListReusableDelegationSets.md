@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListReus
 ---
 
 # ListReusableDelegationSets
-<a name="API_ListReusableDelegationSets"></a>
 
 Retrieves a list of the reusable delegation sets that are associated with the current AWS account.
 

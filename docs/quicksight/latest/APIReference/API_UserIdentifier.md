@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UserI
 ---
 
 # UserIdentifier
-<a name="API_UserIdentifier"></a>
 
 A structure that contains information to identify a user.
 

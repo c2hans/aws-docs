@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Install software prerequisites
-<a name="producersdk-cpp-rpi-software"></a>
 
 The C\+\+ producer SDK requires that you install the following software prerequisites on Raspberry Pi.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # CloudWatch alarms
-<a name="cloudwatch-alarms"></a>
 
 When you operate your Amazon RDS DB instances, you want to monitor and generate alerts on different kinds of metrics, events, and traces. For MySQL and MariaDB databases, the critical sources of information are [DB instance metrics](database-instance-monitoring.md), [OS metrics](os-monitoring.md), [events, logs, and audit trails](events-logs-audit.md). We recommend that you use [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) to watch a single metric over a time period that you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Route 53 domain registration
-<a name="API_Types_Amazon_Route_53_Domains"></a>
 
 The following data types are supported by Amazon Route 53 domain registration:
 +  [BillingRecord](API_domains_BillingRecord.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # EventTriggerCondition
-<a name="API_connect-customer-profiles_EventTriggerCondition"></a>
 
 Specifies the circumstances under which the event should trigger the destination.
 

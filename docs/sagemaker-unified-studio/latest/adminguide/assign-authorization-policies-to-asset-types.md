@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Assign authorization policies to asset types
-<a name="assign-authorization-policies-to-asset-types"></a>
 
 Asset types define how the SageMaker catalog represents assets — an asset type defines the schema for a specific type of asset. Only domain unit owners and project members with adequate permissions can edit asset types. All other project members can view them but cannot edit them.
 

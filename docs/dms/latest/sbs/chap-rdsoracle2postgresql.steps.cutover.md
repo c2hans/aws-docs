@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2postgresql
 ---
 
 # Step 8: Cut Over to PostgreSQL
-<a name="chap-rdsoracle2postgresql.steps.cutover"></a>
 
 To move connections from your Oracle database to your PostgreSQL database, do the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-end
 ---
 
 # Deleting a proxy endpoint
-<a name="rds-proxy-endpoints.DeletingEndpoint"></a>
 
  To delete an endpoint for your proxy, follow these instructions:
 

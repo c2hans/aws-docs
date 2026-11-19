@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanCo
 ---
 
 # ScanConfiguration
-<a name="API_ScanConfiguration"></a>
 
 Contains information about the configuration used for the malware scan.
 

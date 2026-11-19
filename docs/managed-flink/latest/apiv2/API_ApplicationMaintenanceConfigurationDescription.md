@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationMaintenanceConfigurationDescription
-<a name="API_ApplicationMaintenanceConfigurationDescription"></a>
 
 The details of the maintenance configuration for the application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheSecurityGroupMembership
-<a name="API_CacheSecurityGroupMembership"></a>
 
 Represents a cluster's status within a particular cache security group.
 

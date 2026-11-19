@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure logging for .NET applications in Amazon CloudWatch Logs by using NLog
-<a name="configure-logging-for-net-applications-in-amazon-cloudwatch-logs-by-using-nlog"></a>
 
 *Bibhuti Sahu and Rob Hill (AWS), Amazon Web Services*
 

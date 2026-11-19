@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/nodes-connec
 ---
 
 # Connecting to nodes
-<a name="nodes-connecting"></a>
 
 ## Connecting to Valkey or Redis OSS nodes
 <a name="nodes-connecting.val"></a>

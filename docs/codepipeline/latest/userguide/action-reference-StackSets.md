@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # CloudFormation StackSets deploy action reference
-<a name="action-reference-StackSets"></a>
 
 CodePipeline offers the ability to perform CloudFormation StackSets operations as part of your CI/CD process. You use a stack set to create stacks in AWS accounts across AWS Regions by using a single CloudFormation template. All the resources included in each stack are defined by the stack set’s CloudFormation template. When you create the stack set, you specify the template to use, as well as any parameters and capabilities that the template requires.
 

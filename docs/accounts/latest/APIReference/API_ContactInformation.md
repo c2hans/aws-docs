@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_Contact
 ---
 
 # ContactInformation
-<a name="API_ContactInformation"></a>
 
 Contains the details of the primary contact information associated with an AWS account.
 

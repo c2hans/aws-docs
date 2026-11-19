@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReferenceStoreFilte
 ---
 
 # ReferenceStoreFilter
-<a name="API_ReferenceStoreFilter"></a>
 
 A filter for reference stores.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeleteMemoryRecord
-<a name="API_DeleteMemoryRecord"></a>
 
 Deletes a memory record from an AgentCore Memory resource. When you delete a memory record, it is permanently removed.
 

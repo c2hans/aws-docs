@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterAutoPatchConfig
-<a name="API_ClusterAutoPatchConfig"></a>
 
 The configuration for automatic patching of the instance group. When configured, the system automatically applies security patch AMI updates to the instance group.
 

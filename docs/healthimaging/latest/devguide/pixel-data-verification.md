@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/pixel-data
 ---
 
 # AWS HealthImaging pixel data verification
-<a name="pixel-data-verification"></a>
 
 During import, HealthImaging provides built-in pixel data verification by checking the lossless encoding and decoding state of every image. This feature ensures that images decoded using [ HTJ2K decoding libraries](reference-libraries.md) always match the original DICOM P10 images imported into HealthImaging.
 + The image onboarding process begins when an import job captures the original pixel quality state of DICOM P10 images before they are imported. A unique immutable Image Frame Resolution Checksum (IFRC) is generated for each image using the CRC32 algorithm. The IFRC checksum value is presented in the `job-output-manifest.json` metadata document. For more information, see [Understanding import jobs](understanding-import-jobs.md).

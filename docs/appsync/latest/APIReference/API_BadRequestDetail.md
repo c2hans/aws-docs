@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_BadReque
 ---
 
 # BadRequestDetail
-<a name="API_BadRequestDetail"></a>
 
 Provides further details for the reason behind the bad request. For reason type `CODE_ERROR`, the detail will contain a list of code errors.
 

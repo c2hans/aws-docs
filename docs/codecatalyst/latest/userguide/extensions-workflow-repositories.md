@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/extensions
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Automatically starting a workflow run after third-party repository events
-<a name="extensions-workflow-repositories"></a>
 
 You can use a linked GitHub repository, Bitbucket repository, or GitLab project repository as the source for a workflow, where changes to a specified branch in a linked GitHub repository, Bitbucket repository, or GitLab project repository automatically start a workflow run.
 

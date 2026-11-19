@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Examples of using the CLI with Internet Monitor
-<a name="CloudWatch-IM-get-started-CLI"></a>
 
 This section includes examples for using the AWS Command Line Interface with Internet Monitor operations.
 

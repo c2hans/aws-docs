@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_Force3DZ-function.
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_Force3DZ
-<a name="ST_Force3DZ-function"></a>
 
 ST\_Force3DZ returns a 3DZ geometry from the input geometry. For 2D geometries, the `z` coordinates of the nonempty points in the output geometry are all set to `0`. For 3DM geometries, the geometry is projected on the xy-Cartesian plane, and the `z` coordinates of the nonempty points in the output geometry are all set to `0`. For 3DZ geometries, a copy of the input geometry is returned. For 4D geometries, the geometry is projected to the xyz-Cartesian space. Empty points in the input geometry remain empty points in the output geometry.
 

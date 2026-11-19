@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage AdditionalInferenceSpecificationDefinition
-<a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition"></a>
 
 A structure of additional Inference Specification. Additional Inference Specification specifies details about inference jobs that can be run with models based on this model package
 

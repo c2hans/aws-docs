@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Recov
 ---
 
 # RecoveryPointSelection
-<a name="API_RecoveryPointSelection"></a>
 
 This specifies criteria to assign a set of resources, such as resource types or backup vaults.
 

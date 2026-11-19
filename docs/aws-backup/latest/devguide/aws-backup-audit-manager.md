@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/aws-backup-au
 ---
 
 # AWS Backup Audit Manager
-<a name="aws-backup-audit-manager"></a>
 
 You can use AWS Backup Audit Manager to audit the compliance of your AWS Backup policies against controls that you define. A *control* is a procedure designed to audit the compliance of a backup requirement, such as the backup frequency or the backup retention period.
 

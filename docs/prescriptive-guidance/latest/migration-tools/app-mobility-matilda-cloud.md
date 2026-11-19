@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Matilda Cloud
-<a name="app-mobility-matilda-cloud"></a>
 
 *Last update: June 3, 2024*
 

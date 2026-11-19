@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/client-side-ti
 ---
 
 # Create a new table with client-side timestamps in Amazon Keyspaces
-<a name="client-side-timestamps-create-new-table"></a>
 
 Follow these examples to create a new Amazon Keyspaces table with client-side timestamps enabled using the Amazon Keyspaces AWS Management Console, Cassandra Query Language (CQL), or the AWS Command Line Interface
 

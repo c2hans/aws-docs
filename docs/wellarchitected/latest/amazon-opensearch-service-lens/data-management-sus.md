@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Data management
-<a name="data-management-sus"></a>
 
 | AOSSUS03: How do you align data management practices with environmental sustainability objectives? |
 | --- |

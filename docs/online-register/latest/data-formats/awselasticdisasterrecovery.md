@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 ---
 
 # Data retrieval APIs for AWS Elastic Disaster Recovery
-<a name="awselasticdisasterrecovery"></a>
 
 AWS Elastic Disaster Recovery provides the following APIs for data retrieval.
 

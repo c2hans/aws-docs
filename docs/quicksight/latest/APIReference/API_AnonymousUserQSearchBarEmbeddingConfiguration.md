@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserQSearchBarEmbeddingConfiguration
-<a name="API_AnonymousUserQSearchBarEmbeddingConfiguration"></a>
 
 The settings that you want to use with the Q search bar.
 

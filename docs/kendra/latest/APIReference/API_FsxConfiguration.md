@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FsxConfig
 ---
 
 # FsxConfiguration
-<a name="API_FsxConfiguration"></a>
 
 Provides the configuration information to connect to Amazon FSx as your data source.
 

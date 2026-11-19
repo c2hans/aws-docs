@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::MigrationProject SchemaConversionApplicationAttributes
-<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes"></a>
 
 <a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-description"></a>The `SchemaConversionApplicationAttributes` property type specifies Property description not available. for an [AWS::DMS::MigrationProject](aws-resource-dms-migrationproject.md).
 

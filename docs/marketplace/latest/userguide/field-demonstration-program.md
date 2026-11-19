@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/field-demon
 ---
 
 # AWS Marketplace Field Demonstration Program
-<a name="field-demonstration-program"></a>
 
 The AWS Marketplace Field Demonstration Program (FDP) allows the AWS field team (internally approved AWS employees) to use some products and solutions through AWS Marketplace at no charge.
 

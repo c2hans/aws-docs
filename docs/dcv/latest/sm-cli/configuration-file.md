@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/configuration-file.htm
 ---
 
 # Configuration file
-<a name="configuration-file"></a>
 
 The configuration file is the third way to specify some configuration options and credentials. By default, it's provided in the zip file at `/conf/dcvsmcli.conf`.
 

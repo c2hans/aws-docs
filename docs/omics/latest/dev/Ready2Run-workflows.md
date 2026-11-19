@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/Ready2Run-workflows.htm
 ---
 
 # Ready2Run workflows in HealthOmics
-<a name="Ready2Run-workflows"></a>
 
 Ready2Run workflows are preconfigured workflows published by third-party publishers. Some publishers, such as Sentieon Inc, offer subscription-based workflows. Other Ready2Run workflows don't require a subscription, and some workflows are open source, such as the NF-Core workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Duratio
 ---
 
 # Duration
-<a name="API_Duration"></a>
 
 An object that represents a duration of time.
 

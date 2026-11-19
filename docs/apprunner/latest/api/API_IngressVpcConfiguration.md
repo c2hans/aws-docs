@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_IngressVpcConfi
 ---
 
 # IngressVpcConfiguration
-<a name="API_IngressVpcConfiguration"></a>
 
 The configuration of your VPC and the associated VPC endpoint. The VPC endpoint is an AWS PrivateLink resource that allows access to your App Runner services from within an Amazon VPC.
 

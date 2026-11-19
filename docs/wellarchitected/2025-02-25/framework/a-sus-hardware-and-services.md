@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Hardware and services
-<a name="a-sus-hardware-and-services"></a>
 
 **Topics**
 + [SUS 5 How do you select and use cloud hardware and services in your architecture to support your sustainability goals?](sus-05.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/allowed
 ---
 
 # Allowed Domains
-<a name="allowed-domains"></a>
 
 ## Streaming Instances
 <a name="allowed-domains-streaming-instances"></a>

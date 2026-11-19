@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisL
 ---
 
 # AxisLogarithmicScale
-<a name="API_AxisLogarithmicScale"></a>
 
 The logarithmic axis scale setup.
 

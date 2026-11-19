@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/api-gateway_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a lending library REST API
-<a name="api-gateway_example_cross_AuroraRestLendingLibrary_section"></a>
 
 The following code example shows how to create a lending library where patrons can borrow and return books by using a REST API backed by an Amazon Aurora database.
 

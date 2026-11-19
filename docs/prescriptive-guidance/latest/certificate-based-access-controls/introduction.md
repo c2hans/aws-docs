@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Strengthening security in IAM Roles Anywhere by using certificate-based access controls
-<a name="introduction"></a>
 
 *Alberto Sagrado Amador, Amazon Web Services*
 

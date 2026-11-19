@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Deactiva
 ---
 
 # DeactivateEvaluationForm
-<a name="API_DeactivateEvaluationForm"></a>
 
 Deactivates an evaluation form in the specified Connect Customer instance. After a form is deactivated, it is no longer available for users to start new evaluations based on the form.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-pro
 ---
 
 # Logging users' prompts in Amazon Q Developer
-<a name="q-admin-prompt-logging"></a>
 
 Administrators can enable the logging of all [inline suggestions](inline-suggestions.md) and [chat conversations](q-in-IDE-chat.md) that users have with Amazon Q in their integrated development environment (IDE). These logs can help with auditing, debugging, analytics, and ensuring compliance.
 

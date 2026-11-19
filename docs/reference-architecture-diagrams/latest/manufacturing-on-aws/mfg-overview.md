@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Overview
-<a name="mfg-overview"></a>
 
 The overview diagram shows how manufacturing workloads connect through a central data lake on AWS.
 

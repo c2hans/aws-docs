@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # IVS Broadcast SDK: Web Guide \| Low-Latency Streaming
-<a name="broadcast-web"></a>
 
 The IVS Low-Latency Streaming Web Broadcast SDK gives developers the tools to build interactive, real-time experiences on the web.
 

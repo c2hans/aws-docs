@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Serverless Real-Time Analytics for Games
-<a name="serverless-real-time-analytics-games"></a>
 
 Publication date: **August 9, 2021 ([Diagram history](#analytics-history))**
 

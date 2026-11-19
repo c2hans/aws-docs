@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Workload scaling
-<a name="workload-scaling"></a>
 
 Workload scaling in Kubernetes is essential for maintaining application performance and resource efficiency in dynamic environments. Scaling helps to make sure that applications can handle varying workloads without performance degradation. Kubernetes provides the ability to automatically scale resources up or down based on real-time metrics, allowing organizations to respond quickly to changes in traffic. This elasticity not only improves user experience but also optimizes resource utilization, helping to minimize costs associated with underused or overprovisioned resources.
 

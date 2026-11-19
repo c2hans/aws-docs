@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/instanc
 ---
 
 # Instance and Session Performance Metrics for Single-session and Multi-session Fleets
-<a name="instance-session-metrics-single-session-multi-session"></a>
 
 The following are instance and session performance metrics for single-session and multi-session fleets.
 

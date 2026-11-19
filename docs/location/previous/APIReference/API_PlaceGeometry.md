@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Place
 ---
 
 # PlaceGeometry
-<a name="API_PlaceGeometry"></a>
 
 Places uses a point geometry to specify a location or a Place.
 

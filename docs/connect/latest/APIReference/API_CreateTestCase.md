@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTe
 ---
 
 # CreateTestCase
-<a name="API_CreateTestCase"></a>
 
 Creates a test case with its content and metadata for the specified Amazon Connect instance.
 

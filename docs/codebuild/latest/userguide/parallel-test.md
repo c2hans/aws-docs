@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/parallel-test
 ---
 
 # Execute parallel tests in batch builds
-<a name="parallel-test"></a>
 
 You can use AWS CodeBuild to execute parallel tests in batch builds. Parallel test execution is a testing approach where multiple test cases run simultaneously across different environments, machines, or browsers, rather than executing sequentially. This approach can significantly reduce overall test execution time and improve testing efficiency. In CodeBuild, you can split your tests across multiple environments and run them concurrently.
 

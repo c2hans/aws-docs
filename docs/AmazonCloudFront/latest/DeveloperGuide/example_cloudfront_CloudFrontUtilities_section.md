@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Create signed URLs and cookies using an AWS SDK
-<a name="example_cloudfront_CloudFrontUtilities_section"></a>
 
 The following code example shows how to create signed URLs and cookies that allow access to restricted resources.
 

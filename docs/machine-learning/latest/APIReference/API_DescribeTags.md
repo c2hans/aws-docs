@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DescribeTags
-<a name="API_DescribeTags"></a>
 
 Describes one or more of the tags for your Amazon ML object.
 

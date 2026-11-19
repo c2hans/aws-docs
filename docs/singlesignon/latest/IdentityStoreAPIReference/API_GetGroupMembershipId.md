@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # GetGroupMembershipId
-<a name="API_GetGroupMembershipId"></a>
 
 Retrieves the `MembershipId` in an identity store.
 

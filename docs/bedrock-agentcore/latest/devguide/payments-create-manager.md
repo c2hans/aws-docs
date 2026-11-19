@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Create a Payment Manager and Connector
-<a name="payments-create-manager"></a>
 
 A Payment Manager is the top-level resource that coordinates payment operations for your AWS account. When you create a Payment Manager, you specify an authorizer type and an IAM role, and the service provisions a corresponding workload identity in AgentCore Identity.
 

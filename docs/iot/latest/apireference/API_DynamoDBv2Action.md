@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DynamoDBv2Ac
 ---
 
 # DynamoDBv2Action
-<a name="API_DynamoDBv2Action"></a>
 
 Describes an action to write to a DynamoDB table.
 

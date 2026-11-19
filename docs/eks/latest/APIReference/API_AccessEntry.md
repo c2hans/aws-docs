@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AccessEntry.
 ---
 
 # AccessEntry
-<a name="API_AccessEntry"></a>
 
 An access entry allows an IAM principal (user or role) to access your cluster. Access entries can replace the need to maintain the `aws-auth` `ConfigMap` for authentication. For more information about access entries, see [Access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) in the *Amazon EKS User Guide*.
 

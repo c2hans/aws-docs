@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS End User Messaging Social API contains several data types that various actions use. This section describes each data type in detail.
 

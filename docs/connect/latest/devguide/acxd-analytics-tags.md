@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-analytics-t
 ---
 
 # Analytics tags
-<a name="acxd-analytics-tags"></a>
 
 Tag conversation events with sentiment classifications for reporting and analysis.
 

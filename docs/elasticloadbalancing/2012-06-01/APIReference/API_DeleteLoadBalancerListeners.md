@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DeleteLoadBalancerListeners
-<a name="API_DeleteLoadBalancerListeners"></a>
 
 Deletes the specified listeners from the specified load balancer.
 

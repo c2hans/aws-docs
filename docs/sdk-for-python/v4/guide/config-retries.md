@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/config-retries.h
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Retries
-<a name="config-retries"></a>
 
 Calls to AWS services sometimes fail for reasons that have nothing to do with your request. A connection drops, a host is briefly unhealthy, or the service throttles you because too many requests arrived at the same time. A call that fails this way often succeeds if the client sends it again after a short delay, so every client in the AWS SDK for Python v4 retries these errors automatically. Synchronous and asynchronous clients use the same retry rules. Between attempts, a synchronous client sleeps the calling thread. An asynchronous client waits without blocking the event loop.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sha
 ---
 
 # Sharing your AWS resources
-<a name="getting-started-sharing"></a>
 
 To share a resource that you own by using AWS RAM, do the following:
 + [Enable resource sharing within AWS Organizations](#getting-started-sharing-orgs) (optional)

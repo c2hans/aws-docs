@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-w
 ---
 
 # Web Crawler
-<a name="kb-managed-ds-webcrawler"></a>
 
 The Web Crawler connects to and crawls URLs you specify for use in your managed knowledge base. The Web Crawler traverses HTML pages starting from your seed URLs, following child links according to your crawl scope and limits. You can also provide sitemap URLs as starting points. The Web Crawler respects robots.txt in accordance with [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html).
 

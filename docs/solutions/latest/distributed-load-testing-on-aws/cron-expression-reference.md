@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Cron expression reference
-<a name="cron-expression-reference"></a>
 
 This solution uses a subset of the standard 5-field Linux cron format for recurring test schedules. The cron expression consists of five fields separated by spaces.
 

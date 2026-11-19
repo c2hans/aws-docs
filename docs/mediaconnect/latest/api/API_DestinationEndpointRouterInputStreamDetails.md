@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpointRouterInputStreamDetails
-<a name="API_DestinationEndpointRouterInputStreamDetails"></a>
 
 Configuration details for a router input stream that is represented by a destination endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ru
 ---
 
 # Run Amazon ECS tasks on Amazon WorkSpaces with Amazon ECS Anywhere
-<a name="run-amazon-ecs-tasks-on-amazon-workspaces-with-amazon-ecs-anywhere"></a>
 
 *Akash Kumar, Amazon Web Services*
 

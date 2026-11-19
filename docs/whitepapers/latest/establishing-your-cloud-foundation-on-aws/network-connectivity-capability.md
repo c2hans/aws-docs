@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Network Connectivity capability
-<a name="network-connectivity-capability"></a>
 
  The Network Connectivity capability enables you to create, manage, and monitor secure, scalable, and highly available networks for your applications and workloads. This includes connectivity within the cloud, Hybrid connectivity, IP address management, network logging and monitoring, and DNS management.
 

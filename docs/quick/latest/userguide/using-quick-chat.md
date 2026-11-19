@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-quick-chat.
 ---
 
 # Ask questions, explore data, and get insights with chat in AWS Quick
-<a name="using-quick-chat"></a>
 
 You can use AWS Quick chat to ask questions, interact with your Quick resources, and accomplish tasks using multiple agentic worflows using natural language. When you ask a question, Quick chat analyzes the data it has access to to generate comprehensive responses.
 

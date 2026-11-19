@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-ref
 ---
 
 # Literals
-<a name="sql-ref-literals-spark"></a>
 
 A literal or constant is a fixed data value, composed of a sequence of characters or a numeric constant.
 

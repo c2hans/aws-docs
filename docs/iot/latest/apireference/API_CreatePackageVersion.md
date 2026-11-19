@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreatePackag
 ---
 
 # CreatePackageVersion
-<a name="API_CreatePackageVersion"></a>
 
 Creates a new version for an existing AWS IoT software package.
 

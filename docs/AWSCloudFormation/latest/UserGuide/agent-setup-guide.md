@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/agent
 ---
 
 # Agent setup guide
-<a name="agent-setup-guide"></a>
 
 The [Agent Toolkit for AWS](https://github.com/aws/agent-toolkit-for-aws) on GitHub provides the `aws-core` plugin and its bundled `aws-cloudformation` skill. The skill helps AI coding agents author and validate CloudFormation templates, troubleshoot deployments, and generate AWS CDK code. The plugin also configures the AWS MCP Server for documentation search and AWS API access.
 

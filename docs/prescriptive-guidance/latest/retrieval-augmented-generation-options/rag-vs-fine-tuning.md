@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Comparing Retrieval Augmented Generation and fine-tuning
-<a name="rag-vs-fine-tuning"></a>
 
 The following table describes the advantages and disadvantages of the fine-tuning and RAG-based approaches.
 

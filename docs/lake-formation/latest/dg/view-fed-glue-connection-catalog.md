@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/view-fed-glue-c
 ---
 
 # Viewing catalog objects
-<a name="view-fed-glue-connection-catalog"></a>
 
 For each available data source, AWS Glue creates a corresponding catalog in the AWS Glue Data Catalog. After you create a catalog, you can view the databases and tables in the catalog using the Lake Formation console or AWS CLI. For
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Api.html
 ---
 
 # Api
-<a name="API_Api"></a>
 
 Describes an AWS AppSync API. You can use `Api` for an AWS AppSync API with your preferred configuration, such as an Event API that provides real-time message publishing and message subscriptions over WebSockets.
 

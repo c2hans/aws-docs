@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Using the NAT gateway and Gateway Load Balancer with Amazon EC2 instances for centralized IPv4 egress
-<a name="using-nat-gateway-and-gwlb-with-ec2"></a>
 
 Using a software-based virtual appliance (on Amazon EC2) from AWS Marketplace and AWS Partner Network as an exit point is similar to the NAT gateway setup. This option can be used if you want to use the advanced layer 7 ﬁrewall/Intrusion Prevention/Detection System (IPS/IDS) and deep packet inspection capabilities of the various vendor offerings.
 

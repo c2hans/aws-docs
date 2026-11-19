@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGlueConsoleSageMakerNotebookFullAccess
-<a name="AWSGlueConsoleSageMakerNotebookFullAccess"></a>
 
 **Description**: Provides full access to AWS Glue via the AWS Management Console and access to sagemaker notebook instances.
 

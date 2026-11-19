@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Global endpoint best practices
-<a name="global-endpoint-best-practices"></a>
 
 This section provides best practices for using services with global endpoints in your recovery operations.
 

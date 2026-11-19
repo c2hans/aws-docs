@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Migrating to API-driven Slurm configuration
-<a name="sagemaker-hyperpod-slurm-api-config-migration"></a>
 
 If you have an existing SageMaker HyperPod Slurm cluster that uses the legacy `provisioning_parameters.json` file for Slurm configuration, you can migrate to the API-driven configuration model. With API-driven configuration, you define Slurm node types, partition assignments, and Amazon FSx mounting directly in the [CreateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) and [UpdateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) API payloads, removing the need to manage a separate configuration file in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotAnalyze
 ---
 
 # BotAnalyzerHistorySummary
-<a name="API_BotAnalyzerHistorySummary"></a>
 
 Contains summary information about a historical bot analysis execution.
 

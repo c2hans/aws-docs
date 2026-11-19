@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ch
 ---
 
 # ChunkingConfiguration
-<a name="API_agent_ChunkingConfiguration"></a>
 
 Details about how to chunk the documents in the data source. A *chunk* refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried.
 

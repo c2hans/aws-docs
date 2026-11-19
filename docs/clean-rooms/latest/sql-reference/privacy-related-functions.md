@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/privacy
 ---
 
 # Privacy-related functions
-<a name="privacy-related-functions"></a>
 
 AWS Clean Rooms provides functions to help you comply with privacy-related compliance for the following specifications.
 + **Global Privacy Platform (GPP)** – A specification from the Interactive Advertising Bureau (IAB) that establishes a global, standardized framework for online privacy and use of data. For more information about the technical specifications of the GPP, see the [Global Privacy Platform documentation on GitHub](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform).

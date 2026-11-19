@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWebAppIdentityProviderDetails
-<a name="API_UpdateWebAppIdentityProviderDetails"></a>
 
 A union that contains the `UpdateWebAppIdentityCenterConfig` object.
 

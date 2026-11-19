@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdatePullRequestTitle
-<a name="API_UpdatePullRequestTitle"></a>
 
 Replaces the title of a pull request.
 

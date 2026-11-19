@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Custom
 ---
 
 # CustomRoutingListener
-<a name="API_CustomRoutingListener"></a>
 
 A complex type for a listener for a custom routing accelerator.
 

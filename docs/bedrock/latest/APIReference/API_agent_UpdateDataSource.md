@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Up
 ---
 
 # UpdateDataSource
-<a name="API_agent_UpdateDataSource"></a>
 
 Updates the configurations for a data source connector.
 

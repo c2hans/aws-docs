@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormNumericQuestionAutomation
-<a name="API_EvaluationFormNumericQuestionAutomation"></a>
 
 Information about the automation configuration in numeric questions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/data-engineer-a
 ---
 
 # AWS Certified Data Engineer - Associate (DEA-C01)
-<a name="data-engineer-associate-01"></a>
 
 The AWS Certified Data Engineer - Associate (DEA-C01) exam validates a candidate's ability to implement data pipelines and to monitor, troubleshoot, and optimize cost and performance issues in accordance with best practices.
 

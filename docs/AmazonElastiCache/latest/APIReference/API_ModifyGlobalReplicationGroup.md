@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ModifyGlobalReplicationGroup
-<a name="API_ModifyGlobalReplicationGroup"></a>
 
 Modifies the settings for a Global datastore.
 

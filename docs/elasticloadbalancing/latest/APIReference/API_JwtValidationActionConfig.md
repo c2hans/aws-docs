@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # JwtValidationActionConfig
-<a name="API_JwtValidationActionConfig"></a>
 
 Information about a JSON Web Token (JWT) validation action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowExecutionSummary
-<a name="API_agent-runtime_FlowExecutionSummary"></a>
 
 Contains summary information about a flow execution, including its status, timestamps, and identifiers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/coalesce-support.html
 ---
 
 # AWS Glue support for Coalesce
-<a name="coalesce-support"></a>
 
 AWS Glue supports Coalesce as follows:
 

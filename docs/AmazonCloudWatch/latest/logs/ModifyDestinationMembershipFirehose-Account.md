@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ModifyDesti
 ---
 
 # Modifying destination membership at runtime
-<a name="ModifyDestinationMembershipFirehose-Account"></a>
 
 You might encounter situations where you have to add or remove log senders from a destination that you own. You can use the **PutDestinationPolicy** and `PutAccountPolicy` actions on your destination with the new access policy. In the following example, a previously added account **111111111111** is stopped from sending any more log data, and account **333333333333** is enabled.
 

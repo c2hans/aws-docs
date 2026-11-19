@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf02-
 ---
 
 # PERF02-BP04 Scale your compute resources dynamically
-<a name="perf02-bp04"></a>
 
  Dynamic scaling adjusts compute up and down automatically as load changes, so you hold performance during peaks without paying for peak capacity around the clock. Scaling holds performance only when it tracks a metric that reflects real load and handles both scale-out and scale-in without dropping work.
 

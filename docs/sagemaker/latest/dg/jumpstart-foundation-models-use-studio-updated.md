@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Use foundation models in Studio
-<a name="jumpstart-foundation-models-use-studio-updated"></a>
 
 Amazon SageMaker Studio allows you to fine-tune, deploy, and evaluate both publicly available and proprietary JumpStart foundation models directly through the Studio UI.
 

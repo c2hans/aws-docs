@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_OutputConve
 ---
 
 # OutputConversion
-<a name="API_OutputConversion"></a>
 
 Contains the formatting options for an outbound transformer (takes JSON or XML as input and converts it to an EDI document (currently only X12 format is supported).
 

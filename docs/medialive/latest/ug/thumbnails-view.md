@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/thumbnails-view.html
 ---
 
 # Viewing thumbnails on the console
-<a name="thumbnails-view"></a>
 
 When thumbnails is enabled, MediaLive generates thumbnails for the currently active input in a channel that is running. For a standard channel, MediaLive generates two thumbnails. For a single-pipeline channel, MediaLive generates one thumbnail.
 

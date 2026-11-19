@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListParts.html
 ---
 
 # ListParts
-<a name="API_ListParts"></a>
 
 Lists the parts that have been uploaded for a specific multipart upload.
 
@@ -110,6 +109,7 @@ HTTP/1.1 200
 x-amz-abort-date: {{AbortDate}}
 x-amz-abort-rule-id: {{AbortRuleId}}
 x-amz-request-charged: {{RequestCharged}}
+x-amz-version-id: {{VersionId}}
 <?xml version="1.0" encoding="UTF-8"?>
 <ListPartsResult>
    <Bucket>string</Bucket>
@@ -170,6 +170,11 @@ This functionality is not supported for directory buckets.
 If present, indicates that the requester was successfully charged for the request. For more information, see [Using Requester Pays buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon Simple Storage Service user guide*.
 This functionality is not supported for directory buckets.
 Valid Values: `requester`
+
+ ** [x-amz-version-id](#API_ListParts_ResponseSyntax) **   <a name="AmazonS3-ListParts-response-header-VersionId"></a>
+Version ID of the object.
+Returns the Version ID of the object for the listed parts, if bucket versioning is enabled.
+This functionality is not supported for directory buckets.
 
 The following data is returned in XML format by the service.
 
@@ -276,6 +281,52 @@ Server: AmazonS3
   <Owner>
     <ID>75aa57f09aa0c8caeab4f8c24e99d10f8e7faeebf76c078efc7c6caea54ba06a</ID>
 
+  </Owner>
+  <StorageClass>STANDARD</StorageClass>
+  <PartNumberMarker>1</PartNumberMarker>
+  <NextPartNumberMarker>3</NextPartNumberMarker>
+  <MaxParts>2</MaxParts>
+  <IsTruncated>true</IsTruncated>
+  <Part>
+    <PartNumber>2</PartNumber>
+    <LastModified>2010-11-10T20:48:34.000Z</LastModified>
+    <ETag>"7778aef83f66abc1fa1e8477f296d394"</ETag>
+    <Size>10485760</Size>
+  </Part>
+  <Part>
+    <PartNumber>3</PartNumber>
+    <LastModified>2010-11-10T20:48:33.000Z</LastModified>
+    <ETag>"aaaa18db4cc2f85cedef654fccc4a4x8"</ETag>
+    <Size>10485760</Size>
+  </Part>
+</ListPartsResult>
+```
+
+### Sample Response for general purpose buckets when the object is versioned
+<a name="API_ListParts_Example_3"></a>
+
+If versioning is enabled on the bucket, Amazon S3 includes the `x-amz-version-id` response header.
+
+```
+HTTP/1.1 200 OK
+x-amz-id-2: Uuag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+x-amz-request-id: 318BC8BC148832E5
+x-amz-version-id: 3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo
+Date: Mon, 1 Nov 2010 20:34:56 GMT
+Content-Length: 985
+Connection: keep-alive
+Server: AmazonS3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ListPartsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+  <Bucket>example-bucket</Bucket>
+  <Key>example-object</Key>
+  <UploadId>XXBsb2FkIElEIGZvciBlbHZpbmcncyVcdS1tb3ZpZS5tMnRzEEEwbG9hZA</UploadId>
+  <Initiator>
+      <ID>arn:aws:iam::111122223333:user/some-user-11116a31-17b5-4fb7-9df5-b288870f11xx</ID>
+  </Initiator>
+  <Owner>
+    <ID>75aa57f09aa0c8caeab4f8c24e99d10f8e7faeebf76c078efc7c6caea54ba06a</ID>
   </Owner>
   <StorageClass>STANDARD</StorageClass>
   <PartNumberMarker>1</PartNumberMarker>

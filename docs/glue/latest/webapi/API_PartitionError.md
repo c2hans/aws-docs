@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionError.ht
 ---
 
 # PartitionError
-<a name="API_PartitionError"></a>
 
 Contains information about a partition error.
 

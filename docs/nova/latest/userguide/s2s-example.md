@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/s2s-example.html
 ---
 
 # Speech-to-speech Example
-<a name="s2s-example"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 Sonic guide, visit [Getting started](https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-getting-started.html).

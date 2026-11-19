@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-insta
 ---
 
 # Scheduled events for Amazon EC2 instances
-<a name="monitoring-instances-status-check_sched"></a>
 
 To ensure infrastructure reliability and performance, AWS can schedule events to reboot, stop, and retire your instances. These events do not occur frequently.
 

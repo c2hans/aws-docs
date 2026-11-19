@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScanResul
 ---
 
 # ScanResultConditionRequest
-<a name="API_ScanResultConditionRequest"></a>
 
 The Amazon Inspector scan-result criteria that an AMI must meet to be allowed. The criteria can limit the highest finding severity. They can also limit, for each severity, the days since Amazon Inspector reported a fix as available.
 

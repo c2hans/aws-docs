@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises SFTP server to AWS using AWS Transfer for SFTP
-<a name="migrate-an-on-premises-sftp-server-to-aws-using-aws-transfer-for-sftp"></a>
 
 *Akash Kumar, Amazon Web Services*
 

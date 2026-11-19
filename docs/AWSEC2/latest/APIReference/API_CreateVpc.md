@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc
 ---
 
 # CreateVpc
-<a name="API_CreateVpc"></a>
 
 Creates a VPC with the specified CIDR blocks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ConfigurableUpfrontPricingTerm
-<a name="API_marketplace-discovery_ConfigurableUpfrontPricingTerm"></a>
 
 Defines a configurable upfront pricing term with selectable rate cards, where buyers choose from predefined pricing configurations.
 

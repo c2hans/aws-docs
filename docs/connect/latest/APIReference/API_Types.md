@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types.ht
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Connect Service:
 +  [ActionSummary](API_ActionSummary.md)

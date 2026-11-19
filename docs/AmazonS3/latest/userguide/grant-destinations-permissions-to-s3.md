@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinat
 ---
 
 # Granting permissions to publish event notification messages to a destination
-<a name="grant-destinations-permissions-to-s3"></a>
 
 You must grant the Amazon S3 principal the necessary permissions to call the relevant API to publish messages to an SNS topic, an SQS queue, or a Lambda function. This is so that Amazon S3 can publish event notification messages to a destination.
 

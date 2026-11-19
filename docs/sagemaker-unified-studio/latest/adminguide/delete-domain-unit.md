@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Delete domain units in Amazon SageMaker Unified Studio
-<a name="delete-domain-unit"></a>
 
 **To delete a domain unit**
 

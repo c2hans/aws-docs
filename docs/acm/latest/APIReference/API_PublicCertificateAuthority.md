@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_PublicCertif
 ---
 
 # PublicCertificateAuthority
-<a name="API_PublicCertificateAuthority"></a>
 
 Configuration for a public certificate authority.
 

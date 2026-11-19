@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/ingest-aut
 ---
 
 # Ingest authorization
-<a name="ingest-auth"></a>
 
 MediaPackage ingest requests usually originate from a video encoder.
 

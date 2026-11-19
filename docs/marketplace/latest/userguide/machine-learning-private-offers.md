@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/machine-lea
 ---
 
 # Creating private offers for machine learning products
-<a name="machine-learning-private-offers"></a>
 
  You can negotiate and offer a private offer directly to customers for your machine learning products. For more information on private offers, see [Preparing a private offer for your AWS Marketplace product](private-offers-overview.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Searching data in Amazon OpenSearch Service
-<a name="searching"></a>
 
 There are several common methods for searching documents in Amazon OpenSearch Service, including URI searches and request body searches. OpenSearch Service offers additional functionality that improves the search experience, such as custom packages, SQL support, and asynchronous search. For a comprehensive OpenSearch search API reference, see the [OpenSearch documentation](https://docs.opensearch.org/latest/opensearch/query-dsl/full-text/).
 

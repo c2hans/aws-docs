@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule TaskAction
-<a name="aws-properties-connect-rule-taskaction"></a>
 
 Information about the task action. This field is required if `TriggerEventSource` is one of the following values: `OnZendeskTicketCreate` \| `OnZendeskTicketStatusUpdate` \| `OnSalesforceCaseCreate`
 
@@ -22,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ContactFlowArn](#cfn-connect-rule-taskaction-contactflowarn)" : {{String}},
   "[Description](#cfn-connect-rule-taskaction-description)" : {{String}},
   "[Name](#cfn-connect-rule-taskaction-name)" : {{String}},
-  "[References](#cfn-connect-rule-taskaction-references)" : {{Reference}}
+  "[References](#cfn-connect-rule-taskaction-references)" : {{{{{Key}}: {{Value}}, ...}}}
 }
 ```
 
@@ -34,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Description](#cfn-connect-rule-taskaction-description): {{String}}
   [Name](#cfn-connect-rule-taskaction-name): {{String}}
   [References](#cfn-connect-rule-taskaction-references): {{
-    Reference}}
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
@@ -66,5 +65,5 @@ The description. Supports variable injection. For more information, see [JSONPat
 `References`  <a name="cfn-connect-rule-taskaction-references"></a>
 Information about the reference when the `referenceType` is `URL`. Otherwise, null. `URL` is the only accepted type. (Supports variable injection in the `Value` field.)
 *Required*: No
-*Type*: [Reference](aws-properties-connect-rule-reference.md)
+*Type*: Object of [Reference](aws-properties-connect-rule-reference.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

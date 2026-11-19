@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PoolFilter
-<a name="API_PoolFilter"></a>
 
 The information for a pool that meets a specified criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-a
 ---
 
 # Deploying a Next.js SSR application to Amplify
-<a name="deploy-nextjs-app"></a>
 
 By default, Amplify deploys new SSR apps using Amplify Hosting's compute service with support for Next.js versions 12 through 15. Amplify Hosting compute fully manages the resources required to deploy an SSR app. SSR apps in your Amplify account that you deployed before November 17, 2022 are using the Classic (Next.js 11 only) SSR provider.
 

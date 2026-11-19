@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Opera
 ---
 
 # Amazon DocumentDB (with MongoDB compatibility)
-<a name="API_Operations_Amazon_DocumentDB_with_MongoDB_compatibility"></a>
 
 The following actions are supported by Amazon DocumentDB (with MongoDB compatibility):
 +  [AddSourceIdentifierToSubscription](API_AddSourceIdentifierToSubscription.md)

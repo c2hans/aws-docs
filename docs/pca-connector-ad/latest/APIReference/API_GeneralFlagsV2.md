@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # GeneralFlagsV2
-<a name="API_GeneralFlagsV2"></a>
 
 General flags for v2 template schema that defines if the template is for a machine or a user and if the template can be issued using autoenrollment.
 

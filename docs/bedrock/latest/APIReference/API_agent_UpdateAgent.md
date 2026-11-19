@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Up
 ---
 
 # UpdateAgent
-<a name="API_agent_UpdateAgent"></a>
 
 Updates the configuration of an agent.
 

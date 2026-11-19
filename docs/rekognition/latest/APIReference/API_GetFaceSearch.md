@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetF
 ---
 
 # GetFaceSearch
-<a name="API_GetFaceSearch"></a>
 
 Gets the face search results for Amazon Rekognition Video face search started by [StartFaceSearch](API_StartFaceSearch.md). The search returns faces in a collection that match the faces of persons detected in a video. It also includes the time(s) that faces are matched in the video.
 

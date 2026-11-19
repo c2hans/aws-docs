@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Deltacluster-tri
 ---
 
 # Use a Delta Lake cluster with Trino
-<a name="Deltacluster-trino"></a>
 
 With Amazon EMR releases 6.9.0 and higher, you can use Delta Lake with your Trino cluster.
 

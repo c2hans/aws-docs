@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rerank-use.html
 ---
 
 # Use a reranker model in Amazon Bedrock
-<a name="rerank-use"></a>
 
 You can use a reranker model directly or while retrieving results during knowledge base query. Choose the tab for your preferred method, and then follow the steps:
 

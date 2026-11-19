@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Netskope API Token
-<a name="mes-partner-NetskopeApiToken"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c41b3"></a>

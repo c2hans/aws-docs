@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serv
 ---
 
 # Working with AWS Serverless Land
-<a name="serverlessland-overview"></a>
 
 AWS Serverless Land in the AWS Toolkit for Visual Studio Code is a collection of features that assists you with building event-driven architectures. The following topic sections describe how to work with Serverless Land in the AWS Toolkit. For detailed information about Serverless Land, see the [Serverless Land](https://serverlessland.com/) web application.
 

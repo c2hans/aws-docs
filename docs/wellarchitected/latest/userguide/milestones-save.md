@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/milesto
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Saving a milestone
-<a name="milestones-save"></a>
 
 A milestone records the current state of a workload. The owner of a workload can save a milestone at any time.
 

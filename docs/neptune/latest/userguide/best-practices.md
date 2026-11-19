@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices.
 ---
 
 # Best practices: getting the most out of Neptune
-<a name="best-practices"></a>
 
 The following are some general recommendations for working with Amazon Neptune. Use this information as a reference to quickly find recommendations for using Amazon Neptune and maximizing performance.
 

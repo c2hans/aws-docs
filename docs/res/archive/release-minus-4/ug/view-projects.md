@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/view-proj
 ---
 
 # View projects
-<a name="view-projects"></a>
 
 ![Projects](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-projects.jpg)
 

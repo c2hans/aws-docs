@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-business
 ---
 
 # Business applications services
-<a name="sns-event-sources-business-applications"></a>
 
 The following table describes how Amazon Chime integrates with Amazon SNS to send notifications for important meeting events, enabling you to stay informed about your communications and scheduling.
 

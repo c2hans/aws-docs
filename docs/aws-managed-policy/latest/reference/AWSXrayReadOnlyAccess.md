@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSX
 ---
 
 # AWSXrayReadOnlyAccess
-<a name="AWSXrayReadOnlyAccess"></a>
 
 **Description**: AWS X-Ray read only managed policy
 

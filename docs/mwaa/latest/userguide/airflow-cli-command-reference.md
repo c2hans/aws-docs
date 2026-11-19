@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/airflow-cli-comman
 ---
 
 # Apache Airflow CLI command reference
-<a name="airflow-cli-command-reference"></a>
 
 This topic describes the supported and unsupported Apache Airflow CLI commands on Amazon Managed Workflows for Apache Airflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Place the current user on hold in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-holdself"></a>
 
 Places the current user's participant on hold for a specific contact.
 

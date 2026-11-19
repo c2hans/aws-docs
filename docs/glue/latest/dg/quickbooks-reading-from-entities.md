@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/quickbooks-reading-from-e
 ---
 
 # Reading from QuickBooks entities
-<a name="quickbooks-reading-from-entities"></a>
 
 **Prerequisite**
 

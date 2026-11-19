@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_StartDat
 ---
 
 # StartDataSourceIntrospection
-<a name="API_StartDataSourceIntrospection"></a>
 
 Creates a new introspection. Returns the `introspectionId` of the new introspection after its creation.
 

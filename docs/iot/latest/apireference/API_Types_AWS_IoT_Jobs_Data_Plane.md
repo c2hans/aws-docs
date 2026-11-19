@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Types_AWS_Io
 ---
 
 # AWS IoT jobs data
-<a name="API_Types_AWS_IoT_Jobs_Data_Plane"></a>
 
 The following data types are supported by AWS IoT jobs data:
 +  [CommandParameterValue](API_iot-jobs-data_CommandParameterValue.md)

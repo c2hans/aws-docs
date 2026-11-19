@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Connected Lodging Properties Using IoT and AI/ML
-<a name="connected-lodging-properties-iot"></a>
 
 Publication date: **August 28, 2020 ([Diagram history](#conlodge-history))**
 

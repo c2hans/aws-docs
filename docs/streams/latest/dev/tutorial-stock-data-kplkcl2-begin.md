@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # Complete prerequisites
-<a name="tutorial-stock-data-kplkcl2-begin"></a>
 
 You must meet the following requirements to complete this tutorial:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Workflo
 ---
 
 # WorkflowStep
-<a name="API_WorkflowStep"></a>
 
 The basic building block of a workflow.
 

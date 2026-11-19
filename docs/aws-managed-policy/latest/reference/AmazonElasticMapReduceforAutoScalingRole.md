@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticMapReduceforAutoScalingRole
-<a name="AmazonElasticMapReduceforAutoScalingRole"></a>
 
 **Description**: Amazon Elastic MapReduce for Auto Scaling. Role to allow Auto Scaling to add and remove instances from your EMR cluster.
 

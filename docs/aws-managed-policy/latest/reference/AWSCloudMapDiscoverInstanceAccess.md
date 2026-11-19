@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudMapDiscoverInstanceAccess
-<a name="AWSCloudMapDiscoverInstanceAccess"></a>
 
 **Description**: Provides access to AWS Cloud Map discovery API.
 

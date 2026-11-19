@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFile
 ---
 
 # DescribeFileSystemAliases
-<a name="API_DescribeFileSystemAliases"></a>
 
 Returns the DNS aliases that are associated with the specified Amazon FSx for Windows File Server file system. A history of all DNS aliases that have been associated with and disassociated from the file system is available in the list of [AdministrativeAction](API_AdministrativeAction.md) provided in the [DescribeFileSystems](API_DescribeFileSystems.md) operation response.
 

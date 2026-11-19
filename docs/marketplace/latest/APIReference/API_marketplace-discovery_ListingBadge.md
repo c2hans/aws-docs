@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListingBadge
-<a name="API_marketplace-discovery_ListingBadge"></a>
 
 A badge indicating a special attribute of a listing, such as free tier eligibility or Quick Launch support.
 

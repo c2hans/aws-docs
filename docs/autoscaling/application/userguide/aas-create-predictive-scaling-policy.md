@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/aas-cr
 ---
 
 # Create a predictive scaling policy for Application Auto Scaling
-<a name="aas-create-predictive-scaling-policy"></a>
 
 The following example policy uses the AWS CLI to configure a predictive scaling policy for Amazon ECS service. Replace each {{user input placeholder}} with your own information.
 

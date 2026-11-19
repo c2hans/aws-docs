@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListCommentsItem
-<a name="API_ListCommentsItem"></a>
 
 ## Contents
 <a name="API_ListCommentsItem_Contents"></a>

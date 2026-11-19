@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Send and receive batches of messages with Amazon SQS using an AWS SDK
-<a name="example_sqs_Scenario_SendReceiveBatch_section"></a>
 
 The following code examples show how to:
 + Create an Amazon SQS queue.

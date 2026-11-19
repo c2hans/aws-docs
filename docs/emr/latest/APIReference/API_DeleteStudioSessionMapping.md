@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DeleteStudio
 ---
 
 # DeleteStudioSessionMapping
-<a name="API_DeleteStudioSessionMapping"></a>
 
 Removes a user or group from an Amazon EMR Studio.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kinesis_example_k
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListStreamConsumers` with an AWS SDK
-<a name="kinesis_example_kinesis_ListStreamConsumers_section"></a>
 
 The following code example shows how to use `ListStreamConsumers`.
 

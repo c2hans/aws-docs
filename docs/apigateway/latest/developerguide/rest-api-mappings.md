@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Use API mappings to connect API stages to a custom domain name for REST APIs
-<a name="rest-api-mappings"></a>
 
 You use API mappings to connect API stages to a custom domain name. This sends traffic to your APIs through your custom domain name.
 

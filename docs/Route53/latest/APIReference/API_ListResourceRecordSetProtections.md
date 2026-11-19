@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListReso
 ---
 
 # ListResourceRecordSetProtections
-<a name="API_ListResourceRecordSetProtections"></a>
 
 Lists the resource record set protections in a hosted zone. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

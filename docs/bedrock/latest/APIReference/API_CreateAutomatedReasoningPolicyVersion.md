@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateAu
 ---
 
 # CreateAutomatedReasoningPolicyVersion
-<a name="API_CreateAutomatedReasoningPolicyVersion"></a>
 
 Creates a new version of an existing Automated Reasoning policy. This allows you to iterate on your policy rules while maintaining previous versions for rollback or comparison purposes.
 

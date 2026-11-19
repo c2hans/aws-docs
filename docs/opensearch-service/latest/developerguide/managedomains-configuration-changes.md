@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Making configuration changes in Amazon OpenSearch Service
-<a name="managedomains-configuration-changes"></a>
 
 Amazon OpenSearch Service uses a *blue/green* deployment process when updating domains. A blue/green deployment creates an idle environment for domain updates that copies the production environment, and routes users to the new environment after those updates are complete. In a blue/green deployment, the blue environment is the current production environment. The green environment is the idle environment.
 
@@ -476,7 +475,7 @@ During blue/green deployment your Amazon OpenSearch Service cluster is available
 ## Charges for configuration changes
 <a name="managedomains-config-charges"></a>
 
-If you change the configuration for a domain, OpenSearch Service creates a new cluster as described in [Making configuration changes in Amazon OpenSearch Service](#managedomains-configuration-changes). During the migration of old to new, you incur the following charges:
+If you change the configuration for a domain, OpenSearch Service creates a new cluster as described in [Making configuration changes in Amazon OpenSearch Service](managedomains-configuration-changes.md). During the migration of old to new, you incur the following charges:
 + If you change the instance type, you're charged for both clusters for the first hour. After the first hour, you're only charged for the new cluster. EBS volumes aren't charged twice because they're part of your cluster, so their billing follows instance billing.
 
   **Example**: You change the configuration from three `m3.xlarge` instances to four `m4.large` instances. For the first hour, you're charged for both clusters (3 \* `m3.xlarge` \+ 4 \* `m4.large`). After the first hour, you're charged only for the new cluster (4 \* `m4.large`).

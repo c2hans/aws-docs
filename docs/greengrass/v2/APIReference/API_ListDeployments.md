@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListDeplo
 ---
 
 # ListDeployments
-<a name="API_ListDeployments"></a>
 
 Retrieves a paginated list of deployments.
 

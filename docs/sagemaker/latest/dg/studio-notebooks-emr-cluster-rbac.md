@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr
 ---
 
 # Configure IAM runtime roles for Amazon EMR cluster access in Studio
-<a name="studio-notebooks-emr-cluster-rbac"></a>
 
 When you connect to an Amazon EMR cluster from your Studio or Studio Classic notebooks, you can visually browse a list of IAM roles, known as runtime roles, and select one on the fly. Subsequently, all your Apache Spark, Apache Hive, or Presto jobs created from your notebook access only the data and resources permitted by policies attached to the runtime role. Also, when data is accessed from data lakes managed with AWS Lake Formation, you can enforce table-level and column-level access using policies attached to the runtime role.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_PackageAgg
 ---
 
 # PackageAggregation
-<a name="API_PackageAggregation"></a>
 
 The details that define an aggregation based on operating system package type.
 

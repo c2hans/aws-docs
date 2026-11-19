@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Implementation phase
-<a name="implement"></a>
 
 Migration that follows the big bang or phased approach requires new development and testing. The AWS Schema Conversion Tool (AWS SCT) can automatically generate AWS Glue jobs from SSIS packages. This reduces the migration time and effort significantly. Or, you can use AWS Glue Studio for graphical interface-based development, or build Spark libraries that you can run on either AWS Glue or Amazon EMR.
 

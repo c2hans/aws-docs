@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Considerations for working with firewalls and firewall endpoints
-<a name="firewall-and-firewall-endpoints-considerations"></a>
 
 Before you create, update, or delete a firewall and its endpoints in AWS Network Firewall, review these considerations.
 

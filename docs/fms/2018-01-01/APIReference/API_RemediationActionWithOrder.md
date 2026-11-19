@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Remediat
 ---
 
 # RemediationActionWithOrder
-<a name="API_RemediationActionWithOrder"></a>
 
 An ordered list of actions you can take to remediate a violation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/basic-deliver.html
 ---
 
 # Understand data delivery in Amazon Data Firehose
-<a name="basic-deliver"></a>
 
 When you send data to your Firehose stream, it's automatically delivered to your chosen destination. The following table explains data delivery to different destinations.
 

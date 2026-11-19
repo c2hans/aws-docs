@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Develop a job bundle through four stages on Deadline Cloud
-<a name="examples-jb-job-progression"></a>
 
 The [job\_dev\_progression](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_dev_progression) directory on the GitHub website contains a sequence of four job bundle development stages. As you add more options and split a workload into smaller parallel pieces, the complexity of the job grows. The four stages start with a single self-contained template and end at a Python package bundled with script entry points and unit tests. The sample is built around Python, but the ideas are not Python-specific.
 

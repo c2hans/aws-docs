@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Schedu
 ---
 
 # ScheduleLambdaFunctionFailedEventAttributes
-<a name="API_ScheduleLambdaFunctionFailedEventAttributes"></a>
 
 Provides the details of the `ScheduleLambdaFunctionFailed` event. It isn't set for other event types.
 

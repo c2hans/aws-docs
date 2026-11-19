@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkMailEventsServiceRolePolicy
-<a name="AmazonWorkMailEventsServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and Resources used or managed by Amazon WorkMail Events
 

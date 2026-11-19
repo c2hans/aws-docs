@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Get
 ---
 
 # GetPackageVersionAsset
-<a name="API_GetPackageVersionAsset"></a>
 
  Returns an asset (or file) that is in a package. For example, for a Maven package version, use `GetPackageVersionAsset` to download a `JAR` file, a `POM` file, or any other assets in the package version.
 

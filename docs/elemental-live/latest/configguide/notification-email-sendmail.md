@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/notifi
 ---
 
 # Configure Sendmail relay server
-<a name="notification-email-sendmail"></a>
 
 Use this procedure to set up a Sendmail relay server if your network doesn't accept open relay messages.
 

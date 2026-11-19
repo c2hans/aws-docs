@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayMulticastDomainAssociations
-<a name="API_GetTransitGatewayMulticastDomainAssociations"></a>
 
 Gets information about the associations for the transit gateway multicast domain.
 

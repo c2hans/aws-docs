@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartW
 ---
 
 # Quick Start: Enable your Amazon EC2 instances running Windows Server 2016 to send logs to CloudWatch Logs using the CloudWatch Logs agent
-<a name="QuickStartWindows2016"></a>
 
 **Tip**
 CloudWatch includes a new unified agent that can collect both logs and metrics from EC2 instances and on-premises servers. We recommend that you use the newer unified CloudWatch agent. For more information, see [Getting started with CloudWatch Logs](CWL_GettingStarted.md).

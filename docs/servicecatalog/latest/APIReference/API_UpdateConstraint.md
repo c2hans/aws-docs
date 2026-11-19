@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateConstraint
-<a name="API_UpdateConstraint"></a>
 
 Updates the specified constraint.
 

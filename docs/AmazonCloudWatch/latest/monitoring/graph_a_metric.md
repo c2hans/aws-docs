@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph
 ---
 
 # Graph a metric
-<a name="graph_a_metric"></a>
 
 You can select metrics and create graphs of the metric data using the CloudWatch console.
 

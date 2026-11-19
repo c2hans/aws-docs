@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/dev-sdk
 ---
 
 # SDKs and tools for using Amazon Location Service
-<a name="dev-sdks"></a>
 
 AWS provides Software Development Kits (SDKs) for multiple programming languages, allowing you to easily integrate the Amazon Location Service into your applications. This page outlines the available SDKs, their installation procedures, and code examples to help you get started with the Amazon Location Service in your preferred development environment.
 

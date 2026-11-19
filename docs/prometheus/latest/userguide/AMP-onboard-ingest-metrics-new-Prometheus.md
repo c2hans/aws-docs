@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-onboard-
 ---
 
 # Set up ingestion from a new Prometheus server using Helm
-<a name="AMP-onboard-ingest-metrics-new-Prometheus"></a>
 
 The instructions in this section get you up and running with Amazon Managed Service for Prometheus quickly. You set up a new Prometheus server in an Amazon EKS cluster, and the new server uses a default configuration to send metrics to Amazon Managed Service for Prometheus. This method has the following prerequisites:
 + You must have an Amazon EKS cluster from which the new Prometheus server will collect metrics.

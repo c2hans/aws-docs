@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-qbs-subs
 ---
 
 # Configure AWS Quick subscriptions
-<a name="managing-qbs-subscriptions"></a>
 
 You can purchase user subscriptions to get discounted pricing on AWS Quick. When you invite additional users to Quick, you're charged for those accounts on a month-by-month basis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ArgoCdNetwor
 ---
 
 # ArgoCdNetworkAccessConfigRequest
-<a name="API_ArgoCdNetworkAccessConfigRequest"></a>
 
 Configuration for network access to the Argo CD capability's managed API server endpoint. When VPC endpoint IDs are specified, public access is blocked and the Argo CD server is only accessible through the specified VPC endpoints.
 

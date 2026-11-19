@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionResourceId
-<a name="API_DistributionResourceId"></a>
 
 The IDs for the distribution resources.
 

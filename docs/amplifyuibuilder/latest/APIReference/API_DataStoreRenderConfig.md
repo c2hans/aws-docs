@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # DataStoreRenderConfig
-<a name="API_DataStoreRenderConfig"></a>
 
 Describes the DataStore configuration for an API for a code generation job.
 

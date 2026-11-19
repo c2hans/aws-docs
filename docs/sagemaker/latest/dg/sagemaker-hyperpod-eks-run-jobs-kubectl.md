@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Running jobs using `kubectl`
-<a name="sagemaker-hyperpod-eks-run-jobs-kubectl"></a>
 
 **Note**
 Training job auto resume requires Kubeflow Training Operator release version `1.7.0`, `1.8.0`, or `1.8.1`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Actio
 ---
 
 # ActionConnector
-<a name="API_ActionConnector"></a>
 
 Contains detailed information about an action connector, including its configuration, status, and enabled actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html
 ---
 
 # How to use SageMaker AI execution roles
-<a name="sagemaker-roles"></a>
 
 Amazon SageMaker AI performs operations on your behalf using other AWS services. You must grant SageMaker AI permissions to use these services and the resources they act upon. You grant SageMaker AI these permissions using an AWS Identity and Access Management (IAM) execution role. For more information on IAM roles, see [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html).
 

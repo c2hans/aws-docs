@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_S3Files
 ---
 
 # S3FilesLocation
-<a name="API_S3FilesLocation"></a>
 
 The Amazon Simple Storage Service objects to import as the cells of a notebook, specified as a bucket and an ordered list of object keys.
 

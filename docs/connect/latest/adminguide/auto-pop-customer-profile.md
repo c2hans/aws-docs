@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/auto-pop-custo
 ---
 
 # Automatically populate customer profiles
-<a name="auto-pop-customer-profile"></a>
 
 By default, Connect Customer Customer Profiles uses the following values to search for and autopopulate a customer profile in its user interface:
 + For voice contacts: Phone number

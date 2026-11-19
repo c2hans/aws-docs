@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Create WebSocket APIs in API Gateway
-<a name="apigateway-websocket-api-create-empty-api"></a>
 
 You can create a WebSocket API in the API Gateway console, by using the AWS CLI [create-api](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-api.html) command, or by using the `CreateApi` command in an AWS SDK. The following procedures show how to create a new WebSocket API.
 

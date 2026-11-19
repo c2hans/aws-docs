@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteClo
 ---
 
 # DeleteCloudConnector
-<a name="API_DeleteCloudConnector"></a>
 
 Delete a cloud connector.
 

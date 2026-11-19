@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_PutAutoTermi
 ---
 
 # PutAutoTerminationPolicy
-<a name="API_PutAutoTerminationPolicy"></a>
 
 **Note**
 Auto-termination is supported in Amazon EMR releases 5.30.0 and 6.1.0 and later. For more information, see [Using an auto-termination policy](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-auto-termination-policy.html).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnaplo
 ---
 
 # CreateSnaplockConfiguration
-<a name="API_CreateSnaplockConfiguration"></a>
 
 Defines the SnapLock configuration when creating an FSx for ONTAP SnapLock volume.
 

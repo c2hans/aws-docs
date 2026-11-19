@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Borde
 ---
 
 # BorderSettings
-<a name="API_BorderSettings"></a>
 
 Border settings configuration for visual elements, including visibility, width, and color properties.
 

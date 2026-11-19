@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/understand
 ---
 
 # Understanding Offer Sets
-<a name="understanding-offer-sets"></a>
 
 When purchasing a Multi-Product Solution through a private offer, you'll receive an **Offer Set** — a grouped collection of private offers for each product in the solution.
 

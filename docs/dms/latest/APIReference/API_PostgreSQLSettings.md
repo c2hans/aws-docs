@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_PostgreSQLSe
 ---
 
 # PostgreSQLSettings
-<a name="API_PostgreSQLSettings"></a>
 
 Provides information that defines a PostgreSQL endpoint.
 

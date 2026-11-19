@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConfigRule EvaluationModeConfiguration
-<a name="aws-properties-config-configrule-evaluationmodeconfiguration"></a>
 
 The configuration object for AWS Config rule evaluation mode. The supported valid values are Detective or Proactive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 ---
 
 # Integrate a game client for Amazon GameLift Servers Realtime
-<a name="realtime-client"></a>
 
 When using Realtime servers, you need to add functionality to your game client so that players can join and participate in game sessions hosted with Amazon GameLift Servers Realtime.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan RdsCreateCrossRegionReplicaConfiguration
-<a name="aws-properties-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration"></a>
 
 Configuration for creating an Amazon RDS cross-Region read replica during post-recovery in a Region switch.
 

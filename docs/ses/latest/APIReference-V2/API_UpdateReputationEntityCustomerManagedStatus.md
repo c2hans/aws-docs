@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateRep
 ---
 
 # UpdateReputationEntityCustomerManagedStatus
-<a name="API_UpdateReputationEntityCustomerManagedStatus"></a>
 
 Update the customer-managed sending status for a reputation entity. This allows you to enable, disable, or reinstate sending for the entity.
 

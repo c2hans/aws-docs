@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/dcv-server-dns-mappi
 ---
 
 # Amazon DCV Session Manager Amazon DCV server - DNS mapping reference
-<a name="dcv-server-dns-mapping"></a>
 
  The Amazon DCV Connection Gateway requires the Amazon DCV servers’ DNS names in order to connect to the DCV server instances. This section illustrates how you can define a JSON file containing the mapping between each DCV Server and its associated DNS name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Alias
 ---
 
 # Aliases
-<a name="API_Aliases"></a>
 
 A complex type that contains information about CNAMEs (alternate domain names), if any, for this distribution.
 

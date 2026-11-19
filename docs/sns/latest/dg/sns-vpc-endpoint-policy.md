@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-vpc-endpoint-policy.ht
 ---
 
 # Creating an Amazon VPC endpoint policy for Amazon SNS
-<a name="sns-vpc-endpoint-policy"></a>
 
 You can create a policy for Amazon VPC endpoints for Amazon SNS in which you specify the following:
 + The principal that can perform actions.

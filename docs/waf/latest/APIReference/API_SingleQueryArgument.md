@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_SingleQueryA
 ---
 
 # SingleQueryArgument
-<a name="API_SingleQueryArgument"></a>
 
 Inspect one query argument in the web request, identified by name, for example *UserName* or *SalesRegion*. The name isn't case sensitive.
 

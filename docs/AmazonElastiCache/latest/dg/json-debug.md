@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-debug.h
 ---
 
 # JSON.DEBUG
-<a name="json-debug"></a>
 
 Reports information. Supported subcommands are:
 + MEMORY <key> [path] – Reports memory usage in bytes of a JSON value. Path defaults to the root if not provided.

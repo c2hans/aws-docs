@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringNetworkConfig
-<a name="API_MonitoringNetworkConfig"></a>
 
 The networking configuration for the monitoring job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DataMigratio
 ---
 
 # DataMigrationSettings
-<a name="API_DataMigrationSettings"></a>
 
 Options for configuring a data migration, including whether to enable CloudWatch logs, and the selection rules to use to include or exclude database objects from the migration.
 

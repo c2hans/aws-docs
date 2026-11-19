@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Securing semiconductor workloads and data against ransomware
-<a name="securing-workloads-and-data-against-ransomware-attacks"></a>
 
 *Ransomware* is a malicious software that is designed to block access to a computer system or data until a payment is made. Unfortunately, this type of attack is prevalent across the internet and can affect enterprises of any size. Aside from financial loss and reputational damage, semiconductor companies must prevent operational disruption because disruptions can cause large, cascading supply chain affects across the business ecosystem. It can also result in the loss of valuable intellectual property.
 

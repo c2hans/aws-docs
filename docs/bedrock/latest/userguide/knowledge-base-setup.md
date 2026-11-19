@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Prerequisites for using a vector store you created for a knowledge base
-<a name="knowledge-base-setup"></a>
 
 To store the vector embeddings that your documents are converted to, you use a vector store. Amazon Bedrock Knowledge Bases supports a quick-create flow for some of the vector stores, so if you prefer for Amazon Bedrock to automatically create a vector index for you in one of those vector stores, skip this prerequisite and proceed to [Create a knowledge base by connecting to a data source in Amazon Bedrock Knowledge Bases](knowledge-base-create.md).
 

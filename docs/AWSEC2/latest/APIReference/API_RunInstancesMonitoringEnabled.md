@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstan
 ---
 
 # RunInstancesMonitoringEnabled
-<a name="API_RunInstancesMonitoringEnabled"></a>
 
 Describes the monitoring of an instance.
 

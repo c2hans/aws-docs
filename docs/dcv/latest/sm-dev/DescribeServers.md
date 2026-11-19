@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/DescribeServers.html
 ---
 
 # DescribeServers
-<a name="DescribeServers"></a>
 
 Describes one or more Amazon DCV servers.
 

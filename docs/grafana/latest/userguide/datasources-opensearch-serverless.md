@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/datasources-ope
 ---
 
 # Amazon OpenSearch Service Serverless
-<a name="datasources-opensearch-serverless"></a>
 
 **Note**
 OpenSearch Service Serverless support is only available with Grafana workspaces that are running Grafana version 9.4 and later.

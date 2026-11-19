@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FileSo
 ---
 
 # FileSource
-<a name="API_FileSource"></a>
 
 Contains details regarding the file source.
 

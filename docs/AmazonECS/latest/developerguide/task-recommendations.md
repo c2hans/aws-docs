@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-rec
 ---
 
 # Optimize Amazon ECS task launch time
-<a name="task-recommendations"></a>
 
  In order to speed up your task launches, consider the following recommendations.
 +

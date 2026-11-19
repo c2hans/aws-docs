@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # StartOutboundChatContact
-<a name="contact-actions-startoutboundchatcontact"></a>
 
 Initiate an outbound chat contact to a customer. Only SMS chats are supported. For more information, see the [StartOutboundChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundChatContact.html) in the *Connect Customer API Reference*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/doc-
 ---
 
 # Document History for Amazon EventBridge Schemas
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon EventBridge Schemas.
 + **API version: latest**

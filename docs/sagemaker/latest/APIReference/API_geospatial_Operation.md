@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # Operation
-<a name="API_geospatial_Operation"></a>
 
 Represents an arithmetic operation to compute spectral index.
 

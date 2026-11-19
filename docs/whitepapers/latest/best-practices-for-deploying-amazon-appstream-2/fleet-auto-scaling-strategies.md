@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Fleet auto scaling strategies
-<a name="fleet-auto-scaling-strategies"></a>
 
 ## Understanding WorkSpaces Applications instances
 <a name="understanding-appstream-2.0-instances"></a>

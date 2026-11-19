@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Unproc
 ---
 
 # UnprocessedAccount
-<a name="API_UnprocessedAccount"></a>
 
 Contains information about the accounts that weren't processed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.
 ---
 
 # Data retention
-<a name="data-retention"></a>
 
 ## Overview
 <a name="data-retention-overview"></a>

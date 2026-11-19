@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/utilities.html
 ---
 
 # Use practical utilities for Managed Service for Apache Flink
-<a name="utilities"></a>
 
 The following utilities can make using the Managed Service for Apache Flink service easier to use:
 

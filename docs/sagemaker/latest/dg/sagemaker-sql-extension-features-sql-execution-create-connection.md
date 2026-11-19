@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Create a simple magic command connection string
-<a name="sagemaker-sql-extension-features-sql-execution-create-connection"></a>
 
 If your administrator has configured the connections to your data sources, follow these steps to easily create a connection string in a notebook cell:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/secretsma
 ---
 
 # Managing secrets using the Secrets Manager API and the AWS SDK for PHP Version 3
-<a name="secretsmanager-examples-manage-secret"></a>
 
 AWS Secrets Manager stores and manages shared secrets such as passwords, API keys, and database credentials. With the Secrets Manager service, developers can replace hard-coded credentials in deployed code with an embedded call to Secrets Manager.
 

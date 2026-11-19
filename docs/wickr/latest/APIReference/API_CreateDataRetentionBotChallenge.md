@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_CreateData
 ---
 
 # CreateDataRetentionBotChallenge
-<a name="API_CreateDataRetentionBotChallenge"></a>
 
 Creates a new challenge password for the data retention bot. This password is used for authentication when the bot connects to the network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-spark-con
 ---
 
 # Interactive sessions
-<a name="emr-spark-connect-sessions"></a>
 
 With Amazon EMR release `emr-spark-8.0.0` and later, you can connect to an Amazon EMR cluster from self-managed PySpark clients such as VS Code, PyCharm, and Jupyter notebooks using the Amazon EMR session APIs with Apache Spark Connect. Spark Connect uses a client-server architecture that decouples your application code from the Spark driver process. You develop and debug PySpark code in your local IDE while Spark operations run on your Amazon EMR cluster. Spark Connect offers the following benefits:
 + Connect to Amazon EMR clusters from any PySpark client, including VS Code, PyCharm, and Jupyter notebooks.

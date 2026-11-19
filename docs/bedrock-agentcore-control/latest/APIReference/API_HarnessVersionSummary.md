@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessVersionSummary
-<a name="API_HarnessVersionSummary"></a>
 
 Summary information about a single version of a harness.
 

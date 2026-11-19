@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DivergentItem
-<a name="API_DivergentItem"></a>
 
 An item that exists on both domains but whose contents differ.
 

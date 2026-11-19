@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Kubern
 ---
 
 # KubernetesClusterRoleUpdate
-<a name="API_KubernetesClusterRoleUpdate"></a>
 
 The kubernetes Cluster Role Update.
 

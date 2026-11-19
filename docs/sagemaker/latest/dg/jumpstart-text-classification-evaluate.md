@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-text-class
 ---
 
 # Evaluate and compare model performance
-<a name="jumpstart-text-classification-evaluate"></a>
 
 Evaluate your deployed text classification models using the evaluation framework. The framework supports both supervised and unsupervised evaluation modes through a notebook-based approach.
 

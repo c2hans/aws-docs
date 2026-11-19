@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteDa
 ---
 
 # DeleteDataSource
-<a name="API_DeleteDataSource"></a>
 
 Deletes a `DataSource` object.
 

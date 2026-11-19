@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Calculati
 ---
 
 # CalculationResult
-<a name="API_CalculationResult"></a>
 
 Contains information about an application-specific calculation result.
 

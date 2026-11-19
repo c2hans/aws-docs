@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-third-
 ---
 
 # Third-party source repository samples for CodeBuild
-<a name="sample-third-party-source"></a>
 
 This section describes sample integrations between third-party source repositories and CodeBuild.
 

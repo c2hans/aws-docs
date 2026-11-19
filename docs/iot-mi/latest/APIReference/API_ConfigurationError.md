@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Configura
 ---
 
 # ConfigurationError
-<a name="API_ConfigurationError"></a>
 
 Provides the default encryption configuration error update details.
 

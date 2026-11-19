@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crawler-s3-event-notifica
 ---
 
 # Setting up a crawler for Amazon S3 event notifications for an Amazon S3 target
-<a name="crawler-s3-event-notifications-setup-console-s3-target"></a>
 
 Follow these steps to set up a crawler for Amazon S3 event notifications for an Amazon S3 target using the AWS Management Console or AWS CLI.
 

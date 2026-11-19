@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Feature and device interactions in Managed Integrations
-<a name="managedintegrations-sdk-device-interactions"></a>
 
 This section describes the role of the C-Function implementation and the interaction between the device and the Managed Integrations device feature.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Uniqu
 ---
 
 # UniqueKey
-<a name="API_UniqueKey"></a>
 
 A `UniqueKey` configuration that references a dataset column.
 

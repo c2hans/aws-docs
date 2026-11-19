@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RecordTypeSchemaOverride
-<a name="API_RecordTypeSchemaOverride"></a>
 
 The custom metadata fields for one record type, in addition to the common attributes defined in `defaultSchema`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-cleanup-
 ---
 
 # Options for correcting metadata
-<a name="color-space-cleanup-scenarios"></a>
 
 In step 1, you assessed the status of the color space metadata in the MediaLive inputs. You must now decide if you can clean up any inaccurate metadata.
 

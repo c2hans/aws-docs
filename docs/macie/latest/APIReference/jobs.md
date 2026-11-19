@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/jobs.html
 ---
 
 # Classification Job Creation
-<a name="jobs"></a>
 
 The Classification Job Creation resource represents the collection of settings that define the scope and schedule for a classification job. A *classification job*, also referred to as a *sensitive data discovery job*, is a job that you create to analyze objects in Amazon Simple Storage Service (Amazon S3) general purpose buckets, and determine whether the objects contain sensitive data. To detect sensitive data, a job can use [managed data identifiers](managed-data-identifiers-list.md) that Amazon Macie provides, [custom data identifiers](custom-data-identifiers.md) that you define, or a combination of the two.
 

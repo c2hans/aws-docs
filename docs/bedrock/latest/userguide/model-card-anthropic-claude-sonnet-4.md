@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 ---
 
 # Claude Sonnet 4
-<a name="model-card-anthropic-claude-sonnet-4"></a>
 
 ## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Sonnet 4
 <a name="model-card-anthropic-claude-sonnet-4-header"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/create-afc
 ---
 
 # Create a customized account from a blueprint
-<a name="create-afc-customized-account"></a>
 
 After you have created custom blueprints, you can start creating custom accounts in AWS Control Tower account factory.
 

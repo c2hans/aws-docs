@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # IAM Identity Center Trusted Identity Propagation Support for OpenSearch
-<a name="idc-aos"></a>
 
  You can now use your centrally configured AWS IAM Identity Center principals (users and groups) via [ Trusted Identity Propagation](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html) to access Amazon OpenSearch Service domains through [ OpenSearch Service applications ](application.md). In order to enable IAM Identity Center support for OpenSearch, you will need to enable use of IAM Identity Center To learn more on how to do this, see [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html). See [ How to associate OpenSearch domain as datasource in OpenSearch applications?](application.md) for details.
 

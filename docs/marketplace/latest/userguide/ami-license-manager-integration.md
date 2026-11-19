@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ami-license
 ---
 
 # Associating licenses with AMI-based products using AWS License Manager
-<a name="ami-license-manager-integration"></a>
 
 For Amazon Machine Image (AMI)-based products with contract pricing, you can use AWS License Manager to associate licenses with your product. AWS License Manager is a license management tool that enables your application to track and update licenses (also known as entitlements) that have been purchased by a customer. After the integration is complete, you can publish your product listing on AWS Marketplace. The following sections provide more information about using AWS License Manager to associate licenses with your AMI-based product.
 

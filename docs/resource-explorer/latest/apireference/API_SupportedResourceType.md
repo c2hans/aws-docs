@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # SupportedResourceType
-<a name="API_SupportedResourceType"></a>
 
 A structure that describes a resource type supported by AWS Resource Explorer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeIntegrationsFilter
-<a name="API_DescribeIntegrationsFilter"></a>
 
 A set of elements to filter the returned integrations.
 

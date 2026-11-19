@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListOutgoing
 ---
 
 # ListOutgoingCertificates
-<a name="API_ListOutgoingCertificates"></a>
 
 Lists certificates that are being transferred but not yet accepted.
 

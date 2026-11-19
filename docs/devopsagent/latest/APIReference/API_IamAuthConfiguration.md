@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_IamA
 ---
 
 # IamAuthConfiguration
-<a name="API_IamAuthConfiguration"></a>
 
 Configuration for IAM-based authentication flow for the Operator App.
 

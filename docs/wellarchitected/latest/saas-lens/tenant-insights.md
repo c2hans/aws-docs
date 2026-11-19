@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/tenant-
 ---
 
 # Tenant insights
-<a name="tenant-insights"></a>
 
  As companies move into a multi-tenant model, it becomes increasingly challenging to capture and surface insights into how tenants are using your application. This is especially true with the resources of your SaaS environment that are shared by tenants.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Validating_S3.
 ---
 
 # Amazon S3 target data validation
-<a name="CHAP_Validating_S3"></a>
 
 AWS DMS supports validating replicated data in Amazon S3 targets. Because AWS DMS stores replicated data as flat files in Amazon S3, we use [ Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) `CREATE TABLE AS SELECT` (CTAS) queries to validate data.
 

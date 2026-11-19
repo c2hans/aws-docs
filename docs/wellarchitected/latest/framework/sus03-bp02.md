@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus03-b
 ---
 
 # SUS03-BP02 Flatten demand peaks for consistently high resource utilization
-<a name="sus03-bp02"></a>
 
  When demand is unpredictable and spiky, provision enough capacity to meet peak loads. Techniques such as buffering and throttling smooth out the load and maintain a consistently high level of resource utilization, reducing the need for excess capacity to handle peaks and improving overall efficiency. By transforming spiky workload patterns into steadier, more predictable ones, you can provision resources that operate at high utilization and resource efficiency levels most of the time.
 

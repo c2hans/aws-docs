@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nuclino-support.html
 ---
 
 # AWS Glue support for Nuclino
-<a name="nuclino-support"></a>
 
 AWS Glue supports Nuclino as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetCodeReviews
-<a name="API_BatchGetCodeReviews"></a>
 
 Retrieves information about one or more code reviews in an agent space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sta
 ---
 
 # StartSingleWirelessDeviceImportTask
-<a name="API_StartSingleWirelessDeviceImportTask"></a>
 
 Start import task for a single wireless device.
 

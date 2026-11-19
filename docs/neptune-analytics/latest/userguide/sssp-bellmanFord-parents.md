@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/sssp-
 ---
 
 # Bellman-Ford single source shortest path (SSSP) parents algorithm
-<a name="sssp-bellmanFord-parents"></a>
 
 The `.sssp.bellmanFord.parents` algorithm uses the [Bellman-Ford](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm to find the parent nodes along with the shortest path distances from the source node to all other nodes in the graph.
 

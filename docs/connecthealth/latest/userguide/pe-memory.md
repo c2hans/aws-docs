@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/pe-memory
 ---
 
 # Memory and personalization
-<a name="pe-memory"></a>
 
 With memory and personalization, the agent uses information from a patient’s earlier calls to help on the current call. The agent uses memory and personalization only after it verifies the patient. For more information about verification, see [How a patient call is handled](pe-call-routing.md).
 

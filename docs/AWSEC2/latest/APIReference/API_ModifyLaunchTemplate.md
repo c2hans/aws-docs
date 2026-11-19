@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyLau
 ---
 
 # ModifyLaunchTemplate
-<a name="API_ModifyLaunchTemplate"></a>
 
 Modifies a launch template. You can specify which version of the launch template to set as the default version. When launching an instance, the default version applies when a launch template version is not specified.
 

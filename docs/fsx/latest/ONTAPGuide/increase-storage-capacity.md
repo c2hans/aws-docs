@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/increase-storage-c
 ---
 
 # Updating storage capacity and provisioned IOPS
-<a name="increase-storage-capacity"></a>
 
 You can increase or decrease a file system's SSD-based storage and the amount of provisioned SSD IOPS by using the Amazon FSx console, the AWS CLI, and the API.
 

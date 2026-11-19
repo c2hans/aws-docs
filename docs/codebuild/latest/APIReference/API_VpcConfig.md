@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_VpcCon
 ---
 
 # VpcConfig
-<a name="API_VpcConfig"></a>
 
 Information about the VPC configuration that AWS CodeBuild accesses.
 

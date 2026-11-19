@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListRules
-<a name="API_ListRules"></a>
 
 Lists the rules in the account. You can filter the results by status and page through them using `maxResults` and `nextToken`.
 

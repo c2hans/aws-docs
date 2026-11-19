@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-acme-domain-val
 ---
 
 # ACME domain validation
-<a name="acm-acme-domain-validation"></a>
 
 ACME domain validation resources pre-authorize which domains an ACME endpoint can issue certificates for. Unlike standard ACM domain validation (which you set up as part of a certificate request), ACME domain validations are persistent resources that the PKI administrator configures in advance. This separation enables application owners to request certificates without having to perform domain validation themselves.
 

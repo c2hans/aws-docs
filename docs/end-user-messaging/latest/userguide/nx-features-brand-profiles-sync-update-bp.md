@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Update a brand profile from a registration
-<a name="nx-features-brand-profiles-sync-update-bp"></a>
 
 Import brand attributes from an existing registration into a brand profile you already have. The registration must be in the `COMPLETE` status. Attributes are imported asynchronously; choose how conflicts are resolved when the profile already has a matching attribute.
 

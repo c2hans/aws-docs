@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ScopeSetti
 ---
 
 # ScopeSettings
-<a name="API_ScopeSettings"></a>
 
 Defines the scope of repositories to be included in code security scans.
 

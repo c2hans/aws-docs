@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-code-sign-
 ---
 
 # Create a code-signing certificate
-<a name="ota-code-sign-cert"></a>
 
 To digitally sign firmware images, you need a code-signing certificate and private key. For testing purposes, you can create a self‐signed certificate and private key. For production environments, purchase a certificate through a well‐known certificate authority (CA).
 

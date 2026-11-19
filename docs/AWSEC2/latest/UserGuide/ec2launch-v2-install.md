@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2-ins
 ---
 
 # Install the latest version of EC2Launch v2
-<a name="ec2launch-v2-install"></a>
 
 You can use one of the following methods to install the EC2Launch v2 agent on your EC2 instance:
 + Download the agent from Amazon S3 and install with Windows PowerShell. For download URLs, see [EC2Launch v2 downloads on Amazon S3](#lv2-download-s3).

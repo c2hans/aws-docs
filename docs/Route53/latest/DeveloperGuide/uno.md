@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/uno.html
 ---
 
 # .uno
-<a name="uno"></a>
 
 Used for information about the Hispanic, Portuguese, and Italian communities.
 

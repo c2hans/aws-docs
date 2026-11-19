@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2C
 ---
 
 # AwsEc2ClientVpnEndpointConnectionLogOptionsDetails
-<a name="API_AwsEc2ClientVpnEndpointConnectionLogOptionsDetails"></a>
 
  Information about the client connection logging options for the Client VPN endpoint.
 

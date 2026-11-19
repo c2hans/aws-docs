@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/indexStats.ht
 ---
 
 # $indexStats
-<a name="indexStats"></a>
 
 The `$indexStats` aggregation stage in Amazon DocumentDB provides insight into the usage of indexes within a collection. This operator allows you to monitor the access patterns of your indexes, which can help you make informed decisions about index management and optimization.
 

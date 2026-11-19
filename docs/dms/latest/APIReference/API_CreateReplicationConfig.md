@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateReplic
 ---
 
 # CreateReplicationConfig
-<a name="API_CreateReplicationConfig"></a>
 
 Creates a configuration that you can later provide to configure and start an AWS DMS Serverless replication. You can also provide options to validate the configuration inputs before you start the replication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserData
 ---
 
 # UserData
-<a name="API_UserData"></a>
 
 Data for a user.
 

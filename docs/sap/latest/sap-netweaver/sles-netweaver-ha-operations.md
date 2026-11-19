@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sles-netweaver-
 ---
 
 # Operations
-<a name="sles-netweaver-ha-operations"></a>
 
 This section covers the following topics.
 

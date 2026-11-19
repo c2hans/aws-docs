@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Schedul
 ---
 
 # ScheduleConfiguration
-<a name="API_ScheduleConfiguration"></a>
 
 The details of the schedule of the data source runs.
 

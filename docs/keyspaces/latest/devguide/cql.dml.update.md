@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.dml.update
 ---
 
 # UPDATE
-<a name="cql.dml.update"></a>
 
 Use the `UPDATE` statement to modify a row in a table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Logic
 ---
 
 # LogicalTableSource
-<a name="API_LogicalTableSource"></a>
 
 Information about the source of a logical table. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 

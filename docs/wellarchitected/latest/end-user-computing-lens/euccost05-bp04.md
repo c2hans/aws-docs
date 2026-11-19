@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST05-BP04 Choose an appropriate running mode for your EUC workload where applicable
-<a name="euccost05-bp04"></a>
 
  Amazon WorkSpaces can be used with monthly and hourly pricing, while Amazon WorkSpaces Applications supports Always-On, On-Demand, and Elastic fleets. Choosing an appropriate running mode can significantly impact the cost of your EUC services. Historical usage data (usage patterns) of a reference environment can help you assess which running mode to use for your EUC workloads.
 

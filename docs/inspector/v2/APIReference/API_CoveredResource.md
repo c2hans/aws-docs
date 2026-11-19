@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CoveredRes
 ---
 
 # CoveredResource
-<a name="API_CoveredResource"></a>
 
 An object that contains details about a resource covered by Amazon Inspector.
 

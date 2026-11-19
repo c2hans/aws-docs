@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackResources
-<a name="API_ListStackResources"></a>
 
 Returns descriptions of all resources of the specified stack.
 

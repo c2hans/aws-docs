@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/scaling-plan
 ---
 
 # Access scaling plans using interface VPC endpoints
-<a name="scaling-plan-vpc-endpoints"></a>
 
 You can use AWS PrivateLink to create a private connection between your VPC and AWS Auto Scaling. You can access AWS Auto Scaling as if it were in your VPC, without the use of an internet gateway, NAT device, VPN connection, or Direct Connect connection. Instances in your VPC don't need public IP addresses to access AWS Auto Scaling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowTarget
-<a name="API_DataIntegrationFlowTarget"></a>
 
 The DataIntegrationFlow target parameters.
 

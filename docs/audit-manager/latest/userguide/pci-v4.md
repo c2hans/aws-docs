@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/pci-v4.ht
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # PCI DSS V4.0
-<a name="pci-v4"></a>
 
 AWS Audit Manager provides a prebuilt framework that supports the Payment Card Industry Data Security Standard (PCI DSS) v4.0.
 

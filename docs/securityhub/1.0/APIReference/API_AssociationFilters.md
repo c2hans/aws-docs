@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Associa
 ---
 
 # AssociationFilters
-<a name="API_AssociationFilters"></a>
 
  Options for filtering the `ListConfigurationPolicyAssociations` response. You can filter by the Amazon Resource Name (ARN) or universally unique identifier (UUID) of a configuration policy, `AssociationType`, or `AssociationStatus`.
 

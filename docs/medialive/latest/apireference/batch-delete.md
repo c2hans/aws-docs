@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-dele
 ---
 
 # Batch action: delete
-<a name="batch-delete"></a>
 
 ## URI
 <a name="batch-delete-url"></a>

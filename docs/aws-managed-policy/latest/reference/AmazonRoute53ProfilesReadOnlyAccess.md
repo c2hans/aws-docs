@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53ProfilesReadOnlyAccess
-<a name="AmazonRoute53ProfilesReadOnlyAccess"></a>
 
 **Description**: This policy grants read-only access to Amazon Route 53 Profile resources.
 

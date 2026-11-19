@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pipeline-compositing
 ---
 
 # Compositing audio and video into a single view in Amazon Chime SDK meetings
-<a name="pipeline-compositing"></a>
 
 The Amazon Chime SDK media pipelines support compositing of audio, webcam videos, and content-share video streams into a single view. You can then use live connector to send that single view to streaming services such as Amazon Interactive Video Service, Twitch, or YouTube Live. Composited video can also be captured to Amazon Simple Storage Service for storage or further consumption.
 

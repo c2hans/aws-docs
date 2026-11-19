@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/import-export
 ---
 
 # VM Import/Export processes
-<a name="import-export-processes"></a>
 
 VM Import/Export has processes for eligible resources that you can use to import into and export out of the AWS Cloud. You can import individual disks, or whole VMs that meet the respective requirements of the import process.
 

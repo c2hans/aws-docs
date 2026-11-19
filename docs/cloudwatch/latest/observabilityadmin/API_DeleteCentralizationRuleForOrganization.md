@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # DeleteCentralizationRuleForOrganization
-<a name="API_DeleteCentralizationRuleForOrganization"></a>
 
 Deletes an organization-wide centralization rule. This operation can only be called by the organization's management account or a delegated administrator account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetFuotaTask
-<a name="API_GetFuotaTask"></a>
 
 Gets information about a FUOTA task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DiskImage
 ---
 
 # DiskImageVolumeDescription
-<a name="API_DiskImageVolumeDescription"></a>
 
 Describes a disk image volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_iot_kine
 ---
 
 # aws-iot-kinesisfirehose-s3
-<a name="aws_iot_kinesisfirehose_s3"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

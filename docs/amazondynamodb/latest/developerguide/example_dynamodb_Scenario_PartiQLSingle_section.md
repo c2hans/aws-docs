@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table using PartiQL and an AWS SDK
-<a name="example_dynamodb_Scenario_PartiQLSingle_section"></a>
 
 The following code examples show how to:
 + Get an item by running a SELECT statement.

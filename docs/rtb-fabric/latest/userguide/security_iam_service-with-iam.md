@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/security_iam
 ---
 
 # How RTB Fabric works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to RTB Fabric, learn what IAM features are available to use with RTB Fabric.
 

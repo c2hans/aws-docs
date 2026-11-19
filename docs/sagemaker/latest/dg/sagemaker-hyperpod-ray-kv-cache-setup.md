@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Setting up tiered KV cache
-<a name="sagemaker-hyperpod-ray-kv-cache-setup"></a>
 
 The managed tiered KV cache adds a cluster-wide cache tier to Ray Serve deployments, so one replica reads a token prefix that another replica already computed. This reduces time to first token for long documents, multi-turn conversations, and shared system prompts. The cluster-wide tier runs on HyperPod Tiered Storage using [LMCache with the HyperPod storage backend](https://docs.lmcache.ai/kv_cache/storage_backends/sagemaker_hyperpod.html) in the LMCache documentation, which integrates with Ray Serve and vLLM to provide distributed KV caching backed by HyperPod Tiered Storage.
 

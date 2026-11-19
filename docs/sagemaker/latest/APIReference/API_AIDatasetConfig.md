@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIData
 ---
 
 # AIDatasetConfig
-<a name="API_AIDatasetConfig"></a>
 
 The dataset configuration for an AI workload. This is a union type — specify one of the members.
 

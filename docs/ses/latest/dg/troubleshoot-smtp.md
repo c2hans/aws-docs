@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot-smtp.html
 ---
 
 # Amazon SES SMTP issues
-<a name="troubleshoot-smtp"></a>
 
 This section contains solutions for several common issues related to sending email through the Amazon SES Simple Mail Transfer Protocol (SMTP) interface. It also contains a list of SMTP response codes that Amazon SES returns.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/getting-starte
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Getting started with Amazon Q Developer in chat applications
-<a name="getting-started"></a>
 
 To get started using Amazon Q Developer in chat applications to help manage your AWS infrastructure, follow the steps below to set up Amazon Q Developer in chat applications with chat channels and Amazon SNS topic subscriptions.
 

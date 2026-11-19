@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/web-analytics-
 ---
 
 # Mapping WebAnalytics-Clickstream objects to standard objects
-<a name="web-analytics-clickstream-mapping"></a>
 
 The WebAnalytics-Clickstream mapping template defines how clickstream event data is ingested into Customer Profiles. It maps source fields to the standard web analytics object, the standard order object, and the standard device object.
 

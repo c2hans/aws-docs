@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/e
 ---
 
 # Export (Download) Data
-<a name="export-download-data"></a>
 
 The ability to export the data displayed in a visual to a downloadable CSV/Excel file is available.
 

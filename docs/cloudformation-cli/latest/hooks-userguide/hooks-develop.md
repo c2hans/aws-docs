@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Developing custom Hooks using the CloudFormation CLI
-<a name="hooks-develop"></a>
 
 This section is for customers who want to develop custom Hooks and register them in the CloudFormation registry. It provides an overview of the structure of CloudFormation Hooks, and guides for developing, registering, testing, managing, and publishing your own Hooks with Python or Java.
 

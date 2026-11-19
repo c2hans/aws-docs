@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Matching a keyword at the right hook
-<a name="firewall-rule-constraints-keyword-hook"></a>
 
 This is the most common reason a firewall rule fails to validate, so it's worth understanding well. A protocol matching keyword is valid only at the one hook where the data it matches becomes available—not at any hook, and not at every hook after that point. If you place a keyword at a different hook, Network Firewall rejects the rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSSMMaintenanceWindowRole
-<a name="AmazonSSMMaintenanceWindowRole"></a>
 
 **Description**: Service Role to be used for EC2 Maintenance Window
 

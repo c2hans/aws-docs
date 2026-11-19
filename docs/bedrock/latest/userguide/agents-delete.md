@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-delete.h
 ---
 
 # Delete an agent
-<a name="agents-delete"></a>
 
 If you no longer need an agent, you can delete it at any time.
 

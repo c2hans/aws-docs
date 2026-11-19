@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # UpdateCodeConfigurationParameters
-<a name="API_UpdateCodeConfigurationParameters"></a>
 
 The loose variant of the passcode policy parameters that is used only when you update a notify code configuration. When you omit a member, its current value is preserved.
 

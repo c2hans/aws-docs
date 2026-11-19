@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cloudformation-tem
 ---
 
 # AWS CloudFormation template reference for AWS Elemental MediaTailor and Amazon CloudFront integration
-<a name="cloudformation-template-reference"></a>
 
 AWS Elemental MediaTailor integration with Amazon CloudFront can be automated using the following complete AWS CloudFormation template:
 

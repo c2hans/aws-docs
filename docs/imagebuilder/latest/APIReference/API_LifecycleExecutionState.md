@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecycleExecutionState
-<a name="API_LifecycleExecutionState"></a>
 
 The current state of the runtime instance of the lifecycle policy.
 

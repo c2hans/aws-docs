@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Ec2Ima
 ---
 
 # Ec2ImageDetails
-<a name="API_Ec2ImageDetails"></a>
 
 Contains details about the EC2 AMI that was scanned.
 

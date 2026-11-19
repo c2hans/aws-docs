@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystemOpenZFSConfiguration
-<a name="API_DeleteFileSystemOpenZFSConfiguration"></a>
 
 The configuration object for the Amazon FSx for OpenZFS file system used in the `DeleteFileSystem` operation.
 

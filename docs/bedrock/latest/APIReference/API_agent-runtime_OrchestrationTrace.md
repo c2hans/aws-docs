@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OrchestrationTrace
-<a name="API_agent-runtime_OrchestrationTrace"></a>
 
 Details about the orchestration step, in which the agent determines the order in which actions are executed and which knowledge bases are retrieved.
 

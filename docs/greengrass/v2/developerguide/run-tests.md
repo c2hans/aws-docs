@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-tests.h
 ---
 
 # Run the AWS IoT Greengrass qualification suite
-<a name="run-tests"></a>
 
 After you [set the required configuration](set-config.md), you can start the tests. The runtime of the full test suite depends on your hardware. For reference, it takes approximately 30 minutes to complete the full test suite on a Raspberry Pi 3B.
 

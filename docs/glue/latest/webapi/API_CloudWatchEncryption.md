@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CloudWatchEncrypt
 ---
 
 # CloudWatchEncryption
-<a name="API_CloudWatchEncryption"></a>
 
 Specifies how Amazon CloudWatch data should be encrypted.
 

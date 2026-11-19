@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/getti
 ---
 
 # Getting started with AWS IoT Wireless
-<a name="getting-started"></a>
 
 You can get started with AWS IoT Wireless by signing up for an AWS account and following the steps to create an IAM user. After you've signed up, you can then use the AWS Management Console, the AWS IoT Wireless API, or the AWS CLI to onboard your Sidewalk and LoRaWAN devices and gateways. When onboarding your devices, consider how to describe and tag your resources to help you identify them more easily.
 

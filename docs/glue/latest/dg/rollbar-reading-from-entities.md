@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rollbar-reading-from-enti
 ---
 
 # Reading from Rollbar entities
-<a name="rollbar-reading-from-entities"></a>
 
 **Prerequisites**
 

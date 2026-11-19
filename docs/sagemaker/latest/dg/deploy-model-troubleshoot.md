@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model-trouble
 ---
 
 # Troubleshoot Amazon SageMaker AI model deployments
-<a name="deploy-model-troubleshoot"></a>
 
 If you encounter an issue when deploying machine learning models in Amazon SageMaker AI, see the following guidance.
 

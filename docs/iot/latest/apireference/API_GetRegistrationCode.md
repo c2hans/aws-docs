@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetRegistrat
 ---
 
 # GetRegistrationCode
-<a name="API_GetRegistrationCode"></a>
 
 Gets a registration code used to register a CA certificate with AWS IoT.
 

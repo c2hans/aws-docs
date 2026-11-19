@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/billing-cur-limits.
 ---
 
 # Quotas and restrictions
-<a name="billing-cur-limits"></a>
 
 The following table describes the current quotas and restrictions within AWS Cost and Usage Reports.
 

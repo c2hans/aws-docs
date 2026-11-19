@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogCode
 ---
 
 # DialogCodeHookSettings
-<a name="API_DialogCodeHookSettings"></a>
 
 Settings that determine the Lambda function that Amazon Lex uses for processing user responses.
 

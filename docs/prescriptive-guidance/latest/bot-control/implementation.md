@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Implementation strategy
-<a name="implementation"></a>
 
 After you have selected a deployment strategy, implementation can begin. The deployment strategy defines how rules are rolled out to different applications. In the implementation strategy, the focus is on the iterative process of adding controls, testing, continuously monitoring, and then evaluating their effects.
 

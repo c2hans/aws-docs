@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/deployment
 ---
 
 # Automated deployment
-<a name="deployment"></a>
 
 Before you launch the automated deployment, review the [considerations](cfct-considerations.md). Follow the step-by-step instructions in this section to configure and deploy the solution into your AWS Control Tower management account.
 

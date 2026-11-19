@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-anal
 ---
 
 # Using AWS Identity and Access Management Access Analyzer
-<a name="what-is-access-analyzer"></a>
 
 AWS Identity and Access Management Access Analyzer provides the following capabilities:
 + IAM Access Analyzer external access analyzers help [identify resources](#what-is-access-analyzer-resource-identification) in your organization and accounts that are shared with an external entity.

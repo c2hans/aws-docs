@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 ---
 
 # Configuring IAM authentication for logical replication connections
-<a name="PostgreSQL.Concepts.General.FeatureSupport.IAMLogicalReplication"></a>
 
 Starting with RDS for PostgreSQL versions 11 and higher, you can use AWS Identity and Access Management (IAM) authentication for replication connections. This feature enhances security by allowing you to manage database access using IAM roles instead of passwords. It works both at the cluster and instance granularity and follows the same security model as standard IAM authentication.
 

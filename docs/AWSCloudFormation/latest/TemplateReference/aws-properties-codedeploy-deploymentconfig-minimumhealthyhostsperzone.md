@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentConfig MinimumHealthyHostsPerZone
-<a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone"></a>
 
 Information about the minimum number of healthy instances per Availability Zone.
 

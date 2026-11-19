@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Resilience lifecycle framework: A continuous approach to resilience improvement
-<a name="introduction"></a>
 
 *Lisi Lewis, Jason Barto, Wangechi Doble, Bruno Emer, John Formento, Mike Haken, Neeraj Kumar, and Clark Richey, Amazon Web Services*
 

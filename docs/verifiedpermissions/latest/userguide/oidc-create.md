@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/oid
 ---
 
 # Creating Amazon Verified Permissions OIDC identity sources
-<a name="oidc-create"></a>
 
 The following procedure adds an identity source to an existing policy store.
 

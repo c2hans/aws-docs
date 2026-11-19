@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-po
 ---
 
 # Simple routing
-<a name="routing-policy-simple"></a>
 
 With simple routing, you can set up standard DNS records, with no special Route 53 routing such as weighted or latency. You typically route traffic to a single resource, for example, to a web server for your website.
 

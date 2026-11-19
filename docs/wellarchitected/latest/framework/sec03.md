@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec03.h
 ---
 
 # Permissions management
-<a name="sec03"></a>
 
  Permissions decide which identities can take which actions on which resources, and under what conditions. They apply to the people who operate a workload and to the machine identities that make up the workload itself. Managing them well means granting only the access a function needs and keeping that grant current as the function changes.
 

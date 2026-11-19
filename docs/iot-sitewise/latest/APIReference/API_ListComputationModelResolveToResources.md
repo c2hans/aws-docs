@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListComputationModelResolveToResources
-<a name="API_ListComputationModelResolveToResources"></a>
 
 Lists all distinct resources that are resolved from the executed actions of the computation model.
 

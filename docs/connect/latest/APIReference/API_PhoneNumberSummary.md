@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PhoneNum
 ---
 
 # PhoneNumberSummary
-<a name="API_PhoneNumberSummary"></a>
 
 Contains summary information about a phone number for a contact center.
 

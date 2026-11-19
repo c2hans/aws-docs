@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.Postgre
 ---
 
 # Using a PostgreSQL database as an AWS DMS source
-<a name="CHAP_Source.PostgreSQL"></a>
 
 You can migrate data from one or many PostgreSQL databases using AWS DMS. With a PostgreSQL database as a source, you can migrate data to either another PostgreSQL database or one of the other supported databases.
 

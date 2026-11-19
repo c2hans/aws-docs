@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterVersion
-<a name="API_ClusterVersion"></a>
 
 Describes a cluster version, including the parameter group family and description of the version.
 

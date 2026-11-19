@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/format-sparklines
 ---
 
 # Adding sparklines to tables in Quick
-<a name="format-sparklines"></a>
 
 Sparklines are small inline charts that display trends directly within table cells, helping readers quickly identify patterns and seasonality without leaving the table view. Use sparklines when you need compact trend visualization alongside your tabular data.
 

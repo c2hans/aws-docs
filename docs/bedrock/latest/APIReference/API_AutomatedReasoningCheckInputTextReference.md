@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckInputTextReference
-<a name="API_AutomatedReasoningCheckInputTextReference"></a>
 
 References a portion of the original input text that corresponds to logical elements.
 

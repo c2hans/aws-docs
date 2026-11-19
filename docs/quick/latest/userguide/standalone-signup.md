@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-signup
 ---
 
 # Signing up at aws.com/quick
-<a name="standalone-signup"></a>
 
 AWS Quick is available directly at [https://aws.com/quick](https://aws.com/quick) – no existing AWS account required. This page walks you through creating a AWS Quick Free or Plus account using your email address or social login credentials.
 

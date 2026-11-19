@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 14.2 – Select and configure EBS types aligned with performance requirements
-<a name="best-practice-14-2"></a>
 
 For each filesystem function and storage service, evaluate storage layout guidelines and tuning options to ensure that IOPS and throughput performance are optimized.
 

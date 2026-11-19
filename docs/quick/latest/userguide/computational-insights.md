@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/computational-ins
 ---
 
 # Working with insights in AWS Quick Sight
-<a name="computational-insights"></a>
 
 In AWS Quick Sight, you can add ready-to-use analytical computations to your analysis as widgets. You can work with insights in two ways:
 + **Suggested insights**

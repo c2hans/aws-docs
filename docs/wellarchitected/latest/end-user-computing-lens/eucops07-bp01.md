@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS07-BP01 Formalize the mandatory creation and maintenance of all EUC service-related documentation
-<a name="eucops07-bp01"></a>
 
  Maintain a library of documentation related to the business requirements, architectural design, service delivery, and support of your EUC deployment.
 

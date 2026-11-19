@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimize-evalu
 ---
 
 # Evaluate the performance of optimized models
-<a name="model-optimize-evaluate"></a>
 
 After you use an optimization job to create an optimized model, you can run an evaluation of model performance. This evaluation yields metrics for latency, throughput, and price. Use these metrics to determine whether the optimized model meets the needs of your use case or whether it requires further optimization.
 

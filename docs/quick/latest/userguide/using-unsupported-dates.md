@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-unsupported
 ---
 
 # Using unsupported or custom dates
-<a name="using-unsupported-dates"></a>
 
 AWS Quick Sight natively supports a limited number of date formats. However, you can’t always control the format of the data provided to you. When your data contains a date in an unsupported format, you can tell AWS Quick Sight how to interpret it.
 

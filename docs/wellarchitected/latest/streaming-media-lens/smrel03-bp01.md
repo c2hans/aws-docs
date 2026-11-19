@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMREL03-BP01 Implement multi-tier distribution with origin redundancy and content delivery network (CDN) failover
-<a name="smrel03-bp01"></a>
 
 Design your distribution architecture with redundant origin services across multiple regions and CDN failover mechanisms so that content remains continuously available during component failures or traffic spikes.
 

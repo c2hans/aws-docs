@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/memory-ma
 ---
 
 # Memory management in the the AWS SDK for C\+\+
-<a name="memory-management"></a>
 
 The AWS SDK for C\+\+ provides a way to control memory allocation and deallocation in a library.
 

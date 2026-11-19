@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # EnvironmentInfo
-<a name="API_EnvironmentInfo"></a>
 
 Information about the active domain environment.
 

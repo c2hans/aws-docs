@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # ListChallengeMetadata
-<a name="API_ListChallengeMetadata"></a>
 
 Retrieves the challenge metadata for the specified ARN.
 

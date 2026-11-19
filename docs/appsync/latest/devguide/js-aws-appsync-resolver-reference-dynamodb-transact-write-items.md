@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # TransactWriteItems
-<a name="js-aws-appsync-resolver-reference-dynamodb-transact-write-items"></a>
 
 The `TransactWriteItems` request object lets you tell the AWS AppSync DynamoDB function to make a `TransactWriteItems` request to DynamoDB to write multiple items, potentially to multiple tables. For this request object, you must specify the following:
 + The destination table name of each request item

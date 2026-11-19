@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-mon
 ---
 
 # RDS Proxy monitoring dashboard
-<a name="rds-proxy-monitoring-dashboard"></a>
 
 You can access the RDS Proxy monitoring dashboard under the Monitoring tab of your proxy.
 

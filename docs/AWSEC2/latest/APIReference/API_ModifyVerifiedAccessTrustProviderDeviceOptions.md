@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessTrustProviderDeviceOptions
-<a name="API_ModifyVerifiedAccessTrustProviderDeviceOptions"></a>
 
 Modifies the configuration of the specified device-based AWS Verified Access trust provider.
 

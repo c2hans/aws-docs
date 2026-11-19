@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # AWS Mainframe Modernization on Amazon EC2 integration with Control-M
-<a name="aws-mainframe-modernization-ec2"></a>
 
 This section describes how Control-M integrates with and supports batch jobs that run in a custom AWS Mainframe Modernization runtime environment deployed on an EC2 instance. If you are implementing the fully managed AWS Replatform with Micro Focus runtime environment, see the [Managed AWS Mainframe Modernization integration with Control-M](aws-mainframe-modernization-managed.md) section.
 

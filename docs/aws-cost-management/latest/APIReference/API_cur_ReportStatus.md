@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReportStatus
-<a name="API_cur_ReportStatus"></a>
 
 A two element dictionary with a `lastDelivery` and `lastStatus` key whose values describe the date and status of the last delivered report for a particular report definition.
 

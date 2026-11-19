@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Sha
 ---
 
 # ShareTarget
-<a name="API_ShareTarget"></a>
 
 Identifier that contains details about the directory consumer account.
 

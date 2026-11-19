@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Configuration
-<a name="configuration"></a>
 
 AWS App2Container (A2C) tasks generate the analysis.json and deployment.json files. These files have configurable values to control what comprises the generated Docker image and the specifications of the target environment on AWS.
 

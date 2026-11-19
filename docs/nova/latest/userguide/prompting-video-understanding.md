@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-video-un
 ---
 
 # Vision understanding prompting best practices
-<a name="prompting-video-understanding"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For information about how to prompt multimodal understanding in Amazon Nova 2, visit [Prompting multimodal inputs](https://docs.aws.amazon.com/nova/latest/nova2-userguide/prompting-multimodal.html).

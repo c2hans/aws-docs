@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateSource
 ---
 
 # UpdateSourceServer
-<a name="API_UpdateSourceServer"></a>
 
 Update Source Server.
 

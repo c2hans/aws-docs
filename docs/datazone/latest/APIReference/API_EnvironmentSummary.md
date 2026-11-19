@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentSummary
-<a name="API_EnvironmentSummary"></a>
 
 The details of an environment.
 

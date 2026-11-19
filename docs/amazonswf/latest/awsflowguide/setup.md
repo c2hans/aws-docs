@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/setup.html
 ---
 
 # Setting up the AWS Flow Framework for Java
-<a name="setup"></a>
 
 The AWS Flow Framework for Java is included with the [AWS SDK for Java](https://aws.amazon.com/sdkforjava/). If you have not already set up the AWS SDK for Java, visit [Getting Started](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/getting-started.html) in the AWS SDK for Java Developer Guide for information about installing and configuring the SDK itself.
 

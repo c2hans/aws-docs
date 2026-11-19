@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailImageSource
-<a name="API_runtime_GuardrailImageSource"></a>
 
 The image source (image bytes) of the guardrail image source. Object used in independent api.
 

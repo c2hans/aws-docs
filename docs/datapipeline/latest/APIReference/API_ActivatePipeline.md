@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Act
 ---
 
 # ActivatePipeline
-<a name="API_ActivatePipeline"></a>
 
 Validates the specified pipeline and starts processing pipeline tasks. If the pipeline does not pass validation, activation fails.
 

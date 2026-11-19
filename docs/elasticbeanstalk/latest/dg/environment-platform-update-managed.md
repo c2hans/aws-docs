@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-p
 ---
 
 # Managed platform updates
-<a name="environment-platform-update-managed"></a>
 
 AWS Elastic Beanstalk regularly releases [platform updates](using-features.platform.upgrade.md) to provide fixes, software updates, and new features. With managed platform updates, you can configure your environment to automatically upgrade to the latest version of a platform during a scheduled [maintenance window](#environment-platform-update-managed-window). Your application remains in service during the update process with no reduction in capacity. Managed updates are available on both single-instance and load-balanced environments.
 

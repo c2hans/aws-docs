@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ma
 ---
 
 # Managing key tags with API operations
-<a name="manage-tags-api"></a>
 
 You can use the [AWS Payment Cryptography API](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/Welcome.html) to add, delete, and list tags for the keys that you manage. These examples use the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/), but you can use any supported programming language. You cannot tag AWS managed keys.
 

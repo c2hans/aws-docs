@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Create an endpoint
-<a name="serverless-endpoints-create-endpoint"></a>
 
 To create a serverless endpoint, you can use the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker/home), the [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API, or the AWS CLI. The API and console approaches are outlined in the following sections. Once you create your endpoint, it can take a few minutes for the endpoint to become available.
 

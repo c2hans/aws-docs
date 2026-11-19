@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/get-started-api-eve
 ---
 
 # Async analysis for event detection
-<a name="get-started-api-events"></a>
 
 **Topics**
 + [Before you start](#events-before)

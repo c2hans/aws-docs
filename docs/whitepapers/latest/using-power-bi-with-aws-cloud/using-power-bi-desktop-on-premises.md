@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Using Power BI Desktop on premises
-<a name="using-power-bi-desktop-on-premises"></a>
 
  If you plan on using Power BI desktop on premises with data sources that are stored within the AWS Cloud, Power BI can access these sources in one of three ways:
 +  Connecting to data sources using the internet.

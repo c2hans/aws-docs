@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteUserDefined
 ---
 
 # DeleteUserDefinedFunction
-<a name="API_DeleteUserDefinedFunction"></a>
 
 Deletes an existing function definition from the Data Catalog.
 

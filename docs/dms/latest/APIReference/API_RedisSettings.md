@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RedisSetting
 ---
 
 # RedisSettings
-<a name="API_RedisSettings"></a>
 
 Provides information that defines a Redis target endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DeliveryOptions
-<a name="API_DeliveryOptions"></a>
 
 Used to associate a configuration set with a dedicated IP pool.
 

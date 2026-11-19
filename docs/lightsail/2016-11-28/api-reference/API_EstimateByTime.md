@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_E
 ---
 
 # EstimateByTime
-<a name="API_EstimateByTime"></a>
 
 An estimate that's associated with a time period.
 

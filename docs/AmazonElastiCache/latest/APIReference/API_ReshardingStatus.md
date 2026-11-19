@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ReshardingStatus
-<a name="API_ReshardingStatus"></a>
 
 The status of an online resharding operation.
 

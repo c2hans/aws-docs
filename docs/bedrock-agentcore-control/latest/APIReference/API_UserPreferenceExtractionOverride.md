@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UserPreferenceExtractionOverride
-<a name="API_UserPreferenceExtractionOverride"></a>
 
 Contains user preference extraction override configuration.
 

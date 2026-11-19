@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/working
 ---
 
 # Working with license asset rulesets
-<a name="working-with-license-asset-rulesets"></a>
 
 This section describes how to create, update, delete, and manage license asset rulesets in AWS License Manager. License asset rulesets define the resource discovery criteria for license asset groups.
 

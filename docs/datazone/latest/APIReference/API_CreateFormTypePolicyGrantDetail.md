@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateF
 ---
 
 # CreateFormTypePolicyGrantDetail
-<a name="API_CreateFormTypePolicyGrantDetail"></a>
 
 The details of the policy grant.
 

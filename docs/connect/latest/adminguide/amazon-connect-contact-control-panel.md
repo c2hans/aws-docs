@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 ---
 
 # Provide agents with access to the Connect Customer Contact Control Panel (CCP)
-<a name="amazon-connect-contact-control-panel"></a>
 
 **Note**
 This is the URL to the CCP website:

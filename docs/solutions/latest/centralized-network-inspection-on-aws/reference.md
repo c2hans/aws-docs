@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Reference
-<a name="reference"></a>
 
  This section includes information about an optional feature for collecting unique metrics for this guidance and a list of builders who contributed to this guidance.
 

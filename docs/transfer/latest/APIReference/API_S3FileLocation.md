@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_S3FileL
 ---
 
 # S3FileLocation
-<a name="API_S3FileLocation"></a>
 
 Specifies the details for the file location for the file that's being used in the workflow. Only applicable if you are using S3 storage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/perform-mac
 ---
 
 # Perform machine learning inference
-<a name="perform-machine-learning-inference"></a>
 
 With AWS IoT Greengrass, you can perform machine learning (ML) inference on your edge devices on locally generated data using cloud-trained models. You benefit from the low latency and cost savings of running local inference, yet still take advantage of cloud computing power for training models and complex processing.
 

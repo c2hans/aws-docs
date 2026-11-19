@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon Managed Streaming for Apache Kafka (MSK) and Application Auto Scaling
-<a name="services-that-can-integrate-msk"></a>
 
 You can scale out Amazon MSK cluster storage using target tracking scaling policies. Scale in by the target tracking policy is disabled.
 

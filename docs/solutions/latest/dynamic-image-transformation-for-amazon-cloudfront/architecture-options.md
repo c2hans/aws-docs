@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Architecture options
-<a name="architecture-options"></a>
 
 This solution offers two distinct deployment architectures to meet different performance and cost requirements:
 

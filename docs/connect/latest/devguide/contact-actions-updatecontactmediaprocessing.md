@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactMediaProcessing
-<a name="contact-actions-updatecontactmediaprocessing"></a>
 
 Allows customers to configure their own Lambda processor, which will be applied to in-flight messages.
 

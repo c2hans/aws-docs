@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/logging-mo
 ---
 
 # Logging and monitoring in Amazon Route 53
-<a name="logging-monitoring"></a>
 
 Amazon Route 53 provides DNS query logging and the ability to monitor your resources using health checks. In addition, Route 53 integrates with other AWS services to provide additional logging and monitoring:
 

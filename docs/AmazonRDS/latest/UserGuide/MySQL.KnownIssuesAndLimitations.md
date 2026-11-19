@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.KnownIs
 ---
 
 # Known issues and limitations for Amazon RDS for MySQL
-<a name="MySQL.KnownIssuesAndLimitations"></a>
 
 Known issues and limitations for working with Amazon RDS for MySQL are as follows.
 

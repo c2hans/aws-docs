@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/cluster-reshard
 ---
 
 # Online resharding for MemoryDB
-<a name="cluster-resharding-online"></a>
 
 By using online resharding and with MemoryDB, you can scale your MemoryDB dynamically with no downtime. This approach means that your cluster can continue to serve requests even while scaling or rebalancing is in process.
 

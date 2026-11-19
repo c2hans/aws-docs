@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentLanguage
-<a name="API_EnvironmentLanguage"></a>
 
 A set of Docker images that are related by programming language and are managed by AWS CodeBuild.
 

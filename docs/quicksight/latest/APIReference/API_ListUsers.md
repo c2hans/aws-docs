@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListU
 ---
 
 # ListUsers
-<a name="API_ListUsers"></a>
 
 Returns a list of all of the Amazon Quick Sight users belonging to this account.
 

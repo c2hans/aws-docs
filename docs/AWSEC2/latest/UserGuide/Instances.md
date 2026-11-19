@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Instances.html
 ---
 
 # Amazon EC2 instances
-<a name="Instances"></a>
 
 An Amazon EC2 instance is a virtual server in the AWS cloud environment. You have full control over your instance, from the time that you first start it (referred to as launching an instance) until you delete it (referred to as terminating an instance). You can choose from a variety of operating systems when you launch your instance. You can connect to your instance and customize it to meet your needs. For example, you can configure the operating system, install operating system updates, and install applications on your instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyEndpoint
 ---
 
 # ModifyEndpointEncryptionMode
-<a name="API_ModifyEndpointEncryptionMode"></a>
 
 Modifies the endpoint encryption mode that allows you to configure the specified directory between Standard TLS and FIPS 140-2 validated mode.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Networking and caching
-<a name="infrastructure-stack"></a>
 
 The networking and caching layer provides the foundational infrastructure required by other components in the guidance.
 

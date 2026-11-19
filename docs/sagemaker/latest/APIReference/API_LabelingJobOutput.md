@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobOutput
-<a name="API_LabelingJobOutput"></a>
 
 Specifies the location of the output produced by the labeling job.
 

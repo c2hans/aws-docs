@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # AWS Schema Conversion Tool CLI
-<a name="CHAP_Installing.CLI"></a>
 
 You can download the AWS SCT CLI for command-line use. To download the JAR, use the following link:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-direct-inges
 ---
 
 # View information about documents in your data source
-<a name="kb-direct-ingestion-view"></a>
 
 The following topics describe how to view documents in your data source. If your knowledge base is connected to an Amazon S3 data source, you can view the documents in the connected S3 bucket.
 

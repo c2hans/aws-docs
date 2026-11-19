@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TRUNC.h
 ---
 
 # TRUNC function
-<a name="TRUNC"></a>
 
 The TRUNC function truncates numbers to the previous integer or decimal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateRealtimeLogConfig
-<a name="API_UpdateRealtimeLogConfig"></a>
 
 Updates a real-time log configuration.
 

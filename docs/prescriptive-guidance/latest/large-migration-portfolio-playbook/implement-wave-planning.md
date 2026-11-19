@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 3: Performing wave planning and metadata collection
-<a name="implement-wave-planning"></a>
 
 This is the final task for portfolio assessment and wave planning. In this task, you use the application information and target migration pattern to build move groups, assign move groups to waves, and collect all the metadata needed to support the migration. Finally, you notify the migration workstream that the wave is ready.
 

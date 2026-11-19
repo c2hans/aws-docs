@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-configure-sche
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Schedule workloads on EKS Auto Mode
-<a name="auto-configure-scheduling"></a>
 
 Control how your workloads are scheduled onto Amazon EKS Auto Mode nodes. Use the following topics to direct deployments to EKS Auto Mode and to run critical add-ons.
 

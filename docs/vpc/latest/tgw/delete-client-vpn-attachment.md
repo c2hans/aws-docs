@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/delete-client-vpn-attachm
 ---
 
 # Delete a Client VPN attachment in AWS Transit Gateway
-<a name="delete-client-vpn-attachment"></a>
 
 **To delete a Client VPN attachment using the console**
 

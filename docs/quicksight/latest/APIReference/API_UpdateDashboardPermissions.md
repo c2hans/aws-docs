@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDashboardPermissions
-<a name="API_UpdateDashboardPermissions"></a>
 
 Updates read and write permissions on a dashboard.
 

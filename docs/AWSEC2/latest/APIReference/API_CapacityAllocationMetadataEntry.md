@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityA
 ---
 
 # CapacityAllocationMetadataEntry
-<a name="API_CapacityAllocationMetadataEntry"></a>
 
 A key-value pair that provides additional metadata about a capacity allocation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Respon
 ---
 
 # RespondDecisionTaskCompleted
-<a name="API_RespondDecisionTaskCompleted"></a>
 
 Used by deciders to tell the service that the [DecisionTask](API_DecisionTask.md) identified by the `taskToken` has successfully completed. The `decisions` argument specifies the list of decisions made while processing the task.
 

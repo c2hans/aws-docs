@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_PostLin
 ---
 
 # PostLineageEvent
-<a name="API_PostLineageEvent"></a>
 
 Posts a data lineage event.
 

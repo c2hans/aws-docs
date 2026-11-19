@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/adding-member-acco
 ---
 
 # Activating Amazon Inspector scans for member accounts
-<a name="adding-member-accounts"></a>
 
  You can activate Amazon Inspector for member accounts in your organization through multiple methods. The method you choose depends on your governance requirements and organizational structure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_InboundIntegratio
 ---
 
 # InboundIntegration
-<a name="API_InboundIntegration"></a>
 
 A structure for an integration that writes data into a resource.
 

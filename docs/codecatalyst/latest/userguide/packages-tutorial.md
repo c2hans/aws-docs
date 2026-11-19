@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/packages-t
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Tutorial: Pull from a package repository
-<a name="packages-tutorial"></a>
 
 In this tutorial, you learn how to create a workflow that runs an application whose dependencies are pulled from a [CodeCatalyst package repository](packages-concepts.md#packages-concepts-repository). The application is a simple Node.js app that prints a 'Hello World' message to the CodeCatalyst logs. The application has a single dependency: the [lodash](https://www.npmjs.com/package/lodash) npm package. The `lodash` package is used to transform a `hello-world` string to `Hello World`. You will use version 4.17.20 of this package.
 

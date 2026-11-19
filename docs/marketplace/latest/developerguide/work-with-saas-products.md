@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with SaaS products using the AWS Marketplace APIs
-<a name="work-with-saas-products"></a>
 
 You can use the AWS Marketplace Catalog API to automate tasks for working with SaaS-based products. For information about creating SaaS-based products, see [Create a product](work-with-seller-products.md#create-product). The following topics describe how to perform Catalog API actions:
 

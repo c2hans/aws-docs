@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # Get a batch of Secrets Manager secret values using the Python AWS SDK
-<a name="retrieving-secrets-python-batch"></a>
 
 The following code example shows how to get a batch of Secrets Manager secret values.
 

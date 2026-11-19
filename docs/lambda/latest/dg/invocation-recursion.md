@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/invocation-recursion.ht
 ---
 
 # Use Lambda recursive loop detection to prevent infinite loops
-<a name="invocation-recursion"></a>
 
 When you configure a Lambda Event Function to output to the same service or resource that invokes the function, it's possible to create an infinite recursive loop. For example, a Lambda Event Function might write a message to an Amazon Simple Queue Service (Amazon SQS) queue, which then invokes the same function. This invocation causes the function to write another message to the queue, which in turn invokes the function again.
 

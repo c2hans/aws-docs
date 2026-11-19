@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # ReverseGeocodeResultItem
-<a name="API_geoplaces_ReverseGeocodeResultItem"></a>
 
 The returned location from the `Reverse Geocode` action.
 

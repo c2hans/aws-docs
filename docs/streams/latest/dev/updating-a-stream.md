@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/updating-a-stream.htm
 ---
 
 # Update a stream
-<a name="updating-a-stream"></a>
 
 You can update the details of a stream using the Kinesis Data Streams console, the Kinesis Data Streams API, or the AWS CLI.
 

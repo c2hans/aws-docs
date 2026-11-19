@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Working with Amazon Simple Queue Service from the AWS Toolkit for JetBrains
-<a name="sqs"></a>
 
 The following topics describe how work with the Amazon Simple Queue Service service from the AWS Toolkit for JetBrains.
 

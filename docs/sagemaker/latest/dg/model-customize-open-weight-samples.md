@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open
 ---
 
 # Sample datasets and evaluators
-<a name="model-customize-open-weight-samples"></a>
 
 ## Supervised Fine tuning (SFT)
 <a name="model-customize-open-weight-samples-sft"></a>

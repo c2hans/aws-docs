@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeEnvironmentResources
-<a name="API_DescribeEnvironmentResources"></a>
 
 Returns AWS resources for this environment.
 

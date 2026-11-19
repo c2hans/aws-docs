@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-po
 ---
 
 # Re-Sending Welcome Email in Amazon WorkSpaces Applications
-<a name="user-pool-admin-email"></a>
 
 You can re-send the welcome email with connection instructions to users in the user pool. Unused passwords expire after seven days. To provide a new temporary password, you must re-send the welcome email. This option is only available until users set their permanent password. If they've already set their password and forgotten it, they can set a new one. For more information, see [Resetting a Forgotten Password in Amazon WorkSpaces Applications](user-pool-end-user-reset-password.md).
 

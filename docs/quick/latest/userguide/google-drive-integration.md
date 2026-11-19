@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-drive-inte
 ---
 
 # Google Drive integration
-<a name="google-drive-integration"></a>
 
 With the Google Drive integration, you can manage files and folders through actions, and index your Google Drive content into knowledge bases for AI-powered search and Q&A.
 

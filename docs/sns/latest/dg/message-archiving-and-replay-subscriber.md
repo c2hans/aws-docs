@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/message-archiving-and-repl
 ---
 
 # Amazon SNS message replay for FIFO topic subscribers
-<a name="message-archiving-and-replay-subscriber"></a>
 
 Amazon SNS replay allows topic subscribers to retrieve and redeliver archived messages from the topic data store to a subscribed endpoint.
 + Messages can be replayed immediately after the subscription is created.

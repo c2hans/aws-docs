@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/route-server-iam.ht
 ---
 
 # Step 1: Configure required IAM role permissions
-<a name="route-server-iam"></a>
 
 To use VPC Route Server, ensure that the IAM user or role you are using has the required IAM permissions. Below is a guide to which permissions are required for each API:
 

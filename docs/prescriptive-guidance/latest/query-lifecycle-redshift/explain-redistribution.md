@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # EXPLAIN data redistribution for Amazon Redshift query plans
-<a name="explain-redistribution"></a>
 
 During join steps, a slice may need to work with data not stored locally, and network transmission (movement of data between compute nodes) is the most expensive query operation.
 

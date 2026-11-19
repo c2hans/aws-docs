@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceProcurementSystemAdminFullAccess
-<a name="AWSMarketplaceProcurementSystemAdminFullAccess"></a>
 
 **Description**: Provides full access to all administrative actions for an AWS Marketplace eProcurement integration.
 

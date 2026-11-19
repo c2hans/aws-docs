@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/best-practi
 ---
 
 # Best practices for data collaborations in AWS Clean Rooms
-<a name="best-practices"></a>
 
 This topic describes the best practices for conducting data collaborations in AWS Clean Rooms.
 

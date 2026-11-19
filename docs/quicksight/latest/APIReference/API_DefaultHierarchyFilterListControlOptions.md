@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultHierarchyFilterListControlOptions
-<a name="API_DefaultHierarchyFilterListControlOptions"></a>
 
 The default options that correspond to the `HierarchyList` filter control type.
 

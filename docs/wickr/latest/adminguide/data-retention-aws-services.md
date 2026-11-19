@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/data-retention-a
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # IAM policy to use data retention with AWS services
-<a name="data-retention-aws-services"></a>
 
 If you plan to use other AWS services with the Wickr data retention bot, you must ensure the host has the appropriate AWS Identity and Access Management (IAM) role and policy to access them. You can configure the data retention bot to use Secrets Manager, Amazon S3, CloudWatch, Amazon SNS, and AWS KMS. The following IAM policy allows access to specific actions for these services.
 

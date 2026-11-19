@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-link-obt
 ---
 
 # Obtain information
-<a name="setup-input-link-obtain-info"></a>
 
 Obtain the following information from the operator of the AWS Elemental Link device:
 + The name of the device or devices that will provide your source. For example:

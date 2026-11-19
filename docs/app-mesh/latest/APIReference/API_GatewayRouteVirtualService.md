@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteVirtualService
-<a name="API_GatewayRouteVirtualService"></a>
 
 An object that represents the virtual service that traffic is routed to.
 

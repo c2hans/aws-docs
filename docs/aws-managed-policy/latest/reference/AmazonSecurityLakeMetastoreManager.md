@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSecurityLakeMetastoreManager
-<a name="AmazonSecurityLakeMetastoreManager"></a>
 
 **Description**: Policy for Amazon SecurityLake meta store manager lambda which allows the access to cloudwatch, S3, Glue and SQS.
 

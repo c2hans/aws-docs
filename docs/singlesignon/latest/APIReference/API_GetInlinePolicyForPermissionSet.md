@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetInlinePolicyForPermissionSet
-<a name="API_GetInlinePolicyForPermissionSet"></a>
 
 Obtains the inline policy assigned to the permission set.
 

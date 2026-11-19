@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Focus area 4: Build trust through identity, guardrails, and observability
-<a name="focus-areas-trust"></a>
 
 *Job to be done: "Give me confidence that agents will act safely and predictably, especially when no one's watching."*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/resil-sc
 ---
 
 # Understanding resiliency scores
-<a name="resil-score"></a>
 
 This section describes how AWS Resilience Hub quantifies application readiness from different disruption scenarios.
 

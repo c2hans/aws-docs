@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_KendraI
 ---
 
 # KendraIndexConfiguration
-<a name="API_KendraIndexConfiguration"></a>
 
 Stores an Amazon Kendra index as a retriever.
 

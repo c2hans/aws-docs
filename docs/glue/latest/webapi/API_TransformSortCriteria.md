@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TransformSortCrit
 ---
 
 # TransformSortCriteria
-<a name="API_TransformSortCriteria"></a>
 
 The sorting criteria that are associated with the machine learning transform.
 

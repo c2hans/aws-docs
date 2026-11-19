@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/maps-pric
 ---
 
 # Maps pricing
-<a name="maps-pricing"></a>
 
 Amazon Location Service offers competitive pricing for its Maps API based on the type of map request and the number of API calls made. This section provides an overview of the pricing structure for dynamic and static maps.
 

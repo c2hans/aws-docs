@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/crud-mpts-passth
 ---
 
 # Including passthrough programs in an MPTS
-<a name="crud-mpts-passthrough-programs"></a>
 
 Read this section if you want to include passthrough programs in the MPTS. For guidelines and rules about including these programs in an MPTS, see [Including passthrough programs](mpts-passthrough-program.md).
 

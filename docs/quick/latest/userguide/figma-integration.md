@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/figma-integration
 ---
 
 # Figma integration
-<a name="figma-integration"></a>
 
 Figma is a collaborative design platform where teams create, share, and manage design files and prototypes. The Figma connector brings your design work into AWS Quick. You can ask questions in natural language to manage design files, retrieve file metadata, and access design assets without switching to the Figma application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens
 ---
 
 # GitHub and GitHub Enterprise Server access token
-<a name="access-tokens-github"></a>
 
 ## Access token prerequisites
 <a name="access-tokens-github-prereqs"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Domin
 ---
 
 # DominantLanguage
-<a name="API_DominantLanguage"></a>
 
 Returns the code for the dominant language in the input text and the level of confidence that Amazon Comprehend has in the accuracy of the detection.
 

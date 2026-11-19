@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/register-abap.h
 ---
 
 # Register your SAP ABAP application with AWS Systems Manager for SAP
-<a name="register-abap"></a>
 
 You can register a single node or multi node (distributed or high availability) setup for SAP ABAP application with Systems Manager for SAP. Ensure that you have completed the setup perquisites described in [Get started with Systems Manager for SAP](https://docs.aws.amazon.com/ssm-sap/latest/userguide/get-started.html). Follow along these steps to register your SAP ABAP application.
 

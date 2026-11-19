@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ExportMetada
 ---
 
 # ExportMetadataModelAssessment
-<a name="API_ExportMetadataModelAssessment"></a>
 
 Saves a copy of a database migration assessment report to your Amazon S3 bucket. AWS DMS can save your assessment report as a comma-separated value (CSV) or a PDF file.
 

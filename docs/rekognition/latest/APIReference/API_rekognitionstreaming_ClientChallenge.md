@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ClientChallenge
-<a name="API_rekognitionstreaming_ClientChallenge"></a>
 
 Object containing information for Face Liveness challenges performed at the client side.
 

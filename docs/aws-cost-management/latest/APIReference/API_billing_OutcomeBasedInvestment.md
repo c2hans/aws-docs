@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # OutcomeBasedInvestment
-<a name="API_billing_OutcomeBasedInvestment"></a>
 
 An investment that is awarded upon completion of a defined outcome. This corresponds to the `OUTCOME_BASED` investment type and is claimed through `CreateContractualInvestmentAttestation`.
 

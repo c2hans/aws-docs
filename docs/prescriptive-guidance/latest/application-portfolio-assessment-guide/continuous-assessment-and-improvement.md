@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Continuous assessment and improvement
-<a name="continuous-assessment-and-improvement"></a>
 
 This stage of assessment focuses on two aspects:
 + Ongoing detailed application assessment, for each wave of applications

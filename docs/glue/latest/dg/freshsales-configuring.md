@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshsales-configuring.ht
 ---
 
 # Configuring Freshsales
-<a name="freshsales-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Freshsales, you must meet these requirements:
 

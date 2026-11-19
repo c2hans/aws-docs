@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Subjec
 ---
 
 # SubjectIdentifier
-<a name="API_SubjectIdentifier"></a>
 
 An object that identifies an image subject.
 

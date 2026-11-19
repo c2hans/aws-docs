@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/start-instance
 ---
 
 # Start an instance refresh using the AWS Management Console or AWS CLI
-<a name="start-instance-refresh"></a>
 
 **Important**
 You can roll back an instance refresh that is in progress to undo any changes. For this to work, the Auto Scaling group must meet the prerequisites for using rollbacks before starting the instance refresh. For more information, see [Undo changes with a manual or auto rollback](instance-refresh-rollback.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 06-DeleteTable.cs
-<a name="DAX.client.run-application-dotnet.06-DeleteTable"></a>
 
 The `06-DeleteTable.cs` program deletes `TryDaxTable`. Run this program after you have finished testing.
 

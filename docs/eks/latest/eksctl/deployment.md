@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/deployment.html
 ---
 
 # Deployment options
-<a name="deployment"></a>
 
 This chapter covers using eksctl to manage EKS clusters deployed to alternate environments.
 

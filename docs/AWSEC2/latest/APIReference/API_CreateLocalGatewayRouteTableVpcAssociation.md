@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLoc
 ---
 
 # CreateLocalGatewayRouteTableVpcAssociation
-<a name="API_CreateLocalGatewayRouteTableVpcAssociation"></a>
 
 Associates the specified VPC with the specified local gateway route table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_HashAlgorithmOptio
 ---
 
 # HashAlgorithmOptions
-<a name="API_HashAlgorithmOptions"></a>
 
 The hash algorithms that are available to a code-signing job.
 

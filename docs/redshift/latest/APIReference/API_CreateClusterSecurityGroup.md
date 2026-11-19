@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateC
 ---
 
 # CreateClusterSecurityGroup
-<a name="API_CreateClusterSecurityGroup"></a>
 
 Creates a new Amazon Redshift security group. You use security groups to control access to non-VPC clusters.
 

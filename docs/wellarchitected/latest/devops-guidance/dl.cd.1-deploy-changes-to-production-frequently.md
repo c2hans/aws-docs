@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CD.1] Deploy changes to production frequently
-<a name="dl.cd.1-deploy-changes-to-production-frequently"></a>
 
  **Category:** FOUNDATIONAL
 

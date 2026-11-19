@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Node
 ---
 
 # NodeStructure
-<a name="API_NodeStructure"></a>
 
 Information about a node.
 

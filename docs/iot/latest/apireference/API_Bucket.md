@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Bucket.html
 ---
 
 # Bucket
-<a name="API_Bucket"></a>
 
 A count of documents that meets a specific aggregation criteria.
 

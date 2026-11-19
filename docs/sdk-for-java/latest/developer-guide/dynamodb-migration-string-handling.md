@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ---
 
 # String handling differences between version 1 and version 2 of the SDK for Java
-<a name="dynamodb-migration-string-handling"></a>
 
 V1 and V2 handle empty strings differently when sending data to DynamoDB:
 + **V1**: Converts empty strings to null values before sending to DynamoDB (resulting in no attribute)

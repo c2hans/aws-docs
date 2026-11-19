@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Pull request continuous integration
-<a name="pull-request-continuous-integration"></a>
 
 Publication date: **July 14, 2022 ([Diagram history](diagram-history.md))**
 

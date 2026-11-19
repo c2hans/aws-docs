@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/connect-ins
 ---
 
 # connect-instance-logging-enabled
-<a name="connect-instance-logging-enabled"></a>
 
 Checks if Amazon Connect instances have flow logs enabled in an Amazon CloudWatch log group. The rule is NON\_COMPLIANT if an Amazon Connect instance does not have flow logs enabled.
 

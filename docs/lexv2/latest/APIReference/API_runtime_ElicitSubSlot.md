@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_El
 ---
 
 # ElicitSubSlot
-<a name="API_runtime_ElicitSubSlot"></a>
 
 The specific constituent sub slot of the composite slot to elicit in dialog action.
 
@@ -18,7 +17,7 @@ Required: Yes
 
  ** subSlotToElicit **   <a name="lexv2-Type-runtime_ElicitSubSlot-subSlotToElicit"></a>
 The field is not supported.
-Type: [ElicitSubSlot](#API_runtime_ElicitSubSlot) object
+Type: [ElicitSubSlot](API_runtime_ElicitSubSlot.md) object
 Required: No
 
 ## See Also

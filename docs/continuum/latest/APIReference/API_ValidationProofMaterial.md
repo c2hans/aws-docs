@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Valida
 ---
 
 # ValidationProofMaterial
-<a name="API_ValidationProofMaterial"></a>
 
 The validation Proof Material.
 

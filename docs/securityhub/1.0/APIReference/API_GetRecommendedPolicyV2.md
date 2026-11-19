@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetReco
 ---
 
 # GetRecommendedPolicyV2
-<a name="API_GetRecommendedPolicyV2"></a>
 
 Retrieves the recommended policy to remediate a Security Hub finding. `GetRecommendedPolicyV2` only supports findings for unused permissions.
 

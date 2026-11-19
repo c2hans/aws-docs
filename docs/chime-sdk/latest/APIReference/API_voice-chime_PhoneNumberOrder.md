@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PhoneNumberOrder
-<a name="API_voice-chime_PhoneNumberOrder"></a>
 
 The details of an Amazon Chime SDK phone number order.
 

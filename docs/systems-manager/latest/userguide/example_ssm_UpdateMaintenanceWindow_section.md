@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `UpdateMaintenanceWindow` with an AWS SDK or CLI
-<a name="example_ssm_UpdateMaintenanceWindow_section"></a>
 
 The following code examples show how to use `UpdateMaintenanceWindow`.
 

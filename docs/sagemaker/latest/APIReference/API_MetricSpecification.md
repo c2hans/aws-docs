@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metric
 ---
 
 # MetricSpecification
-<a name="API_MetricSpecification"></a>
 
 An object containing information about a metric.
 

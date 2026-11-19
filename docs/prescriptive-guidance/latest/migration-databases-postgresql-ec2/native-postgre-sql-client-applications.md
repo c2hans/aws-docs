@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Native PostgreSQL client applications
-<a name="native-postgre-sql-client-applications"></a>
 
 You can use native PostgreSQL client applications for an offline migration, including [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html), [pg\_dumpall](https://www.postgresql.org/docs/current/app-pg-dumpall.html), and [pg\_restore](https://www.postgresql.org/docs/current/app-pgrestore.html). The pg\_dump utility is for backing up PostgreSQL databases. You can use pg\_dump to make consistent backups and back up a single database. To back up global objects that are common to all databases in a cluster (such as roles and tablespaces), use pg\_dumpall. We recommend that you run the pg\_dump utility as a superuser because only a superuser can perform a complete dump. The pg\_dump utility also offers options to optimize the backup process, including using the jobs option (for running the dump in parallel) and the directory format when you take the backup. For more information, see the *Options* section of the [pg\_dump](https://www.postgresql.org/docs/current/app-pgdump.html) page in the PostgreSQL documentation.
 

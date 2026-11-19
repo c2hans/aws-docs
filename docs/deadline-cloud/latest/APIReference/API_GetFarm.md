@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetFarm
-<a name="API_GetFarm"></a>
 
 Get a farm.
 

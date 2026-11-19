@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/identity-resol
 ---
 
 # View Identity Resolution metrics in Connect Customer Customer Profiles
-<a name="identity-resolution-metrics"></a>
 
 Whenever Identity Resolution matches or merges profiles, metrics about the process are displayed on the Customer Profiles dashboard. You can review metric for the pass week on the **Identity Resolution** summary page.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Setup for SageMaker HyperPod task governance
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-setup"></a>
 
 The following section provides information on how to get set up with the Amazon CloudWatch Observability EKS and SageMaker HyperPod task governance add-ons.
 

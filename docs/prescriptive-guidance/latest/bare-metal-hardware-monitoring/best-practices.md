@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Monitoring the health and performance of bare-metal hardware is critical, especially in multi-vendor environments where consistency can be a challenge. This section provides guidance for using the open source Telegraf agent and the industry-standard Redfish API to implement an effective and scalable hardware monitoring solution in the AWS Cloud. It explores key considerations, configuration steps, and best practices that help you get the most out of your hardware monitoring efforts on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListO
 ---
 
 # ListOAuthClientApplications
-<a name="API_ListOAuthClientApplications"></a>
 
 Lists all OAuthClientApplications in the current AWS Region that belong to this AWS account.
 

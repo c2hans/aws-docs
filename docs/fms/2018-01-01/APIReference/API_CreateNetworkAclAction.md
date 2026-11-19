@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_CreateNe
 ---
 
 # CreateNetworkAclAction
-<a name="API_CreateNetworkAclAction"></a>
 
 Information about the `CreateNetworkAcl` action in Amazon EC2. This is a remediation option in `RemediationAction`.
 

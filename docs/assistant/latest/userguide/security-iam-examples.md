@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/security-iam-
 ---
 
 # Identity-based policy examples for the AWS assistant
-<a name="security-iam-examples"></a>
 
 **The AWS assistant uses the `q` service prefix**
 Technical names didn't change when Amazon Q Developer in the AWS Management Console became the AWS assistant. The following example policies use the `q` service prefix in IAM actions, such as `q:SendMessage`.

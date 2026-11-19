@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.clou
 ---
 
 # Using Elastic Beanstalk with Amazon CloudWatch Logs
-<a name="AWSHowTo.cloudwatchlogs"></a>
 
 This topic explains the monitoring features that the Amazon CloudWatch Logs service can provide to Elastic Beanstalk. It also walks you through the configuration setup and lists the locations of the logs for each Elastic Beanstalk platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ErrorDetai
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 Contains detailed error information explaining why an operation failed, including which field caused the error and the reason for the failure.
 

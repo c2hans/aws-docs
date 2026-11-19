@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  The Cost Optimization pillar includes the ability to run systems to deliver business value at the lowest price point.
 

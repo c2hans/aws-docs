@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAREL01-BP02 Scale network architecture for manufacturing operations
-<a name="midarel01-bp02"></a>
 
  In manufacturing environments, network reliability is crucial as disruptions can directly impact production, quality, and safety. A reliable network architecture must provide continuous operations even during component failures, maintenance windows, or unexpected spikes in industrial data traffic. Implementing redundant connections, proper network segmentation, and automated failover mechanisms helps maintain operational continuity across the manufacturing floor.
 

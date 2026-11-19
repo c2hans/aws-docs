@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 4: Create a new product in the portfolio
-<a name="getstarted-product"></a>
 
 After you have created a portfolio, you are ready to create a product within the portfolio. For this tutorial, you will create a product called **Linux Desktop**, a cloud development environment that runs on Amazon Linux, inside of the **Engineering Tool** portfolio.
 

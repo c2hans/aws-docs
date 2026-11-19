@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/strLenBytes.h
 ---
 
 # $strLenBytes
-<a name="strLenBytes"></a>
 
 The `$strLenBytes` operator in Amazon DocumentDB is used to determine the length of a string in bytes. This is useful when you need to understand the storage size of a string field, especially when dealing with Unicode characters that may use more than one byte per character.
 

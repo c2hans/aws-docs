@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-pipeline-role
 ---
 
 # Creating a service-linked role for Amazon Chime SDK media pipelines
-<a name="create-pipeline-role"></a>
 
 The information in the following sections explains how to create a service-linked role that grants media pipelines access to your Amazon Chime SDK meetings.
 

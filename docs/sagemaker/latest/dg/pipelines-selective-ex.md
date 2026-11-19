@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-selective-
 ---
 
 # Selective execution of pipeline steps
-<a name="pipelines-selective-ex"></a>
 
 As you use Pipelines to create workflows and orchestrate your ML training steps, you might need to undertake multiple experimentation phases. Instead of running the full pipeline each time, you might only want to repeat certain steps. With Pipelines, you can execute pipeline steps selectively. This helps optimize your ML training. Selective execution is useful in the following scenarios:
 + You want to restart a specific step with updated instance type, hyperparameters, or other variables while keeping the parameters from upstream steps.

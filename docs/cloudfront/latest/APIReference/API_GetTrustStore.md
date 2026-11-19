@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetTr
 ---
 
 # GetTrustStore
-<a name="API_GetTrustStore"></a>
 
 Gets a trust store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_I
 ---
 
 # ImplementationSummary
-<a name="API_ImplementationSummary"></a>
 
 A summary of how the control is implemented, including the AWS service that enforces the control and its service-specific identifier. For example, the value of this field could indicate that the control is implemented as an AWS Config Rule or an AWS Security Hub control.
 

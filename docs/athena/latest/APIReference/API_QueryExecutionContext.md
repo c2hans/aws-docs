@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExec
 ---
 
 # QueryExecutionContext
-<a name="API_QueryExecutionContext"></a>
 
 The database and data catalog context in which the query execution occurs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/multiplex-create.htm
 ---
 
 # Creating a multiplex and program
-<a name="multiplex-create"></a>
 
 A MediaLive multiplex provides configuration information for an MPTS, including the bitrate of the entire MPTS.
 

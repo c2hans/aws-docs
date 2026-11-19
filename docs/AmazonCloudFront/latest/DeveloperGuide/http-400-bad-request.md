@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/h
 ---
 
 # HTTP 400 status code (Bad Request)
-<a name="http-400-bad-request"></a>
 
 CloudFront returns a 400 bad request when the client sends some invalid data in the request such as missing or incorrect content in the payload or parameters. This could also represent a generic client error.
 

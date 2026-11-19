@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Creating a service request in Accelerate
-<a name="creating-a-sr"></a>
 
 To create a service request, follow these steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Web UI
-<a name="webui-developer-guide"></a>
 
 The solution’s Web UI allows users to remediate AWS Security Hub findings in one-click, view and download past remediations, and delegate access to the solution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DescribeOr
 ---
 
 # DescribeOrganizationConfiguration
-<a name="API_DescribeOrganizationConfiguration"></a>
 
 Describe Amazon Inspector configuration settings for an AWS organization.
 

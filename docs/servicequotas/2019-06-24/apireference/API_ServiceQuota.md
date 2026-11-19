@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ServiceQuota
-<a name="API_ServiceQuota"></a>
 
 Information about a quota.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-update-p
 ---
 
 # Updating product information
-<a name="ml-update-product"></a>
 
  After creating your machine learning (ML) product, you can modify certain product information in AWS Marketplace, such as descriptions, highlights, title, SKU, categories, and keywords.
 

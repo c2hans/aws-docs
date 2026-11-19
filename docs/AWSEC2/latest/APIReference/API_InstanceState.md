@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceState
-<a name="API_InstanceState"></a>
 
 Describes the current state of an instance.
 

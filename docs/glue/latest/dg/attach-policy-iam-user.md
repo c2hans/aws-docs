@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/attach-policy-iam-user.ht
 ---
 
 # Step 3: Attach a policy to users or groups that access AWS Glue
-<a name="attach-policy-iam-user"></a>
 
 The administrator must assign permissions to any users, groups, or roles using the AWS Glue console or AWS Command Line Interface (AWS CLI). You provide those permissions by using AWS Identity and Access Management (IAM), through policies. This step describes assigning permissions to users or groups.
 

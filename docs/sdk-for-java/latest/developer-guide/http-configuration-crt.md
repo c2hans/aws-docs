@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Configure AWS CRT-based HTTP clients
-<a name="http-configuration-crt"></a>
 
 The AWS CRT-based HTTP clients include the synchronous [AwsCrtHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtHttpClient.html) and asynchronous [AwsCrtAsyncHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/crt/AwsCrtAsyncHttpClient.html). The AWS CRT-based HTTP clients provide the following HTTP client benefits:
 + Faster SDK startup time

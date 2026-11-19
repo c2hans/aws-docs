@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/arguide/slr-appreg
 AWS Service Catalog AppRegistry is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Service Catalog AppRegistry availability change](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-registry-availability-change.html).
 
 # Using service-linked roles for AWS Service Catalog AppRegistry
-<a name="slr-appregistry"></a>
 
  This section describes how AWS Service Catalog AppRegistry uses the service-linked role `AWSServiceCatalogAppRegistryServiceRolePolicy` to create, update, and delete resource groups in your accounts. AWS Resource Groups allows you to manage your resources in groups instead individually. You can create resource groups that contain all of the resources in AWS CloudFormation stacks. For more information, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide*.
 

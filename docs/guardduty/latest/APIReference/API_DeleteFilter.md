@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteFilter
-<a name="API_DeleteFilter"></a>
 
 Deletes the filter specified by the filter name.
 

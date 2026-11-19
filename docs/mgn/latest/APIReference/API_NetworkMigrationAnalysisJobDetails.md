@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationAnalysisJobDetails
-<a name="API_NetworkMigrationAnalysisJobDetails"></a>
 
 Details about a network migration analysis job.
 

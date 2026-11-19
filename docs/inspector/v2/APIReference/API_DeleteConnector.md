@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DeleteConn
 ---
 
 # DeleteConnector
-<a name="API_DeleteConnector"></a>
 
 Deletes a connector from your account.
 

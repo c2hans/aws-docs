@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API
 ---
 
 # StartDeviceAuthorization
-<a name="API_StartDeviceAuthorization"></a>
 
 Initiates device authorization by requesting a pair of verification codes from the authorization service.
 

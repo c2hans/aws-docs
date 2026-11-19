@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-snowflake-au
 ---
 
 # Authenticate with Snowflake
-<a name="connectors-snowflake-authentication"></a>
 
 You can configure the Amazon Athena Snowflake connector to use either the key-pair authentication or OAuth authentication method to connect to your Snowflake data warehouse. Both methods provide secure access to Snowflake and eliminate the need to store passwords in connection strings.
 + **Key-pair authentication** – This method uses RSA public or private key pairs to authenticate with Snowflake. The private key digitally signs authentication requests while the corresponding public key is registered in Snowflake for verification. This method eliminates password storage.

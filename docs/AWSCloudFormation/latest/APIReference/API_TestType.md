@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TestType
-<a name="API_TestType"></a>
 
 Tests a registered extension to make sure it meets all necessary requirements for being published in the CloudFormation registry.
 + For resource types, this includes passing all contracts tests defined for the type.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-eni.html
 ---
 
 # AWS.Networking.ENI
-<a name="node-eni"></a>
 
 A network interface is a logical networking component in a VPC that represents a virtual network card. A network interface is assigned an IP address either automatically or manually based on its subnet. After you deploy an Amazon EC2 instance in a subnet, you can attach a network interface to it, or detach a network interface from that Amazon EC2 instance and reattach to another Amazon EC2 instance in that subnet. The device index identifies the position in the attachment order.
 

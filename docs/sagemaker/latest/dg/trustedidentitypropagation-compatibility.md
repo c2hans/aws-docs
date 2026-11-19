@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropa
 ---
 
 # Trusted identity propagation architecture and compatibility
-<a name="trustedidentitypropagation-compatibility"></a>
 
 Trusted identity propagation integrates AWS IAM Identity Center with Amazon SageMaker Studio and other connected AWS services to propagate users' identity context across services. The following page summarizes the trusted identity propagation architecture and compatibility with SageMaker AI. For a comprehensive overview of how trusted identity propagation works across AWS, see [Trusted identity propagation overview](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scannin
 ---
 
 # EventBridge events sent for enhanced scanning in Amazon ECR
-<a name="image-scanning-enhanced-events"></a>
 
 When enhanced scanning is turned on, Amazon ECR sends an event to EventBridge when the scan frequency for a repository is changed. Amazon Inspector sends events to EventBridge when an initial scan is completed and when an image scan finding is created, updated, or closed.
 

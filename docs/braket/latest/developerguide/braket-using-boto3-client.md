@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-usin
 ---
 
 # Turn on the Amazon Braket Boto3 client
-<a name="braket-using-boto3-client"></a>
 
 To use Boto3 with Amazon Braket, you must import Boto3 and then define a client that you use to connect to the Amazon Braket API. In the following example, the Boto3 client is named `braket`.
 

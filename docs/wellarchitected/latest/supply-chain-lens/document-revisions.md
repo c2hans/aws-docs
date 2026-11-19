@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Document revisions
-<a name="document-revisions"></a>
 
 | Change | Description | Date |
 | --- |--- |--- |
-| [Initial release](#document-revisions) | Initial release of the Supply Chain Lens. | September 9, 2025 |
+| [Initial release](document-revisions.md) | Initial release of the Supply Chain Lens. | September 9, 2025 |

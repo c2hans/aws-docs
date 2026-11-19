@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # IdentitySourceFilter
-<a name="API_IdentitySourceFilter"></a>
 
 A structure that defines characteristics of an identity source that you can use to filter.
 

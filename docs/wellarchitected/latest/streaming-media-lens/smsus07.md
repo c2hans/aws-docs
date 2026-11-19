@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Efficient hardware
-<a name="smsus07"></a>
 
 The processor family and accelerator you select directly determine how much energy a given amount of work consumes.
 

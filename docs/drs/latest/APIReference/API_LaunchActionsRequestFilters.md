@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LaunchAction
 ---
 
 # LaunchActionsRequestFilters
-<a name="API_LaunchActionsRequestFilters"></a>
 
 Resource launch actions filter.
 

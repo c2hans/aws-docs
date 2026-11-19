@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/arm-performance-li
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Arm Performance Libraries
-<a name="arm-performance-libraries"></a>
 
 Starting with AWS ParallelCluster version 2.10.1, Arm Performance Libraries are available on the AWS ParallelCluster AMIs for `alinux2`, `centos8`, `ubuntu1804`, and `ubuntu2004` values for the [`base_os`](cluster-definition.md#base-os) setting. The Arm Performance Libraries provides optimized standard core math libraries for high-performance computing applications on Arm processors. To use Arm Performance Libraries, you must acknowledge and accept the terms of the [Arm Performance Libraries (free version) - End User License Agreement](https://developer.arm.com/tools-and-software/server-and-hpc/downloads/arm-performance-libraries/eula). For more information on Arm Performance Libraries, see [Free Arm Performance Libraries](https://developer.arm.com/tools-and-software/server-and-hpc/downloads/arm-performance-libraries).
 

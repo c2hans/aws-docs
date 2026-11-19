@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ModelSu
 ---
 
 # ModelSummary
-<a name="API_ModelSummary"></a>
 
 Summary information about an available AI model.
 

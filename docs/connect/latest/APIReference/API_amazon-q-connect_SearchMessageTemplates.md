@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SearchMessageTemplates
-<a name="API_amazon-q-connect_SearchMessageTemplates"></a>
 
 Searches for Amazon Q in Connect message templates in the specified knowledge base.
 

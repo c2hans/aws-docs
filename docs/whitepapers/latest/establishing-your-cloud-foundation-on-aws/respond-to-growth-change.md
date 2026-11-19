@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Respond to growth or change
-<a name="respond-to-growth-change"></a>
 
 A Cloud Center of Excellence (CCoE) or a Cloud Team can help to express and manage the cloud strategy you are following based on your governance policies and will assist to coordinate across different teams to set up governance, and assist in architecting the cloud environment and new workloads that will be deployed on the cloud. A CCoE or a Central Cloud Team, will drive the established standards across your organization helping to drive cloud adoption within your organization. Additionally, the CCoE can perform the function of a training and certification enabler for the teams across your organization.
 

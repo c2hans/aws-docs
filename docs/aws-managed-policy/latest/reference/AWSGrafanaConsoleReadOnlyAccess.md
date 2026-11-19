@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGrafanaConsoleReadOnlyAccess
-<a name="AWSGrafanaConsoleReadOnlyAccess"></a>
 
 **Description**: Access to read only operations in Amazon Grafana.
 

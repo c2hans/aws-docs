@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/monitorin
 ---
 
 # Monitor job progress
-<a name="monitoring-job-progress"></a>
 
 Use the `GetJob` operation to check job status periodically. Jobs typically progress from **Pending** to **Running** to **Completed**, though processing time varies based on the number of addresses and requested features.
 

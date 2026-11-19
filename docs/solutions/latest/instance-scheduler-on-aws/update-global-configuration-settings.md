@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Update global configuration settings
-<a name="update-global-configuration-settings"></a>
 
 When you first deployed Instance Scheduler’s Hub template in AWS CloudFormation, a number of global configuration settings were selected as parameter inputs. These global configuration parameters can be updated at any time within the CloudFormation console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/array_j
 ---
 
 # ARRAY\_JOIN function
-<a name="array_join"></a>
 
 The ARRAY\_JOIN function takes two arguments: The first argument is the input array that will be joined. The second argument is the separator string that will be used to concatenate the array elements. This function is useful when you need to convert an array of strings (or any other data type) into a single concatenated string. This can be helpful in scenarios where you want to present an array of values as a single formatted string, such as for display purposes or for use in further processing.
 

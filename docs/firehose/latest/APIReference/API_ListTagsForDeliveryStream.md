@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_ListTag
 ---
 
 # ListTagsForDeliveryStream
-<a name="API_ListTagsForDeliveryStream"></a>
 
 Lists the tags for the specified Firehose stream. This operation has a limit of five transactions per second per account.
 

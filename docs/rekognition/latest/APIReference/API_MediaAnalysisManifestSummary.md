@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisManifestSummary
-<a name="API_MediaAnalysisManifestSummary"></a>
 
 Summary that provides statistics on input manifest and errors identified in the input manifest.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-cr
 ---
 
 # Deleting a repository creation template in Amazon ECR
-<a name="repository-creation-templates-delete"></a>
 
 You can delete a repository creation template if you are finished using it. Once a repository creation template is deleted, any newly created repositories under the associated prefix during a pull through cache or replication action will inherit the default settings, unless another matching template is found, see [How repository creation templates work](repository-creation-templates.md#repository-creation-templates-works).
 

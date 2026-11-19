@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/chime-sdk-meetings-r
 ---
 
 # Using meeting Regions for Amazon Chime SDK meetings
-<a name="chime-sdk-meetings-regions"></a>
 
 Amazon Chime SDK meetings have *control* Regions and *media* Regions. Control Regions have an API endpoint used to create, update, and delete meetings. Media Regions host the actual meetings.
 

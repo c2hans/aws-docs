@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 2: Performing the application deep dive
-<a name="implement-deep-dive"></a>
 
 In this task, you perform a deep dive into each application you prioritized in the previous task. This usually includes sending a questionnaire to the application owner, analyzing any application dependencies, and scheduling an application workshop.
 

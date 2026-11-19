@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingI
 ---
 
 # Troubleshoot Amazon EC2 instance stop issues
-<a name="TroubleshootingInstancesStopping"></a>
 
 If your Amazon EBS-backed instance appears stuck in the `stopping` state, the issue might be with the underlying host computer.
 

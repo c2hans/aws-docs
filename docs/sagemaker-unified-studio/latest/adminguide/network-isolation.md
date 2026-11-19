@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Network isolation in Amazon SageMaker Unified Studio
-<a name="network-isolation"></a>
 
 Amazon SageMaker Unified Studio can be configured to limit from where your data is accessed and exposure of that data over the public internet. You can interact with Amazon SageMaker Unified Studio, and dependent AWS services, directly through [interface endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in your Amazon VPC instead of connecting over the internet. When using Amazon VPC interface endpoints, communication between your Amazon VPC and Amazon SageMaker Unified Studio happens within the AWS network.
 

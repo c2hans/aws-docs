@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # OvalParameters
-<a name="API_rekognitionstreaming_OvalParameters"></a>
 
 Oval parameters need for oval display to complete oval match challenge.
 

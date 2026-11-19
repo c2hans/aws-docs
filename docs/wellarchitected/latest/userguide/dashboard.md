@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Dashboard
-<a name="dashboard"></a>
 
 The **Dashboard**, available from the left navigation, gives you access to your workloads and their associated medium and high risk issues. You also can include workloads that have been shared with you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Blueprints packaged by Bitnami
-<a name="amazon-lightsail-faq-bitnami-blueprints"></a>
 
 ## What is happening with Bitnami blueprints on Lightsail?
 <a name="what-is-happening-with-bitnami-blueprints"></a>

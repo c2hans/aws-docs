@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/java-flow-
 ---
 
 # Best Practices
-<a name="java-flow-best-practices"></a>
 
 Use these best practices to make the most of the AWS Flow Framework for Java.
 

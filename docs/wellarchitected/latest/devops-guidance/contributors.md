@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/c
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Michael Rhyndress, AWS DevOps Sagas lead, Amazon Web Services

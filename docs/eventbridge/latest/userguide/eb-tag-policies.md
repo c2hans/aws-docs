@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tag-poli
 ---
 
 # Tag-based policies in Amazon EventBridge
-<a name="eb-tag-policies"></a>
 
 In Amazon EventBridge, you can use policies based on tags to control access to resources.
 

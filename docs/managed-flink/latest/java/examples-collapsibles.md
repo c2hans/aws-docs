@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/examples-colla
 ---
 
 # Examples for creating and working with Managed Service for Apache Flink applications
-<a name="examples-collapsibles"></a>
 
 This section provides examples of creating and working with applications in Managed Service for Apache Flink. They include example code and step-by-step instructions to help you create Managed Service for Apache Flink applications and test your results.
 

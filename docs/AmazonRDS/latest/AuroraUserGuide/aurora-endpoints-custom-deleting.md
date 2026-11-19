@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Deleting a custom endpoint
-<a name="aurora-endpoints-custom-deleting"></a>
 
 Delete a custom endpoint using the AWS Management Console, AWS CLI, or the Amazon RDS API.
 

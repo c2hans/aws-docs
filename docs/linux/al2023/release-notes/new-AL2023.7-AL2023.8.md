@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2023.7-
 ---
 
 # New packages in AL2023.8 since AL2023.7
-<a name="new-AL2023.7-AL2023.8"></a>
 
  Comparing AL2023.7 version 2023.7.20250331 to AL2023.8 version [2023.8.20250707](relnotes-2023.8.20250707.md).
 

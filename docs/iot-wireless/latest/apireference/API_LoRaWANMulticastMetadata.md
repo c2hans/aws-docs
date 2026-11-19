@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANMulticastMetadata
-<a name="API_LoRaWANMulticastMetadata"></a>
 
 The metadata information of the LoRaWAN multicast group.
 

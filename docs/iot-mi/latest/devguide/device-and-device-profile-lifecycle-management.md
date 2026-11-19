@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/device-and-device
 ---
 
 # Device and device profile lifecycle
-<a name="device-and-device-profile-lifecycle-management"></a>
 
 Managing the lifecycle of your devices and device profiles ensures your fleet of devices are secure and running efficiently.
 

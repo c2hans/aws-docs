@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_database
-<a name="aurora_stat_database"></a>
 
 It carries all columns of pg\_stat\_database and adds new columns in the end.
 

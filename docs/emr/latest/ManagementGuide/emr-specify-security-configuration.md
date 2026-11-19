@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-specify-s
 ---
 
 # Specify a security configuration for an Amazon EMR cluster
-<a name="emr-specify-security-configuration"></a>
 
 You can specify encryption settings when you create a cluster by specifying the security configuration. You can use the AWS Management Console or the AWS CLI.
 

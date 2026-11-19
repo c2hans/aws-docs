@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_No
 ---
 
 # NotificationEvent
-<a name="API_NotificationEvent"></a>
 
 A `NotificationEvent` is a notification-focused representation of an event. They contain semantic information used by Channels to create end-user notifications.
 

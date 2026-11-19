@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cluster-hsm-ty
 ---
 
 # Cluster HSM type migration
-<a name="cluster-hsm-type-modification"></a>
 
 AWS CloudHSM offers the ability to change the HSM type of an existing cluster. Review the table on this page to determine whether the HSM type modification is allowed.
 

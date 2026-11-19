@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Implementation
-<a name="gamelift-servers-metrics-setup"></a>
 
 Select your implementation path based on your development environment:
 

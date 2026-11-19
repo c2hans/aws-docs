@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteTrainingSession
-<a name="API_DeleteTrainingSession"></a>
 
 Deletes a training session. You must stop a running session before deleting it. Use the `StopTrainingSession` operation to stop the session first.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # AnalysisReportSummary
-<a name="API_AnalysisReportSummary"></a>
 
 Retrieves the details of the performance analysis report.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIGuardrailContextualGroundingPolicyConfig
-<a name="API_amazon-q-connect_AIGuardrailContextualGroundingPolicyConfig"></a>
 
 The policy configuration details for the AI Guardrail's contextual grounding policy.
 

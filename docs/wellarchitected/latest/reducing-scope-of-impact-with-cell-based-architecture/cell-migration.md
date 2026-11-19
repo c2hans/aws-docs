@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Cell migration
-<a name="cell-migration"></a>
 
  Cells should not share state or components between cells. Depending on the workload, a cell migration strategy might be needed to migrate data/customers from one cell to another. A possible scenario when a cell migration may be needed is if a particular customer or resource in your workload becomes too big and requires it to have a dedicated cell.
 

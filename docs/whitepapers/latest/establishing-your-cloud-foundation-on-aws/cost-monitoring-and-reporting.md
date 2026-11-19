@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cost monitoring and reporting
-<a name="cost-monitoring-and-reporting"></a>
 
 Visibility across your cloud environment is critical. Your cloud team and your finance teams will require visibility into the cloud spend, and stakeholders owning business units and workloads need the ability to generate and save custom reports. Doing so, will create a [cost-aware culture](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/cost-aware-culture.html) within your organization.
 

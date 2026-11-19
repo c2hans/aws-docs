@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/building-automati
 ---
 
 # Building automations
-<a name="building-automations"></a>
 
 AWS Quick Automate provides multiple methods for creating automations to suit different needs and skill levels. This section describes the available creation methods and tools.
 

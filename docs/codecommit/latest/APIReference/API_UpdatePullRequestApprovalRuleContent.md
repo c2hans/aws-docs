@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdatePullRequestApprovalRuleContent
-<a name="API_UpdatePullRequestApprovalRuleContent"></a>
 
 Updates the structure of an approval rule created specifically for a pull request. For example, you can change the number of required approvers and the approval pool for approvers.
 

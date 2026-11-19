@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-python-cre
 ---
 
 # Create your Managed Service for Apache Flink Python application
-<a name="how-python-creating"></a>
 
 ## Specify your code files
 <a name="how-python-creating-code"></a>

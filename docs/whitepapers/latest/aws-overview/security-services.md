@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security
 ---
 
 # ![AWS Security, Identity, and Compliance category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/security-id-compliance-icon.jpg)Security, identity, and compliance
-<a name="security-services"></a>
 
 AWS is architected to be the most secure global cloud infrastructure on which to build, migrate, and manage applications and workloads.
 

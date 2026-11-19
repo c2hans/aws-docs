@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateGlueIdentit
 ---
 
 # CreateGlueIdentityCenterConfiguration
-<a name="API_CreateGlueIdentityCenterConfiguration"></a>
 
 Creates a new AWS Glue Identity Center configuration to enable integration between AWS Glue and AWS IAM Identity Center for authentication and authorization.
 

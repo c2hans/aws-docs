@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes
 ---
 
 # Troubleshoot Kubernetes with AWS Private CA
-<a name="PcaKubernetes-troubleshoot"></a>
 
 You can get the logs for `aws-private-ca-issuer` with the following procedure:
 

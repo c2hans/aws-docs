@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdNamespaceInputSource
-<a name="API_IdNamespaceInputSource"></a>
 
 An object containing `inputSourceARN` and `schemaName`.
 

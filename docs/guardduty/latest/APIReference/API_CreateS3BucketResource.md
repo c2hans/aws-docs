@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreateS3BucketResource
-<a name="API_CreateS3BucketResource"></a>
 
 Information about the protected S3 bucket resource.
 

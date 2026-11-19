@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_JobTe
 ---
 
 # JobTemplateData
-<a name="API_JobTemplateData"></a>
 
 The values of StartJobRun API requests used in job runs started using the job template.
 

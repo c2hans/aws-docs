@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cluster-mainten
 ---
 
 # Maintaining your Amazon Neptune DB Cluster
-<a name="cluster-maintenance"></a>
 
 Neptune performs maintenance periodically on all the resources it uses, including:
 + **Replacing the underlying hardware as necessary.** This happens in the background, without your having to take any action, and generally has no affect on your operations.

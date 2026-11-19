@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # What gets created with your Simple AD
-<a name="simple_ad_what_gets_created"></a>
 
 When you create a Active Directory with Simple AD, Directory Service performs the following tasks on your behalf:
 + Sets up a Samba-based directory within the VPC.

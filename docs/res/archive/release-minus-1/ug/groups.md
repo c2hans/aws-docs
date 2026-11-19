@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/groups.ht
 ---
 
 # Groups
-<a name="groups"></a>
 
 All Groups synced from the active directory appear on the Groups page. For more information on group configuration and management, see the [Configuration guide](configuration-guide.md).
 

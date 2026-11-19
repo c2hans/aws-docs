@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeCo
 ---
 
 # ResumeContact
-<a name="API_ResumeContact"></a>
 
 Resumes a task or email contact in a paused state.
 

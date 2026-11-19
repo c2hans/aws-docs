@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # GetAssociationForServiceQuotaTemplate
-<a name="API_GetAssociationForServiceQuotaTemplate"></a>
 
 Retrieves the status of the association for the quota request template.
 

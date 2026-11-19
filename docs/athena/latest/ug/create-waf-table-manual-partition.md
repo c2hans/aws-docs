@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-waf-table-manual
 ---
 
 # Create a table for AWS WAF S3 logs in Athena using manual partition
-<a name="create-waf-table-manual-partition"></a>
 
 This section describes how to create a table for AWS WAF logs using manual partition.
 

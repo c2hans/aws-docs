@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TokenExchangeGrantTypeConfigType
-<a name="API_TokenExchangeGrantTypeConfigType"></a>
 
 Configuration for RFC 8693 token exchange.
 

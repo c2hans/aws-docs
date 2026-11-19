@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ca
 ---
 
 # Category
-<a name="API_Category"></a>
 
 Represents a category assigned to a security testing task.
 

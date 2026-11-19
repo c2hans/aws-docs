@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Log parser options
-<a name="log-parser-options"></a>
 
 As described in the [Architecture overview](architecture-overview.md), there are three options to handle HTTP flood and scanner and probe protections. The following sections explain each of these options in more detail.
 

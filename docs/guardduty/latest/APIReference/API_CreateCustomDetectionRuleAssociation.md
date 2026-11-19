@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreateCustomDetectionRuleAssociation
-<a name="API_CreateCustomDetectionRuleAssociation"></a>
 
 Enables a custom detection rule for your account by creating an association. You specify the rule and the mode in which it operates.
 

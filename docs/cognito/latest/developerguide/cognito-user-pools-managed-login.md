@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # User pool managed login
-<a name="cognito-user-pools-managed-login"></a>
 
 You can choose a web domain to host services for your user pool. An Amazon Cognito user pool gains the following functions when you add a domain, collectively referred to as *managed login*.
 + An [authorization server](https://datatracker.ietf.org/doc/html/rfc6749#section-1.1) that acts as an identity provider (IdP) to applications that work with OAuth 2.0 and OpenID Connect (OIDC). The authorization server [routes requests](authorization-endpoint.md), [issues and manages JSON web tokens (JWTs)](token-endpoint.md), and [delivers user attribute information](userinfo-endpoint.md).

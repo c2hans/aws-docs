@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Network Flow Monitor is a feature of Amazon CloudWatch Network Monitoring that provides visibility into the performance of network flows for your AWS workloads, between instances in subnets, as well as to and from AWS. Lightweight agents that you install on the instances capture performance metrics for your network flows, such as packet loss and latency, and send them to the Network Flow Monitor backend. Then, you can view and analyze metrics from the top contributors for each metric type, to help troubleshoot issues.
 
@@ -11,4 +10,4 @@ In addition, when you create a monitor, Network Flow Monitor provides a network 
 
 To learn more about Network Flow Monitor, see the [Network Flow Monitor User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor.html) in the Amazon CloudWatch User Guide.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

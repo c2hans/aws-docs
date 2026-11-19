@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Relocate
-<a name="migration-relocate-pattern-list"></a>
 
 **Topics**
 + [Migrate an Amazon RDS DB instance to another VPC or account](migrate-an-amazon-rds-db-instance-to-another-vpc-or-account.md)

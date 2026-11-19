@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numbe
 ---
 
 # NumberDisplayFormatConfiguration
-<a name="API_NumberDisplayFormatConfiguration"></a>
 
 The options that determine the number display format configuration.
 

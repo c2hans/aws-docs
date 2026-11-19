@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Numeric
 ---
 
 # Numeric types
-<a name="Numeric_types"></a>
 
 Numeric data types include integers, decimals, and floating-point numbers.
 

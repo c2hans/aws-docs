@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteConfiguredTableAnalysisRule
-<a name="API_DeleteConfiguredTableAnalysisRule"></a>
 
 Deletes a configured table analysis rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteMetricFilter
-<a name="API_DeleteMetricFilter"></a>
 
 Deletes the specified metric filter.
 

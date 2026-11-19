@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # CallAnalyticsTranscriptResultStream
-<a name="API_streaming_CallAnalyticsTranscriptResultStream"></a>
 
 Contains detailed information about your real-time Call Analytics session. These details are provided in the `UtteranceEvent` and `CategoryEvent` objects.
 

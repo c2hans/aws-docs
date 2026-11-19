@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ACLPend
 ---
 
 # ACLPendingChanges
-<a name="API_ACLPendingChanges"></a>
 
 Returns the updates being applied to the ACL.
 

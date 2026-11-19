@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCode
 ---
 
 # AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails
-<a name="API_AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails"></a>
 
 Information about an environment variable that is available to builds for the build project.
 

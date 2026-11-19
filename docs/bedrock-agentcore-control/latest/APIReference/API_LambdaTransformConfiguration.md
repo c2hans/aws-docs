@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LambdaTransformConfiguration
-<a name="API_LambdaTransformConfiguration"></a>
 
 The Lambda configuration for custom transformations. This structure defines the Lambda function that the gateway invokes to transform data.
 

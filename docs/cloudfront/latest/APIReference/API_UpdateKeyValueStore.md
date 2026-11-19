@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateKeyValueStore
-<a name="API_UpdateKeyValueStore"></a>
 
 Specifies the key value store to update.
 

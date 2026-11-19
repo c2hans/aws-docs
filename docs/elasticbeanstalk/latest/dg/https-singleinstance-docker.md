@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-singlei
 ---
 
 # Terminating HTTPS on EC2 instances running Docker
-<a name="https-singleinstance-docker"></a>
 
 For Docker containers, you use a [configuration file](ebextensions.md) to enable HTTPS.
 

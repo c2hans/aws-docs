@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetPosition
-<a name="API_GetPosition"></a>
 
  *This action has been deprecated.*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Making API requests and authentication
-<a name="next-gen-api-authentication"></a>
 
 **Endpoint**
 

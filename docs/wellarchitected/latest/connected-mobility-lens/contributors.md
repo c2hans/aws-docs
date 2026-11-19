@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individual authors, collaborators, and editors contributed to this document:
 +  Allan Holmes - Senior Technical Account Manager, AWS Enterprise Support

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/disassoci
 ---
 
 # Disassociate a connection from a LAG at a Direct Connect endpoint
-<a name="disassociate-connection-from-lag"></a>
 
 Convert a connection to standalone by disassociating it from a LAG using either the Direct Connect console or using the command line or API. You can't disassociate a connection if it causes the LAG to fall below its threshold for the minimum number of operational connections.
 

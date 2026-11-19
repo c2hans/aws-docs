@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cw
 ---
 
 # AWS Cloud WAN in AWS GovCloud (US)
-<a name="govcloud-cwan"></a>
 
  AWS Cloud WAN is a managed wide-area networking (WAN) service that you can use to build, manage, and monitor a unified global network that connects resources running across your cloud and on-premises environments.
 

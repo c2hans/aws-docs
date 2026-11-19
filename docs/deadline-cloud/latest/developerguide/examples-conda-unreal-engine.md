@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build an Epic Unreal Engine conda package for Deadline Cloud
-<a name="examples-conda-unreal-engine"></a>
 
 The [unreal-engine](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/unreal-engine) conda recipe on the GitHub website builds an Epic Unreal Engine conda package.
 

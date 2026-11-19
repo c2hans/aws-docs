@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Installing AWS Toolkit for JetBrains Early Access Program (EAP) and custom builds
-<a name="setup-toolkit-eap"></a>
 
 Early Access Program (EAP) builds of the AWS Toolkit for JetBrains contain previews of new and experimental features.
 

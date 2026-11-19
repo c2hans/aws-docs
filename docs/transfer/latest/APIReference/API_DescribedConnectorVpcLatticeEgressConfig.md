@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedConnectorVpcLatticeEgressConfig
-<a name="API_DescribedConnectorVpcLatticeEgressConfig"></a>
 
 VPC\_LATTICE egress configuration details in the response, containing the Resource Configuration ARN and port number currently configured for the connector.
 

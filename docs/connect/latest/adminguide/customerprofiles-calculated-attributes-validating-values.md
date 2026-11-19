@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Validate calculated attribute values in Connect Customer Customer Profiles using APIs
-<a name="customerprofiles-calculated-attributes-validating-values"></a>
 
 There are two APIs, `GetCalculatedAttributeForProfile` and `ListCalculatedAttributesForProfile`, that are at the profile level.
 + **GetCalculatedAttributeForProfile** - retrieves a single calculated attribute for a single profile.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/stop-calls.html
 ---
 
 # Stopping calls from deleted meetings
-<a name="stop-calls"></a>
 
 If your receive auto calls from a meeting series that you deleted, you use the Amazon Chime desktop client or web app to stop the calls.
 

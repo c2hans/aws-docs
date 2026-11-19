@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Provisioning and CI/CD automation
 <a name="ci-cd"></a>

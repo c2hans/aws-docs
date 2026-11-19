@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomClaimValidationType
-<a name="API_CustomClaimValidationType"></a>
 
 Defines the name of a custom claim field and rules for finding matches to authenticate its value.
 

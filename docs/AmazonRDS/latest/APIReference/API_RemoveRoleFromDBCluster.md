@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Remove
 ---
 
 # RemoveRoleFromDBCluster
-<a name="API_RemoveRoleFromDBCluster"></a>
 
 Removes the asssociation of an AWS Identity and Access Management (IAM) role from a DB cluster.
 

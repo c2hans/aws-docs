@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/working-with-c
 ---
 
 # Amazon DataZone custom AWS service blueprints
-<a name="working-with-custom-blueprint"></a>
 
 In Amazon DataZone, custom AWS service blueprints enable you optimize resource usage and costs by configuring Amazon DataZone to use your own existing AWS Identity and Access Management (IAM) roles and AWS services that you already have set up in your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # forecast
-<a name="forecast-forecast-entity"></a>
 
 **Primary key (PK)**
 

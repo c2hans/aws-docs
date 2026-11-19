@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageFind
 ---
 
 # ImageFinding
-<a name="API_ImageFinding"></a>
 
 Describes an Amazon Inspector vulnerability finding for an AMI.
 

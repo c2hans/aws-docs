@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search for a place using contact information
-<a name="how-to-search-for-place-using-contact-info"></a>
 
 The SearchText API allows users to search for a place using a phone number, supporting both international and local formats. Users can bias results by setting a position based on device location, IP address, or map viewport center, or by specifying a city or place to refine results based on geocoordinates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/schema-conversion-d
 ---
 
 # IBM Db2 for LUW to Amazon RDS for PostgreSQL conversion settings
-<a name="schema-conversion-db2-luw-postgresql"></a>
 
 The IBM Db2 for LUW to Amazon RDS for PostgreSQL conversion path has no pair-specific conversion settings other than the target engine version. The following section describes that setting.
 

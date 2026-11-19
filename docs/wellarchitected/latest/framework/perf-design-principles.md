@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf-de
 ---
 
 # Design principles
-<a name="perf-design-principles"></a>
 
  The following design principles can help you achieve and maintain efficient workloads in the cloud.
 +  **Use managed services to reduce operational complexity:** Reduce the effort of advanced technology implementation by delegating complex tasks to your cloud vendor. Rather than requiring your team to learn how to host and run specialized technologies, consume these technologies as services. For example, NoSQL databases, media transcoding, and machine learning all require specialized expertise but are available as optimized, performance-tuned services in AWS. This lets your team focus on product development instead of resource provisioning and management, while benefiting from continuously improved performance and scalability.

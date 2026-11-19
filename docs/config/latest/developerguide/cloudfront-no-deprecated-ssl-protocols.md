@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-
 ---
 
 # cloudfront-no-deprecated-ssl-protocols
-<a name="cloudfront-no-deprecated-ssl-protocols"></a>
 
 Checks if CloudFront distributions are using deprecated SSL protocols for HTTPS communication between CloudFront edge locations and custom origins. This rule is NON\_COMPLIANT for a CloudFront distribution if any ‘OriginSslProtocols’ includes ‘SSLv3’.
 

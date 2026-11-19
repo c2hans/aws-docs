@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagPolicy.ht
 ---
 
 # TagPolicy
-<a name="API_TagPolicy"></a>
 
 Adds one or more tags to an IAM customer managed policy. If a tag with the same key name already exists, then that tag is overwritten with the new value.
 

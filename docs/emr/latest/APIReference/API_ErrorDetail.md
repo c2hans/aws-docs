@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ErrorDetail.
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 A tuple that provides information about an error that caused a cluster to terminate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lifecycle-
 ---
 
 # Lifecycle Events in AWS Control Tower
-<a name="lifecycle-events"></a>
 
 Some events logged by AWS Control Tower are *lifecycle events*. A lifecycle event's purpose is to mark the *completion* of certain AWS Control Tower actions that change the state of resources. Lifecycle events apply to resources that AWS Control Tower creates or manages, such as a landing zone, baseline, or control, related to an organizational unit (OU) or account.
 

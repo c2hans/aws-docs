@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time
 ---
 
 # Stopping or deleting continuous backups
-<a name="point-in-time-recovery-stopping"></a>
 
 You can stop the creation of continuous backups or you can delete specific backups (point-in-time-recovery or PITR points).
 

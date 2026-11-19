@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/switching-
 ---
 
 # Switching your licenses
-<a name="switching-licenses"></a>
 
 You can switch your existing operating system (OS) licenses to AWS Marketplace third-party subscriptions without redeploying your Amazon EC2 instances. This reduces downtime and eliminates the need to retest applications.
 

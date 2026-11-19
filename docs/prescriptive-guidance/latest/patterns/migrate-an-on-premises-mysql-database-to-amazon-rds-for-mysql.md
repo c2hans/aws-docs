@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises MySQL database to Amazon RDS for MySQL
-<a name="migrate-an-on-premises-mysql-database-to-amazon-rds-for-mysql"></a>
 
 *Lorenzo Mota, Amazon Web Services*
 

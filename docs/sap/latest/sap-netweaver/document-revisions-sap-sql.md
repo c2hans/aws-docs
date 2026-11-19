@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/document-revisi
 ---
 
 # Document Revisions
-<a name="document-revisions-sap-sql"></a>
 
 | Date | Change |
 | --- | --- |

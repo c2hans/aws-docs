@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/troubleshootin
 ---
 
 # Troubleshooting AWS Client VPN connections
-<a name="troubleshooting"></a>
 
 Use the following topics to troubleshoot problems that you might have when using a client application to connect to a Client VPN endpoint.
 

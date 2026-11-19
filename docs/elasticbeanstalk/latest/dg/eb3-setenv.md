@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-setenv.ht
 ---
 
 # **eb setenv**
-<a name="eb3-setenv"></a>
 
 ## Description
 <a name="eb3-setenv-description"></a>

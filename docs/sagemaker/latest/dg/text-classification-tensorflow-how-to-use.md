@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/text-classification-
 ---
 
 # How to use the SageMaker AI Text Classification - TensorFlow algorithm
-<a name="text-classification-tensorflow-how-to-use"></a>
 
 You can use Text Classification - TensorFlow as an Amazon SageMaker AI built-in algorithm. The following section describes how to use Text Classification - TensorFlow with the SageMaker AI Python SDK. For information on how to use Text Classification - TensorFlow from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 

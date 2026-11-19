@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitHubResourceCapabilities
-<a name="API_GitHubResourceCapabilities"></a>
 
 The capabilities enabled for a GitHub resource integration.
 

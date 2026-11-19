@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetDataSource
-<a name="API_agent_GetDataSource"></a>
 
 Gets information about a data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ViewRepresentatio
 ---
 
 # ViewRepresentationInput
-<a name="API_ViewRepresentationInput"></a>
 
 A structure containing details of a representation to update or create a Lake Formation view.
 

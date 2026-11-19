@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # Manage demand and supply resources
-<a name="telcocost06"></a>
 
 |  TELCOCOST06: How do you prioritize traffic across your hybrid networking connections?  |
 | --- |

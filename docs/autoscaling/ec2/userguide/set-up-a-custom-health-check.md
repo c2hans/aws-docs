@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-up-a-custo
 ---
 
 # Set up a custom health check for your Auto Scaling group
-<a name="set-up-a-custom-health-check"></a>
 
 You can use custom health checks to complement the existing health check options provided by Amazon EC2 Auto Scaling. By combining custom health checks with the other health check types, you can create a comprehensive health monitoring system tailored to your application's needs.
 

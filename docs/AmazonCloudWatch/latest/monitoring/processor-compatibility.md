@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/proce
 ---
 
 # Processor compatibility and restrictions
-<a name="processor-compatibility"></a>General processor rules
+General processor rules
 
 Maximum count
 A pipeline can have at most 20 processors.

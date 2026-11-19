@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputUpda
 ---
 
 # InputUpdate
-<a name="API_InputUpdate"></a>
 
 For a SQL-based Kinesis Data Analytics application, describes updates to a specific input configuration (identified by the `InputId` of an application).
 

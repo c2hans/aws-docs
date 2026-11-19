@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePa
 ---
 
 # RoutePassThroughWaypoint
-<a name="API_RoutePassThroughWaypoint"></a>
 
 If the waypoint should be treated as a stop. If yes, the route is split up into different legs around the stop.
 

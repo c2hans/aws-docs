@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListCollaborationConfiguredAudienceModelAssociations
-<a name="API_ListCollaborationConfiguredAudienceModelAssociations"></a>
 
 Lists configured audience model associations within a collaboration.
 

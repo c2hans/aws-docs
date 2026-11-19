@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC06-BP01 Use secure data exchange protocols
-<a name="midasec06-bp01"></a>
 
  Use secure and standardized protocols for sharing industrial data internally and externally, helping protect integrity and confidentiality.
 

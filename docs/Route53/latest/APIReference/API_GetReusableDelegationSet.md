@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetReusa
 ---
 
 # GetReusableDelegationSet
-<a name="API_GetReusableDelegationSet"></a>
 
 Retrieves information about a specified reusable delegation set, including the four name servers that are assigned to the delegation set.
 

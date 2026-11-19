@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Err
 ---
 
 # ErrorReportLocation
-<a name="API_ErrorReportLocation"></a>
 
 The Amazon S3 destination where errors associated with the job creation request are saved.
 

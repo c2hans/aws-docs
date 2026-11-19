@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/google-search-console-lim
 ---
 
 # Google Search Console limitations
-<a name="google-search-console-limitations"></a>
 
 The following are limitations or notes for Google Search Console:
 + Google Search Console enforces usage limits on the API. For more information, see [Usage Limits](https://developers.google.com/webmaster-tools/limits).

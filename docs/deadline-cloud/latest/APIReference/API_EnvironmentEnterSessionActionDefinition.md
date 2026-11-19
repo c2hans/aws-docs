@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_E
 ---
 
 # EnvironmentEnterSessionActionDefinition
-<a name="API_EnvironmentEnterSessionActionDefinition"></a>
 
 The environment ID to use to enter a session action.
 

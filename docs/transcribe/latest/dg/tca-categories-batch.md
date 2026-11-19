@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-categories-batc
 ---
 
 # Creating categories for post-call transcriptions
-<a name="tca-categories-batch"></a>
 
 Post-call analytics supports the creation of custom categories, enabling you to tailor your transcript analyses to best suit your specific business needs.
 

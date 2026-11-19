@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Searchable encryption for multitenant databases
-<a name="searchable-encryption-multitenant"></a>
 
 |  |
 | --- |

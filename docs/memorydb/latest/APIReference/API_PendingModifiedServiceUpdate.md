@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Pending
 ---
 
 # PendingModifiedServiceUpdate
-<a name="API_PendingModifiedServiceUpdate"></a>
 
 Update action that has yet to be processed for the corresponding apply/stop request
 

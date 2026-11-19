@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-cloudwa
 ---
 
 # Decompress CloudWatch Logs
-<a name="writing-with-cloudwatch-logs-decompression"></a>
 
 If you are using Firehose to deliver CloudWatch Logs and want to deliver decompressed data to your Firehose stream destination, use Firehose [Data Format Conversion](https://docs.aws.amazon.com/firehose/latest/dev/data-transformation.html) (Parquet, ORC) or [Dynamic partitioning](https://docs.aws.amazon.com/firehose/latest/dev/dynamic-partitioning.html). You must enable decompression for your Firehose stream.
 

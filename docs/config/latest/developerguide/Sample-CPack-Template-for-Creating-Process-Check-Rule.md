@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/Sample-CPac
 ---
 
 # Sample Conformance Pack Template for Creating Process Checks
-<a name="Sample-CPack-Template-for-Creating-Process-Check-Rule"></a>
 
 ```
 ################################################################################

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ServiceSummary.
 ---
 
 # ServiceSummary
-<a name="API_ServiceSummary"></a>
 
 A complex type that contains information about a specified service.
 

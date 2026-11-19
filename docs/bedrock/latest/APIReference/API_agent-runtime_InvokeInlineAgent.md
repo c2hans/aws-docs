@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InvokeInlineAgent
-<a name="API_agent-runtime_InvokeInlineAgent"></a>
 
  Invokes an inline Amazon Bedrock agent using the configurations you provide with the request.
 + Specify the following fields for security purposes.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ag
 ---
 
 # AggregationDetail
-<a name="API_AggregationDetail"></a>
 
 Provides detailed information about the dimensions used for aggregation.
 

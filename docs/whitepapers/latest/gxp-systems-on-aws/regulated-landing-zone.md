@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/re
 ---
 
 # Cloud platform and regulated landing zone qualification
-<a name="regulated-landing-zone"></a>
 
 A landing zone is a well-architected, multi-account AWS environment that's based on security and compliance best practices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluatorSummary
-<a name="API_EvaluatorSummary"></a>
 
 Summary statistics for a single evaluator within a batch evaluation.
 

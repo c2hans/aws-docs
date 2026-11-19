@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 ---
 
 # Index properties
-<a name="index-properties"></a>
 
 Index properties define the behavior and characteristics of indexes in Amazon DocumentDB. Understanding these properties helps you design efficient indexes that meet your application's specific requirements.
 

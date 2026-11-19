@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-r
 ---
 
 # Example: Streaming from an RTSP source
-<a name="examples-rtsp"></a>
 
 The [C\+\+](producer-sdk-cpp.md) contains a definition for a [Docker](https://www.docker.com/) container that connects to a Real-Time Streaming Protocol (RTSP) network camera. Using Docker standardizes the operating environment for Kinesis Video Streams, which streamlines building and using the application.
 

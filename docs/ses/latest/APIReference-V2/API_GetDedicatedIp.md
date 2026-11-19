@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDedica
 ---
 
 # GetDedicatedIp
-<a name="API_GetDedicatedIp"></a>
 
 Get information about a dedicated IP address, including the name of the dedicated IP pool that it's associated with, as well information about the automatic warm-up process for the address.
 

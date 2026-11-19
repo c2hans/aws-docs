@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/resourc
 ---
 
 # Permissions for Quick Sight resources
-<a name="resource-permissions"></a>
 
 If you're not sure what the necessary permission is, you can attempt to make a call. The client then tells you what the missing permission is. You can use asterisk (`*`) in the Resource field of your permission policy instead of specifying explicit resources. However, we highly recommend that you restrict each permission as much as possible. You can restrict user access by specifying or excluding resources in the policy, using their Quick Sight ARN. To retrieve the ARN of an Quick Sight resource, use the `Describe` operation on the relevant resource.
 

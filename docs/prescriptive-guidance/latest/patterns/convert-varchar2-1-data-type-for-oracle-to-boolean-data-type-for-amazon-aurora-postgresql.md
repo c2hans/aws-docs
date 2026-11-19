@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Convert VARCHAR2(1) data type for Oracle to Boolean data type for Amazon Aurora PostgreSQL
-<a name="convert-varchar2-1-data-type-for-oracle-to-boolean-data-type-for-amazon-aurora-postgresql"></a>
 
 *Naresh Damera, Amazon Web Services*
 

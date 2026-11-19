@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/xero-configuring-connecti
 ---
 
 # Configuring Xero connections
-<a name="xero-configuring-connections"></a>
 
 Xero connections use OAuth 2.0. You register an OAuth application with Xero, store its client credentials in Secrets Manager, and authorize the connection through the Xero consent screen when you create it in AWS Glue Studio. AWS Glue obtains and refreshes the access token for you.
 

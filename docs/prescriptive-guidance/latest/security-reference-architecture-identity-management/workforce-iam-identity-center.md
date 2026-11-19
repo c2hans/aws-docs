@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AWS IAM Identity Center
-<a name="workforce-iam-identity-center"></a>
 
 |  |
 | --- |

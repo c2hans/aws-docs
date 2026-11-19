@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_cre
 ---
 
 # Create a queue to manage jobs in AWS PCS
-<a name="getting-started_create-queue"></a>
 
  You submit a job to a queue to run it. The job remains in the queue until AWS PCS schedules it to run on a compute node group. Each queue is associated with one or more compute node groups, which provide the necessary EC2 instances to do the processing.
 

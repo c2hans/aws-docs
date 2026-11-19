@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateReplicationGroupMemberAction
-<a name="API_UpdateReplicationGroupMemberAction"></a>
 
 Represents a replica to be modified.
 

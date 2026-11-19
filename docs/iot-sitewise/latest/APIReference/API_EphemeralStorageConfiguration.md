@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Eph
 ---
 
 # EphemeralStorageConfiguration
-<a name="API_EphemeralStorageConfiguration"></a>
 
 Configuration for ephemeral storage attached to the container task.
 

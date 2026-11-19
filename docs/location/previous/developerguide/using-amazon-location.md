@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/using-a
 ---
 
 # How to use Amazon Location Service
-<a name="using-amazon-location"></a>
 
 **Note**
 We released a new version of the Places, Maps, and Routes APIs, see the updated [Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/what-is.html) for revised information and new topics, such as [Geofences](https://docs.aws.amazon.com/location/latest/developerguide/geofences.html) and [Trackers](https://docs.aws.amazon.com/location/latest/developerguide/trackers.html).

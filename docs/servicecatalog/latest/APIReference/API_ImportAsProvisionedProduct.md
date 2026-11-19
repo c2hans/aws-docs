@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_I
 ---
 
 # ImportAsProvisionedProduct
-<a name="API_ImportAsProvisionedProduct"></a>
 
  Requests the import of a resource as an AWS Service Catalog provisioned product that is associated to an AWS Service Catalog product and provisioning artifact. Once imported, all supported governance actions are supported on the provisioned product.
 

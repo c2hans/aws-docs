@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # CoreNetworkEndpointDnsIpItem
-<a name="API_route53globalresolver_CoreNetworkEndpointDnsIpItem"></a>
 
 A DNS IP address configuration returned for a core network endpoint. Each item describes an IP address that the endpoint uses to receive DNS queries, along with its DNS label and name, and the scope and AWS Regions in which the address applies.
 

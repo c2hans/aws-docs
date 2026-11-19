@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferTargetAgreementIntentFilter
-<a name="API_OfferTargetAgreementIntentFilter"></a>
 
 Allows filtering on the `TargetAgreementIntent` of an offer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ClaimMatchValueType
-<a name="API_ClaimMatchValueType"></a>
 
 The value or values to match for.
 + Include a `matchValueString` with the `EQUALS` operator to specify a string that matches the claim field value.

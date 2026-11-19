@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ColumnStatisticsT
 ---
 
 # ColumnStatisticsTaskRun
-<a name="API_ColumnStatisticsTaskRun"></a>
 
 The object that shows the details of the column stats run.
 

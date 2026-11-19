@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/geospatial.ht
 ---
 
 # Querying geospatial data with Amazon DocumentDB
-<a name="geospatial"></a>
 
 This section covers how you can query Geospatial data with Amazon DocumentDB. After you read this section, you will be able to answer how do store, query and index Geospatial data in Amazon DocumentDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-i
 ---
 
 # IP addresses to add to your allow list
-<a name="connections-ip-address"></a>
 
 If you implement IP filtering, or allowing certain IP addresses on Amazon EC2 instances, add the following IP addresses to your allow list. Doing so enables connections to providers, such as GitHub and Bitbucket.
 

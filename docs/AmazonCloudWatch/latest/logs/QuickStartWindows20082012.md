@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartW
 ---
 
 # Quick Start: Enable your Amazon EC2 instances running Windows Server 2012 and Windows Server 2008 to send logs to CloudWatch Logs
-<a name="QuickStartWindows20082012"></a>
 
 **Tip**
 CloudWatch includes a new unified agent that can collect both logs and metrics from EC2 instances and on-premises servers. We recommend that you use the newer unified CloudWatch agent. For more information, see [Getting started with CloudWatch Logs](CWL_GettingStarted.md).

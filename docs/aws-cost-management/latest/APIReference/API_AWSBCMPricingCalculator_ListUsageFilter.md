@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListUsageFilter
-<a name="API_AWSBCMPricingCalculator_ListUsageFilter"></a>
 
  Represents a filter for listing usage data.
 

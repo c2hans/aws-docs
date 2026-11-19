@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/manag
 ---
 
 # Turning on multi-account search
-<a name="manage-service-multi-account"></a>
 
 With multi-account search, you can search for resources across accounts with active indexes in your AWS Organizations or organizational unit (OU).
 

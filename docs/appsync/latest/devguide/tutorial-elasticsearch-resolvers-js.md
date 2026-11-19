@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-elastic
 ---
 
 # Using Amazon OpenSearch Service resolvers in AWS AppSync
-<a name="tutorial-elasticsearch-resolvers-js"></a>
 
 AWS AppSync supports using Amazon OpenSearch Service from domains that you have provisioned in your own AWS account, provided they don’t exist inside a VPC. After your domains are provisioned, you can connect to them using a data source, at which point you can configure a resolver in the schema to perform GraphQL operations such as queries, mutations, and subscriptions. This tutorial will take you through some common examples.
 

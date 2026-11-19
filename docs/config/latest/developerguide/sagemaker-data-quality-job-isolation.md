@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-d
 ---
 
 # sagemaker-data-quality-job-isolation
-<a name="sagemaker-data-quality-job-isolation"></a>
 
 Checks if Amazon SageMaker data quality job definitions have network isolation enabled. The rule is NON\_COMPLIANT if configuration.NetworkConfig.EnableNetworkIsolation is false.
 

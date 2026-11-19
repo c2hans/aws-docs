@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-tools.ht
 ---
 
 # Use external tools
-<a name="prompting-tools"></a>
 
 Amazon Nova understanding models can be integrated with external tools and systems to enhance their capabilities and have the models complete real world tasks. Such tasks include grounding the model with accurate context by building your own Retrieval Augmented Generation (RAG) system or leveraging tool calling systems to build your own orchestration system.
 

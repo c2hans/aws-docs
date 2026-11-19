@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Troubleshooting connections to your SQL Server DB instance
-<a name="USER_ConnectToMicrosoftSQLServerInstance.Troubleshooting"></a>
 
 The following table shows error messages that you might encounter when you attempt to connect to your SQL Server DB instance.
 

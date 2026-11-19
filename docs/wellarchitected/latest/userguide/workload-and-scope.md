@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Workload and scope
-<a name="workload-and-scope"></a>
 
  According to the [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads.html):
 

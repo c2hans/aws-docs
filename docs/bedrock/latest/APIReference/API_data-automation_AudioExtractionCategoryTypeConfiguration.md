@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # AudioExtractionCategoryTypeConfiguration
-<a name="API_data-automation_AudioExtractionCategoryTypeConfiguration"></a>
 
 Allows configuration of extractions for different types of data, such as transcript and content moderation.
 

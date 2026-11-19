@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_han
 ---
 
 # Handlers and middleware in the AWS SDK for PHP Version 3
-<a name="guide_handlers-and-middleware"></a>
 
 The primary mechanism for extending the AWS SDK for PHP is through **handlers** and **middleware**. Each SDK client class owns an `Aws\HandlerList` instance that is accessible through the `getHandlerList()` method of a client. You can retrieve a client’s `HandlerList` and modify it to add or remove client behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outpost-re
 ---
 
 # Managing Resolver on Outpost
-<a name="outpost-resolver-manage"></a>
 
 How you manage Resolver on Outpost depends on your AWS Outposts generation:
 + For first-generation AWS Outposts, you can edit, view, and delete Resolver.

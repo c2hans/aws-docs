@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/trust-data-def
 ---
 
 # Default context for Verified Access trust data
-<a name="trust-data-default-context"></a>
 
 AWS Verified Access includes some elements about the current request by default in all Cedar evaluations regardless of your configured trust providers. You can write a policy that evaluates against the data if you choose.
 

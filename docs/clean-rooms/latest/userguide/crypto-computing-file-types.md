@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/crypto-comp
 ---
 
 # Supported file and data types in Cryptographic Computing for Clean Rooms
-<a name="crypto-computing-file-types"></a>
 
 The C3R encryption client recognizes the following file types:
 + CSV files

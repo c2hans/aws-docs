@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningRule
-<a name="API_runtime_GuardrailAutomatedReasoningRule"></a>
 
 References a specific automated reasoning policy rule that was applied during evaluation.
 

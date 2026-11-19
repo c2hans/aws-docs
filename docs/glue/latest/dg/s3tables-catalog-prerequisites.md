@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/s3tables-catalog-prerequi
 ---
 
 # Prerequisites
-<a name="s3tables-catalog-prerequisites"></a>
 
 Before you create a federated catalog for S3 Tables in the AWS Glue Data Catalog, ensure your IAM principal (user or role) has the required permissions.
 

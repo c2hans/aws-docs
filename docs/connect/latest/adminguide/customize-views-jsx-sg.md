@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customize-view
 ---
 
 # Customize views by using HTML and JSX
-<a name="customize-views-jsx-sg"></a>
 
 You can customize view layouts by using HTML or JSX in the input parameters of the [Show view](show-view-block.md) block.
 

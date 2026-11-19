@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02-b
 ---
 
 # OPS02-BP04 Regularly analyze workload logs
-<a name="ops02-bp04"></a>
 
  Logs are the most detailed telemetry a workload produces, recording every request, error, and component decision. At production volume, no human being is reading logs line by line. Regular log analysis uses queries and machine assistance to extract patterns and answers from that detail.
 

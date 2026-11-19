@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-503-release.
 ---
 
 # Amazon EMR release 5.0.3
-<a name="emr-503-release"></a>
 
 ## 5.0.3 application versions
 <a name="emr-503-app-versions"></a>

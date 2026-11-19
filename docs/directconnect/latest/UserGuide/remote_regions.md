@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/remote_re
 ---
 
 # Access to AWS Regions
-<a name="remote_regions"></a>
 
 From any Direct Connect location in a public Region or AWS GovCloud (US), you can access all public AWS Regions (except those in China (Beijing and Ningxia)), AWS GovCloud (US) Regions, and [AWS Local Zones](https://aws.amazon.com/about-aws/global-infrastructure/localzones/). You can use Direct Connect to build multi-Region services. All networking traffic remains on the AWS global network backbone, regardless of whether you access public AWS services or a VPC.
 

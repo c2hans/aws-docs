@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::CapacityProvider InstanceRequirements
-<a name="aws-properties-lambda-capacityprovider-instancerequirements"></a>
 
 Specifications that define the characteristics and constraints for compute instances used by the capacity provider.
 
@@ -41,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-capacityprovider-instancerequirements-properties"></a>
 
 `AllowedInstanceTypes`  <a name="cfn-lambda-capacityprovider-instancerequirements-allowedinstancetypes"></a>
-A list of EC2 instance types that the capacity provider is allowed to use. If not specified, all compatible instance types are allowed.
+A list of EC2 instance types that the capacity provider is allowed to use. You can use wildcards to specify an instance family, for example `g6.*`. If not specified, all compatible instance types are allowed.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1 | 0`
@@ -57,7 +56,7 @@ A list of supported CPU architectures for compute instances. Valid values includ
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ExcludedInstanceTypes`  <a name="cfn-lambda-capacityprovider-instancerequirements-excludedinstancetypes"></a>
-A list of EC2 instance types that the capacity provider should not use, even if they meet other requirements.
+A list of EC2 instance types that the capacity provider should not use, even if they meet other requirements. You can use wildcards to specify an instance family, for example `g6.*`.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1 | 0`

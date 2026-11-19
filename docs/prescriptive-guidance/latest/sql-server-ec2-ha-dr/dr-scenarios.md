@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Disaster recovery scenarios
-<a name="dr-scenarios"></a>
 
 This section provides examples of a single Availability Zone or AWS Region failure, and discusses options for disaster recovery (DR). The examples assume a recovery point objective (RPO) of 15 minutes and a recovery time objective (RTO) of 4 hours.
 

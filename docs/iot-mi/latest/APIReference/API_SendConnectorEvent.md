@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_SendConne
 ---
 
 # SendConnectorEvent
-<a name="API_SendConnectorEvent"></a>
 
 Relays third-party device events for a connector such as a new device or a device state change event.
 

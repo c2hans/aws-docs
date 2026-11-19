@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableS
 ---
 
 # EnableSecurityHub
-<a name="API_EnableSecurityHub"></a>
 
 Enables Security Hub CSPM for your account in the current Region or the Region you specify in the request.
 

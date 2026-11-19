@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # InferenceContainerConfig
-<a name="API_InferenceContainerConfig"></a>
 
 Provides configuration information for the inference container.
 

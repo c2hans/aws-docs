@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Strin
 ---
 
 # StringValueWhenUnsetConfiguration
-<a name="API_StringValueWhenUnsetConfiguration"></a>
 
 The configuration that defines the default value of a `String` parameter when a value has not been set.
 

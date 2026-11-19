@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_LoggingConfig.html
 ---
 
 # LoggingConfig
-<a name="API_LoggingConfig"></a>
 
 The function's Amazon CloudWatch Logs configuration settings.
 

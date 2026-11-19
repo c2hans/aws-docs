@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/b
 ---
 
 # Building products with SDK
-<a name="building-products"></a>
 
 A product or ABAP add-on that consumes AWS services can enhance and extend the capabilities of the SDK. You can build such products to use with the SDK.
 

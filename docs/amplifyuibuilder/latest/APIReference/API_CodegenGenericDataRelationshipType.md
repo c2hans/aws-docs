@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenGenericDataRelationshipType
-<a name="API_CodegenGenericDataRelationshipType"></a>
 
 Describes the relationship between generic data models.
 

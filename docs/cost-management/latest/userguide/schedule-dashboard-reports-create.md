@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/schedul
 ---
 
 # Creating a scheduled report
-<a name="schedule-dashboard-reports-create"></a>
 
 You can create a scheduled report for a dashboard to automatically generate and deliver PDF snapshots to your recipients on a recurring basis.
 

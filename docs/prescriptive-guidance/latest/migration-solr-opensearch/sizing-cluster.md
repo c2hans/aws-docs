@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Sizing your OpenSearch cluster
-<a name="sizing-cluster"></a>
 
 When you move from Solr to OpenSearch, using the proper sizing is vital for optimal performance and cost management. Start by analyzing your current Solr setup: CPU usage, memory, and performance metrics will serve as your baseline.
 

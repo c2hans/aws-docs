@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ZendeskSourceProperties
-<a name="API_connect-customer-profiles_ZendeskSourceProperties"></a>
 
 The properties that are applied when using Zendesk as a flow source.
 

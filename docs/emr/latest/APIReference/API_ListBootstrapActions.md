@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListBootstra
 ---
 
 # ListBootstrapActions
-<a name="API_ListBootstrapActions"></a>
 
 Provides information about the bootstrap actions associated with a cluster.
 

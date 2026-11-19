@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateAccountL
 ---
 
 # CreateAccountLinkInvitation
-<a name="API_CreateAccountLinkInvitation"></a>
 
 Creates the account link invitation.
 

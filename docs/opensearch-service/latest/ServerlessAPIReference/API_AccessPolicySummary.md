@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # AccessPolicySummary
-<a name="API_AccessPolicySummary"></a>
 
 A summary of the data access policy.
 

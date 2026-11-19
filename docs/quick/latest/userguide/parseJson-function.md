@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/parseJson-functio
 ---
 
 # parseJson
-<a name="parseJson-function"></a>
 
 Use `parseJson` to extract values from a JSON object.
 

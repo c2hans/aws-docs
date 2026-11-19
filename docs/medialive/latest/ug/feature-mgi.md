@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-mgi.html
 ---
 
 # Working with motion graphics overlays
-<a name="feature-mgi"></a>
 
 You can use the motion graphics overlay feature to superimpose a motion image onto the video in a MediaLive channel. The motion image is based on an HTML5 motion graphic asset.
 

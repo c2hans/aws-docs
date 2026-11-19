@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableTotalOptions
-<a name="API_PivotTableTotalOptions"></a>
 
 The total options for a pivot table visual.
 

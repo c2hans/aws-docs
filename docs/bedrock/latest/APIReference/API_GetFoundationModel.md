@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetFound
 ---
 
 # GetFoundationModel
-<a name="API_GetFoundationModel"></a>
 
 Get details about a Amazon Bedrock foundation model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_P
 ---
 
 # PrincipalRoleEntitlement
-<a name="API_PrincipalRoleEntitlement"></a>
 
 Specifies a principal-to-role entitlement that grants an IAM Identity Center principal permission to assume an IAM role.
 

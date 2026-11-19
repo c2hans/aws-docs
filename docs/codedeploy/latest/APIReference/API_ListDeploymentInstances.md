@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListD
 ---
 
 # ListDeploymentInstances
-<a name="API_ListDeploymentInstances"></a>
 
 **Note**
  The newer `BatchGetDeploymentTargets` should be used instead because it works with all compute types. `ListDeploymentInstances` throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.

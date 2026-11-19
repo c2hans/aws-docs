@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_In
 ---
 
 # Interconnect
-<a name="API_Interconnect"></a>
 
 Information about an interconnect.
 

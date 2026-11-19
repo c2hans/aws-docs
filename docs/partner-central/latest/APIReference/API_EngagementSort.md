@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # EngagementSort
-<a name="API_EngagementSort"></a>
 
 Specifies the sorting parameters for listing Engagements.
 

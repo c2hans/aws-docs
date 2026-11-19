@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingSessionDetail
-<a name="API_TrainingSessionDetail"></a>
 
 Contains detailed information about a training session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTrigger.html
 ---
 
 # GetTrigger
-<a name="API_GetTrigger"></a>
 
 Retrieves the definition of a trigger.
 

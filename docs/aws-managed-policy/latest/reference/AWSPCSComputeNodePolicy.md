@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPCSComputeNodePolicy
-<a name="AWSPCSComputeNodePolicy"></a>
 
 **Description**: Grants permission to AWS PCS compute nodes to connect to AWS PCS clusters.
 

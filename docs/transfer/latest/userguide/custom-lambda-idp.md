@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/custom-lambda-
 ---
 
 # Using AWS Lambda to integrate your identity provider
-<a name="custom-lambda-idp"></a>
 
 This topic describes how to create an AWS Lambda function that connects to your custom identity provider. You can use any custom identity provider, such as Okta, Secrets Manager, OneLogin, or a custom data store that includes authorization and authentication logic.
 

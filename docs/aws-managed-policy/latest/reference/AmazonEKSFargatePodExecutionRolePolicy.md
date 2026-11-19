@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSFargatePodExecutionRolePolicy
-<a name="AmazonEKSFargatePodExecutionRolePolicy"></a>
 
 **Description**: Provides access to other AWS service resources that are required to run Amazon EKS pods on AWS Fargate
 

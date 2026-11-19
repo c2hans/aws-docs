@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/gam-integration-pa
 ---
 
 # Client-side AWS Elemental MediaTailor integration with Google Ad Manager
-<a name="gam-integration-pal"></a>
 
 A MediaTailor client-side integration is required to use the Google Ad Manager Programmatic Access Libraries (PAL) SDKs and to use Google Ad Manager's open auction transaction type.
 

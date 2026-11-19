@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineC
 ---
 
 # LineChartMarkerStyleSettings
-<a name="API_LineChartMarkerStyleSettings"></a>
 
 Marker styles options for a line series in `LineChartVisual`.
 

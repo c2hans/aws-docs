@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policies for Amazon SageMaker geospatial
-<a name="security-iam-awsmanpol-geospatial"></a>
 
 These AWS managed policies add permissions required to use SageMaker geospatial. The policies are available in your AWS account and are used by execution roles created from the SageMaker AI console.
 

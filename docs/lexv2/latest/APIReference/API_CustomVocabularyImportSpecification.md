@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CustomVoca
 ---
 
 # CustomVocabularyImportSpecification
-<a name="API_CustomVocabularyImportSpecification"></a>
 
 Provides the parameters required for importing a custom vocabulary.
 

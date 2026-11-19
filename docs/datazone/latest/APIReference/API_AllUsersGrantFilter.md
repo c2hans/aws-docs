@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AllUser
 ---
 
 # AllUsersGrantFilter
-<a name="API_AllUsersGrantFilter"></a>
 
 The all users grant filter.
 

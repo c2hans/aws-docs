@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Available metrics
-<a name="gamelift-servers-metrics-types"></a>
 
 Metrics fall into three categories:
 + Automatically collected metrics

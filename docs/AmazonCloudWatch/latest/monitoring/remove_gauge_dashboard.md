@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/remov
 ---
 
 # Removing a gauge widget from a CloudWatch dashboard
-<a name="remove_gauge_dashboard"></a>
 
 **To remove a gauge widget from a dashboard**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ListOperations.
 ---
 
 # ListOperations
-<a name="API_ListOperations"></a>
 
 Lists operations that match the criteria that you specify.
 

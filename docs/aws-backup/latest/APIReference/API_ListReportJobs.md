@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListReportJobs
-<a name="API_ListReportJobs"></a>
 
 Returns details about your report jobs.
 

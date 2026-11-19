@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceDeploymentControllerDetails
-<a name="API_AwsEcsServiceDeploymentControllerDetails"></a>
 
 Information about the deployment controller type that the service uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/querying-the-ads-l
 ---
 
 # Querying the ADS logs
-<a name="querying-the-ads-logs"></a>
 
 CloudWatch Logs Insights provides a rich set of options for querying your logs. For detailed information about querying syntax, see [CloudWatch Logs insights query syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html). This section provides examples of common queries to get you started with your ADS logs queries. All queries run against the logs for the current time range setting.
 

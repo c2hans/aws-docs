@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/multi-Region.co
 ---
 
 # Using MemoryDB Multi-Region with the console
-<a name="multi-Region.console"></a>
 
 Here are ways to use MemoryDB Multi-Region with the console.
 

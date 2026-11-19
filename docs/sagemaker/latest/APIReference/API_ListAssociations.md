@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAs
 ---
 
 # ListAssociations
-<a name="API_ListAssociations"></a>
 
 Lists the associations in your account and their properties.
 

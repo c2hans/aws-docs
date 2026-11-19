@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # WebLocation
-<a name="API_runtime_WebLocation"></a>
 
 Provides the URL and domain information for the website that was cited when performing a web search.
 

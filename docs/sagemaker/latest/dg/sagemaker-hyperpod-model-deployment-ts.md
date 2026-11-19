@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # HyperPod inference troubleshooting
-<a name="sagemaker-hyperpod-model-deployment-ts"></a>
 
 This troubleshooting guide addresses common issues that can occur during Amazon SageMaker HyperPod inference deployment and operation. These problems typically involve VPC networking configuration, IAM permissions, Kubernetes resource management, and operator connectivity issues that can prevent successful model deployment or cause deployments to fail or remain in pending states.
 

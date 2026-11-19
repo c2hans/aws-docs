@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # UpdateRecommender
-<a name="API_connect-customer-profiles_UpdateRecommender"></a>
 
 Updates the properties of an existing recommender, allowing you to modify its configuration and description.
 

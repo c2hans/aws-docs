@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ListNotifyCountries
-<a name="API_ListNotifyCountries"></a>
 
 Lists countries that support notify messaging. You can optionally filter by channel, use case, or tier.
 

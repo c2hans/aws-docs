@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # TagFilter
-<a name="API_amazon-q-connect_TagFilter"></a>
 
 An object that can be used to specify Tag conditions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationSummaryDetail
-<a name="API_RemediationSummaryDetail"></a>
 
 A summary of the remediation target.
 

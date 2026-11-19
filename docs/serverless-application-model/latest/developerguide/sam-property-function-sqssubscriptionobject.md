@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # SqsSubscriptionObject
-<a name="sam-property-function-sqssubscriptionobject"></a>
 
 Specify an existing SQS queue option to SNS event
 

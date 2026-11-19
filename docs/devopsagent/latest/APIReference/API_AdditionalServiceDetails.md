@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Addi
 ---
 
 # AdditionalServiceDetails
-<a name="API_AdditionalServiceDetails"></a>
 
 Union of service-specific details for different service types.
 

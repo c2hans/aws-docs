@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpRout
 ---
 
 # TcpRouteMatch
-<a name="API_TcpRouteMatch"></a>
 
 An object representing the TCP route to match.
 

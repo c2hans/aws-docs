@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_Validation
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Information about a field that failed validation.
 

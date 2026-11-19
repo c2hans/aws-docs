@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Disable or enable project profiles
-<a name="disable-enable-project-profile"></a>
 
  Complete the following procedure to disable or enable a project profile for your domain.
 

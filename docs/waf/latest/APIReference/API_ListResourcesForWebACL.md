@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListResource
 ---
 
 # ListResourcesForWebACL
-<a name="API_ListResourcesForWebACL"></a>
 
 Retrieves an array of the Amazon Resource Names (ARNs) for the resources that are associated with the specified web ACL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-n
 ---
 
 # sagemaker-notebook-instance-root-access-check
-<a name="sagemaker-notebook-instance-root-access-check"></a>
 
 Checks if the Amazon SageMaker RootAccess setting is enabled for Amazon SageMaker notebook instances. The rule is NON\_COMPLIANT if the RootAccess setting is set to ‘Enabled’ for an Amazon SageMaker notebook instance.
 

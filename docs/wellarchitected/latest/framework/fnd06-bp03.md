@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 ---
 
 # FND06-BP03 Configure billing and cost management tools
-<a name="fnd06-bp03"></a>
 
  Configure cost management tools that provide organization-wide visibility, control, and optimization capabilities. With this foundation, central teams govern cloud spending, and business units have appropriate access to cost data and optimization tools.
 

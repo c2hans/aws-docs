@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDataSourcePermissions
-<a name="API_DescribeDataSourcePermissions"></a>
 
 Describes the resource permissions for a data source.
 

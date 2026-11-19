@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Connect Outbound Campaigns
-<a name="API_Operations_Amazon_Connect_Outbound_Campaigns"></a>
 
 The following actions are supported by Amazon Connect Outbound Campaigns:
 +  [CreateCampaign](API_connect-outbound-campaigns_CreateCampaign.md)

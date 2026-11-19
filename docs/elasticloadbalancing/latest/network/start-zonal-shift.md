@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/star
 ---
 
 # Start a zonal shift for your Network Load Balancer
-<a name="start-zonal-shift"></a>
 
 Zonal shift in ARC enables you to temporarily move traffic for supported resources away from an Availability Zone so that your application can continue to operate normally with other Availability Zones in an AWS Region.
 

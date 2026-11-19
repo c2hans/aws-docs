@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  Cost optimization is treated as an essential component when performing tradeoffs between various designs and architectures during the early stages of product ideation. Cost optimization for your environment can happen across the entire life of your environment and workloads, from the design and architectural stage, all the way until the resources have been launched on the cloud. This can include proof-of-concept designs to help you estimate the cost before moving any resources to non-production or production environments.
 

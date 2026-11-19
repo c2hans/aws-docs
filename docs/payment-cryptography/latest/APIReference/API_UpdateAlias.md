@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # UpdateAlias
-<a name="API_UpdateAlias"></a>
 
 Associates an existing AWS Payment Cryptography alias with a different key. Each alias is associated with only one AWS Payment Cryptography key at a time, although a key can have multiple aliases. The alias and the AWS Payment Cryptography key must be in the same AWS account and AWS Region
 

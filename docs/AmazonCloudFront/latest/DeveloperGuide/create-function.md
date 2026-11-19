@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Create functions
-<a name="create-function"></a>
 
 You create a function in two stages:
 

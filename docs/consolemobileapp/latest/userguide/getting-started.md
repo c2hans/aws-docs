@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/consolemobileapp/latest/userguide/gettin
 ---
 
 # Getting started with the AWS Console Mobile Application
-<a name="getting-started"></a>
 
 Use this tutorial to get started with the Console Mobile Application. You’ll learn about required IAM permissions, how to authenticate through the app, and how to view your AWS resources through the app.
 

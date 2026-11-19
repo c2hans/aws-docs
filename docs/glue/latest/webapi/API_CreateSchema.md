@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateSchema.html
 ---
 
 # CreateSchema
-<a name="API_CreateSchema"></a>
 
 Creates a new schema set and registers the schema definition. Returns an error if the schema set already exists without actually registering the version.
 

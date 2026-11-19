@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonForecastFullAccess
-<a name="AmazonForecastFullAccess"></a>
 
 **Description**: Gives access to all actions for Amazon Forecast
 

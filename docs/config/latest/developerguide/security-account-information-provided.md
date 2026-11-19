@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/security-ac
 ---
 
 # security-account-information-provided
-<a name="security-account-information-provided"></a>
 
 Checks if you have provided security contact information for your AWS account contacts. The rule is NON\_COMPLIANT if security contact information within the account is not provided.
 

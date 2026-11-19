@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/secretsmanager-cre
 ---
 
 # AWS Secrets Manager Create/Update Secret task
-<a name="secretsmanager-create-update"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

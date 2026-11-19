@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/hcx-prepare.html
 ---
 
 # Prepare for HCX migration
-<a name="hcx-prepare"></a>
 
 Before you connect VMware HCX to your Amazon Elastic VMware Service environment, check that the HCX VLAN subnet is ready and create the HCX uplink port group. You can do the AWS checks with the console or the AWS CLI. The port group step is in the vSphere Client.
 

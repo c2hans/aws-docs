@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableProvisionedThroughput
-<a name="API_AwsDynamoDbTableProvisionedThroughput"></a>
 
 Information about the provisioned throughput for the table or for a global secondary index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Measure progress
-<a name="measure-progress"></a>
 
 Earlier sections highlighted how cloud leaders can create a compelling vision for their Cloud Operating Model. We provided guidance on how to connect strategy to implementation to support building your Cloud Operating Model. We also explained the need for a framework, such as the AWS COM Framework, to understand and develop maturity levels, and build a roadmap of capabilities that meet the needs of your organization. There is one more piece that is required: ensuring that KPIs are established to measure progress and indicate where a change in direction is required to maintain momentum.
 

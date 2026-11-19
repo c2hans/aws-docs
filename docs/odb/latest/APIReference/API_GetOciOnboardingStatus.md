@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetOciOnboar
 ---
 
 # GetOciOnboardingStatus
-<a name="API_GetOciOnboardingStatus"></a>
 
 Returns the tenancy activation link and onboarding status for your AWS account.
 

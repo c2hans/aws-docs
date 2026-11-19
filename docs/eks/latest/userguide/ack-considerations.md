@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack-considerations.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # ACK considerations for EKS
-<a name="ack-considerations"></a>
 
 This topic covers important considerations for using the EKS Capability for ACK, including IAM configuration, multi-account patterns, and integration with other EKS capabilities.
 

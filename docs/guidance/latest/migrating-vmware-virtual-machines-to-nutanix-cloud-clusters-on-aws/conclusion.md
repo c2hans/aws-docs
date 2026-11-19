@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/migrating-vmware-virtual
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This implementation guide provided a mapping of various VMware products to their Nutanix equivalents, the use of the Nutanix Sizer to conduct assessments, and the process of migrating virtual machines from VMware to Nutanix Cloud Clusters (NC2) on AWS. For further information and next steps, Nutanix provides the following additional resources:
 + Nutanix's [test drive](https://cloud.nutanixtestdrive.com/login) program guides IT teams step-by-step through a migration with Nutanix Move.

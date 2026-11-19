@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveAction
-<a name="API_ArchiveAction"></a>
 
 The action to archive the email by delivering the email to an Amazon SES archive.
 

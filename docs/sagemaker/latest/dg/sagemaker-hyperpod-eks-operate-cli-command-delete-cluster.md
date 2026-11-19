@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Deleting a SageMaker HyperPod cluster
-<a name="sagemaker-hyperpod-eks-operate-cli-command-delete-cluster"></a>
 
 Run [delete-cluster](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-cluster.html) to delete a cluster. You can specify either the name or the ARN of the cluster.
 

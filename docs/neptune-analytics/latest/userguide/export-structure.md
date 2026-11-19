@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/expor
 ---
 
 # Structure of exported files
-<a name="export-structure"></a>
 
 ## CSV
 <a name="export-structure-csv"></a>

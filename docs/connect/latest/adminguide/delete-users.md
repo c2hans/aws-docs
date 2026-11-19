@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-users.h
 ---
 
 # Delete users from your Connect Customer instance
-<a name="delete-users"></a>
 
 **Important**
 You can't undo a deletion.

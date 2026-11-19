@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ListResourcePolicies
 ---
 
 # ListResourcePolicies
-<a name="API_ListResourcePolicies"></a>
 
 Returns the list of resource policies in the target AWS account.
 

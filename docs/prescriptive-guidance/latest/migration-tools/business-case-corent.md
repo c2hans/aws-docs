@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Corent SurPaas MaaS
-<a name="business-case-corent"></a>
 
 *Last update: May 15, 2023*
 

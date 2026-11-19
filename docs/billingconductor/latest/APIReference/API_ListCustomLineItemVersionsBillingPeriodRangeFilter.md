@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListCustomLineItemVersionsBillingPeriodRangeFilter
-<a name="API_ListCustomLineItemVersionsBillingPeriodRangeFilter"></a>
 
 A billing period filter that specifies the custom line item versions to retrieve.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. The total cost depends on the number of load tests run, the duration of those tests, and the amount of data generated. As of this revision, the estimated cost for running this solution with default settings in the US East (N. Virginia) Region is approximately $30.90 per month.
 

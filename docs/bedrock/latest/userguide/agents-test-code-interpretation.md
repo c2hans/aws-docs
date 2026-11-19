@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-test-cod
 ---
 
 # Test code interpretation in Amazon Bedrock
-<a name="agents-test-code-interpretation"></a>
 
 Before you test code interpretation in Amazon Bedrock, make sure to prepare your agent to apply the changes you’ve just made.
 

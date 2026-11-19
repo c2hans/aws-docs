@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Descri
 ---
 
 # DescribePHIDetectionJob
-<a name="API_DescribePHIDetectionJob"></a>
 
 Gets the properties associated with a protected health information (PHI) detection job. Use this operation to get the status of a detection job.
 

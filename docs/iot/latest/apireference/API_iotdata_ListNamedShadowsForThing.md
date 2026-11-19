@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_List
 ---
 
 # ListNamedShadowsForThing
-<a name="API_iotdata_ListNamedShadowsForThing"></a>
 
 Lists the shadows for the specified thing.
 

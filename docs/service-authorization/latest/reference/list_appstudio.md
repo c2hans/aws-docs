@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS App Studio
-<a name="list_appstudio"></a>
 
 AWS App Studio (service prefix: `appstudio`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

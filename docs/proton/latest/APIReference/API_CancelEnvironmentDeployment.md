@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_CancelEnv
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # CancelEnvironmentDeployment
-<a name="API_CancelEnvironmentDeployment"></a>
 
 Attempts to cancel an environment deployment on an [UpdateEnvironment](API_UpdateEnvironment.md) action, if the deployment is `IN_PROGRESS`. For more information, see [Update an environment](https://docs.aws.amazon.com/proton/latest/userguide/ag-env-update.html) in the * AWS Proton User guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ComputeConfi
 ---
 
 # ComputeConfigRequest
-<a name="API_ComputeConfigRequest"></a>
 
 Request to update the configuration of the compute capability of your EKS Auto Mode cluster. For example, enable the capability. For more information, see EKS Auto Mode compute capability in the *Amazon EKS User Guide*.
 

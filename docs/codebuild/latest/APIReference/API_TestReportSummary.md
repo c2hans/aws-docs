@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_TestRe
 ---
 
 # TestReportSummary
-<a name="API_TestReportSummary"></a>
 
  Information about a test report.
 

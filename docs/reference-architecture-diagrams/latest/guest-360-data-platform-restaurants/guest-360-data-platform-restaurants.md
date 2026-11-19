@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Guest 360 Data Platform for Restaurants
-<a name="guest-360-data-platform-restaurants"></a>
 
 Publication date: **November 17, 2020 ([Diagram history](#g360rest-history))**
 

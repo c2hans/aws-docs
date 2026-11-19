@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/transfer-to-qu
 ---
 
 # Flow block in Connect Customer: Transfer to queue
-<a name="transfer-to-queue"></a>
 
 This topic defines the flow block for transferring a current contact to the destination queue.
 
@@ -160,7 +159,7 @@ If you want to specify the **Set working queue** property, you need to add a **S
 
   The callback creation flow that you select must meet the following requirements:
   + The flow type must be the default flow type, **Contact flow (inbound)**. For information about flow types, see [Choose a flow type](create-contact-flow.md#contact-flow-types).
-  + You need to configure a [Transfer to queue](#transfer-to-queue) block to queue the contact in the queue of your choice.
+  + You need to configure a [Transfer to queue](transfer-to-queue.md) block to queue the contact in the queue of your choice.
 
   Following are additional options for how you can configure your callback creation flow:
   + You can evaluate contact attributes (including customer profiles) by using a [Check contact attributes](check-contact-attributes.md) block to see if the callback should be terminated because it is a duplicate or the customer issue has already been resolved.

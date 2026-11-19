@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Migrate from version 1.x to 2.x of the AWS SDK for Java
-<a name="migration"></a>
 
 The AWS SDK for Java 2.x is a major rewrite of the 1.x code base built on top of Java 8\+. It includes many updates, such as improved consistency, ease of use, and strongly enforced immutability. This section describes the major features that are new in version 2.x, and provides guidance on how to migrate your code to version 2.x from 1.x.
 

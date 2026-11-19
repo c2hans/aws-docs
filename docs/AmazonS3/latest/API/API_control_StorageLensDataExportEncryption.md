@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_StorageL
 ---
 
 # StorageLensDataExportEncryption
-<a name="API_control_StorageLensDataExportEncryption"></a>
 
 A container for the encryption of the S3 Storage Lens metrics exports.
 

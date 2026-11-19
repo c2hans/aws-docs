@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/admin-introduct
 ---
 
 # AWS FedRAMP Rev5 Secure Configuration Guidance - Admin Guidances
-<a name="admin-introduction"></a>
 
 This page provides guidance for AWS top-level administrative accounts aligned with FedRAMP Revision 5 Secure Configuration Guide (SCG) requirements. This guidance addresses the SCG-CSO-RSC requirement for top-level administrative accounts and privileged accounts. These guidances are provided as a point in time reference to how to configure AWS top-level administration accounts in a secure fashion.
 

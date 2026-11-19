@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-http-freer
 ---
 
 # Prerequisites for OTA updates using HTTP
-<a name="ota-http-freertos"></a>
 
 This section describes the general requirements for using HTTP to perform over-the-air (OTA) updates. Beginning with version 201912.00, FreeRTOS OTA can use either the HTTP or MQTT protocol to transfer firmware update images from AWS IoT to devices.
 

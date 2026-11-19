@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-doc
 ---
 
 # Restoring a DocumentDB cluster
-<a name="restoring-docdb"></a>
 
 ## Use the AWS Backup console to restore Amazon DocumentDB recovery points
 <a name="docdb-restore-console"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/access-keys
 ---
 
 # access-keys-rotated
-<a name="access-keys-rotated"></a>
 
 Checks if active IAM access keys are rotated (changed) within the number of days specified in `maxAccessKeyAge`. The rule is NON\_COMPLIANT if access keys are not rotated within the specified time period. The default value is 90 days.
 

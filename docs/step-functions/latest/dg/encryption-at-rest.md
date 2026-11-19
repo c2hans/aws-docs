@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/encryption-at-r
 ---
 
 # Data at rest encryption in Step Functions
-<a name="encryption-at-rest"></a>
 
 **Read the blog**
 Read about customer managed keys in [Strengthening data security with a customer-managed AWS KMS key](https://aws.amazon.com/blogs/compute/strengthening-data-security-in-aws-step-functions-with-a-customer-managed-aws-kms-key/)

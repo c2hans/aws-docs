@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/usin
 ---
 
 # Listener configurations for Classic Load Balancers
-<a name="using-elb-listenerconfig-quickref"></a>
 
 The following table describes possible configurations for HTTP and HTTPS listeners for a Classic Load Balancer.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-load-b
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Services of type LoadBalancer for hybrid nodes
-<a name="hybrid-nodes-load-balancing"></a>
 
 This topic describes how to configure Layer 4 (L4) load balancing for applications running on Amazon EKS Hybrid Nodes. Kubernetes Services of type LoadBalancer are used to expose Kubernetes applications external to the cluster. Services of type LoadBalancer are commonly used with physical load balancer infrastructure in the cloud or on-premises environment to serve the workload’s traffic. This load balancer infrastructure is commonly provisioned with an environment-specific controller.
 

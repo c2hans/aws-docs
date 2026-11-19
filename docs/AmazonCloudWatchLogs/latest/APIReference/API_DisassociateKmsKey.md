@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DisassociateKmsKey
-<a name="API_DisassociateKmsKey"></a>
 
 Disassociates the specified AWS KMS key from the specified log group or from all CloudWatch Logs Insights query results in the account.
 

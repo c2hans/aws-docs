@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Tags for operations and support
-<a name="tags-for-operations-and-support"></a>
 
  An AWS environment will have multiple accounts, resources, and workloads with differing operational requirements. Tags can be used to provide context and guidance to support operations teams to enhance management of your services. Tags can also be used to provide operational governance transparency of the managed resources.
 

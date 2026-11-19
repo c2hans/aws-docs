@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/monitoring-acti
 ---
 
 # Monitoring activity through the API
-<a name="monitoring-activity-via-api"></a>
 
 ## Fine points and pitfalls
 <a name="fine-points-and-pitfalls"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/lambda-
 ---
 
 # Return binary media from a Lambda proxy integration in API Gateway
-<a name="lambda-proxy-binary-media"></a>
 
 To return binary media from an [AWS Lambda proxy integration](set-up-lambda-proxy-integrations.md), base64 encode the response from your Lambda function. You must also [configure your API's binary media types](api-gateway-payload-encodings-configure-with-console.md). When you configure your API's binary media types, your API treats that content type as binary data. The payload size limit is 10 MB.
 

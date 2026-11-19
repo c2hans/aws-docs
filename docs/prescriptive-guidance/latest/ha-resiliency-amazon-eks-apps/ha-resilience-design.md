@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # HA and resilience design considerations
-<a name="ha-resilience-design"></a>
 
 The shared responsibility model becomes more complex with Kubernetes. Amazon EKS control plane availability and resilience are managed by Amazon Web Services (AWS). Your organization manages the data plane, which can significantly affect the performance and availability of your microservices applications.
 

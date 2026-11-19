@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_WebAppE
 ---
 
 # WebAppEndpointDetails
-<a name="API_WebAppEndpointDetails"></a>
 
 Contains the endpoint configuration for a web app, including VPC settings when the endpoint is hosted within a VPC.
 

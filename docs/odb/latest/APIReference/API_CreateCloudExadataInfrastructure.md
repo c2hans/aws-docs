@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateCloudE
 ---
 
 # CreateCloudExadataInfrastructure
-<a name="API_CreateCloudExadataInfrastructure"></a>
 
 Creates an Exadata infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailRegexConfig
-<a name="API_GuardrailRegexConfig"></a>
 
 The regular expression to configure for the guardrail.
 

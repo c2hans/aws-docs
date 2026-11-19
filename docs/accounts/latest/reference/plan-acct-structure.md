@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/plan-acct-stru
 ---
 
 # Plan your AWS account governance structure
-<a name="plan-acct-structure"></a>
 
 This information is about planning your AWS account governance structure if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
 

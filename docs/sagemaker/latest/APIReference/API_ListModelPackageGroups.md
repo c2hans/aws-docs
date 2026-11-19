@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelPackageGroups
-<a name="API_ListModelPackageGroups"></a>
 
 Gets a list of the model groups in your AWS account.
 

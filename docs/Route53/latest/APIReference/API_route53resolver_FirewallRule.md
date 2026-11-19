@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallRule
-<a name="API_route53resolver_FirewallRule"></a>
 
 A single firewall rule in a rule group.
 

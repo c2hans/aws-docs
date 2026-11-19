@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Support for Red Hat Enterprise Linux (RHEL 8.6 and above)
-<a name="support-rhel"></a>
 
 Starting from the current version (1.2.0), the Guidance supports Red Hat Enterprise Linux (RHEL) 8.6 and above. To use RHEL as the target, you must build a symbol based on the target RHEL.
 

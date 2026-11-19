@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/disable-ipv6.
 ---
 
 # Disable IPv6 networking for Lightsail resources
-<a name="disable-ipv6"></a>
 
 Complete the following procedure to disable IPv6 for instances, CDN distributions, and load balancers.
 

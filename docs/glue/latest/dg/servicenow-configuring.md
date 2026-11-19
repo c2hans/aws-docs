@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/servicenow-configuring.ht
 ---
 
 # Configuring ServiceNow
-<a name="servicenow-configuring"></a>
 
 Before you can use AWS Glue to transfer data from ServiceNow, you must meet these requirements:
 

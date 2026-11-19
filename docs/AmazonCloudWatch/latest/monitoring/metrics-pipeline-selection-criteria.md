@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # CloudWatch Metrics (OTel)
-<a name="metrics-pipeline-selection-criteria"></a>
 
 Selection criteria determine which OTel metrics enter a pipeline for processing. Each criterion is an expression of the form `<path> == "<value>"` that matches against a specific attribute of the incoming metric. At least one selection criterion is required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisSt
 ---
 
 # KinesisStreamsInput
-<a name="API_KinesisStreamsInput"></a>
 
  Identifies a Kinesis data stream as the streaming source. You provide the stream's Amazon Resource Name (ARN).
 

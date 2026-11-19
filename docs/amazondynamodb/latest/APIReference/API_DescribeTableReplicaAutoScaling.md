@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeTableReplicaAutoScaling
-<a name="API_DescribeTableReplicaAutoScaling"></a>
 
 Describes auto scaling settings across replicas of the global table at once.
 

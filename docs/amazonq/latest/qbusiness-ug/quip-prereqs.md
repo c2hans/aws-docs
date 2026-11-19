@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/quip-prereqs
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Prerequisites for connecting Amazon Q Business to Quip
-<a name="quip-prereqs"></a>
 
 Before you begin, make sure that you have completed the following prerequisites.
 

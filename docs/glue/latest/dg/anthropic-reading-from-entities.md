@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/anthropic-reading-from-en
 ---
 
 # Reading from Anthropic entities
-<a name="anthropic-reading-from-entities"></a>
 
 **Prerequisites**
 

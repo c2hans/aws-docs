@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/enable-multipath-resilien
 ---
 
 # Enable multipath resilience for a transit gateway peering attachment
-<a name="enable-multipath-resilience-tgw"></a>
 
 Multipath resilience is a cross-Region feature for transit gateway peering attachments. When you enable multipath resilience, we replicate each packet across multiple paths on the AWS global network and de-duplicate the copies at the destination Region. Multipath resilience provides Daily Uptime of at least 99.999%, measured in Unavailable Seconds. For more information about the SLA, see [Multipath Resilience SLA](https://aws.amazon.com/vpc/features/vpc-multipath-resilience/sla) on the AWS website.
 

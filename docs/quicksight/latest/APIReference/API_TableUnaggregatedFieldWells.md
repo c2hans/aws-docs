@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableUnaggregatedFieldWells
-<a name="API_TableUnaggregatedFieldWells"></a>
 
 The unaggregated field well for the table.
 

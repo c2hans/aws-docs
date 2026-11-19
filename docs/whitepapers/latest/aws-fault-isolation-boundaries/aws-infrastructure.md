@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # AWS infrastructure
-<a name="aws-infrastructure"></a>
 
  This section presents a summary of the AWS *global* infrastructure and the fault isolation boundaries it provides. It also covers the concept of control planes and data planes, which are critical distinctions in how AWS designs its services. This information provides the baseline to understand how fault isolation boundaries and a service’s control plane and data plane apply to the AWS service types we discuss in the next section.
 

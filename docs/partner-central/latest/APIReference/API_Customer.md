@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Customer
-<a name="API_Customer"></a>
 
 An object that contains the customer's `Account` and `Contact`.
 

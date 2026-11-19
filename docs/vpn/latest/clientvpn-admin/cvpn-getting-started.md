@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-
 ---
 
 # Get started with AWS Client VPN
-<a name="cvpn-getting-started"></a>
 
 In this tutorial, you will create a AWS Client VPN endpoint that does the following:
 + Provides all clients with access to a single VPC.

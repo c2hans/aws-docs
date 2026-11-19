@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningResourceConfig
-<a name="API_HyperParameterTuningResourceConfig"></a>
 
 The configuration of resources, including compute instances and storage volumes for use in training jobs launched by hyperparameter tuning jobs. `HyperParameterTuningResourceConfig` is similar to `ResourceConfig`, but has the additional `InstanceConfigs` and `AllocationStrategy` fields to allow for flexible instance management. Specify one or more instance types, count, and the allocation strategy for instance selection.
 

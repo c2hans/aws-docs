@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Configuratio
 ---
 
 # Configuration
-<a name="API_Configuration"></a>
 
 Configuration.
 

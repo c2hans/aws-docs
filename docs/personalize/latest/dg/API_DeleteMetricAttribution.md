@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteMetricAt
 ---
 
 # DeleteMetricAttribution
-<a name="API_DeleteMetricAttribution"></a>
 
 Deletes a metric attribution.
 

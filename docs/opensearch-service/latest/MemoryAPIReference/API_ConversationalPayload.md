@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # ConversationalPayload
-<a name="API_ConversationalPayload"></a>
 
 Conversational content. Exactly one member is set.
 

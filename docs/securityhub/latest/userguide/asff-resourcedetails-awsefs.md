@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # AwsEfs resources in ASFF
-<a name="asff-resourcedetails-awsefs"></a>
 
 The following are examples of the AWS Security Finding Format (ASFF) syntax for `AwsEfs` resources.
 

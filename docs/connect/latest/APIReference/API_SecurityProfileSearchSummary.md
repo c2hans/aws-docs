@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Security
 ---
 
 # SecurityProfileSearchSummary
-<a name="API_SecurityProfileSearchSummary"></a>
 
 Information about the returned security profiles.
 

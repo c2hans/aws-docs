@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSESServiceRolePolicy
-<a name="AmazonSESServiceRolePolicy"></a>
 
 **Description**: Allows SES to publish Amazon CloudWatch basic monitoring metrics on behalf of your SES resources
 

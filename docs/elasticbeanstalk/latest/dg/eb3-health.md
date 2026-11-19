@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-health.ht
 ---
 
 # **eb health**
-<a name="eb3-health"></a>
 
 ## Description
 <a name="eb3-healthdescription"></a>

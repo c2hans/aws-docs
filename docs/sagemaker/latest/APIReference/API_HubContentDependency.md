@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HubCon
 ---
 
 # HubContentDependency
-<a name="API_HubContentDependency"></a>
 
 Any dependencies related to hub content, such as scripts, model artifacts, datasets, or notebooks.
 

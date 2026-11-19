@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Elastic Container Service (ECS)
-<a name="elastic-container-service-ecs"></a>
 
 ## CPU and memory utilization
 <a name="cpu-and-memory-utilization"></a>

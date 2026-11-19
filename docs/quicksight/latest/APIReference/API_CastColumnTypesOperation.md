@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CastC
 ---
 
 # CastColumnTypesOperation
-<a name="API_CastColumnTypesOperation"></a>
 
 A transform operation that changes the data types of one or more columns in the dataset.
 

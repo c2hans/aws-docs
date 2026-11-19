@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAcce
 ---
 
 # ListAccessGrantsLocationsEntry
-<a name="API_control_ListAccessGrantsLocationsEntry"></a>
 
 A container for information about the registered location.
 

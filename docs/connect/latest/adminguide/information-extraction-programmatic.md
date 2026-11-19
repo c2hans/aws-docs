@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 ---
 
 # Programmatic access to extracted information
-<a name="information-extraction-programmatic"></a>
 
 Extracted information can be accessed programmatically through the following channels:
 + **Amazon S3** – Contact analysis output files (after-call work and post-contact processing)

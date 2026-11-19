@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Put
 ---
 
 # PutAssetModelInterfaceRelationship
-<a name="API_PutAssetModelInterfaceRelationship"></a>
 
 Creates or updates an interface relationship between an asset model and an interface asset model. This operation applies an interface to an asset model.
 

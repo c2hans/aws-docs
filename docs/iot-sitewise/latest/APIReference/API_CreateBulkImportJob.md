@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cre
 ---
 
 # CreateBulkImportJob
-<a name="API_CreateBulkImportJob"></a>
 
 Defines a job to ingest data to AWS IoT SiteWise from Amazon S3. For more information, see [Create a bulk import job (AWS CLI)](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/CreateBulkImportJob.html) in the *Amazon Simple Storage Service User Guide*.
 

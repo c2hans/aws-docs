@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_api_
 ---
 
 # API keys for AWS services
-<a name="id_credentials_api_keys_for_aws_services"></a>
 
 Some AWS services support API keys for authenticating programmatic requests in addition to standard IAM credentials such as temporary security credentials and long-term access keys. AWS offers two types of API keys:
 + **Long-term API keys** – Long-term API keys are associated with an IAM user and generated using IAM [service-specific credentials](id_credentials_service-specific-creds.md). These credentials are designed for use with only a single AWS service, enhancing security by limiting credential scope. You can set an expiration time for when the long-term API key expires. To generate long-term API keys, you can use the IAM or service-specific console, the AWS CLI, or AWS API.

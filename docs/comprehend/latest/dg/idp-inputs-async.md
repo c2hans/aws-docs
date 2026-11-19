@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/idp-inputs-async.ht
 ---
 
 # Inputs for asynchronous custom analysis
-<a name="idp-inputs-async"></a>
 
 You can input multiple documents to a custom async analysis job. The following topics describe the input document types that you can use. The maximum file size varies depending on the type of input document.
 

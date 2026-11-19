@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::RestApi EndpointConfiguration
-<a name="aws-properties-apigateway-restapi-endpointconfiguration"></a>
 
 The `EndpointConfiguration` property type specifies the endpoint types and IP address types of a REST API.
 

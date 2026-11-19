@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/review-a
 ---
 
 # Step 7: Review and create
-<a name="review-and-create"></a>
 
 Review the information entered to create your farm. When you're ready, choose **Create farm**.
 

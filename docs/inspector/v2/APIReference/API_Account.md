@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Account.ht
 ---
 
 # Account
-<a name="API_Account"></a>
 
 An AWS account within your environment that Amazon Inspector has been enabled for.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *March 2023*.
 

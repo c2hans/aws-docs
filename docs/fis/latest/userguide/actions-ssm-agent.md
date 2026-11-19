@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/actions-ssm-agent.h
 ---
 
 # Use Systems Manager SSM documents with AWS FIS
-<a name="actions-ssm-agent"></a>
 
 AWS FIS supports custom fault types through the AWS Systems Manager SSM Agent and the AWS FIS action [aws:ssm:send-command](fis-actions-reference.md#ssm-send-command). Pre-configured Systems Manager SSM documents (SSM documents) that can be used to create common fault injection actions are available as public AWS documents that begin with the AWSFIS- prefix.
 

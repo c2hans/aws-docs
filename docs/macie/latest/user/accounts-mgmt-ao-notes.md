@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-notes
 ---
 
 # Considerations for using Macie with AWS Organizations
-<a name="accounts-mgmt-ao-notes"></a>
 
 Before you integrate Amazon Macie with AWS Organizations and configure your organization in Macie, consider the following requirements and recommendations. Also ensure that you understand the [relationship between Macie administrator and member accounts](accounts-mgmt-relationships.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aws-config-
 ---
 
 # Creating AWS Config Managed Rules With AWS CloudFormation Templates
-<a name="aws-config-managed-rules-cloudformation-templates"></a>
 
 **Important**
 You must first create and start the AWS Config configuration recorder in order to create AWS Config managed rules with AWS CloudFormation. For more information, see [Managing the Configuration Recorder](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html).

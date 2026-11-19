@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutEnfor
 ---
 
 # PutEnforcedGuardrailConfiguration
-<a name="API_PutEnforcedGuardrailConfiguration"></a>
 
 Sets the account-level enforced guardrail configuration.
 

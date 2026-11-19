@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-self-m
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create Amazon Linux nodes on AWS Outposts
-<a name="eks-outposts-self-managed-nodes"></a>
 
 **Important**
 Amazon EKS Local Clusters on Outposts only supports nodes created from the following Amazon EKS-optimized Amazon Linux 2023 AMIs:

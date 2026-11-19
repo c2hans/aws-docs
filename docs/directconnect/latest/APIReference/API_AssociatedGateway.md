@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_As
 ---
 
 # AssociatedGateway
-<a name="API_AssociatedGateway"></a>
 
 Information about the associated gateway.
 

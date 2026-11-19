@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_RemoteAccess
 ---
 
 # RemoteAccessConfig
-<a name="API_RemoteAccessConfig"></a>
 
 An object representing the remote access configuration for the managed node group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Catego
 ---
 
 # CategoricalParameter
-<a name="API_CategoricalParameter"></a>
 
 Environment parameters you want to benchmark your load test against.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-create-
 ---
 
 # Creating a standard export
-<a name="dataexports-create-standard"></a>
 
 You can create a standard data export that you can analyze using other processing tools (Amazon Athena, for example).
 

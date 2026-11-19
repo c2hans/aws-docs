@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/hardware-topology.h
 ---
 
 # Configuring hardware topology in AWS PCS
-<a name="hardware-topology"></a>
 
 Slurm makes better placement decisions when it knows the internal hardware layout of a compute node: how cores group into sockets and Non-Uniform Memory Access (NUMA) domains, how L3 caches map to cores, and which cores each GPU is attached to. This topic describes how Slurm models that layout, and how AWS PCS configures it on each supported Slurm version.
 

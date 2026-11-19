@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution with default settings in the US East (N. Virginia) Region with:
 + Approximately 1,000 viewers for a one-hour live event using a standard definition (SD)-540p encoding profile is approximately **$1.76** for live encoding and packaging \+ **$67.24** for 791 GB distribution = **$69.00 for the one-hour event**.

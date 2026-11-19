@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Model the business domain
 <a name="model-domain"></a>

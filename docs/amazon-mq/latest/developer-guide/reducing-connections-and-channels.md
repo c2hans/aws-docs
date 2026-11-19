@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/reducin
 ---
 
 # Reducing the number of connections and channels
-<a name="reducing-connections-and-channels"></a>
 
 Connections to your RabbitMQ on Amazon MQ broker can be closed either by your client applications, or by manually closing them using the RabbitMQ web console. To close a connection using the RabbitMQ web console, do the following:
 

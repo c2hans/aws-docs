@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # Update a public third-party extension in your account
-<a name="registry-public-update-extension-console"></a>
 
 After you activate a third-party public extension, you can update most extension details from your account.
 

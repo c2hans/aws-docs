@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Secu
 ---
 
 # SecurityAgentWebAppPolicy
-<a name="SecurityAgentWebAppPolicy"></a>
 
 **Description**: Provides permissions for authenticated users to access the Security Agent Web Application for configuring and executing automated security penetration tests. This policy enables users to manage pentests, view findings, monitor test execution, and interact with AWS resources required for security testing operations.
 

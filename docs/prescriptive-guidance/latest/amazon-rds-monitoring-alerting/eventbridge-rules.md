@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # EventBridge rules
-<a name="eventbridge-rules"></a>
 
 [Amazon RDS events](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Messages.html) are delivered to EventBridge, and you can use [EventBridge rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) to react to those events. For example, you can create EventBridge rules that would notify you and take an action if one specific DB instance stops or starts up, as the following screen shows.
 

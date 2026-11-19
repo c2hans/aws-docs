@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF – Challenge rule action
-<a name="aws-waf-challenge-rule-action"></a>
 
  The [Challenge rule](https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha-and-challenge-actions.html) action provides an effective defense against DDoS botnets, which typically use basic scripts designed to maximize target impact while minimizing operational costs. This action requires clients to complete a JavaScript-based proof of work challenge and present a valid `aws-waf-token` cookie before allowing the request to proceed. This mechanism has proven highly effective against automated DDoS attacks, as most attack scripts can't process JavaScript or handle cookies properly.
 

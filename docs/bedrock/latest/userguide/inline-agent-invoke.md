@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inline-agent-in
 ---
 
 # Invoke an inline agent
-<a name="inline-agent-invoke"></a>
 
 **Note**
 Configuring and invoking an inline agent feature is in preview release for Amazon Bedrock and is subject to change.

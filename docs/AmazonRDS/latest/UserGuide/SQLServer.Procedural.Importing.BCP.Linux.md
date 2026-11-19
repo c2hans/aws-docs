@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Pro
 ---
 
 # Using BCP utility from Linux to import and export data
-<a name="SQLServer.Procedural.Importing.BCP.Linux"></a>
 
 The BCP (Bulk Copy Program) utility provides an efficient way to transfer large amounts of data between your RDS for SQL Server DB instance and data files. You can use BCP from Linux environments to perform bulk data operations, making it useful for data migration, ETL processes, and regular data transfers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Destina
 ---
 
 # DestinationTableConfiguration
-<a name="API_DestinationTableConfiguration"></a>
 
  Describes the configuration of a destination in Apache Iceberg Tables. This section is only needed for tables where you want to update or delete data.
 

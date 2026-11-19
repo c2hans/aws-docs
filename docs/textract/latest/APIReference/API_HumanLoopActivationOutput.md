@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_HumanLo
 ---
 
 # HumanLoopActivationOutput
-<a name="API_HumanLoopActivationOutput"></a>
 
 Shows the results of the human in the loop evaluation. If there is no HumanLoopArn, the input did not trigger human review.
 

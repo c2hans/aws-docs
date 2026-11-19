@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/BOOTSTRAP_FAI
 ---
 
 # BOOTSTRAP\_FAILURE\_PRIMARY\_WITH\_NON\_ZERO\_CODE
-<a name="BOOTSTRAP_FAILURE_PRIMARY_WITH_NON_ZERO_CODE"></a>
 
 ## Overview
 <a name="BOOTSTRAP_FAILURE_BA_DOWNLOAD_FAILED_WITH_NON_ZERO_CODE_overview"></a>

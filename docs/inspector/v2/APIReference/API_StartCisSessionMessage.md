@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StartCisSe
 ---
 
 # StartCisSessionMessage
-<a name="API_StartCisSessionMessage"></a>
 
 The start CIS session message.
 

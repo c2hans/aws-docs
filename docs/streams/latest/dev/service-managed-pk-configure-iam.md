@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # IAM permissions
-<a name="service-managed-pk-configure-iam"></a>
 
 To configure the record distribution strategy, the IAM principal must have the following permissions:
 + `kinesis:CreateStream` – to create a stream with service-managed record distribution

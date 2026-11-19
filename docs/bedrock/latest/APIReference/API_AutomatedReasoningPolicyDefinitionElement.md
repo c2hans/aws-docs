@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDefinitionElement
-<a name="API_AutomatedReasoningPolicyDefinitionElement"></a>
 
 Represents a single element in an Automated Reasoning policy definition, such as a rule, variable, or type definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/io
 ---
 
 # More patterns
-<a name="iot-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Cost-effectively ingest IoT data directly into Amazon S3 using AWS IoT Greengrass](cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.md)

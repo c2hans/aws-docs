@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # AI/ML Starter Package
-<a name="ai-ml-starter-package"></a>
 
 The AI/ML Starter Package establishes a comprehensive environment for developing, training, and deploying machine learning models at scale.
 

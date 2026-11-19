@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl
 ---
 
 # Differences between read replicas for DB engines
-<a name="USER_ReadRepl.Overview.Differences"></a>
 
 Because Amazon RDS DB engines implement replication differently, there are several significant differences that you should know about.
 

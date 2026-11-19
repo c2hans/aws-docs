@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Viewing AWS managed rule groups in Network Firewall using the console
-<a name="nwfw-using-managed-rule-groups-list"></a>
 
 You can view the managed rule groups that are available for your use in your Network Firewall policy.
 

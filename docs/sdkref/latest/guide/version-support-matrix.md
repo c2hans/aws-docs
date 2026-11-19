@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/version-support-matr
 ---
 
 # AWS SDKs and Tools version lifecycle
-<a name="version-support-matrix"></a>
 
 The table below shows the list of available AWS Software Development Kit (SDK) major versions and where they are in the maintenance lifecycle with associated timelines. For detailed information on the lifecycle for the major versions of AWS SDKs and Tools and their underlying dependencies, see [AWS SDKs and Tools maintenance policy](maint-policy.md).
 

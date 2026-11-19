@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/usage.html
 ---
 
 # Usage Totals
-<a name="usage"></a>
 
 The Usage Totals resource provides aggregated usage data for your Amazon Macie account. The data can provide insight into the estimated cost of using Macie to monitor and analyze your Amazon Simple Storage Service (Amazon S3) data. If you're currently participating in a 30-day free trial, the applicable cost estimates can help you understand what your usage costs might be after the trial ends. For information about how Macie calculates this data for your account, see [Forecasting and monitoring costs](https://docs.aws.amazon.com/macie/latest/user/account-mgmt-costs.html) in the *Amazon Macie User Guide*.
 

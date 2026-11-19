@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Managing connections
-<a name="manage-connections"></a>
 
 As the demand for your application grows, the front-end traffic increases. In a typical scenario, you set up automatic scaling at the application tier to handle such a burst of incoming traffic. As a result, the application tier starts to auto scale, and more application servers (instances) are added to meet the increase in traffic. Because all application servers have preconfigured database connection pool settings, the number of incoming connections to the database grows in proportion to the newly deployed instances.
 

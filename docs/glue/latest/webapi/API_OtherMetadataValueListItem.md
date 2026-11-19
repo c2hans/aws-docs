@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OtherMetadataValu
 ---
 
 # OtherMetadataValueListItem
-<a name="API_OtherMetadataValueListItem"></a>
 
 A structure containing other metadata for a schema version belonging to the same metadata key.
 

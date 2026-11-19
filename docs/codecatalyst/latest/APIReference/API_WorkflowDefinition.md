@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Wor
 ---
 
 # WorkflowDefinition
-<a name="API_WorkflowDefinition"></a>
 
 Information about a workflow definition file.
 

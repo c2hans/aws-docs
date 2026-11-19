@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListingSummary
-<a name="API_marketplace-discovery_ListingSummary"></a>
 
 Summary information about a listing returned by search operations, including the listing name, description, badges, categories, pricing models, reviews, and associated products.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServ
 ---
 
 # Using a Microsoft SQL Server database as a source for AWS DMS
-<a name="CHAP_Source.SQLServer"></a>
 
 Migrate data from one or many Microsoft SQL Server databases using AWS DMS. With a SQL Server database as a source, you can migrate data to another SQL Server database, or to one of the other AWS DMS supported databases.
 

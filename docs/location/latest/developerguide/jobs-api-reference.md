@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/jobs-api-
 ---
 
 # Jobs APIs
-<a name="jobs-api-reference"></a>
 
 The Amazon Location Jobs APIs provide programmatic access to bulk address validation capabilities through REST endpoints. All operations use standard AWS authentication.
 + **StartJob**: Initiates a new Amazon Location bulk processing job. For more information, See [StartJob](start-job-api.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductEntityIdFilter
-<a name="API_MachineLearningProductEntityIdFilter"></a>
 
 The filter for machine learning product entity IDs.
 

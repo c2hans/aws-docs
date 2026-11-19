@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_ANY_VALUE.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ANY\_VALUE function
-<a name="r_ANY_VALUE"></a>
 
 The ANY\_VALUE function returns any value from the input expression values nondeterministically. This function returns `NULL` if the input expression doesn't result in any rows being returned. The function can also return `NULL` if there are `NULL` values in the input expression. If the input contains `NULL` values mixed with non-`NULL` values, `NULL` might be returned. If all values are `NULL`, `NULL` is returned. If no rows match the condition, `NULL` is returned.
 

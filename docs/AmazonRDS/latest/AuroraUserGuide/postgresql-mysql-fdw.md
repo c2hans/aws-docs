@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/postgre
 ---
 
 # Working with MySQL databases by using the mysql\_fdw extension
-<a name="postgresql-mysql-fdw"></a>
 
 To access a MySQL-compatible database from your Aurora PostgreSQL DB cluster, you can install and use the `mysql_fdw` extension. This foreign data wrapper lets you work with RDS for MySQL, Aurora MySQL, MariaDB, and other MySQL-compatible databases. The connection from Aurora PostgreSQL DB cluster to the MySQL database is encrypted on a best-effort basis, depending on the client and server configurations. However, you can enforce encryption if you like. For more information, see [Using encryption in transit with the extension](#postgresql-mysql-fdw.encryption-in-transit).
 

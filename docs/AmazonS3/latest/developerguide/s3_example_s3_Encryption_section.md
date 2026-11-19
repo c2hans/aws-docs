@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Get started with encryption for Amazon S3 objects using an AWS SDK
-<a name="s3_example_s3_Encryption_section"></a>
 
 The following code example shows how to get started with encryption for Amazon S3 objects.
 

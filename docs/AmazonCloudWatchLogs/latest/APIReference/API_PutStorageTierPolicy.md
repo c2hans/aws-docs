@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # PutStorageTierPolicy
-<a name="API_PutStorageTierPolicy"></a>
 
 Sets the storage tier policy for the account. When you set the storage tier to `INTELLIGENT_TIERING`, the service automatically moves log data to the most cost-effective storage tier based on access frequency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-s
 ---
 
 # Share connections with AWS accounts
-<a name="connections-share"></a>
 
 You can use resource sharing with AWS RAM to share an existing connection with another AWS account or with accounts in your organization. You can use your shared connection with resources in AWS that you manage for third-party source connections, such as in CodePipeline.
 

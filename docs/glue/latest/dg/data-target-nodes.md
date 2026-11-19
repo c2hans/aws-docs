@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-target-nodes.html
 ---
 
 # Configuring data target nodes
-<a name="data-target-nodes"></a>
 
 The data target is where the job writes the transformed data.
 

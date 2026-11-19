@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_C
 ---
 
 # CreateStateMachineAlias
-<a name="API_CreateStateMachineAlias"></a>
 
 Creates an [alias](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-alias.html) for a state machine that points to one or two [versions](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html) of the same state machine. You can set your application to call [StartExecution](API_StartExecution.md) with an alias and update the version the alias uses without changing the client's code.
 

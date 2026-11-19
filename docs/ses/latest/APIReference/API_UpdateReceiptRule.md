@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateReceip
 ---
 
 # UpdateReceiptRule
-<a name="API_UpdateReceiptRule"></a>
 
 Updates a receipt rule.
 

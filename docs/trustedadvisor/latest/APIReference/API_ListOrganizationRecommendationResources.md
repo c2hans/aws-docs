@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_L
 ---
 
 # ListOrganizationRecommendationResources
-<a name="API_ListOrganizationRecommendationResources"></a>
 
 List Resources of a Recommendation within an Organization. This API only supports prioritized recommendations and provides global priority recommendations, eliminating the need to call the API in each AWS Region.
 

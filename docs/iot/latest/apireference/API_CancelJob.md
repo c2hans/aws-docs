@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJob.ht
 ---
 
 # CancelJob
-<a name="API_CancelJob"></a>
 
 Cancels a job.
 

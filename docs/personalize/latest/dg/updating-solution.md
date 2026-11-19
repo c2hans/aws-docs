@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/updating-solution.
 ---
 
 # Updating a solution to change its automatic training configuration
-<a name="updating-solution"></a>
 
 After you create a solution, you can change its automatic training configuration and its events configuration:
 + You can turn automatic training on or off, and you can change the training frequency.

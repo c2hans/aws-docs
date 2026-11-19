@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Remedi
 ---
 
 # Remediation
-<a name="API_Remediation"></a>
 
 Information on how to remediate a finding.
 

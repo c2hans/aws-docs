@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-workspaces.
 ---
 
 # Workspaces
-<a name="acxd-workspaces"></a>
 
 Manage workspaces: isolated environments that contain all resources for a project or team. Workspace operations are account-level and do not require a workspace ID.
 

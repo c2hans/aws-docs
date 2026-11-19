@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableCloudFrontOriginAccessIdentity`
-<a name="automation-aws-enable-cloudfront-origin-access"></a>
 
  **Description**
 

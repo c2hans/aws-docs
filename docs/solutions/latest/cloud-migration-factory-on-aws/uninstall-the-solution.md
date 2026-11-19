@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the Cloud Migration Factory on AWS solution from the AWS Management Console or by using the AWS Command Line Interface. You must manually empty all the Amazon Simple Storage Service (Amazon S3) buckets created by this solution. AWS Solutions Implementations do not automatically delete S3 buckets in case you have stored data to retain.
 

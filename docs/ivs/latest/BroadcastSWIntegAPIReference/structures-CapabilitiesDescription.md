@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # CapabilitiesDescription
-<a name="structures-CapabilitiesDescription"></a>
 
 Complex type specifying client hardware and software characteristics.
 

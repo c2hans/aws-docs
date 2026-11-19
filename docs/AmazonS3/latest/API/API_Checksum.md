@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Checksum.html
 ---
 
 # Checksum
-<a name="API_Checksum"></a>
 
 Contains all the possible checksum or digest values for an object.
 

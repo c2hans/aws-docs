@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Prerequisites
-<a name="model-customize-mtrl-prereqs"></a>
 
 Multi-turn RL uses the SageMaker AI `CreateJob` API, which requires additional permissions on top of the existing model customization prerequisites. The table below summarizes what's new versus already covered.
 

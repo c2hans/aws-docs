@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/brevo-connection-options.
 ---
 
 # Brevo connection options
-<a name="brevo-connection-options"></a>
 
 The following are connection options for Brevo:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Brevo object to read.

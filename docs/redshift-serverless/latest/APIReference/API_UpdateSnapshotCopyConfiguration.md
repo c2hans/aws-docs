@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateSnapshotCopyConfiguration
-<a name="API_UpdateSnapshotCopyConfiguration"></a>
 
 Updates a snapshot copy configuration.
 

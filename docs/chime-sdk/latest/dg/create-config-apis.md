@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-config-apis.h
 ---
 
 # Using APIs to create call analytics configurations for the Amazon Chime SDK
-<a name="create-config-apis"></a>
 
 You can programmatically create Voice Connectors and call analytics configurations, and then associate them in order to start a call analytics workflow. This guide assumes that you know how to write the code.
 

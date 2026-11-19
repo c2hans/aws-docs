@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TenantSup
 ---
 
 # TenantSuppressionAttributes
-<a name="API_TenantSuppressionAttributes"></a>
 
 An object that contains the suppression list preferences for a tenant.
 

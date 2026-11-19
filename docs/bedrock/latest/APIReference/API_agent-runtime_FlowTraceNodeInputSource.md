@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowTraceNodeInputSource
-<a name="API_agent-runtime_FlowTraceNodeInputSource"></a>
 
 Represents the source of input data for a flow trace node field.
 

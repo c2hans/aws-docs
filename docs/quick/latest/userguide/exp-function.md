@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/exp-function.html
 ---
 
 # Exp
-<a name="exp-function"></a>
 
 `exp` returns the base of natural log e raised to the power of a given expression.
 

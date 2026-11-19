@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Dev
 ---
 
 # DevEnvironmentAccessDetails
-<a name="API_DevEnvironmentAccessDetails"></a>
 
 Information about connection details for a Dev Environment.
 

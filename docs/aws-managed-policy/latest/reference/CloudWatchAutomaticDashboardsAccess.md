@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchAutomaticDashboardsAccess
-<a name="CloudWatchAutomaticDashboardsAccess"></a>
 
 **Description**: Provides access to the non-CloudWatch APIs used to display CloudWatch Automatic Dashboards, including the contents of objects such as Lambda functions
 

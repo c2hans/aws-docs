@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/subscribing-to-re
 ---
 
 # Subscribing to email reports in AWS Quick Sight
-<a name="subscribing-to-reports"></a>
 
 In Enterprise edition, AWS Quick authors can set up subscriptions to a dashboard in report form. For more information, see [Scheduling and sending Quick Sight reports by email](sending-reports.md). Quick readers and authors can then subscribe to a dashboard and adjust their report settings. For more information about subscribing to dashboards as a reader, see [Subscribing to AWS Quick Sight dashboard emails and alerts](subscriber-alerts.md).
 

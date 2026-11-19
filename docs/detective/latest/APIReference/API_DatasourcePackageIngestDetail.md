@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Dataso
 ---
 
 # DatasourcePackageIngestDetail
-<a name="API_DatasourcePackageIngestDetail"></a>
 
 Details about the data source packages ingested by your behavior graph.
 

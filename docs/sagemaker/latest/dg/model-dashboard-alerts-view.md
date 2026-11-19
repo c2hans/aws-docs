@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard-aler
 ---
 
 # View alert history or job reports
-<a name="model-dashboard-alerts-view"></a>
 
 **To view alert history or job reports of failed executions, complete the following steps:**
 

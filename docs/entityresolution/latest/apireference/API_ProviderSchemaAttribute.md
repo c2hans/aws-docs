@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderSchemaAttribute
-<a name="API_ProviderSchemaAttribute"></a>
 
 The provider schema attribute.
 

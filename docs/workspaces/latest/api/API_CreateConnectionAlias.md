@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateConnecti
 ---
 
 # CreateConnectionAlias
-<a name="API_CreateConnectionAlias"></a>
 
 Creates the specified connection alias for use with cross-Region redirection. For more information, see [ Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html).
 

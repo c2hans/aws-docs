@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-invi
 ---
 
 # Removing member accounts from a behavior graph
-<a name="accounts-invited-remove"></a>
 
 The administrator account can remove invited member accounts from a behavior graph at any time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Get
 ---
 
 # GetWorkload
-<a name="API_GetWorkload"></a>
 
 Returns information about a workload.
 

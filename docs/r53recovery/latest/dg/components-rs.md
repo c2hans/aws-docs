@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/components-rs.html
 ---
 
 # Region switch components
-<a name="components-rs"></a>
 
 The following are components of, and concepts about, the Region switch feature in Amazon Application Recovery Controller (ARC).
 

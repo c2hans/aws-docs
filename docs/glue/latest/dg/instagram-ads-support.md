@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/instagram-ads-support.htm
 ---
 
 # AWS Glue support for Instagram Ads
-<a name="instagram-ads-support"></a>
 
 AWS Glue supports Instagram Ads as follows:
 

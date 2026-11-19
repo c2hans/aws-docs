@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_RegisterOi
 ---
 
 # RegisterOidcConfigTest
-<a name="API_RegisterOidcConfigTest"></a>
 
 Tests an OpenID Connect (OIDC) configuration for a Wickr network by validating the connection to the identity provider and retrieving its supported capabilities.
 

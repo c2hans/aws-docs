@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TransactWriteItem
-<a name="API_TransactWriteItem"></a>
 
 A list of requests that can perform update, put, delete, or check operations on multiple items in one or more tables atomically.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contai
 ---
 
 # ContainerStateChange
-<a name="API_ContainerStateChange"></a>
 
 An object that represents a change in state for a container.
 

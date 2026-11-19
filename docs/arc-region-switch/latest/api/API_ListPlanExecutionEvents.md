@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListPla
 ---
 
 # ListPlanExecutionEvents
-<a name="API_ListPlanExecutionEvents"></a>
 
 Lists the events that occurred during a plan execution. These events provide a detailed timeline of the execution process.
 

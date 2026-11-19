@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteHe
 ---
 
 # DeleteHealthCheck
-<a name="API_DeleteHealthCheck"></a>
 
 Deletes a health check.
 

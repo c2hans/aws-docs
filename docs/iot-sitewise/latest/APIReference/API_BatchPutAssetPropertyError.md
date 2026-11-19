@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchPutAssetPropertyError
-<a name="API_BatchPutAssetPropertyError"></a>
 
 Contains error information from updating a batch of asset property values.
 

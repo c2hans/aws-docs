@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 ---
 
 # Fine-tuning large language models in healthcare
-<a name="fine-tuning"></a>
 
 The fine-tuning approach described in this section supports compliance with ethical and regulatory guidelines and promotes the responsible use of AI systems in healthcare. It is designed to generate insights that are accurate and private. Generative AI is revolutionizing healthcare delivery, but off-the-shelf models often fall short in clinical environments where accuracy is critical and compliance is non-negotiable. Fine-tuning foundation models with domain-specific data bridges this gap. It helps you create AI systems that speak the language of medicine while adhering to strict regulatory standards. However, the path to successful fine-tuning requires careful navigation of healthcare's unique challenges: protecting sensitive data, justifying AI investments with measurable outcomes, and maintaining clinical relevance in fast-evolving medical landscapes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetDataQuali
 ---
 
 # BatchGetDataQualityResultV2
-<a name="API_BatchGetDataQualityResultV2"></a>
 
 Retrieves a list of data quality results for the specified result IDs. You can specify up to 100 result IDs in a single request.
 

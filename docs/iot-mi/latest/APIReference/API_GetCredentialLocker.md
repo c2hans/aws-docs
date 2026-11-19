@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetCreden
 ---
 
 # GetCredentialLocker
-<a name="API_GetCredentialLocker"></a>
 
 Get information on an existing credential locker
 

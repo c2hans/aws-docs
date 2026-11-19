@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FMSS
 ---
 
 # FMSServiceRolePolicy
-<a name="FMSServiceRolePolicy"></a>
 
 **Description**: Access policy to allow FM service linked role to perform FM-related actions on FM-managed resources within a customer AWS Organization account.
 

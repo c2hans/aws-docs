@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateDocumentDefaultVersion
-<a name="API_UpdateDocumentDefaultVersion"></a>
 
 Set the default version of a document.
 

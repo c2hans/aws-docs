@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentTypeListItem
-<a name="API_DocumentTypeListItem"></a>
 
 Document type for each page in the document.
 

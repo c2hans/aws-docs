@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # Shard
-<a name="API_Shard"></a>
 
 Represents a uniquely identified group of change records within a change data capture stream for Amazon Keyspaces.
 

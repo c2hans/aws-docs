@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Generate videos from text prompts with Wan2.2 on Deadline Cloud
-<a name="examples-jb-wan22-video"></a>
 
 The [wan22\_video\_generation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/wan22_video_generation) job bundle on the GitHub website generates short video clips from a text prompt using Wan2.2, an open video generation model. Each task renders one independent clip with its own seed, so a single job fans out across workers and returns a set of variations on the same prompt.
 

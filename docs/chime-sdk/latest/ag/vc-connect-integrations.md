@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/vc-connect-integrati
 ---
 
 # Amazon Chime SDK Voice Connector and Amazon Connect Customer integrations
-<a name="vc-connect-integrations"></a>
 
 In some scenarios, you can use Amazon Chime SDK Voice Connector as part of an Amazon Connect Customer architecture. However, these integrations are tightly controlled, and an Amazon Connect specialist must validate them.
 

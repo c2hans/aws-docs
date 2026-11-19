@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateIamRoleFromResource
-<a name="API_DisassociateIamRoleFromResource"></a>
 
 Disassociates an AWS Identity and Access Management (IAM) service role from a specified resource to disable AWS service integration.
 

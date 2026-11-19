@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Download prebuilt packages of the Network Flow Monitor agent by using the command line
-<a name="CloudWatch-NetworkFlowMonitor-agents-download-agent-commandline"></a>
 
 You can use the command line to install the Network Flow Monitor agent as a package in Amazon Linux 2023, or download and install prebuilt packages of the Network Flow Monitor agent.
 

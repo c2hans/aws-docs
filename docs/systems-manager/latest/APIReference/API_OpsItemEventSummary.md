@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemEventSummary
-<a name="API_OpsItemEventSummary"></a>
 
 Summary information about an OpsItem event or that associated an OpsItem with a related item.
 

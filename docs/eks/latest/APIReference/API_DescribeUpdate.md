@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpda
 ---
 
 # DescribeUpdate
-<a name="API_DescribeUpdate"></a>
 
 Describes an update to an Amazon EKS resource.
 

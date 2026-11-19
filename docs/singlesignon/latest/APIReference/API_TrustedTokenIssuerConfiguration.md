@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Tru
 ---
 
 # TrustedTokenIssuerConfiguration
-<a name="API_TrustedTokenIssuerConfiguration"></a>
 
 A structure that describes the configuration of a trusted token issuer. The structure and available settings are determined by the type of the trusted token issuer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # S3Source
-<a name="API_S3Source"></a>
 
  Amazon S3 location of a JSONL file containing dataset examples.
 

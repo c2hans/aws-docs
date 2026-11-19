@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Well-Architected Framework issues by improvement plan item
-<a name="dashboard-issues-by-plan-item"></a>
 
 The **Well-Architected Framework issues by improvement plan item** section displays the improvement plan items for all your workloads. You can filter the items based on pillar and severity.
 

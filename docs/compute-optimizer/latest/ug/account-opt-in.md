@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/account-opt-
 ---
 
 # Opting in to AWS Compute Optimizer
-<a name="account-opt-in"></a>
 
 Use the following procedure to opt in your account, or the accounts within your organization, to AWS Compute Optimizer. You can opt in using the Compute Optimizer console or the AWS Command Line Interface (AWS CLI).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Media
 ---
 
 # Media
-<a name="API_Media"></a>
 
 Describes the Amazon S3 location of the media file you want to use in your request.
 

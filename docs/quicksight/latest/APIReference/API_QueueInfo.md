@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Queue
 ---
 
 # QueueInfo
-<a name="API_QueueInfo"></a>
 
 Information about a queued dataset SPICE ingestion.
 

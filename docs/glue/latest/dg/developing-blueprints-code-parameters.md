@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-cod
 ---
 
 # Specifying blueprint parameters
-<a name="developing-blueprints-code-parameters"></a>
 
 The configuration file contains blueprint parameter specifications in a `parameterSpec` JSON object. `parameterSpec` contains one or more parameter objects.
 

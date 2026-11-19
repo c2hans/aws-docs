@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job_stuck_in_runn
 ---
 
 # Common causes of jobs stuck in RUNNABLE without a `statusReason`
-<a name="job_stuck_in_runnable_common_causes"></a>
 
 In case you did not receive an event from CloudWatch Events or you received the unknown reason event, here are some common causes for this issue.
 

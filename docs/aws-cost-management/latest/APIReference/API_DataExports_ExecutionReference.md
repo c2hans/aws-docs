@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ExecutionReference
-<a name="API_DataExports_ExecutionReference"></a>
 
 The reference for the data export update.
 

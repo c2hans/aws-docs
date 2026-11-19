@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeRegistry
-<a name="API_DescribeRegistry"></a>
 
 Describes the settings for a registry. The replication configuration for a repository can be created or updated with the [PutReplicationConfiguration](API_PutReplicationConfiguration.md) API action.
 

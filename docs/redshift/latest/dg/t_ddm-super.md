@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/t_ddm-super.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Using dynamic data masking with SUPER data type paths
-<a name="t_ddm-super"></a>
 
  Amazon Redshift supports attaching dynamic data masking policies to paths of SUPER type columns. For more information about the SUPER data type, see [Semi-structured data in Amazon Redshift](super-overview.md).
 

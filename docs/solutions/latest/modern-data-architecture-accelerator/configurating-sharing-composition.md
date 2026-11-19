@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Configuration sharing and composition
-<a name="configurating-sharing-composition"></a>
 
 MDAA supports:
 + Sharing configurations across multiple domains and environments

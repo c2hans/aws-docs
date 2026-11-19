@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launchv2-vers
 ---
 
 # EC2Launch v2 version histories
-<a name="ec2launchv2-versions"></a>
 
 **Topics**
 + [EC2Launch v2 version history](#ec2launchv2-version-history)

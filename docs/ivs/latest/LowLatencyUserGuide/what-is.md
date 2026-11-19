@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/what-is.h
 ---
 
 # What is Amazon IVS Low-Latency Streaming?
-<a name="what-is"></a>
 
 Amazon Interactive Video Service (IVS) is a managed, live-video streaming service that allows you to:
 + Create channels and start streaming in minutes.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # Overview of the Landing Zone Accelerator
-<a name="lza-overview"></a>
 
 In order to build a landing zone in AWS that conforms to the ﻿Defense Information Systems Agency (DISA) Secure Cloud Computing Architecture ﻿(SCCA), you must have certain elements in place to help you meet the minimum requirements. AWS has created the [Landing Zone Accelerator (LZA)](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/solution-overview.html) to help you deploy a landing zone that conforms to the necessary requirements. Using the LZA solution, you can deploy the environment by using a set of configuration files. These configuration files help you focus on the delivery of an environment instead of learning each individual AWS service and how to deploy it.
 

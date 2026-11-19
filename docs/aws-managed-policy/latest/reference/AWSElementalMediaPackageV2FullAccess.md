@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaPackageV2FullAccess
-<a name="AWSElementalMediaPackageV2FullAccess"></a>
 
 **Description**: Provides full access to AWS Elemental MediaPackageV2 resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/cannot-create-fs.
 ---
 
 # Creating an FSx for Lustre file system fails
-<a name="cannot-create-fs"></a>
 
 There are a number of potential causes when a file system creation request fails, as described in the following topics.
 

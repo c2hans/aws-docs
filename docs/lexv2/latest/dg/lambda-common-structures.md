@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/lambda-common-structures
 ---
 
 # Common structures in an AWS Lambda function for Amazon Lex V2
-<a name="lambda-common-structures"></a>
 
 Within the Lambda response, there are a number of structures that recur. Details about these common structures are provided in this section.
 

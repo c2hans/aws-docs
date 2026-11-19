@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/aut
 ---
 
 # Automating Performance in CI/CD
-<a name="automating-performance-cicd"></a>
 
 Performance testing delivers the most value when it runs automatically on every change, not as a manual gate before major releases. The "Test After Every Change" principle requires pipeline integration that makes performance results as visible as unit test results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/key-policy.html
 ---
 
 # Key policy for voice analytics
-<a name="key-policy"></a>
 
 Key policies control access to your customer managed key. Every customer managed key must have exactly one key policy, with policy statements that determine who can use the key and how they can use it. When you create your key, you can specify a key policy. For more information, see [ Working with key policies](https://docs.aws.amazon.com/kms/latest/developerguide/programming-key-policies.html) in the *AWS Key Management Service Developer Guide*.
 

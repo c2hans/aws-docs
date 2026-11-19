@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # CreateOAuth2TokenRequestBody
-<a name="API_dataplane-signin_CreateOAuth2TokenRequestBody"></a>
 
 The request body for creating an OAuth 2.0 token. Supports both the authorization code and refresh token flows, selected by the `grant_type` parameter.
 

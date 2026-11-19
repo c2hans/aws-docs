@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-cmk-key
 ---
 
 # Create a KMS key in an AWS CloudHSM key store
-<a name="create-cmk-keystore"></a>
 
 After you have created an AWS CloudHSM key store, you can create AWS KMS keys in your key store. They must be [symmetric encryption KMS keys](symm-asymm-choose-key-spec.md#symmetric-cmks) with key material that AWS KMS generates. You cannot create [asymmetric KMS keys](symmetric-asymmetric.md), [HMAC KMS keys](hmac.md) or KMS keys with [imported key material](importing-keys.md) in a custom key store. Also, you cannot use symmetric encryption KMS keys in a custom key store to generate asymmetric data key pairs. KMS cannot communicate over IPv6 with AWS CloudHSM key stores.
 

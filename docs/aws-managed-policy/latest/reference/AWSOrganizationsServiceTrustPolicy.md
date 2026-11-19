@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSO
 ---
 
 # AWSOrganizationsServiceTrustPolicy
-<a name="AWSOrganizationsServiceTrustPolicy"></a>
 
 **Description**: A policy to allow AWS Organizations to share trust with other approved AWS services for the purpose of simplifying customer configuration.
 

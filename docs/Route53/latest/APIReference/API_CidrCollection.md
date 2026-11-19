@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CidrColl
 ---
 
 # CidrCollection
-<a name="API_CidrCollection"></a>
 
 A complex type that identifies a CIDR collection.
 

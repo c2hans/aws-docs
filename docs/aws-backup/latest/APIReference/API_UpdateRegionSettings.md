@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateRegionSettings
-<a name="API_UpdateRegionSettings"></a>
 
 Updates the current service opt-in settings for the Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Activ
 ---
 
 # Create and activate a root CA programmatically
-<a name="JavaApi-ActivateRootCA"></a>
 
 This Java sample shows how to activate a root CA using the following AWS Private CA API actions:
 + [CreateCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthority.html)

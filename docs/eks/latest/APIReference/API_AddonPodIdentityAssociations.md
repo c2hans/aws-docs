@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonPodIden
 ---
 
 # AddonPodIdentityAssociations
-<a name="API_AddonPodIdentityAssociations"></a>
 
 A type of EKS Pod Identity association owned by an Amazon EKS add-on.
 

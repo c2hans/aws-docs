@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Funct
 ---
 
 # FunctionAssociations
-<a name="API_FunctionAssociations"></a>
 
 A list of CloudFront functions that are associated with a cache behavior in a CloudFront distribution. Your functions must be published to the `LIVE` stage to associate them with a cache behavior.
 

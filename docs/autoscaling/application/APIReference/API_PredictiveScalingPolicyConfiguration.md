@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredictiveScalingPolicyConfiguration
-<a name="API_PredictiveScalingPolicyConfiguration"></a>
 
  Represents a predictive scaling policy configuration. Predictive scaling is supported on Amazon ECS services.
 

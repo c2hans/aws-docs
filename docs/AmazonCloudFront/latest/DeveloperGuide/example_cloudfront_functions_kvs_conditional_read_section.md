@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event
-<a name="example_cloudfront_functions_kvs_conditional_read_section"></a>
 
 The following code example shows how to rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event.
 

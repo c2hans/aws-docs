@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EFSVolumeC
 ---
 
 # EFSVolumeConfiguration
-<a name="API_EFSVolumeConfiguration"></a>
 
 This is used when you're using an Amazon Elastic File System file system for job storage. For more information, see [Amazon EFS Volumes](https://docs.aws.amazon.com/batch/latest/userguide/efs-volumes.html) in the * AWS Batch User Guide*.
 

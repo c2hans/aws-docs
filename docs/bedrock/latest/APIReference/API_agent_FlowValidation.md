@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowValidation
-<a name="API_agent_FlowValidation"></a>
 
 Contains information about validation of the flow.
 

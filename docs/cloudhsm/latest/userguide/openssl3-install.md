@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/openssl3-insta
 ---
 
 # OpenSSL Dynamic Engine for AWS CloudHSM Client SDK 3
-<a name="openssl3-install"></a>
 
 The AWS CloudHSM OpenSSL Dynamic Engine enables you to offload cryptographic operations to your CloudHSM cluster through the OpenSSL API.
 

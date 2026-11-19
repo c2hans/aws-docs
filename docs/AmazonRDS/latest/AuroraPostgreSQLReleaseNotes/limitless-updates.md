@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLRelease
 ---
 
 # Amazon Aurora PostgreSQL Limitless Database updates
-<a name="limitless-updates"></a>
 
 Here you can find information about versions of Amazon Aurora PostgreSQL Limitless Database. Limitless Database provides automated horizontal scaling to process millions of write transactions per second and manages petabytes of data while maintaining the simplicity of operating inside a single database. With Limitless Database, you can focus on building high-scale applications without having to build and maintain complex solutions for scaling your data across multiple DB instances to support your workloads.
 

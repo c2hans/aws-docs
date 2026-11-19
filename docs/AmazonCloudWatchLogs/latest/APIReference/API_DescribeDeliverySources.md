@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeDeliverySources
-<a name="API_DescribeDeliverySources"></a>
 
 Retrieves a list of the delivery sources that have been created in the account.
 

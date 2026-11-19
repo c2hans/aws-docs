@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSW
 ---
 
 # AWSWellArchitectedAgentResourceScanningServiceRolePolicy
-<a name="AWSWellArchitectedAgentResourceScanningServiceRolePolicy"></a>
 
 **Description**: Grants the AWS Well-Architected Agent read-only access to AWS resource configurations, security settings, and operational data to generate optimization recommendations
 

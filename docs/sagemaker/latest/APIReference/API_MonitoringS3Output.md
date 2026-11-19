@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringS3Output
-<a name="API_MonitoringS3Output"></a>
 
 Information about where and how you want to store the results of a monitoring job.
 

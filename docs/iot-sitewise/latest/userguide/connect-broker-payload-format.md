@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/connect-br
 ---
 
 # Message payload format for the EMQX broker on AWS IoT SiteWise Edge
-<a name="connect-broker-payload-format"></a>
 
 For the IoT SiteWise publisher component to consume data from your external application and publish it to the AWS IoT SiteWise cloud, the payload sent to the broker must meet specific requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_KafkaSchemaValidat
 ---
 
 # KafkaSchemaValidationConfig
-<a name="API_KafkaSchemaValidationConfig"></a>
 
 Specific schema validation configuration settings that tell Lambda the message attributes you want to validate and filter using your schema registry.
 

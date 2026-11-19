@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # PathElement
-<a name="API_PathElement"></a>
 
 A single element in a path through the JSON representation of a policy.
 

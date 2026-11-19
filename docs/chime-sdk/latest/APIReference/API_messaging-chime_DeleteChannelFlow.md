@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DeleteChannelFlow
-<a name="API_messaging-chime_DeleteChannelFlow"></a>
 
 Deletes a channel flow, an irreversible process. This is a developer API.
 

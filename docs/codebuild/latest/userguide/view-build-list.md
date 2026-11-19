@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/view-build-li
 ---
 
 # View a list of build IDs in AWS CodeBuild
-<a name="view-build-list"></a>
 
 You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to view a list of build IDs for builds managed by CodeBuild.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Asg.htm
 ---
 
 # Asg
-<a name="API_Asg"></a>
 
 Configuration for an Amazon EC2 Auto Scaling group used in a Region switch plan.
 

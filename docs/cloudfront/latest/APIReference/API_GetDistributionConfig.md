@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetDi
 ---
 
 # GetDistributionConfig
-<a name="API_GetDistributionConfig"></a>
 
 Get the configuration information about a distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BackfillError.htm
 ---
 
 # BackfillError
-<a name="API_BackfillError"></a>
 
 A list of errors that can occur when registering partition indexes for an existing table.
 

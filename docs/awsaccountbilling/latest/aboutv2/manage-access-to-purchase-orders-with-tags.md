@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Use tags to manage access to purchase orders
-<a name="manage-access-to-purchase-orders-with-tags"></a>
 
 You can use attribute-based access control (ABAC) to manage access to your purchase orders. When you create your purchase orders, you can tags with key-value pairs. You can then create IAM policies and specify the tags. For example, if you add the `project` key and assign it a value of `test`, your IAM policies can explicitly allow or deny access to any purchase order that has this tag.
 

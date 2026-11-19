@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetApplication
-<a name="API_connect-app-integrations_GetApplication"></a>
 
 Get an Application resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DataSour
 ---
 
 # DataSourceIntrospectionResult
-<a name="API_DataSourceIntrospectionResult"></a>
 
 Represents the output of a `DataSourceIntrospectionResult`. This is the populated result of a `GetDataSourceIntrospection` operation.
 

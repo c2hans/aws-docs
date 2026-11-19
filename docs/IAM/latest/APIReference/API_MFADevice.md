@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_MFADevice.ht
 ---
 
 # MFADevice
-<a name="API_MFADevice"></a>
 
 Contains information about an MFA device.
 

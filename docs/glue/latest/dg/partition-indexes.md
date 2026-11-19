@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/partition-indexes.html
 ---
 
 # Creating partition indexes
-<a name="partition-indexes"></a>
 
 Over time, hundreds of thousands of partitions get added to a table. The [GetPartitions API](https://docs.aws.amazon.com/glue/latest/webapi/API_GetPartitions.html) is used to fetch the partitions in the table. The API returns partitions that match the expression provided in the request.
 

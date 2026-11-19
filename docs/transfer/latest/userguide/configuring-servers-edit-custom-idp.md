@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/configuring-se
 ---
 
 # Edit identity provider configuration
-<a name="configuring-servers-edit-custom-idp"></a>
 
 You can change your server's identity provider type from any type to any other type. The available identity provider types are:
 + **Service managed** – Store user credentials within the service

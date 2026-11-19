@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.htm
 ---
 
 # Dashboards in Connect Customer for getting contact center performance data
-<a name="dashboards"></a>
 
 Understanding your contact center at the most granular level is key to improving performance and lowering costs. You can use the Connect Customer visual dashboards to understand the performance of your contact center.
 

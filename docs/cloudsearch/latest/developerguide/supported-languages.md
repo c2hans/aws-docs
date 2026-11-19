@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/suppor
 ---
 
 # Supported Languages in Amazon CloudSearch
-<a name="supported-languages"></a>
 
 |  |  |  |
 | --- |--- |--- |

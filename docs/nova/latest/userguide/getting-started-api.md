@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/getting-started-ap
 ---
 
 # Getting started with the API
-<a name="getting-started-api"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. Amazon Nova 2 is now available with new models and enhanced capabilities. For information on how to get started with Amazon Nova 2, visit [Getting started with the API](https://docs.aws.amazon.com/nova/latest/nova2-userguide/getting-started-api.html).

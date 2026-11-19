@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/work-with-s
 ---
 
 # Use StreamManagerClient to work with streams
-<a name="work-with-streams"></a>
 
 User-defined Greengrass components that run on the Greengrass core device can use the `StreamManagerClient` object in the Stream Manager SDK to create streams in [stream manager](manage-data-streams.md) and then interact with the streams. When a component creates a stream, it defines the AWS Cloud destinations, prioritization, and other export and data retention policies for the stream. To send data to stream manager, components append the data to the stream. If an export destination is defined for the stream, stream manager exports the stream automatically.
 

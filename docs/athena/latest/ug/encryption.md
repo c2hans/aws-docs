@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/encryption.html
 ---
 
 # Encryption at rest
-<a name="encryption"></a>
 
 You can run queries in Amazon Athena on encrypted data in Amazon S3 in the same Region and across a limited number of Regions. You can also encrypt the query results in Amazon S3 and the data in the AWS Glue Data Catalog.
 

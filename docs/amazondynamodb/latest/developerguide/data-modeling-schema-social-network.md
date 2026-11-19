@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dat
 ---
 
 # Social network schema design in DynamoDB
-<a name="data-modeling-schema-social-network"></a>
 
 ## Social network business use case
 <a name="data-modeling-schema-social-network-use-case"></a>

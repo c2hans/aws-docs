@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceReque
 ---
 
 # WorkspaceRequest
-<a name="API_WorkspaceRequest"></a>
 
 Describes the information used to create a WorkSpace.
 

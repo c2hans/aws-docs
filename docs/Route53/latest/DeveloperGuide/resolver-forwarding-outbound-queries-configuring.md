@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-f
 ---
 
 # Configuring outbound forwarding
-<a name="resolver-forwarding-outbound-queries-configuring"></a>
 
 To configure VPC Resolver to forward DNS queries that originate in your VPC to your network, perform the following procedures.
 

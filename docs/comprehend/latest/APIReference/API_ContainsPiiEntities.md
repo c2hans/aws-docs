@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Conta
 ---
 
 # ContainsPiiEntities
-<a name="API_ContainsPiiEntities"></a>
 
 Analyzes input text for the presence of personally identifiable information (PII) and returns the labels of identified PII entity types such as name, address, bank account number, or phone number.
 

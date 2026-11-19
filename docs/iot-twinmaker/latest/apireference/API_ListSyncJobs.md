@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListSyncJobs
-<a name="API_ListSyncJobs"></a>
 
 List all SyncJobs.
 

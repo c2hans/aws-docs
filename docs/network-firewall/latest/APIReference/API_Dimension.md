@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # Dimension
-<a name="API_Dimension"></a>
 
 The value to use in an Amazon CloudWatch custom metric dimension. This is used in the `PublishMetrics` [CustomAction](API_CustomAction.md). A CloudWatch custom metric dimension is a name/value pair that's part of the identity of a metric.
 

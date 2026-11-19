@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/integrate-
 ---
 
 # Integrate products and services in Image Builder
-<a name="integrate-products-services"></a>
 
 EC2 Image Builder integrates with AWS Marketplace and other AWS services and applications to help you create robust, secure custom machine images.
 

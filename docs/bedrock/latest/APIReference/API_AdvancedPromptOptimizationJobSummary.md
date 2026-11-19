@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Advanced
 ---
 
 # AdvancedPromptOptimizationJobSummary
-<a name="API_AdvancedPromptOptimizationJobSummary"></a>
 
 A summary of an advanced prompt optimization job.
 

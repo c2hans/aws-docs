@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListReplaceP
 ---
 
 # ListReplacePermissionAssociationsWork
-<a name="API_ListReplacePermissionAssociationsWork"></a>
 
 Retrieves the current status of the asynchronous tasks performed by AWS RAM when you perform the [ReplacePermissionAssociationsWork](API_ReplacePermissionAssociationsWork.md) operation.
 

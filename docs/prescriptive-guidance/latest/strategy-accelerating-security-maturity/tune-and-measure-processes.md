@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Tune and measure processes
-<a name="tune-and-measure-processes"></a>
 
 The [agile approach](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/approach.html) provides more flexibility and innovation, and it can help you quickly test and implement new ideas. Divide your security teams into specialized roles, such as incident responders and vulnerability managers. The roles should align with the categories in the following image, which correspond to the capabilities in the AWS Cloud Adoption Framework (AWS CAF). The agile approach encourages teams to think big, invent, simplify, and identify potential gaps in security. This results in the creation of a backlog of user stories or roadmaps for future improvements.
 

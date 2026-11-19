@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # A tool use demo illustrating how to connect AI models on Amazon Bedrock with a custom tool or API
-<a name="bedrock-runtime_example_bedrock-runtime_Scenario_ToolUseDemo_AmazonNova_section"></a>
 
 The following code examples show how to build a typical interaction between an application, a generative AI model, and connected tools or APIs to mediate interactions between the AI and the outside world. It uses the example of connecting an external weather API to the AI model so it can provide real-time weather information based on user input.
 

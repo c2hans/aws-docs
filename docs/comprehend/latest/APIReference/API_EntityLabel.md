@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityLabel
-<a name="API_EntityLabel"></a>
 
 Specifies one of the label or labels that categorize the personally identifiable information (PII) entity being analyzed.
 

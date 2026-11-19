@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-multimodal-t
 ---
 
 # Testing and querying multimodal knowledge bases
-<a name="kb-multimodal-test-and-query"></a>
 
 After ingesting your multimodal content, you can test and query your knowledge base using the console or API. The available query types depend on your chosen processing approach.
 

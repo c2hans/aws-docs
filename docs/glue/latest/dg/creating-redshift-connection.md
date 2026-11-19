@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-redshift-connect
 ---
 
 # Creating an Amazon Redshift connection
-<a name="creating-redshift-connection"></a>
 
 ## Permissions needed
 <a name="creating-redshift-connection-permissions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-e
 ---
 
 # Use cases
-<a name="vector-search-examples"></a>
 
 Following are use cases of vector search.
 

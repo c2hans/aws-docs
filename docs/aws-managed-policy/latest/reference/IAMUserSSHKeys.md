@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMU
 ---
 
 # IAMUserSSHKeys
-<a name="IAMUserSSHKeys"></a>
 
 **Description**: Provides the ability for an IAM user to manage their own SSH keys.
 

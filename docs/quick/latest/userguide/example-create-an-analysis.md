@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/example-create-an
 ---
 
 # Tutorial: Create an AWS Quick Sight analysis
-<a name="example-create-an-analysis"></a>
 
 In the following short tutorial, you create an analysis, add a visual using AutoGraph, and add another visual by choosing a specific visual type. This procedure builds on the dataset that you create and prepare in [Tutorial: Create a prepared AWS Quick Sight dataset](example-prepared-data-set.md).
 

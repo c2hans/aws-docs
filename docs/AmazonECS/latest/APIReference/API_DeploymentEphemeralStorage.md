@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentEphemeralStorage
-<a name="API_DeploymentEphemeralStorage"></a>
 
 The amount of ephemeral storage to allocate for the deployment.
 

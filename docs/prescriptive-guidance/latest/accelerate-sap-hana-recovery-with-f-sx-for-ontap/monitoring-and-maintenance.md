@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Monitoring and maintenance
-<a name="monitoring-and-maintenance"></a>
 
 Backup architecture success requires ongoing operational oversight. This section establishes the monitoring, maintenance, and validation procedures that you require. These maintain production backup SLAs and ensure recovery capability remains valid throughout the system's lifecycle.
 

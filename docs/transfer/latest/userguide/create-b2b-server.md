@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-ser
 ---
 
 # Configuring AS2
-<a name="create-b2b-server"></a>
 
 To create an AS2-enabled server, you must also specify the following components:
 + **Agreements** – Bilateral trading partner *agreements*, or partnerships, define the relationship between the two parties that are exchanging messages (files). To define an agreement, Transfer Family combines server, local profile, partner profile, and certificate information. Transfer Family AS2-inbound processes use agreements.

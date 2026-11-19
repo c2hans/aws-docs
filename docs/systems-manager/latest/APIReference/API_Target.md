@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Target
-<a name="API_Target"></a>
 
 An array of search criteria that targets managed nodes using a key-value pair that you specify.
 

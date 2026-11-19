@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-agents-su
 ---
 
 # Subscribe to EC2 Windows launch agent notifications
-<a name="launch-agents-subscribe-notifications"></a>
 
 Amazon SNS can notify you when new versions of the EC2 launch agents are released. Use the following procedure to subscribe to these notifications.
 

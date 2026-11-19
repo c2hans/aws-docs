@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollSystem
-<a name="API_RouteTollSystem"></a>
 
 Toll systems are authorities that collect payments for the toll.
 

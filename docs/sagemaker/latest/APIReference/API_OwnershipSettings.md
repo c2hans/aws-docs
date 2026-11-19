@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Owners
 ---
 
 # OwnershipSettings
-<a name="API_OwnershipSettings"></a>
 
 The collection of ownership settings for a space.
 

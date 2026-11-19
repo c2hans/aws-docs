@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Running a Spark application with Apache Livy for Amazon EMR on EKS
-<a name="job-runs-apache-livy-run-spark"></a>
 
 Before you can run a Spark application with Apache Livy, make sure that you have completed the steps in [Setting up Apache Livy for Amazon EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-runs-apache-livy-setup.html) and [Getting started with Apache Livy for Amazon EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-runs-apache-livy-install.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateA
 ---
 
 # UpdateActionTarget
-<a name="API_UpdateActionTarget"></a>
 
 Updates the name and description of a custom action target in Security Hub CSPM.
 

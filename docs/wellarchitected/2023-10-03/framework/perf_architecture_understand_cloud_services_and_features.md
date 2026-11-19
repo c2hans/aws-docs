@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF01-BP01 Learn about and understand available cloud services and features
-<a name="perf_architecture_understand_cloud_services_and_features"></a>
 
  Continually learn about and discover available services and configurations that help you make better architectural decisions and improve performance efficiency in your workload architecture.
 

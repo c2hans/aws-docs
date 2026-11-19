@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-ne
 ---
 
 # Network traffic rules for integrating with Amazon EMR
-<a name="emr-ranger-network"></a>
 
 When Apache Ranger is integrated with your EMR cluster, the cluster needs to communicate with additional servers and AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/publishing-a-prev
 ---
 
 # Publishing a previous version of an AWS Quick Sight dashboard
-<a name="publishing-a-previous-dashboard-version"></a>
 
 Each time you make updates to an analysis and publish it, a new version of the AWS Quick Sight dashboard is created. To revert back to a previous version of a dashboard, you can search for it under the dashboard’s **Version History** and publish the former version you are interested in. Each dashboard can store up to 1000 versions that are never deleted. Use the following procedure to publish a previous version of a dashboard.
 

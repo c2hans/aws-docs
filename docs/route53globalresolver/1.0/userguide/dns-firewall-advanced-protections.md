@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/dns-
 ---
 
 # DNS Firewall Advanced protections
-<a name="dns-firewall-advanced-protections"></a>
 
 DNS Firewall Advanced detects suspicious DNS queries based on known threat signatures in DNS queries. You can specify a threat type in a rule that you use in a DNS Firewall rule, associated with a DNS View.
 

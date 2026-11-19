@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-channel-clo
 ---
 
 # Creating a channel by cloning
-<a name="creating-channel-clone"></a>
 
 Cloning lets you use an existing channel as the basis for a new channel. When you clone an existing channel, all sections of the **Create channel** page are populated with the data from the cloned channel, *except* for the following:
 + The input sections. These sections are always empty in the cloned channel.

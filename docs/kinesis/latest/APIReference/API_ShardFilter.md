@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ShardFil
 ---
 
 # ShardFilter
-<a name="API_ShardFilter"></a>
 
 The request parameter used to filter out the response of the `ListShards` API.
 

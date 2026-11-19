@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelBiasJobDefinition
-<a name="API_DescribeModelBiasJobDefinition"></a>
 
 Returns a description of a model bias job definition.
 

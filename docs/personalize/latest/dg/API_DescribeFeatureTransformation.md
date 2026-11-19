@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeFeatur
 ---
 
 # DescribeFeatureTransformation
-<a name="API_DescribeFeatureTransformation"></a>
 
 Describes the given feature transformation.
 

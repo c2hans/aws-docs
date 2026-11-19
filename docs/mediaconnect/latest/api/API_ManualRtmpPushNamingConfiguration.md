@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ManualRtmpPu
 ---
 
 # ManualRtmpPushNamingConfiguration
-<a name="API_ManualRtmpPushNamingConfiguration"></a>
 
 The manual RTMP naming configuration, where you specify the application and stream names.
 

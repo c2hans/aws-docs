@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunBatchListItem.ht
 ---
 
 # RunBatchListItem
-<a name="API_RunBatchListItem"></a>
 
 A single run entry returned by `ListRunsInBatch`.
 

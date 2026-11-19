@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchUpdat
 ---
 
 # BatchUpdateCaseIdentifier
-<a name="API_connect-cases_BatchUpdateCaseIdentifier"></a>
 
 Identifies a case to update in a `BatchUpdateCase` request.
 

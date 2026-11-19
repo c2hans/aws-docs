@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # SubscriptionInfo
-<a name="API_route53resolver_SubscriptionInfo"></a>
 
 Identifies the AWS Marketplace product that backs a partner-managed rule type. Returned as part of [FirewallRuleTypeDefinition](API_route53resolver_FirewallRuleTypeDefinition.md) when the rule type variant requires an active customer subscription to the named product.
 

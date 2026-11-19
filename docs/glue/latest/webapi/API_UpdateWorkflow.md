@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateWorkflow.ht
 ---
 
 # UpdateWorkflow
-<a name="API_UpdateWorkflow"></a>
 
 Updates an existing workflow.
 

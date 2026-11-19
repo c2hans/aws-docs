@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/bidirectional-streaming-
 ---
 
 # Sending text and receiving audio
-<a name="bidirectional-streaming-lifecycle"></a>
 
 A bidirectional streaming session involves opening a connection, sending text and receiving audio concurrently, then closing the stream when input is complete. The following sections describe each phase in detail.
 

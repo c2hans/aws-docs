@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_ListTrust
 ---
 
 # ListTrustedIdentityPropagationApplicationsForConsole
-<a name="API_ListTrustedIdentityPropagationApplicationsForConsole"></a>
 
 Lists an IAM Identity Center application that represents the AWS Management Console.
 

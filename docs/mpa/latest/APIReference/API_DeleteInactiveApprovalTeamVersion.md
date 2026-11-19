@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_DeleteInacti
 ---
 
 # DeleteInactiveApprovalTeamVersion
-<a name="API_DeleteInactiveApprovalTeamVersion"></a>
 
 Deletes an inactive approval team. For more information, see [Team health](https://docs.aws.amazon.com/mpa/latest/userguide/mpa-health.html) in the *Multi-party approval User Guide*.
 

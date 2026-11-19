@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/runningMin-functi
 ---
 
 # runningMin
-<a name="runningMin-function"></a>
 
 The `runningMin` function calculates a running minimum for a measure based on the specified dimensions and sort orders.
 

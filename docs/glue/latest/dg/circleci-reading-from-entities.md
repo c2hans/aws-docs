@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/circleci-reading-from-ent
 ---
 
 # Reading from CircleCI entities
-<a name="circleci-reading-from-entities"></a>
 
 **Prerequisite**
 

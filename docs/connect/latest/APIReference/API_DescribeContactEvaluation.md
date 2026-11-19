@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeContactEvaluation
-<a name="API_DescribeContactEvaluation"></a>
 
 Describes a contact evaluation in the specified Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cache
 ---
 
 # CachePolicyConfig
-<a name="API_CachePolicyConfig"></a>
 
 A cache policy configuration.
 

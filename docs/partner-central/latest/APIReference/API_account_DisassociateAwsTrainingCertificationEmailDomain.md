@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # DisassociateAwsTrainingCertificationEmailDomain
-<a name="API_account_DisassociateAwsTrainingCertificationEmailDomain"></a>
 
 Removes the association between an email domain and AWS training and certification for the partner account.
 

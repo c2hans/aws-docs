@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-stagi
 ---
 
 # Update a model package stage and status example (boto3)
-<a name="model-registry-staging-construct-update-boto3"></a>
 
 To update a model package stage and status, you will need to assume an execution role with the relevant permissions. The following provides an example on how you can update the stage status using the [`UpdateModelPackage`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateModelPackage.html) API using AWS SDK for Python (Boto3).
 

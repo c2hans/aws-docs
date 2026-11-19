@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # DocumentAclGroup
-<a name="API_agent-runtime_DocumentAclGroup"></a>
 
 A group entry within a document access control list (ACL) condition.
 

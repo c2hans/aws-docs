@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam-pol
 ---
 
 # Policy to grant read-only access to Compute Optimizer Automation for standalone AWS accounts
-<a name="iam_example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.4_section"></a>
 
 The following code example shows how to This permission-based policy grants read-only access to Compute Optimizer Automation for standalone AWS accounts
 

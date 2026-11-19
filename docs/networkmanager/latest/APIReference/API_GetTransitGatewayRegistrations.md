@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetTransitGatewayRegistrations
-<a name="API_GetTransitGatewayRegistrations"></a>
 
 Gets information about the transit gateway registrations in a specified global network.
 

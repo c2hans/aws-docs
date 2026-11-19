@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/package-group-ori
 ---
 
 # Package group origin controls
-<a name="package-group-origin-controls"></a>
 
 Package origin controls are used to configure how package versions can enter a domain. You can set up origin controls on a package group to configure how versions of every package associated with the package group can enter specified repositories in the domain.
 

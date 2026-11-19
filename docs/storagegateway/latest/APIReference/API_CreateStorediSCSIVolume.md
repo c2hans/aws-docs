@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CreateStorediSCSIVolume
-<a name="API_CreateStorediSCSIVolume"></a>
 
 Creates a volume on a specified gateway. This operation is only supported in the stored volume gateway type.
 

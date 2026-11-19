@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingTypeClassification
-<a name="API_FindingTypeClassification"></a>
 
 Contains information about how a finding type compares with normal behavior.
 

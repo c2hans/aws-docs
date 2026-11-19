@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSStorageSavingsOpportunityAfterDiscounts
-<a name="API_RDSStorageSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for Amazon RDS storage recommendations after applying Savings Plans discounts.
 

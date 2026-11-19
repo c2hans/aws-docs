@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-s
 ---
 
 # Delete a channel using the MediaTailor console
-<a name="channel-assembly-starting-stopping-channels"></a>
 
  To delete your channel, complete the following procedure. <a name="delete-channel"></a>
 

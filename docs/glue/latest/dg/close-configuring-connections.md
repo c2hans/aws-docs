@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/close-configuring-connect
 ---
 
 # Configuring Close CRM connections
-<a name="close-configuring-connections"></a>
 
 Close CRM connections use basic authentication. You store the credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

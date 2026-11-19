@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Crea
 ---
 
 # CreateVolume
-<a name="API_CreateVolume"></a>
 
 Creates a new volume for WorkSpace Instances.
 

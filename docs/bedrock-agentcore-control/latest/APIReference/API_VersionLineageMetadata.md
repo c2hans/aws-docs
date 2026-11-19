@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # VersionLineageMetadata
-<a name="API_VersionLineageMetadata"></a>
 
 The version lineage metadata that tracks parent versions and creation source. Supports git-like two-parent merges for branch management.
 

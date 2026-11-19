@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListObjectTypeAttributes
-<a name="API_connect-customer-profiles_ListObjectTypeAttributes"></a>
 
 Fetch the possible attribute values given the attribute name.
 

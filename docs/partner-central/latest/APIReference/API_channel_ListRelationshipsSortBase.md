@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListRelationshipsSortBase
-<a name="API_channel_ListRelationshipsSortBase"></a>
 
 Base sorting configuration for relationships.
 

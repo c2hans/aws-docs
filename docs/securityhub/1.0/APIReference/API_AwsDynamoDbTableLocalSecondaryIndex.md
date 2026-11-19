@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableLocalSecondaryIndex
-<a name="API_AwsDynamoDbTableLocalSecondaryIndex"></a>
 
 Information about a local secondary index for a DynamoDB table.
 

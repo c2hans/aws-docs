@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-arrappe
 ---
 
 # JSON.ARRAPPEND
-<a name="json-arrappend"></a>
 
 Appends one or more values to the array values at the path.
 

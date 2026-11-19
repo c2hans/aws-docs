@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Tr
 ---
 
 # Treatment
-<a name="API_Treatment"></a>
 
 Describes a treatment in an experiment, including its traffic allocation weight and feature flag value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mqcs.html
 ---
 
 # Working with MQCS
-<a name="mqcs"></a>
 
 MediaLive creates a media quality confidence score (MQCS) for the outputs in the following types of output groups:
 + CMAF Ingest output groups, when the destination for the outputs is an AWS Elemental MediaPackage channel.

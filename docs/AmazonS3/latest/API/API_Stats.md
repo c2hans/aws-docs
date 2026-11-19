@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Stats.html
 ---
 
 # Stats
-<a name="API_Stats"></a>
 
 Container for the stats details.
 

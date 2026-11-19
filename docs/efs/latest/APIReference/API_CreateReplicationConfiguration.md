@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_CreateReplic
 ---
 
 # CreateReplicationConfiguration
-<a name="API_CreateReplicationConfiguration"></a>
 
 Creates a replication conﬁguration to either a new or existing EFS file system. For more information, see [Amazon EFS replication](https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html) in the *Amazon EFS User Guide*. The replication configuration specifies the following:
 +  **Source file system** – The EFS file system that you want to replicate.

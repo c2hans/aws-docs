@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # S3
-<a name="sam-property-function-s3"></a>
 
 The object describing an `S3` event source type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-analytics.h
 ---
 
 # Data analytics
-<a name="rise-data-analytics"></a>
 
 SAP customers need business insights in real-time to react to business changes and leverage untapped business opportunities. This needs to be realized with modern, cloud-native solutions to shift from overnight data processing to real-time analytics. Leveraging AWS and SAP solutions, customers can leverage purpose-built analytics services to gain competitive advantage in their respective industries.
 

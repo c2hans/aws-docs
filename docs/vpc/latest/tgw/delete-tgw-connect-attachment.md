@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/delete-tgw-connect-attach
 ---
 
 # Delete a Connect attachment in AWS Transit Gateway
-<a name="delete-tgw-connect-attachment"></a>
 
 If you no longer need a Connect attachment, you can delete it. You must first delete any Connect peers for the attachment.
 

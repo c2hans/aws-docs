@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/s3-tables-cross
 ---
 
 # Accessing shared Amazon S3 tables
-<a name="s3-tables-cross-account-sharing"></a>
 
  After you grant cross-account permissions on a database or table in the S3 tables catalog, to access the resources, you need to create resource links to the shared databases and tables.
 

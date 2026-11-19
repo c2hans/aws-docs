@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateClientVpnTargetNetwork
-<a name="API_DisassociateClientVpnTargetNetwork"></a>
 
 Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:
 + The route that was automatically added for the VPC is deleted

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 ---
 
 # Migrating your data to ElastiCache Serverless
-<a name="migration-to-serverless-procedure"></a>
 
 This page walks you through an online migration from a self-managed Valkey or Redis OSS source on Amazon EC2 to an ElastiCache Serverless for Valkey cache. You can use the ElastiCache console or the AWS CLI. You create the migration, redirect your application to the migration endpoint, start the data sync, and complete the cutover.
 

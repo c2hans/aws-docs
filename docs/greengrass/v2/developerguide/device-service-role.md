@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/device-serv
 ---
 
 # Authorize core devices to interact with AWS services
-<a name="device-service-role"></a>
 
 AWS IoT Greengrass core devices use the AWS IoT Core credentials provider to authorize calls to AWS services. The AWS IoT Core credentials provider enables devices to use their X.509 certificates as the unique device identity to authenticate AWS requests. This eliminates the need to store an AWS access key ID and secret access key on your AWS IoT Greengrass core devices. For more information, see [Authorizing direct calls to AWS services](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html) in the *AWS IoT Core Developer Guide*.
 

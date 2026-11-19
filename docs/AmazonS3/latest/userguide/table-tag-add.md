@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/table-tag-add.
 ---
 
 # Adding a tag to a table
-<a name="table-tag-add"></a>
 
 You can add tags to Amazon S3 tables and modify these tags. For more information about tagging tables, see [Using tags with S3 tables](table-tagging.md).
 

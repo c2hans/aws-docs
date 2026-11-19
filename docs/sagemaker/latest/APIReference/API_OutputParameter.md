@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Output
 ---
 
 # OutputParameter
-<a name="API_OutputParameter"></a>
 
 An output parameter of a pipeline step.
 

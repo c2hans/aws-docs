@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monit
 ---
 
 # Using a service-linked role for Network Synthetic Monitor
-<a name="monitoring-using-service-linked-roles-nw"></a>
 
  Network Synthetic Monitor uses the following service-linked role for the permissions that it requires to call other AWS services on your behalf:
 + [`AWSServiceRoleForNetworkMonitor`](#security-iam-awsmanpol-AWSServiceRoleForNetworkMonitor)

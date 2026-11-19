@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Field
 ---
 
 # FieldPatterns
-<a name="API_FieldPatterns"></a>
 
 A complex data type that includes the field patterns to match for field-level encryption.
 

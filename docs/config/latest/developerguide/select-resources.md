@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/select-reso
 ---
 
 # Recording AWS Resources with AWS Config
-<a name="select-resources"></a>
 
 AWS Config continuously detects when supported resource types are created, changed, or deleted. AWS Config records these events as configuration items (CIs).
 

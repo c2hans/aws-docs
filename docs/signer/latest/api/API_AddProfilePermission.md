@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermissi
 ---
 
 # AddProfilePermission
-<a name="API_AddProfilePermission"></a>
 
 Adds cross-account permissions to a signing profile.
 

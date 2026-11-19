@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/tags.ht
 ---
 
 # Tags
-<a name="tags"></a>
 
 ## URI
 <a name="tags-url"></a>

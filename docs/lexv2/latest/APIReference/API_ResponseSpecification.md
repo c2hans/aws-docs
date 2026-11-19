@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ResponseSp
 ---
 
 # ResponseSpecification
-<a name="API_ResponseSpecification"></a>
 
 Specifies a list of message groups that Amazon Lex uses to respond the user input.
 

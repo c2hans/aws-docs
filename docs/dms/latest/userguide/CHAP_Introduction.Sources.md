@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.S
 ---
 
 # Sources for AWS DMS
-<a name="CHAP_Introduction.Sources"></a>
 
 You can use different source data stores in different AWS DMS features. The following sections contain the lists of supported source data stores for each AWS DMS feature.
 

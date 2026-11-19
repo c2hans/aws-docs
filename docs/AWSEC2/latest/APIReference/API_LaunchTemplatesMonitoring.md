@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplatesMonitoring
-<a name="API_LaunchTemplatesMonitoring"></a>
 
 Describes the monitoring for the instance.
 

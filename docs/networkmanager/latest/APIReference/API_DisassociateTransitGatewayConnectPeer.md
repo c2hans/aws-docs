@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DisassociateTransitGatewayConnectPeer
-<a name="API_DisassociateTransitGatewayConnectPeer"></a>
 
 Disassociates a transit gateway Connect peer from a device and link.
 

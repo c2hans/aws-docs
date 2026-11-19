@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Implementation priorities
-<a name="implementation-priorities-1"></a>
 
  Network connectivity is typically implemented in the early phases of a cloud journey. As you evolve your network strategy, the following items should be prioritized.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Deployment AssociatedScope
-<a name="aws-properties-networksecuritymanager-deployment-associatedscope"></a>
 
 References the scope that a deployment protects. Use the `AssociatedScopeList` property of the `AWS::NetworkSecurityManager::Deployment` resource to associate a scope with a deployment.
 

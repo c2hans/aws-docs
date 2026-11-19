@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CreateCh
 ---
 
 # CreateChimeWebhookConfiguration
-<a name="API_CreateChimeWebhookConfiguration"></a>
 
 Creates an Amazon Q Developer configuration for Amazon Chime.
 

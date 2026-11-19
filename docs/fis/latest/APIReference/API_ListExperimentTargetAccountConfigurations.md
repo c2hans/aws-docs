@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ListExperime
 ---
 
 # ListExperimentTargetAccountConfigurations
-<a name="API_ListExperimentTargetAccountConfigurations"></a>
 
 Lists the target account configurations of the specified experiment.
 

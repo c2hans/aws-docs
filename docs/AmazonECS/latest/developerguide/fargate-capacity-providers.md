@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-
 ---
 
 # Amazon ECS clusters for Fargate
-<a name="fargate-capacity-providers"></a>
 
 With Amazon ECS on AWS Fargate capacity providers, you can use both Fargate and Fargate Spot capacity with your Amazon ECS tasks.
 

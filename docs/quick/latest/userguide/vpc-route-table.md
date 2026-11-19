@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-route-table.h
 ---
 
 # Route table
-<a name="vpc-route-table"></a>
 
 To use VPC peering or Direct Connect to reach an on-premises database instance, update the route table that's associated with the VPC you're using with AWS Quick. For more information on route tables, see [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide.*
 

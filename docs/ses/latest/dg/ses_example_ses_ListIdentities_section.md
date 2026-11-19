@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_ListIdenti
 ---
 
 # Use `ListIdentities` with an AWS SDK or CLI
-<a name="ses_example_ses_ListIdentities_section"></a>
 
 The following code examples show how to use `ListIdentities`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeSpace
-<a name="API_DescribeSpace"></a>
 
 Describes an Amazon QuickSight space.
 

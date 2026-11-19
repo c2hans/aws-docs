@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # Performing planned maintenance
-<a name="sap-hana-pacemaker-rhel-ops-planned-maint"></a>
 
 When performing maintenance on SAP HANA systems in a cluster environment, it’s important to understand how the cluster interacts with SAP HANA system replication. Planned maintenance activities should be conducted carefully to prevent unnecessary failovers or cluster interventions.
 

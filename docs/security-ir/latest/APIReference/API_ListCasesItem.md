@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListCasesItem
-<a name="API_ListCasesItem"></a>
 
 ## Contents
 <a name="API_ListCasesItem_Contents"></a>

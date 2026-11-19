@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-dat
 ---
 
 # Manage data storage in AWS IoT SiteWise
-<a name="manage-data-storage"></a>
 
 You can configure AWS IoT SiteWise to save your data in the following storage tiers:
 

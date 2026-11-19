@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-pos
 ---
 
 # Example: Browser-Based Upload using HTTP POST (Using AWS Signature Version 4)
-<a name="sigv4-post-example"></a>
 
 This section shows an example of using an HTTP POST request to upload content directly to Amazon S3.
 

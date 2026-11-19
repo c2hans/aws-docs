@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # United States
-<a name="nx-reg-short-us"></a>
 
 To send messages that use a short code in the United States, you must complete the United States short code registration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectorAdditionalConfigurationResult
-<a name="API_DetectorAdditionalConfigurationResult"></a>
 
 Information about the additional configuration.
 

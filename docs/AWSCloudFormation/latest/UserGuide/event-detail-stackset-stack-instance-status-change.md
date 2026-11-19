@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/event
 ---
 
 # StackSet Stack Instance Status Change event detail
-<a name="event-detail-stackset-stack-instance-status-change"></a>
 
 Below are the detail fields for StackSet stack instance status events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET: Get the Attributes of a Conductor Redundancy Group Member
-<a name="set-up-members-conductor-redundancy-group-get-attributes"></a>
 
 Get the attributes of the specified member in the specified Conductor redundancy group.
 

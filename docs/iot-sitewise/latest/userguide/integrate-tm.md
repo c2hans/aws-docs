@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/integrate-
 ---
 
 # Integrate AWS IoT SiteWise and AWS IoT TwinMaker
-<a name="integrate-tm"></a>
 
 Integrating with AWS IoT TwinMaker grants access to robust functionality in AWS IoT SiteWise, such as AWS IoT SiteWise data retrieval `ExecuteQuery` API and advanced asset search in the AWS IoT SiteWise console. To integrate the services and use these features, you must first enable the integration.
 

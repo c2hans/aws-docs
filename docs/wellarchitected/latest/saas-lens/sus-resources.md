@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/sus-res
 ---
 
 # Resources
-<a name="sus-resources"></a>
 
 Refer to the following resources to learn more about AWS best practices for sustainability.
 

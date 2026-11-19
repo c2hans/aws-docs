@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ag
 ---
 
 # AgentKnowledgeBase
-<a name="API_agent_AgentKnowledgeBase"></a>
 
 Contains details about a knowledge base that is associated with an agent.
 

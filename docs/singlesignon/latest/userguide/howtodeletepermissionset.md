@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtodelet
 ---
 
 # Delete permission sets in IAM Identity Center
-<a name="howtodeletepermissionset"></a>
 
 Before you can delete a permission set from IAM Identity Center, you should [remove](howtoremovepermissionset.md) it from all AWS accounts that use the permission set. To check existing user and group access, see [View and change a permission set](howtoviewandchangepermissionset.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Content-as-Config
-<a name="extend-content-as-config"></a>
 
 AVX uses file-based corpora: adding a new DTC guide, owner manual, or service bulletin requires editing files in `corpora/`, committing the change, and redeploying the full agent runtime. To update content without a code deploy, move the corpora into a Bedrock Knowledge Base backed by an S3 source bucket.
 

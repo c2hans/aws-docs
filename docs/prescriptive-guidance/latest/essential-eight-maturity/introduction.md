@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Reaching Essential Eight maturity on AWS: Security and compliance for Australian organizations
-<a name="introduction"></a>
 
 *James Kingsmill and Maddie Marum, Amazon Web Services*
 

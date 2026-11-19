@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # MULTIPLY
-<a name="recipe-actions.functions.MULTIPLY"></a>
 
 Multiplies two numbers and returns the result in a new column.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CloudWatchLogs
-<a name="sam-property-function-cloudwatchlogs"></a>
 
 The object describing a `CloudWatchLogs` event source type.
 

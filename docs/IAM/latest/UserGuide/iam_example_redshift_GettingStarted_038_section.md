@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_redshif
 ---
 
 # Get started with serverless data warehouses using the CLI
-<a name="iam_example_redshift_GettingStarted_038_section"></a>
 
 The following code example shows how to:
 + Use secrets-manager CreateSecret

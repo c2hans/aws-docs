@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 ---
 
 # Choosing AWS security, identity, and governance services
-<a name="choosing-aws-security-services"></a>
 
 **Taking the first step**
 

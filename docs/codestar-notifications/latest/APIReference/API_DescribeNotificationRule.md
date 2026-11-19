@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # DescribeNotificationRule
-<a name="API_DescribeNotificationRule"></a>
 
 Returns information about a specified notification rule.
 

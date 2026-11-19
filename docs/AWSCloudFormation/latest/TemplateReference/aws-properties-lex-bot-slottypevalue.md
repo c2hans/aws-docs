@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotTypeValue
-<a name="aws-properties-lex-bot-slottypevalue"></a>
 
 Each slot type can have a set of values. Each `SlotTypeValue` represents a value that the slot type can take.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInsightsPath PathFilter
-<a name="aws-properties-ec2-networkinsightspath-pathfilter"></a>
 
 Describes a set of filters for a path analysis. Use path filters to scope the analysis when there can be multiple resulting paths.
 

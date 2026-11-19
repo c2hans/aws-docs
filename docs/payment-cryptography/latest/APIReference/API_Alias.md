@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # Alias
-<a name="API_Alias"></a>
 
 Contains information about an alias.
 

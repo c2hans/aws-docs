@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_TextSeg
 ---
 
 # TextSegment
-<a name="API_TextSegment"></a>
 
 Provides information about a text extract in a chat response that can be attributed to a source document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/storage-index-r
 ---
 
 # Neptune online index rebuild
-<a name="storage-index-rebuild"></a>
 
  With online index rebuild, you can defragment Neptune indexes and reclaim unused storage space while your database stays fully operational. This lets you optimize storage costs and improve query performance without taking your database offline. Over time, insert, update, and delete operations create gaps of unused space within data pages, which fragments the indexes. Fragmentation keeps the `VolumeBytesUsed` metric high even after you delete data. It also increases I/O costs, because the same logical data spreads across more physical storage pages. An online index rebuild compacts the indexes to reclaim this space and reduce fragmentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisFi
 ---
 
 # KinesisFirehoseOutputUpdate
-<a name="API_KinesisFirehoseOutputUpdate"></a>
 
 For a SQL-based Kinesis Data Analytics application, when updating an output configuration using the [UpdateApplication](API_UpdateApplication.md) operation, provides information about a Kinesis Data Firehose delivery stream that is configured as the destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-con
 ---
 
 # The results of different types of conversions
-<a name="color-space-conversion-results"></a>
 
 Following is information about how Elemental Live handles the different types of conversion of the color space.
 

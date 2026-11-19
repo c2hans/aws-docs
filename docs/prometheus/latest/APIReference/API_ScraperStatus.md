@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Scrap
 ---
 
 # ScraperStatus
-<a name="API_ScraperStatus"></a>
 
 The `ScraperStatus` structure contains status information about the scraper.
 

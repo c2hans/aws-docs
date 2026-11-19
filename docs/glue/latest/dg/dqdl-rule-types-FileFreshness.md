@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-FileFresh
 ---
 
 # FileFreshness
-<a name="dqdl-rule-types-FileFreshness"></a>
 
  FileFreshness ensures your data files are fresh based on the condition you provide. It uses your files' last modified time to ensure that data files or the entire folder is up-to-date.
 

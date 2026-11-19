@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveAction
-<a name="API_agent-runtime_AgenticRetrieveAction"></a>
 
 An action taken during agentic retrieval.
 

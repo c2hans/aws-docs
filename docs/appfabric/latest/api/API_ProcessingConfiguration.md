@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ProcessingConfi
 ---
 
 # ProcessingConfiguration
-<a name="API_ProcessingConfiguration"></a>
 
 Contains information about how ingested data is processed.
 

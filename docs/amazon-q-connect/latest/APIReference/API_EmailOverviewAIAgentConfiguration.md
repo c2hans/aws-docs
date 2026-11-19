@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # EmailOverviewAIAgentConfiguration
-<a name="API_amazon-q-connect_EmailOverviewAIAgentConfiguration"></a>
 
 Configuration settings for the EMAIL\_OVERVIEW AI agent including prompt ID and locale settings.
 

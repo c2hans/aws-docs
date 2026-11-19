@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateInboundE
 ---
 
 # CreateInboundExternalLink
-<a name="API_CreateInboundExternalLink"></a>
 
 Creates an inbound external link.
 

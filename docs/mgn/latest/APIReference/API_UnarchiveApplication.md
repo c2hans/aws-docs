@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UnarchiveApp
 ---
 
 # UnarchiveApplication
-<a name="API_UnarchiveApplication"></a>
 
 Unarchive application.
 

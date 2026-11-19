@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorCheckRefreshStatus
-<a name="API_TrustedAdvisorCheckRefreshStatus"></a>
 
 The refresh status of a Trusted Advisor check.
 

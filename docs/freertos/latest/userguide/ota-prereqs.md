@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-prereqs.ht
 ---
 
 # OTA update prerequisites
-<a name="ota-prereqs"></a>
 
 To use over-the-air (OTA) updates, do the following:
 + Check the [Prerequisites for OTA updates using HTTP](ota-http-freertos.md) or the [Prerequisites for OTA updates using MQTT](ota-mqtt-freertos.md).

@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # DescribeRecommendationExportJobs
-<a name="API_DescribeRecommendationExportJobs"></a>
 
 Describes recommendation export jobs created in the last seven days.
 
-Use the [ExportAutoScalingGroupRecommendations](API_ExportAutoScalingGroupRecommendations.md) or [ExportEC2InstanceRecommendations](API_ExportEC2InstanceRecommendations.md) actions to request an export of your recommendations. Then use the [DescribeRecommendationExportJobs](#API_DescribeRecommendationExportJobs) action to view your export jobs.
+Use the [ExportAutoScalingGroupRecommendations](API_ExportAutoScalingGroupRecommendations.md) or [ExportEC2InstanceRecommendations](API_ExportEC2InstanceRecommendations.md) actions to request an export of your recommendations. Then use the [DescribeRecommendationExportJobs](API_DescribeRecommendationExportJobs.md) action to view your export jobs.
 
 ## Request Syntax
 <a name="API_DescribeRecommendationExportJobs_RequestSyntax"></a>

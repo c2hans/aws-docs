@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/failed-callbac
 ---
 
 # Failed callback attempts in Connect Customer
-<a name="failed-callback-attempt"></a>
 
 If an agent doesn't accept an offered callback, it doesn't count as an failed callback attempt. Rather, the routing engine offers the callback to the next available agent, until an agent accepts.
 

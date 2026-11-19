@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Opera
 ---
 
 # AWS Backup search
-<a name="API_Operations_AWS_Backup_Search"></a>
 
 The following actions are supported by AWS Backup search:
 +  [GetSearchJob](API_BKS_GetSearchJob.md)

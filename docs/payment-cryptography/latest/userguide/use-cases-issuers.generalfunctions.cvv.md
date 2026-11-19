@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # Generate or verify a CVV for a given card
-<a name="use-cases-issuers.generalfunctions.cvv"></a>
 
 [CVV](terminology.md#terms.cvv) or CVV1 is a value that is traditionally embedded in a cards magnetic stripe. It is not the same as CVV2 (visible to the cardholder and for use for online purchases).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/create-clust
 ---
 
 # Create a cluster
-<a name="create-cluster"></a>
 
 The following is an example of a request to create a cluster, and the response.
 

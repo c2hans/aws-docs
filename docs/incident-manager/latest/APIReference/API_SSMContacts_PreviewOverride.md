@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # PreviewOverride
-<a name="API_SSMContacts_PreviewOverride"></a>
 
 Information about contacts and times that an on-call override replaces.
 

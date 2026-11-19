@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemRelatedItemSummary
-<a name="API_OpsItemRelatedItemSummary"></a>
 
 Summary information about related-item resources for an OpsItem.
 

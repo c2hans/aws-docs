@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-members-of-mpts-delete-spts-program-example"></a>
 
 Delete the SPTS program with the ID 4 from the MPTS with the ID 2.
 

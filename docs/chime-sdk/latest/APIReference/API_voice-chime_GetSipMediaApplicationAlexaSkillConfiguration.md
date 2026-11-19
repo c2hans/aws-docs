@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetSipMediaApplicationAlexaSkillConfiguration
-<a name="API_voice-chime_GetSipMediaApplicationAlexaSkillConfiguration"></a>
 
 Gets the Alexa Skill configuration for the SIP media application.
 

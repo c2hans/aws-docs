@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateTrustedEntitySet
-<a name="API_UpdateTrustedEntitySet"></a>
 
 Updates the trusted entity set associated with the specified `trustedEntitySetId`.
 

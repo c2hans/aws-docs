@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_RefreshStati
 ---
 
 # RefreshStatisticsIdMap
-<a name="API_RefreshStatisticsIdMap"></a>
 
 Statistics for `REFRESH` mode.
 

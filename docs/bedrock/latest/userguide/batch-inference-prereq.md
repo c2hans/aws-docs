@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 ---
 
 # Prerequisites for batch inference
-<a name="batch-inference-prereq"></a>
 
 To perform batch inference, you must fulfill the following prerequisites:
 

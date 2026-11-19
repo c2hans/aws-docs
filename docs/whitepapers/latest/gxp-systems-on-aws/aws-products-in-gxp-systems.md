@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/aw
 ---
 
 # AWS products in GxP systems
-<a name="aws-products-in-gxp-systems"></a>
 
  With limited technical guidance from regulatory and industry bodies, this section aims to describe some of the best practices we've seen customers adopting when using cloud services to meet their regulatory compliance needs.
 

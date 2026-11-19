@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AssociateTagOptionWithResource
-<a name="API_AssociateTagOptionWithResource"></a>
 
 Associate the specified TagOption with the specified portfolio or product.
 

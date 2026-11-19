@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/delete
 ---
 
 # Deleting a schema mapping
-<a name="delete-schema-mapping"></a>
 
 You can't delete a schema mapping when it's associated to a matching workflow. You must first remove the schema mapping from all associated matching workflows before you can delete it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/performance.html
 ---
 
 # FSx for Windows File Server performance
-<a name="performance"></a>
 
 FSx for Windows File Server offers file system configuration options to meet a variety of performance needs. Following is an overview of Amazon FSx file system performance, with a discussion of the available performance configuration options and useful performance tips.
 

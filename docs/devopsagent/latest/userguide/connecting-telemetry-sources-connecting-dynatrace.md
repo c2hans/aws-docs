@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 ---
 
 # Connecting Dynatrace
-<a name="connecting-telemetry-sources-connecting-dynatrace"></a>
 
 ## Built-in, 2-way integration
 <a name="built-in-2-way-integration"></a>

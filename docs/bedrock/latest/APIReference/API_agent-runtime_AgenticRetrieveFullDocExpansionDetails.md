@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveFullDocExpansionDetails
-<a name="API_agent-runtime_AgenticRetrieveFullDocExpansionDetails"></a>
 
 Details of a full document expansion action.
 

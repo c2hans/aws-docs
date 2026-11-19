@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetECSServiceRecommendationProjectedMetrics
-<a name="API_GetECSServiceRecommendationProjectedMetrics"></a>
 
  Returns the projected metrics of Amazon ECS service recommendations.
 

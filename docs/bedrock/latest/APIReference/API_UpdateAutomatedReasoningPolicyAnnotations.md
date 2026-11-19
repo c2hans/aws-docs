@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateAu
 ---
 
 # UpdateAutomatedReasoningPolicyAnnotations
-<a name="API_UpdateAutomatedReasoningPolicyAnnotations"></a>
 
 Updates the annotations for an Automated Reasoning policy build workflow. This allows you to modify extracted rules, variables, and types before finalizing the policy.
 

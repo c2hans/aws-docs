@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfFin
 ---
 
 # OcsfFindingIdentifier
-<a name="API_OcsfFindingIdentifier"></a>
 
 Provides a standard to identify security findings using OCSF.
 

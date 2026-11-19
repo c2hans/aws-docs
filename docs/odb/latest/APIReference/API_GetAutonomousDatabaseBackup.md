@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetAutonomou
 ---
 
 # GetAutonomousDatabaseBackup
-<a name="API_GetAutonomousDatabaseBackup"></a>
 
 Gets information about a specific Autonomous Database backup.
 

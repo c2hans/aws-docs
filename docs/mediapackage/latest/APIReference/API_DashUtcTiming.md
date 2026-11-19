@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashUtcTiming
-<a name="API_DashUtcTiming"></a>
 
 Determines the type of UTC timing included in the DASH Media Presentation Description (MPD).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Aut
 ---
 
 # Using the AWS CLI to manage DynamoDB auto scaling
-<a name="AutoScaling.CLI"></a>
 
 Instead of using the AWS Management Console, you can use the AWS Command Line Interface (AWS CLI) to manage Amazon DynamoDB auto scaling. The tutorial in this section demonstrates how to install and configure the AWS CLI for managing DynamoDB auto scaling. In this tutorial, you do the following:
 + Create a DynamoDB table named `TestTable`. The initial throughput settings are 5 read capacity units and 5 write capacity units.

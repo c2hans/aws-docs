@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateImageBuilder
-<a name="API_UpdateImageBuilder"></a>
 
 Updates the specified fields for the specified image builder. The image builder must be in the STOPPED state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/step-prepare-th
 ---
 
 # Step A: Prepare the png asset
-<a name="step-prepare-the-png-asset"></a>
 
 1. Create a file – Use a third-party process to convert an animation asset to a series of PNG files.
 

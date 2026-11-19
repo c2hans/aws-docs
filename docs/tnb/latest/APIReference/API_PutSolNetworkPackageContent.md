@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_PutSolNetwor
 ---
 
 # PutSolNetworkPackageContent
-<a name="API_PutSolNetworkPackageContent"></a>
 
 Uploads the contents of a network package.
 

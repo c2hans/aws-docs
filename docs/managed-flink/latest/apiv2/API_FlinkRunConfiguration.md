@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_FlinkRunC
 ---
 
 # FlinkRunConfiguration
-<a name="API_FlinkRunConfiguration"></a>
 
 Describes the starting parameters for a Managed Service for Apache Flink application.
 

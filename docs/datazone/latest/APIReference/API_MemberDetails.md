@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_MemberD
 ---
 
 # MemberDetails
-<a name="API_MemberDetails"></a>
 
 The details about a project member.
 

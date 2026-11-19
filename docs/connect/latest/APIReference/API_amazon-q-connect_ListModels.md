@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ListModels
-<a name="API_amazon-q-connect_ListModels"></a>
 
 Lists the models available to an Amazon Q in Connect assistant in the assistant's AWS Region. The available models are determined by the region of the specified assistant.
 

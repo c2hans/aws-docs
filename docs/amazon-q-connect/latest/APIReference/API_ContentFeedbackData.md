@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ContentFeedbackData
-<a name="API_amazon-q-connect_ContentFeedbackData"></a>
 
 Information about the feedback.
 

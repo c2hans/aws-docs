@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-vnf.html
 ---
 
 # AWS.VNF
-<a name="node-vnf"></a>
 
 Defines an AWS virtual network function (VNF) node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MouseDragResult
-<a name="API_MouseDragResult"></a>
 
 The result of a mouse drag action.
 

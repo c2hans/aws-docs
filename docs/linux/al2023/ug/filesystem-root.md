@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-root.html
 ---
 
 # `/` (The root directory)
-<a name="filesystem-root"></a>
 
  By default, AL2023 images are configured with a writable `/`, allowing privileged users to create new files and directories.
 

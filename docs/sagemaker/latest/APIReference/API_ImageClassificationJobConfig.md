@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ImageC
 ---
 
 # ImageClassificationJobConfig
-<a name="API_ImageClassificationJobConfig"></a>
 
 The collection of settings used by an AutoML job V2 for the image classification problem type.
 

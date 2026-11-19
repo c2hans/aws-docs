@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Assessment
-<a name="assessment"></a>
 
 Assessment of applications for containerization helps uncover all the dependencies and risks. Assessment also helps sort applications into priority buckets for modernization and migration.
 

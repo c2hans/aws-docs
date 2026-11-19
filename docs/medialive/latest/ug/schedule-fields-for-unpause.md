@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-for-
 ---
 
 # Fields for unpause
-<a name="schedule-fields-for-unpause"></a>
 
 In **Schedule action settings**, complete the following fields.
 

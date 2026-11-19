@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskOv
 ---
 
 # TaskOverride
-<a name="API_TaskOverride"></a>
 
 The overrides that are associated with a task.
 

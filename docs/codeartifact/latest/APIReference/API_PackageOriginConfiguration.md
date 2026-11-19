@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageOriginConfiguration
-<a name="API_PackageOriginConfiguration"></a>
 
 Details about the package origin configuration of a package.
 

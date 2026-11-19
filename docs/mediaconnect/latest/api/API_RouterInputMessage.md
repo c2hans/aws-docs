@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputM
 ---
 
 # RouterInputMessage
-<a name="API_RouterInputMessage"></a>
 
 A message associated with a router input, including a code and a message.
 

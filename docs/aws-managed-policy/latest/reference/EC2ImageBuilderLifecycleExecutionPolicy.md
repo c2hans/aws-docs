@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2I
 ---
 
 # EC2ImageBuilderLifecycleExecutionPolicy
-<a name="EC2ImageBuilderLifecycleExecutionPolicy"></a>
 
 **Description**: The EC2ImageBuilderLifecycleExecutionPolicy policy grants permissions for Image Builder to perform actions such as deprecate or delete Image Builder image resources and their underlying resources (AMIs, snapshots) to support automated rules for image lifecycle management tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/setup.html
 ---
 
 # Setting up Amazon DCV Access Console
-<a name="setup"></a>
 
 When setting up your Amazon DCV Access Console, you can choose whether you want to run the console on a single host or, if you choose, across a set of multiple hosts. Using multiple hosts can improve scalability and performance. The Console works with either configuration.
 

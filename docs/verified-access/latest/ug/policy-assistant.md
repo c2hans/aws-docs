@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/policy-assista
 ---
 
 # Verified Access policy assistant
-<a name="policy-assistant"></a>
 
 The Verified Access policy assistant is a tool in the Verified Access console that you can use to test and develop your polices. It presents the endpoint policy, the group policy, and the trust context on one screen, where you can test and make edits to the policies.
 

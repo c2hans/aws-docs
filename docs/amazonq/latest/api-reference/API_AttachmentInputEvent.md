@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Attachm
 ---
 
 # AttachmentInputEvent
-<a name="API_AttachmentInputEvent"></a>
 
 A file input event activated by a end user request to upload files into their web experience chat.
 

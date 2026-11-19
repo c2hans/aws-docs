@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeR
 ---
 
 # DescribeRemediationConfigurations
-<a name="API_DescribeRemediationConfigurations"></a>
 
 Returns the details of one or more remediation configurations.
 

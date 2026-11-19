@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Retry
 ---
 
 # RetryPolicyConfiguration
-<a name="API_RetryPolicyConfiguration"></a>
 
 The configuration of the retry policy that the job runs on.
 

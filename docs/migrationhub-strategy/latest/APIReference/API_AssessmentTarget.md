@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AssessmentTarget
-<a name="API_AssessmentTarget"></a>
 
 Defines the criteria of assessment.
 

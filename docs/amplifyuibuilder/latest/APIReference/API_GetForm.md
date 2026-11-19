@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # GetForm
-<a name="API_GetForm"></a>
 
 Returns an existing form for an Amplify app.
 

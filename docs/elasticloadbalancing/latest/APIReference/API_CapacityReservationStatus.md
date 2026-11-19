@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # CapacityReservationStatus
-<a name="API_CapacityReservationStatus"></a>
 
 The status of a capacity reservation.
 

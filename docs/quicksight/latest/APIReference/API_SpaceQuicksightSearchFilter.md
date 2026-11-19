@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Space
 ---
 
 # SpaceQuicksightSearchFilter
-<a name="API_SpaceQuicksightSearchFilter"></a>
 
 A filter to use when searching for spaces.
 

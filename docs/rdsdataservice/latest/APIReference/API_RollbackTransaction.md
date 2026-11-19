@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_R
 ---
 
 # RollbackTransaction
-<a name="API_RollbackTransaction"></a>
 
 Performs a rollback of a transaction. Rolling back a transaction cancels its changes.
 

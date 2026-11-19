@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Deltaintro.html
 ---
 
 # Introduction to Delta Lake
-<a name="Deltaintro"></a>
 
 Delta Lake is an open-source project that helps implement modern data lake architectures commonly built on Amazon S3. Delta Lake offers the following capabilities:
 + Atomic, consistent, isolated, durable (ACID) transactions on Spark. Readers see a consistent view of the table during a Spark job.

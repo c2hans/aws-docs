@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/natural.html
 ---
 
 # $natural
-<a name="natural"></a>
 
 The `$natural` operator in Amazon DocumentDB is used to sort the documents in their natural order, which is the order in which they were inserted into the collection. This is in contrast to the default sorting behavior, which is to sort the documents based on the values of the specified fields.
 

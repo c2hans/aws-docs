@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ne-aggregatio
 ---
 
 # $ne
-<a name="ne-aggregation"></a>
 
 The `$ne` aggregation operator compares two values and returns `true` if they are not equal, otherwise returns `false`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/aws-directory-s
 ---
 
 # AWS Directory Service
-<a name="aws-directory-service"></a>
 
 This guide provides security configuration requirements and implementation examples for AWS Directory Service in accordance with FedRAMP requirements.
 

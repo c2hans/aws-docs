@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Detailed guide for autodiscovery on Amazon ECS clusters
-<a name="ContainerInsights-Prometheus-Setup-autodiscovery-ecs"></a>
 
 Prometheus provides dozens of dynamic service-discovery mechanisms as described in [<scrape\_config>](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config). However there is no built-in service discovery for Amazon ECS. The CloudWatch agent adds this mechanism.
 

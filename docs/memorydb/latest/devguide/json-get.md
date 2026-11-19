@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-get.html
 ---
 
 # JSON.GET
-<a name="json-get"></a>
 
 Return the serialized JSON at one or multiple paths.
 

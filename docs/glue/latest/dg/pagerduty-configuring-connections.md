@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pagerduty-configuring-con
 ---
 
 # Configuring PagerDuty connections
-<a name="pagerduty-configuring-connections"></a>
 
 PagerDuty connections authenticate with a PagerDuty REST API key. OAuth access tokens aren't supported. You store the API key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

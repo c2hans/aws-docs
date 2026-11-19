@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Why use a cell-based architecture?
-<a name="why-to-use-a-cell-based-architecture"></a>
 
 These are the main advantages of a cell-based architecture.
 

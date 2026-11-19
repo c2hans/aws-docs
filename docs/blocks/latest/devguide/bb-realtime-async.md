@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-realtime-async
 ---
 
 # Real-time and async
-<a name="bb-realtime-async"></a>
 
 This section covers Blocks for real-time communication and background processing.
 

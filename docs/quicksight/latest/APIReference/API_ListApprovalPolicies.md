@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListA
 ---
 
 # ListApprovalPolicies
-<a name="API_ListApprovalPolicies"></a>
 
 Lists all approval policies in the specified Quick Sight account. The results are paginated. If the response includes a `NextToken` value, pass it in a subsequent call to retrieve the next set of results.
 

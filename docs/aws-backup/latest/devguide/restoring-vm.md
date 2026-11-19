@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-vm.
 ---
 
 # Restore a virtual machine using AWS Backup
-<a name="restoring-vm"></a>
 
 You can restore a virtual machine to VMware, VMware Cloud on AWS, VMware Cloud on AWS Outposts, an Amazon EBS volume, or [to an Amazon EC2 instance](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-ec2.html). Restoring (or migrating) a virtual machine to EC2 requires a license. By default, AWS will include a license (charges apply). For more information, see [Licensing options](https://docs.aws.amazon.com/vm-import/latest/userguide/licensing.html) in the *VM Import/Export User Guide*.
 

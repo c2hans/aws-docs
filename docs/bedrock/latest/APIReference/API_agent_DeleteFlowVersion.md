@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeleteFlowVersion
-<a name="API_agent_DeleteFlowVersion"></a>
 
 Deletes a version of a flow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/getting-start
 ---
 
 # Create a notification rule for a repository
-<a name="getting-started-repository"></a>
 
 You can create notification rules to send notifications about repository events that are important to you. The following steps show you how to set up a notification rule on a single repository event. These steps are written with the assumption that you have a repository configured in your AWS account.
 

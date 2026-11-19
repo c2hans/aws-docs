@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/aml2-kernel.html
 ---
 
 # AL2 supported kernels
-<a name="aml2-kernel"></a>
 
 **Supported kernel versions**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 ---
 
 # Step 1: Update your Amazon ECS application
-<a name="tutorial-ecs-update-the-ecs-application"></a>
 
  In this section, you update your Amazon ECS application with a new revision of its task definition. The updated revision adds a new key and tag pair. In [Step 3: Use the CodeDeploy console to deploy your application](tutorial-ecs-deployment-deploy.md), you deploy the updated version of your Amazon ECS application.
 

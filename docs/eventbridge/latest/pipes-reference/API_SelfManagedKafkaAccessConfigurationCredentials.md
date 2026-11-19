@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_S
 ---
 
 # SelfManagedKafkaAccessConfigurationCredentials
-<a name="API_SelfManagedKafkaAccessConfigurationCredentials"></a>
 
 The AWS Secrets Manager secret that stores your stream credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 ---
 
 # Content Domain 2: Security
-<a name="developer-associate-03-domain2"></a>
 
 **Topics**
 + [Task 2.1: Implement authentication and authorization mechanisms for applications and AWS services.](#dva-03-task2.1)

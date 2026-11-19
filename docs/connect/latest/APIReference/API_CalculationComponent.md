@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Calculat
 ---
 
 # CalculationComponent
-<a name="API_CalculationComponent"></a>
 
 Represents a component metric referenced in a custom metric calculation formula.
 

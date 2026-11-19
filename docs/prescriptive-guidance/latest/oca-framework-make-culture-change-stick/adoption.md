@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 6.2 Adoption management
-<a name="adoption"></a>
 
 ## Overview
 <a name="adoption-overview"></a>

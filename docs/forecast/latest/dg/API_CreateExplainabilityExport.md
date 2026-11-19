@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_CreateExplainabil
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # CreateExplainabilityExport
-<a name="API_CreateExplainabilityExport"></a>
 
 Exports an Explainability resource created by the [CreateExplainability](API_CreateExplainability.md) operation. Exported files are exported to an Amazon Simple Storage Service (Amazon S3) bucket.
 

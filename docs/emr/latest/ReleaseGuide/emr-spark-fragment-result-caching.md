@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-fragme
 ---
 
 # Spark Result Fragment Caching
-<a name="emr-spark-fragment-result-caching"></a>
 
 Amazon EMR 6.6.0 and higher include the optional Spark Result Fragment Caching feature that automatically caches result fragments. These result fragments are parts of results from subtrees of queries that are stored in an Amazon S3 bucket of your choosing. The stored query result fragments are reused on subsequent query executions, resulting in faster queries.
 

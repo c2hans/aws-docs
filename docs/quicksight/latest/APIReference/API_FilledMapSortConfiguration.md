@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Fille
 ---
 
 # FilledMapSortConfiguration
-<a name="API_FilledMapSortConfiguration"></a>
 
 The sort configuration of a `FilledMapVisual`.
 

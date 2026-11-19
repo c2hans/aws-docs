@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ecs-
 ---
 
 # Using IntelliSense for Amazon ECS task-definition files
-<a name="ecs-definition-files"></a>
 
 One of the things that you might do when working with Amazon Elastic Container Service (Amazon ECS) is to create task definitions, as described in [Creating a Task Definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-task-definition.html) from the *Amazon Elastic Container Service Developer Guide*. When you install the AWS Toolkit for Visual Studio Code, the installation includes IntelliSense functionality for Amazon ECS task-definition files.
 

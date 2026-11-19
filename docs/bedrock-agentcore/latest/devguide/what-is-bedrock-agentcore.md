@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-i
 ---
 
 # Overview
-<a name="what-is-bedrock-agentcore"></a>
 
 ## What is Amazon Bedrock AgentCore?
 <a name="what-is-bedrock-agentcore-overview"></a>

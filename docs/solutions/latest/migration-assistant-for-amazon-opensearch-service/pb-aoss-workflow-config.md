@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 6: Complete the workflow configuration
-<a name="pb-aoss-workflow-config"></a>
 
 Extend the configuration with the snapshot, metadata, and document-backfill settings. The snapshot repository and snapshot belong under `sourceClusters.source.snapshotInfo`. For a full-domain migration, set `documentBackfillConfig.indexAllowlist` to an empty array to include every index, and set `includeGlobalState` under the snapshot’s `createSnapshotConfig` so legacy and composable templates come across:
 

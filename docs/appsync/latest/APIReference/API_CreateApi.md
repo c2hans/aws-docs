@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateAp
 ---
 
 # CreateApi
-<a name="API_CreateApi"></a>
 
 Creates an `Api` object. Use this operation to create an AWS AppSync API with your preferred configuration, such as an Event API that provides real-time message publishing and message subscriptions over WebSockets.
 

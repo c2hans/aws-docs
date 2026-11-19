@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_DeleteQueue.
 ---
 
 # DeleteQueue
-<a name="API_DeleteQueue"></a>
 
 Deletes a job queue. If the compute node group associated with this queue isn't associated with any other queues, AWS PCS terminates all the compute nodes for this queue.
 

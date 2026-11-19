@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Greengrass CLI
-<a name="greengrass-cli-component"></a>
 
 The Greengrass CLI component (`aws.greengrass.Cli`) provides a local command-line interface that you can use on core devices to develop and debug components locally. The Greengrass CLI lets you create local deployments and restart components on the core device, for example.
 

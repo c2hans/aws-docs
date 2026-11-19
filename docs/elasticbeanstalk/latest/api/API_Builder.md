@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Builder.
 ---
 
 # Builder
-<a name="API_Builder"></a>
 
 The builder used to build the custom platform.
 

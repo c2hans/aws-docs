@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rip.html
 ---
 
 # .rip
-<a name="rip"></a>
 
 Used for websites dedicated to death and memorials. "RIP" is an acronym for "rest in peace."
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_EgressGatewa
 ---
 
 # EgressGatewayBridge
-<a name="API_EgressGatewayBridge"></a>
 
  Create a bridge with the egress bridge type. An egress bridge is a cloud-to-ground bridge. The content comes from an existing MediaConnect flow and is delivered to your premises.
 

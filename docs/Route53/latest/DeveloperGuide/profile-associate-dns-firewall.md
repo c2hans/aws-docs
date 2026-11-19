@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-as
 ---
 
 # Associate DNS Firewall rule groups to a Route 53 Profile
-<a name="profile-associate-dns-firewall"></a>
 
 For instructions for creating a rule group, see [Creating a rule group and rules](resolver-dns-firewall-rule-group-adding.md), and then choose a tab to associate DNS Firewall rule groups to a Route 53 Profile by using the Route 53 console, or AWS CLI.
 + [Console](#profile-rule-group-console)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Gateway Load Balancer North/South Inspection
-<a name="gwlb-north-south-inspection"></a>
 
 Publication date: **April 8, 2021 ([Diagram history](#ns-diagram-history))**
 

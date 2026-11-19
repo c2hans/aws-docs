@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListProgramManagementAccounts
-<a name="API_channel_ListProgramManagementAccounts"></a>
 
 Lists program management accounts based on specified criteria.
 

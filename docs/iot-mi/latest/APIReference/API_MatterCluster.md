@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_MatterClu
 ---
 
 # MatterCluster
-<a name="API_MatterCluster"></a>
 
 Describe a Matter cluster with an id, and the relevant attributes, commands, and events.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_HyperParameterTun
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # HyperParameterTuningJobConfig
-<a name="API_HyperParameterTuningJobConfig"></a>
 
 Configuration information for a hyperparameter tuning job. You specify this object in the [CreatePredictor](API_CreatePredictor.md) request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-data-transfers-
 ---
 
 # Understanding data transfer charges
-<a name="cur-data-transfers-charges"></a>
 
 You can identify your AWS data transfer charges using the [lineItem/UsageType](Lineitem-columns.md#Lineitem-details-U-UsageType) column of your AWS CUR.
 

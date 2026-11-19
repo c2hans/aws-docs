@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-start.html
 ---
 
 # Starting a flow
-<a name="flows-start"></a>
 
 After you create a flow, you must start the flow. You can also stop and restart a flow at any time.
 

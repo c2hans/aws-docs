@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Glo
 ---
 
 # Global tables - multi-active, multi-Region replication
-<a name="GlobalTables"></a>
 
 *Amazon DynamoDB global tables* is a fully managed, multi-Region, and multi-active database feature that provides easy to use data replication and fast local read and write performance for globally scaled applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/describe-server-dns-
 ---
 
 # describe-server-dns-mappings
-<a name="describe-server-dns-mappings"></a>
 
 Describe the currently available DCV Servers - DNS names mappings.
 

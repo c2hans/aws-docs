@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemUserJourneyUpdatedMetadata
-<a name="API_SystemUserJourneyUpdatedMetadata"></a>
 
 Metadata for a system user journey updated event.
 

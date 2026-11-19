@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBSnapshots
-<a name="API_DescribeDBSnapshots"></a>
 
 Returns information about DB snapshots. This API action supports pagination.
 

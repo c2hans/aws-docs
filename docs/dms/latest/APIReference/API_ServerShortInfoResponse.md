@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ServerShortI
 ---
 
 # ServerShortInfoResponse
-<a name="API_ServerShortInfoResponse"></a>
 
 Describes a server in a Fleet Advisor collector inventory.
 

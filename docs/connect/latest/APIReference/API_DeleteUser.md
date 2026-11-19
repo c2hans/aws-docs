@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteUs
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes a user account from the specified Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/getting-started-htt
 ---
 
 # Transcribing with HTTP or WebSockets
-<a name="getting-started-http-websocket"></a>
 
 Amazon Transcribe supports HTTP for both batch (HTTP/1.1) and streaming (HTTP/2) transcriptions. WebSockets are supported for streaming transcriptions.
 

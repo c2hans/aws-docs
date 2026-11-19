@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapNWOnHanaHA
-<a name="launch-wizard-specifications-sap-netweaver-ha"></a>
 
 The following are examples of the specifications required to create high-availability deployments with SAP software installed.
 

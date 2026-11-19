@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RevokeVpcEndpointAccess
-<a name="API_RevokeVpcEndpointAccess"></a>
 
 Revokes access to an Amazon OpenSearch Service domain that was provided through an interface VPC endpoint.
 

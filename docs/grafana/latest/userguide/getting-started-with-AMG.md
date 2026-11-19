@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/getting-started
 ---
 
 # Learn how to create and use Amazon Managed Grafana resources
-<a name="getting-started-with-AMG"></a>
 
 This tutorial helps you get started with Amazon Managed Grafana. Create your first workspace, and then connect to the Grafana console in that workspace.
 

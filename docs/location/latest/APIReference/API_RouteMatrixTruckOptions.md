@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixTruckOptions
-<a name="API_RouteMatrixTruckOptions"></a>
 
 Travel mode options when the provided travel mode is `Truck`.
 

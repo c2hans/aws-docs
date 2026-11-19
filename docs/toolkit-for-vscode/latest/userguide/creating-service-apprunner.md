@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/crea
 ---
 
 # Creating App Runner services
-<a name="creating-service-apprunner"></a>
 
 You can create an App Runner service in Toolkit for VS Code by using the **AWS Explorer** and VS Code's **Command Palette**. After you choose to create a service in a specific AWS Region, numbered steps provided by the **Command Palette** guide you through the process of configuring the service instance where your application runs.
 

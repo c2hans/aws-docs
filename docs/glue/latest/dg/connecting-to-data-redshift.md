@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-redshi
 ---
 
 # Connecting to Amazon Redshift in AWS Glue Studio
-<a name="connecting-to-data-redshift"></a>
 
 **Note**
  You can use AWS Glue for Spark to read from and write to tables in Amazon Redshift databases outside of AWS Glue Studio. To configure Amazon Redshift with AWS Glue jobs programatically, see [Redshift connections](aws-glue-programming-etl-connect-redshift-home.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Overview of custom models in Neptune ML
-<a name="machine-learning-custom-model-overview"></a>
 
 ## When to use a custom model in Neptune ML
 <a name="machine-learning-custom-models-when-to-use"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftServerlessStorage
-<a name="API_RedshiftServerlessStorage"></a>
 
 The details of the Amazon Redshift Serverless workgroup storage.
 

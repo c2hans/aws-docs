@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Benefits of centralized logs
-<a name="benefits-of-centralized-logs"></a>
 
 As your environment grows and scales with your business needs, creating a single location to aggregate all the logs across your environment helps simplify the analysis and monitoring of the logs. Additionally, it makes it easier to access the environment logs, and controlling who is able to consume the logs. This allows you to create different dashboards and tools for your logging capabilities.
 

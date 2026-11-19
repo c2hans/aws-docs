@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CancelJobs
 ---
 
 # CancelJobsErrorDetail
-<a name="API_CancelJobsErrorDetail"></a>
 
 An object that contains the details of a job that couldn't be cancelled by a `CancelJobs` operation.
 

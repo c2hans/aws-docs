@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/applications
 ---
 
 # Create an application for an AWS Lambda function deployment (console)
-<a name="applications-create-lambda"></a>
 
 You can use the CodeDeploy console to create an application for an AWS Lambda function deployment.
 

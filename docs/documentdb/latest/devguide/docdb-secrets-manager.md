@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-secrets
 ---
 
 # Password management with Amazon DocumentDB and AWS Secrets Manager
-<a name="docdb-secrets-manager"></a>
 
 Amazon DocumentDB integrates with Secrets Manager to manage primary user passwords for your clusters.
 

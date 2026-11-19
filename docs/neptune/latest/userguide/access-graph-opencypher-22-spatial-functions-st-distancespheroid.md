@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # ST\_DistanceSpheroid
-<a name="access-graph-opencypher-22-spatial-functions-st-distancespheroid"></a>
 
 Returns the minimum distance in meters between two lon/lat geometries. The spheroid is WGS84/SRID 4326.
 

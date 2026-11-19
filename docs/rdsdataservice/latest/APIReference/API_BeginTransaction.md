@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_B
 ---
 
 # BeginTransaction
-<a name="API_BeginTransaction"></a>
 
 Starts a SQL transaction.
 

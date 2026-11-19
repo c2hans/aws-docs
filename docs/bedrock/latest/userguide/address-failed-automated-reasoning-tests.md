@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/address-failed-
 ---
 
 # Troubleshoot and refine your Automated Reasoning policy
-<a name="address-failed-automated-reasoning-tests"></a>
 
 When an Automated Reasoning policy test fails — the actual result doesn't match the expected result — the issue is either in the translation (natural language was mapped to the wrong variables or values) or in the rules (the policy logic doesn't match your domain). This page provides a systematic approach to diagnosing and fixing both types of issues.
 

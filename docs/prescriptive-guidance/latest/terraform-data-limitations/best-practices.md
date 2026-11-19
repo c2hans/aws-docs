@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-d
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Follow these guidelines when you use Terraform to automate your DevOps tasks on AWS.
 

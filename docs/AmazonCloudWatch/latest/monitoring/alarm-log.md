@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Log alarms
-<a name="alarm-log"></a>
 
 A Log Alarm monitors the results of a CloudWatch Logs Insights query that runs on a schedule using a [Scheduled Query](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ScheduledQueries.html). The alarm applies an aggregation expression to the query results to produce a numeric value, and when that aggregated value breaches a configured threshold, the alarm transitions to `ALARM` state and runs configured actions.
 

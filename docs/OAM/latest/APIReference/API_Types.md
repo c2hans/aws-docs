@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The CloudWatch Observability Access Manager API contains several data types that various actions use. This section describes each data type in detail.
 

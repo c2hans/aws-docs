@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListPr
 ---
 
 # ListProjects
-<a name="API_ListProjects"></a>
 
 Gets a list of build project names, with each build project name representing a single build project.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/capabilities-contro
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Access EKS Capabilities controller logs
-<a name="capabilities-controller-logs"></a>
 
 EKS Capabilities controllers for ACK, kro, and Argo CD run in AWS-managed infrastructure outside your clusters. You can configure log delivery for these controllers using Amazon CloudWatch Vended Logs, giving you visibility into controller behavior for monitoring and troubleshooting.
 

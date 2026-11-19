@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_acce
 ---
 
 # Manage access keys for IAM users
-<a name="id_credentials_access-keys"></a>
 
 **Important**
 As a [best practice](best-practices.md), use temporary security credentials (such as IAM roles) instead of creating long-term credentials like access keys. Before creating access keys, review the [alternatives to long-term access keys](security-creds-programmatic-access.md#security-creds-alternatives-to-long-term-access-keys).

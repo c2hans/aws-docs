@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FreeF
 ---
 
 # FreeFormSectionLayoutConfiguration
-<a name="API_FreeFormSectionLayoutConfiguration"></a>
 
 The free-form layout configuration of a section.
 

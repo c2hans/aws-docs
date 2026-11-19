@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/deleting-resource-g
 ---
 
 # Deleting resource groups from AWS Resource Groups
-<a name="deleting-resource-groups"></a>
 
 You can use the [AWS Resource Groups console](https://console.aws.amazon.com/resource-groups) or the AWS CLI to delete resource groups from AWS Resource Groups. Deleting a resource group does not delete the resources that are members of the group or tags on member resources. It deletes only the group structure and any group-level tags.
 

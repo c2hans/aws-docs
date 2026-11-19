@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-age
 ---
 
 # How to use AWS AppConfig Agent to retrieve configuration data
-<a name="appconfig-agent-how-to-use"></a>
 
 The AWS AppConfig Agent is the recommended method for retrieving AWS AppConfig feature flags or free form configuration data. The agent is supported on all forms of AWS Compute including Amazon EC2, Amazon ECS, Amazon EKS, and Lambda. After you complete the initial agent set up, using the agent to retrieve configuration data is simpler than directly calling AWS AppConfig APIs. The agent automatically implements best practices and may lower your cost of using AWS AppConfig as a result of fewer API calls to retrieve configurations.
 

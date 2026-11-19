@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreditAllocationHistoryEntry
-<a name="API_billing_CreditAllocationHistoryEntry"></a>
 
 A single entry in the credit allocation history, representing how a credit was applied to a specific service during a billing month.
 

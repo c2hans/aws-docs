@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UpdateManagedLoginBranding
-<a name="API_UpdateManagedLoginBranding"></a>
 
 Configures the branding settings for a user pool style. This operation is the programmatic option for the configuration of a style in the branding editor.
 

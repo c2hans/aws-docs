@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-inter
 ---
 
 # How to get intersections
-<a name="get-intersections"></a>
 
 `Intersections` allows you to retrieve all nearby intersections. This can potentially be used by emergency services and delivery couriers.
 

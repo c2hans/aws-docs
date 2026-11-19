@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Impers
 ---
 
 # ImpersonatedUser
-<a name="API_ImpersonatedUser"></a>
 
 Contains information about the impersonated user.
 

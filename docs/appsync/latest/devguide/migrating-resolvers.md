@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/migrating-resolv
 ---
 
 # Migrating from VTL to JavaScript in AWS AppSync
-<a name="migrating-resolvers"></a>
 
 AWS AppSync allows you to write your business logic for your resolvers and functions using VTL or JavaScript. With both languages, you write logic that instructs the AWS AppSync service on how to interact with your data sources. With VTL, you write mapping templates that must evaluate to a valid JSON-encoded string. With JavaScript, you write request and response handlers that return objects. You don't return a JSON-encoded string.
 

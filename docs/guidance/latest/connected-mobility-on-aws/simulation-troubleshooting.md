@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Simulation troubleshooting
-<a name="simulation-troubleshooting"></a>
 
 ## Problem: Simulation service not starting
 <a name="problem-simulation-service-not-starting"></a>

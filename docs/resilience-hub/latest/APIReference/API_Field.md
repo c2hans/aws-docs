@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_F
 ---
 
 # Field
-<a name="API_Field"></a>
 
 Indicates the field or attribute of a resource or data structure on which a condition is being applied or evaluated.
 

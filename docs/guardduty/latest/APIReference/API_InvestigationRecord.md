@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationRecord
-<a name="API_InvestigationRecord"></a>
 
 Contains information about one step in the reasoning that GuardDuty followed during an investigation.
 

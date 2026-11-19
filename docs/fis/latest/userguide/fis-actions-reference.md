@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-referen
 ---
 
 # AWS FIS Actions reference
-<a name="fis-actions-reference"></a>
 
 An action is the fault injection activity that you run on a target using AWS Fault Injection Service (AWS FIS). AWS FIS provides preconfigured actions for specific types of targets across AWS services. You add actions to an experiment template, which you then use to run experiments.
 

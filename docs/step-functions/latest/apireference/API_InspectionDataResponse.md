@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_I
 ---
 
 # InspectionDataResponse
-<a name="API_InspectionDataResponse"></a>
 
 Contains additional details about the state's execution, including its input and output data processing flow, and HTTP response information. The `inspectionLevel` request parameter specifies which details are returned.
 

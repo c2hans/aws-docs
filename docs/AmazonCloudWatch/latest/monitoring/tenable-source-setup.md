@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/tenab
 ---
 
 # Source configuration for Tenable Vulnerability Management
-<a name="tenable-source-setup"></a>
 
 ## Integrating with Tenable Vulnerability Management
 <a name="tenable-integration"></a>

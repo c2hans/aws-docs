@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-crea
 ---
 
 # Create an Amazon S3 delivery
-<a name="data-delivery-s3-create"></a>
 
  Create a delivery that sends records from an Amazon Kinesis Data Streams stream to a general purpose Amazon S3 bucket. You can create a delivery with the AWS Management Console or the AWS CLI. Records are delivered in their source format, batched into optimally sized objects, with configurable compression and an S3 key structure you define.
 

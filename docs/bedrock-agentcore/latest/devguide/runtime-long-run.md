@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Handle asynchronous and long running agents with Amazon Bedrock AgentCore Runtime
-<a name="runtime-long-run"></a>
 
 Amazon Bedrock AgentCore Runtime can handle asynchronous processing and long running agents. Asynchronous tasks allow your agent to continue processing after responding to the client and handle long-running operations without blocking responses. With async processing, your agent can:
 + Start a task that might take minutes or hours

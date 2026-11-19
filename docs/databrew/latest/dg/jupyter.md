@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/jupyter.html
 ---
 
 # Using DataBrew as an extension in JupyterLab
-<a name="jupyter"></a>
 
 **Warning**
  AWS Glue DataBrew JupyterLab extension support is ending on December 31, 2024 as JupyterLab 3 will reach end of support. For more information, see [ JupyterLab 3 end of maintenance ](https://blog.jupyter.org/jupyterlab-3-end-of-maintenance-879778927db2).

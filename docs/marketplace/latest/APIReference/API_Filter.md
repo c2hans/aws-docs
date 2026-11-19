@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Filt
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A filter object, used to optionally filter results from calls to the `ListEntities` and `ListChangeSets` actions.
 

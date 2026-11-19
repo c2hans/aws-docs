@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker
 ---
 
 # MQTT 3.1.1 broker (Moquette)
-<a name="mqtt-broker-moquette-component"></a>
 
 The Moquette MQTT broker component (`aws.greengrass.clientdevices.mqtt.Moquette`) handles MQTT messages between client devices and a Greengrass core device. This component provides a modified version of the [Moquette MQTT broker](https://github.com/moquette-io/moquette). Deploy this MQTT broker to run a lightweight MQTT broker. For more information about how to choose an MQTT broker, see [Choose an MQTT broker](choose-local-mqtt-broker.md).
 

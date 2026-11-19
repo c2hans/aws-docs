@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Associat
 ---
 
 # AssociateSourceGraphqlApi
-<a name="API_AssociateSourceGraphqlApi"></a>
 
 Creates an association between a Merged API and source API using the Merged API's identifier.
 

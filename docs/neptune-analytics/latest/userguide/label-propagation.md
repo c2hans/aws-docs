@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/label
 ---
 
 # Label propagation algorithm (LPA)
-<a name="label-propagation"></a>
 
 Label Propagation Algorithm (LPA) is an algorithm for community detection that is also used in semi-supervised machine learning for data classification.
 

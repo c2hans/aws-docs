@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # View protect metrics in AWS End User Messaging
-<a name="nx-features-sms-protect-monitoring"></a>
 
 The **Monitoring** tab on a protect configuration provides an overview of message delivery metrics for the protect configuration. To view all metrics for your account in the AWS End User Messaging console choose **Dashboard** in the left hand navigation.
 

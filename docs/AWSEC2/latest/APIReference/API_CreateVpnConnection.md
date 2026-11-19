@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpn
 ---
 
 # CreateVpnConnection
-<a name="API_CreateVpnConnection"></a>
 
 Creates a VPN connection between an existing virtual private gateway or transit gateway and a customer gateway. The supported connection type is `ipsec.1`.
 

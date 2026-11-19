@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalImpactDimensions
-<a name="API_SignalImpactDimensions"></a>
 
 The three impact dimensions an impact signal assessed. The computed impact band is derived from attackerGains and blastRadius, then shifted by targetValue.
 

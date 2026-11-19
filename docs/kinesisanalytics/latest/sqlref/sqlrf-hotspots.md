@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sqlrf-hot
 ---
 
 # HOTSPOTS
-<a name="sqlrf-hotspots"></a>
 
 Detects *hotspots*, or regions of activity that is significantly higher than the norm, in your data stream. A hotspot is defined as a small region of space that is relatively dense with data points.
 

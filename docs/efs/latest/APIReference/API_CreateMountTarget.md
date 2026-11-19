@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_CreateMountT
 ---
 
 # CreateMountTarget
-<a name="API_CreateMountTarget"></a>
 
 Creates a mount target for a file system. You can then mount the file system on EC2 instances by using the mount target. For more information about mount targets, see [Managing mount targets](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html).
 

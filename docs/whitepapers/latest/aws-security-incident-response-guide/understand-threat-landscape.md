@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Understand the threat landscape
-<a name="understand-threat-landscape"></a>
 
 ## Develop threat models
 <a name="develop-threat-models"></a>

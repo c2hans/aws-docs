@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/async-prereqs.html
 ---
 
 # Prerequisites for batch translation jobs
-<a name="async-prereqs"></a>
 
 The following prerequisites must be met in order for Amazon Translate to perform a successful batch translation job:
 + The Amazon S3 buckets that contain your input and output documents must be in the same AWS Region as the API endpoint you are calling.

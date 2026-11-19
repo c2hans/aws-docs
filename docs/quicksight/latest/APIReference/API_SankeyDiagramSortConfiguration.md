@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sanke
 ---
 
 # SankeyDiagramSortConfiguration
-<a name="API_SankeyDiagramSortConfiguration"></a>
 
 The sort configuration of a sankey diagram.
 

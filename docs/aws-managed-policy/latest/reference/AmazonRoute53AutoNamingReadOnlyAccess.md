@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53AutoNamingReadOnlyAccess
-<a name="AmazonRoute53AutoNamingReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to all Route 53 Auto Naming actions.
 

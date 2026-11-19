@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/n
 ---
 
 # Traffic Inspection with AWS Network Firewall
-<a name="nwfw-single-vpc"></a>
 
 Publication date: **March 16, 2022 ([Diagram history](#nwfw1-diagram-history))**
 

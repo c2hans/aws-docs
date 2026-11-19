@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListNetworkAnalyzerConfigurations
-<a name="API_ListNetworkAnalyzerConfigurations"></a>
 
 Lists the network analyzer configurations.
 

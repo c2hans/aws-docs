@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/express-pr
 ---
 
 # Express private offers
-<a name="express-private-offers-buyer"></a>
 
 Express private offers is an AWS Marketplace capability that enables you to instantly access personalized pricing based on your specific needs, without going through lengthy negotiations. This automated system evaluates your requirements against pre-configured seller criteria to generate immediate private offers.
 

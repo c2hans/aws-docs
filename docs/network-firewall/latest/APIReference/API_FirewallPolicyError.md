@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # FirewallPolicyError
-<a name="API_FirewallPolicyError"></a>
 
 A configuration error that Network Firewall detected for a firewall policy.
 

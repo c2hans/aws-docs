@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geotags
 ---
 
 # ValidationExceptionField
-<a name="API_geotags_ValidationExceptionField"></a>
 
 ## Contents
 <a name="API_geotags_ValidationExceptionField_Contents"></a>

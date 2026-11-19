@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Meter Data Analytics for Utilities
-<a name="meter-data-analytics-utilities"></a>
 
 Publication date: **September 17, 2024 ([Diagram history](#mda-history))**
 

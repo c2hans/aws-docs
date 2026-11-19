@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableAl
 ---
 
 # DisableAllowedImagesSettings
-<a name="API_DisableAllowedImagesSettings"></a>
 
 Disables Allowed AMIs for your account in the specified AWS Region. When set to `disabled`, the image criteria in your Allowed AMIs settings do not apply, and no restrictions are placed on AMI discoverability or usage. Users in your account can launch instances using any public AMI or AMI shared with your account.
 

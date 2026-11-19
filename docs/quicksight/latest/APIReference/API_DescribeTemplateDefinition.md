@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTemplateDefinition
-<a name="API_DescribeTemplateDefinition"></a>
 
 Provides a detailed description of the definition of a template.
 

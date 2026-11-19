@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTest
 ---
 
 # ListTestCaseExecutions
-<a name="API_ListTestCaseExecutions"></a>
 
 Lists all test case executions and allows filtering by test case id, test case name, start time, end time or status of the execution for the specified Amazon Connect instance.
 

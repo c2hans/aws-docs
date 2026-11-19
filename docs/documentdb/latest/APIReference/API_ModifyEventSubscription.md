@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Modif
 ---
 
 # ModifyEventSubscription
-<a name="API_ModifyEventSubscription"></a>
 
 Modifies an existing Amazon DocumentDB event notification subscription.
 

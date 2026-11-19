@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Desc
 ---
 
 # DescribeProjectVersions
-<a name="API_DescribeProjectVersions"></a>
 
 Lists and describes the versions of an Amazon Rekognition project. You can specify up to 10 model or adapter versions in `ProjectVersionArns`. If you don't specify a value, descriptions for all model/adapter versions in the project are returned.
 

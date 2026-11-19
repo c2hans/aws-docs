@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.2 Value driver analysis
-<a name="value-driver-analysis"></a>
 
 ## Overview
 <a name="value-driver-overview"></a>

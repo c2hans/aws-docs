@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Get generative AI inference deployment recommendations
-<a name="generative-ai-inference-recommendations-get-started"></a>
 
 AI recommendation jobs analyze your model and workload characteristics to generate deployment configurations optimized for cost, latency, or throughput. The service evaluates instance types, applies optimizations like speculative decoding, and benchmarks each configuration on real GPU infrastructure.
 

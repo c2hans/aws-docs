@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 5: Ad intelligence, measurement, and security
-<a name="scenario-05-ad-intelligence-measurement-security"></a>
 
  Publishers and advertisers need to help protect the advertising supply chain from fraud, maintain brand safety for ad placements, generate contextual intelligence from content analysis, and validate creative integrity, all at the speed and scale required for programmatic advertising.
 

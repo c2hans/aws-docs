@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-agents-
 ---
 
 # Update agent distribution in your Connect Customer agent workspace across AWS Regions
-<a name="update-agents-across-regions"></a>
 
 Just as you can use the `UpdateTrafficDistribution` API to [distribute telephony traffic across Regions](update-telephony-traffic-distribution.md), you can also use it to distribute agents across AWS Regions, either fully or gradually as part of regular operational readiness testing. For example, you might keep 40% of agents in one AWS Region to complete active contacts and shift the remaining agents to the replica Region.
 

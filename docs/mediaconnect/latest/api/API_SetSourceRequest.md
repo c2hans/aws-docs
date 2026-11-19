@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SetSourceReq
 ---
 
 # SetSourceRequest
-<a name="API_SetSourceRequest"></a>
 
  The settings for the source of the flow.
 

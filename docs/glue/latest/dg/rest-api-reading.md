@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rest-api-reading.html
 ---
 
 # Reading from a REST API
-<a name="rest-api-reading"></a>
 
  After you register a REST API ConnectionType and create an AWS Glue connection, you can read data from the REST API in your AWS Glue ETL jobs. With this connection, you can process external REST API data alongside other sources in the same job. You need the connection name and entity name to read data.
 

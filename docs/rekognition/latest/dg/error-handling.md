@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/error-handling.htm
 ---
 
 # Error handling
-<a name="error-handling"></a>
 
  This section describes runtime errors and how to handle them. It also describes error messages and codes that are specific to Amazon Rekognition.
 

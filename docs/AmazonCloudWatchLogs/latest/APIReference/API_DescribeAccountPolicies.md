@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeAccountPolicies
-<a name="API_DescribeAccountPolicies"></a>
 
 Returns a list of all CloudWatch Logs account policies in the account.
 

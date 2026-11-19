@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/phone-inventory.html
 ---
 
 # Managing phone number inventory
-<a name="phone-inventory"></a>
 
 The information in the following sections explains how to provision and manage the phone numbers used with Amazon Chime SDK Voice Connectors, Amazon Chime SDK Voice Connector groups, and SIP media applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_CrossA
 ---
 
 # CrossAccountResource
-<a name="API_CrossAccountResource"></a>
 
 An endpoint (AWS resource) or an IP address range, in CIDR format, that is listed in a cross-account attachment. A cross-account resource can be added to an accelerator by specified principals, which are also listed in the attachment.
 

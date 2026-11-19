@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeJobL
 ---
 
 # DescribeJobLogItems
-<a name="API_DescribeJobLogItems"></a>
 
 Retrieves a detailed Job log with pagination.
 

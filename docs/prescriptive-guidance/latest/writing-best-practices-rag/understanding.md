@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-bes
 ---
 
 # Understanding LLMs and RAG
-<a name="understanding"></a>
 
 To understand how enhancing source document quality enhances the quality of a RAG response, you must understand the internal workings of an LLM. The true power of LLMs lies in their ability to use self-attention mechanisms and transformer architectures. These advanced techniques enable the models to effectively process and relate different parts of the input sequence, regardless of their position or distance within the text. This capability is a stark contrast to traditional language models, which often struggle with long-range dependencies and context understanding. Furthermore, LLMs are trained on an unprecedented scale. Some of the largest models are comprised of trillions of parameters and have ingested terabytes of textual data from diverse sources. This massive scale allows LLMs to develop a rich understanding of language, capturing subtle nuances, idioms, and contextual cues that were previously challenging for AI systems. The result is a class of models that can generate coherent and fluent text and demonstrate remarkable capabilities in tasks such as question answering, text summarization, and even code generation.
 

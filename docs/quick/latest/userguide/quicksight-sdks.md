@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-sdks.h
 ---
 
 # Developing applications with the AWS Quick Sight API
-<a name="quicksight-sdks"></a>
 
 You can manage most aspects of your deployment by using the AWS SDKs to access an API that's tailored to the programming language or platform that you're using. For more information, see [AWS SDKs](http://aws.amazon.com/tools/#SDKs).
 

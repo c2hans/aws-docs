@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Providing a secure remote experience for engineers
-<a name="providing-secure-remote-experience"></a>
 
 Remote visualization is a key component in semiconductor design. Tool engineers use remote verification, and chip designers use it to submit jobs and view their status. This section presents a robust solution that can perform well over varying network conditions. It is designed be cloud-native so that it can seamlessly integrate with AWS security services.
 

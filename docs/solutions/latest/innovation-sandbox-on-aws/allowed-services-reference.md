@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Allowed services in sandbox accounts
-<a name="allowed-services-reference"></a>
 
 The following AWS services are allowed by default in sandbox accounts through the solution’s Allowed Services SCP. Sandbox users can access these services during an active lease.
 

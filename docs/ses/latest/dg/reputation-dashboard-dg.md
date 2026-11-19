@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/reputation-dashboard-dg.ht
 ---
 
 # Using reputation metrics to track bounce and complaint rates
-<a name="reputation-dashboard-dg"></a>
 
 The reputation metrics console page contains the same information that the Amazon SES team sees when determining the health of individual accounts.
 

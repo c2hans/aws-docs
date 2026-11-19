@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Datepar
 ---
 
 # Date parts for date or timestamp functions
-<a name="Dateparts_for_datetime_functions"></a>
 
 The following table identifies the date part and time part names and abbreviations that are accepted as arguments to the following functions:
 + DATE\_ADD

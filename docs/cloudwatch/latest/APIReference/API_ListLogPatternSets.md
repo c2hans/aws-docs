@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_ListL
 ---
 
 # ListLogPatternSets
-<a name="API_ListLogPatternSets"></a>
 
 Lists the log pattern sets in the specific application.
 

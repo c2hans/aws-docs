@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataExchangeServiceRolePolicyForOrganizationDiscovery
-<a name="AWSDataExchangeServiceRolePolicyForOrganizationDiscovery"></a>
 
 **Description**: Allows AWS Data Exchange to read data about your AWS Organization to determine eligibility for AWS Data Exchange data grants license distribution.
 

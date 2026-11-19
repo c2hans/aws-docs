@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericRangeFilter
-<a name="API_NumericRangeFilter"></a>
 
 A `NumericRangeFilter` filters values that are within the value range.
 

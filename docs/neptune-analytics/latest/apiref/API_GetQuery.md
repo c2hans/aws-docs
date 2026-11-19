@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetQ
 ---
 
 # GetQuery
-<a name="API_GetQuery"></a>
 
 Retrieves the status of a specified query.
 

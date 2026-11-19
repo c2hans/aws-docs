@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ThrottlingRe
 ---
 
 # ThrottlingReason
-<a name="API_ThrottlingReason"></a>
 
 A description of why a request was throttled.
 

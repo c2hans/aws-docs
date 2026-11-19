@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Evalu
 ---
 
 # Evaluation
-<a name="API_Evaluation"></a>
 
 Returns information about the approval rules applied to a pull request and whether conditions have been met.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateAnalysisTemplate
-<a name="API_UpdateAnalysisTemplate"></a>
 
 Updates the analysis template metadata.
 

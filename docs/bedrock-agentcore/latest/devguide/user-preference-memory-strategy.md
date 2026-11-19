@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/user-p
 ---
 
 # User preference memory strategy
-<a name="user-preference-memory-strategy"></a>
 
 The `UserPreferenceMemoryStrategy` is designed to automatically identify and extract user preferences, choices, and styles from conversational data. This lets your agent to learn from interactions and builds a persistent, dynamic profile of each user over time.
 

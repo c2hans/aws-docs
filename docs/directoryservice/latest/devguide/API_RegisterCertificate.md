@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Reg
 ---
 
 # RegisterCertificate
-<a name="API_RegisterCertificate"></a>
 
 Registers a certificate for a secure LDAP or client certificate authentication.
 

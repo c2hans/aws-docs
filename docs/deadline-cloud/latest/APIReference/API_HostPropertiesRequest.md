@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_H
 ---
 
 # HostPropertiesRequest
-<a name="API_HostPropertiesRequest"></a>
 
 The host property details.
 

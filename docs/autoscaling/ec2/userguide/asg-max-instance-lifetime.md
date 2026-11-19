@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-max-instan
 ---
 
 # Replace Auto Scaling instances based on maximum instance lifetime
-<a name="asg-max-instance-lifetime"></a>
 
 The maximum instance lifetime specifies the maximum amount of time (in seconds) that an instance can be in service before it is terminated and replaced. A common use case might be a requirement to replace your instances on a schedule because of internal security policies or external compliance controls.
 

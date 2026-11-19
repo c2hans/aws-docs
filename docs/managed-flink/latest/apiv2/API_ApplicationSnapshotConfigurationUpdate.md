@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationSnapshotConfigurationUpdate
-<a name="API_ApplicationSnapshotConfigurationUpdate"></a>
 
 Describes updates to whether snapshots are enabled for a Managed Service for Apache Flink application.
 

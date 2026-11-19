@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # RestoreTableFromRecoveryPoint
-<a name="API_RestoreTableFromRecoveryPoint"></a>
 
 Restores a table from a recovery point to your Amazon Redshift Serverless instance. You can't use this operation to restore tables with interleaved sort keys.
 

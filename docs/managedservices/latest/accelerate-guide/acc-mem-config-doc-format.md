@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Accelerate Configuration profile: monitoring
-<a name="acc-mem-config-doc-format"></a>
 
 Both the default configuration profile document and the customization configuration profile document follow the same structure :
 

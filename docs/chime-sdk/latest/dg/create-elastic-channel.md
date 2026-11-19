@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-elastic-chann
 ---
 
 # Creating elastic channels for Amazon Chime SDK meetings
-<a name="create-elastic-channel"></a>
 
 You use the `ElasticChannelConfiguration` field in the [CreateChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html) API to create an elastic channel. Once you create an elastic channel, you create channel memberships.
 

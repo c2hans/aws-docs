@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::AppImageConfig FileSystemConfig
-<a name="aws-properties-sagemaker-appimageconfig-filesystemconfig"></a>
 
 The Amazon Elastic File System storage configuration for a SageMaker AI image.
 

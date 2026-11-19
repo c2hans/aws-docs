@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Hyb
 ---
 
 # HybridCustomerInstancesSettings
-<a name="API_HybridCustomerInstancesSettings"></a>
 
 Contains configuration settings for self-managed instances with SSM used in hybrid directory operations.
 

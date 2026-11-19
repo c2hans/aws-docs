@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Dep
 ---
 
 # DeploymentConditionalField
-<a name="API_DeploymentConditionalField"></a>
 
 A field that details a condition of the specifications for a deployment.
 

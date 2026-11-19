@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopTr
 ---
 
 # StopTrainingSession
-<a name="API_StopTrainingSession"></a>
 
 Stops a running training session and sets the session status to `Stopping`. After the session stops, the status changes to `Stopped`. To delete a stopped session, use the `DeleteTrainingSession` operation.
 

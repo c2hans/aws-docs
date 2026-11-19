@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Troubleshooting Amazon OpenSearch Memory
-<a name="memory-troubleshooting"></a>
 
 This topic describes problems that you might encounter when you use Amazon OpenSearch Memory, their likely causes, and how to resolve them. For the meaning of each exception and whether to retry it, see [Error handling in Amazon OpenSearch Memory](memory-errors.md).
 

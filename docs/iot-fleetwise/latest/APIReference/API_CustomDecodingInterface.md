@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cu
 ---
 
 # CustomDecodingInterface
-<a name="API_CustomDecodingInterface"></a>
 
 Represents a custom network interface as defined by the customer.
 

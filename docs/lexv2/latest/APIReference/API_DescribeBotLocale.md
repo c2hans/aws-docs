@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBotLocale
-<a name="API_DescribeBotLocale"></a>
 
 Describes the settings that a bot has for a specific locale.
 

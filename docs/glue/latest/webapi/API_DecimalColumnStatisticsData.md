@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DecimalColumnStat
 ---
 
 # DecimalColumnStatisticsData
-<a name="API_DecimalColumnStatisticsData"></a>
 
 Defines column statistics supported for fixed-point number data columns.
 

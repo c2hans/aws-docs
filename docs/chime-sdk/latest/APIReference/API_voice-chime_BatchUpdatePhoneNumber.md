@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # BatchUpdatePhoneNumber
-<a name="API_voice-chime_BatchUpdatePhoneNumber"></a>
 
 Updates phone number product types, calling names, or phone number names. You can update one attribute at a time for each `UpdatePhoneNumberRequestItem`. For example, you can update the product type, the calling name, or phone name.
 

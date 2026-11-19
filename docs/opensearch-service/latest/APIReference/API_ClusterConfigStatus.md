@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ClusterConfigStatus
-<a name="API_ClusterConfigStatus"></a>
 
 The cluster configuration status for a domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to get cross-references for nearby places
-<a name="how-to-search-nearby-cross-references"></a>
 
 Include `CrossReferences` in the `AdditionalFeatures` parameter to retrieve third-party supplier identifiers for each nearby place result.
 

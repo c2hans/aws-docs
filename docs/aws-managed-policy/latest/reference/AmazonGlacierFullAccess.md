@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonGlacierFullAccess
-<a name="AmazonGlacierFullAccess"></a>
 
 **Description**: Provides full access to Amazon Glacier via the AWS Management Console.
 

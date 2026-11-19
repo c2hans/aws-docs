@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-describe-e
 ---
 
 # Describing an ACME endpoint
-<a name="sdk-acme-describe-endpoint"></a>
 
 The following example shows how to use the [DescribeAcmeEndpoint](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeEndpoint.html) function.
 

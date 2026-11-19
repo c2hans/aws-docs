@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Borde
 ---
 
 # BorderStyle
-<a name="API_BorderStyle"></a>
 
 The display options for tile borders for visuals.
 

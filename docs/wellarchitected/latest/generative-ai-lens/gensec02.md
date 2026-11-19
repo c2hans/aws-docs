@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Response validation
-<a name="gensec02"></a>
 
 | GENSEC02: How do you stop generative AI applications from generating harmful, biased, or factually incorrect responses? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # RefreshTokenRequestBody
-<a name="API_RefreshTokenRequestBody"></a>
 
 Describes a refresh token.
 

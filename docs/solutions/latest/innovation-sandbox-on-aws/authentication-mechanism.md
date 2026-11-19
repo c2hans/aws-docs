@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Authentication mechanism
-<a name="authentication-mechanism"></a>
 
 Innovation Sandbox on AWS authenticates web UI users with [Amazon Cognito](https://aws.amazon.com/cognito/), which federates to the [Single Sign-On service](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) from [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/) using the [SAML 2.0](https://aws.amazon.com/identity/saml/) protocol. You register a SAML 2.0 application in IAM Identity Center and provide its metadata URL to the solution; Amazon Cognito acts as the SAML service provider.
 

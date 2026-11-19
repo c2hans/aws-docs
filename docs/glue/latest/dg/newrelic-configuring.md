@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/newrelic-configuring.html
 ---
 
 # Configuring New Relic
-<a name="newrelic-configuring"></a>
 
 Before you can use AWS Glue to transfer data from New Relic, you must meet the following requirements:
 

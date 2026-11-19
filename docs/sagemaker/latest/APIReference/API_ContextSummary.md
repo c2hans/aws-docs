@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Contex
 ---
 
 # ContextSummary
-<a name="API_ContextSummary"></a>
 
 Lists a summary of the properties of a context. A context provides a logical grouping of other entities.
 

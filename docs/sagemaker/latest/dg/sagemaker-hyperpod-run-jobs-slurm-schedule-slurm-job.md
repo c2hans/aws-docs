@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Scheduling a Slurm job on a SageMaker HyperPod cluster
-<a name="sagemaker-hyperpod-run-jobs-slurm-schedule-slurm-job"></a>
 
 You can launch training jobs using the standard Slurm `sbatch` or `srun` commands. For example, to launch an 8-node training job, you can run `srun -N 8 --exclusive train.sh` SageMaker HyperPod supports training in a range of environments, including `conda`, `venv`, `docker`, and `enroot`. You can configure an ML environment by running lifecycle scripts on your SageMaker HyperPod clusters. You also have an option to attach a shared file system such as Amazon FSx, which can also be used as a virtual environment.
 

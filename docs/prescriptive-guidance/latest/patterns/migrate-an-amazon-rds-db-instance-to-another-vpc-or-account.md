@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Amazon RDS DB instance to another VPC or account
-<a name="migrate-an-amazon-rds-db-instance-to-another-vpc-or-account"></a>
 
 *Dhrubajyoti Mukherjee, Amazon Web Services*
 

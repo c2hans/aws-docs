@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-d
 ---
 
 # Discoverers
-<a name="v1-discoverers"></a>
 
 Discoverers allow you to infer EventBridge Schemas based on the events on an event bus.
 

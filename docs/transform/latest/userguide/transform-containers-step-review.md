@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 4: Review Docker artifacts and code changes
-<a name="transform-containers-step-review"></a>
 
 In this step, you review the Docker artifacts and code changes that AWS Transform generated during containerization.
 

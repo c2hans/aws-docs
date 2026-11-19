@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RevenueAttributionAllocationSummary
-<a name="API_prm_RevenueAttributionAllocationSummary"></a>
 
 Summary information about a revenue attribution allocation.
 

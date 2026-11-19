@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Micro
 ---
 
 # MicrosoftPurviewProviderConfig
-<a name="API_MicrosoftPurviewProviderConfig"></a>
 
 The full configuration for Microsoft Purview DLP integration, including the provider credentials and the label-action mappings that define the enforcement policy.
 

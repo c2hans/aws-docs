@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OrchestrationModelInvocationOutput
-<a name="API_agent-runtime_OrchestrationModelInvocationOutput"></a>
 
 The foundation model output from the orchestration step.
 

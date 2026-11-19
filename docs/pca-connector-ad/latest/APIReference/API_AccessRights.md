@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # AccessRights
-<a name="API_AccessRights"></a>
 
  Allow or deny permissions for an Active Directory group to enroll or autoenroll certificates for a template.
 

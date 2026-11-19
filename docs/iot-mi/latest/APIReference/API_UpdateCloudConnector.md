@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateClo
 ---
 
 # UpdateCloudConnector
-<a name="API_UpdateCloudConnector"></a>
 
 Update an existing cloud connector.
 

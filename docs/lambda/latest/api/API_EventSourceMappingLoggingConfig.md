@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventSourceMapping
 ---
 
 # EventSourceMappingLoggingConfig
-<a name="API_EventSourceMappingLoggingConfig"></a>
 
 (Amazon MSK, and self-managed Apache Kafka only) The logging configuration for your event source. Use this configuration object to define the level of logs for your event source mapping.
 

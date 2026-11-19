@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/purch
 ---
 
 # Purchase Orders
-<a name="purchase-orders"></a>
 
 You can view the list of purchase order data requests that are published to your partners. Purchase orders collaboration can only be enabled through Work Orders. For more information, see [Order Planning and Tracking](work-order.md).
 

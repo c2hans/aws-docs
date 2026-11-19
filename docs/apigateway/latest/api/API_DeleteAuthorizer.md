@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteAuthoriz
 ---
 
 # DeleteAuthorizer
-<a name="API_DeleteAuthorizer"></a>
 
 Deletes an existing Authorizer resource.
 

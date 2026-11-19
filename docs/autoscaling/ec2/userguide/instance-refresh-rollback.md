@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-refre
 ---
 
 # Undo changes with a manual or auto rollback
-<a name="instance-refresh-rollback"></a>
 
 You can roll back an instance refresh that is still in progress. You can't roll it back after it's finished. You can, however, update your Auto Scaling group again by starting a new instance refresh.
 

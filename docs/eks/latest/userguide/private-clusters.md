@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/private-clusters.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy private clusters with limited internet access
-<a name="private-clusters"></a>
 
 This topic describes how to deploy an Amazon EKS cluster that is deployed on the AWS Cloud, but doesn’t have outbound internet access. If you have a local cluster on AWS Outposts, see [Create Amazon Linux nodes on AWS Outposts](eks-outposts-self-managed-nodes.md), instead of this topic.
 

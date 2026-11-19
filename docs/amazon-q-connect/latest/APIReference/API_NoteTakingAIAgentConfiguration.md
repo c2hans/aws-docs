@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # NoteTakingAIAgentConfiguration
-<a name="API_amazon-q-connect_NoteTakingAIAgentConfiguration"></a>
 
 The configuration for AI Agents of type `NOTE_TAKING`.
 

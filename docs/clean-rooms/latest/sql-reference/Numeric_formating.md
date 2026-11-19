@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Numeric
 ---
 
 # Numeric format strings
-<a name="Numeric_formating"></a>
 
 The following numeric format strings apply to functions such as TO\_NUMBER and TO\_CHAR.
 + For examples of formatting strings as numbers, see [TO\_NUMBER](TO_NUMBER.md).

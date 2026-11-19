@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSOPS03-BP01 Establish alarms for OpenSearch Service domain
-<a name="aosops03-bp01"></a>
 
  Set up alerts to receive timely notifications about potential issues that may impact performance or availability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Switch
 ---
 
 # SwitchoverReadReplica
-<a name="API_SwitchoverReadReplica"></a>
 
 Switches over an Oracle standby database in an Oracle Data Guard environment, making it the new primary database. Issue this command in the Region that hosts the current standby database.
 

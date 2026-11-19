@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::PublicKey
-<a name="aws-resource-ivs-publickey"></a>
 
 The `AWS::IVS::PublicKey` resource specifies an Amazon IVS public key used to sign stage participant tokens. For more information, see [Distribute Participant Tokens](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html) in the *Amazon IVS Real-Time Streaming User Guide*.
 

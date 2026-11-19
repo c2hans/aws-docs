@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/org.nz.htm
 ---
 
 # .org.nz (New Zealand)
-<a name="org.nz"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

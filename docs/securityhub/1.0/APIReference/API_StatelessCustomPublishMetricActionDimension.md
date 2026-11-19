@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Statele
 ---
 
 # StatelessCustomPublishMetricActionDimension
-<a name="API_StatelessCustomPublishMetricActionDimension"></a>
 
 Defines a CloudWatch dimension value to publish.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ListMod
 ---
 
 # ListModels
-<a name="API_ListModels"></a>
 
 Lists all available AI models that can be used for workflow execution, including their status and compatibility information.
 

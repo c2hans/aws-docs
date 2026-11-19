@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.L
 ---
 
 # Listing the Amazon RDS event notification categories
-<a name="USER_Events.ListingCategories"></a>
 
 All events for a resource type are grouped into categories. To view the list of categories available, use the following procedures.
 

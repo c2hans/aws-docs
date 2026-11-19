@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_StepFailedDetails.
 ---
 
 # StepFailedDetails
-<a name="API_StepFailedDetails"></a>
 
 Details about a step that failed.
 

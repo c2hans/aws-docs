@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Ge
 ---
 
 # GetDICOMImportJob
-<a name="API_GetDICOMImportJob"></a>
 
 Get the import job properties to learn more about the job or job progress.
 

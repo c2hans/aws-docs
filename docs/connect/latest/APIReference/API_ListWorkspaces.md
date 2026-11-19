@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListWork
 ---
 
 # ListWorkspaces
-<a name="API_ListWorkspaces"></a>
 
 Lists the workspaces in an Amazon Connect instance.
 

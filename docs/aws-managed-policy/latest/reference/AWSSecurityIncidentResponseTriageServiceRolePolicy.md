@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityIncidentResponseTriageServiceRolePolicy
-<a name="AWSSecurityIncidentResponseTriageServiceRolePolicy"></a>
 
 **Description**: Provides access to AWS Security Incident Response to continuously monitor your environment for security threats, tune security services to reduce alert noise, and gather information to investigate potential incidents.
 

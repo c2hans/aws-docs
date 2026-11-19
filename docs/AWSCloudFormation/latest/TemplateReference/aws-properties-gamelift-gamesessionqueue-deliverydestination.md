@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::GameSessionQueue DeliveryDestination
-<a name="aws-properties-gamelift-gamesessionqueue-deliverydestination"></a>
 
 A destination that receives game session placement insight logs for a game session queue. Amazon GameLift Servers delivers the logs to the resource identified by `DestinationArn`. For `CLOUDWATCH` and `S3` destinations, Amazon GameLift Servers creates a resource of the specified `LogDestination` type on your behalf when you omit the ARN; `FIREHOSE` destinations require the ARN.
 

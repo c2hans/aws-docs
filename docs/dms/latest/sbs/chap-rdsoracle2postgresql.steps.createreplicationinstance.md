@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2postgresql
 ---
 
 # Step 5: Create an AWS DMS Replication Instance
-<a name="chap-rdsoracle2postgresql.steps.createreplicationinstance"></a>
 
 After validating the schema structure between source and target databases, continue with the core part of this walkthrough, which is the data migration. The following illustration shows a high-level view of the migration process.
 

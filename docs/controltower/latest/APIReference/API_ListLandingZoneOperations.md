@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lis
 ---
 
 # ListLandingZoneOperations
-<a name="API_ListLandingZoneOperations"></a>
 
 Lists all landing zone operations from the past 90 days. Results are sorted by time, with the most recent operation first.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SqsP
 ---
 
 # SqsParameters
-<a name="API_SqsParameters"></a>
 
 The custom parameters for EventBridge to use for a target that is an Amazon SQS fair or FIFO queue.
 

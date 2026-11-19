@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationFsxWindows
-<a name="API_DescribeLocationFsxWindows"></a>
 
 Provides details about how an AWS DataSync transfer location for an Amazon FSx for Windows File Server file system is configured.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Optimi
 ---
 
 # OptimizationModelAccessConfig
-<a name="API_OptimizationModelAccessConfig"></a>
 
 The access configuration settings for the source ML model for an optimization job, where you can accept the model end-user license agreement (EULA).
 

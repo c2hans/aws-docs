@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UserI
 ---
 
 # UserIndexCapacityFilter
-<a name="API_UserIndexCapacityFilter"></a>
 
 A filter for user index capacity queries. Only one filter type can be specified per request.
 

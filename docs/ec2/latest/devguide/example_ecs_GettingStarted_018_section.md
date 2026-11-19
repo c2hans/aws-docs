@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ecs_GettingS
 ---
 
 # Creating a container service for virtual machine instances
-<a name="example_ecs_GettingStarted_018_section"></a>
 
 The following code example shows how to:
 + Create an ECS cluster

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.data-q
 ---
 
 # Data quality recipe steps
-<a name="recipe-actions.data-quality"></a>
 
 Use these data quality recipe steps to populate missing values, remove invalid data, or remove duplicates.
 

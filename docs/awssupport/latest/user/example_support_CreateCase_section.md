@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_C
 ---
 
 # Use `CreateCase` with an AWS SDK or CLI
-<a name="example_support_CreateCase_section"></a>
 
 The following code examples show how to use `CreateCase`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-permission
 ---
 
 # Giving permissions to Amazon SES for email receiving
-<a name="receiving-email-permissions"></a>
 
 Some of the tasks that you can perform when you receive email in SES, such as sending email to an Amazon Simple Storage Service (Amazon S3) bucket or calling a AWS Lambda function, require special permissions. This section includes example policies for several common use cases.
 

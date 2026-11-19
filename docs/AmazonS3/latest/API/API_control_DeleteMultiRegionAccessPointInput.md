@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteMu
 ---
 
 # DeleteMultiRegionAccessPointInput
-<a name="API_control_DeleteMultiRegionAccessPointInput"></a>
 
 A container for the information associated with a [DeleteMultiRegionAccessPoint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteMultiRegionAccessPoint.html) request.
 

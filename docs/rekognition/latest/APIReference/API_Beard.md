@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Bear
 ---
 
 # Beard
-<a name="API_Beard"></a>
 
 Indicates whether or not the face has a beard, and the confidence level in the determination.
 

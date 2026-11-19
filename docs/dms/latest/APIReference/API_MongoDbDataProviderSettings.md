@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MongoDbDataP
 ---
 
 # MongoDbDataProviderSettings
-<a name="API_MongoDbDataProviderSettings"></a>
 
 Provides information that defines a MongoDB data provider.
 

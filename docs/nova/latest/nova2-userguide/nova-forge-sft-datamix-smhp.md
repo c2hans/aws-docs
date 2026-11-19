@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-s
 ---
 
 # Data mixing on SageMaker HyperPod
-<a name="nova-forge-sft-datamix-smhp"></a>
 
 ## Introduction
 <a name="introduction"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FSxLus
 ---
 
 # FSxLustreFileSystemConfig
-<a name="API_FSxLustreFileSystemConfig"></a>
 
 The settings for assigning a custom Amazon FSx for Lustre file system to a user profile or space for an Amazon SageMaker Domain.
 

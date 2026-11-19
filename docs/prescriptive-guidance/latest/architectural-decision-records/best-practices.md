@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectur
 ---
 
 # Best practices for using architectural decision records
-<a name="best-practices"></a>
 
 **Promote ownership.** Each project team member should be empowered to create and own an ADR. This practice distributes architectural research work among team members and offloads that work from the solutions architect or team lead. It also fosters a sense of ownership in the decision-making process. This helps the team adopt those decisions faster instead of treating them as decisions that were imposed from higher levels of the organization.
 

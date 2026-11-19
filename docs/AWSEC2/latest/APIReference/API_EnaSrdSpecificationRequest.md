@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnaSrdSpe
 ---
 
 # EnaSrdSpecificationRequest
-<a name="API_EnaSrdSpecificationRequest"></a>
 
 Launch instances with ENA Express settings configured from your launch template.
 

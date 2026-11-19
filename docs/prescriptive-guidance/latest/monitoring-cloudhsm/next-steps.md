@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/monitoring-
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 By implementing the monitoring best practices and recommendations in this guide, you can help achieve a high-performing, resilient, efficient, secure, and cost-optimized infrastructure on AWS CloudHSM. Near real-time analysis of the overall health and performance of your AWS CloudHSM cluster provides operational insights over time and helps you prevent issues that affect your workloads.
 

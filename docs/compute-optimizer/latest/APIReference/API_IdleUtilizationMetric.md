@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleUtilizationMetric
-<a name="API_IdleUtilizationMetric"></a>
 
 Describes the utilization metric of an idle resource.
 

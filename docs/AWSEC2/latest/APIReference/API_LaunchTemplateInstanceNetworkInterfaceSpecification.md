@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateInstanceNetworkInterfaceSpecification
-<a name="API_LaunchTemplateInstanceNetworkInterfaceSpecification"></a>
 
 Describes a network interface.
 

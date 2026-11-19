@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobAnalysisOverridePermissions
-<a name="API_AssetBundleImportJobAnalysisOverridePermissions"></a>
 
 An object that contains a list of permissions to be applied to a list of analysis IDs.
 

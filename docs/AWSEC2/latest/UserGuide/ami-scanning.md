@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-scanning.htm
 ---
 
 # Scan an Amazon EC2 AMI for software vulnerabilities with Amazon Inspector
-<a name="ami-scanning"></a>
 
 Amazon Inspector is a vulnerability management service that scans your AWS workloads, including your Amazon EC2 AMIs, for software vulnerabilities. Two scan types are available: an on-demand scan of an AMI, and continuous AMI scanning on an AWS account. For more information, see [Scanning machine images with Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/scanning-machine-images.html) in the *Amazon Inspector User Guide*.
 

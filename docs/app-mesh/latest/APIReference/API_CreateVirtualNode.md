@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateV
 ---
 
 # CreateVirtualNode
-<a name="API_CreateVirtualNode"></a>
 
 Creates a virtual node within a service mesh.
 

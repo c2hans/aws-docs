@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBSecurityGrou
 ---
 
 # DBSecurityGroupMembership
-<a name="API_DBSecurityGroupMembership"></a>
 
 Specifies membership in a designated DB security group.
 

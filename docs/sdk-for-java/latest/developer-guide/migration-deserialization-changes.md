@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Deserialization differences between 1.x and 2.x of the AWS SDK for Java
-<a name="migration-deserialization-changes"></a>
 
 ## Empty collections in V2 compared to `nulls` in V1
 <a name="deserialization-diffs-list-obj-to-req-param"></a>

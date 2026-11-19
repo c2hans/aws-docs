@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANServiceProfile
-<a name="API_LoRaWANServiceProfile"></a>
 
 LoRaWANServiceProfile object.
 

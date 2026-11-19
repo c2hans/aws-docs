@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-assess-captions.
 ---
 
 # Assess the captions in the sources
-<a name="ips-assess-captions"></a>
 
  There are special requirements for the captions in sources for a MediaLive multiple-input channel.
 

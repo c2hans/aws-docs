@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchAgentAdminPolicy
-<a name="CloudWatchAgentAdminPolicy"></a>
 
 **Description**: Full permissions required to use AmazonCloudWatchAgent.
 

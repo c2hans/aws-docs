@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # VectorEnrichmentJobErrorDetails
-<a name="API_geospatial_VectorEnrichmentJobErrorDetails"></a>
 
 VectorEnrichmentJob error details in response from GetVectorEnrichmentJob.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Apply transformations using URL query parameters
-<a name="transformation-filter-reference"></a>
 
 You apply transformations on demand by adding query parameters to the request URL sent to the CloudFront distribution. This is the per-request alternative to defining transformations in a transformation policy: any transformation in the following reference can be requested directly in the URL’s query string, and multiple transformations are combined with `&`. For example:
 

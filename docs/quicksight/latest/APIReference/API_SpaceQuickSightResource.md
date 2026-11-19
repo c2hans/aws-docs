@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Space
 ---
 
 # SpaceQuickSightResource
-<a name="API_SpaceQuickSightResource"></a>
 
 A QuickSight resource that is associated with a space.
 

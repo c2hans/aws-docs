@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMobileAnalyticsWriteOnlyAccess
-<a name="AmazonMobileAnalyticsWriteOnlyAccess"></a>
 
 **Description**: Provides write only access to put event data for all application resources. (Recommended for SDK integration)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Porting the corePKCS11 library
-<a name="afr-porting-pkcs"></a>
 
 The Public Key Cryptography Standard \#11 defines a platform-independent API to manage and use cryptographic tokens. [PKCS 11](https://en.wikipedia.org/wiki/PKCS_11) refers to the standard and the APIs defined by it. The PKCS \#11 cryptographic API abstracts key storage, get/set properties for cryptographic objects, and session semantics. It's widely used for manipulating common cryptographic objects. Its functions allow application software to use, create, modify, and delete cryptographic objects, without exposing those objects to the application's memory.
 

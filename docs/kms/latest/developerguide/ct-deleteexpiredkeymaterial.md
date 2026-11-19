@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-deleteexpir
 ---
 
 # DeleteExpiredKeyMaterial
-<a name="ct-deleteexpiredkeymaterial"></a>
 
 When you import key material into an AWS KMS key (KMS key), you can set an expiration date and time for that key material. AWS KMS records an entry in your CloudTrail log when you [import the key material](ct-importkeymaterial.md) (with the expiration settings) and when AWS KMS deletes the expired key material. For information about creating KMS key with imported key material, see [Importing key material for AWS KMS keys](importing-keys.md).
 

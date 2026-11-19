@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-catalog-moni
 ---
 
 # Troubleshooting data quality monitoring at the catalog and database level
-<a name="data-quality-catalog-monitoring-troubleshooting"></a>
 
 Use this topic to find out why a data quality evaluation configuration doesn't evaluate a table, why its evaluation runs fail, or why a request to create or update a configuration fails.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cod
 ---
 
 # Using AWS AppConfig Agent to read a specific feature flag
-<a name="appconfig-code-samples-agent-read-feature-flag"></a>
 
 Each of the following samples includes comments about the actions performed by the code.
 

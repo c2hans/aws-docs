@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListFuotaTasks
-<a name="API_ListFuotaTasks"></a>
 
 Lists the FUOTA tasks registered to your AWS account.
 

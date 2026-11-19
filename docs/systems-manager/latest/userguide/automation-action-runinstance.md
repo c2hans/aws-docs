@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:runInstances` – Launch an Amazon EC2 instance
-<a name="automation-action-runinstance"></a>
 
 Launches a new Amazon Elastic Compute Cloud (Amazon EC2) instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/str
 ---
 
 # Migrating from KCL 1.x to KCL 3.5.x\+
-<a name="streams-migrating-kcl"></a>
 
 ## Overview
 <a name="migrating-kcl-overview"></a>

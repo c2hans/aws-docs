@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-chang
 ---
 
 # Change AWS CodeCommit repository settings
-<a name="how-to-change-repository"></a>
 
 You can use the AWS CLI and the AWS CodeCommit console to change the settings of an CodeCommit repository, such as its description or name.
 

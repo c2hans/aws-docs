@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationAttachmentsInformation
-<a name="API_RegistrationAttachmentsInformation"></a>
 
 Provides information on the specified registration attachments.
 

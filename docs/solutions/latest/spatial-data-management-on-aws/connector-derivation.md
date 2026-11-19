@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Metadata lookup and enrichment
-<a name="connector-derivation"></a>
 
 Metadata lookup is a role that S3, REST API, and DynamoDB connectors can fill. When a derive connector includes a `derivation` block in its trigger configuration, it uses the lookup-derivation execution model: fetch records from an external data source, match them to SDMA files or assets by a key field, and write the matched values as governed metadata attributes.
 

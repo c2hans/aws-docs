@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Cre
 ---
 
 # CreateSourceRepository
-<a name="API_CreateSourceRepository"></a>
 
 Creates an empty Git-based source repository in a specified project. The repository is created with an initial empty commit with a default branch named `main`.
 

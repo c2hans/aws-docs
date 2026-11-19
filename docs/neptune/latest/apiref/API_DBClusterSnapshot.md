@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBClusterSnaps
 ---
 
 # DBClusterSnapshot
-<a name="API_DBClusterSnapshot"></a>
 
 Contains the details for an Amazon Neptune DB cluster snapshot
 

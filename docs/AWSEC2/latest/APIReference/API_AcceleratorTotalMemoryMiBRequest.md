@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Accelerat
 ---
 
 # AcceleratorTotalMemoryMiBRequest
-<a name="API_AcceleratorTotalMemoryMiBRequest"></a>
 
 The minimum and maximum amount of total accelerator memory, in MiB.
 

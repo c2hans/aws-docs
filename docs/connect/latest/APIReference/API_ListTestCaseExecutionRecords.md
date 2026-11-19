@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTest
 ---
 
 # ListTestCaseExecutionRecords
-<a name="API_ListTestCaseExecutionRecords"></a>
 
 Lists detailed steps of test case execution that includes all observations along with actions taken and data associated in the specified Amazon Connect instance.
 

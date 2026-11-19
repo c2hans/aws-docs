@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-ccp-outboun
 ---
 
 # Problem using the CCP: Agents can't make outbound calls in the Contact Control Panel (CCP)
-<a name="ts-ccp-outbound-call"></a>
 
 This topic is for experienced IT administrators who need to investigate why agents in their contact center can't make outbound calls.
 

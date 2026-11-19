@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeTe
 ---
 
 # DescribeTestSet
-<a name="API_DescribeTestSet"></a>
 
 Gets metadata information about the test set.
 

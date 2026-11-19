@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBClusterEndpoints
-<a name="API_DescribeDBClusterEndpoints"></a>
 
 Returns information about endpoints for an Amazon Aurora DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaApiIntroAc
 ---
 
 # AWS Private CA API examples
-<a name="PcaApiIntroActions"></a>
 
 The following code examples show how to use select AWS Private CA API actions and data types with the AWS SDK for Java.
 

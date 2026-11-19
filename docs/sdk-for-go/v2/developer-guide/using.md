@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/using.html
 ---
 
 # Using the AWS SDK for Go
-<a name="using"></a>
 
 Learn common and recommended ways of programming with the AWS SDK for Go in your applications.
 

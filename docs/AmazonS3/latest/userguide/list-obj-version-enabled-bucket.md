@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/list-obj-versi
 ---
 
 # Listing objects in a versioning-enabled bucket
-<a name="list-obj-version-enabled-bucket"></a>
 
 This section provides examples of listing object versions from a versioning-enabled bucket. Amazon S3 stores object version information in the *versions* subresource that is associated with the bucket. For more information, see [General purpose buckets configuration options](UsingBucket.md#bucket-config-options-intro). In order to list the objects in a versioning-enabled bucket, you need the `ListBucketVersions` permission.
 

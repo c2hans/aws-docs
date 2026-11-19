@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Core network policy version parameters in AWS Cloud WAN
-<a name="cloudwan-policies-json"></a>
 
 The following sections describe the parameters that you use to create a core network policy version using JSON. Your JSON file contains two sections that describe the policy network settings and segments. You can then add optional sections for defining network function groups and segment actions.
 

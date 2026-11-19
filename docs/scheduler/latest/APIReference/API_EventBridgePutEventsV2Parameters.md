@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_EventB
 ---
 
 # EventBridgePutEventsV2Parameters
-<a name="API_EventBridgePutEventsV2Parameters"></a>
 
 The templated target type for the EventBridge Custom event bus (eventsv2) [PutEvents](https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_PutEvents.html) API operation.
 

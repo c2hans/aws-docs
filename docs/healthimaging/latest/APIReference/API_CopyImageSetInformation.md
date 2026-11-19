@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Co
 ---
 
 # CopyImageSetInformation
-<a name="API_CopyImageSetInformation"></a>
 
 Copy image set information.
 

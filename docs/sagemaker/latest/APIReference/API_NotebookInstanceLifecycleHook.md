@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Notebo
 ---
 
 # NotebookInstanceLifecycleHook
-<a name="API_NotebookInstanceLifecycleHook"></a>
 
 Contains the notebook instance lifecycle configuration script.
 

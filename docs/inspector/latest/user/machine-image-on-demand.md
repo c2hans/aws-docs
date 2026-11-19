@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 ---
 
 # Running on-demand machine image scans with Amazon Inspector
-<a name="machine-image-on-demand"></a>
 
  An on-demand machine image scan is a one-time scan of a single machine image that you request. You don't need to activate Amazon Inspector to run one. Use an on-demand scan to scan a single image at a point in time, such as an image a build pipeline just produced. The image doesn't enter a continuous scanning scope.
 

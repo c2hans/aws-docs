@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # ControlMetadata
-<a name="API_ControlMetadata"></a>
 
  The metadata that's associated with the standard control or custom control.
 

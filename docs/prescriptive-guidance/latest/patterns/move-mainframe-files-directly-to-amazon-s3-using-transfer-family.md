@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Move mainframe files directly to Amazon S3 using Transfer Family
-<a name="move-mainframe-files-directly-to-amazon-s3-using-transfer-family"></a>
 
 *Luis Gustavo Dantas, Amazon Web Services*
 

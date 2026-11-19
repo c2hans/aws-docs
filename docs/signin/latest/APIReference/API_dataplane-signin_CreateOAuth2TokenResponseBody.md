@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # CreateOAuth2TokenResponseBody
-<a name="API_dataplane-signin_CreateOAuth2TokenResponseBody"></a>
 
 The response body for an OAuth 2.0 token request. The fields returned depend on the `grant_type`. The authorization code flow returns `refresh_token` and `id_token`. The refresh token flow omits `id_token`.
 

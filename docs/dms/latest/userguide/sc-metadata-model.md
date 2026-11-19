@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-metadata-model.h
 ---
 
 # Metadata model in DMS Schema Conversion
-<a name="sc-metadata-model"></a>
 
 When you work with DMS Schema Conversion, the service represents your database schemas as a hierarchical tree. This tree is called the *metadata tree*, and it applies to both source and target schemas. Each element in the tree, including the root element ("Servers"), is a metadata model.
 

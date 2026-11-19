@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Viewing scheduled query execution history
-<a name="scheduled-queries-execution-history"></a>
 
 Use the execution history to monitor the performance of your scheduled queries and troubleshoot any issues with query execution or result delivery.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Stack
 ---
 
 # Stack
-<a name="API_Stack"></a>
 
 Describes a stack.
 
@@ -36,6 +35,11 @@ Required: No
 The ARN of the stack.
 Type: String
 Pattern: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
+Required: No
+
+ ** ContentRedirection **   <a name="WorkSpacesApplications-Type-Stack-ContentRedirection"></a>
+Configuration for bidirectional URL redirection between the streaming session and the local client. Use HostToClient to redirect URLs from the remote desktop to the local browser.
+Type: [ContentRedirection](API_ContentRedirection.md) object
 Required: No
 
  ** CreatedTime **   <a name="WorkSpacesApplications-Type-Stack-CreatedTime"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteRun
-<a name="API_DeleteRun"></a>
 
 Deletes the run, given the run ARN. You cannot delete a run if it is still active.
 

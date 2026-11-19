@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-troubl
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshoot local Amazon EKS clusters on AWS Outposts
-<a name="eks-outposts-troubleshooting"></a>
 
 This topic covers some common errors that you might see while using local clusters and how to troubleshoot them. Local clusters are similar to Amazon EKS clusters in the cloud, but there are some differences in how they’re managed by Amazon EKS.
 

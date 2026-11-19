@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/serverless_res
 ---
 
 # Managing serverless resources in Amazon Keyspaces (for Apache Cassandra)
-<a name="serverless_resource_management"></a>
 
 Amazon Keyspaces (for Apache Cassandra) is serverless. Instead of deploying, managing, and maintaining storage and compute resources for your workload through nodes in a cluster, Amazon Keyspaces allocates storage and read/write throughput resources directly to tables.
 

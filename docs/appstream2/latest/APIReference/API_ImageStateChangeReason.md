@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImageStateChangeReason
-<a name="API_ImageStateChangeReason"></a>
 
 Describes the reason why the last image state change occurred.
 

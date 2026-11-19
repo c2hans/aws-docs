@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetPermissio
 ---
 
 # GetPermissionPolicy
-<a name="API_GetPermissionPolicy"></a>
 
 Returns the IAM policy that is attached to the specified rule group.
 

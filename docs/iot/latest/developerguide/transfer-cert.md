@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/transfer-cert.
 ---
 
 # Transfer a certificate to another account
-<a name="transfer-cert"></a>
 
 X.509 certificates that belong to one AWS account can be transferred to another AWS account.
 

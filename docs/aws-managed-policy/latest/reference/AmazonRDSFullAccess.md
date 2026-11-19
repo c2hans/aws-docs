@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSFullAccess
-<a name="AmazonRDSFullAccess"></a>
 
 **Description**: Provides full access to Amazon RDS via the AWS Management Console.
 

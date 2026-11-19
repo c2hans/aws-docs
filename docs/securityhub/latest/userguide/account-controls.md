@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/account-con
 ---
 
 # Security Hub CSPM controls for AWS accounts
-<a name="account-controls"></a>
 
 These Security Hub CSPM controls evaluate AWS accounts.
 

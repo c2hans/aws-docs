@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ResponseInsp
 ---
 
 # ResponseInspection
-<a name="API_ResponseInspection"></a>
 
 The criteria for inspecting responses to login requests and account creation requests, used by the ATP and ACFP rule groups to track login and account creation success and failure rates.
 

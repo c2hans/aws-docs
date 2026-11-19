@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/how-to-cus
 ---
 
 # Manage the CodePipeline service role
-<a name="how-to-custom-role"></a>
 
 The service role is configured with one or more policies that control access to the AWS resources used by the pipeline. You might want to attach more policies to this role, edit the policy attached to the role, or configure policies for other service roles in AWS. You might also want to attach a policy to a role when you configure cross-account access to your pipeline.
 

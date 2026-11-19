@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateInstanceMarketOptionsRequest
-<a name="API_LaunchTemplateInstanceMarketOptionsRequest"></a>
 
 The market (purchasing) option for the instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/train
 ---
 
 # Training an Amazon Rekognition Custom Labels model
-<a name="training-model"></a>
 
 You can train a model by using the Amazon Rekognition Custom Labels console, or by the Amazon Rekognition Custom Labels API. If model training fails, use the information in [Debugging a failed model training](tm-debugging.md) to find the cause of the failure.
 

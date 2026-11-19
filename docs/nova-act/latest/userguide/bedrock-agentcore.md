@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/bedrock-agentc
 ---
 
 # Integrating Nova Act with Amazon Bedrock AgentCore
-<a name="bedrock-agentcore"></a>
 
 Amazon Bedrock AgentCore offers purpose-built infrastructure to deploy and operate production AI agents at scale. AgentCore is comprised of several modules that can be used a la carte depending on your requirements. In this guide we show an example of using each integration with Nova Act.
 

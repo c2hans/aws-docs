@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # SessionManagerOutputUrl
-<a name="API_SessionManagerOutputUrl"></a>
 
 Reserved for future use.
 

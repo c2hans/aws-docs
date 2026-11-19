@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Customize an Amazon WorkSpaces Applications Fleet to Optimize Your Users' Application Streaming Experience
-<a name="customize-fleets"></a>
 
 By customizing WorkSpaces Applications fleet instances, you can define specific aspects of your WorkSpaces Applications environment to optimize your users' application streaming experience. For example, you can persist environment variables to dynamically pass settings across applications and set default file associations that are applied to all of your users. At a high level, customizing a fleet instance includes the following tasks:
 + Connecting to an image builder and customizing it as needed.

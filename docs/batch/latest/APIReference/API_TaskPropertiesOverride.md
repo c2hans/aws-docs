@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TaskProper
 ---
 
 # TaskPropertiesOverride
-<a name="API_TaskPropertiesOverride"></a>
 
 An object that contains overrides for the task definition of a job.
 

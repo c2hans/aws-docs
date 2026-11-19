@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCREL11-BP01 Implement post-change assessment to evaluate impact and optimize performance
-<a name="eucrel11-bp01"></a>
 
  After implementing changes, conduct a post-change assessment to assess their impact on the resiliency and performance of your EUC services. Monitor key metrics and user feedback to identify any potential areas for optimization or adjustment that may have resulted from the changes. Use post-change evaluations to inform continuous improvement efforts and refine future change management processes.
 

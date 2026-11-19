@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetRunGroup.html
 ---
 
 # GetRunGroup
-<a name="API_GetRunGroup"></a>
 
 Gets information about a run group and returns its metadata.
 

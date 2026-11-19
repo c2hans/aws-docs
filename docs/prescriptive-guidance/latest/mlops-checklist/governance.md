@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 9. Governance
-<a name="governance"></a>
 
 ML governance encompasses a set of processes and frameworks that help in the deployment of ML models. It includes model explainability, auditability, traceability, and other more abstract but essential requirements of a successful end-to-end ML lifecycle.
 

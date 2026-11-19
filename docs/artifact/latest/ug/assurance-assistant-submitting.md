@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/assurance-assistant-s
 ---
 
 # Submitting questions
-<a name="assurance-assistant-submitting"></a>
 
 Assurance Assistant offers two modes for submitting questions: single-question mode for immediate, on-the-spot answers, and questionnaire upload mode for processing multiple questions in bulk.
 

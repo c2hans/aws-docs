@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use-server
 ---
 
 # Server-side tool use
-<a name="tool-use-server-side"></a>
 
 If you use the Responses API to invoke the model, then it can use server-side tool calling, in addition to the client-side tool calling we discussed before. Server-side tool calling is a mechanism where tools (APIs, functions, workflows) are executed in a trusted, backend environment, not on the client. This improves the security, reliability, and governance posture of the application. Before Amazon Bedrock executes the Lambda function that implements the tool use, it ensures that the Lambda function has the same IAM policy as that of the application that calls it. Because Amazon Bedrock handles tool execution, clients can focus on implementing their business logic, rather than adding tool functionality. Amazon Bedrock also supports the highest governance standards such as ISO, SOC, and HIPAA eligible. You can either submit your own custom Lambda function to run the tool or use existing pre-defined tools, such as notes and tasks. Server-side tools using the Responses API are available starting with the GPT OSS 20B/120B models, with support for other models coming soon. You can use the Models API to discover available models that you can use with the Responses API. For more details on the Responses API, see [Generate responses using OpenAI APIs](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-responses-api.html).
 

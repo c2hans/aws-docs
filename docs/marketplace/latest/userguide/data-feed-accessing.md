@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-a
 ---
 
 # Accessing data feeds
-<a name="data-feed-accessing"></a>
 
 With AWS Marketplace, you can use data feeds as a mechanism to send structured, up-to-date product and customer information from AWS Marketplace systems an Amazon S3 buckets for ETL (extract, transform, and load) between seller-owned business intelligence tools. You need to configure your environment to receive data feeds to an encrypted Amazon S3 bucket. This topic shows you how to access and unsubscribe from data feeds.
 

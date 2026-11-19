@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SessionSummary
-<a name="API_SessionSummary"></a>
 
 The summary of a session.
 

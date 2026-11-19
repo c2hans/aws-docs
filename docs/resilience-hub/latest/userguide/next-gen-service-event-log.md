@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Viewing the service event log
-<a name="next-gen-service-event-log"></a>
 
 The service event log provides a chronological history of all events that have occurred for a service. You can use the event log to track changes, troubleshoot issues, and audit activity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Enable or disable blueprints
-<a name="enable-disable-blueprints"></a>
 
 You can complete the following procedure to enable or disable blueprints in the Amazon SageMaker management console:
 

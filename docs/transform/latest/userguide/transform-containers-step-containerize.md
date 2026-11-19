@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 3: Containerize
-<a name="transform-containers-step-containerize"></a>
 
 In this step, the AWS Transform AI agent analyzes your application source code and generates Docker artifacts. AWS Transform examines your application's structure, dependencies, and runtime requirements to produce appropriate Dockerfiles and related configuration files.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Emptying a directory bucket
-<a name="directory-bucket-empty"></a>
 
 You can empty an Amazon S3 directory bucket by using the Amazon S3 console. For more information about directory buckets, see [Working with directory buckets](directory-buckets-overview.md).
 

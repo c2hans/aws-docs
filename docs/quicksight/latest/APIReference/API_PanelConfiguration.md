@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Panel
 ---
 
 # PanelConfiguration
-<a name="API_PanelConfiguration"></a>
 
 A collection of options that configure how each panel displays in a small multiples chart.
 

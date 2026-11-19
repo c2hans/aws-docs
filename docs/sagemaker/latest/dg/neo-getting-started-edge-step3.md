@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-getting-started-
 ---
 
 # Make Inferences on Your Device
-<a name="neo-getting-started-edge-step3"></a>
 
 In this example, you will use Boto3 to download the output of your compilation job onto your edge device. You will then import DLR, download an example images from the dataset, resize this image to match the model’s original input, and then you will make a prediction.
 

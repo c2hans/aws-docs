@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAc
 ---
 
 # RouteAccessibilityAvailabilityDetails
-<a name="API_RouteAccessibilityAvailabilityDetails"></a>
 
 Details about the availability of accessibility features.
 

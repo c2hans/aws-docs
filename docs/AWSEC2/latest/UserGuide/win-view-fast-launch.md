@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-view-fast-la
 ---
 
 # View AMIs with EC2 Fast Launch enabled
-<a name="win-view-fast-launch"></a>
 
 You can use the [describe-fast-launch-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fast-launch-images.html) command in the AWS CLI, or the [Get-EC2FastLaunchImage](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FastLaunchImage.html) Tools for PowerShell Cmdlet to get details for AMIs that have EC2 Fast Launch enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/t
 ---
 
 # Step 3: Test your revocation function
-<a name="test-revocation-function"></a>
 
 Use the CloudFront console to test your Connection Function with sample certificates. Navigate to the Connection Function in the console and use the Test tab.
 

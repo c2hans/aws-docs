@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_InsightStatu
 ---
 
 # InsightStatus
-<a name="API_InsightStatus"></a>
 
 The status of the insight.
 

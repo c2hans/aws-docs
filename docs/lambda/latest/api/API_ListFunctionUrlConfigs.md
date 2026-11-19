@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListFunctionUrlCon
 ---
 
 # ListFunctionUrlConfigs
-<a name="API_ListFunctionUrlConfigs"></a>
 
 Returns a list of Lambda function URLs for the specified function.
 

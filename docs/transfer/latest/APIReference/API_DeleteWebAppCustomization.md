@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteW
 ---
 
 # DeleteWebAppCustomization
-<a name="API_DeleteWebAppCustomization"></a>
 
 Deletes the `WebAppCustomization` object that corresponds to the web app ID specified.
 

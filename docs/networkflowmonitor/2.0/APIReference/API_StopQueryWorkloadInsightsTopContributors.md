@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # StopQueryWorkloadInsightsTopContributors
-<a name="API_StopQueryWorkloadInsightsTopContributors"></a>
 
 Stop a top contributors query for workload insights. Specify the query that you want to stop by providing a query ID and a scope ID.
 

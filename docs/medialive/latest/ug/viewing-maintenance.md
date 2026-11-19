@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/viewing-maintenance.
 ---
 
 # Viewing maintenance information
-<a name="viewing-maintenance"></a>
 
 You can view maintenance information from the MediaLive console or from the Personal Health Dashboard in Health Dashboard.
 

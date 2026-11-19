@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load
 ---
 
 # Tag a Network Load Balancer
-<a name="load-balancer-tags"></a>
 
 Tags help you to categorize your Network Load Balancers in different ways. For example, you can tag a resource by purpose, owner, or environment.
 

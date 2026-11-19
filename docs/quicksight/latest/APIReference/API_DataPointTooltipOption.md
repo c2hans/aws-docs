@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPointTooltipOption
-<a name="API_DataPointTooltipOption"></a>
 
 The data point tooltip options.
 

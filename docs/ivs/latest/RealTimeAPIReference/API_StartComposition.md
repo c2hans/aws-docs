@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Star
 ---
 
 # StartComposition
-<a name="API_StartComposition"></a>
 
 Starts a Composition from a stage based on the configuration provided in the request.
 

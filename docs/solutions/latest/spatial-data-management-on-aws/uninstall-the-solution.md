@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 This section describes how to completely remove the Spatial Data Management Application from your AWS account.
 

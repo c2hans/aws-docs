@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetOrgani
 ---
 
 # GetOrganizationConformancePackDetailedStatus
-<a name="API_GetOrganizationConformancePackDetailedStatus"></a>
 
 Returns detailed status for each member account within an organization for a given organization conformance pack.
 

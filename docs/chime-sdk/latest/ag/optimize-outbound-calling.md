@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/optimize-outbound-ca
 ---
 
 # Optimize your outbound calling reputation
-<a name="optimize-outbound-calling"></a>
 
 When making outbound business calls, one of the most difficult tasks is understanding why customers don't answer calls when you dial out. Is the customer deliberately not answering, or are they busy on a work call or answering the door? For businesses it's impossible to know, but you can take action to help increase call success.
 

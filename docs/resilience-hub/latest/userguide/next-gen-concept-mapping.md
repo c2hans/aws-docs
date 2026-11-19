@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Concept mapping: AWS Resilience Hub v1 to Next generation Resilience Hub
-<a name="next-gen-concept-mapping"></a>
 
 The following table maps concepts from AWS Resilience Hub v1 to their equivalents in the next generation of Resilience Hub.
 

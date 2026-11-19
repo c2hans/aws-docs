@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router-tro
 ---
 
 # Troubleshoot inference routers
-<a name="inference-router-troubleshoot"></a>
 
 Use this topic to resolve errors from inference routers. For known limitations, see [Considerations](inference-router.md#inference-router-considerations).
 

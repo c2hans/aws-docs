@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # ModifyLoadBalancerAttributes
-<a name="API_ModifyLoadBalancerAttributes"></a>
 
 Modifies the attributes of the specified load balancer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/troublesh
 ---
 
 # Troubleshooting the AWS Serverless Application Repository
-<a name="troubleshooting"></a>
 
 When you use the AWS Serverless Application Repository, you might encounter issues when you create, update, or delete your applications. Use this section to help troubleshoot common issues that you might encounter. You can also search for answers and post questions in the [AWS Serverless Application Repository forums](https://forums.aws.amazon.com/forum.jspa?forumID=287).
 

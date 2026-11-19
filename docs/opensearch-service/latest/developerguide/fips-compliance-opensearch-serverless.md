@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # FIPS compliance in Amazon OpenSearch Serverless
-<a name="fips-compliance-opensearch-serverless"></a>
 
 Amazon OpenSearch Serverless supports Federal Information Processing Standards (FIPS) 140-2, which is a U.S. and Canadian government standard that specifies security requirements for cryptographic modules that protect sensitive information. When you connect to FIPS-enabled endpoints with OpenSearch Serverless, cryptographic operations occur using FIPS-validated cryptographic libraries.
 

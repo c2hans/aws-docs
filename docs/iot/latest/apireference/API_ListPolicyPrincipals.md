@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListPolicyPr
 ---
 
 # ListPolicyPrincipals
-<a name="API_ListPolicyPrincipals"></a>
 
 Lists the principals associated with the specified policy.
 

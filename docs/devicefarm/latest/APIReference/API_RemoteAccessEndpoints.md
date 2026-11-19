@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Remot
 ---
 
 # RemoteAccessEndpoints
-<a name="API_RemoteAccessEndpoints"></a>
 
 Represents the remote endpoints for viewing and controlling a device during a remote access session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/create-manage-
 ---
 
 # Managing jobs
-<a name="create-manage-jobs"></a>
 
 Use jobs to notify devices of a software or firmware update. You can use the [AWS IoT console](https://console.aws.amazon.com/iot/), the [Job management and control API operations](jobs-management-control-api.md#jobs-http-api), the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/reference/iot/index.html), or the [AWS SDKs](http://aws.amazon.com/tools/#sdk) to create and manage jobs.
 

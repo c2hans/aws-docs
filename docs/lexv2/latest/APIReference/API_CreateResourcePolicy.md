@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateReso
 ---
 
 # CreateResourcePolicy
-<a name="API_CreateResourcePolicy"></a>
 
 Creates a new resource policy with the specified policy statements.
 

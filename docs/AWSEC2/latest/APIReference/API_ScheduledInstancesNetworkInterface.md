@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesNetworkInterface
-<a name="API_ScheduledInstancesNetworkInterface"></a>
 
 Describes a network interface for a Scheduled Instance.
 

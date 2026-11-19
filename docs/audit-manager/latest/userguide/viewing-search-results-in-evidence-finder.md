@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/viewing-s
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Viewing results in evidence finder
-<a name="viewing-search-results-in-evidence-finder"></a>
 
 After your search is finished, you can view the results that matched your search criteria.
 

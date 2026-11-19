@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonConnectReadOnlyAccess
-<a name="AmazonConnectReadOnlyAccess"></a>
 
 **Description**: Grants permission to view the Amazon Connect instances in your AWS account.
 

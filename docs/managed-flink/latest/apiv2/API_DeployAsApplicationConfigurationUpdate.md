@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeployAsA
 ---
 
 # DeployAsApplicationConfigurationUpdate
-<a name="API_DeployAsApplicationConfigurationUpdate"></a>
 
 Updates to the configuration information required to deploy an Amazon Data Analytics Studio notebook as an application with durable state.
 

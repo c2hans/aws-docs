@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Delivery broker
-<a name="delivery-broker"></a>
 
 The AVX broker Lambda (`vsa-{stage}-avx-broker`) subscribes to the DynamoDB stream on `vsa-{stage}-avx-findings`. When a Finding is written or updated, the broker applies its policy stack to decide whether to deliver, which channel to use, and when.
 

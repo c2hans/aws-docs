@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/cc-output-not-a
 ---
 
 # Output types for delivery to non-AWS destinations
-<a name="cc-output-not-aws"></a>
 
 This table describes options that you can use to send output from Elemental Live to a destination that is not an AWS service. Each row describes a different use case.
 

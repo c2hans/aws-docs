@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAREL04-BP03 Use versioning and automated backup procedures
-<a name="midarel04-bp03"></a>
 
  Implement comprehensive data backup strategies with automated procedures and versioning to help protect manufacturing data assets from corruption, accidental deletion, or system failures, helping improve business continuity and speeding up recovery.
 

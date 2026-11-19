@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Use the AWS CDK to enable Lambda Insights on an existing Lambda function
-<a name="Lambda-Insights-Getting-Started-clouddevelopmentkit"></a>
 
 Follow these steps to use the AWS CDK to enable Lambda Insights on an existing Lambda function. To use these steps, you must already be using the AWS CDK to manage your resources.
 

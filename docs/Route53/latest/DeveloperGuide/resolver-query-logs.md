@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-q
 ---
 
 # Resolver query logging
-<a name="resolver-query-logs"></a>
 
 You can log the following DNS queries:
 + Queries that originate in Amazon Virtual Private Cloud VPCs that you specify, as well as the responses to those DNS queries.

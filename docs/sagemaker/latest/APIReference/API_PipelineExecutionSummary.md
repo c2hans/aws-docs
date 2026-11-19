@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # PipelineExecutionSummary
-<a name="API_PipelineExecutionSummary"></a>
 
 A pipeline execution summary.
 

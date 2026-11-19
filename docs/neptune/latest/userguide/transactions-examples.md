@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/transactions-ex
 ---
 
 # Examples of Neptune transaction semantics
-<a name="transactions-examples"></a>
 
 The following examples illustrate different use cases for transaction semantics in Amazon Neptune.
 

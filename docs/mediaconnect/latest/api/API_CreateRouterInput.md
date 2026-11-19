@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_CreateRouter
 ---
 
 # CreateRouterInput
-<a name="API_CreateRouterInput"></a>
 
 Creates a new router input in AWS Elemental MediaConnect.
 

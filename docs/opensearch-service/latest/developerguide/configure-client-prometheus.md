@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using an OpenSearch Ingestion pipeline with Amazon Managed Service for Prometheus
-<a name="configure-client-prometheus"></a>
 
 You can use Amazon Managed Service for Prometheus as a destination for your OpenSearch Ingestion pipeline to store metrics in time series format. The Prometheus sink allows you to send OpenTelemetry metrics or other time series data from your pipeline to an Amazon Managed Service for Prometheus workspace for monitoring, alerting, and analysis.
 

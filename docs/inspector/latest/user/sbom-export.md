@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-export.html
 ---
 
 # Exporting SBOMs with Amazon Inspector
-<a name="sbom-export"></a>
 
  A software bill of materials (SBOM) is a nested inventory of all the open-source and third-party software components in your codebase. Amazon Inspector provides SBOMs for individual resources in your environment. You can use the Amazon Inspector console or Amazon Inspector API to generate SBOMs for your resources. You can export SBOMs for all resources that Amazon Inspector supports and monitors. Exported SBOMs provide information about your software supply. You can review the status of your resources by [assessing the coverage of your AWS environment](https://docs.aws.amazon.com/inspector/latest/user/assessing-coverage.html). This section describes how to configure and export SBOMs.
 

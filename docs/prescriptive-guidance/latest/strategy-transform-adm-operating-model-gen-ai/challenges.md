@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Integration challenges and mitigation strategies
-<a name="challenges"></a>
 
 Although the benefits of integrating generative AI into ADM are substantial, challenges exist. Understanding these obstacles is crucial for developing effective mitigation strategies. The following table provides key challenges and corresponding mitigations for areas that are likely to be affected when integrating generative AI into ADM.
 

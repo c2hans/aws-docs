@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/eventbr
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # EventBridge
-<a name="eventbridge"></a>
 
 AWS Well-Architected Tool sends events to Amazon EventBridge when actions are taken on Well-Architected resources. You can use EventBridge and these events to write rules that take actions, such as notifying you, when a resource change occurs. For more information, see [What is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
 

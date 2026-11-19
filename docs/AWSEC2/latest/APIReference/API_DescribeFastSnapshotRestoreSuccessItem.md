@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFastSnapshotRestoreSuccessItem
-<a name="API_DescribeFastSnapshotRestoreSuccessItem"></a>
 
 Describes fast snapshot restores for a snapshot.
 

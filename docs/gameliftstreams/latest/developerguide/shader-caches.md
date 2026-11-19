@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/sh
 ---
 
 # Shader cache
-<a name="shader-caches"></a>
 
 With shader caching, your application can skip costly shader recompilation in future stream sessions. If your application suffers from stuttering or slow load times, capturing a shader cache can significantly improve the experience for your end users.
 

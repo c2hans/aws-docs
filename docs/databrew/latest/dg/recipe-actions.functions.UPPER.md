@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # UPPER
-<a name="recipe-actions.functions.UPPER"></a>
 
 Converts all alphabetical characters from the strings in the source column or custom strings to uppercase, and returns the result in a new column.
 

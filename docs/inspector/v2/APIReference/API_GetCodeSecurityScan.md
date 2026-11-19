@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetCodeSec
 ---
 
 # GetCodeSecurityScan
-<a name="API_GetCodeSecurityScan"></a>
 
 Retrieves information about a specific code security scan.
 

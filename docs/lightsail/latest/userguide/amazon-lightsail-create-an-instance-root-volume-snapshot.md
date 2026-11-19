@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Create a snapshot of a root volume for a Lightsail instance
-<a name="amazon-lightsail-create-an-instance-root-volume-snapshot"></a>
 
 Back up an instance root volume in Amazon Lightsail by creating a snapshot of the system disk. Then, access the files in the backup by creating a new block storage disk from the snapshot and attaching it to another instance. Do this if you need to:
 + Recover data from the root volume of a botched instance.

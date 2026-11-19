@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-q
 ---
 
 # Route 53 VPC Resolver query log example
-<a name="resolver-query-logs-example-json"></a>
 
 Here's a resolver query log example:
 

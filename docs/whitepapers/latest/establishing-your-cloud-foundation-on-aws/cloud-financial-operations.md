@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cloud financial operations
-<a name="cloud-financial-operations"></a>
 
  Cloud financial operations focuses on capabilities that allow customers to evolve organizations, processes, automation and tools, and establish a self-sustaining cost-aware culture of innovation. This ensures that stakeholders across organizations have a common understanding of cloud costs, and can be done through establishing new working partnerships between finance and technology teams to allow more accurate budgeting and cloud spend monitoring. Reporting, education, gamification, and celebrating efficiency wins can drive organizational cost awareness and help foster a cost-aware culture.
 

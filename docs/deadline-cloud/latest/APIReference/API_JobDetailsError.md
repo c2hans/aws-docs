@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobDetailsError
-<a name="API_JobDetailsError"></a>
 
 The details of a job error.
 

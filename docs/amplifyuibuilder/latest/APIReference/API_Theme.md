@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # Theme
-<a name="API_Theme"></a>
 
 A theme is a collection of style settings that apply globally to the components associated with an Amplify application.
 

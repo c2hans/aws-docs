@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-cloud
 ---
 
 # Debugging CloudWatch synthetics canaries using X-Ray
-<a name="xray-services-cloudwatch-synthetics"></a>
 
 CloudWatch Synthetics is a fully managed service that enables you to monitor your endpoints and APIs using scripted canaries that run 24 hours per day, once per minute.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-cr
 ---
 
 # Create an IAM role for repository creation templates
-<a name="repository-creation-templates-create-iam"></a>
 
 You can use the AWS Management Console to create a role that can be used by Amazon ECR when you specify the repository creation role in a repository creation template that is using repository tags or KMS in a template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-A
 ---
 
 # Using Grafana HTTP APIs
-<a name="Using-Grafana-APIs"></a>
 
 You can use Grafana HTTP APIs with Amazon Managed Grafana workspaces. The following sections describe how to use the APIs, and then list which Grafana APIs are supported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ResizeC
 ---
 
 # ResizeClusterMessage
-<a name="API_ResizeClusterMessage"></a>
 
 Describes a resize cluster operation. For example, a scheduled action to run the `ResizeCluster` API operation.
 

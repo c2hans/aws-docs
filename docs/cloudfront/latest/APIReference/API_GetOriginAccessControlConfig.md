@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetOr
 ---
 
 # GetOriginAccessControlConfig
-<a name="API_GetOriginAccessControlConfig"></a>
 
 Gets a CloudFront origin access control configuration.
 

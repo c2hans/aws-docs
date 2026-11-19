@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Cost
 ---
 
 # CostEstimationTimeRange
-<a name="API_CostEstimationTimeRange"></a>
 
 The time range of a cost estimation.
 

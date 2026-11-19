@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ContextualMetadataConfig
-<a name="API_ContextualMetadataConfig"></a>
 
 The output configuration settings for the contextual metadata feature. Use this structure when the feed output generates metadata that describes the media content.
 

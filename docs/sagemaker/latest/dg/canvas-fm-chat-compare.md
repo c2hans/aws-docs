@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-fm-chat-compa
 ---
 
 # Compare model outputs
-<a name="canvas-fm-chat-compare"></a>
 
 You might want to compare the output of different models side by side to see which model output you prefer. This can help you decide which model is best suited to your use case. You can compare up to three models in chats.
 

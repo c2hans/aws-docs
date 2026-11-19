@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSEC2-CloneInstanceAndUpgradeSQLServer`
-<a name="automation-awsec2-CloneInstanceAndUpgradeSQLServer"></a>
 
 **Description**
 

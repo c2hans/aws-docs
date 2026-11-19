@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Detection
-<a name="gamesec05"></a>
 
 |  GAMESEC05: How do you monitor and analyze player usage behavior within your game?  |
 | --- |

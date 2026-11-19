@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/managed-tier-checkpo
 ---
 
 # Removing managed tiered checkpointing
-<a name="managed-tier-checkpointing-remove"></a>
 
 This section explains how to disable managed tiered checkpointing when you no longer need it.
 

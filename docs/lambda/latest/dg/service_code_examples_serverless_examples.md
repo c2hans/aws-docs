@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/service_code_examples_s
 ---
 
 # Serverless examples for Lambda
-<a name="service_code_examples_serverless_examples"></a>
 
 The following code examples show how to use Lambda with AWS SDKs.
 

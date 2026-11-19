@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # PolicyStoreAliasFilter
-<a name="API_PolicyStoreAliasFilter"></a>
 
 Contains filters for the `ListPolicyStoreAliases` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Development and innovation experiments**
 

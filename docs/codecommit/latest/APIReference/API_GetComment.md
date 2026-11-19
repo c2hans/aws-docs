@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCo
 ---
 
 # GetComment
-<a name="API_GetComment"></a>
 
 Returns the content of a comment made on a change, file, or commit in a repository.
 

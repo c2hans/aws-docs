@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Point 2. Align Leaders
-<a name="align-leaders"></a>
 
 Align Leaders is designed to identify, onboard, and prepare key stakeholders and target direct and indirect users of the cloud program, and mitigate the impacts associated with the journey to the cloud in a methodical fashion. It contains five subpoints:
 + [2.1 Align leadership](#align-leadership)

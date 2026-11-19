@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::BrowserProfile
-<a name="aws-resource-bedrockagentcore-browserprofile"></a>
 
 Specifies a browser profile for Amazon Bedrock AgentCore. A browser profile stores persistent browser session data, including cookies, local storage, session storage, and browsing history, enabling AI agents to maintain authenticated sessions and reuse browser state across multiple browser sessions.
 

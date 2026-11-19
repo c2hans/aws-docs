@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Data privacy
-<a name="data-privacy"></a>
 
 |  LSSEC02: How do you determine and enforce data privacy requirements?  |
 | --- |

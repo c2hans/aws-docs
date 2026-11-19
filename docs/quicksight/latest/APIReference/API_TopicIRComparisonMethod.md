@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicIRComparisonMethod
-<a name="API_TopicIRComparisonMethod"></a>
 
 The definition of a `TopicIRComparisonMethod`.
 

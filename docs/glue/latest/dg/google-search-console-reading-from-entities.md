@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/google-search-console-rea
 ---
 
 # Reading from Google Search Console entities
-<a name="google-search-console-reading-from-entities"></a>
 
 **Prerequisite**
 

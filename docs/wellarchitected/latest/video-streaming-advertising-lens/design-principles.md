@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Design principles
-<a name="design-principles"></a>
 
  These design principles underpin all six pillars of the Video Streaming Advertising (VSA) Lens. They describe how to think about designing, building, and operating advertising workloads in the cloud. Individual pillar-level design principles extend these lens-wide principles with domain-specific guidance.
 

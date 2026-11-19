@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudtrail-table
 ---
 
 # Create a table for CloudTrail logs in Athena using manual partitioning
-<a name="create-cloudtrail-table"></a>
 
 You can manually create tables for CloudTrail log files in the Athena console, and then run queries in Athena.
 

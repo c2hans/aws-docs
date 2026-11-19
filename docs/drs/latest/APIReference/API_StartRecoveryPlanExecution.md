@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartRecover
 ---
 
 # StartRecoveryPlanExecution
-<a name="API_StartRecoveryPlanExecution"></a>
 
 Starts executing a Recovery Plan in `DRILL` or `RECOVERY` mode. A plan cannot have more than one execution in a non-terminal status at a time.
 

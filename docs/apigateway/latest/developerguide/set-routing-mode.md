@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-rou
 ---
 
 # Set the routing mode for your custom domain name
-<a name="set-routing-mode"></a>
 
 You can choose which routing mode API Gateway uses to route traffic to your APIs. For more information, see [Send traffic to your APIs through your custom domain name in API Gateway](rest-api-routing-mode.md). This section discusses routing modes for custom domain names. You must set a routing mode for your custom domain name to route traffic to your APIs. The following routing modes are supported:
 + **ROUTING\_RULE\_THEN\_API\_MAPPING** – Use this mode to send traffic to your APIs with both routing rules and API mappings. In this mode, all routing rules take priority over any API mappings. For an example of this mode, see [Example 2: Routing rules and API mappings](rest-api-routing-rules-examples.md#rest-api-routing-rules-examples-rule-and-mappings).

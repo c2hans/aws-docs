@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigStr
 ---
 
 # ConfigStreamDeliveryInfo
-<a name="API_ConfigStreamDeliveryInfo"></a>
 
 A list that contains the status of the delivery of the configuration stream notification to the Amazon SNS topic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Data management
-<a name="data-management"></a>
 
  Data Management helps you manage your clickstream data. This module provides the following features:
 

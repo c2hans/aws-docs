@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/adding-servers-from
 ---
 
 # Adding instances from the Amazon EC2 Console
-<a name="adding-servers-from-aws-instances"></a>
 
  You can now add EC2 instances as source servers in DRS, starting from the EC2 console. New or existing instances can be added by selecting the appropriate action on the EC2 console, sending you to the AWS focused page allowing you to install the AWS replication agent used by DRS on the selected instances.
 

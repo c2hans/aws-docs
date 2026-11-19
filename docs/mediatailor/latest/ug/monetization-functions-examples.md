@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Function examples
-<a name="monetization-functions-examples"></a>
 
 Before working through these examples, you should be familiar with:
 + [Lifecycle hooks](monetization-functions-hooks.md) — Input fields and output namespaces available at each lifecycle hook.

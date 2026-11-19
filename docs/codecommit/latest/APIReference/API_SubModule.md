@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_SubMo
 ---
 
 # SubModule
-<a name="API_SubModule"></a>
 
 Returns information about a submodule reference in a repository folder.
 

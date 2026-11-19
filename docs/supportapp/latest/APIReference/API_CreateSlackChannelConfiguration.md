@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Creat
 ---
 
 # CreateSlackChannelConfiguration
-<a name="API_CreateSlackChannelConfiguration"></a>
 
 Creates a Slack channel configuration for your AWS account.
 

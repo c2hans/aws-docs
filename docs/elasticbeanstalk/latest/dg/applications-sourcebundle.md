@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-
 ---
 
 # Create an Elastic Beanstalk application source bundle
-<a name="applications-sourcebundle"></a>
 
 This topic explains how to upload your application source files to Elastic Beanstalk in a source bundle. It explains the requirements of a source bundle, the structure, and the approaches to create one.
 

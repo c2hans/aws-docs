@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-fast-launch-
 ---
 
 # Troubleshoot Windows EC2 Fast Launch
-<a name="win-fast-launch-troubleshoot"></a>
 
 ## Troubleshooting scenarios
 <a name="ts-fast-launch-scenarios"></a>

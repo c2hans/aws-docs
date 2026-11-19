@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invento
 ---
 
 # Walkthrough: Using resource data sync to aggregate inventory data
-<a name="inventory-resource-data-sync"></a>
 
 The following walkthrough describes how to create a resource data sync configuration for AWS Systems Manager Inventory by using the AWS Command Line Interface (AWS CLI). A resource data sync automatically ports inventory data from all of your managed nodes to a central Amazon Simple Storage Service (Amazon S3) bucket. The sync automatically updates the data in the central Amazon S3 bucket whenever new inventory data is discovered.
 
-This walkthrough also describes how to use Amazon Athena and AWS Quick to query and analyze the aggregated data. For information about creating a resource data sync by using Systems Manager in the AWS Management Console, see [Walkthrough: Using resource data sync to aggregate inventory data](#inventory-resource-data-sync). For information about querying inventory from multiple AWS Regions and accounts by using Systems Manager in the AWS Management Console, see [Querying inventory data from multiple Regions and accounts](systems-manager-inventory-query.md).
+This walkthrough also describes how to use Amazon Athena and AWS Quick to query and analyze the aggregated data. For information about creating a resource data sync by using Systems Manager in the AWS Management Console, see [Walkthrough: Using resource data sync to aggregate inventory data](inventory-resource-data-sync.md). For information about querying inventory from multiple AWS Regions and accounts by using Systems Manager in the AWS Management Console, see [Querying inventory data from multiple Regions and accounts](systems-manager-inventory-query.md).
 
 **Note**
 This walkthrough includes information about how to encrypt the sync by using AWS Key Management Service (AWS KMS). Inventory doesn't collect any user-specific, proprietary, or sensitive data so encryption is optional. For more information about AWS KMS, see [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/).

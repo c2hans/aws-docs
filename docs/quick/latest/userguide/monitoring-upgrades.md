@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/monitoring-upgrad
 ---
 
 # Monitoring upgrades
-<a name="monitoring-upgrades"></a>
 
 |  |
 | --- |

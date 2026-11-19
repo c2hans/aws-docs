@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListHandshakesForAccount
-<a name="API_ListHandshakesForAccount"></a>
 
 Lists the recent handshakes that you have received.
 

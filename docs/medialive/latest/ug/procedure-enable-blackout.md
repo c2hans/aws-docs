@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/procedure-enable-bla
 ---
 
 # Enabling blackout
-<a name="procedure-enable-blackout"></a>
 
 Follow this procedure if you want to enable the blackout feature in a MediaLive channel.
 

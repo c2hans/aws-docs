@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # RLSPolicyResource
-<a name="API_RLSPolicyResource"></a>
 
 A structure that identifies a row-level security policy as a resource, used when granting permissions on the policy.
 

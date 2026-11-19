@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/build-sample-ami
 ---
 
 # Build the sample Amazon Linux 2023 image description
-<a name="build-sample-ami"></a>
 
 AWS provides a sample Amazon Linux 2023 image description that you can use as a starting point for creating your own custom Attestable AMIs for your workloads. The sample image description includes Amazon Linux 2023 as the base operating system, `dm-verity` and `erofs` configurations for filesystem immutability, and it removes all interactive access (such as SSH, EC2 instance connect, and serial console) to create an isolated compute environment. For more information about the sample image description, see the [ Github repo](https://github.com/amazonlinux/kiwi-image-descriptions-examples).
 

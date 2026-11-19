@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-tes
 ---
 
 # Testing a blueprint
-<a name="developing-blueprints-testing"></a>
 
 While you develop your code, you should perform local testing to verify that the workflow layout is correct.
 

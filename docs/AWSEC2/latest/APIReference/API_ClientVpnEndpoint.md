@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnEndpoint
-<a name="API_ClientVpnEndpoint"></a>
 
 Describes a Client VPN endpoint.
 

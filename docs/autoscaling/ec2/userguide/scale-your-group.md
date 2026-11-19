@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/scale-your-gro
 ---
 
 # Increase or decrease compute capacity of your application with scaling
-<a name="scale-your-group"></a>
 
 *Scaling* is the ability to increase or decrease the compute capacity of your application. Scaling starts with an event, or scaling action, which instructs an Auto Scaling group to either launch or terminate Amazon EC2 instances.
 

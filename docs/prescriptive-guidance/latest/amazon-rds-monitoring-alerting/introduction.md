@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Monitoring and alerting tools and best practices for Amazon RDS for MySQL and MariaDB
-<a name="introduction"></a>
 
 *Igor Obradovic, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/example-q
 ---
 
 # Example Security Lake queries for AWS WAFv2 logs
-<a name="example-queries-waf-sourceversion2"></a>
 
 AWS WAF is a web application firewall that you can use to monitor web requests that your end users send to your applications and to control access to your content.
 

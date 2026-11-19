@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/supplementa
 ---
 
 # Supplementary reports
-<a name="supplementary-reports"></a>
 
 AWS Marketplace delivers supplementary reports through the [Seller delivery data feeds in AWS Marketplace](data-feed-service.md) to seller-owned Amazon S3 accounts that are connected to the AWS Marketplace Seller Account ID associated with the AWS Marketplace listings for sellers. For more information, see [Create a destination Amazon Simple Storage Service bucket](https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-service.html#data-feed-accessing).
 

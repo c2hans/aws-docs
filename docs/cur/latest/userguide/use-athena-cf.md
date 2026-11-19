@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/use-athena-cf.html
 ---
 
 # Setting up Athena using CloudFormation templates
-<a name="use-athena-cf"></a>
 
 **Important**
 CloudFormation doesn't support cross-Region resources. If you plan to use an CloudFormation template, you must create all resources in the same AWS Region. The Region must support the following services:

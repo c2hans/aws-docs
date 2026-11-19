@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Expor
 ---
 
 # ExportBackupPlanTemplate
-<a name="API_ExportBackupPlanTemplate"></a>
 
 Returns the backup plan that is specified by the plan ID as a backup template.
 

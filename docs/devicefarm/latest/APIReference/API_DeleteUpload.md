@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteUpload
-<a name="API_DeleteUpload"></a>
 
 Deletes an upload given the upload ARN.
 

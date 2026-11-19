@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMECOST02-BP03 Select the appropriate compute pricing option to reduce costs
-<a name="gamecost02-bp03"></a>
 
  Run performance tests of your game server software across a variety of instance types and compute options to determine which option is most cost-effective for your game.
 

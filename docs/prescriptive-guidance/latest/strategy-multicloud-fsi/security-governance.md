@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Establish security and governance for each CSP
-<a name="security-governance"></a>
 
 Because of the [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/), FIs that adopt cloud services can reduce administrative burden by offloading some of the responsibility for infrastructure security to the CSP. FIs can benefit from purpose-built, cloud-native security services that offer features that are often unavailable, difficult to manage, or cost-prohibitive in an on-premises environment. A successful cloud security and governance strategy enables IT and security teams to focus on building systems that are secure by design, helps the FI rapidly adapt to evolving mission requirements, and provides staff with secure environments for innovation.
 

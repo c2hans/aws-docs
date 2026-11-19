@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateCrawlerSche
 ---
 
 # UpdateCrawlerSchedule
-<a name="API_UpdateCrawlerSchedule"></a>
 
 Updates the schedule of a crawler using a `cron` expression.
 

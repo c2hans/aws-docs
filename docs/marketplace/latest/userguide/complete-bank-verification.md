@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/complete-ba
 ---
 
 # Step 6: Complete bank account verification
-<a name="complete-bank-verification"></a>
 
 To receive disbursements from the AWS EMEA and Korea invoicing entity, you must provide additional information to verify your disbursement bank account that is listed in the **Payment Information** tab in AWS Partner Central.
 

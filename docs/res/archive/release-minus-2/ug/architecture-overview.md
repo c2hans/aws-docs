@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/architect
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This section provides an architecture diagram for the components deployed with this product.
 

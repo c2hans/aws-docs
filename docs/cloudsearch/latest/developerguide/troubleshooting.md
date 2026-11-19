@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/troubl
 ---
 
 # Troubleshooting Amazon CloudSearch
-<a name="troubleshooting"></a>
 
 The following topics describe solutions to problems you might encounter when using Amazon CloudSearch.
 

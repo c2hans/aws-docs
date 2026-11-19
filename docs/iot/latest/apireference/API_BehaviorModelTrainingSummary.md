@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_BehaviorMode
 ---
 
 # BehaviorModelTrainingSummary
-<a name="API_BehaviorModelTrainingSummary"></a>
 
  The summary of an ML Detect behavior model.
 

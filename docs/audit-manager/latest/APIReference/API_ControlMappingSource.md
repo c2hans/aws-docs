@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # ControlMappingSource
-<a name="API_ControlMappingSource"></a>
 
  The data source that determines where AWS Audit Manager collects evidence from for the control.
 

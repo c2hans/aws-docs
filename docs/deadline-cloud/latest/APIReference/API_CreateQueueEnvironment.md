@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CreateQueueEnvironment
-<a name="API_CreateQueueEnvironment"></a>
 
 Creates an environment for a queue that defines how jobs in the queue run.
 

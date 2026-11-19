@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-pipelines.html
 ---
 
 # Creating Amazon Chime SDK media pipelines
-<a name="media-pipelines"></a>
 
 In this section, we show you how to create media pipelines, which are used to capture or stream an Amazon Chime SDK meeting. Before you begin, you must integrate your client application with the Amazon Chime SDK client library. For more information, see [Learn about the Amazon Chime SDK client libraries](mtgs-sdk-client-lib.md). For more information about media pipelines, see [Capture Amazon Chime SDK Meetings Using media pipelines](https://aws.amazon.com/blogs/business-productivity/capture-amazon-chime-sdk-meetings-using-media-capture-pipelines/) in the *AWS Business Productivity Blog*.
 

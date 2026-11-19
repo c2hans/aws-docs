@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/MEDIAN.
 ---
 
 # MEDIAN function
-<a name="MEDIAN"></a>
 
 ## Syntax
 <a name="MEDIAN-synopsis"></a>

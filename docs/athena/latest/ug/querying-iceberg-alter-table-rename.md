@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-alter-
 ---
 
 # ALTER TABLE RENAME
-<a name="querying-iceberg-alter-table-rename"></a>
 
 Renames a table.
 

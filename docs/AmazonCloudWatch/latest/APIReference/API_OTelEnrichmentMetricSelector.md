@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # OTelEnrichmentMetricSelector
-<a name="API_OTelEnrichmentMetricSelector"></a>
 
 Selects the metrics in one namespace, for use in the `IncludeFilters` or `ExcludeFilters` parameter of [StartOTelEnrichment](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_StartOTelEnrichment.html) or [UpdateOTelEnrichment](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UpdateOTelEnrichment.html).
 

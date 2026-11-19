@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Transaction timeout in Amazon Aurora MySQL
-<a name="AuroraMySQL.TransactionTimeout"></a>
 
 The `aurora_transaction_timeout` parameter sets the maximum duration for a transaction. This parameter can help prevent long-running transactions (active or idle) from blocking [InnoDB purge](https://dev.mysql.com/doc/refman/8.4/en/glossary.html#glos_purge), which can lead to performance issues. This parameter is available in Aurora MySQL version 8.4.8 and higher.
 

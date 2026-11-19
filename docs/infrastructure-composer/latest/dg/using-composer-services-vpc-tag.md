@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Identify Infrastructure Composer resources and related information in a VPC
-<a name="using-composer-services-vpc-tag"></a>
 
 To integrate Infrastructure Composer with Amazon VPC, you must first identify resources in a VPC and the information needed to complete an integration. This also includes configuration information related to security groups, subnet identifiers, parameter types, SSM types, static value types.
 

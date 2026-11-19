@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_InvokeWithResponse
 ---
 
 # InvokeWithResponseStreamCompleteEvent
-<a name="API_InvokeWithResponseStreamCompleteEvent"></a>
 
 A response confirming that the event stream is complete.
 

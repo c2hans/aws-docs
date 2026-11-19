@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/task-compute-resources.
 ---
 
 # Task compute and resources
-<a name="task-compute-resources"></a>
 
 When you define tasks in a HealthOmics workflow, you specify the compute, memory, and container resources that each task requires. HealthOmics allocates the appropriate instance type for each task based on the resources you request.
 

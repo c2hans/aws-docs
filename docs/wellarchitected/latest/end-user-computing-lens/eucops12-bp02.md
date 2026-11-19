@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS12-BP02 Define and maintain an alerting chain of command that quickly communicates issues in real time
-<a name="eucops12-bp02"></a>
 
  As important as gathering relevant service metrics and alerts is expediting the propagation of those alerts to the right teams, individuals, or automated processes. This propagation helps you quickly surface and remediate associated issues.
 

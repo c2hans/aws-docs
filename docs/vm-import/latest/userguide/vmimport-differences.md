@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-diff
 ---
 
 # Compare image import and instance import processes in VM Import/Export
-<a name="vmimport-differences"></a>
 
 The following table summarizes the key differences between image import and instance import.
 

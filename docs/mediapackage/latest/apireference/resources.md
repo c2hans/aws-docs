@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/resourc
 ---
 
 # Resources
-<a name="resources"></a>
 
 The AWS Elemental MediaPackage REST API includes the following resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Descr
 ---
 
 # DescribeTable
-<a name="API_DescribeTable"></a>
 
 Returns information about the table, including the table name, database name, retention duration of the memory store and the magnetic store. [Service quotas apply](https://docs.aws.amazon.com/timestream/latest/developerguide/ts-limits.html). See [code sample](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.describe-table.html) for details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionS
 ---
 
 # ActionSummary
-<a name="API_ActionSummary"></a>
 
 Summary information for an Amazon Q Business plugin action.
 

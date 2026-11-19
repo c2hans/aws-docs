@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Amazon Linux platform updates on November 19, 2021
-<a name="release-2021-11-19-linux"></a>
 
 This release provides new versions for AWS Elastic Beanstalk platforms based on Amazon Linux. The release includes security updates. It updates AMI, Go, Corretto, Tomcat, .NET Core, Node.js, Ruby, and updates Graviton image IDs. It also introduces an on-instance tool called *pkg-repo* to unlock yum package repositories.
 

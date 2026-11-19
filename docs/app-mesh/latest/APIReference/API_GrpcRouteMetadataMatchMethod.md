@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRou
 ---
 
 # GrpcRouteMetadataMatchMethod
-<a name="API_GrpcRouteMetadataMatchMethod"></a>
 
 An object that represents the match method. Specify one of the match values.
 

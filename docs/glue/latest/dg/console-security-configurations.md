@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-security-configur
 ---
 
 # Managing security configurations on the AWS Glue console
-<a name="console-security-configurations"></a>
 
 **Warning**
 AWS Glue security configurations are not currently supported in Ray jobs.

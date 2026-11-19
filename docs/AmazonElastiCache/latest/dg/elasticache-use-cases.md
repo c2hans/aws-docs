@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/elasticache-
 ---
 
 # Common ElastiCache Use Cases and How ElastiCache Can Help
-<a name="elasticache-use-cases"></a>
 
 Whether serving the latest news, a top-10 leaderboard, a product catalog, or selling tickets to an event, speed is the name of the game. The success of your website and business is greatly affected by the speed at which you deliver content.
 

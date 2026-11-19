@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBClusterParameterGroup
-<a name="API_CreateDBClusterParameterGroup"></a>
 
 Creates a new DB cluster parameter group.
 

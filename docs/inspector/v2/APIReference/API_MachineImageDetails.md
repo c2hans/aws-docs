@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_MachineIma
 ---
 
 # MachineImageDetails
-<a name="API_MachineImageDetails"></a>
 
 Contains details about an Amazon Machine Image (AMI) that Amazon Inspector scanned directly.
 

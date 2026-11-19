@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Solut
 ---
 
 # Amazon CloudWatch solution: Prometheus metric collection on Amazon Amazon EC2
-<a name="Solution-Prometheus-On-EC2"></a>
 
 This solution helps you collect Prometheus-compatible metrics from your Amazon EC2 instances without running or scaling your own collection infrastructure. You run one or more Prometheus exporters on your instances, and a Amazon CloudWatch managed Prometheus collector discovers the targets in your VPC, scrapes their `/metrics` endpoints, and delivers the metrics to CloudWatch. For general information about all CloudWatch observability solutions, see [CloudWatch observability solutions](Monitoring-Solutions.md). For more information about managed collectors, see [Amazon CloudWatch managed Prometheus collectors](managed-prometheus-collectors.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-itemba
 ---
 
 # Processing individual items with a Lambda function in Step Functions
-<a name="tutorial-itembatcher-single-item-process"></a>
 
 In this tutorial, you use the *Distributed Map state*'s [ItemBatcher (Map)](input-output-itembatcher.md) field to iterate over individual items present in a batch using a Lambda function. The *Distributed Map state* starts four child workflow executions. Each of these child workflows runs an *Inline Map state*. For its each iteration, the *Inline Map state* invokes a Lambda function and passes a single item from the batch to the function. The Lambda function then processes the item and returns the result.
 

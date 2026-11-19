@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/reporting-idr.html
 ---
 
 # Reporting in Incident Detection and Response
-<a name="reporting-idr"></a>
 
 AWS Incident Detection and Response provides operational and performance data to help you understand how the service is configured, the history of your incidents, and the performance of the Incident Detection and Response service. This page covers the types of data available, including configuration data, incident data, and performance data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/me
 ---
 
 # Messaging & communications
-<a name="messagingandcommunications-pattern-list"></a>
 
 **Topics**
 + [Automate RabbitMQ configuration in Amazon MQ](automate-rabbitmq-configuration-in-amazon-mq.md)

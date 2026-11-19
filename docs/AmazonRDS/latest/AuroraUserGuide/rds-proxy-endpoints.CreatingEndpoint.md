@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-pro
 ---
 
 # Creating a proxy endpoint
-<a name="rds-proxy-endpoints.CreatingEndpoint"></a>
 
 To create a proxy endpoint, follow these instructions:
 

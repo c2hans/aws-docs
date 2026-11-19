@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Dimensio
 ---
 
 # Dimensions
-<a name="API_Dimensions"></a>
 
 Contains information about the dimensions for a set of metrics.
 

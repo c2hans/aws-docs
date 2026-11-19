@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Domain name resolution at the edge (BP3)
-<a name="domain-name-resolution-at-the-edge-bp3"></a>
 
 ## Using Route 53 for DNS availability
 <a name="using-route53-for-dns-availability"></a>

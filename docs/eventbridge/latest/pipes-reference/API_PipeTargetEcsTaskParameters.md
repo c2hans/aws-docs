@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetEcsTaskParameters
-<a name="API_PipeTargetEcsTaskParameters"></a>
 
 The parameters for using an Amazon ECS task as a target.
 

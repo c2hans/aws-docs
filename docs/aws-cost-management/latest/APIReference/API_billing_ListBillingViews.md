@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBillingViews
-<a name="API_billing_ListBillingViews"></a>
 
 Lists the billing views available for a given time period.
 

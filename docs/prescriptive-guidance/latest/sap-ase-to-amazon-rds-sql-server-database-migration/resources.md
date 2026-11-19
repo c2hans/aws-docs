@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-ase-to-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS documentation
 <a name="9999999999999999aws--documentation.593ec45a-bf26-5ac2-9424-4ca4a2d23c24"></a>

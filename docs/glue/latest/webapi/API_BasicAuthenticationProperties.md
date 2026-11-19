@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BasicAuthenticati
 ---
 
 # BasicAuthenticationProperties
-<a name="API_BasicAuthenticationProperties"></a>
 
 Basic authentication configuration that defines the username and password properties for HTTP Basic authentication.
 

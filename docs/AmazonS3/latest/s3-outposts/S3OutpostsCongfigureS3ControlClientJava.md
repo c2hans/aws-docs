@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsCo
 ---
 
 # Configure the S3 control client for S3 on Outposts by using the SDK for Java
-<a name="S3OutpostsCongfigureS3ControlClientJava"></a>
 
 The following example configures the Amazon S3 control client for Amazon S3 on Outposts by using the AWS SDK for Java. To use this example, replace each `{{user input placeholder}}` with your own information.
 

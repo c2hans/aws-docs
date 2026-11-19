@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ActionThreshold
-<a name="API_budgets_ActionThreshold"></a>
 
 The trigger threshold of the action.
 

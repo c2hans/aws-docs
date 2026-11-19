@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identit
 ---
 
 # Using identity-based policies (IAM policies) for CloudWatch Logs
-<a name="iam-identity-based-access-control-cwl"></a>
 
 This topic provides examples of identity-based policies in which an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles).
 

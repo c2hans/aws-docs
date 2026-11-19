@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-detaching-volum
 ---
 
 # Detach an Amazon EBS volume from an Amazon EC2 instance
-<a name="ebs-detaching-volume"></a>
 
 You need to detach an Amazon Elastic Block Store (Amazon EBS) volume from an instance before you can attach it to a different instance or delete it. Detaching a volume does not affect the data on the volume.
 

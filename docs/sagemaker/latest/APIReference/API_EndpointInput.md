@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointInput
-<a name="API_EndpointInput"></a>
 
 Input object for the endpoint
 

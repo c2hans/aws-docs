@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/aws-managed-polic
 ---
 
 # AWS managed policies for AWS Trusted Advisor
-<a name="aws-managed-policies-for-trusted-advisor"></a>
 
 Trusted Advisor has the following AWS managed policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Genomics Data Transfer, Data Access Patterns, Storage, and Archival
-<a name="genomics-data-transfer-storage-archival"></a>
 
 Publication date: **December 7, 2021 ([Diagram history](#genomics-history))**
 

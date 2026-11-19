@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Retrieve in-app messages for an endpoint programmatically using Amazon Pinpoint
-<a name="channels-inapp-retrieving"></a>
 
 Your applications can call the [GetInAppMessages](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id-inappmessages.html#GetInAppMessages) API to retrieve all of the in-app messages that a given endpoint is entitled to. When you call the `GetInAppMessages` API, you provide the following parameters:
 + `ApplicationId` – The unique ID of the Amazon Pinpoint project that the in-app message campaign is associated with.

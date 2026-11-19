@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Local
 ---
 
 # LocalNavigationConfiguration
-<a name="API_LocalNavigationConfiguration"></a>
 
 The navigation configuration for `CustomActionNavigationOperation`.
 

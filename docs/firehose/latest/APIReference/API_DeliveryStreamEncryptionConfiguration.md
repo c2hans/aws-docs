@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Deliver
 ---
 
 # DeliveryStreamEncryptionConfiguration
-<a name="API_DeliveryStreamEncryptionConfiguration"></a>
 
 Contains information about the server-side encryption (SSE) status for the delivery stream, the type customer master key (CMK) in use, if any, and the ARN of the CMK. You can get `DeliveryStreamEncryptionConfiguration` by invoking the [DescribeDeliveryStream](API_DescribeDeliveryStream.md) operation.
 

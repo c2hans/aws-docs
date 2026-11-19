@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Netwo
 ---
 
 # NetworkProfile
-<a name="API_NetworkProfile"></a>
 
 An array of settings that describes characteristics of a network profile.
 

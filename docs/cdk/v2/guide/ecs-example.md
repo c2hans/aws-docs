@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ecs-example.html
 ---
 
 # Example: Create an AWS Fargate service using the AWS CDK
-<a name="ecs-example"></a>
 
 In this example, we show you how to create an AWS Fargate service running on an Amazon Elastic Container Service (Amazon ECS) cluster that’s fronted by an internet-facing Application Load Balancer from an image on Amazon ECR.
 

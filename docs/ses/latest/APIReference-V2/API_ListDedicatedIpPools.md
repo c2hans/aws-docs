@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListDedic
 ---
 
 # ListDedicatedIpPools
-<a name="API_ListDedicatedIpPools"></a>
 
 List all of the dedicated IP pools that exist in your AWS account in the current Region.
 

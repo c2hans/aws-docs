@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-chime-
 ---
 
 # Amazon Chime SDK Media Pipelines events
-<a name="events-ref-chime-sdk-media-pipelines"></a>
 
 Amazon Chime SDK Media Pipelines sends service events to EventBridge via AWS CloudTrail.
 

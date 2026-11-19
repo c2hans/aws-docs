@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationChangeSpecification
-<a name="API_CollaborationChangeSpecification"></a>
 
 Defines the specific changes being requested for a collaboration, including configuration modifications and approval requirements.
 

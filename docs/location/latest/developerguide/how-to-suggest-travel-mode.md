@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-su
 ---
 
 # How to get suggestions with travel mode
-<a name="how-to-suggest-travel-mode"></a>
 
 Use `TravelMode` in Suggest requests to improve the relevance of place suggestions based on the user's mode of transportation.
 

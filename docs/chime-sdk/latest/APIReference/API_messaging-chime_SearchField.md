@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # SearchField
-<a name="API_messaging-chime_SearchField"></a>
 
 A `Field` of the channel that you want to search.
 

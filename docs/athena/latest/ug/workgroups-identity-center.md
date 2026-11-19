@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/workgroups-identity-cen
 ---
 
 # Use IAM Identity Center enabled Athena workgroups
-<a name="workgroups-identity-center"></a>
 
 [Trusted identity propagation](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html) is an AWS IAM Identity Center feature that administrators of connected AWS services can use to grant and audit access to service data. Access to this data is based on user attributes such as group associations. Setting up trusted identity propagation requires collaboration between the administrators of connected AWS services and the IAM Identity Center administrators. For more information, see [Prerequisites and considerations](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overall-prerequisites.html).
 

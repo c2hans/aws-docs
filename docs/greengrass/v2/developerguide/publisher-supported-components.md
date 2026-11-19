@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/publisher-s
 ---
 
 # Publisher-supported components
-<a name="publisher-supported-components"></a>
 
 |  |
 | --- |

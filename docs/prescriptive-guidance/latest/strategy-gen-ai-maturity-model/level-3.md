@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Generative AI maturity model level 3: Launch
-<a name="level-3"></a>
 
 At this level, organizations transition from proof-of-concept initiatives to the methodical deployment of select, proven generative AI solutions into production environments. This level represents a pivotal shift away from experimentation to focus on robust governance protocols, real-time monitoring systems, and dedicated support infrastructures. Companies focus on launching a few production-grade applications that demonstrate clear business impact. This level emphasizes operational rigor - implementing comprehensive launch frameworks, establishing clear governance guidelines, and maintaining strong security standards. Releasing reliable generative AI solutions that deliver quantifiable results prepares the organization for broader adoption.
 

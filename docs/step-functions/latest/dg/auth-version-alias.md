@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/auth-version-al
 ---
 
 # Authorization for versions and aliases in Step Functions workflows
-<a name="auth-version-alias"></a>
 
 To invoke Step Functions API actions with a version or an alias, you need appropriate permissions. To authorize a version or an alias to invoke an API action, Step Functions uses the state machine’s ARN instead of using the version ARN or alias ARN. You can also scope down the permissions for a specific version or alias. For more information, see [Scoping down permissions](#auth-scope-permission-version-alias).
 

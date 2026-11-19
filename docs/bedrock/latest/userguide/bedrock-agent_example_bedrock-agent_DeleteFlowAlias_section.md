@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent_e
 ---
 
 # Use `DeleteFlowAlias` with an AWS SDK
-<a name="bedrock-agent_example_bedrock-agent_DeleteFlowAlias_section"></a>
 
 The following code example shows how to use `DeleteFlowAlias`.
 

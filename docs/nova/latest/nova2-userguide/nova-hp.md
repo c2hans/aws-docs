@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp.html
 ---
 
 # Amazon Nova customization on SageMaker HyperPod
-<a name="nova-hp"></a>
 
 You can customize Amazon Nova models, including the enhanced Amazon Nova 2.0 models, using [ Amazon Nova recipes](nova-model-recipes.md) and train them on Hyperpod. A recipe is a YAML configuration file that provides details to SageMaker AI on how to run your model customization job. SageMaker HyperPod supports two types of services: Forge and Non-forge.
 

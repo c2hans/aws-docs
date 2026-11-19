@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListTagOptionsFilters
-<a name="API_ListTagOptionsFilters"></a>
 
 Filters to use when listing TagOptions.
 

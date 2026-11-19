@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP02 Establish an organization view of cloud inventory and dependencies
-<a name="fnd04-bp02"></a>
 
  A clear view of your cloud resources is essential for running a secure and cost-efficient cloud environment. A full operational inventory captures all cloud assets, including infrastructure, applications, licenses, and their dependencies, along with details such as location, ownership, and configuration. The inventory stays accurate when automated processes continuously discover and track resources.
 

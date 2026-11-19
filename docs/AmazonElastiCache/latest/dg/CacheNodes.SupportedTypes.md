@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.S
 ---
 
 # Supported node types
-<a name="CacheNodes.SupportedTypes"></a>
 
 ElastiCache supports the following node types. Generally speaking, the latest generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterDateTimePickerControl
-<a name="API_FilterDateTimePickerControl"></a>
 
 A control from a date filter that is used to specify date and time.
 

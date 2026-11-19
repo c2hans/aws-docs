@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_List
 ---
 
 # ListEventsFilters
-<a name="API_ListEventsFilters"></a>
 
  Filters you can use to specify which events are returned when `ListEvents` is called.
 

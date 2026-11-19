@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/quot
 ---
 
 # Quotas for AWS Supply Chain
-<a name="quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request to increase quotas for resources that are set to your account level. For more information on account level quotas, see the table below.
 

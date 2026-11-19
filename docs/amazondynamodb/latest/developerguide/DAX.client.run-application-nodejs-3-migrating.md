@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Migrating to DAX Node.js SDK V3
-<a name="DAX.client.run-application-nodejs-3-migrating"></a>
 
 This migration guide will help you transition your existing DAX Node.js applications. The new SDK requires Node.js 18 or higher and introduces several important changes in how you'll structure your DynamoDB Accelerator code. This guide will walk you through the key differences, including syntax changes, new import methods, and updated asynchronous programming patterns.
 

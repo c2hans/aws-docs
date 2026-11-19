@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/in
 ---
 
 # Involving AWS
-<a name="involving-aws"></a>
 
 Achieving GxP compliance when adopting cloud technology is a journey. AWS has helped many customers along this journey, and there is no compression algorithm for experience.
 

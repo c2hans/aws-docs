@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-administr
 ---
 
 # Administering AWS Quick on desktop
-<a name="desktop-administration"></a>
 
 |  |
 | --- |

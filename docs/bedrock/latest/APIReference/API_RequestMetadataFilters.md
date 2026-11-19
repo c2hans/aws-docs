@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RequestM
 ---
 
 # RequestMetadataFilters
-<a name="API_RequestMetadataFilters"></a>
 
 Rules for filtering invocation logs. A filter can be a mapping of a metadata key to a value that it should or should not equal (a base filter), or a list of base filters that are all applied with `AND` or `OR` logical operators
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Configuring Agent Builder
-<a name="configuring-agent-builder"></a>
 
 Agent Builder provides comprehensive configuration options for creating production-ready AI agents. This section describes how to configure and manage Agent Builder deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartC
 ---
 
 # StartChildWorkflowExecutionFailedEventAttributes
-<a name="API_StartChildWorkflowExecutionFailedEventAttributes"></a>
 
 Provides the details of the `StartChildWorkflowExecutionFailed` event.
 

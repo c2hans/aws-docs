@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/confidence-
 ---
 
 # Tutorial: Use a confidence test from the confidence test suite
-<a name="confidence-tests-tutorial"></a>
 
 AWS IoT Greengrass Testing Framework (GTF) and Greengrass Development Kit (GDK) offer developers ways to run end-to-end tests. You can complete this tutorial to initialize a GDK project with a component, initialize a GDK project with an end-to-end test module, and use a confidence test from the confidence test suite. After you build your custom test case, you can then run the test.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Unt
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a resource in AWS CodeArtifact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ListCompute
-<a name="API_ListCompute"></a>
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 

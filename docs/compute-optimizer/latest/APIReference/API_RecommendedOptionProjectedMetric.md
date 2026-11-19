@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendedOptionProjectedMetric
-<a name="API_RecommendedOptionProjectedMetric"></a>
 
 Describes a projected utilization metric of a recommendation option.
 

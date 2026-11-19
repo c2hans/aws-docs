@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_GetPersisten
 ---
 
 # GetPersistentAppUIPresignedURL
-<a name="API_GetPersistentAppUIPresignedURL"></a>
 
 The presigned URL properties for the cluster's application user interface.
 

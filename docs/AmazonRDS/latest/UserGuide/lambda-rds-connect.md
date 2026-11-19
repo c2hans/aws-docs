@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/lambda-rds-co
 ---
 
 # Automatically connecting a Lambda function and a DB instance
-<a name="lambda-rds-connect"></a>
 
 You can use the Amazon RDS console to simplify setting up a connection between a Lambda function and a DB instance. Often, your DB instance is in a private subnet within a VPC. The Lambda function can be used by applications to access your private DB instance.
 

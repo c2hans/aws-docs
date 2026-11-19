@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/delete_image.
 ---
 
 # Deleting an image in Amazon ECR
-<a name="delete_image"></a>
 
 If you're finished using an image, you can delete it from your repository. If you're finished with a repository, you can delete the entire repository and all of the images within it. For more information, see [Deleting a private repository in Amazon ECR](repository-delete.md).
 

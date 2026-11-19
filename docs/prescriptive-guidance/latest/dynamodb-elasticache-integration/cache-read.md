@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-el
 ---
 
 # Cache read behavior
-<a name="cache-read"></a>
 
 The shim should cache only eventually consistent read calls made to DynamoDB. This includes `get-item`, `batch-get-item`, `query`, and `scan`. It should not cache strongly consistent reads calls or transactional read calls, because those calls inherently don't want to see a cached version of the data.
 

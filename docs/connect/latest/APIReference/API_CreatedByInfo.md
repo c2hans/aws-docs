@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatedB
 ---
 
 # CreatedByInfo
-<a name="API_CreatedByInfo"></a>
 
 Information on the identity that created the file.
 

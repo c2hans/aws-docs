@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # ResourceIntegrations
-<a name="API_app-registry_ResourceIntegrations"></a>
 
 The service integration information about the resource.
 

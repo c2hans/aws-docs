@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Application Load Balancer \| Add Listener Certificate
-<a name="management-advanced-application-load-balancer-add-listener-certificate"></a>
 
 Add a certificate to the specified Application Load Balancer (ALB) listener. Use the RemediateStackDrift parameter for the automation to try to remediate drift, if it is introduced.
 

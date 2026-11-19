@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateDiff.html
 ---
 
 # $dateDiff
-<a name="dateDiff"></a>
 
 New from version 5.0
 

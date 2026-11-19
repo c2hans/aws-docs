@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LowerCaseString
-<a name="API_LowerCaseString"></a>
 
 This processor converts a string to lowercase.
 

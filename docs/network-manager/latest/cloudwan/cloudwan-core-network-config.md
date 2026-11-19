@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Configure the core network settings in an AWS Cloud WAN policy version
-<a name="cloudwan-core-network-config"></a>
 
 The following steps guide you through configuring a core network for a policy version using the **Policy versions** link on the AWS Network Manager console. For more information about a core network in a policy version, see [Network configuration](cloudwan-create-policy-version.md#cloudwan-policy-config).
 

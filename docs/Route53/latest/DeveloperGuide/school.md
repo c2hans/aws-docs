@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/school.htm
 ---
 
 # .school
-<a name="school"></a>
 
 Used for information about education, educational institutions, and school-related activities.
 

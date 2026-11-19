@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DescribeInboundIn
 ---
 
 # DescribeInboundIntegrations
-<a name="API_DescribeInboundIntegrations"></a>
 
 Returns a list of inbound integrations for the specified integration.
 

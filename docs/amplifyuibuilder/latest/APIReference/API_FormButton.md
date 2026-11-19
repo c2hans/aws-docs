@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormButton
-<a name="API_FormButton"></a>
 
 Describes the configuration for a button UI element that is a part of a form.
 

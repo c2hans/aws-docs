@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides troubleshooting instructions for deploying and using the solution.
 

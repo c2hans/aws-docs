@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/virtualga
 ---
 
 # Direct Connect virtual private gateway associations
-<a name="virtualgateways"></a>
 
 You can associate a virtual private gateway with a Direct Connect gateway to enable connectivity between your Direct Connect connection and VPCs across different accounts and Regions. Each VPC requires a virtual private gateway that you associate with the Direct Connect gateway. Once these associations are established, you create private virtual interfaces on your Direct Connect connection to the Direct Connect gateway, allowing multiple VPCs to share the same Direct Connect connection through their respective virtual private gateway associations..
 

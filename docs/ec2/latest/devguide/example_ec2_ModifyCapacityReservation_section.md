@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_ModifyCa
 ---
 
 # Use `ModifyCapacityReservation` with a CLI
-<a name="example_ec2_ModifyCapacityReservation_section"></a>
 
 The following code examples show how to use `ModifyCapacityReservation`.
 

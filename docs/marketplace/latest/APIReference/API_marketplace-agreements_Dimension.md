@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Dimension
-<a name="API_marketplace-agreements_Dimension"></a>
 
 Defines the dimensions that the acceptor has purchased from the overall set of dimensions presented in the rate card.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/policy-pri
 ---
 
 # Principals
-<a name="policy-principal"></a>
 
 The `Principal` element specifies the user, account, service, or other entity that is allowed or denied access to a resource. For more information, see [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) in the *IAM User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Reg
 ---
 
 # RegionFailure
-<a name="API_RegionFailure"></a>
 
 Contains details about a distribution or image configuration failure for a single Region.
 

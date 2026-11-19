@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/datadog-configuring.html
 ---
 
 # Configuring Datadog
-<a name="datadog-configuring"></a>
 
 Before you can use AWS Glue to transfer from Datadog, you must meet the following requirements:
 

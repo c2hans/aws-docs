@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/medical-imaging_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteDatastore` with an AWS SDK or CLI
-<a name="medical-imaging_example_medical-imaging_DeleteDatastore_section"></a>
 
 The following code examples show how to use `DeleteDatastore`.
 

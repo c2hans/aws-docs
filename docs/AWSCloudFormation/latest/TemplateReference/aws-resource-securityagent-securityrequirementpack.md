@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::SecurityRequirementPack
-<a name="aws-resource-securityagent-securityrequirementpack"></a>
 
 The `AWS::SecurityAgent::SecurityRequirementPack` resource specifies a security requirement pack. A security requirement pack is a collection of security requirements that define evaluation criteria and remediation guidance for security testing.
 

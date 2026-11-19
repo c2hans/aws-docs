@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/data-gran
 ---
 
 # Access an AWS Data Exchange data set containing Amazon S3 data access
-<a name="data-grant-access-s3-data-sets"></a>
 
 **Overview for recipients**
 

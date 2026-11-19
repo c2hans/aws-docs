@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # MatchingConfig
-<a name="API_MatchingConfig"></a>
 
 An object that contains configuration settings for the matching process in a rule-based matching workflow.
 

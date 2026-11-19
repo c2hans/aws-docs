@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListRetirabl
 ---
 
 # ListRetirableGrants
-<a name="API_ListRetirableGrants"></a>
 
 Returns information about all grants in the AWS account and Region that have the specified retiring principal or retiring service principal.
 

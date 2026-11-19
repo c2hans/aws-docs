@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # RDS Instance \| Terminate
-<a name="management-standalone-rds-instance-terminate"></a>
 
 Terminate a standalone DB instance or cluster. The automation checks that the DB instance, or cluster, is not part of a CloudFormation stack and does not have termination protection enabled. Please note that deleting the DB cluster deletes all the automated backups for that DB cluster and those backups can't be recovered. Standalone resources for testing purposes are created by AMS upon your request, they are not part of a stack and they can't be deleted with ct-0q0bic0ywqk6c.
 

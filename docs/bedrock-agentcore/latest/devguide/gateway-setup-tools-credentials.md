@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Set up dependencies and credentials to create, maintain, and use gateway resources
-<a name="gateway-setup-tools-credentials"></a>
 
 The AgentCore Gateway service involves the following main processes:
 +  **Creation and maintenance of gateway resources** – You can create gateway and gateway target resources through the Amazon Bedrock AgentCore Control Plane service.

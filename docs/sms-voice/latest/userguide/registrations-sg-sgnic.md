@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Registering a Sender ID with Singapore Network Information Centre (SGNIC)
-<a name="registrations-sg-sgnic"></a>
 
 To register a sender ID with Singapore Network Information Centre (SGNIC) there are two steps that must be completed in the following order:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Validatio
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Contains information about a validation exception field.
 

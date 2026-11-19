@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StopDataMigr
 ---
 
 # StopDataMigration
-<a name="API_StopDataMigration"></a>
 
 Stops the specified data migration.
 

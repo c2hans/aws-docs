@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Endpoi
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 This data type represents the information you need to connect to an Amazon RDS DB instance. This data type is used as a response element in the following actions:
 +  `CreateDBInstance`

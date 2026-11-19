@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_EventC
 ---
 
 # EventCategoriesMap
-<a name="API_EventCategoriesMap"></a>
 
 Contains the results of a successful invocation of the [DescribeEventCategories](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEventCategories.html) operation.
 

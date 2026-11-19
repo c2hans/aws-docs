@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-servic
 ---
 
 # AWS Cloud Map events
-<a name="events-ref-servicediscovery"></a>
 
 AWS Cloud Map sends service events to EventBridge via AWS CloudTrail.
 

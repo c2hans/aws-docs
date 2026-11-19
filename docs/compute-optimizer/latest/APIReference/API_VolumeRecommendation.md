@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # VolumeRecommendation
-<a name="API_VolumeRecommendation"></a>
 
 Describes an Amazon Elastic Block Store (Amazon EBS) volume recommendation.
 

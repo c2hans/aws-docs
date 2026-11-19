@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterControl
-<a name="API_FilterControl"></a>
 
 The control of a filter that is used to interact with a dashboard or an analysis.
 

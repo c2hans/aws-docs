@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ListAlarmMuteRules
-<a name="API_ListAlarmMuteRules"></a>
 
 Lists alarm mute rules in your AWS account and region.
 

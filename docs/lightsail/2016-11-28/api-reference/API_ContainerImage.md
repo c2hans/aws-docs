@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerImage
-<a name="API_ContainerImage"></a>
 
 Describes a container image that is registered to an Amazon Lightsail container service.
 

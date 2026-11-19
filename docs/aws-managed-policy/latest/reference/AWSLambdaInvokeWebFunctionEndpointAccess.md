@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaInvokeWebFunctionEndpointAccess
-<a name="AWSLambdaInvokeWebFunctionEndpointAccess"></a>
 
 **Description**: Grants permission to invoke AWS Lambda Web function endpoints.
 

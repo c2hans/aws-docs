@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/examples-c
 ---
 
 # CLI Examples for the Recovery Readiness API
-<a name="examples-cli-readiness"></a>
 
 This section includes CLI examples for working with the APIs for Recovery Readiness with Amazon Application Recovery Controller (ARC).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # HyperPod checkpointless training features
-<a name="sagemaker-eks-checkpointless-features"></a>
 
 See the following pages to learn about the training features in checkpointless training.
 

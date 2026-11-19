@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # Provenance
-<a name="API_Provenance"></a>
 
 A provenance entry that describes the lineage of a registry record. Records that were auto-detected by AWS Agent Registry carry a provenance entry that links the record back to its upstream source.
 

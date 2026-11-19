@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskExe
 ---
 
 # TaskExecutionFilesFailedDetail
-<a name="API_TaskExecutionFilesFailedDetail"></a>
 
 The number of files or objects that DataSync fails to prepare, transfer, verify, and delete during your task execution.
 

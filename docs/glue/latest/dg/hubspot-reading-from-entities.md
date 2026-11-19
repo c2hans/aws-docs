@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hubspot-reading-from-enti
 ---
 
 # Reading from HubSpot entities
-<a name="hubspot-reading-from-entities"></a>
 
 **Prerequisite**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-cargo.html
 ---
 
 # Using CodeArtifact with Cargo
-<a name="using-cargo"></a>
 
 These topics describe how to use Cargo, the Rust package manager, with CodeArtifact.
 

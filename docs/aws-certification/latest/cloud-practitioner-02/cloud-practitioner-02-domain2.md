@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/cloud-practitio
 ---
 
 # Content Domain 2: Security and Compliance
-<a name="cloud-practitioner-02-domain2"></a>
 
 Domain 2 covers Security and Compliance and represents 30% of the scored content on the exam.
 

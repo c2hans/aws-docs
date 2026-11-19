@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/requirements.html
 ---
 
 # Requirements
-<a name="requirements"></a>
 
 To use Amazon DCV, ensure that the client computers meet the following minimum requirements. Bear in mind that your experience is dependent on the number of pixels that are streamed from the Amazon DCV server to the Amazon DCV client.
 

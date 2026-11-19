@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetForm
 ---
 
 # GetFormType
-<a name="API_GetFormType"></a>
 
 Gets a metadata form type in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Test
 ---
 
 # TestEventPattern
-<a name="API_TestEventPattern"></a>
 
 Tests whether the specified event pattern matches the provided event.
 

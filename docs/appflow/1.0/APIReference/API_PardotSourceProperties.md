@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PardotSourc
 ---
 
 # PardotSourceProperties
-<a name="API_PardotSourceProperties"></a>
 
 The properties that are applied when Salesforce Pardot is being used as a source.
 

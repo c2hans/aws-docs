@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/edit-a-filter-dat
 ---
 
 # Editing filters
-<a name="edit-a-filter-data-prep"></a>
 
 You can edit filters at any time in a dataset or analysis.
 

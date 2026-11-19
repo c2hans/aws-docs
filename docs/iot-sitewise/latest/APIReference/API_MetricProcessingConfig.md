@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Met
 ---
 
 # MetricProcessingConfig
-<a name="API_MetricProcessingConfig"></a>
 
 The processing configuration for the given metric property. You can configure metrics to be computed at the edge or in the AWS Cloud. By default, metrics are forwarded to the cloud.
 

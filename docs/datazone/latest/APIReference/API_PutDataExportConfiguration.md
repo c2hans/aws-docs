@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_PutData
 ---
 
 # PutDataExportConfiguration
-<a name="API_PutDataExportConfiguration"></a>
 
 Creates data export configuration details.
 

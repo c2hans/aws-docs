@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListS
 ---
 
 # ListSamples
-<a name="API_ListSamples"></a>
 
 Gets information about samples, given an AWS Device Farm job ARN.
 

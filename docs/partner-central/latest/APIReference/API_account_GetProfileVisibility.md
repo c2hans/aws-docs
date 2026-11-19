@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetProfileVisibility
-<a name="API_account_GetProfileVisibility"></a>
 
 Retrieves the visibility settings for a partner profile, determining who can see the profile information.
 

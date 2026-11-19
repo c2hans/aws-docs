@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Platforms
-<a name="agentic-ai-platforms"></a>
 
 Agentic AI platforms provide the foundational runtime, orchestration, and integration layers that you need to deploy, scale, and manage production-grade agentic systems. Frameworks define how you build agents, and protocols govern how agents communicate. Platforms provide the environment where these agents operate and collaborate at scale.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Define a queue's scope
-<a name="queues-design-scope"></a>
 
 Your game's player population might have groups of players who shouldn't play together. For example, if you publish your game in two languages each language should have its own game servers.
 

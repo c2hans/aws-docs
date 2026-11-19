@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/data-source-configur
 ---
 
 # Enabling S3 Protection for a standalone account
-<a name="data-source-configure"></a>
 
 A standalone account owns the decision to enable or disable a protection plan in their AWS account in a specific AWS Region.
 

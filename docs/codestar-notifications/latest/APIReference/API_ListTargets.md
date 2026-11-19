@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListTargets
-<a name="API_ListTargets"></a>
 
 Returns a list of the notification rule targets for an AWS account.
 

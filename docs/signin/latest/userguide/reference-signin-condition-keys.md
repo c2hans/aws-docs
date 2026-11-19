@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/reference-signin
 ---
 
 # AWS Sign-In condition keys reference
-<a name="reference-signin-condition-keys"></a>
 
 This page lists the condition keys you can use in AWS Sign-In resource-based policies and resource control policies (RCPs), and shows the evaluation phase and action that each key applies to. Only `signin:PrincipalArn` is specific to AWS Sign-In; the others are AWS global condition keys. For the global key definitions, see [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
 

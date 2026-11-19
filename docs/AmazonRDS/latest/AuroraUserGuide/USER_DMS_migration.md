@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DM
 ---
 
 # Auto migrating databases to Amazon Aurora using AWS Database Migration Service
-<a name="USER_DMS_migration"></a>
 
 You can use the Aurora console to migrate a database from an EC2, on-prem or other cloud provider instance to Aurora. AWS Database Migration Service (AWS DMS) is used for this. For more information about it, see [What is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html) in the *AWS Database Migration Service User Guide*.
 

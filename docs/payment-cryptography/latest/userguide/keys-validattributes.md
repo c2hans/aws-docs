@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ke
 ---
 
 # Understanding key attributes for AWS Payment Cryptography key
-<a name="keys-validattributes"></a>
 
 A tenet of proper key management is that keys are appropriately scoped and can only be used for permitted operations. As such, certain keys can only be created with certain key modes of use. Whenever possible, this aligns with the available modes of use as defined by [TR-31](terminology.md#terms.tr31).
 

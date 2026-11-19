@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/configure-env.html
 ---
 
 # Configure environments to use with the AWS CDK
-<a name="configure-env"></a>
 
 You can configure AWS environments in multiple ways to use with the AWS Cloud Development Kit (AWS CDK). The best method of managing AWS environments will vary, based on your specific needs.
 

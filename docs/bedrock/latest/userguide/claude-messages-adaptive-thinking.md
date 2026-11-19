@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Adaptive thinking
-<a name="claude-messages-adaptive-thinking"></a>
 
 Adaptive thinking lets Claude dynamically decide when and how much to think based on the complexity of each request, instead of requiring a fixed thinking token budget. Adaptive thinking reliably drives better performance than extended thinking with a fixed `budget_tokens`. No beta header is required.
 

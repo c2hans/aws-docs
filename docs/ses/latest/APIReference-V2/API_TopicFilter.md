@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TopicFilt
 ---
 
 # TopicFilter
-<a name="API_TopicFilter"></a>
 
 Used for filtering by a specific topic preference.
 

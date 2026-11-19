@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeFolder
-<a name="API_DescribeFolder"></a>
 
 Describes a folder.
 

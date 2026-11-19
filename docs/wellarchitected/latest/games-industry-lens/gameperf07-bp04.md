@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF07-BP04 Regularly monitor networking performance
-<a name="gameperf07-bp04"></a>
 
  For competitive games, it is important to have a consistent player experience.
 

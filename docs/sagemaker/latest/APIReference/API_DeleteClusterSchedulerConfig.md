@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteClusterSchedulerConfig
-<a name="API_DeleteClusterSchedulerConfig"></a>
 
 Deletes the cluster policy of the cluster.
 

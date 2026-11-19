@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_EfsFile
 ---
 
 # EfsFileLocation
-<a name="API_EfsFileLocation"></a>
 
 Specifies the details for the file location for the file that's being used in the workflow. Only applicable if you are using Amazon Elastic File Systems (Amazon EFS) for storage.
 

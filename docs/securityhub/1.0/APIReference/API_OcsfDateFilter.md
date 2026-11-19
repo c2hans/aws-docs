@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfDat
 ---
 
 # OcsfDateFilter
-<a name="API_OcsfDateFilter"></a>
 
 Enables filtering of security findings based on date and timestamp fields in OCSF.
 

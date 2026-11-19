@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/prepare-vm-im
 ---
 
 # Configurations to export VMs from your virtualization environment
-<a name="prepare-vm-image"></a>
 
 Before you can import your VM to Amazon EC2, you need to export it from your virtualization environment. Use the following guidelines to configure your VM before exporting it.
 

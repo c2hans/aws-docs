@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Calcu
 ---
 
 # CalculateRouteMatrix
-<a name="API_CalculateRouteMatrix"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to the [V2 `CalculateRouteMatrix`](/location/latest/APIReference/API_CalculateRouteMatrix.html) unless you require Grab data.

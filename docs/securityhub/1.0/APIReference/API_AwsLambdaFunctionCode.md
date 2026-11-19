@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaFunctionCode
-<a name="API_AwsLambdaFunctionCode"></a>
 
 The code for the Lambda function. You can specify either an object in Amazon S3, or upload a deployment package directly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.CM.5] Detect performance issues using application performance monitoring
-<a name="o.cm.5-detect-performance-issues-using-application-performance-monitoring"></a>
 
  **Category:** RECOMMENDED
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-programmati
 ---
 
 # Programmatic users
-<a name="acxd-programmatic-users"></a>
 
 Manage machine identities that authenticate with the Platform SDK. Programmatic users are assigned role configurations that determine their access level.
 

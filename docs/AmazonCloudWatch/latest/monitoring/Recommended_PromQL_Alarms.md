@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Recom
 ---
 
 # Recommended PromQL alarms
-<a name="Recommended_PromQL_Alarms"></a>
 
 Use these PromQL alarms as equivalents of the classic recommended alarms. They monitor the same metrics by using PromQL instant queries that are evaluated against metrics ingested through the CloudWatch OTLP endpoint.
 

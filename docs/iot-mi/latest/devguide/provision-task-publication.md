@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/provision-task-pu
 ---
 
 # Provision task publication
-<a name="provision-task-publication"></a>
 
 Use these methods to publish provision-related requests to the managed integrations components.
 

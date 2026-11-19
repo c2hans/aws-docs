@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cluster-autosc
 ---
 
 # Best Practices for Cluster Autoscaling
-<a name="cluster-autoscaling"></a>
 
 This guide provides advice about Cluster Autoscaling, including guidance for Auto Mode, Karpenter and Kubernetes Cluster Autoscaler.
 

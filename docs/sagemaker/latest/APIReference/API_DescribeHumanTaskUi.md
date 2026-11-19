@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeHumanTaskUi
-<a name="API_DescribeHumanTaskUi"></a>
 
 Returns information about the requested human task user interface (worker task template).
 

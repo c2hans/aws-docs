@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-setup-jwt-bear
 ---
 
 # Set up the JWT bearer OAuth flow for Salesforce
-<a name="salesforce-setup-jwt-bearer-oauth"></a>
 
 Refer to Salesforce public documentation for enabling server-to-server integration with [OAuth 2.0 JSON Web Tokens](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm).
 

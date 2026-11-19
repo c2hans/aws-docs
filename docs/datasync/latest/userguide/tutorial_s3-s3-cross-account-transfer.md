@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/tutorial_s3-s3
 ---
 
 # Tutorial: Transferring data between Amazon S3 buckets across AWS accounts
-<a name="tutorial_s3-s3-cross-account-transfer"></a>
 
 With AWS DataSync, you can transfer data between Amazon S3 buckets that belong to different AWS accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-api-dest
 ---
 
 # Sending CloudEvents events to API destinations
-<a name="eb-api-destinations-cloudevents"></a>
 
 CloudEvents is a vendor-neutral specification for event formatting, with the goal of providing interoperability across services, platforms and systems. You can use EventBridge to transform AWS service events to CloudEvents before they are sent to a target, such as an API destination.
 

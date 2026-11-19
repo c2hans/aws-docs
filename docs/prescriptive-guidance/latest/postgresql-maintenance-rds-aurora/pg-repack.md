@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Removing bloat with pg\_repack
-<a name="pg-repack"></a>
 
 You can use the `pg_repack` extension to remove table and index bloat with minimal database locking. You can create this extension in the database instance and run the `pg_repack` client (where the client version matches the extension version) from Amazon Elastic Compute Cloud (Amazon EC2) or from a computer that can connect to your database.
 

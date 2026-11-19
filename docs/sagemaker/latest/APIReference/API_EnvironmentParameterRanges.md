@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentParameterRanges
-<a name="API_EnvironmentParameterRanges"></a>
 
 Specifies the range of environment parameters
 

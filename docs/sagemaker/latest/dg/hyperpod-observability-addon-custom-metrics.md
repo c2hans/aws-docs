@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-observabili
 ---
 
 # Creating custom SageMaker HyperPod cluster metrics
-<a name="hyperpod-observability-addon-custom-metrics"></a>
 
 The Amazon SageMaker HyperPod (SageMaker HyperPod) observability add-on provides hundreds of health, performance, and efficiency metrics out-of-the-box. In addition to those metrics, you might need to monitor custom metrics specific to your applications or business needs that aren't captured by default metrics, such as model-specific performance indicators, data processing statistics, or application-specific measurements. To address this need, you can implement custom metrics collection using OpenTelemetry by integrating a Python code snippet into your application.
 

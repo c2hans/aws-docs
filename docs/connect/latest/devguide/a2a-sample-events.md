@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/a2a-sample-event
 ---
 
 # A2A sample events
-<a name="a2a-sample-events"></a>
 
 This page shows sample payloads for the events that your external AI agent exchanges with Connect Customer. Each sample shows one event. For the rules that govern each event and its fields, see [A2A protocol contract for external AI agents](a2a-developer-guide.md).
 

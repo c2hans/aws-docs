@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-space-edit.ht
 ---
 
 # Edit a shared space
-<a name="domain-space-edit"></a>
 
  You can only edit the details for an Amazon SageMaker Studio Classic or JupyterLab shared space using the AWS CLI. You can't edit the details of a shared space from the Amazon SageMaker AI console. You can only update workspace attributes when there are no running applications in the shared space.
 

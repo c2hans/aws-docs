@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalTranscriptEvent
-<a name="API_streaming_MedicalTranscriptEvent"></a>
 
 The `MedicalTranscriptEvent` associated with a `MedicalTranscriptResultStream`.
 

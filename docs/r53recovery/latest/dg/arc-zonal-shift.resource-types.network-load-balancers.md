@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.re
 ---
 
 # Network Load Balancers
-<a name="arc-zonal-shift.resource-types.network-load-balancers"></a>
 
 ## Using zonal shift for Network Load Balancers
 <a name="using-nlb-zs"></a>

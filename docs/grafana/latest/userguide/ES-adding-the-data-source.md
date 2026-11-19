@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/ES-adding-the-d
 ---
 
 # Manually add Amazon OpenSearch Service as a data source
-<a name="ES-adding-the-data-source"></a>
 
 **To manually add the Amazon OpenSearch Service data source**
 

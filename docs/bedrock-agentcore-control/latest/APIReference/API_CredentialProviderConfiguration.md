@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CredentialProviderConfiguration
-<a name="API_CredentialProviderConfiguration"></a>
 
 The configuration for a credential provider. This structure defines how the gateway authenticates with the target endpoint.
 

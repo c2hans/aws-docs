@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/java.html
 ---
 
 # Java in AL2023
-<a name="java"></a>
 
  AL2023 provides several versions of [Amazon Corretto](https://aws.amazon.com/corretto/) to support Java based workloads. All Java based packages included in AL2023 are built with Amazon Corretto 17.
 

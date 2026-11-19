@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-w
 ---
 
 # Inbound messaging
-<a name="nx-whatsapp-send-inbound"></a>
 
 Within an open conversation window, recipients can reply to your WhatsApp messages. To receive those inbound messages and the status events for your outbound messages, you turn on message and event publishing for your WhatsApp phone number and point it at an Amazon SNS topic. Your application reads the topic and replies with `SendWhatsAppMessage` while the window is open.
 

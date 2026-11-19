@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetOutp
 ---
 
 # GetOutpostSupportedInstanceTypes
-<a name="API_GetOutpostSupportedInstanceTypes"></a>
 
 Gets the instance types that an Outpost can support in `InstanceTypeCapacity`. This will generally include instance types that are not currently configured and therefore cannot be launched with the current Outpost capacity configuration.
 

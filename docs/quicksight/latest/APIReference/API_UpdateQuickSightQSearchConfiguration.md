@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateQuickSightQSearchConfiguration
-<a name="API_UpdateQuickSightQSearchConfiguration"></a>
 
 Updates the state of a Quick Sight Q Search configuration.
 

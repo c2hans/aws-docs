@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/best-practice
 ---
 
 # Secure Windows Server instances on Lightsail
-<a name="best-practices-for-securing-windows-based-lightsail-instances"></a>
 
 In this article, we provide tips and tricks to help you avoid security risks when using your Lightsail instance running Windows Server.
 

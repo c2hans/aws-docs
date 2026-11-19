@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBotVersion
-<a name="API_DescribeBotVersion"></a>
 
 Provides metadata about a version of a bot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetRecoveryPoint
-<a name="API_GetRecoveryPoint"></a>
 
 Returns information about a recovery point.
 

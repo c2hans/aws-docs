@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Getting started with web application firewalls
-<a name="example_wafv2_GettingStarted_052_section"></a>
 
 The following code example shows how to:
 + Create a web ACL

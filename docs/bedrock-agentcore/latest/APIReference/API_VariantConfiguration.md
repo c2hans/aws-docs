@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # VariantConfiguration
-<a name="API_VariantConfiguration"></a>
 
 The configuration for an A/B test variant.
 

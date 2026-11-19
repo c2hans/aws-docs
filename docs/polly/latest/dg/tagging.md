@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/tagging.html
 ---
 
 # Tagging Amazon Polly resources
-<a name="tagging"></a>
 
 A *tag* is a custom attribute label that you or AWS assigns to an AWS resource.
 

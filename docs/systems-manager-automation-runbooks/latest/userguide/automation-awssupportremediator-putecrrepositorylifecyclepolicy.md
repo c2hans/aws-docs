@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-PutEcrRepositoryLifecyclePolicy`
-<a name="automation-awssupportremediator-putecrrepositorylifecyclepolicy"></a>
 
 **Description**
 

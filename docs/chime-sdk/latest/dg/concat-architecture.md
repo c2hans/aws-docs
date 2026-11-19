@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/concat-architecture.
 ---
 
 # Amazon Chime SDK concatenation pipeline architecture
-<a name="concat-architecture"></a>
 
 The following diagram shows the architecture of a media concatenation pipeline.
 

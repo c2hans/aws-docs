@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PrimaryA
 ---
 
 # PrimaryAttributeValue
-<a name="API_PrimaryAttributeValue"></a>
 
 A primary attribute value.
 

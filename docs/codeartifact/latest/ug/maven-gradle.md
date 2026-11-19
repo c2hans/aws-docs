@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-gradle.html
 ---
 
 # Use CodeArtifact with Gradle
-<a name="maven-gradle"></a>
 
 After you have the CodeArtifact auth token in an environment variable as described in [Pass an auth token using an environment variable](tokens-authentication.md#env-var), follow these instructions to consume Maven packages from, and publish new packages to, a CodeArtifact repository.
 

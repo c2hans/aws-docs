@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/dynamic-multiview-co
 ---
 
 # Setting Up Dynamic Multiview Outputs (Console)
-<a name="dynamic-multiview-console"></a>
 
 This section walks through creating a multiview output group in the AWS Elemental MediaLive console. Repeat it for each source feed — one MediaLive channel per feed.
 

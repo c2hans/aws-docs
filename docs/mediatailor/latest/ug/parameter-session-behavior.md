@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/parameter-session-
 ---
 
 # MediaTailor parameter session behavior and persistence
-<a name="parameter-session-behavior"></a>
 
 AWS Elemental MediaTailor processes parameters at session initialization and maintains them throughout the session lifecycle. Understanding session behavior is crucial for implementing dynamic parameter scenarios.
 

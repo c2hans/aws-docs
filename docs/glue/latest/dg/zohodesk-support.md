@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohodesk-support.html
 ---
 
 # AWS Glue support for Zoho Desk
-<a name="zohodesk-support"></a>
 
 AWS Glue supports Zoho Desk as follows:
 

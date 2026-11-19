@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetGro
 ---
 
 # TargetGroupsConfig
-<a name="API_TargetGroupsConfig"></a>
 
 Describes the target groups to attach to a Spot Fleet. Spot Fleet registers the running Spot Instances with these target groups.
 

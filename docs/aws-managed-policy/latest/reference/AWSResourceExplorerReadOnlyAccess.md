@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResourceExplorerReadOnlyAccess
-<a name="AWSResourceExplorerReadOnlyAccess"></a>
 
 **Description**: This policy grants read-only permissions to search for and view Resource Explorer resources and grants read-only permissions to other AWS services to support this access.
 

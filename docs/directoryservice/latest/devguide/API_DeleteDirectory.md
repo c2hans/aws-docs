@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Del
 ---
 
 # DeleteDirectory
-<a name="API_DeleteDirectory"></a>
 
 Deletes an AWS Directory Service directory.
 

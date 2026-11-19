@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CreateLicenseEndpoint
-<a name="API_CreateLicenseEndpoint"></a>
 
 Creates a license endpoint to integrate your various licensed software used for rendering on Deadline Cloud.
 

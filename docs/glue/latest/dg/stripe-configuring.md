@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/stripe-configuring.html
 ---
 
 # Configuring Stripe
-<a name="stripe-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Stripe, you must meet these requirements:
 

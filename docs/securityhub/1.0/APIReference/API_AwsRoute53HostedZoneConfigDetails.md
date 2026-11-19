@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRout
 ---
 
 # AwsRoute53HostedZoneConfigDetails
-<a name="API_AwsRoute53HostedZoneConfigDetails"></a>
 
  An object that contains an optional comment about your Amazon Route 53 hosted zone.
 

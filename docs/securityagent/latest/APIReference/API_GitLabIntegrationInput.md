@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitLabIntegrationInput
-<a name="API_GitLabIntegrationInput"></a>
 
 The configuration for creating a GitLab integration.
 

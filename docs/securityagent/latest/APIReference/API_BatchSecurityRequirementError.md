@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchSecurityRequirementError
-<a name="API_BatchSecurityRequirementError"></a>
 
 Contains information about an error that occurred for a specific security requirement during a batch operation.
 

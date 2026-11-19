@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_TemplateC
 ---
 
 # TemplateConfiguration
-<a name="API_TemplateConfiguration"></a>
 
 Provides a template for the configuration information to connect to your data source.
 

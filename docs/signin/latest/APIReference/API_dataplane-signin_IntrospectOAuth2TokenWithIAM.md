@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # IntrospectOAuth2TokenWithIAM
-<a name="API_dataplane-signin_IntrospectOAuth2TokenWithIAM"></a>
 
 Inspects the metadata and active state of an OAuth 2.0 access token or refresh token.
 

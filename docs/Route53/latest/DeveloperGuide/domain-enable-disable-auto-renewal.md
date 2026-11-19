@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-ena
 ---
 
 # Enabling or disabling automatic renewal for a domain
-<a name="domain-enable-disable-auto-renewal"></a>
 
 When you want to change whether Amazon Route 53 automatically renews registration for a domain shortly before the expiration date, or you want to see the current setting for automatic renewal, perform the following procedure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Acc
 ---
 
 # AccountAssignmentOperationStatusMetadata
-<a name="API_AccountAssignmentOperationStatusMetadata"></a>
 
 Provides information about the [AccountAssignment](API_AccountAssignment.md) creation request.
 

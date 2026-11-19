@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-retr
 ---
 
 # How Parameter Store authorizes parameter retrieval
-<a name="ps-retrieval-authorization"></a>
 
 Four Parameter Store operations can return a parameter value, and each one is authorized against its own IAM action. Three of them authorize against the parameters named in the request. `GetParametersByPath` is the exception: it authorizes against the path in the request rather than against the parameters it returns.
 

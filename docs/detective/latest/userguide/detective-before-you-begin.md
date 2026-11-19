@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/detective-bef
 ---
 
 # Setting up your AWS account
-<a name="detective-before-you-begin"></a>
 
 Before you can enable Amazon Detective, you must have an AWS account. If you do not have an AWS account, complete the following steps to create one.
 

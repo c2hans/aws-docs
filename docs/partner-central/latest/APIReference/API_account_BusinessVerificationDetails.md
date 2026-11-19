@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # BusinessVerificationDetails
-<a name="API_account_BusinessVerificationDetails"></a>
 
 Contains the business information required for verifying a company's legal status and registration details within AWS Partner Central.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # IdentityDescription
-<a name="API_IdentityDescription"></a>
 
 A description of the identity.
 

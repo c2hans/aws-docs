@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StopRe
 ---
 
 # StopReplicationBackfill
-<a name="API_StopReplicationBackfill"></a>
 
 Stops an in progress replication backfill for a registry. The backfill to stop is identified by the `replicationBackfillId` returned by the [StartReplicationBackfill](API_StartReplicationBackfill.md) operation.
 

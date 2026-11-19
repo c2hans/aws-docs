@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_ListLexico
 ---
 
 # ListLexicons
-<a name="API_ListLexicons"></a>
 
 Returns a list of pronunciation lexicons stored in an AWS Region. For more information, see [Managing Lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html).
 

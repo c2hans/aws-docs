@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_U
 ---
 
 # UpdateTableObjects
-<a name="API_UpdateTableObjects"></a>
 
 Updates the manifest of Amazon S3 objects that make up the specified governed table.
 

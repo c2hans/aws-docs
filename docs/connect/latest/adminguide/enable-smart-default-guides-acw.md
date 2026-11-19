@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-smart-d
 ---
 
 # Enable smart default guides for after contact work
-<a name="enable-smart-default-guides-acw"></a>
 
 Connect Customer provides a default step-by-step guide for after contact work (ACW) that automatically launches when an agent enters the ACW state. The guide shows wrap-up tasks in the agent workspace, such as disposition codes, contact summaries, and follow-up actions. You don't need to configure it.
 

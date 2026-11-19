@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_List
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
  Returns a list of tags in an Amazon Rekognition collection, stream processor, or Custom Labels model.
 

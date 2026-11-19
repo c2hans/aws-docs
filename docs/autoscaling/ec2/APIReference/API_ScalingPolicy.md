@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Scaling
 ---
 
 # ScalingPolicy
-<a name="API_ScalingPolicy"></a>
 
 Describes a scaling policy.
 

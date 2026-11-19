@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribePools
-<a name="API_DescribePools"></a>
 
 Retrieves the specified pools or all pools associated with your AWS account.
 

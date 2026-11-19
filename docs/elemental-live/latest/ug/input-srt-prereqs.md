@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/input-srt-prere
 ---
 
 # Get ready
-<a name="input-srt-prereqs"></a>
 
 Before you create an SRT input in your event, speak to the administrator of the upstream system, and obtain the following information:
 + The IP address and port of the content. For example, 192.168.1.2:5000.

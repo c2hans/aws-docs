@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-default.htm
 ---
 
 # Using default slot values in intents for your Lex V2 bot
-<a name="context-mgmt-default"></a>
 
 When you use a default value, you specify a source for a slot value to be filled for new intents when no slot is provided by the user’s input. This source can be previous dialog, request or session attributes, or a fixed value that you set at build-time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-emr-ser
 ---
 
 # Create and manage Amazon EMR Serverless applications with Step Functions
-<a name="connect-emr-serverless"></a>
 
 Learn how to create, start, stop, and delete applications on EMR Serverless using Step Functions. This page lists the supported APIs and provides example `Task` states to perform common use cases.
 

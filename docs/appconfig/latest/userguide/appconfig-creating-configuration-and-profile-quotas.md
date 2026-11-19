@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Understanding configuration store quotas and limitations
-<a name="appconfig-creating-configuration-and-profile-quotas"></a>
 
 Configuration stores supported by AWS AppConfig have the following quotas and limitations.
 

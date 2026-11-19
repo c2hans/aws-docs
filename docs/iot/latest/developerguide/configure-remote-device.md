@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/configure-remo
 ---
 
 # Configuring a remote device and using IoT agent
-<a name="configure-remote-device"></a>
 
 The IoT agent is used to receive the MQTT message that includes the client access token and start a local proxy on the remote device. You must install and run the IoT agent on the remote device if you want secure tunneling to deliver the client access token using MQTT. The IoT agent must subscribe to the following reserved IoT MQTT topic:
 

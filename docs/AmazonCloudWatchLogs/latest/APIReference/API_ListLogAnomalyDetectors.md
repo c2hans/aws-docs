@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListLogAnomalyDetectors
-<a name="API_ListLogAnomalyDetectors"></a>
 
 Retrieves a list of the log anomaly detectors in the account.
 

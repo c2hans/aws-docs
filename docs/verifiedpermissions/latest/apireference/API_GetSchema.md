@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # GetSchema
-<a name="API_GetSchema"></a>
 
 Retrieve the details for the specified schema in the specified policy store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/g
 ---
 
 # Global China Region (GCR) deployment
-<a name="global-china-region-gcr-deployment"></a>
 
 You can deploy the Quota Monitor for AWS solution in AWS China Regions (Beijing and Ningxia) with certain regional limitations and considerations.
 

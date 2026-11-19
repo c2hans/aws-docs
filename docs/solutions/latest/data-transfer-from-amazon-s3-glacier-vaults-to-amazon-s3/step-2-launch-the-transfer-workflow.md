@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Step 2: Launch the transfer workflow
-<a name="step-2-launch-the-transfer-workflow"></a>
 
 **Important**
 Avoid starting multiple transfers simultaneously. Multiple transfers can exceed Amazon Glacier quotas and induce throttling.

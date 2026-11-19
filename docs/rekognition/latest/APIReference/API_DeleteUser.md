@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dele
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes the specified UserID within the collection. Faces that are associated with the UserID are disassociated from the UserID before deleting the specified UserID. If the specified `Collection` or `UserID` is already deleted or not found, a `ResourceNotFoundException` will be thrown. If the action is successful with a 200 response, an empty HTTP body is returned.
 

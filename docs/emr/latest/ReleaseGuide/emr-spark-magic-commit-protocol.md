@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-magic-
 ---
 
 # EMR Spark MagicCommitProtocol
-<a name="emr-spark-magic-commit-protocol"></a>
 
 From EMR 6.15.0 onwards, MagicCommitProtocol becomes the default FileCommitProtocol for Spark when utilizing the S3A filesystem.
 

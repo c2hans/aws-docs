@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/container-nvidia-com
 ---
 
 # Updating inference containers to comply with the NVIDIA Container Toolkit
-<a name="container-nvidia-compliance"></a>
 
 As of versions 1.17.4 and higher, the NVIDIA Container Toolkit no longer mounts CUDA compatibility libraries automatically. This change in behavior could affect your SageMaker AI inference workloads. Your SageMaker AI endpoints and batch transform jobs might use containers that are incompatible with the latest versions of the NVIDIA Container Toolkit. To ensure that your workloads comply with the latest requirements, you might need to update your endpoints or configure your batch transform jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateEventS
 ---
 
 # CreateEventSubscription
-<a name="API_CreateEventSubscription"></a>
 
  Creates an AWS DMS event notification subscription.
 

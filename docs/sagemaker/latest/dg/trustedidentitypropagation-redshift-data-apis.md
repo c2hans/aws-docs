@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropa
 ---
 
 # Connect Studio JupyterLab notebooks to Redshift Data API with trusted identity propagation enabled
-<a name="trustedidentitypropagation-redshift-data-apis"></a>
 
 Amazon Redshift Data API enables you to interact with your Amazon Redshift clusters programmatically without managing persistent connections. When combined with trusted identity propagation, the Redshift Data API provides secure, identity-based access to your data warehouse, allowing you to run SQL queries and retrieve results while maintaining full audit trails of user activities. This integration is particularly valuable for data science workflows that require access to structured data stored in Redshift. The following page includes information and instructions on how to connect trusted identity propagation with Amazon SageMaker Studio to Redshift Data API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Mapping the applications
-<a name="map-your-applications"></a>
 
 There is no standard approach when you migrate applications and their associated dependencies to the AWS Cloud. The following table provides an overview of the main considerations for different applications that are commonly migrated with F5 BIG-IP workloads to the AWS Cloud.
 

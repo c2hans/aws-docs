@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # OnBehalfOfTokenExchangeConfigType
-<a name="API_OnBehalfOfTokenExchangeConfigType"></a>
 
 Configuration for on-behalf-of token exchange.
 

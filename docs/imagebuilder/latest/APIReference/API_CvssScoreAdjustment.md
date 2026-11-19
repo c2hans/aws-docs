@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cvs
 ---
 
 # CvssScoreAdjustment
-<a name="API_CvssScoreAdjustment"></a>
 
 Details about an adjustment that Amazon Inspector made to the CVSS score for a finding.
 

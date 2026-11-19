@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-anal
 ---
 
 # Upgrade analysis
-<a name="aws-glue-api-upgrade-analysis"></a>
 
 The Upgrade analysis API includes operations for viewing, resuming, and stopping upgrade analyses for jobs in AWS Glue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Availability and Beyond: Understanding and Improving the Resilience of Distributed Systems on AWS
-<a name="availability-and-beyond-improving-resilience"></a>
 
 Publication date: **November 12, 2021** ([Document history](document-revisions.md))
 

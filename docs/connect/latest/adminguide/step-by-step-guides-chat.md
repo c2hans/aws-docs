@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/step-by-step-g
 ---
 
 # Use step-by-step guides in chats
-<a name="step-by-step-guides-chat"></a>
 
 You can show step-by-step guides to customers in chat for self-service. A guide collects context from the customer and passes it to the agent if the chat transfers. You can reuse a guide that you built for agents, so you maintain one guide instead of two.<a name="step-by-step-guides-chat-enable"></a>
 

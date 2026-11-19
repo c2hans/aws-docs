@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Updat
 ---
 
 # UpdateDeploymentGroup
-<a name="API_UpdateDeploymentGroup"></a>
 
 Changes information about a deployment group.
 

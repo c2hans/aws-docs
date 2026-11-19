@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # BusinessValidationError
-<a name="API_account_BusinessValidationError"></a>
 
 Contains information about a business rule validation error that occurred during an operation.
 

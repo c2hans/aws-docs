@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/monitoring
 ---
 
 # Monitoring pipelines
-<a name="monitoring"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS CodePipeline. You should collect monitoring data from all parts of your AWS solution so that you can more easily debug a multi-point failure, if one occurs. Before you start monitoring, you should create a monitoring plan that answers the following questions:
 + What are your monitoring goals?

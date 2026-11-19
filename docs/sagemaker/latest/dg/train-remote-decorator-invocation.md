@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-remote-decorat
 ---
 
 # Invoke a remote function
-<a name="train-remote-decorator-invocation"></a>
 
 To invoke a function inside the @remote decorator, use either of the following methods:
 + [Use an @remote decorator to invoke a function](#train-remote-decorator-invocation-decorator).

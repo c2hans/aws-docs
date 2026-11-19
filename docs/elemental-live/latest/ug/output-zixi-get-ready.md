@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-zixi-get
 ---
 
 # Getting ready
-<a name="output-zixi-get-ready"></a>
 
 Before you create a Zixi output in your event, perform the following preparation.
 + Speak to the administrator of the downstream system and make sure that they can work as the Zixi receiver. If they can't, then you can't deliver using the Zixi option.

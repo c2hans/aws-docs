@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_OverallTes
 ---
 
 # OverallTestResultItem
-<a name="API_OverallTestResultItem"></a>
 
 Information about the overall results for a test execution result.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # ChangeMessageVisibilityBatchRequestEntry
-<a name="API_ChangeMessageVisibilityBatchRequestEntry"></a>
 
 Encloses a receipt handle and an entry ID for each message in ` ChangeMessageVisibilityBatch.`
 

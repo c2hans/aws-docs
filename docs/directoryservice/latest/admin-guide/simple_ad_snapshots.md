@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # Restoring your Simple AD with snapshot
-<a name="simple_ad_snapshots"></a>
 
 AWS Directory Service provides the ability to take manual snapshots of data for your Simple AD directory. These snapshots can be used to perform a point-in-time restore for your directory. You cannot take snapshots of AD Connector directories.
 

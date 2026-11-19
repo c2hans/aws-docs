@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ValidStorageOp
 ---
 
 # ValidStorageOptions
-<a name="API_ValidStorageOptions"></a>
 
 Not applicable. In Neptune the storage type is managed at the DB Cluster level.
 

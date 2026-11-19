@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/event-clip-view-cons
 ---
 
 # Viewing the event clipping setup
-<a name="event-clip-view-console"></a>
 
 You can view information about the Elemental Inference features in a channel.
 

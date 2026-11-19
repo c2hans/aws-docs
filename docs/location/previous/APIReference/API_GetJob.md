@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetJo
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
  `GetJob` retrieves detailed information about a specific job, including its current status, configuration, and error information if the job failed.
 

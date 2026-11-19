@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Continual evaluation and best practices
-<a name="continual-evaluation-and-best-practices"></a>
 
  Given the non-deterministic nature of generative AI technologies, implementing a strategy for continual evaluation is crucial. Regularly review the accuracy of your AI systems and maintain ongoing compliance with the established safety and security parameters outlined in your initial assessments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # PutRecord
-<a name="API_feature_store_PutRecord"></a>
 
 The `PutRecord` API is used to ingest a list of `Records` into your feature group.
 

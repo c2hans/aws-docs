@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-sft-2-s
 ---
 
 # Supervised fine-tuning (SFT) on Nova 2.0 on SageMaker Training Jobs
-<a name="nova-sft-2-smtj"></a>
 
 ## Prerequisites
 <a name="nova-model-training-jobs-prerequisites2"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/route-53-domains_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Route 53 domain registration using AWS SDKs
-<a name="route-53-domains_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Route 53 domain registration with AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linu
 ---
 
 # Security & Compliance
-<a name="bobi-linux-security-compliance"></a>
 
 The following AWS security resources help you achieve the level of security you require for your SAP NetWeaver environment on AWS:
 +  [AWS Cloud Security](https://aws.amazon.com/security/)

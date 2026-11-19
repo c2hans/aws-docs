@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartServicePeriodTypeFilters
-<a name="API_channel_StartServicePeriodTypeFilters"></a>
 
 Filters specific to start service period handshakes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vercel-configuring.html
 ---
 
 # Configuring Vercel
-<a name="vercel-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Vercel, you must meet the following requirements:
 

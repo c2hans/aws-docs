@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceEntry
-<a name="API_InstanceEntry"></a>
 
 Describes the Amazon Elastic Compute Cloud instance and related resources to be created using the `create cloud formation stack` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # DeleteProfile
-<a name="API_route53profiles_DeleteProfile"></a>
 
  Deletes the specified Route 53 Profile. Before you can delete a profile, you must first disassociate it from all VPCs.
 

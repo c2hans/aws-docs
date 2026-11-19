@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/monitoring.html
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
  AWS provides multiple services to monitor and manage your infrastructure and applications on AWS. You can use services like [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) and [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) to monitor your underlying infrastructure and APIs, respectively.
 

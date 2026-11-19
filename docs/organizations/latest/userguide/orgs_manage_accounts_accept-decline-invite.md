@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Accepting or declining account invitations with AWS Organizations
-<a name="orgs_manage_accounts_accept-decline-invite"></a>
 
 If you receive an invitation to join an organization, you can accept or decline the invitation.
 

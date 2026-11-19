@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTests
-<a name="API_ListTests"></a>
 
 Gets information about tests in a given test suite.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/snapchat-ads-reading-from
 ---
 
 # Reading from Snapchat Ads entities
-<a name="snapchat-ads-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Snapchat Ads Object you would like to read from. Refer the supported entities table below to check the available entities.

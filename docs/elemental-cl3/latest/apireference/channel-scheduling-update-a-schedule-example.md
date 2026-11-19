@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # Example
-<a name="channel-scheduling-update-a-schedule-example"></a>
 
 To change the name of schedule 17 on channel 1 to “NewName” send the following:
 

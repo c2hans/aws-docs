@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Validation
-<a name="API_Validation"></a>
 
 Validation rules for extracted metadata values. Only one type can be specified, matching the field's data type.
 

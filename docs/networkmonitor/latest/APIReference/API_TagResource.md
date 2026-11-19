@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_T
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds key-value pairs to a monitor or probe.
 

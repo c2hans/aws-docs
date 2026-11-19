@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ServerlessWa
 ---
 
 # Getting started with Watch in Serverless
-<a name="ServerlessWatch"></a>
 
 ElastiCache supports the `WATCH` command, which allows you to monitor keys for changes and execute conditional [transactions](https://valkey.io/topics/transactions/). The `WATCH` command is particularly useful for applications that require optimistic concurrency control, ensuring that transactions are only executed if the monitored keys have not been modified. This includes modifications made by a client, like write commands, and by Valkey itself, like expiration or eviction. If keys were modified from the time they were set in `WATCH` and by the time `EXEC` is received, the entire transaction will be aborted.
 

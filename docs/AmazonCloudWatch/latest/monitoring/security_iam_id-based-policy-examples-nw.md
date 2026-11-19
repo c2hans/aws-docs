@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/secur
 ---
 
 # Identity-based policy examples for Network Synthetic Monitor
-<a name="security_iam_id-based-policy-examples-nw"></a>
 
 By default, users and roles don't have permission to create or modify Network Synthetic Monitor resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

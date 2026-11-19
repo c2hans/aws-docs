@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # SelectedPillar
-<a name="API_SelectedPillar"></a>
 
 The selected pillar.
 

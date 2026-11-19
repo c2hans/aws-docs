@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/baseline-team.html
 ---
 
 # Baseline an approval team
-<a name="baseline-team"></a>
 
 Baselining an approval team is a method to ensure that approvers can and are responding to Multi-party approval sessions they are prompted for. The baseline feature allows the Multi-party approval administrator to select specific approvers or an entire team to baseline, based on the last activity of each approver.
 

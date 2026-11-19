@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/delete-suppression-r
 ---
 
 # Deleting suppression rules in GuardDuty
-<a name="delete-suppression-rules-guardduty"></a>
 
 This section provides the steps to delete a suppression rule in your AWS account in a specific AWS Region.
 

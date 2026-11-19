@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/FAQ.html
 ---
 
 # Elastic Disaster Recovery FAQ
-<a name="FAQ"></a>
 
 ## What source infrastructure does AWS Elastic Disaster Recovery support?
 <a name="drs-source-support"></a>

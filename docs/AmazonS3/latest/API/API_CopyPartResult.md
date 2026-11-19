@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyPartResult.h
 ---
 
 # CopyPartResult
-<a name="API_CopyPartResult"></a>
 
 Container for all response elements.
 

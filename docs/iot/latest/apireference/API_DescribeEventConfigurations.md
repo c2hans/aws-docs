@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEven
 ---
 
 # DescribeEventConfigurations
-<a name="API_DescribeEventConfigurations"></a>
 
 Describes event configurations.
 

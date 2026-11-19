@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetTrainedModel
-<a name="API_GetTrainedModel"></a>
 
 Returns information about a trained model.
 

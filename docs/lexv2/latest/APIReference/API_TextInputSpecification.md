@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TextInputS
 ---
 
 # TextInputSpecification
-<a name="API_TextInputSpecification"></a>
 
 Specifies the text input specifications.
 

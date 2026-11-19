@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/enable-
 ---
 
 # Enable Amazon S3 Bucket Storage for Session Script Logs
-<a name="enable-S3-bucket-storage-session-script-logs"></a>
 
 When you enable Amazon S3 logging in your session script configuration, WorkSpaces Applications captures standard output from your session script. The output is periodically uploaded to an S3 bucket within your Amazon Web Services account. For every AWS Region, WorkSpaces Applications creates a bucket in your account that is unique to your account and the Region.
 

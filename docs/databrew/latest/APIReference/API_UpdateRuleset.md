@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UpdateR
 ---
 
 # UpdateRuleset
-<a name="API_UpdateRuleset"></a>
 
 Updates specified ruleset.
 

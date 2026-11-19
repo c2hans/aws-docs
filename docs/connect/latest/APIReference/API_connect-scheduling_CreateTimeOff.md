@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateTimeOff
-<a name="API_connect-scheduling_CreateTimeOff"></a>
 
 Creates a time off request for a user. You don't provide a status, because Connect Customer owns the request lifecycle. To get the decided status, call `GetTimeOff` or use the time off state-change events.
 

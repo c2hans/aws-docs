@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StartOnDem
 ---
 
 # StartOnDemandScan
-<a name="API_StartOnDemandScan"></a>
 
 Starts an on-demand scan of the specified resource, such as an Amazon Machine Image (AMI).
 

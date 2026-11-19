@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-access-trainin
 ---
 
 # Configure data input mode using the SageMaker Python SDK
-<a name="model-access-training-data-using-pysdk"></a>
 
 SageMaker Python SDK provides the generic [ModelTrainer class](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) and its [variations for ML frameworks](https://sagemaker.readthedocs.io/en/stable/) for launching training jobs. You can specify one of the data input modes while configuring the SageMaker AI `ModelTrainer` class or the `ModelTrainer.train` method. The following code templates show the two ways to specify input modes.
 

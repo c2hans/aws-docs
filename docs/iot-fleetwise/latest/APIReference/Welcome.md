@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Important**
  AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
@@ -12,4 +11,4 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/Welcom
 
 For more information, see [What is AWS IoT FleetWise?](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/) in the * AWS IoT FleetWise Developer Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

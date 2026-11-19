@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Up
 ---
 
 # UpdateServiceAccessPolicies
-<a name="API_UpdateServiceAccessPolicies"></a>
 
 ## Description
 <a name="API_UpdateServiceAccessPolicies_Description"></a>

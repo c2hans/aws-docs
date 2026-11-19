@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/places-
 ---
 
 # Places prerequisites using Amazon Location
-<a name="places-prerequisites"></a>
 
 Before you begin geocoding, reverse geocoding or searching for places, follow the prerequisite steps:
 

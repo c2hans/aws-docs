@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAttributeConfiguration
-<a name="API_DocumentAttributeConfiguration"></a>
 
 Configuration information for document attributes. Document attributes are metadata or fields associated with your documents. For example, the company department name associated with each document.
 

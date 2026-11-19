@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListImageBuildVersions
-<a name="API_ListImageBuildVersions"></a>
 
 Returns a list of image build versions.
 

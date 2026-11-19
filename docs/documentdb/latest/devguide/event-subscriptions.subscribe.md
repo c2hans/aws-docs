@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscri
 ---
 
 # Subscribing to Amazon DocumentDB events
-<a name="event-subscriptions.subscribe"></a>
 
 You can use the Amazon DocumentDB console to subscribe to event subscriptions, as follows:
 

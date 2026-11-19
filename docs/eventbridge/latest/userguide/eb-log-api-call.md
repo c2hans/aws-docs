@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-log-api-
 ---
 
 # Tutorial: Create an EventBridge rule that reacts to AWS API calls via CloudTrail
-<a name="eb-log-api-call"></a>
 
 You can use Amazon EventBridge [rules](eb-rules.md) to react to API calls made by an AWS service that are recorded by AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateBillScenario
-<a name="API_AWSBCMPricingCalculator_UpdateBillScenario"></a>
 
  Updates an existing bill scenario.
 

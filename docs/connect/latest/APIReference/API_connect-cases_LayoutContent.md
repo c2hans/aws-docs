@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # LayoutContent
-<a name="API_connect-cases_LayoutContent"></a>
 
 Object to store union of different versions of layout content.
 

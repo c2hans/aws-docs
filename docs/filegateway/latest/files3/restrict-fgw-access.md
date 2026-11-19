@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/restrict-fgw-a
 ---
 
 # Using tags to control access to your gateway and resources
-<a name="restrict-fgw-access"></a>
 
 To control access to gateway resources and actions, you can use AWS Identity and Access Management (IAM) policies based on tags. You can provide the control in two ways:
 

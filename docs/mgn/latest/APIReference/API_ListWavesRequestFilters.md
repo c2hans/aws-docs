@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListWavesReq
 ---
 
 # ListWavesRequestFilters
-<a name="API_ListWavesRequestFilters"></a>
 
 Waves list filters.
 

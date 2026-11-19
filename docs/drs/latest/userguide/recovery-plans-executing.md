@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-exec
 ---
 
 # Running a recovery plan
-<a name="recovery-plans-executing"></a>
 
 You can run a plan as a drill or as a recovery:
 

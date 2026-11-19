@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Kubern
 ---
 
 # KubernetesClusterRoleConfiguration
-<a name="API_KubernetesClusterRoleConfiguration"></a>
 
 The kubernetes Cluster Role Configuration.
 

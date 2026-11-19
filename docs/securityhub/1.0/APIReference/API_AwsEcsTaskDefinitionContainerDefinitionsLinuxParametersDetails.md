@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetails"></a>
 
 >Linux-specific modifications that are applied to the container, such as Linux kernel capabilities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/ecs-view-rec
 ---
 
 # Accessing ECS service recommendations and details
-<a name="ecs-view-recommendations"></a>
 
 Use one of the following procedures to open the **Recommendations for Amazon ECS services on Fargate** page or the **Amazon ECS service details** page in the AWS console.
 

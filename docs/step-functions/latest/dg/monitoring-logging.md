@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/monitoring-logg
 ---
 
 # Logging and monitoring AWS Step Functions service performance
-<a name="monitoring-logging"></a>
 
 Learn how to log and monitor Step Functions to maintain the reliability, availability, and performance of Step Functions and your AWS solutions.
 

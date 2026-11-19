@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This article provided guidance on how to identify and implement a cloud transformation program that addresses the known top barriers to cloud value realization, speeds up timelines, and improves adoption to new ways of operating. Review the following key takeaways to develop and implement your own transformation program.
 

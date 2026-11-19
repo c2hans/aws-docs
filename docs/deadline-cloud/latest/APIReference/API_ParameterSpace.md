@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # ParameterSpace
-<a name="API_ParameterSpace"></a>
 
 The details of a search for two or more step parameters.
 

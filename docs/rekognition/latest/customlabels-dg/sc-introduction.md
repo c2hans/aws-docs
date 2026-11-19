@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/sc-in
 ---
 
 # Security
-<a name="sc-introduction"></a>
 
 You can secure the management of your projects, models, and the `DetectCustomLabels` operation that your customers use to detect custom labels.
 

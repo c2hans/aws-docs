@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deprovisi
 ---
 
 # DeprovisionByoipCidr
-<a name="API_DeprovisionByoipCidr"></a>
 
 Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool.
 

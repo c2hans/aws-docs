@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/opensearch-
 ---
 
 # Security Hub CSPM controls for Amazon OpenSearch Service
-<a name="opensearch-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon OpenSearch Service (OpenSearch Service) service and resources. The controls might not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
 

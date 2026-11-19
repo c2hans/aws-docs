@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Signature ID uniqueness
-<a name="firewall-policy-v2-sid-uniqueness"></a>
 
 A signature ID (SID) must be unique within the scope of the object that contains the rule. There are two such scopes:
 + **Within a rule group** – Every rule in a single firewall or IPS rule group must have a SID that is unique among the rules in that rule group.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View AWS Cloud WAN core network information
-<a name="cloudwan-core-network-view"></a>
 
 View information about a core network within a Cloud WAN global network. On this page you can also add or modify tags as needed.
 

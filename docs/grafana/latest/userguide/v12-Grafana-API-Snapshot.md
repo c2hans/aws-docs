@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Snapshot API
-<a name="v12-Grafana-API-Snapshot"></a>
 
 Use the Snapshot API to work with snapshots in an Amazon Managed Grafana workspace.
 

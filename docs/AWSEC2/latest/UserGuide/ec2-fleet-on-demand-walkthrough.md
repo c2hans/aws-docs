@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-on-dem
 ---
 
 # Tutorial: Configure EC2 Fleet to use On-Demand Instances as the primary capacity
-<a name="ec2-fleet-on-demand-walkthrough"></a>
 
 This tutorial uses a fictitious company called ABC Online to illustrate the process of requesting an EC2 Fleet with On-Demand as the primary capacity, and Spot capacity if available.
 

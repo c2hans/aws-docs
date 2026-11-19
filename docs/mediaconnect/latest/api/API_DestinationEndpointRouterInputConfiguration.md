@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpointRouterInputConfiguration
-<a name="API_DestinationEndpointRouterInputConfiguration"></a>
 
 Configuration settings for a router input that is represented by a destination endpoint.
 

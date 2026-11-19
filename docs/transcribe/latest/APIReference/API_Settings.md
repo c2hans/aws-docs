@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Setti
 ---
 
 # Settings
-<a name="API_Settings"></a>
 
 Allows additional optional settings in your [StartTranscriptionJob](API_StartTranscriptionJob.md) request, including channel identification, alternative transcriptions, and speaker partitioning. You can use that to apply custom vocabularies to your transcription job.
 

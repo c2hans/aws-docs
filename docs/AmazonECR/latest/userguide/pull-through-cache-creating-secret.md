@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/pull-through-
 ---
 
 # Storing your upstream repository credentials in an AWS Secrets Manager secret
-<a name="pull-through-cache-creating-secret"></a>
 
 When creating a pull through cache rule for an upstream repository that requires authentication, you must store the credentials in a Secrets Manager secret. There may be a cost for using an Secrets Manager secret. For more information, see [AWS Secrets Manager pricing](https://aws.amazon.com/secrets-manager/pricing/).
 

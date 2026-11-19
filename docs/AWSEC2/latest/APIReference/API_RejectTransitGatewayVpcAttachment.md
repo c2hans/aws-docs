@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTra
 ---
 
 # RejectTransitGatewayVpcAttachment
-<a name="API_RejectTransitGatewayVpcAttachment"></a>
 
 Rejects a request to attach a VPC to a transit gateway.
 

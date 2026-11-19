@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/apps-troubleshoot
 ---
 
 # Troubleshooting apps in Quick
-<a name="apps-troubleshooting"></a>
 
 This section describes common issues and how to resolve them.
 

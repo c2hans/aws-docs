@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Introduction
-<a name="introduction"></a>
 
  When running genomics workloads in the Amazon Web Services (AWS) Cloud, how does an organization manage cost, optimize workload performance, and move fast with control? How does an organization secure sensitive information? What resources are available to help meet a team’s compliance needs? How does an organization perform analytics using machine learning?
 

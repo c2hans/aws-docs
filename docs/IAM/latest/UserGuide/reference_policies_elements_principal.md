@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # AWS JSON policy elements: Principal
-<a name="reference_policies_elements_principal"></a>
 
 Use the `Principal` element in a resource-based JSON policy to specify the principal that is allowed or denied access to a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingI
 ---
 
 # Troubleshoot issues connecting to your Amazon EC2 Linux instance
-<a name="TroubleshootingInstancesConnecting"></a>
 
 The following information and common errors can help you troubleshoot connecting to your Linux instance.
 

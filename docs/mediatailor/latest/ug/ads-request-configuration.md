@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ads-request-config
 ---
 
 # Configuring the ADS request
-<a name="ads-request-configuration"></a>
 
 Use `AdDecisionServerConfiguration` to control how AWS Elemental MediaTailor calls your ad decision server (ADS). This ensures your ADS receives the context it needs to return relevant ads. Use it to configure any of the following:
 + A `POST` body (for example, an OpenRTB bid request).

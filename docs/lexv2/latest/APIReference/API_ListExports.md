@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListExport
 ---
 
 # ListExports
-<a name="API_ListExports"></a>
 
 Lists the exports for a bot, bot locale, or custom vocabulary. Exports are kept in the list for 7 days.
 

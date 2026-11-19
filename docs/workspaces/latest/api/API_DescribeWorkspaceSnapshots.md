@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceSnapshots
-<a name="API_DescribeWorkspaceSnapshots"></a>
 
 Describes the snapshots for the specified WorkSpace.
 

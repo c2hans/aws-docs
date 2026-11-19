@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLevelTestResultItem
-<a name="API_ConversationLevelTestResultItem"></a>
 
 The test result evaluation item at the conversation level.
 

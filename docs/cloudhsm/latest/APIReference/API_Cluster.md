@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Cluster
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 Contains information about an AWS CloudHSM cluster.
 

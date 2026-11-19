@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-networ
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Kubernetes Network Policies for hybrid nodes
-<a name="hybrid-nodes-network-policies"></a>
 
  AWS supports Kubernetes Network Policies (Layer 3 / Layer 4) for pod ingress and egress traffic when using Cilium as the CNI with EKS Hybrid Nodes. If you are running EKS clusters with nodes in AWS Cloud, AWS supports the [Amazon VPC CNI for Kubernetes Network Policies](cni-network-policy.md).
 

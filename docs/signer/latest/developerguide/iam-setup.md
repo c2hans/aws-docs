@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/iam-setup.h
 ---
 
 # Set up to use Signer
-<a name="iam-setup"></a>
 
 Access to AWS Signer requires credentials that AWS can use to authenticate your requests. The credentials must have permissions to access AWS resources. Complete the following steps to set up your AWS account and create an administrative user.
 

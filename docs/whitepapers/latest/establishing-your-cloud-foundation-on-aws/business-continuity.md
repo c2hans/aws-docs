@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Business Continuity
-<a name="business-continuity"></a>
 
 Resilience is critical, it affects the quality of service your users experience. The capabilities within this area enable you to have a strategy in place to continue operations during a time of inefficiency or crisis, including Disaster Recovery, Backups and Support. Having this in place can help avoid downtime during outages or unprecedented situations.
 

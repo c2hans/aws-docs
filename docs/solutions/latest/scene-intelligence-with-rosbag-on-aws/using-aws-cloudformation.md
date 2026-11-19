@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Using AWS CloudFormation
-<a name="using-aws-cloudformation"></a>
 
 This solution uses a CloudFormation template to handle the uninstallation workflow.
 

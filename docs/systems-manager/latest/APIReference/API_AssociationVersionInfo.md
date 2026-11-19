@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationVersionInfo
-<a name="API_AssociationVersionInfo"></a>
 
 Information about the association version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Import a public key using AWS CloudHSM KMU
-<a name="key_mgmt_util-importPubKey"></a>
 
 Use the **importPubKey** command in the AWS CloudHSM key\_mgmt\_util to import a PEM format public key into a hardware security module (HSM). You can use it to import public keys that were generated outside of the HSM. You can also use the command to import keys that were exported from an HSM, such as those exported by the [exportPubKey](key_mgmt_util-exportPubKey.md) command.
 

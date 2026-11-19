@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeConfigurationEvent
-<a name="API_MedicalScribeConfigurationEvent"></a>
 
 An event containing configuration for the Medical Scribe session
 

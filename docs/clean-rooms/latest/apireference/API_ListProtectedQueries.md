@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListProtectedQueries
-<a name="API_ListProtectedQueries"></a>
 
 Lists protected queries, sorted by the most recent query.
 

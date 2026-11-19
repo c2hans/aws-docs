@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-ris.
 ---
 
 # Understanding reservations in Cost Explorer
-<a name="ce-ris"></a>
 
 Balancing your reservation usage and your On-Demand instance or provisioned capacity usage can help you achieve better efficiency. To help, Cost Explorer provides tools that help you understand where your greatest reservation costs are and how you can potentially lower your costs. Cost Explorer provides you with an overview of your current reservations, shows your utilization and coverage, and calculates reservation recommendations that could save you money if you purchase them.
 

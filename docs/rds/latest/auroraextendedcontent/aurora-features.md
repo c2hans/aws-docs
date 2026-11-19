@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Amazon Aurora features
-<a name="aurora-features"></a>
 
 For Aurora PostgreSQL and Aurora MySQL
 

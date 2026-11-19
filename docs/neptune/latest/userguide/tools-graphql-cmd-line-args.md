@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-c
 ---
 
 # Command-line arguments for the GraphQL utility
-<a name="tools-graphql-cmd-line-args"></a>
 + **`--help, -h`**   –   Returns help text for the GraphQL utility to the console.
 
 + **`--input-schema {{(schema text)}}`**   –   A GraphQL schema, with or without directives, to use as input.

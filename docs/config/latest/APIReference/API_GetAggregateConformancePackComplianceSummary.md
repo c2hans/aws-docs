@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggreg
 ---
 
 # GetAggregateConformancePackComplianceSummary
-<a name="API_GetAggregateConformancePackComplianceSummary"></a>
 
 Returns the count of compliant and noncompliant conformance packs across all AWS accounts and AWS Regions in an aggregator. You can filter based on AWS account ID or AWS Region.
 

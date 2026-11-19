@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 13.3 – Select architectures which allow for independent scaling of systems or components
-<a name="best-practice-13-3"></a>
 
 SAP systems and components should have the flexibility to scale without being constrained. This might be accomplished within the allocated hardware or by using horizontal scaling of some components. Consider which architectures allow for this scaling and evaluate any associated trade-offs.
 

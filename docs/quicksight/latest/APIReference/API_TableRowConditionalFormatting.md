@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableRowConditionalFormatting
-<a name="API_TableRowConditionalFormatting"></a>
 
 The conditional formatting of a table row.
 

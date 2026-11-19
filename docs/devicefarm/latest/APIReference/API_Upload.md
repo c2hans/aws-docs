@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Uploa
 ---
 
 # Upload
-<a name="API_Upload"></a>
 
 An app or a set of one or more tests to upload or that have been uploaded.
 

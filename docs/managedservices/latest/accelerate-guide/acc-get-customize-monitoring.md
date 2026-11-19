@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Customize monitoring in Accelerate
-<a name="acc-get-customize-monitoring"></a>
 
 To customize monitoring of your cloud resources based on your application needs:
 

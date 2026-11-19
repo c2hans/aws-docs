@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # VerificationMessageTemplateType
-<a name="API_VerificationMessageTemplateType"></a>
 
 The template for the verification message that your user pool delivers to users who set an email address or phone number attribute.
 

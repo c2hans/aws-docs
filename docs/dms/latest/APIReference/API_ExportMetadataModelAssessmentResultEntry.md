@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ExportMetada
 ---
 
 # ExportMetadataModelAssessmentResultEntry
-<a name="API_ExportMetadataModelAssessmentResultEntry"></a>
 
 Provides information about an exported metadata model assessment.
 

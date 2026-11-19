@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetSecurit
 ---
 
 # GetSecurityGroup
-<a name="API_GetSecurityGroup"></a>
 
 Retrieves detailed information about a specific security group in a Wickr network, including its settings, member counts, and configuration.
 

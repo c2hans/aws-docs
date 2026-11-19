@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/emergency-power.h
 ---
 
 # Emergency shutdown
-<a name="emergency-power"></a>
 
 Use this procedure to turn the equipment off during an emergency, such as fire, water, smoke, or hazard to personnel.
 

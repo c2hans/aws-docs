@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Addit
 ---
 
 # AdditionalNotes
-<a name="API_AdditionalNotes"></a>
 
 Additional notes that provide supplementary context for a column.
 

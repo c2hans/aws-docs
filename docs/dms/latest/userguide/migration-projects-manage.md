@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/migration-projects-
 ---
 
 # Managing migration projects in AWS Database Migration Service
-<a name="migration-projects-manage"></a>
 
 After you create your migration project, you can modify or delete it. For example, to change the source or target data provider, modify your migration project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ExportDictionaryEntries
-<a name="API_ExportDictionaryEntries"></a>
 
 Exports the entries from the specified dictionary.
 

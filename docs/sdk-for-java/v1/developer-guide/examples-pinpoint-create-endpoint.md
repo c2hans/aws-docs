@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Creating Endpoints in Amazon Pinpoint
-<a name="examples-pinpoint-create-endpoint"></a>
 
 An endpoint uniquely identifies a user device to which you can send push notifications with Amazon Pinpoint. If your app is enabled with Amazon Pinpoint support, your app automatically registers an endpoint with Amazon Pinpoint when a new user opens your app. The following example demonstrates how to add a new endpoint programmatically.
 

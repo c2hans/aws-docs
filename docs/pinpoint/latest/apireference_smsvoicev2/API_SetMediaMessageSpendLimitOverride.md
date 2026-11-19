@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SetMediaMessageSpendLimitOverride
-<a name="API_SetMediaMessageSpendLimitOverride"></a>
 
 Sets an account level monthly spend limit override for sending MMS messages. The requested spend limit must be less than or equal to the `MaxLimit`, which is set by AWS.
 

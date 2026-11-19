@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/setting-up-windows.h
 ---
 
 # Installing Guard for Windows
-<a name="setting-up-windows"></a>
 
 You can install AWS CloudFormation Guard for Windows through Cargo or through Chocolatey.
 

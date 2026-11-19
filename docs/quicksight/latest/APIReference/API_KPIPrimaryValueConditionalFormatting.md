@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIPr
 ---
 
 # KPIPrimaryValueConditionalFormatting
-<a name="API_KPIPrimaryValueConditionalFormatting"></a>
 
 The conditional formatting for the primary value of a KPI visual.
 

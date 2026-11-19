@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/api/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Important**
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html).
@@ -12,4 +11,4 @@ Amazon WorkSpaces Thin Client is an affordable device built to work with AWS End
 
 You can use these APIs to complete WorkSpaces Thin Client tasks, such as creating environments or viewing devices. For more information about WorkSpaces Thin Client, including the required permissions to use the service, see the [Amazon WorkSpaces Thin Client Administrator Guide](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/). For more information about using the AWS Command Line Interface (AWS CLI) to manage your WorkSpaces Thin Client resources, see the [WorkSpaces Thin Client section of the AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/workspaces-thin-client/index.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Zoom
-<a name="identity-idp-zoom"></a>
 
 Zoom can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through Zoom’s OAuth2 service and obtain access tokens for Zoom API resources.
 

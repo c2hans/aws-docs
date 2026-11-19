@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Adding K8s Pods Labels or Amazon ECS Tasks Tags to the Dashboard
-<a name="scad-containers-dashboard-add-labels-tags"></a>
 
 ## Introduction
 <a name="introduction"></a>

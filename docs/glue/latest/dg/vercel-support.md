@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vercel-support.html
 ---
 
 # AWS Glue support for Vercel
-<a name="vercel-support"></a>
 
 AWS Glue supports Vercel as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/troubleshootin
 ---
 
 # Troubleshooting forecasting & agent scheduling in Connect Customer
-<a name="troubleshooting-forecasting-capacity-planning-scheduling"></a>
 
 These sections outline troubleshooting scenarios and address frequently asked questions for forecasting & agent scheduling.
 + [Forecasting](#troubleshooting-forecasting)

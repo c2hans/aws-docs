@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateCloudE
 ---
 
 # UpdateCloudExadataInfrastructure
-<a name="API_UpdateCloudExadataInfrastructure"></a>
 
 Updates the properties of an Exadata infrastructure resource.
 

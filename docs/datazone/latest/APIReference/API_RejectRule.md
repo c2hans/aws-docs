@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RejectR
 ---
 
 # RejectRule
-<a name="API_RejectRule"></a>
 
 Specifies the rule and the threshold under which a prediction can be rejected.
 

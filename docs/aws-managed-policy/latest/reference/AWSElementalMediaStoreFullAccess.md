@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaStoreFullAccess
-<a name="AWSElementalMediaStoreFullAccess"></a>
 
 **Description**: Provides full read and write access to all MediaStore APIs
 

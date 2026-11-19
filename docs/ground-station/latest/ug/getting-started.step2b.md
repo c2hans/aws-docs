@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 ---
 
 # Plan your telemetry
-<a name="getting-started.step2b"></a>
 
  AWS Ground Station telemetry is an optional feature that streams metrics from AWS Ground Station antennas to your AWS account during satellite contacts. This allows you to monitor contact performance in near real-time and build custom monitoring solutions.
 

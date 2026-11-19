@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-lis
 ---
 
 # Listing vectors
-<a name="s3-vectors-list"></a>
 
 You can list vectors in a vector index with the [ListVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectors.html) API operation. For more information about the maximum number of vectors that can be returned per page, see [Limitations and restrictions](s3-vectors-limitations.md). The response includes a pagination token when results are truncated. For more information about the response elements of `ListVectors`, see [ListVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectors) in the *Amazon S3 API Reference*. You can also use `ListVectors` to export vector data from a specified vector index. `ListVectors` is strongly consistent. After a WRITE operation, you can immediately list vectors with all changes reflected.
 

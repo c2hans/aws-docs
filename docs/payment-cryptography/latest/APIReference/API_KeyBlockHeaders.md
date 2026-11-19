@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # KeyBlockHeaders
-<a name="API_KeyBlockHeaders"></a>
 
 Optional metadata for export associated with the key material. This data is signed but transmitted in clear text.
 

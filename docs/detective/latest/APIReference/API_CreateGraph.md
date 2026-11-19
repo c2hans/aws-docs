@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Create
 ---
 
 # CreateGraph
-<a name="API_CreateGraph"></a>
 
 Creates a new behavior graph for the calling account, and sets that account as the administrator account. This operation is called by the account that is enabling Detective.
 

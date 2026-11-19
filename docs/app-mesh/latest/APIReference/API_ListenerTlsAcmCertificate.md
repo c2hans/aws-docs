@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Listene
 ---
 
 # ListenerTlsAcmCertificate
-<a name="API_ListenerTlsAcmCertificate"></a>
 
 An object that represents an AWS Certificate Manager certificate.
 

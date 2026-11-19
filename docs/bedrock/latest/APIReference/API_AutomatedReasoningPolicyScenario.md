@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyScenario
-<a name="API_AutomatedReasoningPolicyScenario"></a>
 
 Represents a test scenario used to validate an Automated Reasoning policy, including the test conditions and expected outcomes.
 

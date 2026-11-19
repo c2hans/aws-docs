@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-severity.html
 ---
 
 # Severity scoring for Macie findings
-<a name="findings-severity"></a>
 
 When Amazon Macie generates a policy or sensitive data finding, it automatically assigns a severity to the finding. A finding's severity reflects the principal characteristics of the finding, which can help you assess and prioritize the finding. A finding's severity doesn't imply or otherwise indicate the criticality or importance that an affected resource might have for your organization.
 

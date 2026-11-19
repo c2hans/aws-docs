@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Deploy Hub SDK with systemd
-<a name="managedintegrations-sdk-v2-cookbook-deployment-hub-deployment-scripts"></a>
 
 **Important**
  Follow the `readme.md` in the `hubSystemdSetup` directory of the release.tgz file for the latest updates.

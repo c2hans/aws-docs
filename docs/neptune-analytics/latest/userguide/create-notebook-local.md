@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/creat
 ---
 
 # Hosting a Neptune Analytics graph-notebook on your local machine
-<a name="create-notebook-local"></a>
 
 It is also possible to install and run a Neptune Analytics graph notebook on your local machine. You can find instructions in the [GitHub graph-notebook repository](https://github.com/aws/graph-notebook):
 + [Prerequisites](https://github.com/aws/graph-notebook/#prerequisites)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/channels-edit.htm
 ---
 
 # Editing a channel
-<a name="channels-edit"></a>
 
 Edit a channel's description for easier identification later.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-qwe
 ---
 
 # Qwen
-<a name="model-cards-qwen"></a>
 
 The following Qwen models are available in Amazon Bedrock:
 

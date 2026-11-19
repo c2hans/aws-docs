@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-cpa
 ---
 
 # ISO/IEC 42001:2023
-<a name="managed-cpack-iso-42001-2023"></a>
 
 This AWS Config managed conformance pack provides a curated mapping between ISO/IEC 42001:2023 (Artificial Intelligence Management Systems) and AWS managed Config rules. It covers Annex A groups A.4 (Resources for AI systems), A.5 (Assessing impacts of AI systems), A.6 (AI system life cycle), A.7 (Data for AI systems), and A.9 (Use of AI systems). Each Config rule applies to a specific AWS resource and relates to one or more ISO 42001 Annex A controls. An Annex A control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 

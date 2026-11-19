@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/search
 ---
 
 # Search API Reference for Amazon CloudSearch
-<a name="search-api"></a>
 
 **Topics**
 + [Search](#search-request)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ECSTa
 ---
 
 # ECSTarget
-<a name="API_ECSTarget"></a>
 
  Information about the target of an Amazon ECS deployment.
 

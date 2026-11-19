@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveAutoTe
 ---
 
 # RemoveAutoTerminationPolicy
-<a name="API_RemoveAutoTerminationPolicy"></a>
 
 Removes an auto-termination policy from an Amazon EMR cluster.
 

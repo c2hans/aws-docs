@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # CreateEphemeris
-<a name="API_CreateEphemeris"></a>
 
 Create an ephemeris with your specified [EphemerisData](API_EphemerisData.md).
 

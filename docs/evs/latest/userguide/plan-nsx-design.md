@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-nsx-design.htm
 ---
 
 # Plan NSX Edge and VPC Route Server design
-<a name="plan-nsx-design"></a>
 
 An NSX Edge cluster connects the NSX overlay networks of your environment to the VPC underlay. The Tier-0 gateway on that cluster exchanges routes with Amazon VPC Route Server over BGP, so plan the ASNs and peer addresses before you create the environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/installing-gdu-secur
 ---
 
 # Installing the security agent manually
-<a name="installing-gdu-security-agent-ec2-manually"></a>
 
 GuardDuty provides the following two methods to install the GuardDuty security agent on your Amazon EC2 instances. Before proceeding, make sure to follow the steps under [Prerequisite – Creating Amazon VPC endpoint manually](creating-vpc-endpoint-ec2-agent-manually.md).
 

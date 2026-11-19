@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # SageMaker HyperPod recipes
-<a name="sagemaker-hyperpod-recipes"></a>
 
 Amazon SageMaker HyperPod recipes are pre-configured training stacks provided by AWS to help you quickly start training and fine-tuning publicly available foundation models (FMs) from various model families such as Llama, Mistral, Mixtral, or DeepSeek. Recipes automate the end-to-end training loop, including loading datasets, applying distributed training techniques, and managing checkpoints for faster recovery from faults.
 

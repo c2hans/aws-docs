@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VideoOverrideConfiguration
-<a name="API_data-automation_VideoOverrideConfiguration"></a>
 
 Sets whether your project will process videos or not.
 

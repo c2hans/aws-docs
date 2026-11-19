@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Supply Chain Data Lake Solution
-<a name="supply-chain-data-lake"></a>
 
 Publication date: **May 18, 2022 ([Diagram history](#scdl-history))**
 

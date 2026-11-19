@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-update-p
 ---
 
 # Updating product pricing
-<a name="ml-update-public-offer"></a>
 
  You can modify the rates and free trial period of your machine learning product in AWS Marketplace, though the pricing model itself cannot be changed. Note that for paid models, price increases take effect after a 90-day notice period, on the first day of the following month. Additional price changes cannot be made during this notice period.
 

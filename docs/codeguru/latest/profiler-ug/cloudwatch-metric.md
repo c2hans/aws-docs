@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/cloudwatch-m
 ---
 
 # Monitoring profiling groups with CloudWatch metrics
-<a name="cloudwatch-metric"></a>
 
  You can view Amazon CodeGuru Profiler metrics in the Amazon CloudWatch console. <a name="cloudswatch-console-procedure"></a>
 

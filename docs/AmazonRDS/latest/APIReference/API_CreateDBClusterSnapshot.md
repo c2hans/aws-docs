@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBClusterSnapshot
-<a name="API_CreateDBClusterSnapshot"></a>
 
 Creates a snapshot of a DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/touchpoint-andro
 ---
 
 # Touchpoint SDK for Android
-<a name="touchpoint-android"></a>
 
 The Touchpoint SDK for Android is the native Kotlin counterpart of the [Touchpoint](touchpoint.md) web SDK. It brings the same capabilities to Android apps — chat, voice, and **Live Sync**, the native technology that keeps a voice or chat conversation in sync with your on-screen interface — as Jetpack Compose UI and Kotlin coroutine APIs.
 

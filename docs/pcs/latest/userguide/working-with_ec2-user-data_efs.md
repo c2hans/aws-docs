@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ec2-us
 ---
 
 # Example: Use an EFS file system as a shared home directory for AWS PCS
-<a name="working-with_ec2-user-data_efs"></a>
 
  Provide this script as the value of `"userData"` in your launch template. For more information, see [Working with Amazon EC2 user data for AWS PCS](working-with_ec2-user-data.md).
 

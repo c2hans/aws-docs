@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessTruncationConfiguration
-<a name="API_HarnessTruncationConfiguration"></a>
 
 Configuration for truncating conversation context when it exceeds model limits.
 

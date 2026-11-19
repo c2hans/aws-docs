@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSNSRole
-<a name="AmazonSNSRole"></a>
 
 **Description**: Default policy for Amazon SNS service role.
 

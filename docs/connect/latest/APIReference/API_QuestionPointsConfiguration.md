@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Question
 ---
 
 # QuestionPointsConfiguration
-<a name="API_QuestionPointsConfiguration"></a>
 
 Information about the points configuration for a question.
 

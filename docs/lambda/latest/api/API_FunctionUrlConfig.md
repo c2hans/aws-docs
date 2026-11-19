@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionUrlConfig.
 ---
 
 # FunctionUrlConfig
-<a name="API_FunctionUrlConfig"></a>
 
 Details about a Lambda function URL.
 

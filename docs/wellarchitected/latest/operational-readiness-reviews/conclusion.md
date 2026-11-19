@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-readi
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This document described how AWS built Operational Readiness Reviews as a mechanism to achieve smaller, fewer, and shorter incidents without slowing builders down. The ORR mechanism consists of a tool that builders are driven to adopt, and then the results of the process are inspected. Based on the inspection, the mechanism is iterated and improved upon so that its effectiveness in achieving the desired results can be measured.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Metrics summary
-<a name="metrics-summary"></a>
 
  Establishing and tracking metrics for incident response allows you to effectively measure, assess, and improve your incident response capabilities. To achieve this, there are number of common incident response metrics that were highlighted in this section. Table 5 summarizes these metrics.
 

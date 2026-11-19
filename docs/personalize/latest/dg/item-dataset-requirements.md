@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/item-dataset-requi
 ---
 
 # Items dataset schema requirements (custom)
-<a name="item-dataset-requirements"></a>
 
  An *Items dataset* stores metadata about your items in your catalogue. This might include information such as price, genre, and availability for each item. For information about the types of item data you can import into Amazon Personalize, see [Item metadata](items-datasets.md).
 

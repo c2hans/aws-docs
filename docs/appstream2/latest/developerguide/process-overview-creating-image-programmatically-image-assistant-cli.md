@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/process
 ---
 
 # Process Overview for Programmatically Creating an Amazon WorkSpaces Applications Image
-<a name="process-overview-creating-image-programmatically-image-assistant-cli"></a>
 
 You can use the Image Assistant CLI operations with your application installation automation to create a fully programmatic WorkSpaces Applications image creation workflow. After your application installation automation completes, but before the image is created, use the Image Assistant CLI operations to specify the following:
 + The executable files that your users can launch

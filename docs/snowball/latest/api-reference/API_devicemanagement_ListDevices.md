@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ListDevices
-<a name="API_devicemanagement_ListDevices"></a>
 
 Returns a list of all devices on your AWS account that have AWS Snow Device Management enabled in the AWS Region where the command is run.
 

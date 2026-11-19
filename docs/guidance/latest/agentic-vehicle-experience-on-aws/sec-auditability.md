@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Auditability
-<a name="sec-auditability"></a>
 
 Every significant decision made by AVX — triage classification, booking action, escalation — is logged with the full set of inputs and context that produced it. The audit log is the evidentiary record that allows an automotive organization to reconstruct why a particular recommendation was made, which model generated it, and what data it was grounded in.
 

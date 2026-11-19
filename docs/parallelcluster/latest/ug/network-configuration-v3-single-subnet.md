@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/network-config
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # AWS ParallelCluster in a single public subnet
-<a name="network-configuration-v3-single-subnet"></a>
 
 In this configuration, all instances of the cluster must be assigned a public IP in order to get internet access. To achieve this, do the following:
 + Make sure the head node is assigned a public IP address by either turning on the "Enable auto-assign public IPv4 address" setting for the subnet used in [`HeadNode`](HeadNode-v3.md) / [`Networking`](HeadNode-v3.md#HeadNode-v3-Networking) / [`SubnetId`](HeadNode-v3.md#yaml-HeadNode-Networking-SubnetId) or by assigning an Elastic IP in [`HeadNode`](HeadNode-v3.md) / [`Networking`](HeadNode-v3.md#HeadNode-v3-Networking) / [`ElasticIp`](HeadNode-v3.md#yaml-HeadNode-Networking-ElasticIp).

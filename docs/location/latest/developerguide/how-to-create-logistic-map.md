@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-cr
 ---
 
 # How to create a logistics map
-<a name="how-to-create-logistic-map"></a>
 
 The TravelModes feature lets you build logistic maps using Amazon Location Service. TravelModes displays relevant routing information for Truck navigation with related road restrictions. Use [Transit TravelMode](https://docs.aws.amazon.com/location/latest/developerguide/how-to-show-transit-details-map.html) to show public transportation details.
 

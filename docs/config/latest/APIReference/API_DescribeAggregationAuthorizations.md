@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAggregationAuthorizations
-<a name="API_DescribeAggregationAuthorizations"></a>
 
 Returns a list of authorizations granted to various aggregator accounts and regions.
 

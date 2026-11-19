@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteAgentContext
-<a name="API_DeleteAgentContext"></a>
 
 Deletes a context associated with a profile.
 

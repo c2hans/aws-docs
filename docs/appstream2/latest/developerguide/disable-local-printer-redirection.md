@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/disable
 ---
 
 # How to Disable Local Printer Redirection
-<a name="disable-local-printer-redirection"></a>
 
 To disable local printer redirection follow these steps.
 

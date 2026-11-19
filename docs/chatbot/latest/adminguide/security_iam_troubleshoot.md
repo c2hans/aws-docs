@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/security_iam_t
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Troubleshooting Amazon Q Developer in chat applications identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon Q Developer and IAM.
 

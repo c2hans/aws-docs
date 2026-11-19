@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::UserSettings BrandingConfiguration
-<a name="aws-properties-workspacesweb-usersettings-brandingconfiguration"></a>
 
 The branding configuration that customizes the appearance of the web portal for end users. This includes a custom logo, favicon, localized strings, color theme, and optionally a wallpaper and terms of service. If you use an empty string as the wallpaper input during an update, it will remove your previously uploaded wallpaper and use the default wallpaper instead.
 

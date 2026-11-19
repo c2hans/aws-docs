@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-ase-to-
 ---
 
 # Migrating an on-premises SAP ASE database to Amazon RDS for SQL Server
-<a name="introduction"></a>
 
 *Amit Kumar, Jitendra Kumar, and Nishad Mankar, Amazon Web Services*
 

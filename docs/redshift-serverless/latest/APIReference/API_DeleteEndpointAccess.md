@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteEndpointAccess
-<a name="API_DeleteEndpointAccess"></a>
 
 Deletes an Amazon Redshift Serverless managed VPC endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SessionConfiguration
-<a name="API_SessionConfiguration"></a>
 
 The session configuration for an MCP gateway. This structure defines settings that control session behavior.
 

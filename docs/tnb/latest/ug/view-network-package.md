@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/view-network-package.html
 ---
 
 # View a network package in AWS TNB
-<a name="view-network-package"></a>
 
 Learn how to view the content of a network package.
 

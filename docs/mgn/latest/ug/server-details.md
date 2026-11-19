@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/server-details.html
 ---
 
 # Access details on a source server
-<a name="server-details"></a>
 
 You can access the server details view by choosing the **Source server name** of any server on the **Source servers** page.
 

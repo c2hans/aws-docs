@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating_status_
 ---
 
 # Create CloudWatch alarms for Amazon EC2 instances that fail status checks
-<a name="creating_status_check_alarms"></a>
 
 You can use the [status check metrics](viewing_metrics_with_cloudwatch.md#status-check-metrics) to create CloudWatch alarms to notify you when an instance has a failed status check.
 

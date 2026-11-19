@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListTagsForResource
-<a name="API_account_ListTagsForResource"></a>
 
 Lists all tags associated with a specific AWS Partner Central Account resource.
 

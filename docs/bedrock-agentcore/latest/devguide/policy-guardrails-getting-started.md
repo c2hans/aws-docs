@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Getting started with guardrails
-<a name="policy-guardrails-getting-started"></a>
 
 Guardrails let you add content filtering to your agent’s gateway. When a guardrail detects content your policy forbids, such as violent content, the gateway blocks the request before it reaches your agent.
 

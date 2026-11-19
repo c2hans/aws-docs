@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Searchab
 ---
 
 # SearchableAgentCriteriaStep
-<a name="API_SearchableAgentCriteriaStep"></a>
 
 The agent criteria to search for preferred agents on the routing criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListEngagementByAcceptingInvitationTaskSummary
-<a name="API_ListEngagementByAcceptingInvitationTaskSummary"></a>
 
  Specifies a subset of fields associated with tasks related to accepting an engagement invitation.
 

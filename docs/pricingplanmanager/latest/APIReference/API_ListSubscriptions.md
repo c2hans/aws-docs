@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # ListSubscriptions
-<a name="API_ListSubscriptions"></a>
 
 Returns a summary of all flat-rate pricing subscriptions in the calling account.
 

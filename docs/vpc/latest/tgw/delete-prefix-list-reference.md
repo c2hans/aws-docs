@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/delete-prefix-list-refere
 ---
 
 # Delete a prefix list reference in AWS Transit Gateway
-<a name="delete-prefix-list-reference"></a>
 
 If you no longer need a prefix list reference, you can delete it from your transit gateway route table. Deleting the reference does not delete the prefix list.
 

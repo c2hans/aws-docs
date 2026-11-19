@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Inference connector targets
-<a name="gateway-target-inference-connector"></a>
 
 Inference connector targets provide preconfigured setup for supported model providers. When you use a connector, the gateway automatically handles operations, model discovery, model ID translation, and path rewriting based on built-in knowledge of the provider’s API, so you don’t need to specify them manually.
 

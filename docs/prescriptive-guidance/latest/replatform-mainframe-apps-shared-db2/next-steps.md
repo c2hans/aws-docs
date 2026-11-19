@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Mainframe modernization is a complex and critical initiative that demands specialized knowledge and advanced solutions. You can accelerate your modernization process and achieve faster business outcomes through [strategic partnerships](https://aws.amazon.com/mainframe/partner-solutions/) that will help you with the following tasks:
 + **Evaluate and prioritize**: Review your mainframe applications and identify which ones are suitable for replatforming while keeping the database on Db2 for z/OS. Consider factors such as complexity, business criticality, and potential return on investment (ROI).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A complex data type that contains a tag key and tag value.
 

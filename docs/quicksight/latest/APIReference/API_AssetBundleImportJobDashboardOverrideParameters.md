@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDashboardOverrideParameters
-<a name="API_AssetBundleImportJobDashboardOverrideParameters"></a>
 
 The override parameters for a single dashboard that is being imported.
 

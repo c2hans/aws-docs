@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListWorkloadIdentities
-<a name="API_ListWorkloadIdentities"></a>
 
 Lists all workload identities in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcPeerin
 ---
 
 # VpcPeeringConnectionVpcInfo
-<a name="API_VpcPeeringConnectionVpcInfo"></a>
 
 Describes a VPC in a VPC peering connection.
 

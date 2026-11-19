@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/cloudwatch.ht
 ---
 
 # AWS Backup metrics with Amazon CloudWatch
-<a name="cloudwatch"></a>
 
 **Topics**
 + [CloudWatch Dashboard](#cloudwatch-dashboard)

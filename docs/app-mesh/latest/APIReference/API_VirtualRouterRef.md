@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualRouterRef
-<a name="API_VirtualRouterRef"></a>
 
 An object that represents a virtual router returned by a list operation.
 

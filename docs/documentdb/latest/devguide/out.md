@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/out.html
 ---
 
 # $out
-<a name="out"></a>
 
 The `$out` operator in Amazon DocumentDB is used to write the result of an aggregation pipeline to a specified collection.
 

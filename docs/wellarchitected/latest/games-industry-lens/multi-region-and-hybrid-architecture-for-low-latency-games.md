@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Multi-Region and hybrid architecture for low-latency games
-<a name="multi-region-and-hybrid-architecture-for-low-latency-games"></a>
 
  This section describes a multi-Region and hybrid architecture for low-latency games.
 

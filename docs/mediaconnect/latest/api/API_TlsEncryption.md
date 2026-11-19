@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TlsEncryptio
 ---
 
 # TlsEncryption
-<a name="API_TlsEncryption"></a>
 
 The Transport Layer Security (TLS) encryption settings used to establish a secure connection to a destination.
 

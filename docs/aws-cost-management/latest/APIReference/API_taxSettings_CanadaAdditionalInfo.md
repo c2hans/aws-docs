@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CanadaAdditionalInfo
-<a name="API_taxSettings_CanadaAdditionalInfo"></a>
 
  Additional tax information associated with your TRN in Canada .
 

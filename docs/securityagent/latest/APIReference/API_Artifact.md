@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ar
 ---
 
 # Artifact
-<a name="API_Artifact"></a>
 
 Represents an artifact that provides context for security testing, such as documentation, diagrams, or configuration files.
 

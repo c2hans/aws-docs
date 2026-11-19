@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Logging Amazon OpenSearch Memory API calls with AWS CloudTrail
-<a name="memory-monitoring"></a>
 
 Amazon OpenSearch Memory is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or AWS service in OpenSearch Memory. CloudTrail captures API calls for OpenSearch Memory as events. Using the information collected by CloudTrail, you can determine the request that was made to OpenSearch Memory, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

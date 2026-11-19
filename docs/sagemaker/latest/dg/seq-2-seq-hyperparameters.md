@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/seq-2-seq-hyperparam
 ---
 
 # Sequence-to-Sequence Hyperparameters
-<a name="seq-2-seq-hyperparameters"></a>
 
 The following table lists the hyperparameters that you can set when training with the Amazon SageMaker AI Sequence-to-Sequence (seq2seq) algorithm.
 

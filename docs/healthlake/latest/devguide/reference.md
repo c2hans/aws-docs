@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference.htm
 ---
 
 # AWS HealthLake reference
-<a name="reference"></a>
 
 The following supporting reference material is available for SMART on FHIR, FHIR, and AWS HealthLake.
 

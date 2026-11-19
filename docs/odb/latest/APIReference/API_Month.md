@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_Month.html
 ---
 
 # Month
-<a name="API_Month"></a>
 
 An enumeration of months used for scheduling maintenance windows.
 

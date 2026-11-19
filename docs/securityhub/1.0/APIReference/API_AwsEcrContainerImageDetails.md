@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcrC
 ---
 
 # AwsEcrContainerImageDetails
-<a name="API_AwsEcrContainerImageDetails"></a>
 
 Information about an Amazon ECR image.
 

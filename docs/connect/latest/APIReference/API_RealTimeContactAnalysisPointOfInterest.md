@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisPointOfInterest
-<a name="API_RealTimeContactAnalysisPointOfInterest"></a>
 
 The section of the contact transcript segment that category rule was detected.
 

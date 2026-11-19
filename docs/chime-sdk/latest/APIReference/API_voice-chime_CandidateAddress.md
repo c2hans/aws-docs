@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # CandidateAddress
-<a name="API_voice-chime_CandidateAddress"></a>
 
 A suggested address.
 

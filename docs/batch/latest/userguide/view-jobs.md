@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/view-jobs.html
 ---
 
 # View AWS Batch jobs in a job queue
-<a name="view-jobs"></a>
 
 You can view and filter your jobs in AWS Batch. This feature provides an option to view an existing job queue and filter its jobs by one of three options.
 

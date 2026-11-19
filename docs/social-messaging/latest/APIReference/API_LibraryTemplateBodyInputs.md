@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # LibraryTemplateBodyInputs
-<a name="API_LibraryTemplateBodyInputs"></a>
 
 Configuration options for customizing the body content of a template from Meta's library.
 

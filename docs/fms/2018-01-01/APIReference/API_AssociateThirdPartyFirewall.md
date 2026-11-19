@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Associat
 ---
 
 # AssociateThirdPartyFirewall
-<a name="API_AssociateThirdPartyFirewall"></a>
 
 Sets the Firewall Manager policy administrator as a tenant administrator of a third-party firewall service. A tenant is an instance of the third-party firewall service that's associated with your AWS customer account.
 

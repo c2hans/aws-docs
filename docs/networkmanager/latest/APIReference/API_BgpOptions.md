@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_B
 ---
 
 # BgpOptions
-<a name="API_BgpOptions"></a>
 
 Describes the BGP options.
 

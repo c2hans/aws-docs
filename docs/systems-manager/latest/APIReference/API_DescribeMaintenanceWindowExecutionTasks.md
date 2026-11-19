@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeMaintenanceWindowExecutionTasks
-<a name="API_DescribeMaintenanceWindowExecutionTasks"></a>
 
 For a given maintenance window execution, lists the tasks that were run.
 

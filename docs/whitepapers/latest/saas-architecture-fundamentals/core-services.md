@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Core services
-<a name="core-services"></a>
 
  The control plane referenced previously mentions a series of core services that represent the typical services that are used to onboard, manage, and operate a SaaS environment. It may be helpful to further highlight the role of some of these services to highlight their scope and purpose in a SaaS environment. The following provides a brief summary of each of these services:
 +  **Onboarding** – Every SaaS solution must provide a frictionless mechanism for introducing new tenants into your SaaS environment. This can be a self-service sign-up page or an internally managed experience. Either way, a SaaS solution should do all that it can remove internal and external friction from this experience and ensure stability, efficiency, and repeatability for this process. It plays an essential role in supporting the growth and scale of a SaaS business. Generally, this service orchestrates other services to create users, tenant, isolation policies, provision, and per-tenant resources.

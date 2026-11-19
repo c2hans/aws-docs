@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-a
 ---
 
 # Appendix 2: Testing on SLES Setup
-<a name="sap-ibm-pacemaker-appendix-2-testing-on-sles-setup"></a>
 
 ## Test Case 1: Manual Failover
 <a name="sap-ibm-pacemaker-test-case-1-manual-failover-1"></a>

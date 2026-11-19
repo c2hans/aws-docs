@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/drm-conten
 ---
 
 # AWS Elemental MediaPackage key rotation behavior
-<a name="drm-content-key-rotation"></a>
 
 When you enable key rotation on live content from TS and CMAF origin endpoints, AWS Elemental MediaPackage retrieves content keys before the live content begins. As the content progresses, MediaPackage retrieves new keys at the interval that you set on the origin endpoint, as described in [Encryption fields](endpoints-create.md#endpoints-encryption).
 

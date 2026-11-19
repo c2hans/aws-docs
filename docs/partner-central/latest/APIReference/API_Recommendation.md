@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 A recommendation from an agent-driven source.
 

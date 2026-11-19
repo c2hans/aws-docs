@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-meet-integ
 ---
 
 # Google Meet integration
-<a name="google-meet-integration"></a>
 
 With the Google Meet connector, you can access Google Meet directly in AWS Quick through natural language. You can schedule meetings, view conference records, retrieve transcripts and recordings, and manage meeting spaces without leaving AWS Quick.
 

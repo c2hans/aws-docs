@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/te
 ---
 
 # Test AWS infrastructure by using LocalStack and Terraform Tests
-<a name="test-aws-infra-localstack-terraform"></a>
 
 *Ivan Girardi and Ioannis Kalyvas, Amazon Web Services*
 

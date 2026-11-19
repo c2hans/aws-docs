@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-sip-settings
 ---
 
 # Configure System Integrity Protection for Amazon EC2 Mac instances
-<a name="mac-sip-settings"></a>
 
 You can configure System Integrity Protection (SIP) settings for x86 Mac instances and Apple silicon Mac instances. SIP is a critical macOS security feature that helps to prevent unauthorized code execution and system-level modifications. For more information, see [About System Integrity Protection](https://support.apple.com/en-us/102149).
 

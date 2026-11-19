@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/tag-domains.html
 ---
 
 # Tag a domain in CodeArtifact
-<a name="tag-domains"></a>
 
 Tags are key-value pairs associated with AWS resources. You can apply tags to your domains in CodeArtifact. For information about CodeArtifact resource tagging, use cases, tag key and value constraints, and supported resource types, see [Tagging resources](tag-resources.md).
 

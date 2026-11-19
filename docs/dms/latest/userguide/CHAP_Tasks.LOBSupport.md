@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.LOBSuppo
 ---
 
 # Setting LOB support for source databases in an AWS DMS task
-<a name="CHAP_Tasks.LOBSupport"></a>
 
 Large binary objects (LOBs) can sometimes be difficult to migrate between systems. AWS DMS offers a number of options to help with the tuning of LOB columns. To see which and when data types are considered LOBs by AWS DMS, see the AWS DMS documentation.
 

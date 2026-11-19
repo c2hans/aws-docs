@@ -11,7 +11,6 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 3. We will delete your applications starting **January 27, 2026**. You will not be able to start or operate your Amazon Kinesis Data Analytics for SQL applications. Support will no longer be available for Amazon Kinesis Data Analytics for SQL from that time. For more information, see [Amazon Kinesis Data Analytics for SQL Applications discontinuation](discontinuation.md).
 
 # Configuring Application Output
-<a name="how-it-works-output"></a>
 
 In your application code, you write the output of SQL statements to one or more in-application streams. You can optionally add an output configuration to your application. to persist everything written to an in-application stream to an external destination such as an Amazon Kinesis data stream, a Firehose delivery stream, or an AWS Lambda function.
 

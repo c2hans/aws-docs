@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Capture and replay live traffic from Solr
-<a name="solr-capture-replay"></a>
 
 Migration Assistant supports live traffic capture and replay for Apache Solr sources running in SolrCloud mode. This enables zero-downtime migration by intercepting traffic flowing to your Solr cluster, transforming it to OpenSearch-compatible format, and replaying it against the target in real time.
 

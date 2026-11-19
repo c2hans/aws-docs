@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/go
 ---
 
 # Governing AI agent tool quotas with AWS Agent Registry and Amazon Bedrock AgentCore Gateway
-<a name="govern-tool-access-with-aws-agent-registry-metadata"></a>
 
 *Prashanth Sivarajan, Amazon Web Services*
 

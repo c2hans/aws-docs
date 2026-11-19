@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSA
 ---
 
 # ROSAManageSubscription
-<a name="ROSAManageSubscription"></a>
 
 **Description**: This policy provides the permissions required to manage the Red Hat OpenShift Service on AWS (ROSA) subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/iotwireless
 ---
 
 # Security Hub CSPM controls for AWS IoT Wireless
-<a name="iotwireless-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS IoT Wireless service and resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_XksProxyAuth
 ---
 
 # XksProxyAuthenticationCredentialType
-<a name="API_XksProxyAuthenticationCredentialType"></a>
 
  AWS KMS uses the authentication credential to sign requests that it sends to the external key store proxy (XKS proxy) on your behalf. You establish these credentials on your external key store proxy and report them to AWS KMS.
 

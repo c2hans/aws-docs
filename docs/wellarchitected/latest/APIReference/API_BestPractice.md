@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # BestPractice
-<a name="API_BestPractice"></a>
 
 A best practice, or question choice, that has been identified as a risk in this question.
 

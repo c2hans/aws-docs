@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-io
 ---
 
 # AWS IoT Core in AWS GovCloud (US)
-<a name="govcloud-iotcore"></a>
 
 AWS IoT enables secure, bi-directional communication between Internet-connected things (such as sensors, actuators, embedded devices, or smart appliances) and the AWS Cloud over MQTT and HTTP.
 

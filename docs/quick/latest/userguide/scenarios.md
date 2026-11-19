@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/scenarios.html
 ---
 
 # Working with scenarios in AWS Quick Sight
-<a name="scenarios"></a>
 
 All Quick users can use scenarios to analyze complex business problems with simple natural language.
 

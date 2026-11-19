@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # CountTokensInput
-<a name="API_runtime_CountTokensInput"></a>
 
 The input value for token counting. The value should be either an `InvokeModel` or `Converse` request body.
 

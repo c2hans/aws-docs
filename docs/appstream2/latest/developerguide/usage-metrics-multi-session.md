@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/usage-m
 ---
 
 # Fleet Usage Metrics for Multi-session Fleets
-<a name="usage-metrics-multi-session"></a>
 
 The following are fleet usage metrics for multi-session fleets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_RoundTri
 ---
 
 # RoundTripTime
-<a name="API_RoundTripTime"></a>
 
 Round-trip time (RTT) is how long it takes for a request from the user to return a response to the user. Internet Monitor calculates RTT at different percentiles: p50, p90, and p95.
 

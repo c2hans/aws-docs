@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/accelerated-trans
 ---
 
 # Accelerated transcoding
-<a name="accelerated-transcoding"></a>
 
 AWS Elemental MediaConvert jobs that create premium content may have high computational requirements and can take longer to complete. Such jobs may include Ultra High Definition (UHD) or High Dynamic Range (HDR) content. To reduce the transcoding time required to run these jobs, you can use Accelerated transcoding. Consider using Accelerated transcoding for jobs that would otherwise take 10 minutes or longer to run.
 

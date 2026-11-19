@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # BatchPutProfileObjectErrorItem
-<a name="API_connect-customer-profiles_BatchPutProfileObjectErrorItem"></a>
 
 An item that failed to be added to the domain.
 

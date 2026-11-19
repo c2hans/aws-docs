@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Scanne
 ---
 
 # ScannedResource
-<a name="API_ScannedResource"></a>
 
 Contains information about a resource that was scanned as part of the malware scan operation.
 

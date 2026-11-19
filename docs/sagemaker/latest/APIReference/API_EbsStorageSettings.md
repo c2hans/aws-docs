@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EbsSto
 ---
 
 # EbsStorageSettings
-<a name="API_EbsStorageSettings"></a>
 
 A collection of EBS storage settings that apply to both private and shared spaces.
 

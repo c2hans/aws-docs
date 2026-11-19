@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ContextDetails.htm
 ---
 
 # ContextDetails
-<a name="API_ContextDetails"></a>
 
 Details about a durable execution context.
 

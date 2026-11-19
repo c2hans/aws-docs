@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Best Practices
-<a name="best-practices"></a>
 
 ## Use AI for what it's good at, scripts for what it's not
 <a name="use-ai-for-what-it-s-good-at--scripts-for-what-it-s-not.ced5783f-fcf1-50a4-815c-37fe95b7f2c0"></a>

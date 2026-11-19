@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Generate images in batch with a diffusion model on Deadline Cloud
-<a name="examples-jb-text-to-image-batch"></a>
 
 The [text\_to\_image\_batch job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/text_to_image_batch) on the GitHub website runs high-throughput batch image generation on a JSONL of prompts using a diffusion model. The default model is FLUX.2 Klein 4B, which is Apache 2.0 licensed, ungated, and distilled to 4 steps. The scheduler distributes tasks across available GPU workers, with the diffusion pipeline loaded once per worker and reused for every task on that worker. An aggregate step produces a combined JSONL file and a static HTML gallery viewer.
 

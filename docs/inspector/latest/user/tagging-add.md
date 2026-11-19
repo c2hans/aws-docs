@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/tagging-add.html
 ---
 
 # Adding tags
-<a name="tagging-add"></a>
 
  You can add tags to Amazon Inspector resources. These resources include suppression rules and CIS scan configurations. Tags help you categorize AWS resources based on specific criteria. This topic describes how to add tags to Amazon Inspector resources.
 

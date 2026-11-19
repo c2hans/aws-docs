@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/configure-voicecon.h
 ---
 
 # Configuring Voice Connectors to use call analytics
-<a name="configure-voicecon"></a>
 
 **Note**
 To complete the steps in this section, you must first create a call analytics configuration. For information about creating configurations, see [Creating call analytics configurations](create-ca-config.md).

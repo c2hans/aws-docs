@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Repor
 ---
 
 # ReportOutputConfiguration
-<a name="API_ReportOutputConfiguration"></a>
 
 Configuration for a report output destination.
 

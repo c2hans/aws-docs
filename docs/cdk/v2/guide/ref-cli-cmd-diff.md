@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-diff.html
 ---
 
 # `cdk diff`
-<a name="ref-cli-cmd-diff"></a>
 
 Perform a diff to see infrastructure changes between AWS CDK stacks.
 

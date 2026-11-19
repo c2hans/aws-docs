@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-remove-load
 ---
 
 # Detach a target group or Classic Load Balancer from your Auto Scaling group
-<a name="as-remove-load-balancer"></a>
 
 When you no longer need the load balancer, use the following procedure to detach it from your Auto Scaling group.
 

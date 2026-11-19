@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/next-steps.html
 ---
 
 # Supplemental sections for the AWS AppSync console
-<a name="next-steps"></a>
 
 These sections are a reference for more advanced AWS AppSync topics. We recommend following the *Supplemental reading* section before doing anything else.
 

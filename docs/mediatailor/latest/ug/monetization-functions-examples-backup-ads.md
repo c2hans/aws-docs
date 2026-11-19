@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Example 4: Secondary ad server fallback
-<a name="monetization-functions-examples-backup-ads"></a>
 
 ## Scenario
 <a name="monetization-functions-examples-backup-ads-scenario"></a>

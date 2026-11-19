@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Enrich
 ---
 
 # Enrichment
-<a name="API_Enrichment"></a>
 
 Contains additional context about activity, such as geolocation and threat intelligence information. Not every member is set.
 

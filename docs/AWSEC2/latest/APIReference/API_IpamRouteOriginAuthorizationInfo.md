@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamRoute
 ---
 
 # IpamRouteOriginAuthorizationInfo
-<a name="API_IpamRouteOriginAuthorizationInfo"></a>
 
 Contains information about a Route Origin Authorization (ROA) currently published in the RPKI.
 

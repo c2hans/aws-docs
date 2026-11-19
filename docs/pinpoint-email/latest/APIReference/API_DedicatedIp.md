@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DedicatedIp
-<a name="API_DedicatedIp"></a>
 
 Contains information about a dedicated IP address that is associated with your Amazon Pinpoint account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartNetw
 ---
 
 # StartNetworkInsightsAnalysis
-<a name="API_StartNetworkInsightsAnalysis"></a>
 
 Starts analyzing the specified path. If the path is reachable, the operation returns the shortest feasible path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_InvokeResponseStre
 ---
 
 # InvokeResponseStreamUpdate
-<a name="API_InvokeResponseStreamUpdate"></a>
 
 A chunk of the streamed response payload.
 

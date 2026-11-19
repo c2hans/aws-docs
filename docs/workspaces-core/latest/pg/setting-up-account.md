@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/pg/setting-up-acc
 ---
 
 # Setting up partner access to AWS accounts
-<a name="setting-up-account"></a>
 
 This section explains how to deploy WorkSpaces Core Managed Instances in your AWS environment. You can enable partner solutions to access your AWS account by completing a connection setup with your technology partner. This connection establishes secure access to your AWS environment.
 

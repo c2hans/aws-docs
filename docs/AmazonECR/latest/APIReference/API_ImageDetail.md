@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageD
 ---
 
 # ImageDetail
-<a name="API_ImageDetail"></a>
 
 An object that describes an image returned by a [DescribeImages](API_DescribeImages.md) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # VoiceProfile
-<a name="API_voice-chime_VoiceProfile"></a>
 
 The combination of a voice print and caller ID.
 

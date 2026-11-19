@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-step-2-
 ---
 
 # Step 2: Prepare Each EC2 Instance for SAP Installation
-<a name="net-win-step-2-prepare-each-ec2-instance-for-sap-installation"></a>
 
 1. Log into the newly created RDP host in the public subnet. We will call this **jumpbox** for easy reference. Do this by either using [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) (for command line tasks), or by doing the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting to Apache Oozie workflows with the AWS Schema Conversion Tool
-<a name="CHAP_Source.Oozie"></a>
 
 You can use the AWS SCT command line interface (CLI) to convert Apache Oozie workflows to AWS Step Functions. After you migrate your Apache Hadoop workloads to Amazon EMR, you can use a native service in the AWS Cloud to orchestrate your jobs. For more information, see [Connecting to Apache Hadoop](CHAP_Source.Hadoop.md).
 

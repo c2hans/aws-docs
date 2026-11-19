@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/visualization-g
 ---
 
 # Graphistry
-<a name="visualization-graphistry"></a>
 
 [Graphistry](https://www.graphistry.com/) is a visual graph intelligence platform that leverages GPU acceleration for rich visual experiences. Teams can collaborate on Graphistry using a variety of features, from no-code exploration of files and databases, to sharing Jupyter notebooks and Streamlit dashboards, to using the embedding API in your own apps.
 

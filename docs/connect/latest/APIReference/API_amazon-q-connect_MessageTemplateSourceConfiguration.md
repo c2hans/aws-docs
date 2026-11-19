@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # MessageTemplateSourceConfiguration
-<a name="API_amazon-q-connect_MessageTemplateSourceConfiguration"></a>
 
 The container of message template source configuration.
 

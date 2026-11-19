@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationMetadata
-<a name="API_InvestigationMetadata"></a>
 
 Contains metadata about the product and version that produced an investigation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-de
 ---
 
 # ecs-task-definition-efs-encryption-enabled
-<a name="ecs-task-definition-efs-encryption-enabled"></a>
 
 Checks if Amazon ECS Task Definitions with EFS volumes have in-transit encryption enabled. The rule is NON\_COMPLIANT if an ECS Task Definition contains an EFS volume without transit encryption enabled.
 

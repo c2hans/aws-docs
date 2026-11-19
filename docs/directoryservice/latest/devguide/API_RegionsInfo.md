@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Reg
 ---
 
 # RegionsInfo
-<a name="API_RegionsInfo"></a>
 
 Provides information about the Regions that are configured for multi-Region replication.
 

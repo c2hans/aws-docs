@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_Q
 ---
 
 # QPluginCardInput
-<a name="API_qapps_QPluginCardInput"></a>
 
 The input shape for defining a plugin card in an Amazon Q App.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Field-Index
 ---
 
 # Log group selection options when creating a query
-<a name="Field-Indexing-Selection"></a>
 
 This section explains the various ways that you can select log groups to include in a query.
 

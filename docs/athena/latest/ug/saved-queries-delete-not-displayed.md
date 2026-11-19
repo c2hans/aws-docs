@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries-delete-no
 ---
 
 # Delete an undisplayed saved query
-<a name="saved-queries-delete-not-displayed"></a>
 
 **To delete a saved query not displayed in the query editor**
 

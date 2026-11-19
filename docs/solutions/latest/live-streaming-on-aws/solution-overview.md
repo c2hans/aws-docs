@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/s
 ---
 
 # Build highly available live video streaming content using AWS Media Services and Amazon CloudFront
-<a name="solution-overview"></a>
 
 Live Streaming on AWS solution overview
 

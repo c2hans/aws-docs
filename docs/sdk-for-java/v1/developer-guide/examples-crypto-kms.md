@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Amazon S3 client-side encryption with AWS KMS managed keys
-<a name="examples-crypto-kms"></a>
 
 The following examples use the [AmazonS3EncryptionClientV2Builder](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/s3/AmazonS3EncryptionClientV2Builder.html) class to create an Amazon S3 client with client-side encryption enabled. Once configured, any objects you upload to Amazon S3 using this client will be encrypted. Any objects you get from Amazon S3 using this client are automatically decrypted.
 

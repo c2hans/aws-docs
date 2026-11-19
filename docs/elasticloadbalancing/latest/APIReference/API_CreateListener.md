@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # CreateListener
-<a name="API_CreateListener"></a>
 
 Creates a listener for the specified Application Load Balancer, Network Load Balancer, or Gateway Load Balancer.
 

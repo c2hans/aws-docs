@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.In
 ---
 
 # Initial troubleshooting for common PostgreSQL performance issues in RDS for PostgreSQL
-<a name="PostgreSQL.InitialTroubleshooting"></a>
 
 This guide covers the four most common performance issues that affect RDS for PostgreSQL databases: table and index bloat, parallel query resource exhaustion, high connection and authentication pressure, and autovacuum tuning. Use this guide as a first-pass diagnostic checklist when you experience performance degradation, before you begin deeper investigation.
 

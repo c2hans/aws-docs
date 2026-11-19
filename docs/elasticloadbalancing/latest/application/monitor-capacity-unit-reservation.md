@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Monitor Load Balancer Capacity Unit reservation for your Application Load Balancer
-<a name="monitor-capacity-unit-reservation"></a>
 
 **Reservation status**
 

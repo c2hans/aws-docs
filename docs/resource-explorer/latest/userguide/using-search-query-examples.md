@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/using
 ---
 
 # Example Resource Explorer search queries
-<a name="using-search-query-examples"></a>
 
 The following examples show the syntax for common types of queries that you can use in AWS Resource Explorer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byo
 ---
 
 # Creating and managing BYOM engine versions for RDS for SQL Server
-<a name="sqlserver-byom-creating-cev"></a>
 
 Creating a BYOM engine version requires a one-time setup (License Mobility verification, obtaining RTM media, and uploading it to Amazon S3).
 

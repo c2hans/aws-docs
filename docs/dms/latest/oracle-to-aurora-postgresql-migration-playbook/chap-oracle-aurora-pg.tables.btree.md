@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL B-tree indexes
-<a name="chap-oracle-aurora-pg.tables.btree"></a>
 
 With AWS DMS, you can efficiently migrate your databases between different database platforms while optimizing query performance through B-tree indexes. B-tree indexes are tree data structures that store pointers to rows in a table based on key values, facilitating faster data retrieval for queries involving those keys.
 

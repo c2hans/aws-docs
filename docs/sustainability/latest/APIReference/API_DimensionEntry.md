@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_D
 ---
 
 # DimensionEntry
-<a name="API_DimensionEntry"></a>
 
 Represents a dimension and its corresponding value.
 

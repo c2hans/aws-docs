@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/shipbob-reading-from-enti
 ---
 
 # Reading from ShipBob entities
-<a name="shipbob-reading-from-entities"></a>
 
 **Prerequisites**
 

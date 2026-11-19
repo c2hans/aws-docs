@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateRouteServer
-<a name="API_AssociateRouteServer"></a>
 
 Associates a route server with a VPC to enable dynamic route updates.
 

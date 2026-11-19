@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/dcv-section.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `[dcv]` section
-<a name="dcv-section"></a>
 
 Defines configuration settings for the Amazon DCV server running on the head node.
 
@@ -26,7 +25,7 @@ For more information, see [Connect to the head node through Amazon DCV](dcv.md)
 By default the Amazon DCV port setup by AWS ParallelCluster is open to all IPv4 addresses. However, you can connect to a Amazon DCV port only if you have the URL for the Amazon DCV session and connect to the Amazon DCV session within 30 seconds of when the URL is returned from `pcluster dcv connect`. Use the [`access_from`](#dcv-section-access-from) setting to further restrict access to the Amazon DCV port with a CIDR-formatted IP range, and use the [`port`](#dcv-section-port) setting to set a nonstandard port.
 
 **Note**
-Support for the [`[dcv]` section](#dcv-section)on `centos8` was removed in AWS ParallelCluster version 2.10.4. Support for the [`[dcv]` section](#dcv-section) on `centos8` was added in AWS ParallelCluster version 2.10.0. Support for the [`[dcv]` section](#dcv-section) on AWS Graviton-based instances was added in AWS ParallelCluster version 2.9.0. Support for the [`[dcv]` section](#dcv-section) on `alinux2` and `ubuntu1804` was added in AWS ParallelCluster version 2.6.0. Support for the [`[dcv]` section](#dcv-section)on `centos7` was added in AWS ParallelCluster version 2.5.0.
+Support for the [`[dcv]` section](dcv-section.md)on `centos8` was removed in AWS ParallelCluster version 2.10.4. Support for the [`[dcv]` section](dcv-section.md) on `centos8` was added in AWS ParallelCluster version 2.10.0. Support for the [`[dcv]` section](dcv-section.md) on AWS Graviton-based instances was added in AWS ParallelCluster version 2.9.0. Support for the [`[dcv]` section](dcv-section.md) on `alinux2` and `ubuntu1804` was added in AWS ParallelCluster version 2.6.0. Support for the [`[dcv]` section](dcv-section.md)on `centos7` was added in AWS ParallelCluster version 2.5.0.
 
 ## `access_from`
 <a name="dcv-section-access-from"></a>

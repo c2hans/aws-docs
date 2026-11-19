@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Design principles
-<a name="design-principles-1"></a>
 
  The security pillar of the AWS Well-Architected Framework sets out principles that can help strengthen the security of your workload:
 +  **Implement a strong identity foundation:** Implementing the principle of least privilege is foundational to the security and compliance of healthcare workloads. Centralize identity management, and aim to avoid reliance on long-term static credentials.

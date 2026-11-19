@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListTagsLogGroup
-<a name="API_ListTagsLogGroup"></a>
 
  *This action has been deprecated.*
 

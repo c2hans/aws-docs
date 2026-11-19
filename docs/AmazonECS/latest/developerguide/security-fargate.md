@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security
 ---
 
 # Fargate security best practices in Amazon ECS
-<a name="security-fargate"></a>
 
 We recommend that you take into account the following best practices when you use AWS Fargate.
 

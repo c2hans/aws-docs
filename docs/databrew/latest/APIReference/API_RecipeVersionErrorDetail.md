@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_RecipeV
 ---
 
 # RecipeVersionErrorDetail
-<a name="API_RecipeVersionErrorDetail"></a>
 
 Represents any errors encountered when attempting to delete multiple recipe versions.
 

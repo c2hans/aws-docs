@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Application OUs
-<a name="application-ous"></a>
 
 ## Workloads OU
 <a name="workloads-ou"></a>

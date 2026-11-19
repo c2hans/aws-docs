@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_User.h
 ---
 
 # User
-<a name="API_User"></a>
 
 Contains information about the user involved in the attack sequence.
 

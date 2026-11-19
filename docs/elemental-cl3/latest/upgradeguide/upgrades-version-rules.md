@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upgrad
 ---
 
 # Rules for software versions
-<a name="upgrades-version-rules"></a>
 
 There are rules about working with different software versions on the nodes in a AWS Elemental Conductor Live cluster.
 

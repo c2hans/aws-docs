@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Backend
 ---
 
 # Backend
-<a name="API_Backend"></a>
 
 An object that represents the backends that a virtual node is expected to send outbound traffic to.
 

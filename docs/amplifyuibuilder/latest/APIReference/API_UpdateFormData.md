@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UpdateFormData
-<a name="API_UpdateFormData"></a>
 
 Updates and saves all of the information about a form, based on form ID.
 

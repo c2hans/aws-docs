@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-cleanup.html
 ---
 
 # Clean up MLflow resources
-<a name="mlflow-cleanup"></a>
 
 We recommend deleting any resources when you no longer need them. You can delete tracking servers through Amazon SageMaker Studio or using the AWS CLI. You can delete additional resources such as Amazon S3 buckets, IAM roles, and IAM policies using the AWS CLI or directly in the AWS console.
 

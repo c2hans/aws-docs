@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Delet
 ---
 
 # DeleteLogPattern
-<a name="API_DeleteLogPattern"></a>
 
 Removes the specified log pattern from a `LogPatternSet`.
 

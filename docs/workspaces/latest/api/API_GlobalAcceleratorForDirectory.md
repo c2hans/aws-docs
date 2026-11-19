@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_GlobalAccelera
 ---
 
 # GlobalAcceleratorForDirectory
-<a name="API_GlobalAcceleratorForDirectory"></a>
 
 Describes the Global Accelerator for directory
 

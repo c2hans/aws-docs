@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-high-av
 ---
 
 # High Availability System Deployment
-<a name="net-win-high-availability-system-deployment"></a>
 
 High availability (HA) system: used for business-critical applications. With this option, all the services that are single points of failure are deployed across multiple Availability Zones for fault tolerance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.10 Configure AWS Budgets to monitor your spending
-<a name="acct-10"></a>
 
 AWS Budgets enables monitoring of monthly costs and usage with notifications when costs are forecast to exceed target thresholds. Cost forecast notifications can indicate unexpected activity, which adds a layer of monitoring alongside other services, such as [AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/). Monitoring your AWS costs helps you detect unexpected usage and avoid unplanned charges.
 

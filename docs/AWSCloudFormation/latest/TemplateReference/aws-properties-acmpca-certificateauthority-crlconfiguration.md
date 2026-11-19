@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority CrlConfiguration
-<a name="aws-properties-acmpca-certificateauthority-crlconfiguration"></a>
 
 Contains configuration information for a certificate revocation list (CRL). Your private certificate authority (CA) creates base CRLs. Delta CRLs are not supported. You can enable CRLs for your new or an existing private CA by setting the **Enabled** parameter to `true`. Your private CA writes CRLs to an S3 bucket that you specify in the **S3BucketName** parameter. You can hide the name of your bucket by specifying a value for the **CustomCname** parameter. Your private CA by default copies the CNAME or the S3 bucket name to the **CRL Distribution Points** extension of each certificate it issues. If you want to configure this default behavior to be something different, you can set the **CrlDistributionPointExtensionConfiguration** parameter. Your S3 bucket policy must give write permission to AWS Private CA.
 

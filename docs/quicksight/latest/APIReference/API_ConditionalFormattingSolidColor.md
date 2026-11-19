@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingSolidColor
-<a name="API_ConditionalFormattingSolidColor"></a>
 
 Formatting configuration for solid color.
 

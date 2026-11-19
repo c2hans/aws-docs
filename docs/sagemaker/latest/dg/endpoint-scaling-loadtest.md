@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-scaling-loa
 ---
 
 # Load testing your auto scaling configuration
-<a name="endpoint-scaling-loadtest"></a>
 
 Perform load tests to choose a scaling configuration that works the way you want.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleRecommendation
-<a name="API_IdleRecommendation"></a>
 
 Describes an Idle resource recommendation.
 

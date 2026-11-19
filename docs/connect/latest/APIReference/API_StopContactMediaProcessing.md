@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StopCont
 ---
 
 # StopContactMediaProcessing
-<a name="API_StopContactMediaProcessing"></a>
 
  Stops in-flight message processing for an ongoing chat session.
 

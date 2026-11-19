@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # VPC and AWS PrivateLink with AWS Agent Registry
-<a name="registry-privatelink"></a>
 
 You can use AWS PrivateLink to create a private connection between your VPC and AWS Agent Registry. You can access AWS Agent Registry as if it were in your VPC, without the use of an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC don’t need public IP addresses to access AWS Agent Registry.
 

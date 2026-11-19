@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Create the base iOS application to use Amazon Location
-<a name="qs-ios-create-app"></a>
 
 In this tutorial, you will create an iOS application that embeds a map, and allows the user to find what's at a location on the map.
 

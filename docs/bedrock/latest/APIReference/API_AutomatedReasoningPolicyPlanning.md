@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyPlanning
-<a name="API_AutomatedReasoningPolicyPlanning"></a>
 
 Represents the planning phase of policy build workflow, where the system analyzes source content and determines what operations to perform.
 

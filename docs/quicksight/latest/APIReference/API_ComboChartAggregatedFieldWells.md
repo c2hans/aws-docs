@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Combo
 ---
 
 # ComboChartAggregatedFieldWells
-<a name="API_ComboChartAggregatedFieldWells"></a>
 
 The aggregated field wells of a combo chart.
 

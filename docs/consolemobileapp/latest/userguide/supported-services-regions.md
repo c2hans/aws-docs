@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/consolemobileapp/latest/userguide/suppor
 ---
 
 # Supported AWS Regions and services
-<a name="supported-services-regions"></a>
 
 In this section, you’ll learn which AWS Regions and services are supported by the Console Mobile Application.
 

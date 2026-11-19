@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfi
 ---
 
 # Best practices for the design phase
-<a name="design"></a>
 
 The design phase of a greenfield SAP implementation is the foundation for a successful build phase.  In this phase, you work with your infrastructure stakeholders to collect requirements and document the architecture. There are also additional alignments that you must consider. You must ensure that various project stakeholders agree upon a timeline, landscape strategy, and SAP on AWS architecture, including high availability (HA) and disaster recovery (DR) environments.  This section provides recommendations for addressing some of the challenges that you might encounter in the design phase of your project.
 

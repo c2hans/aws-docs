@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reschedule-event
 ---
 
 # Reschedule a scheduled event for an EC2 instance
-<a name="reschedule-event"></a>
 
 You can reschedule an event so that it occurs at a specific date and time that suits you. After you reschedule an event, it might take a minute or two before the the updated date is displayed.
 

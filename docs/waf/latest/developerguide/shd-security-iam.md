@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/shd-security-i
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Using IAM with AWS Shield
-<a name="shd-security-iam"></a>
 
 This section explains how to use IAM with AWS Shield.
 

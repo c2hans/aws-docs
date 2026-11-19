@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-capaci
 ---
 
 # Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances
-<a name="ec2-fleet-capacity-rebalance"></a>
 
 With Capacity Rebalancing, your EC2 Fleet or Spot Fleet can maintain the desired Spot capacity by proactively replacing Spot Instances at risk of interruption. When a Spot Instance is at an elevated risk of interruption, Amazon EC2 sends a [rebalance recommendation](rebalance-recommendations.md). If Capacity Rebalancing is enabled, the rebalance recommendation triggers the launch of a new Spot Instance before the at-risk instance is interrupted.
 

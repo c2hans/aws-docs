@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/lambda-func
 ---
 
 # lambda-function-description
-<a name="lambda-function-description"></a>
 
 Checks if AWS Lambda functions have a description. The rule is NON\_COMPLIANT if configuration.description does not exist or is an empty string.
 

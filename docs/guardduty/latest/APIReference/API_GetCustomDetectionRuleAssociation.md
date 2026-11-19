@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetCus
 ---
 
 # GetCustomDetectionRuleAssociation
-<a name="API_GetCustomDetectionRuleAssociation"></a>
 
 Returns details for a custom detection rule association.
 

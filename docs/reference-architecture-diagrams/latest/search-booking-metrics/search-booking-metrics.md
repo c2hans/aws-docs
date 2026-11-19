@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Search and Booking Metrics in Travel and Hospitality
-<a name="search-booking-metrics"></a>
 
 Publication date: **October 15, 2020 ([Diagram history](#sbm-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_SelectRes
 ---
 
 # SelectResourceConfig
-<a name="API_SelectResourceConfig"></a>
 
 Accepts a structured query language (SQL) `SELECT` command, performs the corresponding search, and returns resource configurations matching the properties.
 

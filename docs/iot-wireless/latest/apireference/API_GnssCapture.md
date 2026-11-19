@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gns
 ---
 
 # GnssCapture
-<a name="API_GnssCapture"></a>
 
 A single GNSS scan capture containing the scan payload and optional capture time.
 

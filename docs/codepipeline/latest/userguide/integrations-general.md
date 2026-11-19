@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/integratio
 ---
 
 # General integrations with CodePipeline
-<a name="integrations-general"></a>
 
 The following AWS service integrations are not based on CodePipeline action types.
 

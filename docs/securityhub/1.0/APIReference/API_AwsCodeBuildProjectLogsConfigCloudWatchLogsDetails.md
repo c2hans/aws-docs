@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCode
 ---
 
 # AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails
-<a name="API_AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails"></a>
 
 Information about CloudWatch Logs for the build project.
 

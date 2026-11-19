@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/built-in-
 ---
 
 # Built-in credential providers in the AWS SDK for PHP Version 3
-<a name="built-in-providers-in-the-sdk"></a>
 
 The SDK provides several built-in credential providers that you can use individually or combine in a [custom credential provider chain](chaining-providers.md).
 

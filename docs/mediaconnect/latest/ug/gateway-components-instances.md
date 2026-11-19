@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-component
 ---
 
 # Instances managed by MediaConnect Gateway
-<a name="gateway-components-instances"></a>
 
 An *instance* is a compute instance running on equipment in your data center and managed by MediaConnect Gateway. This instance is an on-premises implementation of the MediaConnect service and is contained within a gateway.
 

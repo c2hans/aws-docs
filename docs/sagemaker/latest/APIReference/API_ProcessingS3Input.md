@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingS3Input
-<a name="API_ProcessingS3Input"></a>
 
 Configuration for downloading input data from Amazon S3 into the processing container.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Questions
-<a name="questions-2"></a>
 
 | HCL\_PERF6. How does your organization benchmark the performance of a medical imaging solution? |
 | --- |

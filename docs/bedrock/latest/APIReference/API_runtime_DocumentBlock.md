@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # DocumentBlock
-<a name="API_runtime_DocumentBlock"></a>
 
 A document to include in a message.
 

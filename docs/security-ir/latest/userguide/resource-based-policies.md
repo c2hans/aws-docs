@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/resource-ba
 ---
 
 # Resource-Based Policies
-<a name="resource-based-policies"></a>
 
  ***Resource-based policies within AWS Security Incident Response***
 

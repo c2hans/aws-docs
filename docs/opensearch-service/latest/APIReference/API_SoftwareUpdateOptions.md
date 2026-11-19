@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # SoftwareUpdateOptions
-<a name="API_SoftwareUpdateOptions"></a>
 
 Options for configuring service software updates for a domain.
 

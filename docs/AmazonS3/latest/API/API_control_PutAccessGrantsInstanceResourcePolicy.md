@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAcces
 ---
 
 # PutAccessGrantsInstanceResourcePolicy
-<a name="API_control_PutAccessGrantsInstanceResourcePolicy"></a>
 
 Updates the resource policy of the S3 Access Grants instance.
 

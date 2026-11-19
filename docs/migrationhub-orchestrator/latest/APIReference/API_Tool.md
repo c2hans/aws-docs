@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # Tool
-<a name="API_Tool"></a>
 
 List of AWS services utilized in a migration workflow.
 

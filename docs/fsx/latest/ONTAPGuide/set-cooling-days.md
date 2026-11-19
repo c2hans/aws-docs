@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/set-cooling-days.h
 ---
 
 # Updating the minimum cooling days
-<a name="set-cooling-days"></a>
 
 Minimum cooling days for a volume set the threshold that's used to determine which data is warm and which data is cold. You can set a volume's minimum cooling days using AWS CLI and API, and the ONTAP CLI.
 

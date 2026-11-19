@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteOmniDashboard
-<a name="API_DeleteOmniDashboard"></a>
 
 Removes a dashboard from a space.
 

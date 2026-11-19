@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Protoco
 ---
 
 # ProtocolDetails
-<a name="API_ProtocolDetails"></a>
 
  The protocol settings that are configured for your server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-query-h
 ---
 
 # Gremlin query hints for using the results cache
-<a name="gremlin-query-hints-results-cache"></a>
 
 The following query hints can be used when the [query results cache](gremlin-results-cache.md) is enabled.
 

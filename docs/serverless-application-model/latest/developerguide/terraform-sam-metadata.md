@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam metadata resource
-<a name="terraform-sam-metadata"></a>
 
 This page contains reference information for the **sam metadata resource** resource type used with Terraform projects.
 + For an introduction to using the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) with Terraform, see [What is AWS SAM CLI support for Terraform?](terraform-support.md#what-is-terraform-support).

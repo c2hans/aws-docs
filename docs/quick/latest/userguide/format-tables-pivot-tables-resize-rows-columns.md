@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/format-tables-piv
 ---
 
 # Row and column size in tables and pivot tables in Quick
-<a name="format-tables-pivot-tables-resize-rows-columns"></a>
 
 Authors and readers can resize rows and columns in a table or pivot table visual. They can adjust both row height and column width. Authors can also set the default column width for columns in a pivot table visual.
 

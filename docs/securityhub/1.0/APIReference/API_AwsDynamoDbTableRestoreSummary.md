@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableRestoreSummary
-<a name="API_AwsDynamoDbTableRestoreSummary"></a>
 
 Information about the restore for the table.
 

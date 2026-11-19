@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RelatedWorkspa
 ---
 
 # RelatedWorkspaceProperties
-<a name="API_RelatedWorkspaceProperties"></a>
 
 Describes the related WorkSpace. The related WorkSpace could be a standby WorkSpace or primary WorkSpace related to the specified WorkSpace.
 

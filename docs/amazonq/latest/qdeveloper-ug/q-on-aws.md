@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-on-aws.ht
 ---
 
 # Using Amazon Q Developer on AWS apps and websites
-<a name="q-on-aws"></a>
 
 **Amazon Q Developer in the AWS Management Console is now the AWS assistant**
 Chatting with Amazon Q Developer in the AWS Management Console is now the AWS assistant. For current documentation, see the [AWS assistant User Guide](https://docs.aws.amazon.com/assistant/latest/userguide/what-is.html).

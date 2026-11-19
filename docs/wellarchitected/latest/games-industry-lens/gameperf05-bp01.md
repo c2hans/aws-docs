@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF05-BP01 Benchmark your game performance across multiple compute types
-<a name="gameperf05-bp01"></a>
 
  For game server workloads, there is no singular approach to identifying the optimal compute solution for hosting your game server. A common strategy for benchmarking game servers is to start with compute-optimized EC2 'c' instances, because this instance family provides high performance for workloads that are computationally intensive. Alternatively, if your game requires a significant amount of memory to implement specific features, the memory-optimized instances may be most suitable.
 

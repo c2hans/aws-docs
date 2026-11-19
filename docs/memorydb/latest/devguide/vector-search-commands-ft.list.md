@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.\_LIST
-<a name="vector-search-commands-ft.list"></a>
 
 List all indexes.
 

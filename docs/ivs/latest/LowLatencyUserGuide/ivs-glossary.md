@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/ivs-gloss
 ---
 
 # IVS Glossary
-<a name="ivs-glossary"></a>
 
  Also see the [AWS glossary](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html). In the table below, LL stands for IVS low-latency streaming; RT, IVS real-time streaming.
 

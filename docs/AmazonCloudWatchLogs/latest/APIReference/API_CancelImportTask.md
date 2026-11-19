@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # CancelImportTask
-<a name="API_CancelImportTask"></a>
 
 Cancels an active import task and stops importing data from the CloudTrail Lake Event Data Store.
 

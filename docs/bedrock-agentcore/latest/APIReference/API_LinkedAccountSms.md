@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # LinkedAccountSms
-<a name="API_LinkedAccountSms"></a>
 
 Linked account using a phone number in E.164 format.
 

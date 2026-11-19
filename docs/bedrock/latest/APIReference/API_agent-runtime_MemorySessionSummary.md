@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # MemorySessionSummary
-<a name="API_agent-runtime_MemorySessionSummary"></a>
 
 Contains details of a session summary.
 

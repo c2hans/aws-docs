@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreditData
-<a name="API_billing_CreditData"></a>
 
 Detailed information about an AWS credit, including its identifier, type, monetary amounts, applicable products, sharing configuration, and current enabled status.
 

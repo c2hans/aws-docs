@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Publish a SaaS product and associated public offer from an existing draft using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_PublishExistingSaas_section"></a>
 
 The following code example shows how to publish a SaaS product and associated public offer from an existing draft. The product will be in a limited state by default.
 

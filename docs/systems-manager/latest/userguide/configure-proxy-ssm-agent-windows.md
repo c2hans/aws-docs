@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/configu
 ---
 
 # Configure SSM Agent to use a proxy for Windows Server instances
-<a name="configure-proxy-ssm-agent-windows"></a>
 
 The information in this topic applies to Windows Server instances created on or after November 2016 that do *not* use the Nano installation option. If you intend to use Session Manager, note that HTTPS proxy servers aren't supported.
 

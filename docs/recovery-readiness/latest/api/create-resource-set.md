@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/create-res
 ---
 
 # Create a resource set
-<a name="create-resource-set"></a>
 
 The following is an example of a request to create a resource set with two Amazon EBS volumes, and the response.
 

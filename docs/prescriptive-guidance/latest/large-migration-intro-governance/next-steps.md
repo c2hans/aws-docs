@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide detailed key areas of focus for a project management team responsible for a large migration project. It is designed to help you establish mechanisms for facilitating cross-organizational communication, transparency, and escalation from the very beginning of the project. Roles and responsibilities must be established early by identifying key tasks and owners in a RACI matrix. Finally, the project management team must help the organization evolve and follow its governance policies, including identifying and closing gaps in its current processes, such as backups. This guide highlights the key areas of focus to help you complete pre-migration governance steps make sure you are prepared to support the migrated workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Elastic Kubernetes Service
-<a name="amazonelastickubernetesservice"></a>
 
 Amazon Elastic Kubernetes Service provides the following APIs for data retrieval.
 

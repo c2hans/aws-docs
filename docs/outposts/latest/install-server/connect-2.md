@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/connect-2
 ---
 
 # Configure the QSFP network for your Outposts server
-<a name="connect-2"></a>
 
 With the QSFP breakout cable, you use breakouts to segment traffic.
 

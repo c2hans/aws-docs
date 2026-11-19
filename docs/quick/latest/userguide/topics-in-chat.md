@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-in-chat.ht
 ---
 
 # Using Topics in AWS Quick chat
-<a name="topics-in-chat"></a>
 
 |  |
 | --- |

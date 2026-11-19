@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-tabl
 ---
 
 # Tables in S3 table buckets
-<a name="s3-tables-tables"></a>
 
 An S3 table represents a structured dataset consisting of underlying table data and related metadata. This data is stored inside a table bucket as a subresource. All tables in a table bucket are stored in the [Apache Iceberg](https://iceberg.apache.org/docs/latest/) table format. Amazon S3 manages maintenance of your tables through automatic file compaction and snapshot management. For more information, see [Maintenance for tables](s3-tables-maintenance.md).
 

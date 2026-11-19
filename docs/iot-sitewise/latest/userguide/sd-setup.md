@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-setup.h
 ---
 
 # Getting started: initial setup
-<a name="sd-setup"></a>
 
 This section walks you through the initial setup of Scenario Discovery: accessing the console and creating a workspace.
 

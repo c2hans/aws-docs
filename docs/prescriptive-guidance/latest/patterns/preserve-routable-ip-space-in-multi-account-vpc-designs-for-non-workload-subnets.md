@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/pr
 ---
 
 # Preserve routable IP space in multi-account VPC designs for non-workload subnets
-<a name="preserve-routable-ip-space-in-multi-account-vpc-designs-for-non-workload-subnets"></a>
 
 *Adam Spicer, Amazon Web Services*
 

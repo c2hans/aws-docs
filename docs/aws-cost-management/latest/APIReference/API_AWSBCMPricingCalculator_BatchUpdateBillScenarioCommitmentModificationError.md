@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchUpdateBillScenarioCommitmentModificationError
-<a name="API_AWSBCMPricingCalculator_BatchUpdateBillScenarioCommitmentModificationError"></a>
 
  Represents an error that occurred when updating a commitment in a Bill Scenario.
 

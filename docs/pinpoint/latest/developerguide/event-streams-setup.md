@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-str
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Set up Amazon Pinpoint to stream app event data through Amazon Kinesis or Amazon Data Firehose
-<a name="event-streams-setup"></a>
 
 You can set up Amazon Pinpoint to send event data to an Amazon Kinesis stream or an Amazon Data Firehose delivery stream. Amazon Pinpoint can send event data for campaigns, journeys, and transactional email and SMS messages.
 

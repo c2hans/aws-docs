@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/notification-
 ---
 
 # Create or configure a notification rule target
-<a name="notification-target-create"></a>
 
 Notification rule targets are Amazon SNS topics or AWS Chatbot clients configured for Slack or Microsoft Teams channels.
 

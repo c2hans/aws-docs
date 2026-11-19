@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PCARestoreCA.
 ---
 
 # Restore a private CA
-<a name="PCARestoreCA"></a>
 
 You can restore a private CA that has been deleted as long as the CA remains within the restoration period that you specified upon deletion. The restoration period is from 7-30 days. At the end of that period, the private CA is permanently deleted. For more information, see [Delete your private CA](PCADeleteCA.md). You cannot restore a private CA that has been permanently deleted.
 

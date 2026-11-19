@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # GLOE stage 1: Development, PoCs, and experimentation for generative AI applications
-<a name="dev"></a>
 
 Generative AI is opening new frontiers of innovation across industries, and the development stage is where these possibilities begin to take concrete shape. The Generative AI Lifecycle Operational Excellence (GLOE) framework offers a structured approach to this exciting phase. It guides teams from initial concept to a functional proof-of-concept (PoC). The development stage, also called the *proof-of-concept (PoC) and experimentation* stage, is characterized by exploration and iterative learning. It helps organizations tap into the potential of generative AI in a controlled, low-risk environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-launch
 ---
 
 # Windows launch agents on Amazon EC2 Windows instances
-<a name="configure-launch-agents"></a>
 
 Each AWS Windows AMI includes a Windows launch agent that's pre-configured with default settings. Launch agents perform tasks during instance startup and run if an instance is stopped and later started, or restarted. For information about a specific agent, see the detail pages in the following list.
 

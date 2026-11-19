@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/join-chat.html
 ---
 
 # Joining a chat room
-<a name="join-chat"></a>
 
  To join a chat room, accept the chat room invite. If you decline the invite by mistake, contact the chat room administrator.
 

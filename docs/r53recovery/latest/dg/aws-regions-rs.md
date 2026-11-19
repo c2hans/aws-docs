@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/aws-regions-rs.htm
 ---
 
 # AWS Regions
-<a name="aws-regions-rs"></a>
 
 Region switch is available in all commercial AWS Regions, as well as AWS GovCloud (US) Regions.
 

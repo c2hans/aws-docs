@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RequestSenderId
-<a name="API_RequestSenderId"></a>
 
 Request a new sender ID that doesn't require registration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/maintai
 ---
 
 # Scheduling the maintenance window for an Amazon MQ broker
-<a name="maintaining-brokers"></a>
 
  Periodically, Amazon MQ performs maintenance to the hardware, operating system, or the engine software of a message broker during the maintenance window. For example, if you changed the broker instance type, Amazon MQ will apply your changes during the next scheduled maintenance window. The duration of the maintenance can last up to two hours depending on the operations that are scheduled for your message broker. You can minimize downtime during a maintenance window by selecting a broker deployment mode with high availability across multiple Availability Zones (AZ).
 

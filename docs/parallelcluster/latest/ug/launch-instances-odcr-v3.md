@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/launch-instanc
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Launch instances with On-Demand Capacity Reservations (ODCR)
-<a name="launch-instances-odcr-v3"></a>
 
 With [On-Demand Capacity Reservations (ODCR)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html), you can reserve capacity for your cluster Amazon EC2 instances in a specific Availability Zone. This way, you can create and manage Capacity Reservations independently from the billing accounts that [Savings Plans](https://aws.amazon.com/savingsplans/) or [regional Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-scope.html) offer.
 

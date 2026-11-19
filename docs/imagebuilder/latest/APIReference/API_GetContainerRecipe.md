@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetContainerRecipe
-<a name="API_GetContainerRecipe"></a>
 
 Retrieves a container recipe.
 

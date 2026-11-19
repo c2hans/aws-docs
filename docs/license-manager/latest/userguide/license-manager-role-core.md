@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/license
 ---
 
 # License Manager – Core role
-<a name="license-manager-role-core"></a>
 
 License Manager requires a service-linked role to manage licenses on your behalf.
 

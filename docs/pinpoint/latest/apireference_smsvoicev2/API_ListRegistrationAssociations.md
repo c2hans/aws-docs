@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ListRegistrationAssociations
-<a name="API_ListRegistrationAssociations"></a>
 
 Retrieve all of the origination identities that are associated with a registration.
 

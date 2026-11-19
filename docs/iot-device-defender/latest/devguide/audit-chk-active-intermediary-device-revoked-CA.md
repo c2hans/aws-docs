@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Intermediate CA revoked for active device certificates check
-<a name="audit-chk-active-intermediary-device-revoked-CA"></a>
 
 Use this check to identify all related device certificates that are still active despite revoking an intermediate CA.
 

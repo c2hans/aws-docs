@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 ---
 
 # Monitoring Self-Managed Databases
-<a name="Database-Insights-Self-Managed"></a>
 
 CloudWatch Database Insights supports monitoring self-managed databases, so you can bring databases that you run yourself into the same console you use for your Amazon RDS and Amazon Aurora databases. You install the CloudWatch agent on the database host, and within minutes the database appears in the Database Insights fleet view with live performance data, including database load (measured as average active sessions), wait event analysis, and query-level statistics.
 

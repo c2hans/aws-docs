@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/code-coverage
 ---
 
 # Create code coverage reports
-<a name="code-coverage-report"></a>
 
 CodeBuild allows you to generate code coverage reports for your tests. The following code coverage reports are provided:
 

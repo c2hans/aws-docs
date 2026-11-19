@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Add inter-Region scope
-<a name="CloudWatch-PerformanceMonitor-monitors-scope"></a>
 
 To get full Availability Zone to Availability Zone granularity for inter-Region paths, add the missing destination account-Region pairs to your scope.
 

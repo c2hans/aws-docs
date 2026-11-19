@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_YAxis
 ---
 
 # YAxisOptions
-<a name="API_YAxisOptions"></a>
 
 The options that are available for a single Y axis in a chart.
 

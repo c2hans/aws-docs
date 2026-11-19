@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load
 ---
 
 # Update the IP address types for your Network Load Balancer
-<a name="load-balancer-ip-address-type"></a>
 
 You can configure your Network Load Balancer so that clients can communicate with the Network Load Balancer using IPv4 addresses only, or using both IPv4 and IPv6 addresses (dualstack). The Network Load Balancer communicates with targets based on the IP address type of the target group. For more information, see [IP address type](network-load-balancers.md#ip-address-type).
 

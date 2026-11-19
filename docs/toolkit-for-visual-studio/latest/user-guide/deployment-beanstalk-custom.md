@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Custom Elastic Beanstalk Application Deployments
-<a name="deployment-beanstalk-custom"></a>
 
 This topic describes how the deployment manifest for Elastic Beanstalk's Microsoft Windows container supports custom application deployments.
 

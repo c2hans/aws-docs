@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListKnowledgeBases
-<a name="API_agent_ListKnowledgeBases"></a>
 
 Lists the knowledge bases in an account. The list also includesinformation about each knowledge base.
 

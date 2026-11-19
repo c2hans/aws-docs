@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Tasks for migrating an AWS Elemental Conductor Live cluster
-<a name="migration-topics"></a>
 
 This section lists the tasks that are part of migrating the nodes in a cluster. The tasks are listed alphabetically.
 

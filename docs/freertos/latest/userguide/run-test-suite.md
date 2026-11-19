@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/run-test-suite
 ---
 
 # Run the test suite
-<a name="run-test-suite"></a>
 
 After you create your test suite, you want to make sure that it functions as expected. Complete the following steps to run the test suite with your existing device pool to do so.
 

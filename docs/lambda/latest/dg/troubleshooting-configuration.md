@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/troubleshooting-configu
 ---
 
 # Troubleshoot configuration issues in Lambda
-<a name="troubleshooting-configuration"></a>
 
 Your function configuration settings can have an impact on the overall performance and behavior of your Lambda Event Function. These might not cause actual function errors, but can cause unexpected timeouts and results.
 

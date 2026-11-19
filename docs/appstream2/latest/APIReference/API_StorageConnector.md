@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Stora
 ---
 
 # StorageConnector
-<a name="API_StorageConnector"></a>
 
 Describes a connector that enables persistent storage for users.
 

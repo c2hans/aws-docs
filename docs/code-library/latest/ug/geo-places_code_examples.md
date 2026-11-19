@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/geo-places_code_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for Location Service Places using AWS SDKs
-<a name="geo-places_code_examples"></a>
 
 The following code examples show you how to use Amazon Location Service Places with an AWS software development kit (SDK).
 

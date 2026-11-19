@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PutFirewallM
 ---
 
 # PutFirewallManagerRuleGroups
-<a name="API_PutFirewallManagerRuleGroups"></a>
 
 Do not use.
 

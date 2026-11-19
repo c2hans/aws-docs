@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # View a phone number's ID in AWS End User Messaging Social
-<a name="managing-phone-numbers-id"></a>
 
 To be able to send messages with the AWS CLI, you need the **Phone number ID** to identify the phone number to use when sending.
 

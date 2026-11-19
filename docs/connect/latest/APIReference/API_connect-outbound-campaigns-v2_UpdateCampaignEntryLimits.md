@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateCampaignEntryLimits
-<a name="API_connect-outbound-campaigns-v2_UpdateCampaignEntryLimits"></a>
 
 Updates the entry limits configuration of an outbound campaign. This API is idempotent. Only campaigns in the `Initialized` state are valid for this operation.
 

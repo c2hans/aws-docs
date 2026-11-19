@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # CreateEmailContact
-<a name="API_CreateEmailContact"></a>
 
 Creates an email contact for the provided email address.
 

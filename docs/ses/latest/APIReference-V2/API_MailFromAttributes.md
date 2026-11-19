@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MailFromA
 ---
 
 # MailFromAttributes
-<a name="API_MailFromAttributes"></a>
 
 A list of attributes that are associated with a MAIL FROM domain.
 

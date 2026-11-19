@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-ind
 ---
 
 # Listing vector indexes
-<a name="s3-vectors-index-list"></a>
 
 You can view all vector indexes within a vector bucket. The listing operation supports prefix-based filtering to help you find specific indexes when you have many indexes in a bucket. For more information about `ListIndexes`, prefix limits, and response limits, see [ListIndexes](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListIndexes.html) in the Amazon Simple Storage Service API Reference.
 

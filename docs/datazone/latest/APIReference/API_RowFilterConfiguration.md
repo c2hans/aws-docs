@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RowFilt
 ---
 
 # RowFilterConfiguration
-<a name="API_RowFilterConfiguration"></a>
 
 The row filter configuration details.
 

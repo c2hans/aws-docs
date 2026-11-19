@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Tutorial: Create a matchmaker for standalone FlexMatch
-<a name="match-create-configuration-standalone"></a>
 
 Before creating a matchmaking configuration, [create a rule set](match-create-ruleset.md) to use with the matchmaker.
 

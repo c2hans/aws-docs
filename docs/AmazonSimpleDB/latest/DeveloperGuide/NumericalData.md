@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Num
 ---
 
 # Working with Numerical Data
-<a name="NumericalData"></a>
 
 **Topics**
 + [Negative Numbers Offsets](NegativeNumbersOffsets.md)

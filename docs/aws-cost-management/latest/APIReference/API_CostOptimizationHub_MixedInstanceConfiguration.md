@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MixedInstanceConfiguration
-<a name="API_CostOptimizationHub_MixedInstanceConfiguration"></a>
 
 The configuration for the EC2 Auto Scaling group with mixed instance types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_A
 ---
 
 # AllRowsWildcard
-<a name="API_AllRowsWildcard"></a>
 
 A structure that you pass to indicate you want all rows in a filter.
 

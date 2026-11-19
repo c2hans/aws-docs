@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteApp
 ---
 
 # DeleteApplicationStatusCheck
-<a name="API_DeleteApplicationStatusCheck"></a>
 
 Deletes an application status check. The following rules apply:
 + Deleting a check automatically removes all of its associations.

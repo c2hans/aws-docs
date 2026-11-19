@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_NewDe
 ---
 
 # NewDefaultValues
-<a name="API_NewDefaultValues"></a>
 
 The configuration that overrides the existing default values for a dataset parameter that is inherited from another dataset.
 

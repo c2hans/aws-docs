@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/detective-dat
 ---
 
 # Training period for new Detective behavior graphs
-<a name="detective-data-training-period"></a>
 
 One avenue of investigation for a finding is to compare the activity during the finding scope time to activity that occurred before the finding was detected. Activity that has not been seen before might be more likely to be suspicious.
 

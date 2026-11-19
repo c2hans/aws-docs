@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListRec
 ---
 
 # ListRecipeVersions
-<a name="API_ListRecipeVersions"></a>
 
 Lists the versions of a particular DataBrew recipe, except for `LATEST_WORKING`.
 

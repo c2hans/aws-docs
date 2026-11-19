@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/client-tools-a
 ---
 
 # Client SDKs for AWS CloudHSM
-<a name="client-tools-and-libraries"></a>
 
 When using AWS CloudHSM, you perform cryptographic operations with [AWS CloudHSM Client Software Development Kits (SDKs)](use-hsm.md). AWS CloudHSM Client SDKs include:
 + Public Key Cryptography Standards \#11 (PKCS \#11)

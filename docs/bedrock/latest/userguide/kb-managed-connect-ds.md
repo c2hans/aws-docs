@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-conn
 ---
 
 # Connect a data source
-<a name="kb-managed-connect-ds"></a>
 
 After finishing the configurations for your knowledge base, you connect a supported data source to the knowledge base.
 

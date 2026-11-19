@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-tra
 ---
 
 # Transferring domains
-<a name="domain-transfer"></a>
 
 You can transfer domain registration from another registrar to Amazon Route 53, from one AWS account to another, or from Route 53 to another registrar. There is no cost for transferring domains from one AWS account to another.
 

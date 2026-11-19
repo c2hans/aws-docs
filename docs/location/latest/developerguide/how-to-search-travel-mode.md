@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search with travel mode
-<a name="how-to-search-travel-mode"></a>
 
 `TravelMode` indicates your mode of mobility. This improves the relevance of search results. For example, a search for "EV charging station" returns charging stations suitable for trucks when `TravelMode` is set to `Truck`.
 

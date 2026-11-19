@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Microsoft Azure to integrate with Security Hub
-<a name="securityhub-v2-azure-setup-azure"></a>
 
 After you complete the [prerequisite tasks](securityhub-v2-azure-prereqs.md), you can configure your Microsoft Azure environment to support integration with AWS Security Hub. To help you do this, the Security Hub console generates a setup script that is customized for your configuration.
 

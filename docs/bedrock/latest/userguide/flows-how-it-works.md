@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-how-it-wo
 ---
 
 # How Amazon Bedrock Flows works
-<a name="flows-how-it-works"></a>
 
 Amazon Bedrock Flows lets you build generative AI workflows by connecting nodes, each of which correspond to a step in the flow that invokes an Amazon Bedrock or related resource. To define inputs into and outputs from nodes, you use expressions to specify how the input is interpreted. To better understand these concepts, review the following topics:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # BatchChannelMemberships
-<a name="API_messaging-chime_BatchChannelMemberships"></a>
 
 The membership information, including member ARNs, the channel ARN, and membership types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/surgery.ht
 ---
 
 # .surgery
-<a name="surgery"></a>
 
 Used for information about surgery, medicine, and healthcare.
 

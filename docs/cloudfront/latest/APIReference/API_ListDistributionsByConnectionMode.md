@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByConnectionMode
-<a name="API_ListDistributionsByConnectionMode"></a>
 
 Lists the distributions by the connection mode that you specify.
 

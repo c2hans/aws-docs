@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Provid
 ---
 
 # ProviderDetails
-<a name="API_ProviderDetails"></a>
 
 Provider-specific details for an integration. Only one member will be present.
 

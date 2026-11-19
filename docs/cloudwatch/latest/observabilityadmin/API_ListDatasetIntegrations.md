@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ListDatasetIntegrations
-<a name="API_ListDatasetIntegrations"></a>
 
 Returns the dataset integrations in your account.
 

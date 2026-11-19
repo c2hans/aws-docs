@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldsConfiguration
-<a name="API_connect-cases_FieldsConfiguration"></a>
 
 Specifies the fields whose values to take from the secondary case when you merge cases.
 

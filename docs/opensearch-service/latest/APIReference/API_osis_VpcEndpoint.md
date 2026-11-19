@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VpcEndpoint
-<a name="API_osis_VpcEndpoint"></a>
 
 An OpenSearch Ingestion-managed VPC endpoint that will access one or more pipelines.
 

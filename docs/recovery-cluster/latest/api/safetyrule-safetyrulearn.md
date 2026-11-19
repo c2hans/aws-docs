@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule-s
 ---
 
 # DescribeSafetyRule, DeleteSafetyRule
-<a name="safetyrule-safetyrulearn"></a>
 
 ## URI
 <a name="safetyrule-safetyrulearn-url"></a>

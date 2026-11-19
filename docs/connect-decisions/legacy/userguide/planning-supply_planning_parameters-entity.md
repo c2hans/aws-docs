@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/plann
 ---
 
 # supply\_planning\_parameters
-<a name="planning-supply_planning_parameters-entity"></a>
 
 **Primary key (PK)**
 

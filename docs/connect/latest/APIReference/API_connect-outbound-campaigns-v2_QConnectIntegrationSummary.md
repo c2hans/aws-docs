@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # QConnectIntegrationSummary
-<a name="API_connect-outbound-campaigns-v2_QConnectIntegrationSummary"></a>
 
 The summary of the integration with Amazon Q in Connect.
 

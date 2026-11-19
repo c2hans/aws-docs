@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-opt
 ---
 
 # Understanding cost optimization strategies
-<a name="coh-optimization-strategies"></a>
 
 Cost Optimization Hub groups your recommendations into the following cost optimization strategies:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeNode
 ---
 
 # DescribeNodegroup
-<a name="API_DescribeNodegroup"></a>
 
 Describes a managed node group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployme
 ---
 
 # How CloudWatch alarms detect Amazon ECS deployment failures
-<a name="deployment-alarm-failure"></a>
 
 You can configure Amazon ECS to set the deployment to failed when it detects that a specified CloudWatch alarm has gone into the `ALARM` state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Resource
 ---
 
 # ResourceRecordSetProtectionConfig
-<a name="API_ResourceRecordSetProtectionConfig"></a>
 
 A protection to create for the resource record sets in a hosted zone that have the specified name and type.
 

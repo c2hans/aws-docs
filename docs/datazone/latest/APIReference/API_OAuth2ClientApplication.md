@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OAuth2C
 ---
 
 # OAuth2ClientApplication
-<a name="API_OAuth2ClientApplication"></a>
 
 The OAuth2Client application.
 

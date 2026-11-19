@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvestmentAttestation
-<a name="API_billing_InvestmentAttestation"></a>
 
 A summary of a submitted investment attestation, as returned by `ListContractualInvestmentAttestations`.
 

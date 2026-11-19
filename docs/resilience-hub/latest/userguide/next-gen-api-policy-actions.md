@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Resilience policies
-<a name="next-gen-api-policy-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

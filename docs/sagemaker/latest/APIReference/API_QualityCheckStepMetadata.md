@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Qualit
 ---
 
 # QualityCheckStepMetadata
-<a name="API_QualityCheckStepMetadata"></a>
 
 Container for the metadata for a Quality check step. For more information, see the topic on [QualityCheck step](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html#step-type-quality-check) in the *Amazon SageMaker Developer Guide*.
 

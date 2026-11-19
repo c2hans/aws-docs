@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_PutAlte
 ---
 
 # PutAlternateContact
-<a name="API_PutAlternateContact"></a>
 
 Modifies the specified alternate contact attached to an AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Working with profiling groups
-<a name="working-with-profiling-groups"></a>
 
 A *profiling group* is a set of applications that are profiled together as a unit. Application data is sent by the Amazon CodeGuru Profiler profiling agent to a single profile group. Data from all applications in a profiling group are aggregated and analyzed together.
 

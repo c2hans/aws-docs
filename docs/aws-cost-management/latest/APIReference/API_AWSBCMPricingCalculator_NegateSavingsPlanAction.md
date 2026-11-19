@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # NegateSavingsPlanAction
-<a name="API_AWSBCMPricingCalculator_NegateSavingsPlanAction"></a>
 
  Represents an action to remove a Savings Plan from a bill scenario.
 

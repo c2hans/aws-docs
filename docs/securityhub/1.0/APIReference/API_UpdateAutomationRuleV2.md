@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateA
 ---
 
 # UpdateAutomationRuleV2
-<a name="API_UpdateAutomationRuleV2"></a>
 
 Updates a V2 automation rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/managed
 ---
 
 # Available Managed Dashboards
-<a name="managed-dashboards-available"></a>
 
 Five Managed Dashboards are available, organized around three layers of cloud financial visibility.
 

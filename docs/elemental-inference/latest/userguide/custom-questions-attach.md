@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Adding customer decisions to a feed
-<a name="custom-questions-attach"></a>
 
 To add customer decisions, add a `customQuestions` object to the `contextualMetadata` configuration of an output. You can do this in a `CreateFeed`, `UpdateFeed`, or `AssociateFeed` request. For information about the other contextual metadata settings, see [Configuring contextual metadata](create-feed-outputs.md#create-feed-console-contextual-metadata).
 

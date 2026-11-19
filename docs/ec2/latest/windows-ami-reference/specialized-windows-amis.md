@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/special
 ---
 
 # Specialized AWS Windows AMIs
-<a name="specialized-windows-amis"></a>
 
 In addition to its standard operating system version AMIs, Amazon creates several types of specialized AWS Windows AMIs.
 

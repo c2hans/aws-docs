@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateConfigurationSet
-<a name="API_CreateConfigurationSet"></a>
 
 Creates a new configuration set. After you create the configuration set, you can add one or more event destinations to it.
 

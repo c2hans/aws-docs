@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EventIntegration
-<a name="API_connect-app-integrations_EventIntegration"></a>
 
 The event integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_SamplingStrategy.htm
 ---
 
 # SamplingStrategy
-<a name="API_SamplingStrategy"></a>
 
 The name and value of a sampling rule to apply to a trace summary.
 

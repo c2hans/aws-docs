@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-retain
 ---
 
 # Capturing records of Lambda asynchronous invocations
-<a name="invocation-async-retain-records"></a>
 
 Lambda can send records of asynchronous invocations to one of the following AWS services.
 + **Amazon SQS** – A standard SQS queue

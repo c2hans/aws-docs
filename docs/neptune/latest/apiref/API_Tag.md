@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Metadata assigned to an Amazon Neptune resource consisting of a key-value pair.
 

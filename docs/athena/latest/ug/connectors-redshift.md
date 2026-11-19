@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-redshift.htm
 ---
 
 # Amazon Athena Redshift connector
-<a name="connectors-redshift"></a>
 
 The Amazon Athena Redshift connector enables Amazon Athena to access your Amazon Redshift and Amazon Redshift Serverless databases, including Redshift Serverless views. You can connect to either service using the JDBC connection string configuration settings described on this page.
 

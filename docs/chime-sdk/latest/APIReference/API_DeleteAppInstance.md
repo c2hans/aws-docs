@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Delete
 ---
 
 # DeleteAppInstance
-<a name="API_DeleteAppInstance"></a>
 
 Deletes an `AppInstance` and all associated data asynchronously.
 

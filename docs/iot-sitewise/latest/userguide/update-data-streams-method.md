@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-dat
 ---
 
 # Update an asset property alias
-<a name="update-data-streams-method"></a>
 
  Aliases must be unique within an AWS region. This includes aliases of both asset properties and data streams. Do not assign an alias to an asset property, if another property or data stream is using that alias.
 

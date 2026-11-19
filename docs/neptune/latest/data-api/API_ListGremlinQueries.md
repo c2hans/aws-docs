@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ListGremlinQ
 ---
 
 # ListGremlinQueries
-<a name="API_ListGremlinQueries"></a>
 
 Lists active Gremlin queries. See [Gremlin query status API](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-status.html) for details about the output.
 

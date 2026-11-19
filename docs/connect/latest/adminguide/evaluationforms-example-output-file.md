@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluationform
 ---
 
 # Agent evaluation form output in Connect Customer
-<a name="evaluationforms-example-output-file"></a>
 
 This section shows the export output path for evaluations, provides an example of evaluation form scores, and describes the evaluation form metadata.
 

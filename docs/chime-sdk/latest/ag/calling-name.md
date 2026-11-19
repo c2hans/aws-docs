@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/calling-name.html
 ---
 
 # Setting outbound calling names
-<a name="calling-name"></a>
 
 You can assign calling names to the phone numbers in your inventory. This applies to toll-based numbers only, and excludes toll-free numbers. The names appear to recipients of outbound calls. You can update the names every seven days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VideoExtractionCategory
-<a name="API_data-automation_VideoExtractionCategory"></a>
 
 Settings for generating categorical data from video.
 

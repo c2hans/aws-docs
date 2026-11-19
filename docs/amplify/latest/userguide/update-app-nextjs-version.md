@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/update-app-next
 ---
 
 # Migrating a Next.js 11 SSR app to Amplify Hosting compute
-<a name="update-app-nextjs-version"></a>
 
 When you deploy a new Next.js app, by default Amplify uses the most recent supported version of Next.js. Currently, the Amplify Hosting compute SSR provider supports Next.js version 15.
 

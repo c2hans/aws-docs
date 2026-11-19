@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.h
 ---
 
 # Lambda quotas
-<a name="gettingstarted-limits"></a>
 
 **Important**
 New AWS accounts have reduced concurrency and memory quotas for Lambda Functions and Lambda MicroVMs, and reduced vCPU and request rate quotas for Lambda Web Functions. AWS raises these quotas automatically based on your usage.
@@ -25,6 +24,7 @@ The following sections list default quotas and limits in Lambda by category.
 + [Durable functions](#durable-functions-quotas)
 + [Lambda MicroVMs](#microvms-quotas)
 + [Lambda Web Functions](#web-functions-quotas)
++ [Customer-managed runtimes](#cmr-quotas)
 + [Other services](#quotas-other-services)
 
 ## Compute and storage
@@ -230,6 +230,22 @@ The following constraints apply to Web Function networking.
 | Endpoint type and Region set | Fixed at endpoint creation |
 | Direct public egress | IPv4 only |
 | Private endpoint access with AWS PrivateLink | Not available |
+
+## Customer-managed runtimes
+<a name="cmr-quotas"></a>
+
+The following quotas apply to [customer-managed runtimes](runtimes-customer-managed.md) in each AWS Region of your AWS account.
+
+| Resource | Default quota | Adjustable |
+| --- | --- | --- |
+| Runtimes | 100 | Yes |
+| Runtime versions per runtime | 200 | Yes |
+| Runtime aliases per runtime | 100 | Yes |
+| Rate of runtime write API requests (combined across all runtime write API operations) | 10 requests per second | Yes |
+| Rate of runtime read API requests (combined across all runtime read API operations) | 100 requests per second | Yes |
+| Runtime image size | 10 GB (maximum uncompressed image size, including all layers) | No |
+
+Runtimes, runtime versions, and runtime aliases that are scheduled for deletion count toward their quotas.
 
 ## Other services
 <a name="quotas-other-services"></a>

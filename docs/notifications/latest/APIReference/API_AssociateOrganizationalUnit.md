@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_As
 ---
 
 # AssociateOrganizationalUnit
-<a name="API_AssociateOrganizationalUnit"></a>
 
 Associates an organizational unit with a notification configuration.
 

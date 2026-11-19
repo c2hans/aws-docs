@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-alb-access-logs-
 ---
 
 # Create the table for ALB access logs
-<a name="create-alb-access-logs-table"></a>
 
 1. Copy and paste the following `CREATE TABLE` statement into the query editor in the Athena console, and then modify it as necessary for your own log entry requirements. For information about getting started with the Athena console, see [Get started](getting-started.md). Replace the path in the `LOCATION` clause with your Amazon S3 access log folder location. For more information about access log file location, see [Access log files](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html#access-log-file-format) in the *User Guide for Application Load Balancers*.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Hybrid architecture description
-<a name="hybrid-architecture-description"></a>
 
  The following example shows an Outpost deployment with distributed Amazon EKS service extending to on-premises environments.
 

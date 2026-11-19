@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationMigrationFSxProxyPolicy
-<a name="AWSApplicationMigrationFSxProxyPolicy"></a>
 
 **Description**: Provides permissions to manage ONTAP file system
 

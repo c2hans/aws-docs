@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ValidationError
-<a name="API_ValidationError"></a>
 
 Represents a detailed validation error with message, reason, and field mapping for comprehensive error reporting.
 

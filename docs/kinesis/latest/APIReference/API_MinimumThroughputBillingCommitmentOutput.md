@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_MinimumT
 ---
 
 # MinimumThroughputBillingCommitmentOutput
-<a name="API_MinimumThroughputBillingCommitmentOutput"></a>
 
 Represents the current status of minimum throughput billing commitment for an account.
 

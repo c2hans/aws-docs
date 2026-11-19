@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # AWS User Guide to Financial Services Regulations and Guidelines in Australia
-<a name="aws-financial-services-guidance-australia"></a>
 
 Publication date: **July 2025** ([Document revisions](document-revisions.md))
 

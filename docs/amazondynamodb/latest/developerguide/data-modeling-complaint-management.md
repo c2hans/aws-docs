@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dat
 ---
 
 # Complaint management system schema design in DynamoDB
-<a name="data-modeling-complaint-management"></a>
 
 ## Complaint management system business use case
 <a name="data-modeling-schema-complaint-management-use-case"></a>

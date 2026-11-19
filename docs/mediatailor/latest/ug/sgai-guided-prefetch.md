@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/sgai-guided-prefet
 ---
 
 # Guided prefetch with manifest heartbeating
-<a name="sgai-guided-prefetch"></a>
 
 For live SGAI streams, you can enable manifest-based ad prefetching by adding `aws.guidedPrefetchMode=MANIFEST` to your session initialization request:
 

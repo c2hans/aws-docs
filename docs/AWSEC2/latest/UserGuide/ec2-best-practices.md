@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practic
 ---
 
 # Best practices for Amazon EC2
-<a name="ec2-best-practices"></a>
 
 To ensure the maximum benefit from Amazon EC2, we recommend that you perform the following best practices.
 

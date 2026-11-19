@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # ManagedVpcResource
-<a name="API_ManagedVpcResource"></a>
 
 A service-managed private endpoint provisioned within a customer VPC.
 

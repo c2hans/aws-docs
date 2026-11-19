@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PutRe
 ---
 
 # PutRepositoryTriggers
-<a name="API_PutRepositoryTriggers"></a>
 
 Replaces all triggers for a repository. Used to create or delete triggers.
 

@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Find an Amazon Machine Image Using Windows PowerShell
-<a name="pstools-ec2-get-amis"></a>
 
 When you launch an Amazon EC2 instance, you specify an Amazon Machine Image (AMI) to serve as a template for the instance. However, the IDs for the AWS Windows AMIs change frequently because AWS provides new AMIs with the latest updates and security enhancements. You can use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/v4/reference/items/Get-EC2Image.html) and [Get-EC2ImageByName](https://docs.aws.amazon.com/powershell/v4/reference/items/Get-EC2ImageByName.html) cmdlets to find the current Windows AMIs and get their IDs.
 

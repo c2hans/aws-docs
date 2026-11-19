@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/features.html
 ---
 
 # Features of DLAMI
-<a name="features"></a>
 
 The features of AWS Deep Learning AMIs (DLAMI) include preinstalled deep learning frameworks, GPU software, model servers, and model visualization tools.
 

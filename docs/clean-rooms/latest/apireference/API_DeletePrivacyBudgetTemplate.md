@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeletePrivacyBudgetTemplate
-<a name="API_DeletePrivacyBudgetTemplate"></a>
 
 Deletes a privacy budget template for a specified collaboration.
 

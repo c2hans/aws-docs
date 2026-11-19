@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtopermr
 ---
 
 # Set relay state for quick access to the AWS Management Console
-<a name="howtopermrelaystate"></a>
 
 By default, when a user signs into the AWS access portal, chooses an account, and then chooses the role that AWS creates from the assigned permission set, IAM Identity Center redirects the user’s browser to the AWS Management Console. You can change this behavior by setting the relay state to a different console URL.
 

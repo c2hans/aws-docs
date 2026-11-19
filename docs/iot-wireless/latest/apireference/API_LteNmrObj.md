@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lte
 ---
 
 # LteNmrObj
-<a name="API_LteNmrObj"></a>
 
 LTE object for network measurement reports.
 

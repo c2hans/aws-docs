@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/eventbrid
 ---
 
 # Send events to Amazon EventBridge global endpoints using the AWS SDK for PHP Version 3
-<a name="eventbridge-examples"></a>
 
 You can use [Amazon EventBridge global endpoints](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html) to improve the availability and reliability of your event-driven applications.
 

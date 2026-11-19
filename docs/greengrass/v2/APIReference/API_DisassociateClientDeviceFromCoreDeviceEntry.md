@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Disassoci
 ---
 
 # DisassociateClientDeviceFromCoreDeviceEntry
-<a name="API_DisassociateClientDeviceFromCoreDeviceEntry"></a>
 
 Contains a request to disassociate a client device from a core device. The [BatchDisassociateClientDeviceWithCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_BatchDisassociateClientDeviceWithCoreDevice.html) operation consumes a list of these requests.
 

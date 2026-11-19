@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/hours-of-opera
 ---
 
 # Identify dates where you need to override standard operating hours
-<a name="hours-of-operation-overrides"></a>
 
 You can override the standard operating hours for future dates where operations will be closed, have reduced hours, or will be open longer than normal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/webrtc-redi
 ---
 
 # Integrate your web application with WebRTC redirection
-<a name="webrtc-redirection-integration"></a>
 
 WebRTC redirection enables web applications running inside WorkSpaces sessions to use native client-side audio devices. This topic shows web application developers how to detect the WebRTC redirection environment and integrate with it.
 

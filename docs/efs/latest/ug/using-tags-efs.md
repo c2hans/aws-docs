@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/using-tags-efs.html
 ---
 
 # Using tags with Amazon EFS
-<a name="using-tags-efs"></a>
 
 You can use tags to control access to Amazon EFS resources and to implement attribute-based access control (ABAC). For more information, see:
 + [Tagging EFS resources](manage-fs-tags.md)

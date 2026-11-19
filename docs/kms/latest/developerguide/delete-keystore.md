@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/delete-keystor
 ---
 
 # Delete an AWS CloudHSM key store
-<a name="delete-keystore"></a>
 
 When you delete an AWS CloudHSM key store, AWS KMS deletes all metadata about the AWS CloudHSM key store from KMS, including information about its association with an AWS CloudHSM cluster. This operation does not affect the AWS CloudHSM cluster, its HSMs, or its users. You can create a new AWS CloudHSM key store that is associated with the same AWS CloudHSM cluster, but you cannot undo the delete operation.
 

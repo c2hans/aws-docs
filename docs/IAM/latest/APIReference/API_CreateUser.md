@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.h
 ---
 
 # CreateUser
-<a name="API_CreateUser"></a>
 
 Creates a new IAM user for your AWS account.
 

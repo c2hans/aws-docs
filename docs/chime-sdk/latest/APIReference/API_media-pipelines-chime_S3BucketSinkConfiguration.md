@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # S3BucketSinkConfiguration
-<a name="API_media-pipelines-chime_S3BucketSinkConfiguration"></a>
 
 The configuration settings for the S3 bucket.
 

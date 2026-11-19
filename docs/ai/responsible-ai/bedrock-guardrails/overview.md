@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/bedrock-guardrails/ove
 ---
 
 # Amazon Bedrock Guardrails
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/bedrock-guardrails/images/card-background.jpg)
 

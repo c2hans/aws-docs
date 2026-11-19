@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Trigger
 ---
 
 # TriggerCondition
-<a name="API_TriggerCondition"></a>
 
 Defines a condition that must be met for a trigger to fire.
 

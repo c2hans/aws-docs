@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Del
 ---
 
 # DeleteDeployment
-<a name="API_DeleteDeployment"></a>
 
 Deletes a deployment.
 

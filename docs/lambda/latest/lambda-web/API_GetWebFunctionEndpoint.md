@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_GetWebFunct
 ---
 
 # GetWebFunctionEndpoint
-<a name="API_GetWebFunctionEndpoint"></a>
 
 Retrieves details about a web function endpoint, including its current state, configuration, and domain name.
 

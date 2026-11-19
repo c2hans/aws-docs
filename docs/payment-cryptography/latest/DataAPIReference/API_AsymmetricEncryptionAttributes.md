@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # AsymmetricEncryptionAttributes
-<a name="API_AsymmetricEncryptionAttributes"></a>
 
 Parameters for plaintext encryption using asymmetric keys.
 

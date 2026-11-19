@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_EngineDefaults
 ---
 
 # EngineDefaults
-<a name="API_EngineDefaults"></a>
 
  Contains the result of a successful invocation of the [DescribeEngineDefaultParameters](API_DescribeEngineDefaultParameters.md) action.
 

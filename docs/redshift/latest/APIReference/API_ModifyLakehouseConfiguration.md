@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyL
 ---
 
 # ModifyLakehouseConfiguration
-<a name="API_ModifyLakehouseConfiguration"></a>
 
 Modifies the lakehouse configuration for a cluster. This operation allows you to manage Amazon Redshift federated permissions and AWS IAM Identity Center trusted identity propagation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetAutomationEvent
-<a name="API_automation_GetAutomationEvent"></a>
 
  Retrieves details about a specific automation event.
 

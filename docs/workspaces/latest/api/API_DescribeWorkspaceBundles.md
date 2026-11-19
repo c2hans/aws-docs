@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceBundles
-<a name="API_DescribeWorkspaceBundles"></a>
 
 Retrieves a list that describes the available WorkSpace bundles.
 

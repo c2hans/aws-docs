@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy
 ---
 
 # Using the Elastic Beanstalk Python platform
-<a name="create-deploy-python-container"></a>
 
 This topic describes how to configure, build, and run your Python applications on Elastic Beanstalk.
 

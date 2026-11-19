@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Amazon Kinesis Video Streams with WebRTC SDK in JavaScript for web applications
-<a name="kvswebrtc-sdk-js"></a>
 
 You can find the Kinesis Video Streams with WebRTC SDK in JavaScript for web applications and its corresponding samples in [GitHub](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js).
 

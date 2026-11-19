@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/detective-rec
 ---
 
 # Recommendations to enable Detective
-<a name="detective-recommendations"></a>
 
 Consider following these recommendations before enabling Detective
 

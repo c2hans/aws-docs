@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # View the host recovery setting for your Amazon EC2 Dedicated Host
-<a name="dedicated-hosts-recovery-view"></a>
 
 You can view the host recovery configuration for a Dedicated Host at any time.
 

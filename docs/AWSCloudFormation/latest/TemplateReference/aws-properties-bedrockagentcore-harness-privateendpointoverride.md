@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Harness PrivateEndpointOverride
-<a name="aws-properties-bedrockagentcore-harness-privateendpointoverride"></a>
 
 A mapping of a specific domain to a private endpoint for secure connectivity through a VPC Lattice resource configuration.
 

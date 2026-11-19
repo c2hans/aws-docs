@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Heal
 ---
 
 # Health\_OrganizationsServiceRolePolicy
-<a name="Health_OrganizationsServiceRolePolicy"></a>
 
 **Description**: AWS Health policy to enable Organizational View feature
 

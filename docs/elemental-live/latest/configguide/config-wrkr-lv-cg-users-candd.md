@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Change and delete users
-<a name="config-wrkr-lv-cg-users-candd"></a>
 
 Administrators can change and delete users of AWS Elemental Live.
 

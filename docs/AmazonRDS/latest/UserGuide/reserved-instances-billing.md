@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/reserved-inst
 ---
 
 # Viewing the billing for reserved DB instances for Amazon RDS
-<a name="reserved-instances-billing"></a>
 
 You can view the billing for your reserved DB instances in the Billing Dashboard in the AWS Management Console.
 

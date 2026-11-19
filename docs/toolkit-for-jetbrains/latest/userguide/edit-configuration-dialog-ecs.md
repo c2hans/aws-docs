@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/e
 ---
 
 # Edit configuration dialog box (Amazon ECS cluster)
-<a name="edit-configuration-dialog-ecs"></a>
 
 The **Edit configuration** dialog box contains two tabs: **Configuration** and **AWS Connection**.
 

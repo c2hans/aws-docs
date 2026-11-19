@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-mqtt-http
 ---
 
 # Jobs device MQTT and HTTPS API operations and data types
-<a name="jobs-mqtt-https-api"></a>
 
 The following commands are available over the MQTT and HTTPS protocols. Use these API operations on the data plane for devices executing the jobs.
 

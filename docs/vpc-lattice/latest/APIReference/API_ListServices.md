@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListServices
-<a name="API_ListServices"></a>
 
 Lists the services owned by the caller account or shared with the caller account.
 

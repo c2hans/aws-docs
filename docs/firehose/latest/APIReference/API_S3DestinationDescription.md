@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_S3Desti
 ---
 
 # S3DestinationDescription
-<a name="API_S3DestinationDescription"></a>
 
 Describes a destination in Amazon S3.
 

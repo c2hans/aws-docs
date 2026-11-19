@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC01-BP08 Evaluate and implement new security services and features regularly
-<a name="sec_securely_operate_implement_services_features"></a>
 
  Evaluate and implement security services and features from AWS and AWS Partners that allow you to evolve the security posture of your workload. The AWS Security Blog highlights new AWS services and features, implementation guides, and general security guidance. [What's New with AWS?](https://aws.amazon.com/new) is a great way to stay up to date with all new AWS features, services, and announcements.
 

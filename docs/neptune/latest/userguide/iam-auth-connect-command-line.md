@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication from the command line
-<a name="iam-auth-connect-command-line"></a>
 
 Having a command-line tool for submitting queries to your Neptune DB cluster is very handy, as illustrated in many of the examples in this documentation. The [curl](https://curl.haxx.se/) tool is an excellent option for communicating with Neptune endpoints if IAM authentication is not enabled.
 

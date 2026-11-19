@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Option 1: Applications can assume any role linked to an IAM Roles Anywhere profile
-<a name="option-1"></a>
 
 In this scenario, two certificates have been provisioned in AWS Certificate Manager (ACM) from the AWS Private Certificate Authority instance and shared with the applications that require access to AWS resources. These applications can assume any role that is linked to an IAM Roles Anywhere profile. This is because the trust policy doesn't limit which application can assume it.
 

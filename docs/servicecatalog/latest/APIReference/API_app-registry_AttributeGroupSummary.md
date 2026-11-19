@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # AttributeGroupSummary
-<a name="API_app-registry_AttributeGroupSummary"></a>
 
 Summary of a AWS Service Catalog AppRegistry attribute group.
 

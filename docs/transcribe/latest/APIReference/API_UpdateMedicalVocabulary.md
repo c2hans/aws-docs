@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Updat
 ---
 
 # UpdateMedicalVocabulary
-<a name="API_UpdateMedicalVocabulary"></a>
 
 Updates an existing custom medical vocabulary with new values. This operation overwrites all existing information with your new values; you cannot append new terms onto an existing custom vocabulary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/troubleshooting
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
  The following documentation can help you troubleshoot issues that may occur while using AWS Ground Station.
 

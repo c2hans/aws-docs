@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelV
 ---
 
 # ModelVariantConfig
-<a name="API_ModelVariantConfig"></a>
 
 Contains information about the deployment options of a model.
 

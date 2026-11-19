@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommendationMetadata
-<a name="API_connect-customer-profiles_RecommendationMetadata"></a>
 
 Configuration for metadata to include in recommendation responses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAvailabilityZones
-<a name="API_DescribeAvailabilityZones"></a>
 
 Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you.
 

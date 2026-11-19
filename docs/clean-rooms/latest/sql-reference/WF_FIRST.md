@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/WF_FIRS
 ---
 
 # FIRST window function
-<a name="WF_FIRST"></a>
 
  Given an ordered set of rows, FIRST returns the value of the specified expression with respect to the first row in the window frame.
 

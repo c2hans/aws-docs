@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Amazon Verified Permissions policy stores
-<a name="policy-stores"></a>
 
 A policy store is a container for policies and policy templates. In each policy store, you can create a schema that is used to validate policies added to the policy store. In addition, you can turn on policy validation. If you add a policy to a policy store with policy validation enabled, the entity types, common types, and actions defined in the policy are validated against the schema and invalid policies are rejected.
 

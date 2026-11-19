@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListCom
 ---
 
 # ListComplianceInquiries
-<a name="API_ListComplianceInquiries"></a>
 
 List available compliance inquiries.
 

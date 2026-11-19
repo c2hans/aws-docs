@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/how-local-zones-wo
 ---
 
 # How AWS Local Zones work
-<a name="how-local-zones-work"></a>
 
 A Local Zone is an extension of an [AWS Region](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html) in geographic proximity to your users. Local Zones have their own connections to the internet and support Direct Connect, so that resources created in a Local Zone can serve applications that require low latency.
 

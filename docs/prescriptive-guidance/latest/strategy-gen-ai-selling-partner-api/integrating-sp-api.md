@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Integrating the Amazon Selling Partner API
-<a name="integrating-sp-api"></a>
 
 In order to access the data through the Amazon Selling Partner API (SP-API), you must complete the following actions:
 

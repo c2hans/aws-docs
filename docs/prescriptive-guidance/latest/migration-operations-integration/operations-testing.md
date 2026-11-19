@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Operations testing
-<a name="operations-testing"></a>
 
 Like products, IT operations should be tested, end to end, on a regular cadence. Although enterprise customers have adopted operational testing for activities such as disaster recovery, operational testing should be extended to other operations domains such as incident and event management. Game-day scenarios, like ﬁre drills, are activities that test how your processes, tools, and people react when an operations event occurs.
 

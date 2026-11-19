@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 ---
 
 # Run example Amazon Bedrock API requests with the AWS Command Line Interface
-<a name="getting-started-api-ex-cli"></a>
 
 This section guides you through trying out some common operations in Amazon Bedrock using the AWS Command Line Interface to test that your permissions and authentication are set up properly. Before you run the following examples, you should check that you have fulfilled the following prerequisites:
 

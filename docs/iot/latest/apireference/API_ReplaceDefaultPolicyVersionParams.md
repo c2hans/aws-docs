@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ReplaceDefau
 ---
 
 # ReplaceDefaultPolicyVersionParams
-<a name="API_ReplaceDefaultPolicyVersionParams"></a>
 
 Parameters to define a mitigation action that adds a blank policy to restrict permissions.
 

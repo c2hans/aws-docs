@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Supported AWS Regions
-<a name="supported-aws-regions"></a>
 
  This guidance uses services which may not be currently available in all AWS Regions. Launch this guidance in an AWS Region where required services are available. For the most current availability by Region, refer to the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/?nc1=h_ls).
 

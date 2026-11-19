@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # List Channels
-<a name="msk-data-delivery-iceberg-list"></a>
 
 ## Using the AWS Management Console
 <a name="msk-data-delivery-iceberg-list-console"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-vs-
 ---
 
 # Color space versus video resolution
-<a name="color-space-vs-resolution"></a>
 
 Color space refers to the range of color. Elemental Live supports the following color spaces:
 + SDR (standard dynamic range)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/jacca
 ---
 
 # Jaccard similarity algorithm
-<a name="jaccard-similarity"></a>
 
 The Jaccard similarity algorithm measures the similarity between two sets. It is calculated by dividing the size of the intersection of the two sets by the size of their union.
 

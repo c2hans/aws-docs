@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorPr
 ---
 
 # ConnectorProfileCredentials
-<a name="API_ConnectorProfileCredentials"></a>
 
  The connector-specific credentials required by a connector.
 

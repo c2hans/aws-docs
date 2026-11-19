@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TargetGroupAttribute
-<a name="API_TargetGroupAttribute"></a>
 
 Information about a target group attribute.
 

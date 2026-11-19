@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DocumentationP
 ---
 
 # DocumentationPart
-<a name="API_DocumentationPart"></a>
 
 A documentation part for a targeted API entity.
 

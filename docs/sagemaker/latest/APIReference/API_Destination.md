@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Destin
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 An endpoint or inference component that serves a routing target.
 

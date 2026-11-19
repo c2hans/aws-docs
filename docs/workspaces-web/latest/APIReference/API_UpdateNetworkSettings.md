@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateNetworkSettings
-<a name="API_UpdateNetworkSettings"></a>
 
 Updates network settings.
 

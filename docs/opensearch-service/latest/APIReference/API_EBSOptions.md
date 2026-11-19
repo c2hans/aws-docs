@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # EBSOptions
-<a name="API_EBSOptions"></a>
 
 Container for the parameters required to enable EBS-based storage for an OpenSearch Service domain.
 

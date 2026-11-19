@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ob
 ---
 
 # Observability
-<a name="observability"></a>
 
 Observability is the extent to which a system’s current state can be inferred from the data it emits. The data emitted is commonly referred to as telemetry.
 

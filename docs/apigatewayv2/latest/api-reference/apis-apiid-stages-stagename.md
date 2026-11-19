@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Stage
-<a name="apis-apiid-stages-stagename"></a>
 
 Represents an API stage.
 

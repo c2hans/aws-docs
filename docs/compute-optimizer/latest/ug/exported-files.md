@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/exported-fil
 ---
 
 # Exported files
-<a name="exported-files"></a>
 
 Recommendations are exported in a CSV file, and the metadata in a JSON file, to the Amazon S3 bucket that you specified when you created the export job.
 

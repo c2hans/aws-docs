@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_GetProfile.
 ---
 
 # GetProfile
-<a name="API_GetProfile"></a>
 
 Retrieves the details for the profile specified by the profile ID. A profile is the mechanism used to create the concept of a private network.
 

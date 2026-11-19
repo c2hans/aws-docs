@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateInstanceC
 ---
 
 # UpdateInstanceCustomHealthStatus
-<a name="API_UpdateInstanceCustomHealthStatus"></a>
 
 Submits a request to change the health status of a custom health check to healthy or unhealthy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Group.html
 ---
 
 # Group
-<a name="API_Group"></a>
 
 Contains information about an IAM group entity.
 

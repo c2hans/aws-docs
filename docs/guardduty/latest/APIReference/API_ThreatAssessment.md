@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Threat
 ---
 
 # ThreatAssessment
-<a name="API_ThreatAssessment"></a>
 
 Contains an assessment of the threat that a `FINDING` investigation identified.
 

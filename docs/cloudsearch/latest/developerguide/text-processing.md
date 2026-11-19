@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/text-p
 ---
 
 # Text Processing in Amazon CloudSearch
-<a name="text-processing"></a>
 
 During indexing, Amazon CloudSearch processes `text` and `text-array` fields according to the analysis scheme configured for the field to determine what terms to add to the index. Before the analysis options are applied, the text is *tokenized* and *normalized*.
 

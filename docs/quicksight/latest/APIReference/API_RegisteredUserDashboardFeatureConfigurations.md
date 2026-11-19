@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserDashboardFeatureConfigurations
-<a name="API_RegisteredUserDashboardFeatureConfigurations"></a>
 
 The feature configuration for an embedded dashboard.
 

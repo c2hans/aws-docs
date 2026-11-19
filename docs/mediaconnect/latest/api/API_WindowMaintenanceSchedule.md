@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_WindowMainte
 ---
 
 # WindowMaintenanceSchedule
-<a name="API_WindowMaintenanceSchedule"></a>
 
 Defines a specific time window for maintenance operations.
 

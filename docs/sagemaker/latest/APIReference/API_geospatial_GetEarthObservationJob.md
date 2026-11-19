@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # GetEarthObservationJob
-<a name="API_geospatial_GetEarthObservationJob"></a>
 
 Get the details for a previously initiated Earth Observation job.
 

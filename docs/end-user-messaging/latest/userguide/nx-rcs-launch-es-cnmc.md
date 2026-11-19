@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # CNMC National Alias Registry requirement
-<a name="nx-rcs-launch-es-cnmc"></a>
 
 **Important**
 All RCS agents used to send messages to Spanish mobile numbers (\+34) must be registered in the CNMC (Comision Nacional de los Mercados y la Competencia) National Alias Registry. This is the same regulatory body that governs SMS sender ID registration in Spain.

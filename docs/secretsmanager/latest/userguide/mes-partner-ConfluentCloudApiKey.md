@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Confluent Cloud API Key
-<a name="mes-partner-ConfluentCloudApiKey"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c19b3"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ltrim-function.ht
 ---
 
 # Ltrim
-<a name="ltrim-function"></a>
 
 `ltrim` removes preceding blank space from a string.
 

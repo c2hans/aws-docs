@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Email.ht
 ---
 
 # Using reporting services email to send reports
-<a name="SSRS.Email"></a>
 
 SSRS and PBIRS include an email extension that you can use to send reports to users.
 

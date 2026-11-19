@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_OutpostConfi
 ---
 
 # OutpostConfigResponse
-<a name="API_OutpostConfigResponse"></a>
 
 An object representing the configuration of your local Amazon EKS cluster on an AWS Outpost. This API isn't available for Amazon EKS clusters on the AWS cloud.
 

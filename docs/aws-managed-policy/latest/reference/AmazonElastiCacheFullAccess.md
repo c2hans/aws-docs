@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElastiCacheFullAccess
-<a name="AmazonElastiCacheFullAccess"></a>
 
 **Description**: Provides full access to Amazon ElastiCache via the AWS Management Console.
 

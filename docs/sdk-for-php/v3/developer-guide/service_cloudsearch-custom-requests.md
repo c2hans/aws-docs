@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_c
 ---
 
 # Signing custom Amazon CloudSearch domain requests with AWS SDK for PHP Version 3
-<a name="service_cloudsearch-custom-requests"></a>
 
 Amazon CloudSearch domain requests can be customized beyond what is supported by the AWS SDK for PHP. In cases where you need to make custom requests to domains protected by IAM authentication, you can use the SDK’s credential providers and signers to sign any [PSR-7 request](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html).
 

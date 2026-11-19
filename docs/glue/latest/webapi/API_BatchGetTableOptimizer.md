@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetTableOpti
 ---
 
 # BatchGetTableOptimizer
-<a name="API_BatchGetTableOptimizer"></a>
 
 Returns the configuration for the specified table optimizers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_s
 ---
 
 # How Amazon S3 works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon S3, learn what IAM features are available to use with Amazon S3.
 

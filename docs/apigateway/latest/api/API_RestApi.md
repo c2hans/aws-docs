@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_RestApi.html
 ---
 
 # RestApi
-<a name="API_RestApi"></a>
 
 Represents a REST API.
 

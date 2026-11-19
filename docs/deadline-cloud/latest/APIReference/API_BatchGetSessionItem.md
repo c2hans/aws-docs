@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetSessionItem
-<a name="API_BatchGetSessionItem"></a>
 
 The details of a session returned in a batch get operation.
 

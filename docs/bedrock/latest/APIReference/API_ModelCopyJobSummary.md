@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelCop
 ---
 
 # ModelCopyJobSummary
-<a name="API_ModelCopyJobSummary"></a>
 
 Contains details about each model copy job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/kernel-memory-
 ---
 
 # Kernel memory allocation
-<a name="kernel-memory-allocation"></a>
 
 The RTOS kernel needs RAM each time a task, queue, or other RTOS object is created. The RAM can be allocated:
 + Statically at compile time.

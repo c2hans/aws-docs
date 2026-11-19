@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/dynamodb-query-o
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Query DynamoDB items
-<a name="dynamodb-query-operations"></a>
 
 DynamoDB provides two operations for reading multiple items. A *query* finds items by their primary-key values and reads only the items that match the key condition. A *scan* reads every item in the table and applies any filter afterward. Prefer key-based queries. Reserve scans for access patterns that a key can't express. For more information, see [Querying tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the Amazon DynamoDB Developer Guide.
 

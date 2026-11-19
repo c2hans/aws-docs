@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/supported-raspber
 ---
 
 # Managed Integrations demo application
-<a name="supported-raspberry-demo-app"></a>
 
 **Note**
  This implementation of AWS IoT Hub SDK on Raspberry Pi is a demonstration project intended for learning and testing purposes only and is not intended to be used in production environments. For the purposes of this demo, set the following configurations for development ease:

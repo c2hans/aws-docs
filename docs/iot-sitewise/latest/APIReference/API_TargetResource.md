@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tar
 ---
 
 # TargetResource
-<a name="API_TargetResource"></a>
 
 The resource the action will be taken on. This can include asset-based resources and computation model resources.
 

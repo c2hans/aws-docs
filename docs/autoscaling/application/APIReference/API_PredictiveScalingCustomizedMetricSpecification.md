@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredictiveScalingCustomizedMetricSpecification
-<a name="API_PredictiveScalingCustomizedMetricSpecification"></a>
 
  Represents a CloudWatch metric of your choosing for a predictive scaling policy.
 

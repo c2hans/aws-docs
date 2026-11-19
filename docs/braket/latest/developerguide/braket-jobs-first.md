@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Create a Hybrid Job
-<a name="braket-jobs-first"></a>
 
  This section shows you how to create a Hybrid Job using a Python script. Alternatively, to create a hybrid job from local Python code, such as your preferred integrated development environment (IDE) or a Braket notebook, see [Run your local code as a hybrid job](braket-hybrid-job-decorator.md).
 

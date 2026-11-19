@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchDevic
 ---
 
 # BatchDeviceSuccessResponseItem
-<a name="API_BatchDeviceSuccessResponseItem"></a>
 
 Contains information about a device that was successfully processed in a batch device operation.
 

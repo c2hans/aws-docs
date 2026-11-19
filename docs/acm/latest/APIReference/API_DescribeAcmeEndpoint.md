@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcme
 ---
 
 # DescribeAcmeEndpoint
-<a name="API_DescribeAcmeEndpoint"></a>
 
 Returns detailed metadata about the specified ACME endpoint, including its status, URL, authorization behavior, and certificate authority configuration.
 

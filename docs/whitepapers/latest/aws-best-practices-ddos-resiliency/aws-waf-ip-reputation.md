@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF – IP reputation rule groups
-<a name="aws-waf-ip-reputation"></a>
 
  To help mitigate attacks based on IP address reputation, you can create rules that match IPs making HTTP requests to custom IPSets that you maintain or use [AWS WAF Managed IP Reputation rule groups](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list.html). From a DDoS perspective, the two most important rules are:
 + `AWSManagedIPDDoSList` rule within the `AWSManagedRulesAmazonIpReputationList` rule group

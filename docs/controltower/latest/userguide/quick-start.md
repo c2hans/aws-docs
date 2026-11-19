@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/quick-star
 ---
 
 # AWS Control Tower quick start guide
-<a name="quick-start"></a>
 
 If you are new to AWS, you can follow the steps in this section to get started quickly with AWS Control Tower. If you prefer to customize your AWS Control Tower environment right away, see [Step 2. Configure and launch your landing zone](step-two.md).
 

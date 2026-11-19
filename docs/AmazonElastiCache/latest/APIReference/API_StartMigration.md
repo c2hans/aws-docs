@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # StartMigration
-<a name="API_StartMigration"></a>
 
 Starts the migration of data.
 

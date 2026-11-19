@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsLi
 ---
 
 # Creating and managing a lifecycle rule by using the AWS Management Console
-<a name="S3OutpostsLifecycleConsole"></a>
 
 You can use S3 Lifecycle to optimize storage capacity for Amazon S3 on Outposts. You can create lifecycle rules to expire objects as they age or are replaced by newer versions. You can create, enable, disable, or delete a lifecycle rule.
 

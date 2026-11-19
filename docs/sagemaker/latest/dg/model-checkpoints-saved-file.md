@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-checkpoints-sa
 ---
 
 # Browse checkpoint files
-<a name="model-checkpoints-saved-file"></a>
 
 Locate checkpoint files using the SageMaker Python SDK and the Amazon S3 console.
 

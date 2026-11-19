@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAclUser
-<a name="API_DocumentAclUser"></a>
 
 Represents a user in the document's ACL, used to define access permissions for individual users.
 

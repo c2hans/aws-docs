@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # IAM trust relationship issue
-<a name="sagemaker-hyperpod-model-deployment-ts-trust"></a>
 
 HyperPod inference operator fails to start with an STS AssumeRoleWithWebIdentity error, indicating an IAM trust relationship configuration problem.
 

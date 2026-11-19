@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 ---
 
 # Create mission profile
-<a name="getting-started.step4"></a>
 
  With the *configs* constructed in the previous step, you have identified how to track your satellite, the possible ways to communicate with your satellite, and how to enable near real-time telemetry during contact execution. In this step you will construct one or more mission profiles. A mission profile represents the aggregation of the possible *configs* into an expected behavior that can be then scheduled and operated on.
 

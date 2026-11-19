@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/create-sche
 ---
 
 # Creating a scheduled query
-<a name="create-scheduled-query"></a>
 
 Create a scheduled query that automatically runs CloudWatch Logs Insights queries and delivers results to your chosen destinations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL invisible indexes
-<a name="chap-oracle-aurora-mysql.tables.invisible"></a>
 
 With AWS DMS, you can create and manage invisible indexes in Oracle and MySQL databases, providing a way to evaluate the potential benefits of an index before making it visible and impacting workload performance.
 

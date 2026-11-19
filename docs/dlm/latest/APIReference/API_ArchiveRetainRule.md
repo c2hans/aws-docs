@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_ArchiveRetai
 ---
 
 # ArchiveRetainRule
-<a name="API_ArchiveRetainRule"></a>
 
  **[Custom snapshot policies only]** Specifies information about the archive storage tier retention period.
 

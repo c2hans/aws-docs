@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Mainten
 ---
 
 # MaintenanceTrack
-<a name="API_MaintenanceTrack"></a>
 
 Defines a maintenance track that determines which Amazon Redshift version to apply during a maintenance window. If the value for `MaintenanceTrack` is `current`, the cluster is updated to the most recently certified maintenance release. If the value is `trailing`, the cluster is updated to the previously certified maintenance release.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-integration
 ---
 
 # Data Integration and Analytics
-<a name="rise-data-integration-analytics"></a>
 
 This sections provides information about Data Integration and Analytics in relation to RISE with SAP
 

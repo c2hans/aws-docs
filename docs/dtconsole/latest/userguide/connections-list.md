@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-l
 ---
 
 # List connections
-<a name="connections-list"></a>
 
 You can use the Developer Tools console or the **list-connections** command in the AWS Command Line Interface (AWS CLI) to view a list of connections in your account.
 

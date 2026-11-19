@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SlaInputConfiguration
-<a name="API_connect-cases_SlaInputConfiguration"></a>
 
 Represents the input configuration of an SLA being created.
 

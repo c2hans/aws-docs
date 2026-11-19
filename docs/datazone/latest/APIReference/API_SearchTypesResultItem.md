@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchT
 ---
 
 # SearchTypesResultItem
-<a name="API_SearchTypesResultItem"></a>
 
 The details of the results of the `SearchTypes` action.
 

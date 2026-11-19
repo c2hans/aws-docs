@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_U
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes specific tags from a secret.
 

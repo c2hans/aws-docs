@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qna.html
 ---
 
 # AMAZON.QnAIntent
-<a name="built-in-intent-qna"></a>
 
 **Note**
 Before you can take advantage of the generative AI features, you must fulfill the following prerequisites

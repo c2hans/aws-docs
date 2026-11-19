@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCSEC09-BP01 Train and test incident responders on policies specific to data residency
-<a name="drhcsec09-bp01"></a>
 
  Train and test incident responders on regulations on storage location based on data classification.
 

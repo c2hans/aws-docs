@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutRetent
 ---
 
 # PutRetentionConfiguration
-<a name="API_PutRetentionConfiguration"></a>
 
 Creates and updates the retention configuration with details about retention period (number of days) that AWS Config stores your historical information. The API creates the `RetentionConfiguration` object and names the object as **default**. When you have a `RetentionConfiguration` object named **default**, calling the API modifies the default object.
 

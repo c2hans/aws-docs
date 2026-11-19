@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PutSipMediaApplicationAlexaSkillConfiguration
-<a name="API_voice-chime_PutSipMediaApplicationAlexaSkillConfiguration"></a>
 
 Updates the Alexa Skill configuration for the SIP media application.
 

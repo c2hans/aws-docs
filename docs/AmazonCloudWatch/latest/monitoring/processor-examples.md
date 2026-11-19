@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/proce
 ---
 
 # Common processor use cases
-<a name="processor-examples"></a>
 
 Here are common scenarios and example configurations for combining processors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Star
 ---
 
 # StartProtectedJob
-<a name="API_StartProtectedJob"></a>
 
 Creates a protected job that is started by AWS Clean Rooms.
 

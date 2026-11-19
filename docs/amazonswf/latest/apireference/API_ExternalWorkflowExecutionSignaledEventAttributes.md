@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Extern
 ---
 
 # ExternalWorkflowExecutionSignaledEventAttributes
-<a name="API_ExternalWorkflowExecutionSignaledEventAttributes"></a>
 
 Provides the details of the `ExternalWorkflowExecutionSignaled` event.
 

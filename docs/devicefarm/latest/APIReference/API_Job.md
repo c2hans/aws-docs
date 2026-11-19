@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Job.h
 ---
 
 # Job
-<a name="API_Job"></a>
 
 Represents a device.
 

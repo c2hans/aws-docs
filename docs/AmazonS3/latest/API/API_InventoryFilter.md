@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_InventoryFilter.
 ---
 
 # InventoryFilter
-<a name="API_InventoryFilter"></a>
 
 Specifies an S3 Inventory filter. The inventory only includes objects that meet the filter's criteria.
 

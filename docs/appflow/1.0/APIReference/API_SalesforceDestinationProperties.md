@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SalesforceD
 ---
 
 # SalesforceDestinationProperties
-<a name="API_SalesforceDestinationProperties"></a>
 
  The properties that are applied when Salesforce is being used as a destination.
 

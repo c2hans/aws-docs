@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DeregisterInsta
 ---
 
 # DeregisterInstance
-<a name="API_DeregisterInstance"></a>
 
 Deletes the Amazon Route 53 DNS records and health check, if any, that AWS Cloud Map created for the specified instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_E
 ---
 
 # Experiment
-<a name="API_Experiment"></a>
 
 Indicates the AWS FIS experiment detected while running an assessment.
 

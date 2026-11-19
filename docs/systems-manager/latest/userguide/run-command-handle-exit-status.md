@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/run-com
 ---
 
 # Using exit codes in commands
-<a name="run-command-handle-exit-status"></a>
 
 In some cases, you might need to manage how your commands are handled by using exit codes.
 

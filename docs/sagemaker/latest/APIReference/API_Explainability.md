@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Explai
 ---
 
 # Explainability
-<a name="API_Explainability"></a>
 
 Contains explainability metrics for a model.
 

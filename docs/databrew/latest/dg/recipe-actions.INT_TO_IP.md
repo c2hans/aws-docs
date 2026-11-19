@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.INT_TO
 ---
 
 # INT\_TO\_IP
-<a name="recipe-actions.INT_TO_IP"></a>
 
 Converts the integer value of source column or other value to the corresponding IPv4 value in then target column, and returns the result in a new column. This function works for IPv4 only.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DateTimeRange
-<a name="API_bcmDashboards_DateTimeRange"></a>
 
 Defines a time period with explicit start and end times for data queries.
 

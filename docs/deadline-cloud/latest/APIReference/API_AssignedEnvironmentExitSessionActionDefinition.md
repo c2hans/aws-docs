@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssignedEnvironmentExitSessionActionDefinition
-<a name="API_AssignedEnvironmentExitSessionActionDefinition"></a>
 
 The assigned environment when a worker exits a session.
 

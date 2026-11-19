@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RetentionOptions
-<a name="API_RetentionOptions"></a>
 
 Controls how long the cluster that you cut over from is kept after cutover completes. Specify exactly one of `RetentionInHours` or `RetentionAction`.
 

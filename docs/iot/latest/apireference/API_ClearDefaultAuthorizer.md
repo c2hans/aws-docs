@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ClearDefault
 ---
 
 # ClearDefaultAuthorizer
-<a name="API_ClearDefaultAuthorizer"></a>
 
 Clears the default authorizer.
 

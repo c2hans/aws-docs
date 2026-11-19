@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateDataQuality
 ---
 
 # CreateDataQualityRuleset
-<a name="API_CreateDataQualityRuleset"></a>
 
 Creates a data quality ruleset with DQDL rules applied to a specified AWS Glue table.
 

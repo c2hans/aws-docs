@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-
 ---
 
 # cloudfront-accesslogs-enabled
-<a name="cloudfront-accesslogs-enabled"></a>
 
 Checks if Amazon CloudFront distributions are configured to deliver access logs to an Amazon S3 bucket using standard logging (legacy). The rule is NON\_COMPLIANT if a CloudFront distribution does not have legacy logging configured.
 

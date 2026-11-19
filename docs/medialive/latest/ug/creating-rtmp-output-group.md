@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-rtmp-output
 ---
 
 # Create an RTMP output group
-<a name="creating-rtmp-output-group"></a>
 
 When you [planned the workflow for your channel](identify-downstream-system.md), you might have determined that you want to include an RTMP output group.
 

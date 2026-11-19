@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateBillScenarioUsageModification
-<a name="API_AWSBCMPricingCalculator_BatchCreateBillScenarioUsageModification"></a>
 
  Create AWS service usage that you want to model in a Bill Scenario.
 

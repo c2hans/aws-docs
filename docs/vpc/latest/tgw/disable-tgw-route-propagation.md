@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/disable-tgw-route-propaga
 ---
 
 # Disable route propagation in AWS Transit Gateway
-<a name="disable-tgw-route-propagation"></a>
 
 Remove a propagated route from a route table attachment.
 

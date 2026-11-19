@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPathValue
-<a name="API_DataPathValue"></a>
 
 The data path that needs to be sorted.
 

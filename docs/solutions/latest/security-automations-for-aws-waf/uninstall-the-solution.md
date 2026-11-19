@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 To uninstall the solution, delete the CloudFormation stacks:
 

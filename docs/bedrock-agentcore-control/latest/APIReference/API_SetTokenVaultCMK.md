@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SetTokenVaultCMK
-<a name="API_SetTokenVaultCMK"></a>
 
 Sets the customer master key (CMK) for a token vault.
 

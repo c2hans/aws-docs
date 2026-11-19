@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS Quick documentation
 <a name="quicksight-resources"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build a KeyShot conda package for Deadline Cloud
-<a name="examples-conda-keyshot"></a>
 
 The [keyshot-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/keyshot-2025) conda recipe on the GitHub website builds a KeyShot 2025 conda package.
 

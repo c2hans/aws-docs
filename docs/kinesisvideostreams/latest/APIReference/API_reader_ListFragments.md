@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ListFragments
-<a name="API_reader_ListFragments"></a>
 
 Returns a list of [Fragment](API_reader_Fragment.md) objects from the specified stream and timestamp range within the archived data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Test spec reference and syntax
-<a name="custom-test-environment-test-spec"></a>
 
  The test spec (test specification) is a file that you use to define custom test environments in Device Farm.
 

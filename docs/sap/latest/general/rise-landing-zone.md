@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-landing-zone.htm
 ---
 
 # Connecting to RISE using a shared AWS Landing Zone
-<a name="rise-landing-zone"></a>
 
 Modern SAP landscapes have several connectivity requirements. Services are accessed across on-premises and AWS Cloud as well as across a variety of SaaS solutions and other cloud service providers.
 

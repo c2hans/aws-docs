@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 ---
 
 # Set up your contact center in Connect Customer
-<a name="amazon-connect-contact-centers"></a>
 
 To get started, you [create a Connect Customer instance](amazon-connect-instances.md), which is a virtual contact center.
 

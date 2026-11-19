@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Explore test results
-<a name="explore-test-results"></a>
 
 Once the parsing job completes, test results are available for analysis. The solution provides comprehensive metrics and tools to help you understand your application’s performance under load.
 

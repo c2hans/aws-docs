@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchUpdateExclusionWindowsError
-<a name="API_BatchUpdateExclusionWindowsError"></a>
 
 An array of structures, where each structure includes an error indicating that one of the requests in the array was not valid.
 

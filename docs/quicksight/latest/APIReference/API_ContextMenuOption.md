@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Conte
 ---
 
 # ContextMenuOption
-<a name="API_ContextMenuOption"></a>
 
 The context menu options for a visual's interactions.
 

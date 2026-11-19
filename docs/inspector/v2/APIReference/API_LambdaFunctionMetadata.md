@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_LambdaFunc
 ---
 
 # LambdaFunctionMetadata
-<a name="API_LambdaFunctionMetadata"></a>
 
 The AWS Lambda function metadata.
 

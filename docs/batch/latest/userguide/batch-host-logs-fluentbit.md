@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-host-logs-f
 ---
 
 # Tutorial: Collect host-level logs with Fluent Bit
-<a name="batch-host-logs-fluentbit"></a>
 
 In this tutorial, you set up automated log collection on AWS Batch managed compute environment instances using Fluent Bit. After completing this tutorial, host-level diagnostic logs upload automatically to Amazon S3 for troubleshooting and sharing with AWS Support.
 

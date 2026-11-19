@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobsBy
 ---
 
 # ListJobsByConsumableResourceSummary
-<a name="API_ListJobsByConsumableResourceSummary"></a>
 
 Current information about a consumable resource required by a job.
 

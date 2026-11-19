@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/url-red
 ---
 
 # Prerequisites
-<a name="url-redirection-prerequisites"></a>
 
 To use host-to-client URL redirection, you must meet the following requirements:
 + One of the following supported WorkSpaces Applications clients:

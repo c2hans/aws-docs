@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Delet
 ---
 
 # DeleteSlackWorkspaceConfiguration
-<a name="API_DeleteSlackWorkspaceConfiguration"></a>
 
 Deletes a Slack workspace configuration from your AWS account. This operation doesn't delete your Slack workspace.
 

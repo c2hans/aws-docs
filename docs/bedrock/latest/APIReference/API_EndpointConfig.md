@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Endpoint
 ---
 
 # EndpointConfig
-<a name="API_EndpointConfig"></a>
 
 Specifies the configuration for the endpoint.
 

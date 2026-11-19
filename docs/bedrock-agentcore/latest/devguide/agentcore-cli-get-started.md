@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Tutorial: Build, deploy, and operate an agent
-<a name="agentcore-cli-get-started"></a>
 
 In this tutorial, you build, deploy, and operate a production AI agent from your terminal. You start with one project and progressively add memory, tools, policy controls, evaluations, and operational workflows across seven sections. Complete the sections in order because each section builds on the resources and code from the previous section.
 

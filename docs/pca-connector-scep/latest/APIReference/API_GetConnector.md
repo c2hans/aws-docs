@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # GetConnector
-<a name="API_GetConnector"></a>
 
 Retrieves details about the specified [Connector](https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/API_Connector.html). Calling this action returns important details about the connector, such as the public SCEP URL where your clients can request certificates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/GetSessionScreenshots.
 ---
 
 # GetSessionScreenshots
-<a name="GetSessionScreenshots"></a>
 
 Gets screenshots of one or more Amazon DCV sessions.
 

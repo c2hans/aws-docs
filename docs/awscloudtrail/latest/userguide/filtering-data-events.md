@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/filtering
 ---
 
 # Filtering data events by using advanced event selectors
-<a name="filtering-data-events"></a>
 
 This section describes how you can use advanced event selectors to create fine-grained selectors for logging data events, which can help you control costs by only logging the specific data events of interest.
 

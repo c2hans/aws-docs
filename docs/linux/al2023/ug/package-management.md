@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/package-management.html
 ---
 
 # Package management tool
-<a name="package-management"></a>
 
 The default software package management tool in AL2023 is DNF. DNF is the successor to YUM, the package management tool in AL2.
 

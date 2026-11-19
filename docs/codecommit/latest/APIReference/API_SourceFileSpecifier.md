@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Sourc
 ---
 
 # SourceFileSpecifier
-<a name="API_SourceFileSpecifier"></a>
 
 Information about a source file that is part of changes made in a commit.
 

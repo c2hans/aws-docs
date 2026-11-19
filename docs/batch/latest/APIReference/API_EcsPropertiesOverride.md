@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EcsPropert
 ---
 
 # EcsPropertiesOverride
-<a name="API_EcsPropertiesOverride"></a>
 
 An object that contains overrides for the Amazon ECS task definition of a job.
 

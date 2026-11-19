@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # AWS Toolkit with Amazon Q
-<a name="welcome"></a>
 
 This is the user guide for the **AWS Toolkit for Visual Studio with Amazon Q**. If you are looking for the **AWS Toolkit for VS Code**, see the *[User Guide for the AWS Toolkit for Visual Studio Code](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/).*
 

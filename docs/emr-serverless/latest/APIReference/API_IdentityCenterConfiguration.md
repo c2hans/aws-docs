@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_I
 ---
 
 # IdentityCenterConfiguration
-<a name="API_IdentityCenterConfiguration"></a>
 
 The IAM Identity Center Configuration accepts the Identity Center instance parameter required to enable trusted identity propagation. This configuration allows identity propagation between integrated services and the Identity Center instance.
 

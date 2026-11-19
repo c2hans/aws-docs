@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ScheduleConfiguration
-<a name="API_connect-app-integrations_ScheduleConfiguration"></a>
 
 The name of the data and how often it should be pulled from the source.
 

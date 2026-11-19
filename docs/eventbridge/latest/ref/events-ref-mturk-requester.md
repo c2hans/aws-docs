@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-mturk-
 ---
 
 # Amazon Mechanical Turk events
-<a name="events-ref-mturk-requester"></a>
 
 Mechanical Turk sends service events to EventBridge via AWS CloudTrail.
 

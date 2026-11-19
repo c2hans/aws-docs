@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Reco
 ---
 
 # RecordPatch
-<a name="API_RecordPatch"></a>
 
 An update operation for a record.
 

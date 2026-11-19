@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-rd
 ---
 
 # Remediating exposures for Amazon RDS instances and clusters
-<a name="exposure-rds"></a>
 
  AWS Security Hub can generate exposure findings for Amazon RDS instances and clusters.
 

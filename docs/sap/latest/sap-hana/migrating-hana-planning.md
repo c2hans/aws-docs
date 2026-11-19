@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/migrating-hana-plann
 ---
 
 # Planning
-<a name="migrating-hana-planning"></a>
 
 Before you start migrating your SAP environment to AWS, there are some prerequisites that we recommend you go over, to ensure minimal interruptions or delays. For details, see the [SAP on AWS overview](https://docs.aws.amazon.com/sap/latest/general/sap-on-aws-overview.html). The following sections discuss additional considerations for planning your migration.
 

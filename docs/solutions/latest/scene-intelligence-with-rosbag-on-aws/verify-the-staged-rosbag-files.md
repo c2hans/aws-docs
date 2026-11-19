@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Verify the staged rosbag files
-<a name="verify-the-staged-rosbag-files"></a>
 
 Complete the following steps to verify that the rosbag files are staged.
 

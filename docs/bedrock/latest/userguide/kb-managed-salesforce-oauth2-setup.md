@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-sale
 ---
 
 # Set up OAuth 2.0 Client Credentials authentication for Salesforce
-<a name="kb-managed-salesforce-oauth2-setup"></a>
 
 The Salesforce connector authenticates with OAuth 2.0 Client Credentials (2LO), which Salesforce calls the Client Credentials Flow. You register an External Client App and assign a dedicated Run-As integration user. The connector authenticates as the app and acts as that user, with no interactive sign-in; no Salesforce username, password, or security token is stored. Complete all the following steps in Salesforce before you configure the data source in Amazon Bedrock.
 

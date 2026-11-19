@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Co
 ---
 
 # ContextEnrichmentConfiguration
-<a name="API_agent_ContextEnrichmentConfiguration"></a>
 
 Context enrichment configuration is used to provide additional context to the RAG application.
 

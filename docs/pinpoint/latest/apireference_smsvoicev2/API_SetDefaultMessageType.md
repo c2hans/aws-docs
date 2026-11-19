@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SetDefaultMessageType
-<a name="API_SetDefaultMessageType"></a>
 
 Sets the default message type on a configuration set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Code authorship
-<a name="code-authorship"></a>
 
 Who will write code within the organization? The division of responsibilities between application team developers and central infrastructure developers plays a crucial role in shaping organizational efficiency and innovation. Although application team developers can have varying levels of autonomy and expertise, central infrastructure developers often serve as a resource for specialized skills and standardized practices. Understanding the strengths and challenges of each approach is essential for organizations seeking to optimize their development strategies.
 

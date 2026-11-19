@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # Wait
-<a name="flow-control-actions-wait"></a>
 
 Pauses the flow for a specified duration, or until a specified event happens, whichever happens first.
 

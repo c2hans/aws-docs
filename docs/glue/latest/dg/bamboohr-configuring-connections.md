@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bamboohr-configuring-conn
 ---
 
 # Configuring BambooHR connections
-<a name="bamboohr-configuring-connections"></a>
 
 BambooHR connections use basic authentication. You store the credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

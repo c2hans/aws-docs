@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSec
 ---
 
 # CreateSecondarySubnet
-<a name="API_CreateSecondarySubnet"></a>
 
 Creates a secondary subnet in a secondary network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/AES_DEC
 ---
 
 # AES\_DECRYPT function
-<a name="AES_DECRYPT"></a>
 
 The AES\_DECRYPT function is used for decrypting data using the Advanced Encryption Standard (AES) algorithm.
 

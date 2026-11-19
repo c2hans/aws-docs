@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/reverse-g
 ---
 
 # How to reverse geocode for correct result
-<a name="reverse-geocode-filter-right-result"></a>
 
 This guide provides methods to refine reverse geocoding results, ensuring that the returned data aligns closely with specific business needs. Using filters, users can narrow down results to more precisely match types like address points, streets, or localities.
 

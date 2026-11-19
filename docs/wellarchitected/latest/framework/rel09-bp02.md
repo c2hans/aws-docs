@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09-b
 ---
 
 # REL09-BP02 Secure and encrypt backups
-<a name="rel09-bp02"></a>
 
  Backups often hold the same sensitive data as production, yet they receive less protection. Anyone who gains unauthorized access to your backups can read or destroy the one copy you rely on to recover. Protecting backups means controlling who can access them, detecting that access, and encrypting the data so an accidental exposure does not become a breach.
 

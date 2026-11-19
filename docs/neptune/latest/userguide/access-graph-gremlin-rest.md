@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Using the HTTPS REST endpoint to connect to a Neptune DB instance
-<a name="access-graph-gremlin-rest"></a>
 
 Amazon Neptune provides an HTTPS endpoint for Gremlin queries. The REST interface is compatible with whatever Gremlin version your DB cluster is using (see the [engine release page](engine-releases.md) of the Neptune engine version you are running to determine which Gremlin release it supports).
 

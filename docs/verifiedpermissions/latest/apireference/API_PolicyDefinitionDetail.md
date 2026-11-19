@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # PolicyDefinitionDetail
-<a name="API_PolicyDefinitionDetail"></a>
 
 A structure that describes a policy definition. It must always have either an `static` or a `templateLinked` element.
 

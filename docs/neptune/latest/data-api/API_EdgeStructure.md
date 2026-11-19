@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_EdgeStructur
 ---
 
 # EdgeStructure
-<a name="API_EdgeStructure"></a>
 
 An edge structure.
 

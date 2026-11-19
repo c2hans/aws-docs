@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 ---
 
 # Claude Haiku 5.5
-<a name="model-card-anthropic-claude-haiku-5-5"></a>
 
 ## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Haiku 5.5
 <a name="model-card-anthropic-claude-haiku-5-5-header"></a>

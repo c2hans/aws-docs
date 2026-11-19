@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-obse
 ---
 
 # Observability for managed knowledge bases
-<a name="kb-managed-observability"></a>
 
 For a managed knowledge base, Amazon Bedrock publishes operational metrics and ingestion logs to your AWS account so that you can monitor the health and usage of your knowledge base. Runtime metrics let you track request volume, errors, and throttling for your knowledge base API operations, and ingestion logs let you track the status of individual documents during a data ingestion job. The following sections describe the observability data that is available and how to access it.
 

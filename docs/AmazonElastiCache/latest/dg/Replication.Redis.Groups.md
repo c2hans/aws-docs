@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Replication.
 ---
 
 # Understanding Valkey and Redis OSS replication
-<a name="Replication.Redis.Groups"></a>
 
 Redis OSS implements replication in two ways:
 + With a single shard that contains all of the cluster's data in each node—Valkey or Redis OSS (cluster mode disabled)

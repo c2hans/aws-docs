@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListLa
 ---
 
 # ListLabelingJobsForWorkteam
-<a name="API_ListLabelingJobsForWorkteam"></a>
 
 Gets a list of labeling jobs assigned to a specified work team.
 

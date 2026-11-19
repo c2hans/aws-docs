@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Hel
 ---
 
 # Hello IAM
-<a name="iam_example_iam_Hello_section"></a>
 
 The following code examples show how to get started using IAM.
 

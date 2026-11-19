@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Unsubscribe from AI Agent message status changes
-<a name="3P-apps-ai-agents-offaiagentmessagestatuschanged"></a>
 
 Removes a previously registered `onAIAgentMessageStatusChanged` handler subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # GetStreamUrl
-<a name="API_GetStreamUrl"></a>
 
 Retrieves properties for a stream URL, including its current status, usage, and the stream sessions started through it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoScaling-
 ---
 
 # Using Auto Scaling with replicas
-<a name="AutoScaling-Using-Replicas"></a>
 
 An ElastiCache replication group can set up one or more caches to work as a single logical node.
 

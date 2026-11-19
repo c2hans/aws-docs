@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateThemeAlias
-<a name="API_UpdateThemeAlias"></a>
 
 Updates an alias of a theme.
 

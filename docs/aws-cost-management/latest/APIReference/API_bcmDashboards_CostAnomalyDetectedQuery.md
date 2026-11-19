@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAnomalyDetectedQuery
-<a name="API_bcmDashboards_CostAnomalyDetectedQuery"></a>
 
 Defines the parameters for retrieving detected AWS cost anomalies. Anomaly widgets display cost anomalies identified by AWS Cost Anomaly Detection, including their cost impact and severity. Supports an anomaly date range and optional filtering by anomaly dimensions.
 

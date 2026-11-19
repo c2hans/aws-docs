@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # PromptRouterTrace
-<a name="API_runtime_PromptRouterTrace"></a>
 
 A prompt router trace.
 

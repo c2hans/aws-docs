@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeDoma
 ---
 
 # DescribeDomainConfiguration
-<a name="API_DescribeDomainConfiguration"></a>
 
 Gets summary information about a domain configuration.
 

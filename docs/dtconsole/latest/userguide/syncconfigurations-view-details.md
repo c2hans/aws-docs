@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/syncconfigura
 ---
 
 # View sync configuration details
-<a name="syncconfigurations-view-details"></a>
 
 You can use the **get-sync-configuration** command in the AWS Command Line Interface (AWS CLI) to view details for a sync configuration.
 

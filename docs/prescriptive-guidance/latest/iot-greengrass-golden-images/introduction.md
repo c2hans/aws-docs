@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Manufacturing devices at scale with AWS IoT Greengrass golden images
-<a name="introduction"></a>
 
 *Greg Breen, Amazon Web Services*
 

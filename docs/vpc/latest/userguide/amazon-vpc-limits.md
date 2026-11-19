@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.h
 ---
 
 # Amazon VPC quotas
-<a name="amazon-vpc-limits"></a>
 
 The following tables list the quotas, formerly referred to as limits, for Amazon VPC resources for your AWS account. Unless indicated otherwise, these quotas are per Region.
 

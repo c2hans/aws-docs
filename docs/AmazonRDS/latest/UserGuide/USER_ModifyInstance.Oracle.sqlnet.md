@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ModifyIn
 ---
 
 # Modifying connection properties using sqlnet.ora parameters
-<a name="USER_ModifyInstance.Oracle.sqlnet"></a>
 
 The sqlnet.ora file includes parameters that configure Oracle Net features on Oracle database servers and clients. Using the parameters in the sqlnet.ora file, you can modify properties for connections in and out of the database.
 

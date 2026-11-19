@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html
 ---
 
 # AWS Certificate Manager concepts
-<a name="acm-concepts"></a>
 
 This section provides definitions of concepts used by AWS Certificate Manager.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/control-d
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Supported data source types for automated evidence
-<a name="control-data-sources"></a>
 
 When you create a custom control in AWS Audit Manager, you can set up your control to collect automated evidence from the following data source types:
 + AWS CloudTrail

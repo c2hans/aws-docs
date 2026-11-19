@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/troubleshooting-deploym
 ---
 
 # Troubleshoot deployment issues in Lambda
-<a name="troubleshooting-deployment"></a>
 
 When you update your Lambda Event Function, Lambda deploys the change by launching new instances of the function with the updated code or settings. Deployment errors prevent the new version from being used and can arise from issues with your deployment package, code, permissions, or tools.
 

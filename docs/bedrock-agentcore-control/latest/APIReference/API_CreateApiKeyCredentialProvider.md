@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateApiKeyCredentialProvider
-<a name="API_CreateApiKeyCredentialProvider"></a>
 
 Creates a new API key credential provider.
 

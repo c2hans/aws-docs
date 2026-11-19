@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ListConnections
-<a name="API_ListConnections"></a>
 
 Lists the connections associated with your account.
 

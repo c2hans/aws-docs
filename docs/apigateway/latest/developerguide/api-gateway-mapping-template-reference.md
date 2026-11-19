@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Variables for data transformations for API Gateway
-<a name="api-gateway-mapping-template-reference"></a>
 
 When you create a parameter mapping, you can use context variables as your data source. When you create mapping template transformations, you can use context variables, input, and util variables in scripts you write in [Velocity Template Language (VTL)](https://velocity.apache.org/engine/devel/vtl-reference.html). For example mapping templates that use these reference variables, see [Examples using variables for mapping template transformations for API Gateway](api-gateway-mapping-variable-examples.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 This chapter explains how to work in this repository as a developer or contributor. It covers the canonical directory layout (v0.2\+), local environment setup, the Makefile-driven workflow, how to add or extend a data product, and the one-time cost-allocation tag activation procedure.
 

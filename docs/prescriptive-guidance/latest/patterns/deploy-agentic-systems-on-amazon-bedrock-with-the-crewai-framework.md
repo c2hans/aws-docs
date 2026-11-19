@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy agentic systems on Amazon Bedrock with the CrewAI framework by using Terraform
-<a name="deploy-agentic-systems-on-amazon-bedrock-with-the-crewai-framework"></a>
 
 *Vanitha Dontireddy, Amazon Web Services*
 

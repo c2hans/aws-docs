@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/testing-action.h
 ---
 
 # Testing an action
-<a name="testing-action"></a>
 
 Use the following instructions to add unit tests and also test your custom actions in CodeCatalyst workflows.
 

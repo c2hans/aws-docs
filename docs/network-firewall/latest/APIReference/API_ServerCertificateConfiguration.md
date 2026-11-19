@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ServerCertificateConfiguration
-<a name="API_ServerCertificateConfiguration"></a>
 
 Configures the AWS Certificate Manager certificates and scope that Network Firewall uses to decrypt and re-encrypt traffic using a [TLSInspectionConfiguration](API_TLSInspectionConfiguration.md). You can configure `ServerCertificates` for inbound SSL/TLS inspection, a `CertificateAuthorityArn` for outbound SSL/TLS inspection, or both. For information about working with certificates for TLS inspection, see [ Using SSL/TLS server certficiates with TLS inspection configurations](https://docs.aws.amazon.com/network-firewall/latest/developerguide/tls-inspection-certificate-requirements.html) in the * AWS Network Firewall Developer Guide*.
 
@@ -26,7 +25,7 @@ Pattern: `^arn:aws.*`
 Required: No
 
  ** CheckCertificateRevocationStatus **   <a name="networkfirewall-Type-ServerCertificateConfiguration-CheckCertificateRevocationStatus"></a>
-When enabled, Network Firewall checks if the server certificate presented by the server in the SSL/TLS connection has a revoked or unkown status. If the certificate has an unknown or revoked status, you must specify the actions that Network Firewall takes on outbound traffic. To check the certificate revocation status, you must also specify a `CertificateAuthorityArn` in [ServerCertificateConfiguration](#API_ServerCertificateConfiguration).
+When enabled, Network Firewall checks if the server certificate presented by the server in the SSL/TLS connection has a revoked or unkown status. If the certificate has an unknown or revoked status, you must specify the actions that Network Firewall takes on outbound traffic. To check the certificate revocation status, you must also specify a `CertificateAuthorityArn` in [ServerCertificateConfiguration](API_ServerCertificateConfiguration.md).
 Type: [CheckCertificateRevocationStatusActions](API_CheckCertificateRevocationStatusActions.md) object
 Required: No
 

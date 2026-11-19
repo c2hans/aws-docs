@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/maxio-configuring.html
 ---
 
 # Configuring Maxio
-<a name="maxio-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Maxio, you must meet the following requirements:
 

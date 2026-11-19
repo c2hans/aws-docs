@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TimeRange
-<a name="API_connect-outbound-campaigns-v2_TimeRange"></a>
 
 Contains information about a time range.
 

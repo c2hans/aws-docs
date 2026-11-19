@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/using-service-linked
 ---
 
 # Using service-linked roles for SageMaker AI Inference
-<a name="using-service-linked-roles-inference"></a>
 
 Amazon SageMaker AI Inference uses the service-linked role named `AWSServiceRoleForSageMakerInference`. The `AmazonSageMakerInferenceServiceRolePolicy` policy attached to this role grants SageMaker AI Inference permissions to manage Elastic Network Interfaces (ENIs) in your virtual private cloud (VPC) for real-time inference endpoints.
 

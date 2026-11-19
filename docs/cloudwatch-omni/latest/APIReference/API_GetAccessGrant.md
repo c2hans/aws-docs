@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetAccessGrant
-<a name="API_GetAccessGrant"></a>
 
 Retrieves the full detail of a single AccessGrant by ID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CognitoU
 ---
 
 # CognitoUserPoolConfig
-<a name="API_CognitoUserPoolConfig"></a>
 
 Describes an Amazon Cognito user pool configuration.
 

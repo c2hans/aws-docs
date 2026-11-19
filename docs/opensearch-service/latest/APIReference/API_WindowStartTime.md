@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # WindowStartTime
-<a name="API_WindowStartTime"></a>
 
 The desired start time for an [off-peak maintenance window](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_OffPeakWindow.html).
 

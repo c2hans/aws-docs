@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 1. System design and security recommendations for agentic AI systems
-<a name="best-practices-system-design"></a>
 
 System design decisions can support the development of agentic AI systems with strong protections against well-documented large language model (LLM) application threats. Adoption of risk-aligned design patterns helps drive an outcome is in line with your business needs.
 

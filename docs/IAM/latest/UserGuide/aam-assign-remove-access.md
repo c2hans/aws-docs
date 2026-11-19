@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-assign-remove-a
 ---
 
 # Assign and remove access
-<a name="aam-assign-remove-access"></a>
 
 ## Assign user or group access to an AWS account
 <a name="aam-assign-account-access"></a>

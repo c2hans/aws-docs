@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-custom
 ---
 
 # Configuring custom domain names for Event APIs
-<a name="event-api-custom-domains"></a>
 
 With AWS AppSync, you can use custom domain names to configure a single, memorable domain that works for your Event APIs.
 

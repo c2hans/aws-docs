@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bitbucket-connection-opti
 ---
 
 # Bitbucket connection options
-<a name="bitbucket-connection-options"></a>
 
 The following are connection options for Bitbucket:
 + `ENTITY_NAME` – (Required) Used for Read. The entity path of the Bitbucket object to read. Use `user-workspaces` by itself. For `members`, `projects`, `repositories`, and `workspace-permissions`, use `{{entity}}/{{workspace}}`. For the other entities, use `{{entity}}/{{workspace}}/{{repoSlug}}`. You can use the workspaces and repositories that AWS Glue discovers for your connection.

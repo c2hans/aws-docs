@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteOpenID
 ---
 
 # DeleteOpenIDConnectProvider
-<a name="API_DeleteOpenIDConnectProvider"></a>
 
 Deletes an OpenID Connect identity provider (IdP) resource object in IAM.
 

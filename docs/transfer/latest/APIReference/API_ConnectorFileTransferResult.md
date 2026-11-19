@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Connect
 ---
 
 # ConnectorFileTransferResult
-<a name="API_ConnectorFileTransferResult"></a>
 
 A structure that contains the details for files transferred using an SFTP connector, during a single transfer.
 

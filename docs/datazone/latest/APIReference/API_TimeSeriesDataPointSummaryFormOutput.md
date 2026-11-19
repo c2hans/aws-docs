@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_TimeSer
 ---
 
 # TimeSeriesDataPointSummaryFormOutput
-<a name="API_TimeSeriesDataPointSummaryFormOutput"></a>
 
 The summary of the time series data points form.
 

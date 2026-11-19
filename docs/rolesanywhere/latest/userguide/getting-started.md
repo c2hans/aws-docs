@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/getting-s
 ---
 
 # Getting started with IAM Roles Anywhere
-<a name="getting-started"></a>
 
  To use AWS Identity and Access Management Roles Anywhere for authentication to AWS from your workloads that run outside of AWS such as servers, containers, and applications, you first create a trust anchor and profile through the IAM Roles Anywhere console.
 

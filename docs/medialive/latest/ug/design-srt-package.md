@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/design-srt-package.h
 ---
 
 # Organize encodes in an SRT output group
-<a name="design-srt-package"></a>
 
 An SRT output group can contain the following:
 + One or more outputs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeInstanceTypeOfferings
-<a name="API_DescribeInstanceTypeOfferings"></a>
 
 Lists the instance types that are offered for the specified location. If no location is specified, the default is to list the instance types that are offered in the current Region.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/API_ProgressUpdat
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # ProgressUpdateStreamSummary
-<a name="API_ProgressUpdateStreamSummary"></a>
 
 Summary of the AWS resource used for access control that is implicitly linked to your AWS account.
 

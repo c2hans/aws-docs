@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/r
 ---
 
 # Design principles
-<a name="reliability-design-principles"></a>
 
 In addition to the lens-level design principles, the reliability best practices in this lens are represented by at least one of the following principles:
 + **Decouple agents through durable messaging:** Persistence, retry, and dead-letter handling absorb transient failures inside the messaging layer instead of cascading them through synchronous call chains.

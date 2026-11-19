@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # Service
-<a name="API_Service"></a>
 
 Details on a service within a cluster.
 

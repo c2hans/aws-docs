@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/processing-opti
 ---
 
 # SCTE-35 and SCTE-104 message processing options
-<a name="processing-options"></a>
 
 ## The options
 <a name="the-options"></a>

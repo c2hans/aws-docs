@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # invoke
-<a name="resource-type-cli-invoke"></a>
 
 ## Description
 <a name="resource-type-cli-invoke-description"></a>

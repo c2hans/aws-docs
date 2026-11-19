@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/frontend-io-me
 ---
 
 # Front-end I/O metrics
-<a name="frontend-io-metrics"></a>
 
 The following metrics report cache-level information on system read and write operations. All these metrics take one dimension (`FileCacheId`) and are published into the `AWS/FSx` namespace in CloudWatch.
 

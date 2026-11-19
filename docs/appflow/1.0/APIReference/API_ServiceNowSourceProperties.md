@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ServiceNowS
 ---
 
 # ServiceNowSourceProperties
-<a name="API_ServiceNowSourceProperties"></a>
 
  The properties that are applied when ServiceNow is being used as a source.
 

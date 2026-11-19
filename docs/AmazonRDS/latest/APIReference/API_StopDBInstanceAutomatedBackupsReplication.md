@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopDB
 ---
 
 # StopDBInstanceAutomatedBackupsReplication
-<a name="API_StopDBInstanceAutomatedBackupsReplication"></a>
 
 Stops automated backup replication for a DB instance.
 

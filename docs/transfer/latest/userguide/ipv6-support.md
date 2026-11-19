@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/ipv6-support.h
 ---
 
 # IPv6 support for Transfer Family servers
-<a name="ipv6-support"></a>
 
 AWS Transfer Family supports dual-stack (IPv4 and IPv6) endpoints for the following resources:
 + SFTP public endpoints

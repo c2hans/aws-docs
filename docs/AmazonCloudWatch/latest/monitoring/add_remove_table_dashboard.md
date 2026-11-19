@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_r
 ---
 
 # Using a data table widget in a CloudWatch dashboard
-<a name="add_remove_table_dashboard"></a>
 
 **Table properties**
 

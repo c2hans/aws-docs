@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Hybrid cloud architecture cost breakdown
-<a name="hybrid-cloud-architecture-cost-breakdown"></a>
 
  Hybrid cloud costs include multiple layers and components deployed across the AWS cloud and on-premises location. When you use AWS Managed Services on Outposts, you are charged for the services based only on usage by instance-hour and not for the underlying Amazon EC2 instance and Amazon EBS storage.
 

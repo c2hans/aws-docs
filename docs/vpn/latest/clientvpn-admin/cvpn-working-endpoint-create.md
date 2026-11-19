@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Create an AWS Client VPN endpoint
-<a name="cvpn-working-endpoint-create"></a>
 
 Create a AWS Client VPN endpoint to enable your clients to establish a VPN session using either the Amazon VPC Console or the AWS CLI.Client VPN supports all combinations of endpoint type (split-tunnel and full-tunnel) with traffic type (IPv4, IPv6, and dual-stack) during initial creation.
 

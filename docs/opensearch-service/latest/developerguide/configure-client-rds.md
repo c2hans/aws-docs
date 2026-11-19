@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using an OpenSearch Ingestion pipeline with Amazon RDS
-<a name="configure-client-rds"></a>
 
 You can use an OpenSearch Ingestion pipeline with Amazon RDS to export existing data and stream changes (such as create, update, and delete) to Amazon OpenSearch Service domains and collections. The OpenSearch Ingestion pipeline incorporates change data capture (CDC) infrastructure to provide a high-scale, low-latency way to continuously stream data from Amazon RDS. RDS for MySQL and RDS for PostgreSQL are supported.
 

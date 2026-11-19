@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/trust-safety.html
 ---
 
 # Trust and safety
-<a name="trust-safety"></a>
 
 Users generate large amounts of text content through online applications (such as peer-to-peer chats and forum discussions), comments posted on websites, and through generative AI applications (input prompts and outputs from generative AI models). The Amazon Comprehend Trust and Safety features can help you moderate this content, to provide a safe and inclusive environment for your users.
 

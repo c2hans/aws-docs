@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-creating-a
 ---
 
 # Create a Managed Service for Apache Flink application
-<a name="how-creating-apps"></a>
 
 This topic contains information about creating a Managed Service for Apache Flink application.
 

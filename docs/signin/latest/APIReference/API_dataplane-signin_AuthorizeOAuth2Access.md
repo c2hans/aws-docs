@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # AuthorizeOAuth2Access
-<a name="API_dataplane-signin_AuthorizeOAuth2Access"></a>
 
 Grants permission to authenticate through a browser and obtain an OAuth 2.0 authorization code for credential exchange.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # AWS Network Firewall objects
-<a name="API_Type_Resource_NWFW"></a>
 
 ****AWS Network Firewall objects****
 + [AwsNetworkFirewallFirewallDetails](API_AwsNetworkFirewallFirewallDetails.md)

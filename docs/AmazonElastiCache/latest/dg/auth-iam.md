@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/auth-iam.htm
 ---
 
 # Authenticating with IAM in ElastiCache
-<a name="auth-iam"></a>
 
 **Topics**
 + [Overview](#auth-iam-overview)

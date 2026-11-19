@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CustomAc
 ---
 
 # CustomActionAttachmentCriteria
-<a name="API_CustomActionAttachmentCriteria"></a>
 
 A criteria for when a button should be shown based on values in the notification
 

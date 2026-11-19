@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Appli
 ---
 
 # ApplicationInfo
-<a name="API_ApplicationInfo"></a>
 
 Information about an application.
 

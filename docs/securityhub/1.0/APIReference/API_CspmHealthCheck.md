@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CspmHea
 ---
 
 # CspmHealthCheck
-<a name="API_CspmHealthCheck"></a>
 
 Information about the operational status and health of a CSPM connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BasicCatalogTarge
 ---
 
 # BasicCatalogTarget
-<a name="API_BasicCatalogTarget"></a>
 
 Specifies a target that uses a AWS Glue Data Catalog table.
 

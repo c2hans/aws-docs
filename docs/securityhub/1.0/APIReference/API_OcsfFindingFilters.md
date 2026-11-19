@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfFin
 ---
 
 # OcsfFindingFilters
-<a name="API_OcsfFindingFilters"></a>
 
 Specifies the filtering criteria for security findings using OCSF.
 

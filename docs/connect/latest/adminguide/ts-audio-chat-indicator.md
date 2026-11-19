@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-audio-chat-
 ---
 
 # Agents not hearing the indicator for incoming chat
-<a name="ts-audio-chat-indicator"></a>
 
 If an agent can't hear the audio indicator for an incoming chat, the problem is likely because Google added an audio policy flag to Chrome. This flag exists in Chrome versions 71 - 75.
 

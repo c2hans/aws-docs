@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP05 Automate deployment of standard security controls
-<a name="sec01-bp05"></a>
 
  Manually-applied security controls can drift, vary between environments, and are hard to audit. Define controls as code, version them, test them, and deploy them through a pipeline to keep them consistent, reviewable, and repeatable.
 

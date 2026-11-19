@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/enabling-access-r
 ---
 
 # Authorizing connections from AWS Quick Sight to Amazon RDS DB instances
-<a name="enabling-access-rds"></a>
 
 |  |
 | --- |

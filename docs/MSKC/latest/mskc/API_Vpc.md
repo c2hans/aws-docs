@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_Vpc.html
 ---
 
 # Vpc
-<a name="API_Vpc"></a>
 
 Information about the VPC in which the connector resides.
 

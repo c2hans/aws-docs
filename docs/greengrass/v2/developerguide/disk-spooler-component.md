@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/disk-spoole
 ---
 
 # Disk spooler
-<a name="disk-spooler-component"></a>
 
 The disk spooler component (`aws.greengrass.DiskSpooler`) offers a persistent storage option for messages spooled from Greengrass core devices to AWS IoT Core. This component will store these outbound messages on disk.
 

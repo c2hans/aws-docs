@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DnsRuleG
 ---
 
 # DnsRuleGroupLimitExceededViolation
-<a name="API_DnsRuleGroupLimitExceededViolation"></a>
 
 The VPC that Firewall Manager was applying a DNS Fireall policy to reached the limit for associated DNS Firewall rule groups. Firewall Manager tried to associate another rule group with the VPC and failed due to the limit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Cors
-<a name="apis-apiid-cors"></a>
 
 Represents a CORS configuration. Supported only for HTTP APIs.
 

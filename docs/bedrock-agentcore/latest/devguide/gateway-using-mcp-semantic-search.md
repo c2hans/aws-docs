@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Search for tools in your AgentCore gateway with a natural language query
-<a name="gateway-using-mcp-semantic-search"></a>
 
 If you enabled semantic search for your gateway when you created it, you can call the `x_amz_bedrock_agentcore_search` tool to search for tools in your gateway with a natural language query. Semantic search is particularly useful when you have many tools and need to find the most appropriate ones for your use case. To learn how to enable semantic search during gateway creation, see [Create an Amazon Bedrock AgentCore gateway](gateway-create.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_CancelStepsI
 ---
 
 # CancelStepsInfo
-<a name="API_CancelStepsInfo"></a>
 
 Specification of the status of a CancelSteps request. Available only in Amazon EMR version 4.8.0 and later, excluding version 5.0.0.
 

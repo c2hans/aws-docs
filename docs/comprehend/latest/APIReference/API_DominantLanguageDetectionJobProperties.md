@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Domin
 ---
 
 # DominantLanguageDetectionJobProperties
-<a name="API_DominantLanguageDetectionJobProperties"></a>
 
 Provides information about a dominant language detection job.
 

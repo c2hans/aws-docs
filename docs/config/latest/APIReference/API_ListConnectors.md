@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ListConne
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 Returns a list of connectors depending on the filters you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForUserSubscriptions
-<a name="AWSServiceRoleForUserSubscriptions"></a>
 
 **Description**: Provides access to the User Subscriptions service to your Identity Center resources to automatically update your subscriptions.
 

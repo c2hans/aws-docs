@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Scram Secrets
-<a name="clusters-clusterarn-scram-secrets"></a>
 
 Represents a secret stored in the Amazon Secrets Manager that can be used to authenticate with a cluster using your sign-in credentials.
 

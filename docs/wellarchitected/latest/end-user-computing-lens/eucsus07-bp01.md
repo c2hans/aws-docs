@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSUS07-BP01 Identify the volume and data requirement for your user profiles
-<a name="eucsus07-bp01"></a>
 
  Each user persona may require different volume and performance to align with your business case.
 

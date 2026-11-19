@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iam-policy-use
 ---
 
 # Authorizing users and cloud services to use AWS IoT Jobs
-<a name="iam-policy-users-jobs"></a>
 
 To authorize your users and cloud services, you must use IAM policies on both the control plane and data plane. The policies must be used with HTTPS protocol and must use AWS Signature Version 4 authentication (port 443) to authenticate users.
 

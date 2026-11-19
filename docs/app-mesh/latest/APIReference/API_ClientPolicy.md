@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ClientP
 ---
 
 # ClientPolicy
-<a name="API_ClientPolicy"></a>
 
 An object that represents a client policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/tags-remo
 ---
 
 # Removing tags from Amazon Security Lake resources
-<a name="tags-remove"></a>
 
 To remove tags from an Amazon Security Lake resource, you can use the Security Lake console or the Security Lake API.
 

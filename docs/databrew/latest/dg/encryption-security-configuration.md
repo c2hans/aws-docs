@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/encryption-security-c
 ---
 
 # Encrypting data written by DataBrew jobs
-<a name="encryption-security-configuration"></a>
 
 DataBrew jobs can write to encrypted Amazon S3 targets and encrypted Amazon CloudWatch Logs.
 

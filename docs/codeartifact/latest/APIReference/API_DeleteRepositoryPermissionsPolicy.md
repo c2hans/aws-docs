@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Del
 ---
 
 # DeleteRepositoryPermissionsPolicy
-<a name="API_DeleteRepositoryPermissionsPolicy"></a>
 
  Deletes the resource policy that is set on a repository. After a resource policy is deleted, the permissions allowed and denied by the deleted policy are removed. The effect of deleting a resource policy might not be immediate.
 

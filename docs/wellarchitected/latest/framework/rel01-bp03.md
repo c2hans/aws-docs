@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01-b
 ---
 
 # REL01-BP03 Accommodate fixed service quotas and constraints through architecture
-<a name="rel01-bp03"></a>
 
  When a design assumes it can grow past a fixed quota or physical resource constraint, it fails at scale with no remediation path. Design around fixed quotas from the start so the workload performs under both normal and peak conditions.
 

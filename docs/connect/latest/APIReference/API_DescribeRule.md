@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeRule
-<a name="API_DescribeRule"></a>
 
 Describes a rule for the specified Connect Customer instance.
 

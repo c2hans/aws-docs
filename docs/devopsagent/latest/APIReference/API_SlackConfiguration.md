@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Slac
 ---
 
 # SlackConfiguration
-<a name="API_SlackConfiguration"></a>
 
 Configuration for Slack workspace integration.
 

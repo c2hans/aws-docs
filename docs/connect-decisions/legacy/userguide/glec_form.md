@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/glec_
 ---
 
 # Transportation emission forms
-<a name="glec_form"></a>
 
 You can use the transport emission Global Logistics Emissions Council (GLEC) data forms to collect the emission reports from transportation routes by parcels delivered or by account. The following are the transportation emission request forms available.
 + Transportation Emissions (GLEC) by Parcel v0.1 – You can collect emissions from transport routes in accordance with the GLEC standard for parcels delivered.

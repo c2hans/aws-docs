@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # Authentication
-<a name="API_Authentication"></a>
 
 Indicates whether the user requires a password to authenticate.
 

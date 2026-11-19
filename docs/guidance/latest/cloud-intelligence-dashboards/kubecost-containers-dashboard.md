@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Kubecost Containers Cost Allocation Dashboard
-<a name="kubecost-containers-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

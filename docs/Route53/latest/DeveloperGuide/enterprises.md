@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/enterprise
 ---
 
 # .enterprises
-<a name="enterprises"></a>
 
 Used for information about enterprises and businesses.
 

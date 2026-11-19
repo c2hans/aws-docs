@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateCode
 ---
 
 # CreateCodeSecurityScanConfiguration
-<a name="API_CreateCodeSecurityScanConfiguration"></a>
 
 Creates a scan configuration for code security scanning.
 

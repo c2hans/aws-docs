@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Call genetic variants with bwa and bcftools on Deadline Cloud
-<a name="examples-jb-variant-calling"></a>
 
 The [variant\_calling\_bwa](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/variant_calling_bwa) job bundle on the GitHub website finds the genetic differences between an individual and a reference genome. It aligns sequencing reads with `bwa`, calls variants with `bcftools`, and merges the results into one VCF file. The pipeline reimplements the AWS HealthOmics WDL variant-calling tutorial pipeline in Open Job Description.
 

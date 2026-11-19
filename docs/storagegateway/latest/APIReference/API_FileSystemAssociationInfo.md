@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_F
 ---
 
 # FileSystemAssociationInfo
-<a name="API_FileSystemAssociationInfo"></a>
 
 Describes the object returned by `DescribeFileSystemAssociations` that describes a created file system association.
 

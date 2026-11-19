@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operat
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon Chime SDK Identity:
 +  [CreateAppInstance](API_CreateAppInstance.md)

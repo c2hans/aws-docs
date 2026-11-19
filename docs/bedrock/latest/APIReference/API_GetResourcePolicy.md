@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetResou
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Gets the resource policy document for a Bedrock resource
 

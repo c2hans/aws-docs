@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMechanicalTurkReadOnly
-<a name="AmazonMechanicalTurkReadOnly"></a>
 
 **Description**: Provides access to read only APIs in Amazon Mechanical Turk.
 

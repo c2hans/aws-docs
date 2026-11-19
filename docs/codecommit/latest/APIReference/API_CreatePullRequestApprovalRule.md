@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Creat
 ---
 
 # CreatePullRequestApprovalRule
-<a name="API_CreatePullRequestApprovalRule"></a>
 
 Creates an approval rule for a pull request.
 

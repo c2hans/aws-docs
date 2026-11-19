@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateMarketplaceRevenueShareAllocation
-<a name="API_prm_UpdateMarketplaceRevenueShareAllocation"></a>
 
 Updates an existing marketplace revenue share allocation. Supports modifying effective dates, revenue share percentage, and status with time-based mutability rules.
 

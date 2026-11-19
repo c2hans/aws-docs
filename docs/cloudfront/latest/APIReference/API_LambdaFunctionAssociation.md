@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Lambd
 ---
 
 # LambdaFunctionAssociation
-<a name="API_LambdaFunctionAssociation"></a>
 
 A complex type that contains a Lambda@Edge function association.
 

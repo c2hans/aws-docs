@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/filefsxw/decide-local
 Amazon FSx File Gateway is no longer available to new customers. Existing customers of FSx File Gateway can continue to use the service normally. For capabilities similar to FSx File Gateway, visit [this blog post](https://aws.amazon.com/blogs/storage/switch-your-file-share-access-from-amazon-fsx-file-gateway-to-amazon-fsx-for-windows-file-server/).
 
 # Deciding the amount of local disk storage
-<a name="decide-local-disks-and-sizes"></a>
 
 When deploying an FSx File Gateway, consider how much cache disk to allocate. FSx File Gateway uses a least recently used algorithm to automatically evict data from the cache. The cache on an FSx File Gateway is shared between all of the file shares on that gateway. If you have multiple active shares, it's important to note that heavy utilization on one share could impact the amount of cache resources that another share has access to, possibly impacting performance.
 

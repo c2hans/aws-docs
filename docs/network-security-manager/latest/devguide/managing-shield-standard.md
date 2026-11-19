@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Standard creation process for AWS Shield Advanced
-<a name="managing-shield-standard"></a>
 
 With the standard creation process, you set up each AWS Shield Advanced component—policies, scopes, and deployments—individually for full control. Use this approach when you want to create reusable components and combine them as needed.
 

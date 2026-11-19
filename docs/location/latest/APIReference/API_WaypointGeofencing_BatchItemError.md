@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # BatchItemError
-<a name="API_WaypointGeofencing_BatchItemError"></a>
 
 ## Contents
 <a name="API_WaypointGeofencing_BatchItemError_Contents"></a>

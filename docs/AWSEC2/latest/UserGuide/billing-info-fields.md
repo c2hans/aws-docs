@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-info-fie
 ---
 
 # AMI billing information fields
-<a name="billing-info-fields"></a>
 
 The following fields provide billing information associated with an AMI:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/updating-dataset-s
 ---
 
 # Replacing a dataset's schema to add new columns
-<a name="updating-dataset-schema"></a>
 
  After you create an Items or Users dataset, you can replace its schema with a new or existing one. You might replace a dataset's schema if your data structure changed after you created the dataset. For example, you might have a new column of item metadata that you want Amazon Personalize to consider during training. Or you might want to add a column of data to use only when filtering recommendations.
 

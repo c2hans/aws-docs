@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-datadog-dat
 ---
 
 # Connect to a Datadog data source
-<a name="AMG-datadog-datasource-plugin"></a>
 
  The Datadog data source enables you to visualize metrics from the Datadog monitoring service in Amazon Managed Grafana.
 

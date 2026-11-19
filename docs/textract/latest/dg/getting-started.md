@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/getting-started.html
 ---
 
 # Getting Started with Amazon Textract
-<a name="getting-started"></a>
 
 This section provides topics to get you started using Amazon Textract. It covers the prerequisites of creating and configuring your AWS account and the AWS SDKs you will use to invoke the Amazon Textract APIs. If you're new to Amazon Textract, we recommend that you first review the concepts and terminology in [Identifying Your Amazon Textract Use Case](how-it-works.md).
 

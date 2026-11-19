@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageTa
 ---
 
 # MessageTag
-<a name="API_MessageTag"></a>
 
 Contains the name and value of a tag that you apply to an email. You can use message tags when you publish email sending events.
 

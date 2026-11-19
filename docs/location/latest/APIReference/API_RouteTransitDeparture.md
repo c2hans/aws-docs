@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitDeparture
-<a name="API_RouteTransitDeparture"></a>
 
 Details corresponding to the departure for the leg.
 

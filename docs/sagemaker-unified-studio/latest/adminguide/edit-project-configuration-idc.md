@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Edit project configuration
-<a name="edit-project-configuration-idc"></a>
 
 You can edit the project name and description, or modify the project members to reflect changes in business context or project scope.
 

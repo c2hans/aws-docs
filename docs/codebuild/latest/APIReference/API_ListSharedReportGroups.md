@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListSh
 ---
 
 # ListSharedReportGroups
-<a name="API_ListSharedReportGroups"></a>
 
  Gets a list of report groups that are shared with other AWS accounts or users.
 

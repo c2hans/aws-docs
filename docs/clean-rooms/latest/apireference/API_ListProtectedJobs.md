@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListProtectedJobs
-<a name="API_ListProtectedJobs"></a>
 
 Lists protected jobs, sorted by most recent job.
 

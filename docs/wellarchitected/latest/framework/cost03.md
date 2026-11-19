@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost03.
 ---
 
 # Manage the lifecycle of resources
-<a name="cost03"></a>
 
  Cloud resources are quick to create and easy to forget, and each one costs money until someone retires it. Managing the resource lifecycle keeps the estate matched to what the business uses, from provisioning through decommissioning. This capability covers tracking resources against their purpose and expected end date, adjusting and retiring them as demand changes, and enforcing retention rules on the data they leave behind.
 

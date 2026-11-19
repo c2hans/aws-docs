@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is an interface reference for Amazon Redshift Serverless. It contains documentation for one of the programming or command line interfaces you can use to manage Amazon Redshift Serverless.
 
@@ -11,4 +10,4 @@ Amazon Redshift Serverless automatically provisions data warehouse capacity and 
 
  To learn more about Amazon Redshift Serverless, see [What is Amazon Redshift Serverless?](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-whatis.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

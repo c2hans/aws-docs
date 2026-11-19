@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/security-be
 ---
 
 # Security best practices for AWS IoT Greengrass
-<a name="security-best-practices"></a>
 
 This topic contains security best practices for AWS IoT Greengrass.
 

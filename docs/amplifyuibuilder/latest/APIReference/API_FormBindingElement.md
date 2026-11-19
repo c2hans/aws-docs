@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormBindingElement
-<a name="API_FormBindingElement"></a>
 
 Describes how to bind a component property to form data.
 

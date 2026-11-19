@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/r
 ---
 
 # Regulatory reporting reference architecture
-<a name="regulatory-reporting-reference-architecture"></a>
 
  Every government institution deals with volumes of information for legislative or regulatory reporting. Static legacy infrastructure and inefficient reporting processes can make reporting costly and prevent customers from responding quickly to regulatory changes. Building a reporting data lake on AWS and using the rich set of services available can address many of the issues that complicate regulatory reporting, such as data residing in disconnected silos and distributed ETL processes. After customers integrate reporting data into a consistent dataset or data pipeline, they can use that data to gain additional insights through advanced analytics and machine learning.
 

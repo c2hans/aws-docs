@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/security_iam
 ---
 
 # Tag Editor identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, IAM principals, such as roles and users, don't have permission to create or modify tags. They also can't perform tasks using the AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS APIs. An IAM administrator must create IAM policies that grant principals permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the principals that require those permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate the setup of inter-Region peering with AWS Transit Gateway
-<a name="automate-the-setup-of-inter-region-peering-with-aws-transit-gateway"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

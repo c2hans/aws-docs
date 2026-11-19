@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/styling-l
 ---
 
 # Style labels with glyphs
-<a name="styling-labels-with-glyphs"></a>
 
 Glyphs are binary files containing encoded Unicode characters, which are used by a map renderer to display labels. Amazon Location Service enables the retrieval of specific glyphs from a font stack for use in map rendering through the `GetGlyphs` API.
 

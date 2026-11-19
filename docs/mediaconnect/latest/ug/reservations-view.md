@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/reservations-view
 ---
 
 # Viewing reservations for MediaConnect
-<a name="reservations-view"></a>
 
 On the console, you can view the reservations that you have purchased.
 

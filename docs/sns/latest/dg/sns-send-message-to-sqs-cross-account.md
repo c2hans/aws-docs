@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-send-message-to-sqs-cr
 ---
 
 # Sending Amazon SNS messages to an Amazon SQS queue in a different account
-<a name="sns-send-message-to-sqs-cross-account"></a>
 
 This document describes how to publish a notification to an Amazon SNS topic with one or more subscriptions to Amazon SQS queues in another account. You set up the topic and queues the same way as if they were in the same account (see [Fanout Amazon SNS notifications to Amazon SQS queues for asynchronous processing](sns-sqs-as-subscriber.md)). The major difference is how you handle subscription confirmation. That depends on how you subscribe the queue to the topic.
 

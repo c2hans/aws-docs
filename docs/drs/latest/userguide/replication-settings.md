@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/replication-setting
 ---
 
 # AWS DRS replication settings
-<a name="replication-settings"></a>
 
  **Replication Settings** govern how data is replicated from Source Servers and stored within AWS.
 

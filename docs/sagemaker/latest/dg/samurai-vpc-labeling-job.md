@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/samurai-vpc-labeling
 ---
 
 # Run an Amazon SageMaker Ground Truth Labeling Job in an Amazon Virtual Private Cloud
-<a name="samurai-vpc-labeling-job"></a>
 
 **Note**
 Amazon SageMaker Ground Truth is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Ground Truth, but we do not plan to introduce new features.

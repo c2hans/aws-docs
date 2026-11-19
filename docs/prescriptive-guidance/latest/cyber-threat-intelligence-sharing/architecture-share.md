@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Sharing CTI
-<a name="architecture-share"></a>
 
 The community that you send cyber threat intelligence (CTI) to is usually the same one that you receive CTI from. However, you can choose to share to more. For example, you might choose to share with government or regulatory organizations that you trust, such as your national cybersecurity center or Information Sharing and Analysis Centers (ISACs). The goal is to rapidly propagate and implement CTI by pooling findings from multiple organizations. Your threat intelligence platform manages the API integrations for sharing with multiple feeds.
 

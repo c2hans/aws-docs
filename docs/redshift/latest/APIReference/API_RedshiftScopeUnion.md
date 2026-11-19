@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Redshif
 ---
 
 # RedshiftScopeUnion
-<a name="API_RedshiftScopeUnion"></a>
 
 A union structure that defines the scope of Amazon Redshift service integrations. Contains configuration for different integration types such as Amazon Redshift.
 

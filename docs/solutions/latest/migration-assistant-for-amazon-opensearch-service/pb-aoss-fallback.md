@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 9: Fallback guidance
-<a name="pb-aoss-fallback"></a>
 
 If validation fails or the collection does not behave as expected, you have a clean fallback because the migration is non-destructive to the source — the source domain is only read once, during the snapshot.
 +  **Keep serving from the source.** Until you redirect application traffic, the source Amazon OpenSearch Service domain remains the live system. There is no cutover until you change clients.

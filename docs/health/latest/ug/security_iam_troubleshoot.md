@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/security_iam_troublesho
 ---
 
 # Troubleshooting AWS Health identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to diagnose and fix common issues that you might encounter when working with AWS Health and IAM.
 

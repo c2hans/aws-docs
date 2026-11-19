@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeOrde
 ---
 
 # DescribeOrderableReplicationInstances
-<a name="API_DescribeOrderableReplicationInstances"></a>
 
 Returns information about the replication instance types that can be created in the specified region.
 

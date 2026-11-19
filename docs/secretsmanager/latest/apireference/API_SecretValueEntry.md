@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_S
 ---
 
 # SecretValueEntry
-<a name="API_SecretValueEntry"></a>
 
 A structure that contains the secret value and other details for a secret.
 

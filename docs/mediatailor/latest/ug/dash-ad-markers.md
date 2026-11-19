@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/dash-ad-markers.ht
 ---
 
 # DASH ad markers
-<a name="dash-ad-markers"></a>
 
 MediaTailor
 

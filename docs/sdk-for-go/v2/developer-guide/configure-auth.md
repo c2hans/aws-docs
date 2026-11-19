@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Configure Authentication
-<a name="configure-auth"></a>
 
  The AWS SDK for Go provides the ability to configure the authentication behavior service. In most cases, the default configuration will suffice, but configuring custom authentication allows for additional behavior such as working with pre-release service features.
 

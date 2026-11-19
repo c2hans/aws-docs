@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTa
 ---
 
 # Scenarios for accessing a DB instance in a VPC
-<a name="CHAP_CommonTasks.Connect.ScenariosForAccess"></a>
 
 Using Amazon Virtual Private Cloud (Amazon VPC), you can launch AWS resources, such as Amazon RDS DB instances, into a virtual private cloud (VPC). When you use Amazon VPC, you have control over your virtual networking environment. You can choose your own IP address range, create subnets, and configure routing and access control lists.
 

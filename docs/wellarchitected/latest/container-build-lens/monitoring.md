@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
 | CONTAINER\_BUILD\_PERF\_05: How do you make sure you get consistent performance results over time? |
 | --- |

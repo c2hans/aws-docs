@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/install
 ---
 
 # Install the Session Manager plugin on Linux
-<a name="install-plugin-linux-overview"></a>
 
 This section includes information about verifying the signature of the Session Manager plugin installer package and installing the plugin on the following Linux distributions:
 + Amazon Linux 2

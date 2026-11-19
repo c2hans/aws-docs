@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Flywh
 ---
 
 # FlywheelSummary
-<a name="API_FlywheelSummary"></a>
 
 Flywheel summary information.
 

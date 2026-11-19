@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Examples of variables
-<a name="workflows-working-with-variables-ex"></a>
 
 The following examples show how to define and reference variables in the workflow definition file.
 

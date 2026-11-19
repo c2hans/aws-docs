@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transform-s
 ---
 
 # Converting embedded SQL in Java applications with Amazon Q Developer
-<a name="transform-sql"></a>
 
 The Amazon Q Developer agent for code transformation in the IDE can help you convert embedded SQL to complete Oracle to PostgreSQL database migration with AWS Database Migration Service (AWS DMS).
 

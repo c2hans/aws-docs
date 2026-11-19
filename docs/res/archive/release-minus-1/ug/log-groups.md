@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/log-group
 ---
 
 # Amazon CloudWatch Logs
-<a name="log-groups"></a>
 
 Research and Engineering Studio creates the following log groups in CloudWatch during installation. See the following table for default retentions:
 

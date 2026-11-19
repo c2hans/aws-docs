@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Servi
 ---
 
 # ServiceAccountCredentials
-<a name="API_ServiceAccountCredentials"></a>
 
 The service account credentials used for Google Workspace domain-wide delegation. Use this structure when you authenticate a data source connection using domain-wide delegation across your Google Workspace domain.
 

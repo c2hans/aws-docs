@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/tuto
 ---
 
 # Using Trusted Identity Propagation with Amazon SageMaker Unified Studio
-<a name="tutorial-tip-smus"></a>
 
 This tutorial shows how to set up an EMR Serverless application with Trusted Identity Propagation (TIP). You then query a sample table using identity-based access controls through Amazon SageMaker Unified Studio. With this setup, EMR Serverless runs each user's Spark queries with their own IAM Identity Center identity, and Lake Formation enforces per-user permissions on AWS Glue Data Catalog tables.
 

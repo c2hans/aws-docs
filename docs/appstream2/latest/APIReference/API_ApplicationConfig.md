@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Appli
 ---
 
 # ApplicationConfig
-<a name="API_ApplicationConfig"></a>
 
 Configuration for an application in the imported image's application catalog. This structure defines how applications appear and launch for users.
 

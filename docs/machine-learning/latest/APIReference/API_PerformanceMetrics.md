@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # PerformanceMetrics
-<a name="API_PerformanceMetrics"></a>
 
 Measurements of how well the `MLModel` performed on known observations. One of the following metrics is returned, based on the type of the `MLModel`:
 + BinaryAUC: The binary `MLModel` uses the Area Under the Curve (AUC) technique to measure performance.

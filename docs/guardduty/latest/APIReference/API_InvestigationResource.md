@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationResource
-<a name="API_InvestigationResource"></a>
 
 Contains information about an AWS resource that is relevant to an investigation.
 

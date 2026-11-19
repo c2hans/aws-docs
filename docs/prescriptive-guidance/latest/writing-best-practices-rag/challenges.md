@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-bes
 ---
 
 # Challenges in source data that affect RAG applications
-<a name="challenges"></a>
 
 One of the significant challenges in developing an optimal Retrieval-Augmented Generation (RAG) application lies in the nature of the raw data or documents used. Often, enterprises use existing documents that were created for human reference. These documents often include hyperlinks and image screenshots to promote understanding. However, these elements obstruct semantic retrieval due to excerpt token limits. This results in poor retriever performance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/set-update.ht
 ---
 
 # $set
-<a name="set-update"></a>
 
 The `$set` operator in Amazon DocumentDB is used to update the value of a specified field in a document. This operator allows you to add new fields or modify existing ones within a document. It is a fundamental update operator in the MongoDB Java driver, which is compatible with Amazon DocumentDB.
 

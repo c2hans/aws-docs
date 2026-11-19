@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-emr-co
 ---
 
 # Amazon EMR Containers events
-<a name="events-ref-emr-containers"></a>
 
 Amazon EMR Containers sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

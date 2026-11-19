@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLSEC06-BP01 Restrict access to intended legitimate consumers
-<a name="mlsec06-bp01"></a>
 
  Use least privilege permissions to invoke the deployed model endpoint. For consumers who are external to the workload environment, provide access using a secure API.
 

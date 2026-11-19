@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS01-BP04 Evaluate compliance requirements
-<a name="ops_priorities_compliance_reqs"></a>
 
  Evaluate external factors, such as regulatory compliance requirements and industry standards, to ensure that you are aware of guidelines or obligations that might mandate or emphasize specific focus. If no compliance requirements are identified, ensure that you apply due diligence to this determination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDatasetSchemaField
-<a name="API_DataLakeDatasetSchemaField"></a>
 
 The dataset field details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 ---
 
 # Getting started with DynamoDB caching
-<a name="ddb-caching-getting-started"></a>
 
 To get started with DynamoDB caching, create a serverless cache with DynamoDB caching enabled, then install and configure the Amazon ElastiCache integration client in your application. DynamoDB caching must be enabled when you create the serverless cache.
 
@@ -52,7 +51,8 @@ aws elasticache create-serverless-cache \
     --serverless-cache-name my-ddb-cache \
     --engine valkey \
     --major-engine-version 9 \
-    --integrations IntegrationType=DYNAMODB,Enabled=true
+    --integrations IntegrationType=DYNAMODB \
+    --user-group-id default.iam-user-group
 ```
 
 ## Disabling DynamoDB caching

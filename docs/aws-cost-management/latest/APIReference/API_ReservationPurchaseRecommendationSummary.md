@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationPurchaseRecommendationSummary
-<a name="API_ReservationPurchaseRecommendationSummary"></a>
 
 A summary about this recommendation, such as the currency code, the amount that AWS estimates that you could save, and the total amount of reservation to purchase.
 

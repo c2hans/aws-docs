@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSEnhancedMonitoringRole
-<a name="AmazonRDSEnhancedMonitoringRole"></a>
 
 **Description**: Provides access to Cloudwatch for RDS Enhanced Monitoring
 

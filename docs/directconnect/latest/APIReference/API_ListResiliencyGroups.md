@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Li
 ---
 
 # ListResiliencyGroups
-<a name="API_ListResiliencyGroups"></a>
 
 Lists the resiliency groups owned by your AWS account in the current AWS Region.
 

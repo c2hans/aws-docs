@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-pres
 ---
 
 # Working with output presets
-<a name="working-with-presets"></a>
 
 Output presets reduce the amount of time it takes to configure a job by providing pre-configured output settings. You can also use presets as a reference for recommended settings.
 

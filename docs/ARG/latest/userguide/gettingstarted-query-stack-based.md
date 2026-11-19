@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-quer
 ---
 
 # Create an CloudFormation stack-based group
-<a name="gettingstarted-query-stack-based"></a>
 
 The following procedures show you how to build a stack-based query and use it to create a resource group.
 

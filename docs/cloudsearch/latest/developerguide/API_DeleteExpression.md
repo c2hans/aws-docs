@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DeleteExpression
-<a name="API_DeleteExpression"></a>
 
 ## Description
 <a name="API_DeleteExpression_Description"></a>

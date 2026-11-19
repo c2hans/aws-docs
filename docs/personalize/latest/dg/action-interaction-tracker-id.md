@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/action-interaction
 ---
 
 # Finding the ID of your action interaction event tracker
-<a name="action-interaction-tracker-id"></a>
 
 When you create an Action interactions dataset, Amazon Personalize automatically creates an *action interaction* event tracker for you. You specify the tracker's ID in the PutActionInteractions API operation. Amazon Personalize uses it to direct new data to the *Action interactions dataset* in your dataset group.
 

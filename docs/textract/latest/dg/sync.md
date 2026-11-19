@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/sync.html
 ---
 
 # Processing Documents Synchronously
-<a name="sync"></a>
 
 Amazon Textract can detect and analyze text in single-page documents that are provided as images in JPEG, PNG, PDF, and TIFF format. The operations are synchronous and return results in near real time. For more information about documents, see [Text Detection and Document Analysis Response Objects](how-it-works-document-layout.md).
 

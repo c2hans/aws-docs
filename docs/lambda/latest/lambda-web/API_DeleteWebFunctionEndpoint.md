@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_DeleteWebFu
 ---
 
 # DeleteWebFunctionEndpoint
-<a name="API_DeleteWebFunctionEndpoint"></a>
 
 Deletes a web function endpoint.
 

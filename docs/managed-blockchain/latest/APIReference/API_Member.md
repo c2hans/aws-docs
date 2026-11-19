@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # Member
-<a name="API_Member"></a>
 
 Member configuration properties.
 

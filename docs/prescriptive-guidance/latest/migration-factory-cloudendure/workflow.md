@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # The Cloud Migration Factory workflow
-<a name="workflow"></a>
 
 Cloud Migration Factory comes with a predefined process that includes three phases: pre-migration, migration implementation, and post-migration, as shown in the following diagram.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-map-di
 ---
 
 # Copying large-scale CSV data using Distributed Map in Step Functions
-<a name="tutorial-map-distributed"></a>
 
 This tutorial helps you start using the `Map` state in Distributed mode. A `Map` state set to **Distributed** is known as a *Distributed Map state*. You use the *Distributed Map state* in your workflows to iterate over large-scale Amazon S3 data sources. The `Map` state runs each iteration as a child workflow execution, which enables high concurrency. For more information about Distributed mode, see [Map state in Distributed mode](state-map-distributed.md).
 

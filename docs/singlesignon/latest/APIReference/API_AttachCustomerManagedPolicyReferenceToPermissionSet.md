@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Att
 ---
 
 # AttachCustomerManagedPolicyReferenceToPermissionSet
-<a name="API_AttachCustomerManagedPolicyReferenceToPermissionSet"></a>
 
 Attaches the specified customer managed policy to the specified [PermissionSet](API_PermissionSet.md).
 

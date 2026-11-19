@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS Direct Connect
-<a name="awsdirectconnect"></a>
 
 AWS Direct Connect provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/example_i
 ---
 
 # Policy to enable Automation across your organization
-<a name="example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.2_section"></a>
 
 The following code example shows how to This permission-based policy enables Automation across your organization
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildN
 ---
 
 # BuildNotDeleted
-<a name="API_BuildNotDeleted"></a>
 
 Information about a build that could not be successfully deleted.
 

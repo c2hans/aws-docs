@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubles
 ---
 
 # Status reasons for Amazon EBS volume attachment to Amazon ECS tasks
-<a name="troubleshoot-ebs-volumes-scenarios"></a>
 
 Use the following reference to fix issues that you might encounter in the form of status reasons in the AWS Management Console when you configure Amazon EBS volumes for attachment to Amazon ECS tasks. For more information on locating these status reasons in the console, see [Check volume attachment status](troubleshoot-ebs-volumes.md#troubleshoot-ebs-volumes-location).
 

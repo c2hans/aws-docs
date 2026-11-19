@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Placement
 ---
 
 # PlacementResponse
-<a name="API_PlacementResponse"></a>
 
 Describes the placement of an instance.
 

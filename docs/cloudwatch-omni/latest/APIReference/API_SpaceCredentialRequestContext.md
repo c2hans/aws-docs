@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # SpaceCredentialRequestContext
-<a name="API_SpaceCredentialRequestContext"></a>
 
 Identifies what the credentials are for: either an existing space, or a target account in a domain. Specify spaceId, or both domainId and targetAccountId.
 

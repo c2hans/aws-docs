@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Application Auto Scaling
-<a name="awsapplicationautoscaling"></a>
 
 AWS Application Auto Scaling provides the following APIs for data retrieval.
 

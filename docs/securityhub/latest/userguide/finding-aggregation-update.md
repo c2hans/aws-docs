@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/finding-agg
 ---
 
 # Updating cross-Region aggregation settings
-<a name="finding-aggregation-update"></a>
 
 **Note**
 The *aggregation Region* is now called the *home Region*. Some Security Hub CSPM API operations still use the older term aggregation Region.

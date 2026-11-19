@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::ApiGatewayManagedOverrides IntegrationOverrides
-<a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides"></a>
 
 The `IntegrationOverrides` property overrides the integration settings for an API Gateway-managed integration. If you remove this property, API Gateway restores the default values.
 

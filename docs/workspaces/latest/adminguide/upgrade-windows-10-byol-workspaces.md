@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/upgrade-win
 ---
 
 # Upgrade Windows BYOL WorkSpaces in WorkSpaces Personal
-<a name="upgrade-windows-10-byol-workspaces"></a>
 
 On your Windows Bring Your Own License (BYOL) WorkSpaces, you can upgrade to a newer version of Windows using the in-place upgrade process. Follow the instructions in this topic to do so.
 

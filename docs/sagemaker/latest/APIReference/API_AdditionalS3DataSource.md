@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Additi
 ---
 
 # AdditionalS3DataSource
-<a name="API_AdditionalS3DataSource"></a>
 
 A data source used for training or inference that is in addition to the input dataset or model data.
 

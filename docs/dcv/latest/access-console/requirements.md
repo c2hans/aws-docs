@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/requirements.h
 ---
 
 # Requirements
-<a name="requirements"></a>
 
 The Amazon DCV Access Console has the following requirements.
 

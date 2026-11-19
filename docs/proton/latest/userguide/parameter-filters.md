@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/parameter-filter
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Parameter filters for CloudFormation IaC files
-<a name="parameter-filters"></a>
 
 When you make references to [AWS Proton parameters](parameters.md) in your AWS CloudFormation IaC files, you can use Jinja modifiers known as *filters* to validate, filter, and format parameter values before they get inserted into the rendered template. Filter validations are particularly useful when referring to [component](ag-components.md) output parameters, because component creation and attachment are done by developers, and an administrator using component outputs in a service instance template might want to verify their existence and validity. However, you can use filters in any Jinja IaC file.
 

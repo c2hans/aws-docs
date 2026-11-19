@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/enable-disable
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Enabling and disabling automatic application layer DDoS mitigation
-<a name="enable-disable-automatic-app-layer-response"></a>
 
 The following procedure shows how to enable or disable automatic response for a protected resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # CloudMaskingConfigInput
-<a name="API_geospatial_CloudMaskingConfigInput"></a>
 
 Input structure for CloudMasking operation type.
 

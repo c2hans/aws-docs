@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgeSchedulerReadOnlyAccess
-<a name="AmazonEventBridgeSchedulerReadOnlyAccess"></a>
 
 **Description**: The AmazonEventBridgeSchedulerReadOnlyAccess managed policy grants read-only permissions to view details about your schedules and schedule groups
 

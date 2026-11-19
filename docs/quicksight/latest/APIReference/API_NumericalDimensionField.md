@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericalDimensionField
-<a name="API_NumericalDimensionField"></a>
 
 The dimension type field with numerical type columns.
 

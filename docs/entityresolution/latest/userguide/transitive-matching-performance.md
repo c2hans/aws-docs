@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/transi
 ---
 
 # Performance considerations
-<a name="transitive-matching-performance"></a>
 
 Transitive matching workflows are slower than non-transitive workflows because records are processed across all rule levels instead of being excluded after their first match. The following factors affect performance:
 

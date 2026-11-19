@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDashboardSnapshotJob
-<a name="API_DescribeDashboardSnapshotJob"></a>
 
 Describes an existing snapshot job.
 

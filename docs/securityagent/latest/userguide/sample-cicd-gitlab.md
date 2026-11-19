@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/sample-ci
 ---
 
 # Tutorial: Gate a GitLab CI/CD deployment with a scoped penetration test
-<a name="sample-cicd-gitlab"></a>
 
 **Public preview**
 CI/CD pipeline integration is in preview and is subject to change.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_Outpo
 ---
 
 # Outpost
-<a name="API_s3outposts_Outpost"></a>
 
 Contains the details for the Outpost object.
 

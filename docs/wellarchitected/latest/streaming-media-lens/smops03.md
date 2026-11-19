@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Event preparedness
-<a name="smops03"></a>
 
 Large-scale events involve sudden spikes in viewership that stress every component. Preparation before the event determines whether it delivers without degradation.
 

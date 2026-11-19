@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/grant-p
 ---
 
 # Grant permissions for API Gateway to create a VPC link (legacy)
-<a name="grant-permissions-to-create-vpclink"></a>
 
 **Note**
 The following implementation of private integrations uses VPC links V1. VPC links V1 are legacy resources. We recommend that you use [VPC links V2 for REST APIs](apigateway-vpc-links-v2.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Schedul
 ---
 
 # ScheduledUpdateGroupActionRequest
-<a name="API_ScheduledUpdateGroupActionRequest"></a>
 
 Describes information used for one or more scheduled scaling action updates in a [BatchPutScheduledUpdateGroupAction](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BatchPutScheduledUpdateGroupAction.html) operation.
 

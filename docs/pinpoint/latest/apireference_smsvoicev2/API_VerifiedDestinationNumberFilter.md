@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # VerifiedDestinationNumberFilter
-<a name="API_VerifiedDestinationNumberFilter"></a>
 
 The filter definition for filtering verified destination phone numbers that meets a specified criteria.
 

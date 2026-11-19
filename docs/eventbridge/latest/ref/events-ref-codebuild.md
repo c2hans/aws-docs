@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-codebu
 ---
 
 # AWS CodeBuild events
-<a name="events-ref-codebuild"></a>
 
 CodeBuild sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

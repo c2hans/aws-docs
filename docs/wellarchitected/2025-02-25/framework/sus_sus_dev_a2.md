@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS06-BP02 Adopt methods that can rapidly introduce sustainability improvements
-<a name="sus_sus_dev_a2"></a>
 
  Adopt methods and processes to validate potential improvements, minimize testing costs, and deliver small improvements.
 

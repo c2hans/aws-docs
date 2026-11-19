@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # POST: Activate a Schedule
-<a name="channel-scheduling-activate-a-schedule"></a>
 
 Inactive schedules can be activated as follows.
 

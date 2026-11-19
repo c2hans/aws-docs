@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html
 ---
 
 # Pipelines
-<a name="pipelines"></a>
 
 Amazon SageMaker Pipelines is a purpose-built workflow orchestration service to automate machine learning (ML) development.
 

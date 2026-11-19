@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Controlling access to the interface endpoint
-<a name="nx-security-privatelink-access"></a>
 
 AWS End User Messaging supports making calls to all of its API actions through the interface endpoint. By default, full access to AWS End User Messaging is allowed through the interface endpoint. To control the traffic that is allowed to reach AWS End User Messaging through the interface endpoint, you can associate a security group with the endpoint network interfaces, attach a VPC endpoint policy, or both.
 

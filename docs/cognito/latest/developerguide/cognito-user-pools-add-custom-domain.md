@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Using your own domain for managed login
-<a name="cognito-user-pools-add-custom-domain"></a>
 
 After you set up an app client, you can configure your user pool with a custom domain for the domain services of [managed login](cognito-user-pools-managed-login.md). With a custom domain, users can sign in to your application using your own web address instead of the default `amazoncognito.com` [prefix domain](cognito-user-pools-assign-domain-prefix.md). Custom domains improve user trust in your application with a familiar domain name, especially when the root domain matches the domain that hosts your application. Custom domains can improve compliance with organizational security requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-sm-sd
 ---
 
 # Step 2: Launch a Training Job Using the SageMaker Python SDK
-<a name="model-parallel-sm-sdk"></a>
 
 The SageMaker Python SDK supports managed training of models with ML frameworks such as TensorFlow and PyTorch. To launch a training job using one of these frameworks, you define a SageMaker [TensorFlow estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html), a SageMaker [PyTorch estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html), or a SageMaker generic [Estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) to use the modified training script and model parallelism configuration.
 

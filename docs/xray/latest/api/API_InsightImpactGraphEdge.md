@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_InsightImpactGraphEd
 ---
 
 # InsightImpactGraphEdge
-<a name="API_InsightImpactGraphEdge"></a>
 
 The connection between two service in an insight impact graph.
 

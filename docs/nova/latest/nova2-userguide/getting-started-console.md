@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/getting-star
 ---
 
 # Getting started with Amazon Nova in the Amazon Bedrock console
-<a name="getting-started-console"></a>
 
 This section describes how to use the playgrounds in the AWS console to submit a text prompt to Amazon Nova 2 models and generate a text or image response. Before you run the following examples, you should check that you have fulfilled the following prerequisites:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Offlin
 ---
 
 # OfflineStoreStatus
-<a name="API_OfflineStoreStatus"></a>
 
 The status of `OfflineStore`.
 

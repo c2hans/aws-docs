@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/security_iam_resource-ba
 ---
 
 # Resource-based policy examples for Amazon Lex V2
-<a name="security_iam_resource-based-policy-examples"></a>
 
 A *resource-based policy* is attached to a resource, such as a bot or a bot alias. With a resource-based policy you can specify who has access to the resource and the actions that they can perform on it. For example, you can add resource-based policies that enable a user to modify a specific bot, or to allow a user to use runtime operations on a specific bot alias.
 

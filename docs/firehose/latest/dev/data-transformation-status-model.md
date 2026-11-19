@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/data-transformation-
 ---
 
 # Required parameters for data transformation
-<a name="data-transformation-status-model"></a>
 
 All transformed records from Lambda must contain the following parameters, or Amazon Data Firehose rejects them and treats that as a data transformation failure.
 

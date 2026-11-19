@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/update-orphan-file-deleti
 ---
 
 # Updating orphan file deletion optimizer
-<a name="update-orphan-file-deletion"></a>
 
  You can modify the configuration for the orphan file deletion optimizer, such as changing the retention period for orphan files or the IAM role used by the optimizer using AWS Glue console, AWS CLI, or the `UpdateTableOptimizer` operation.
 

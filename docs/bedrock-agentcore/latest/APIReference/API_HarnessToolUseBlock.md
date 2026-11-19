@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessToolUseBlock
-<a name="API_HarnessToolUseBlock"></a>
 
 A tool use request from the model.
 

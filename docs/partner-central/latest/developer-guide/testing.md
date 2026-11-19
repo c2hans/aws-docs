@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/t
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Testing in a sandbox
-<a name="testing"></a>
 
 Partners can use a sandbox to test and validate their AWS Partner Central API interactions in a secure and isolated environment, ensuring smooth operation before promoting their solution to the production environment. AWS offers a dynamic sandbox to AWS Partner Central API users that returns responses similar to the production environment. AWS does not provide a user interface to the sandbox environment. Therefore, partners need to rely on the programmatic responses to test their solutions.
 

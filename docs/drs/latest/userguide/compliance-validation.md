@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/compliance-validati
 ---
 
 # Compliance validation for AWS Elastic Disaster Recovery
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS Elastic Disaster Recovery as part of multiple AWS compliance programs.
 

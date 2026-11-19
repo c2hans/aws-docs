@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS CloudTrail Data
-<a name="list_cloudtrail-data"></a>
 
 AWS CloudTrail Data (service prefix: `cloudtrail-data`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

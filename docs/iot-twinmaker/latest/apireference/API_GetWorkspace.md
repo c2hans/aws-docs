@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetWorkspace
-<a name="API_GetWorkspace"></a>
 
 Retrieves information about a workspace.
 

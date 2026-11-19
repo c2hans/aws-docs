@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceMetrics
-<a name="API_InferenceMetrics"></a>
 
 The metrics for an existing endpoint compared in an Inference Recommender job.
 

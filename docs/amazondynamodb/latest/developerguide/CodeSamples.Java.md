@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cod
 ---
 
 # Java code examples
-<a name="CodeSamples.Java"></a>
 
 **Topics**
 + [Java: Setting your AWS credentials](#CodeSamples.Java.Credentials)

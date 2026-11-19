@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Sched
 ---
 
 # ScheduleRun
-<a name="API_ScheduleRun"></a>
 
 Schedules a run.
 

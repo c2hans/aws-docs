@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdvancedSecurityAdditionalFlowsType
-<a name="API_AdvancedSecurityAdditionalFlowsType"></a>
 
 Threat protection configuration options for additional authentication types in your user pool, including custom authentication.
 

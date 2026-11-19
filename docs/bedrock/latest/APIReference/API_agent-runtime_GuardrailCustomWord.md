@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailCustomWord
-<a name="API_agent-runtime_GuardrailCustomWord"></a>
 
 The custom word details for the filter in the Guardrail.
 

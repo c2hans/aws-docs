@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-terminology.h
 ---
 
 # VPC terminology
-<a name="vpc-terminology"></a>
 
 The following terminology can be useful when you work with a VPC and AWS Quick.
 

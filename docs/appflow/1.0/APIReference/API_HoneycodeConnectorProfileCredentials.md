@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_HoneycodeCo
 ---
 
 # HoneycodeConnectorProfileCredentials
-<a name="API_HoneycodeConnectorProfileCredentials"></a>
 
  The connector-specific credentials required when using Amazon Honeycode.
 

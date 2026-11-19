@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Saving projects in AWS SCT
-<a name="CHAP_UserInterface.SaveProject"></a>
 
 Use the following procedure to save an AWS Schema Conversion Tool project.
 

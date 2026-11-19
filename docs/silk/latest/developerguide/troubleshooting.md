@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/troubleshooti
 ---
 
 # Troubleshooting: Determining the client's IP address
-<a name="troubleshooting"></a>
 
 By default, and when it's efficient, Amazon Silk routes requests through a remote proxy server in the Amazon cloud. Thus, the source IP for a request may be that of the remote proxy, and not of the originating client.
 

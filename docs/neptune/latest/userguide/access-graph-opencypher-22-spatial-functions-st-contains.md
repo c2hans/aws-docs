@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # ST\_Contains
-<a name="access-graph-opencypher-22-spatial-functions-st-contains"></a>
 
 ST\_Contains returns true if the 2D projection of the first input geometry contains the 2D projection of the second input geometry. Geometry A contains geometry B if every point in B is a point in A, and their interiors have nonempty intersection. ST\_Contains(A, B) is equivalent to ST\_Within(B, A).
 

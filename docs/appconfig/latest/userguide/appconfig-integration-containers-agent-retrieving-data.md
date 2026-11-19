@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-int
 ---
 
 # Retrieving configuration data for applications running in Amazon ECS and Amazon EKS
-<a name="appconfig-integration-containers-agent-retrieving-data"></a>
 
 You can retrieve configuration data from AWS AppConfig Agent for applications running in Amazon ECS and Amazon EKS by using an HTTP localhost call. The following examples use `curl` with an HTTP client. You can call the agent using any available HTTP client supported by your application language or available libraries.
 

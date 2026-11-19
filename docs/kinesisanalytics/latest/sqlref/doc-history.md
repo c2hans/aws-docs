@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/doc-histo
 ---
 
 # Document History
-<a name="doc-history"></a>
 
 The following table describes important changes to the documentation since the last release of the Amazon Kinesis Data Analytics SQL Reference.
 + **API version: 2015-08-14**

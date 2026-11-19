@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MembershipMLPaymentConfig
-<a name="API_MembershipMLPaymentConfig"></a>
 
 An object representing the collaboration member's machine learning payment responsibilities set by the collaboration creator.
 

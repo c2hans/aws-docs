@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Expense
 ---
 
 # ExpenseDocument
-<a name="API_ExpenseDocument"></a>
 
 The structure holding all the information returned by AnalyzeExpense
 

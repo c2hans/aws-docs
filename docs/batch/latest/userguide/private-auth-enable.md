@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/private-auth-enab
 ---
 
 # Tutorial: Create a secret for private registry authentication
-<a name="private-auth-enable"></a>
 
 Complete the following steps to create a secret for your private registry credentials with AWS Secrets Manager.
 

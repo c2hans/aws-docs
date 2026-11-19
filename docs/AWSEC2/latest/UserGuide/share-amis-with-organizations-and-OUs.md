@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/share-amis-with-
 ---
 
 # Share an AMI with organizations and organizational units
-<a name="share-amis-with-organizations-and-OUs"></a>
 
  [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.html) is an account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage. You can share an AMI with an organization or an organizational unit (OU) that you have created, in addition to [sharing it with specific accounts](sharingamis-explicit.md).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/support
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # UNLOAD
-<a name="supported-sql-constructs.UNLOAD"></a>
 
 Timestream for LiveAnalytics supports an `UNLOAD` command as an extension to its SQL support. Data types supported by `UNLOAD` are described in [Supported data types](supported-data-types.md). The `time` and `unknown` types do not apply to `UNLOAD`.
 

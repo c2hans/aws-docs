@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleCondition
-<a name="API_RuleCondition"></a>
 
 The conditional expression used to evaluate an email for determining if a rule action should be taken.
 

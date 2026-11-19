@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-clouds
 ---
 
 # AWS CloudShell events
-<a name="events-ref-cloudshell"></a>
 
 CloudShell sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

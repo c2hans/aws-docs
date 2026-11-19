@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/data-encryption.html
 ---
 
 # Data encryption
-<a name="data-encryption"></a>
 
 See the following information about how AWS Health encrypts data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSec
 ---
 
 # DeleteSecurityGroup
-<a name="API_DeleteSecurityGroup"></a>
 
 Deletes a security group.
 

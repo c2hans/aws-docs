@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This strategy document provides an overview of a generative AI-powered software development experience. It explores the five dimensions in the [5-I framework](generative-ai-dimensions.md)—Investigate, Integrate, Interact, Iterate, and Impact. These dimensions provide a strategic roadmap for integrating generative AI across the entire software development lifecycle (SDLC). It also describes the [foundational capabilities](generative-ai-capabilities.md) that are required to successfully implement this framework. The capabilities span areas like project management, DevSecOps, AI assistants, knowledge management, and more. It provides [best practices](best-practices.md) to consider when integrating generative AI, and it helps you use [metrics](measuring-success.md) to measure the impact that generative AI has on your software development experience.
 

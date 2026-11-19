@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloud9Administrator
-<a name="AWSCloud9Administrator"></a>
 
 **Description**: Provides administrator access to AWS Cloud9.
 

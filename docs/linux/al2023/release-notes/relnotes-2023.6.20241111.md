@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 ---
 
 # Amazon Linux 2023 version 2023.6.20241111 release notes
-<a name="relnotes-2023.6.20241111"></a>
 
 These are the release notes for Amazon Linux 2023 (AL2023) version 2023.6.20241111.
 
@@ -37,7 +36,7 @@ Amazon Linux 2023 minimal AMIs were incorrectly configured with 8GB root volume 
 ### New packages in AL2023.6.20241111 since AL2023.6.20241031
 <a name="new-AL2023.6.20241031-AL2023.6.20241111"></a>
 
- Comparing AL2023.6.20241031 version 2023.6.20241031 to AL2023.6.20241111 version [2023.6.20241111](#relnotes-2023.6.20241111).
+ Comparing AL2023.6.20241031 version 2023.6.20241031 to AL2023.6.20241111 version [2023.6.20241111](relnotes-2023.6.20241111.md).
 
 | Package Type | Number of new packages in AL2023.6.20241111 compared to AL2023.6.20241031 |
 | --- | --- |
@@ -119,7 +118,7 @@ New packages in AL2023.6.20241111:
 ### AL2023.6.20241111 upgrades from AL2023.6.20241031
 <a name="vercmp-AL2023.6.20241031-AL2023.6.20241111"></a>
 
- Comparing [2023.6.20241031](relnotes-2023.6.20241031.md) to [2023.6.20241111](#relnotes-2023.6.20241111).
+ Comparing [2023.6.20241031](relnotes-2023.6.20241031.md) to [2023.6.20241111](relnotes-2023.6.20241111.md).
 
 | Package Type | Count |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailWordPolicyConfig
-<a name="API_GuardrailWordPolicyConfig"></a>
 
 Contains details about the word policy to configured for the guardrail.
 

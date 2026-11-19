@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-en
 ---
 
 # Establish access and permissions for Git-based repositories
-<a name="emr-studio-enable-git"></a>
 
 EMR Studio supports the following Git-based services:
 + [AWS CodeCommit](https://aws.amazon.com/codecommit)

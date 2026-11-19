@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateOriginRequestPolicy
-<a name="API_CreateOriginRequestPolicy"></a>
 
 Creates an origin request policy.
 

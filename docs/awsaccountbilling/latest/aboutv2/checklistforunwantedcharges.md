@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checkli
 ---
 
 # Understanding unexpected charges
-<a name="checklistforunwantedcharges"></a>
 
 |  |
 | --- |

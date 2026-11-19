@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Command AwsJsonSubstitutionCommandPreprocessorConfig
-<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig"></a>
 
 <a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-description"></a>The `AwsJsonSubstitutionCommandPreprocessorConfig` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
 

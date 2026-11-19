@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountDetail
-<a name="API_AccountDetail"></a>
 
 Contains information about the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # AWS CLI examples for custom endpoints for Amazon Aurora
-<a name="Aurora.Endpoint.Tutorial"></a>
 
 The following tutorial uses AWS CLI examples with Unix shell syntax to show how you might define a cluster with several "small" DB instances and a few "big" DB instances, and create custom endpoints to connect to each set of DB instances. To run similar commands on your own system, you should be familiar enough with the basics of working with Aurora clusters and AWS CLI usage to supply your own values for parameters such as region, subnet group, and VPC security group.
 

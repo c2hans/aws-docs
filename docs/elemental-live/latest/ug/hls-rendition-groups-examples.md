@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/hls-rendition-g
 ---
 
 # Examples of HLS rendition groups
-<a name="hls-rendition-groups-examples"></a>
 
 ## Example 1
 <a name="hls-rendition-groups-example-1"></a>

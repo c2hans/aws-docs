@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Cr
 ---
 
 # CreateMetadataTransferJob
-<a name="API_CreateMetadataTransferJob"></a>
 
 Creates a new metadata transfer job.
 

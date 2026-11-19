@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades-tur
 ---
 
 # Turning on auto upgrade with the console or AWS CLI
-<a name="auto-version-upgrades-turning-on-auto-upgrade-with-the-console-or-aws-cli"></a>
 
 This section describes how to turn on auto upgrade for a new job or an existing job. The `GlueVersion` value is case sensitive. Use lowercase `auto`.
 

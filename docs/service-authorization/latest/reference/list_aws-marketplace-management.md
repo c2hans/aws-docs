@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Marketplace Management Portal
-<a name="list_aws-marketplace-management"></a>
 
 AWS Marketplace Management Portal (service prefix: `aws-marketplace-management`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

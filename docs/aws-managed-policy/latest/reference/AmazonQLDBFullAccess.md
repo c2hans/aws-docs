@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonQLDBFullAccess
-<a name="AmazonQLDBFullAccess"></a>
 
 **Description**: Provides full access to Amazon QLDB via the service API.
 

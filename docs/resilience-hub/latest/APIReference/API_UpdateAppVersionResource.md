@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UpdateAppVersionResource
-<a name="API_UpdateAppVersionResource"></a>
 
 Updates the resource details in the AWS Resilience Hub application.
 

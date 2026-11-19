@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/neptune-clu
 ---
 
 # neptune-cluster-deletion-protection-enabled
-<a name="neptune-cluster-deletion-protection-enabled"></a>
 
 Checks if an Amazon Neptune DB cluster has deletion protection enabled. The rule is NON\_COMPLIANT if an Amazon Neptune cluster has the deletionProtection field set to false.
 

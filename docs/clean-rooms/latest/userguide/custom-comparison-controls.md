@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-comp
 ---
 
 # Comparison controls
-<a name="custom-comparison-controls"></a>
 
 In SQL, literal comparison matches a column from your dataset against a literal value typed directly into the query. Column comparison matches values from two different columns against each other, either within the same table or across joined tables.
 

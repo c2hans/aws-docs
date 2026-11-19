@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-manage-schedule.
 ---
 
 # Deleting actions from the schedule
-<a name="ips-manage-schedule"></a>
 
 You can delete input switch actions from the MediaLive schedule. There are different rules for deleting actions depending on the current state of the channel. The channel can be running, idle, or recovering. The channel is idle if you manually stopped it. The channel is recovering if it failed and MediaLive is automatically restarting it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetOpsSummary
-<a name="API_GetOpsSummary"></a>
 
 View a summary of operations metadata (OpsData) based on specified filters and aggregators. OpsData can include information about AWS Systems Manager OpsCenter operational workitems (OpsItems) as well as information about any AWS resource or service configured to report OpsData to AWS Systems Manager Explorer.
 

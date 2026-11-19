@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/raci-matrix
 ---
 
 # RACI matrix
-<a name="raci-matrix"></a>
 
  The following RACI matrix defines roles and responsibilities across the Security Incident Response implementation process. RACI stands for Responsible (R), Accountable (A), Consulted (C), and Informed (I).
 

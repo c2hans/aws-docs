@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Protocol
 ---
 
 # ProtocolsListData
-<a name="API_ProtocolsListData"></a>
 
 An AWS Firewall Manager protocols list.
 

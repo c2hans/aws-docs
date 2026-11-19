@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Star
 ---
 
 # StartDomainVerification
-<a name="API_StartDomainVerification"></a>
 
  Starts the domain verification process for a custom domain name.
 

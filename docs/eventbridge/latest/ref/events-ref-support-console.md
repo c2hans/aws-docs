@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-suppor
 ---
 
 # AWS Support Center Console events
-<a name="events-ref-support-console"></a>
 
 Support Center Console sends service events to EventBridge via AWS CloudTrail.
 

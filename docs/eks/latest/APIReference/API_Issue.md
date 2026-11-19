@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Issue.html
 ---
 
 # Issue
-<a name="API_Issue"></a>
 
 An object representing an issue with an Amazon EKS resource.
 

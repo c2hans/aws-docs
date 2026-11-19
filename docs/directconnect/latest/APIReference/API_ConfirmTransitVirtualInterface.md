@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Co
 ---
 
 # ConfirmTransitVirtualInterface
-<a name="API_ConfirmTransitVirtualInterface"></a>
 
 Accepts ownership of a transit virtual interface created by another AWS account.
 

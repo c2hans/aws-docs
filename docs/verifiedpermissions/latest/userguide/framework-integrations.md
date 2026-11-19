@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/fra
 ---
 
 # Integrations for Amazon Verified Permissions
-<a name="framework-integrations"></a>
 
 Amazon Verified Permissions integrations help you implement fine-grained authorization in your applications while minimizing code and following framework-specific best practices. These integrations provide middleware components and utilities that seamlessly connect your application with Verified Permissions.
 

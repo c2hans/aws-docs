@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazon-s3-poli
 ---
 
 # Bucket policy examples using condition keys
-<a name="amazon-s3-policy-keys"></a>
 
 You can use access policy language to specify conditions when you grant permissions. You can use the optional `Condition` element, or `Condition` block, to specify conditions for when a policy is in effect.
 

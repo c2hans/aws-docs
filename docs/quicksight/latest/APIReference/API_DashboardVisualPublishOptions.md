@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardVisualPublishOptions
-<a name="API_DashboardVisualPublishOptions"></a>
 
 The visual publish options of a visual in a dashboard
 

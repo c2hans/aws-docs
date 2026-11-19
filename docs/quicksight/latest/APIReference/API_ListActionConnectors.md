@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListA
 ---
 
 # ListActionConnectors
-<a name="API_ListActionConnectors"></a>
 
 Lists all action connectors in the specified AWS account. Returns summary information for each connector including its name, type, creation time, and status.
 

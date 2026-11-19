@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/exporting
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Exporting your search results from evidence finder
-<a name="exporting-search-results-from-evidence-finder"></a>
 
 After you've reviewed your search results, you can generate an assessment report based on those results. Alternatively, you can export your evidence finder search results in a CSV file.
 

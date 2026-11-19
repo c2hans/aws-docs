@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/permissions-service.htm
 ---
 
 # Service roles for AWS HealthOmics
-<a name="permissions-service"></a>
 
 A service role is an AWS Identity and Access Management (IAM) role that grants permissions for an AWS service to access resources in your account. You provide a service role to AWS HealthOmics when you start an import job or start a run.
 

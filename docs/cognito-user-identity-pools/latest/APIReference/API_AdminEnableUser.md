@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminEnableUser
-<a name="API_AdminEnableUser"></a>
 
 Activates sign-in for a user profile that previously had sign-in access disabled.
 

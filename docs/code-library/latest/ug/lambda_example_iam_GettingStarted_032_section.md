@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/lambda_example_ia
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Using property variables in monitoring dashboards to monitor multiple serverless functions
-<a name="lambda_example_iam_GettingStarted_032_section"></a>
 
 The following code example shows how to:
 + Create Lambda functions for monitoring

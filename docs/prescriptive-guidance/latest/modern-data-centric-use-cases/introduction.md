@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Best practices for designing and implementing modern data-centric architecture use cases
-<a name="introduction"></a>
 
 *Apoorva Patrikar and Santosh Gantaram, Amazon Web Services*
 

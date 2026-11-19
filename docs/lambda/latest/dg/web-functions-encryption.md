@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-encryptio
 ---
 
 # Encryption at rest for Web Functions
-<a name="web-functions-encryption"></a>
 
 AWS Lambda encrypts the data for your Lambda Web Functions at rest on the server side. This page explains the encryption options available to you and how to configure a customer managed key.
 

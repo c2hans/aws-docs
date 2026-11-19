@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # GetDatasetIntegration
-<a name="API_GetDatasetIntegration"></a>
 
 Returns the dataset integration for the caller's account in the current region.
 

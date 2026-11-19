@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultTextFieldControlOptions
-<a name="API_DefaultTextFieldControlOptions"></a>
 
 The default options that correspond to the `TextField` filter control type.
 

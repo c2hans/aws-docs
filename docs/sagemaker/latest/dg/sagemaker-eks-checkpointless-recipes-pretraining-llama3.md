@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Tutorials - Amazon SageMaker HyperPod Checkpointless Pretraining Llama 3 70b
-<a name="sagemaker-eks-checkpointless-recipes-pretraining-llama3"></a>
 
 The following sequence of steps is required to run checkpointless training recipes on HyperPod.
 

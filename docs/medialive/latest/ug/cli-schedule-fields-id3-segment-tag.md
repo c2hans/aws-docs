@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cli-schedule-fields-
 ---
 
 # ID3 segment tag item – payload
-<a name="cli-schedule-fields-id3-segment-tag"></a>
 
 For information about the meaning and values for the fields in the following JSON, see [Fields for ID3 segment tags](schedule-fields-for-id3-segment-tags.md).
 

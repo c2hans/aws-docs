@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Namespace
-<a name="API_Namespace"></a>
 
 A collection of database objects and users.
 

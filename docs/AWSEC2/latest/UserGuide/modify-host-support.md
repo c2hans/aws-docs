@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-host-supp
 ---
 
 # Modify supported instance types for an existing Amazon EC2 Dedicated Host
-<a name="modify-host-support"></a>
 
 You can modify a Dedicated Host to change the instance types that it supports. If it currently supports a single instance type, you can modify it to support multiple instance types within that instance family. Similarly, if it currently supports multiple instance types, you can modify it to support a specific instance type only.
 

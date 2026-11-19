@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionEventInvok
 ---
 
 # FunctionEventInvokeConfig
-<a name="API_FunctionEventInvokeConfig"></a>
 
 ## Contents
 <a name="API_FunctionEventInvokeConfig_Contents"></a>

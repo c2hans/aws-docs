@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/vpc-out-caseB.html
 ---
 
 # Use case B – channel includes VPC inputs
-<a name="vpc-out-caseB"></a>
 
 This use case applies if the MediaLive channel includes inputs that use the VPC:
 + MediaConnect inputs

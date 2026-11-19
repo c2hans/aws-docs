@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/use-ca-with-vc.html
 ---
 
 # Using Amazon Chime SDK voice analytics with Voice Connectors
-<a name="use-ca-with-vc"></a>
 
 You use Amazon Chime SDK call analytics with your Voice Connectors to automatically generate insights into your calls. Specifically, you can identify users and predict their tone, either positive, negative, or neutral.
 

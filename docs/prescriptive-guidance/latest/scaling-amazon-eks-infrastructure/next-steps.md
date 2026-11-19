@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide provides information to help you optimize Amazon EKS with respect to compute scaling, workload scaling, network scaling, and cost optimization. By understanding and applying these concepts, organizations can achieve a highly efficient, scalable, and cost-effective cloud environment that meets their dynamic needs.
 

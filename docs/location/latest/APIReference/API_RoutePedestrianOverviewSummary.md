@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianOverviewSummary
-<a name="API_RoutePedestrianOverviewSummary"></a>
 
 Summary including duration and distance for the entire leg.
 

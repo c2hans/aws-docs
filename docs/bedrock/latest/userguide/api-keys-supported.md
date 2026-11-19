@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-suppor
 ---
 
 # Supported Regions and AWS software development kits (SDKs) for Amazon Bedrock API keys
-<a name="api-keys-supported"></a>
 
 The following list shows the AWS Regions that support API keys:
 + ap-northeast-1

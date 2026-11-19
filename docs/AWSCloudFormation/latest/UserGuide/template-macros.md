@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/templ
 ---
 
 # Perform custom processing on CloudFormation templates with template macros
-<a name="template-macros"></a>
 
 With macros, you can perform custom processing on templates, from simple actions like find-and-replace operations to extensive transformations of entire templates.
 

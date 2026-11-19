@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Amazon Kinesis Video Streams WebRTC SDK for iOS
-<a name="kvswebrtc-sdk-ios"></a>
 
 The following step-by-step instructions describe how to download, build, and run the Kinesis Video Streams WebRTC SDK in iOS and its corresponding samples.
 

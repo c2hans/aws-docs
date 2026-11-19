@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Template AssociatedRule
-<a name="aws-properties-networksecuritymanager-template-associatedrule"></a>
 
 Specifies an association between a template and a rule. Every rule that you associate with a template must use the same firewall type as the template.
 

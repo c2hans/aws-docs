@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # AWS Data Processing Addendum (DPA)
-<a name="aws-data-processing-addendum-dpa"></a>
 
 AWS offers a GDPR-compliant [AWS Data Processing Addendum](https://d1.awsstatic.com/legal/aws-dpa/aws-dpa.pdf) (AWS DPA), which enables AWS customers to comply with GDPR contractual obligations. The AWS DPA is incorporated into the [AWS Service Terms](https://aws.amazon.com/service-terms/) and applies automatically to all customers globally whenever customers use AWS services to process customer data, regardless of which data protection laws apply to that processing.
 

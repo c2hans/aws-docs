@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterSlurmConfigDetails
-<a name="API_ClusterSlurmConfigDetails"></a>
 
 The Slurm configuration details for an instance group in a SageMaker HyperPod cluster.
 

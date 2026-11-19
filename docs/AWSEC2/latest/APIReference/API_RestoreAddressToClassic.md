@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreAd
 ---
 
 # RestoreAddressToClassic
-<a name="API_RestoreAddressToClassic"></a>
 
 **Note**
 This action is deprecated.

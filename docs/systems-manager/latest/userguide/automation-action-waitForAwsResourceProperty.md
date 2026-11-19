@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:waitForAwsResourceProperty` – Wait on an AWS resource property
-<a name="automation-action-waitForAwsResourceProperty"></a>
 
 The `aws:waitForAwsResourceProperty` action allows your automation to wait for a specific resource state or event state before continuing the automation. For more examples of how to use this action, see [Additional runbook examples](automation-document-examples.md).
 

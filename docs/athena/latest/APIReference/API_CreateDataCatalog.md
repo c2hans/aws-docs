@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateDat
 ---
 
 # CreateDataCatalog
-<a name="API_CreateDataCatalog"></a>
 
 Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same AWS account.
 

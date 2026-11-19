@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunSourceSummary
-<a name="API_TestRunSourceSummary"></a>
 
 A monitoring-source snapshot captured for a test run. Exactly one member is set.
 

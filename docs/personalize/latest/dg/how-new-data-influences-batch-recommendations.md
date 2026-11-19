@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/how-new-data-influ
 ---
 
 # How new data influences batch recommendations (custom resources)
-<a name="how-new-data-influences-batch-recommendations"></a>
 
 After you create a custom solution version, how new data influences batch recommendations depends the data's type, the method of import, and the custom recipe you use.
 

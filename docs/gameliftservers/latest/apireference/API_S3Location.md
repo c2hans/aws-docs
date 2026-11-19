@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The location in Amazon S3 where build or script files are stored for access by Amazon GameLift Servers.
 

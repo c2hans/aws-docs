@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/configuring-reso
 ---
 
 # Creating basic queries (JavaScript)
-<a name="configuring-resolvers-js"></a>
 
 GraphQL resolvers connect the fields in a type’s schema to a data source. Resolvers are the mechanism by which requests are fulfilled.
 

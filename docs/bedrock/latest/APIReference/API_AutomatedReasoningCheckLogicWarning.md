@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckLogicWarning
-<a name="API_AutomatedReasoningCheckLogicWarning"></a>
 
 Identifies logical issues in the translated statements that exist independent of any policy rules, such as statements that are always true or always false.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/how-n
 ---
 
 # How Network Access Analyzer works
-<a name="how-network-access-analyzer-works"></a>
 
 Network Access Analyzer uses automated reasoning algorithms to analyze the network paths that a packet can take between resources in an AWS network. It then produces findings for paths that match a customer defined Network Access Scope. Network Access Analyzer performs a static analysis of a network configuration, meaning that no packets are transmitted in the network as part of this analysis. Because Network Access Analyzer only considers the state of the network as described in the network configuration, packet loss that is due to transient network interruptions or service failures is not considered in the analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # GetResourceMetadata
-<a name="API_GetResourceMetadata"></a>
 
 Retrieve the metadata for different features. For example, the metadata might indicate that a feature is turned on or off on a specific DB instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseVersionSummary
-<a name="API_AutonomousDatabaseVersionSummary"></a>
 
 A summary of an available Oracle Database software version for Autonomous Databases.
 

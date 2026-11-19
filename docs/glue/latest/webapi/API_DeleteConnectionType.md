@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteConnectionT
 ---
 
 # DeleteConnectionType
-<a name="API_DeleteConnectionType"></a>
 
 Deletes a custom connection type in AWS Glue.
 

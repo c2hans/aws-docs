@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Product
 ---
 
 # ProductV2
-<a name="API_ProductV2"></a>
 
 Defines the structure for the productV2.
 

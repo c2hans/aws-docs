@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot-general.html
 ---
 
 # General Amazon SES issues
-<a name="troubleshoot-general"></a>
 
 The information on this page will explain and help diagnose issues that you may encounter when using Amazon SES.
 

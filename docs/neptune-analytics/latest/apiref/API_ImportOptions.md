@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Impo
 ---
 
 # ImportOptions
-<a name="API_ImportOptions"></a>
 
 Options for how to perform an import.
 

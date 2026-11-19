@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/what-is
 ---
 
 # What Is the AWS Elemental MediaPackage Live API Reference?
-<a name="what-is"></a>
 
 This is the AWS Elemental MediaPackage REST API Reference. It contains examples of REST resources and their operations.
 

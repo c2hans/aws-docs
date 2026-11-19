@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Advanced features and topics for Amazon Bedrock AgentCore Gateway
-<a name="gateway-advanced"></a>
 
 This chapter covers some advanced topics and additional information that can help supplement your knowledge of gateways and how you can use them effectively in your applications.
 

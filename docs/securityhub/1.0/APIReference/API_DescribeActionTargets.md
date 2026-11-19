@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Describ
 ---
 
 # DescribeActionTargets
-<a name="API_DescribeActionTargets"></a>
 
 Returns a list of the custom action targets in Security Hub CSPM in your account.
 

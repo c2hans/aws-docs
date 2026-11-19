@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 ---
 
 # mysqldump and mysqlpump
-<a name="mysqldump-and-mysqlpump"></a>
 
 [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) and [mysqlpump](https://dev.mysql.com/doc/refman/8.0/en/mysqlpump.html) are native database backup tools for MySQL. MariaDB supports mysqldump but doesn't support mysqlpump. Both of these tools create logical backups and are part of the MySQL client programs. mysqldump supports single-threaded processing. mysqlpump supports parallel processing of databases and objects within databases, to speed up the dump process. It was introduced in MySQL version 5.7.8. mysqlpump was removed in MySQL version 8.4.
 

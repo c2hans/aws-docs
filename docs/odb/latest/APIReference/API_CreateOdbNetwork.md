@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateOdbNet
 ---
 
 # CreateOdbNetwork
-<a name="API_CreateOdbNetwork"></a>
 
 Creates an ODB network.
 

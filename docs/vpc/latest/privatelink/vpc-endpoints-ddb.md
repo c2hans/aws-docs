@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-ddb
 ---
 
 # Gateway endpoints for Amazon DynamoDB
-<a name="vpc-endpoints-ddb"></a>
 
 You can access Amazon DynamoDB from your VPC using gateway VPC endpoints. After you create the gateway endpoint, you can add it as a target in your route table for traffic destined from your VPC to DynamoDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # RejectedEntityInfo
-<a name="API_RejectedEntityInfo"></a>
 
 If an entity is rejected when a `PutLogEvents` request was made, this includes details about the reason for the rejection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Understanding international and local routes for India
-<a name="registrations-sms-senderid-india-routes"></a>
 
 **International routes (ILDO)**
 

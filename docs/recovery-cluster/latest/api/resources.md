@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/resources.ht
 ---
 
 # Resources
-<a name="resources"></a>
 
 The Amazon Application Recovery Controller REST API includes the following resources.
 

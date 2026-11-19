@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchDeletePartit
 ---
 
 # BatchDeletePartition
-<a name="API_BatchDeletePartition"></a>
 
 Deletes one or more partitions in a batch operation.
 

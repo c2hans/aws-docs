@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Directory Service Data
-<a name="list_ds-data"></a>
 
 AWS Directory Service Data (service prefix: `ds-data`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

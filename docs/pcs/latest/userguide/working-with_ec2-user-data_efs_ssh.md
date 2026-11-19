@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ec2-us
 ---
 
 # Example: Enabling passwordless SSH
-<a name="working-with_ec2-user-data_efs_ssh"></a>
 
 You can build on the shared home directory example to implement SSH connections between cluster instances using SSH keys. For each user using the shared home file system, run a script that resembles the following:
 

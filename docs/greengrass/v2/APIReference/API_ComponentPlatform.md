@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentPlatform
-<a name="API_ComponentPlatform"></a>
 
 Contains information about a platform that a component supports.
 

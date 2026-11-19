@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SqlAlias.html
 ---
 
 # SqlAlias
-<a name="API_SqlAlias"></a>
 
 Represents a single entry in the list of values for `SqlAliases`.
 

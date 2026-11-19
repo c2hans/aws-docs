@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet SpotFleetLaunchSpecification
-<a name="aws-properties-ec2-spotfleet-spotfleetlaunchspecification"></a>
 
 Specifies the launch specification for one or more Spot Instances. If you include On-Demand capacity in your fleet request, you can't use `SpotFleetLaunchSpecification`; you must use [ LaunchTemplateConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html).
 

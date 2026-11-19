@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/activat
 ---
 
 # AWS Systems Manager Hybrid Activations
-<a name="activations"></a>
 
 **The Hybrid Activations page will be deprecated on December 31, 2026.**
 As we simplify the Systems Manager console experience, hybrid activations will move to the unified Systems Manager console. All your existing activations stay available via API and viewable in the unified console. [Learn more](systems-manager-unified-console.md)

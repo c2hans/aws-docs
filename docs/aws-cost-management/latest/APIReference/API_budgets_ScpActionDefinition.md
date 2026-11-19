@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ScpActionDefinition
-<a name="API_budgets_ScpActionDefinition"></a>
 
 The service control policies (SCP) action definition details.
 

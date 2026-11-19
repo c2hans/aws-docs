@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeReco
 ---
 
 # DescribeRecoverySnapshots
-<a name="API_DescribeRecoverySnapshots"></a>
 
 Lists all Recovery Snapshots for a single Source Server.
 

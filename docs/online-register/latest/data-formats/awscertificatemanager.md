@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Certificate Manager
-<a name="awscertificatemanager"></a>
 
 AWS Certificate Manager provides the following APIs for data retrieval.
 

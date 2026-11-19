@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-find-wor
 ---
 
 # Find your Amazon Managed Service for Prometheus workspace details, including ARN
-<a name="AMP-find-workspace-details"></a>
 
 You can find the details of your Amazon Managed Service for Prometheus workspace by using either the AWS console or the AWS CLI.
 

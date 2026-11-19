@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Resol
 ---
 
 # ResolveCase
-<a name="API_ResolveCase"></a>
 
 Resolves a support case. This operation takes a `caseId` and returns the initial and final state of the case.
 
@@ -54,11 +53,11 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [finalCaseStatus](#API_ResolveCase_ResponseSyntax) **   <a name="AWSSupport-ResolveCase-response-finalCaseStatus"></a>
-The status of the case after the [ResolveCase](#API_ResolveCase) request was processed.
+The status of the case after the [ResolveCase](API_ResolveCase.md) request was processed.
 Type: String
 
  ** [initialCaseStatus](#API_ResolveCase_ResponseSyntax) **   <a name="AWSSupport-ResolveCase-response-initialCaseStatus"></a>
-The status of the case when the [ResolveCase](#API_ResolveCase) request was sent.
+The status of the case when the [ResolveCase](API_ResolveCase.md) request was sent.
 Type: String
 
 ## Errors

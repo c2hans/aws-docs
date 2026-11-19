@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/loop-prompts.h
 ---
 
 # Flow block in Connect Customer: Loop prompts
-<a name="loop-prompts"></a>
 
 This topic defines the flow block for looping a sequence of prompts while a customer or agent is on hold or in a queue.
 

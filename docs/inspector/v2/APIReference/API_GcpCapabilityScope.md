@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GcpCapabil
 ---
 
 # GcpCapabilityScope
-<a name="API_GcpCapabilityScope"></a>
 
 The scope of Google Cloud Platform (GCP) resources that Amazon Inspector scans for a single scanning type, including the scope level, the targeted resources, and the current state.
 

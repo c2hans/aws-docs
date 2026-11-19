@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-metrics-prome
 ---
 
 # Collect Slurm metrics with a managed Prometheus collector
-<a name="slurm-metrics-prometheus"></a>
 
 After you enable Slurm metrics on your AWS PCS cluster (see [Slurm metrics in AWS PCS](slurm-metrics.md)), you can use a managed Prometheus collector to automatically scrape the metrics endpoints and deliver the data for PromQL querying. The managed collector creates elastic network interfaces in your VPC subnets to reach the cluster controller's metrics endpoints on port 6817.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use tasks with your AgentCore gateway
-<a name="gateway-mcp-tasks"></a>
 
 AgentCore Gateway supports the MCP Tasks extension (`io.modelcontextprotocol/tasks`) on protocol version `2026-07-28`, using the polling model. With tasks, a long-running tool on an MCP server target can return a task ID immediately instead of holding the connection open, and the client polls for the result. Without tasks, a synchronous tool call through the gateway is limited by the 15-minute gateway invocation timeout.
 

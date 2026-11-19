@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Setting up a secure Apache Livy endpoint with TLS/SSL
-<a name="job-runs-apache-livy-secure-endpoint"></a>
 
 See the following sections to learn more about setting up Apache Livy for Amazon EMR on EKS with end-to-end TLS and SSL encryption.
 

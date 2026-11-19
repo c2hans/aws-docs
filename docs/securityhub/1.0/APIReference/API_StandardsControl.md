@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # StandardsControl
-<a name="API_StandardsControl"></a>
 
 Details for an individual security standard control.
 

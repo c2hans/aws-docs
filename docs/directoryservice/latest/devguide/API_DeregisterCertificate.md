@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Der
 ---
 
 # DeregisterCertificate
-<a name="API_DeregisterCertificate"></a>
 
 Deletes from the system the certificate that was registered for secure LDAP or client certificate authentication.
 

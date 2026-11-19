@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Mappe
 ---
 
 # MappedDataSetParameter
-<a name="API_MappedDataSetParameter"></a>
 
 A dataset parameter that is mapped to an analysis parameter.
 

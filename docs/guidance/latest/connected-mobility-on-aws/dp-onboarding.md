@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Onboarding a product
-<a name="dp-onboarding"></a>
 
 Four steps, no application code:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Contr
 ---
 
 # Using Contributor Insights built-in rules in CloudWatch
-<a name="ContributorInsights-BuiltInRules"></a>
 
 You can use Contributor Insights built-in rules to analyze metrics from other AWS services. The following services support built-in rules:
 + [Contributor Insights for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights.html) in the *Amazon DynamoDB Developer Guide*.

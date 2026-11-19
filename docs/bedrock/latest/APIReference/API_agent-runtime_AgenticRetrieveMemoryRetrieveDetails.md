@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMemoryRetrieveDetails
-<a name="API_agent-runtime_AgenticRetrieveMemoryRetrieveDetails"></a>
 
 A long-term memory retrieval that the agent chose to perform. The record reports the query and the namespace. The corresponding Retrieval step reports the results.
 

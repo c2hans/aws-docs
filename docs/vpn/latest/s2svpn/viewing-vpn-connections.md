@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/viewing-vpn-connection
 ---
 
 # View AWS Site-to-Site VPN connections
-<a name="viewing-vpn-connections"></a>
 
 ## View VPN connections using the console
 <a name="viewing-vpn-connections-console"></a>

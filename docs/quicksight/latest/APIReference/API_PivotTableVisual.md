@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableVisual
-<a name="API_PivotTableVisual"></a>
 
 A pivot table.
 

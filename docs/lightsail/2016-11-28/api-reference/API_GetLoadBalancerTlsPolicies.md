@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetLoadBalancerTlsPolicies
-<a name="API_GetLoadBalancerTlsPolicies"></a>
 
 Returns a list of TLS security policies that you can apply to Lightsail load balancers.
 

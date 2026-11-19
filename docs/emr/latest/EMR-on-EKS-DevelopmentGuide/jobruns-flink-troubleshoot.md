@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Troubleshooting
-<a name="jobruns-flink-troubleshoot"></a>
 
 This section describes how to troubleshoot problems with Amazon EMR on EKS. For information on how to troubleshoot general problems with Amazon EMR, see [Troubleshoot a cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troubleshoot.html) in the *Amazon EMR Management Guide*.
 + [Troubleshooting jobs that use PersistentVolumeClaims (PVC)](permissions-for-pvc.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteQu
 ---
 
 # DeleteQuickConnect
-<a name="API_DeleteQuickConnect"></a>
 
 Deletes a quick connect.
 

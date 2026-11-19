@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Create a replacement private offer from an existing agreement with contract pricing using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_CreateReplacementPrivateOfferWithContractPricing_section"></a>
 
 The following code examples show how to create a replacement private offer from an existing agreement with contract pricing.
 

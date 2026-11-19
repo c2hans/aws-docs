@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTaskAssessmentRunResultStatistic
-<a name="API_ReplicationTaskAssessmentRunResultStatistic"></a>
 
 The object containing the result statistics for a completed assessment run.
 

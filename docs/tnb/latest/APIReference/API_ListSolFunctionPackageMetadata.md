@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolFunct
 ---
 
 # ListSolFunctionPackageMetadata
-<a name="API_ListSolFunctionPackageMetadata"></a>
 
 Details for the function package metadata.
 

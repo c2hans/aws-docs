@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/getting-starte
 ---
 
 # Getting started with an AI coding agent
-<a name="getting-started-agent"></a>
 
 The `aws-emulator` skill teaches your AI coding agent how to work with AWS Emulator. With the skill, your agent can do the following for you:
 + Install the emulator, using the Linux package or Docker, depending on your operating system

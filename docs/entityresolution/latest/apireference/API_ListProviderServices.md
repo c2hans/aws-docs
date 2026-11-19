@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListProviderServices
-<a name="API_ListProviderServices"></a>
 
 Returns a list of all the `ProviderServices` that are available in this AWS Region.
 

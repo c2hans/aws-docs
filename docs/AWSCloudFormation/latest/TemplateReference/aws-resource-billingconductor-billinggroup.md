@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::BillingGroup
-<a name="aws-resource-billingconductor-billinggroup"></a>
 
 Creates a billing group that resembles a consolidated billing family that AWS charges, based off of the predefined pricing plan computation.
 

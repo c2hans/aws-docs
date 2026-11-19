@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateLink
-<a name="API_CreateLink"></a>
 
 Creates a new link for a specified site.
 

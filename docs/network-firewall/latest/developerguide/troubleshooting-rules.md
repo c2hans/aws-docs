@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # Troubleshooting rules in AWS Network Firewall
-<a name="troubleshooting-rules"></a>
 
 Use the information here to help you diagnose common issues that you might encounter when working with rules in Network Firewall.
 

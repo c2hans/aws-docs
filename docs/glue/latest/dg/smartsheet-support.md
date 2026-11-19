@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartsheet-support.html
 ---
 
 # AWS Glue support for Smartsheet
-<a name="smartsheet-support"></a>
 
 AWS Glue supports Smartsheet as follows:
 

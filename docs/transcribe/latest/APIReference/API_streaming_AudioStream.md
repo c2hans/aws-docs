@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # AudioStream
-<a name="API_streaming_AudioStream"></a>
 
 An encoded stream of audio blobs. Audio streams are encoded as either HTTP/2 or WebSocket data frames.
 

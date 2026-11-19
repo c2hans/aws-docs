@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Update an Amazon GameLift Servers fleet configuration
-<a name="fleets-editing"></a>
 
 Use the Amazon GameLift Servers console or the AWS CLI to update your fleet settings, change remote locations, or delete a fleet. For managed fleets, you can't change a fleet's game server build or instance type. Instead, you must replace the fleet.
 

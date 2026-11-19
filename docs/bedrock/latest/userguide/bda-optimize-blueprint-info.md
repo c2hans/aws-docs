@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-optimize-bl
 ---
 
 # Optimize your blueprints with ground truth
-<a name="bda-optimize-blueprint-info"></a>
 
 You can improve blueprint accuracy by providing example content assets with the correct expected results. Blueprint instruction optimization uses your examples to refine the natural language instructions in your blueprint fields, which improves your inference **Results** accuracy.
 

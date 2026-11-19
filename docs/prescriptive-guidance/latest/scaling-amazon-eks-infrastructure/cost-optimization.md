@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
 To support effective resource control, Kubernetes cost minimization is crucial for enterprises using this container orchestration technology. It's difficult to properly track spending in Kubernetes settings because of their complexity, which include multiple components such as pods and nodes. Through the application of cost optimization techniques, businesses can see where their resources are being spent and appropriately assign expenses to departments or projects.
 

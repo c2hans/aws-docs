@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForImageBuilder
-<a name="AWSServiceRoleForImageBuilder"></a>
 
 **Description**: Allows EC2ImageBuilder to call AWS services on your behalf.
 

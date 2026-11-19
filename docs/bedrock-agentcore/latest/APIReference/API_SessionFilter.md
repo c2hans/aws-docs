@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SessionFilter
-<a name="API_SessionFilter"></a>
 
 Contains filter criteria for listing sessions.
 

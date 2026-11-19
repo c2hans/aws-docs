@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetAnswer
-<a name="API_GetAnswer"></a>
 
 Get the answer to a specific question in a workload review.
 

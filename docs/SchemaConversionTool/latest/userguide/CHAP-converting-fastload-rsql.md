@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting FastLoad job scripts to Amazon Redshift RSQL with AWS Schema Conversion Tool
-<a name="CHAP-converting-fastload-rsql"></a>
 
 You can use the AWS Schema Conversion Tool (AWS SCT) to convert Teradata FastLoad job scripts to Amazon Redshift RSQL.
 

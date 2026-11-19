@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/enhanced-cust
 ---
 
 # Amazon EMR on EC2 – Enhanced Monitoring with CloudWatch using custom metrics and logs
-<a name="enhanced-custom-metrics"></a>
 
 ## Overview
 <a name="enhanced-custom-metrics-overview"></a>

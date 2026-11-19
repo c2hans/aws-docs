@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssumeFleetRoleForWorker
-<a name="API_AssumeFleetRoleForWorker"></a>
 
 Get credentials from the fleet role for a worker.
 

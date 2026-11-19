@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Adding custom attributes
-<a name="CloudWatch-Transaction-Search-add-custom-attributes"></a>
 
  CloudWatch Application Signals uses OpenTelemetry to auto-instrument your applications and collect spans from popular libraries in different languages, such as Java, Python, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What is manufacturing historian modernization?
 <a name="faq-1"></a>

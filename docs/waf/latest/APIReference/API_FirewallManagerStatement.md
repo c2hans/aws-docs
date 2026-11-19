@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_FirewallMana
 ---
 
 # FirewallManagerStatement
-<a name="API_FirewallManagerStatement"></a>
 
 The processing guidance for an AWS Firewall Manager rule. This is like a regular rule [Statement](API_Statement.md), but it can only contain a single rule group reference.
 

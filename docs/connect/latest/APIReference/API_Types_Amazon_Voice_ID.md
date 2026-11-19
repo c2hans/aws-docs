@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Voice ID
-<a name="API_Types_Amazon_Voice_ID"></a>
 
 The following data types are supported by Amazon Voice ID:
 +  [AuthenticationConfiguration](API_connect-voice-id_AuthenticationConfiguration.md)

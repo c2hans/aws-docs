@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Using IPv6 with Amazon RDS Data API
-<a name="data-api.ipv6"></a>
 
 Amazon RDS Data API supports IPv6 connectivity through dual-stack endpoints. This allows you to connect to Data API using IPv6 addresses while maintaining backward compatibility with IPv4.
 

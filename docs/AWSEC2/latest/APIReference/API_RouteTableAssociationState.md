@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteTabl
 ---
 
 # RouteTableAssociationState
-<a name="API_RouteTableAssociationState"></a>
 
 Describes the state of an association between a route table and a subnet or gateway.
 

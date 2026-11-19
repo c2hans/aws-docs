@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeletePrivateConnection
-<a name="API_DeletePrivateConnection"></a>
 
 Deletes a private connection.
 

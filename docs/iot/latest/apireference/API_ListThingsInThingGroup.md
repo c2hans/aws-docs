@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingsIn
 ---
 
 # ListThingsInThingGroup
-<a name="API_ListThingsInThingGroup"></a>
 
 Lists the things in the specified group.
 

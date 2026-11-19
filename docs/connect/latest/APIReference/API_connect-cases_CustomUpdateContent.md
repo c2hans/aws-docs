@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CustomUpdateContent
-<a name="API_connect-cases_CustomUpdateContent"></a>
 
 Represents the updated content of a `Custom` related item.
 

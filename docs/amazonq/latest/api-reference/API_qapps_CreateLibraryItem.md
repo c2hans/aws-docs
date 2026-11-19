@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # CreateLibraryItem
-<a name="API_qapps_CreateLibraryItem"></a>
 
 Creates a new library item for an Amazon Q App, allowing it to be discovered and used by other allowed users.
 

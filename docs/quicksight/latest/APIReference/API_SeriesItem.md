@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Serie
 ---
 
 # SeriesItem
-<a name="API_SeriesItem"></a>
 
 The series item configuration of a line chart.
 

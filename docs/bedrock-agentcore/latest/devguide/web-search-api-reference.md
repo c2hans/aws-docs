@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-se
 ---
 
 # AgentCore Web Search request and response
-<a name="web-search-api-reference"></a>
 
 This page describes the fields of an `InvokeWebSearch` request, the rules that the API applies to them, and the response.
 

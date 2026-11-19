@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DataTra
 ---
 
 # DataTransferProgress
-<a name="API_DataTransferProgress"></a>
 
 Describes the status of a cluster while it is in the process of resizing with an incremental resize.
 

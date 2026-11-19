@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS07-BP01 Implement automated response and recovery mechanisms
-<a name="agentops07-bp01"></a>
 
  Agents that recover from failure without human intervention keep service running and give the team the failure data they need to help prevent recurrence. Manual-only recovery scales poorly and can turn routine degradations into incidents.
 

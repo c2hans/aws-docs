@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-wh
 ---
 
 # When to use service-managed record distribution
-<a name="service-managed-pk-when-to-use"></a>
 
 Use service-managed record distribution for stateless streaming workloads where record ordering is not required:
 + Log aggregation

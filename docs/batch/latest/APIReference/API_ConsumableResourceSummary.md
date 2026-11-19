@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Consumable
 ---
 
 # ConsumableResourceSummary
-<a name="API_ConsumableResourceSummary"></a>
 
 Current information about a consumable resource.
 

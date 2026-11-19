@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/reds
 ---
 
 # Working with Amazon Redshift from the Toolkit for VS Code
-<a name="redshift-overview"></a>
 
 The following sections describe how to get started working with Amazon Redshift from the AWS Toolkit for Visual Studio Code.
 

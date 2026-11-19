@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Elastic Beanstalk deploy action reference
-<a name="action-reference-Beanstalk"></a>
 
 Elastic Beanstalk is a platform within AWS that is used for deploying and scaling web applications. You use an Elastic Beanstalk action to deploy application code to your deployment environment.
 

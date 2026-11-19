@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Redu
 ---
 
 # RedundantIngestCredential
-<a name="API_RedundantIngestCredential"></a>
 
 An object representing a redundant ingest credential.
 

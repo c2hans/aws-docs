@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-refe
 ---
 
 # Greengrass CLI commands
-<a name="gg-cli-reference"></a>
 
 The Greengrass CLI provides a command line interface to interact locally with your AWS IoT Greengrass core device. Greengrass CLI commands use the following format.
 

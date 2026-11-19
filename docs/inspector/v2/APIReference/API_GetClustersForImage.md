@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetCluster
 ---
 
 # GetClustersForImage
-<a name="API_GetClustersForImage"></a>
 
 Returns a list of clusters and metadata associated with an image.
 

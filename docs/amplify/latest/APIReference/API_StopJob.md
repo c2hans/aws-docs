@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_StopJob.
 ---
 
 # StopJob
-<a name="API_StopJob"></a>
 
 Stops a job that is in progress for a branch of an Amplify app.
 

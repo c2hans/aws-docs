@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-list.h
 ---
 
 # List Your Algorithm or Model Package on AWS Marketplace
-<a name="sagemaker-mkt-list"></a>
 
 After creating and validating your algorithm or model in Amazon SageMaker AI, list your product on AWS Marketplace. The listing process makes your products available in the AWS Marketplace and the SageMaker AI console.
 

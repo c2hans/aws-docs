@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketServerSideEncryptionRule
-<a name="API_AwsS3BucketServerSideEncryptionRule"></a>
 
 An encryption rule to apply to the S3 bucket.
 

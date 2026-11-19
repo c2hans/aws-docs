@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobDetailsIdentifiers
-<a name="API_JobDetailsIdentifiers"></a>
 
 The identifiers for a job.
 

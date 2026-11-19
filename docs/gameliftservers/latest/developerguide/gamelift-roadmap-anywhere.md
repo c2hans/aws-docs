@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Development roadmap for hosting with Amazon GameLift Servers Anywhere
-<a name="gamelift-roadmap-anywhere"></a>
 
 This roadmap guides you through how to develop a hosting solution for your multiplayer game to use with your own resources (on-premises hardware or virtual machines). Amazon GameLift Servers offers several game hosting options; for more information on these options, see [Amazon GameLift Servers game hosting options](gamelift-intro-flavors.md).
 

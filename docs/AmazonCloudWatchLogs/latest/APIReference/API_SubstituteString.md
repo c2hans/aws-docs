@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # SubstituteString
-<a name="API_SubstituteString"></a>
 
 This processor matches a key’s value against a regular expression and replaces all matches with a replacement string.
 

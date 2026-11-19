@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # JobFilter
-<a name="API_JobFilter"></a>
 
 Describes a filter that returns a more specific list of recommendation export jobs. Use this filter with the [DescribeRecommendationExportJobs](API_DescribeRecommendationExportJobs.md) action.
 

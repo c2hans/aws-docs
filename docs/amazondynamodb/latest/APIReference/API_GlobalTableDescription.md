@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalTableDescription
-<a name="API_GlobalTableDescription"></a>
 
 Contains details about the global table.
 

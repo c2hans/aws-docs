@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_Amazon_S3_
 ---
 
 # Amazon S3 Vectors
-<a name="API_Types_Amazon_S3_Vectors"></a>
 
 The following data types are supported by Amazon S3 Vectors:
 +  [Bm25Score](API_S3VectorBuckets_Bm25Score.md)

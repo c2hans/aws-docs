@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspacesPoolsFilter
-<a name="API_DescribeWorkspacesPoolsFilter"></a>
 
 Describes the filter conditions for WorkSpaces Pools to return.
 

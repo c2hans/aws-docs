@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Di
 ---
 
 # DisassociateOrganizationalUnit
-<a name="API_DisassociateOrganizationalUnit"></a>
 
 Removes the association between an organizational unit and a notification configuration.
 

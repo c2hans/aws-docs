@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Extensio
 ---
 
 # ExtensionConfiguration
-<a name="API_ExtensionConfiguration"></a>
 
 The configuration for allowed file extensions.
 

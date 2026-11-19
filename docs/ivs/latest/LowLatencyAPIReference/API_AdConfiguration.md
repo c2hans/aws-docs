@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ad
 ---
 
 # AdConfiguration
-<a name="API_AdConfiguration"></a>
 
 Object specifying a configuration for a server-side advertising insertion (which can be triggered with the [InsertAdBreak](API_InsertAdBreak.md) operation).
 

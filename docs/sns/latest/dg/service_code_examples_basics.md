@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/service_code_examples_basi
 ---
 
 # Basic examples for Amazon SNS using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Simple Notification Service with AWS SDKs.
 

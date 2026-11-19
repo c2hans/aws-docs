@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Deploy OTel Container Insights with CloudFormation
-<a name="container-insights-eks-otel-cfn"></a>
 
 You can deploy OTel Container Insights as infrastructure as code by using a CloudFormation template. This approach is best for teams that manage clusters through IaC pipelines and want repeatable, version-controlled deployments.
 

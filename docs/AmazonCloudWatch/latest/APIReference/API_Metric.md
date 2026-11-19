@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # Metric
-<a name="API_Metric"></a>
 
 Represents a specific metric.
 

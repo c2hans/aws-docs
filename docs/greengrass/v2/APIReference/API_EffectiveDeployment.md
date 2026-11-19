@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Effective
 ---
 
 # EffectiveDeployment
-<a name="API_EffectiveDeployment"></a>
 
 Contains information about a deployment job that AWS IoT Greengrass sends to a Greengrass core device.
 

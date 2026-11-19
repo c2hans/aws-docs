@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/postgre
 ---
 
 # Using the postgres\_fdw extension to access external data
-<a name="postgresql-commondbatasks-fdw"></a>
 
 You can access data in a table on a remote database server with the [postgres\_fdw](https://www.postgresql.org/docs/current/static/postgres-fdw.html) extension. If you set up a remote connection from your PostgreSQL DB instance, access is also available to your read replica.
 

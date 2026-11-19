@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ServiceOptions
-<a name="API_ServiceOptions"></a>
 
 Options for the service, such as the supported Regions.
 

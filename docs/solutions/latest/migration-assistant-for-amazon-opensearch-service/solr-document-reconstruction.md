@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Document reconstruction
-<a name="solr-document-reconstruction"></a>
 
 Solr does not store a complete `_source` JSON document the way Elasticsearch and OpenSearch can. During Solr backfill, the SolrReader reconstructs each target `_source` document from Lucene stored fields in the backup.
 

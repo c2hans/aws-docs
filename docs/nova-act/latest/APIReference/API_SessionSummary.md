@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Session
 ---
 
 # SessionSummary
-<a name="API_SessionSummary"></a>
 
 Summary information about a session within a workflow run.
 

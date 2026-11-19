@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about replatforming COTS and in-house applications.
 

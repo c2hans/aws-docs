@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-vendor
 ---
 
 # AWS Marketplace Vendor Insights events
-<a name="events-ref-vendor-insights"></a>
 
 AWS Marketplace Vendor Insights sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

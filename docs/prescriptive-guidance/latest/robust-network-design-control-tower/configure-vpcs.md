@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Configuring the VPCs
-<a name="configure-vpcs"></a>
 
 A VPC is a logically isolated network in AWS that resembles a traditional data center network. A robust network usually includes three different VPCs in the network account:
 + Firewall VPC

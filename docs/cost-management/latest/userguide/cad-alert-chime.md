@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/cad-ale
 ---
 
 # Receiving anomaly alerts in chat applications
-<a name="cad-alert-chime"></a>
 
 You can use Amazon Q Developer to receive your AWS Cost Anomaly Detection alerts in Amazon Chime and Slack.
 

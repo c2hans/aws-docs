@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobS3DataSource
-<a name="API_LabelingJobS3DataSource"></a>
 
 The Amazon S3 location of the input data objects.
 

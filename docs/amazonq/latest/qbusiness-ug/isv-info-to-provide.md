@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-info-to-
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Information to be provided to the Amazon Q Business team
-<a name="isv-info-to-provide"></a>
 
 Before an independent software provider or vendor (ISV) can become a verified data accessor, they must provide either an Auth code or Trusted token issuer (TTI) configuration information to the Amazon Q Business team.
 

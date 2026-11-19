@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystemLustreMetadataConfiguration
-<a name="API_UpdateFileSystemLustreMetadataConfiguration"></a>
 
 The Lustre metadata performance configuration update for an Amazon FSx for Lustre file system using a `PERSISTENT_2` deployment type. You can request an increase in your file system's Metadata IOPS and/or switch your file system's metadata configuration mode. For more information, see [Managing metadata performance](https://docs.aws.amazon.com/fsx/latest/LustreGuide/managing-metadata-performance.html) in the *Amazon FSx for Lustre User Guide*.
 

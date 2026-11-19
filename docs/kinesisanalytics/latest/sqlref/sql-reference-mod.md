@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # MOD
-<a name="sql-reference-mod"></a>
 
 ```
 MOD ( <dividend>, <divisor> )

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
 ---
 
 # MD\_OPS 1: How do you incorporate Māori views into your technology governance and operations?
-<a name="md_ops-1-how-do-you-incorporate-māori-views-into-your-technology-governance-and-operations"></a>
 
  Where appropriate, the Māori world view (te ao Māori) and Māori knowledge and understanding (mātauranga Māori) could be incorporated into an organisation's way of operating its technology in support of Māori customers. Sometimes this cannot be done as easily as performing operations as code, instead it may require active and ongoing collaboration with Māori. Understanding Māori interests and considerations relating to data collection, processing, and storage, as well as how those interests are evolving, helps you make informed technology decisions both in the interim and the long-term.
 +  **MD\_OPS01-BP01:** **Incorporate mātauranga Māori into your operational processes when it relates to Māori data.** There are several ways of doing this. Work directly with your Māori customer or accessible internal and external Māori advisers to help develop your organisation's understanding of te ao Māori.

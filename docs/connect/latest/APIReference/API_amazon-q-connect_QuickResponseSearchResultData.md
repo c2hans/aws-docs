@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QuickResponseSearchResultData
-<a name="API_amazon-q-connect_QuickResponseSearchResultData"></a>
 
 The result of quick response search.
 

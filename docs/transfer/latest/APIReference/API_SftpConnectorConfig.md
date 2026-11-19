@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_SftpCon
 ---
 
 # SftpConnectorConfig
-<a name="API_SftpConnectorConfig"></a>
 
 Contains the details for an SFTP connector object. The connector object is used for transferring files to and from a partner's SFTP server.
 

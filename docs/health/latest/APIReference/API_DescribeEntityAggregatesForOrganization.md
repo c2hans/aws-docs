@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEntityAggregatesForOrganization
-<a name="API_DescribeEntityAggregatesForOrganization"></a>
 
 Returns a list of entity aggregates for your AWS Organizations that are affected by each of the specified events.
 
@@ -13,7 +12,12 @@ Returns a list of entity aggregates for your AWS Organizations that are affected
 ```
 {
    "awsAccountIds": [ "{{string}}" ],
-   "eventArns": [ "{{string}}" ]
+   "eventArns": [ "{{string}}" ],
+   "filter": {
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
+      }
+   }
 }
 ```
 
@@ -39,6 +43,11 @@ Array Members: Minimum number of 1 item. Maximum number of 25 items.
 Length Constraints: Maximum length of 1600.
 Pattern: `arn:aws(-[a-z]+(-[a-z]+)?)?:health:[^:]*:[^:]*:event(?:/[\w-]+){3}`
 Required: Yes
+
+ ** [filter](#API_DescribeEntityAggregatesForOrganization_RequestSyntax) **   <a name="AWSHealth-DescribeEntityAggregatesForOrganization-request-filter"></a>
+Values to narrow the results returned.
+Type: [OrganizationEntityAggregateFilter](API_OrganizationEntityAggregateFilter.md) object
+Required: No
 
 ## Response Syntax
 <a name="API_DescribeEntityAggregatesForOrganization_ResponseSyntax"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Industrial DataOps on AWS using Cognite Data Fusion
-<a name="industrial-dataops-cognite-data-fusion"></a>
 
 Publication date: **November 2024 ([Diagram history](#idcdf-diagram-history))**
 

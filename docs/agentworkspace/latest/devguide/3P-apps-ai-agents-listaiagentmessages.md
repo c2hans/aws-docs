@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # List AI Agent messages for a contact
-<a name="3P-apps-ai-agents-listaiagentmessages"></a>
 
 Retrieves the AI Agent message history for a contact, ordered by sequence number.
 

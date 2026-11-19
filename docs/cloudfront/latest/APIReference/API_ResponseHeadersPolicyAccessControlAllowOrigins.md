@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyAccessControlAllowOrigins
-<a name="API_ResponseHeadersPolicyAccessControlAllowOrigins"></a>
 
 A list of origins (domain names) that CloudFront can use as the value for the `Access-Control-Allow-Origin` HTTP response header.
 

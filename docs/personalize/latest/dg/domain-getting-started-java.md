@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/domain-getting-sta
 ---
 
 # Getting started with a Domain dataset group (SDK for Java 2.x)
-<a name="domain-getting-started-java"></a>
 
 This tutorial shows you how to use the SDK for Java 2.x to create a Domain dataset group for the VIDEO\_ON\_DEMAND domain. In this tutorial, you create a recommender for the *Top picks for you* use case.
 

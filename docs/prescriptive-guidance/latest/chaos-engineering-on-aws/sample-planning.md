@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Experiment planning document
-<a name="sample-planning"></a>
 
 ## Steady state
 <a name="planning-steady-state"></a>

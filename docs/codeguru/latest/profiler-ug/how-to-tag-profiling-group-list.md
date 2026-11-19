@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/how-to-tag-p
 ---
 
 # View tags for a profiling group
-<a name="how-to-tag-profiling-group-list"></a>
 
 Tags can help you identify and organize your AWS resources and manage access to them. For more information about using tags, see the [Tagging best practices](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf) whitepaper.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Troubleshooting
-<a name="advanced-prompt-optimization-troubleshooting"></a>
 
 | Error | Cause | Fix |
 | --- | --- | --- |

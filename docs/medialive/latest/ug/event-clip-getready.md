@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/event-clip-getready.
 ---
 
 # Get Ready
-<a name="event-clip-getready"></a>
 
 ## Pricing
 <a name="event-clip-pricing"></a>

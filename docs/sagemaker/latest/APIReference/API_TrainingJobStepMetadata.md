@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingJobStepMetadata
-<a name="API_TrainingJobStepMetadata"></a>
 
 Metadata for a training job step.
 

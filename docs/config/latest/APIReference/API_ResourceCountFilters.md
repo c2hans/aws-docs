@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceC
 ---
 
 # ResourceCountFilters
-<a name="API_ResourceCountFilters"></a>
 
 Filters the resource count based on account ID, region, and resource type.
 

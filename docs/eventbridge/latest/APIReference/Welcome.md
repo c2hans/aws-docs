@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/Welcome.
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon EventBridge helps you to respond to state changes in your AWS resources. When your resources change state, they automatically send events to an event stream. You can create rules that match selected events in the stream and route them to targets to take action. You can also use rules to take action on a predetermined schedule. For example, you can configure rules to:
 + Automatically invoke an AWS Lambda function to update DNS entries when an event notifies you that Amazon EC2 instance enters the running state.
@@ -12,4 +11,4 @@ Amazon EventBridge helps you to respond to state changes in your AWS resources. 
 
 For more information about the features of Amazon EventBridge, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

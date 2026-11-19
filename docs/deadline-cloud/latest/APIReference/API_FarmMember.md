@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FarmMember
-<a name="API_FarmMember"></a>
 
 The member of a farm.
 

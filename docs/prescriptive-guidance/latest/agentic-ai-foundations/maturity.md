@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Maturing the field: from reasoning to action
-<a name="maturity"></a>
 
 ## 1977 - Victor Lesser: multi-agent systems
 <a name="multi-agent"></a>

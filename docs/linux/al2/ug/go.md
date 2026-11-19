@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/go.html
 ---
 
 # Go in AL2
-<a name="go"></a>
 
  You might want to build your own code written in [Go](https://go.dev/) on Amazon Linux using a toolchain provided with AL2.
 

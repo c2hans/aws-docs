@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDataSourcesDetails
-<a name="API_AwsGuardDutyDetectorDataSourcesDetails"></a>
 
  Describes which data sources are activated for the detector.
 

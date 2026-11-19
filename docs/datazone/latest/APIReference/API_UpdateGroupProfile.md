@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateG
 ---
 
 # UpdateGroupProfile
-<a name="API_UpdateGroupProfile"></a>
 
 Updates the specified group profile in Amazon DataZone.
 

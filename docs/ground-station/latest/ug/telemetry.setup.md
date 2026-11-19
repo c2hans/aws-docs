@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/telemetry.setup
 ---
 
 # Set up telemetry
-<a name="telemetry.setup"></a>
 
  Follow these steps to configure telemetry for your AWS Ground Station contacts. After completing this setup, telemetry data will be delivered to your Kinesis Data Streams stream during contacts that use a telemetry-enabled mission profile. For an in-depth understanding of Kinesis Data Streams please refer to the [Kinesis Data Streams User Guide](https://docs.aws.amazon.com/streams/latest/dev/introduction.html).
 

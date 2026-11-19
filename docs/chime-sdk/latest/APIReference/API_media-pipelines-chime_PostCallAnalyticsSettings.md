@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # PostCallAnalyticsSettings
-<a name="API_media-pipelines-chime_PostCallAnalyticsSettings"></a>
 
 Allows you to specify additional settings for your Call Analytics post-call request, including output locations for your redacted transcript, which IAM role to use, and which encryption key to use.
 

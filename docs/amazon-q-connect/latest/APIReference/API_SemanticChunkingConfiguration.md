@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SemanticChunkingConfiguration
-<a name="API_amazon-q-connect_SemanticChunkingConfiguration"></a>
 
 Settings for semantic document chunking for a data source. Semantic chunking splits a document into smaller documents based on groups of similar content derived from the text with natural language processing.
 

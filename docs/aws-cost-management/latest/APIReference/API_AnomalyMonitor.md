@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AnomalyMonitor
-<a name="API_AnomalyMonitor"></a>
 
 This object continuously inspects your account's cost data for anomalies. It's based on `MonitorType` and `MonitorSpecification`. The content consists of detailed metadata and the current status of the monitor object.
 

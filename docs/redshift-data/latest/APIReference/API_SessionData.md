@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Se
 ---
 
 # SessionData
-<a name="API_SessionData"></a>
 
 Contains the metadata for a session returned by `ListSessions`, including its status, compute target, database connection, and lifecycle timestamps.
 

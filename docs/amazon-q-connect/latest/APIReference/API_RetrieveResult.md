@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # RetrieveResult
-<a name="API_amazon-q-connect_RetrieveResult"></a>
 
 A single result from a content retrieval operation.
 

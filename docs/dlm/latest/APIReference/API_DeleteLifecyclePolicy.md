@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_DeleteLifecy
 ---
 
 # DeleteLifecyclePolicy
-<a name="API_DeleteLifecyclePolicy"></a>
 
 Deletes the specified lifecycle policy and halts the automated operations that the policy specified.
 

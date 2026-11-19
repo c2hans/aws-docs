@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationCodeGenerations
-<a name="API_ListNetworkMigrationCodeGenerations"></a>
 
 Lists network migration code generation jobs, which convert network mappings into infrastructure-as-code templates.
 

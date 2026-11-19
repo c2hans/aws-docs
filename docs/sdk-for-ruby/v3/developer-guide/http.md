@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/http.htm
 ---
 
 # Configuring HTTP-level settings within the AWS SDK for Ruby
-<a name="http"></a>
 
 ## Setting a nonstandard endpoint
 <a name="aws-ruby-sdk-setting-non-standard-endpoint"></a>

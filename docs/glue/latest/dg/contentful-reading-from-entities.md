@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/contentful-reading-from-e
 ---
 
 # Reading from Contentful entities
-<a name="contentful-reading-from-entities"></a>
 
 **Prerequisites**
 

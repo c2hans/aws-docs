@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/enable-url-redirec
 ---
 
 # Enable host-to-client URL redirection
-<a name="enable-url-redirection"></a>
 
 You configure URL redirection with the parameters in the `url-redirection` section of the Amazon DCV Server configuration. The procedures in this topic use the `dcv set-config` command, which configures one server at a time. You can also set the parameters directly in the Windows registry, which is the way to configure many servers with Group Policy, Microsoft Intune, an image, or a startup script. For more information, see [Configure URL redirection using the Windows Registry Editor](configure-url-redirection-registry.md) and [Registry values](url-redirection-parameters.md#registry-values). For more information about the parameters, see [URL redirection parameters](url-redirection-parameters.md).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/tutorials-two-
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Create Lambda functions for use with Amazon Pinpoint SMS messaging
-<a name="tutorials-two-way-sms-part-3"></a>
 
 This section shows you how to create and configure two Lambda functions for use with Amazon Pinpoint SMS messaging. Later, you set up API Gateway and Amazon Pinpoint to invoke these functions when certain events occur. Both of these functions create and update endpoints in the Amazon Pinpoint project that you specify. The first function also uses the phone number validation feature.
 

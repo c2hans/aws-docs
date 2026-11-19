@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/mobile-platform-endpoint.h
 ---
 
 # Setting up an Amazon SNS platform endpoint for mobile notifications
-<a name="mobile-platform-endpoint"></a>
 
 When an app and mobile device register with a push notification service (such as APNs or Firebase Cloud Messaging), the push notification service returns a device token. Amazon SNS uses this device token to create a platform endpoint, which acts as a target for sending direct push notification messages to the app on the device. The platform endpoint serves as a bridge, routing messages sent by Amazon SNS to the push notification service for delivery to the corresponding mobile device. For more information, see [Prerequisites for Amazon SNS user notifications](sns-prerequisites-for-mobile-push-notifications.md) and [Setting up push notifications with Amazon SNS](sns-mobile-application-as-subscriber.md#sns-user-notifications-process-overview).
 

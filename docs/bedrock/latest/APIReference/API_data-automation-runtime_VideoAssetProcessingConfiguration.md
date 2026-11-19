@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VideoAssetProcessingConfiguration
-<a name="API_data-automation-runtime_VideoAssetProcessingConfiguration"></a>
 
 Sets up elements of your video asset. Lets you set what segement of a larger video you want to detect information from.
 

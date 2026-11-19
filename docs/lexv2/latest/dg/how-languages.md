@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html
 ---
 
 # Languages and locales supported by Amazon Lex V2
-<a name="how-languages"></a>
 
 Amazon Lex V2 supports a variety of languages and locales. This topic lists the languages that are supported and the features that support these languages.
 

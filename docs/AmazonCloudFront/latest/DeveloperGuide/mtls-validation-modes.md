@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/m
 ---
 
 # Additional validation modes
-<a name="mtls-validation-modes"></a>
 
 Required mode is the default for CloudFront mutual TLS — CloudFront validates every client certificate and denies connections that fail. However, to support additional use cases — such as applications that serve a mix of mTLS-authenticated and unauthenticated clients, or environments where the origin server performs its own mTLS validation — CloudFront supports two additional modes.
 

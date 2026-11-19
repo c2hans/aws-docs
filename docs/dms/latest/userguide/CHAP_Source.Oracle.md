@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.Oracle.
 ---
 
 # Using an Oracle database as a source for AWS DMS
-<a name="CHAP_Source.Oracle"></a>
 
 You can migrate data from one or many Oracle databases using AWS DMS. With an Oracle database as a source, you can migrate data to any of the targets supported by AWS DMS.
 

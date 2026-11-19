@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # StreamSessionAccessNotReadyException
-<a name="API_StreamSessionAccessNotReadyException"></a>
 
 The terminal connection to the stream session is not yet available. Wait before retrying the request.
 

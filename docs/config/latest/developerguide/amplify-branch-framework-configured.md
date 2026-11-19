@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/amplify-bra
 ---
 
 # amplify-branch-framework-configured
-<a name="amplify-branch-framework-configured"></a>
 
 Checks if AWS Amplify branches have a framework configured. The rule is NON\_COMPLIANT if configuration.Framework does not exist.
 

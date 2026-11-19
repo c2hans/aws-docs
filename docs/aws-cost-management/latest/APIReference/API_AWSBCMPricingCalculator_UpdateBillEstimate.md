@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateBillEstimate
-<a name="API_AWSBCMPricingCalculator_UpdateBillEstimate"></a>
 
  Updates an existing bill estimate.
 

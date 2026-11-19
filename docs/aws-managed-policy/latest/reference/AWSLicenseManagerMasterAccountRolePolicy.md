@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLicenseManagerMasterAccountRolePolicy
-<a name="AWSLicenseManagerMasterAccountRolePolicy"></a>
 
 **Description**: AWS License Manager service master account role policy
 

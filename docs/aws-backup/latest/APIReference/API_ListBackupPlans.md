@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupPlans
-<a name="API_ListBackupPlans"></a>
 
 Lists the active backup plans for the account.
 

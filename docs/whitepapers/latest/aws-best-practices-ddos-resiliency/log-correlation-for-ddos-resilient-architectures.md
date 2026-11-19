@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Log correlation for DDoS resilient architectures
-<a name="log-correlation-for-ddos-resilient-architectures"></a>
 
 For DDoS resilient architectures, it's crucial to be able to correlate the logs between the services in the scope. For a typical web application setup, those services can be CloudFront, AWS WAF, and ALB.
 

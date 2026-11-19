@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rules-notifica
 ---
 
 # Connect Customer conversational analytics notification types
-<a name="rules-notification-types"></a>
 
 Conversational analytics provides the following notification types:
 + Conversational analytics Post Call/Chat Rules Matched: An EventBridge event is delivered whenever a conversational analytics rule is matched and has triggered the EventBridge rule action.

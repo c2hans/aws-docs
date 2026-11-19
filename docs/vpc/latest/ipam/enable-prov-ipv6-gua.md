@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/enable-prov-ipv6-gua.htm
 ---
 
 # Enable provisioning private IPv6 GUA CIDRs
-<a name="enable-prov-ipv6-gua"></a>
 
 If you want your private networks to support IPv6 and have no intention of routing traffic from these addresses to the internet, you can provision a private IPv6 ULA or GUA range to an IPAM pool in a private scope.
 

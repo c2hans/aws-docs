@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/using-s
 ---
 
 # Using roles to send just-in-time node access request notifications
-<a name="using-service-linked-roles-service-action-9"></a>
 
 Systems Manager uses the service-linked role named **`AWSServiceRoleForSystemsManagerNotifications`**. AWS Systems Manager uses this IAM service role to send notifications to access request approvers.
 

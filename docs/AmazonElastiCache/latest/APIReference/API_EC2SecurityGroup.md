@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # EC2SecurityGroup
-<a name="API_EC2SecurityGroup"></a>
 
 Provides ownership and status information for an Amazon EC2 security group.
 

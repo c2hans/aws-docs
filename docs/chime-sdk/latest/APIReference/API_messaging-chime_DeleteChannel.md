@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DeleteChannel
-<a name="API_messaging-chime_DeleteChannel"></a>
 
 Immediately makes a channel and its memberships inaccessible and marks them for deletion. This is an irreversible process.
 

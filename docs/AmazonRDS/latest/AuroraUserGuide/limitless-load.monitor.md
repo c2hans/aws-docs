@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Monitoring data loading
-<a name="limitless-load.monitor"></a>
 
 Aurora PostgreSQL Limitless Database provides several ways to monitor data loading jobs:
 + [Listing data loading jobs](#limitless-load.monitor-list)

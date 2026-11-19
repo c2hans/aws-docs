@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_T
 ---
 
 # TerraformSource
-<a name="API_TerraformSource"></a>
 
  The Terraform s3 state file you need to import.
 

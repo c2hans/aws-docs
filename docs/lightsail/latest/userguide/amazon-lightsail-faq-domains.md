@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Registered domains and DNS
-<a name="amazon-lightsail-faq-domains"></a>
 
 ## What can I do with Lightsail domains?
 <a name="what-can-i-do-with-lightsail-domains"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Duplicating automation rules in Security Hub
-<a name="securityhub-v2-automation-rules-duplicate"></a>
 
  This topic describes how to duplicate automation rules. Duplicating automation rules can help you save time if you want to avoid creating them from scratch. When you duplicate automation rules, you can update details, actions, rule settings, and tags. You can edit automation rules in the AWS Region where you created them.
 

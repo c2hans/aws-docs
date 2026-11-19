@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.
 ---
 
 # Managing Elastic Beanstalk user policies
-<a name="AWSHowTo.iam.managed-policies"></a>
 
 AWS Elastic Beanstalk provides two managed policies that enable you to assign full access or read-only access to all resources that Elastic Beanstalk manages. You can attach the policies to AWS Identity and Access Management (IAM) users or groups, or to roles assumed by your users.
 

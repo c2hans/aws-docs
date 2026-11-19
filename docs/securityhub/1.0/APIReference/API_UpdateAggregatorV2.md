@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateA
 ---
 
 # UpdateAggregatorV2
-<a name="API_UpdateAggregatorV2"></a>
 
 Udpates the configuration for the Aggregator V2.
 

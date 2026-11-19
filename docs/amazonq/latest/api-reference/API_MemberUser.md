@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_MemberU
 ---
 
 # MemberUser
-<a name="API_MemberUser"></a>
 
 The users that belong to a group.
 

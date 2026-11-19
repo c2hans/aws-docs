@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentActionSummary
-<a name="API_EnvironmentActionSummary"></a>
 
 The details about the specified action configured for an environment. For example, the details of the specified console links for an analytics tool that is available in this environment.
 

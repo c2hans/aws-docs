@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Setting up cross-partition identity federation
-<a name="id_roles_providers_outbound_cross_partition_setup"></a>
 
 Cross-partition identity federation works as a two-step exchange: your workload calls `sts:GetWebIdentityToken` to obtain a JWT from AWS STS in the source partition, then exchanges that token for temporary credentials from AWS STS in the destination partition by calling `sts:AssumeRoleWithWebIdentity`.
 

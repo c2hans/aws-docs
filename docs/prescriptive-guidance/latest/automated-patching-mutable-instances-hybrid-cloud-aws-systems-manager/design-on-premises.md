@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-p
 ---
 
 # Patching solution design for on-premises instances in a hybrid cloud environment
-<a name="design-on-premises"></a>
 
 You can also extend the solution described in this guide to patch on-premises server instances in a hybrid cloud environment.
 

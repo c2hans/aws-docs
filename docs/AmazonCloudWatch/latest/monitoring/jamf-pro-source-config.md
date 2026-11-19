@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/jamf-
 ---
 
 # Source configuration for Jamf Pro
-<a name="jamf-pro-source-config"></a>
 
 ## Prerequisites
 <a name="jamf-pro-prerequisites"></a>

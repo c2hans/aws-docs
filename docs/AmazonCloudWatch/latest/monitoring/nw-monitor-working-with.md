@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # Working with monitors and probes in Network Synthetic Monitor
-<a name="nw-monitor-working-with"></a>
 
 To get started, create a monitor with probes in Network Synthetic Monitor to measure network performance over a specified aggregation period. Then, you can update a monitor to make desired changes, for example, to change the aggregation period, deactivate or activate probes, or add or remove tags.
 

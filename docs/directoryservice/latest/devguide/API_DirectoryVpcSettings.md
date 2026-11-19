@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectoryVpcSettings
-<a name="API_DirectoryVpcSettings"></a>
 
 Contains VPC information for the [CreateDirectory](API_CreateDirectory.md), [CreateMicrosoftAD](API_CreateMicrosoftAD.md), or [CreateHybridAD](API_CreateHybridAD.md) operation.
 

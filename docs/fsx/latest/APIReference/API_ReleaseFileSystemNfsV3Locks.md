@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_ReleaseFileS
 ---
 
 # ReleaseFileSystemNfsV3Locks
-<a name="API_ReleaseFileSystemNfsV3Locks"></a>
 
 Releases the file system lock from an Amazon FSx for OpenZFS file system.
 

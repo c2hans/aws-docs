@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # AWS Builder ID
-<a name="builder-id"></a>
 
 AWS Builder ID is an additional AWS authentication method that may be required to use certain services or features, such as cloning a 3rd party repository with Amazon CodeCatalyst.
 

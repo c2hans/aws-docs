@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicDateRangeFilter
-<a name="API_TopicDateRangeFilter"></a>
 
 A filter used to restrict data based on a range of dates or times.
 

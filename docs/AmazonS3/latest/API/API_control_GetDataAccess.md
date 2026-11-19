@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetDataA
 ---
 
 # GetDataAccess
-<a name="API_control_GetDataAccess"></a>
 
-Returns a temporary access credential from S3 Access Grants to the grantee or client application. The [temporary credential](https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.html) is an AWS STS token that grants them access to the S3 data.
+Returns a temporary access credential from S3 Access Grants to the grantee or client application. The [temporary credential](https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.html) is an AWS STS token that grants them access to the S3 data. By default, S3 Access Grants searches for a matching grant in the instance of the AWS account ID in the request. To also search instances shared with the caller through AWS Resource Access Manager (RAM), set the `InstanceScope` parameter to `ALL`.
 
 Permissions
 You must have the `s3:GetDataAccess` permission to use this operation.
@@ -17,7 +16,7 @@ The IAM role that S3 Access Grants assumes must have the following permissions s
 <a name="API_control_GetDataAccess_RequestSyntax"></a>
 
 ```
-GET /v20180820/accessgrantsinstance/dataaccess?auditContext={{AuditContext}}&durationSeconds={{DurationSeconds}}&permission={{Permission}}&privilege={{Privilege}}&target={{Target}}&targetType={{TargetType}} HTTP/1.1
+GET /v20180820/accessgrantsinstance/dataaccess?auditContext={{AuditContext}}&durationSeconds={{DurationSeconds}}&instanceScope={{InstanceScope}}&permission={{Permission}}&privilege={{Privilege}}&target={{Target}}&targetType={{TargetType}} HTTP/1.1
 Host: s3-control.amazonaws.com
 x-amz-account-id: {{AccountId}}
 ```
@@ -35,6 +34,12 @@ Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
  ** [durationSeconds](#API_control_GetDataAccess_RequestSyntax) **   <a name="AmazonS3-control_GetDataAccess-request-uri-querystring-DurationSeconds"></a>
 The session duration, in seconds, of the temporary access credential that S3 Access Grants vends to the grantee or client application. The default value is 1 hour, but the grantee can specify a range from 900 seconds (15 minutes) up to 43200 seconds (12 hours). If the grantee requests a value higher than this maximum, the operation fails.
 Valid Range: Minimum value of 900. Maximum value of 43200.
+
+ ** [instanceScope](#API_control_GetDataAccess_RequestSyntax) **   <a name="AmazonS3-control_GetDataAccess-request-uri-querystring-InstanceScope"></a>
+The scope of S3 Access Grants instances to search for a grant matching the requested S3 URI path.
++  `SELF` – Searches only the instance of the AWS account ID in the request.
++  `ALL` – Searches the instance of the AWS account ID in the request and all instances shared with the caller's account through AWS Resource Access Manager (RAM).
+Valid Values: `SELF | ALL`
 
  ** [permission](#API_control_GetDataAccess_RequestSyntax) **   <a name="AmazonS3-control_GetDataAccess-request-uri-querystring-Permission"></a>
 The type of permission granted to your S3 data, which can be set to one of the following values:
@@ -89,6 +94,7 @@ HTTP/1.1 200
       <GranteeIdentifier>string</GranteeIdentifier>
       <GranteeType>string</GranteeType>
    </Grantee>
+   <MatchedInstanceArn>string</MatchedInstanceArn>
 </GetDataAccessResult>
 ```
 
@@ -116,6 +122,12 @@ The S3 URI path of the data to which you are being granted temporary access cred
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2000.
 Pattern: `^.+$`
+
+ ** [MatchedInstanceArn](#API_control_GetDataAccess_ResponseSyntax) **   <a name="AmazonS3-control_GetDataAccess-response-MatchedInstanceArn"></a>
+The Amazon Resource Name (ARN) of the S3 Access Grants instance containing the grant that matched the requested S3 URI path.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:[a-z\-]+:s3:[a-z0-9\-]+:\d{12}:access\-grants\/[a-zA-Z0-9\-]+`
 
 ## See Also
 <a name="API_control_GetDataAccess_SeeAlso"></a>

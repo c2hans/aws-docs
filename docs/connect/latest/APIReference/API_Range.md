@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Range.ht
 ---
 
 # Range
-<a name="API_Range"></a>
 
 An Object to define the minimum and maximum proficiency levels.
 

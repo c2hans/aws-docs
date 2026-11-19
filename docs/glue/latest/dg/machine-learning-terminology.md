@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/machine-learning-terminol
 ---
 
 # Machine learning measurements
-<a name="machine-learning-terminology"></a>
 
 To understand the measurements that are used to tune your machine learning transform, you should be familiar with the following terminology:
 

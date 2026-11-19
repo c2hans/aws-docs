@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetResour
 ---
 
 # GetResourceDashboard
-<a name="API_GetResourceDashboard"></a>
 
 Gets the Live UI/Persistence UI for a session.
 

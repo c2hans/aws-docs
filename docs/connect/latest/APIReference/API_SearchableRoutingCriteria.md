@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Searchab
 ---
 
 # SearchableRoutingCriteria
-<a name="API_SearchableRoutingCriteria"></a>
 
 Routing criteria of the contact to match on.
 

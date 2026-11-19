@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.8 Program budget
-<a name="budget"></a>
 
 ## Overview
 <a name="budget-overview"></a>

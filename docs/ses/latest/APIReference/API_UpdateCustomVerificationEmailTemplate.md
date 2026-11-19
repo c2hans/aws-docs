@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateCustom
 ---
 
 # UpdateCustomVerificationEmailTemplate
-<a name="API_UpdateCustomVerificationEmailTemplate"></a>
 
 Updates an existing custom verification email template.
 

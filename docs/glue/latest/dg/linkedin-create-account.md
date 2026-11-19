@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/linkedin-create-account.h
 ---
 
 # Creating a LinkedIn account
-<a name="linkedin-create-account"></a>
 
 **Creating a LinkedIn App and OAuth credentials**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansPurchaseRecommendationMetadata
-<a name="API_SavingsPlansPurchaseRecommendationMetadata"></a>
 
 Metadata about your Savings Plans Purchase Recommendations.
 

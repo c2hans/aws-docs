@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-runn
 ---
 
 # Modify the running mode
-<a name="modify-running-mode-pool"></a>
 
 You can switch between running modes when a WorkSpaces Pool is in stopped state.
 

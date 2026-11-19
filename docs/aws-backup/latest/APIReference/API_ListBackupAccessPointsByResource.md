@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupAccessPointsByResource
-<a name="API_ListBackupAccessPointsByResource"></a>
 
 Returns the backup access points associated with the specified resource, such as an Amazon S3 bucket.
 

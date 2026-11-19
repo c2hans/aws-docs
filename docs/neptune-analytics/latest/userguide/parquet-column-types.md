@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/parqu
 ---
 
 # Supported Parquet column types
-<a name="parquet-column-types"></a>
 
 **Parquet data types:**
 +  NULL

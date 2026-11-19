@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyXSSProtection
-<a name="API_ResponseHeadersPolicyXSSProtection"></a>
 
 Determines whether CloudFront includes the `X-XSS-Protection` HTTP response header and the header's value.
 

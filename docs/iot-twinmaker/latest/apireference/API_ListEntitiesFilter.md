@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListEntitiesFilter
-<a name="API_ListEntitiesFilter"></a>
 
 An object that filters items in a list of entities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Wor
 ---
 
 # WorkflowSummary
-<a name="API_WorkflowSummary"></a>
 
 Information about a workflow.
 

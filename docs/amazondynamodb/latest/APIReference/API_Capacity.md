@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # Capacity
-<a name="API_Capacity"></a>
 
 Represents the amount of provisioned throughput capacity consumed on a table or an index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_As
 ---
 
 # AssociateConnectionsToResiliencyGroup
-<a name="API_AssociateConnectionsToResiliencyGroup"></a>
 
 Associates one or more connections with the specified resiliency group. This operation is atomic: either all of the specified connections are associated, or the operation fails and no changes are made.
 

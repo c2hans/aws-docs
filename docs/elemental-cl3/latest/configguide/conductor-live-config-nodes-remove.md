@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 ---
 
 # Removing a worker node from the cluster
-<a name="conductor-live-config-nodes-remove"></a>
 
 Generally, you remove a node only in these situations:
 + To enable HTTPS in the cluster. For the complete procedure for enabling HTTPS, see [Enabling and disabling HTTPS](ssl-config.md).

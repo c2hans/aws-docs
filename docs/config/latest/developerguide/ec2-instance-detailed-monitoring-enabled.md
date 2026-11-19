@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-instanc
 ---
 
 # ec2-instance-detailed-monitoring-enabled
-<a name="ec2-instance-detailed-monitoring-enabled"></a>
 
 Checks if detailed monitoring is enabled for EC2 instances. The rule is NON\_COMPLIANT if detailed monitoring is not enabled.
 

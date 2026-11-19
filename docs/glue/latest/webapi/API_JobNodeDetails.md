@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JobNodeDetails.ht
 ---
 
 # JobNodeDetails
-<a name="API_JobNodeDetails"></a>
 
 The details of a Job node present in the workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/quick-start.html
 ---
 
 # Quick start tutorial for Amazon Managed Workflows for Apache Airflow
-<a name="quick-start"></a>
 
 This quick start tutorial uses an AWS CloudFormation template that creates the Amazon VPC infrastructure, an Amazon S3 bucket with a `dags` folder, and an Amazon Managed Workflows for Apache Airflow environment together.
 

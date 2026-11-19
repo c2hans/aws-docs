@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/delete-vpc-peering-co
 ---
 
 # Delete a VPC peering connection
-<a name="delete-vpc-peering-connection"></a>
 
 Either owner of a VPC in a peering connection can delete the VPC peering connection at any time. You can also delete a VPC peering connection that you've requested that is still in the `pending-acceptance` state.
 

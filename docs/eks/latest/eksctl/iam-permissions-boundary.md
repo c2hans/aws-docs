@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/iam-permissions-bounda
 ---
 
 # IAM permissions boundary
-<a name="iam-permissions-boundary"></a>
 
 A [permissions boundary](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) is an advanced AWS IAM feature in which the maximum permissions that an identity-based policy can grant to an IAM entity have been set; where those entities are either users or roles. When a permissions boundary is set for an entity, that entity can only perform the actions that are allowed by both its identity-based policies and its permissions boundaries.
 

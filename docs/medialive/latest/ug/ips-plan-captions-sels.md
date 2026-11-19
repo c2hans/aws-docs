@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-plan-captions-se
 ---
 
 # Planning the captions selectors
-<a name="ips-plan-captions-sels"></a>
 
 When you set up the captions selectors for a MediaLive input, you specify both the format and the language to extract from the input. Each input has the number of selectors that is appropriate to the captions formats in that input. Therefore, each input might contain a different number of selectors. The method for extracting captions is different from the method for extracting audio.
 

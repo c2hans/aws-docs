@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/serverles
 ---
 
 # Publishing a New Version of an Existing Application
-<a name="serverlessrepo-how-to-publish-new-version"></a>
 
 This section shows you how to publish a new version of an existing application to the AWS Serverless Application Repository by using the AWS SAM CLI or the AWS Management Console. For instructions on publishing a new application, see [How to Publish Applications](serverlessrepo-how-to-publish.md).
 

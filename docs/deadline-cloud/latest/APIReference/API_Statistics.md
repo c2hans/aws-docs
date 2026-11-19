@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # Statistics
-<a name="API_Statistics"></a>
 
 A list of statistics for a session.
 

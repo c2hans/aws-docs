@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FindingDet
 ---
 
 # FindingDetail
-<a name="API_FindingDetail"></a>
 
 Details of the vulnerability identified in a finding.
 

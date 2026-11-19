@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-github
 ---
 
 # Compute images supported with the CodeBuild-hosted GitHub Actions runner
-<a name="sample-github-action-runners-update-yaml.images"></a>
 
 In the label you configured in [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](action-runner.md), you can override your Amazon EC2 environment settings by using the values in the first three columns. CodeBuild provides the following Amazon EC2 compute images. For more information about
 

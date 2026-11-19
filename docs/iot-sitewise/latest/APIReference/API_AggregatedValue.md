@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Agg
 ---
 
 # AggregatedValue
-<a name="API_AggregatedValue"></a>
 
 Contains aggregated asset property values (for example, average, minimum, and maximum).
 

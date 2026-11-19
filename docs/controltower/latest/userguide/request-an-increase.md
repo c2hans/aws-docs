@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/request-an
 ---
 
 # Request a quota increase
-<a name="request-an-increase"></a>
 
 The Service Quotas console provides information about AWS Control Tower quotas. You can use the Service Quotas console to view the default service quotas or to [request quota increases](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/controltower/quotas) for adjustable quotas.
 

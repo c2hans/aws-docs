@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListA
 ---
 
 # ListAgents
-<a name="API_ListAgents"></a>
 
 Lists all agents in an Amazon QuickSight account.
 

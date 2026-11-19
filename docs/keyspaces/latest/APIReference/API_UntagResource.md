@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_UntagR
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the association of tags from a Amazon Keyspaces resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-app-nav.html
 ---
 
 # Quick start guide
-<a name="mobile-app-nav"></a>
 
 The following tutorial explains how to navigate in the Amazon Chime mobile app.
 

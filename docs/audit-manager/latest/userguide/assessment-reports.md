@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/assessmen
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Assessment reports
-<a name="assessment-reports"></a>
 
 An *assessment report* summarizes the selected evidence that was collected for an assessment. It also contains links to PDF files with details about each piece of evidence. The specific contents, organization, and naming convention of an assessment report depend on the parameters that you choose when you [generate the report](https://docs.aws.amazon.com/audit-manager/latest/userguide/generate-assessment-report.html).
 

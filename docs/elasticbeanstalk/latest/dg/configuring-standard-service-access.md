@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-s
 ---
 
 # Configuring service access for a Beanstalk Standard environment
-<a name="configuring-standard-service-access"></a>
 
 A Beanstalk Standard environment uses a service role that Elastic Beanstalk assumes on your behalf and an Amazon EC2 instance profile that its instances assume. For details about these roles and how to create them, see [Elastic Beanstalk Service roles, instance profiles, and user policies](concepts-roles.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Scenario 3: Standalone isolated deployment using AWS Directory Service in the AWS Cloud
-<a name="scenario-3-standalone-isolated-deployment-using-aws-directory-service-in-the-aws-cloud"></a>
 
  This scenario, shown in the following figure, has AD DS deployed in the AWS Cloud in a standalone isolated environment. AWS Directory Service is used exclusively in this scenario. Instead of fully managing AD DS, customers can rely on AWS Directory Service for tasks such as building a highly available directory topology, monitoring domain controllers, and configuring backups and snapshots.
 

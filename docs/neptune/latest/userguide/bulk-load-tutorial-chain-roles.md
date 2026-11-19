@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # Chaining IAM roles in Amazon Neptune
-<a name="bulk-load-tutorial-chain-roles"></a>
 
 **Important**
 The new bulk load cross-account feature introduced in [engine release 1.2.1.0.R3](engine-releases-1.2.1.0.R3.md) that takes advantage of chaining IAM roles may in some cases cause you to observe degraded bulk load performance. As a result, upgrades to engine releases that support this feature have been temporarily suspended until this problem is resolved.

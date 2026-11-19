@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Granting access by using an IAM role
-<a name="net-dg-hosm"></a>
 
 This tutorial shows you how to use the AWS SDK for .NET to enable IAM roles on Amazon EC2 instances.
 

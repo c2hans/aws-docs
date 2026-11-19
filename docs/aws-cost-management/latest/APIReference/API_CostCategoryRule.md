@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryRule
-<a name="API_CostCategoryRule"></a>
 
 Rules are processed in order. If there are multiple rules that match the line item, then the first rule to match is used to determine that cost category value.
 

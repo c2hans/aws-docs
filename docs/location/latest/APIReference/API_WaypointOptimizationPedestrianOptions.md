@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationPedestrianOptions
-<a name="API_WaypointOptimizationPedestrianOptions"></a>
 
 Options related to a pedestrian.
 

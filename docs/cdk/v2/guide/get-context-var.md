@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/get-context-var.html
 ---
 
 # Save and retrieve context variable values
-<a name="get-context-var"></a>
 
 You can specify context variables with the AWS Cloud Development Kit (AWS CDK) CLI or in the `cdk.json` file. Then, use the `TryGetContext` method to retrieve values.
 

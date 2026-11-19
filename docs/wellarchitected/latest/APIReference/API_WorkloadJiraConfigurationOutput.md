@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # WorkloadJiraConfigurationOutput
-<a name="API_WorkloadJiraConfigurationOutput"></a>
 
 Workload-level: Output configuration of the Jira integration.
 

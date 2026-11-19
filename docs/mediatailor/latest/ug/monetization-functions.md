@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Working with MediaTailor Monetization Functions
-<a name="monetization-functions"></a>
 
 With MediaTailor Monetization Functions (Functions), you can customize how AWS Elemental MediaTailor manages session data, builds ad requests, and selects ads during ad insertion. Functions let you call external APIs, transform data with expressions, modify ad decision server (ADS) request parameters or player parameters, and filter, reorder, or supplement the ads that are inserted into the stream. You don't need to deploy or manage custom infrastructure.
 

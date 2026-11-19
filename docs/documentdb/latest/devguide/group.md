@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/group.html
 ---
 
 # $group
-<a name="group"></a>
 
 The `$group` aggregation stage in Amazon DocumentDB allows you to group documents by a specified expression and perform various accumulative operations on the grouped data. This can be useful for tasks such as calculating totals, averages, or other statistics based on the grouped data.
 

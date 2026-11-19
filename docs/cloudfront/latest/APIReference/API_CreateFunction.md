@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateFunction
-<a name="API_CreateFunction"></a>
 
 Creates a CloudFront function.
 

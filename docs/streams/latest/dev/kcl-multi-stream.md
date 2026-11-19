@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-multi-stream.html
 ---
 
 # Multi-stream processing with KCL
-<a name="kcl-multi-stream"></a>
 
 This section describes the required changes in KCL that allow you to create KCL consumer applications that can process more than one data stream at the same time.
 **Important**

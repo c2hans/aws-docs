@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # FulfillmentDetails
-<a name="API_benefits_FulfillmentDetails"></a>
 
 Contains comprehensive information about how a benefit allocation is fulfilled across different fulfillment types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AdminSco
 ---
 
 # AdminScope
-<a name="API_AdminScope"></a>
 
 Defines the resources that the Firewall Manager administrator can manage. For more information about administrative scope, see [Managing Firewall Manager administrators](https://docs.aws.amazon.com/waf/latest/developerguide/fms-administrators.html) in the *Firewall Manager Developer Guide*.
 

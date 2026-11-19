@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Management and Governance Cloud Environment Guide
-<a name="management-and-governance-cloud-environment-guide"></a>
 
 Publication date: **November 22, 2021** ([Document history](document-history.md))
 

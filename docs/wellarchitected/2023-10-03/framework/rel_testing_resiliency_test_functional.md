@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL12-BP03 Test functional requirements
-<a name="rel_testing_resiliency_test_functional"></a>
 
  Use techniques such as unit tests and integration tests that validate required functionality.
 

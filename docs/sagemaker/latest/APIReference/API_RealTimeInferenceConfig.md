@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RealTi
 ---
 
 # RealTimeInferenceConfig
-<a name="API_RealTimeInferenceConfig"></a>
 
 The infrastructure configuration for deploying the model to a real-time inference endpoint.
 

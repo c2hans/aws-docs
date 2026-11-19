@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Managing users’ streaming experience
-<a name="managing-users-streaming-experience"></a>
 
 ## Customization using session scripts
 <a name="customization-using-session-scripts"></a>

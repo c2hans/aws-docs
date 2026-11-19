@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-step-plan-switch
 ---
 
 # Plan the input switches in the schedule
-<a name="ips-step-plan-switches"></a>
 
 After you design the selectors for each input (step 4), you must plan the order that you want MediaLive to follow when it ingests these inputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/bwtest-cli-test.htm
 ---
 
 # Test with the command line
-<a name="bwtest-cli-test"></a>
 
 In this test you can set the stream count to match what Elastic Disaster Recovery actually does. Except where a step says otherwise, run this task on the source server, against the endpoint from [Install the endpoint software](bwtest-software-install.md).
 

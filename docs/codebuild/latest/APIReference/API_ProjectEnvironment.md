@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectEnvironment
-<a name="API_ProjectEnvironment"></a>
 
 Information about the build environment of the build project.
 

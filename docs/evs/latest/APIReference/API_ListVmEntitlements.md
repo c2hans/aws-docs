@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ListVmEntitl
 ---
 
 # ListVmEntitlements
-<a name="API_ListVmEntitlements"></a>
 
 Lists the Windows Server License entitlements for virtual machines in an Amazon EVS environment. Returns existing entitlements for virtual machines associated with the specified environment and connector.
 

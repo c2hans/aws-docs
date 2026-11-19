@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DescribeEntity.ht
 ---
 
 # DescribeEntity
-<a name="API_DescribeEntity"></a>
 
 Provides details regarding the entity used with the connection type, with a description of the data model for each field in the selected entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Associ
 ---
 
 # AssociationInfo
-<a name="API_AssociationInfo"></a>
 
  The data type used to describe the relationship between different sources.
 

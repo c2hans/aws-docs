@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/config-regi
 ---
 
 # Region Support for AWS Config
-<a name="config-region-support"></a>
 
 ## Considerations
 <a name="config-region-support-considerations"></a>

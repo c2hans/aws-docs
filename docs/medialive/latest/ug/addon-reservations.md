@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/addon-reservations.h
 ---
 
 # Add-on reservations
-<a name="addon-reservations"></a>
 
 Reservations are available for those items in [the MediaLive price list](https://aws.amazon.com/medialive/pricing/) that are considered to be add-ons, such as codec licenses.
 

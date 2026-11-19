@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/creating-quicksig
 ---
 
 # Creating and managing groups in AWS Quick
-<a name="creating-quicksight-groups"></a>
 
 |  |
 | --- |

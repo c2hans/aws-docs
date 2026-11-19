@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetGlobalSettings
-<a name="API_GetGlobalSettings"></a>
 
 Global settings for all workloads.
 

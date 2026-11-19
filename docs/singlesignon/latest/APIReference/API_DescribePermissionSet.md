@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Des
 ---
 
 # DescribePermissionSet
-<a name="API_DescribePermissionSet"></a>
 
 Gets the details of the permission set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TLEData
-<a name="API_TLEData"></a>
 
 Two-line element set (TLE) data.
 

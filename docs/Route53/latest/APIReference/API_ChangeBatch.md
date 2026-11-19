@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeBa
 ---
 
 # ChangeBatch
-<a name="API_ChangeBatch"></a>
 
 The information for a change request.
 

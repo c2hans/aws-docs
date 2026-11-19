@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Executi
 ---
 
 # ExecutionError
-<a name="API_ExecutionError"></a>
 
 Specifies the error message and type, for an error that occurs during the execution of the workflow.
 

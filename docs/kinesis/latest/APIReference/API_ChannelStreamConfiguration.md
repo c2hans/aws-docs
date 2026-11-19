@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelS
 ---
 
 # ChannelStreamConfiguration
-<a name="API_ChannelStreamConfiguration"></a>
 
 Specifies the source stream and record configuration when creating a channel.
 

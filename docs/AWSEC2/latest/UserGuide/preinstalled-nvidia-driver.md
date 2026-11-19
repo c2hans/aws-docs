@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/preinstalled-nvi
 ---
 
 # Use AMIs that include NVIDIA drivers
-<a name="preinstalled-nvidia-driver"></a>
 
 AWS and NVIDIA offer different Amazon Machine Images (AMIs) that come with the NVIDIA drivers installed.
 + [Marketplace offerings with the Tesla public driver](https://aws.amazon.com/marketplace/search/results?page=1&filters=VendorId&VendorId=e6a5002c-6dd0-4d1e-8196-0a1d1857229b%2Cc568fe05-e33b-411c-b0ab-047218431da9&searchTerms=tesla+driver)

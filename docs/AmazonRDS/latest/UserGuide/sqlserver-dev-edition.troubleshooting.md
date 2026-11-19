@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-dev
 ---
 
 # Troubleshooting SQL Server Developer Edition for RDS for SQL Server
-<a name="sqlserver-dev-edition.troubleshooting"></a>
 
 The following table lists some common errors and corresponding solutions when working with SQL Server Developer Edition for RDS for SQL Server
 

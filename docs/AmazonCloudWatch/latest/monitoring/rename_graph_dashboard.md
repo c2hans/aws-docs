@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/renam
 ---
 
 # Renaming a graph on a CloudWatch dashboard
-<a name="rename_graph_dashboard"></a>
 
 You can change the default name that CloudWatch assigns to a graph on your dashboard.
 

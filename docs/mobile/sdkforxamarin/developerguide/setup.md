@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/setu
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Setting Up the AWS Mobile SDK for .NET and Xamarin
-<a name="setup"></a>
 
 You can set up the AWS Mobile SDK for .NET and Xamarin and start building a new project or you can integrate the SDK with an existing project. You can also clone and run the [samples](https://github.com/awslabs/aws-sdk-net-samples/tree/master/XamarinSamples) to get a sense of how the SDK works. Follow these steps to set up and start using the AWS Mobile SDK for .NET and Xamarin.
 

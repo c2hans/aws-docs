@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Di
 ---
 
 # DiscoveredEndpoint
-<a name="API_DiscoveredEndpoint"></a>
 
 Represents an endpoint discovered during a pentest job.
 

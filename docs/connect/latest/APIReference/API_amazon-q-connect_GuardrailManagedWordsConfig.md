@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GuardrailManagedWordsConfig
-<a name="API_amazon-q-connect_GuardrailManagedWordsConfig"></a>
 
 The managed word list to configure for the AI Guardrail.
 

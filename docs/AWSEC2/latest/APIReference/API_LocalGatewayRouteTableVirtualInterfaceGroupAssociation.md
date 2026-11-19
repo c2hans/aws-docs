@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LocalGate
 ---
 
 # LocalGatewayRouteTableVirtualInterfaceGroupAssociation
-<a name="API_LocalGatewayRouteTableVirtualInterfaceGroupAssociation"></a>
 
 Describes an association between a local gateway route table and a virtual interface group.
 

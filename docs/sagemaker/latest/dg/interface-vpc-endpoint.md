@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/interface-vpc-endpoi
 ---
 
 # Connect to SageMaker AI Within your VPC
-<a name="interface-vpc-endpoint"></a>
 
 You can connect directly to the SageMaker API or to Amazon SageMaker Runtime through an [interface endpoint](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html) in your virtual private cloud (VPC) instead of connecting over the internet. When you use a VPC interface endpoint, communication between your VPC and the SageMaker AI API or Runtime is conducted entirely and securely within an AWS network.
 

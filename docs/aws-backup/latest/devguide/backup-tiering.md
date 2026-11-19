@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-tierin
 ---
 
 # Backup tiering
-<a name="backup-tiering"></a>
 
 ## Overview
 <a name="backup-tiering-overview"></a>

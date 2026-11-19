@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Saving the assessment report in AWS Schema Conversion Tool
-<a name="CHAP_AssessmentReport.Save"></a>
 
 After you [create a database migration assessment report](CHAP_AssessmentReport.Create.md), you can save a local copy of the database migration assessment report as either a PDF file or a comma-separated value (CSV) file.
 

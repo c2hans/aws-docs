@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Get
 ---
 
 # GetPipelineExecution
-<a name="API_GetPipelineExecution"></a>
 
 Returns information about an execution of a pipeline, including details about artifacts, the pipeline execution ID, and the name, version, and status of the pipeline.
 

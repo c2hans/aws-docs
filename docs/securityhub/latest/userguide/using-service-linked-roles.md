@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/using-servi
 ---
 
 # Service-linked roles for AWS Security Hub CSPM
-<a name="using-service-linked-roles"></a>
 
 AWS Security Hub CSPM uses an AWS Identity and Access Management (IAM) [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) named `AWSServiceRoleForSecurityHub`. This service-linked role is an IAM role that's linked directly to Security Hub CSPM. It's predefined by Security Hub CSPM, and it includes all the permissions that Security Hub CSPM requires to call other AWS services and monitor AWS resources on your behalf. Security Hub CSPM uses this service-linked role in all the AWS Regions where Security Hub CSPM is available.
 

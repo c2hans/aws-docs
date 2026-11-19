@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayOperationError
-<a name="API_GatewayOperationError"></a>
 
 A single failed operation against a resource that a gateway manages.
 

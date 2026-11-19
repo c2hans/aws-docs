@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # The Amazon Neptune OpenCypher HTTPS endpoint
-<a name="access-graph-opencypher-queries"></a>
 
 **Topics**
 + [OpenCypher read and write queries on the HTTPS endpoint](#access-graph-opencypher-queries-read-write)

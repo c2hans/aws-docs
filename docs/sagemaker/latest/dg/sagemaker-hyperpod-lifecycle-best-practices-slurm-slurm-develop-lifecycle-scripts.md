@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-l
 ---
 
 # Developing lifecycle scripts interactively on a HyperPod cluster node
-<a name="sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-develop-lifecycle-scripts"></a>
 
 This section explains how you can interactively develop lifecycle scripts without repeatedly creating and deleting a HyperPod cluster.
 

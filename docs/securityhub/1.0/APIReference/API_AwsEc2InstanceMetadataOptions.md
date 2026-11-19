@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2I
 ---
 
 # AwsEc2InstanceMetadataOptions
-<a name="API_AwsEc2InstanceMetadataOptions"></a>
 
 Metadata options that allow you to configure and secure the Amazon EC2 instance.
 

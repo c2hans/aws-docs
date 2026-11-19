@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCo
 ---
 
 # GetConnectionFunction
-<a name="API_GetConnectionFunction"></a>
 
 Gets a connection function.
 

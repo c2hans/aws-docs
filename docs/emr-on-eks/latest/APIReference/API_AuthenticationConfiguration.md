@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Authe
 ---
 
 # AuthenticationConfiguration
-<a name="API_AuthenticationConfiguration"></a>
 
 Contains the authentication settings for a security configuration, including Identity Center and IAM configuration options.
 

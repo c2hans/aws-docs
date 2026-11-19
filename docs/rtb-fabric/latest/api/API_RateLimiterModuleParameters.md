@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_RateLimiterMod
 ---
 
 # RateLimiterModuleParameters
-<a name="API_RateLimiterModuleParameters"></a>
 
 Describes the parameters of a rate limit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # IAM policy for CloudWatch Application Insights
-<a name="appinsights-iam"></a>
 
 To use CloudWatch Application Insights, you must create an [AWS Identity and Access Management (IAM) policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) and attach it to your user, group, or role. For more information about users, groups, and roles, see [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html). The IAM policy defines the user permissions.
 

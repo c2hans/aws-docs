@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Migration scenarios for OpenSearch UI
-<a name="application-migration-scenarios"></a>
 
 OpenSearch UI can bring the saved objects from an associated data source—dashboards, visualizations, index patterns, and searches—into a workspace. The steps depend on the kind of data source and on how many tenants it has. Use the following table to find the scenario that matches your source.
 

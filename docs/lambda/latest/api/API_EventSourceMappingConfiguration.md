@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventSourceMapping
 ---
 
 # EventSourceMappingConfiguration
-<a name="API_EventSourceMappingConfiguration"></a>
 
 A mapping between an AWS resource and a Lambda function. For details, see [CreateEventSourceMapping](API_CreateEventSourceMapping.md).
 

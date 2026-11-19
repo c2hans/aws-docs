@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Use cases for customer decisions
-<a name="custom-questions-use-cases"></a>
 
 Use customer decisions for things that are specific to your business and that the built-in classifications don't cover. Each decision is answered either yes or no, or with options from a list that you provide. For more information, see [Question types](custom-questions-types.md).
 

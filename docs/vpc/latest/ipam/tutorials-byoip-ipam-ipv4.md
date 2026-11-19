@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-ipam-ipv
 ---
 
 # Bring your own public IPv4 CIDR to IPAM using only the AWS CLI
-<a name="tutorials-byoip-ipam-ipv4"></a>
 
 Follow these steps to bring an IPv4 CIDR to IPAM and allocate an Elastic IP address with the CIDR using only the AWS CLI.
 

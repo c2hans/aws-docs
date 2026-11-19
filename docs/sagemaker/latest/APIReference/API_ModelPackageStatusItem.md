@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageStatusItem
-<a name="API_ModelPackageStatusItem"></a>
 
 Represents the overall status of a model package.
 

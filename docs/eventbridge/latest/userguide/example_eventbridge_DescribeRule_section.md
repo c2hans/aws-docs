@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/example_eve
 ---
 
 # Use `DescribeRule` with an AWS SDK or CLI
-<a name="example_eventbridge_DescribeRule_section"></a>
 
 The following code examples show how to use `DescribeRule`.
 

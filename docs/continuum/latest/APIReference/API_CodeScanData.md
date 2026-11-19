@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_CodeSc
 ---
 
 # CodeScanData
-<a name="API_CodeScanData"></a>
 
 The code Scan Data.
 

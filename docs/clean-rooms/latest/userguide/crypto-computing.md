@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/crypto-comp
 ---
 
 # Cryptographic Computing for Clean Rooms
-<a name="crypto-computing"></a>
 
 Cryptographic Computing for Clean Rooms (C3R) is a capability in AWS Clean Rooms that can be used in addition to [analysis rules](analysis-rules.md). With C3R, organizations can bring sensitive data together to derive new insights from data analytics while cryptographically limiting what can be learned by any party in the process. C3R can be used by two or more parties that want to collaborate with their sensitive data but are required to only use encrypted data in the cloud.
 

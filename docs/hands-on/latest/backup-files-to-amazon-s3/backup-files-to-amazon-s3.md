@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/backup-files-to-amazon-s
 ---
 
 # Store and Retrieve a File with Amazon S3
-<a name="backup-files-to-amazon-s3"></a>
 
 |  |  |
 | --- |--- |

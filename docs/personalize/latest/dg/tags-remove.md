@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/tags-remove.html
 ---
 
 # Removing tags from Amazon Personalize resources
-<a name="tags-remove"></a>
 
 You can remove tags from Amazon Personalize resources with the Amazon Personalize console or the [UntagResource](API_UntagResource.md) API operation with the AWS Command Line Interface (AWS CLI) or AWS SDKs. The following examples show how to remove a tag from an Amazon Personalize dataset group. You can remove tags from other Amazon Personalize resources in the same way.
 

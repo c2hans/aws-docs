@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/sqs-
 ---
 
 # Use automatic request batching for Amazon SQS with the AWS SDK for Java 2.x
-<a name="sqs-auto-batch"></a>
 
 The Automatic Request Batching API for Amazon SQS is a high-level library that provides an efficient way to batch and buffer requests for SQS operations. By using the batching API, you reduce the number of requests to SQS, which improves throughput and minimizes costs.
 

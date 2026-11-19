@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ca
 ---
 
 # CanSignal
-<a name="API_CanSignal"></a>
 
 Information about a single controller area network (CAN) signal and the messages it receives and transmits.
 

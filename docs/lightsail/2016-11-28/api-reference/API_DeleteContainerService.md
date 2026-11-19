@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteContainerService
-<a name="API_DeleteContainerService"></a>
 
 Deletes your Amazon Lightsail container service.
 

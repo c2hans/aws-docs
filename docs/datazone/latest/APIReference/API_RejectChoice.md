@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RejectC
 ---
 
 # RejectChoice
-<a name="API_RejectChoice"></a>
 
 The details of the automatically generated business metadata that is rejected.
 

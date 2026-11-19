@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Hierarch
 ---
 
 # HierarchyGroup
-<a name="API_HierarchyGroup"></a>
 
 Contains information about a hierarchy group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.h
 ---
 
 # Customize your model to improve its performance for your use case
-<a name="custom-models"></a>
 
 Model customization is the process of providing training data to a model to improve its performance for specific use-cases. You can customize Amazon Bedrock foundation models to improve their performance and create a better customer experience. Amazon Bedrock currently provides the following customization methods.
 + **Supervised fine-tuning**

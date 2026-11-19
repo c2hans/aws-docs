@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Getting started
-<a name="alarm-getting-started"></a>
 
 **Topics**
 + [Create alarms](Create-Alarms.md)

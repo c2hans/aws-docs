@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/pacemaker-t
 ---
 
 # Active/passive load balancer
-<a name="pacemaker-tutorial-setup2"></a>
 
 In this setup, you run HAProxy as a load balancer on one instance at a time. The HAProxy configuration files are stored on DRBD-replicated storage so that when Pacemaker fails over to a standby instance, the configuration is available immediately.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/getting-started-best-pra
 ---
 
 # Best Practices for Getting Started
-<a name="getting-started-best-practices"></a>
 
 ## Conversation Design Principles
 <a name="conversation-design-principles"></a>

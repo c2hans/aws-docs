@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # AlarmMuteRuleSummary
-<a name="API_AlarmMuteRuleSummary"></a>
 
 Summary information about an alarm mute rule, including its name, status, and configuration details.
 

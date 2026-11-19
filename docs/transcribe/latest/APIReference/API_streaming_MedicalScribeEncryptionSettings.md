@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeEncryptionSettings
-<a name="API_streaming_MedicalScribeEncryptionSettings"></a>
 
 Contains encryption related settings to be used for data encryption with AWS Key Management Service, including KmsEncryptionContext and KmsKeyId. The KmsKeyId is required, while KmsEncryptionContext is optional for additional layer of security.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Updating the logging and monitoring components
-<a name="updating-logging-monitoring"></a>
 
 Some legacy environments use centralized logging and monitoring tools (for example, [Splunk](https://www.splunk.com/), [SolarWinds,](https://www.solarwinds.com/) or [Zabbix](https://www.zabbix.com/)) for infrastructure and application monitoring. Application support teams might also use Secure Shell (SSH) protocol or remote desktop protocol (RDP) to monitor and debug. To avoid this manual and repetitive process, you can use [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) to automate monitoring on the AWS Cloud.
 

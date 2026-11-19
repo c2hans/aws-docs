@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Co
 ---
 
 # ConfluenceDataSourceConfiguration
-<a name="API_agent_ConfluenceDataSourceConfiguration"></a>
 
 The configuration information to connect to Confluence as your data source for self-managed knowledge bases.
 

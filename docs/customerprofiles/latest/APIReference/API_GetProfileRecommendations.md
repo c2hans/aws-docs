@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetProfileRecommendations
-<a name="API_connect-customer-profiles_GetProfileRecommendations"></a>
 
 Fetches the recommendations for a profile in the input Customer Profiles domain. Fetches all the profile recommendations
 

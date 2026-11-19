@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelModerators
-<a name="API_messaging-chime_ListChannelModerators"></a>
 
 Lists all the moderators for a channel.
 

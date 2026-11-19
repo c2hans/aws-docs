@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/customizing-ch
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Customizing Amazon Q Developer in chat applications
-<a name="customizing-chatbot"></a>
 
 Items you can customize include:
 + Notifications

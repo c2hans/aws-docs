@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Quotas and other considerations for continuous deployment
-<a name="continuous-deployment-quotas-considerations"></a>
 
 CloudFront continuous deployment is subject to the following quotas and other considerations.
 

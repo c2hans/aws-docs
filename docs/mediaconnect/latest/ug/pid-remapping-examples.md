@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/pid-remapping-exa
 ---
 
 # PID remapping examples
-<a name="pid-remapping-examples"></a>
 
 The following examples show the `processors` member of a router output as JSON. You can use them in a `CreateRouterOutput` or `UpdateRouterOutput` request with the AWS CLI or the MediaConnect API.
 

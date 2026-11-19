@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Update domain contact information in Lightsail
-<a name="amazon-lightsail-domain-update-contacts"></a>
 
 When you register a domain with Amazon Lightsail, you must specify contact information for your domain. Your domain’s contact information is used to verify ownership of your domain and to keep you updated about any information related to your domain name. For more information about the information required during domain registration, see [Provide domain information when you register or transfer a domain in Lightsail](amazon-lightsail-domain-register-values-specify.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/AES_ENC
 ---
 
 # AES\_ENCRYPT function
-<a name="AES_ENCRYPT"></a>
 
 The AES\_ENCRYPT function is used for encrypting data using the Advanced Encryption Standard (AES) algorithm.
 

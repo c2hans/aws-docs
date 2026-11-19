@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensource-apply-p
 ---
 
 # Applying the Amazon Personalize Search Ranking plugin to queries in open source OpenSearch
-<a name="opensource-apply-plugin"></a>
 
 You can apply the Amazon Personalize Search Ranking plugin to all queries and responses for an OpenSearch index. You can also apply the plugin to individual OpenSearch queries and responses.
 +  The following curl command applies a search pipeline to an OpenSearch index in an open source OpenSearch cluster running locally. With this approach, all searches at this index use the plugin to apply personalization to search results.

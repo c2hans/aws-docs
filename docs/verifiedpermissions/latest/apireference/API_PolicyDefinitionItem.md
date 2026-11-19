@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # PolicyDefinitionItem
-<a name="API_PolicyDefinitionItem"></a>
 
 A structure that describes a [PolicyDefinintion](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_PolicyDefinintion.html). It will always have either an `StaticPolicy` or a `TemplateLinkedPolicy` element.
 

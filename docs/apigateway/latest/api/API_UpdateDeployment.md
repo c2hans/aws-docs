@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDeployme
 ---
 
 # UpdateDeployment
-<a name="API_UpdateDeployment"></a>
 
 Changes information about a Deployment resource.
 

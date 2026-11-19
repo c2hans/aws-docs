@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_StopTa
 ---
 
 # StopTask
-<a name="API_StopTask"></a>
 
 Stops a running task. Any tags associated with the task will be deleted.
 

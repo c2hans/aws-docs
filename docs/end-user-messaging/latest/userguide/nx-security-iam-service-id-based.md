@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Identity-based policies for AWS End User Messaging
-<a name="nx-security-iam-service-id-based"></a>
 
 **Supports identity-based policies: Yes**
 

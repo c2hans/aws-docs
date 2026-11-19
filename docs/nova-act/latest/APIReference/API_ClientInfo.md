@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ClientI
 ---
 
 # ClientInfo
-<a name="API_ClientInfo"></a>
 
 Information about the client making API requests, used for compatibility checking.
 

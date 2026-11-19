@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/python-config
 ---
 
 # Configuring the WSGI server with a Procfile on Elastic Beanstalk
-<a name="python-configuration-procfile"></a>
 
 You can add a [`Procfile`](platforms-linux-extend.build-proc.md#platforms-linux-extend.proc) to your source bundle to specify and configure the WSGI server for your application. You can specify custom start and run commands in the `Procfile`.
 

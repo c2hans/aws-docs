@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.h
 ---
 
 # Create and configure agent manually
-<a name="agents-create"></a>
 
 To create an agent with Amazon Bedrock, you set up the following components:
 + The configuration of the agent, which defines the purpose of the agent and indicates the foundation model (FM) that it uses to generate prompts and responses.

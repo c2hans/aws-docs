@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListCostAllocationTagBackfillHistory
-<a name="API_ListCostAllocationTagBackfillHistory"></a>
 
  Retrieves a list of your historical cost allocation tag backfill requests.
 

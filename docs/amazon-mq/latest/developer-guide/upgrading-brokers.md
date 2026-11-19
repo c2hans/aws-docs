@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/upgradi
 ---
 
 # Upgrading an Amazon MQ broker engine version
-<a name="upgrading-brokers"></a>
 
  Amazon MQ regularly provides new broker engine versions for all supported broker engine types. New engine versions include security patches, bug fixes, and other broker engine improvements.
 

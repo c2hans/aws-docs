@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RS_GetActionRe
 ---
 
 # GetActionRecommendations
-<a name="API_RS_GetActionRecommendations"></a>
 
 Returns a list of recommended actions in sorted in descending order by prediction score. Use the `GetActionRecommendations` API if you have a custom campaign that deploys a solution version trained with a PERSONALIZED\_ACTIONS recipe.
 

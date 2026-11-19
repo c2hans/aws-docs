@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operat
 ---
 
 # Amazon Chime SDK Messaging
-<a name="API_Operations_Amazon_Chime_SDK_Messaging"></a>
 
 The following actions are supported by Amazon Chime SDK Messaging:
 +  [AssociateChannelFlow](API_messaging-chime_AssociateChannelFlow.md)

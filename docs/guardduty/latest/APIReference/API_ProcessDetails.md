@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Proces
 ---
 
 # ProcessDetails
-<a name="API_ProcessDetails"></a>
 
 Information about the observed process.
 

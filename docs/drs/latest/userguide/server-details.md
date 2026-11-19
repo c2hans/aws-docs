@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/server-details.html
 ---
 
 # View server details with AWS DRS
-<a name="server-details"></a>
 
 To access the server details view, click the **Hostname** of any server on the **Source servers** page.
 

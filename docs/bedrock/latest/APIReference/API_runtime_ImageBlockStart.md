@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ImageBlockStart
-<a name="API_runtime_ImageBlockStart"></a>
 
 The initial event in a streaming image block that indicates the start of image content.
 

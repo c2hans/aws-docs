@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # NatGatewayConfiguration
-<a name="API_CostOptimizationHub_NatGatewayConfiguration"></a>
 
 The NAT Gateway configuration used for recommendations.
 

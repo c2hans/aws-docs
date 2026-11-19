@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-supported-lis
 ---
 
 # Codecs supported in MediaLive inputs
-<a name="inputs-supported-list"></a>
 
 MediaLive supports the following video codecs in sources:
 + H.264 (AVC)

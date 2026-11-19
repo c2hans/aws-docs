@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PtrUpdate
 ---
 
 # PtrUpdateStatus
-<a name="API_PtrUpdateStatus"></a>
 
 The status of an updated pointer (PTR) record for an Elastic IP address.
 

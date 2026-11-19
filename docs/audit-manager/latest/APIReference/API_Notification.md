@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_No
 ---
 
 # Notification
-<a name="API_Notification"></a>
 
  The notification that informs a user of an update in AWS Audit Manager. For example, this includes the notification that's sent when a control set is delegated for review.
 

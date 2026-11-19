@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/disaster-recovery-
 ---
 
 # Resilience in ROSA
-<a name="disaster-recovery-resiliency"></a>
 
 ## AWS global infrastructure resilience
 <a name="disaster-recovery-resiliency-infra"></a>

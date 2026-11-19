@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Oracle 8i or 9i to Amazon RDS for Oracle using SharePlex and AWS DMS
-<a name="migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms"></a>
 
 *Ramu Jagini, Amazon Web Services*
 

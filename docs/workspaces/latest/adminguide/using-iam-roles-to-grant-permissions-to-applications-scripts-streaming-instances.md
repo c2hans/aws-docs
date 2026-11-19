@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/using-iam-r
 ---
 
 # Access to WorkSpaces and scripts on WorkSpaces Pool instances
-<a name="using-iam-roles-to-grant-permissions-to-applications-scripts-streaming-instances"></a>
 
 In this topic, *WorkSpaces Pool instances* are the streaming instances that run your WorkSpaces Pools. This topic applies to WorkSpaces Pools and does not apply to WorkSpaces Personal.
 

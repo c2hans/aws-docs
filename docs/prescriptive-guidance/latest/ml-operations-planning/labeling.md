@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operatio
 ---
 
 # Labeling
-<a name="labeling"></a>
 
 ## Provide clear labeling instructions
 <a name="instructions"></a>

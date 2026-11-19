@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/securit
 ---
 
 # Identity-based policy examples for AWS Service Catalog
-<a name="security_iam_service-with-iam-id-based-policies-examples"></a>
 
 **Topics**
 + [Console access for end users](#permissions-end-users-console)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalSummary
-<a name="API_RouteRentalSummary"></a>
 
 Summary of the rental leg.
 

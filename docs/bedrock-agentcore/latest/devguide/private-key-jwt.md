@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/privat
 ---
 
 # Private Key JWT client authentication
-<a name="private-key-jwt"></a>
 
 With Private Key JWT, AgentCore Identity authenticates to a downstream identity provider’s token endpoint using a signed JWT client assertion, per RFC 7523, Section 2.2, instead of a client secret. The private key never leaves AWS Key Management Service (KMS). AgentCore Identity signs each assertion via `kms:Sign`. Your identity provider possesses the corresponding public key used to authenticate the client assertion and returns an access token.
 

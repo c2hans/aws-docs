@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Synchronous communication
-<a name="synchronous"></a>
 
 In synchronous communication, a client initiates a request to a service, as the following diagram illustrates. Examples include a request to fetch information, such as an `HTTP GET` request, or a request to mutate data, such as an `HTTP PUT` request. In either case, the client waits for the server to respond before it proceeds. Synchronous calls are familiar to most developers, are easy to implement and troubleshoot, and, in many cases, are the widely accepted standard for communication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-xks-key
 ---
 
 # Create a KMS key in external key stores
-<a name="create-xks-keys"></a>
 
 After you have [created](create-xks-keystore.md) and [connected](xks-connect-disconnect.md) your external key store, you can create AWS KMS keys in your key store. They must be [symmetric encryption KMS keys](symm-asymm-choose-key-spec.md#symmetric-cmks) with an origin value of **External key store** (`EXTERNAL_KEY_STORE`). You cannot create [asymmetric KMS keys](symmetric-asymmetric.md), [HMAC KMS keys](hmac.md) or KMS keys with [imported key material](importing-keys.md) in a custom key store. Also, you cannot use symmetric encryption KMS keys in a custom key store to generate asymmetric data key pairs.
 

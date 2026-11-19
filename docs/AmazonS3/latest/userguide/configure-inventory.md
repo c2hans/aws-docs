@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/configure-inve
 ---
 
 # Configuring Amazon S3 Inventory
-<a name="configure-inventory"></a>
 
 Amazon S3 Inventory provides a flat file list of your objects and metadata, on a schedule that you define. You can use S3 Inventory as a scheduled alternative to the Amazon S3 synchronous `List` API operation. S3 Inventory provides comma-separated values (CSV), [Apache optimized row columnar (ORC)](https://orc.apache.org/), or [Apache Parquet (Parquet)](https://parquet.apache.org/) output files that list your objects and their corresponding metadata.
 

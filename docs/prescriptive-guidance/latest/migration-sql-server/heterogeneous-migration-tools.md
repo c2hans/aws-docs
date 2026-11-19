@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Tools for heterogeneous database migrations
-<a name="heterogeneous-migration-tools"></a>
 
 The following chart provides a list of tools that you can use to migrate from SQL Server to another database engine.
 

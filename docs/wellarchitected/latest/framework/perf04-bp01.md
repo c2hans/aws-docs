@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP01 Understand how networking impacts performance
-<a name="perf04-bp01"></a>
 
  Networking connects every part of a distributed workload, so network decisions shape latency, throughput, and user experience. Treating a cloud network like an on-premises data center recreates old bottlenecks and wastes capacity.
 

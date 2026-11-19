@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayNetworkFunctionAttachment
-<a name="API_ModifyTransitGatewayNetworkFunctionAttachment"></a>
 
 Adds Availability Zones to or removes Availability Zones from the specified network function attachment. The attachment must be in the `available` state. You must specify at least one Availability Zone to add or remove, and the attachment must keep at least one Availability Zone.
 

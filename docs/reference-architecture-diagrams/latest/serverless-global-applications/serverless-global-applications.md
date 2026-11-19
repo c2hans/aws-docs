@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Serverless Architecture for Global Applications
-<a name="serverless-global-applications"></a>
 
 Publication date: **October 15, 2020 ([Diagram history](#diagram-history))**
 

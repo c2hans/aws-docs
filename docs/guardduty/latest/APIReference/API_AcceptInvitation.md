@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accept
 ---
 
 # AcceptInvitation
-<a name="API_AcceptInvitation"></a>
 
  *This action has been deprecated.*
 

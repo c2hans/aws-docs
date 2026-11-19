@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/b
 ---
 
 # BES Cyber System Information on AWS
-<a name="bes-cyber-system-information"></a>
 
 Publication date: **May 18, 2022 ([Diagram history](#bcsi-history))**
 

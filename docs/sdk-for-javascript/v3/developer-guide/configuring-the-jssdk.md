@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/co
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Configure the SDK for JavaScript
-<a name="configuring-the-jssdk"></a>
 
 Before you use the SDK for JavaScript to invoke web services using the API, you must configure the SDK. At a minimum, you must configure:
 + The AWS Region in which you will request services

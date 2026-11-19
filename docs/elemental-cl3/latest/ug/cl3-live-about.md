@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/cl3-live-about.h
 ---
 
 # Working with AWS Elemental Live in a cluster
-<a name="cl3-live-about"></a>
 
 Running AWS Elemental Live in a AWS Elemental Conductor Live cluster provides two key benefits that are not available when you run Elemental Live in stand-alone mode:
 + Centralized creation and control of channels on the nodes.

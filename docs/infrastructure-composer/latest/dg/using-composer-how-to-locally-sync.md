@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Activate local sync in Infrastructure Composer
-<a name="using-composer-how-to-locally-sync"></a>
 
 To activate local sync, complete the following steps:
 

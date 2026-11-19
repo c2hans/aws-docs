@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/bestpractices.
 ---
 
 # Best practices for Standard brokers
-<a name="bestpractices"></a>
 
 This topic outlines some best practices to follow when using Amazon MSK. For information about Amazon MSK Replicator best practices, see [Best practices](msk-replicator-best-practices.md).
 

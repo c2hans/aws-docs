@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-lum
 ---
 
 # Luma AI
-<a name="model-cards-luma-ai"></a>
 
 The following Luma AI model is available in Amazon Bedrock:
 

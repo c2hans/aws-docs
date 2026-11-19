@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeCopyJob
-<a name="API_DescribeCopyJob"></a>
 
 Returns metadata associated with creating a copy of a resource.
 

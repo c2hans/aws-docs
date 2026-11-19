@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Add a build install script
-<a name="gamelift-build-cli-uploading-install"></a>
 
 Create an install script for the operating system (OS) of your game build:
 + Windows: Create a batch file named `install.bat`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/storage-csi-concep
 ---
 
 # How storage works in ROSA
-<a name="storage-csi-concepts"></a>
 
 With ROSA, you can use the Kubernetes persistent volume framework to give your applications durable storage that outlives individual pods. Storage is consumed through the Container Storage Interface (CSI), a standard that lets ROSA use AWS storage services without building support for each service into the platform.
 

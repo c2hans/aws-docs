@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationEventDatasetLoadExecutionDetails
-<a name="API_DataIntegrationEventDatasetLoadExecutionDetails"></a>
 
 The target dataset load execution details.
 

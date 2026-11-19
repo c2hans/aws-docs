@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightIoTAnalyticsAccess
-<a name="AWSQuickSightIoTAnalyticsAccess"></a>
 
 **Description**: Give QuickSight read-only access to IoT Analytics datasets
 

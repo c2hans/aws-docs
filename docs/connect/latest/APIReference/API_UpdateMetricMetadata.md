@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateMe
 ---
 
 # UpdateMetricMetadata
-<a name="API_UpdateMetricMetadata"></a>
 
 Updates the name and/or description of an existing metric in the specified Connect Customer instance.
 

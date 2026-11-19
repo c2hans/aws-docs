@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG_quotas.html
 ---
 
 # Amazon Managed Grafana service quotas
-<a name="AMG_quotas"></a>
 
 Amazon Managed Grafana has the following quotas. You can request a [quota increase](https://console.aws.amazon.com/servicequotas/home/services/grafana/quotas/L-2C2D5119) for the number of workspaces.
 

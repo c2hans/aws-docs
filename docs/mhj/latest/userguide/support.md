@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mhj/latest/userguide/support.html
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Support for AWS Migration Hub Journeys
-<a name="support"></a>
 
 To get support for AWS Migration Hub Journeys, if you have an AWS account, [create a support case](https://support.console.aws.amazon.com/support/home#/).
 

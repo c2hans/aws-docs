@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Identifying string fields before migration
-<a name="tstk-identify-fields"></a>
 
 Before you migrate, inspect the source cluster mappings so you know which fields will be converted and which target type each will receive. From the Migration Console pod (`migration-console-0`), query the source `_mapping` API:
 

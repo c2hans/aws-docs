@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Crea
 ---
 
 # CreateServiceNetwork
-<a name="API_CreateServiceNetwork"></a>
 
 Creates a service network. A service network is a logical boundary for a collection of services. You can associate services and VPCs with a service network.
 

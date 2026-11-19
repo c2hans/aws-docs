@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Customer pattern catalog
-<a name="ae-pattern-catalog"></a>
 
 This catalog grows over time. Each entry documents one recurring customer question and the AWS architectural answer for building on top of ADP’s governed data products. The structure is intentionally stable — new entries append at the end without changing earlier ones.
 

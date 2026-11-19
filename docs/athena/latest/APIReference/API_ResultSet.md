@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultSet
 ---
 
 # ResultSet
-<a name="API_ResultSet"></a>
 
 The metadata and rows that make up a query result set. The metadata describes the column structure and data types. To return a `ResultSet` object, use [GetQueryResults](API_GetQueryResults.md).
 

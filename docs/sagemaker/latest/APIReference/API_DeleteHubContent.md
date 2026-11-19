@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteHubContent
-<a name="API_DeleteHubContent"></a>
 
 Delete the contents of a hub.
 

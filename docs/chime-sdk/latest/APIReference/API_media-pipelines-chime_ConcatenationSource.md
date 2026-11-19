@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ConcatenationSource
-<a name="API_media-pipelines-chime_ConcatenationSource"></a>
 
 The source type and media pipeline configuration settings in a configuration object.
 

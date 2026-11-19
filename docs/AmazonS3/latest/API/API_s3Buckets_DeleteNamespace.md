@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Delete
 ---
 
 # DeleteNamespace
-<a name="API_s3Buckets_DeleteNamespace"></a>
 
 Deletes a namespace. For more information, see [Delete a namespace](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-namespace-delete.html) in the *Amazon Simple Storage Service User Guide*.
 

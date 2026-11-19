@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/http-unsubscribe-confirmat
 ---
 
 # HTTP/HTTPS unsubscribe confirmation JSON format
-<a name="http-unsubscribe-confirmation-json"></a>
 
 After an HTTP/HTTPS endpoint is unsubscribed from a topic, Amazon SNS sends an unsubscribe confirmation message to the endpoint.
 

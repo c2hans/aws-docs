@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Launch with OpenID Connect (OIDC)
-<a name="launch-with-openid-connect-oidc"></a>
 
  **Time to deploy**: Approximately 30 minutes
 

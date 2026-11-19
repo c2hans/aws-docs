@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_ListTe
 ---
 
 # ListTextTranslationJobs
-<a name="API_ListTextTranslationJobs"></a>
 
 Gets a list of the batch translation jobs that you have submitted.
 

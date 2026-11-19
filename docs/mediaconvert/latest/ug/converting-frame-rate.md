@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/converting-frame-
 ---
 
 # Converting the frame rate of your video
-<a name="converting-frame-rate"></a>
 
  After you know how you want to specify the relevant settings, use one of the following procedures to set up your job. For conceptual information and guidance about choosing the right values for these settings, see [Settings for frame rate conversion](working-with-video-frame-rates.md#settings-for-frame-rate-conversion).
 

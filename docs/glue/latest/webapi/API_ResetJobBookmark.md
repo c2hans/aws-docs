@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ResetJobBookmark.
 ---
 
 # ResetJobBookmark
-<a name="API_ResetJobBookmark"></a>
 
 Resets a bookmark entry.
 

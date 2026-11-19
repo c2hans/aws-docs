@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ExecutionStartedDe
 ---
 
 # ExecutionStartedDetails
-<a name="API_ExecutionStartedDetails"></a>
 
 Details about a durable execution that started.
 

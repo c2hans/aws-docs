@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/permissions-resource.ht
 ---
 
 # HealthOmics Resource permissions
-<a name="permissions-resource"></a>
 
 AWS HealthOmics creates and accesses resources in other services on your behalf when you run a job or create a store. In some cases, you need to configure permissions in other services to access resources or to allow HealthOmics to access them.
 

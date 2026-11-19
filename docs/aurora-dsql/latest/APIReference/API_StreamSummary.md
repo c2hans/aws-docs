@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Stre
 ---
 
 # StreamSummary
-<a name="API_StreamSummary"></a>
 
 Summary information about a stream.
 

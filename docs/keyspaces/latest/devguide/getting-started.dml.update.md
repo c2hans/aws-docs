@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Update data in an Amazon Keyspaces table using CQL
-<a name="getting-started.dml.update"></a>
 
 To update the data in your `book_awards` table, use the `UPDATE` statement.
 

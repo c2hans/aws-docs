@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ManagedMic
 ---
 
 # ManagedMicrovmImageSummary
-<a name="API_ManagedMicrovmImageSummary"></a>
 
 Contains summary information about a managed MicroVM image.
 

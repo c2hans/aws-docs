@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListThir
 ---
 
 # ListThirdPartyFirewallFirewallPolicies
-<a name="API_ListThirdPartyFirewallFirewallPolicies"></a>
 
 Retrieves a list of all of the third-party firewall policies that are associated with the third-party firewall administrator's account.
 

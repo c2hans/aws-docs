@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Bill
 ---
 
 # BilledJobResourceUtilization
-<a name="API_BilledJobResourceUtilization"></a>
 
  Information related to the utilization of resources that have been billed or charged for in a given context, such as a protected job.
 

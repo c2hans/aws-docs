@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/format-tables-piv
 ---
 
 # Cell formatting
-<a name="format-tables-pivot-tables-cells"></a>
 
 ## Row height
 <a name="format-tables-pivot-tables-cells-row"></a>

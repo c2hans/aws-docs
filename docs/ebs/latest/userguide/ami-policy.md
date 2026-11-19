@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ami-policy.html
 ---
 
 # Create Amazon Data Lifecycle Manager custom policy for EBS-backed AMIs
-<a name="ami-policy"></a>
 
 The following procedure shows you how to use Amazon Data Lifecycle Manager to automate EBS-backed AMI lifecycles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.AGGREGATE
-<a name="vector-search-commands-ft.aggregate"></a>
 
 A superset of the FT.SEARCH command, it allows substantial additional processing of the keys selected by the query expression.
 

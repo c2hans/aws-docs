@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Amazon DevOps Guru
-<a name="amazon-devops-guru"></a>
 
 [Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) is a service powered by machine learning (ML) that is designed to make it easy to improve an application’s operational performance and availability. DevOps Guru helps detect behaviors that deviate from normal operating patterns, so you can identify operational issues long before they impact your customers.
 

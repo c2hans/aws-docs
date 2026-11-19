@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # CPU
-<a name="apg-waits.cpu"></a>
 
 This event occurs when a thread is active in CPU or is waiting for CPU.
 

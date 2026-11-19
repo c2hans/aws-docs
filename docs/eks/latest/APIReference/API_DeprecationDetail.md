@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeprecationD
 ---
 
 # DeprecationDetail
-<a name="API_DeprecationDetail"></a>
 
 The summary information about deprecated resource usage for an insight check in the `UPGRADE_READINESS` category.
 

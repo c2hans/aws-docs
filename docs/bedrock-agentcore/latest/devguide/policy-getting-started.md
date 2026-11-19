@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Getting started with Policy in AgentCore
-<a name="policy-getting-started"></a>
 
 In this tutorial, you use the AgentCore CLI to set up Policy in AgentCore and attach it to an Amazon Bedrock AgentCore Gateway. You create a refund processing tool with Cedar policies that enforce business rules for refund amounts.
 

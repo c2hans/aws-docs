@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Donut
 ---
 
 # DonutOptions
-<a name="API_DonutOptions"></a>
 
 The options for configuring a donut chart or pie chart.
 

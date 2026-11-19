@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CancelTimeOff
-<a name="API_connect-scheduling_CancelTimeOff"></a>
 
 Cancels a time off request.
 

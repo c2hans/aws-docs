@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/when-your-sti
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Setting Up When Your Overlay Plays
-<a name="when-your-still-overlay-plays"></a>
 
 Regardless of whether you specify a still graphic overlay in an input, a stream, or globally to the job, you set up when it starts and how long it runs by specifying the **Start time** and **Duration**. The following image shows how you would specify these settings if you wanted your overlay to start two minutes into the video and to remain on the video for two minutes. If you keep these settings in their default state, the overlay begins at the first frame of the input or output and remains on the video for the duration of the input or output.
 

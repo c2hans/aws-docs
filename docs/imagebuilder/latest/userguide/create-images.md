@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-ima
 ---
 
 # Create custom images with Image Builder
-<a name="create-images"></a>
 
 There are several different ways that you can create a new Image Builder image. For example, you can use one of the following methods to create an image with the AWS Management Console or AWS CLI. You can also use the [CreateImage](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateImage.html) API action or run a build pipeline to create the image. For the SDK request associated with the API action, you can refer to the [See Also](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateImage.html#API_CreateImage_SeeAlso) link for that command in the *EC2 Image Builder API Reference*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/deactivate-e
 ---
 
 # Opting out of external metrics ingestion
-<a name="deactivate-external-metrics-ingestion"></a>
 
 This section provides you with instructions on how to opt out of external metric ingestion. You can opt out external metric ingestion using the Compute Optimizer console or the AWS CLI.
 

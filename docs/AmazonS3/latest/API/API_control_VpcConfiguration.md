@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_VpcConfi
 ---
 
 # VpcConfiguration
-<a name="API_control_VpcConfiguration"></a>
 
 The virtual private cloud (VPC) configuration for an access point.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-exam
 ---
 
 # Request signature examples
-<a name="reference_sigv-examples"></a>
 
 The following examples of AWS signing requests show you how you can use SigV4 to sign requests sent without the AWS SDK or AWS command line tool.
 

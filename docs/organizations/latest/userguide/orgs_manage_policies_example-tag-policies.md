@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Tag policy syntax and examples
-<a name="orgs_manage_policies_example-tag-policies"></a>
 
 This page describes tag policy syntax and provides examples.
 

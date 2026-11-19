@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # OptionSetting
-<a name="API_OptionSetting"></a>
 
 Option settings are the actual settings being applied or configured for that option. It is used when you modify an option group or describe option groups. For example, the NATIVE\_NETWORK\_ENCRYPTION option has a setting called SQLNET.ENCRYPTION\_SERVER that can have several different values.
 

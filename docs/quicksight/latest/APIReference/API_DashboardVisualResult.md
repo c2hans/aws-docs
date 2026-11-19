@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardVisualResult
-<a name="API_DashboardVisualResult"></a>
 
 The QA result that is made from dashboard visual.
 

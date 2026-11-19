@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateServiceFunction
-<a name="API_CreateServiceFunction"></a>
 
 Creates a service function within a service.
 

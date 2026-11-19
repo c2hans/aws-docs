@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.SEARCH
-<a name="vector-search-commands-ft.search"></a>
 
 Uses the provided query expression to locate keys within an index. Once located, the count and/or content of indexed fields within those keys can be returned. For more information, see [Vector search query expression](https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-overview.html#vector-search-query-expression).
 

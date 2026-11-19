@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeSecuri
 ---
 
 # CodeSecurityIntegrationSummary
-<a name="API_CodeSecurityIntegrationSummary"></a>
 
 A summary of information about a code security integration.
 

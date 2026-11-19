@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.748d826d-a416-5c45-b89a-f26782d95252"></a>

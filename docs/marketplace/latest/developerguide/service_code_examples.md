@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/servic
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Code examples for AWS Marketplace using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use AWS Marketplace with an AWS software development kit (SDK).
 

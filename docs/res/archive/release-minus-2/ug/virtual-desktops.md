@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/virtual-d
 ---
 
 # Virtual desktops
-<a name="virtual-desktops"></a>
 
 The virtual desktop infrastructure (VDI) module allows users to create and manage Windows or Linux virtual desktops on AWS. Users can launch Amazon EC2 instances with their favorite tools and application pre-installed and configured.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StaticOverride
-<a name="API_StaticOverride"></a>
 
 A static configuration bundle override.
 

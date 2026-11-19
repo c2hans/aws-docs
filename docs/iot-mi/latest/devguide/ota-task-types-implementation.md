@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/ota-task-types-im
 ---
 
 # Implement Over-the-Air (OTA) tasks
-<a name="ota-task-types-implementation"></a>
 
 You can create OTA tasks in two ways, depending on your update requirements and device targeting strategy:
 

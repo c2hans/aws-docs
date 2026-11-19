@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/HERE.ht
 ---
 
 # HERE Technologies
-<a name="HERE"></a>
 
 Amazon Location Service uses HERE Technologies’ location services to help AWS customers use maps, geocode, and calculate routes effectively. HERE's location data offers a location-centric platform that's open, secure, and private. By selecting HERE location data, you are selecting accurate, fresh, and robust data that's deployed natively on the AWS Cloud.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSet ReputationOptions
-<a name="aws-properties-ses-configurationset-reputationoptions"></a>
 
 Enable or disable collection of reputation metrics for emails that you send using this configuration set in the current AWS Region.
 

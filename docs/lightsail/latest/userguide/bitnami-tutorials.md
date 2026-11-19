@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/bitnami-tutor
 ---
 
 # Work with Bitnami applications and stacks on Lightsail
-<a name="bitnami-tutorials"></a>
 
 This section covers the following topics related to Bitnami applications on Amazon Lightsail instances:
 

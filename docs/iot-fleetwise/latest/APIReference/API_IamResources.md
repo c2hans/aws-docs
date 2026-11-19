@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ia
 ---
 
 # IamResources
-<a name="API_IamResources"></a>
 
 The IAM resource that enables AWS IoT FleetWise edge agent software to send data to Amazon Timestream.
 

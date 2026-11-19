@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use-
 ---
 
 # Using the API
-<a name="guardrails-use-invoke-guardrail-checks-using"></a>
 
 To run guardrail checks, send an `InvokeGuardrailChecks` request to the Amazon Bedrock runtime endpoint.
 

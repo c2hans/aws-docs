@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamRouti
 ---
 
 # IpamRoutingPolicyRegistrationDelta
-<a name="API_IpamRoutingPolicyRegistrationDelta"></a>
 
 Contains information about a routing policy registration change, including the changes applied and their publication state.
 

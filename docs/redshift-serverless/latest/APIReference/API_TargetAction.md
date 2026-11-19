@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # TargetAction
-<a name="API_TargetAction"></a>
 
 A JSON format string of the Amazon Redshift Serverless API operation with input parameters. The following is an example of a target action.
 

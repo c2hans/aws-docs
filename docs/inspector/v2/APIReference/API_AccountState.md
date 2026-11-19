@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AccountSta
 ---
 
 # AccountState
-<a name="API_AccountState"></a>
 
 An object with details the status of an AWS account within your Amazon Inspector environment.
 

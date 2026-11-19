@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListReportPlans
-<a name="API_ListReportPlans"></a>
 
 Returns a list of your report plans. For detailed information about a single report plan, use `DescribeReportPlan`.
 

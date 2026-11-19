@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CertificateA
 ---
 
 # CertificateAuthorityScheduledEvents
-<a name="API_CertificateAuthorityScheduledEvents"></a>
 
 The scheduled events during which Amazon EKS may automatically activate a certificate authority, computed from its validity period. These events help ensure that a cluster's signing certificate authority is rotated before its certificate expires.
 

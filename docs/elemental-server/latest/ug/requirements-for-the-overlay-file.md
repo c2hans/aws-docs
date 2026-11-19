@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/requirements-
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Overlay File Requirements
-<a name="requirements-for-the-overlay-file"></a>
 
 Set up the image files that you want to insert over your video as follows:
 + **File type**: Use files with the extension `.png `or `.tga`.

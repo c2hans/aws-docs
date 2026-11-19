@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_VisibilityCo
 ---
 
 # VisibilityConfig
-<a name="API_VisibilityConfig"></a>
 
 Defines and enables Amazon CloudWatch metrics and web request sample collection.
 

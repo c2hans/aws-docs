@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseBundles
-<a name="API_GetRelationalDatabaseBundles"></a>
 
 Returns the list of bundles that are available in Amazon Lightsail. A bundle describes the performance specifications for a database.
 

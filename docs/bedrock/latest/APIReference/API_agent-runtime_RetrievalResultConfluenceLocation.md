@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultConfluenceLocation
-<a name="API_agent-runtime_RetrievalResultConfluenceLocation"></a>
 
 The Confluence data source location.
 

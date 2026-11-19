@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-managed
 ---
 
 # ec2-managedinstance-platform-check
-<a name="ec2-managedinstance-platform-check"></a>
 
 Checks whether EC2 managed instances have the desired configurations.
 

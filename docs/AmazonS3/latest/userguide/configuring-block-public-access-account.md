@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-bl
 ---
 
 # Configuring block public access settings for your account
-<a name="configuring-block-public-access-account"></a>
 
 **Important**
 If your account is managed by an organization-level Block Public Access policy, you cannot modify these account-level settings. Organization-level policies override account-level configurations. For more information on centralized management options, see [S3 policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_s3.html) in the *AWS Organizations user guide*.

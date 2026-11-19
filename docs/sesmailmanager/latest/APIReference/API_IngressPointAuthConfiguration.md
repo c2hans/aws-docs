@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressPointAuthConfiguration
-<a name="API_IngressPointAuthConfiguration"></a>
 
 The authentication configuration for the ingress endpoint resource.
 

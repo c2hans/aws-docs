@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Wor
 ---
 
 # WorkflowRunStatusReason
-<a name="API_WorkflowRunStatusReason"></a>
 
 Information about the status of a workflow run.
 

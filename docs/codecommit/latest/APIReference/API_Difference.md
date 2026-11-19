@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Diffe
 ---
 
 # Difference
-<a name="API_Difference"></a>
 
 Returns information about a set of differences for a commit specifier.
 

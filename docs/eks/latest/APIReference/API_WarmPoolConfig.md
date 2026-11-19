@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_WarmPoolConf
 ---
 
 # WarmPoolConfig
-<a name="API_WarmPoolConfig"></a>
 
 The configuration for an Amazon EC2 Auto Scaling warm pool attached to an Amazon EKS managed node group. Warm pools maintain pre-initialized EC2 instances alongside your Auto Scaling group that have already completed the bootup initialization process and can be kept in a `Stopped`, `Running`, or `Hibernated` state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/waf-global-
 ---
 
 # waf-global-rulegroup-not-empty
-<a name="waf-global-rulegroup-not-empty"></a>
 
 Checks if an AWS WAF Classic rule group contains any rules. The rule is NON\_COMPLIANT if there are no rules present within a rule group.
 

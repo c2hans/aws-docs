@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Sna
 ---
 
 # Snapshot
-<a name="API_Snapshot"></a>
 
 Describes a directory snapshot.
 

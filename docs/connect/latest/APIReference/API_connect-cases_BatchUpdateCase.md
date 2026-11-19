@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchUpdateCase
-<a name="API_connect-cases_BatchUpdateCase"></a>
 
 Updates fields on multiple cases in a single request. All cases must belong to the same domain. Set the title, status, and customer ID through the top-level `title`, `status`, and `customerId` parameters, and set other fields through the `fields` array.
 

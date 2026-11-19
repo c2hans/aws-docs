@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ResourceConflict
-<a name="API_ResourceConflict"></a>
 
 Contains information about a resource conflict.
 

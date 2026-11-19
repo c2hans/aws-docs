@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.ONE_HO
 ---
 
 # ONE\_HOT\_ENCODING
-<a name="recipe-actions.ONE_HOT_ENCODING"></a>
 
 Creates *n* numerical columns, where *n* is the number of unique values in a selected categorical variable.
 

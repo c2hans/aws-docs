@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsNetw
 ---
 
 # AwsNetworkFirewallFirewallSubnetMappingsDetails
-<a name="API_AwsNetworkFirewallFirewallSubnetMappingsDetails"></a>
 
 A public subnet that Network Firewall uses for the firewall.
 

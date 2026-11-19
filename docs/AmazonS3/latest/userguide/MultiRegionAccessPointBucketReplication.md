@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiRegionAcc
 ---
 
 # Configuring replication for use with Multi-Region Access Points
-<a name="MultiRegionAccessPointBucketReplication"></a>
 
 When you make a request to a Multi-Region Access Point endpoint, Amazon S3 automatically routes the request to the bucket that is closest to you. Amazon S3 doesn't consider the contents of the request when making this decision. If you make a request to `GET` an object, your request might be routed to a bucket that doesn't have a copy of this object. If that happens, you receive an HTTP status code 404 (Not Found) error. For more information about Multi-Region Access Point request routing, see [Multi-Region Access Point request routing](MultiRegionAccessPointRequestRouting.md).
 

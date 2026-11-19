@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchD
 ---
 
 # BatchDescribeModelPackageSummary
-<a name="API_BatchDescribeModelPackageSummary"></a>
 
 Provides summary information about the model package.
 

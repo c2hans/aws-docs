@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/create-and-at
 ---
 
 # Create and attach Lightsail block storage disks to Linux instances
-<a name="create-and-attach-additional-block-storage-disks-linux-unix"></a>
 
 You can create and attach additional block storage disks for your Amazon Lightsail instances. After you create additional disks, you need to connect to your Linux/Unix-based Lightsail instance and format and mount the disk.
 

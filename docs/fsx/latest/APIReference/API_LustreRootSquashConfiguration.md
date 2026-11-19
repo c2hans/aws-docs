@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_LustreRootSq
 ---
 
 # LustreRootSquashConfiguration
-<a name="API_LustreRootSquashConfiguration"></a>
 
 The configuration for Lustre root squash used to restrict root-level access from clients that try to access your FSx for Lustre file system as root. Use the `RootSquash` parameter to enable root squash. To learn more about Lustre root squash, see [Lustre root squash](https://docs.aws.amazon.com/fsx/latest/LustreGuide/root-squash.html).
 

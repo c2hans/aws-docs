@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-activation.html
 ---
 
 # SAP OData activation
-<a name="sap-odata-activation"></a>
 
 Complete the following steps for SAP OData connection:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Transit gateway configuration
-<a name="transit-gateway"></a>
 
 In the AWS Region where the most AWS resources will be provisioned or applications deployed, create a transit gateway in the network account. When you create the transit gateway, clear the default route table propagation and association. Instead, you will attach and propagate routes in specific transit gateway route tables based on the type of VPC.
 

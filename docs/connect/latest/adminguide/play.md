@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/play.html
 ---
 
 # Flow block in Connect Customer: Play prompt
-<a name="play"></a>
 
 This topic defines the flow block for playing audio prompts, text-to-speech messages, or chat responses to customers and agents.
 

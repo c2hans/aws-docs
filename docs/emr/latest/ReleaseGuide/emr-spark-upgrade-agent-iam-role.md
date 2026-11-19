@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-upgrad
 ---
 
 # IAM Role Setup
-<a name="emr-spark-upgrade-agent-iam-role"></a>
 
 ## Prerequisites
 <a name="emr-spark-upgrade-agent-iam-prerequisites"></a>

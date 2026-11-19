@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/lambda-metri
 ---
 
 # Lambda function metrics
-<a name="lambda-metrics-analyzed"></a>
 
 Compute Optimizer analyzes the following CloudWatch metrics of your Lambda functions. It uses these metrics to make its Lambda function recommendations.
 

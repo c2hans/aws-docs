@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-on-outpos
 ---
 
 # Supported DB instance classes for Amazon RDS on AWS Outposts
-<a name="rds-on-outposts.db-instance-classes"></a>
 
 Amazon RDS on AWS Outposts supports the following DB instance classes:
 + General purpose DB instance classes

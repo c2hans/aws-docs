@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Securi
 ---
 
 # SecurityGroup
-<a name="API_SecurityGroup"></a>
 
 Contains information about the security groups associated with the EC2 instance.
 

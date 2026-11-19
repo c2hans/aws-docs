@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Storage capacity
-<a name="storage"></a>
 
 Amazon RDS for Oracle supports the following AWS storage types:
 + General Purpose solid-state drive (SSD): gp2, gp3

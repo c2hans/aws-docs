@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/remov
 ---
 
 # Removing a text widget from a CloudWatch dashboard
-<a name="remove_text_dashboard"></a>
 
 **To remove a text widget from a dashboard**
 

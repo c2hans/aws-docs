@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Supported streaming connectors
-<a name="jobs-spark-streaming-connectors"></a>
 
 Streaming connectors facilitate reading data from a streaming source and can also write data to a streaming sink.
 

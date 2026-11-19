@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMQuickSetup::LifecycleAutomation
-<a name="aws-resource-ssmquicksetup-lifecycleautomation"></a>
 
 Creates a lifecycle automation resource that executes SSM Automation documents during CloudFormation stack operations. This resource replaces inline AWS Lambda custom resources and provides a managed way to handle lifecycle events in Quick Setup configurations.
 

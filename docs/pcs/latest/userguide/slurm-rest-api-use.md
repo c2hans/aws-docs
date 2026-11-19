@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-rest-api-use.
 ---
 
 # Using Slurm REST API for job management in AWS PCS
-<a name="slurm-rest-api-use"></a>
 
 ## Slurm REST API overview
 <a name="slurm-rest-api-use-overview"></a>

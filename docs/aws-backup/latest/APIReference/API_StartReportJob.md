@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Start
 ---
 
 # StartReportJob
-<a name="API_StartReportJob"></a>
 
 Starts an on-demand report job for the specified report plan.
 

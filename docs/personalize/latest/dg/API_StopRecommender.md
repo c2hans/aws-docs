@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_StopRecommende
 ---
 
 # StopRecommender
-<a name="API_StopRecommender"></a>
 
 Stops a recommender that is ACTIVE. Stopping a recommender halts billing and automatic retraining for the recommender.
 

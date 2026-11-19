@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormNumericQuestionOption
-<a name="API_EvaluationFormNumericQuestionOption"></a>
 
 Information about the option range used for scoring in numeric questions.
 

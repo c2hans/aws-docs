@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-place
 ---
 
 # GetPlace
-<a name="get-place"></a>
 
 GetPlace retrieves detailed information about a place using its unique `PlaceId`. The request supports optional parameters for additional features, such as time zone data or phonemes, and language localization. The API returns information like address, coordinates, business details, contact methods, and time zone information.
 

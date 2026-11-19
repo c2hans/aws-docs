@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Replic
 ---
 
 # ReplicationDestination
-<a name="API_ReplicationDestination"></a>
 
 An array of objects representing the destination for a replication rule.
 

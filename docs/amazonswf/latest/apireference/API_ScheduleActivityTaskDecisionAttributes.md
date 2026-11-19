@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Schedu
 ---
 
 # ScheduleActivityTaskDecisionAttributes
-<a name="API_ScheduleActivityTaskDecisionAttributes"></a>
 
 Provides the details of the `ScheduleActivityTask` decision.
 

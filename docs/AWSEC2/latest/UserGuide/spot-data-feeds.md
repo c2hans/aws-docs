@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.
 ---
 
 # Track your Spot Instance costs using the Spot Instance data feed
-<a name="spot-data-feeds"></a>
 
 To help you understand the charges for your Spot Instances, Amazon EC2 provides a data feed that describes your Spot Instance usage and pricing. This data feed is sent to an Amazon S3 bucket that you specify when you subscribe to the data feed.
 

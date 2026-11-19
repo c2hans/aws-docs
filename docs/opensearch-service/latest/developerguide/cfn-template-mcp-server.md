@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # MCP server integration templates
-<a name="cfn-template-mcp-server"></a>
 
 With the Model Context Protocol (MCP) server templates, you can deploy an OpenSearch hosted MCP server on Amazon Bedrock AgentCore, reducing the integration complexity between AI agents and OpenSearch tools. For more information, see [What is Amazon Bedrock AgentCore?](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html).
 

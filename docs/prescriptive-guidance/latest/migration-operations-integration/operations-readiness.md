@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Operations readiness
-<a name="operations-readiness"></a>
 
 Workshops are an eﬀective way to understand your current operating model and to deﬁne an AWS operating model.
 

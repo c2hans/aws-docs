@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/performance-via
 ---
 
 # Assessing performance with logging messages
-<a name="performance-via-logs"></a>
 
 Elemental Live continually writes to log files to capture status information about the health of each event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Creates or updates a Systems Manager resource policy. A resource policy helps you to define the IAM entity (for example, an AWS account) that can manage your Systems Manager resources. The following resources support Systems Manager resource policies.
 +  `OpsItemGroup` - The resource policy for `OpsItemGroup` enables AWS accounts to view and interact with OpsCenter operational work items (OpsItems).
@@ -108,7 +107,7 @@ One or more parameters specified for the call aren't valid. Verify the parameter
 HTTP Status Code: 400
 
  ** ResourcePolicyLimitExceededException **
-The [PutResourcePolicy](#API_PutResourcePolicy) API action enforces two limits. A policy can't be greater than 1024 bytes in size. And only one policy can be attached to `OpsItemGroup`. Verify these limits and try again.
+The [PutResourcePolicy](API_PutResourcePolicy.md) API action enforces two limits. A policy can't be greater than 1024 bytes in size. And only one policy can be attached to `OpsItemGroup`. Verify these limits and try again.
 HTTP Status Code: 400
 
  ** ResourcePolicyNotFoundException **

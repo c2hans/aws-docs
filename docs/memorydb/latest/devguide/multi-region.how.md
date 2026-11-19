@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/multi-region.ho
 ---
 
 # How it works
-<a name="multi-region.how"></a>
 
 Here's how MemoryDB Multi-Region works.
 + **Concepts**

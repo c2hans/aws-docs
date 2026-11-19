@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Operator guide
-<a name="operator-guide"></a>
 
 This guide is intended for users and operators of this solution and contains details on how to [configure schedules](#configure-schedules) and [monitor the solution](monitor-the-solution.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Connect to a Lightsail Windows instance from macOS with Remote Desktop
-<a name="amazon-lightsail-connecting-to-windows-instance-using-microsoft-remote-desktop"></a>
 
 You can use the Microsoft Remote Desktop client to connect to your Windows instance from your macOS computer. Microsoft Remote Desktop requires that you use the administrator user name and password for your Lightsail Windows instance. This can be the default password assigned to the instance when it is created, or your own password if you changed the default password.
 

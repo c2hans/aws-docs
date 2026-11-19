@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/a
 ---
 
 # Application configuration
-<a name="application-configuration"></a>
 
 Configuring SDK for SAP ABAP is similar to configuring other ABAP-based applications. It is organized into different *profiles* to group the settings of various scenarios. An ABAP SDK profile defines the settings required for a specific application scenario. For example, if transactions `ZVA01`, `ZVA02`, and `ZVA03` are invoice-related transactions enhanced and runs on AWS services, such as Amazon S3, AWS Lambda, and Amazon SageMaker AI, then an SDK profile called `ZINVOICE` can be made. This profile can group the technical settings, SAP authorizations, and IAM role mappings for the invoice-related functionality.
 

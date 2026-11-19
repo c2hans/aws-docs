@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/w
 ---
 
 # Write function code
-<a name="writing-function-code"></a>
 
 You can use CloudFront Functions to write lightweight functions in JavaScript for high-scale, latency-sensitive CDN customizations. Your function code can manipulate the requests and responses that flow through CloudFront, perform basic authentication and authorization, generate HTTP responses at the edge, and more.
 
@@ -22,3 +21,4 @@ To use CBOR Web Tokens (CWT) for token-based authentication and authorization at
 + [CWT support for CloudFront Functions](cwt-support-cloudfront-functions.md)
 + [General helper methods](general-helper-methods.md)
 + [Helper methods for mutual TLS](mtls-helper-methods.md)
++ [Helper methods for network calls](helper-functions-network-calls.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_L
 ---
 
 # ListQAppSessionData
-<a name="API_qapps_ListQAppSessionData"></a>
 
 Lists the collected data of a Q App data collection session.
 

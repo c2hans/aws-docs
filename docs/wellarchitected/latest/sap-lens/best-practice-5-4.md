@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 5.4 – Create a strategy for managing security controls
-<a name="best-practice-5-4"></a>
 
 Having evaluated business requirements based on data classification, create a strategy that balances the security controls of your broader organization with the application guides and open standards available. Take into consideration the implementation effort and acknowledge risk.
 

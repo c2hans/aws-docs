@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-overvie
 ---
 
 # Embedding AWS Quick Sight analytics into your applications
-<a name="embedding-overview"></a>
 
 |  |
 | --- |

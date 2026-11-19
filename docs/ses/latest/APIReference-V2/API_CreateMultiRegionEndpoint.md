@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateMul
 ---
 
 # CreateMultiRegionEndpoint
-<a name="API_CreateMultiRegionEndpoint"></a>
 
 Creates a multi-region endpoint (global-endpoint).
 

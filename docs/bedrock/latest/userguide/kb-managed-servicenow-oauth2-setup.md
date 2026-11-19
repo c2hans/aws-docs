@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-serv
 ---
 
 # Set up OAuth 2.0 Client Credentials authentication for ServiceNow
-<a name="kb-managed-servicenow-oauth2-setup"></a>
 
 Use the ServiceNow Table API with OAuth 2.0 Client Credentials (2LO) for authentication. Complete all the following steps in your ServiceNow instance before you configure the data source in Amazon Bedrock.
 

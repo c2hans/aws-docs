@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/User_Oracle_A
 ---
 
 # Use cases for additional storage volumes in RDS for Oracle
-<a name="User_Oracle_AdditionalStorage.UseCases"></a>
 
 Additional storage volumes support various database management scenarios. The following sections describe common use cases and implementation approaches.
 

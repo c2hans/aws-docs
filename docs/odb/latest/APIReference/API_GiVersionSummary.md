@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GiVersionSum
 ---
 
 # GiVersionSummary
-<a name="API_GiVersionSummary"></a>
 
 Information about a specific version of Oracle Grid Infrastructure (GI) software that can be installed on a VM cluster.
 

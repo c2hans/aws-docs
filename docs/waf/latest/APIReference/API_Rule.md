@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Rule.html
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 A single rule, which you can use in a [WebACL](API_WebACL.md) or [RuleGroup](API_RuleGroup.md) to identify web requests that you want to manage in some way. Each rule includes one top-level [Statement](API_Statement.md) that AWS WAF uses to identify matching web requests, and parameters that govern how AWS WAF handles them.
 

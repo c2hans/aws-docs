@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ProductUserSummary
-<a name="API_ProductUserSummary"></a>
 
 A summary of the user-based subscription products for a specific user.
 

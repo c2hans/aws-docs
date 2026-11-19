@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-term
 ---
 
 # Control Amazon EMR cluster termination
-<a name="emr-plan-termination"></a>
 
 This section describes your options for shutting down Amazon EMR clusters. It covers auto-termination and termination protection, and how they interact with other Amazon EMR features.
 

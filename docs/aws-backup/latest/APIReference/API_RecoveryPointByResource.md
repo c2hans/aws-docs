@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Recov
 ---
 
 # RecoveryPointByResource
-<a name="API_RecoveryPointByResource"></a>
 
 Contains detailed information about a saved recovery point.
 

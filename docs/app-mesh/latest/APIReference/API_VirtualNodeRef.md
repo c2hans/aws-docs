@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualNodeRef
-<a name="API_VirtualNodeRef"></a>
 
 An object that represents a virtual node returned by a list operation.
 

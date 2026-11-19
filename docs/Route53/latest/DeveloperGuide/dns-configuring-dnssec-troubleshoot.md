@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-config
 ---
 
 # Troubleshooting DNSSEC signing
-<a name="dns-configuring-dnssec-troubleshoot"></a>
 
 The information in this section can help you address issues with DNSSEC signing, including enabling, disabling, and with your key-signing keys (KSKs).
 

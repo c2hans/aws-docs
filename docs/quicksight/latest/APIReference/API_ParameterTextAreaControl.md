@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterTextAreaControl
-<a name="API_ParameterTextAreaControl"></a>
 
 A control to display a text box that is used to enter multiple entries.
 

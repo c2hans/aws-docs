@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # UpdateBrandProfileAttribute
-<a name="API_UpdateBrandProfileAttribute"></a>
 
 Updates the value, description, or category of an existing brand profile attribute.
 

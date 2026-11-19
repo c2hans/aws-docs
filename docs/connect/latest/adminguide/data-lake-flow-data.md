@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-flow
 ---
 
 # Flow data in the Connect Customer data lake
-<a name="data-lake-flow-data"></a>
 
 The following tables contain flow data.
 

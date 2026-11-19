@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/review-ev
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Reviewing an evidence folder in AWS Audit Manager
-<a name="review-evidence-folders-detail"></a>
 
 As your assessment collects evidence, Audit Manager organizes it into folders for your convenience. When you need to review an evidence folder, you'll find the information organized into several sections.
 

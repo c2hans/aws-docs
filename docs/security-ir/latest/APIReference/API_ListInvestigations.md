@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListInvestigations
-<a name="API_ListInvestigations"></a>
 
 Lists all investigations associated with cases that the requester has access to. Investigations are performed by agents to analyze and respond to security incidents.
 

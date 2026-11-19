@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Hierarch
 ---
 
 # HierarchyGroupCondition
-<a name="API_HierarchyGroupCondition"></a>
 
 A leaf node condition which can be used to specify a hierarchy group condition.
 

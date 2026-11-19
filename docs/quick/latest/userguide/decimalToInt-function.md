@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/decimalToInt-func
 ---
 
 # decimalToInt
-<a name="decimalToInt-function"></a>
 
 `decimalToInt` converts a decimal value to the integer data type by stripping off the decimal point and any numbers after it. `decimalToInt` does not round up. For example, `decimalToInt(29.99)` returns `29`.
 

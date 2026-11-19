@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # Network specific functions
-<a name="use-cases-issuers.networkfunctions"></a>
 
 **Topics**
 + [Visa specific functions](use-cases-issuers.networkfunctions.visa.md)

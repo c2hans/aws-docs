@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 ---
 
 # AWS Private CA Connector for Active Directory
-<a name="connector-for-ad"></a>
 
 AWS Private CA can issue and manage certificates required by AWS Managed Microsoft AD. Using the AWS Private CA Connector for Active Directory (Connector for AD), you can replace on-premises enterprise or other third-party CAs with a managed private CA that you own, providing certificate enrollment to users, groups, and machines that are managed by your AD.
 

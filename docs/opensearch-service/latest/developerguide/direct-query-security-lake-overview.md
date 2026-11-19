@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Directly querying Amazon Security Lake data in OpenSearch Service
-<a name="direct-query-security-lake-overview"></a>
 
 This section will walk you through the process of creating and configuring a data source integration in Amazon OpenSearch Service, enabling you to efficiently query and analyze your data stored in Security Lake.
 

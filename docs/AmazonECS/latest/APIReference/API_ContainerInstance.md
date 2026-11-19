@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contai
 ---
 
 # ContainerInstance
-<a name="API_ContainerInstance"></a>
 
 An Amazon EC2 or External instance that's running the Amazon ECS agent and has been registered with a cluster.
 

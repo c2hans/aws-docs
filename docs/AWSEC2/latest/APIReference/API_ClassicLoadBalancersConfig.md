@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClassicLo
 ---
 
 # ClassicLoadBalancersConfig
-<a name="API_ClassicLoadBalancersConfig"></a>
 
 Describes the Classic Load Balancers to attach to a Spot Fleet. Spot Fleet registers the running Spot Instances with these Classic Load Balancers.
 

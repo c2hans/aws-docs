@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormInputValuePropertyBindingProperties
-<a name="API_FormInputValuePropertyBindingProperties"></a>
 
 Associates a form property to a binding property. This enables exposed properties on the top level form to propagate data to the form's property values.
 

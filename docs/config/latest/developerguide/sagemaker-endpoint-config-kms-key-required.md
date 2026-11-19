@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-e
 ---
 
 # sagemaker-endpoint-config-kms-key-required
-<a name="sagemaker-endpoint-config-kms-key-required"></a>
 
 Checks whether SageMaker endpoint configurations are encrypted with a customer-managed KMS key. The rule is NON\_COMPLIANT if KmsKeyId is not set on the endpoint configuration.
 

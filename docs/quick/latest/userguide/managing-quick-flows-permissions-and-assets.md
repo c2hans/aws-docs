@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-quick-fl
 ---
 
 # Managing Quick Flows permissions and assets
-<a name="managing-quick-flows-permissions-and-assets"></a>
 
 Administrators manage Quick Flows permissions and assets through two interfaces in the Quick console: the Custom Permissions page and the Asset Management page.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-configura
 ---
 
 # Specify additional configurations
-<a name="jobs-configurations-specify"></a>
 
 When you create a job or job template, you can specify these additional configurations. The following shows when you can specify these configurations.
 + When creating a custom job template. The additional configuration settings that you specify will be saved when you create a job from the template.

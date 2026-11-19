@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Math_fu
 ---
 
 # Math functions
-<a name="Math_functions-spark"></a>
 
 This section describes the mathematical operators and functions supported in AWS Clean Rooms Spark SQL.
 

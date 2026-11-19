@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetConfiguredAudienceModelPolicy
-<a name="API_GetConfiguredAudienceModelPolicy"></a>
 
 Returns information about a configured audience model policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # AgentCore Python SDK reference
-<a name="agentcore-python-sdk-reference"></a>
 
 This reference documents the public Amazon Bedrock AgentCore Python SDK releases.
 

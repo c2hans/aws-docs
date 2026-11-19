@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Qu
 ---
 
 # QueryGenerationTable
-<a name="API_agent_QueryGenerationTable"></a>
 
 Contains information about a table for the query engine to consider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-tutorial-disrup
 ---
 
 # Tutorial: Simulate a connectivity event
-<a name="fis-tutorial-disrupt-connectivity"></a>
 
 You can use AWS Fault Injection Service (AWS FIS) to simulate a variety of connectivity events. AWS FIS simulates connectivity events by blocking network connections in one of the following ways:
 + `all` – Denies all traffic entering and leaving the subnet. Note that this option allows intra-subnet traffic, including traffic to and from network interfaces in the subnet.

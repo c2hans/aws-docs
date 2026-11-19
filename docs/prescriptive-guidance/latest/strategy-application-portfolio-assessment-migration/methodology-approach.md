@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Methodology and approach
-<a name="methodology-approach"></a>
 
 The strategic approach to application portfolio assessment is to establish a series of stages that will run in parallel to other program workstreams. These stages will progressively collect and analyze application and infrastructure data while pivoting between two main levels: portfolio level and application level.
 

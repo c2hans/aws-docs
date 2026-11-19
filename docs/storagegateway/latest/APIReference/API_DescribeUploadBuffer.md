@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeUploadBuffer
-<a name="API_DescribeUploadBuffer"></a>
 
 Returns information about the upload buffer of a gateway. This operation is supported for the stored volume, cached volume, and tape gateway types.
 

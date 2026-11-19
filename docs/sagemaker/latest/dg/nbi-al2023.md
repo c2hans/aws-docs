@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-al2023.html
 ---
 
 # AL2023 notebook instances
-<a name="nbi-al2023"></a>
 
 SageMaker AI notebook instances support AL2023 operating systems. You can select the operating system that your notebook instance is based on when you create the notebook instance.
 

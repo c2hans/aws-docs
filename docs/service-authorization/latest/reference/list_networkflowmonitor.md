@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Network Flow Monitor
-<a name="list_networkflowmonitor"></a>
 
 Network Flow Monitor (service prefix: `networkflowmonitor`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

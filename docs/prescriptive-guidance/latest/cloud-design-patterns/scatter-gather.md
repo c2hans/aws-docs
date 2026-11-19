@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Scatter-gather pattern
-<a name="scatter-gather"></a>
 
 ## Intent
 <a name="scatter-gather-intent"></a>

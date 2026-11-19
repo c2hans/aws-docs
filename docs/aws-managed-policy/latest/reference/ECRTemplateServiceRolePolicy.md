@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ECRT
 ---
 
 # ECRTemplateServiceRolePolicy
-<a name="ECRTemplateServiceRolePolicy"></a>
 
 **Description**: Allows actions to be performed when using AWS ECR repository creation templates
 

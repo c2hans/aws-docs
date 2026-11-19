@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentControl
-<a name="API_AssessmentControl"></a>
 
  The control entity that represents a standard control or a custom control in an Audit Manager assessment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSubscriptionGrantStatus
-<a name="API_UpdateSubscriptionGrantStatus"></a>
 
 Updates the status of the specified subscription grant status in Amazon DataZone.
 

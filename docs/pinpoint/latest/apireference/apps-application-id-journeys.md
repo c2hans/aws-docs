@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Journeys
-<a name="apps-application-id-journeys"></a>
 
 A *journey* is an automated workflow that performs a series of messaging activities for an Amazon Pinpoint application. Each activity is a customizable component that specifies what causes the activity to occur, when the activity occurs, what the activity does, and which users the activity applies to. The paths and relationships between activities vary based on conditions and criteria that you define, such as specific user attributes and events.
 

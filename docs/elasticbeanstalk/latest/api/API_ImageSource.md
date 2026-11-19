@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ImageSou
 ---
 
 # ImageSource
-<a name="API_ImageSource"></a>
 
 The location of a container image.
 

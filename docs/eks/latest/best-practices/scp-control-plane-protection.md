@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/scp-control-pl
 ---
 
 # Protecting EKS Cluster Control Plane with Service Control Policies
-<a name="scp-control-plane-protection"></a>
 
 ## Problem Statement
 <a name="_problem_statement"></a>

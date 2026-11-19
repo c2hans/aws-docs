@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting access errors and AWS CodeCommit
-<a name="troubleshooting-ae"></a>
 
 The following information might help you troubleshoot access errors when connecting with AWS CodeCommit repositories.
 

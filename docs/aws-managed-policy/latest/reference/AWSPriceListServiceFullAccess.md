@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPriceListServiceFullAccess
-<a name="AWSPriceListServiceFullAccess"></a>
 
 **Description**: Provides full access to AWS Price List Service.
 

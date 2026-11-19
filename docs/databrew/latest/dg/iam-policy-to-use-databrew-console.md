@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/iam-policy-to-use-dat
 ---
 
 # AwsGlueDataBrewCustomUserPolicy
-<a name="iam-policy-to-use-databrew-console"></a>
 
 The `AwsGlueDataBrewCustomUserPolicy` policy grants most of the permissions required to use the DataBrew console. Some of the resources that are specified in this policy refer to services that are used by DataBrew. These include names for AWS Glue Data Catalog, Amazon S3 buckets, Amazon CloudWatch Logs, and AWS KMS resources. It is similar to the AWS-managed policy named `AwsGlueDataBrewFullAccessPolicy`.
 

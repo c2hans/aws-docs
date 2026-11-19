@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeSearch
-<a name="API_DescribeSearch"></a>
 
 Returns the current status and metadata of a single search, including the query that was submitted, the search type, and — when the search has failed — the reason. Use this to poll a search started with `StartSearch` until it reaches a terminal status (`SUCCEEDED` or `FAILED`).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/start_fai
 ---
 
 # Start an AWS Direct Connect Resiliency Toolkit virtual interface failover test
-<a name="start_failover_test"></a>
 
 You can start the virtual interface failover test using the Direct Connect console, or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateCodeRepository
-<a name="API_UpdateCodeRepository"></a>
 
 Updates the specified Git repository with the specified values.
 

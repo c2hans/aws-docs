@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # FlashAttention
-<a name="model-parallel-core-features-v2-flashattention"></a>
 
 SMP v2 supports [FlashAttention](https://github.com/HazyResearch/flash-attention) kernels and makes it easy to apply them to various scenarios for Hugging Face Transformer models. Note that if you use FlashAttention package v2.0 or later, SMP uses FlashAttention v2; however, the Triton flash attention defaults to the flash attention kernel in FlashAttention v1.x, making it exclusively supported in FlashAttention v1.
 

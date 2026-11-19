@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Determining the migration approach
-<a name="approach"></a>
 
 To decide on a migration approach, you use the analysis you performed on existing patterns in the previous phase. Your organization's future data and analytics needs are equally important considerations. Traditional on-premises ETL tools deal with relational data models and structured data. If you have semi-structured and unstructured data to process, you can use AWS services such as AWS Glue or Amazon EMR for the migration. Other factors that can influence the migration approach include:
 + Whether you want to use a graphical interface (such as [AWS Glue Studio](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)) or a custom framework (such as Spark/Python libraries)

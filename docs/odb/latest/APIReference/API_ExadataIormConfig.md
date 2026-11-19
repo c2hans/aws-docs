@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ExadataIormC
 ---
 
 # ExadataIormConfig
-<a name="API_ExadataIormConfig"></a>
 
 The IORM settings of the Exadata DB system.
 

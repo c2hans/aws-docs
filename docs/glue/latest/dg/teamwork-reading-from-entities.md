@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/teamwork-reading-from-ent
 ---
 
 # Reading from Teamwork entities
-<a name="teamwork-reading-from-entities"></a>
 
 **Prerequisites**
 

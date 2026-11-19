@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Multicast Traffic in Multi-Account Environments
-<a name="multicast-multi-account"></a>
 
 Publication date: **May 5, 2022 ([Diagram history](#mmulti-diagram-history))**
 

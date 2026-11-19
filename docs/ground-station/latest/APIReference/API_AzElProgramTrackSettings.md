@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AzElProgramTrackSettings
-<a name="API_AzElProgramTrackSettings"></a>
 
 Program track settings for [AzElEphemeris](API_AzElEphemeris.md).
 

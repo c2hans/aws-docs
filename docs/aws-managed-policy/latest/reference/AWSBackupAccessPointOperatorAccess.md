@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupAccessPointOperatorAccess
-<a name="AWSBackupAccessPointOperatorAccess"></a>
 
 **Description**: This policy grants users permissions to create and manage backup access points for accessing backup data in recovery points through S3 access points.
 

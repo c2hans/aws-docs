@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateA
 ---
 
 # CreateAggregatorV2
-<a name="API_CreateAggregatorV2"></a>
 
 Enables aggregation across AWS Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FileSy
 ---
 
 # FileSystemDataSource
-<a name="API_FileSystemDataSource"></a>
 
 Specifies a file system data source for a channel.
 

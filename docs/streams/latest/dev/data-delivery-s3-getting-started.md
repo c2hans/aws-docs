@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-gett
 ---
 
 # Getting started with S3 general purpose delivery
-<a name="data-delivery-s3-getting-started"></a>
 
  This tutorial walks you through creating your first Amazon S3 delivery to send records from an Amazon Kinesis Data Streams stream to a general purpose Amazon S3 bucket, verifying it, and cleaning up.
 

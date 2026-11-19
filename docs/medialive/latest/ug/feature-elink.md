@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-elink.html
 ---
 
 # Working with AWS Elemental Link
-<a name="feature-elink"></a>
 
 Read this section if your organization uses AWS Elemental Link hardware devices as video sources for inputs with AWS Elemental MediaLive channels. (Your organization might also use AWS Elemental Link hardware devices as video sources for MediaConnect flows. For information about that usage, see [Using Link with a MediaConnect flow](device-use-flow.md).)
 

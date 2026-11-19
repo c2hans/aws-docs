@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
  This section describes the Regions, [cost](cost.md), [security](security-1.md), [quota](quotas.md), and other considerations before deploying the Guidance.
 

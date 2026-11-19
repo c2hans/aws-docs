@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-quotas.html
 ---
 
 # Quotas and limits for queues
-<a name="queues-quotas"></a>
 
 The following quotas and limits apply to queues. A queue works only on a stream in On-demand Standard or On-demand Advantage capacity mode. Provisioned mode is not supported.
 

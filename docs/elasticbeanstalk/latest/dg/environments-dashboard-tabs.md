@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Environment detail
-<a name="environments-dashboard-tabs"></a>
 
 This topic describes the additional information that the environment management console provides from the left navigation pane and the tabbed pages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-histori
 ---
 
 # Create a custom historical metrics report in Connect Customer
-<a name="create-historical-metrics-report"></a>
 
 Create your own customized historical metrics reports to look at specific data.
 

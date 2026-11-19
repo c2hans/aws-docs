@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/custom-agen
 ---
 
 # Creating a custom agent
-<a name="custom-agents-creating-a-custom-agent"></a>
 
 You can create a custom agent in two ways: using the form in the DevOps Agent web app, or through a guided conversation in Chat. Both methods result in the same custom agent configuration stored in your Agent Space.
 
@@ -186,7 +185,7 @@ When selecting tools, follow the principle of least privilege — assign only th
 ## Release Manager tools
 <a name="release-manager-tools"></a>
 
-Custom agents have access to Release Manager tools. These tools let your agent create, list, get, and cancel Release Manager tasks. Your agent can also analyze a release readiness review report to surface findings and recommended actions.
+Custom agents have access to Release Manager tools. These tools let your agent create, list, get, and cancel Release Manager tasks. Your agent can also analyze a Code Change Risk Analysis report to surface findings and recommended actions.
 
 To use Release Manager tools, assign them to your custom agent through Chat. For example:
 
@@ -194,7 +193,7 @@ To use Release Manager tools, assign them to your custom agent through Chat. For
 Add the release manager tools to my release-pipeline-agent.
 ```
 
-For more information about release management capabilities, see [Release management](working-with-devops-agent-release-management-index.md).
+For more information about Code Change Risk Analysis, see [Code Change Risk Analysis](working-with-devops-agent-code-change-risk-analysis-index.md).
 
 ## Configuring skills
 <a name="configuring-skills"></a>

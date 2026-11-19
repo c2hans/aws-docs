@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy a Lustre file system for high-performance data processing by using Terraform and DRA
-<a name="deploy-lustre-file-system-for-high-performance-data-processing-with-terraform-dra"></a>
 
 *Arun Bagal and Ishwar Chauthaiwale, Amazon Web Services*
 

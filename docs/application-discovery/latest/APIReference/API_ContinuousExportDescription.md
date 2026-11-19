@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # ContinuousExportDescription
-<a name="API_ContinuousExportDescription"></a>
 
 A list of continuous export descriptions.
 

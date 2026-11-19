@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartP
 ---
 
 # StartPipelineExecution
-<a name="API_StartPipelineExecution"></a>
 
 Starts a pipeline execution.
 

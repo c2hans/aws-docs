@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Log
 ---
 
 # Log Amazon SimpleDB export calls with AWS CloudTrail
-<a name="LoggingExportsCloudTrail"></a>
 
  Amazon SimpleDB integrates with AWS CloudTrail to provide comprehensive logging of export-related API calls. This integration helps you track who performed export operations, when they occurred, and what parameters were used.
 

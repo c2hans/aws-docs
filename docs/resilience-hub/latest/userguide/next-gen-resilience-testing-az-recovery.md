@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Availability Zone: recovery
-<a name="next-gen-resilience-testing-az-recovery"></a>
 
 The **Availability Zone: recovery** test injects the symptoms of a power interruption in a single Availability Zone, affecting compute, networking, storage, and database resources within that AZ. It can help you validate that your service detects the impaired AZ, continues operating in the healthy AZs, and returns to a healthy state within your defined RTO. In addition, this test can help you surface single-AZ dependencies you may not be aware of.
 

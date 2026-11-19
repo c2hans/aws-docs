@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-vpc.html
 ---
 
 # Choose an Amazon VPC
-<a name="onboard-vpc"></a>
 
 This topic provides detailed information about choosing an Amazon Virtual Private Cloud (Amazon VPC) when you onboard to Amazon SageMaker AI domain. For more information about onboarding to SageMaker AI domain, see [Amazon SageMaker AI domain overview](gs-studio-onboard.md).
 

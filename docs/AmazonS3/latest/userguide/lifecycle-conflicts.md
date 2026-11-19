@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-conf
 ---
 
 # How Amazon S3 handles conflicts in lifecycle configurations
-<a name="lifecycle-conflicts"></a>
 
 Generally, Amazon S3 Lifecycle optimizes for cost. For example, if two expiration policies overlap, the shorter expiration policy is honored so that data is not stored for longer than expected. Likewise, if two transition policies overlap, S3 Lifecycle transitions your objects to the lower-cost storage class.
 

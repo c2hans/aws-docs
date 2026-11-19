@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AgentRecommendationSummary
-<a name="API_AgentRecommendationSummary"></a>
 
 Summary of an agent optimization recommendation returned by list operations.
 

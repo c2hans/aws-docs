@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf02-
 ---
 
 # PERF02-BP01 Select the best compute options for your workload
-<a name="perf02-bp01"></a>
 
  The compute model you choose determines a workload's performance, cost, and operational effort. Workloads differ in shape: some run constantly, some react to events, some process large batches. Matching the compute model to that shape lets a workload perform well without wasting capacity or operator time.
 

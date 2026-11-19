@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_DeleteSolNet
 ---
 
 # DeleteSolNetworkInstance
-<a name="API_DeleteSolNetworkInstance"></a>
 
 Deletes a network instance.
 

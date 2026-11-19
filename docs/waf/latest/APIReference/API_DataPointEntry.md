@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DataPointEnt
 ---
 
 # DataPointEntry
-<a name="API_DataPointEntry"></a>
 
 A single data point in a revenue time series, representing aggregated monetization metrics for a specific time interval.
 

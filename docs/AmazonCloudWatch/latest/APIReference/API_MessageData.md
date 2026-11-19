@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MessageData
-<a name="API_MessageData"></a>
 
 A message returned by the `GetMetricData`API, including a code and a description.
 

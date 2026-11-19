@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/coredns-add-on-crea
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create the CoreDNS Amazon EKS add-on
-<a name="coredns-add-on-create"></a>
 
 Create the CoreDNS Amazon EKS add-on. You must have a cluster before you create the add-on. For more information, see [Create an Amazon EKS cluster](create-cluster.md).
 

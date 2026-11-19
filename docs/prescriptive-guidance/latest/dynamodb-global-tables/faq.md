@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section answers frequently asked questions about DynamoDB global tables.
 

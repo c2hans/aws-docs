@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/APIReference/API_S3BatchJobIde
 ---
 
 # S3BatchJobIdentifier
-<a name="API_S3BatchJobIdentifier"></a>
 
 A batch job identifier in which the batch jobs to run are identified by an Amazon S3 location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Getti
 ---
 
 # Quickstart: Send metrics, logs, and traces to CloudWatch with OpenTelemetry
-<a name="GettingSetup"></a>
 
 In about 20 minutes, you send three signals from one application to CloudWatch: a metric, a log record, and a trace. You see the metric in Query Studio, the log in CloudWatch Logs, and the trace in Transaction Search.
 

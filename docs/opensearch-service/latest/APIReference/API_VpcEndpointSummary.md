@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VpcEndpointSummary
-<a name="API_VpcEndpointSummary"></a>
 
 Summary information for an Amazon OpenSearch Service-managed VPC endpoint.
 

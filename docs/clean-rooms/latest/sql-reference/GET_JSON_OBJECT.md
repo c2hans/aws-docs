@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/GET_JSO
 ---
 
 # GET\_JSON\_OBJECT function
-<a name="GET_JSON_OBJECT"></a>
 
 The GET\_JSON\_OBJECT function extracts a json object from `path`.
 

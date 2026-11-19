@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Transit gateway peering attachments
-<a name="tgw-peering-attachments"></a>
 
 This section provides instructions for creating transit gateway peering attachments.
 

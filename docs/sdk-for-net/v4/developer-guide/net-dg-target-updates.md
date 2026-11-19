@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Annual .NET target updates for the AWS SDK for .NET
-<a name="net-dg-target-updates"></a>
 
 Starting with version 4.1, the AWS SDK for .NET updates its .NET build targets once a year in a minor version release. Each annual release adds builds for the .NET versions that Microsoft released during the year. It removes builds for .NET versions that are no longer supported according to the [Microsoft .NET lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-and-net-core) on the Microsoft Learn website. For background about this schedule, see [Annual .NET target updates for the AWS SDK for .NET](https://aws.amazon.com/blogs/developer/annual-net-target-updates-for-the-aws-sdk-for-net/) on the AWS Developer Blog.
 

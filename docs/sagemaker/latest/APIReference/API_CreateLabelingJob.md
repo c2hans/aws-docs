@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateLabelingJob
-<a name="API_CreateLabelingJob"></a>
 
 Creates a job that uses workers to label the data objects in your input dataset. You can use the labeled data to train machine learning models.
 

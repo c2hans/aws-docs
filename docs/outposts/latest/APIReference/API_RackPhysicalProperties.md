@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_RackPhy
 ---
 
 # RackPhysicalProperties
-<a name="API_RackPhysicalProperties"></a>
 
  Information about the physical and logistical details for racks at sites. For more information about hardware requirements for racks, see [Network readiness checklist](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-requirements.html#checklist) in the AWS Outposts User Guide.
 

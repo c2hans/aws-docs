@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FulfillmentOptionSummary
-<a name="API_marketplace-discovery_FulfillmentOptionSummary"></a>
 
 A summary of a fulfillment option available for deploying or accessing a listing or product.
 

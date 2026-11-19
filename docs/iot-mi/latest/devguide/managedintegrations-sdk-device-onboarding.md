@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Get started with End device SDK
-<a name="managedintegrations-sdk-device-onboarding"></a>
 
 Follow these steps to run the End device SDK on a Linux device. This section guides you through environment setup, network configuration, hardware function implementation, and endpoint configuration.
 

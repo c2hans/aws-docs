@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_NotLike
 ---
 
 # NotLikeExpression
-<a name="API_NotLikeExpression"></a>
 
 Specifies that a value might be not like the expression.
 

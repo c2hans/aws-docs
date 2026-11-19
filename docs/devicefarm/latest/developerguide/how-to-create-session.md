@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Creating a remote access session in AWS Device Farm
-<a name="how-to-create-session"></a>
 
 For information about remote access sessions, see [Sessions](sessions.md).
 + [Prerequisites](#how-to-create-session-prerequisites)

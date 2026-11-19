@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotJobResultFileGroup
-<a name="API_SnapshotJobResultFileGroup"></a>
 
 A structure that contains information on the generated snapshot file groups.
 

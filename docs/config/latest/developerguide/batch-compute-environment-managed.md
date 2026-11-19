@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/batch-compu
 ---
 
 # batch-compute-environment-managed
-<a name="batch-compute-environment-managed"></a>
 
 Checks if AWS Batch compute environments are managed. The rule is NON\_COMPLIANT if configuration.Type is 'UNMANAGED'.
 

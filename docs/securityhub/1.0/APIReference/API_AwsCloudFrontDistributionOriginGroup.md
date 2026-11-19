@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionOriginGroup
-<a name="API_AwsCloudFrontDistributionOriginGroup"></a>
 
 Information about an origin group for the CloudFront distribution.
 

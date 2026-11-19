@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # Do's and don'ts
-<a name="best-practices"></a>
 
 The following lists provide quick reminders of best practices to use when building a CCoE for your organization.
 

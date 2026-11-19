@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Tracing API errors using request ID
-<a name="tracing-api-errors"></a>
 
  **Problem:** Need to identify the root cause of API errors or failed image processing requests.
 

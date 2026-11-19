@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-fastla
 ---
 
 # Tutorial: Apple code signing with Fastlane in CodeBuild using GitHub for certificate storage
-<a name="sample-fastlane-github"></a>
 
 [fastlane](https://docs.fastlane.tools/) is a popular open source automation tool to automate beta deployments and releases for your iOS and Android apps. It handles all tedious tasks, like generating screenshots, dealing with code signing, and releasing your application.
 

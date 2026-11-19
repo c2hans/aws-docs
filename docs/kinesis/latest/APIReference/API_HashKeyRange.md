@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_HashKeyR
 ---
 
 # HashKeyRange
-<a name="API_HashKeyRange"></a>
 
 The range of possible hash key values for the shard, which is a set of ordered contiguous positive integers.
 

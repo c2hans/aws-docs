@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # How to find the fastest route
-<a name="calculate-routes-custom-avoidance-fast"></a>
 
 The CalculateRoutes API helps you to find the fastest routes between origin and destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/autodiscover-aws-
 ---
 
 # Allowing autodiscovery of AWS resources
-<a name="autodiscover-aws-data-sources"></a>
 
 |  |
 | --- |

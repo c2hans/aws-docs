@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationMappingUpdateJobDetails
-<a name="API_NetworkMigrationMappingUpdateJobDetails"></a>
 
 Details about a network migration mapping update job.
 

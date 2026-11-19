@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FacetResu
 ---
 
 # FacetResult
-<a name="API_FacetResult"></a>
 
 The facet values for the documents in the response.
 

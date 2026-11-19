@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # StopKeyUsage
-<a name="API_StopKeyUsage"></a>
 
 Disables an AWS Payment Cryptography key, which makes it inactive within AWS Payment Cryptography.
 

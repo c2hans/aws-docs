@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Delivery
-<a name="dp-delivery"></a>
 
 Four properties govern the delivery layer:
 

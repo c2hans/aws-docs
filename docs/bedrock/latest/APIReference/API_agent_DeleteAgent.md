@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeleteAgent
-<a name="API_agent_DeleteAgent"></a>
 
 Deletes an agent.
 

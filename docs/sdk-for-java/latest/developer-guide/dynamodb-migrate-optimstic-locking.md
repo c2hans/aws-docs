@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ---
 
 # Optimistic locking differences between version 1 and version 2 of the SDK for Java
-<a name="dynamodb-migrate-optimstic-locking"></a>
 
 Both V1 and V2 implement optimistic locking with an attribute annotation that marks one property on your bean class to store the version number.
 

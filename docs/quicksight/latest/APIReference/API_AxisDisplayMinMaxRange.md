@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisD
 ---
 
 # AxisDisplayMinMaxRange
-<a name="API_AxisDisplayMinMaxRange"></a>
 
 The minimum and maximum setup for an axis display range.
 

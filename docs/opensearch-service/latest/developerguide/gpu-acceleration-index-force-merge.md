@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Indexing vector data and force-merging
-<a name="gpu-acceleration-index-force-merge"></a>
 
 Once you've created a GPU-accelerated vector index on your domain or collection, you can add vector data and optimize your index using standard OpenSearch operations. GPU-acceleration automatically enhances both indexing performance and force-merge operations, making it faster to build and maintain large-scale vector search applications without requiring changes to your existing workflows.
 

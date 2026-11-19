@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.15 Enable AWS Security Hub
-<a name="acct-15"></a>
 
 Enable [AWS Security Hub](https://aws.amazon.com/security-hub/) to gain a centralized view of your security posture. Security Hub runs automated compliance checks against the [AWS Foundational Security Best Practices (FSBP)](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html) standard and aggregates findings from services such as [Amazon GuardDuty](https://aws.amazon.com/guardduty/) and [IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/). The FSBP standard automatically checks many of the controls in this guide, including [Amazon S3 public access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-block-public-access-bucket.html) settings, [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) configuration, [Amazon Elastic Block Store (Amazon EBS)](https://aws.amazon.com/ebs/) encryption, [multi-factor authentication (MFA) on the root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/enable-mfa-for-root.html), and IAM Access Analyzer enablement.
 

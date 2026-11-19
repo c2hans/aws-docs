@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/job-lifec
 ---
 
 # Job lifecycle
-<a name="job-lifecycle"></a>
 
 Jobs progress through the following states:
 

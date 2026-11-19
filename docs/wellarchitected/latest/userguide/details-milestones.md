@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/details
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # The AWS Well-Architected Tool Milestones tab
-<a name="details-milestones"></a>
 
 To display the milestones for your workload, choose the **Milestones** tab.
 

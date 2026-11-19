@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Connecting to your DB cluster using IAM authentication from the command line: AWS CLI and mysql client
-<a name="UsingWithRDS.IAMDBAuth.Connecting.AWSCLI"></a>
 
 You can connect from the command line to an Aurora DB cluster with the AWS CLI and `mysql` command line tool as described following.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_CPU.html
 ---
 
 # CPU
-<a name="API_CPU"></a>
 
 Source server CPU information.
 

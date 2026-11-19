@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dele
 ---
 
 # DeleteEncoderConfiguration
-<a name="API_DeleteEncoderConfiguration"></a>
 
 Deletes an EncoderConfiguration resource. Ensures that no Compositions are using this template; otherwise, returns an error.
 

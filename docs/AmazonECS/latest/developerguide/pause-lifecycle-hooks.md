@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pause-li
 ---
 
 # Pause hooks for Amazon ECS service deployments
-<a name="pause-lifecycle-hooks"></a>
 
 Pause hooks pause an Amazon ECS service deployment at a specific lifecycle stage and wait for you to call `ContinueServiceDeployment` before the deployment proceeds. Use pause hooks when you need manual approval or external validation before a deployment continues.
 

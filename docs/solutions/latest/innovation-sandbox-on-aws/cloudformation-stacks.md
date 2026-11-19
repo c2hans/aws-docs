@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # CloudFormation stacks
-<a name="cloudformation-stacks"></a>
 
 The solution is composed of several CloudFormation templates that are deployed into these accounts:
 + The AWS Organizations management account

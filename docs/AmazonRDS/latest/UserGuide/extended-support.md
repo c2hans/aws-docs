@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-supp
 ---
 
 # Amazon RDS Extended Support with Amazon RDS
-<a name="extended-support"></a>
 
 RDS Extended Support allows you to continue running a database on a major engine version past the RDS end of standard support date for an additional cost.
 

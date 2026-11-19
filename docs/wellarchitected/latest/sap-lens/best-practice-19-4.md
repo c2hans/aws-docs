@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 19.4 – Review backup strategy for improvements
-<a name="best-practice-19-4"></a>
 
 When running SAP on AWS, you should evaluate your approach to backups and retention to optimize the costs associated with location, retention, and recovery.
 

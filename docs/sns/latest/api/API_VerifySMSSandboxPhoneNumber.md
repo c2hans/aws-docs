@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_VerifySMSSandboxPhone
 ---
 
 # VerifySMSSandboxPhoneNumber
-<a name="API_VerifySMSSandboxPhoneNumber"></a>
 
 Verifies a destination phone number with a one-time password (OTP) for the calling AWS account.
 

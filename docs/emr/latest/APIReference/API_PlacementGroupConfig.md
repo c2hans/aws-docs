@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_PlacementGro
 ---
 
 # PlacementGroupConfig
-<a name="API_PlacementGroupConfig"></a>
 
 Placement group configuration for an Amazon EMR cluster. The configuration specifies the placement strategy that can be applied to instance roles during cluster creation.
 

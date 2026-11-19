@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Volume
 ---
 
 # VolumeMount
-<a name="API_VolumeMount"></a>
 
 Container volume mount.
 

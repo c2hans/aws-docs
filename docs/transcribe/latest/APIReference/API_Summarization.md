@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Summa
 ---
 
 # Summarization
-<a name="API_Summarization"></a>
 
 Contains `GenerateAbstractiveSummary`, which is a required parameter if you want to enable Generative call summarization in your Call Analytics request.
 

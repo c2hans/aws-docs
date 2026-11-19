@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Troubleshooting guide
-<a name="gamelift-servers-metrics-troubleshooting"></a>
 
 ## Common issues and resolution steps
 <a name="common-issues-resolution"></a>

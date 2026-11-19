@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # Editing the Directory Configuration
-<a name="active-directory-config-edit"></a>
 
 After a WorkSpaces Applications directory configuration has been created, you can edit it to add, remove, or modify organizational units, update the service account username, or update the service account password.
 

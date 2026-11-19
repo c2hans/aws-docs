@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_L
 ---
 
 # ListLibraryItems
-<a name="API_qapps_ListLibraryItems"></a>
 
 Lists the library items for Amazon Q Apps that are published and available for users in your AWS account.
 

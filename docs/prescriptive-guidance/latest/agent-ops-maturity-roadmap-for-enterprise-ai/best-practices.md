@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Best practices
-<a name="best-practices"></a>
 + **Start small, expand deliberately. **Begin with the single-account model for exploration. Move to multi-account once you need environment separation. Add staging, production, and data lake accounts only when workload maturity justifies the operational overhead. Each additional account adds management surface.
 + **Use infrastructure as code for everything. **Define all account configurations, network topologies, and IAM policies using AWS CloudFormation, AWS CDK, or Terraform. Manual deployments introduce configuration drift. In a multi-account architecture, drift is difficult to detect and expensive to remediate.
 + **Establish tagging conventions before deploying workloads. **Retrofitting cost allocation tags across a multi-account structure after workloads are running is substantially more expensive than enforcing them from day one.

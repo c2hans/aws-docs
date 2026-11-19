@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Deregi
 ---
 
 # DeregisterPullTimeUpdateExclusion
-<a name="API_DeregisterPullTimeUpdateExclusion"></a>
 
 Removes a principal from the pull time update exclusion list for a registry. Once removed, Amazon ECR will resume updating the pull time if the specified principal pulls an image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_DeleteIngestion
 ---
 
 # DeleteIngestionDestination
-<a name="API_DeleteIngestionDestination"></a>
 
 Deletes an ingestion destination.
 

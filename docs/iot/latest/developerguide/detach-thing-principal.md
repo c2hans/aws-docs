@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/detach-thing-p
 ---
 
 # Detach a principal from a thing
-<a name="detach-thing-principal"></a>
 
 You can use the `DetachThingPrincipal` command to detach a certificate from a thing:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Disa
 ---
 
 # DisassociatedFace
-<a name="API_DisassociatedFace"></a>
 
 Provides face metadata for the faces that are disassociated from a specific UserID.
 

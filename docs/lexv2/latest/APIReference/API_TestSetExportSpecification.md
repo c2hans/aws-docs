@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetExp
 ---
 
 # TestSetExportSpecification
-<a name="API_TestSetExportSpecification"></a>
 
 Contains information about the test set that is exported.
 

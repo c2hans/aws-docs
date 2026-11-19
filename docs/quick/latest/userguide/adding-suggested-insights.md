@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/adding-suggested-
 ---
 
 # Adding suggested insights
-<a name="adding-suggested-insights"></a>
 
 Use the following procedure to add suggested insights to your analysis.
 

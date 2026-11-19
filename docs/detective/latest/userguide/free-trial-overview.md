@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/free-trial-ov
 ---
 
 # About the free trial for behavior graphs
-<a name="free-trial-overview"></a>
 
 Amazon Detective provides a 30-day free trial for each account in each Region. The free trial for an account starts the first time one of the following actions occurs.
 + An account enables Detective manually and becomes the administrator account for a behavior graph.

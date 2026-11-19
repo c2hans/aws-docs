@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/complex-scenario-cre
 ---
 
 # Create roles
-<a name="complex-scenario-create-trusted-entity-role-step3"></a>
 
 Any person who is an administrator can perform the procedure to create a role and attach policies to the role.
 

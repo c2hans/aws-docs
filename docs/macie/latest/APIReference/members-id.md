@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/members-id.htm
 ---
 
 # Member
-<a name="members-id"></a>
 
 The Member resource provides information about an individual account that's currently associated with your Amazon Macie account, typically a Macie administrator account. This information includes details such as the AWS account ID for the account and the current status of the relationship between your accounts. If you sent a Macie membership invitation to an account, this resource also indicates when you sent that invitation and the email address that you sent it to. For information about the relationship between administrator and member accounts, see [Managing multiple accounts](https://docs.aws.amazon.com/macie/latest/user/macie-accounts.html) in the *Amazon Macie User Guide*.
 

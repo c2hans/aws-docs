@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Oracle Database to Amazon RDS for PostgreSQL by using Oracle GoldenGate
-<a name="migrate-from-oracle-database-to-amazon-rds-for-postgresql-by-using-oracle-goldengate"></a>
 
 *Dhairya Jindani, Sindhusha Paturu, and Rajeshkumar Sabankar, Amazon Web Services*
 

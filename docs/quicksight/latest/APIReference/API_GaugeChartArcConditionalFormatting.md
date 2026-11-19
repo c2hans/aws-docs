@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gauge
 ---
 
 # GaugeChartArcConditionalFormatting
-<a name="API_GaugeChartArcConditionalFormatting"></a>
 
 The options that determine the presentation of the arc of a `GaugeChartVisual`.
 

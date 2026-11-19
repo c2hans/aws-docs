@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/warm-throughpu
 ---
 
 # Configure pre-warming for tables in Amazon Keyspaces
-<a name="warm-throughput"></a>
 
 Amazon Keyspaces automatically scales storage partitions based on on-demand or provisioned throughput, but for new tables or sudden throughput peaks, it can take longer to allocate the required storage partitions. To insure that a new or existing table has enough capacity to support anticipated peak throughput, you can manually set specific *warm throughput* values to *pre-warm* your table.
 

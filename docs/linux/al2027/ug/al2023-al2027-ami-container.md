@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/al2023-al2027-ami-contai
 ---
 
 # AMI package changes
-<a name="al2023-al2027-ami-container"></a>
 
 The set of packages installed by default differs between the AL2023 and AL2027 AMIs. The following tables list the RPMs present on the AL2023 and AL2027 standard and Minimal AMIs, along with their versions. A blank cell means the package is not installed by default on that AMI.
 

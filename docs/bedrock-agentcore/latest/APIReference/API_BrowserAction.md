@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BrowserAction
-<a name="API_BrowserAction"></a>
 
 The browser action to perform. Exactly one member must be set per request.
 

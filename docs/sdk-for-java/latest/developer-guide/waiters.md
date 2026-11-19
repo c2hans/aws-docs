@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/wait
 ---
 
 # Using waiters in the AWS SDK for Java 2.x
-<a name="waiters"></a>
 
 The waiters utility of the AWS SDK for Java 2.x enables you to validate that AWS resources are in a specified state before performing operations on those resources.
 

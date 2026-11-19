@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_CheckIfPhoneNumberIsO
 ---
 
 # CheckIfPhoneNumberIsOptedOut
-<a name="API_CheckIfPhoneNumberIsOptedOut"></a>
 
 Accepts a phone number and indicates whether the phone holder has opted out of receiving SMS messages from your AWS account. You cannot send SMS messages to a number that is opted out.
 

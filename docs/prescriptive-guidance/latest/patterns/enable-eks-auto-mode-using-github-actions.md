@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ---
 
 # Enable Amazon EKS Auto Mode across EKS clusters by using GitHub Actions
-<a name="enable-eks-auto-mode-using-github-actions"></a>
 
 *Urbija Goswami and Anugrah Lakra, Amazon Web Services*
 

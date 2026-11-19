@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 11.5 – Automate reaction to failure
-<a name="best-practice-11-5"></a>
 
 You can minimize the impact to service by automating the response to failure. Design automation to respond to failure, impaired capacity, or loss of connectivity. Ensure clear arbitration criteria are defined to avoid false positives.
 

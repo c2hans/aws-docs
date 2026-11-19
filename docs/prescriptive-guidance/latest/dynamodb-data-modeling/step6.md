@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 6. Create the data queries
-<a name="step6"></a>
 
 ## Objective
 <a name="obj6"></a>

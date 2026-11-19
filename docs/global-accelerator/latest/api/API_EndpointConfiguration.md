@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Endpoi
 ---
 
 # EndpointConfiguration
-<a name="API_EndpointConfiguration"></a>
 
 A complex type for endpoints. A resource must be valid and active when you add it as an endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Panel
 ---
 
 # PanelTitleOptions
-<a name="API_PanelTitleOptions"></a>
 
 The options that determine the title styles for each small multiples panel.
 

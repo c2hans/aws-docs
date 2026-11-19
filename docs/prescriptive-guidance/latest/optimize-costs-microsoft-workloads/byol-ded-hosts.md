@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Bring licenses for Windows and SQL Server workloads
-<a name="byol-ded-hosts"></a>
 
 ## Overview
 <a name="byol-ded-hosts-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-ts-common-is
 ---
 
 # Troubleshoot issues with Amazon EC2 Windows instances
-<a name="win-ts-common-issues"></a>
 
 The following are troubleshooting tips to help you solve the issues with Amazon EC2 Windows instances.
 

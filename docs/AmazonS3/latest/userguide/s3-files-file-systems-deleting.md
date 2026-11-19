@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-file-
 ---
 
 # Deleting file systems
-<a name="s3-files-file-systems-deleting"></a>
 
 When you delete a file system, the file system, its data, and its configuration are permanently removed. Make sure no applications are actively using the file system before deletion to avoid service disruption. Before deletion, you must delete all mount targets and access points associated with the file system first. For more information, see [Deleting mount targets](s3-files-mount-targets-deleting.md) and [Deleting access points for an S3 file system](s3-files-access-points-deleting.md).
 

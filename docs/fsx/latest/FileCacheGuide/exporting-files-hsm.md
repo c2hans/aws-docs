@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/exporting-file
 ---
 
 # Exporting files using HSM commands
-<a name="exporting-files-hsm"></a>
 
 To export an individual file to your data repository and verify the success of the export, run the following commands. A return value of `states: (0x00000009) exists archived` indicates that export was successful.
 

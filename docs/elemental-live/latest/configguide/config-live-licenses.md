@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Configuring licenses
-<a name="config-live-licenses"></a>
 
 Each Elemental Live node requires its own license. Without the license, the service won't start.
 

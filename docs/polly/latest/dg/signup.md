@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/signup.html
 ---
 
 # Signing up for AWS
-<a name="signup"></a>
 
 Before you can use any AWS service, including Amazon Polly, you must sign up for AWS.
 

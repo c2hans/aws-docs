@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/query-i
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Optimizing data access in Amazon Timestream
-<a name="query-insights-optimize-data-access-pattern"></a>
 
 You can optimize the data access patterns in Amazon Timestream using the Timestream partitioning scheme or data organization techniques.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair that helps you manage, filter, and search for your resource. Allowed characters: letters, white space, and numbers, representable in UTF-8, and the following characters: \+ - = . \_ : /.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Amazon EKS cluster
-<a name="amazon-eks-cluster"></a>
 
 For Amazon Elastic Kubernetes Service (Amazon EKS) clusters, Centralized Logging with OpenSearch generates an all-in-one configuration file for you to deploy the [log agent](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/application-logs.html#log-agent) (Fluent Bit 1.9) as a DaemonSet or Sidecar. After the log agent is deployed, the solution starts collecting pod logs.
 

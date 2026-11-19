@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-ResizeLambdaMemory`
-<a name="automation-awssupportremediator-resizelambdamemory"></a>
 
 **Description**
 

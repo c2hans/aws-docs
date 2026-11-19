@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Ope
 ---
 
 # Operator
-<a name="API_Operator"></a>
 
 Contains a logical operation for comparing the value of a field with a specified value.
 

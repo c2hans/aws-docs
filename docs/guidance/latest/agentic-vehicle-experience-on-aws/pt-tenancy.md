@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Multi-tenancy model
-<a name="pt-tenancy"></a>
 
 ## Tenancy as a first-class dimension
 <a name="pt-tenancy-first-class"></a>

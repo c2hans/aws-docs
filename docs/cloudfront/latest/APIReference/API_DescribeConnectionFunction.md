@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Descr
 ---
 
 # DescribeConnectionFunction
-<a name="API_DescribeConnectionFunction"></a>
 
 Describes a connection function.
 

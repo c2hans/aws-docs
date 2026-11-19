@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Jav
 ---
 
 # Working with items: Java
-<a name="JavaDocumentAPIItemCRUD"></a>
 
 You can use the AWS SDK for Java Document API to perform typical create, read, update, and delete (CRUD) operations on Amazon DynamoDB items in a table.
 

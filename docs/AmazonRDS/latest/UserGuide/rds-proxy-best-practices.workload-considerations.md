@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-bes
 ---
 
 # Application and workload considerations
-<a name="rds-proxy-best-practices.workload-considerations"></a>
 
 **Topics**
 + [Multi-tenant and multi-user environments](#rds-proxy-best-practices.multi-tenant)

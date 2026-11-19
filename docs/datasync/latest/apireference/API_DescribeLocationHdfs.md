@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationHdfs
-<a name="API_DescribeLocationHdfs"></a>
 
 Provides details about how an AWS DataSync transfer location for a Hadoop Distributed File System (HDFS) is configured.
 

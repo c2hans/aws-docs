@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/ExamplePolicies_B
 ---
 
 # Resource: Example policies for AWS Batch
-<a name="ExamplePolicies_BATCH"></a>
 
 You can create specific IAM policies to restrict the calls and resources that users in your account have access to. Then, you can attach those policies to users.
 

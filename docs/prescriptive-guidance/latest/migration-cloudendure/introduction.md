@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Migrate workloads to the AWS Cloud by using CloudEndure Migration
-<a name="introduction"></a>
 
 *Chandra Sekhar Yaratha and Harnath Valeti, Amazon Web Services*
 

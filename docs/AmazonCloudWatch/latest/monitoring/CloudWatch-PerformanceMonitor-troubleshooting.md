@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshoot issues in Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-troubleshooting"></a>
 
 This section describes common issues and resolutions for Performance Monitor.
 

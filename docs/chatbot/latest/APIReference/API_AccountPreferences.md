@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_AccountP
 ---
 
 # AccountPreferences
-<a name="API_AccountPreferences"></a>
 
 Preferences related to Amazon Q Developer usage in the calling AWS account.
 

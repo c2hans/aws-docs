@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DiskSnapshot
-<a name="API_DiskSnapshot"></a>
 
 Describes a block storage disk snapshot.
 

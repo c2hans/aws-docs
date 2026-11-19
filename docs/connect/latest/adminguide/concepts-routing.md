@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routi
 ---
 
 # How Connect Customer uses routing profiles
-<a name="concepts-routing"></a>
 
 A routing profile determines what types of contacts an agent can receive and the routing priority.
 + Each agent is assigned to one routing profile.

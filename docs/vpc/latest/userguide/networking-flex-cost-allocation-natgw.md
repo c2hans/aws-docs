@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Allocate NAT gateway costs
-<a name="networking-flex-cost-allocation-natgw"></a>
 
 When you associate a Networking Flexible Cost Allocation (FCA) policy with a NAT gateway, the NAT gateway charges are itemized by the resource that generated the usage, at the granularity that you choose in the policy. Without a policy, all of the charges appear as a single charge against the NAT gateway.
 

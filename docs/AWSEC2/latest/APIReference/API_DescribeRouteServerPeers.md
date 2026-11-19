@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeR
 ---
 
 # DescribeRouteServerPeers
-<a name="API_DescribeRouteServerPeers"></a>
 
 Describes one or more route server peers.
 

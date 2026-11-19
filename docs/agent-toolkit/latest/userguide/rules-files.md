@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/rules-fil
 ---
 
 # Rules files
-<a name="rules-files"></a>
 
 Most AI coding agents support project-level configuration files, often called rules files. These files provide persistent instructions that your agent follows in every session. For example, you might have a rules file that tells your agent to always write TypeScript in strict mode, or to use a specific testing framework.
 

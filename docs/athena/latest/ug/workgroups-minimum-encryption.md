@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/workgroups-minimum-encr
 ---
 
 # Configure minimum encryption for a workgroup
-<a name="workgroups-minimum-encryption"></a>
 
 As an administrator of an Athena SQL workgroup, you can enforce a minimal level of encryption in Amazon S3 for all query results from the workgroup. You can use this feature to ensure that query results are never stored in an Amazon S3 bucket in an unencrypted state.
 

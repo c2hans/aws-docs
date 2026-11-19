@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyColumn
-<a name="API_DifferentialPrivacyColumn"></a>
 
 Specifies the name of the column that contains the unique identifier of your users, whose privacy you want to protect.
 

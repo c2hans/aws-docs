@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/export-shell.
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Exporting your data with CloudShell
-<a name="export-shell"></a>
 
 **Topics**
 + [Step 1: Creating an Amazon S3 bucket (with AWS CloudShell)](#create-s3-with-shell)

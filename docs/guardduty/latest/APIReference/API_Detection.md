@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # Detection
-<a name="API_Detection"></a>
 
 Contains information about the detected behavior.
 

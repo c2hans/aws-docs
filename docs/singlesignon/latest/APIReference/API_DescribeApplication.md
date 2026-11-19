@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Des
 ---
 
 # DescribeApplication
-<a name="API_DescribeApplication"></a>
 
 Retrieves the details of an application associated with an instance of IAM Identity Center.
 

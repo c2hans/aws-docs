@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_inte
 ---
 
 # Delegated administrator for AWS services that work with Organizations
-<a name="orgs_integrate_delegated_admin"></a>
 
 We recommend that you use the AWS Organizations management account and its users and roles only for tasks that must be performed by that account. We also recommend that you store your AWS resources in other member accounts in the organization and keep them out of the management account. This is because security features like Organizations service control policies (SCPs) do not restrict users or roles in the management account. Separating your resources from your management account can also help you understand the charges on your invoices.
 

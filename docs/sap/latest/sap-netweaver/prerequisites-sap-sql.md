@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/prerequisites-s
 ---
 
 # Prerequisites
-<a name="prerequisites-sap-sql"></a>
 
 ## Specialized Knowledge
 <a name="specialized-knowledge"></a>

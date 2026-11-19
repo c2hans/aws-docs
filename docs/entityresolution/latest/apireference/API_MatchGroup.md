@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # MatchGroup
-<a name="API_MatchGroup"></a>
 
 The match group.
 

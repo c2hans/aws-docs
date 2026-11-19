@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # UpdateSyncConfiguration
-<a name="API_UpdateSyncConfiguration"></a>
 
 Updates the sync configuration for your connection and a specified external Git repository.
 

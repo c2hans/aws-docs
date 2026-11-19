@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # GetMemory
-<a name="API_GetMemory"></a>
 
 Gets a memory by ID, as returned by `SearchMemories` or `ListMemories`. A memory that doesn't exist returns `ResourceNotFoundException`. Unlike `SearchMemories`, this operation also returns memories that consolidation has superseded.
 

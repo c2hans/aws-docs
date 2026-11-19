@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Data Collection Monitor
-<a name="data-collection-monitor"></a>
 
 ## Introduction
 <a name="introduction"></a>

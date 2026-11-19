@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Put
 ---
 
 # PutRepositoryPermissionsPolicy
-<a name="API_PutRepositoryPermissionsPolicy"></a>
 
  Sets the resource policy on a repository that specifies permissions to access it.
 

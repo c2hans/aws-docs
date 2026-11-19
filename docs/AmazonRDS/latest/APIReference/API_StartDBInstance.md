@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StartD
 ---
 
 # StartDBInstance
-<a name="API_StartDBInstance"></a>
 
 Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the `StopDBInstance` operation.
 

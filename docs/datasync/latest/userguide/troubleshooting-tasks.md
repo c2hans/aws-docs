@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting issues with DataSync tasks
-<a name="troubleshooting-tasks"></a>
 
 Use the following information to help you troubleshoot issues with AWS DataSync tasks and task executions. These issues might include task setup problems, stuck task executions, and data not transferring as expected.
 

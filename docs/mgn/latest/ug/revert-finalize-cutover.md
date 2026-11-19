@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/revert-finalize-cutover.ht
 ---
 
 # Reverting a cutover
-<a name="revert-finalize-cutover"></a>
 
 Once you have launched your cutover instances, open the Amazon EC2 console and SSH or RDP into your cutover instances to ensure that they function correctly. Validate connectivity and perform acceptance tests for your application.
 

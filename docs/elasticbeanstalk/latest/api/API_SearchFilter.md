@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_SearchFi
 ---
 
 # SearchFilter
-<a name="API_SearchFilter"></a>
 
 Describes criteria to restrict a list of results.
 

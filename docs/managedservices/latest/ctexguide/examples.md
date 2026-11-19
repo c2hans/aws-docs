@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctexguide/example
 ---
 
 # Examples
-<a name="examples"></a>
 
 **Topics**
 + [review-walkthroughs](review-walkthroughs.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/cloud-watch.html
 ---
 
 # Integrating CloudWatch with Amazon Polly
-<a name="cloud-watch"></a>
 
 When you interact with Amazon Polly, it sends the following metrics and dimensions to CloudWatch every minute. You can use the following procedures to view the metrics for Amazon Polly.
 

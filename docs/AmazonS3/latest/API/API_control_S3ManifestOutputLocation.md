@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Manife
 ---
 
 # S3ManifestOutputLocation
-<a name="API_control_S3ManifestOutputLocation"></a>
 
 Location details for where the generated manifest should be written.
 

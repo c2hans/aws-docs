@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/aws-cli.html
 ---
 
 # AWS CLI task
-<a name="aws-cli"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

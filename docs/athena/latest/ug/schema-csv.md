@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/schema-csv.html
 ---
 
 # Work with CSV data in AWS Glue
-<a name="schema-csv"></a>
 
 This page describes how to use AWS Glue to create schema from CSV files that have quotes around the data values for each column or from CSV files that include header values.
 

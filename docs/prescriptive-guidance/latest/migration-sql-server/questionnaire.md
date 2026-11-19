@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Appendix: SQL Server database migration questionnaire
-<a name="questionnaire"></a>
 
 Use the questionnaire in this section as a starting point to gather information for the assessment and planning phases of your migration project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BudgetedAndActualAmounts
-<a name="API_budgets_BudgetedAndActualAmounts"></a>
 
 The amount of cost or usage that you created the budget for, compared to your actual costs or usage.
 

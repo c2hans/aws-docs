@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryRunt
 ---
 
 # QueryRuntimeStatisticsRows
-<a name="API_QueryRuntimeStatisticsRows"></a>
 
 Statistics such as input rows and bytes read by the query, rows and bytes output by the query, and the number of rows written by the query.
 

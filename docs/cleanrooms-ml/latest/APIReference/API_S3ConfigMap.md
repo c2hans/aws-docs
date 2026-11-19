@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_S3
 ---
 
 # S3ConfigMap
-<a name="API_S3ConfigMap"></a>
 
 Provides information about an Amazon S3 bucket and path.
 

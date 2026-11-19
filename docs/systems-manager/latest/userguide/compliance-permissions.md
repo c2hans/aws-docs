@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/complia
 ---
 
 # Configuring permissions for Compliance
-<a name="compliance-permissions"></a>
 
 As a best practice, update the AWS Identity and Access Management (IAM) role used by your managed nodes with the following permissions. This restricts the node's ability to use the [PutComplianceItems](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutComplianceItems.html) API action, which registers a compliance type and other details on a resource such as a managed node.
 

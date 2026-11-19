@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::LifecyclePolicy Action
-<a name="aws-properties-imagebuilder-lifecyclepolicy-action"></a>
 
 Contains the action configuration for a lifecycle policy rule: the action to take, and which underlying resources the action extends to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/trans
 ---
 
 # Transfer S3 object via Direct Connect
-<a name="transfer-s3-object-via-direct-connect"></a>
 
  This tutorial describes how to use Data Transfer Hub (DTH) via Direct Connect (DX).
 

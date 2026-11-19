@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Receive logging messages from your AgentCore gateway
-<a name="gateway-mcp-logging"></a>
 
 MCP server targets can send log messages to clients during tool execution using the `notifications/message` method. These messages provide real-time visibility into what the server is doing, useful for debugging, auditing, and monitoring tool behavior. AgentCore Gateway forwards these log notifications from MCP server targets to your client as Server-Sent Events (SSE) chunks.
 

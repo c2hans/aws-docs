@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayPropagation
-<a name="API_TransitGatewayPropagation"></a>
 
 Describes route propagation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeExte
 ---
 
 # ListAcmeExternalAccountBindings
-<a name="API_ListAcmeExternalAccountBindings"></a>
 
 Retrieves a list of external account bindings for the specified ACME endpoint.
 

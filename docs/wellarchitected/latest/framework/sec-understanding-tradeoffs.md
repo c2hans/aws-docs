@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec-und
 ---
 
 # Understanding trade-offs
-<a name="sec-understanding-tradeoffs"></a>
 
  Every architectural decision comes with trade-offs. When you secure a workload in the cloud, you balance the strength of a control against cost, performance, operational agility, and the experience of the people who use and build the workload. Security differs from the other pillars in one important way: many security requirements are not negotiable, because they are set by regulation, contract, or the plain consequence of an unintended access event. The goal is rarely to trade security away; it is to meet the security requirement at the lowest cost to the other pillars, and to be deliberate about the cost a control carries rather than paying it by accident. This could be actual financial cost, velocity cost, speed-to-delivery cost, performance or reliability costs.
 

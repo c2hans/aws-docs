@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowApplicationInfo
-<a name="API_MetaFlowApplicationInfo"></a>
 
 Contains the Meta application metadata associated with a WhatsApp Flow.
 

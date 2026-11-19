@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DisableAWSOrganizationsAccess
-<a name="API_DisableAWSOrganizationsAccess"></a>
 
 Disable portfolio sharing through the AWS Organizations service. This command will not delete your current shares, but prevents you from creating new shares throughout your organization. Current shares are not kept in sync with your organization structure if the structure changes after calling this API. Only the management account in the organization can call this API.
 

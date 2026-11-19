@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ToolOutputConfiguration
-<a name="API_amazon-q-connect_ToolOutputConfiguration"></a>
 
 Configuration for tool output handling.
 

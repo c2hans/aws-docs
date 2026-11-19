@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/thre
 ---
 
 # Working with Threat Composer from the Toolkit
-<a name="threatcomposer-overview"></a>
 
 With Threat Composer you can create, view, and edit Threat Composer threat models directly in VS Code. For detailed information about the Threat Composer tool, see the [Threat Composer GitHub repository](https://github.com/awslabs/threat-composer#readme).
 

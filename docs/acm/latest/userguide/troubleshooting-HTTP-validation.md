@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-HTT
 ---
 
 # Troubleshooting HTTP validation problems
-<a name="troubleshooting-HTTP-validation"></a>
 
 Consult the following guidance if you're having trouble validating a certificate with HTTP.
 

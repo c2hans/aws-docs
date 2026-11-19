@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Data migration process
-<a name="index-migration-process"></a>
 
 The following diagram provides a decision matrix for your migration assessment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage-start.html
 ---
 
 # Starting the Amazon DCV Server
-<a name="manage-start"></a>
 
 The Amazon DCV server must be running to host sessions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UntagResource
-<a name="API_account_UntagResource"></a>
 
 Removes specified tags from an AWS Partner Central Account resource.
 

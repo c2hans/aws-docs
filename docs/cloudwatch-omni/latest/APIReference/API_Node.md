@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Node
-<a name="API_Node"></a>
 
 A node in the context graph representing a service, resource, or remote service.
 

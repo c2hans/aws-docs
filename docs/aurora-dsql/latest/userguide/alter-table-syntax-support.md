@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-table
 ---
 
 # `ALTER TABLE`
-<a name="alter-table-syntax-support"></a>
 
 `ALTER TABLE` changes the definition of a table.
 

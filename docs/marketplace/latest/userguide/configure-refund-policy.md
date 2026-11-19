@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/configure-r
 ---
 
 # Step 5: Configure refund policy
-<a name="configure-refund-policy"></a>
 
  Though you're not required to offer refunds, you must file an official refund policy with AWS Marketplace.
 

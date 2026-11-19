@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Ralph Holm, Sr. Solutions Architect, Amazon Web Services

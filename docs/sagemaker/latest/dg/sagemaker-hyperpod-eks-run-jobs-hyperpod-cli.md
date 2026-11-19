@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Running jobs using the SageMaker HyperPod CLI
-<a name="sagemaker-hyperpod-eks-run-jobs-hyperpod-cli"></a>
 
 To run jobs, make sure that you installed Kubeflow Training Operator in the EKS clusters. For more information, see [Installing packages on the Amazon EKS cluster using Helm](sagemaker-hyperpod-eks-install-packages-using-helm-chart.md).
 

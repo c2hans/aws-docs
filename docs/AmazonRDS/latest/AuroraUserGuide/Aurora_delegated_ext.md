@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora_
 ---
 
 # Using Amazon Aurora delegated extension support for PostgreSQL
-<a name="Aurora_delegated_ext"></a>
 
 Using Amazon Aurora delegated extension support for PostgreSQL, you can delegate the extension management to a user who need not be an `rds_superuser`. With this delegated extension support, a new role called `rds_extension` is created and you must assign this to a user to manage other extensions. This role can create, update, and drop extensions.
 

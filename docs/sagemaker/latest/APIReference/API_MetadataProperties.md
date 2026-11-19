@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metada
 ---
 
 # MetadataProperties
-<a name="API_MetadataProperties"></a>
 
 Metadata properties of the tracking entity, trial, or trial component.
 

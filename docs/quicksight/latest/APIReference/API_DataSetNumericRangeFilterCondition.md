@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetNumericRangeFilterCondition
-<a name="API_DataSetNumericRangeFilterCondition"></a>
 
 A filter condition that filters numeric values within a specified range.
 

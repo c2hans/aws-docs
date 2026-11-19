@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Identity Management and Access Control capability
-<a name="identity-management-access-control-capability"></a>
 
 The Identity Management and Access Control (IMAC) capability will help you build and monitor IAM permissions in your environment. This capabilities will enable you to structure your organization, organize your resources within defined isolated groups following the principal of least privilege (PoLP). The following guidance will help your team develop a framework to manage your environment and provide access to your services.
 

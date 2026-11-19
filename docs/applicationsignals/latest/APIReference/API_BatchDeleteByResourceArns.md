@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchDeleteByResourceArns
-<a name="API_BatchDeleteByResourceArns"></a>
 
 Parameters for targeted delete by ARN list.
 

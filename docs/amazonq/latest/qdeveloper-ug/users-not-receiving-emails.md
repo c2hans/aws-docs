@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/users-not-r
 ---
 
 # Users not receiving activation emails
-<a name="users-not-receiving-emails"></a>
 
 **Problem: Users are not receiving activation emails**
 

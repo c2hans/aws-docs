@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutE
 ---
 
 # PutEventsResultEntry
-<a name="API_PutEventsResultEntry"></a>
 
 Represents the results of an event submitted to an event bus.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListF
 ---
 
 # ListFlywheels
-<a name="API_ListFlywheels"></a>
 
 Gets a list of the flywheels that you have created.
 

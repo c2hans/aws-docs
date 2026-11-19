@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteQueueEnvironment
-<a name="API_DeleteQueueEnvironment"></a>
 
 Deletes a queue environment.
 

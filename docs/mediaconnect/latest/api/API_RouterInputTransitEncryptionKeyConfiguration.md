@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputT
 ---
 
 # RouterInputTransitEncryptionKeyConfiguration
-<a name="API_RouterInputTransitEncryptionKeyConfiguration"></a>
 
 Defines the configuration settings for transit encryption keys.
 

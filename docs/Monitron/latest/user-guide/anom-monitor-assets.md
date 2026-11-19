@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/anom-monitor-
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Understanding asset status
-<a name="anom-monitor-assets"></a>
 
 When a sensor detects a machine abnormality, the status of the asset changes. When a problem occurs, you can see it in the **Assets** list in the Amazon Monitron app.
 

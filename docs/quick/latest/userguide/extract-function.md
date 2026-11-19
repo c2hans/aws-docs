@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/extract-function.
 ---
 
 # Extract
-<a name="extract-function"></a>
 
 `extract` returns a specified portion of a date value. Requesting a time-related portion of a date that doesn't contain time information returns 0.
 

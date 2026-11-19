@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-health
 ---
 
 # AWS Health events
-<a name="events-ref-health"></a>
 
 AWS Health sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

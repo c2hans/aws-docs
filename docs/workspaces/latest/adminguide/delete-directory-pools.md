@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/delete-dire
 ---
 
 # Delete a WorkSpaces Pools directory
-<a name="delete-directory-pools"></a>
 
 Complete the following procedures to delete a WorkSpaces Pools directory.
 

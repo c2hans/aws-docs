@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Resume the current user from hold in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-resumeself"></a>
 
 Resumes the current user's participant from hold for a specific contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/prepare-salesforc
 ---
 
 # Preparing a dataset based on Salesforce data
-<a name="prepare-salesforce-data"></a>
 
 Use the following procedure to prepare a Salesforce dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BarCh
 ---
 
 # BarChartSortConfiguration
-<a name="API_BarChartSortConfiguration"></a>
 
 sort-configuration-description
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Resource
 ---
 
 # ResourceViolation
-<a name="API_ResourceViolation"></a>
 
 Violation detail based on resource type.
 

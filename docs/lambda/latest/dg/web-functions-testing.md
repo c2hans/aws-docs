@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-testing.h
 ---
 
 # Testing Lambda Web Functions
-<a name="web-functions-testing"></a>
 
 Web Functions run standard HTTP servers, so you can test most application behavior locally with your framework's normal tools. Cloud tests are still required to validate IAM authorization, Amazon S3 and AWS Key Management Service (AWS KMS) access, Web Function lifecycle states, scaling, telemetry, and multi-Region behavior.
 

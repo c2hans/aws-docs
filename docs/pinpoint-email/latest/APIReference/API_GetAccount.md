@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_G
 ---
 
 # GetAccount
-<a name="API_GetAccount"></a>
 
 Obtain information about the email-sending status and capabilities of your Amazon Pinpoint account in the current AWS Region.
 

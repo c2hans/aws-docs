@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/exte
 ---
 
 # Using an external credential process
-<a name="external-credential-process"></a>
 
 You can configure the AWS Toolkit for Visual Studio Code for credential processes that aren't directly supported by AWS, by modifying your `shared config file`.
 

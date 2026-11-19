@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/credits
 ---
 
 # Splitting and transferring AWS credits
-<a name="credits-split-transfer"></a>
 
 By default, a credit applies first to the account that owns it. Any remaining amount is then shared with other sharing-activated accounts, starting with the account that has the highest spend. When one large credit is meant for several teams, the account that owns it can use up the amount intended for the others.
 

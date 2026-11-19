@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/statuspage-configuring.ht
 ---
 
 # Configuring Statuspage
-<a name="statuspage-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Statuspage, you must meet the following requirements:
 

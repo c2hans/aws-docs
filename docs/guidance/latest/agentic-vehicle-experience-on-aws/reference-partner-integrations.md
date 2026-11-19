@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Partner Integration Points
-<a name="reference-partner-integrations"></a>
 
 The Agentic Vehicle Experience is designed to compose with third-party services across the vehicle-ownership lifecycle. The table below lists the integration domains, example partner categories, and the integration pattern used in each case. Specific partner selection is customer-owned; the patterns are reusable across providers.
 

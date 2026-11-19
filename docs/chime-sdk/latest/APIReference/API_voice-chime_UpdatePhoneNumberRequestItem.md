@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UpdatePhoneNumberRequestItem
-<a name="API_voice-chime_UpdatePhoneNumberRequestItem"></a>
 
 The phone number ID, product type, or calling name fields to update, used with the [BatchUpdatePhoneNumber](API_voice-chime_BatchUpdatePhoneNumber.md) and [UpdatePhoneNumber](API_voice-chime_UpdatePhoneNumber.md) actions.
 

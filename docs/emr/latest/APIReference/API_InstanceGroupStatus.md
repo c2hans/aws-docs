@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroupStatus
-<a name="API_InstanceGroupStatus"></a>
 
 The details of the instance group status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceStat
 ---
 
 # InstanceStatus
-<a name="API_InstanceStatus"></a>
 
 The instance status details.
 

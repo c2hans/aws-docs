@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/no-code-ui-bui
 ---
 
 # Use sample data to preview your view
-<a name="no-code-ui-builder-sample-data"></a>
 
 Use sample data to preview how a view looks to users, including fields that get their values at runtime. When you set a field to dynamic (the lightning bolt is selected), enter sample data in the property's **Sample Data** section. Sample data appears only in the UI builder.
 

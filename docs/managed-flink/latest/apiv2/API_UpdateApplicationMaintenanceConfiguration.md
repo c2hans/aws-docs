@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApp
 ---
 
 # UpdateApplicationMaintenanceConfiguration
-<a name="API_UpdateApplicationMaintenanceConfiguration"></a>
 
 Updates the maintenance configuration of the Managed Service for Apache Flink application.
 

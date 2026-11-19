@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # GetBlueprintOptimizationStatus
-<a name="API_data-automation_GetBlueprintOptimizationStatus"></a>
 
 Gets the status of a blueprint optimization job.
 

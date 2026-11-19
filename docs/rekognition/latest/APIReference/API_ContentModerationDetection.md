@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cont
 ---
 
 # ContentModerationDetection
-<a name="API_ContentModerationDetection"></a>
 
 Information about an inappropriate, unwanted, or offensive content label detection in a stored video.
 

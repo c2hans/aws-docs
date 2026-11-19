@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Featur
 ---
 
 # FeatureParameter
-<a name="API_FeatureParameter"></a>
 
 A key-value pair that you specify to describe the feature.
 

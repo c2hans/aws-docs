@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-releas
 ---
 
 # SageMaker AI data parallelism library release notes
-<a name="data-parallel-release-notes"></a>
 
 See the following release notes to track the latest updates for the SageMaker AI distributed data parallelism (SMDDP) library.
 

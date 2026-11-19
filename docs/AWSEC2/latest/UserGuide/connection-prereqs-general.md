@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prere
 ---
 
 # General connection prerequisites
-<a name="connection-prereqs-general"></a>
 
 The following are general prerequisites to connect to an instance. Note that there might be additional prerequisites that are specific to the connection option that you choose.
 

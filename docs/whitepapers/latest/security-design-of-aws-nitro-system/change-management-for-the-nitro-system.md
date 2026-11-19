@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Change management for the Nitro System
-<a name="change-management-for-the-nitro-system"></a>
 
  The software and firmware underlying the Nitro System is developed by diverse and globally distributed teams of engineers. All Nitro System related configurations and code changes are subject to multi-party review and approval, and staged rollouts in both testing and production environments. The software development starts with design documents and reviews, and moves through code reviews. A security review will be conducted by both the independent AWS Security team as well as the Amazon EC2 engineering team for significant changes or features.
 

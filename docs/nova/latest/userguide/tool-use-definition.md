@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/tool-use-definitio
 ---
 
 # Defining a tool
-<a name="tool-use-definition"></a>
 
 A critical step in the tool calling workflow is defining the tool. The tool definition must include all of the necessary context to guide the model on when it is appropriate to invoke the tool.
 

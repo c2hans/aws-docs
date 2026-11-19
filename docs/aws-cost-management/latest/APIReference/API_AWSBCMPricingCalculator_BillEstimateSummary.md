@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillEstimateSummary
-<a name="API_AWSBCMPricingCalculator_BillEstimateSummary"></a>
 
  Provides a summary of a bill estimate.
 

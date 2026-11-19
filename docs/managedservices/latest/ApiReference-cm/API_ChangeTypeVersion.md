@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeVersion
-<a name="API_ChangeTypeVersion"></a>
 
 Information about a specific version of a change type.
 

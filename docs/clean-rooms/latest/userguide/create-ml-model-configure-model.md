@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-ml-m
 ---
 
 # Configuring a lookalike model
-<a name="create-ml-model-configure-model"></a>
 
 After you have created a lookalike model, you are ready to configure it for use in a collaboration. You can create multiple configured lookalike models from a single lookalike model.
 

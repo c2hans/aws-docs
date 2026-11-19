@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ji
 ---
 
 # JiraProjectResource
-<a name="API_JiraProjectResource"></a>
 
 Represents a Jira project resource used in an integration.
 

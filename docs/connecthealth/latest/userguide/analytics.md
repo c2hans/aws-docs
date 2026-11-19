@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/analytics
 ---
 
 # Analytics dashboard
-<a name="analytics"></a>
 
 The analytics dashboard provides operational visibility into your AI agent performance and business impact. You can view key performance indicators (KPIs), track trends over time, and export detailed metrics for further analysis.
 

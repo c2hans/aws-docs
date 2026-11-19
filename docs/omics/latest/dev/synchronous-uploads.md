@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/synchronous-uploads.htm
 ---
 
 # Direct upload to a HealthOmics sequence store
-<a name="synchronous-uploads"></a>
 
 We recommend that you use the HealthOmics Transfer Manager to add files to your sequence store. For more information about using Transfer Manager, see this [GitHub Repository](https://github.com/awslabs/amazon-omics-tools/). You can also upload your read sets directly to a sequence store through the direct upload API operations.
 

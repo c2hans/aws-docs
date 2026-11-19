@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-import
 ---
 
 # Import
-<a name="data-wrangler-import"></a>
 
 You can use Amazon SageMaker Data Wrangler to import data from the following *data sources*: Amazon Simple Storage Service (Amazon S3), Amazon Athena, Amazon Redshift, and Snowflake. The dataset that you import can include up to 1000 columns.
 

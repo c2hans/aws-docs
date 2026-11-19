@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-s
 ---
 
 # High-level, full-system migration steps
-<a name="high-level-full-system-migration-steps"></a>
 
 **Note**
 This document is based on the 2020.1.5 stable release of SAS Viya 4. For more information, see [Full-System Migration and Content Migration](https://documentation.sas.com/doc/en/sasadmincdc/v_012/promigwlcm/home.htm) in the SAS documentation.

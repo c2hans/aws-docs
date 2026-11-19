@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/monitor-keys.html
 ---
 
 # Monitoring encryption keys
-<a name="monitor-keys"></a>
 
 Amazon Chime SDK Voice Connectors send requests to AWS KMS, and you can track those requests in CloudTrail or CloudWatch logs.
 

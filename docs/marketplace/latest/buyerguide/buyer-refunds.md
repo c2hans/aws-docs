@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-refu
 ---
 
 # Refunds and cancellations in AWS Marketplace
-<a name="buyer-refunds"></a>
 
 Buyers can request different types of refunds for AWS Marketplace products. For products sold by AWS, refer to the refund policy page and then submit a support case using the [Support Center Console](https://console.aws.amazon.com/support/home?). For products sold by a third-party seller, review the refund policies on the product detail page. Software charges for AWS Marketplace subscriptions are paid to the seller of record. To request a refund for software charges, contact the seller directly using the support contact information on the product detail page.
 

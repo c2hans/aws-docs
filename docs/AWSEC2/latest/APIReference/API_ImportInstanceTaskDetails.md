@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIns
 ---
 
 # ImportInstanceTaskDetails
-<a name="API_ImportInstanceTaskDetails"></a>
 
 Describes an import instance task.
 

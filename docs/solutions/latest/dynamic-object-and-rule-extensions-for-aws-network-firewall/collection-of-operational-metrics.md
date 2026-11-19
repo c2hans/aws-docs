@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Collection of operational metrics
-<a name="collection-of-operational-metrics"></a>
 
  This solution includes an option to send anonymized operational metrics to AWS. We use this data to better understand how customers use this solution and related services and products. When invoked, the following information is collected and sent to AWS:
 +  **Solution ID:** AWSSOLUTION/SO0196/1.0.0

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ds-limits.html
 ---
 
 # Limits
-<a name="ds-limits"></a>
 
 Spaces run as pods on HyperPod EKS nodes with attached EBS volumes. The number of Spaces that can be deployed per node is constrained by AWS infrastructure limits.
 

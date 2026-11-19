@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLJobConfig
-<a name="API_AutoMLJobConfig"></a>
 
 A collection of settings used for an AutoML job.
 

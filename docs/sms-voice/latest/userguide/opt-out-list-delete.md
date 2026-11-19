@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/opt-out-list-
 ---
 
 # Delete an opt-out list in AWS End User Messaging SMS
-<a name="opt-out-list-delete"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to delete an opt-out list.
 

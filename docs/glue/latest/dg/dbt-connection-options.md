@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dbt-connection-options.ht
 ---
 
 # dbt Cloud connection options
-<a name="dbt-connection-options"></a>
 
 The following are connection options for dbt Cloud:
 + `ENTITY_NAME` – (Required) Used for Read. The full entity path of the dbt Cloud object to read, including the account ID, as described in [Reading from dbt Cloud entities](dbt-reading-from-entities.md).

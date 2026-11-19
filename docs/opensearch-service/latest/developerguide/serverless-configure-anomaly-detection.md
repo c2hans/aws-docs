@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configuring anomaly detection on Amazon OpenSearch Serverless
-<a name="serverless-configure-anomaly-detection"></a>
 
 Anomaly detection automatically detects anomalies in your OpenSearch data in near real time by using the Random Cut Forest (RCF) algorithm. RCF is an unsupervised machine learning algorithm that models a sketch of your incoming data stream. For each incoming data point, RCF computes an `anomaly grade` and a `confidence score`. For a conceptual overview of anomaly detection, see [Anomaly detection](https://docs.opensearch.org/latest/observing-your-data/ad/index/) on the OpenSearch website.
 

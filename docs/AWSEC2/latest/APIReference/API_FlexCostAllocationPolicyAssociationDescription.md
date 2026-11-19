@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FlexCostA
 ---
 
 # FlexCostAllocationPolicyAssociationDescription
-<a name="API_FlexCostAllocationPolicyAssociationDescription"></a>
 
 Describes an association between a flex cost allocation policy and a network resource.
 

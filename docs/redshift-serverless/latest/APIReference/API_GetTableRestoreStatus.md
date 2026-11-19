@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetTableRestoreStatus
-<a name="API_GetTableRestoreStatus"></a>
 
 Returns information about a `TableRestoreStatus` object.
 

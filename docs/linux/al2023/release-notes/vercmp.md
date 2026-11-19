@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/vercmp.html
 ---
 
 # Upgraded packages in AL2023
-<a name="vercmp"></a>
 
 **Topics**
 + [AL2023.12 upgrades from AL1](vercmp-AL1-AL2023.12.md)

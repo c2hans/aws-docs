@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Option A: Upgrade an existing AWS DeepRacer Evo
-<a name="custom-car-option-a"></a>
 
 If you own an AWS DeepRacer Evo, you can replace the Intel compute module with a Raspberry Pi 5 while reusing the existing chassis, servo, ESC, and wheel/motor assembly.
 

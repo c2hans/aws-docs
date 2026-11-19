@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-gc
 ---
 
 # Remediating exposures for GCP Cloud Run functions
-<a name="exposure-gcp-functions"></a>
 
 AWS Security Hub can generate exposure findings for GCP Cloud Run functions.
 

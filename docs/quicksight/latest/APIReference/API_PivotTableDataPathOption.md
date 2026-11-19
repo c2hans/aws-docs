@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableDataPathOption
-<a name="API_PivotTableDataPathOption"></a>
 
 The data path options for the pivot table field options.
 

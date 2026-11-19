@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListSteps
-<a name="API_ListSteps"></a>
 
 Lists steps for a job.
 

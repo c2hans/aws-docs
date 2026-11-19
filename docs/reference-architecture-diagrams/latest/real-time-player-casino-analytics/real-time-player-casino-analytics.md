@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/r
 ---
 
 # Real-Time Casino Player Analytics
-<a name="real-time-player-casino-analytics"></a>
 
 Publication date: **April 19, 2022 ([Diagram history](#diagram-history))**
 

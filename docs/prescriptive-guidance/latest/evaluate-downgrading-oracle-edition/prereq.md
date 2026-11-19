@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Prerequisites and limitations
-<a name="prereq"></a>
 
 ## Prerequisites
 <a name="prerequisites"></a>

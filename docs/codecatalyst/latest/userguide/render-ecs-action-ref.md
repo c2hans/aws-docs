@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/render-ecs
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'Render Amazon ECS task definition' action YAML
-<a name="render-ecs-action-ref"></a>
 
 The following is the YAML definition of the **Render Amazon ECS task definition** action. To learn how to use this action, see [Modifying an Amazon ECS task definition](render-ecs-action.md).
 

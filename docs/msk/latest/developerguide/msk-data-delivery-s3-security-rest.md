@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Encryption at rest
-<a name="msk-data-delivery-s3-security-rest"></a>
 
 Data delivered to general-purpose S3 buckets is encrypted at rest using the destination bucket's default encryption settings:
 + **SSE-S3** (Amazon S3 managed keys) — default.

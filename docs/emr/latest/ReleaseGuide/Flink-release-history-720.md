@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Flink-release-hi
 ---
 
 # Amazon EMR 7.2.0 - Flink release notes
-<a name="Flink-release-history-720"></a>
 
 | Type | Description |
 | --- | --- |

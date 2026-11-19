@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Signal
 ---
 
 # Signal
-<a name="API_Signal"></a>
 
 Contains information about the signals involved in the attack sequence.
 

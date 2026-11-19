@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/gateway-lo
 ---
 
 # Use service logs in AWS IoT SiteWise
-<a name="gateway-local-logs"></a>
 
 SiteWise Edge gateway devices include service log files to help debug issues. The following sections will help you find and utilize the service log files for the AWS IoT SiteWise OPC UA Collector and AWS IoT SiteWise Publisher components.
 

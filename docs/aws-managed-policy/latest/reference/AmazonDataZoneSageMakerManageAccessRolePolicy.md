@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneSageMakerManageAccessRolePolicy
-<a name="AmazonDataZoneSageMakerManageAccessRolePolicy"></a>
 
 **Description**: The AmazonDataZoneSageMakerManageAccessRolePolicy policy grants Amazon DataZone the permissions required to grant user access to various resources in the SageMaker environment.
 

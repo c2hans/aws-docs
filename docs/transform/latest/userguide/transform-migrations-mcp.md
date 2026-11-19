@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-mig
 ---
 
 # Run migrations with the AWS Transform MCP server
-<a name="transform-migrations-mcp"></a>
 
 The AWS Transform Model Context Protocol (MCP) server lets you plan and run migrations from any MCP-compatible client, such as Kiro, Claude Code, Cursor, or Cline, without leaving your development environment. MCP is a standardized interface that gives the AI assistant in your client real-time, contextual access to your AWS Transform workspaces and jobs. With it, you can create workspaces, launch migration jobs, respond to human-in-the-loop tasks, and download artifacts through natural language.
 

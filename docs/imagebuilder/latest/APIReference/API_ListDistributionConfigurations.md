@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListDistributionConfigurations
-<a name="API_ListDistributionConfigurations"></a>
 
 Returns a list of distribution configurations.
 

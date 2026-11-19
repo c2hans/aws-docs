@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decisi
 ---
 
 # DecisionTaskScheduledEventAttributes
-<a name="API_DecisionTaskScheduledEventAttributes"></a>
 
 Provides details about the `DecisionTaskScheduled` event.
 

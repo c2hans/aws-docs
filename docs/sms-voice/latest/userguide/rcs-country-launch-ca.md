@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-country-l
 ---
 
 # Launching RCS in Canada
-<a name="rcs-country-launch-ca"></a>
 
 To launch your RCS agent in Canada, submit a country launch registration using the `CA_RCS_LAUNCH_REGISTRATION` registration type in the AWS End User Messaging console or API.
 

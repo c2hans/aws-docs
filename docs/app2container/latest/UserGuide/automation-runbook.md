@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/app2container/latest/UserGuide/automatio
 AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), and AWS Microservice Extractor (ME) for .NET is no longer open to new customers. If you would like to use the service, sign up prior to November 7, 2025. Alternatively use [AWS Transform](https://aws.amazon.com/transform/), which is an agentic AI service developed to accelerate enterprise modernization of .NET.
 
 # App2Container Automation runbook
-<a name="automation-runbook"></a>
 
 AWS App2Container provides the `AWSApp2Container-ReplatformApplications` Automation runbook for use on Amazon EC2 instances. Automation is a capability of AWS Systems Manager. The runbook performs the installation of App2Container as well as the initialize, analyze, and transform phases for replatforming supported applications. If desired, the automation can also push the containerized application to Amazon Elastic Container Registry (Amazon ECR). For more information, see [App2Container compatibility](compatibility-a2c.md) and [Applications you can containerize using AWS App2Container](supported-applications.md).
 

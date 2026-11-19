@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # SUM
-<a name="recipe-actions.functions.SUM"></a>
 
 Returns the sum of the values from the selected source columns in a new column. Any non-number is treated as 0.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/convert-csekms-table-ss
 ---
 
 # Convert CSE-KMS table data to SSE-KMS
-<a name="convert-csekms-table-ssekms"></a>
 
 If your workflows currently use CSE-KMS for table data encryption, transition to SSE-KMS with the following steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS message quotas
-<a name="quotas-messages"></a>
 
 The following table lists quotas related to messages.
 

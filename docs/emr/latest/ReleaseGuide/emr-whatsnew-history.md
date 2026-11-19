@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-his
 ---
 
 # Amazon EMR archive of release notes
-<a name="emr-whatsnew-history"></a>
 
 Release notes for all Amazon EMR releases are available below. For comprehensive release information for each release, see [Amazon EMR 6.x release versions](emr-release-6x.md), [Amazon EMR 5.x release versions](emr-release-5x.md) and [Amazon EMR 4.x release versions](emr-release-4x.md).
 

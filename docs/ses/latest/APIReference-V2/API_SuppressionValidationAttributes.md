@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionValidationAttributes
-<a name="API_SuppressionValidationAttributes"></a>
 
 Structure containing validation attributes used for suppressing sending to specific destination on account level.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Overview of the AVX deployment steps
-<a name="deploy-overview"></a>
 
 AVX deploys in four phases, in the following order:
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # When Blue/Green Deployments Are Not Recommended
-<a name="when-bluegreen-deployments-are-not-recommended"></a>
 
  As blue/green deployments become more popular, developers and companies are constantly applying the methodology to new and innovative use cases. However, in some common use case patterns applying this methodology, even if possible, isn’t recommended.
 

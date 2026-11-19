@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-re
 ---
 
 # Related Resources
-<a name="govcloud-related-resources"></a>
 
 This topic lists additional resources related to AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dis
 ---
 
 # DisassociateAssets
-<a name="API_DisassociateAssets"></a>
 
 Disassociates a child asset from the given parent asset through a hierarchy defined in the parent asset's model.
 

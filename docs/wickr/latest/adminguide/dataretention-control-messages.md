@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/dataretention-co
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # Control messages
-<a name="dataretention-control-messages"></a>
 
 Control messages set up and configure secure rooms and group conversations. Wickr also requires these messages to reconstruct the list of users involved in specific secure rooms and group conversations.
 

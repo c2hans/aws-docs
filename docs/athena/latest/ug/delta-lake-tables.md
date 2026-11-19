@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/delta-lake-tables.html
 ---
 
 # Query Linux Foundation Delta Lake tables
-<a name="delta-lake-tables"></a>
 
 Linux Foundation [Delta Lake](https://delta.io/) is a table format for big data analytics. You can use Amazon Athena to read Delta Lake tables stored in Amazon S3 directly without having to generate manifest files or run the `MSCK REPAIR` statement.
 

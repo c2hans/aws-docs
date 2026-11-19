@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDMSCloudWatchLogsRole
-<a name="AmazonDMSCloudWatchLogsRole"></a>
 
 **Description**: Provides access to upload DMS replication logs to cloudwatch logs in customer account.
 

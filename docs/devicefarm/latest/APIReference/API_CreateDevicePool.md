@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateDevicePool
-<a name="API_CreateDevicePool"></a>
 
 Creates a device pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # PushMessageTemplateContent
-<a name="API_amazon-q-connect_PushMessageTemplateContent"></a>
 
 The content of the message template that applies to the push channel subtype.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/delete-collection-
 ---
 
 # Deleting a collection
-<a name="delete-collection-procedure"></a>
 
 You can use the [DeleteCollection](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteCollection.html) operation to delete a collection.
 

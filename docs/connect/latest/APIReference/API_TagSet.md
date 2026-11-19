@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TagSet.h
 ---
 
 # TagSet
-<a name="API_TagSet"></a>
 
 A tag set contains tag key and tag value.
 

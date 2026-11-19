@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Su
 ---
 
 # SubjectSummary
-<a name="API_SubjectSummary"></a>
 
 A summary representation of subjects.
 

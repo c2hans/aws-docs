@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/transfer-co
 ---
 
 # transfer-connector-as2-encryption-algorithm-check
-<a name="transfer-connector-as2-encryption-algorithm-check"></a>
 
 Checks that AWS Transfer Family AS2 connectors are not configured with a weak encryption algorithm. The rule is NON\_COMPLIANT if configuration.As2Config.EncryptionAlgorithm is 'DES\_EDE3\_CBC'.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Sched
 ---
 
 # SchedulerStatus
-<a name="API_SchedulerStatus"></a>
 
 The current job-run counts for a virtual cluster, reflecting how much of the configured scheduler capacity is in use.
 

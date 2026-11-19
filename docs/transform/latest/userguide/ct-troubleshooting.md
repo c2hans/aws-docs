@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/ct-troublesho
 ---
 
 # Troubleshooting
-<a name="ct-troubleshooting"></a>
 
 Checking system health
 You no longer need to start a local server; the `atx ct server` command is deprecated. Verify the system is reachable with `atx ct status --health`.

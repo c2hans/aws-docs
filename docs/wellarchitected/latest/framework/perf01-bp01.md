@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01-
 ---
 
 # PERF01-BP01 Validate requirements align to business needs
-<a name="perf01-bp01"></a>
 
  Performance efficiency depends on knowing what the business needs from a workload. When requirements are vague or assumed, teams optimize the wrong things and spend effort where it returns little value. A structured process to identify, document, validate, and manage performance requirements keeps engineering work aligned with business outcomes and gives every stakeholder a shared definition of fast enough.
 

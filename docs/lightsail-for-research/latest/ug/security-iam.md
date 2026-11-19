@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/securit
 ---
 
 # Identity and Access Management for Amazon Lightsail for Research
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use Lightsail for Research resources. IAM is an AWS service that you can use with no additional charge.
 

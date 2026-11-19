@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/permissions-require
 ---
 
 # Permissions for using the policy simulator
-<a name="permissions-required_policy-simulator"></a>
 
 The permissions you need depend on whether you use the AWS CLI or AWS API, or the IAM console, and which mode you use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-managemen
 ---
 
 # Jobs management and control API and data types
-<a name="jobs-management-control-api"></a>
 
 **Topics**
 + [Job management and control data types](#jobs-control-plane-data-types)

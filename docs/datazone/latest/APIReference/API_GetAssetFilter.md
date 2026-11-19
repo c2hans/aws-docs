@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetAsse
 ---
 
 # GetAssetFilter
-<a name="API_GetAssetFilter"></a>
 
 Gets an asset filter.
 

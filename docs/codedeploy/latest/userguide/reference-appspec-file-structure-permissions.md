@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-ap
 ---
 
 # AppSpec 'permissions' section (EC2/On-Premises deployments only)
-<a name="reference-appspec-file-structure-permissions"></a>
 
 The `'permissions'` section specifies how special permissions, if any, should be applied to the files and directories/folders in the `'files'` section after they are copied to the instance. You can specify multiple `object` instructions. This section is optional. It applies to Amazon Linux, Ubuntu Server, RHEL, and macOS instances only.
 

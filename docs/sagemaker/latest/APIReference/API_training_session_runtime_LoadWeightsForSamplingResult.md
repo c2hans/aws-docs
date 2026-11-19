@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # LoadWeightsForSamplingResult
-<a name="API_training_session_runtime_LoadWeightsForSamplingResult"></a>
 
 The result of loading weights for sampling. An empty response indicates success.
 

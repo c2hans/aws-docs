@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedListener
-<a name="API_ManagedListener"></a>
 
 The listeners associated with the Express service's Application Load Balancer.
 

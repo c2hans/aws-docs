@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Configure IAM Identity Center
-<a name="idc-config"></a>
 
 Log in to the account where IAM Identity Center is enabled (usually the **Org Management** account) and the Innovation Sandbox IDC stack is deployed. Make sure that you are in the correct home Region.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow S3OutputFormatConfig
-<a name="aws-properties-appflow-flow-s3outputformatconfig"></a>
 
  The configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination.
 

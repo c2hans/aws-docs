@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/settin
 ---
 
 # Access Infrastructure Composer from the AWS Toolkit for Visual Studio Code
-<a name="setting-up-composer-access-ide"></a>
 
 Follow the instructions in this topic to access Infrastructure Composer from the AWS Toolkit for Visual Studio Code.
 

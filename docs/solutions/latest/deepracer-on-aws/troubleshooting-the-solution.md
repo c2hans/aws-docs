@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/troubl
 ---
 
 # Troubleshooting the solution
-<a name="troubleshooting-the-solution"></a>
 
 ## Issues with logging in or creating an account
 <a name="issues-with-logging-in-or-creating-an-account"></a>

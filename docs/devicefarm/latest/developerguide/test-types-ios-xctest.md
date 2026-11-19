@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ty
 ---
 
 # Integrating Device Farm with XCTest for iOS
-<a name="test-types-ios-xctest"></a>
 
 With Device Farm, you can use the XCTest framework to test your app on real devices. For more information about XCTest, see [Testing Basics](https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/03-testing_basics.html) in *Testing with Xcode*.
 

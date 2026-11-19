@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # DNS Firewall rule groups and rules
-<a name="resolver-dns-firewall-rule-groups"></a>
 
 This section describes the settings that you can configure for your DNS Firewall rule groups and rules, to define the DNS Firewall behavior for your VPCs. It also describes how to manage the settings for your rule groups and rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/speaker-search-data-
 ---
 
 # Understanding data storage for speaker search for the Amazon Chime SDK
-<a name="speaker-search-data-storage"></a>
 
 The Amazon Chime SDK stores the following data for speaker search:
 + The voice embeddings attached to the voice profiles that we use to provide the speaker search functionality.

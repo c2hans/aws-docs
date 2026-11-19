@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # FeesBreakdownAmount
-<a name="API_invoicing_FeesBreakdownAmount"></a>
 
  The fee amount.
 

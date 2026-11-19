@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Extract rosbag data**
 

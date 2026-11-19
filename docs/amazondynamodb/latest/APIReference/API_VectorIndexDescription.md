@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_V
 ---
 
 # VectorIndexDescription
-<a name="API_VectorIndexDescription"></a>
 
 Contains the current state and configuration of a vector index, including its status, size, item count, and the settings specified when the index was created.
 

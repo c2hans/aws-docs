@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticDisasterRecoveryServiceRolePolicy
-<a name="AWSElasticDisasterRecoveryServiceRolePolicy"></a>
 
 **Description**: This policy allows Elastic Disaster Recovery to manage AWS resources on your behalf.
 

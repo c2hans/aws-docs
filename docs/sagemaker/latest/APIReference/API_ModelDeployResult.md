@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDeployResult
-<a name="API_ModelDeployResult"></a>
 
 Provides information about the endpoint of the model deployment.
 

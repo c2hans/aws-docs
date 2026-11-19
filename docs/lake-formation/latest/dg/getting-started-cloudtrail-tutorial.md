@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started
 ---
 
 # Creating a data lake from an AWS CloudTrail source
-<a name="getting-started-cloudtrail-tutorial"></a>
 
 This tutorial guides you through the actions to take on the Lake Formation console to create and load your first data lake from an AWS CloudTrail source.
 

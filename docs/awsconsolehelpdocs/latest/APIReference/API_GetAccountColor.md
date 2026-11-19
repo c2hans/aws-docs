@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 ---
 
 # GetAccountColor (Deprecated)
-<a name="API_GetAccountColor"></a>
 
 **Important**
 Deprecated. This operation becomes unavailable on April 28, 2027. Use [GetAccountCustomizations](API_GetAccountCustomizations.md) instead.

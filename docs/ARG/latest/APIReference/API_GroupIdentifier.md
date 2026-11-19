@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupIdentif
 ---
 
 # GroupIdentifier
-<a name="API_GroupIdentifier"></a>
 
 The unique identifiers for a resource group.
 

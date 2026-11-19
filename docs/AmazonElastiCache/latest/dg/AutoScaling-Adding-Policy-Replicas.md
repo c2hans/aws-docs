@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoScaling-
 ---
 
 # Adding a scaling policy
-<a name="AutoScaling-Adding-Policy-Replicas"></a>
 
 You can add a scaling policy using the AWS Management Console.
 

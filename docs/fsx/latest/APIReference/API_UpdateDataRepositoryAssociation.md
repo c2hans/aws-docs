@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateDataRe
 ---
 
 # UpdateDataRepositoryAssociation
-<a name="API_UpdateDataRepositoryAssociation"></a>
 
 Updates the configuration of an existing data repository association on an Amazon FSx for Lustre file system. Data repository associations are supported on all FSx for Lustre 2.12 and 2.15 file systems, excluding `scratch_1` deployment type.
 

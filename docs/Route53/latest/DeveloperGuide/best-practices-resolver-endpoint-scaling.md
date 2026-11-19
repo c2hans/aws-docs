@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # Resolver endpoint scaling
-<a name="best-practices-resolver-endpoint-scaling"></a>
 
 Resolver endpoint security groups use connection tracking to gather information about traffic to and from the endpoints. Each endpoint interface has a maximum number of connections that can be tracked, and a high volume of DNS queries can exceed the connections and cause throttling and query loss. Connection tracking is AWS's default behavior for monitoring the state of traffic flowing through security groups (SGs). Using connection tracking in SGs will reduce the throughput of traffic, however, you can implement untracked connections to reduce overhead and improve performance. For more information see [Untracked connections](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html#untracked-connections).
 

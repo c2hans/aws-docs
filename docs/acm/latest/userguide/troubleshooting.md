@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshoot issues with AWS Certificate Manager
-<a name="troubleshooting"></a>
 
 Consult the following topics if you encounter problems using AWS Certificate Manager.
 

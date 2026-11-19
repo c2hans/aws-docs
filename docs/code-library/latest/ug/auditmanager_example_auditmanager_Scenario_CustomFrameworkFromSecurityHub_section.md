@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/auditmanager_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create an Audit Manager custom framework that contains Security Hub CSPM controls using an AWS SDK
-<a name="auditmanager_example_auditmanager_Scenario_CustomFrameworkFromSecurityHub_section"></a>
 
 The following code example shows how to:
 + Get a list of all standard controls that have Security Hub CSPM as their data source.

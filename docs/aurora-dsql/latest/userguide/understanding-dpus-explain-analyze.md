@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/understandi
 ---
 
 # Understanding DPUs in EXPLAIN ANALYZE
-<a name="understanding-dpus-explain-analyze"></a>
 
 Aurora DSQL provides **statement-level** Distributed Processing Unit (DPU) information in `EXPLAIN ANALYZE VERBOSE` plan output, giving you deeper visibility into query cost during development. This section explains what DPUs are and how to interpret them in the `EXPLAIN ANALYZE VERBOSE` output.
 

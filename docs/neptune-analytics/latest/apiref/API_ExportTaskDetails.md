@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Expo
 ---
 
 # ExportTaskDetails
-<a name="API_ExportTaskDetails"></a>
 
 Contains details about the specified export task.
 

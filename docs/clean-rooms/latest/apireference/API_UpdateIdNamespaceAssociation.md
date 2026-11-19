@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateIdNamespaceAssociation
-<a name="API_UpdateIdNamespaceAssociation"></a>
 
 Provides the details that are necessary to update an ID namespace association.
 

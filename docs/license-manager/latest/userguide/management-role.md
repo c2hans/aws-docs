@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/managem
 ---
 
 # License Manager – Management account role
-<a name="management-role"></a>
 
 License Manager requires a service-linked role to perform license management.
 

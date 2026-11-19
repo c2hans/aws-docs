@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteNot
 ---
 
 # DeleteNotificationConfiguration
-<a name="API_DeleteNotificationConfiguration"></a>
 
 Deletes a notification configuration.
 

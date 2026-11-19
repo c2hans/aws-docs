@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migration phases
-<a name="phases"></a>
 
 Migrating SSIS ETL processes to the AWS Cloud consists of four major phases: discover, analyze, determine approach, and implement.
 

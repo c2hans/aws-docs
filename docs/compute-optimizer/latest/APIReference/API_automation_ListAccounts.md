@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListAccounts
-<a name="API_automation_ListAccounts"></a>
 
  Lists the accounts in your organization that are enrolled in Compute Optimizer and whether they have enabled Automation.
 

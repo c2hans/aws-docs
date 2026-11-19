@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateGlueIdentit
 ---
 
 # UpdateGlueIdentityCenterConfiguration
-<a name="API_UpdateGlueIdentityCenterConfiguration"></a>
 
 Updates the existing AWS Glue Identity Center configuration, allowing modification of scopes and permissions for the integration.
 

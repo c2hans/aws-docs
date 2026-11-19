@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-page-insights-re
 ---
 
 # Reading from Facebook Page Insights entities
-<a name="facebook-page-insights-reading-from-entities"></a>
 
 **Prerequisite**
 

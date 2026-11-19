@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Wor
 ---
 
 # WorkspaceEncryptionConfiguration
-<a name="API_WorkspaceEncryptionConfiguration"></a>
 
 Contains the encryption configuration for a workspace.
 

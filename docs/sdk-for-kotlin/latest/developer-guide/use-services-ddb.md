@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/us
 ---
 
 # Work with DynamoDB using the AWS SDK for Kotlin
-<a name="use-services-ddb"></a>
 
 ## Use AWS account-based endpoints
 <a name="use-services-ddb-account-based-endpoints"></a>

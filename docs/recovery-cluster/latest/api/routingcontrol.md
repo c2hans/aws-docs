@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontr
 ---
 
 # CreateRoutingControl, UpdateRoutingControl
-<a name="routingcontrol"></a>
 
 ## URI
 <a name="routingcontrol-url"></a>

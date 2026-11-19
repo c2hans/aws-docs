@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Computer Object \| Remove SPN
-<a name="management-directory-computer-object-remove-spn"></a>
 
 Remove the Service Principal Name (SPN) associated with a specified hostname or host alias in Microsoft Active Directory. For multi-account landing zone (MALZ), use this change type in the shared services account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Medic
 ---
 
 # MedicalScribeJobSummary
-<a name="API_MedicalScribeJobSummary"></a>
 
 Provides detailed information about a specific Medical Scribe job.
 

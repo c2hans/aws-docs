@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_BatchGetUserAcc
 ---
 
 # BatchGetUserAccessTasks
-<a name="API_BatchGetUserAccessTasks"></a>
 
 Gets user access details in a batch request.
 

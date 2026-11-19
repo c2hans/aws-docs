@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/supported-input
 ---
 
 # Supported containers
-<a name="supported-inputs-file-containers"></a>
 
 This table specifies the types of containers that are supported for file inputs. These containers apply to all the types of upstream systems.
 

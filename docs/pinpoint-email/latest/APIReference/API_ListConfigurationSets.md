@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_L
 ---
 
 # ListConfigurationSets
-<a name="API_ListConfigurationSets"></a>
 
 List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
 

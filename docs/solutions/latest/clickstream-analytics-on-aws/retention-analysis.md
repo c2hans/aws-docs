@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Retention Analysis
-<a name="retention-analysis"></a>
 
  Retention rate is a common metric used to assess the user stickiness for an app or website. Retention means that the user returns to your app or website again some time after they used your app. In addition to the standard retention metrics in the default dashboard, Retention Analysis module allows you to select a start event and returning event to customize a retention or attrition rate of a target user group.
 

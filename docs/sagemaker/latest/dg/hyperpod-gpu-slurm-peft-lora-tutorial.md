@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-gpu-slurm-p
 ---
 
 # HyperPod Slurm cluster PEFT-Lora tutorial (GPU)
-<a name="hyperpod-gpu-slurm-peft-lora-tutorial"></a>
 
 The following tutorial sets up Slurm environment and starts a parameter-efficient fine-tuning (PEFT) job on a Llama 8 billion parameter model.
 

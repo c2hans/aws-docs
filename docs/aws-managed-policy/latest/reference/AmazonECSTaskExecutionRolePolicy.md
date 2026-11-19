@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSTaskExecutionRolePolicy
-<a name="AmazonECSTaskExecutionRolePolicy"></a>
 
 **Description**: Provides access to other AWS service resources that are required to run Amazon ECS tasks
 

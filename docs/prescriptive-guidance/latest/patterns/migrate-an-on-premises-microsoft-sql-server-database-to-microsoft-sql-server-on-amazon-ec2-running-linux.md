@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Microsoft SQL Server database to Microsoft SQL Server on Amazon EC2 running Linux
-<a name="migrate-an-on-premises-microsoft-sql-server-database-to-microsoft-sql-server-on-amazon-ec2-running-linux"></a>
 
 *Tirumala Dasari, Amazon Web Services*
 

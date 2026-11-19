@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/CloudWatch-usin
 ---
 
 # Using the metric query option to query CloudWatch Metrics Insights data
-<a name="CloudWatch-using-the-metric-query"></a>
 
 **Note**
 Amazon CloudWatch Metrics Insights is in preview. CloudWatch Metrics Insights features are open to all AWS accounts. Features might be subject to change.

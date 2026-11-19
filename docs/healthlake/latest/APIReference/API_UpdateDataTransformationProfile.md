@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Updat
 ---
 
 # UpdateDataTransformationProfile
-<a name="API_UpdateDataTransformationProfile"></a>
 
 Updates the DRAFT version (version 0) of a data transformation profile with new profile content. The update replaces all existing DRAFT content.
 

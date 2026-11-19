@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Internet
 ---
 
 # InternetEventSummary
-<a name="API_InternetEventSummary"></a>
 
 A summary of information about an internet event in Internet Monitor. Internet events are issues that cause performance degradation or availability problems for impacted AWS client locations. Internet Monitor displays information about recent global health events, called internet events, on a global outages map that is available to all AWS customers.
 

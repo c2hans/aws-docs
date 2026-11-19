@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Perf
 ---
 
 # PerformanceInsightsReferenceData
-<a name="API_PerformanceInsightsReferenceData"></a>
 
 Reference data used to evaluate Performance Insights to determine if its performance is anomalous or not.
 

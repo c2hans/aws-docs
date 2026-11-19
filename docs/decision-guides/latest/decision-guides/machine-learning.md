@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 ---
 
 # Machine Learning
-<a name="machine-learning"></a>
 
 The following decision guides help you choose AWS services for generative AI, machine learning, and foundation models.
 

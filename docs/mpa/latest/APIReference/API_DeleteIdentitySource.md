@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_DeleteIdenti
 ---
 
 # DeleteIdentitySource
-<a name="API_DeleteIdentitySource"></a>
 
 Deletes an identity source. For more information, see [Identity Source](https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html) in the *Multi-party approval User Guide*.
 

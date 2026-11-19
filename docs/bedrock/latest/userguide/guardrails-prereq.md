@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-prer
 ---
 
 # Prerequisites for using Amazon Bedrock Guardrails
-<a name="guardrails-prereq"></a>
 
 Before you can use Amazon Bedrock Guardrails, you must fulfill the following prerequisites:
 

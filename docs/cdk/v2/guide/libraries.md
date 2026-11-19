@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/libraries.html
 ---
 
 # The AWS CDK libraries
-<a name="libraries"></a>
 
 Learn about the core libraries that you will use with the AWS Cloud Development Kit (AWS CDK).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSnapshotTierStatus
-<a name="API_DescribeSnapshotTierStatus"></a>
 
 Describes the storage tier status of one or more Amazon EBS snapshots.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetIn
 ---
 
 # GetInvalidation
-<a name="API_GetInvalidation"></a>
 
 Get the information about an invalidation.
 

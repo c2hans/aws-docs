@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Summarizing indexes in Amazon OpenSearch Service with index rollups
-<a name="rollup"></a>
 
 Index rollups in Amazon OpenSearch Service let you reduce storage costs by periodically rolling up old data into summarized indexes.
 

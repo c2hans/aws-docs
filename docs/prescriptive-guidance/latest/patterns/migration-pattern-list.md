@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migration
-<a name="migration-pattern-list"></a>
 
 **Topics**
 + [Automatically restart the AWS Replication Agent after a RHEL reboot without disabling SELinux](restart-the-aws-replication-agent-automatically-without-disabling-selinux-after-rebooting-a-rhel-source-server.md)

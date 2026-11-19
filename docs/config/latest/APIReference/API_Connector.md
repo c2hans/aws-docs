@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Connector
 ---
 
 # Connector
-<a name="API_Connector"></a>
 
 The details of the connector, including the connector configuration and connector ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Q. What additional security layers should I consider to prevent prompt injection attacks?** **A. **The following diagram shows the three main security layers: LLM input, LLM built-in guardrails, and user-introduced guardrails.
 

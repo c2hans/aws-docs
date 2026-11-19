@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateBenefitApplication
-<a name="API_benefits_CreateBenefitApplication"></a>
 
 Creates a new benefit application for a partner to request access to AWS benefits and programs.
 

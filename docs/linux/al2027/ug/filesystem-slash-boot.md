@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/filesystem-slash-boot.ht
 ---
 
 # `/boot` (kernel, initramfs, bootloader)
-<a name="filesystem-slash-boot"></a>
 
 Bootable AL2027 images are configured with `/boot` on the root file system. It holds the files needed to boot, such as the Linux kernel and the initramfs. Change the content of this directory only through the tools provided with the OS. The `/boot` path is only relevant for bootable images; it is unused in AL2027 container images.
 

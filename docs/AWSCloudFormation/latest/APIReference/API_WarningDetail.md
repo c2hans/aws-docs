@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # WarningDetail
-<a name="API_WarningDetail"></a>
 
 The warnings generated for a specific resource for this generated template.
 

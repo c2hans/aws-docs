@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningProfile.htm
 ---
 
 # SigningProfile
-<a name="API_SigningProfile"></a>
 
 Contains information about the ACM certificates and signing configuration parameters that can be used by a given code signing user.
 

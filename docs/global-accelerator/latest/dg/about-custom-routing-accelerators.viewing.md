@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custo
 ---
 
 # View custom routing accelerators in Global Accelerator
-<a name="about-custom-routing-accelerators.viewing"></a>
 
 This section provides steps to view information about your custom routing accelerators on the console. To see descriptions of your custom routing accelerators programmatically, see [ListCustomRoutingAccelerator](https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCustomRoutingAccelerator.html) and [DescribeCustomRoutingAccelerator](https://docs.aws.amazon.com/global-accelerator/latest/api/API_DescribeCustomRoutingAccelerator.html) in the AWS Global Accelerator API Reference.
 

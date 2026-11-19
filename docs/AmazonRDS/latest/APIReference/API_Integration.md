@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Integr
 ---
 
 # Integration
-<a name="API_Integration"></a>
 
 A zero-ETL integration with Amazon Redshift.
 

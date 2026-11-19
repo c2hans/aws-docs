@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/deploy-diskless-spe
 ---
 
 # Step 4b (diskless): Create the specification and deploy
-<a name="deploy-diskless-spec"></a>
 
 In this step, you describe the VMware Cloud Foundation (VCF) management domain in a JSON deployment specification, validate it in the VCF Installer, and deploy VCF. Then you verify the cluster and the storage in the vSphere Client. The example is a two-host VCF 9.x management domain on r7i.metal-24xl hosts, with one NFS principal datastore on Amazon FSx for OpenZFS and no vSAN.
 

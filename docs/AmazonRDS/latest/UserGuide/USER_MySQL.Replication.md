@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MySQL.Re
 ---
 
 # Working with MySQL replication in Amazon RDS
-<a name="USER_MySQL.Replication"></a>
 
 You usually use read replicas to configure replication between Amazon RDS DB instances. For general information about read replicas, see [Working with DB instance read replicas](USER_ReadRepl.md). For specific information about working with read replicas on Amazon RDS for MySQL, see [Working with MySQL read replicas](USER_MySQL.Replication.ReadReplicas.md).
 

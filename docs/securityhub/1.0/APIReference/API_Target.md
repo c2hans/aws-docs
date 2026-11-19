@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Target.
 ---
 
 # Target
-<a name="API_Target"></a>
 
  The target account, organizational unit, or the root that is associated with an AWS Security Hub CSPM configuration. The configuration can be a configuration policy or self-managed behavior.
 

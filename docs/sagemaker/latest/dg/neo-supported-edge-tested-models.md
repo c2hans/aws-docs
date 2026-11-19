@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-supported-edge-t
 ---
 
 # Tested Models
-<a name="neo-supported-edge-tested-models"></a>
 
 The following collapsible sections provide information about machine learning models that were tested by the Amazon SageMaker Neo team. Expand the collapsible section based on your framework to check if a model was tested.
 

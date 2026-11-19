@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Partitio
 ---
 
 # PartitionField
-<a name="API_PartitionField"></a>
 
 Specifies a single partition field.
 

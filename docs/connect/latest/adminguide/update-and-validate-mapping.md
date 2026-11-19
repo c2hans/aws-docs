@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-and-val
 ---
 
 # Update and validate an object type mapping in Customer Profiles
-<a name="update-and-validate-mapping"></a>
 
 This topic explains how object type mappings change over time and how Connect Customer Customer Profiles validates them, so you can update a mapping with confidence and avoid surprises in already-ingested data.
 

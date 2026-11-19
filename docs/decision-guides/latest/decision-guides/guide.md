@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/g
 ---
 
 # Choosing an AWS cryptography service
-<a name="guide"></a>
 
 **Taking the first step**
 

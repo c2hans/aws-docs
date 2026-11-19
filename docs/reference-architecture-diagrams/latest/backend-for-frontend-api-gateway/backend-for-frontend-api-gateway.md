@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/b
 ---
 
 # Backend for Frontend Using API Gateway
-<a name="backend-for-frontend-api-gateway"></a>
 
 Publication date: **April 27, 2022 ([Diagram history](#diagram-history))**
 

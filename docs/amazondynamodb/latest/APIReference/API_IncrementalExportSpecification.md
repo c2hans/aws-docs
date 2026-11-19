@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # IncrementalExportSpecification
-<a name="API_IncrementalExportSpecification"></a>
 
 Optional object containing the parameters specific to an incremental export.
 

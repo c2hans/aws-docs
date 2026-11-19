@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Resource Explorer and AWS Organizations
-<a name="services-that-can-integrate-resource-explorer"></a>
 
 AWS Resource Explorer is a resource search and discovery service. With Resource Explorer, you can explore your resources, such as Amazon Elastic Compute Cloud instances, Amazon Kinesis Data Streams, or Amazon DynamoDB tables, using an internet search engine-like experience. You can search for your resources using resource metadata such as names, tags, and IDs. Resource Explorer works across AWS Regions in your account to simplify your cross-Region workloads.
 

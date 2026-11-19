@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-object-
 ---
 
 # DLR object detection
-<a name="dlr-object-detection-component"></a>
 
 The DLR object detection component (`aws.greengrass.DLRObjectDetection`) contains sample inference code to perform object detection inference using [Deep Learning Runtime](https://github.com/neo-ai/neo-ai-dlr) and sample pre-trained models. This component uses the variant [DLR object detection model store](dlr-object-detection-model-store-component.md) and the [DLR runtime](dlr-component.md) components as dependencies to download DLR and the sample models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/prepopu
 ---
 
 # Make Default Drives and Folders Available for Your Users to Share
-<a name="prepopulate-drives-folders-system-redirection"></a>
 
 By default, when you enable file direction for users of a stack, the following drives and folders are made available for those users to share in their streaming session:
 + Drives:

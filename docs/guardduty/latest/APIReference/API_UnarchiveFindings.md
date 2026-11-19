@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Unarch
 ---
 
 # UnarchiveFindings
-<a name="API_UnarchiveFindings"></a>
 
 Unarchives GuardDuty findings specified by the `findingIds`.
 

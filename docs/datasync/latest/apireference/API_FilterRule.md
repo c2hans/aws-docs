@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_FilterR
 ---
 
 # FilterRule
-<a name="API_FilterRule"></a>
 
 Specifies which files, folders, and objects to include or exclude when transferring files from source to destination.
 

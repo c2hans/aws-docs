@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Overcoming common cloud transformation challenges
-<a name="introduction"></a>
 
 *Ashish Sharma and Ravindra Vaidya, Amazon Web Services*
 

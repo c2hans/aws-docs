@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/co
 ---
 
 # Using DuckDB in Amazon MWAA Serverless workflows
-<a name="code-examples-duckdb"></a>
 
 Run DuckDB SQL in Amazon MWAA Serverless workflows with `DuckDBExecuteQueryOperator`. DuckDB is an in-process SQL engine that runs inside a workflow task, so you avoid the cost and operational overhead of running a separate database server. Use DuckDB for data checks, summaries, and transformations on CSV, JSON, and Parquet files in Amazon S3.
 

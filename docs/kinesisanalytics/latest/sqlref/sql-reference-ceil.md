@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CEIL / CEILING
-<a name="sql-reference-ceil"></a>
 
 ```
  CEIL | CEILING ( <number-expression> )

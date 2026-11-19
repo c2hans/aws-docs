@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/t
 ---
 
 # Troubleshooting Amazon Kinesis Agent for Microsoft Windows
-<a name="troubleshooting-kinesis-agent-windows"></a>
 
 Use the following instructions to diagnose and correct issues when using Amazon Kinesis Agent for Microsoft Windows.
 

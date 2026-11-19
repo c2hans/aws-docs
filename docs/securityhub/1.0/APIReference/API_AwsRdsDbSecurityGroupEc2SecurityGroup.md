@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbSecurityGroupEc2SecurityGroup
-<a name="API_AwsRdsDbSecurityGroupEc2SecurityGroup"></a>
 
 EC2 security group information for an RDS DB security group.
 

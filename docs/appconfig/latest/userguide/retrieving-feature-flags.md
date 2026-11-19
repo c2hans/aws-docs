@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-fe
 ---
 
 # Retrieving feature flags and configuration data in AWS AppConfig
-<a name="retrieving-feature-flags"></a>
 
 Your application retrieves feature flags and free form configuration data by establishing a configuration session using the AWS AppConfig Data service. We recommended you use AWS AppConfig Agent to retrieve configuration data. The agent (or the AWS AppConfig Agent Lambda extension for Lambda compute environments) manages a series of API calls and session tokens on your behalf. From a high level, the process works as follows:
 

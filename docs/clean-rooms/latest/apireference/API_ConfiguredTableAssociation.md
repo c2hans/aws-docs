@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTableAssociation
-<a name="API_ConfiguredTableAssociation"></a>
 
 A configured table association links a configured table to a collaboration.
 

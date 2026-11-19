@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-w
 ---
 
 # AWS IoT Wireless API operations
-<a name="iot-wireless-api-reference"></a>
 
 You can perform the following additional API operations when onboarding your LoRaWAN or Sidewalk end devices, or when creating an import task for provisioning Sidewalk end devices in bulk.
 

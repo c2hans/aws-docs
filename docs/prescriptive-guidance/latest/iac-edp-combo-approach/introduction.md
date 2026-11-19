@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # Synchronizing infrastructure as code (IaC) with event-driven programming (EDP)
-<a name="introduction"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

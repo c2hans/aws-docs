@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialMapVisual
-<a name="API_GeospatialMapVisual"></a>
 
 A geospatial map or a points on map visual.
 

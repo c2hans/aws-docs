@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/emrcl
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Launch an Amazon EMR cluster with hadoopVersion
-<a name="emrcluster-example-launch"></a>
 
 **Example**  <a name="example1"></a>
 The following example launches an Amazon EMR cluster using AMI version 1.0 and Hadoop 0.20.

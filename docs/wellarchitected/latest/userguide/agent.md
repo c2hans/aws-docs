@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent.h
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # What is AWS Well-Architected Agent (preview)?
-<a name="agent"></a>
 
 AWS Well-Architected Agent (AWS WA Agent) is an AI-powered cloud optimization service that continuously analyzes your AWS environment and delivers personalized, prioritized recommendations across cost, security, performance, and resilience. The service generates recommendations at three levels (resource, application, and architecture) with ready-to-deploy automation scripts so you can act immediately.
 

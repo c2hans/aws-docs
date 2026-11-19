@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 This guide can help you and your organization achieve the following objectives:
 + Set up an enterprise-level design pattern that can help you align your IaC and EDP implementations as part of your AWS Cloud journey.

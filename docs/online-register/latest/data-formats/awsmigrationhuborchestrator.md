@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Migration Hub Orchestrator
-<a name="awsmigrationhuborchestrator"></a>
 
 AWS Migration Hub Orchestrator provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Summary
-<a name="API_Summary"></a>
 
 The summary of a recommendation.
 

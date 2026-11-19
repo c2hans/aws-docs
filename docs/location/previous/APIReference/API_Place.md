@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Place
 ---
 
 # Place
-<a name="API_Place"></a>
 
 Contains details about addresses or points of interest that match the search criteria.
 

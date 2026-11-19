@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/delivery-examples.ht
 ---
 
 # Processing a received Amazon Chime SDK live transcript event
-<a name="delivery-examples"></a>
 
 The following examples show how to process a received `TranscriptEvent`.
 

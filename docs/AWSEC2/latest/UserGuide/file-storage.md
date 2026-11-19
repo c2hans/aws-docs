@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/file-storage.htm
 ---
 
 # Object storage, file storage, and file caching on Amazon EC2
-<a name="file-storage"></a>
 
 Cloud file storage is a method for storing data in the cloud that provides servers and applications access to data through shared file systems. This compatibility makes cloud file storage ideal for workloads that rely on shared file systems and provides simple integration without code changes.
 

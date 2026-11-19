@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/con
 ---
 
 # Tables of control metadata
-<a name="control-metadata-tables"></a>
 
 **Warning**
 The data previously displayed on this page was outdated and has been removed. This page will be removed in a future release.

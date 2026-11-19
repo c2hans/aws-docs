@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_DATASHARE_OBJEC
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SVV\_DATASHARE\_OBJECTS
-<a name="r_SVV_DATASHARE_OBJECTS"></a>
 
 Use SVV\_DATASHARE\_OBJECTS to view a list of objects in all datashares created on the cluster or shared with the cluster.
 

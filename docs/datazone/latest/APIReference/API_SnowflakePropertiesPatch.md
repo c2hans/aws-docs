@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakePropertiesPatch
-<a name="API_SnowflakePropertiesPatch"></a>
 
 Contains the Snowflake-specific settings to update on an existing connection. Include only the fields you want to change.
 

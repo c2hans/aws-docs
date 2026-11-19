@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Anoma
 ---
 
 # AnomalyDetectorSummary
-<a name="API_AnomalyDetectorSummary"></a>
 
 Summary information about an anomaly detector for list operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/restrict-ac
 ---
 
 # Restrict user access to certain devices
-<a name="restrict-access"></a>
 
 To restrict user access for certain Braket devices, you can add a *deny permissions* policy to a specific IAM role.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Kine
 ---
 
 # KinesisTargetDefinition
-<a name="API_KinesisTargetDefinition"></a>
 
 Kinesis stream target configuration.
 

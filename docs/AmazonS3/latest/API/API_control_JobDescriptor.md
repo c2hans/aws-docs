@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobDescr
 ---
 
 # JobDescriptor
-<a name="API_control_JobDescriptor"></a>
 
 A container element for the job configuration and status information returned by a `Describe Job` request.
 

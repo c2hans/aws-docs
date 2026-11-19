@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # LayoutSummary
-<a name="API_connect-cases_LayoutSummary"></a>
 
 Object for the summarized details of the layout.
 

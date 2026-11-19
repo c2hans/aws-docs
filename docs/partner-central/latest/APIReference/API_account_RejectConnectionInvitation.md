@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RejectConnectionInvitation
-<a name="API_account_RejectConnectionInvitation"></a>
 
 Rejects a connection invitation from another partner, declining the partnership request.
 

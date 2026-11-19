@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-locking-
 ---
 
 # Step 5: Set up the video encodes
-<a name="output-locking-event-setup-stream-video-fields"></a>
 
 This section shows how to set up video encode parameters in an event that implements Elemental Live output locking.
 

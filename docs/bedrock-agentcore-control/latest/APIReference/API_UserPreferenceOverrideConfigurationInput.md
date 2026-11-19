@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UserPreferenceOverrideConfigurationInput
-<a name="API_UserPreferenceOverrideConfigurationInput"></a>
 
 Input for user preference override configuration in a memory strategy.
 

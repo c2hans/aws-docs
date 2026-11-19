@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Use configuration bundles at runtime
-<a name="configuration-bundles-runtime"></a>
 
 Your agent reads configuration from a bundle at runtime to apply dynamic settings without redeploying code. The gateway and runtime pass the bundle reference through W3C baggage headers, a standard mechanism for passing context between services. Your agent reads the configuration from the current request context without needing to know which bundle version is active.
 

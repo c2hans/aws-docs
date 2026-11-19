@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-id-client-side-
 ---
 
 # Client-side tracking API
-<a name="ad-id-client-side-tracking-api"></a>
 
 The following example shows how a player SDK links the ad metadata in the manifest with the full tracking event data in the client-side tracking response payload with `creativeId` and `adId`.
 

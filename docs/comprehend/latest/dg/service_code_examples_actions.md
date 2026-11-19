@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/service_code_exampl
 ---
 
 # Actions for Amazon Comprehend using AWS SDKs
-<a name="service_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual Amazon Comprehend actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

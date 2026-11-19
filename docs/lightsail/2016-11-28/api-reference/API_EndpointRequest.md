@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_E
 ---
 
 # EndpointRequest
-<a name="API_EndpointRequest"></a>
 
 Describes the settings of a public endpoint for an Amazon Lightsail container service.
 

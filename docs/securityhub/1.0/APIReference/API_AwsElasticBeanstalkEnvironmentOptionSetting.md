@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticBeanstalkEnvironmentOptionSetting
-<a name="API_AwsElasticBeanstalkEnvironmentOptionSetting"></a>
 
 A configuration option setting for the environment.
 

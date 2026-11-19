@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_Capacity.html
 ---
 
 # Capacity
-<a name="API_Capacity"></a>
 
 Describes the user capacity for a pool of WorkSpaces.
 

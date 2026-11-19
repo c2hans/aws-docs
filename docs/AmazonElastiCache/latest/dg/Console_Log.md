@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Console_Log.
 ---
 
 # Specifying log delivery using the Console
-<a name="Console_Log"></a>
 
 **Log delivery requirements**
 Log delivery is not supported for serverless caches.

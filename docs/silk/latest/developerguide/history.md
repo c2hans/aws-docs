@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/history.html
 ---
 
 # Document History
-<a name="history"></a>
 
 The following table describes important changes to the *Amazon Silk Developer Guide*.
 + **Latest documentation update:** September 18, 2015

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/annotations-ma
 ---
 
 # Managing annotations
-<a name="annotations-managing"></a>
 
 You can add, retrieve, and delete annotations on your Amazon S3 objects using the AWS Management Console, AWS CLI, or AWS SDKs. The following sections describe how to perform each operation.
 

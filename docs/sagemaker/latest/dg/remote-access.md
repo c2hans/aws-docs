@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access.html
 ---
 
 # Connect your Remote IDE to SageMaker spaces with remote access
-<a name="remote-access"></a>
 
 You can remotely connect from your Remote IDE to Amazon SageMaker Studio spaces. You can use your customized local IDE setup, including AI-assisted development tools and custom extensions, with the scalable compute resources in Amazon SageMaker AI. This guide provides concepts and setup instructions for administrators and users.
 

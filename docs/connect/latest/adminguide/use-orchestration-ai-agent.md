@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-orchestrat
 ---
 
 # How to use orchestrator AI agents
-<a name="use-orchestration-ai-agent"></a>
 
 Orchestrator AI Agents serve as primary agents for resolving customer interactions across use cases like self-service and agent assistance. They integrate with tools and security profiles to enhance issue resolution capabilities.
 + **Tools**: You can configure your Orchestrator AI Agent with these tool types:

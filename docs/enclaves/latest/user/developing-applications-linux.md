@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/developing-applicat
 ---
 
 # Nitro Enclaves application development on Linux instances
-<a name="developing-applications-linux"></a>
 
 This section provides information for Nitro Enclaves application development on Linux instances.
 

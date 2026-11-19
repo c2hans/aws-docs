@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAssessment
-<a name="API_runtime_GuardrailAssessment"></a>
 
 A behavior assessment of the guardrail policies used in a call to the Converse API.
 

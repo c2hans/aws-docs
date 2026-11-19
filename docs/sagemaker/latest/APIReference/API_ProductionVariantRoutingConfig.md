@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantRoutingConfig
-<a name="API_ProductionVariantRoutingConfig"></a>
 
 Settings that control how the endpoint routes incoming traffic to the instances that the endpoint hosts.
 

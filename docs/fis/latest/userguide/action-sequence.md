@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/action-sequence.htm
 ---
 
 # Actions for AWS FIS
-<a name="action-sequence"></a>
 
 To create an experiment template, you must define one or more actions. For a list of predefined actions provided by AWS FIS, see [Actions reference](fis-actions-reference.md).
 

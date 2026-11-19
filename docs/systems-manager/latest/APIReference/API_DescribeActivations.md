@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeActivations
-<a name="API_DescribeActivations"></a>
 
 Describes details about the activation, such as the date and time the activation was created, its expiration date, the AWS Identity and Access Management (IAM) role assigned to the managed nodes in the activation, and the number of nodes registered by using this activation.
 

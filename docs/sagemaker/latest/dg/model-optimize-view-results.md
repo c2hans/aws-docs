@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimize-view-
 ---
 
 # View the optimization job results
-<a name="model-optimize-view-results"></a>
 
 After you've created one or more optimization jobs, you can use Studio to view a summary table of all of your jobs, and you can view the details for any individual job.
 

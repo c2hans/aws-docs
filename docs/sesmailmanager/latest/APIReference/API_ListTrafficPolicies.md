@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListTrafficPolicies
-<a name="API_ListTrafficPolicies"></a>
 
 List traffic policy resources.
 

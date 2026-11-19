@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Creating Segments in Amazon Pinpoint
-<a name="examples-pinpoint-create-segment"></a>
 
 A user segment represents a subset of your users that’s based on shared characteristics, such as how recently a user opened your app or which device they use. The following example demonstrates how to define a segment of users.
 

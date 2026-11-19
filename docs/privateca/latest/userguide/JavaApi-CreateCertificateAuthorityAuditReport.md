@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Creat
 ---
 
 # CreateCertificateAuthorityAuditReport
-<a name="JavaApi-CreateCertificateAuthorityAuditReport"></a>
 
 The following Java sample shows how to use the [CreateCertificateAuthorityAuditReport](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html) operation.
 

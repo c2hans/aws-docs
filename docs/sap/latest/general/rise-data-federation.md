@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-federation.
 ---
 
 # Data Federation using AWS Services
-<a name="rise-data-federation"></a>
 
 Data federation is a data management strategy that enables, real-time analytics, single source-of-trust, no data duplication or expensive pipelines.
 

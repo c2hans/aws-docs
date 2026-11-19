@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-bandwi
 ---
 
 # EC2 instance bandwidth weighting configuration
-<a name="configure-bandwidth-weighting"></a>
 
 Some instance types support configurable bandwidth weighting, where you can select baseline bandwidth weighting that favors either network processing or EBS operations. Default settings for baseline bandwidth are determined by your instance type. You can configure the bandwidth weighting during launch, or modify your instance settings with the following weighting preferences:
 + **default** – This option uses the standard bandwidth configuration for your instance type.

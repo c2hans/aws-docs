@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDatasetSchema
-<a name="API_DataLakeDatasetSchema"></a>
 
 The schema details of the dataset. Note that for AWS Supply Chain dataset under **asc** namespace, it may have internal fields like connection\_id that will be auto populated by data ingestion methods.
 

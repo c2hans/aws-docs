@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_GetRecoveryP
 ---
 
 # GetRecoveryPlanStep
-<a name="API_GetRecoveryPlanStep"></a>
 
 Gets a Recovery Plan step by ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/accessing-d
 ---
 
 # Use JetBrains DataGrip to access Aurora DSQL
-<a name="accessing-datagrip"></a>
 
 JetBrains DataGrip is a cross-platform IDE for working with SQL and databases, including PostgreSQL. DataGrip includes a robust GUI with an intelligent SQL editor. To download DataGrip, go to the [download page](https://www.jetbrains.com/datagrip/download) on the *JetBrains* website.
 

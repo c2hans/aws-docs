@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetMetrics
-<a name="API_GetMetrics"></a>
 
 Get the summary metrics for this AWS account.
 

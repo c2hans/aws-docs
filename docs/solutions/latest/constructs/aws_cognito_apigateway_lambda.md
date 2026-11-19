@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_cognito_
 ---
 
 # aws-cognito-apigateway-lambda
-<a name="aws_cognito_apigateway_lambda"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

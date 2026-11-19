@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6CidrA
 ---
 
 # Ipv6CidrAssociation
-<a name="API_Ipv6CidrAssociation"></a>
 
 Describes an IPv6 CIDR block association.
 

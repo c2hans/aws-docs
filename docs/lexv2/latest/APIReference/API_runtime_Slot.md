@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Sl
 ---
 
 # Slot
-<a name="API_runtime_Slot"></a>
 
 A value that Amazon Lex uses to fulfill an intent.
 
@@ -18,7 +17,7 @@ Required: No
 
  ** subSlots **   <a name="lexv2-Type-runtime_Slot-subSlots"></a>
 The constituent sub slots of a composite slot.
-Type: String to [Slot](#API_runtime_Slot) object map
+Type: String to [Slot](API_runtime_Slot.md) object map
 Key Length Constraints: Minimum length of 1.
 Required: No
 
@@ -29,7 +28,7 @@ Required: No
 
  ** values **   <a name="lexv2-Type-runtime_Slot-values"></a>
 A list of one or more values that the user provided for the slot. For example, if a for a slot that elicits pizza toppings, the values might be "pepperoni" and "pineapple."
-Type: Array of [Slot](#API_runtime_Slot) objects
+Type: Array of [Slot](API_runtime_Slot.md) objects
 Required: No
 
 ## See Also

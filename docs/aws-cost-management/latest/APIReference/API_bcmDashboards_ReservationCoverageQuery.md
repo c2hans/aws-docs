@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationCoverageQuery
-<a name="API_bcmDashboards_ReservationCoverageQuery"></a>
 
 Defines the parameters for querying Reserved Instance coverage data, including grouping options, metrics, and sorting preferences.
 

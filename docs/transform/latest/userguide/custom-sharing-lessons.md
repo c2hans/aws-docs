@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Lessons and shared transformation definitions
-<a name="custom-sharing-lessons"></a>
 
 Continual learning works differently for shared TDs. Lessons for a shared TD always belong to the owner's TD.
 

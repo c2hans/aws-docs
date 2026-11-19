@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-key-conc
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Key concepts
-<a name="isv-key-concepts"></a>
 
 Amazon Q index
 A comprehensive collection of a company's data that can be queried to build enhanced application experiences. It serves as the foundation for retrieving relevant content across various enterprise data sources.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_EndpointSett
 ---
 
 # EndpointSetting
-<a name="API_EndpointSetting"></a>
 
 Endpoint settings.
 

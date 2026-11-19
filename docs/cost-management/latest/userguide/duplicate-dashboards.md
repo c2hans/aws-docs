@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/duplica
 ---
 
 # Duplicating dashboards
-<a name="duplicate-dashboards"></a>
 
 You might want to duplicate a dashboard when you need to create variations of existing dashboards. For example, you could duplicate a dashboard that tracks costs by service, then modify the copy to track costs by a different dimension like Region or cost allocation tag. This saves time compared to creating a new dashboard from scratch.
 

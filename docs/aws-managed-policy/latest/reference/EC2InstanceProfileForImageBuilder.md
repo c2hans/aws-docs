@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2I
 ---
 
 # EC2InstanceProfileForImageBuilder
-<a name="EC2InstanceProfileForImageBuilder"></a>
 
 **Description**: EC2 Instance profile for Image Builder service.
 

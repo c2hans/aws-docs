@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # Monitoring Bulk Tasks: GET One Task Report
-<a name="performing-bulk-tasks-get-one-task-report"></a>
 
 Get the specified task report related to one bulk task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Secrets Manager
-<a name="awssecretsmanager"></a>
 
 AWS Secrets Manager provides the following APIs for data retrieval.
 

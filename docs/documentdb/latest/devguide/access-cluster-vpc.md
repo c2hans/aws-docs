@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/access-cluste
 ---
 
 # Accessing an Amazon DocumentDB cluster in a VPC
-<a name="access-cluster-vpc"></a>
 
 Amazon DocumentDB supports the following scenarios for accessing a cluster in a VPC:
 

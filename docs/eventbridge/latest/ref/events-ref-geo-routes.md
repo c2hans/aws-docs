@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-geo-ro
 ---
 
 # Amazon Location Service Routes events
-<a name="events-ref-geo-routes"></a>
 
 Amazon Location Routes sends service events to EventBridge via AWS CloudTrail.
 

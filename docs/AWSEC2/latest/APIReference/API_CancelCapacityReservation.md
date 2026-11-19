@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelCap
 ---
 
 # CancelCapacityReservation
-<a name="API_CancelCapacityReservation"></a>
 
 Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to `cancelled`.
 

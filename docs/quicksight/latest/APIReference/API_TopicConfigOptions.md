@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicConfigOptions
-<a name="API_TopicConfigOptions"></a>
 
 Configuration options for a `Topic`.
 

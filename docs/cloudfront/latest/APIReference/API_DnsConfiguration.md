@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DnsCo
 ---
 
 # DnsConfiguration
-<a name="API_DnsConfiguration"></a>
 
 The DNS configuration for your domain names.
 

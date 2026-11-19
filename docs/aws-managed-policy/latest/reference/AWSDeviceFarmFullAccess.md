@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeviceFarmFullAccess
-<a name="AWSDeviceFarmFullAccess"></a>
 
 **Description**: Provides full access to all AWS Device Farm operations.
 

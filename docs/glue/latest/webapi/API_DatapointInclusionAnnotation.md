@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DatapointInclusio
 ---
 
 # DatapointInclusionAnnotation
-<a name="API_DatapointInclusionAnnotation"></a>
 
 An Inclusion Annotation.
 

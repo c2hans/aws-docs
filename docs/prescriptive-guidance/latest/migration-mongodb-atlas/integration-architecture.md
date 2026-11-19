@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Integration architectures
-<a name="integration-architecture"></a>
 
 MongoDB Atlas integrates seamlessly with most AWS services, as shown in the following diagram.
 

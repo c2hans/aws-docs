@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Amazo
 ---
 
 # AmazonElasticsearchParameters
-<a name="API_AmazonElasticsearchParameters"></a>
 
 The parameters for OpenSearch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/oracle-s3-data-lake-step-
 ---
 
 # Step 4: Create a Target Amazon S3 Bucket
-<a name="oracle-s3-data-lake-step-4"></a>
 
 Before you create the target endpoint, you create an Amazon S3 bucket for the target data lake.
 

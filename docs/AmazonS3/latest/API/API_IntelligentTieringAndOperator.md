@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_IntelligentTieri
 ---
 
 # IntelligentTieringAndOperator
-<a name="API_IntelligentTieringAndOperator"></a>
 
 A container for specifying S3 Intelligent-Tiering filters. The filters determine the subset of objects to which the rule applies.
 

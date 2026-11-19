@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 ---
 
 # Date time functions
-<a name="sql-functions-date"></a>
 
  Date time functions work with dates and times. These functions allow extraction of specific components of a date, perform calculations, and manipulate date values.
 

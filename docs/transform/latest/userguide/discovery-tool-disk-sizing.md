@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Disk and memory sizing
-<a name="discovery-tool-disk-sizing"></a>
 
 The discovery tool stores its data in an internal database on the root volume. The database grows with the number of servers in scope. Network collection increases disk usage further, especially when private IP address collection is enabled. The discovery tool prunes data older than 30 days, so disk usage plateaus after the first month. This page also covers virtual machine (VM) memory and the discovery tool service memory limit.
 

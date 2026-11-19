@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Q: Is it possible to migrate Oracle Database Enterprise Edition running on premises to Oracle Database Standard Edition 2 on Amazon RDS for Oracle or on Amazon EC2?
 <a name="q--is-it-possible-to-migrate-oracle-database-enterprise-edition-running-on-premises-to-oracle-database-standard-edition-2-on-9999999999999999rdslongora--or-on-9999999999999999ec2--.e17716c8-ccd9-5239-9ca0-21c843f30a43"></a>

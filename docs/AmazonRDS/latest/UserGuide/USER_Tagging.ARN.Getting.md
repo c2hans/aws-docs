@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.
 ---
 
 # Getting an existing ARN for Amazon RDS
-<a name="USER_Tagging.ARN.Getting"></a>
 
 You can get the ARN of an RDS resource by using the AWS Management Console, AWS Command Line Interface (AWS CLI), or RDS API.
 

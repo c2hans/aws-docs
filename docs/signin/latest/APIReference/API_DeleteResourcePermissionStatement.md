@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_DeleteRes
 ---
 
 # DeleteResourcePermissionStatement
-<a name="API_DeleteResourcePermissionStatement"></a>
 
 Removes a permission statement from the account's AWS Sign-In resource-based policy.
 

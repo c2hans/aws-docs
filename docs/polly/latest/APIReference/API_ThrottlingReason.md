@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_Throttling
 ---
 
 # ThrottlingReason
-<a name="API_ThrottlingReason"></a>
 
 Provides information about a specific throttling reason.
 

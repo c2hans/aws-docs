@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/modify-volume-requi
 ---
 
 # Requirements for Amazon EBS volume modifications
-<a name="modify-volume-requirements"></a>
 
 The following requirements and limitations apply when you modify an Amazon EBS volume. To learn more about the general requirements for EBS volumes, see [Amazon EBS volume constraints](volume_constraints.md).
 

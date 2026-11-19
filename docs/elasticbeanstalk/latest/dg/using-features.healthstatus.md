@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-feature
 ---
 
 # Basic health reporting
-<a name="using-features.healthstatus"></a>
 
 This topic explains the functionality offered by Elastic Beanstalk basic health.
 

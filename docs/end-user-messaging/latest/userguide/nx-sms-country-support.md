@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Launch in a country
-<a name="nx-sms-country-support"></a>
 
 SMS requirements vary by country. Before you send to a new country, confirm which origination identities that country supports, whether the country requires registration, and whether two-way messaging is available. Requirements differ by destination, so plan for the country you are sending to rather than the AWS Region you send from.
 

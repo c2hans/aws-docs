@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateCap
 ---
 
 # UpdateCapacityReservation
-<a name="API_UpdateCapacityReservation"></a>
 
 Updates the number of requested data processing units for the capacity reservation with the specified name.
 

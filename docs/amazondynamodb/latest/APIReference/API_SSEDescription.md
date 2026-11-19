@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # SSEDescription
-<a name="API_SSEDescription"></a>
 
 The description of the server-side encryption status on the specified table.
 

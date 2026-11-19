@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-se
 ---
 
 # Connect to Amazon Simple Email Service
-<a name="connectors-ses"></a>
 
 To connect App Studio with Amazon SES to enable builders to use it to send email notifications from their apps, you must perform the following steps:
 

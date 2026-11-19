@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # ChangeMessageVisibilityBatch
-<a name="API_ChangeMessageVisibilityBatch"></a>
 
 Changes the visibility timeout of multiple messages. This is a batch version of ` ChangeMessageVisibility.` The result of the action on each message is reported individually in the response. You can send up to 10 ` ChangeMessageVisibility ` requests with each `ChangeMessageVisibilityBatch` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePa
 ---
 
 # UpdateParticipantAuthentication
-<a name="API_UpdateParticipantAuthentication"></a>
 
 Instructs Connect Customer to resume the authentication process. The subsequent actions depend on the request body contents:
 +  **If a code is provided**: Connect retrieves the identity information from Amazon Cognito and imports it into Connect Customer Profiles.

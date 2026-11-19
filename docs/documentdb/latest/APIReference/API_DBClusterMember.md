@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBClu
 ---
 
 # DBClusterMember
-<a name="API_DBClusterMember"></a>
 
 Contains information about an instance that is part of a cluster.
 

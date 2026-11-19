@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationChangeRequest
-<a name="API_CollaborationChangeRequest"></a>
 
 Represents a request to modify a collaboration. Change requests enable structured modifications to collaborations after they have been created.
 

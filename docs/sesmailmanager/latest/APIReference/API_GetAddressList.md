@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetAddressList
-<a name="API_GetAddressList"></a>
 
 Fetch attributes of an address list.
 

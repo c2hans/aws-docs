@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeDeliveries
-<a name="API_DescribeDeliveries"></a>
 
 Retrieves a list of the deliveries that have been created in the account.
 

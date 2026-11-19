@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AliasConfiguration
 ---
 
 # AliasConfiguration
-<a name="API_AliasConfiguration"></a>
 
 Provides configuration information about a Lambda function [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html).
 

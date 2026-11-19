@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCapac
 ---
 
 # ListCapacityReservations
-<a name="API_ListCapacityReservations"></a>
 
 Lists the capacity reservations for the current account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_FailoverGlobal
 ---
 
 # FailoverGlobalCluster
-<a name="API_FailoverGlobalCluster"></a>
 
 Initiates the failover process for a Neptune global database.
 
@@ -50,7 +49,7 @@ The following element is returned by the service.
 
  ** GlobalCluster **
 Contains the details of an Amazon Neptune global database.
-This data type is used as a response element for the [CreateGlobalCluster](API_CreateGlobalCluster.md), [DescribeGlobalClusters](API_DescribeGlobalClusters.md), [ModifyGlobalCluster](API_ModifyGlobalCluster.md), [DeleteGlobalCluster](API_DeleteGlobalCluster.md), [FailoverGlobalCluster](#API_FailoverGlobalCluster), and [RemoveFromGlobalCluster](API_RemoveFromGlobalCluster.md) actions.
+This data type is used as a response element for the [CreateGlobalCluster](API_CreateGlobalCluster.md), [DescribeGlobalClusters](API_DescribeGlobalClusters.md), [ModifyGlobalCluster](API_ModifyGlobalCluster.md), [DeleteGlobalCluster](API_DeleteGlobalCluster.md), [FailoverGlobalCluster](API_FailoverGlobalCluster.md), and [RemoveFromGlobalCluster](API_RemoveFromGlobalCluster.md) actions.
 Type: [GlobalCluster](API_GlobalCluster.md) object
 
 ## Errors

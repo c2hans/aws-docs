@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHost
 ---
 
 # ListHostedZonesByName
-<a name="API_ListHostedZonesByName"></a>
 
 Retrieves a list of your hosted zones in lexicographic order. The response includes a `HostedZones` child element for each hosted zone created by the current AWS account.
 

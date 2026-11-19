@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteContext
-<a name="API_DeleteContext"></a>
 
 Deletes an context.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Confirm cost tags associated with the Guidance
-<a name="confirm-cost-tags-associated-with-the-guidance"></a>
 
 After you activate cost allocation tags associated with the Guidance, you must confirm the cost allocation tags to see the costs for this Guidance. To confirm cost allocation tags:
 

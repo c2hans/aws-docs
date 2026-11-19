@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBParameterGroup
-<a name="API_DeleteDBParameterGroup"></a>
 
 Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
 

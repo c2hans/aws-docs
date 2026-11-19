@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS blogs
 <a name="9999999999999999aws--blogs.fd1e3e08-d10a-5302-b52c-60bb844ce158"></a>

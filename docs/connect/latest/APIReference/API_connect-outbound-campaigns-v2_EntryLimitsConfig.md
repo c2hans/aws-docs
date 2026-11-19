@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EntryLimitsConfig
-<a name="API_connect-outbound-campaigns-v2_EntryLimitsConfig"></a>
 
 Contains entry limits configuration for an outbound campaign. Entry limits control how many times a participant can enter a campaign and the minimum time interval between re-entries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/monitoring-link-devi
 ---
 
 # Monitoring Link with thumbnails
-<a name="monitoring-link-device-thumbnails"></a>
 
 You can view display thumbnails of the content that is currently being pushed to MediaLive by an AWS Elemental Link hardware device. The thumbnails appear if the AWS Elemental Link hardware is pushing content. You don't have to have an input or a channel that is using this content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-prod
 ---
 
 # Product categories in AWS Marketplace
-<a name="buyer-product-categories"></a>
 
  The [AWS Marketplace](https://aws.amazon.com/marketplace) website is organized into primary categories, with subcategories under each. You can search and filter based on the categories and subcategories.
 

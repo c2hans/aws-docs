@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to frequently asked questions about auditing SQL Server on Amazon RDS and Amazon EC2.
 

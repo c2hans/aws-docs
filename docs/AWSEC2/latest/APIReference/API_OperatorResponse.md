@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OperatorR
 ---
 
 # OperatorResponse
-<a name="API_OperatorResponse"></a>
 
 Describes whether the resource is managed by a service provider and, if so, describes the service provider that manages it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/getting-starte
 ---
 
 # Getting started on Linux
-<a name="getting-started-linux"></a>
 
 On Linux, you install AWS Emulator as a native package and run it as a local process. The package installs the emulator in `/opt/aws-emulator/` and adds the `aws-emulator` command to `/usr/bin/`, so the command is on your `PATH`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Monitor a service
-<a name="omni-monitor-a-service"></a>
 
 ## Open a service
 <a name="omni-monitor-a-service-open-a-service"></a>

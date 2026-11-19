@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/test-automated-
 ---
 
 # Test an Automated Reasoning policy
-<a name="test-automated-reasoning-policy"></a>
 
 Testing validates that your policy's rules are correct and that Automated Reasoning checks can accurately translate natural language into formal logic. You test a policy by sending natural language statements for validation, then inspecting the feedback to ensure the translation uses the right variables and that the rules produce the expected results.
 

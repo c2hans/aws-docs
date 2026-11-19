@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Making payments
-<a name="manage-making-a-payment"></a>
 
 You can use the **Payments** page of the AWS Billing and Cost Management console to pay your AWS bill using the process in this section.
 

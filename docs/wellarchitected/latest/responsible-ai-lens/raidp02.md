@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Dataset quality
-<a name="raidp02"></a>
 
 | RAIDP02: How will you assess dataset quality? |
 | --- |

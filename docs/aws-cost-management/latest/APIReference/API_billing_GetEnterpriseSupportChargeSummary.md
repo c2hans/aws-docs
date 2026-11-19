@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetEnterpriseSupportChargeSummary
-<a name="API_billing_GetEnterpriseSupportChargeSummary"></a>
 
 Returns a summary of Enterprise Support data aggregated across all accounts in the Enterprise Support profile.
 

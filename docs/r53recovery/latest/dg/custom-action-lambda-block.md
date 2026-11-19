@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/custom-action-lamb
 ---
 
 # Custom action Lambda execution block
-<a name="custom-action-lambda-block"></a>
 
 The custom action Lambda execution block enables you to add a customized step to a plan by using a Lambda function.
 

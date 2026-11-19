@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting-cur
 ---
 
 # Troubleshooting Cost and Usage Reports
-<a name="troubleshooting-cur"></a>
 
 **Topics**
 + [Why does my Cost and Usage Report data not match the data shown in other Billing and Cost Management features?](#cur-data-differences)

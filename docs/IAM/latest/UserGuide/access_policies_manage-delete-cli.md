@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_man
 ---
 
 # Delete IAM policies (AWS CLI)
-<a name="access_policies_manage-delete-cli"></a>
 
 You can use the AWS Command Line Interface (AWS CLI) to delete *customer managed policies* and *inline policies* in IAM. The number and size of IAM resources in an AWS account are limited. For more information, see [IAM and AWS STS quotas](reference_iam-quotas.md).
 

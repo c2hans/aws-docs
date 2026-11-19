@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # IAM JSON policy elements: Condition operators
-<a name="reference_policies_elements_condition_operators"></a>
 
 <a name="topiclist"></a>
 

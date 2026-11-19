@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Networking architecture
-<a name="networking-architecture"></a>
 
 The solution uses a single Amazon VPC with the following configuration:
 +  **Public Subnets** – Host NAT Gateway for outbound internet access

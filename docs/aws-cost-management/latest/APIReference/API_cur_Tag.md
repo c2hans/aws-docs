@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Tag
-<a name="API_cur_Tag"></a>
 
 Describes a tag. A tag is a key-value pair. You can add up to 50 tags to a report definition.
 

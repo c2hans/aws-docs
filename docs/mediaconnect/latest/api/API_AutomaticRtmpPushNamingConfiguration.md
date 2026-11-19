@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AutomaticRtm
 ---
 
 # AutomaticRtmpPushNamingConfiguration
-<a name="API_AutomaticRtmpPushNamingConfiguration"></a>
 
 The automatic RTMP naming configuration, where MediaConnect generates the application and stream names. This type does not require any additional settings.
 

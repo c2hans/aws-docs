@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Set min-node-count appropriately
-<a name="5-2-set-min-node-count-appropriately"></a>
 
 The minimum node count per node group determines your cost floor — set it too high and you pay for idle nodes 24/7, set it too low and you risk cold-start delays during traffic spikes.
 

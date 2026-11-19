@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-dn
 ---
 
 # Configure a VPC DHCP option set for your connector
-<a name="msk-connect-dns-config-dhcp"></a>
 
 Connectors automatically use the DNS servers defined in their VPC DHCP option set when the connector is created. Before you create a connector, make sure that you configure the VPC DHCP option set for your connector's DNS hostname resolution requirements.
 

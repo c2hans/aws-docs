@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Opt-in Regions
-<a name="opt-in-regions"></a>
 
 An opt-in Region is an AWS Region that’s deactivated by default. You can activate opt-in Regions in the AWS console. For additional information about opt-in Regions and how to activate them, refer to [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html) in the *AWS General Reference guide*.
 

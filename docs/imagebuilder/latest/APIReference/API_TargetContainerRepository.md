@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Tar
 ---
 
 # TargetContainerRepository
-<a name="API_TargetContainerRepository"></a>
 
 The container repository where the output container image is stored.
 

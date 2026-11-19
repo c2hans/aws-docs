@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/governance-config-detec
 ---
 
 # Detect non-compliant Lambda deployments and configurations with AWS Config
-<a name="governance-config-detection"></a>
 
 In addition to [proactive evaluation](governance-config.md), AWS Config can also reactively detect resource deployments and configurations that do not comply with your governance policies. This is important because governance policies evolve as your organization learns and implements new best practices.
 

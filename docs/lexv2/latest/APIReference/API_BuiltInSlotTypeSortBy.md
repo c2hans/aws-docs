@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BuiltInSlo
 ---
 
 # BuiltInSlotTypeSortBy
-<a name="API_BuiltInSlotTypeSortBy"></a>
 
 Specifies attributes for sorting a list of built-in slot types.
 

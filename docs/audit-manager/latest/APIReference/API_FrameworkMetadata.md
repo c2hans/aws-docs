@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Fr
 ---
 
 # FrameworkMetadata
-<a name="API_FrameworkMetadata"></a>
 
  The metadata of a framework, such as the name, ID, or description.
 

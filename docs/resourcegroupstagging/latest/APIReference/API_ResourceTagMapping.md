@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # ResourceTagMapping
-<a name="API_ResourceTagMapping"></a>
 
 A list of resource ARNs and the tags (keys and values) that are associated with each.
 

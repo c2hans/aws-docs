@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/SendMessageToHttp.prepare.
 ---
 
 # Step 1: Make sure your endpoint is ready to process Amazon SNS messages
-<a name="SendMessageToHttp.prepare"></a>
 
 Before you subscribe your HTTP or HTTPS endpoint to a topic, you must make sure the endpoint can handle the HTTP POST requests that Amazon SNS uses to send the subscription confirmation and notification messages. Usually, this means creating and deploying a web application that processes the HTTP requests from Amazon SNS. For example, use a Java servlet if your endpoint host runs Linux with Apache and Tomcat. When you subscribe an HTTP endpoint, Amazon SNS sends it a subscription confirmation request. Your endpoint must be prepared to receive and process this request when you create the subscription. Amazon SNS sends this request at that time. Amazon SNS will not send notifications to the endpoint until you confirm the subscription. After you confirm, Amazon SNS sends notifications to the endpoint when a publish action is performed on the topic.
 

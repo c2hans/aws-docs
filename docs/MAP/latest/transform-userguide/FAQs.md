@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/FAQs.html
 ---
 
 # Frequently Asked Questions (FAQs)
-<a name="FAQs"></a>
 
 This section answers the most common questions about MAP 2.0.
 

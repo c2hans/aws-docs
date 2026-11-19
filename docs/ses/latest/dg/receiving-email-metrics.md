@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-metrics.ht
 ---
 
 # Viewing metrics for Amazon SES email receiving
-<a name="receiving-email-metrics"></a>
 
 If you've enabled email receiving in Amazon SES and you've created receipt rules for your email, you can view the metrics for those receipt rule sets and rules using Amazon CloudWatch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Field.html
 ---
 
 # Field
-<a name="API_Field"></a>
 
 The `Field` object has information about the different properties associated with a field in the connector.
 

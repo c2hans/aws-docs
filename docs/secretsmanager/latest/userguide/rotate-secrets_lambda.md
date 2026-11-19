@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-s
 ---
 
 # Rotation by Lambda function
-<a name="rotate-secrets_lambda"></a>
 
 For many types of secrets, Secrets Manager uses an AWS Lambda function to update the secret and the database or service. For information about the costs of using a Lambda function, see [Pricing](intro.md#asm_pricing).
 

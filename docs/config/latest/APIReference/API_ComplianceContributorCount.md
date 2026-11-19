@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Complianc
 ---
 
 # ComplianceContributorCount
-<a name="API_ComplianceContributorCount"></a>
 
 The number of AWS resources or AWS Config rules responsible for the current compliance of the item, up to a maximum number.
 

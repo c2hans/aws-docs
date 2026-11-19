@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutDataCatalogEnc
 ---
 
 # PutDataCatalogEncryptionSettings
-<a name="API_PutDataCatalogEncryptionSettings"></a>
 
 Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.
 

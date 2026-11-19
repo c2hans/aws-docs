@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/lambda-func
 ---
 
 # lambda-function-public-access-prohibited
-<a name="lambda-function-public-access-prohibited"></a>
 
 Checks if the AWS Lambda function policy attached to the Lambda resource prohibits public access. If the Lambda function policy allows public access it is NON\_COMPLIANT.
 

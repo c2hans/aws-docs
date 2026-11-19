@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Failback
-<a name="msk-replicator-failback"></a>
 
 You can failback to the primary AWS Region after the service event in that Region has ended.
 

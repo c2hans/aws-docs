@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/cloudwatch-metric
 ---
 
 # Creating Amazon CloudWatch alarms to monitor AWS Trusted Advisor metrics
-<a name="cloudwatch-metrics-ta"></a>
 
 When AWS Trusted Advisor refreshes your checks, Trusted Advisor publishes metrics about your check results to CloudWatch. You can view the metrics in CloudWatch. You can also create alarms to detect status changes to Trusted Advisor checks and status changes for resources, and service quota usage (formerly referred to as limits).
 

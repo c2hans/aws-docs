@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS04-BP03 Monitor and manage the health of publisher operations processes
-<a name="advops04-bp03"></a>
 
  Beyond workload health, track the health of operational processes: incident response efficiency, runbook execution accuracy, and on-call rotation effectiveness.
 

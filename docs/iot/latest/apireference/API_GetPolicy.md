@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetPolicy.ht
 ---
 
 # GetPolicy
-<a name="API_GetPolicy"></a>
 
 Gets information about the specified policy with the policy document of the default version.
 

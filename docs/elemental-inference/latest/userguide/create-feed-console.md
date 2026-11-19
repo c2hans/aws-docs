@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cre
 ---
 
 # Creating using the console
-<a name="create-feed-console"></a>
 
 This section describes how to use the Elemental Inference console to create an Elemental Inference feed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeTask
-<a name="API_DescribeTask"></a>
 
 Provides information about a *task*, which defines where and how AWS DataSync transfers your data.
 

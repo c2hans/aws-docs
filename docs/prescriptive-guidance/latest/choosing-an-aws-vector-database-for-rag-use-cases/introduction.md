@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an
 ---
 
 # Choosing an AWS vector database for RAG use cases
-<a name="introduction"></a>
 
 *Mayuri Shinde, Ivan Cui, and Anand Bukkapatnam Tirumala, Amazon Web Services*
 

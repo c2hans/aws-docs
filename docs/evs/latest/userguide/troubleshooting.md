@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 When something doesn’t work as expected in your Amazon Elastic VMware Service environment, find the symptom in the following table. Then go to the page that covers it. If a problem remains, see [Get help from AWS Support and Broadcom](get-help.md).
 

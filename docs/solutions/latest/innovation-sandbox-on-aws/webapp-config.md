@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Configure the web application
-<a name="webapp-config"></a>
 
 After setting up SAML 2.0, mapping application attributes, setting up users and groups, and updating the SAML application with the Data stack outputs, you can configure the web application.
 

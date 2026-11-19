@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-m
 ---
 
 # Command modes in CloudHSM CLI
-<a name="cloudhsm_cli-modes"></a>
 
 In CloudHSM CLI, you can run commands two different ways: in single command mode and interactive mode. Interactive mode is designed for users, and single command mode is designed for scripts.
 

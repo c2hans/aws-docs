@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/refere
 ---
 
 # AWS Infrastructure Composer console visual overview
-<a name="reference-visual"></a>
 
 This section provides a visual overview of the AWS Infrastructure Composer console.
 

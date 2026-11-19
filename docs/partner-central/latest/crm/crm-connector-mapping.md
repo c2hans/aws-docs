@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-connector
 ---
 
 # Mapping ACE objects
-<a name="crm-connector-mapping"></a>
 
 The CRM connector provides the **ACE Mappings** page. The page enables you to map objects and fields between your Salesforce organization and AWS Partner Network (APN).
 

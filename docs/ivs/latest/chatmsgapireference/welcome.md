@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.h
 ---
 
 # Welcome
-<a name="welcome"></a>
 
 The messaging API for Amazon IVS Chat is designed to be used by your client applications (e.g., web-browser and Android/iOS apps) to interact with chat rooms alongside your live video. This is a WebSockets API using a token-based authentication scheme. WebSockets are widely supported by browsers and mobile client libraries to facilitate fully bidirectional communication between client and server.
 

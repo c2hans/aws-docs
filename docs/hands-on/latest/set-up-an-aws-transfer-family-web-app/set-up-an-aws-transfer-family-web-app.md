@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 ---
 
 # Set up an AWS Transfer Family web app
-<a name="set-up-an-aws-transfer-family-web-app"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Salesforc
 ---
 
 # SalesforceCustomKnowledgeArticleTypeConfiguration
-<a name="API_SalesforceCustomKnowledgeArticleTypeConfiguration"></a>
 
 Provides the configuration information for indexing Salesforce custom articles.
 

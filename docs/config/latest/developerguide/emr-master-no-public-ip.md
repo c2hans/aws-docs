@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/emr-master-
 ---
 
 # emr-master-no-public-ip
-<a name="emr-master-no-public-ip"></a>
 
 Checks if Amazon EMR clusters' master nodes have public IPs. The rule is NON\_COMPLIANT if the master node has a public IP.
 

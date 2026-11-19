@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LocalGate
 ---
 
 # LocalGatewayRouteTable
-<a name="API_LocalGatewayRouteTable"></a>
 
 Describes a local gateway route table.
 

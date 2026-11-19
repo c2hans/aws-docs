@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-inst
 ---
 
 # Instagram Ads connector for Amazon AppFlow
-<a name="connectors-instagram-ads"></a>
 
 Instagram Ads is an advertising solution for Instagram. If you run ads on Instagram, your account contains data about your ads, campaigns, ad images, and more. You can use Amazon AppFlow to transfer data from Instagram Ads to certain AWS services or other supported applications.
 

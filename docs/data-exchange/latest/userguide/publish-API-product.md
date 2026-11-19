@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/publish-A
 ---
 
 # Publishing a product in AWS Data Exchange containing APIs
-<a name="publish-API-product"></a>
 
 The following topics describe the process of creating a REST API data set and publishing a new product that contains APIs on AWS Data Exchange. You can complete the process by using either the AWS Data Exchange console or the AWS Command Line Interface.
 

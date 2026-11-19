@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/tutorials-al2023.html
 ---
 
 # Tutorials
-<a name="tutorials-al2023"></a>
 
  The following tutorials show you how to perform common tasks using Amazon EC2 instances running Amazon Linux 2023 (AL2023). For video tutorials, see [AWS Instructional videos and labs](https://www.aws.training/).
 

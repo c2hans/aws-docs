@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/data-dict
 ---
 
 # Data dictionaries in AWS Data Exchange
-<a name="data-dictionaries-pro"></a>
 
 A *data dictionary* is a visual representation of the contents of your data set in AWS Data Exchange.
 

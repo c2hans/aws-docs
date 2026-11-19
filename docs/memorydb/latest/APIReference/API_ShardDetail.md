@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ShardDe
 ---
 
 # ShardDetail
-<a name="API_ShardDetail"></a>
 
 Provides details of a shard in a snapshot
 

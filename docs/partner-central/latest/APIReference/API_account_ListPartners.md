@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListPartners
-<a name="API_account_ListPartners"></a>
 
 Lists partner accounts in the catalog, providing a summary view of all partners.
 

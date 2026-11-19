@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSInstanceSavingsOpportunityAfterDiscounts
-<a name="API_RDSInstanceSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for DB instance recommendations after applying Savings Plans discounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListRegexPat
 ---
 
 # ListRegexPatternSets
-<a name="API_ListRegexPatternSets"></a>
 
 Retrieves an array of [RegexPatternSetSummary](API_RegexPatternSetSummary.md) objects for the regex pattern sets that you manage.
 

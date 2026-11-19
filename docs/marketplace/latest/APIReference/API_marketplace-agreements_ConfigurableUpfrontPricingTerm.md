@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ConfigurableUpfrontPricingTerm
-<a name="API_marketplace-agreements_ConfigurableUpfrontPricingTerm"></a>
 
 Defines a prepaid payment model that allows buyers to configure the entitlements they want to purchase and the duration.
 
@@ -38,7 +37,7 @@ Type: Array of [ConfigurableUpfrontRateCardItem](API_marketplace-agreements_Conf
 Required: No
 
  ** type **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ConfigurableUpfrontPricingTerm-type"></a>
-Category of selector.
+Category of the term.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `[A-Za-z]+`

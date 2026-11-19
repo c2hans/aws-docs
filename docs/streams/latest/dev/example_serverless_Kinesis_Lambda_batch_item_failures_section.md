@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_serverless_Ki
 ---
 
 # Reporting batch item failures for Lambda functions with a Kinesis trigger
-<a name="example_serverless_Kinesis_Lambda_batch_item_failures_section"></a>
 
 The following code examples show how to implement partial batch response for Lambda functions that receive events from a Kinesis stream. The function reports the batch item failures in the response, signaling to Lambda to retry those messages later.
 

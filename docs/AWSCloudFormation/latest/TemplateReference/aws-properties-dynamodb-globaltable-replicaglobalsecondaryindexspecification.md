@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable ReplicaGlobalSecondaryIndexSpecification
-<a name="aws-properties-dynamodb-globaltable-replicaglobalsecondaryindexspecification"></a>
 
 Represents the properties of a global secondary index that can be set on a per-replica basis.
 

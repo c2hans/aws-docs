@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Optimizing cost and performace
-<a name="optimizing-cost-and-performance"></a>
 
 VMware environments follow a subscription-based capital expenditure (CAPEX) model that requires large upfront investments. Organizations maximize their initial investment through storage efficiency techniques including vSAN-based consolidation, deduplication, and compression. This approach demands careful capacity planning and periodic resource reallocation to optimize hardware utilization.
 

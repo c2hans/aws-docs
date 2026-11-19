@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Business benefits of replicating mainframe data to AWS
-<a name="benefits"></a>
 
 Strategic motivations drive the decision to replicate mainframe data to the AWS Cloud. These motivations aim to enhance business agility, innovation, and resilience. They include the following:
 + **Agility and innovation** – In fast-paced business environments, agility and innovation help you stay ahead of the competition. By replicating data to the AWS Cloud, enterprises can unlock new opportunities for innovation, accelerate time-to-market for new products and services, and respond swiftly to changing customer needs and market dynamics.

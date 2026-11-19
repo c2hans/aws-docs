@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appsync-aut
 ---
 
 # appsync-authorization-check
-<a name="appsync-authorization-check"></a>
 
 Checks if an AWS AppSync API is using allowed authorization mechanisms. The rule is NON\_COMPLIANT if an unapproved authorization mechanism is being used.
 

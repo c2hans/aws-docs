@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Editing Amazon Verified Permissions policy templates
-<a name="policy-templates-edit"></a>
 
 You can edit, or update, policy templates in Verified Permissions using the AWS Management Console, the AWS CLI, or the AWS SDKs. Editing a policy template will automatically update the policies that are linked to, or based on, the template so take care when editing the policy templates and make sure you don’t accidentally introduce a change that breaks your application.
 

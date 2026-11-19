@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Resource type handler error codes
-<a name="resource-type-test-contract-errors"></a>
 
 One of the following error codes MUST be returned from the handler whenever there is a [progress event](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-test-progressevent.html) with an operation status of `FAILED`.
 + `AccessDenied`

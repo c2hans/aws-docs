@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/one-click.html
 ---
 
 # Using the Deploy to Amplify button to share a GitHub project
-<a name="one-click"></a>
 
 **Important**
 One-click deployment using the **Deploy to Amplify Hosting** button is no longer available. To deploy from a repository, create a new application in Amplify Hosting. For instructions, see [Getting started with deploying an app to Amplify Hosting](getting-started.md).

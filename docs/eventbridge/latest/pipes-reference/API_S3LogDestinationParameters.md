@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_S
 ---
 
 # S3LogDestinationParameters
-<a name="API_S3LogDestinationParameters"></a>
 
 The Amazon S3 logging configuration settings for the pipe.
 

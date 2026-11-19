@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/coip-p
 ---
 
 # Create a CoIP pool
-<a name="coip-pools"></a>
 
 You can provide IP address ranges to facilitate communication between your on-premises network and instances in your VPC. For more information, see [Customer-owned IP addresses](routing.md#ip-addressing).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_DeleteOutbound
 ---
 
 # DeleteOutboundExternalLink
-<a name="API_DeleteOutboundExternalLink"></a>
 
 Deletes an outbound external link.
 

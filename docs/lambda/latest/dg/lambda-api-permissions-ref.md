@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-
 ---
 
 # Fine-tuning the Resources and Conditions sections of policies
-<a name="lambda-api-permissions-ref"></a>
 
 You can restrict the scope of a user's permissions by specifying resources and conditions in an AWS Identity and Access Management (IAM) policy. Each action in a policy supports a combination of resource and condition types that varies depending on the behavior of the action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # GeocodeParsedQueryAddressComponents
-<a name="API_geoplaces_GeocodeParsedQueryAddressComponents"></a>
 
 Parsed address components in the provided QueryText.
 

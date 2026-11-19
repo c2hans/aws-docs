@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-sizing.html
 ---
 
 # Size your environment
-<a name="plan-sizing"></a>
 
 The number of hosts in your Amazon Elastic VMware Service environment sets the capacity for the VMware Cloud Foundation (VCF) management appliances and your workloads. It also sets the quotas, the Amazon Elastic Compute Cloud (Amazon EC2) capacity, the IP addresses, and the VCF subscription cores that you need. Size the environment before you request any of them.
 

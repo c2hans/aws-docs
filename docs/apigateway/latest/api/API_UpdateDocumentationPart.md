@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateDocument
 ---
 
 # UpdateDocumentationPart
-<a name="API_UpdateDocumentationPart"></a>
 
 Updates a documentation part.
 

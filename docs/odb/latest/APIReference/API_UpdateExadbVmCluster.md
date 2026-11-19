@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExadbV
 ---
 
 # UpdateExadbVmCluster
-<a name="API_UpdateExadbVmCluster"></a>
 
 Updates the specified Exascale VM cluster.
 

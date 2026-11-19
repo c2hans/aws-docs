@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/getresponse-reading-from-
 ---
 
 # Reading from GetResponse entities
-<a name="getresponse-reading-from-entities"></a>
 
 **Prerequisites**
 

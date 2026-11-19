@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInvi
 ---
 
 # GetInvitationsCount
-<a name="API_GetInvitationsCount"></a>
 
 **Note**
 We recommend using AWS Organizations instead of Security Hub CSPM invitations to manage your member accounts. For information, see [Managing Security Hub CSPM administrator and member accounts with Organizations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts-orgs.html) in the * AWS Security Hub CSPM User Guide*.

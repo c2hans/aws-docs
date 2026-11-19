@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/respond-request.htm
 ---
 
 # Respond to requested operations
-<a name="respond-request"></a>
 
 When you sign in to the Multi-party approval portal, you can respond to requested operations.
 

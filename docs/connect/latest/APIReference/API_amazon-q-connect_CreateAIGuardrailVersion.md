@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # CreateAIGuardrailVersion
-<a name="API_amazon-q-connect_CreateAIGuardrailVersion"></a>
 
 Creates an Amazon Q in Connect AI Guardrail version.
 

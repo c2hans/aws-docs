@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_ListMonitorEvalua
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # ListMonitorEvaluations
-<a name="API_ListMonitorEvaluations"></a>
 
 Returns a list of the monitoring evaluation results and predictor events collected by the monitor resource during different windows of time.
 

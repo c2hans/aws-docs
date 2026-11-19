@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certifi
 ---
 
 # Certificate storage API operations
-<a name="pkcs11-certificate-storage-api"></a>
 
  The following PKCS \#11 operations support the certificate object type (`CKO_CERTIFICATE`):
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-kms.ht
 ---
 
 # AWS Key Management Service events
-<a name="events-ref-kms"></a>
 
 AWS KMS sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

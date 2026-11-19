@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ExecutionEng
 ---
 
 # ExecutionEngineConfig
-<a name="API_ExecutionEngineConfig"></a>
 
 Specifies the execution engine (cluster) to run the notebook and perform the notebook execution, for example, an Amazon EMR cluster.
 

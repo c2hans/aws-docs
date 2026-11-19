@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-g
 ---
 
 # Configure the AWS IoT Greengrass Core software
-<a name="configure-greengrass-core-v2"></a>
 
 The AWS IoT Greengrass Core software provides options that you can use to configure the software. You can create deployments to configure the AWS IoT Greengrass Core software on each core device.
 

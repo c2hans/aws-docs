@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # How Lambda@Edge works with requests and responses
-<a name="lambda-edge-event-request-response"></a>
 
 When you associate a CloudFront distribution with a Lambda@Edge function, CloudFront intercepts requests and responses at CloudFront edge locations. You can execute Lambda functions when the following CloudFront events occur:
 + When CloudFront receives a request from a viewer (viewer request)

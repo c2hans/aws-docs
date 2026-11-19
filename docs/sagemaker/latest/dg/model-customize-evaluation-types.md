@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-eval
 ---
 
 # Evaluation types and Job Submission
-<a name="model-customize-evaluation-types"></a>
 
 ## Benchmarking with standardized datasets
 <a name="model-customize-evaluation-benchmarking"></a>

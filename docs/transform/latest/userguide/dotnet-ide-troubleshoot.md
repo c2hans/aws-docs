@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-ide-tr
 ---
 
 # Troubleshooting issues with .NET transformations in the IDE
-<a name="dotnet-ide-troubleshoot"></a>
 
 Use the following sections to troubleshoot common issues with .NET transformations in the IDE with AWS Transform.
 

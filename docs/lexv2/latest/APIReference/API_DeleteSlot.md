@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteSlot
 ---
 
 # DeleteSlot
-<a name="API_DeleteSlot"></a>
 
 Deletes the specified slot from an intent.
 

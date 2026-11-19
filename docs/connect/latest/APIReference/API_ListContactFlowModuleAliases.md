@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListCont
 ---
 
 # ListContactFlowModuleAliases
-<a name="API_ListContactFlowModuleAliases"></a>
 
 Lists all aliases associated with a contact flow module, showing their current version mappings and metadata.
 

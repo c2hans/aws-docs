@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Oauth2ProviderConfigInput
-<a name="API_Oauth2ProviderConfigInput"></a>
 
 Contains the input configuration for an OAuth2 provider.
 

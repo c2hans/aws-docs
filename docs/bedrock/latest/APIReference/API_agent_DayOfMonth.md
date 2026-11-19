@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Da
 ---
 
 # DayOfMonth
-<a name="API_agent_DayOfMonth"></a>
 
 The day of the month on which a monthly sync runs. Specify exactly one of `dayNumber` or `lastDayOfMonth`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsDetails"></a>
 
 A container definition that describes a container in the task.
 

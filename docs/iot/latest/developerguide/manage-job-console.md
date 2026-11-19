@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/manage-job-con
 ---
 
 # Create and manage jobs by using the AWS Management Console
-<a name="manage-job-console"></a>
 
 This section describes how you can create and manage jobs from the AWS IoT console. After you've created a job, you can view information about the job on the details page, and manage the job.
 

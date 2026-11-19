@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Sta
 ---
 
 # StartDevEnvironment
-<a name="API_StartDevEnvironment"></a>
 
 Starts a specified Dev Environment and puts it into an active state.
 

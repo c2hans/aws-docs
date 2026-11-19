@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # TelemetryRule
-<a name="API_TelemetryRule"></a>
 
 Telemetry-based rule: what to query, how to evaluate the result, what condition makes it fire, and what to do on missing data.
 

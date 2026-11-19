@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteTableVersio
 ---
 
 # DeleteTableVersion
-<a name="API_DeleteTableVersion"></a>
 
 Deletes a specified version of a table.
 

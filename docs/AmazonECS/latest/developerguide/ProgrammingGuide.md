@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Programm
 ---
 
 # Using the API for Amazon ECS
-<a name="ProgrammingGuide"></a>
 
 In addition to the AWS Management Console and the AWS Command Line Interface (AWS CLI), Amazon ECS also provides an API. You can use the API to automate tasks for managing Amazon ECS resources.
 + For a list of API operations by Amazon ECS resource, see [Actions by Amazon ECS resource](OperationList-query.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchEventsInvocationAccess
-<a name="CloudWatchEventsInvocationAccess"></a>
 
 **Description**: Allows Amazon CloudWatch Events to relay events to the streams in AWS Kinesis Streams in your account.
 

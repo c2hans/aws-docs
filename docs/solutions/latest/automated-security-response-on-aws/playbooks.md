@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Playbooks
-<a name="playbooks"></a>
 
 A set of remediations is grouped into a package called a *playbook*. Playbooks are installed, updated, and removed using this solution’s templates. For information about supported remediations in each playbook, refer to [Playbooks](playbooks-1.md) (in the Developer Guide). This solution currently supports the following playbooks:
 + Security Control, a playbook aligned with the Consolidated control findings feature of AWS Security Hub, published February 23, 2023.

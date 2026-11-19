@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ExadbVmClust
 ---
 
 # ExadbVmClusterSummary
-<a name="API_ExadbVmClusterSummary"></a>
 
 Summary information about an Exascale VM cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperi
 ---
 
 # UpdateExperimentTemplateReportConfigurationInput
-<a name="API_UpdateExperimentTemplateReportConfigurationInput"></a>
 
  Specifies the input for the experiment report configuration.
 

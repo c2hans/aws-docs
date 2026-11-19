@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateCon
 ---
 
 # UpdateContact
-<a name="API_UpdateContact"></a>
 
 Updates a contact's preferences for a list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PcxFlexCo
 ---
 
 # PcxFlexCostAllocationPolicyDocument
-<a name="API_PcxFlexCostAllocationPolicyDocument"></a>
 
 Describes the cost allocation policy document for Amazon VPC peering connections.
 

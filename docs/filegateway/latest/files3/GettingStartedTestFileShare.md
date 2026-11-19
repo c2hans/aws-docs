@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/GettingStarted
 ---
 
 # Test your S3 File Gateway
-<a name="GettingStartedTestFileShare"></a>
 
 Use the following procedure to test your gateway by copying files and folders to your mapped drive and verifying that they appear in your Amazon S3 bucket automatically.
 

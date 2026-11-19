@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/respondin
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Responding to share requests in AWS Audit Manager
-<a name="responding-to-shared-framework-requests"></a>
 
 This tutorial describes the actions to take when you receive a share request for a custom framework. Audit Manager notifies you when you receive a share request. You also receive a notification to remind you when a share request is due to expire in the next 30 days.
 

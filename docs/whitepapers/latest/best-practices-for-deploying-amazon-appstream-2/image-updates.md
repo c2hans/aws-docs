@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Image updates
-<a name="image-updates"></a>
 
  Software patching is critical for the security and performance of compute resources. Frequent patching is listed as a best practice in the [*Security Pillar*](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/protecting-compute.html) of the [*Well-Architected Framework*](https://aws.amazon.com/architecture/well-architected).
 

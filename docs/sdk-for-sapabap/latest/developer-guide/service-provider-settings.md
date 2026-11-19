@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # Service provider settings
-<a name="service-provider-settings"></a>
 
 Basis administrators sometimes need to control certain features of the SDK across the entire system, from client `000`. This is a common scenario for hosting and service providers that operate systems in their own AWS account on behalf of their customers. AWS SDK for SAP ABAP supports Service Provider settings. These settings are configured in client `000`, and affect the SDK across all clients. Service Provider settings are not supported in SDK for SAP ABAP - BTP edition.
 

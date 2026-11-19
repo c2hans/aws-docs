@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/User_Oracle_A
 ---
 
 # Add, remove, or modify storage volumes with RDS for Oracle
-<a name="User_Oracle_AdditionalStorage.ModifyStorageVolumes"></a>
 
 You can add, modify, and remove additional storage volumes using the AWS Management Console or AWS CLI. All operations use the `modify-db-instance` command with the `additional-storage-volumes` parameter.
 

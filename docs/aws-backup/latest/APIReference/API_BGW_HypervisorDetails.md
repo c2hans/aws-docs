@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_H
 ---
 
 # HypervisorDetails
-<a name="API_BGW_HypervisorDetails"></a>
 
 These are the details of the specified hypervisor. A hypervisor is hardware, software, or firmware that creates and manages virtual machines, and allocates resources to them.
 

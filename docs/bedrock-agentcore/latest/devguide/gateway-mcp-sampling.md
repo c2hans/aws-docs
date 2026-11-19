@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use sampling with your AgentCore gateway
-<a name="gateway-mcp-sampling"></a>
 
 Sampling is an MCP feature that allows an MCP server to request an LLM completion from the client during a tool call. This enables servers to leverage AI capabilities without needing direct access to a language model — the client handles the model invocation and returns the result. AgentCore Gateway forwards sampling requests from MCP server targets to your clients, replacing the request `id` with a gateway-generated identifier.
 

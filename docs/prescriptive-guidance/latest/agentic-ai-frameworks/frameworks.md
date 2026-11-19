@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Frameworks
-<a name="frameworks"></a>
 
 [Foundations of agentic AI on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/) examines the core patterns and workflows that enable autonomous, goal-directed behavior. The choice of framework is central to implementing these patterns. A *framework* is prewritten software code that provides a structured environment, common functionality, and the tools and orchestration capabilities that you need to build and manage production-ready autonomous AI agents.
 

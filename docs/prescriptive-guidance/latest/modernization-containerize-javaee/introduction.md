@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Containerizing traditional Java EE applications for the AWS Cloud
-<a name="introduction"></a>
 
 *Mayuki Yamabe and Michal Urbaniak, Amazon Web Services*
 

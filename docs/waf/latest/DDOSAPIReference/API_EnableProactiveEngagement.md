@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_EnablePr
 ---
 
 # EnableProactiveEngagement
-<a name="API_EnableProactiveEngagement"></a>
 
 Authorizes the Shield Response Team (SRT) to use email and phone to notify contacts about escalations to the SRT and to initiate proactive customer support.
 

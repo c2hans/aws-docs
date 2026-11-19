@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Version dependencies
-<a name="version-dependencies"></a>
 
 The version dependencies focus area helps you to build a roadmap of your migration journey through various versions to reach the latest version of Amazon OpenSearch Service. Consider the following are key points:
 + Selecting the engine version

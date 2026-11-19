@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsApiG
 ---
 
 # AwsApiGatewayRestApiDetails
-<a name="API_AwsApiGatewayRestApiDetails"></a>
 
 Contains information about a REST API in version 1 of Amazon API Gateway.
 

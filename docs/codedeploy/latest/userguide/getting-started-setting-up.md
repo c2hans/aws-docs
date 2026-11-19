@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-star
 ---
 
 # Step 1: Setting up
-<a name="getting-started-setting-up"></a>
 
 Before you use AWS CodeDeploy for the first time, you must complete setup steps. The steps involve creating an AWS account (if you don't already have one), and an administrative user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Creating a snapshot
-<a name="creating-a-snapshot"></a>
 
 Once you have your change data capture solution in place or have disabled indexing to your source cluster, create a snapshot. The snapshot captures all the metadata and documents to be migrated to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection.
 

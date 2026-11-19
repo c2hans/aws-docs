@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-users-c
 ---
 
 # Create HSM users using AWS CloudHSM Management Utility
-<a name="create-users-cmu"></a>
 
 Use **createUser** in AWS CloudHSM Management Utility (CMU) to create new users on the hardware security module (HSM). You must log in as a CO to create a user.
 

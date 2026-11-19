@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UpdateR
 ---
 
 # UpdateRecipeJob
-<a name="API_UpdateRecipeJob"></a>
 
 Modifies the definition of an existing DataBrew recipe job.
 

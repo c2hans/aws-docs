@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserSear
 ---
 
 # UserSearchCriteria
-<a name="API_UserSearchCriteria"></a>
 
 The search criteria to be used to return users.
 
@@ -15,7 +14,7 @@ The `name` and `description` fields support "contains" queries with a minimum of
 
  ** AndConditions **   <a name="connect-Type-UserSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an `AND` condition.
-Type: Array of [UserSearchCriteria](#API_UserSearchCriteria) objects
+Type: Array of [UserSearchCriteria](API_UserSearchCriteria.md) objects
 Required: No
 
  ** HierarchyGroupCondition **   <a name="connect-Type-UserSearchCriteria-HierarchyGroupCondition"></a>
@@ -30,7 +29,7 @@ Required: No
 
  ** OrConditions **   <a name="connect-Type-UserSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an `OR` condition.
-Type: Array of [UserSearchCriteria](#API_UserSearchCriteria) objects
+Type: Array of [UserSearchCriteria](API_UserSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-UserSearchCriteria-StringCondition"></a>

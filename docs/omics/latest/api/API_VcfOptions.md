@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VcfOptions.html
 ---
 
 # VcfOptions
-<a name="API_VcfOptions"></a>
 
 Formatting options for a VCF file.
 

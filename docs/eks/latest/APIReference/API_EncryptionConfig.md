@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_EncryptionCo
 ---
 
 # EncryptionConfig
-<a name="API_EncryptionConfig"></a>
 
 The encryption configuration for the cluster.
 

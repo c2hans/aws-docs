@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Get top network paths
-<a name="CloudWatch-PerformanceMonitor-CLI-query"></a>
 
 To get the top network paths for a monitor, start a `TOP_PATHS` query, check its status, and then retrieve the results. The following `start-query-performance-monitor` example starts a query and returns a query ID.
 

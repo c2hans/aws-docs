@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-keystor
 ---
 
 # Create an AWS CloudHSM key store
-<a name="create-keystore"></a>
 
 You can create one or several AWS CloudHSM key stores in your account. Each AWS CloudHSM key store is associated with one AWS CloudHSM cluster in the same AWS account and Region. Before you create your AWS CloudHSM key store, you need to [assemble the prerequisites](#before-keystore). Then, before you can use your AWS CloudHSM key store, you must [connect it](connect-keystore.md) to its AWS CloudHSM cluster.
 

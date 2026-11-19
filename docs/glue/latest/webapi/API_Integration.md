@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Integration.html
 ---
 
 # Integration
-<a name="API_Integration"></a>
 
 Describes a zero-ETL integration.
 

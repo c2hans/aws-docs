@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_UpdateApprov
 ---
 
 # UpdateApprovalTeam
-<a name="API_UpdateApprovalTeam"></a>
 
 Updates an approval team. You can request to update the team description, approval threshold, and approvers in the team.
 

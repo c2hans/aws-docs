@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-authentication
 ---
 
 # Authentication
-<a name="bb-authentication"></a>
 
 This section covers Blocks for user identity and session management, from simple username/password to federated OIDC providers.
 

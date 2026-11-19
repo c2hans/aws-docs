@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-async.html
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Using the SDK asynchronously
-<a name="using-async"></a>
 
 When you use the asynchronous client, your application can run other work while a request waits for a response. This helps with requests that spend most of their time waiting on the network, such as streaming responses, batch writes, and calls to distant endpoints. To compare it with the synchronous client, see [Synchronous and asynchronous clients](using-sync-async.md).
 

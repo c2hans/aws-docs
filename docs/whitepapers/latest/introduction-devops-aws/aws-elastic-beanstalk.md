@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS Elastic Beanstalk
-<a name="aws-elastic-beanstalk"></a>
 
  [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) is a service to rapidly deploy and scale web applications developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, NGINX, Passenger, and IIS.
 

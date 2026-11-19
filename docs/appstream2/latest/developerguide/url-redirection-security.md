@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/url-red
 ---
 
 # Security considerations and best practices
-<a name="url-redirection-security"></a>
 
 Keep the following security considerations in mind when you configure host-to-client URL redirection.
 + Add URLs that contain sensitive data to the exception list to keep them in the remote session.

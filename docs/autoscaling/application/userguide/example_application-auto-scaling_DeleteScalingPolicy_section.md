@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/exampl
 ---
 
 # Use `DeleteScalingPolicy` with an AWS SDK or CLI
-<a name="example_application-auto-scaling_DeleteScalingPolicy_section"></a>
 
 The following code examples show how to use `DeleteScalingPolicy`.
 

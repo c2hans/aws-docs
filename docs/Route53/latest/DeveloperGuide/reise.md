@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/reise.html
 ---
 
 # .reise
-<a name="reise"></a>
 
 Used for websites related to travels or journeys. "Reise" is a German word that means "rise," "arise," or "set out on a journey."
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteRunGroup.html
 ---
 
 # DeleteRunGroup
-<a name="API_DeleteRunGroup"></a>
 
 Deletes a run group and returns a response with no body if the operation is successful.
 

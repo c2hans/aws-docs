@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-prod
 ---
 
 # Product types available in AWS Marketplace
-<a name="buyer-product-types"></a>
 
 AWS Marketplace includes popular open source and commercial software, as well as free and paid data products. These products are available in different ways: as individual Amazon Machine Images (AMIs), as a cluster of AMIs deployed through an AWS CloudFormation template, as software as a service (SaaS), as professional services, and as AWS Data Exchange data products.
 

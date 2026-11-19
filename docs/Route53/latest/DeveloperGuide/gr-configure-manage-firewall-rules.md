@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-configu
 ---
 
 # Configure and manage DNS Firewall rules
-<a name="gr-configure-manage-firewall-rules"></a>
 
 ## Creating and viewing firewall rules
 <a name="gr-creating-viewing-firewall-rules"></a>

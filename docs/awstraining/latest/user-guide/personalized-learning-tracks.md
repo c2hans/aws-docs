@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awstraining/latest/user-guide/personaliz
 ---
 
 # Personalized learning tracks
-<a name="personalized-learning-tracks"></a>
 
 Tell AWS Skill Builder what you want to learn, and it builds a personalized learning track around your goal, experience level, and the time you have.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-d
 ---
 
 # DPO
-<a name="customizing-models-dpo"></a>
 
 ## Description
 <a name="customizing-models-dpo-description"></a>

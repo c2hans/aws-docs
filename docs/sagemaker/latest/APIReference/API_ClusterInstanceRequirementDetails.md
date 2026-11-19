@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterInstanceRequirementDetails
-<a name="API_ClusterInstanceRequirementDetails"></a>
 
 The instance requirement details for a flexible instance group, including the current and desired instance types.
 

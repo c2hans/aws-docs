@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Contact
-<a name="API_SSMContacts_Contact"></a>
 
 A personal contact or escalation plan that Incident Manager engages during an incident.
 

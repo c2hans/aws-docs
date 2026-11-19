@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-
 ---
 
 # Introduction
-<a name="introduction"></a>
 
 ## Business value of encryption
 <a name="business-value-of-encryption.58f8248d-4f6f-5ea1-a7ff-e14e13c2b929"></a>

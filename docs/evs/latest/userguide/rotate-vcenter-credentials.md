@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/rotate-vcenter-cred
 ---
 
 # Rotate vCenter connector credentials
-<a name="rotate-vcenter-credentials"></a>
 
 A vCenter connector authenticates with vCenter Server by using the vCenter user credentials that you store in an AWS Secrets Manager secret. When you rotate the password of that vCenter user in VMware Cloud Foundation (VCF), you must give the connector the new credentials so that it can keep authenticating.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamR
 ---
 
 # AwsIamRolePolicy
-<a name="API_AwsIamRolePolicy"></a>
 
 An inline policy that is embedded in the role.
 

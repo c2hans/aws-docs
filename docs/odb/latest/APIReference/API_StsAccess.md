@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_StsAccess.ht
 ---
 
 # StsAccess
-<a name="API_StsAccess"></a>
 
 Configuration for AWS Security Token Service (STS) access from the ODB network.
 

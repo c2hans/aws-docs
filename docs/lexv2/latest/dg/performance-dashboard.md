@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/performance-dashboard.ht
 ---
 
 # Performance dashboard: a summary of your bot's intent and utterance metrics
-<a name="performance-dashboard"></a>
 
 In the performance dashboard, you can view details about the performance of your bot's intent fulfillment and utterance recognition.
 

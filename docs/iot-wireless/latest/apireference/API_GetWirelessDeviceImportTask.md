@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessDeviceImportTask
-<a name="API_GetWirelessDeviceImportTask"></a>
 
 Get information about an import task and count of device onboarding summary information for the import task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_QuoteSu
 ---
 
 # QuoteSummary
-<a name="API_QuoteSummary"></a>
 
 Summary information about a quote.
 

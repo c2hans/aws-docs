@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/vpc-subnet-settings.ht
 ---
 
 # Subnet Settings
-<a name="vpc-subnet-settings"></a>
 
 ## Use private subnets for initial nodegroup
 <a name="_use_private_subnets_for_initial_nodegroup"></a>

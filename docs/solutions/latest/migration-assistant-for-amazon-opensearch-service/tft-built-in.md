@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Built-in field type transformations
-<a name="tft-built-in"></a>
 
 Migration Assistant applies the following field-type and vector-compatibility transformations automatically during metadata migration. You do not need to configure or invoke them — they run as part of the Metadata Migration phase whenever the source and target engine versions require them:
 +  ** `string` to `text` and `keyword` ** — Converts the deprecated `string` type (Elasticsearch 1.x–5.x) to `text` or `keyword` based on the original `index` property. See [Transform string fields to text and keyword](transform-string-text-keyword.md).

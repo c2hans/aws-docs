@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/o
 ---
 
 # Using CloudFront Functions with origin mutual TLS
-<a name="origin-mtls-cloudfront-functions"></a>
 
 CloudFront Functions provides lightweight, serverless compute at the edge to customize content delivery. When using origin mutual TLS with CloudFront Functions, there are specific behaviors and limitations to be aware of regarding origin selection and manipulation.
 

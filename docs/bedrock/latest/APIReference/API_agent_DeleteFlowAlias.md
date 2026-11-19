@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeleteFlowAlias
-<a name="API_agent_DeleteFlowAlias"></a>
 
 Deletes an alias of a flow.
 

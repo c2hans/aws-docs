@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSessio
 ---
 
 # GetSessionEndpoint
-<a name="API_GetSessionEndpoint"></a>
 
 Gets a connection endpoint and authentication token for a given session Id.
 

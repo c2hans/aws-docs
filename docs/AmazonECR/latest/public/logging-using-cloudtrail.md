@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/logging-using-cl
 ---
 
 # Logging Amazon ECR Public actions with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon ECR Public is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, a role, or an AWS service in Amazon ECR Public. When activity occurs in Amazon ECR Public, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. Because Amazon ECR Public is a global service, events for the service are logged in **US East (N. Virginia)**.
 

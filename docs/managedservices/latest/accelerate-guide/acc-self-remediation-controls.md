@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Self-remediation Security Hub controls in Accelerate
-<a name="acc-self-remediation-controls"></a>
 
 The following self-remediation controls are available in Accelerate.
 

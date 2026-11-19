@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenses
-<a name="API_ListLicenses"></a>
 
 Lists the licenses for your account.
 

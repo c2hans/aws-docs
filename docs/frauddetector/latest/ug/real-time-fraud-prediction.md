@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/real-time-fraud-
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Real time prediction
-<a name="real-time-fraud-prediction"></a>
 
 You can evaluate online activities for fraud in real time by calling `GetEventPrediction` API. You provide information about a single event in each request and synchronously receive a model score and an outcome based on the fraud prediction logic associated with the specified detector.
 

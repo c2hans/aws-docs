@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01-b
 ---
 
 # REL01-BP06 Verify that a sufficient gap exists between the current quotas and the maximum usage to accommodate failover
-<a name="rel01-bp06"></a>
 
  A failover creates new resources before the old ones stop counting against your quota. If the quota has no room for that overlap, the replacement cannot start and the recovery fails. Keep a deliberate gap between your quota and your normal usage so a zonal, network, or Regional failover fits within the quota.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # UspsZipPlus4
-<a name="API_geoplaces_UspsZipPlus4"></a>
 
 The USPS zip\+4 code.
 

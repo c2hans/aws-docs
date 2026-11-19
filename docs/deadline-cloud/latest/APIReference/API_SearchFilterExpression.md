@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SearchFilterExpression
-<a name="API_SearchFilterExpression"></a>
 
 The type of search filter to apply.
 

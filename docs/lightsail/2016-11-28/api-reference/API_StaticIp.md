@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # StaticIp
-<a name="API_StaticIp"></a>
 
 Describes a static IP.
 

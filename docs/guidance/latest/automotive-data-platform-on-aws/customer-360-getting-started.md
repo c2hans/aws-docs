@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Getting started
-<a name="customer-360-getting-started"></a>
 
 Access the Customer 360 solution through Quick Suite dashboards and Bedrock agent.
 

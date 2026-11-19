@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/software.h
 ---
 
 # .software
-<a name="software"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

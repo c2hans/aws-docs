@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS06-BP02 Test and validate changes
-<a name="ops_mit_deploy_risks_test_val_chg"></a>
 
  Test changes and validate the results at all lifecycle stages to confirm new features and minimize the risk and impact of failed deployments.
 

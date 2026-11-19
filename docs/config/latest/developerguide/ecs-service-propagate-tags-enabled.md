@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ecs-service
 ---
 
 # ecs-service-propagate-tags-enabled
-<a name="ecs-service-propagate-tags-enabled"></a>
 
 Checks if AWS ECS Service has property PropagateTags with value of either SERVICE or TASK\_DEFINITION. The rule is NON\_COMPLIANT if the property does not exist or is NONE.
 

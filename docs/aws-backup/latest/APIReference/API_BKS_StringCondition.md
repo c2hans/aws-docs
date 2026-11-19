@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # StringCondition
-<a name="API_BKS_StringCondition"></a>
 
 This contains the value of the string and can contain one or more operators.
 

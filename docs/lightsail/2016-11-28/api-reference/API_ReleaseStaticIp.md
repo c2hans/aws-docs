@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # ReleaseStaticIp
-<a name="API_ReleaseStaticIp"></a>
 
 Deletes a specific static IP from your account.
 

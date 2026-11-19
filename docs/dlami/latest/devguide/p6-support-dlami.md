@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/p6-support-dlami.h
 ---
 
 # Software requirements for P6 instances
-<a name="p6-support-dlami"></a>
 
 Below are the detailed requirements for running DLAMI on P6 instances.
 

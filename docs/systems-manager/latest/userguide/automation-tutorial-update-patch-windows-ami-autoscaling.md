@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Updating AMIs for Auto Scaling groups
-<a name="automation-tutorial-update-patch-windows-ami-autoscaling"></a>
 
 The following example updates an Auto Scaling group with a newly patched AMI. This approach ensures that new images are automatically made available to different computing environments that use Auto Scaling groups.
 

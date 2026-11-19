@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_NotebookS
 ---
 
 # NotebookSessionSummary
-<a name="API_NotebookSessionSummary"></a>
 
 Contains the notebook session ID and notebook session creation time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-running-ap
 ---
 
 # Run a Managed Service for Apache Flink application
-<a name="how-running-apps"></a>
 
 This topic contains information about running a Managed Service for Apache Flink.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # RelationalDatabaseBlueprint
-<a name="API_RelationalDatabaseBlueprint"></a>
 
 Describes a database image, or blueprint. A blueprint describes the major engine version of a database.
 

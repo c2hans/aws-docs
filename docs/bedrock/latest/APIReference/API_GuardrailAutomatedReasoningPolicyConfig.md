@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailAutomatedReasoningPolicyConfig
-<a name="API_GuardrailAutomatedReasoningPolicyConfig"></a>
 
 Configuration settings for integrating Automated Reasoning policies with Amazon Bedrock Guardrails.
 

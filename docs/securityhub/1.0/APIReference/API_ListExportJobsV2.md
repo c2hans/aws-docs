@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListExp
 ---
 
 # ListExportJobsV2
-<a name="API_ListExportJobsV2"></a>
 
 Returns the findings export jobs in your account as a paginated list of `ExportSummary` objects. You can filter the results by job `Status` or `DataType`.
 

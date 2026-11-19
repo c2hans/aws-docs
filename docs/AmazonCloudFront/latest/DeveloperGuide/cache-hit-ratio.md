@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Increase the proportion of requests that are served directly from the CloudFront caches (cache hit ratio)
-<a name="cache-hit-ratio"></a>
 
 You can improve performance by increasing the proportion of your viewer requests that are served directly from the CloudFront cache instead of going to your origin servers for content. This is known as improving the cache hit ratio.
 

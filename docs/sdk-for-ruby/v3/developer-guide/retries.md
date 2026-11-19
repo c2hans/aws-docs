@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/retries.
 ---
 
 # Configuring retries in the AWS SDK for Ruby
-<a name="retries"></a>
 
 The AWS SDK for Ruby provides a default retry behavior for service requests and customizable configuration options. Calls to AWS services occasionally return unexpected exceptions. Certain types of errors, such as throttling or transient errors, might be successful if the call is retried.
 

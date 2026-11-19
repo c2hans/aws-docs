@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Encryption and KMS keys in collection groups
-<a name="collection-groups-kms-keys"></a>
 
 Each OpenSearch Serverless collection you create is protected with encryption of data at rest using AWS KMS to store and manage your encryption keys. When working with collection groups, you have flexibility in how you specify the KMS key for your collections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/disabling-gate
 ---
 
 # Deactivating Your Tape Gateway
-<a name="disabling-gateway-vtl"></a>
 
 You deactivate a Tape Gateway if the Tape Gateway has failed and you want to recover the tapes from the failed gateway to another gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateFileSystemAssociation
-<a name="API_UpdateFileSystemAssociation"></a>
 
 Updates a file system association. This operation is only supported in the FSx File Gateways.
 

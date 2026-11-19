@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-expe
 ---
 
 # Explore Experimental Capabilities
-<a name="braket-experimental-capabilities"></a>
 
 Experimental capabilities provide access to hardware with limited availability and emergent new software features. These features may impact device performance beyond standard specifications. You can automatically enable experimental software capabilities on a per-task basis through the Amazon Braket SDK.
 

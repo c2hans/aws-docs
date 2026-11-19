@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/job
 ---
 
 # Associate a limit and a queue
-<a name="job-limit-associate"></a>
 
 After you create a limit, you can associate one or more queues with the limit. Only queues that are associated with a limit use the values specified in the limit.
 

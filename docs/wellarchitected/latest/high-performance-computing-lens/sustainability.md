@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  The sustainability pillar includes the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required. This Pillar also provides design principles, questions, best practices, and prescriptive guidance to meet sustainability targets for your AWS workloads.
 

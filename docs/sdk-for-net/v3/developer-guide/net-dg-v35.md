@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Migrating to version 3.5 of the AWS SDK for .NET
-<a name="net-dg-v35"></a>
 
 Version 3.5 of the AWS SDK for .NET further standardizes the .NET experience by transitioning support for all non-Framework variations of the SDK to [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard). Depending on your environment and code base, to take advantage of version 3.5 features, you might need to perform certain migration work.
 

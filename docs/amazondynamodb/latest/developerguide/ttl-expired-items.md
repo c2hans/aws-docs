@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ttl
 ---
 
 # Working with expired items and time to live (TTL)
-<a name="ttl-expired-items"></a>
 
 Expired items that are pending deletion can be filtered from read and write operations. This is useful in scenarios when expired data is no longer valid and should not be used. If they are not filtered, they’ll continue to show in read and write operations until they are deleted by the background process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/monitoring-cl
 ---
 
 # Monitoring Beanstalk Cluster environments
-<a name="monitoring-cluster-environments"></a>
 
 A Beanstalk Cluster environment reports environment-level health through the same Elastic Beanstalk health model and APIs as a Beanstalk Standard environment. You view its health color and status in the Elastic Beanstalk console, and you can call `DescribeEnvironmentHealth` to read the current color, status, and the causes that explain it. Health colors and statuses have the same meanings in both modes.
 

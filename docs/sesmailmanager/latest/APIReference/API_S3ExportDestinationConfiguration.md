@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # S3ExportDestinationConfiguration
-<a name="API_S3ExportDestinationConfiguration"></a>
 
 The configuration for exporting email data to an Amazon S3 bucket.
 

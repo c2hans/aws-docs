@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentImage
-<a name="API_EnvironmentImage"></a>
 
 Information about a Docker image that is managed by AWS CodeBuild.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
 The modernization of OT systems provides numerous advantages to the manufacturing industry. Historian modernization offers improved visibility into the entire production process. This improved visibility helps you make better decisions and improve process efficiency. Furthermore, historian modernization helps you integrate data from multiple locations and systems, providing for a comprehensive view of operations. Improved visibility helps you more accurately and efficiently plan and forecast operations. Additionally, historian modernization can improve the security and help prevent potential threats that might disrupt the manufacturing process.
 

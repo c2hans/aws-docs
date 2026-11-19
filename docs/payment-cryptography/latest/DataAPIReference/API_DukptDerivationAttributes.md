@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # DukptDerivationAttributes
-<a name="API_DukptDerivationAttributes"></a>
 
 Parameters required for encryption or decryption of data using DUKPT.
 

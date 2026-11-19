@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FilterV2
 ---
 
 # FilterV2StringCondition
-<a name="API_FilterV2StringCondition"></a>
 
  System defined filtering condition. For example, the NOT\_EXISTS StringCondition returns documents where the field specified by FilterKey does not exist in the document.
 

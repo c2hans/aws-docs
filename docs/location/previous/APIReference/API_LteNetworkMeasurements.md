@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_LteNe
 ---
 
 # LteNetworkMeasurements
-<a name="API_LteNetworkMeasurements"></a>
 
 LTE network measurements.
 

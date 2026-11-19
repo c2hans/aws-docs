@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/terminolog
 ---
 
 # Terminology
-<a name="terminology"></a>
 
 Here’s a quick review of some terms you'll see in the AWS Control Tower documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-p
 ---
 
 # Getting started with container products
-<a name="container-product-getting-started"></a>
 
 As an AWS Marketplace seller, you can create container-based software products. Container products consist of delivery options that are a set of container images and deployment templates that go together. The following topic shows you how to get started with container products.
 + [Product lifecycle](#container-product-lifecycle)

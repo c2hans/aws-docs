@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftSelfGrantStatusOutput
-<a name="API_RedshiftSelfGrantStatusOutput"></a>
 
 The details for the self granting status for an Amazon Redshift data source.
 

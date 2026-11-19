@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-insta
 ---
 
 # Create an EC2 Instance Connect Endpoint
-<a name="create-ec2-instance-connect-endpoints"></a>
 
 You can create an EC2 Instance Connect Endpoint to allow secure connection to your instances.
 

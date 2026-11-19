@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CountAction.
 ---
 
 # CountAction
-<a name="API_CountAction"></a>
 
 Specifies that AWS WAF should count the request. Optionally defines additional custom handling for the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-view.html
 ---
 
 # View domains
-<a name="domain-view"></a>
 
 The following section shows how to view a list of your domains, and details of an individual domain from the SageMaker AI console or the AWS CLI.
 

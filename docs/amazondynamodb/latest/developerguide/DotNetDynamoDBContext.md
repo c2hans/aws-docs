@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dot
 ---
 
 # DynamoDBContext class from the .NET object persistence model
-<a name="DotNetDynamoDBContext"></a>
 
 The `DynamoDBContext` class is the entry point to the Amazon DynamoDB database. It provides a connection to DynamoDB and enables you to access your data in various tables, perform various CRUD operations, and run queries. The `DynamoDBContext` class provides the following methods.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCognitoDeveloperAuthenticatedIdentities
-<a name="AmazonCognitoDeveloperAuthenticatedIdentities"></a>
 
 **Description**: Provides access to Amazon Cognito APIs to support developer authenticated identities from your authentication backend.
 

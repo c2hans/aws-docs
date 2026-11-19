@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle SecureFile LOBs and MySQL large objects
-<a name="chap-oracle-aurora-mysql.special.lobs"></a>
 
 With AWS DMS, you can migrate data from Oracle and MySQL databases to other database engines, including large object data types like Oracle SecureFile LOBs and MySQL large objects. Oracle SecureFile LOBs and MySQL large objects are data types that store large amounts of unstructured data, such as text, images, audio, and video files.
 

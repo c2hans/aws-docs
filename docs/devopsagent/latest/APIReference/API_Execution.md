@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Exec
 ---
 
 # Execution
-<a name="API_Execution"></a>
 
 Represents an execution instance with its lifecycle information
 

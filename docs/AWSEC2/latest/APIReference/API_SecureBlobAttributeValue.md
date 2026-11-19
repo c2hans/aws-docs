@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecureBlo
 ---
 
 # SecureBlobAttributeValue
-<a name="API_SecureBlobAttributeValue"></a>
 
 ## Contents
 <a name="API_SecureBlobAttributeValue_Contents"></a>

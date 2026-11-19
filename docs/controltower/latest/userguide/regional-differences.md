@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/regional-d
 ---
 
 # Regional differences for AWS Control Tower functionality
-<a name="regional-differences"></a>
 
 Certain differences exist in the behavior of AWS Control Tower across AWS Regions, because AWS Control Tower orchestrates the behavior of other AWS services. For example:
 + AWS Service Catalog is not available in all AWS Regions where AWS Control Tower is available, which changes the behavior of Account Factory in those Regions.

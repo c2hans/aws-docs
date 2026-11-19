@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_RuntimeVersionConf
 ---
 
 # RuntimeVersionConfig
-<a name="API_RuntimeVersionConfig"></a>
 
 The ARN of the runtime and any errors that occured.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 ---
 
 # Amazon EventBridge event examples for Systems Manager
-<a name="monitoring-systems-manager-event-examples"></a>
 
 The following are examples, in JSON format, of supported EventBridge events for AWS Systems Manager.
 

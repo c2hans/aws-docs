@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Traf
 ---
 
 # TrafficShapingTpsConfiguration
-<a name="API_TrafficShapingTpsConfiguration"></a>
 
 The configuration for TPS-based traffic shaping. This approach limits requests to the ad decision server (ADS) based on transactions per second and concurrent users.
 

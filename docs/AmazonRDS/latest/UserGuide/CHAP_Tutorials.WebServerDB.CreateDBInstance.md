@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorial
 ---
 
 # Create an Amazon RDS DB instance
-<a name="CHAP_Tutorials.WebServerDB.CreateDBInstance"></a>
 
 Create an RDS for MariaDB, RDS for MySQL, or RDS for PostgreSQL DB instance that maintains the data used by a web application.
 

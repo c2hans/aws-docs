@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/controltow
 ---
 
 # Delete StackSets and Stacks
-<a name="controltower-walkthrough-delete-stacksets"></a>
 
 AWS Control Tower uses StackSets and stacks to deploy AWS Config Rules related to controls in your landing zone. The following procedures walk through how to delete these specific resources.
 

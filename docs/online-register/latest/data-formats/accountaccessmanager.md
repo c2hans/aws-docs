@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/acco
 ---
 
 # Data retrieval APIs for Account access manager
-<a name="accountaccessmanager"></a>
 
 Account access manager provides the following APIs for data retrieval.
 

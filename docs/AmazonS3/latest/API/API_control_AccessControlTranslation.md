@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AccessCo
 ---
 
 # AccessControlTranslation
-<a name="API_control_AccessControlTranslation"></a>
 
 A container for information about access control for replicas.
 

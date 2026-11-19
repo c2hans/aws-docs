@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # ImportTable
-<a name="API_ImportTable"></a>
 
  Imports table data from an S3 bucket.
 

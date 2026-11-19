@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/delta-lake-tables-query
 ---
 
 # Query Delta Lake tables with SQL
-<a name="delta-lake-tables-querying"></a>
 
 To query a Delta Lake table, use standard SQL `SELECT` syntax:
 

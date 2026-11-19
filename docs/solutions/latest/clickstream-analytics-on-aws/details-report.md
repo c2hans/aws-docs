@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Details report
-<a name="details-report"></a>
 
  You can use the Details report to view common and custom dimensions for individual events, query all user attributes for a specific user, and see the events that a particular user has performed
 

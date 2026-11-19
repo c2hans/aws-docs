@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Sharded Data Parallelism
-<a name="model-parallel-extended-features-pytorch-sharded-data-parallelism"></a>
 
 *Sharded data parallelism* is a memory-saving distributed training technique that splits the state of a model (model parameters, gradients, and optimizer states) across GPUs in a data parallel group.
 

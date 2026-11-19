@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrefixLis
 ---
 
 # PrefixListId
-<a name="API_PrefixListId"></a>
 
 Describes a prefix list ID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.secr
 ---
 
 # Fetching secrets and parameters to Elastic Beanstalk environment variables
-<a name="AWSHowTo.secrets.env-vars"></a>
 
 Elastic Beanstalk can fetch values from AWS Secrets Manager and AWS Systems Manager Parameter Store during instance bootstrapping and assign them to environment variables for your application to use.
 

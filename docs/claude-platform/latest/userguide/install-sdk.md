@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/install
 ---
 
 # Install an SDK
-<a name="install-sdk"></a>
 
 Anthropic’s [client SDKs](https://platform.claude.com/docs/en/api/client-sdks) support Claude Platform on AWS. All seven SDKs provide a platform-specific client class; alternatively, you can configure the base client with the Claude Platform on AWS base URL.
 

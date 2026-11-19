@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringStoppingCondition
-<a name="API_MonitoringStoppingCondition"></a>
 
 A time limit for how long the monitoring job is allowed to run before stopping.
 

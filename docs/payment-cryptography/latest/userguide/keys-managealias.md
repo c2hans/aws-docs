@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ke
 ---
 
 # Using aliases
-<a name="keys-managealias"></a>
 
  An *alias* is a friendly name for an AWS Payment Cryptography key. For example, an alias lets you refer to a key as `alias/test-key` instead of `arn:aws:payment-cryptography:us-east-2:111122223333:key/kwapwa6qaifllw2h`.
 

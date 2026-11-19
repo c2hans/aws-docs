@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-manageddatabases.mys
 ---
 
 # Migrating an Amazon RDS for MySQL Database to an Amazon DynamoDB target
-<a name="chap-manageddatabases.mysql2dynamodb"></a>
 
 This walkthrough helps you to understand the process of migrating data from Amazon Relational Database Service (Amazon RDS) for MySQL to Amazon DynamoDB using AWS Database Migration Service (AWS DMS).
 

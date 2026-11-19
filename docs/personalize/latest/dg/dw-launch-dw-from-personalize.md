@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/dw-launch-dw-from-
 ---
 
 # Launching Data Wrangler from Amazon Personalize
-<a name="dw-launch-dw-from-personalize"></a>
 
 To launch Data Wrangler from Amazon Personalize, you use the Amazon Personalize console to configure a SageMaker AI domain and launch Data Wrangler.
 

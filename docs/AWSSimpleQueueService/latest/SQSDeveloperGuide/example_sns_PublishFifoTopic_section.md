@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Create and publish to a FIFO Amazon SNS topic using an AWS SDK
-<a name="example_sns_PublishFifoTopic_section"></a>
 
 The following code examples show how to create and publish to a FIFO Amazon SNS topic.
 

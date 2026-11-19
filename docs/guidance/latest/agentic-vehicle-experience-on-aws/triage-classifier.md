@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Deterministic-first P0–P3 triage
-<a name="triage-classifier"></a>
 
 AVX classifies every vehicle interaction on a four-level criticality taxonomy **before** the LLM composes a response. Classification is a **tool call**, not a free-form LLM judgment. This is a safety invariant: the LLM can narrate a classification but cannot change it.
 

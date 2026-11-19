@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::DocumentClassifier DocumentClassifierOutputDataConfig
-<a name="aws-properties-comprehend-documentclassifier-documentclassifieroutputdataconfig"></a>
 
 Provide the location for output data from a custom classifier job. This field is mandatory if you are training a native document model.
 

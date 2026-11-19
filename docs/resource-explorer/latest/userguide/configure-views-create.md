@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/confi
 ---
 
 # Creating Resource Explorer views to use for search
-<a name="configure-views-create"></a>
 
 All searches must use a [*view*](customer-views.md#configure-views). A view defines filters that determine which resources can be returned by queries that use the view. Views also control who can search for resources.
 

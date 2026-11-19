@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-respo
 ---
 
 # Responses API
-<a name="inference-responses-api"></a>
 
 Amazon Bedrock provides the OpenAI Responses API on both the `bedrock-runtime` and `bedrock-mantle` endpoints. Use `bedrock-runtime` for new applications. Use `bedrock-mantle` only when a model or capability that you require isn't available on `bedrock-runtime`.
 

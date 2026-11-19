@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAdd
 ---
 
 # EmailAddressSearchCriteria
-<a name="API_EmailAddressSearchCriteria"></a>
 
 The search criteria to be used to return email addresses.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return email addresses.
 
  ** AndConditions **   <a name="connect-Type-EmailAddressSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [EmailAddressSearchCriteria](#API_EmailAddressSearchCriteria) objects
+Type: Array of [EmailAddressSearchCriteria](API_EmailAddressSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-EmailAddressSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [EmailAddressSearchCriteria](#API_EmailAddressSearchCriteria) objects
+Type: Array of [EmailAddressSearchCriteria](API_EmailAddressSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-EmailAddressSearchCriteria-StringCondition"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Con
 ---
 
 # ConditionalForwarder
-<a name="API_ConditionalForwarder"></a>
 
 Points to a remote domain with which you are setting up a trust relationship. Conditional forwarders are required in order to set up a trust relationship with another domain.
 

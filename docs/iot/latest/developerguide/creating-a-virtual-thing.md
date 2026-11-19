@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/creating-a-vir
 ---
 
 # Create a virtual device with Amazon EC2
-<a name="creating-a-virtual-thing"></a>
 
 In this tutorial, you'll create an Amazon EC2 instance to serve as your virtual device in the cloud.
 

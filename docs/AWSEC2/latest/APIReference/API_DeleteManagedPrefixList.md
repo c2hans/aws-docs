@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteMan
 ---
 
 # DeleteManagedPrefixList
-<a name="API_DeleteManagedPrefixList"></a>
 
 Deletes the specified managed prefix list. You must first remove all references to the prefix list in your resources.
 

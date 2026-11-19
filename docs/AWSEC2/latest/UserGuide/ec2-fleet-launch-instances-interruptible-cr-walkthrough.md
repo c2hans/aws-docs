@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-launch
 ---
 
 # Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations
-<a name="ec2-fleet-launch-instances-interruptible-cr-walkthrough"></a>
 
 This tutorial walks you through the steps that you must perform so that your EC2 Fleet launches instances into Interruptible Capacity Reservations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/COLLECT
 ---
 
 # COLLECT\_SET function
-<a name="COLLECT_SET"></a>
 
 The COLLECT\_SET function collects and returns a set of unique elements.
 

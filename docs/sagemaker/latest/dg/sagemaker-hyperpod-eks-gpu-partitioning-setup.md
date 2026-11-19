@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Setting up GPU partitions on Amazon SageMaker HyperPod
-<a name="sagemaker-hyperpod-eks-gpu-partitioning-setup"></a>
 
 **Topics**
 + [Prerequisites](#sagemaker-hyperpod-eks-gpu-partitioning-setup-prerequisites)

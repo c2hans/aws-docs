@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cool.html
 ---
 
 # .cool
-<a name="cool"></a>
 
 Used by organizations and groups who want to associate their brand with the latest trends.
 

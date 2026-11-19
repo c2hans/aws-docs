@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeB
 ---
 
 # DescribeBundleTasks
-<a name="API_DescribeBundleTasks"></a>
 
 Describes the specified bundle tasks or all of your bundle tasks.
 

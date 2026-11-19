@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html
 ---
 
 # Tutorial: Bring your ASN to IPAM
-<a name="tutorials-byoasn"></a>
 
 If your applications use trusted IP addresses and Autonomous System Numbers (ASNs) that your partners or customers have allow listed in their network, you can run these applications in AWS. Your partners or customers do not need to change their allow lists.
 

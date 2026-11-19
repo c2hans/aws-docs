@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ApiFulfillmentOption
-<a name="API_marketplace-discovery_ApiFulfillmentOption"></a>
 
 Describes an API-based fulfillment option, where the product is accessed through an API integration.
 

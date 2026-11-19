@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example_polly_DescribeVo
 ---
 
 # Use `DescribeVoices` with an AWS SDK
-<a name="example_polly_DescribeVoices_section"></a>
 
 The following code examples show how to use `DescribeVoices`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # StartMessageMoveTask
-<a name="API_StartMessageMoveTask"></a>
 
 Starts an asynchronous task to move messages from a specified source queue to a specified destination queue.
 

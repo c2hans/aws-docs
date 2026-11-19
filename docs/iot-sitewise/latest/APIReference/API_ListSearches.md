@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListSearches
-<a name="API_ListSearches"></a>
 
 Lists the searches in a workspace, most recently started first. Results can be narrowed with optional filters (status, search type, group, and started-at time range) and are paginated: when `nextToken` is present, pass it on a subsequent call to retrieve the next page.
 

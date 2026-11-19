@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListTableOptimize
 ---
 
 # ListTableOptimizerRuns
-<a name="API_ListTableOptimizerRuns"></a>
 
 Lists the history of previous optimizer runs for a specific table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/suggest-d
 ---
 
 # How to help users disambiguate between similar results
-<a name="suggest-disambiguate-results"></a>
 
 The Suggest API enables you to create queries for places or categories of results. The results are sorted for more likely to less likely matches. Information is provided for each result which helps you quickly identify the correct match, particularly with regard to the Title and Label fields.
 

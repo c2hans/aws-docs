@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_IntegerParam
 ---
 
 # IntegerParameterConfig
-<a name="API_IntegerParameterConfig"></a>
 
 An integer parameter configuration with default value and constraints.
 

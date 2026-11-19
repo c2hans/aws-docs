@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Amazon Bedrock in SageMaker Unified Studio KMS Permissions
-<a name="amazon-bedrock-key-permissions"></a>
 + **KMS Key Policy — Amazon DataZone domain key and the Tooling blueprint Key**: manually set the following key policy to the domain key and the Tooling blueprint key.
 
 ------

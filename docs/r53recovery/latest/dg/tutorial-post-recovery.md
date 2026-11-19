@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/tutorial-post-reco
 ---
 
 # Tutorial: Execute an RDS post-recovery workflow
-<a name="tutorial-post-recovery"></a>
 
 This tutorial guides you through executing a post-recovery workflow after a successful RDS failover. This post-recovery execution restores redundancy by re-establishing cross-Region replication for the RDS database, ensuring your RDS database is prepared for future regional events.
 

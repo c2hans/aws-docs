@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 Details discovered information about a running instance using Linux subscriptions.
 

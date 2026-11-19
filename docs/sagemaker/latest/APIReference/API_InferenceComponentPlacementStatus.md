@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentPlacementStatus
-<a name="API_InferenceComponentPlacementStatus"></a>
 
 The placement status of an inference component on a specific instance type. Shows the number of inference component copies currently placed on instances of a given type.
 

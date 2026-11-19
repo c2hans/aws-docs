@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Spa
 ---
 
 # SpaceSummary
-<a name="API_SpaceSummary"></a>
 
 Information about an space.
 

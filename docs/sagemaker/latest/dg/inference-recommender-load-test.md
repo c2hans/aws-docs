@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommende
 ---
 
 # Run a custom load test
-<a name="inference-recommender-load-test"></a>
 
 Amazon SageMaker Inference Recommender load tests conduct extensive benchmarks based on production requirements for latency and throughput, custom traffic patterns, and either serverless endpoints or real-time instances (up to 10) that you select.
 

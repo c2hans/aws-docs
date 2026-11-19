@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Cost management
-<a name="costmanagement-pattern-list"></a>
 
 **Topics**
 + [Create detailed cost and usage reports for AWS Glue jobs by using AWS Cost Explorer](create-detailed-cost-and-usage-reports-for-aws-glue-jobs-by-using-aws-cost-explorer.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_BackendE
 ---
 
 # BackendEnvironment
-<a name="API_BackendEnvironment"></a>
 
 Describes the backend environment associated with a `Branch` of a Gen 1 Amplify app. Amplify Gen 1 applications are created using Amplify Studio or the Amplify command line interface (CLI).
 

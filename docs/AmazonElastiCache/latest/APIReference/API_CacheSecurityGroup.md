@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheSecurityGroup
-<a name="API_CacheSecurityGroup"></a>
 
 Represents the output of one of the following operations:
 +  `AuthorizeCacheSecurityGroupIngress`

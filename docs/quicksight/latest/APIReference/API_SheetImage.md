@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetImage
-<a name="API_SheetImage"></a>
 
 An image that is located on a sheet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # CognitoIdentityProvider
-<a name="API_CognitoIdentityProvider"></a>
 
 A provider representing an Amazon Cognito user pool and its client ID.
 

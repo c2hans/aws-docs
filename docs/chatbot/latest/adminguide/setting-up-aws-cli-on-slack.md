@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/setting-up-aws
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Configuring commands support on an existing chat channel using Amazon Q Developer in chat applications
-<a name="setting-up-aws-cli-on-slack"></a>
 
 If you have existing chat channels using the Amazon Q Developer in chat applications, you can reconfigure them in a few steps to support the AWS CLI.
 

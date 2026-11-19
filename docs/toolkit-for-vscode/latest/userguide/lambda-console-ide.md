@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/lamb
 ---
 
 # AWS Lambda console to IDE
-<a name="lambda-console-ide"></a>
 
 The AWS Lambda console to IDE feature allows you to download your AWS Lambda functions from the AWS Lambda console into VS Code. Working with your Lambda functions in VS Code gives you access to other local-development options such as AWS Serverless Application Model (AWS SAM) and the AWS Cloud Development Kit (AWS CDK).
 

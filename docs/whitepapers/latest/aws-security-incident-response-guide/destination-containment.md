@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Destination containment
-<a name="destination-containment"></a>
 
  Destination containment is the application of filtering or routing within an environment to prevent access to a targeted host or resource. In some cases, destination containment also involves a form of resiliency to verify that legitimate resources are replicated for availability; resources should be detached from these forms of resiliency for isolation and containment. Examples of destination containment using AWS services include:
 + **Network ACLs **– Network ACLs (NACLs) that are configured on subnets that contain AWS resources can have deny rules added. These deny rules can be applied to prevent access to a particular AWS resource; however, applying an NACL will affect every resource on the subnet, not only the resources that are being accessed without authorization. Rules listed within an NACL are processed in top-down order, so the first rule in an existing NACL should be configured to deny unauthorized traffic to the targeted resource and subnet. Alternatively, a completely new NACL can be created with a single deny rule for both inbound and outbound traffic and associated with the subnet containing the targeted resource to prevent access to the subnet using the new NACL.

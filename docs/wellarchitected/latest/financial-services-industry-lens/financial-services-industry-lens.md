@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Financial Services Industry Lens - AWS Well-Architected Framework
-<a name="financial-services-industry-lens"></a>
 
 Publication date: **January 27, 2026** ([Document revisions](document-revisions.md))
 

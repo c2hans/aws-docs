@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-ba
 ---
 
 # Attach an Elastic Load Balancing load balancer to your Auto Scaling group
-<a name="attach-load-balancer-asg"></a>
 
 This topic describes how to attach an Elastic Load Balancing load balancer to an Auto Scaling group. It also describes how to turn on Elastic Load Balancing health checks to let Amazon EC2 Auto Scaling replace instances that Elastic Load Balancing reports as unhealthy.
 

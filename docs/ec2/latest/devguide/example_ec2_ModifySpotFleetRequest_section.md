@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_ModifySp
 ---
 
 # Use `ModifySpotFleetRequest` with a CLI
-<a name="example_ec2_ModifySpotFleetRequest_section"></a>
 
 The following code examples show how to use `ModifySpotFleetRequest`.
 

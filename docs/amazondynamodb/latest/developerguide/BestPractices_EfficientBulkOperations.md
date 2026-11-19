@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bes
 ---
 
 # Efficient bulk operations
-<a name="BestPractices_EfficientBulkOperations"></a>
 
 **When to use this pattern**
 

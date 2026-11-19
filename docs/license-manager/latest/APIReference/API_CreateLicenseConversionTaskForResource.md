@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateLicenseConversionTaskForResource
-<a name="API_CreateLicenseConversionTaskForResource"></a>
 
 Creates a new license conversion task.
 

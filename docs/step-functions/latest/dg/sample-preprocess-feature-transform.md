@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-preproce
 ---
 
 # Preprocess data and train a machine learning model with Amazon SageMaker AI
-<a name="sample-preprocess-feature-transform"></a>
 
 This sample project demonstrates how to use SageMaker AI and AWS Step Functions to preprocess data and train a machine learning model.
 

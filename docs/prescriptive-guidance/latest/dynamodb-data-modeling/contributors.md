@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 + Camilo Gonzalez, Senior Data Architect, AWS

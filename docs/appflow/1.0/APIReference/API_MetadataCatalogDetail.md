@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MetadataCat
 ---
 
 # MetadataCatalogDetail
-<a name="API_MetadataCatalogDetail"></a>
 
 Describes the metadata catalog, metadata table, and data partitions that Amazon AppFlow used for the associated flow run.
 

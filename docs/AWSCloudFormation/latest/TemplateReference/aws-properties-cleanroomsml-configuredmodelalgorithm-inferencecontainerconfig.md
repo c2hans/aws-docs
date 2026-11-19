@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::ConfiguredModelAlgorithm InferenceContainerConfig
-<a name="aws-properties-cleanroomsml-configuredmodelalgorithm-inferencecontainerconfig"></a>
 
 Provides configuration information for the inference container that is used when you run an inference job on a configured model algorithm.
 

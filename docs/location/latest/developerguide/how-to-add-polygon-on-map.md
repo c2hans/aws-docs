@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a polygon on the map
-<a name="how-to-add-polygon-on-map"></a>
 
 Amazon Location Service allows you to add polygons to the map. You can style the polygon based on your business needs, including adding fill and border styling.
 

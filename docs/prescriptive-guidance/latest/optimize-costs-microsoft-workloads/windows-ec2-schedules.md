@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Automate stop and start schedules
-<a name="windows-ec2-schedules"></a>
 
 ## Overview
 <a name="windows-ec2-schedules-overview"></a>

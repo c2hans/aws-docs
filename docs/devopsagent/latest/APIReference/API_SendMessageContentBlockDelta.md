@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageContentBlockDelta
-<a name="API_SendMessageContentBlockDelta"></a>
 
 Union of possible delta payloads within a content block delta event
 

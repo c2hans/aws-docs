@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StopCisSes
 ---
 
 # StopCisSessionMessage
-<a name="API_StopCisSessionMessage"></a>
 
 The stop CIS session message.
 

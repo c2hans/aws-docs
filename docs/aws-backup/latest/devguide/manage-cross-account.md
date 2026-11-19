@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/manage-cross-
 ---
 
 # Managing AWS Backup resources across multiple AWS accounts
-<a name="manage-cross-account"></a>
 
 **Note**
 Before you manage resources across multiple AWS accounts in AWS Backup, your accounts must belong to the same organization in the AWS Organizations service.

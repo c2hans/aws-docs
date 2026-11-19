@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DistributionData.
 ---
 
 # DistributionData
-<a name="API_DistributionData"></a>
 
 The distribution data for a statistic.
 

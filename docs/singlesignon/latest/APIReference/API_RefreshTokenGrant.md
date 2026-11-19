@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Ref
 ---
 
 # RefreshTokenGrant
-<a name="API_RefreshTokenGrant"></a>
 
 A structure that defines configuration settings for an application that supports the OAuth 2.0 Refresh Token Grant. For more, see [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749#section-1.5).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/ec2-compute-i
 ---
 
 # EC2 compute images
-<a name="ec2-compute-images"></a>
 
 AWS CodeBuild supports the following Docker images that are available for EC2 compute in CodeBuild.
 

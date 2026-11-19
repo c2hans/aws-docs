@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Incom
 ---
 
 # IncompatibilityMessage
-<a name="API_IncompatibilityMessage"></a>
 
 Represents information about incompatibility.
 

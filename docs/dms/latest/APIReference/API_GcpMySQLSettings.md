@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_GcpMySQLSett
 ---
 
 # GcpMySQLSettings
-<a name="API_GcpMySQLSettings"></a>
 
 Settings in JSON format for the source GCP MySQL endpoint.
 

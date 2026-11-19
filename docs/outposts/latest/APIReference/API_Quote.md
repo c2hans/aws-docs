@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Quote.h
 ---
 
 # Quote
-<a name="API_Quote"></a>
 
 Information about a quote for an Outpost. A quote provides pricing and configuration options based on the requested capacity.
 

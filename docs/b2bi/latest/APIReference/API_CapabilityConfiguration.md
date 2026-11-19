@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_CapabilityC
 ---
 
 # CapabilityConfiguration
-<a name="API_CapabilityConfiguration"></a>
 
 A capability object. Currently, only EDI (electronic data interchange) capabilities are supported. A trading capability contains the information required to transform incoming EDI documents into JSON or XML outputs.
 

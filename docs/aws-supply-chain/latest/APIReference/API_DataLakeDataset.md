@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDataset
-<a name="API_DataLakeDataset"></a>
 
 The data lake dataset details.
 

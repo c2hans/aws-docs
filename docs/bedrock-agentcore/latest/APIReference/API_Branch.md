@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Branch
-<a name="API_Branch"></a>
 
 Contains information about a branch in an AgentCore Memory resource. Branches allow for organizing events into different conversation threads or paths.
 

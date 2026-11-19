@@ -5,12 +5,11 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup
-<a name="aws-resource-wafv2-rulegroup"></a>
 
 **Note**
 This is the latest version of ** AWS WAF **, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the [AWS WAF developer guide](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html).
 
-Use an [AWS::WAFv2::RuleGroup](#aws-resource-wafv2-rulegroup) to define a collection of rules for inspecting and controlling web requests. You use a rule group in an [AWS::WAFv2::WebACL](aws-resource-wafv2-webacl.md) by providing its Amazon Resource Name (ARN) to the rule statement `RuleGroupReferenceStatement`, when you add rules to the web ACL.
+Use an [AWS::WAFv2::RuleGroup](aws-resource-wafv2-rulegroup.md) to define a collection of rules for inspecting and controlling web requests. You use a rule group in an [AWS::WAFv2::WebACL](aws-resource-wafv2-webacl.md) by providing its Amazon Resource Name (ARN) to the rule statement `RuleGroupReferenceStatement`, when you add rules to the web ACL.
 
 When you create a rule group, you define an immutable capacity limit. If you update a rule group, you must stay within the capacity. This allows others to reuse the rule group with confidence in its capacity requirements.
 

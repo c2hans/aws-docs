@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # Security
-<a name="security"></a>
 
  Private APIs and private integration offer an extra layer of security from a network standpoint, because communications are limited within a private network. However, malicious users can potentially gain access to private networks, so it’s a best practice to implement an authorizer for APIs. REST and WebSocket offer the same set of authorizers, such as IAM, Amazon Cognito, and Lambda authorizers. HTTP APIs support IAM, Lambda authorizers, and JSON Web Token (JWT) authorizers. Amazon Cognito can also be used with HTTP APIs through the JWT authorizer. [Serverless Application Lens](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html) covers [identity and access management](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/identity-and-access-management.html) in serverless API in depth.
 

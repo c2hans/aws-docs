@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Communication plan for the management layers
-<a name="communication-management-layers"></a>
 
 For a large migration, provide a weekly status update and schedule a formal review with at least a bi-weekly cadence. This helps ensure that the myriad of parallel activities do not diminish the migration team's ability to migrate waves on schedule. Establish the following key formal communication checkpoints to report the project status:
 + **Weekly status updates** – This report conveys the current project progress and includes a current roadmap and use metrics. It is designed to share progress against the plan, highlight issues, and describe the key actions and decisions the project stakeholders must make to support the schedule. Include an appendix of supporting documentation. Post this weekly report to a predefined, shared repository. Key participants include the project sponsors** **and** **the project managers. For more detailed information about this meeting and presentation templates to support it, see [Define meetings and their cadence](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-governance-playbook/task-communication-plan.html#step-define-meetings) and [Prepare meeting presentations](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-governance-playbook/task-communication-plan.html#step-prepare-presentations) in the *Project governance playbook for AWS large migrations*.

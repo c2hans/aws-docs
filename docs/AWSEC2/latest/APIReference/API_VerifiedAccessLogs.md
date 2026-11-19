@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessLogs
-<a name="API_VerifiedAccessLogs"></a>
 
 Describes the options for Verified Access logs.
 

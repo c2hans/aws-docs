@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Selecting an AWS service for AI inference
-<a name="selecting-aws-service"></a>
 
 When selecting an AWS service for AI inference, organizations need to consider multiple factors that align with their operational requirements and technical capabilities.
 

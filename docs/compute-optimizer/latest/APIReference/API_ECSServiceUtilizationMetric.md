@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ECSServiceUtilizationMetric
-<a name="API_ECSServiceUtilizationMetric"></a>
 
  Describes the utilization metric of an Amazon ECS service.
 

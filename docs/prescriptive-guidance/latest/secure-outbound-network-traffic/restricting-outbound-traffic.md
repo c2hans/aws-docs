@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outb
 ---
 
 # Restricting a VPC's outbound traffic
-<a name="restricting-outbound-traffic"></a>
 
 ## Restricting a VPC's outbound traffic by using security groups
 <a name="restricting-outbound-traffic-security-groups"></a>

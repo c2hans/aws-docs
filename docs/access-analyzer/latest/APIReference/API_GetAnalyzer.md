@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GetAnalyzer
-<a name="API_GetAnalyzer"></a>
 
 Retrieves information about the specified analyzer.
 

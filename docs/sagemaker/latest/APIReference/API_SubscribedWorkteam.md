@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Subscr
 ---
 
 # SubscribedWorkteam
-<a name="API_SubscribedWorkteam"></a>
 
 Describes a work team of a vendor that does the labelling job.
 

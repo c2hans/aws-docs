@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_LastUpdate.html
 ---
 
 # LastUpdate
-<a name="API_LastUpdate"></a>
 
 Describes the status of the last update on the environment, and any errors that were encountered.
 

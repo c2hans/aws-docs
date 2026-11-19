@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_Operation
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by AWS Sign-In Control Plane:
 +  [CreateTrustedIdentityPropagationApplicationForConsole](API_CreateTrustedIdentityPropagationApplicationForConsole.md)

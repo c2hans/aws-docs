@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/pivot-table.html
 ---
 
 # Using pivot tables
-<a name="pivot-table"></a>
 
 Use pivot tables to show measure values for the intersection of two dimensions.
 

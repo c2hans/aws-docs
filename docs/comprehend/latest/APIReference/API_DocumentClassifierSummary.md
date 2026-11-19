@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassifierSummary
-<a name="API_DocumentClassifierSummary"></a>
 
 Describes information about a document classifier and its versions.
 

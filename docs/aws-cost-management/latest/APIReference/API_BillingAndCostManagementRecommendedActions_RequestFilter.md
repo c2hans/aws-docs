@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RequestFilter
-<a name="API_BillingAndCostManagementRecommendedActions_RequestFilter"></a>
 
 Enables filtering of results based on specified action criteria. You can define multiple action filters to refine results using combinations of feature type, severity level, and recommendation type.
 

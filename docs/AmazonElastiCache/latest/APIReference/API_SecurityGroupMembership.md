@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # SecurityGroupMembership
-<a name="API_SecurityGroupMembership"></a>
 
 Represents a single cache security group and its status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/getting-started-step
 ---
 
 # Step 11: Clean up
-<a name="getting-started-step9"></a>
 
 To avoid extraneous charges, delete this channel and input when you have finished working with it.
 

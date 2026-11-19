@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # User Managed PINs
-<a name="use-cases-issuers.generalfunctions.usermanagedpins"></a>
 
 **Topics**
 + [Overview](#use-cases-issuers.generalfunctions.usermanagedpins.overview)

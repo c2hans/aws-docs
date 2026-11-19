@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Configuring the IMDS on your Elastic Beanstalk environment's instances
-<a name="environments-cfg-ec2-imds"></a>
 
 This topic describes the Instance Metadata Service (IMDS).
 

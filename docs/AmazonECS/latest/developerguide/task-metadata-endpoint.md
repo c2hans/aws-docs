@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-met
 ---
 
 # Monitor workloads using Amazon ECS metadata
-<a name="task-metadata-endpoint"></a>
 
 You can use the task and container metadata to troubleshoot your workloads and to make configuration changes based on the runtime environment.
 

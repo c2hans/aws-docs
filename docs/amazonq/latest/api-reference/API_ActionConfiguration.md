@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionC
 ---
 
 # ActionConfiguration
-<a name="API_ActionConfiguration"></a>
 
 Specifies an allowed action and its associated filter configuration.
 

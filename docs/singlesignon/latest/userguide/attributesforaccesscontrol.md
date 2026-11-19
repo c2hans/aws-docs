@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/attributes
 ---
 
 # Attributes for access control
-<a name="attributesforaccesscontrol"></a>
 
 **Attributes for access control** is the name of the page in the IAM Identity Center console where you select user attributes that you want to use in policies to control access to resources. You can assign users to workloads in AWS based on existing attributes in the users' identity source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VpcInterface
 ---
 
 # VpcInterfaceRequest
-<a name="API_VpcInterfaceRequest"></a>
 
 The details of the VPC interfaces that you want to add to the flow.
 

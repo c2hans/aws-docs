@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Radar
 ---
 
 # RadarChartSortConfiguration
-<a name="API_RadarChartSortConfiguration"></a>
 
 The sort configuration of a `RadarChartVisual`.
 

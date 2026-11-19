@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceResi
 ---
 
 # InstanceResizePolicy
-<a name="API_InstanceResizePolicy"></a>
 
 Custom policy for requesting termination protection or termination of specific instances when shrinking an instance group.
 

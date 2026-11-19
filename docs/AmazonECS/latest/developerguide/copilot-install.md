@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/copilot-
 ---
 
 # Installing the AWS Copilot CLI
-<a name="copilot-install"></a>
 
 **AWS Copilot CLI End-of-Support Notice**
 AWS Copilot CLI will reach end-of-support on **June 12, 2026**. After this date, the tool will no longer receive updates, security patches, or technical support.

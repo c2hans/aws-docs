@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableCellStyle
-<a name="API_TableCellStyle"></a>
 
 The table cell style for a cell in pivot table or table visual.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateCoreNetwork
-<a name="API_UpdateCoreNetwork"></a>
 
 Updates the description of a core network.
 

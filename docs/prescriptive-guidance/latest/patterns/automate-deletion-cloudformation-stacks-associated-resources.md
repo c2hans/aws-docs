@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate deletion of AWS CloudFormation stacks and associated resources
-<a name="automate-deletion-cloudformation-stacks-associated-resources"></a>
 
 *SANDEEP SINGH and James Jacob, Amazon Web Services*
 

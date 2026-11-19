@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/register-de
 ---
 
 # Register an existing Directory Service directory with WorkSpaces Personal
-<a name="register-deregister-directory"></a>
 
 To allow WorkSpaces to use an existing Directory Service directory, you must register it with WorkSpaces. After you register a directory, you can launch WorkSpaces in the directory.
 

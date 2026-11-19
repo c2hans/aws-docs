@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-ap
 ---
 
 # AppSpec 'resources' section (Amazon ECS and AWS Lambda deployments only)
-<a name="reference-appspec-file-structure-resources"></a>
 
  The content in the `'resources'` section of the AppSpec file varies, depending on the compute platform of your deployment. The `'resources'` section for an Amazon ECS deployment contains your Amazon ECS task definition, container and port for routing traffic to your updated Amazon ECS task set, and other optional information. The `'resources'` section for an AWS Lambda deployment contains the name, alias, current version, and target version of a Lambda function.
 

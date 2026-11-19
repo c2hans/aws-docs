@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/configur
 ---
 
 # Configure Service Connect proxy container
-<a name="configure-service-connect-proxy-container"></a>
 
 When a service uses Service Connect, Amazon ECS automatically adds a proxy container to each task in the service. You can configure the settings for this proxy container with the `containerConfigurations` list in the `serviceConnectConfiguration` object. Your changes take effect after you deploy the service.
 

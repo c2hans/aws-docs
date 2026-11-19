@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateImageBuilder
-<a name="API_CreateImageBuilder"></a>
 
 Creates an image builder. An image builder is a virtual machine that is used to create an image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-intro
 ---
 
 # Introduction to Model Parallelism
-<a name="model-parallel-intro"></a>
 
 Model parallelism is a distributed training method in which the deep learning model is partitioned across multiple devices, within or across instances. This introduction page provides a high-level overview about model parallelism, a description of how it can help overcome issues that arise when training DL models that are typically very large in size, and examples of what the SageMaker model parallel library offers to help manage model parallel strategies as well as memory consumption.
 

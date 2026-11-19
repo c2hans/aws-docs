@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ApiKeyCredential
-<a name="API_ApiKeyCredential"></a>
 
 An API key used to authenticate an integration with its external system.
 

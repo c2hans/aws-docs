@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # FlexMatch rule types
-<a name="match-rules-reference-ruletype"></a>
 
 ## Batch distance rule
 <a name="match-rules-reference-ruletype-batchdistance"></a>

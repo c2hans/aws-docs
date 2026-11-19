@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DefaultWorkspa
 ---
 
 # DefaultWorkspaceCreationProperties
-<a name="API_DefaultWorkspaceCreationProperties"></a>
 
 Describes the default values that are used to create WorkSpaces. For more information, see [Update Directory Details for Your WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/update-directory-details.html).
 

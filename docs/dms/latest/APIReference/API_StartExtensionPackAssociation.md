@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartExtensi
 ---
 
 # StartExtensionPackAssociation
-<a name="API_StartExtensionPackAssociation"></a>
 
 Queues the installation of the extension pack on your target database. If other requests created by `Start*` operations are already in the migration project's queue, the installation begins after they complete.
 

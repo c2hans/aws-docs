@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RdsUngr
 ---
 
 # RdsUngraceful
-<a name="API_RdsUngraceful"></a>
 
 The ungraceful execution settings for an Amazon RDS switchover read replica execution block.
 

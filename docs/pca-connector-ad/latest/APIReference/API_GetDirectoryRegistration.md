@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # GetDirectoryRegistration
-<a name="API_GetDirectoryRegistration"></a>
 
 A structure that contains information about your directory registration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/hosting-wordpress.html
 ---
 
 # Tutorial: Host a WordPress blog on AL2
-<a name="hosting-wordpress"></a>
 
 The following procedures will help you install, configure, and secure a WordPress blog on your AL2 instance. This tutorial is a good introduction to using Amazon EC2 in that you have full control over a web server that hosts your WordPress blog, which is not typical with a traditional hosting service.
 

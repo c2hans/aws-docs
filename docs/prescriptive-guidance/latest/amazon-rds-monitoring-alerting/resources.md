@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Next steps and resources
-<a name="resources"></a>
 
 You can explore database migration patterns in [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/) for step-by-step instructions regarding your specific relational databases running in the AWS Cloud, including tasks related to monitoring, migration, and data management.
 

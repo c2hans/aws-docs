@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/viewing-delet
 ---
 
 # Viewing, editing, and deleting connectors
-<a name="viewing-deleting-connectors"></a>
 
 **To view, edit, or delete existing connectors**
 

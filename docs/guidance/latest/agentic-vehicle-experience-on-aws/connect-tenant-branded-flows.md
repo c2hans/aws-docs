@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Tenant-branded contact flows
-<a name="connect-tenant-branded-flows"></a>
 
 Every tenant operates its own set of Amazon Connect contact flows. Tenancy is first-class: one Connect instance, multiple contact flows differentiated by tenant configuration. `/escalate` resolves the tenant from the caller’s verified `custom:tenantId` claim and reads that tenant’s Connect settings.
 

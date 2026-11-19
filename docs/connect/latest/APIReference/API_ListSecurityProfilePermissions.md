@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListSecu
 ---
 
 # ListSecurityProfilePermissions
-<a name="API_ListSecurityProfilePermissions"></a>
 
 Lists the permissions granted to a security profile.
 

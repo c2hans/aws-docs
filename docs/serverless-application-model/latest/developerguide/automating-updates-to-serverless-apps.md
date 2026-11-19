@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Deploying serverless applications gradually with AWS SAM
-<a name="automating-updates-to-serverless-apps"></a>
 
 AWS Serverless Application Model (AWS SAM) comes built-in with [CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html) to provide gradual AWS Lambda deployments. With just a few lines of configuration, AWS SAM does the following for you:
 + Deploys new versions of your Lambda Event Function, and automatically creates aliases that point to the new version.

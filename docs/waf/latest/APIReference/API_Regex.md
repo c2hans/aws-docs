@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Regex.html
 ---
 
 # Regex
-<a name="API_Regex"></a>
 
 A single regular expression. This is used in a [RegexPatternSet](API_RegexPatternSet.md) and also in the configuration for the AWS Managed Rules rule group `AWSManagedRulesAntiDDoSRuleSet`.
 

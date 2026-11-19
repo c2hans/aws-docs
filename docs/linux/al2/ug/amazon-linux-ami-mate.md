@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/amazon-linux-ami-mate.html
 ---
 
 # Configure the AL2 MATE desktop connection
-<a name="amazon-linux-ami-mate"></a>
 
 The [MATE desktop environment](https://mate-desktop.org/) is pre-installed and pre-configured in AMIs with the following description:
 

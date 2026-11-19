@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 ---
 
 # Visualizing table data with Quick
-<a name="s3-tables-integrating-quicksight"></a>
 
 Quick is a fast business analytics service to build visualizations, perform ad hoc analysis, and quickly get business insights from your data. Quick seamlessly discovers AWS data sources, enables organizations to scale to hundreds of thousands of users, and delivers fast and responsive query performance by using the Quick Super-fast, Parallel, In-Memory, Calculation Engine (SPICE). For more information, see [What is Quick?](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) in the *Quick user guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/opera
 ---
 
 # process\_product
-<a name="operation-process-product-entity"></a>
 
 **Primary key (PK)**
 

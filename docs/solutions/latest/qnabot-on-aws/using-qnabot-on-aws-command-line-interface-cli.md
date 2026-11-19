@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/using-qna
 ---
 
 # Using QnABot on AWS Command Line Interface (CLI)
-<a name="using-qnabot-on-aws-command-line-interface-cli"></a>
 
 The QnABot on AWS CLI supports the capability to import and export questions and answers from your QnABot setup.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AmazonMachineImageRecommendation
-<a name="API_marketplace-discovery_AmazonMachineImageRecommendation"></a>
 
 Recommended instance types for running an AMI fulfillment option.
 

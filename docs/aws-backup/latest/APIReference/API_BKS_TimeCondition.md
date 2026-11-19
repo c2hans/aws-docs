@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_T
 ---
 
 # TimeCondition
-<a name="API_BKS_TimeCondition"></a>
 
 A time condition denotes a creation time, last modification time, or other time.
 

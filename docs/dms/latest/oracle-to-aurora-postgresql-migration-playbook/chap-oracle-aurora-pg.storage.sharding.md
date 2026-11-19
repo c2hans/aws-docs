@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle sharding
-<a name="chap-oracle-aurora-pg.storage.sharding"></a>
 
 With AWS DMS, you can migrate data from an Oracle database to an Amazon Aurora cluster that utilizes the sharding feature. Oracle sharding refers to the partitioning of data across multiple databases to improve performance and availability.
 

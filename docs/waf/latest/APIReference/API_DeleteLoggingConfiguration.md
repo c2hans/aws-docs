@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteLoggin
 ---
 
 # DeleteLoggingConfiguration
-<a name="API_DeleteLoggingConfiguration"></a>
 
 Deletes the [LoggingConfiguration](API_LoggingConfiguration.md) from the specified web ACL.
 

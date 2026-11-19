@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-a
 ---
 
 # Adding an Amazon DocumentDB instance to a cluster
-<a name="db-instance-add"></a>
 
 ------
 #### [ Using the AWS Management Console ]

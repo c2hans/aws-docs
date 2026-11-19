@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # LocalizedBrandingStrings
-<a name="API_LocalizedBrandingStrings"></a>
 
 Localized text strings for a specific language that customize the web portal.
 

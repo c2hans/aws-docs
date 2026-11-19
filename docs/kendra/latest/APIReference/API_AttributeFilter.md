@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Attribute
 ---
 
 # AttributeFilter
-<a name="API_AttributeFilter"></a>
 
 Filters the search results based on document attributes or fields.
 
@@ -27,7 +26,7 @@ For examples of using `AttributeFilter`, see [Using document attributes to filte
 
  ** AndAllFilters **   <a name="kendra-Type-AttributeFilter-AndAllFilters"></a>
 Performs a logical `AND` operation on all filters that you specify.
-Type: Array of [AttributeFilter](#API_AttributeFilter) objects
+Type: Array of [AttributeFilter](API_AttributeFilter.md) objects
 Required: No
 
  ** ContainsAll **   <a name="kendra-Type-AttributeFilter-ContainsAll"></a>
@@ -67,12 +66,12 @@ Required: No
 
  ** NotFilter **   <a name="kendra-Type-AttributeFilter-NotFilter"></a>
 Performs a logical `NOT` operation on all filters that you specify.
-Type: [AttributeFilter](#API_AttributeFilter) object
+Type: [AttributeFilter](API_AttributeFilter.md) object
 Required: No
 
  ** OrAllFilters **   <a name="kendra-Type-AttributeFilter-OrAllFilters"></a>
 Performs a logical `OR` operation on all filters that you specify.
-Type: Array of [AttributeFilter](#API_AttributeFilter) objects
+Type: Array of [AttributeFilter](API_AttributeFilter.md) objects
 Required: No
 
 ## See Also

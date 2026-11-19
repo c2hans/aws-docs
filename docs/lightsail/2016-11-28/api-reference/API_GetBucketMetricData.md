@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetBucketMetricData
-<a name="API_GetBucketMetricData"></a>
 
 Returns the data points of a specific metric for an Amazon Lightsail bucket.
 

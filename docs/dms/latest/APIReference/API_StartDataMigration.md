@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartDataMig
 ---
 
 # StartDataMigration
-<a name="API_StartDataMigration"></a>
 
 Starts the specified data migration.
 

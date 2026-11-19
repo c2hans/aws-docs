@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ref
 ---
 
 # Reference
-<a name="API_Reference"></a>
 
 Contains the reference information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # MEDIAN
-<a name="recipe-actions.functions.MEDIAN"></a>
 
  Returns the median, the middle number of a sorted group of numbers, from the selected source columns in a new column. Any non-number is ignored.
 

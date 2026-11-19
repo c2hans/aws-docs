@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # CPS 230 – Operational Risk Management
-<a name="cps-230-operational-risk-management"></a>
 
  On July 17, 2023, APRA published CPS 230 to ensure that ARIs are resilient to operational risks and disruptions. CPS 230 requires regulated financial entities to effectively manage their operational risks, maintain critical operations during disruptions, and manage the risks associated with service providers. In effect from July 1, 2025, CPS 230 replaces five existing standards, including CPS 231 Outsourcing and CPS 232 Business Continuity. Note that ARIs that already have pre-existing agreements with material services providers do not need to update these agreements in accordance with CPS 230 until July 1, 2026.
 

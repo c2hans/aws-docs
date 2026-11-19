@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/array_t
 ---
 
 # ARRAY type
-<a name="array_type"></a>
 
 Use the ARRAY type to represent values comprising a sequence of elements with the type of `elementType`.
 

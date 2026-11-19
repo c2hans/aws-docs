@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Transform
-<a name="list_transform"></a>
 
 AWS Transform (service prefix: `transform`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

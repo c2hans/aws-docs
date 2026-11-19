@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_State
 ---
 
 # StatePersistenceConfigurations
-<a name="API_StatePersistenceConfigurations"></a>
 
 The state perssitence configuration of an embedded dashboard.
 

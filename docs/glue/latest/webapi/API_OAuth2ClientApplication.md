@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OAuth2ClientAppli
 ---
 
 # OAuth2ClientApplication
-<a name="API_OAuth2ClientApplication"></a>
 
 The OAuth2 client app used for the connection.
 

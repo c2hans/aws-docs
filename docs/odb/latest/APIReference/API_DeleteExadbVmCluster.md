@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteExadbV
 ---
 
 # DeleteExadbVmCluster
-<a name="API_DeleteExadbVmCluster"></a>
 
 Deletes the specified Exascale VM cluster.
 

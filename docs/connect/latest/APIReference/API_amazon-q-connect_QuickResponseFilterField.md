@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QuickResponseFilterField
-<a name="API_amazon-q-connect_QuickResponseFilterField"></a>
 
 The quick response fields to filter the quick response query results by.
 

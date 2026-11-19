@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Sovereignty governance and organization
-<a name="dsops01"></a>
 
  Sovereignty requirements differ by jurisdiction, and those differences require distributed expertise to address. A central team can't scale to author, maintain, and enforce controls across every jurisdiction without local knowledge of regulatory context, enforcement timelines, and operational conditions. Effective sovereignty governance distributes responsibility while maintaining a coherent baseline.
 

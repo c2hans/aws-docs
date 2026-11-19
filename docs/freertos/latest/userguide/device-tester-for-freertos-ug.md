@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/device-tester-
 ---
 
 # AWS IoT Device Tester for FreeRTOS
-<a name="device-tester-for-freertos-ug"></a>
 
 The IDT for FreeRTOS is a tool to qualify data throughput rate with the FreeRTOS operating system. The device tester (IDT) first opens a USB or UART connection to a device. It then flashes an image of FreeRTOS configured to test the device functionality under various conditions. AWS IoT Device Tester suites are extensible and IDT is used for customer AWS IoT test orchestration.
 

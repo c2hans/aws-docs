@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appmesh-vir
 ---
 
 # appmesh-virtual-node-listeners-outlier-detect-enabled
-<a name="appmesh-virtual-node-listeners-outlier-detect-enabled"></a>
 
 Checks if listeners for AWS App Mesh virtual nodes have outlier detection enabled. The rule is NON\_COMPLIANT if configuration.Spec.Listeners[].OutlierDetection does not exist in one or more listeners.
 

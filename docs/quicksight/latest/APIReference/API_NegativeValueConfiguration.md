@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Negat
 ---
 
 # NegativeValueConfiguration
-<a name="API_NegativeValueConfiguration"></a>
 
 The options that determine the negative value configuration.
 

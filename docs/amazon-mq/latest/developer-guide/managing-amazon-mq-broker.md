@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/managin
 ---
 
 # Managing an Amazon MQ broker
-<a name="managing-amazon-mq-broker"></a>
 
  After you create a broker, you can manage and maintain the different components of your Amazon MQ broker.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-con
 ---
 
 # Install EC2 Instance Connect on your EC2 instances
-<a name="ec2-instance-connect-set-up"></a>
 
 To connect to a Linux instance using EC2 Instance Connect, the instance must have EC2 Instance Connect installed. Installing EC2 Instance Connect configures the SSH daemon on the instance.
 

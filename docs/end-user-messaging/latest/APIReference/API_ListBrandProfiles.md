@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ListBrandProfiles
-<a name="API_ListBrandProfiles"></a>
 
 Retrieves a paginated list of the brand profiles in your account. Use the nextToken parameter to retrieve additional results.
 

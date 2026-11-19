@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # PutRetentionPolicy
-<a name="API_PutRetentionPolicy"></a>
 
 Sets the retention of the specified log group. With a retention policy, you can configure the number of days for which to retain log events in the specified log group.
 

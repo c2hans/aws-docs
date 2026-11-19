@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/logging-using-
 ---
 
 # Logging AWS DataSync API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS DataSync is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in DataSync. CloudTrail captures all API calls for DataSync as events. The calls that are captured include calls from the DataSync console and code calls to DataSync API operations.
 

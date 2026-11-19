@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/zero-etl-operationa
 ---
 
 # Considerations for zero-ETL integration in Oracle Database@AWS
-<a name="zero-etl-operational-considerations"></a>
 
 When setting up Zero-ETL integration between Oracle Database@AWS and Amazon Redshift, consider the following guidelines:
 

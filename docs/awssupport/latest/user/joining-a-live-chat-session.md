@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/joining-a-live-ch
 ---
 
 # Join a live chat session with Support
-<a name="joining-a-live-chat-session"></a>
 
 When you request a live chat for your case, you choose to either use a new chat channel or a thread in the current channel for you and the AWS Support agent. Use this chat channel or thread to communicate with the support agent and any others that you invited to the live chat.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Implementation priorities
-<a name="implementation-priorities-2"></a>
 
  Having secure and scalable mechanisms to manage identities is a critical component of a cloud ready environment. As such, the following items should be prioritized.
 

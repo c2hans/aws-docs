@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Signing keys and troubleshooting JWT authorizers
-<a name="rest-api-jwt-authorizer-keys"></a>
 
 A JWT authorizer verifies token signatures with the public keys that the issuer publishes. API Gateway finds those keys through the issuer's OIDC discovery document.
 

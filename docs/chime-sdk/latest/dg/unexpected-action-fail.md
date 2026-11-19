@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/unexpected-action-fa
 ---
 
 # Debugging unexpected ACTION\_FAILED events
-<a name="unexpected-action-fail"></a>
 
 If you receive an unexpected `ACTION_FAILED` event, check the following:
 

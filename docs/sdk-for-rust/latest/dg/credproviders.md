@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/credproviders.htm
 ---
 
 # Using AWS SDK for Rust credential providers
-<a name="credproviders"></a>
 
  All requests to AWS must be cryptographically signed by using credentials issued by AWS. At runtime, the SDK retrieves configuration values for credentials by checking several locations.
 

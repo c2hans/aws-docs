@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Placem
 ---
 
 # PlacementStrategy
-<a name="API_PlacementStrategy"></a>
 
 The task placement strategy for a task or service.
 

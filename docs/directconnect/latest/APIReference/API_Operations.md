@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Op
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AcceptDirectConnectGatewayAssociationProposal](API_AcceptDirectConnectGatewayAssociationProposal.md)

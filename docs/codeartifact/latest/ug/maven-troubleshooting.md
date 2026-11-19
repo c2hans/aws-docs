@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-troubleshoo
 ---
 
 # Maven troubleshooting
-<a name="maven-troubleshooting"></a>
 
 The following information might help you troubleshoot common issues with Maven and CodeArtifact.
 

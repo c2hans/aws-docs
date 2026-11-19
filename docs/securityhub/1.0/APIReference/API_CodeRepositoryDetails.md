@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CodeRep
 ---
 
 # CodeRepositoryDetails
-<a name="API_CodeRepositoryDetails"></a>
 
  Details about an external code repository with which you can connect your AWS resources. The connection is established through Amazon Inspector.
 

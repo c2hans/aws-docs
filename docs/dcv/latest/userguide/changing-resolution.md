@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/changing-resolution
 ---
 
 # Changing display resolution
-<a name="changing-resolution"></a>
 
 By default, Amazon DCV automatically adapts the display resolution of the remote machine to match the current size of the client. When the client window is resized, DCV requests the server to change its display resolution to a size that fits within the client window.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetSpot
 ---
 
 # FleetSpotCapacityRebalance
-<a name="API_FleetSpotCapacityRebalance"></a>
 
 The strategy to use when Amazon EC2 emits a signal that your Spot Instance is at an elevated risk of being interrupted.
 

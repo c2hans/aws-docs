@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_Network.ht
 ---
 
 # Network
-<a name="API_Network"></a>
 
 Represents a Wickr network with all its configuration and status information.
 

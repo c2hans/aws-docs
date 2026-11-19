@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/webcam-
 ---
 
 # Enabling and Disabling Webcam Support
-<a name="webcam-support"></a>
 
 WorkSpaces Applications supports real-time audio-video (AV) by redirecting local webcam video input to WorkSpaces Applications streaming sessions. This capability enables your users to use their local webcam for video and audio conferencing within an WorkSpaces Applications streaming session. With real-time AV and support for real-time audio, your users can collaborate by using familiar video and audio conferencing applications without having to leave their WorkSpaces Applications streaming session.
 

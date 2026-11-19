@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Validating query behavior after migration
-<a name="tstk-validate"></a>
 
 The split from `string` into `text` and `keyword` changes how fields respond to several common operations, so validate the affected query patterns against the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection before you cut over production traffic. Run representative queries from the Migration Console pod with `console clusters curl target`, and confirm the following:
 +  **Term queries** — A `term` query expects an exact, non-analyzed value. It works against `keyword` fields but typically returns no results against a `text` field, because the indexed tokens are lowercased and tokenized. If a field that you query with `term` migrated to `text`, switch to a `match` query or target a `keyword` sub-field.

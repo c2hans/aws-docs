@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key and value pair that is associated with the specified signaling channel.
 

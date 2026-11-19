@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/dbms-driver-connectio
 ---
 
 # Using drivers with AWS Glue DataBrew
-<a name="dbms-driver-connections"></a>
 
 A *database driver* is a file or URL that implements a database connection protocol, for example Java Database Connectivity (JDBC). The driver functions as an adaptor or a translator between a specific database management system (DBMS) and another system.
 

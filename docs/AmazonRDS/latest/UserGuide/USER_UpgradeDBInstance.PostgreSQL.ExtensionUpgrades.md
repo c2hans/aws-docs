@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Upgrading PostgreSQL extensions in RDS for PostgreSQL databases
-<a name="USER_UpgradeDBInstance.PostgreSQL.ExtensionUpgrades"></a>
 
 A PostgreSQL engine upgrade doesn't upgrade most PostgreSQL extensions. To update an extension after a version upgrade, use the `ALTER EXTENSION UPDATE` command.
 

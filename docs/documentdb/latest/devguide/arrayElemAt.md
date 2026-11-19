@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/arrayElemAt.h
 ---
 
 # $arrayElemAt
-<a name="arrayElemAt"></a>
 
 The `$arrayElemAt` operator in Amazon DocumentDB allows you to retrieve an element from an array by its index position. This is particularly useful when you need to access a specific element within an array field in your documents.
 

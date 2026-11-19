@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/manually-allocate-ipam.h
 ---
 
 # Manually allocate a CIDR to a pool to reserve IP address space
-<a name="manually-allocate-ipam"></a>
 
 Follow the steps in this section to manually allocate a CIDR to a pool. You might do this to reserve a CIDR within an IPAM pool for later use. You can also reserve space in your IPAM pool to represent an on-premises network. IPAM manages that reservation for you and indicates if any CIDRs overlap with your on-premises IP space.
 

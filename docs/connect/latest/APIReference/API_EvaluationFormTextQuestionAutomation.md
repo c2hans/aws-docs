@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormTextQuestionAutomation
-<a name="API_EvaluationFormTextQuestionAutomation"></a>
 
 Information about the automation configuration in text questions.
 

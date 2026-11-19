@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-isolated
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Run a pod in isolated mode
-<a name="sandboxing-isolated-setup"></a>
 
 Isolated mode protects the node and other pods from a compromised container. The parent instance is trusted.
 

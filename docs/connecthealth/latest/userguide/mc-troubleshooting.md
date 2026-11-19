@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/mc-troubl
 ---
 
 # Troubleshooting medical coding
-<a name="mc-troubleshooting"></a>
 
 **Topics**
 + [API errors](#mc-ts-api-errors)

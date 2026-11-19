@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-e
 ---
 
 # Mounting on EC2 Mac instances using the EFS mount helper
-<a name="mounting-fs-mount-helper-ec2-mac"></a>
 
 This procedure requires the following:
 + You have installed the `amazon-efs-utils` package on the Amazon EC2 Mac instance. For more information, see [Installing the Amazon EFS client on EC2 Mac instances running macOS Big Sur, macOS Monterey, or macOS Ventura](installing-amazon-efs-utils.md#install-efs-utils-macOS).

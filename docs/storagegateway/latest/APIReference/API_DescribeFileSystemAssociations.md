@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeFileSystemAssociations
-<a name="API_DescribeFileSystemAssociations"></a>
 
 Gets the file system association information. This operation is only supported for FSx File Gateways.
 

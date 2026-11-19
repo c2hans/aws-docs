@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ecs-
 ---
 
 # Amazon Elastic Container Service Exec in AWS Toolkit for Visual Studio Code
-<a name="ecs-exec"></a>
 
 You can issue single commands in an Amazon Elastic Container Service (Amazon ECS) container with the AWS Toolkit for Visual Studio Code, using the Amazon ECS Exec feature.
 

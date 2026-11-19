@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge.html
 ---
 
 # Model deployment at the edge with SageMaker Edge Manager
-<a name="edge"></a>
 
 **Warning**
  SageMaker Edge Manager is being discontinued on April 26th, 2024. For more information about continuing to deploy your models to edge devices, see [SageMaker Edge Manager end of life](edge-eol.md).

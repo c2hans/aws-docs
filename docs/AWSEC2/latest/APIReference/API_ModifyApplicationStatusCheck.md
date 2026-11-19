@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyApp
 ---
 
 # ModifyApplicationStatusCheck
-<a name="API_ModifyApplicationStatusCheck"></a>
 
 Modifies an existing application status check. You can update the protocol, port, path, thresholds, and other configuration settings. The following rules apply:
 + The application status check must exist and belong to your account.

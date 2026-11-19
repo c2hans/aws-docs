@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL05-BP03 Control and limit retry calls
-<a name="rel_mitigate_interaction_failure_limit_retries"></a>
 
 |  |
 | --- |

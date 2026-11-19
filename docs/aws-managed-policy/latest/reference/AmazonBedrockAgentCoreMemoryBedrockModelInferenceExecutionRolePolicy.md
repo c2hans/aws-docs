@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy
-<a name="AmazonBedrockAgentCoreMemoryBedrockModelInferenceExecutionRolePolicy"></a>
 
 **Description**: Provides Bedrock Model inference permission to Bedrock agent core memory
 

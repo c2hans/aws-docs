@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidr
 ---
 
 # ListCidrCollections
-<a name="API_ListCidrCollections"></a>
 
 Returns a paginated list of CIDR collections in the AWS account (metadata only).
 

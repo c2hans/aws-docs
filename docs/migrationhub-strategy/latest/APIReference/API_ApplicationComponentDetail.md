@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ApplicationComponentDetail
-<a name="API_ApplicationComponentDetail"></a>
 
  Contains detailed information about an application component.
 

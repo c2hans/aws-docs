@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-c
 ---
 
 # Updating an Amazon ECS cluster
-<a name="update-cluster-v2"></a>
 
 You can modify the following cluster properties:
 + Set a default capacity provider

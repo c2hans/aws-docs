@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ts-supported-browser
 ---
 
 # Understanding the system requirements for Amazon Chime SDK meetings
-<a name="ts-supported-browsers"></a>
 
 As part of troubleshooting, make sure you code for supported browsers. For a current list of supported browsers, versions, and operating systems, see [Amazon Chime SDK system requirements](meetings-sdk.md#mtg-browsers). The [developer guide and FAQs on Github](https://github.com/aws/amazon-chime-sdk-js/issues/1059) address browser and other compatibility issues. Also, familiarize yourself with the [known browser issues](https://aws.github.io/amazon-chime-sdk-js/modules/faqs.html#known-browser-issues) on GitHub and any workarounds.
 

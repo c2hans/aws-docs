@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## When should I build an MLOps platform?
 <a name="when-should-i-build-an-mlops-platform-.fd92819d-e41a-5c5d-bd48-a87da917b77f"></a>

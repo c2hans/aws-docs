@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Lice
 ---
 
 # LicenseConfigurationRequest
-<a name="API_LicenseConfigurationRequest"></a>
 
 Specifies license configuration for WorkSpace Instance.
 

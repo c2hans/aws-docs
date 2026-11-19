@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html
 ---
 
 # UEFI Secure Boot on AL2023
-<a name="uefi-secure-boot"></a>
 
 AL2023 supports UEFI Secure Boot starting with release 2023.1. You must use AL2023 with Amazon EC2 instances that support both UEFI and UEFI Secure Boot. For more information, see [Requirements to launch an Amazon EC2 instance in UEFI boot mode](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-instance-boot-mode.html) in the *Amazon EC2 User Guide*.
 

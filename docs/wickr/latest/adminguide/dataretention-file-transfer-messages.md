@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/dataretention-fi
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # File transfer messages
-<a name="dataretention-file-transfer-messages"></a>
 
 The **file** JSON object contains the details of the file being transferred, described in the following table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeInsi
 ---
 
 # DescribeInsight
-<a name="API_DescribeInsight"></a>
 
 Returns details about an insight that you specify using its ID.
 

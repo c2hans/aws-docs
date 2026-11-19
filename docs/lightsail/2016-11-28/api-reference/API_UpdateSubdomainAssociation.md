@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UpdateSubdomainAssociation
-<a name="API_UpdateSubdomainAssociation"></a>
 
 Associates a Lightsail subdomain with a resource, disassociates it from a resource, or moves it from one resource to another resource.
 

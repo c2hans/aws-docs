@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetResour
 ---
 
 # GetResourceConfigHistory
-<a name="API_GetResourceConfigHistory"></a>
 
 **Important**
 For accurate reporting on the compliance status, you must record the `AWS::Config::ResourceCompliance` resource type.

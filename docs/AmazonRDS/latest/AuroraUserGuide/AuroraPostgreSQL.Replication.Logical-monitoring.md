@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Monitoring the write-through cache and logical slots for Aurora PostgreSQL logical replication
-<a name="AuroraPostgreSQL.Replication.Logical-monitoring"></a>
 
 Monitor the logical replication write-through cache and manage logical slots to improve performance for your Aurora PostgreSQL DB cluster. Following, find more information about the write-through cache and logical slots.
 

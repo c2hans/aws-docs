@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/epochDate-functio
 ---
 
 # epochDate
-<a name="epochDate-function"></a>
 
 `epochDate` converts an epoch date into a standard date in the format yyyy-MM-dd**T**kk:mm:ss.SSS**Z**, using the format pattern syntax specified in [Class DateTimeFormat](http://www.joda.org/joda-time/apidocs/org/joda/time/format/DateTimeFormat.html) in the Joda project documentation. An example is `2015-10-15T19:11:51.003Z`.
 

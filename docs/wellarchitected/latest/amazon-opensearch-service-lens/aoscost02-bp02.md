@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSCOST02-BP02 Use instances optimized for heavy indexing use cases
-<a name="aoscost02-bp02"></a>
 
  Improve indexing throughput and cost-effectiveness by using OR1 instances, which provide optimized storage for heavy indexing use cases.
 

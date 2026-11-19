@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/env-vars.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Working with Custom Environment Variables in the AWS Cloud9 IDE
-<a name="env-vars"></a>
 
 The AWS Cloud9 Integrated Development Environment (IDE) supports setting custom environment variables. You can set custom environment variables in the AWS Cloud9 IDE in the following ways.
 +  [Set Command-Level Custom Environment Variables](#env-vars-command-level)

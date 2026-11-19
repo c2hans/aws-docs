@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Get the name of the agent in Connect Customer agent workspace
-<a name="3P-apps-agent-requests-getname"></a>
 
 Returns the name of the user that's currently logged in to the Connect Customer agent workspace.
 

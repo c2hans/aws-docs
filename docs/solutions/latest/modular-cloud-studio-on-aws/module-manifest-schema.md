@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Module manifest schema
-<a name="module-manifest-schema"></a>
 
 ```
 $schema: http://json-schema.org/draft-04/schema#

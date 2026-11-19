@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetResources.h
 ---
 
 # GetResources
-<a name="API_GetResources"></a>
 
 Lists information about a collection of Resource resources.
 

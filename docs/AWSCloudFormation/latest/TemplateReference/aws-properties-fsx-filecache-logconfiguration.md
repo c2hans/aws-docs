@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::FileCache LogConfiguration
-<a name="aws-properties-fsx-filecache-logconfiguration"></a>
 
 <a name="aws-properties-fsx-filecache-logconfiguration-description"></a>The `LogConfiguration` property type specifies Property description not available. for an [AWS::FSx::FileCache](aws-resource-fsx-filecache.md).
 

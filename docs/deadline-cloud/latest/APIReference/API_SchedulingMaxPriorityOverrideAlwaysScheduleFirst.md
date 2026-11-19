@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SchedulingMaxPriorityOverrideAlwaysScheduleFirst
-<a name="API_SchedulingMaxPriorityOverrideAlwaysScheduleFirst"></a>
 
 Specifies that jobs at the maximum priority (100) are always scheduled first.
 

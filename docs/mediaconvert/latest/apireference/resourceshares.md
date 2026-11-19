@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/resourc
 ---
 
 # ResourceShares
-<a name="resourceshares"></a>
 
 ## URI
 <a name="resourceshares-url"></a>

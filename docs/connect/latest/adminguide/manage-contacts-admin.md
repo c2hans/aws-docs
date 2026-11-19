@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-contact
 ---
 
 # Manage contacts from the Contact details page in Connect Customer
-<a name="manage-contacts-admin"></a>
 
 On the **Contact details** page, you can transfer, reschedule, end, or update the task template for an in-progress contact. You can also add or remove tags from an in-progress or completed contact that you can access.
 

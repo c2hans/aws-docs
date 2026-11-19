@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopCo
 ---
 
 # StopCompilationJob
-<a name="API_StopCompilationJob"></a>
 
 Stops a model compilation job.
 

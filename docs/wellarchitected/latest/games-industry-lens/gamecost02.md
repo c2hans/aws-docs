@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Cost-effective resources
-<a name="gamecost02"></a>
 
 |  GAMECOST02: How are you choosing the right compute solution for your game servers?  |
 | --- |

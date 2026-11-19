@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_RuleStatu
 ---
 
 # RuleStatusCounts
-<a name="API_RuleStatusCounts"></a>
 
 A summary of rule results, providing counts for each status type.
 

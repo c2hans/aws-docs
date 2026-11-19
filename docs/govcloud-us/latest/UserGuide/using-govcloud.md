@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/using-govcl
 ---
 
 # Using AWS GovCloud (US) Regions
-<a name="using-govcloud"></a>
 
 If you have used other AWS Regions, you should be aware of specific differences in the AWS GovCloud (US) Regions. For example, Amazon Resource Names (ARNs) and endpoints are different in the AWS GovCloud (US) Regions. For CLI and SDK calls, the Region names are us-gov-west-1 and us-gov-east-1.
 

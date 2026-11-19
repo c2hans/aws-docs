@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/quotas.html
 ---
 
 # Service quotas in Amazon SES
-<a name="quotas"></a>
 
 The following sections list and describe the quotas that apply to Amazon SES resources and operations. Some quotas can be increased, while others can't. To determine whether you can request an increase for a quota, refer to the **Adjustable** column.
 

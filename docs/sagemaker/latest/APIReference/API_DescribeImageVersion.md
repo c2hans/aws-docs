@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeImageVersion
-<a name="API_DescribeImageVersion"></a>
 
 Describes a version of a SageMaker AI image.
 

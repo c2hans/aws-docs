@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CallA
 ---
 
 # CallAnalyticsJobDetails
-<a name="API_CallAnalyticsJobDetails"></a>
 
 Contains details about a call analytics job, including information about skipped analytics features.
 

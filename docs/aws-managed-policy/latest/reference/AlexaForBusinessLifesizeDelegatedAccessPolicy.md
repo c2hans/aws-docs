@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Alex
 ---
 
 # AlexaForBusinessLifesizeDelegatedAccessPolicy
-<a name="AlexaForBusinessLifesizeDelegatedAccessPolicy"></a>
 
 **Description**: Provide access to Lifesize AVS devices
 

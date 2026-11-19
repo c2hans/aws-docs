@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleG
 ---
 
 # ManagedRuleGroupConfig
-<a name="API_ManagedRuleGroupConfig"></a>
 
 Additional information that's used by a managed rule group. Many managed rule groups don't require this.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
 ## Self-service WorkSpace management capabilities
 <a name="self-service-workspace-management-capabilities"></a>

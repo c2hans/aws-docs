@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterOperationSelectedFieldsConfiguration
-<a name="API_FilterOperationSelectedFieldsConfiguration"></a>
 
 The configuration of selected fields in the`CustomActionFilterOperation`.
 

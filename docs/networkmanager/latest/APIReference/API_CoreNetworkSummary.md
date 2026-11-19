@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkSummary
-<a name="API_CoreNetworkSummary"></a>
 
 Returns summary information about a core network.
 

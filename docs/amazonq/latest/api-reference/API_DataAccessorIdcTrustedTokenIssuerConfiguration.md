@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataAcc
 ---
 
 # DataAccessorIdcTrustedTokenIssuerConfiguration
-<a name="API_DataAccessorIdcTrustedTokenIssuerConfiguration"></a>
 
 Configuration details for IAM Identity Center Trusted Token Issuer (TTI) authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListStreamKeys
-<a name="API_ListStreamKeys"></a>
 
 Gets summary information about stream keys for the specified channel.
 

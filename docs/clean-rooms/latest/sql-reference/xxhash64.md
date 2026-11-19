@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/xxhash6
 ---
 
 # xxHASH64 function
-<a name="xxhash64"></a>
 
 The xxhash64 function returns a 64-bit hash value of the arguments.
 

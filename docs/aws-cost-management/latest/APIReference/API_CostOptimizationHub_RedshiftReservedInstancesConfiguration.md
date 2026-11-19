@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RedshiftReservedInstancesConfiguration
-<a name="API_CostOptimizationHub_RedshiftReservedInstancesConfiguration"></a>
 
 The Redshift reserved instances configuration used for recommendations.
 

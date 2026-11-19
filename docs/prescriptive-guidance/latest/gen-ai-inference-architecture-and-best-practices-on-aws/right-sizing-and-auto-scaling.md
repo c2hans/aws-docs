@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Right-sizing and auto-scaling an inference system
-<a name="right-sizing-and-auto-scaling"></a>
 
 Fundamental to designing an inference system is the selection and sizing of the underlying compute infrastructure and the policies for dynamically scaling it based on inference demand and inference service-level objectives (SLOs) like end-to-end latency or time to first token (TTFT). We recommend the following steps for right sizing and scaling.
 

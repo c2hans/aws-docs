@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/fsx-section.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `[fsx]` section
-<a name="fsx-section"></a>
 
 Defines configuration settings for an attached FSx for Lustre file system. For more information, see [Amazon FSx CreateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html) in the *Amazon FSx API Reference*.
 
@@ -234,7 +233,7 @@ Support for [`fsx_backup_id`](#fsx-backup-id) was added in AWS ParallelCluster v
 
 **(Optional)** Attaches an existing FSx for Lustre file system.
 
-If this option is specified, only the [`shared_dir`](#fsx-shared-dir) and [`fsx_fs_id`](#fsx-fs-id) settings in the [`[fsx]` section](#fsx-section) are used and any other settings in the [`[fsx]` section](#fsx-section) are ignored.
+If this option is specified, only the [`shared_dir`](#fsx-shared-dir) and [`fsx_fs_id`](#fsx-fs-id) settings in the [`[fsx]` section](fsx-section.md) are used and any other settings in the [`[fsx]` section](fsx-section.md) are ignored.
 
 ```
 fsx_fs_id = fs-073c3803dca3e28a6

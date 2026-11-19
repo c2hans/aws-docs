@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListD
 ---
 
 # ListDevicePositionsResponseEntry
-<a name="API_ListDevicePositionsResponseEntry"></a>
 
 Contains the tracker resource details.
 

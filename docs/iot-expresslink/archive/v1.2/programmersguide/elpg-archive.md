@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmers
 ---
 
 # Archive
-<a name="elpg-archive"></a>
 
 The following archive versions of this Programmer's Guide are available:
 + [AWS IoT ExpressLink Programmer's Guide **v1.1.2**](https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programmersguide/elpg.html)

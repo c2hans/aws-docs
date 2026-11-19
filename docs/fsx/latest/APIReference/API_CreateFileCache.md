@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileCa
 ---
 
 # CreateFileCache
-<a name="API_CreateFileCache"></a>
 
 Creates a new Amazon File Cache resource.
 

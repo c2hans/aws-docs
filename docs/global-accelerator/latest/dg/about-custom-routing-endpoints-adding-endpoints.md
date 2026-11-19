@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custo
 ---
 
 # Add a VPC subnet endpoint for a custom routing accelerator
-<a name="about-custom-routing-endpoints-adding-endpoints"></a>
 
 You add Amazon Virtual Private Cloud (VPC) subnet endpoints to endpoint groups in your custom routing accelerators so that you can direct user traffic to destination Amazon EC2 instances in the subnet.
 

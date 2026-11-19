@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/auto-retry-bu
 ---
 
 # Retry builds automatically in AWS CodeBuild
-<a name="auto-retry-build"></a>
 
 You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to automatically retry your builds in AWS CodeBuild. With auto-retry enabled, CodeBuild will automatically call `RetryBuild` using the project's service role after a failed build up to a specified limit. For example, if the auto-retry limit is set to two, CodeBuild will call the `RetryBuild` API to automatically retry your build for up to two additional times.
 

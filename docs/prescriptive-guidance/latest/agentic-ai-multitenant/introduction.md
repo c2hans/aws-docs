@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Building multi-tenant architectures for agentic AI on AWS
-<a name="introduction"></a>
 
 *Aaron Sempf and Tod Golding, Amazon Web Services*
 

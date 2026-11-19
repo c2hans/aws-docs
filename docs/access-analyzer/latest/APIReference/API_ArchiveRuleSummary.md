@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ArchiveRuleSummary
-<a name="API_ArchiveRuleSummary"></a>
 
 Contains information about an archive rule. Archive rules automatically archive new findings that meet the criteria you define when you create the rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PrimaryA
 ---
 
 # PrimaryAttributeAccessControlConfigurationItem
-<a name="API_PrimaryAttributeAccessControlConfigurationItem"></a>
 
 A primary attribute access control configuration item.
 

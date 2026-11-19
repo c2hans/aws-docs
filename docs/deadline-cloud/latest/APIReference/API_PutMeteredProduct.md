@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # PutMeteredProduct
-<a name="API_PutMeteredProduct"></a>
 
 Adds a metered product.
 

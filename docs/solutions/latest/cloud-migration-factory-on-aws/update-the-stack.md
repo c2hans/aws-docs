@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Update the solution
-<a name="update-the-stack"></a>
 
 If you have previously deployed the solution, follow this procedure to update the Cloud Migration Factory on AWS solution CloudFormation stack to get the latest version of the solution’s framework.
 

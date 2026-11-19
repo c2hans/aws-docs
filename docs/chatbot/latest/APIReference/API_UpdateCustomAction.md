@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_UpdateCu
 ---
 
 # UpdateCustomAction
-<a name="API_UpdateCustomAction"></a>
 
 Updates a custom action.
 

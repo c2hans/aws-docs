@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Au
 ---
 
 # AudioSegmentationConfiguration
-<a name="API_agent_AudioSegmentationConfiguration"></a>
 
 Configuration for segmenting audio content during multimodal knowledge base ingestion. Determines how audio files are divided into chunks for processing.
 

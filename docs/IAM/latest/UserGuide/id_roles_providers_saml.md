@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # SAML 2.0 federation
-<a name="id_roles_providers_saml"></a>
 
 AWS supports identity federation with [SAML 2.0 (Security Assertion Markup Language 2.0)](https://wiki.oasis-open.org/security), an open standard that many identity providers (IdPs) use. This feature enables federated single sign-on (SSO), so users can log into the AWS Management Console or call AWS API operations without you having to create an IAM user for everyone in your organization. By using SAML, you can simplify the process of configuring federation with AWS, because you can use the IdP's service instead of [writing custom identity proxy code](https://docs.aws.amazon.com/STS/latest/UsingSTS/CreatingFedTokens.html).
 

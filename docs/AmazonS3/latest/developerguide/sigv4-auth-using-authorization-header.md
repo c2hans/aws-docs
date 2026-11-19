@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-aut
 ---
 
 # Authenticating Requests: Using the Authorization Header (AWS Signature Version 4)
-<a name="sigv4-auth-using-authorization-header"></a>
 
 **Topics**
 + [Overview](#sigv4-auth-header-overview)

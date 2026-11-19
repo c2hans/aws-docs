@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/use-tf-with-b2b.ht
 ---
 
 # Using Transfer Family with B2B Data Interchange
-<a name="use-tf-with-b2b"></a>
 
 [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html) is a secure data transfer service that enables you to move files into and out of AWS over industry standard protocols such as SFTP, AS2, FTPS, and FTP.
 

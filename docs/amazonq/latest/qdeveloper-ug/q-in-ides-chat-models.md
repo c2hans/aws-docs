@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-ides-c
 ---
 
 # Selecting a model for Amazon Q chat in IDEs
-<a name="q-in-ides-chat-models"></a>
 
 You can select the model you want Amazon Q to use while chatting in the IDE. The model you select persists across all future chat sessions.
 

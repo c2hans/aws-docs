@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/performance-mea
 ---
 
 # Assessing performance by measuring
-<a name="performance-measures"></a>
 
 There are several features of the appliance that affect performance:
 + CPU usage

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessContentBlockStopEvent
-<a name="API_HarnessContentBlockStopEvent"></a>
 
 Event indicating the end of a content block.
 

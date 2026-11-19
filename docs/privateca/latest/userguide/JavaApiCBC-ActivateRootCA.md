@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApiCBC-Ac
 ---
 
 # Activate a Root CA for Node Operational Certificates (NOC).
-<a name="JavaApiCBC-ActivateRootCA"></a>
 
 This Java sample shows how to use the [RootCACertificate\_APIPassthrough/V1 definition](template-definitions.md#RootCACertificate_APIPassthrough) template to create and install a [Matter](https://buildwithmatter.com) Root CA certificate to issue NOCs. The AuthorityKeyIdentifier (AKI) extension is optional for NOC Root CA certificates. To set an AKI, you must generate a Base64-encoded AKI value and pass it through a CustomExtension.
 

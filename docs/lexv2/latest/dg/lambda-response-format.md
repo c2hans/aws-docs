@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/lambda-response-format.h
 ---
 
 # AWS Lambda response format for Lex V2
-<a name="lambda-response-format"></a>
 
 The second step in integrating a Lambda function into your Amazon Lex V2 bot is to understand the fields in the Lambda function response and to determine which parameters you want to manipulate. The following JSON object shows the general format of an Lambda response that is returned to Amazon Lex V2:
 

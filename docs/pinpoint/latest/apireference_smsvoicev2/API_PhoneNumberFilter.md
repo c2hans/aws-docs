@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PhoneNumberFilter
-<a name="API_PhoneNumberFilter"></a>
 
 The information for a phone number that meets a specified criteria.
 

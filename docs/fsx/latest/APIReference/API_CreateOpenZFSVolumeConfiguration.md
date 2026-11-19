@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateOpenZF
 ---
 
 # CreateOpenZFSVolumeConfiguration
-<a name="API_CreateOpenZFSVolumeConfiguration"></a>
 
 Specifies the configuration of the Amazon FSx for OpenZFS volume that you are creating.
 

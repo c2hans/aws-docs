@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Disruption budgets
-<a name="6-3-set-budgets"></a>
 
 Disruption budgets control how many nodes Karpenter can disrupt simultaneously — this prevents aggressive consolidation from causing availability issues while still allowing cost optimization to proceed.
 

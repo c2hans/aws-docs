@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/vacations.
 ---
 
 # .vacations
-<a name="vacations"></a>
 
 Used by the travel and tourism industry.
 

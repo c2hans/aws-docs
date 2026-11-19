@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # OnBehalfOfAuthenticationConfig
-<a name="API_OnBehalfOfAuthenticationConfig"></a>
 
 Specifies the client authentication method to use for the on-behalf-of token exchange.
 

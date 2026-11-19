@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_ConnectCas
 ---
 
 # ConnectCaseFilter
-<a name="API_connect-cases_ConnectCaseFilter"></a>
 
 A filter for related items of type `ConnectCase`.
 

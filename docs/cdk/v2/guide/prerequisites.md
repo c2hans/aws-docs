@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/prerequisites.html
 ---
 
 # AWS CDK prerequisites
-<a name="prerequisites"></a>
 
 Complete all prerequisites before getting started with the AWS Cloud Development Kit (AWS CDK).
 

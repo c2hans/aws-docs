@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerEndpoint
-<a name="API_RouteServerEndpoint"></a>
 
 Describes a route server endpoint and its properties.
 

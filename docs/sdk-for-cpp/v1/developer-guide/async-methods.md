@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/async-met
 ---
 
 # Asynchronous programming using the AWS SDK for C\+\+
-<a name="async-methods"></a>
 
 ## Asynchronous SDK methods
 <a name="asynchronous-sdk-methods"></a>

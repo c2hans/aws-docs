@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/custom-data-id
 ---
 
 # Custom Data Identifier
-<a name="custom-data-identifiers-id"></a>
 
 The Custom Data Identifier resource provides access to the repository of custom data identifiers for your Amazon Macie account. A *custom data identifier* is a set of criteria that you define to detect sensitive data in a data source. The criteria consist of a regular expression (*regex*) that defines a text pattern to match and, optionally, character sequences and a proximity rule that refine the analysis of data. In addition to detection criteria, you can optionally define severity levels for findings that a custom data identifier produces. Severity levels are based on the number of occurrences of text that match the custom data identifier's detection criteria. For more information, see [Building custom data identifiers](https://docs.aws.amazon.com/macie/latest/user/custom-data-identifiers.html) in the *Amazon Macie User Guide*.
 

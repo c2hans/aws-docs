@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderProperties
-<a name="API_ProviderProperties"></a>
 
 An object containing the `providerServiceARN`, `intermediateSourceConfiguration`, and `providerConfiguration`.
 

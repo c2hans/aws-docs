@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/dms-neptune-gra
 ---
 
 # Creating a Neptune GraphMappingConfig
-<a name="dms-neptune-graph-mapping"></a>
 
 The `GraphMappingConfig` that you create specifies how data extracted from a source data store should be loaded into a Neptune DB cluster. Its format differs depending on whether it is intended for loading RDF data or for loading property-graph data.
 

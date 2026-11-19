@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 11: Validate and switch traffic
-<a name="pb-es68-validate-full"></a>
 
 When the full backfill completes, validate completeness across all indexes:
 

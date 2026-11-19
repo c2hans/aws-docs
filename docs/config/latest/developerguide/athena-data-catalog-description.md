@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/athena-data
 ---
 
 # athena-data-catalog-description
-<a name="athena-data-catalog-description"></a>
 
 Checks if Amazon Athena data catalogs have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist.
 

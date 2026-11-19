@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::DataAccessor AttributeFilter
-<a name="aws-properties-qbusiness-dataaccessor-attributefilter"></a>
 
 Enables filtering of responses based on document attributes or metadata fields.
 
@@ -64,7 +63,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `AndAllFilters`  <a name="cfn-qbusiness-dataaccessor-attributefilter-andallfilters"></a>
 Performs a logical `AND` operation on all supplied filters.
 *Required*: No
-*Type*: Array of [AttributeFilter](#aws-properties-qbusiness-dataaccessor-attributefilter)
+*Type*: Array of [AttributeFilter](aws-properties-qbusiness-dataaccessor-attributefilter.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ContainsAll`  <a name="cfn-qbusiness-dataaccessor-attributefilter-containsall"></a>
@@ -112,11 +111,11 @@ Performs a less than or equals operation on two document attributes or metadata 
 `NotFilter`  <a name="cfn-qbusiness-dataaccessor-attributefilter-notfilter"></a>
 Performs a logical `NOT` operation on all supplied filters.
 *Required*: No
-*Type*: [AttributeFilter](#aws-properties-qbusiness-dataaccessor-attributefilter)
+*Type*: [AttributeFilter](aws-properties-qbusiness-dataaccessor-attributefilter.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OrAllFilters`  <a name="cfn-qbusiness-dataaccessor-attributefilter-orallfilters"></a>
  Performs a logical `OR` operation on all supplied filters.
 *Required*: No
-*Type*: Array of [AttributeFilter](#aws-properties-qbusiness-dataaccessor-attributefilter)
+*Type*: Array of [AttributeFilter](aws-properties-qbusiness-dataaccessor-attributefilter.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

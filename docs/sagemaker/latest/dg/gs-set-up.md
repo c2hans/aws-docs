@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html
 ---
 
 # Complete Amazon SageMaker AI prerequisites
-<a name="gs-set-up"></a>
 
 Before you can set up Amazon SageMaker AI, you must complete the following prerequisites.
 + **Required**: You will need to create an Amazon Web Services (AWS) account to get access to all of the AWS services and resources for the account.

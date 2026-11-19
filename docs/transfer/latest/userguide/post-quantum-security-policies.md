@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/post-quantum-s
 ---
 
 # Using hybrid post-quantum key exchange with AWS Transfer Family
-<a name="post-quantum-security-policies"></a>
 
  Transfer Family supports a hybrid post-quantum key establishment option for the Secure Shell (SSH) protocol. Post-quantum key establishment is needed because it's already possible to record network traffic and save it for decryption in future by a quantum computer, which is called a *store-now-harvest-later* attack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # LeftExpression
-<a name="API_LeftExpression"></a>
 
 Left expression of the event metadata filter.
 

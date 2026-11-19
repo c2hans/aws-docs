@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobThemeOverrideProperties
-<a name="API_AssetBundleExportJobThemeOverrideProperties"></a>
 
 Controls how a specific `Theme` resource is parameterized in the returned CloudFormation template.
 

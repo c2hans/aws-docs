@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-co
 ---
 
 # Adding an RDS for Oracle tenant database to your CDB instance
-<a name="oracle-cdb-configuring.adding.pdb"></a>
 
 In the RDS for Oracle multi-tenant configuration, a tenant database is a PDB. To add a tenant database, make sure you meet the following prerequisites:
 + Your CDB has the multi-tenant configuration enabled. For more information, see [Multi-tenant configuration of the CDB architecture](Oracle.Concepts.CDBs.md#multi-tenant-configuration).

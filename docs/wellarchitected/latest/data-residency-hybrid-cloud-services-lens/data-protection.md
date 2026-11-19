@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 | DRHCSEC08: What mechanisms are you using to recover from data corruption and data deletion, or do you have a way to provide point-in-time views of your data? |
 | --- |

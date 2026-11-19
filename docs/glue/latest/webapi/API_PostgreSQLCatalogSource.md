@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PostgreSQLCatalog
 ---
 
 # PostgreSQLCatalogSource
-<a name="API_PostgreSQLCatalogSource"></a>
 
 Specifies a PostgresSQL data source in the AWS Glue Data Catalog.
 

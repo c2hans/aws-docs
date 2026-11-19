@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/create-kro-capabili
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create a kro capability
-<a name="create-kro-capability"></a>
 
 This topic explains how to create a kro capability on your Amazon EKS cluster.
 

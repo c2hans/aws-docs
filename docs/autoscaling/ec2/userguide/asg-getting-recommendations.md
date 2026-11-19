@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-getting-re
 ---
 
 # Get instance type recommendations with AWS Compute Optimizer
-<a name="asg-getting-recommendations"></a>
 
 AWS provides Amazon EC2 instance type recommendations to help you improve performance, save money, or both, by using features powered by AWS Compute Optimizer. You can use these recommendations to decide whether to move to a new instance type in your Auto Scaling group.
 

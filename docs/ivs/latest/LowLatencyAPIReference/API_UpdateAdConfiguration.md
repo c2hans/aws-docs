@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Up
 ---
 
 # UpdateAdConfiguration
-<a name="API_UpdateAdConfiguration"></a>
 
 Updates a specified ad configuration.
 

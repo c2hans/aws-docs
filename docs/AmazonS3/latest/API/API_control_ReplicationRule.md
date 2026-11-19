@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Replicat
 ---
 
 # ReplicationRule
-<a name="API_control_ReplicationRule"></a>
 
 Specifies which S3 on Outposts objects to replicate and where to store the replicas.
 

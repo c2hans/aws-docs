@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *August 2023*
 

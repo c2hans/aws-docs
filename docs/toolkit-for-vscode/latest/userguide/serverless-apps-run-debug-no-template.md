@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serv
 ---
 
 # Running and debugging Lambda functions directly from code
-<a name="serverless-apps-run-debug-no-template"></a>
 
 When testing the AWS SAM application, you can choose to run and debug just the Lambda function and exclude other resources that the AWS SAM template defines. This approach involves using the [CodeLens](https://code.visualstudio.com/blogs/2017/02/12/code-lens-roundup) feature to identify Lambda function handlers in the source code that you can directly invoke.
 

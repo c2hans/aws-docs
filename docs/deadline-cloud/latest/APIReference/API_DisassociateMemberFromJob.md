@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DisassociateMemberFromJob
-<a name="API_DisassociateMemberFromJob"></a>
 
 Disassociates a member from a job.
 

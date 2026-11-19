@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Parameter Reference
-<a name="sap-hana-pacemaker-sles-parameters"></a>
 
 The cluster setup uses parameters, including SID and System Number that are unique to your setup. It is useful to predetermine the values with the following examples and guidance.
 

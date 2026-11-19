@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # OutgoingKeyMaterial
-<a name="API_OutgoingKeyMaterial"></a>
 
 Parameter information of the outgoing TR31WrappedKeyBlock containing the transaction key.
 

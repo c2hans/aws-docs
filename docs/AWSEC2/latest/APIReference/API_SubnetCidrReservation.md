@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetCid
 ---
 
 # SubnetCidrReservation
-<a name="API_SubnetCidrReservation"></a>
 
 Describes a subnet CIDR reservation.
 

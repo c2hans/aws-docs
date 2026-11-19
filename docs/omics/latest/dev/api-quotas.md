@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/api-quotas.html
 ---
 
 # HealthOmics API quotas
-<a name="api-quotas"></a>
 
 HealthOmics has the following quotas related to API operations. Where indicated, the quota is adjustable. To request an increase, use the [quota increase form](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase).
 

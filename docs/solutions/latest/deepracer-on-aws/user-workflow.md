@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/user-w
 ---
 
 # User workflow
-<a name="user-workflow"></a>
 
 Training a model with DeepRacer on AWS involves the following general tasks:
 

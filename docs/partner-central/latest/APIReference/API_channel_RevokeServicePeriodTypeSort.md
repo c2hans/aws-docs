@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RevokeServicePeriodTypeSort
-<a name="API_channel_RevokeServicePeriodTypeSort"></a>
 
 Sorting options specific to revoke service period handshakes.
 

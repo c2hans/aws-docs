@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule NotificationContent
-<a name="aws-properties-connect-rule-notificationcontent"></a>
 
 A map of localized notification content where keys are locale codes and values are the notification text in that locale. Each localized string can be 0-500 visible characters.
 

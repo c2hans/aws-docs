@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # UpdateResolverRule
-<a name="API_route53resolver_UpdateResolverRule"></a>
 
 Updates settings for a specified Resolver rule. `ResolverRuleId` is required, and all other parameters are optional. If you don't specify a parameter, it retains its current value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Configure and run workflows
-<a name="use-the-solution"></a>
 
 This section describes how to configure, pilot, and run a migration after you deploy Migration Assistant on Amazon EKS. The day-to-day operator interface is the **Workflow CLI**, which runs in the Migration Console pod (`migration-console-0`) on Amazon EKS. The supporting `console` CLI provides component-level inspection and ad-hoc operations during validation and troubleshooting.
 

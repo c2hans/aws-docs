@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Rando
 ---
 
 # RandomCutForestConfiguration
-<a name="API_RandomCutForestConfiguration"></a>
 
 Configuration for the Random Cut Forest algorithm used for anomaly detection in time-series data.
 

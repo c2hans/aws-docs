@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Enabling client-side LDAPS using AD Connector
-<a name="ad_connector_ldap_client_side"></a>
 
 Client-side LDAPS support in AD Connector encrypts communications between Microsoft Active Directory (AD) and AWS applications. Examples of such applications include WorkSpaces, AWS IAM Identity Center, Quick, and Amazon Chime. This encryption helps you to better protect your organization's identity data and meet your security requirements.
 

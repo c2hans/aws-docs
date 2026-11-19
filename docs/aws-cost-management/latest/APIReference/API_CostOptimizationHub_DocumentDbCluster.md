@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DocumentDbCluster
-<a name="API_CostOptimizationHub_DocumentDbCluster"></a>
 
 The Amazon DocumentDB cluster recommendation details.
 

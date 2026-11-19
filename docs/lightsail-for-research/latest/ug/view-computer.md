@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/view-co
 ---
 
 # View Lightsail for Research virtual computer details
-<a name="view-computer"></a>
 
 Complete the following steps to view a list of virtual computers and their details in your Lightsail for Research account.
 

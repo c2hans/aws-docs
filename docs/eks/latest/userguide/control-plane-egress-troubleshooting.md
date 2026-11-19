@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/control-plane-egres
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshooting control plane egress issues
-<a name="control-plane-egress-troubleshooting"></a>
 
 When using the `CUSTOMER_ROUTED` control plane egress mode, you are responsible for network connectivity from the control plane ENIs. This page covers common issues and their solutions.
 

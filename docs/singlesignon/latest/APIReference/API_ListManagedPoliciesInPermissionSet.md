@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListManagedPoliciesInPermissionSet
-<a name="API_ListManagedPoliciesInPermissionSet"></a>
 
 Lists the AWS managed policy that is attached to a specified permission set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateApplication
-<a name="API_connect-app-integrations_CreateApplication"></a>
 
 Creates and persists an Application resource.
 

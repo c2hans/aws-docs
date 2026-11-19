@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_List
 ---
 
 # ListInsightsClosedStatusFilter
-<a name="API_ListInsightsClosedStatusFilter"></a>
 
  Used to filter for insights that have the status `CLOSED`.
 

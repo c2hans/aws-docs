@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Implementing pg\_columnmask in an end-to-end workflow
-<a name="AuroraPostgreSQL.Security.DynamicMasking.WorkflowExample"></a>
 
 This section demonstrates a complete implementation of `pg_columnmask` using a sample employee table with sensitive data. You'll learn how to create custom masking functions, define multiple masking policies with different weight levels for various roles (intern, support, analyst), and observe how users with single or multiple role memberships see different levels of masked data. The examples also cover masking behavior in DML statements with RETURNING clauses, triggers on tables versus views, and policy management operations including renaming, altering weights, and cleanup.
 

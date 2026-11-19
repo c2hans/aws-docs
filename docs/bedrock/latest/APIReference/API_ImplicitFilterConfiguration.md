@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Implicit
 ---
 
 # ImplicitFilterConfiguration
-<a name="API_ImplicitFilterConfiguration"></a>
 
 Configuration for implicit filtering in Knowledge Base vector searches. Implicit filtering allows you to automatically filter search results based on metadata attributes without requiring explicit filter expressions in each query.
 

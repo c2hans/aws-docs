@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentI
 ---
 
 # DocumentInfo
-<a name="API_DocumentInfo"></a>
 
 Identifies a document for which to retrieve status information
 

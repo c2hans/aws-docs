@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/view-number-details.
 ---
 
 # Viewing phone number details
-<a name="view-number-details"></a>
 
 You view the details of your inventory phone numbers for several reasons. For example, you can see the Voice Connector or SIP Media Application that a number is assigned to. You can also see if text messages are enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/set-certificate-val
 ---
 
 # Set certificate validation policy
-<a name="set-certificate-validation-policy"></a>
 
 Amazon DCV uses a secure TLS connection for communication between the server and client. The certificate validation policy determines how the Amazon DCV client responds when a certificate can't be verified as trustworthy. Set one of the following options in the connection file:
 + `Strict`: Prohibits the connection if there is any problem validating the TLS certificate.

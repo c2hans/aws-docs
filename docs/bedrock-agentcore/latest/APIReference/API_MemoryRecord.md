@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecord
-<a name="API_MemoryRecord"></a>
 
 Contains information about a memory record in an AgentCore Memory resource.
 

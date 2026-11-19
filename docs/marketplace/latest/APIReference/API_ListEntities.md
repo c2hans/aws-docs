@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_List
 ---
 
 # ListEntities
-<a name="API_ListEntities"></a>
 
 Provides the list of entities of a given type.
 

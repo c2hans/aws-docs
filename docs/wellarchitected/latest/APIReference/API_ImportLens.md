@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ImportLens
-<a name="API_ImportLens"></a>
 
 Import a new custom lens or update an existing custom lens.
 

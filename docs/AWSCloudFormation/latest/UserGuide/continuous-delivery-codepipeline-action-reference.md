@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conti
 ---
 
 # CloudFormation configuration properties reference
-<a name="continuous-delivery-codepipeline-action-reference"></a>
 
 When you build a CodePipeline pipeline, you add a `Deploy` action to the pipeline with CloudFormation as a provider. You then must specify which CloudFormation action the pipeline invokes and the action's settings. This topic describes the CloudFormation configuration properties. To specify properties, you can use the CodePipeline console, or you can create a JSON object to use for the AWS CLI, CodePipeline API, or CloudFormation templates.
 
@@ -68,7 +67,7 @@ The following example defines a value for the `ParameterName` parameter by using
 ## Configuration properties (JSON object)
 <a name="continuous-delivery-codepipeline-action-reference-json"></a>
 
-When you specify `CloudFormation` as a provider for a stage action, define the following properties in the `Configuration` property. Use the JSON object for the AWS CLI, CodePipeline API, or CloudFormation templates. For examples, see [Walkthrough: Building a pipeline for test and production stacks](continuous-delivery-codepipeline-basic-walkthrough.md) and [CloudFormation configuration properties reference](#continuous-delivery-codepipeline-action-reference).
+When you specify `CloudFormation` as a provider for a stage action, define the following properties in the `Configuration` property. Use the JSON object for the AWS CLI, CodePipeline API, or CloudFormation templates. For examples, see [Walkthrough: Building a pipeline for test and production stacks](continuous-delivery-codepipeline-basic-walkthrough.md) and [CloudFormation configuration properties reference](continuous-delivery-codepipeline-action-reference.md).
 
 `ActionMode`
 The CloudFormation action that CodePipeline invokes when it processes the associated stage. Specify only one of the following action modes:

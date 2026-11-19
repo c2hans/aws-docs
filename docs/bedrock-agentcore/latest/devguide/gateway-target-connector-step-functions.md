@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # AWS Step Functions as Connector Target
-<a name="gateway-target-connector-step-functions"></a>
 
  AWS Step Functions is a workflow service that coordinates AWS services, your own code, and HTTP APIs as a series of steps called a state machine. Step Functions provides built-in retries and error handling, and it passes data between steps. For Standard workflows, it also records every step in an execution history. To learn more, see [What is Step Functions?](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) in the * AWS Step Functions Developer Guide*.
 

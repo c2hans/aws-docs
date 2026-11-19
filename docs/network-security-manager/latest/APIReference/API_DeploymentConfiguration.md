@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeploymentConfiguration
-<a name="API_DeploymentConfiguration"></a>
 
 Configuration settings that control a deployment's behavior.
 

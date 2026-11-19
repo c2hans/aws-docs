@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ml-videos.html
 ---
 
 # See customer use examples
-<a name="ml-videos"></a>
 
 The following videos, which use the Preview version of Machine Learning (ML) with Amazon Athena, showcase ways in which you can use SageMaker AI with Athena.
 

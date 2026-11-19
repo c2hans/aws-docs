@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-
 ---
 
 # Requirements for .smil manifests
-<a name="supported-inputs-vod-smil"></a>
 
 When sending a VOD MP4 asset to AWS Elemental MediaPackage, a .smil manifest must be included. The .smil manifest is an XML file that acts as a wrapper for all the files in the asset, letting MediaPackage know which MP4s are part of a single asset.
 

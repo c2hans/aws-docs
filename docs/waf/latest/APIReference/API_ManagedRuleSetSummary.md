@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleS
 ---
 
 # ManagedRuleSetSummary
-<a name="API_ManagedRuleSetSummary"></a>
 
 High-level information for a managed rule set.
 

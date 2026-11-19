@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagValues
-<a name="API_bcmDashboards_TagValues"></a>
 
 Specifies tag-based filtering options for cost and usage queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingJobMetrics
-<a name="API_IdMappingJobMetrics"></a>
 
 An object that contains metrics about an ID mapping job, including counts of input records, processed records, and mapped records between source and target identifiers.
 

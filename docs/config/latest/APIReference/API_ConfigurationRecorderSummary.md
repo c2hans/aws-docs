@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Configura
 ---
 
 # ConfigurationRecorderSummary
-<a name="API_ConfigurationRecorderSummary"></a>
 
 A summary of a configuration recorder, including the `arn`, `name`, `servicePrincipal`, `recordingScope`, and `provider`.
 

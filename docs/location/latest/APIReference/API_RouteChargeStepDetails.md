@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteCh
 ---
 
 # RouteChargeStepDetails
-<a name="API_RouteChargeStepDetails"></a>
 
 Details about the EV charge at the current step.
 

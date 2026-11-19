@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateImagePermissions
-<a name="API_UpdateImagePermissions"></a>
 
 Adds or updates permissions for the specified private image.
 

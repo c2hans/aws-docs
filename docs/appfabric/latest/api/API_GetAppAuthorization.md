@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_GetAppAuthoriza
 ---
 
 # GetAppAuthorization
-<a name="API_GetAppAuthorization"></a>
 
 Returns information about an app authorization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationFilter
 ---
 
 # IntegrationFilter
-<a name="API_IntegrationFilter"></a>
 
 A filter that can be used when invoking a `DescribeIntegrations` request.
 

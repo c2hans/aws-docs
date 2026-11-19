@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Release an Amazon EC2 Dedicated Host
-<a name="dedicated-hosts-releasing"></a>
 
 If you no longer need Dedicated Host, you can stop the instances running on the host, direct them to launch on a different host, and then *release* the host.
 

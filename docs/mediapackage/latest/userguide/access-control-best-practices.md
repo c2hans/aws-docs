@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/access-con
 ---
 
 # Access control best practices for AWS Elemental MediaPackage
-<a name="access-control-best-practices"></a>
 
 MediaPackage provides a variety of security features and tools. The following topics describe some tools and settings that you might want to use to help control access when performing certain tasks or operating in specific environments. Proper application of these tools can help maintain the integrity of your data and help ensure that your resources are accessible to the intended users.
 

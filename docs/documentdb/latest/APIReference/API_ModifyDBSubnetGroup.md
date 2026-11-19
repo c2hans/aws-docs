@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Modif
 ---
 
 # ModifyDBSubnetGroup
-<a name="API_ModifyDBSubnetGroup"></a>
 
 Modifies an existing subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the AWS Region.
 

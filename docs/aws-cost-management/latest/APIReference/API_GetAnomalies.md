@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetAnomalies
-<a name="API_GetAnomalies"></a>
 
 Retrieves all of the cost anomalies detected on your account during the time period that's specified by the `DateInterval` object. Anomalies are available for up to 90 days.
 

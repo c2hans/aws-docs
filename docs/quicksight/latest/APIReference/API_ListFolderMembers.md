@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListF
 ---
 
 # ListFolderMembers
-<a name="API_ListFolderMembers"></a>
 
 List all assets (`DASHBOARD`, `ANALYSIS`, and `DATASET`) in a folder.
 

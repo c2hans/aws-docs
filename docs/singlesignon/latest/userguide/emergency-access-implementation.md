@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/emergency-
 ---
 
 # Summary of emergency access configuration
-<a name="emergency-access-implementation"></a>
 
 To configure emergency access, you must complete the following tasks:
 

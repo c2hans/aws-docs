@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-
 ---
 
 # Managing Amazon Neptune Instances
-<a name="manage-console-instances"></a>
 
 The following sections have information on instance-level operations.
 

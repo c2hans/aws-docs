@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 This solution is designed to work with web applications deployed with CloudFront or an ALB. If you don’t already have one of these resources configured, complete the applicable tasks before you launch this solution.
 

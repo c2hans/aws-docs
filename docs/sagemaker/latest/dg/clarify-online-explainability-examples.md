@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-expla
 ---
 
 # Code examples: SDK for Python
-<a name="clarify-online-explainability-examples"></a>
 
 This section provides sample code to create and invoke an endpoint that uses SageMaker Clarify online explainability. These code examples use the [AWS SDK for Python.](https://aws.amazon.com/sdk-for-python/)
 

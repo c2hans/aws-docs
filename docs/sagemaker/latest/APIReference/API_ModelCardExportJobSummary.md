@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCardExportJobSummary
-<a name="API_ModelCardExportJobSummary"></a>
 
 The summary of the Amazon SageMaker Model Card export job.
 

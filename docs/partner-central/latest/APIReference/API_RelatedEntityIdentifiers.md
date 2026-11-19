@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RelatedEntityIdentifiers
-<a name="API_RelatedEntityIdentifiers"></a>
 
 This field provides the associations' information for other entities with the opportunity. These entities include identifiers for `AWSProducts`, `Partner Solutions`, and `AWSMarketplaceOffers`.
 

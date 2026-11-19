@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Har
 ---
 
 # HarvestedHlsManifest
-<a name="API_HarvestedHlsManifest"></a>
 
 Information about a harvested HLS manifest.
 

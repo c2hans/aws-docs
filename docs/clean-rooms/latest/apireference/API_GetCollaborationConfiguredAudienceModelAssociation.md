@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetCollaborationConfiguredAudienceModelAssociation
-<a name="API_GetCollaborationConfiguredAudienceModelAssociation"></a>
 
 Retrieves a configured audience model association within a collaboration.
 

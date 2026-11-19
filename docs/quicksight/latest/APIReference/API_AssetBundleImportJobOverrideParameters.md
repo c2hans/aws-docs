@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobOverrideParameters
-<a name="API_AssetBundleImportJobOverrideParameters"></a>
 
 A list of overrides that modify the asset bundle resource configuration before the resource is imported.
 

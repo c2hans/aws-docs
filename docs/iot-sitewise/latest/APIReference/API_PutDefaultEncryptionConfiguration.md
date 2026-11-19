@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Put
 ---
 
 # PutDefaultEncryptionConfiguration
-<a name="API_PutDefaultEncryptionConfiguration"></a>
 
 Sets the default encryption configuration for the AWS account. For more information, see [Key management](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/key-management.html) in the * AWS IoT SiteWise User Guide*.
 

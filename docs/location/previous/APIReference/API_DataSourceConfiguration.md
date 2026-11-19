@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_DataS
 ---
 
 # DataSourceConfiguration
-<a name="API_DataSourceConfiguration"></a>
 
 Specifies the data storage option chosen for requesting Places.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Detection
-<a name="detection"></a>
 
 | AOSSEC02: How do you track and audit user and API access to your OpenSearch Service domains? |
 | --- |

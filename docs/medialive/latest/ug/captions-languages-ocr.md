@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/captions-languages-o
 ---
 
 # Constraints for using OCR conversion
-<a name="captions-languages-ocr"></a>
 
 MediaLive uses OCR (optical character recognition) technology for the following scenarios:
 + The input captions are DVB-Sub or SCTE-27

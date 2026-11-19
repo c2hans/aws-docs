@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateLink.htm
 ---
 
 # CreateLink
-<a name="API_CreateLink"></a>
 
 Creates a new link between gateways.
 

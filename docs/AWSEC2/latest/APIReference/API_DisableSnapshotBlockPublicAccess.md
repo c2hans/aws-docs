@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableSn
 ---
 
 # DisableSnapshotBlockPublicAccess
-<a name="API_DisableSnapshotBlockPublicAccess"></a>
 
 Disables the *block public access for snapshots* setting at the account level for the specified AWS Region. After you disable block public access for snapshots in a Region, users can publicly share snapshots in that Region.
 

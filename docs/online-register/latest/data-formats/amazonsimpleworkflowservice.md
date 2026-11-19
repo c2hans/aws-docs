@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Simple Workflow Service
-<a name="amazonsimpleworkflowservice"></a>
 
 Amazon Simple Workflow Service provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Princip
 ---
 
 # Principal
-<a name="API_Principal"></a>
 
 Provides user and group information used for filtering documents to use for generating Amazon Q Business conversation responses.
 

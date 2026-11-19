@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/settings-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Configuring your Audit Manager notifications
-<a name="settings-notifications"></a>
 
 You can configure Audit Manager to send notifications to the Amazon SNS topic of your choice. If you're subscribed to that SNS topic, you receive notifications directly whenever you sign in to Audit Manager.
 

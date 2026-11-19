@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Amazon DocumentDB connections
-<a name="aws-glue-programming-etl-connect-documentdb-home"></a>
 
 You can use AWS Glue for Spark to read from and write to tables in Amazon DocumentDB. You can connect to Amazon DocumentDB using credentials stored in AWS Secrets Manager through a AWS Glue connection.
 

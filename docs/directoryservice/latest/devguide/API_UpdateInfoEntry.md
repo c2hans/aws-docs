@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Upd
 ---
 
 # UpdateInfoEntry
-<a name="API_UpdateInfoEntry"></a>
 
 An entry of update information related to a requested update type.
 

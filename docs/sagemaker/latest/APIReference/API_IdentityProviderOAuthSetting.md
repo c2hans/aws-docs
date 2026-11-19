@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Identi
 ---
 
 # IdentityProviderOAuthSetting
-<a name="API_IdentityProviderOAuthSetting"></a>
 
 The Amazon SageMaker Canvas application setting where you configure OAuth for connecting to an external data source, such as Snowflake.
 

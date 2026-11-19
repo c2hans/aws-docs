@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Delet
 ---
 
 # DeletePolicy
-<a name="API_DeletePolicy"></a>
 
 Deletes a resilience policy.
 

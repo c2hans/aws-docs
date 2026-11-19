@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Amazon Aurora PostgreSQL wait events
-<a name="AuroraPostgreSQL.Reference.Waitevents"></a>
 
 The following are common wait events for Aurora PostgreSQL. To learn more about wait events and tuning your Aurora PostgreSQL DB cluster, see [Tuning with wait events for Aurora PostgreSQL](AuroraPostgreSQL.Tuning.md).
 

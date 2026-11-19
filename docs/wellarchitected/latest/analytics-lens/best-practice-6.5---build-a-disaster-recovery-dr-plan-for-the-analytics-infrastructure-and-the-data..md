@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 6.5 – Build a disaster recovery (DR) plan for the analytics infrastructure and the data
-<a name="best-practice-6.5---build-a-disaster-recovery-dr-plan-for-the-analytics-infrastructure-and-the-data."></a>
 
  Discuss with business stakeholders to understand maximum amount of data loss (RPO) and maximum amount of service loss (RTO).
 

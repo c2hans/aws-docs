@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # Retrieve metric data (GetMetricData)
-<a name="metrics-classic-getdata"></a>
 
 `GetMetricData` is the primary API for retrieving Classic metric data points programmatically. It supports batch queries, math expressions, and queries in a single call.
 

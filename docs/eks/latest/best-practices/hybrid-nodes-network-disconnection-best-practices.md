@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/hybrid-nodes-n
 ---
 
 # Best practices for stability through network disconnections
-<a name="hybrid-nodes-network-disconnection-best-practices"></a>
 
 ## Highly available networking
 <a name="_highly_available_networking"></a>

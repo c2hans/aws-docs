@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Bootstrap failure error codes in Amazon EMR
-<a name="emr-troubleshoot-error-errordetail-bootstrap"></a>
 
 The following sections provide troubleshooting information for bootstrap failure error codes.
 

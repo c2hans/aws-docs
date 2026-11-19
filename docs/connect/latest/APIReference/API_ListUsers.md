@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListUser
 ---
 
 # ListUsers
-<a name="API_ListUsers"></a>
 
 Provides summary information about the users for the specified Connect Customer instance.
 

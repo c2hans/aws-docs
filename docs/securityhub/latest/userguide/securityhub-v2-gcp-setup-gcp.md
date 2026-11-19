@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Google Cloud Platform to integrate with Security Hub
-<a name="securityhub-v2-gcp-setup-gcp"></a>
 
 After you complete the [prerequisite tasks](securityhub-v2-gcp-prereqs.md), you can configure your Google Cloud Platform (GCP) environment to support integration with AWS Security Hub. To help you do this, the Security Hub console generates a setup script that is customized for your configuration.
 
@@ -65,8 +64,8 @@ $ gcloud services enable \
 
 $ gcloud services enable \
   firestore.googleapis.com iam.googleapis.com iamcredentials.googleapis.com \
-  logging.googleapis.com monitoring.googleapis.com orgpolicy.googleapis.com \
-  pubsub.googleapis.com run.googleapis.com secretmanager.googleapis.com \
+  logging.googleapis.com monitoring.googleapis.com pubsub.googleapis.com \
+  run.googleapis.com secretmanager.googleapis.com \
   serviceusage.googleapis.com sqladmin.googleapis.com sts.googleapis.com \
   storage.googleapis.com vpcaccess.googleapis.com \
   --project {{management-project}}
@@ -94,7 +93,7 @@ $ gcloud iam workload-identity-pools providers create-oidc connector-oidc-{{aws-
   --issuer-uri="https://{{uuid}}.tokens.sts.global.api.aws" \
   --allowed-audiences="https://sts.googleapis.com" \
   --attribute-mapping="google.subject=assertion.sub,attribute.aws_role=assertion.sub" \
-  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{aws-account-id}}:role/AWSConfigThirdPartyCloudFederationRole', 'arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty', 'arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty']"
+  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty', 'arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty']"
 ```
 
 Key values:
@@ -106,7 +105,7 @@ The following table lists the IAM roles that the provider admits, by capability.
 
 | Capability | Role ARN admitted by the provider |
 | --- | --- |
-| Resource configuration discovery (AWS Config) | arn:aws:iam::{{aws-account-id}}:role/AWSConfigThirdPartyCloudFederationRole and arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty |
+| Resource configuration discovery (AWS Config) | arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty |
 | Vulnerability management (Inspector) | arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.inspector2.amazonaws.com/AWSServiceRoleForAmazonInspector2ThirdParty |
 | Vulnerability management – VM scanning (AWS Systems Manager) | arn:aws:iam::{{aws-account-id}}:role/Inspector2SSMFederationRole-{{organization-id}} (only when you enable VM scanning; see [Step 8: Configure resources for vulnerability management](#securityhub-v2-gcp-setup-gcp-inspector)). The sample command does not include this role. If you enable VM scanning, add this role ARN to the provider's --attribute-condition. |
 

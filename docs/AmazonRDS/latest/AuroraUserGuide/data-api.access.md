@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Authorizing access to the Amazon RDS Data API
-<a name="data-api.access"></a>
 
 Users can invoke Amazon RDS Data API (Data API) operations only if they are authorized to do so. You can give a user permission to use Data API by attaching an AWS Identity and Access Management (IAM) policy that defines their privileges. You can also attach the policy to a role if you're using IAM roles. An AWS managed policy, `AmazonRDSDataFullAccess`, includes permissions for Data API.
 

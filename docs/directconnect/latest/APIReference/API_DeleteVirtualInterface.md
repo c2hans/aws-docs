@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DeleteVirtualInterface
-<a name="API_DeleteVirtualInterface"></a>
 
 Deletes a virtual interface.
 
@@ -52,7 +51,7 @@ The state of the virtual interface. The following are the possible values:
 +  `available`: A virtual interface that is able to forward traffic.
 +  `down`: A virtual interface that is BGP down.
 +  `testing`: A virtual interface is in this state immediately after calling [StartBgpFailoverTest](API_StartBgpFailoverTest.md) and remains in this state during the duration of the test.
-+  `deleting`: A virtual interface is in this state immediately after calling [DeleteVirtualInterface](#API_DeleteVirtualInterface) until it can no longer forward traffic.
++  `deleting`: A virtual interface is in this state immediately after calling [DeleteVirtualInterface](API_DeleteVirtualInterface.md) until it can no longer forward traffic.
 +  `deleted`: A virtual interface that cannot forward traffic.
 +  `rejected`: The virtual interface owner has declined creation of the virtual interface. If a virtual interface in the `Confirming` state is deleted by the virtual interface owner, the virtual interface enters the `Rejected` state.
 +  `unknown`: The state of the virtual interface is not available.

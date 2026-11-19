@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/eks-secrets
 ---
 
 # eks-secrets-encrypted
-<a name="eks-secrets-encrypted"></a>
 
 Checks if Amazon Elastic Kubernetes Service clusters are configured to have Kubernetes secrets encrypted using AWS Key Management Service (KMS) keys.
 + This rule is COMPLIANT if an EKS cluster has an encryptionConfig with secrets as one of the resources.

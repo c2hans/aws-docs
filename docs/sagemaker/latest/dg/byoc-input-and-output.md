@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/byoc-input-and-outpu
 ---
 
 # How Amazon SageMaker Processing Configures Input and Output For Your Processing Container
-<a name="byoc-input-and-output"></a>
 
 When you create a processing job using the `CreateProcessingJob` operation, you can specify multiple `ProcessingInput` and `ProcessingOutput`. values.
 

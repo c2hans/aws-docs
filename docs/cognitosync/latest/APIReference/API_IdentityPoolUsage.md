@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Iden
 ---
 
 # IdentityPoolUsage
-<a name="API_IdentityPoolUsage"></a>
 
 Usage information for the identity pool.
 

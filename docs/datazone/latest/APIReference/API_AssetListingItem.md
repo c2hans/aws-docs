@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetLi
 ---
 
 # AssetListingItem
-<a name="API_AssetListingItem"></a>
 
 The details of an asset published in an Amazon DataZone catalog.
 

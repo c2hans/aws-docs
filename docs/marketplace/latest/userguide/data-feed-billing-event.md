@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-b
 ---
 
 # Billing event data feed
-<a name="data-feed-billing-event"></a>
 
 This data feed provides information about billing events, including invoicing and disbursements.
 

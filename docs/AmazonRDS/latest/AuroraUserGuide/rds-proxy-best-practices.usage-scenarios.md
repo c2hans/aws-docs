@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-pro
 ---
 
 # Common usage scenarios
-<a name="rds-proxy-best-practices.usage-scenarios"></a>
 
 **Topics**
 + [Application scalability](#rds-proxy-best-practices.application-scalability)

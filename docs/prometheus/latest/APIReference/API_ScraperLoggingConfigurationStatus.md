@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Scrap
 ---
 
 # ScraperLoggingConfigurationStatus
-<a name="API_ScraperLoggingConfigurationStatus"></a>
 
 The status of a scraper logging configuration.
 

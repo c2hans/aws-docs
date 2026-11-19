@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_VpcSecurityG
 ---
 
 # VpcSecurityGroupMembership
-<a name="API_VpcSecurityGroupMembership"></a>
 
 Describes the status of a security group associated with the virtual private cloud (VPC) hosting your replication and DB instances.
 

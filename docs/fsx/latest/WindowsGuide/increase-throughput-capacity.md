@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/increase-through
 ---
 
 # Modifying throughput capacity
-<a name="increase-throughput-capacity"></a>
 
 You can increase or decrease your file system's throughput capacity using the Amazon FSx console, the AWS Command Line Interface (AWS CLI), or the Amazon FSx API, as described in the following procedures.
 

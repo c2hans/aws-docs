@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-mapping
 ---
 
 # Create an object type mapping in the Connect Customer console
-<a name="create-mapping-console"></a>
 
 The console provides a no-code experience for mapping data from your own and third-party applications with Amazon S3, Salesforce, ServiceNow, Zendesk, and Marketo.
 

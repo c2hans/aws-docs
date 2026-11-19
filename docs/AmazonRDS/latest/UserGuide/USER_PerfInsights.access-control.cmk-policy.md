@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 ---
 
 # Changing an AWS KMS policy for Database Insights
-<a name="USER_PerfInsights.access-control.cmk-policy"></a>
 
 Database Insights uses an AWS KMS key to encrypt sensitive data. When you enable Database Insights through the API or the console, you can do either of the following:
 + Choose the default AWS managed key.

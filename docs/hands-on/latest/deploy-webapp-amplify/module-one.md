@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/mo
 ---
 
 # Task 1: Create a new Amplify Project
-<a name="module-one"></a>
 
 |  |  |
 | --- |--- |

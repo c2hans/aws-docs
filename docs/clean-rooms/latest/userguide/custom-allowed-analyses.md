@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-allo
 ---
 
 # Allowed analyses
-<a name="custom-allowed-analyses"></a>
 
 The `allowedAnalyses` control in the custom analysis rule lets you allow specific custom queries, stored in analysis templates, to run on your configured table. You review analysis templates before adding them to this control. For more information about analysis templates, see [Analysis templates in AWS Clean Rooms](create-analysis-template.md).
 

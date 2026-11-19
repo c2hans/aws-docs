@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Batc
 ---
 
 # BatchUpdateRule
-<a name="API_BatchUpdateRule"></a>
 
 Updates the listener rules in a batch. You can use this operation to change the priority of listener rules. This can be useful when bulk updating or swapping rule priority.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Runbook
-<a name="API_Runbook"></a>
 
 Information about an Automation runbook used in a runbook workflow in Change Manager.
 

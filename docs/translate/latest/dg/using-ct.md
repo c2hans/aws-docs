@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/using-ct.html
 ---
 
 # Using custom terminologies
-<a name="using-ct"></a>
 
 To use a Custom Terminology when translating text with the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation, include the optional `TerminologyNames` parameter.
 

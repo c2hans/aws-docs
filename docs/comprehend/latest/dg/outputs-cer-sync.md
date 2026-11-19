@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/outputs-cer-sync.ht
 ---
 
 # Outputs for real-time analysis
-<a name="outputs-cer-sync"></a>
 
 ## Outputs for text inputs
 <a name="outputs-cer-sync-text"></a>

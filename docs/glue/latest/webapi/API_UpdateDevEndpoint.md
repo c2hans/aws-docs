@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateDevEndpoint
 ---
 
 # UpdateDevEndpoint
-<a name="API_UpdateDevEndpoint"></a>
 
 Updates a specified development endpoint.
 

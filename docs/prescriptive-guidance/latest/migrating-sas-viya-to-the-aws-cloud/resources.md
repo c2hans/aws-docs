@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-s
 ---
 
 # Resources
-<a name="resources"></a>
 
 **SAS documentation and resources**
 + [A First Look at Migration from SAS Viya 3.x to SAS Viya](https://communities.sas.com/t5/SAS-Communities-Library/A-first-look-at-Migration-from-SAS-Viya-3-x-to-SAS-Viya/ta-p/722929)

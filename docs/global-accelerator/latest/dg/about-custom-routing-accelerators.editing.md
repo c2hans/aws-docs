@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custo
 ---
 
 # Edit a custom routing accelerator in Global Accelerator
-<a name="about-custom-routing-accelerators.editing"></a>
 
 This section provides steps for how to update a custom accelerator on the console. To work with Global Accelerator programmatically, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 

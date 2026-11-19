@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/reg
 ---
 
 # Setting the AWS Region for the AWS SDK for Swift
-<a name="region"></a>
 
 You can access AWS services that operate in a specific geographic area by using AWS Regions. This can be useful both for redundancy and to keep your data and applications running close to where you and your users access them.
 

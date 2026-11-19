@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/provisi
 ---
 
 # Tutorial: Identifying User Resource Allocation
-<a name="provisioned-products-tutorial"></a>
 
 You can identify the user who provisioned a product and resources associated with the product using the AWS Service Catalog console. This tutorial helps translate this example to your own specific provisioned products.
 

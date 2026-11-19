@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstanc
 ---
 
 # DiscoverInstancesRevision
-<a name="API_DiscoverInstancesRevision"></a>
 
 Discovers the increasing revision associated with an instance.
 

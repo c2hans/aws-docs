@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCSEC02-BP01 Separate workloads that have different data residency requirements
-<a name="drhcsec02"></a>
 
  As attempting to implement different sets of preventative and detective controls in the same AWS account is complicated at best, we highly recommend separating workloads into different accounts especially when their data residency requirements are different.
 

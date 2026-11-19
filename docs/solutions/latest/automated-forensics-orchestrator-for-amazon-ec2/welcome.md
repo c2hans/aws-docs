@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # A self-service Guidance to capture and examine data from EC2 instances or EKS clusters and attached volumes for forensic analysis in the event of a potential security issue being detected
-<a name="welcome"></a>
 
 Automated Forensics Orchestrator for Amazon EC2 and EKS is a self-service Guidance that customers can deploy to quickly set up and configure a forensics orchestration workflow for their Security Operations Center (SOC). It allows their SOC to capture and examine data from EC2 instances and attached volumes as digital forensics evidence for forensic analysis, in the event a potential security branch. The Guidance currently supports EKS clusters hosted on EC2 instances.
 

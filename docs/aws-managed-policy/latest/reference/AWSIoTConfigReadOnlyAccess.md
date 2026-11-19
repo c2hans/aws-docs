@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTConfigReadOnlyAccess
-<a name="AWSIoTConfigReadOnlyAccess"></a>
 
 **Description**: This policy gives read only access to the AWS IoT configuration actions
 

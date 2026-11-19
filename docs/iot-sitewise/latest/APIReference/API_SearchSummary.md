@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sea
 ---
 
 # SearchSummary
-<a name="API_SearchSummary"></a>
 
 A summary of a single search as returned by ListSearches.
 

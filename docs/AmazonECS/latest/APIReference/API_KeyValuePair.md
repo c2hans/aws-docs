@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KeyVal
 ---
 
 # KeyValuePair
-<a name="API_KeyValuePair"></a>
 
 A key-value pair object.
 

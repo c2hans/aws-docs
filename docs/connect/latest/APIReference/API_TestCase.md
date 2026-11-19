@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TestCase
 ---
 
 # TestCase
-<a name="API_TestCase"></a>
 
 Contains information about a test case.
 

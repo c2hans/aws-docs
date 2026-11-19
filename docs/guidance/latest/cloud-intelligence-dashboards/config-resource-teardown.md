@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Teardown
-<a name="config-resource-teardown"></a>
 
 ## Remove the AWS Config Resource Compliance Dashboard dashboard resources
 <a name="remove-the-aws-config-resource-compliance-dashboard-dashboard-resources"></a>

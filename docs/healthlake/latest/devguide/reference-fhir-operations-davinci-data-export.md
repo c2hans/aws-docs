@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR R4 `$davinci-data-export` operation for HealthLake
-<a name="reference-fhir-operations-davinci-data-export"></a>
 
 The `$davinci-data-export` operation is an asynchronous FHIR operation that you can use to export healthcare data from AWS HealthLake. This operation supports multiple export types, including Member Attribution (ATR), PDex Provider Access, Payer-to-Payer, and Member Access APIs. It is a specialized version of the standard FHIR `$export` operation, designed to meet the requirements of the DaVinci implementation guides.
 

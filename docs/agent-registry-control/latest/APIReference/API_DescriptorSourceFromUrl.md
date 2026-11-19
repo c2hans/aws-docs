@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # DescriptorSourceFromUrl
-<a name="API_DescriptorSourceFromUrl"></a>
 
 URL-based descriptor source configuration, with credential provider configurations for authenticated URL retrieval.
 

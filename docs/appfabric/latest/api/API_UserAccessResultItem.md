@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_UserAccessResul
 ---
 
 # UserAccessResultItem
-<a name="API_UserAccessResultItem"></a>
 
 Contains information about a user's access to an application.
 

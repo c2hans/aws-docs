@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-ge-best-
 ---
 
 # Best practices for Amazon EventBridge global endpoints
-<a name="eb-ge-best-practices"></a>
 
 The following best practices are recommended when you set up global endpoints.
 

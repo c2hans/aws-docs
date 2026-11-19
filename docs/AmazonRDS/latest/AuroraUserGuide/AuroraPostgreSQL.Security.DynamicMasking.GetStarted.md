@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Getting started with dynamic masking
-<a name="AuroraPostgreSQL.Security.DynamicMasking.GetStarted"></a>
 
 To dynamically mask data, you install the `pg_columnmask` extension in your database and create masking policies for your tables. The setup process involves prerequisite verification, extension installation, role configuration, policy creation, and validation testing.
 

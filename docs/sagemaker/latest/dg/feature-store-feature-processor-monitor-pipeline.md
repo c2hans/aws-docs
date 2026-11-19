@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-featur
 ---
 
 # Monitor Amazon SageMaker Feature Store Feature Processor pipelines
-<a name="feature-store-feature-processor-monitor-pipeline"></a>
 
 AWS provides monitoring tools to watch your Amazon SageMaker AI resources and applications in real time, report when something goes wrong, and take automatic actions when appropriate. Feature Store Feature Processor pipelines are Pipelines, so the standard monitoring mechanisms and integrations are available. Operational metrics such as execution failures can be monitored via Amazon CloudWatch metrics and Amazon EventBridge events.
 

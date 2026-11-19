@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Syslog_
 ---
 
 # Troubleshooting syslog ingestion
-<a name="CWL_Syslog_Troubleshooting"></a>
 
 This section describes common issues with syslog ingestion and how to resolve them.
 

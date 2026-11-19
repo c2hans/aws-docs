@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetFile
-<a name="API_AssetFile"></a>
 
 Represents a single file within an asset, including its path, content, version, and timestamps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Monitor devices in an AWS Cloud WAN global network
-<a name="cloudwan-devices-monitoring"></a>
 
 Monitor device Amazon CloudWatch events on the AWS Cloud WAN Monitoring page.
 

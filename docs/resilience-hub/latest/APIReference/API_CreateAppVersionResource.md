@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # CreateAppVersionResource
-<a name="API_CreateAppVersionResource"></a>
 
 Adds a resource to the AWS Resilience Hub application and assigns it to the specified AppComponents. If you specify a new AppComponent, AWS Resilience Hub will automatically create the AppComponent.
 

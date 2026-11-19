@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BedrockMod
 ---
 
 # BedrockModelSpecification
-<a name="API_BedrockModelSpecification"></a>
 
 Contains information about the Amazon Bedrock model used to interpret the prompt used in descriptive bot building.
 

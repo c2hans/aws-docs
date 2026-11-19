@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/getting-started-l
 ---
 
 # Getting started with live-to-VOD content delivery in MediaPackage
-<a name="getting-started-ltov"></a>
 
 This Getting Started tutorial shows you how to use the AWS Elemental MediaPackage console to create a live-to-VOD (video on demand) asset and make it available for playback.
 

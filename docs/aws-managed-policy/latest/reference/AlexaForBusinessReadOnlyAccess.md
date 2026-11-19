@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Alex
 ---
 
 # AlexaForBusinessReadOnlyAccess
-<a name="AlexaForBusinessReadOnlyAccess"></a>
 
 **Description**: Provide read only access to AlexaForBusiness services
 

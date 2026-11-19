@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-request-att
 ---
 
 # Setting request attributes for your Lex V2 bot
-<a name="context-mgmt-request-attribs"></a>
 
 *Request attributes* contain request-specific information and apply only to the current request. A client application sends this information to Amazon Lex V2. Use request attributes to pass information that doesn't need to persist for the entire session. You can create your own request attributes or you can use predefined attributes. To send request attributes, use the `x-amz-lex-request-attributes` header in a [RecognizeUtterance](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeUtterance.html) or the `requestAttributes` field in a [RecognizeText](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeText.html) request. Because request attributes don't persist across requests like session attributes do, they are not returned in `RecognizeUtterance` or `RecognizeText` responses.
 

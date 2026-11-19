@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/action-interaction
 ---
 
 # Preparing action interaction data for training
-<a name="action-interactions-datasets"></a>
 
  If you use the [Next-Best-Action](native-recipe-next-best-action.md) custom recipe, Amazon Personalize uses action interactions data to identify user interest and predict the actions they will most likely take. An *action interaction* is an interaction involving a user and an action in your [Actions dataset](actions-datasets.md). For example, if you have an *enroll* action in your Actions dataset, and a user takes this action, you would record the user's ID, the action's ID, the timestamp, and for event type, record `TAKEN`.
 

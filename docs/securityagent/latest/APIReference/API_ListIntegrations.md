@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListIntegrations
-<a name="API_ListIntegrations"></a>
 
 Lists the integrations in your account, optionally filtered by provider or provider type.
 

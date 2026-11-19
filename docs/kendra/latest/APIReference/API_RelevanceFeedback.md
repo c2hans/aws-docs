@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Relevance
 ---
 
 # RelevanceFeedback
-<a name="API_RelevanceFeedback"></a>
 
 Provides feedback on how relevant a document is to a search. Your application uses the `SubmitFeedback` API to provide relevance information.
 

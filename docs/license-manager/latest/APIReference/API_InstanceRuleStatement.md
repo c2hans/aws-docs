@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # InstanceRuleStatement
-<a name="API_InstanceRuleStatement"></a>
 
 Instance rule statement.
 

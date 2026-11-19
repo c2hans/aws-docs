@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceResou
 ---
 
 # WorkspaceResourceAssociation
-<a name="API_WorkspaceResourceAssociation"></a>
 
 Describes the association between an application and a WorkSpace resource.
 

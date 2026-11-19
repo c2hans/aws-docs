@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/re
 ---
 
 # Replicate mainframe databases to AWS by using Precisely Connect
-<a name="replicate-mainframe-databases-to-aws-by-using-precisely-connect"></a>
 
 *Lucio Pereira, Sayantan Giri, and Balaji Mohan, Amazon Web Services*
 

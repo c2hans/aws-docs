@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applicati
 ---
 
 # Applications applicationId Unshare
-<a name="applications-applicationid-unshare"></a>
 
 ## URI
 <a name="applications-applicationid-unshare-url"></a>

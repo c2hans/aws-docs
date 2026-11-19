@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCu
 ---
 
 # ListCustomDetectionRuleOrgConfigurations
-<a name="API_ListCustomDetectionRuleOrgConfigurations"></a>
 
 Returns all organization-level configurations for custom detection rules. You can filter the results by status.
 

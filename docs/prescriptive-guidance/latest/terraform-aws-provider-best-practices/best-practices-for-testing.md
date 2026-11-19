@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Best practices for testing
-<a name="best-practices-for-testing"></a>
 
 Testing catches mistakes before they reach an environment. Terraform provides two layers of checks. Validation in the configuration (variable validation, preconditions and postconditions, and `check` blocks) runs during every plan. The `terraform test` command (Terraform 1.6 and later) runs test files against a module, either with a mocked provider or by creating real resources. Run both in your pipeline, together with the formatting, linting, and scanning steps described in [Follow coding standards](https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-aws-provider-best-practices/structure.html#coding-standards).
 

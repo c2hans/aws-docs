@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetLoaderJob
 ---
 
 # GetLoaderJobStatus
-<a name="API_GetLoaderJobStatus"></a>
 
 Gets status information about a specified load job. Neptune keeps track of the most recent 1,024 bulk load jobs, and stores the last 10,000 error details per job.
 

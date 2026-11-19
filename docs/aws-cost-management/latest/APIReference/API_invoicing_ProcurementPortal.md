@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProcurementPortal
-<a name="API_invoicing_ProcurementPortal"></a>
 
 Contains metadata for a procurement portal, including the portal identifier, name, and default feature configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ta
 ---
 
 # TaskSummary
-<a name="API_TaskSummary"></a>
 
 Contains summary information about a task.
 

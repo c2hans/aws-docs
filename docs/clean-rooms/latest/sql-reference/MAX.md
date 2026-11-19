@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/MAX.htm
 ---
 
 # MAX function
-<a name="MAX"></a>
 
  The MAX function returns the maximum value in a set of rows. DISTINCT or ALL might be used but do not affect the result.
 

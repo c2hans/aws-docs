@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListU
 ---
 
 # ListUniqueProblems
-<a name="API_ListUniqueProblems"></a>
 
 Gets information about unique problems, such as exceptions or crashes.
 

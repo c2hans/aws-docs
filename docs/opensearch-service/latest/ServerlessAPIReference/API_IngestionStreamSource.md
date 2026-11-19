@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionStreamSource
-<a name="API_IngestionStreamSource"></a>
 
 The source that an ingestion stream ingests data from.
 

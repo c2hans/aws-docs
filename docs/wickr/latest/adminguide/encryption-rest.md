@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/encryption-rest.
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # Encryption at rest
-<a name="encryption-rest"></a>
 
 AWS Wickr Data Retention Service transparently encrypts all retained messages and file attachments at rest by default. You do not need to perform any additional configuration to ensure your data is encrypted at rest. The Data Retention Service applies encryption on the server-side for all customer data stored in Amazon S3.
 

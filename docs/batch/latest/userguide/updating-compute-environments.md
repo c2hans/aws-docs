@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-
 ---
 
 # Update a compute environment in AWS Batch
-<a name="updating-compute-environments"></a>
 
 AWS Batch provides multiple strategies for updating compute environments, each designed for specific update scenarios and requirements. These approaches use the same underlying update API but represent different prescriptive methods for managing updates effectively. You can manage these updates using the AWS Batch console or the AWS CLI. Understanding these strategies helps you choose the most appropriate method for your needs while minimizing disruption to your workloads.
 

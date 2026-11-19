@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-assist-r
 ---
 
 # Recommend third-party applications in agent assist
-<a name="agent-assist-recommend-3p-apps"></a>
 
 Agent assist can recommend the third-party application that best solves the customer problem, such as an order management system or a ticketing tool. The recommendation appears as a button, and agents choose it to open the application in the agent workspace.
 

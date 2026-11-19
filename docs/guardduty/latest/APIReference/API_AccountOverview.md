@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountOverview
-<a name="API_AccountOverview"></a>
 
 Contains overview information about an account, including its findings and, for an organization, its member accounts.
 

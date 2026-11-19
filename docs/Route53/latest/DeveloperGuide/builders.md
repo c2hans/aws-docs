@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/builders.h
 ---
 
 # .builders
-<a name="builders"></a>
 
 Used by companies and individuals affiliated with the construction industry.
 

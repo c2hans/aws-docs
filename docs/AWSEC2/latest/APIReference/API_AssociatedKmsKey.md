@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociatedKmsKey
-<a name="API_AssociatedKmsKey"></a>
 
 Describes an AWS KMS key that is associated with an Amazon EBS snapshot, in addition to the key the snapshot is encrypted under. An associated key provides a second way to access the snapshot's data for cross-account sharing and copying.
 

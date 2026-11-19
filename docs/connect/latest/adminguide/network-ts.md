@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/network-ts.htm
 ---
 
 # Troubleshoot your network for call quality and disconnect problems
-<a name="network-ts"></a>
 
 Network issues are the number one reason for call quality and disconnect problems in contact centers. Before reading this topic, we recommend that you review [Set up your network to use the Connect Customer Contact Control Panel (CCP)](ccp-networking.md) to verify that your network is set up correctly for Connect Customer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateIdentityProviderConfig
-<a name="API_DisassociateIdentityProviderConfig"></a>
 
 Disassociates an identity provider configuration from a cluster.
 

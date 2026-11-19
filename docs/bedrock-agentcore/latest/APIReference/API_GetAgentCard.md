@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetAgentCard
-<a name="API_GetAgentCard"></a>
 
 Retrieves the A2A agent card associated with an AgentCore Runtime agent.
 

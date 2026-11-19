@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ChatPart
 ---
 
 # ChatParticipantRoleConfig
-<a name="API_ChatParticipantRoleConfig"></a>
 
 Configuration information for the chat participant role.
 

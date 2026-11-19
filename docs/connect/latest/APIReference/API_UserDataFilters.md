@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserData
 ---
 
 # UserDataFilters
-<a name="API_UserDataFilters"></a>
 
 A filter for the user data.
 

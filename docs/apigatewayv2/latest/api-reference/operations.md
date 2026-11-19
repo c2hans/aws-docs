@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/operat
 ---
 
 # Operations
-<a name="operations"></a>
 
 The Amazon API Gateway REST API includes the following operations.
 + [CreateApi](apis.md#CreateApi)

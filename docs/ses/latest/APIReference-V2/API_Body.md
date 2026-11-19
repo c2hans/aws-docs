@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Body.html
 ---
 
 # Body
-<a name="API_Body"></a>
 
 Represents the body of the email message.
 

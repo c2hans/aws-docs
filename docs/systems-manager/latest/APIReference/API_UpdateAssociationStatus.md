@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateAssociationStatus
-<a name="API_UpdateAssociationStatus"></a>
 
 Updates the status of the AWS Systems Manager document (SSM document) associated with the specified managed node.
 

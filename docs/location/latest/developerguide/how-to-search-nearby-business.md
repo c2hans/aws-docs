@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search nearby based on business chain
-<a name="how-to-search-nearby-business"></a>
 
 The SearchNearby API enables you to query nearby business chains. You can include or exclude specific business chains in your search. This feature allows end users to explore neighborhoods, discover points of interest, and more.
 

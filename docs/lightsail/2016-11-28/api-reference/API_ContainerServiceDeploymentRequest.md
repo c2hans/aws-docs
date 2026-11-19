@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerServiceDeploymentRequest
-<a name="API_ContainerServiceDeploymentRequest"></a>
 
 Describes a container deployment configuration of an Amazon Lightsail container service.
 

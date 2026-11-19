@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # UpdateKey
-<a name="API_geoapikeys_UpdateKey"></a>
 
 Updates the specified properties of a given API key resource.
 

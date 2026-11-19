@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dere
 ---
 
 # DeregisterTargets
-<a name="API_DeregisterTargets"></a>
 
 Deregisters the specified targets from the specified target group.
 

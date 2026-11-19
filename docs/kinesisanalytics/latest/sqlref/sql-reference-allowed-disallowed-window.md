@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Allowed and Disallowed Window Specifications
-<a name="sql-reference-allowed-disallowed-window"></a>
 
 Amazon Kinesis Data Analytics supports nearly all windows that end with the current row.
 

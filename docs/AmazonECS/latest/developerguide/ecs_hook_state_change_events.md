@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_hook
 ---
 
 # Amazon ECS service deployment hook state change events
-<a name="ecs_hook_state_change_events"></a>
 
 Amazon ECS sends hook state change events with the detail type **ECS Hook State Change**. These events are emitted when a deployment lifecycle hook changes status. The following is an event pattern that is used to create an EventBridge rule for Amazon ECS hook state change events.
 

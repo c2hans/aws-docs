@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Using Internet Monitor with Amazon EventBridge
-<a name="CloudWatch-IM-EventBridge-integration"></a>
 
 Health events that Internet Monitor creates for networking issues are published with Amazon EventBridge, so that you can send notifications about a degradation in end users' experience for your application. Both overall (global) health events and local health events are published to EventBridge. Global health events have an impact type of `AVAILABILITY` or `PERFORMANCE`, and local health events have an impact type of `LOCAL_AVAILABILITY` or `LOCAL_PERFORMANCE`.
 

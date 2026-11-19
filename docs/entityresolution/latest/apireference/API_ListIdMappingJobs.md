@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListIdMappingJobs
-<a name="API_ListIdMappingJobs"></a>
 
 Lists all ID mapping jobs for a given workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailManagedWords
-<a name="API_GuardrailManagedWords"></a>
 
 The managed word list that was configured for the guardrail. (This is a list of words that are pre-defined and managed by guardrails only.)
 

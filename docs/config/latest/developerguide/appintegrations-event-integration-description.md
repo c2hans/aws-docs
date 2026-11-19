@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appintegrat
 ---
 
 # appintegrations-event-integration-description
-<a name="appintegrations-event-integration-description"></a>
 
 Checks if Amazon AppIntegrations event integrations have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist.
 

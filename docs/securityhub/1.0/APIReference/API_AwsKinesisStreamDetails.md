@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsKine
 ---
 
 # AwsKinesisStreamDetails
-<a name="API_AwsKinesisStreamDetails"></a>
 
 Provides information about an Amazon Kinesis data stream.
 

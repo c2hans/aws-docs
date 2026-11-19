@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/places-qu
 ---
 
 # Querying and biasing
-<a name="places-querying-biasing"></a>
 
 Amazon Location Service Places API offers querying and biasing options to retrieve and search location data.
 

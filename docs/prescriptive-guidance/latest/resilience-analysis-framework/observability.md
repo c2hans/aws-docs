@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Failure mode observability
-<a name="observability"></a>
 
 To mitigate a failure mode, you first have to detect that it is currently impacting, or is about to impact, your workload. A mitigation is effective only if there is a signal that an action has to be taken. This means that part of creating any mitigation includes, at the very least, verifying that you have or are building the observability that's necessary to detect the impact of the failure.
 

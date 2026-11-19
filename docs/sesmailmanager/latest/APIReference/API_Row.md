@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # Row
-<a name="API_Row"></a>
 
 A result row containing metadata for an archived email message.
 

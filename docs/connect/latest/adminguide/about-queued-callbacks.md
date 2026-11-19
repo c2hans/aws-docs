@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/about-queued-c
 ---
 
 # Queued callbacks in real-time metrics in Connect Customer
-<a name="about-queued-callbacks"></a>
 
 This topic explains how queued callbacks appear in your real-time metrics reports and the contact record.
 

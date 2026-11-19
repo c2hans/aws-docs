@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DataQuery
 ---
 
 # DataQuery
-<a name="API_DataQuery"></a>
 
 A query used for retrieving network health data.
 

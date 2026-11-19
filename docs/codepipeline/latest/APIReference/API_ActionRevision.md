@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionRevision
-<a name="API_ActionRevision"></a>
 
 Represents information about the version (or revision) of an action.
 

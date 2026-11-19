@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/technical-faq
 ---
 
 # Technical FAQ—fields
-<a name="technical-faq-fields"></a>
 
  **Q: Does the integration support CSV format?**
 

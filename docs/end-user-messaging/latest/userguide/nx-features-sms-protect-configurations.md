@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Using protect configurations in AWS End User Messaging
-<a name="nx-features-sms-protect-configurations"></a>
 
 Use protect configurations to control which destination countries AWS End User Messaging can send your messages to. By controlling which countries you allow messages to be sent to, you can avoid sending to countries with high message prices or countries you don't operate in. Each protect configuration contains individual allow and block country rules for SMS, MMS, and voice. Create separate protect configurations for each messaging use case to improve detection accuracy. Separating use cases like marketing notifications from login/sign-up enables more precise risk evaluation. Additionally, when one use case faces AIT, other use cases continue to deliver messages without any message filtering.
 

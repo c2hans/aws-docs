@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # Managing assets
-<a name="about-aws-devops-agent-managing-assets"></a>
 
 AWS DevOps Agent stores the configuration and reference material for an Agent Space as **assets**, the customer-managed resources that shape what the agent knows and how it behaves. Skills, AGENTS.md files, and attachments are all assets, and you can create, read, update, and delete them programmatically through the Asset API.
 
@@ -120,7 +119,7 @@ A `skill` asset packages instructions and reference material that the agent load
 **Required `metadata` properties:**
 + **name** (string) – An identifier for the skill. Lowercase letters, numbers, and hyphens only, 1–64 characters. Must not start or end with a hyphen. Required for simple skills only. For zip uploads the service reads `name` from the `SKILL.md` frontmatter and any value supplied here is ignored.
 + **description** (string) – A 1–1024 character explanation of when the agent should use the skill. Required for simple skills only. For zip uploads the service reads `description` from the `SKILL.md` frontmatter and any value supplied here is ignored.
-+ **agent\_types** (array of strings) – One or more agent types this skill applies to. Use `["GENERIC"]` to make the skill available to all agent types. Other values include `CHAT`, `INCIDENT_TRIAGE`, `INCIDENT_RCA`, `INCIDENT_MITIGATION`, `INCIDENT_UI`, `PREVENTION`, `RELEASE_READINESS_REVIEW`, and `RELEASE_TESTING`. The `GENERIC` value cannot be combined with other values.
++ **agent\_types** (array of strings) – One or more agent types this skill applies to. Use `["GENERIC"]` to make the skill available to all agent types. Other values include `CHAT`, `INCIDENT_TRIAGE`, `INCIDENT_RCA`, `INCIDENT_MITIGATION`, `INCIDENT_UI`, `PREVENTION`, `RELEASE_READINESS_REVIEW`, `CODE_CHANGE_RISK_ANALYSIS`, and `RELEASE_TESTING`. The `GENERIC` value cannot be combined with other values.
 
 **Optional `metadata` properties:**
 + **skill\_type** (string) – Defaults to `USER`. `LEARNED` marks skills that the agent generates, and the service sets `MANAGED` on skills that you add from the [Skills Catalog](devops-agent-skills-skills-catalog.md). The service rejects `LEARNED` when you create a skill, and rejects `MANAGED` in any create or update request. You can change only the `status` of a `MANAGED` skill, and you can delete it. On the **Skills** tab of the **Knowledge** page, `MANAGED` skills appear under **Custom skills**, not **Managed skills**. The **Managed skills** section lists skills that the agent generates.
@@ -145,7 +144,7 @@ A `skill` asset packages instructions and reference material that the agent load
 An `agents_md` asset is a markdown file containing standing agent instructions for a specific agent type. The agent loads the matching AGENTS.md at the start of every task. For more information about agent instructions, see [Agent instructions](about-aws-devops-agent-agent-instructions.md).
 
 **Required `metadata` properties:**
-+ **agent\_type** (string) – The agent type the AGENTS.md file applies to. Valid values are `GENERIC`, `CHAT`, `INCIDENT_TRIAGE`, `INCIDENT_RCA`, `INCIDENT_MITIGATION`, `INCIDENT_UI`, `PREVENTION`, `RELEASE_READINESS_REVIEW`, and `RELEASE_TESTING`.
++ **agent\_type** (string) – The agent type the AGENTS.md file applies to. Valid values are `GENERIC`, `CHAT`, `INCIDENT_TRIAGE`, `INCIDENT_RCA`, `INCIDENT_MITIGATION`, `INCIDENT_UI`, `PREVENTION`, `RELEASE_READINESS_REVIEW`, `CODE_CHANGE_RISK_ANALYSIS`, and `RELEASE_TESTING`.
 
 **Example `metadata`:**
 

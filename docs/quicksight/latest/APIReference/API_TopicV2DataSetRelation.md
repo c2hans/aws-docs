@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicV2DataSetRelation
-<a name="API_TopicV2DataSetRelation"></a>
 
 A structure that represents a relation between two data sets of a topic.
 

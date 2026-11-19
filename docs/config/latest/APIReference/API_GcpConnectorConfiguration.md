@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GcpConnec
 ---
 
 # GcpConnectorConfiguration
-<a name="API_GcpConnectorConfiguration"></a>
 
 The configuration details for connecting to Google Cloud.
 

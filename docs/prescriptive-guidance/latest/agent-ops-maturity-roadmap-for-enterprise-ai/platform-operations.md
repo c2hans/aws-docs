@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Platform operations
-<a name="platform-operations"></a>
 
 This section covers the operational infrastructure that spans all accounts in the platform: how agents are deployed and promoted across environments, how accounts communicate securely, how governance is enforced, how telemetry is aggregated, and how costs are tracked. These are cross-cutting concerns that operate between accounts rather than within any single one.
 
@@ -21,7 +20,7 @@ Apply SCPs at the Agentic organizational unit level to enforce three controls un
 + **Privilege escalation prevention. **Restrict IAM actions that could allow an account-level principal to bypass the account boundaries the architecture depends on.
 
 ### Agent-specific governance
-<a name="agent-specific-governance.af1f8ab2-78b3-5787-8ef1-eecab132caba"></a>
+<a name="agent-specific-governance.0cab4da9-5070-5b99-b0b7-34b5f8fbf14f"></a>
 + **Model access controls. **Use Amazon Bedrock model access policies to govern which foundation models are available in each environment. Development accounts can access a broader set of models for experimentation; production accounts should be restricted to approved models that have completed your organization's security and privacy review.
 + **Token budget enforcement. **Implement rate limiting and budget alerts in the generative AI gateway accounts. Autonomous agents can enter extended reasoning loops that consume tokens at rates no individual developer would anticipate. Budget enforcement at the gateway layer catches overruns before they become significant cost events.
 + **Data classification. **Tag and classify data flowing through agent interactions. Use Amazon Macie to detect sensitive data in conversation logs and agent outputs, particularly where agents have access to customer data or internal documents.

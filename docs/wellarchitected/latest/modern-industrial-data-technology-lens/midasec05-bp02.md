@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC05-BP02 Build user identity solutions
-<a name="midasec05-bp02"></a>
 
  Deploy centralized identity systems that integrate with existing directories and cloud resources to manage user authentication and authorization efficiently.
 

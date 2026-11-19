@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchGetRepositoriesError
-<a name="API_BatchGetRepositoriesError"></a>
 
 Returns information about errors in a BatchGetRepositories operation.
 

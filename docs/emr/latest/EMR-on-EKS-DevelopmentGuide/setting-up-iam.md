@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Grant users access to Amazon EMR on EKS
-<a name="setting-up-iam"></a>
 
 For any actions that you perform on Amazon EMR on EKS, you need a corresponding IAM permission for that action. You must create an IAM policy that allows you to perform the Amazon EMR on EKS actions and attach the policy to the IAM user or role that you use.
 

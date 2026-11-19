@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/configurati
 ---
 
 # Greengrass Testing Framework configuration options
-<a name="configuration-options-gtf"></a>
 
 ## GTF configuration options
 <a name="configuration-options-gtf-options"></a>

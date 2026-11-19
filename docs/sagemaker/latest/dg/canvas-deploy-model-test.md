@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-deploy-model-
 ---
 
 # Test your deployment
-<a name="canvas-deploy-model-test"></a>
 
 You can test a model deployment by invoking the endpoint, or making single prediction requests, through the Amazon SageMaker Canvas application. You can use this functionality to confirm that your endpoint responds to requests before invoking your endpoint programmatically in a production environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Exploring Real-Time Streaming for Retrieval Augmented Generation in GenerativeAI
-<a name="exploring-real-time-streaming-for-retrieval-augmented-generation"></a>
 
 Publication date: **August 12, 2024 ([Diagram history](#diagram-history))**
 

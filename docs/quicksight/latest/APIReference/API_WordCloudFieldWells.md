@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WordC
 ---
 
 # WordCloudFieldWells
-<a name="API_WordCloudFieldWells"></a>
 
 The field wells of a word cloud visual.
 

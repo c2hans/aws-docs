@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/what-share
 ---
 
 # What are the shared accounts?
-<a name="what-shared"></a>
 
 In AWS Control Tower, the shared accounts in your landing zone are provisioned during setup: the management account, the log archive account, and the audit account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditMit
 ---
 
 # ListAuditMitigationActionsTasks
-<a name="API_ListAuditMitigationActionsTasks"></a>
 
 Gets a list of audit mitigation action tasks that match the specified filters.
 

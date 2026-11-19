@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetSchema
 ---
 
 # GetSchemaVersion
-<a name="API_GetSchemaVersion"></a>
 
 Gets a schema version with the provided information.
 

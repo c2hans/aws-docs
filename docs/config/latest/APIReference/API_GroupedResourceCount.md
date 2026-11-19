@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GroupedRe
 ---
 
 # GroupedResourceCount
-<a name="API_GroupedResourceCount"></a>
 
 The count of resources that are grouped by the group name.
 

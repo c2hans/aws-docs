@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Get the Amazon SageMaker AI Boto 3 Client
-<a name="automatic-model-tuning-ex-client"></a>
 
 Import Amazon SageMaker Python SDK, AWS SDK for Python (Boto3), and other Python libraries. In a new Jupyter notebook, paste the following code to the first cell:
 

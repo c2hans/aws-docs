@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # UNICODE
-<a name="recipe-actions.functions.UNICODE"></a>
 
 Returns in a new column the Unicode index value for the first character of the strings in the source column or for custom strings.
 

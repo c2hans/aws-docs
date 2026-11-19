@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Dataflow details for the destination side.
 

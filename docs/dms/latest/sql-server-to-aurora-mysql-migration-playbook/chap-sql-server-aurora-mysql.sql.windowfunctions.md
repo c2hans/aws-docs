@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Window functions for ANSI SQL
-<a name="chap-sql-server-aurora-mysql.sql.windowfunctions"></a>
 
 This topic provides reference information about window functions in Microsoft SQL Server and their compatibility with Amazon Aurora MySQL. You can understand the differences in support for window functions between SQL Server and Aurora MySQL, which is crucial for planning database migrations.
 

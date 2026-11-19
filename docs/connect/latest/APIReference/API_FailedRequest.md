@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FailedRe
 ---
 
 # FailedRequest
-<a name="API_FailedRequest"></a>
 
 Request for which contact failed to be generated.
 

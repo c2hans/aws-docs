@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # QueryVectors
-<a name="API_S3VectorBuckets_QueryVectors"></a>
 
 Returns matching vector keys from a vector index ranked by vector similarity, full-text relevance, or both. Specify `queryVector` to perform a vector search, specify `queryTexts` to perform a full-text search, or specify both to perform a hybrid search. Full-text search ranks results using BM25. Hybrid search combines the vector and full-text rankings using Reciprocal Rank Fusion (RRF).
 

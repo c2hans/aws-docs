@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-scope.h
 ---
 
 # Scope of changes performed by EDI Cloud Operations
-<a name="eco-scope"></a>
 
 ECO deploys or updates AWS resources only in the following situations through a predefined access model:
 + To deploy and update tools and resources required by ECO to service EDI.

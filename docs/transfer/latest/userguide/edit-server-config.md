@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/edit-server-co
 ---
 
 # Edit server details
-<a name="edit-server-config"></a>
 
 After you create an AWS Transfer Family server, you can edit the server configuration.
 

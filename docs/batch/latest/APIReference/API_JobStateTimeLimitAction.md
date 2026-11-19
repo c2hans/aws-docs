@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobStateTi
 ---
 
 # JobStateTimeLimitAction
-<a name="API_JobStateTimeLimitAction"></a>
 
 Specifies an action that AWS Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.
 

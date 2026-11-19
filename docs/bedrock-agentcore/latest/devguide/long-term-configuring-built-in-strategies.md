@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-t
 ---
 
 # Configure built-in strategies
-<a name="long-term-configuring-built-in-strategies"></a>
 
 AgentCore Memory provides pre-configured, [built-in memory strategies](built-in-strategies.md) for common use cases.
 

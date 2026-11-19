@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 Selecting the right deployment model for multicloud workloads requires careful consideration. Use the recommendations outlined in this paper to guide your decision-making and avoid common pitfalls such as unnecessary complexity and inconsistent governance. By following these best practices, you will accelerate your cloud adoption to meet and exceed your firm's goals more effectively.
 

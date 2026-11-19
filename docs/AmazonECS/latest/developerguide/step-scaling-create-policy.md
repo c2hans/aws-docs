@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/step-sca
 ---
 
 # Create a step scaling policy for Amazon ECS service auto scaling
-<a name="step-scaling-create-policy"></a>
 
 Create a step scaling policy to have Amazon ECS increase or decrease the desired number of tasks in your service automatically. Step scaling runs based on a set of scaling adjustments, known as step adjustments, that vary based on the size of the alarm breach.
 

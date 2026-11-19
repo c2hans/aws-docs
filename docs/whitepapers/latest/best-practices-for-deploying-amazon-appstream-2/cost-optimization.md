@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  Cost optimization focuses on avoiding unneeded costs. Key topics include understanding and controlling where money is being spent, and choosing the most appropriate and correct number of resource types. Analyze spend over time and scaling to meet business needs. The following WorkSpaces Applications resources incur pay-as-you-go fees:
 +  Always-On fleet instances

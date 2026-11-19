@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-forge-sft.htm
 ---
 
 # Supervised Fine-Tuning
-<a name="nova-forge-sft"></a>
 
 ## Introduction
 <a name="introduction"></a>

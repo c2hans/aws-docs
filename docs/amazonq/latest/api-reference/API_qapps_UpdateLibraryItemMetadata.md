@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UpdateLibraryItemMetadata
-<a name="API_qapps_UpdateLibraryItemMetadata"></a>
 
 Updates the verification status of a library item for an Amazon Q App.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Evaluating modernization readiness for applications in the AWS Cloud
-<a name="introduction"></a>
 
 *Vijay Thumma, Sungchul Cho, and Aromal Raj Jayarajan, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-self-mana
 ---
 
 # Setting up self-managed Active Directory
-<a name="db2-self-managed-active-directory.SettingUp"></a>
 
 To set up a self-managed AD, take the following steps.
 

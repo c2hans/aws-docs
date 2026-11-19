@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Export Lightsail resources to Amazon Elastic Compute Cloud (Amazon EC2)
-<a name="amazon-lightsail-faq-export-to-ec2"></a>
 
 ## What is export to Amazon EC2?
 <a name="what-is-export-to-ec2"></a>

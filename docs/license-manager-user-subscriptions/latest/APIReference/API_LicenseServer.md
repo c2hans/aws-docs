@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # LicenseServer
-<a name="API_LicenseServer"></a>
 
 Information about a Remote Desktop Services (RDS) license server.
 

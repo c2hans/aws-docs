@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/efs-resourc
 ---
 
 # efs-resources-protected-by-backup-plan
-<a name="efs-resources-protected-by-backup-plan"></a>
 
 Checks if Amazon Elastic File System (Amazon EFS) File Systems are protected by a backup plan. The rule is NON\_COMPLIANT if the EFS File System is not covered by a backup plan.
 

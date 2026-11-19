@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/security-hu
 ---
 
 # Monitoring usage and costs in Security Hub
-<a name="security-hub-usage-page"></a>
 
  The Usage page helps you understand and manage the costs of running Security Hub across your organization. From this page, you can view your current costs, see projected monthly costs, explore usage by capability or by account, and find strategies to optimize your spending.
 

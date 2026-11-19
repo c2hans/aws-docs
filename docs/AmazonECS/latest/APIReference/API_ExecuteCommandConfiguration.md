@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Execut
 ---
 
 # ExecuteCommandConfiguration
-<a name="API_ExecuteCommandConfiguration"></a>
 
 The details of the execute command configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_Q
 ---
 
 # QueryStringObject
-<a name="API_QueryStringObject"></a>
 
 Describes the query string parameters that an Amazon Lightsail content delivery network (CDN) distribution to bases caching on.
 

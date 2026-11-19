@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/auto-abr.html
 ---
 
 # Automated ABR
-<a name="auto-abr"></a>
 
 With automated ABR, AWS Elemental MediaConvert sets up your adaptive bitrate (ABR) stack for you. MediaConvert chooses the right number of renditions and the resolution for each, based on the input video. MediaConvert minimizes the total minutes of transcoded output by eliminating renditions that increase bitrate without providing increased video quality. Automated ABR also maximizes video quality at various bitrates by employing the quality-defined variable bitrate (QVBR) rate control mode.
 

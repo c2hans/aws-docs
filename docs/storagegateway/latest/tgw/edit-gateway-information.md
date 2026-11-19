@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/edit-gateway-i
 ---
 
 # Editing Basic Gateway Information
-<a name="edit-gateway-information"></a>
 
 You can use the Storage Gateway console to edit basic information for an existing gateway, including the gateway name, time zone, and CloudWatch log group.
 

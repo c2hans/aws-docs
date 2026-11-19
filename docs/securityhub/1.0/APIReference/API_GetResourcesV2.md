@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetReso
 ---
 
 # GetResourcesV2
-<a name="API_GetResourcesV2"></a>
 
 Returns a list of resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/using-t
 ---
 
 # Getting price list files manually
-<a name="using-the-aws-price-list-bulk-api-fetching-price-list-files-manually"></a>
 
 |  |
 | --- |

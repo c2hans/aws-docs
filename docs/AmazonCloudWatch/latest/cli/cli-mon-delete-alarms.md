@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-dele
 ---
 
 # mon-delete-alarms
-<a name="cli-mon-delete-alarms"></a>
 
 ## Description
 <a name="w2aab9c15b3"></a>

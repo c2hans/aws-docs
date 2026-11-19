@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-secrets.h
 ---
 
 # Secrets
-<a name="acxd-secrets"></a>
 
 Secrets let you securely store reusable values that may be needed when configuring Data requests in agentic CX designer.
 

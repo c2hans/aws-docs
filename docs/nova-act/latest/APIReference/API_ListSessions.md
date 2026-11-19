@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ListSes
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Lists all sessions within a specific workflow run.
 

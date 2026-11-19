@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Volume
 ---
 
 # Volume
-<a name="API_Volume"></a>
 
 Volume used by the Kubernetes workload.
 

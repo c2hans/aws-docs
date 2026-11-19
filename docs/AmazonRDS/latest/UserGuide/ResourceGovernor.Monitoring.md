@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/ResourceGover
 ---
 
 # Monitor Microsoft SQL Server resource governor using system views for your RDS for SQL Server instance
-<a name="ResourceGovernor.Monitoring"></a>
 
 Resource Governor statistics are cumulative since the last server restart. If you need to collect statistics starting from a certain time, you can reset statistics using the following Amazon RDS stored procedure:
 

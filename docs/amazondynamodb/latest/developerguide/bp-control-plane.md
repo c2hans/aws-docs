@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Best practices for managing the control plane in DynamoDB
-<a name="bp-control-plane"></a>
 
 **Note**
 DynamoDB is introducing a control plane throttle limit of 2,500 requests per second with the option for a retry. See below for additional details.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTable
-<a name="API_ConfiguredTable"></a>
 
 A table that has been configured for use in a collaboration.
 

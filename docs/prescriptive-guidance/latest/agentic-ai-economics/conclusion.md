@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Conclusion and resources
-<a name="conclusion"></a>
 
 The economics of human systems compared to agentic AI systems represents more than a technology decision. It reflects a fundamental transformation in how organizations create value, manage risk, and achieve competitive advantage. Success requires systematic evaluation of job characteristics, comprehensive measurement of outcomes (including risk factors), and strategic scaling based on proven results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # ServiceActionDetail
-<a name="API_ServiceActionDetail"></a>
 
 An object containing detailed information about the self-service action.
 

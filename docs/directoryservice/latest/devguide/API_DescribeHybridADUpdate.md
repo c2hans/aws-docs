@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeHybridADUpdate
-<a name="API_DescribeHybridADUpdate"></a>
 
 Retrieves information about update activities for a hybrid directory. This operation provides details about configuration changes, administrator account updates, and self-managed instance settings (IDs and DNS IPs).
 
@@ -30,7 +29,7 @@ Pattern: `^d-[0-9a-f]{10}$`
 Required: Yes
 
  ** [NextToken](#API_DescribeHybridADUpdate_RequestSyntax) **   <a name="DirectoryService-DescribeHybridADUpdate-request-NextToken"></a>
-The pagination token from a previous request to [DescribeHybridADUpdate](#API_DescribeHybridADUpdate). Pass null if this is the first request.
+The pagination token from a previous request to [DescribeHybridADUpdate](API_DescribeHybridADUpdate.md). Pass null if this is the first request.
 Type: String
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TableDescription
-<a name="API_TableDescription"></a>
 
 Represents the properties of a table.
 

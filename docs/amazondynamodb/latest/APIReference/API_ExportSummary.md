@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_E
 ---
 
 # ExportSummary
-<a name="API_ExportSummary"></a>
 
 Summary information about an export task.
 

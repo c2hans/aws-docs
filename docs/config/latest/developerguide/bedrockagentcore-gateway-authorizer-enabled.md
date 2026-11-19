@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/bedrockagen
 ---
 
 # bedrockagentcore-gateway-authorizer-enabled
-<a name="bedrockagentcore-gateway-authorizer-enabled"></a>
 
 Checks whether an Amazon Bedrock AgentCore Gateway requires authentication for inbound requests. The rule is NON\_COMPLIANT if the gateway has AuthorizerType set to NONE.
 

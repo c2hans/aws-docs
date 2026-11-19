@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-ec2-insta
 ---
 
 # Modify an EC2 Instance Connect Endpoint
-<a name="modify-ec2-instance-connect-endpoint"></a>
 
 You can modify existing EC2 Instance Connect Endpoints using the console, AWS CLI, or an SDK.
 

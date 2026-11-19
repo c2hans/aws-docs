@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MockInput
-<a name="API_MockInput"></a>
 
 A JSON object that contains a mocked `result` or `errorOutput`.
 

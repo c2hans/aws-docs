@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-start-batch.htm
 ---
 
 # Starting a post-call analytics transcription
-<a name="tca-start-batch"></a>
 
 Before starting a post-call analytics transcription, you must create all the [categories](tca-categories-batch.md) you want Amazon Transcribe to match in your audio.
 

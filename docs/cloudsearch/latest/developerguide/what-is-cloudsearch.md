@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/what-i
 ---
 
 # What Is Amazon CloudSearch?
-<a name="what-is-cloudsearch"></a>
 
 **Important**
 Amazon CloudSearch is no longer available to new customers. Existing customers of Amazon CloudSearch can continue to use the service as usual. [Learn more](https://aws.amazon.com/blogs/big-data/transition-from-amazon-cloudsearch-to-amazon-opensearch-service/).

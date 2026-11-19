@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Opera
 ---
 
 # AWS Backup gateway
-<a name="API_Operations_AWS_Backup_Gateway"></a>
 
 The following actions are supported by AWS Backup gateway:
 +  [AssociateGatewayToServer](API_BGW_AssociateGatewayToServer.md)

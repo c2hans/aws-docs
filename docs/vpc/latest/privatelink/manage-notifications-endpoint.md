@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/manage-notificati
 ---
 
 # Receive alerts for interface endpoint events
-<a name="manage-notifications-endpoint"></a>
 
 You can create a notification to receive alerts for specific events related to your interface endpoint. For example, you can receive an email when a connection request is accepted or rejected.
 

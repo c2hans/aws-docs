@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS05-BP06 Share design standards
-<a name="ops_dev_integ_share_design_stds"></a>
 
  Share best practices across teams to increase awareness and maximize the benefits of development efforts.
 

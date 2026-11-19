@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-install
 ---
 
 # Install the CloudWatch agent on the device
-<a name="gs-install-cloudwatch"></a>
 
 **Note**
 Be aware of the [CloudWatch quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # EventFeedbackType
-<a name="API_EventFeedbackType"></a>
 
 The feedback that your application submitted to a threat protection event log, as displayed in an `AdminListUserAuthEvents` response.
 

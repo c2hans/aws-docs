@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyDBProxyTargetGroup
-<a name="API_ModifyDBProxyTargetGroup"></a>
 
 Modifies the properties of a `DBProxyTargetGroup`.
 

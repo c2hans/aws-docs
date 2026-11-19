@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # STDDEV\_SAMP
-<a name="sql-reference-STDDEVSAMP"></a>
 
 Returns the statistical standard deviation of all values in <number-expression>, evaluated for each row remaining in the group and defined as the square root of the [VAR\_SAMP](sql-reference-VARSAMP.md).
 

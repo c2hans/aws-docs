@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/host-re
 ---
 
 # Change the instance launch option
-<a name="host-resource-group-change-launch-option"></a>
 
 You can change the instance launch option for a host resource group at any time, even when hosts are present in the group. With this setting, you can convert between license-tracking and non-license-tracking modes without migrating hosts to a new group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/publish-foreca
 ---
 
 # Publish a forecast in Connect Customer
-<a name="publish-forecast"></a>
 
 When you publish a forecast, you make it visible to other users, such as capacity planners and schedulers, so that they can use the forecasts for capacity planning and scheduling.
 

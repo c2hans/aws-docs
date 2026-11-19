@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/searchi
 ---
 
 # Searching place and geolocation data with Places (V1)
-<a name="searching-for-places"></a>
 
 **Important**
 **This page documents the previous Places API (V1). Use it only for existing applications.** The Places V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.

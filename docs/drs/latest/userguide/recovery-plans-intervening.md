@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-inte
 ---
 
 # Retrying, skipping, and canceling
-<a name="recovery-plans-intervening"></a>
 
 When a step fails, you do not have to rerun the whole plan. You can retry the failed step, skip it, or cancel the rest of the execution.
 

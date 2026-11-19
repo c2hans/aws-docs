@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Manage Channels
-<a name="msk-data-delivery-s3-manage"></a>
 
 **Resource states:** `CREATING`, `ACTIVE`, `UPDATING`, `DELETING`, `FAILED`, `SUSPENDING`, `SUSPENDED`. A Channel is suspended by the service when it runs into an unrecoverable error.
 

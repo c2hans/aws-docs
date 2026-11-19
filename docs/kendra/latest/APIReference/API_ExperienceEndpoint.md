@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Experienc
 ---
 
 # ExperienceEndpoint
-<a name="API_ExperienceEndpoint"></a>
 
 Provides the configuration information for the endpoint for your Amazon Kendra experience.
 

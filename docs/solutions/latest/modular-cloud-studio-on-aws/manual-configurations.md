@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 6: Manual configurations
-<a name="manual-configurations"></a>
 
 Complete the following manual configurations based on your storage module deployment and workstation operating system. Choose the appropriate configuration that matches your setup:
 

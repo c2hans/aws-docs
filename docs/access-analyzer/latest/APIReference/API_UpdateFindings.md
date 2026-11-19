@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UpdateFindings
-<a name="API_UpdateFindings"></a>
 
 Updates the status for the specified findings.
 

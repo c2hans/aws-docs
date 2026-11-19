@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/troubleshooting
 ---
 
 # Troubleshoot contacts that deliver data to Amazon EC2
-<a name="troubleshooting-contact"></a>
 
 If you are unable to successfully complete an AWS Ground Station contact, you'll need to verify that your Amazon EC2 instance is running, verify that your dataflow endpoint application is running, and verify that your dataflow endpoint application's stream is configured properly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesUserDetails
-<a name="API_KubernetesUserDetails"></a>
 
 Details about the Kubernetes user involved in a Kubernetes finding.
 

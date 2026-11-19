@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # SaaS is a business model
-<a name="saas-is-a-business-model"></a>
 
  Defining what it means to be SaaS starts with agreeing on one key principle: SaaS is a business model. This means that—above all else—adoption of a SaaS delivery model is directly driven by a set of business objectives. Yes, technology will be used to realize some of those goals, but SaaS is about putting in place a mindset and model that targets a specific set of business objectives.
 

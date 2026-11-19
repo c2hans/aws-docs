@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Migration objectives
-<a name="objectives"></a>
 
 You might want to move your Oracle workloads from your on-premises environment to AWS for various reasons. For example, you might want to reduce costs, increase agility, improve security, or refactor your workload more quickly. Whatever reasons are behind your decision, choosing the right migration strategy is important so that you can meet your goals and required timelines.
 

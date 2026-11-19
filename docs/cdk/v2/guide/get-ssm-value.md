@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/get-ssm-value.html
 ---
 
 # Get a value from the Systems Manager Parameter Store
-<a name="get-ssm-value"></a>
 
 The AWS Cloud Development Kit (AWS CDK) can retrieve the value of AWS Systems Manager Parameter Store attributes. During synthesis, the AWS CDK produces a [token](tokens.md) that is resolved by AWS CloudFormation during deployment.
 

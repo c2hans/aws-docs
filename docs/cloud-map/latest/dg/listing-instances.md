@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/listing-instances.ht
 ---
 
 # Listing AWS Cloud Map service instances
-<a name="listing-instances"></a>
 
 To view a list of the service instances that you registered using a service, perform the following procedure.
 

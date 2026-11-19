@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component Predicate
-<a name="aws-properties-amplifyuibuilder-component-predicate"></a>
 
 The `Predicate` property specifies information for generating Amplify DataStore queries. Use `Predicate` to retrieve a subset of the data in a collection.
 
@@ -48,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `And`  <a name="cfn-amplifyuibuilder-component-predicate-and"></a>
 A list of predicates to combine logically.
 *Required*: No
-*Type*: Array of [Predicate](#aws-properties-amplifyuibuilder-component-predicate)
+*Type*: Array of [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Field`  <a name="cfn-amplifyuibuilder-component-predicate-field"></a>
@@ -79,5 +78,5 @@ The operator to use to perform the evaluation.
 `Or`  <a name="cfn-amplifyuibuilder-component-predicate-or"></a>
 A list of predicates to combine logically.
 *Required*: No
-*Type*: Array of [Predicate](#aws-properties-amplifyuibuilder-component-predicate)
+*Type*: Array of [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

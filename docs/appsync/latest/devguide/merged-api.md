@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/merged-api.html
 ---
 
 # Merging APIs in AWS AppSync
-<a name="merged-api"></a>
 
 As the use of GraphQL expands within an organization, trade-offs between API ease-of-use and API development velocity can arise. On the one hand, organizations adopt AWS AppSync and GraphQL to simplify application development. This gives developers a flexible API they can use to securely access, manipulate, and combine data from one or more data domains with a single network call. On the other hand, teams within an organization that are responsible for the different data domains combined into a single GraphQL API endpoint may want the ability to create, manage, and deploy API updates independent of each other. This increases their development velocities.
 

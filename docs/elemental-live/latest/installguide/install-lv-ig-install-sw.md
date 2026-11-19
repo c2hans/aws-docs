@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step C: Install the Elemental Live software
-<a name="install-lv-ig-install-sw"></a>
 
 Perform these steps on each AWS Elemental Live hardware unit, either directly at the hardware unit or from your workstation via SSH.
 

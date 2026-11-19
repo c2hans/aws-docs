@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/em
 ---
 
 # Emulate Oracle DR by using a PostgreSQL-compatible Aurora global database
-<a name="emulate-oracle-dr-by-using-a-postgresql-compatible-aurora-global-database"></a>
 
 *HariKrishna Boorgadda, Amazon Web Services*
 

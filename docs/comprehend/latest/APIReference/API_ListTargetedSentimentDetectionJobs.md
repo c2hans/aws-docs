@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListT
 ---
 
 # ListTargetedSentimentDetectionJobs
-<a name="API_ListTargetedSentimentDetectionJobs"></a>
 
 Gets a list of targeted sentiment detection jobs that you have submitted.
 

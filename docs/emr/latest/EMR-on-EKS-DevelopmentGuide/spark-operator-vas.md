@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Use vertical autoscaling with the Spark operator for Amazon EMR on EKS
-<a name="spark-operator-vas"></a>
 
 Starting with Amazon EMR 7.0, you can use Amazon EMR on EKS vertical autoscaling to simplify resource management. It automatically tunes memory and CPU resources to adapt to the needs of the workload that you provide for Amazon EMR Spark applications. For more information, see [Using vertical autoscaling with Amazon EMR Spark jobs](jobruns-vas.md).
 

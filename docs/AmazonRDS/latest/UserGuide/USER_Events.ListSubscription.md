@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.L
 ---
 
 # Listing Amazon RDS event notification subscriptions
-<a name="USER_Events.ListSubscription"></a>
 
 You can list your current Amazon RDS event notification subscriptions.
 

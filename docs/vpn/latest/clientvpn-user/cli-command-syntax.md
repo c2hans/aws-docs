@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/cli-command-sy
 ---
 
 # CLI command syntax
-<a name="cli-command-syntax"></a>
 
 You can use CLI commands by using the following syntax:
 

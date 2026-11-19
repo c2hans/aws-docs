@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DeleteMissionProfile
-<a name="API_DeleteMissionProfile"></a>
 
 Deletes a mission profile.
 

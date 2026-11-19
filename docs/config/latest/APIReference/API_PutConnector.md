@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutConnec
 ---
 
 # PutConnector
-<a name="API_PutConnector"></a>
 
 Creates a connector that specifies the connection between a third-party cloud service provider and AWS Config.
 

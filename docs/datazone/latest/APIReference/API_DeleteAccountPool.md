@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAccountPool
-<a name="API_DeleteAccountPool"></a>
 
 Deletes an account pool.
 

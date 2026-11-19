@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-servic
 ---
 
 # Use the EC2Config service to perform tasks during EC2 legacy Windows operating system instance launch
-<a name="ec2config-service"></a>
 
 **Note**
 EC2Config has reached the end of support. The operating system versions that it runs on are no longer supported by Microsoft. We strongly recommend that you upgrade to the latest launch agent.

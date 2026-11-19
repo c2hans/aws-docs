@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost-tuning.html
 ---
 
 # Tune an XGBoost Model
-<a name="xgboost-tuning"></a>
 
 *Automatic model tuning*, also known as hyperparameter tuning, finds the best version of a model by running many jobs that test a range of hyperparameters on your training and validation datasets. You choose three types of hyperparameters:
 + a learning `objective` function to optimize during model training

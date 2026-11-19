@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Extens
 ---
 
 # ExtensionHealth
-<a name="API_ExtensionHealth"></a>
 
 Contains information about the problems that affect an extension on the nodes of a SageMaker HyperPod cluster, including how many nodes each problem affects. `DescribeClusterExtension` returns `ExtensionHealth` only when at least one node has a problem.
 

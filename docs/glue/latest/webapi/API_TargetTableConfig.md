@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TargetTableConfig
 ---
 
 # TargetTableConfig
-<a name="API_TargetTableConfig"></a>
 
 Properties used by the target leg to partition the data on the target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # LambdaTokenAuthorizer
-<a name="sam-property-api-lambdatokenauthorizer"></a>
 
 Configure a Lambda Authorizer to control access to your API with a Lambda Event Function.
 

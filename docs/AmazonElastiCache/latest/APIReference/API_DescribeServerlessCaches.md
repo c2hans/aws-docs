@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeServerlessCaches
-<a name="API_DescribeServerlessCaches"></a>
 
 Returns information about a specific serverless cache. If no identifier is specified, then the API returns information on all the serverless caches belonging to this AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AckConfigRes
 ---
 
 # AckConfigResponse
-<a name="API_AckConfigResponse"></a>
 
 The response object containing configuration details for an ACK (AWS Controllers for Kubernetes) capability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # PutIntegration
-<a name="API_connect-customer-profiles_PutIntegration"></a>
 
 Adds an integration between the service and a third-party service, which includes Amazon AppFlow and Amazon Connect.
 

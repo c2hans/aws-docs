@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/activate_g4ad_4k
 ---
 
 # Set up Dual 4K displays on G4ad Linux instances
-<a name="activate_g4ad_4k"></a>
 
 After you launch a G4ad instance, you can set up dual 4K displays.
 

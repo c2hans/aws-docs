@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteConnectInstanceIntegration
-<a name="API_connect-outbound-campaigns-v2_DeleteConnectInstanceIntegration"></a>
 
 Deletes integration for an Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-create
 ---
 
 # Iterate a loop with a Lambda function in Step Functions
-<a name="tutorial-create-iterate-pattern-section"></a>
 
 In this tutorial, you implement a design pattern that uses a state machine and an AWS Lambda function to iterate a loop a specific number of times.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/managing-ip-pools.html
 ---
 
 # Assigning IP pools in Amazon SES
-<a name="managing-ip-pools"></a>
 
 You can use IP pools to create groups of dedicated IP addresses for sending specific types of email. You can also use a pool of IP addresses that are shared by all Amazon SES customers.
 

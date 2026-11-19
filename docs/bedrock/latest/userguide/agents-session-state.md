@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-session-
 ---
 
 # Control agent session context
-<a name="agents-session-state"></a>
 
 For greater control of session context, you can modify the [SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object in your agent. The [SessionState](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_SessionState.html#bedrock-Type-agent-runtime_SessionState) object contains information that can be maintained across turns (separate [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request and responses). You can use this information to provide conversational context for the agent during user conversations.
 

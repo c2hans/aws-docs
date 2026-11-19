@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSV
 ---
 
 # AWSVPCFlowLogsServiceRolePolicy
-<a name="AWSVPCFlowLogsServiceRolePolicy"></a>
 
 **Description**: Provides permissions to control service managed resources and call APIs necessary for log field enrichment on behalf of customers.
 

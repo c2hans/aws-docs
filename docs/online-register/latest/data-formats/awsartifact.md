@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Artifact
-<a name="awsartifact"></a>
 
 AWS Artifact provides the following APIs for data retrieval.
 

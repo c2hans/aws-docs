@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Manage keywords for a phone number
-<a name="nx-features-keywords-number"></a>
 
 Use the AWS End User Messaging console or AWS CLI to add, view, edit, and delete the keyword responses for an individual phone number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Phase 5: Testing and validation
-<a name="phase-5-testing-and-validation"></a>
 
 **Considering migration** **scope of 1 cluster \| 100\+ applications. The following** **represent the testing and validation effort.**
 

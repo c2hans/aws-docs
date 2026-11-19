@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Create Amazon Elastic Block Store volumes from exported Lightsail disk snapshots
-<a name="amazon-lightsail-creating-ebs-volumes-from-exported-snapshots"></a>
 
 After a Lightsail block storage disk snapshot is exported and available in Amazon EC2 (as an EBS snapshot), you can create an EBS volume from the snapshot using the Amazon EC2 console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Delete unattached Amazon EBS volumes
-<a name="ebs-delete-ebs-volumes"></a>
 
 ## Overview
 <a name="delete-ebs-volumes-overview"></a>

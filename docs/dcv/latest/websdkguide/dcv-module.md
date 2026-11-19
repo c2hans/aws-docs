@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-module.html
 ---
 
 # DCV module
-<a name="dcv-module"></a>
 
 A module that implements the client side of the DCV protocol.
 

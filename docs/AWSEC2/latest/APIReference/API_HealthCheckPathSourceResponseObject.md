@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HealthChe
 ---
 
 # HealthCheckPathSourceResponseObject
-<a name="API_HealthCheckPathSourceResponseObject"></a>
 
 Describes the source for a health check path.
 

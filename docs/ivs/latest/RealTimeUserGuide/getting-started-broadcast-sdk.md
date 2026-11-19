@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-sta
 ---
 
 # Step 4: Integrate the IVS Broadcast SDK
-<a name="getting-started-broadcast-sdk"></a>
 
 IVS provides a broadcast SDK for web, Android, and iOS that you can integrate into your application. The broadcast SDK is used for both sending and receiving video. If you have [configured RTMP Ingest for your stage](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-stream-ingest.html), you may use any encoder that can broadcast to an RTMP endpoint (e.g., OBS or ffmpeg).
 

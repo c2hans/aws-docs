@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/deactivate-software-
 ---
 
 # deactivate-software-statement
-<a name="deactivate-software-statement"></a>
 
 Deactivates a software statement. When you deactivate a software statement, it can no longer be used for agent registrations.
 

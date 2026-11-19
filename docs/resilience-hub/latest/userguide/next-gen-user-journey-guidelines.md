@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Guidelines for defining user journeys
-<a name="next-gen-user-journey-guidelines"></a>
 + Name user journeys after business capabilities, not technical components.
 + A user journey should represent something an end user does (for example, "Check balance," not "Database reads").
 + Start with your most critical user journeys and add more over time.

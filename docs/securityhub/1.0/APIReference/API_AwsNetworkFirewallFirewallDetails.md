@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsNetw
 ---
 
 # AwsNetworkFirewallFirewallDetails
-<a name="API_AwsNetworkFirewallFirewallDetails"></a>
 
 Details about an AWS Network Firewall firewall.
 

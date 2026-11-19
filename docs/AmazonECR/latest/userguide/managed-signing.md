@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/managed-signi
 ---
 
 # Managed signing
-<a name="managed-signing"></a>
 
 Amazon ECR managed signing automatically signs your container images by generating cryptographic signatures using [AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html) when images are pushed to Amazon ECR. This eliminates the need to install and configure client-side tools and allows you to centrally govern signing as a registry configuration.
 

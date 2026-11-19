@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/getting-start
 ---
 
 # Tutorial for sending a message using AWS End User Messaging SMS
-<a name="getting-started-tutorial"></a>
 
 This section provides an overview of the tutorial designed to help you start using AWS End User Messaging SMS.
 

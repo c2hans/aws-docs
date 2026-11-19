@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-smtp.html
 ---
 
 # Using the Amazon SES SMTP interface to send email
-<a name="send-email-smtp"></a>
 
 To send production email through Amazon SES, you can use the Simple Mail Transfer Protocol (SMTP) interface or the Amazon SES API. For more information about the Amazon SES API, see [Using the Amazon SES API to send email](send-email-api.md). This section describes the SMTP interface.
 

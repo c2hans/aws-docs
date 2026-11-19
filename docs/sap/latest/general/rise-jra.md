@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-jra.html
 ---
 
 # AWS and SAP JRA
-<a name="rise-jra"></a>
 
  AWS and SAP Joint Reference Architecture (JRA) is a framework designed to guide customers on how to effectively integrate and utilize both AWS and SAP services to achieve specific business outcomes. It provides architectural guidance and best practices for common scenarios, helping customers optimize their SAP solutions on AWS and leverage the strengths of both platforms.
 

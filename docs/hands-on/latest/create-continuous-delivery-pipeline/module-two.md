@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-continuous-delive
 ---
 
 # Module 2: Deploy Web App
-<a name="module-two"></a>
 
 |  |  |
 | --- |--- |

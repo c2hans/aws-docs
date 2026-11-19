@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RdsRecommend
 ---
 
 # RdsRecommendation
-<a name="API_RdsRecommendation"></a>
 
 Provides information that describes a recommendation of a target engine on Amazon RDS.
 

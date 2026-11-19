@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AssociateWeb
 ---
 
 # AssociateWebACL
-<a name="API_AssociateWebACL"></a>
 
 Associates a web ACL with a resource, to protect the resource.
 

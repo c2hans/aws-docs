@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ContainerOperatingSystem
-<a name="API_marketplace-discovery_ContainerOperatingSystem"></a>
 
 Describes an operating system supported by a container fulfillment option.
 

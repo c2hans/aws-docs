@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # KeyspacesRow
-<a name="API_KeyspacesRow"></a>
 
 Represents a row in an Amazon Keyspaces table, containing regular column values, static column values, and row-level metadata.
 

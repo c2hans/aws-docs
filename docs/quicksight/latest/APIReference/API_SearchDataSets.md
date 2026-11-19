@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchDataSets
-<a name="API_SearchDataSets"></a>
 
 Use the `SearchDataSets` operation to search for datasets that belong to an account.
 

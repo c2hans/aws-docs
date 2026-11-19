@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/global-netw
 ---
 
 # Create a global network using AWS Network Manager
-<a name="global-networks-creating"></a>
 
 Create a global network.
 

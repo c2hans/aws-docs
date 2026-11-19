@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeTranscriptionServiceLinkedRolePolicy
-<a name="AmazonChimeTranscriptionServiceLinkedRolePolicy"></a>
 
 **Description**: Allows Amazon Chime to access Amazon Transcribe and Amazon Transcribe Medical on your behalf
 

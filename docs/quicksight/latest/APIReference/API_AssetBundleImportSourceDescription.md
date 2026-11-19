@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportSourceDescription
-<a name="API_AssetBundleImportSourceDescription"></a>
 
 A description of the import source that you provide at the start of an import job. This value is set to either `Body` or `S3Uri`, depending on how the `StartAssetBundleImportJobRequest` is configured.
 

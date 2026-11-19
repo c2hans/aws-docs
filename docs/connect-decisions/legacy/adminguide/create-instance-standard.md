@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/crea
 ---
 
 # Use standard configuration
-<a name="create-instance-standard"></a>
 
 Standard configuration creates your Supply Chain instance using default security and encryption settings. Instances operate in AWS geographic regions. For more information about regions, see [Regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *IAM User Guide* and [Regional endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints) in the *AWS General Reference*.
 

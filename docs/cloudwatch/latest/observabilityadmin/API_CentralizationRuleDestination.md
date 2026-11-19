@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CentralizationRuleDestination
-<a name="API_CentralizationRuleDestination"></a>
 
 Configuration specifying the primary destination for centralized telemetry data.
 

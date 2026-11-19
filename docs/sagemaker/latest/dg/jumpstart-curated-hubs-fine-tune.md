@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Fine-tune curated hub models
-<a name="jumpstart-curated-hubs-fine-tune"></a>
 
 In your private curated model hub, you can run fine-tuning training jobs using your model references. Model references point to a publicly available JumpStart model in the SageMaker AI public hub, but you can fine-tune the model on your own data for your specific use case. After the fine-tuning job, you have access to the model weights that you can then use or deploy to an endpoint.
 

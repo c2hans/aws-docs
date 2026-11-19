@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchGetRecordIdentifier
-<a name="API_feature_store_BatchGetRecordIdentifier"></a>
 
 The identifier that identifies the batch of Records you are retrieving in a batch.
 

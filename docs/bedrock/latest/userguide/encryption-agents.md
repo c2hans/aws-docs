@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-agen
 ---
 
 # Encryption of agent resources for agents created before January 22, 2025
-<a name="encryption-agents"></a>
 
 **Important**
 If you've created your agent *after* January 22, 2025, follow instructions for [Encryption of agent resources](encryption-agents-new.md)

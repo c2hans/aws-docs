@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster-clus
 ---
 
 # DescribeCluster, DeleteCluster
-<a name="cluster-clusterarn"></a>
 
 ## URI
 <a name="cluster-clusterarn-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/elastic-beanstalk-
 ---
 
 # AWS Elastic Beanstalk Create Version task
-<a name="elastic-beanstalk-createversion"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

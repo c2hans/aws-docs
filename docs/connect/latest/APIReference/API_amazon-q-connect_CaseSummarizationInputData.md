@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # CaseSummarizationInputData
-<a name="API_amazon-q-connect_CaseSummarizationInputData"></a>
 
 Input data for case summarization.
 

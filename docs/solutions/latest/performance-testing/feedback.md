@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/fee
 ---
 
 # Feedback
-<a name="feedback"></a>
 
 ## Share your feedback
 <a name="feedback-survey"></a>

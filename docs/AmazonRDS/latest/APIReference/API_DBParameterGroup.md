@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBPara
 ---
 
 # DBParameterGroup
-<a name="API_DBParameterGroup"></a>
 
 Contains the details of an Amazon RDS DB parameter group.
 

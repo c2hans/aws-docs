@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteUserPool
-<a name="API_DeleteUserPool"></a>
 
 Deletes a user pool. After you delete a user pool, users can no longer sign in to any associated applications.
 

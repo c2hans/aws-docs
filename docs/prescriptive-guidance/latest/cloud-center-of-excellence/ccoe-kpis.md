@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # Evaluating the CCoE KPIs
-<a name="ccoe-kpis"></a>
 
 The previous section introduced the CCoE tenets. Using some questions, this section discusses how you can support your CCoE to work toward those tenets. Later, this will help you derive the relevant list of KPIs to measure the impact of the CCoE.
 

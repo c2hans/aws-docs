@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-scheduling-google.
 ---
 
 # Scheduling meetings with Google Calendar
-<a name="chime-scheduling-google"></a>
 
 If you use Google Calendar, you can also schedule Amazon Chime meetings.
 

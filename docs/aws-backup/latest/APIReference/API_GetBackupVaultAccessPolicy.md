@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBa
 ---
 
 # GetBackupVaultAccessPolicy
-<a name="API_GetBackupVaultAccessPolicy"></a>
 
 Returns the access policy document that is associated with the named backup vault.
 

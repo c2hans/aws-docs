@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/grant-view.htm
 ---
 
 # Viewing grants
-<a name="grant-view"></a>
 
 To view the grant, use the [ListGrants](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListGrants.html) operation. You must specify the KMS key to which the grants apply. You can also filter the grant list by grant ID, grantee principal, or grantee service principal. For more examples, see [Use `ListGrants` with an AWS SDK or CLI](example_kms_ListGrants_section.md).
 

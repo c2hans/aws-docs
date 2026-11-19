@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get results for a partially typed or misspelled query
-<a name="how-to-get-results-for-partial-or-misspelled-queries"></a>
 
 The Suggest API enables applications to complete user queries for places or categories of results. These results are sorted from most likely to less-likely matches, allowing the API to resolve incomplete or misspelled words.
 

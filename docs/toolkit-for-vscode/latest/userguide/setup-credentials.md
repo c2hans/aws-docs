@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setu
 ---
 
 # AWS IAM credentials
-<a name="setup-credentials"></a>
 
 AWS IAM credentials authentication with your AWS account through locally stored access keys.
 

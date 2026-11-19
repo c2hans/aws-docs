@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/managed-policies-
 ---
 
 # AWS managed policies for AWS Support Plans
-<a name="managed-policies-aws-support-plans"></a>
 
 AWS Support Plans has the following managed policies.
 

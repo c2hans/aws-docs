@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # CollaborationMLInputChannelSummary
-<a name="API_CollaborationMLInputChannelSummary"></a>
 
 Provides summary information about an ML input channel in a collaboration.
 

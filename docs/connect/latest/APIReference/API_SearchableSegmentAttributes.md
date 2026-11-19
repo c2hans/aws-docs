@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Searchab
 ---
 
 # SearchableSegmentAttributes
-<a name="API_SearchableSegmentAttributes"></a>
 
 The search criteria based on searchable segment attributes of a contact
 

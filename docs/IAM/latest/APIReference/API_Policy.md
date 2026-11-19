@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Policy.html
 ---
 
 # Policy
-<a name="API_Policy"></a>
 
 Contains information about a managed policy.
 

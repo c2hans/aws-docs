@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent-r
 ---
 
 # Use `InvokeAgent` with an AWS SDK
-<a name="bedrock-agent-runtime_example_bedrock-agent-runtime_InvokeAgent_section"></a>
 
 The following code examples show how to use `InvokeAgent`.
 

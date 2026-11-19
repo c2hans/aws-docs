@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-compar
 ---
 
 # Use comparison operators in AWSTOE component documents
-<a name="toe-comparison-operators"></a>
 
 You can use the following comparison operators with the **[Assert](toe-action-modules.md#action-modules-assertion)** action module and with conditional expressions that use the [if Construct](toe-conditional-constructs.md#toe-conditional-if). A comparison operator can operate on a single value, for example `stringIsEmpty`, or it can compare a baseline value to a second value (variable value) to determine whether the conditional expression evaluates to `true` or `false`.
 

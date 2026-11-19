@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dat
 ---
 
 # Gaming profile schema design in DynamoDB
-<a name="data-modeling-schema-gaming-profile"></a>
 
 ## Gaming profile business use case
 <a name="data-modeling-schema-gaming-profile-use-case"></a>

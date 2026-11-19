@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ValidationEr
 ---
 
 # ValidationError
-<a name="API_ValidationError"></a>
 
 Information about an error found in a behavior specification.
 

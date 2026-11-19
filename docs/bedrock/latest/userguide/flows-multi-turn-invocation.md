@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-multi-tur
 ---
 
 # Converse with an Amazon Bedrock flow
-<a name="flows-multi-turn-invocation"></a>
 
 **Note**
 Amazon Bedrock Flows multi-turn conversation is in preview release for Amazon Bedrock and is subject to change.

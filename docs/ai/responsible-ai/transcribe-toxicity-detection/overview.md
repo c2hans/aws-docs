@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/transcribe-toxicity-de
 ---
 
 # Amazon Transcribe Toxicity Detection
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/transcribe-toxicity-detection/images/card-background.jpg)
 

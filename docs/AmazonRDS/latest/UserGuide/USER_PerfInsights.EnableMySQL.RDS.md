@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 ---
 
 # Turn on the Performance Schema for Amazon RDS for MariaDB or MySQL
-<a name="USER_PerfInsights.EnableMySQL.RDS"></a>
 
 Assume that Database Insights is turned on for your DB instance or Multi-AZ DB cluster but isn't currently managing the Performance Schema. If you want to allow Database Insights to manage the Performance Schema automatically, complete the following steps.
 

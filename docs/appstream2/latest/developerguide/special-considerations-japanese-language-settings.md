@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/special
 ---
 
 # Special Considerations for Japanese Language Settings
-<a name="special-considerations-japanese-language-settings"></a>
 
 This section describes key points to keep in mind when configuring Japanese language settings for your WorkSpaces Applications users.
 

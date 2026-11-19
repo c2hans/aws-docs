@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-man
 ---
 
 # Manage an IAM Access Analyzer unused access analyzer
-<a name="access-analyzer-manage-unused"></a>
 
 Use the information in this topic to learn about how to update or delete an existing unused access analyzer.
 

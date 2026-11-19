@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ItemizedCharge
-<a name="API_marketplace-agreements_ItemizedCharge"></a>
 
 A breakdown of individual charges or line items within a billing or pricing context.
 

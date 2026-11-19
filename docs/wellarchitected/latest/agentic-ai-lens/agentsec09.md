@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Agent vulnerability scanning and penetration testing
-<a name="agentsec09"></a>
 
  Agentic AI systems introduce new attack surfaces that traditional application security testing doesn't cover. Agents reason about inputs, chain multi-step actions, interact with tools and APIs, and operate with varying degrees of autonomy. These behaviors create complex vulnerability paths that rule-based scanners and periodic manual assessments can't address. Automated vulnerability scanning and penetration testing tailored to agentic workloads help you identify exploitable weaknesses across the full development lifecycle, from design documents and code through to running applications, and validate that security controls hold up under realistic attack scenarios.
 

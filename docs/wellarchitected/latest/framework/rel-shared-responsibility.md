@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-sha
 ---
 
 # The shared responsibility model for resilience
-<a name="rel-shared-responsibility"></a>
 
  Resilience is a shared responsibility between AWS and you. It is important that you understand how disaster recovery (DR) and availability, as part of resilience, operate under this shared model.
 

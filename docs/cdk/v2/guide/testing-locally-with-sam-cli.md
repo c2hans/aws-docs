@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/testing-locally-with-sam-cl
 ---
 
 # Local testing AWS CDK applications with AWS SAM
-<a name="testing-locally-with-sam-cli"></a>
 
 You can use the AWS SAM CLI to locally test your AWS CDK applications by running the following commands from the project root directory of your AWS CDK application:
 +  ` [sam local invoke](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html) `

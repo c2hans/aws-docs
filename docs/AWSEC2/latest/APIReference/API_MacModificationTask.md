@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MacModifi
 ---
 
 # MacModificationTask
-<a name="API_MacModificationTask"></a>
 
 Information about a System Integrity Protection (SIP) modification task or volume ownership delegation task for an Amazon EC2 Mac instance.
 

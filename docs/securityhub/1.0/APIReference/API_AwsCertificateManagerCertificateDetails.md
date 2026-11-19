@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCert
 ---
 
 # AwsCertificateManagerCertificateDetails
-<a name="API_AwsCertificateManagerCertificateDetails"></a>
 
 Provides details about an AWS Certificate Manager certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-stream
 ---
 
 # Amazon S3 stream wrapper in the AWS SDK for PHP Version 3
-<a name="s3-stream-wrapper"></a>
 
 The Amazon S3 stream wrapper enables you to store and retrieve data from Amazon S3 using built-in PHP functions, such as `file_get_contents`, `fopen`, `copy`, `rename`, `unlink`, `mkdir`, and `rmdir`.
 

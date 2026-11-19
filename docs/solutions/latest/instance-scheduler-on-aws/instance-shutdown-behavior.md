@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Instance shutdown behavior
-<a name="instance-shutdown-behavior"></a>
 
 ## Amazon EC2
 <a name="amazon-ec2"></a>

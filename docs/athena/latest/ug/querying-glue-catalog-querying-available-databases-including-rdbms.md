@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glue-catalog-q
 ---
 
 # List databases and searching a specified database
-<a name="querying-glue-catalog-querying-available-databases-including-rdbms"></a>
 
 The examples in this section show how to list the databases in metadata by schema name.
 

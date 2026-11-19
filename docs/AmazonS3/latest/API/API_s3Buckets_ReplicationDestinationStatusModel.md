@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Replic
 ---
 
 # ReplicationDestinationStatusModel
-<a name="API_s3Buckets_ReplicationDestinationStatusModel"></a>
 
 Contains status information for a replication destination, including the current replication state, last successful update, and any error messages.
 

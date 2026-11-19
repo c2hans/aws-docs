@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.
 ---
 
 # CreateGrant
-<a name="API_CreateGrant"></a>
 
 Adds a grant to a KMS key.
 

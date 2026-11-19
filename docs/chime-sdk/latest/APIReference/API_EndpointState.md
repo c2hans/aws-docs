@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Endpoi
 ---
 
 # EndpointState
-<a name="API_EndpointState"></a>
 
 A read-only field that represents the state of an `AppInstanceUserEndpoint`. Supported values:
 +  `ACTIVE`: The `AppInstanceUserEndpoint` is active and able to receive messages. When `ACTIVE`, the `EndpointStatusReason` remains empty.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_MetadataTableEnc
 ---
 
 # MetadataTableEncryptionConfiguration
-<a name="API_MetadataTableEncryptionConfiguration"></a>
 
  The encryption settings for an S3 Metadata journal table or inventory table configuration.
 

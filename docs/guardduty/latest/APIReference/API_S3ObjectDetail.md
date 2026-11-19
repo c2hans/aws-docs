@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Obje
 ---
 
 # S3ObjectDetail
-<a name="API_S3ObjectDetail"></a>
 
 Information about the S3 object that was scanned
 

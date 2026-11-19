@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteWo
 ---
 
 # DeleteWorkspacePage
-<a name="API_DeleteWorkspacePage"></a>
 
 Removes the association between a view and a page in a workspace. The page will display the default view after deletion.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Configuring email or phone verification
-<a name="user-pool-settings-email-phone-verification"></a>
 
 You can choose settings for email or phone verification under the **Authentication methods** menu. For more information on multi-factor authentication (MFA), see [SMS Text Message MFA](user-pool-settings-mfa-sms-email-message.md).
 

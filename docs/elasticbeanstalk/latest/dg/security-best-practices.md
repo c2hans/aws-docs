@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-best
 ---
 
 # Security best practices for Elastic Beanstalk
-<a name="security-best-practices"></a>
 
 AWS Elastic Beanstalk provides several security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your environment, treat them as helpful considerations, not prescriptions.
 

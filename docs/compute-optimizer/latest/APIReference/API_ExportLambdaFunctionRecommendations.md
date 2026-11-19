@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportLambdaFunctionRecommendations
-<a name="API_ExportLambdaFunctionRecommendations"></a>
 
 Exports optimization recommendations for AWS Lambda functions.
 

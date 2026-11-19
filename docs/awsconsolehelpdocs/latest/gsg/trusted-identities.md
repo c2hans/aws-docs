@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/trusted-id
 ---
 
 # Trusted identities
-<a name="trusted-identities"></a><a name="account-identity"></a>
+<a name="account-identity"></a>
 
 With AWS Management Console Private Access, you can restrict which AWS accounts and organizational identities can use the AWS Management Console from within your VPC. This prevents access from personal accounts and from accounts outside your organization.
 

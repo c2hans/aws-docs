@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnnotationEntry.
 ---
 
 # AnnotationEntry
-<a name="API_AnnotationEntry"></a>
 
 Describes a single annotation attached to an object, including its name, last modified time, size, ETag, checksum algorithm, and replication status. Returned in the response from `ListObjectAnnotations`.
 

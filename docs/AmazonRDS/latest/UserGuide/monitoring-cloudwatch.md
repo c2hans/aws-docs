@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cl
 ---
 
 # Monitoring Amazon RDS metrics with Amazon CloudWatch
-<a name="monitoring-cloudwatch"></a>
 
 Amazon CloudWatch is a metrics repository. The repository collects and processes raw data from Amazon RDS into readable, near real-time metrics. For a complete list of Amazon RDS metrics sent to CloudWatch, see  [ Metrics reference for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/metrics-reference.html).
 

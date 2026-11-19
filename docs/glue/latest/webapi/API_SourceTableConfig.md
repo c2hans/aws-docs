@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SourceTableConfig
 ---
 
 # SourceTableConfig
-<a name="API_SourceTableConfig"></a>
 
 Properties used by the source leg to process data from the source.
 

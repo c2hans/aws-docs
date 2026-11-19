@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_OutputLocation.h
 ---
 
 # OutputLocation
-<a name="API_OutputLocation"></a>
 
 Describes the location where the restore job's output is stored.
 

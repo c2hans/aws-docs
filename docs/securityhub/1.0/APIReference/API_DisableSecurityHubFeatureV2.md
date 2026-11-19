@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disable
 ---
 
 # DisableSecurityHubFeatureV2
-<a name="API_DisableSecurityHubFeatureV2"></a>
 
 Disables an opt-in feature for the calling account in the current AWS Region. The operation is idempotent. If the feature is already disabled, no changes are made. You cannot disable a feature that is managed by an organization policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetSegmentEstimate
-<a name="API_connect-customer-profiles_GetSegmentEstimate"></a>
 
 Gets the result of a segment estimate query.
 

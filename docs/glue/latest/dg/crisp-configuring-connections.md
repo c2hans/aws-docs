@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crisp-configuring-connect
 ---
 
 # Configuring Crisp connections
-<a name="crisp-configuring-connections"></a>
 
 Crisp connections use basic authentication. You store the credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

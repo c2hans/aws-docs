@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/utility-m
 ---
 
 # Utility modules available in the AWS SDK for C\+\+
-<a name="utility-modules"></a>
 
 The AWS SDK for C\+\+ includes many [utility modules](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/namespace_aws_1_1_utils.html) to reduce the complexity of developing AWS applications in C\+\+.
 

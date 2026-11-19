@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-730-release.
 ---
 
 # Amazon EMR release 7.3.0
-<a name="emr-730-release"></a>
 
 ## 7.3.0 supported lifecycle
 <a name="emr-730-supported-lifecycle"></a>

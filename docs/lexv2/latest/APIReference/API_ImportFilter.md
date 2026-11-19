@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ImportFilt
 ---
 
 # ImportFilter
-<a name="API_ImportFilter"></a>
 
 Filters the response from the [ListImports](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListImports.html) operation.
 

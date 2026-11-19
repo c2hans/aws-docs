@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadat
 ---
 
 # GetBucketMetadataTableConfiguration
-<a name="API_GetBucketMetadataTableConfiguration"></a>
 
 **Important**
  We recommend that you retrieve your S3 Metadata configurations by using the V2 [GetBucketMetadataConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataConfiguration.html) API operation. We no longer recommend using the V1 `GetBucketMetadataTableConfiguration` API operation.

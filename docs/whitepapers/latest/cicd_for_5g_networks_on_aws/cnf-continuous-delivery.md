@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # CNF continuous delivery
-<a name="cnf-continuous-delivery"></a>
 
 This step consists of a sequence of steps that are carried out repeatedly to deploy changes that are part of container/configuration changes resulting in upgrades. The CNF continuous delivery is automated via pipelines and is specific to individual applications. AWS uses standard Helm charts to update specific CNFs. The code pipeline has pre- and post-checks for the application update status. The updated CI/CD pipeline is also integrated with a test automation framework to run automated testing. This abstraction allows a clean deployment of network functions.
 

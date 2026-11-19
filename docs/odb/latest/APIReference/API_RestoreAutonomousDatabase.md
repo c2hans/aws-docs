@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_RestoreAuton
 ---
 
 # RestoreAutonomousDatabase
-<a name="API_RestoreAutonomousDatabase"></a>
 
 Restores the specified Autonomous Database to a point in time.
 

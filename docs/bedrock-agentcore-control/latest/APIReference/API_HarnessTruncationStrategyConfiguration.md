@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessTruncationStrategyConfiguration
-<a name="API_HarnessTruncationStrategyConfiguration"></a>
 
 Strategy-specific truncation configuration.
 

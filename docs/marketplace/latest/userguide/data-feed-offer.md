@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-o
 ---
 
 # Offer data feed
-<a name="data-feed-offer"></a>
 
 The offer data feed provides information about all offers that you've created as the seller of record. If a single offer has multiple revisions, all revisions are included in the data feed.
 

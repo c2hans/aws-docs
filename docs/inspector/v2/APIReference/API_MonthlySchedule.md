@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_MonthlySch
 ---
 
 # MonthlySchedule
-<a name="API_MonthlySchedule"></a>
 
 A monthly schedule.
 

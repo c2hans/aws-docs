@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-testcon
 ---
 
 # Demonstrate publishing messages with the AWS IoT Device Client
-<a name="iot-dc-testconn-publish"></a>
 
 The procedures in this section demonstrate how the AWS IoT Device Client can send default and custom MQTT messages.
 

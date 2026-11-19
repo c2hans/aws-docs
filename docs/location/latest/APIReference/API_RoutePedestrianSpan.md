@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianSpan
-<a name="API_RoutePedestrianSpan"></a>
 
 Span computed for the requested SpanAdditionalFeatures.
 

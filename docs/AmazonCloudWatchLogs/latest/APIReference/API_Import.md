@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Import
-<a name="API_Import"></a>
 
 An import job to move data from CloudTrail Event Data Store to CloudWatch.
 

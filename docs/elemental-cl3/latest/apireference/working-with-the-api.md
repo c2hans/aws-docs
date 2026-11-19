@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Working with the API
-<a name="working-with-the-api"></a>
 
 **Topics**
 + [The API Protocol](api-protocol.md)

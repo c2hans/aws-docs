@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 ---
 
 # Configuring AWS Identity Center Integration
-<a name="configuring-idc-integration"></a>
 
 To create an instance and use the Amazon Connect Decisions service, you need to either connect an existing IAM Identity Center user profile or create a new one.
 

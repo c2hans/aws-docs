@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 2: Creating drafts of the migration runbooks
-<a name="task-two-drafts-runbooks"></a>
 
 In this task, you draft and review migration runbooks for each migration pattern. For example, you draft a migration runbook for rehost to Amazon EC2 and another runbook for replatform to Amazon RDS. You repeat this task until you have drafted a migration runbook for every migration pattern identified in the previous task.
 

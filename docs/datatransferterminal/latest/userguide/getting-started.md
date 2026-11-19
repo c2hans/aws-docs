@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/ge
 ---
 
 # Getting started
-<a name="getting-started"></a>
 
 Get started with making remote data transfers to your AWS Cloud services by making a reservation at one of the Data Transfer Terminal facilities. To begin, you’ll need equipment that is supported by the Data Transfer Terminal facility and an AWS Enterprise Support account.
 

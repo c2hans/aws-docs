@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayElbAccessLogConfiguration
-<a name="API_GatewayElbAccessLogConfiguration"></a>
 
 The access log configuration for the load balancers that a gateway manages.
 

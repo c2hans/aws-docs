@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # Example usage
-<a name="checklist-usage"></a>
 
 There is no one way to use the MLOps checklist (attached). A common pattern, however, is to iterate on it until system quality and performance are at the levels that you want.
 

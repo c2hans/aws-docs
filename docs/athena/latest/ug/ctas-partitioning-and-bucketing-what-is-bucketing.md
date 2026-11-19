@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-partitioning-and-b
 ---
 
 # What is bucketing?
-<a name="ctas-partitioning-and-bucketing-what-is-bucketing"></a>
 
 Bucketing is a way to organize the records of a dataset into categories called buckets.
 

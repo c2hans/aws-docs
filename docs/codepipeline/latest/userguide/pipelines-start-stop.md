@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Start and stop pipelines manually
-<a name="pipelines-start-stop"></a>
 
 You can use the AWS CodePipeline console or the AWS CLI to manually start and stop pipelines. There are automated methods for starting pipelines with event-based change detection as detailed in, or trigger configuration as detailed in .
 

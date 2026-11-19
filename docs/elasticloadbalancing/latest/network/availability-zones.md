@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/avai
 ---
 
 # Update the Availability Zones for your Network Load Balancer
-<a name="availability-zones"></a>
 
 You can enable or disable the Availability Zones for your Network Load Balancer at any time. When you enable an Availability Zone, you must specify one subnet from that Availability Zone. After you enable an Availability Zone, the load balancer starts routing requests to the registered targets in that Availability Zone. Your load balancer is most effective if you ensure that each enabled Availability Zone has at least one registered target. Enabling multiple Availability Zones helps improve the fault tolerance of your applications.
 

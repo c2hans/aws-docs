@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/creat
 ---
 
 # Creating custom roles
-<a name="create-custom-roles"></a>
 
 To create custom roles, follow these steps:
 

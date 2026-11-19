@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSSMDirectoryServiceAccess
-<a name="AmazonSSMDirectoryServiceAccess"></a>
 
 **Description**: This policy allows SSM Agent to access Directory Service on behalf of the customer for domain-join the managed instance.
 

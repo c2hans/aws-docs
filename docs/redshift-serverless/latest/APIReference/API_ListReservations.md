@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListReservations
-<a name="API_ListReservations"></a>
 
 Returns a list of Reservation objects.
 

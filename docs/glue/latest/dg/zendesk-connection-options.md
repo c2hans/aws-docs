@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zendesk-connection-option
 ---
 
 # Zendesk connection options
-<a name="zendesk-connection-options"></a>
 
 The following are connection options for Zendesk:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your Object in Zendesk.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Data Lake Ingest and Processing with Downstream Analytics
-<a name="traceability-downstream-analytics"></a>
 
 This architecture shows how to monitor data processing pipelines within the data lake using downstream analytics. You can publish relevant logs, metrics, and events to detect abnormal behaviors and visualize trends in near real time.
 

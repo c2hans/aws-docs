@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/control-d
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # AWS API calls supported by AWS Audit Manager
-<a name="control-data-sources-api"></a>
 
 You can use Audit Manager to capture snapshots of your AWS environment as evidence for audits. When you create or edit a custom control, you can specify one or more AWS API calls as a data source mapping for evidence collection. Audit Manager then makes API calls to the relevant AWS services, and collects a snapshot of the configuration details for your AWS resources.
 

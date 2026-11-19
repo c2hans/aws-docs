@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-checko
 ---
 
 # Connecting to Checkout.com in AWS Glue Studio
-<a name="connecting-to-data-checkout"></a>
 
 Checkout.com is a software-as-a-service (SaaS) application. Because you are a Checkout.com user, you can connect AWS Glue to your Checkout.com account. You can then use Checkout.com as a data source in your AWS Glue ETL jobs to transfer data between Checkout.com and AWS services or other supported applications.
 

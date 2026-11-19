@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/nucleus-emi
 ---
 
 # Nucleus telemetry emitter
-<a name="nucleus-emitter-component"></a>
 
 The nucleus telemetry emitter component (`aws.greengrass.telemetry.NucleusEmitter`) gathers system health telemetry data and publishes it continually to a local topic and an AWS IoT Core MQTT topic. This component enables you to gather real-time system telemetry on your Greengrass core devices. For information about the Greengrass telemetry agent that publishes system telemetry data to Amazon EventBridge, see [Gather system health telemetry data from AWS IoT Greengrass core devices](telemetry.md).
 

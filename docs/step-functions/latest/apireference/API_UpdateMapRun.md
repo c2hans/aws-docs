@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_U
 ---
 
 # UpdateMapRun
-<a name="API_UpdateMapRun"></a>
 
 Updates an in-progress Map Run's configuration to include changes to the settings that control maximum concurrency and Map Run failure.
 

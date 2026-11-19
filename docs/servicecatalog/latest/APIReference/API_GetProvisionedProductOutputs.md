@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_G
 ---
 
 # GetProvisionedProductOutputs
-<a name="API_GetProvisionedProductOutputs"></a>
 
 This API takes either a `ProvisonedProductId` or a `ProvisionedProductName`, along with a list of one or more output keys, and responds with the key/value pairs of those outputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AttachmentsSource
-<a name="API_AttachmentsSource"></a>
 
 Identifying information about a document attachment, including the file name and a key-value pair that identifies the location of an attachment to a document.
 

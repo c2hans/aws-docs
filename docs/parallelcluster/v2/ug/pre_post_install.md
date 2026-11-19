@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/pre_post_install.h
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Custom Bootstrap Actions
-<a name="pre_post_install"></a>
 
 AWS ParallelCluster can run arbitrary code either before (pre-install) or after (post-install) the main bootstrap action when the cluster is created. In most cases, this code is stored in Amazon Simple Storage Service (Amazon S3) and accessed through an HTTPS connection. The code is run as root and can be in any script language that's supported by the cluster OS. Often the code is in *Bash* or *Python*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AutoScalingGroupSavingsOpportunityAfterDiscounts
-<a name="API_AutoScalingGroupSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for Auto Scaling group recommendations after applying the Savings Plans and Reserved Instances discounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListComponentTypesFilter
-<a name="API_ListComponentTypesFilter"></a>
 
 An object that filters items in a list of component types.
 

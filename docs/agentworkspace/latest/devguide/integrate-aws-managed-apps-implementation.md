@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Implementation guide
-<a name="integrate-aws-managed-apps-implementation"></a>
 
 This section describes the steps to integrate AWS managed applications using Streams and AppManager. The [ Worklist](https://docs.aws.amazon.com/connect/latest/adminguide/worklist-app.html) AWS managed application is used for demonstration purposes.
 

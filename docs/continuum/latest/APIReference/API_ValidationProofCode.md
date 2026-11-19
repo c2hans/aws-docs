@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Valida
 ---
 
 # ValidationProofCode
-<a name="API_ValidationProofCode"></a>
 
 The validation Proof Code.
 

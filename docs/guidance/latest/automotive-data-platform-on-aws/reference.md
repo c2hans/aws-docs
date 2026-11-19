@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Reference
-<a name="reference"></a>
 
 ## GitHub Repositories
 <a name="github-repositories"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningJob.html
 ---
 
 # SigningJob
-<a name="API_SigningJob"></a>
 
 Contains information about a signing job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Creating and managing registry records
-<a name="registry-managing-records"></a>
 
 Registry records represent the individual resources published into a registry. Each record captures metadata that describes the underlying resource — what it is, what it does, and how it can be found. This section covers the supported record types, record lifecycle, and how to create and manage records.
 

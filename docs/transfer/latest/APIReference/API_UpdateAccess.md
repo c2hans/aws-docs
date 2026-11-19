@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateA
 ---
 
 # UpdateAccess
-<a name="API_UpdateAccess"></a>
 
 Allows you to update parameters for the access specified in the `ServerID` and `ExternalID` parameters.
 

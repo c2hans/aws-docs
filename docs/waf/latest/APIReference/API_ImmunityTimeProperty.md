@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ImmunityTime
 ---
 
 # ImmunityTimeProperty
-<a name="API_ImmunityTimeProperty"></a>
 
 Used for CAPTCHA and challenge token settings. Determines how long a `CAPTCHA` or challenge timestamp remains valid after AWS WAF updates it for a successful `CAPTCHA` or challenge response.
 

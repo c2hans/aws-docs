@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LastKnownChe
 ---
 
 # LastKnownCheck
-<a name="API_LastKnownCheck"></a>
 
 Last known check performed on a launched instance.
 

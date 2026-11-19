@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/getting-started.h
 ---
 
 # Getting started with AWS Blocks
-<a name="getting-started"></a>
 
 In this tutorial, you set up your development environment, create a todo application with user authentication, data persistence, and a type-safe API. The application runs locally and can optionally deploy to AWS.
 

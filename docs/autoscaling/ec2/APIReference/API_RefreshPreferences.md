@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Refresh
 ---
 
 # RefreshPreferences
-<a name="API_RefreshPreferences"></a>
 
 Describes the preferences for an instance refresh.
 

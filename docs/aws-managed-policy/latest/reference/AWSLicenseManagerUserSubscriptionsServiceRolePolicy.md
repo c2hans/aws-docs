@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLicenseManagerUserSubscriptionsServiceRolePolicy
-<a name="AWSLicenseManagerUserSubscriptionsServiceRolePolicy"></a>
 
 **Description**: Allows AWS License Manager User Subscriptions Service to manage resources on your behalf.
 

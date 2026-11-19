@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Fixe
 ---
 
 # FixedResponseAction
-<a name="API_FixedResponseAction"></a>
 
 Describes an action that returns a custom HTTP response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # IncrementalTrainingDataChannelOutput
-<a name="API_IncrementalTrainingDataChannelOutput"></a>
 
 Contains information about an incremental training data channel that was used to create a trained model. This structure provides details about the base model and channel configuration used during incremental training.
 

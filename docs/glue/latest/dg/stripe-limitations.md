@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/stripe-limitations.html
 ---
 
 # Limitations
-<a name="stripe-limitations"></a>
 
 The following are limitations for the Stripe connector:
 +  Only Field Based Partitioning supported by connector.

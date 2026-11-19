@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/cloudtrail.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Logging AWS Cloud9 API calls with AWS CloudTrail
-<a name="cloudtrail"></a>
 
 AWS Cloud9 is integrated with CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in AWS Cloud9. CloudTrail captures all API calls for AWS Cloud9 as events. The calls captured include calls from the AWS Cloud9 console and from code calls to the AWS Cloud9 APIs. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon Simple Storage Service (Amazon S3) bucket, including events for AWS Cloud9. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to AWS Cloud9, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

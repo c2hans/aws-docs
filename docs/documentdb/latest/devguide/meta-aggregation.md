@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/meta-aggregat
 ---
 
 # $meta
-<a name="meta-aggregation"></a>
 
 The `$meta` aggregation operator accesses metadata associated with documents in an aggregation pipeline. It is commonly used to retrieve text search scores and sort results by relevance.
 

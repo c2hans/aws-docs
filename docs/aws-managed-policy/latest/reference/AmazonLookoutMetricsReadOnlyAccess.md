@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLookoutMetricsReadOnlyAccess
-<a name="AmazonLookoutMetricsReadOnlyAccess"></a>
 
 **Description**: Gives access to all read-only actions for Amazon Lookout for Metrics
 

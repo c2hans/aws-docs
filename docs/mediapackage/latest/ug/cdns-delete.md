@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cdns-delete.html
 ---
 
 # Deleting a Distribution
-<a name="cdns-delete"></a>
 
 Delete an Amazon CloudFront distribution from the CloudFront console. You can't delete a distribution from the AWS Elemental MediaPackage console.
 

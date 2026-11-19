@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle database links and PostgreSQL dblink and fdwrapper
-<a name="chap-oracle-aurora-pg.special.dblinks"></a>
 
 With AWS DMS, you can integrate heterogeneous database systems by creating database links between different database management systems. Oracle database links and PostgreSQL dblink/fdwrapper facilitate access to data in remote databases from a local database, enabling queries and data manipulation across distributed environments.
 

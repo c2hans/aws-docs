@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CreatePricingRule
-<a name="API_CreatePricingRule"></a>
 
  Creates a pricing rule can be associated to a pricing plan, or a set of pricing plans.
 

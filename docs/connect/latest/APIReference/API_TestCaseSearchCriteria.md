@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TestCase
 ---
 
 # TestCaseSearchCriteria
-<a name="API_TestCaseSearchCriteria"></a>
 
 The search criteria to be used to return test cases.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return test cases.
 
  ** AndConditions **   <a name="connect-Type-TestCaseSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [TestCaseSearchCriteria](#API_TestCaseSearchCriteria) objects
+Type: Array of [TestCaseSearchCriteria](API_TestCaseSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-TestCaseSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [TestCaseSearchCriteria](#API_TestCaseSearchCriteria) objects
+Type: Array of [TestCaseSearchCriteria](API_TestCaseSearchCriteria.md) objects
 Required: No
 
  ** StatusCondition **   <a name="connect-Type-TestCaseSearchCriteria-StatusCondition"></a>

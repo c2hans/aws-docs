@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Categori
 ---
 
 # CategoriesAttributeAndCondition
-<a name="API_CategoriesAttributeAndCondition"></a>
 
 A list of tag conditions that the filter evaluates together using AND logic. A category segment matches only when the tags on its rule satisfy every tag condition in the list.
 

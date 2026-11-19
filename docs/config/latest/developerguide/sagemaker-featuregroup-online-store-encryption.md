@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-f
 ---
 
 # sagemaker-featuregroup-online-store-encryption
-<a name="sagemaker-featuregroup-online-store-encryption"></a>
 
 Checks if SageMaker feature groups have KMS encryption for OnlineStore with standard storage. The rule is NON\_COMPLIANT if KMS key encryption is not configured.
 

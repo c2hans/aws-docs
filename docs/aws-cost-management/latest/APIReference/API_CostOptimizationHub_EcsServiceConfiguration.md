@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EcsServiceConfiguration
-<a name="API_CostOptimizationHub_EcsServiceConfiguration"></a>
 
 The ECS service configuration used for recommendations.
 

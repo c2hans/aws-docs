@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 ---
 
 # Install the SSM Agent and CloudWatch agent on Amazon EKS worker nodes using preBootstrapCommands
-<a name="install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands"></a>
 
 *Akkamahadevi Hiremath, Amazon Web Services*
 

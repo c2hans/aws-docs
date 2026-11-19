@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # CAP theorem
-<a name="cap-theorem"></a>
 
  Another way that we might think about availability is in relation to the CAP theorem. The theorem states that a distributed system, one made up of multiple nodes storing data, cannot simultaneously provide more than two out of the following three guarantees:
 +  **C**onsistency: Every read request receives the most recent write or an error when consistency can't be guaranteed.

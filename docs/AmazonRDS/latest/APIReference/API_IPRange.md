@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_IPRang
 ---
 
 # IPRange
-<a name="API_IPRange"></a>
 
 This data type is used as a response element in the `DescribeDBSecurityGroups` action.
 

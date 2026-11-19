@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ReplaceTopic
 ---
 
 # ReplaceTopicRule
-<a name="API_ReplaceTopicRule"></a>
 
 Replaces the rule. You must specify all parameters for the new rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
 

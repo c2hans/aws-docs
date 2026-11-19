@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-iam.html
 ---
 
 # IAM permissions for queues
-<a name="queues-iam"></a>
 
 To work with a queue, an IAM principal needs permission for the queue actions, which use the `kinesis:` prefix. A policy identifies a queue by its ARN, which has the form `arn:aws:kinesis:{{region}}:{{account-id}}:queue/{{resource-id}}`. You can also share queue access with a principal in another AWS account by attaching a resource-based policy to the queue.
 

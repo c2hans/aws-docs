@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # HumanLoopInput
-<a name="API_HumanLoopInput"></a>
 
 An object containing the human loop input in JSON format.
 

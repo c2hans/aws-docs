@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ac
 ---
 
 # ActionInvocation
-<a name="API_ActionInvocation"></a>
 
 An extension that was invoked as part of a deployment event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityHubReadOnlyAccess
-<a name="AWSSecurityHubReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS Security Hub resources
 

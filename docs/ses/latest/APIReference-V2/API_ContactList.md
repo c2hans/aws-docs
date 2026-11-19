@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ContactLi
 ---
 
 # ContactList
-<a name="API_ContactList"></a>
 
 A list that contains contacts that have subscribed to a particular topic or topics.
 

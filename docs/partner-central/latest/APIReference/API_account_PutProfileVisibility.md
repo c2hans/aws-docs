@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PutProfileVisibility
-<a name="API_account_PutProfileVisibility"></a>
 
 Sets the visibility level for a partner profile, controlling who can view the profile information.
 

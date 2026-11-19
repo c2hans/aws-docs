@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBotReplica
-<a name="API_DescribeBotReplica"></a>
 
 Monitors the bot replication status through the UI console.
 

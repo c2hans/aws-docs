@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Disa
 ---
 
 # DisableOperatorApp
-<a name="API_DisableOperatorApp"></a>
 
 Disable the Operator App for the specified AgentSpace
 

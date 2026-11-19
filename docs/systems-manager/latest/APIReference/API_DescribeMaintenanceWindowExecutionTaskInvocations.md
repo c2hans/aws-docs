@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeMaintenanceWindowExecutionTaskInvocations
-<a name="API_DescribeMaintenanceWindowExecutionTaskInvocations"></a>
 
 Retrieves the individual task executions (one per target) for a particular task run as part of a maintenance window execution.
 

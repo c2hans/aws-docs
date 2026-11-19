@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/references.html
 ---
 
 # References/Advanced
-<a name="references"></a>
 
 Find reference materials, tutorials, and troubleshooting resources for Amazon Bedrock:
 

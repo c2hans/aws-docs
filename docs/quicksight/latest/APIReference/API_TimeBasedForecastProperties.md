@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TimeB
 ---
 
 # TimeBasedForecastProperties
-<a name="API_TimeBasedForecastProperties"></a>
 
 The forecast properties setup of a forecast in the line chart.
 

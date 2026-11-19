@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops04-b
 ---
 
 # OPS04-BP02 Automate testing and rollback
-<a name="ops04-bp02"></a>
 
  Automated tests verify changes during deployment, and automated rollback reverses a change when predefined conditions signal failure. Together they shorten recovery time by removing manual delay.
 

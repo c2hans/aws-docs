@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-partner-amis.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create nodes with optimized Ubuntu Linux AMIs
-<a name="eks-partner-amis"></a>
 
 Canonical has partnered with Amazon EKS to create node AMIs that you can use in your clusters.
 

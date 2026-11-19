@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapp
 ---
 
 # Approver tasks
-<a name="multipartyapproval-tasks-approver"></a>
 
 A user who is a member of a Multi-party approval team can [approve or deny requests](https://docs.aws.amazon.com/mpa/latest/userguide/approver.html) that are part of a session. Other tasks include:
 + [Respond to requested operations](https://docs.aws.amazon.com/mpa/latest/userguide/respond-request)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/gam-integration-ss
 ---
 
 # Server-side AWS Elemental MediaTailor integration with Google's ad platforms
-<a name="gam-integration-ssl"></a>
 
 MediaTailor automatically authenticates server-to-server connections with Google Ad Manager (GAM), Google Campaign Manager (GCM), and Google Display & Video 360 (DV360) using SSL certificates issued by Google to AWS Elemental MediaTailor. When MediaTailor detects ad requests or tracking events destined for Google ad servers, it automatically establishes the required secure, authenticated connection—no additional SSL certificate setup or support ticket is required.
 

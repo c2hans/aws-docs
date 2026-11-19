@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/lambda-setu
 ---
 
 # Using Amazon Q Developer with AWS Lambda
-<a name="lambda-setup"></a>
 
 This document describes how to set up and activate Amazon Q Developer for the Lambda console. Once activated, Amazon Q can make code recommendations on demand in the Lambda code editor as you develop your function.
 

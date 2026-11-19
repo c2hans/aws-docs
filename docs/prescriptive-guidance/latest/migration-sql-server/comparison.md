@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Choosing between Amazon EC2 and Amazon RDS
-<a name="comparison"></a>
 
 Amazon EC2 and Amazon RDS offer unique benefits that may be beneficial for your specific use case. You have the flexibility to use one or both services for your SQL Server database, depending on your needs. This section provides detailed information to help with your choice.
 

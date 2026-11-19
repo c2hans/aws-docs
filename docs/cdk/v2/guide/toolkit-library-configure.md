@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library-configure.h
 ---
 
 # Configuring your CDK Toolkit instance
-<a name="toolkit-library-configure"></a>
 
 Learn how to customize your AWS CDK Toolkit Library instance with options for message handling, AWS profile selection, and stack selection strategies. This guide explains the available configuration options and how to implement them effectively to meet your specific deployment requirements.
 

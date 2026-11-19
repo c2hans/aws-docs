@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/manage-test-sets.html
 ---
 
 # Manage test sets
-<a name="manage-test-sets"></a>
 
 You can download, update, and delete test sets from the test set window. Or you can use the list of available test sets to edit or manually annotate your test set file. Then, upload it again to retry validation, due to errors or other input issues.
 

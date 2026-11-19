@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserQuickSightConsoleEmbeddingConfiguration
-<a name="API_RegisteredUserQuickSightConsoleEmbeddingConfiguration"></a>
 
 Information about the Amazon Quick Sight console that you want to embed.
 

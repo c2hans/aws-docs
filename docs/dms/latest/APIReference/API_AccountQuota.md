@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_AccountQuota
 ---
 
 # AccountQuota
-<a name="API_AccountQuota"></a>
 
 Describes a quota for an AWS account, for example the number of replication instances allowed.
 

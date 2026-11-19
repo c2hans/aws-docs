@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Comprehend is an AWS service for gaining insight into the content of documents. Use these actions to determine the topics contained in your documents, the topics they discuss, the predominant sentiment expressed in them, the predominant language used, and more.
 
@@ -22,4 +21,4 @@ The following resources provide additional information about the Amazon Comprehe
 +  * AWS Command Line Interface *
   +  [ Amazon Comprehend CLI commands](https://docs.aws.amazon.com/cli/latest/reference/comprehend/index.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

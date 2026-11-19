@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-backup-
 ---
 
 # Backup and Restore
-<a name="net-win-backup-and-restore"></a>
 
 ## Snapshots and AMIs
 <a name="net-win-snapshots-and-amis"></a>

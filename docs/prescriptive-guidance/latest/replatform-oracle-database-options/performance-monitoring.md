@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Performance monitoring
-<a name="performance-monitoring"></a>
 
 AWS provides a number of features and services to monitor the performance of Oracle database instances. They cover a variety of aspects from the hypervisor level, to the operating system, to inside the database.
 

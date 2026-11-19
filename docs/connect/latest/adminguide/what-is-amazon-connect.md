@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon
 ---
 
 # What is Connect Customer?
-<a name="what-is-amazon-connect"></a>
 
 **Note**
 Amazon Connect Customer is the current name for the product previously called Amazon Connect. Amazon Connect is now a set of agentic AI solutions for different business functions. This guide covers Amazon Connect Customer.

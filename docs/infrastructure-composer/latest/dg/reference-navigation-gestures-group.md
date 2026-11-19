@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/refere
 ---
 
 # Group cards together on Infrastructure Composer's visual canvas
-<a name="reference-navigation-gestures-group"></a>
 
 This topic contains details on grouping enhanced component cards and standard component cards. Grouping cards helps you categorize and organize your resources without needing to think about the code or markup you need write.
 

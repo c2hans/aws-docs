@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-
 ---
 
 # EXECUTE
-<a name="querying-with-prepared-statements-execute"></a>
 
 Runs a prepared statement. Values for parameters are specified in the `USING` clause.
 

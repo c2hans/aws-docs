@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/security-extension.ht
 ---
 
 # Security Extension
-<a name="security-extension"></a>
 
 ## mTLS Authentication
 <a name="_mtls_authentication"></a>

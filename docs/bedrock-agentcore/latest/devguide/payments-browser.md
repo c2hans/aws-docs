@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Integrating AgentCore payments with Browser Tool
-<a name="payments-browser"></a>
 
 There are two ways your agent can access x402 paid content: via the [Browser Tool](browser-tool.md) or via standard HTTP calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Mlflow
 ---
 
 # MlflowAppSummary
-<a name="API_MlflowAppSummary"></a>
 
 The summary of the Mlflow App to list.
 

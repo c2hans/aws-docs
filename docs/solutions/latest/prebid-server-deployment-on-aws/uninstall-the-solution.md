@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 ## Using the destroy script (Recommended)
 <a name="using-the-destroy-script"></a>

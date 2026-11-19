@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Automatic node recovery
-<a name="sagemaker-hyperpod-eks-resiliency-node-recovery"></a>
 
 During cluster creation or update, cluster admin users can select the node (instance) recovery option between `Automatic` (Recommended) and `None` at the cluster level. If set to `Automatic`, SageMaker HyperPod reboots or replaces faulty nodes automatically.
 

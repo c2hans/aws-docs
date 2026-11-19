@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # AccessLog
-<a name="API_AccessLog"></a>
 
 Information about the `AccessLog` attribute.
 

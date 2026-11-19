@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # Replica
-<a name="API_Replica"></a>
 
 A structure that contains information about a canary replica in a specific location.
 

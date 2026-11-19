@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent ContainerMetricsConfig
-<a name="aws-properties-sagemaker-inferencecomponent-containermetricsconfig"></a>
 
 The configuration for container-level metrics scraping. Use this configuration to specify a custom metrics endpoint path and publishing frequency for container metrics. When `EnableDetailedObservability` is set to `True` in `MetricsConfig`, metrics are scraped from the container's Prometheus endpoint. If this configuration is not provided, the default path `/metrics` on port `8080` is used with a default publishing frequency of `60` seconds. For first-party and Deep Learning Containers (DLC), the endpoint path is determined automatically and this configuration is optional.
 

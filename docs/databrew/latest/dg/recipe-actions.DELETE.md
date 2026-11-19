@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.DELETE
 ---
 
 # DELETE
-<a name="recipe-actions.DELETE"></a>
 
 Removes a column from the dataset.
 

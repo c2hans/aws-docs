@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Auth backendEnvironmentName Remove
-<a name="backend-appid-auth-backendenvironmentname-remove"></a>
 
 The authentication and authorization settings from your Amplify project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Concep
 ---
 
 # Configuring UTL\_HTTP access using certificates and an Oracle wallet
-<a name="Oracle.Concepts.ONA"></a>
 
 Amazon RDS supports outbound network access on your RDS for Oracle DB instances. To connect your DB instance to the network, you can use the following PL/SQL packages:
 

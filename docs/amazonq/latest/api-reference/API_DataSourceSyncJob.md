@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataSou
 ---
 
 # DataSourceSyncJob
-<a name="API_DataSourceSyncJob"></a>
 
 Provides information about an Amazon Q Business data source connector synchronization job.
 

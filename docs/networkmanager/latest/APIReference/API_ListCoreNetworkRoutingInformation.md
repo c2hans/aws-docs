@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListCoreNetworkRoutingInformation
-<a name="API_ListCoreNetworkRoutingInformation"></a>
 
 Lists routing information for a core network, including routes and their attributes.
 

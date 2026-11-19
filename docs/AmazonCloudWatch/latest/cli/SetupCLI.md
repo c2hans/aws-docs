@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/SetupCLI.htm
 ---
 
 # Set up the command line interface
-<a name="SetupCLI"></a>
 
 As of November 7, 2017, we are no longer supporting the CloudWatch command line interface with new functionality. It is not available for download. The CloudWatch CLI reference documentation is still available.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/authenticati
 ---
 
 # Authentication for WorkSpaces
-<a name="authentication"></a>
 
 You can use two authentication methods for your Amazon WorkSpaces, including using smart card authentication and WebAuthn.
 

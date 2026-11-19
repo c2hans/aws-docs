@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-job-queue-
 ---
 
 # Create a Fargate job queue
-<a name="create-job-queue-fargate"></a>
 
 Complete the following steps to create a job queue for AWS Fargate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-clusters.ht
 ---
 
 # Neptune DB Clusters API
-<a name="api-clusters"></a>
 
 **Actions:**
 + [CreateDBCluster (action)](#CreateDBCluster)

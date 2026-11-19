@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # ImportSummary
-<a name="API_ImportSummary"></a>
 
  Summary information about the source file for the import.
 

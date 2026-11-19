@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ManagedSourceConfiguration
-<a name="API_amazon-q-connect_ManagedSourceConfiguration"></a>
 
 Source configuration for managed resources.
 

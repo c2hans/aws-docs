@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ConnectorT
 ---
 
 # ConnectorTypeFilter
-<a name="API_ConnectorTypeFilter"></a>
 
 A filter that matches connectors by connector type.
 

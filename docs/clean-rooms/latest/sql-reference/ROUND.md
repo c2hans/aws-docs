@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ROUND.h
 ---
 
 # ROUND function
-<a name="ROUND"></a>
 
 The ROUND function rounds numbers to the nearest integer or decimal.
 

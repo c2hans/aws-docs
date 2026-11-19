@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/use-ga
 ---
 
 # Use an AgentCore Gateway with Policy in AgentCore
-<a name="use-gateway-with-policy"></a>
 
 Follow the gateway authorization and authentication guide to obtain the credentials needed for gateway access.
 

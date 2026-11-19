@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/manage-data-capac
 ---
 
 # Index capacity
-<a name="manage-data-capacity"></a>
 
 An index is a structured corpus of documents that allows for efficient searching, sorting, and data access. AWS Quick uses an index to store, prepare, sync any files you upload to your Quick spaces. It then uses this indexed data to generate agent-driven responses during chat conversations.
 

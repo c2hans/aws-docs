@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: "AWSCloudFormationStackSetExecutionRole already exists" error
-<a name="problem-the-awscloudformationstacksetexecutionrole-already-exists-error"></a>
 
 When creating AWS CloudFormation [StackSets](https://awslabs.github.io/landing-zone-accelerator-on-aws/latest/typedocs/latest/classes/_aws_accelerator_config.CloudFormationStackSetConfig.html) using Landing Zone Accelerator on AWS, the solution attempts to create IAM roles required for deploying StackSets with [self-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html#prereqs-self-managed-permissions). Specifically, the two required roles are:
 +  **AWSCloudFormationStackSetAdministrationRole** - This role is deployed to the Management account.

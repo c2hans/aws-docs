@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Metadata Migration
-<a name="metadata-migration-tool-1"></a>
 
 Metadata migration moves the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection into a shape that can accept the incoming data and traffic. It handles mappings, templates, aliases, and other index-level definitions before document backfill or replay becomes meaningful. In the workflow model, metadata migration is a configured phase inside the migration workflow, not a separate manual tool run. When `metadataMigrationConfig` is present, the workflow runs two logical steps: `evaluateMetadata` (evaluates what would be applied) and `migrateMetadata` (writes those changes to the target). If approvals are enabled, the workflow can pause between these steps so you can inspect the result before continuing.
 

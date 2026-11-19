@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnTag
-<a name="API_ColumnTag"></a>
 
 A tag for a column in a ` [TagColumnOperation](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TagColumnOperation.html) ` structure. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 

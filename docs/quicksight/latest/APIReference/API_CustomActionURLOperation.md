@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomActionURLOperation
-<a name="API_CustomActionURLOperation"></a>
 
 The URL operation that opens a link to another webpage.
 

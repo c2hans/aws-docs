@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Energy-efficient infrastructure and services
-<a name="gensus01"></a>
 
 | GENSUS01: How do you minimize the computational resources needed for training, customizing, and hosting generative AI workloads? |
 | --- |

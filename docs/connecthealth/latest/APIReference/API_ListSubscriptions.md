@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Li
 ---
 
 # ListSubscriptions
-<a name="API_ListSubscriptions"></a>
 
 Lists all Subscriptions within a Domain.
 

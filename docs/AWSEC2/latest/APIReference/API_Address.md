@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Address.h
 ---
 
 # Address
-<a name="API_Address"></a>
 
 Describes an Elastic IP address, or a carrier IP address.
 

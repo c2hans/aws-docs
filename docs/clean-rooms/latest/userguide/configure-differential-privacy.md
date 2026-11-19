@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/configure-d
 ---
 
 # Configuring differential privacy policy (optional)
-<a name="configure-differential-privacy"></a>
 
 **Note**
 AWS Clean Rooms Differential Privacy is only available for collaborations where the data is stored in Amazon S3.

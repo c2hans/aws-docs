@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::Index ValueImportanceItem
-<a name="aws-properties-kendra-index-valueimportanceitem"></a>
 
 Specifies a key-value pair of the search boost value for a document when the key is part of the metadata of a document.
 

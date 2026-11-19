@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeploymentParameters
-<a name="API_DeploymentParameters"></a>
 
 The deployment parameters for an experiment run, including dynamic extension parameters and tags.
 

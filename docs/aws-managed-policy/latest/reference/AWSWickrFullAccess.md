@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSW
 ---
 
 # AWSWickrFullAccess
-<a name="AWSWickrFullAccess"></a>
 
 **Description**: This policy grants full administrative permissions to the Wickr service, including the Wickr administrative functions under the AWS Management Console.
 

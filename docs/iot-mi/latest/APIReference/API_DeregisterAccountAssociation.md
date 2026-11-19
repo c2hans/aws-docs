@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Deregiste
 ---
 
 # DeregisterAccountAssociation
-<a name="API_DeregisterAccountAssociation"></a>
 
 Deregister an account association from a managed thing.
 

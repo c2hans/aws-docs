@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateUserCustomPermission
-<a name="API_UpdateUserCustomPermission"></a>
 
 Updates a custom permissions profile for a user.
 

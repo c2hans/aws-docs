@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Http
 ---
 
 # HttpPackageConfiguration
-<a name="API_HttpPackageConfiguration"></a>
 
 The HTTP package configuration properties for the requested VOD source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartFaceDetection
-<a name="API_StartFaceDetection"></a>
 
 Starts asynchronous detection of faces in a stored video.
 

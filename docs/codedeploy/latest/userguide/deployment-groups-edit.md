@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-g
 ---
 
 # Change deployment group settings with CodeDeploy
-<a name="deployment-groups-edit"></a>
 
 You can use the CodeDeploy console, the AWS CLI, or the CodeDeploy APIs to change the settings of a deployment group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/webex-configuring-connect
 ---
 
 # Configuring Webex connections
-<a name="webex-configuring-connections"></a>
 
 Webex connections authenticate with a Webex access token, which the connector sends as a bearer token. You store the access token in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

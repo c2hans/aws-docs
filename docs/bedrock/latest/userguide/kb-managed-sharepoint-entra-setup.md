@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-shar
 ---
 
 # Set up Microsoft Entra ID App-Only authentication for SharePoint
-<a name="kb-managed-sharepoint-entra-setup"></a>
 
 Microsoft Entra ID App-Only authentication (`ENTRA_ID_APP_ONLY`) is the recommended authentication method for a SharePoint data source. It uses the OAuth 2.0 client-credentials (application-only) flow: a Microsoft Entra application authenticates with a certificate, so no user sign-in is involved at crawl time or at query time. This is the only authentication method that supports document-level access control (ACLs). For a comparison with the alternative `OAUTH2_APP` method, see [Authentication methods](kb-managed-ds-sharepoint.md#kb-managed-sharepoint-auth-methods).
 

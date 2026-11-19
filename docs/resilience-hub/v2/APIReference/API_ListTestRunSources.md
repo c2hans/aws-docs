@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTestRunSources
-<a name="API_ListTestRunSources"></a>
 
 Lists the monitoring source snapshots captured for a test run, optionally filtered by type.
 

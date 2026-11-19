@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/external-tool.
 ---
 
 # Flow block in Connect Customer: External Tool
-<a name="external-tool"></a>
 
 This topic defines the flow block for invoking a tool from an external application directly from a flow.
 

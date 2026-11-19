@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PaymentNetwo
 ---
 
 # PaymentNetwork
-<a name="API_PaymentNetwork"></a>
 
 A blockchain payment network configuration for receiving AI bot monetization payments. Specifies the blockchain chain, your wallet address on that chain, and the price per request.
 

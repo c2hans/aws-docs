@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/pages-compone
 ---
 
 # Pages and components: Build your app's user interface
-<a name="pages-components-ux"></a>
 
 **Topics**
 + [Managing pages](pages.md)

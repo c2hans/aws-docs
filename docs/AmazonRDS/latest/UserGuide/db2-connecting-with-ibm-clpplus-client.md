@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-connectin
 ---
 
 # Connecting to your Amazon RDS for Db2 DB instance with IBM CLPPlus
-<a name="db2-connecting-with-ibm-clpplus-client"></a>
 
 You can use a utility such as IBM CLPPlus to connect to an Amazon RDS for Db2 DB instance. This utility is part of IBM Data Server Runtime Client. To download the client** **from IBM Fix Central, see [IBM Data Server Client Packages Version 11.5 Mod 8 Fix Pack 0](https://www.ibm.com/support/pages/node/6830885) in IBM Support.
 

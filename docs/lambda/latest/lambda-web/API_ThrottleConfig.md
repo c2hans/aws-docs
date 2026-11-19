@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_ThrottleCon
 ---
 
 # ThrottleConfig
-<a name="API_ThrottleConfig"></a>
 
 The throttling configuration for a web function endpoint.
 

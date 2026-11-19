@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetImageF
 ---
 
 # GetImageFindings
-<a name="API_GetImageFindings"></a>
 
 Describes the Amazon Inspector vulnerability findings for the specified AMI.
 

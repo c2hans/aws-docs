@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OAuth
 ---
 
 # OAuthClientApplicationSummary
-<a name="API_OAuthClientApplicationSummary"></a>
 
 A summary of an OAuthClientApplication.
 

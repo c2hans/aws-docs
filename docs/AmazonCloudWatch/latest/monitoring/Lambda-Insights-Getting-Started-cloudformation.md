@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Use CloudFormation to enable Lambda Insights on an existing Lambda function
-<a name="Lambda-Insights-Getting-Started-cloudformation"></a>
 
 Follow these steps to use CloudFormation to enable Lambda Insights on an existing Lambda function.
 

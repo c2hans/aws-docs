@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Using write forwarding in an Aurora MySQL global database
-<a name="aurora-global-database-write-forwarding-ams"></a>
 
 **Topics**
 + [Region and version availability of write forwarding in Aurora MySQL](#aurora-global-database-write-forwarding-regions-versions-ams)

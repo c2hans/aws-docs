@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Data flow details
-<a name="data-flow-details"></a>
 
 ## Telemetry ingestion flow
 <a name="telemetry-ingestion-flow"></a>

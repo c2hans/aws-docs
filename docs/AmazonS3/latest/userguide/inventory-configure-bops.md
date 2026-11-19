@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/inventory-conf
 ---
 
 # Converting empty version ID strings in Amazon S3 Inventory reports to null strings
-<a name="inventory-configure-bops"></a>
 
 **Note**
 **The following procedure applies only to Amazon S3 Inventory reports that include all versions, and only if the "all versions" reports are used as manifests for S3 Batch Operations on buckets that have S3 Versioning enabled.** You are not required to convert strings for S3 Inventory reports that specify the current version only.

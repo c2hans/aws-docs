@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricSe
 ---
 
 # MetricSearchCriteria
-<a name="API_MetricSearchCriteria"></a>
 
 Defines the search criteria for filtering metrics.
 
@@ -12,7 +11,7 @@ Defines the search criteria for filtering metrics.
 
  ** AndConditions **   <a name="connect-Type-MetricSearchCriteria-AndConditions"></a>
 A list of conditions that must all be satisfied.
-Type: Array of [MetricSearchCriteria](#API_MetricSearchCriteria) objects
+Type: Array of [MetricSearchCriteria](API_MetricSearchCriteria.md) objects
 Required: No
 
  ** BooleanCondition **   <a name="connect-Type-MetricSearchCriteria-BooleanCondition"></a>
@@ -22,7 +21,7 @@ Required: No
 
  ** OrConditions **   <a name="connect-Type-MetricSearchCriteria-OrConditions"></a>
 A list of conditions to be met, where at least one condition must be satisfied.
-Type: Array of [MetricSearchCriteria](#API_MetricSearchCriteria) objects
+Type: Array of [MetricSearchCriteria](API_MetricSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-MetricSearchCriteria-StringCondition"></a>

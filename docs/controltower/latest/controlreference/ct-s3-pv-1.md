@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.S3.PV.1] Disallow modification of an Amazon S3 bucket that stores AWS Backup reports for AWS Control Tower
-<a name="ct-s3-pv-1"></a>
 
 This control limits modification of the Amazon S3 buckets that AWS Control Tower utilizes as a destination for storing AWS Backup reports.
 

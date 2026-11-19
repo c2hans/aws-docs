@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # InferenceContainerExecutionParameters
-<a name="API_InferenceContainerExecutionParameters"></a>
 
 Provides execution parameters for the inference container.
 

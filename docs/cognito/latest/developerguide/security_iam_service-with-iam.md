@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/security_i
 ---
 
 # How Amazon Cognito works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Cognito, learn what IAM features are available to use with Amazon Cognito.
 

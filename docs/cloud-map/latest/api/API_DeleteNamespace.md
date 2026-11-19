@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DeleteNamespace
 ---
 
 # DeleteNamespace
-<a name="API_DeleteNamespace"></a>
 
 Deletes a namespace from the current account. If the namespace still contains one or more services, the request fails.
 

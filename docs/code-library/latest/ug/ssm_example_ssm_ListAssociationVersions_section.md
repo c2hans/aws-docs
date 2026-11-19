@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ssm_example_ssm_L
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListAssociationVersions` with a CLI
-<a name="ssm_example_ssm_ListAssociationVersions_section"></a>
 
 The following code examples show how to use `ListAssociationVersions`.
 

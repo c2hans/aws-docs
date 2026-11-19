@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-api.html
 ---
 
 # AWS IoT jobs API operations
-<a name="jobs-api"></a>
 
 AWS IoT Jobs API can be used for either of the following categories:
 + Administrative tasks such as management and control of jobs. This is the *control plane*.

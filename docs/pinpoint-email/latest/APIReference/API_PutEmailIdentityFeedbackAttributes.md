@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutEmailIdentityFeedbackAttributes
-<a name="API_PutEmailIdentityFeedbackAttributes"></a>
 
 Used to enable or disable feedback forwarding for an identity. This setting determines what happens when an identity is used to send an email that results in a bounce or complaint event.
 

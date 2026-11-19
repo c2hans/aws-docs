@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_SourceConfig
 ---
 
 # SourceConfiguration
-<a name="API_SourceConfiguration"></a>
 
 The configuration details for the source used to create an Autonomous Database. This is a union, so only one of the following members can be specified.
 

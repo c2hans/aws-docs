@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Firewall engine actions and scopes
-<a name="firewall-rule-groups-verdicts"></a>
 
 A firewall rule applies one of the following actions when it matches:
 + **Accept** – Allow the traffic.

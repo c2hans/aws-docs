@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateSpace
-<a name="API_UpdateSpace"></a>
 
 Updates a space.
 

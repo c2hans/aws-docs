@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-observabili
 ---
 
 # Troubleshooting the Amazon SageMaker HyperPod observability add-on
-<a name="hyperpod-observability-addon-troubleshooting"></a>
 
 Use the following guidance to resolve common issues with the Amazon SageMaker HyperPod (SageMaker HyperPod) observability add-on.
 

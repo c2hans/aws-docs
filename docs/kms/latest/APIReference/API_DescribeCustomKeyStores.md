@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeCust
 ---
 
 # DescribeCustomKeyStores
-<a name="API_DescribeCustomKeyStores"></a>
 
 Gets information about [custom key stores](https://docs.aws.amazon.com/kms/latest/developerguide/key-store-overview.html) in the account and Region.
 

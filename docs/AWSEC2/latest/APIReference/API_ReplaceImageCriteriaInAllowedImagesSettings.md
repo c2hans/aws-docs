@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceIm
 ---
 
 # ReplaceImageCriteriaInAllowedImagesSettings
-<a name="API_ReplaceImageCriteriaInAllowedImagesSettings"></a>
 
 Sets or replaces the criteria for Allowed AMIs.
 

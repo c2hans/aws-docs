@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayRouteTableAnnouncements
-<a name="API_DescribeTransitGatewayRouteTableAnnouncements"></a>
 
 Describes one or more transit gateway route table advertisements.
 

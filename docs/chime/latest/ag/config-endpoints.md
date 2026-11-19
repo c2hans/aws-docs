@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/config-endpoints.html
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # Step 2: Configure the outbound endpoint for an Amazon Chime chatbot
-<a name="config-endpoints"></a>
 
 After you create a chatbot ID for your Amazon Chime Enterprise account, configure your outbound endpoint for Amazon Chime to use to send messages to your bot. The outbound endpoint can be an AWS Lambda function ARN or an HTTPS endpoint that you created as part of the [prerequisites](use-bots.md#bots-prereqs). For more information about Lambda, see the *[AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/)*.
 

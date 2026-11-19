@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # Create and submit an example OpenQASM 3.0 quantum task
-<a name="braket-openqasm-create-submit-task"></a>
 
 You can use the Amazon Braket Python SDK, Boto3, or the AWS CLI to submit OpenQASM 3.0 quantum tasks to an Amazon Braket device.
 

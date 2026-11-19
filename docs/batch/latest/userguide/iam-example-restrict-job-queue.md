@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-restr
 ---
 
 # Resource: Restrict to a job queue
-<a name="iam-example-restrict-job-queue"></a>
 
 Use the following policy to submit jobs to a specific job queue that's named **queue1** with any job definition name.
 

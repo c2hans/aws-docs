@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # The components of the Nitro System
-<a name="the-components-of-the-nitro-system"></a>
 
  As noted earlier, the Nitro System consists of three primary components:
 +  Purpose-built Nitro Cards

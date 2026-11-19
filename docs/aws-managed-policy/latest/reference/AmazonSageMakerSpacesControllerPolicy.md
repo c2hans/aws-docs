@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerSpacesControllerPolicy
-<a name="AmazonSageMakerSpacesControllerPolicy"></a>
 
 **Description**: Grants Systems Manager activation, session management, and KMS key operations permissions required for the SageMaker Spaces Addon to enable secure remote access to EKS SageMaker Spaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-p
 ---
 
 # Next steps and resources
-<a name="whats-next"></a>
 
 This guide has described an automated patching solution for mutable instances on AWS and on-premises instances in a hybrid cloud environment. To build the solution, we recommend that you consult the documentation for the AWS services described in this guide. If you have questions, please get in touch with your AWS account team for assistance.
 

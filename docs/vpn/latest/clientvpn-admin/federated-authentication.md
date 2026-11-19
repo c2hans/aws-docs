@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/federated-aut
 ---
 
 # Single sign-on — SAML 2.0-based federated authentication — in Client VPN
-<a name="federated-authentication"></a>
 
 AWS Client VPN supports identity federation with Security Assertion Markup Language 2.0 (SAML 2.0) for Client VPN endpoints. You can use identity providers (IdPs) that support SAML 2.0 to create centralized user identities. You can then configure a Client VPN endpoint to use SAML-based federated authentication, and associate it with the IdP. Users then connect to the Client VPN endpoint using their centralized credentials.
 
@@ -119,6 +118,6 @@ If your IdP does not support multiple ACS URLs, do the following:
 
 1. Create an IAM SAML identity provider in the same AWS account as the Client VPN endpoint. For more information, see [Creating IAM SAML Identity Providers](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml.html) in the *IAM User Guide*.
 **Note**
-You create this IAM SAML identity provider in addition to the one you [create for the main app](#federated-authentication).
+You create this IAM SAML identity provider in addition to the one you [create for the main app](federated-authentication.md).
 
 1. [Create the Client VPN endpoint](cvpn-working-endpoint-create.md), and specify both of the IAM SAML identity providers that you created.

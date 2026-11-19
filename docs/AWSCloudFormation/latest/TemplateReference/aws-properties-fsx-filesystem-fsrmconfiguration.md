@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::FileSystem FsrmConfiguration
-<a name="aws-properties-fsx-filesystem-fsrmconfiguration"></a>
 
 <a name="aws-properties-fsx-filesystem-fsrmconfiguration-description"></a>The `FsrmConfiguration` property type specifies Property description not available. for an [AWS::FSx::FileSystem](aws-resource-fsx-filesystem.md).
 

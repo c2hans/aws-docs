@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-professional
 ---
 
 # Content Domain 1: Foundation Model Integration, Data Management, and Compliance
-<a name="ai-professional-01-domain1"></a>
 
 ## Task 1.1: Analyze requirements and design GenAI solutions.
 <a name="ai-professional-01-task-1-1"></a>

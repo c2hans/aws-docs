@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # AttributeValue
-<a name="API_AttributeValue"></a>
 
 The value of an attribute.
 
@@ -73,13 +72,13 @@ Required: No
  ** record **   <a name="verifiedpermissions-Type-AttributeValue-record"></a>
 An attribute value of [Record](https://docs.cedarpolicy.com/policies/syntax-datatypes.html#datatype-record) type.
 Example: `{"record": { "keyName": {} } }`
-Type: String to [AttributeValue](#API_AttributeValue) object map
+Type: String to [AttributeValue](API_AttributeValue.md) object map
 Required: No
 
  ** set **   <a name="verifiedpermissions-Type-AttributeValue-set"></a>
 An attribute value of [Set](https://docs.cedarpolicy.com/policies/syntax-datatypes.html#datatype-set) type.
 Example: `{"set": [ {} ] }`
-Type: Array of [AttributeValue](#API_AttributeValue) objects
+Type: Array of [AttributeValue](API_AttributeValue.md) objects
 Required: No
 
  ** string **   <a name="verifiedpermissions-Type-AttributeValue-string"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # RDS PostgreSQL
-<a name="component-configuration-examples-rds-postgre-sql"></a>
 
 The following example shows a component configurations in JSON format for RDS PostgreSQL.
 

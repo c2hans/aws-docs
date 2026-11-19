@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # EvaluationErrorItem
-<a name="API_EvaluationErrorItem"></a>
 
 Contains a description of an evaluation error.
 

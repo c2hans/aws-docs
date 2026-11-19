@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/dynamodb-table-i
 ---
 
 # Persist user messages with a DynamoDB table integration using AppSyncJs
-<a name="dynamodb-table-integration-tutorial"></a>
 
 In this tutorial, you'll learn how to create an AWS AppSync Events API that stores user messages in a DynamoDB table as they are published and before they are broadcasted to connected users. You'll create a simple messaging system where users can send messages and then later retrieve their message history.
 

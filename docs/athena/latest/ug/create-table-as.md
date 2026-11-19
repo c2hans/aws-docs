@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-table-as.html
 ---
 
 # CREATE TABLE AS
-<a name="create-table-as"></a>
 
 Creates a new table populated with the results of a [SELECT](select.md) query. To create an empty table, use [CREATE TABLE](create-table.md). `CREATE TABLE AS` combines a `CREATE TABLE` DDL statement with a `SELECT` DML statement and therefore technically contains both DDL and DML. Note that although `CREATE TABLE AS` is grouped here with other DDL statements, CTAS queries in Athena are treated as DML for Service Quotas purposes. For information about Service Quotas in Athena, see [Service Quotas](service-limits.md).
 

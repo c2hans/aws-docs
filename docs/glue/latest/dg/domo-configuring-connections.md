@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/domo-configuring-connecti
 ---
 
 # Configuring Domo connections
-<a name="domo-configuring-connections"></a>
 
 Domo supports the CLIENT\_CREDENTIALS grant type for OAuth2.
 + This grant type is considered two-legged OAuth as only the client application authenticates itself to the server, with no involvement to the user.

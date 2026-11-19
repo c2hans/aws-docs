@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomMemoryStrategyInput
-<a name="API_CustomMemoryStrategyInput"></a>
 
 Input for creating a custom memory strategy.
 

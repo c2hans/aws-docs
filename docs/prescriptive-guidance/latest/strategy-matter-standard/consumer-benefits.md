@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Benefits of Matter certification for smart-home consumers
-<a name="consumer-benefits"></a>
 
 Matter provides a common language that helps smart-home devices work together across major smart-home brands and services. When devices are certified with Matter, consumers can set up and manage their smart homes more simply, and they have greater flexibility and choice in how they control their devices.
 

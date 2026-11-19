@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/monitoring-c
 ---
 
 # RTB Fabric metrics
-<a name="monitoring-cloudwatch-metrics"></a>
 
 RTB Fabric publishes the following metrics to CloudWatch.
 

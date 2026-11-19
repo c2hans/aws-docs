@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-source-server-migrati
 ---
 
 # Review alerts on source servers in a wave
-<a name="wave-source-server-migration-metrics-alerts"></a>
 
 The source server **Alerts** metric provides an aggregated overview of the alerts related to the wave's associated servers. You can look up an individual source server **Alerts** status in the **Source servers** table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # DDL limitations and other information for Aurora PostgreSQL Limitless Database
-<a name="limitless-reference.DDL-limitations"></a>
 
 The following topics describe limitations or provide more information for DDL SQL commands in Aurora PostgreSQL Limitless Database.
 

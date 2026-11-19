@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingTypeStatistics
-<a name="API_FindingTypeStatistics"></a>
 
 Information about each finding type associated with the `groupedByFindingType` statistics.
 

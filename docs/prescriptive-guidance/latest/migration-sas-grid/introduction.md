@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating SAS Grid to the AWS Cloud
-<a name="introduction"></a>
 
 *Battulga Purevragchaa, Amazon Web Services*
 

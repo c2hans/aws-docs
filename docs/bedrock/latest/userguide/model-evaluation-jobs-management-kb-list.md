@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # List RAG evaluation jobs in Amazon Bedrock
-<a name="model-evaluation-jobs-management-kb-list"></a>
 
 You can list your current RAG evaluation jobs that you've created using the AWS CLI, or a supported AWS SDK. In the Amazon Bedrock console, you can also view a table containing your current evaluation jobs.
 

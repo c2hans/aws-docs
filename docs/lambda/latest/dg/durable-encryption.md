@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-encryption.html
 ---
 
 # Encrypting AWS Lambda durable execution data
-<a name="durable-encryption"></a>
 
 With [AWS Lambda durable functions](durable-functions.md), you can build resilient, multi-step applications that run for up to one year, using checkpoints to recover each execution from failures by replaying completed work.
 

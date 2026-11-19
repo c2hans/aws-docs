@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sig-v4-au
 ---
 
 # Authenticating Requests (AWS Signature Version 4)
-<a name="sig-v4-authenticating-requests"></a>
 
 **Topics**
 + [Authentication Methods](#auth-methods-intro)

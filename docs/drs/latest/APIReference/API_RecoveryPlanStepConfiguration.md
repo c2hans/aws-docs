@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlanStepConfiguration
-<a name="API_RecoveryPlanStepConfiguration"></a>
 
 Type-specific configuration for a recovery plan step. Exactly one member must be set.
 

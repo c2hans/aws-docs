@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Neptune
 ---
 
 # NeptuneUngraceful
-<a name="API_NeptuneUngraceful"></a>
 
 Configuration for handling failures when performing operations on Neptune global databases.
 

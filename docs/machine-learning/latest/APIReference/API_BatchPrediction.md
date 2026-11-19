@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # BatchPrediction
-<a name="API_BatchPrediction"></a>
 
  Represents the output of a `GetBatchPrediction` operation.
 

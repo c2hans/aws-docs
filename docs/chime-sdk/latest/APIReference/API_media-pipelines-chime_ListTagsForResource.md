@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ListTagsForResource
-<a name="API_media-pipelines-chime_ListTagsForResource"></a>
 
 Lists the tags available for a media pipeline.
 

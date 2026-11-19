@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/moderation-labels-
 ---
 
 # AWS SDK and Usage Guide for Content Moderation version 7
-<a name="moderation-labels-update-sdk"></a>
 
  Download the SDK that corresponds with your chosen development language, and consult the appropriate user guide.
 

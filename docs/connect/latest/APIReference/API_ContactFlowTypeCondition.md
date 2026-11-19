@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowTypeCondition
-<a name="API_ContactFlowTypeCondition"></a>
 
  The contact flow type condition.
 

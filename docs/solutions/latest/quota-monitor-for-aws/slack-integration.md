@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Slack integration
-<a name="slack-integration"></a>
 
 This solution includes an optional configuration to send notifications to your existing Slack channel. To use this feature, you must have an existing Slack channel and specify Slack webhook URL on the Systems Manager Parameter Store `/QuotaMonitor/SlackHook`.
 

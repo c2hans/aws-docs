@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RecommenderSchemaField
-<a name="API_connect-customer-profiles_RecommenderSchemaField"></a>
 
 Defines a column in a recommender schema, including the target field name and optional feature and content type settings for training.
 

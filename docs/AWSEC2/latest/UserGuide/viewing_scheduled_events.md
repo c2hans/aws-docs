@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_schedule
 ---
 
 # View scheduled events that affect your Amazon EC2 instances
-<a name="viewing_scheduled_events"></a>
 
 In addition to receiving notification of scheduled events in email, you can check for scheduled events.
 

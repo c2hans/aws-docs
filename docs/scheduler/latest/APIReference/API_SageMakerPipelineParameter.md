@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_SageMa
 ---
 
 # SageMakerPipelineParameter
-<a name="API_SageMakerPipelineParameter"></a>
 
 The name and value pair of a parameter to use to start execution of a SageMaker Model Building Pipeline.
 

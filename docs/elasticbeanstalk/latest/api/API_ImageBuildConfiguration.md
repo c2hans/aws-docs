@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ImageBui
 ---
 
 # ImageBuildConfiguration
-<a name="API_ImageBuildConfiguration"></a>
 
 Settings that Elastic Beanstalk uses to build a container image from the source bundle of an application version.
 

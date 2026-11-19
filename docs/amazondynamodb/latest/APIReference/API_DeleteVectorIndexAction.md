@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DeleteVectorIndexAction
-<a name="API_DeleteVectorIndexAction"></a>
 
 A vector index to be removed from a table.
 

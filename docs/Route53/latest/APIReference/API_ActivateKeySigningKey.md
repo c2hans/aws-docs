@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Activate
 ---
 
 # ActivateKeySigningKey
-<a name="API_ActivateKeySigningKey"></a>
 
 Activates a key-signing key (KSK) so that it can be used for signing by DNSSEC. This operation changes the KSK status to `ACTIVE`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Up
 ---
 
 # UpdateEventSource
-<a name="API_UpdateEventSource"></a>
 
 Updates an EventSource. Fields omitted from the request are left unchanged.
 

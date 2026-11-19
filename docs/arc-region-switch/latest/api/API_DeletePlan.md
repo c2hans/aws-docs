@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_DeleteP
 ---
 
 # DeletePlan
-<a name="API_DeletePlan"></a>
 
 Deletes a Region switch plan. You must specify the ARN of the plan to delete.
 

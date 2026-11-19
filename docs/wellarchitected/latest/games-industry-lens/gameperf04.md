@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Compute and hardware
-<a name="gameperf04"></a>
 
 |  GAMEPERF04: How do you block game sessions from impacting players running on the same game server instance?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cre
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates a new application for the workspace and IdC application provided
 

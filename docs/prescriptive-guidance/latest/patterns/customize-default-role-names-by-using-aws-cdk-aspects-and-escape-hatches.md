@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cu
 ---
 
 # Customize default role names by using AWS CDK aspects and escape hatches
-<a name="customize-default-role-names-by-using-aws-cdk-aspects-and-escape-hatches"></a>
 
 *SANDEEP SINGH and James Jacob, Amazon Web Services*
 

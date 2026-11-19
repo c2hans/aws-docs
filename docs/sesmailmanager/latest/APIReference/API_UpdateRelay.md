@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_U
 ---
 
 # UpdateRelay
-<a name="API_UpdateRelay"></a>
 
 Updates the attributes of an existing relay resource.
 

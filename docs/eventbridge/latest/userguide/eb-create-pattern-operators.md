@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-p
 ---
 
 # Comparison operators for use in event patterns in Amazon EventBridge
-<a name="eb-create-pattern-operators"></a>
 
 Below a summary of all the comparison operators available in EventBridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # AWS Key Management Service support in model evaluation jobs
-<a name="model-evaluation-security-data"></a>
 
 Amazon Bedrock uses the following IAM and AWS KMS permissions to use your AWS KMS key to decrypt your files and access them. It saves those files to an internal Amazon S3 location managed by Amazon Bedrock and uses the following permissions to encrypt them.
 

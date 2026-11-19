@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Migrating a partial configuration
-<a name="migrate-partial-configuration"></a>
 
 When you choose to migrate a partial configuration, you will use either a TMSH or SCF file as your starting point. You will also need to look up the objects that you want to move and compile them in the correct order. The following table outlines the advantages and disadvantages of migrating a partial configuration.
 

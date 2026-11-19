@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetVpcLink.htm
 ---
 
 # GetVpcLink
-<a name="API_GetVpcLink"></a>
 
 Gets a specified VPC link under the caller's account in a region.
 

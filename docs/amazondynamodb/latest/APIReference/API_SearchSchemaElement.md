@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # SearchSchemaElement
-<a name="API_SearchSchemaElement"></a>
 
 An element in the search schema of a vector index.
 

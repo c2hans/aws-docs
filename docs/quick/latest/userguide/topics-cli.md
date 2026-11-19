@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-cli.html
 ---
 
 # Work with Quick Sight Topics using the AWS Quick Sight APIs
-<a name="topics-cli"></a>
 
 |  |
 | --- |

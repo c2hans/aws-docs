@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileManualAssignmentQueueConfig
-<a name="API_RoutingProfileManualAssignmentQueueConfig"></a>
 
 Contains information about the queue and channel for manual assignment behaviour can be enabled.
 

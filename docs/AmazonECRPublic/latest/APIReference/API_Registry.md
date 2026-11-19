@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # Registry
-<a name="API_Registry"></a>
 
 The details of a public registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replacing-key-pa
 ---
 
 # Add or replace a public key on your Linux instance
-<a name="replacing-key-pair"></a>
 
 | Description |
 | --- |

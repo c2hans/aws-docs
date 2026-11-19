@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UntagResource
-<a name="API_marketplace-deployment_UntagResource"></a>
 
 Removes a tag or list of tags from a resource.
 

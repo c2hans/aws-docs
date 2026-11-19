@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Backup and restore design
-<a name="chap-sql-server-aurora-mysql.hadr.backuprestore"></a>
 
 This topic provides reference content comparing backup and recovery features between Microsoft SQL Server 2019 and Amazon Aurora MySQL. You can gain insight into how these two database systems handle critical data protection tasks.
 

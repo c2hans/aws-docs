@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # Working with foreign key constraints in Aurora DSQL
-<a name="working-with-foreign-key-constraints"></a>
 
 With foreign key constraints in Aurora DSQL, you can push an application's referential integrity logic into the database. Aurora DSQL supports the `NO ACTION`, `RESTRICT`, `CASCADE`, `SET NULL`, and `SET DEFAULT` referential actions. It also supports the `MATCH FULL` and `MATCH SIMPLE` match types, and deferrable foreign key constraints. For the full syntax breakdown, see [Foreign key constraints](create-table-syntax-support.md#create-table-foreign-keys).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Nullable
 ---
 
 # NullableAdditionalRecipients
-<a name="API_NullableAdditionalRecipients"></a>
 
 The additional recipients of an outbound email that you can update. An empty list of `CcEmailAddresses` clears the existing CC recipients.
 

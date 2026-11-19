@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_G
 ---
 
 # GetSearchResultExportJob
-<a name="API_BKS_GetSearchResultExportJob"></a>
 
 This operation retrieves the metadata of an export job.
 

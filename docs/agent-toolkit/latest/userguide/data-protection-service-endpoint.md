@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/data-prot
 ---
 
 # Data protection for the AWS CLI
-<a name="data-protection-service-endpoint"></a>
 
 This topic describes data protection when you use the AWS CLI to discover and install AWS-vended agent skills (the `aws configure agent-toolkit` and `aws agent-toolkit` commands). These commands communicate with an unauthenticated, read-only endpoint over HTTPS. For data protection information about the AWS MCP Server (the authenticated component that executes AWS API calls on your behalf), see [Data protection in AWS MCP Server](data-protection.md).
 

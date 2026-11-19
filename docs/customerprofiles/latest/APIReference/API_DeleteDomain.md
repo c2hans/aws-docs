@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteDomain
-<a name="API_connect-customer-profiles_DeleteDomain"></a>
 
 Deletes a specific domain and all of its customer data, such as customer profile attributes and their related objects.
 

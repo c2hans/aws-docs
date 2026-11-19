@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-security-grou
 ---
 
 # Security groups: inbound and outbound rules
-<a name="vpc-security-groups"></a>
 
 A *security group* acts as a virtual firewall for your instance to control inbound and outbound traffic. For each security group, you add rules that control the inbound traffic to instances, and a separate set of rules that control the outbound traffic.
 

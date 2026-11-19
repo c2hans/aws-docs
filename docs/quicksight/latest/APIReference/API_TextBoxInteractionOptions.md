@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TextB
 ---
 
 # TextBoxInteractionOptions
-<a name="API_TextBoxInteractionOptions"></a>
 
 The general textbox interactions setup for textbox publish options.
 

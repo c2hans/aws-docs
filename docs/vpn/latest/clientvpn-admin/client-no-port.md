@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-no-por
 ---
 
 # Troubleshooting AWS Client VPN: Client returns no available ports error — federated authentication
-<a name="client-no-port"></a>
 
 **Problem**
 I use federated authentication for my Client VPN endpoint. When clients try to connect to the endpoint, the client software returns the following error:

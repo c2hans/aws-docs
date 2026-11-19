@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-resource
 ---
 
 # Sharing a job
-<a name="creating-resource-share"></a>
 
 You can share a job by using the MediaConvert console, AWS CLI, or API/SDK.
 

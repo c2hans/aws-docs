@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceLevelIndicatorMetricConfig
-<a name="API_ServiceLevelIndicatorMetricConfig"></a>
 
 Use this structure to specify the information for the metric that a period-based SLO will monitor.
 

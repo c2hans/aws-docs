@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteDomainNa
 ---
 
 # DeleteDomainName
-<a name="API_DeleteDomainName"></a>
 
 Deletes the DomainName resource.
 

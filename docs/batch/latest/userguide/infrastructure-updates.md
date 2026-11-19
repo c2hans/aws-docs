@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/infrastructure-up
 ---
 
 # Perform infrastructure updates
-<a name="infrastructure-updates"></a>
 
 Infrastructure updates replace the instances in your compute environment with new instances that have updated settings. This update strategy takes longer than scaling updates and requires specific service role and allocation strategy settings. Infrastructure updates provide a way to modify fundamental compute environment configurations while maintaining service availability.
 

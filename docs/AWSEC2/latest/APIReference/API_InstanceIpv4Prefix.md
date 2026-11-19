@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceI
 ---
 
 # InstanceIpv4Prefix
-<a name="API_InstanceIpv4Prefix"></a>
 
 Information about an IPv4 prefix.
 

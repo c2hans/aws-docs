@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/troubleshooti
 ---
 
 # Lightsail Setup
-<a name="troubleshooting-wordpress-bitnami-setup"></a>
 
 Lightsail Setup configures HTTPS on your WordPress instance using a Let's Encrypt SSL/TLS certificate. If setup fails or the certificate stops renewing automatically, use the following guides to diagnose and resolve the issue.
 

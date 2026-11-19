@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot-mode.ht
 ---
 
 # Determine the boot mode parameter of an Amazon EC2 AMI
-<a name="ami-boot-mode"></a>
 
 The AMI boot mode parameter is optional. An AMI can have one of the following boot mode parameter values: `uefi`, `legacy-bios`, or `uefi-preferred`.
 

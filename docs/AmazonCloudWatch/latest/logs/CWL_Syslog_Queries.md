@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Syslog_
 ---
 
 # Sample queries for syslog data
-<a name="CWL_Syslog_Queries"></a>
 
 The following CloudWatch Logs Insights queries demonstrate common analysis patterns for syslog data. They use the structured fields that CloudWatch Logs automatically extracts from RFC 5424, RFC 3164, and Cisco FTD/ASA messages. For the complete list of extracted fields, see [Supported syslog formats](CWL_Syslog.md#CWL_Syslog_Formats).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # Time-series functions
-<a name="CWL_QuerySyntax-timeseries-functions"></a>
 
 Use time-series functions with the `stats` command to analyze metrics over time windows and compute rates of change.
 

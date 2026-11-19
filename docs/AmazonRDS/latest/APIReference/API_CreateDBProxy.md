@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBProxy
-<a name="API_CreateDBProxy"></a>
 
 Creates a new DB proxy.
 

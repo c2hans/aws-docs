@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The tag.
 

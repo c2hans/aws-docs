@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AmazonSageMakerDomainService role
-<a name="AmazonSageMakerDomainService"></a>
 
 The AmazonSageMakerDomainService role has the [AWS policy: SageMakerStudioDomainServiceRolePolicy](security-iam-awsmanpol-SageMakerStudioDomainServiceRolePolicy.md) attached. This is a service role for domain level actions performed by Amazon SageMaker Unified Studio.
 

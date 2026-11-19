@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteEksAny
 ---
 
 # DeleteEksAnywhereSubscription
-<a name="API_DeleteEksAnywhereSubscription"></a>
 
 Deletes an expired or inactive subscription. Deleting inactive subscriptions removes them from the AWS Management Console view and from list/describe API responses. Subscriptions can only be cancelled within 7 days of creation and are cancelled by creating a ticket in the AWS Support Center.
 

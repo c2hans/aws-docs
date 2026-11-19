@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupBackupPlanRuleDetails
-<a name="API_AwsBackupBackupPlanRuleDetails"></a>
 
 Provides details about an array of `BackupRule` objects, each of which specifies a scheduled task that is used to back up a selection of resources.
 

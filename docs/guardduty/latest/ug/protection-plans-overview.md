@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/protection-plans-ove
 ---
 
 # Overview
-<a name="protection-plans-overview"></a>
 
 The unified Protection Plans page replaces the need to navigate to individual protection plan pages for configuration. The console navigation shows a single **Protection Plans** link.
 

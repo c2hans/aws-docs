@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Asser
 ---
 
 # AssertionDeletedMetadata
-<a name="API_AssertionDeletedMetadata"></a>
 
 Metadata for an assertion deleted event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/dx-operat
 ---
 
 # Direct Connect operational event notifications
-<a name="dx-operational-notifications"></a>
 
 Direct Connect continuously monitors your connections for operational events that may affect your connectivity. When Direct Connect detects an operational event, it sends notifications through [AWS Health](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html) to inform you of the event.
 

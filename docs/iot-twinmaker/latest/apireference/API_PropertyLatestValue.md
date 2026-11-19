@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyLatestValue
-<a name="API_PropertyLatestValue"></a>
 
 The latest value of the property.
 

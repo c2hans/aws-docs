@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/autosca
 ---
 
 # Managing Fleet Scaling Using the AWS CLI for Amazon WorkSpaces Applications
-<a name="autoscaling-cli"></a>
 
 You can set up and manage fleet scaling by using the AWS Command Line Interface (AWS CLI). For more advanced features such as setting up multiple scaling policies or setting scale-in and scale-out cooldown times, use the AWS CLI. Before running scaling policy commands, you must register your fleet as a scalable target. To do so, use the following [register-scalable-target](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/register-scalable-target.html) command:
 

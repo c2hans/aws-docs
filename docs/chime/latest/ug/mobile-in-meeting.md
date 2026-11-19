@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-in-meeting.html
 ---
 
 # Using the Amazon Chime mobile app during a meeting
-<a name="mobile-in-meeting"></a>
 
 When in a meeting, the Amazon Chime mobile app provides a meeting roster, in-meeting chat, and controls for using audio and video. These sections explain how to use each of these features.
 

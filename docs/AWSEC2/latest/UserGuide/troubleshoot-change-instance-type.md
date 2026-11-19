@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-cha
 ---
 
 # Troubleshoot changing the instance type
-<a name="troubleshoot-change-instance-type"></a>
 
 Use the following information to help diagnose and fix issues that you might encounter when changing the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GeneralAu
 ---
 
 # GeneralAuthorizationUpdate
-<a name="API_GeneralAuthorizationUpdate"></a>
 
 The General Authorization update information containing authorization materials to add or update.
 

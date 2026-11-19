@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 This strategy was authored by the global Large Migration tiger team within AWS Professional Services. The team has successfully migrated thousands of servers to AWS on behalf of AWS customers. Contributors to this document include:
 + Chris Baker, Principal Product Engineer

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-downloads.h
 ---
 
 # Downloads
-<a name="acxd-downloads"></a>
 
 Configure data exports one-time downloads and scheduled recurring exports.
 

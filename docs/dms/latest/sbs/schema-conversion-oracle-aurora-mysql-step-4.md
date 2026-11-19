@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-oracle-
 ---
 
 # Step 4: Store Database Credentials in AWS Secrets Manager
-<a name="schema-conversion-oracle-aurora-mysql-step-4"></a>
 
 To connect to your source and target databases with DMS Schema Conversion, store your database credentials in AWS Secrets Manager. Make sure that you replicate these secrets to your AWS Region.
 

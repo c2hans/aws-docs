@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/get-stored-con
 ---
 
 # Flow block in Connect Customer: Get stored content
-<a name="get-stored-content"></a>
 
 This topic specifies the flow block for getting stored content to be used within flows.
 

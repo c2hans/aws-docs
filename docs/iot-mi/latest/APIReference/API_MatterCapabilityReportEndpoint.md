@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_MatterCap
 ---
 
 # MatterCapabilityReportEndpoint
-<a name="API_MatterCapabilityReportEndpoint"></a>
 
 Matter endpoint used in capability report.
 

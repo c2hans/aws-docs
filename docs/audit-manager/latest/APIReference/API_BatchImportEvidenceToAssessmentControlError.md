@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ba
 ---
 
 # BatchImportEvidenceToAssessmentControlError
-<a name="API_BatchImportEvidenceToAssessmentControlError"></a>
 
  An error entity for the `BatchImportEvidenceToAssessmentControl` API. This is used to provide more meaningful errors than a simple string message.
 

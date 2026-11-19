@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Cancellation
 ---
 
 # Cancellation
-<a name="API_Cancellation"></a>
 
 Contains information about the latest cancellation of an update to an Amazon EKS cluster.
 

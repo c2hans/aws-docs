@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Up
 ---
 
 # UpdateFailoverSlateConfiguration
-<a name="API_UpdateFailoverSlateConfiguration"></a>
 
 Updates a specified failover slate configuration.
 

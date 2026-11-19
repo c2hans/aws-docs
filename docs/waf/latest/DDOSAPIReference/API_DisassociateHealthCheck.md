@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Disassoc
 ---
 
 # DisassociateHealthCheck
-<a name="API_DisassociateHealthCheck"></a>
 
 Removes health-based detection from the Shield Advanced protection for a resource. Shield Advanced health-based detection uses the health of your AWS resource to improve responsiveness and accuracy in attack detection and response.
 

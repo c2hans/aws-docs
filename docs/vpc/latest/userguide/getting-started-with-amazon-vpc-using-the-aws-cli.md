@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/getting-started-wit
 ---
 
 # Getting started with Amazon VPC using the AWS CLI
-<a name="getting-started-with-amazon-vpc-using-the-aws-cli"></a>
 
 This tutorial guides you through creating a Virtual Private Cloud (VPC) using the AWS Command Line Interface (AWS CLI). You'll learn how to set up a VPC with public and private subnets, configure internet connectivity, and deploy EC2 instances to demonstrate a common web application architecture.
 

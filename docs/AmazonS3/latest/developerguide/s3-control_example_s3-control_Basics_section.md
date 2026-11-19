@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-contro
 ---
 
 # Learn the basics of Amazon S3 Control with an AWS SDK
-<a name="s3-control_example_s3-control_Basics_section"></a>
 
 The following code examples show how to learn core operations for Amazon S3 Control.
 

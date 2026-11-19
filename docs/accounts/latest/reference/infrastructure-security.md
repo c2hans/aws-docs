@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/infrastructure
 ---
 
 # Infrastructure security in AWS Account Management
-<a name="infrastructure-security"></a>
 
 The following information is relevant for all AWS accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `GetInventory` with a CLI
-<a name="example_ssm_GetInventory_section"></a>
 
 The following code examples show how to use `GetInventory`.
 

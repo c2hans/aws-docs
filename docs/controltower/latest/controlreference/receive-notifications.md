@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/rec
 ---
 
 # Compliance notifications by SNS in the audit account
-<a name="receive-notifications"></a>
 
 **Note**
 AWS Control Tower will no longer be sending drift notifications to SNS topic for all customers on LZ4.0\+. For customers on LZ4.0\+ follow the [EventBridge Notification setup](https://docs.aws.amazon.com/controltower/latest/userguide/governance-drift.html#eventbridge-creation).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_De
 ---
 
 # DeleteFailoverSlateConfiguration
-<a name="API_DeleteFailoverSlateConfiguration"></a>
 
 Deletes the specified failover slate configuration.
 

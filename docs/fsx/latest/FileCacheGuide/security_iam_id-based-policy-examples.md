@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/security_iam_i
 ---
 
 # Identity-based policy examples for Amazon File Cache
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify File Cache resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

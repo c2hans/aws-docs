@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PrefixLe
 ---
 
 # PrefixLevel
-<a name="API_control_PrefixLevel"></a>
 
 A container for the prefix-level configuration.
 

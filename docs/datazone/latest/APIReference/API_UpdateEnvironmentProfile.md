@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateE
 ---
 
 # UpdateEnvironmentProfile
-<a name="API_UpdateEnvironmentProfile"></a>
 
 Updates the specified environment profile in Amazon DataZone.
 

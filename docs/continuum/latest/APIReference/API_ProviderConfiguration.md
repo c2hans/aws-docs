@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Provid
 ---
 
 # ProviderConfiguration
-<a name="API_ProviderConfiguration"></a>
 
 The provider Configuration.
 

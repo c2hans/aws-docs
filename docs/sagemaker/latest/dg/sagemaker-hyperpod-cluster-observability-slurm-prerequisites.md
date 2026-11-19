@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # Prerequisites for SageMaker HyperPod cluster observability
-<a name="sagemaker-hyperpod-cluster-observability-slurm-prerequisites"></a>
 
 Before proceeding with the steps to [Installing metrics exporter packages on your HyperPod cluster](sagemaker-hyperpod-cluster-observability-slurm-install-exporters.md), ensure that the following prerequisites are met.
 

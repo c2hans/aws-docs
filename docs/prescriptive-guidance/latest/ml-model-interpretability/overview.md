@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # Overview
-<a name="overview"></a>
 
 There is no universally accepted definition for what an interpretable model is, or what information is adequate as an interpretation of a model. This guide focuses on the commonly used notion of *feature importance*, where an importance score for each input feature is used to interpret how it affects model outputs. This method provides insight but also requires caution.  Feature importance scores can be misleading and should be analyzed carefully, including validation with subject matter experts if possible. Specifically, we advise you not to trust feature importance scores without verification, because misinterpretations can lead to poor business decisions.
 

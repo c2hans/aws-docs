@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-getting-
 ---
 
 # Windows
-<a name="odbc-v2-driver-getting-started-windows"></a>
 
 If you want to use a Windows client computer to access Amazon Athena, the Amazon Athena ODBC driver is required.
 

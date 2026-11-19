@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Send AWS WAF logs to Splunk by using AWS Firewall Manager and Amazon Data Firehose
-<a name="send-aws-waf-logs-to-splunk-by-using-aws-firewall-manager-and-amazon-data-firehose"></a>
 
 *Michael Friedenthal, Aman Kaur Gandhi, and JJ Johnson, Amazon Web Services*
 

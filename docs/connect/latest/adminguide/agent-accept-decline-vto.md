@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-accept-d
 ---
 
 # How contact center agents accept or decline a time off request
-<a name="agent-accept-decline-vto"></a>
 
 The contact center manager and agents will see the pending voluntary time off requests in the agent calendars.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2S
 ---
 
 # AwsEc2SecurityGroupDetails
-<a name="API_AwsEc2SecurityGroupDetails"></a>
 
 Details about an Amazon EC2 security group.
 

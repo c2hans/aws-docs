@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Movement and caching
-<a name="smsus06"></a>
 
 Every transfer carries energy and often triggers duplicate processing downstream. Streaming amplifies both distance and repetition because popular assets are requested millions of times.
 

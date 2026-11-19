@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatefulRuleGroupOverride
-<a name="API_StatefulRuleGroupOverride"></a>
 
 The setting that allows the policy owner to change the behavior of the rule group within a policy.
 

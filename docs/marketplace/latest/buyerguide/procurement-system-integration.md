@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/procuremen
 ---
 
 # Integrating AWS Marketplace with procurement systems
-<a name="procurement-system-integration"></a>
 
 You can configure procurement software to integrate with AWS Marketplace following the commerce extensible markup language (cXML) protocol. This integration creates an access point into a third party's catalog, known as a *punchout*.
 

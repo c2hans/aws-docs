@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ReleaseSumma
 ---
 
 # ReleaseSummary
-<a name="API_ReleaseSummary"></a>
 
 High level information for an SDK release.
 

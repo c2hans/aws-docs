@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-spot-p
 ---
 
 # Calculate the Spot placement score
-<a name="work-with-spot-placement-score"></a>
 
 You can calculate a Spot placement score based on target capacity and compute requirements. For more information, see [How Spot placement score works](how-sps-works.md).
 

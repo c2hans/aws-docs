@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Tools
-<a name="teradata-tools"></a>
 
 Teradata offers the following tools:
 + [Teradata Vantage Console](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Vantage-Console) provides an integrated user experience for analysts, developers, and operations. You can start using the Vantage Console after provisioning your cloud system.

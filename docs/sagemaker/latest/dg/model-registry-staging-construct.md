@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-stagi
 ---
 
 # Staging Construct for your Model Lifecycle
-<a name="model-registry-staging-construct"></a>
 
 You can define a series of stages that models can progress through for your model workflows and lifecycle with the Model Registry staging construct. This simplifies tracking and managing models as they transition through development, testing, and production stages. The following will provide information on staging constructs and how to use them in your model governance.
 

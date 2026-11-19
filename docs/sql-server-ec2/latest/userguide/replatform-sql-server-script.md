@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/replatfo
 ---
 
 # Run the Windows to Linux replatforming assistant for SQL Server script
-<a name="replatform-sql-server-script"></a>
 
 This section contains the PowerShell parameter definitions and scripts for replatforming your databases. For more information about how to use PowerShell scripts, see [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview).
 

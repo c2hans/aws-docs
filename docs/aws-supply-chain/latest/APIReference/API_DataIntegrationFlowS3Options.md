@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowS3Options
-<a name="API_DataIntegrationFlowS3Options"></a>
 
 The Amazon S3 options used in S3 source and target configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Key dependencies and risks
-<a name="key-dependencies-and-risks"></a>
 
 Consider the following dependencies that might delay migration.
 

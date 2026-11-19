@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_De
 ---
 
 # Delegation
-<a name="API_Delegation"></a>
 
  The assignment of a control set to a delegate for review.
 

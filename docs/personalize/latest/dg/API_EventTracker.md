@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_EventTracker.h
 ---
 
 # EventTracker
-<a name="API_EventTracker"></a>
 
 Provides information about an event tracker.
 

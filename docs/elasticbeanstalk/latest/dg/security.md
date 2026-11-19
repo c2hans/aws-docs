@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security.html
 ---
 
 # AWS Elastic Beanstalk security
-<a name="security"></a>
 
 Use this chapter to learn more about the security tasks Elastic Beanstalk is responsible for, along with the security configurations you should consider when using Elastic Beanstalk to meet your security and compliance objectives.
 

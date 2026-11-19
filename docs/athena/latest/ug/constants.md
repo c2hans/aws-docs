@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/constants.html
 ---
 
 # Constants
-<a name="constants"></a>
 
 The `ExampleConstants.java` class demonstrates how to query a table created by the [Get started](getting-started.md) tutorial in Athena.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/MaintenanceUpd
 ---
 
 # Managing Bandwidth for Your Volume Gateway
-<a name="MaintenanceUpdateBandwidth-common"></a>
 
 You can limit (or throttle) the upload throughput from the gateway to AWS or the download throughput from AWS to your gateway. Using bandwidth throttling helps you to control the amount of network bandwidth used by your gateway. By default, an activated gateway has no rate limits on upload or download.
 

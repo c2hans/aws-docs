@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Using Control-M workflow orchestrator integration with AWS Mainframe Modernization
-<a name="introduction"></a>
 
 *Sunil Bemarkar, Vij Balakrishna, Pablo Alonso Prieto, and Vaidy Sankaran, Amazon Web Services*
 

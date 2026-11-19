@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/concepts-conn
 ---
 
 # Connections concepts
-<a name="concepts-connections"></a>
 
 Setting up and using the connections feature is easier if you understand the concepts and terms. Here are some concepts to know about as you use connections in the Developer Tools console:
 

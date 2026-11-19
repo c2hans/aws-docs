@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-concep
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Kubernetes concepts for hybrid nodes
-<a name="hybrid-nodes-concepts-kubernetes"></a>
 
 This page details the key Kubernetes concepts that underpin the EKS Hybrid Nodes system architecture.
 

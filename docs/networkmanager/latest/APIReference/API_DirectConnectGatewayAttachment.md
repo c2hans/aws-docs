@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DirectConnectGatewayAttachment
-<a name="API_DirectConnectGatewayAttachment"></a>
 
 Describes a Direct Connect gateway attachment.
 

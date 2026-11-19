@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes specified tags from the specified resource in the current region.
 

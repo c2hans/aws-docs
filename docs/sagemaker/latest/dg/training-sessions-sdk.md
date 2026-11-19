@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-sd
 ---
 
 # Python SDK reference
-<a name="training-sessions-sdk"></a>
 
 Use the SDK for the training session APIs (`sagemaker.train.training_session`) to drive a training loop from your own Python process. Your code issues each step — a forward and backward pass, an optimizer step, sampling, saving or loading a checkpoint — and SageMaker AI manages the infrastructure and the base model. This page describes the behavior you need to write a correct loop.
 

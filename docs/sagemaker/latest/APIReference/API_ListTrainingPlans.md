@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTr
 ---
 
 # ListTrainingPlans
-<a name="API_ListTrainingPlans"></a>
 
 Retrieves a list of training plans for the current account.
 

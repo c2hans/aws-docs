@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RevenueShareAllocation
-<a name="API_prm_RevenueShareAllocation"></a>
 
 A single allocation change within a batch request.
 

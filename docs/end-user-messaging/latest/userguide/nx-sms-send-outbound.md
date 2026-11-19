@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Outbound messaging
-<a name="nx-sms-send-outbound"></a>
 
 After you set up an origination identity and a configuration set, you send an SMS message with the `SendTextMessage` operation. Use the AWS End User Messaging console to send a test message, or the AWS CLI to send from your application. The examples use a phone pool as the origination identity, which is the recommended approach; you can also specify a single phone number or sender ID instead.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Netw
 ---
 
 # NetworkSecurityDirectorServiceLinkedRolePolicy
-<a name="NetworkSecurityDirectorServiceLinkedRolePolicy"></a>
 
 **Description**: Provides permissions for the AWS Shield network security director service linked role to assess specified environments.
 

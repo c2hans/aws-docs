@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/trouble
 ---
 
 # Troubleshooting License Manager
-<a name="troubleshooting"></a>
 
 The following information can help you troubleshoot issues when using AWS License Manager. Before you start, confirm that your License Manager setup meets the requirements stated in [Settings in License Manager](settings.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_EC2Ta
 ---
 
 # EC2TagFilter
-<a name="API_EC2TagFilter"></a>
 
 Information about an EC2 tag filter.
 

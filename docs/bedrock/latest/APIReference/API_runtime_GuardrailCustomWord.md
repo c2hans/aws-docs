@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailCustomWord
-<a name="API_runtime_GuardrailCustomWord"></a>
 
 A custom word configured in a guardrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # RTB Fabric infrastructure efficiency
-<a name="advsus03"></a>
 
  Network infrastructure is a major energy consumer for RTB workloads given the transaction volumes exchanged between AdTech partners. AWS RTB Fabric provides purpose-built infrastructure that can reduce resource consumption compared to standard cloud networking.
 

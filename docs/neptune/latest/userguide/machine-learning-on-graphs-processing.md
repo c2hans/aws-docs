@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Processing the graph data exported from Neptune for training
-<a name="machine-learning-on-graphs-processing"></a>
 
 The data-processing step takes the Neptune graph data created by the export process and creates the information that is used by the [Deep Graph Library (DGL)](https://www.dgl.ai/) during training. This includes performing various data mappings and transformations:
 + Parsing nodes and edges to construct the graph- and ID-mapping files required by DGL.

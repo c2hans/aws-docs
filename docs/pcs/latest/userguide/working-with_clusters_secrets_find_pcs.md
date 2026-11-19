@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Use AWS PCS to find the cluster secret
-<a name="working-with_clusters_secrets_find_pcs"></a>
 
 You can use the AWS CLI to find the ARN for an AWS PCS cluster secret. Enter the command that follows, making the following substitutions:
 + Replace `{{region}}` with the AWS Region to create your cluster in, such as `us-east-1`.

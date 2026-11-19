@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateBrand
-<a name="API_UpdateBrand"></a>
 
 Updates a brand.
 

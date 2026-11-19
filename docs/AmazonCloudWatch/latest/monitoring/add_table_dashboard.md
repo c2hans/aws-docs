@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_t
 ---
 
 # Adding a data table widget to a CloudWatch dashboard
-<a name="add_table_dashboard"></a>
 
 **To add a data table widget to a dashboard**
 

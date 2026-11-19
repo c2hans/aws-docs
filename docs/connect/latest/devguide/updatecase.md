@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/updatecase.html
 ---
 
 # UpdateCase
-<a name="updatecase"></a>
 
 Updates an existing case by providing the case’s id and the fields that should be updated.
 

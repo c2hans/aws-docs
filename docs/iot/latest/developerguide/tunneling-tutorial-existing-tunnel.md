@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/tunneling-tuto
 ---
 
 # Open a tunnel for remote device and use browser-based SSH
-<a name="tunneling-tutorial-existing-tunnel"></a>
 
 From the AWS IoT console, you can create a tunnel either from the **Tunnels hub** or from the details page of an IoT thing that you created. When you create a tunnel from the **Tunnels** hub, you can specify whether to create a tunnel using the quick setup or the manual setup. For an example tutorial, see [Open a tunnel and start SSH session to remote device](secure-tunneling-tutorial-open-tunnel.md).
 

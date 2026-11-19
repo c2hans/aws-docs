@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListInte
 ---
 
 # ListIntegrationAssociations
-<a name="API_ListIntegrationAssociations"></a>
 
 Provides summary information about the AWS resource associations for the specified Connect Customer instance.
 

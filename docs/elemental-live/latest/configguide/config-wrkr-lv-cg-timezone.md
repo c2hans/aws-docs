@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Set the time zone
-<a name="config-wrkr-lv-cg-timezone"></a>
 
 Follow this procedure if you didn't set the time zone when you ran the install script (via the `–t` prompt), or if you want to change the time zone on the AWS Elemental Live node. You must perform these steps on each node in the cluster that needs the time zone updated.
 

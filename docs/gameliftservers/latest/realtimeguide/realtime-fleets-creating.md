@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 ---
 
 # Create a hosting fleet for Amazon GameLift Servers Realtime
-<a name="realtime-fleets-creating"></a>
 
 When you're ready to deploy Realtime servers for your game, create an Amazon GameLift Servers managed EC2 fleet. This topic assumes you've completed the following steps:
 + Created a Realtime script that's configured for your game. See [Customize an Amazon GameLift Servers Realtime script](realtime-script.md).

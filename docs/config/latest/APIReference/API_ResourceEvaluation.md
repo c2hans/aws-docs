@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceE
 ---
 
 # ResourceEvaluation
-<a name="API_ResourceEvaluation"></a>
 
 Returns details of a resource evaluation.
 

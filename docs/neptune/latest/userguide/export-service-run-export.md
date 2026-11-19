@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/export-service-
 ---
 
 # Run a Neptune-Export job using the Neptune-Export API
-<a name="export-service-run-export"></a>
 
 The **Outputs** tab of the CloudFormation stack also includes the `NeptuneExportApiUri`. Use this URI whenever you send a request to the Neptune-Export endpoint.
 

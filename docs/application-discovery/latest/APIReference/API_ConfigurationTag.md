@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # ConfigurationTag
-<a name="API_ConfigurationTag"></a>
 
 Tags for a configuration item. Tags are metadata that help you categorize IT assets.
 

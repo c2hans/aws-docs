@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-c
 ---
 
 # Continued Pre-Training and Mid-Training
-<a name="nova-forge-cpt"></a>
 
 **Note**
 Detailed documentation is provided once subscribed

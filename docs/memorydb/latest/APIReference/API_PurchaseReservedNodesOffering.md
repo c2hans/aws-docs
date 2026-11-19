@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Purchas
 ---
 
 # PurchaseReservedNodesOffering
-<a name="API_PurchaseReservedNodesOffering"></a>
 
 Allows you to purchase a reserved node offering. Reserved nodes are not eligible for cancellation and are non-refundable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-cons
 ---
 
 # Troubleshoot Windows VSS based EBS snapshots
-<a name="application-consistent-snapshots-troubleshooting"></a>
 
 Before you try any other troubleshooting steps, we recommend that you verify the following details.
 + Ensure that you've met all [Prerequisites to create Windows VSS based EBS snapshots](application-consistent-snapshots-prereqs.md).

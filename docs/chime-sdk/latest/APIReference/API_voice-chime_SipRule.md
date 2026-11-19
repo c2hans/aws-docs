@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # SipRule
-<a name="API_voice-chime_SipRule"></a>
 
 The details of a SIP rule, including name, triggers, and target applications. An AWS account can have multiple SIP rules.
 

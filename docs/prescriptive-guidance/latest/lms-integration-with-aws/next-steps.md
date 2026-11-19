@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 ---
 
 # Implementation examples
-<a name="next-steps"></a>
 
 This section provides concrete implementation examples for different integration patterns discussed earlier. Each example includes code snippets, configuration steps and practical guidance focused on Moodle as the reference LMS platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-c
 ---
 
 # Continuous delivery and continuous integration
-<a name="concepts-continuous-delivery-integration"></a>
 
 CodePipeline is a *continuous delivery* service that automates the building, testing, and deployment of your software into production.
 

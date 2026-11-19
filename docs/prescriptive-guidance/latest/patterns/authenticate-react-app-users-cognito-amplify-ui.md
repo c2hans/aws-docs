@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Authenticate existing React application users by using Amazon Cognito and AWS Amplify UI
-<a name="authenticate-react-app-users-cognito-amplify-ui"></a>
 
 *Daniel Kozhemyako, Amazon Web Services*
 

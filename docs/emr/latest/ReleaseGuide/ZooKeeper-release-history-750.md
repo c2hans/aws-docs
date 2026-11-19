@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/ZooKeeper-releas
 ---
 
 # Amazon EMR 7.5.0 - ZooKeeper release notes
-<a name="ZooKeeper-release-history-750"></a>
 
 ## Amazon EMR 7.5.0 - ZooKeeper Changes
 <a name="ZooKeeper-release-history-750-features"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_SetSubscriptionAttrib
 ---
 
 # SetSubscriptionAttributes
-<a name="API_SetSubscriptionAttributes"></a>
 
 Allows a subscription owner to set an attribute of the subscription to a new value.
 

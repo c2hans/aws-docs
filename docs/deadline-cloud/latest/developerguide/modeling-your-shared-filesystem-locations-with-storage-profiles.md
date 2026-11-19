@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/mod
 ---
 
 # Model shared file system locations with storage profiles
-<a name="modeling-your-shared-filesystem-locations-with-storage-profiles"></a>
 
  A storage profile models the file system configuration of one of your host configurations. There are four different host configurations in the [sample project infrastructure](). In this example you create a separate storage profile for each. You can create a storage profile using any of the following:
 + [CreateStorageProfile API](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateStorageProfile.html)

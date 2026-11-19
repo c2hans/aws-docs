@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/switching-
 ---
 
 # Switching AWS Regions
-<a name="switching-regions"></a>
 
 We recommend that you install IAM Identity Center in a Region that you intend to keep available for users, not a Region that you might need to disable. For more information, see [Considerations for choosing an AWS Region](identity-center-region-considerations.md).
 

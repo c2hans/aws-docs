@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Outputs and next steps
-<a name="outputs-and-next-steps"></a>
 
 The outputs from the readiness assessment process for applications include:
 + An out-brief deck that summarizes observations and next steps

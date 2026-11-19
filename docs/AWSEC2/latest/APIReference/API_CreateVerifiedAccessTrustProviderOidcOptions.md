@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessTrustProviderOidcOptions
-<a name="API_CreateVerifiedAccessTrustProviderOidcOptions"></a>
 
 Describes the options when creating an AWS Verified Access trust provider using the `user` type.
 

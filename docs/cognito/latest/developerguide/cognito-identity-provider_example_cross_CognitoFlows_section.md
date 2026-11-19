@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Use Amazon Cognito identity pools and authentication flows
-<a name="cognito-identity-provider_example_cross_CognitoFlows_section"></a>
 
 The following code example shows how to create a web-based demo application that demonstrates identity pools authentication flows.
 

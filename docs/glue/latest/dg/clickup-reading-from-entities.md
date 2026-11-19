@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/clickup-reading-from-enti
 ---
 
 # Reading from ClickUp entities
-<a name="clickup-reading-from-entities"></a>
 
 **Prerequisites**
 

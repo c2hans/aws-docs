@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Custome
 ---
 
 # CustomerAgreementSummary
-<a name="API_CustomerAgreementSummary"></a>
 
 Summary for customer-agreement resource.
 

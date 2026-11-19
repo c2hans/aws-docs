@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## About Solr
 <a name="about-solr"></a>

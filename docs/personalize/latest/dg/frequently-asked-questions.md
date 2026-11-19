@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/frequently-asked-q
 ---
 
 # Frequently asked questions for Amazon Personalize
-<a name="frequently-asked-questions"></a>
 
  The following are answers to frequently asked questions related to importing data, training, model deployment, recommendations, and filters in Amazon Personalize.
 

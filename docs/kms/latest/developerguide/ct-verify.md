@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-verify.html
 ---
 
 # Verify
-<a name="ct-verify"></a>
 
 These examples show AWS CloudTrail log entries for the [Verify](https://docs.aws.amazon.com/kms/latest/APIReference/API_Verify.html) operation.
 

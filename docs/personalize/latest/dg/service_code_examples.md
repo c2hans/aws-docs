@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/service_code_examp
 ---
 
 # Code examples for Amazon Personalize using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon Personalize with an AWS software development kit (SDK).
 

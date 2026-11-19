@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Edit a monitor in Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-monitors-edit"></a>
 
 You can edit a monitor to add or remove the VPCs that it monitors.
 

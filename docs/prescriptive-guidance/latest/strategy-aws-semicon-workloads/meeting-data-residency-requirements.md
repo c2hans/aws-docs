@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Meeting data residency requirements on AWS
-<a name="meeting-data-residency-requirements"></a>
 
 The available partitions, AWS Regions, Availability Zones, and Local Zones allow companies to choose the best location for their data and workloads based on their unique requirements:
 + A [partition](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/partitions.html) is a logical group of AWS Regions. AWS commercial Regions are in the `aws` partition, Regions in China are in the `aws-cn` partition, and AWS GovCloud (US) Regions are in the `aws-us-gov` partition.

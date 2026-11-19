@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateReplic
 ---
 
 # CreateReplicationSubnetGroup
-<a name="API_CreateReplicationSubnetGroup"></a>
 
 Creates a replication subnet group given a list of the subnet IDs in a VPC.
 

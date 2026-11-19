@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/service-sec
 ---
 
 # Security
-<a name="service-security"></a>
 
 **Topics**
 + [Data Protection in AWS Security Incident Response](data-protection.md)

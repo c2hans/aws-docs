@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutEvents
-<a name="API_PutEvents"></a>
 
 Publishes events to an event bus.
 

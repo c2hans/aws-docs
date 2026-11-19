@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_AcceptA
 ---
 
 # AcceptAgreement
-<a name="API_AcceptAgreement"></a>
 
 Accept an agreement.
 

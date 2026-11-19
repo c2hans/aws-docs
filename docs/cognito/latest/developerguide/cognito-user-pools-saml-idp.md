@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Using SAML identity providers with a user pool
-<a name="cognito-user-pools-saml-idp"></a>
 
 You can choose to have your web and mobile app users sign in through a SAML identity provider (IdP) like [Microsoft Active Directory Federation Services (ADFS)](https://msdn.microsoft.com/en-us/library/bb897402.aspx), or [Shibboleth](http://www.shibboleth.net/). You must choose a SAML IdP which supports the [SAML 2.0 standard](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartCrawlerSched
 ---
 
 # StartCrawlerSchedule
-<a name="API_StartCrawlerSchedule"></a>
 
 Changes the schedule state of the specified crawler to `SCHEDULED`, unless the crawler is already running or the schedule state is already `SCHEDULED`.
 

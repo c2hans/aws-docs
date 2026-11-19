@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Initiating data collection
-<a name="initiating-data-collection"></a>
 
 Data collection is the process of gathering metadata from applications and infrastructure. The process is iterative throughout all stages of assessment. In each stage, data quantity and fidelity will increase. At this stage, the focus is on gathering general data that can help to establish an initial inventory. The inventory will be used to create a directional business case and plan, and it will be used to identify initial migration candidates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate backups for Amazon RDS for PostgreSQL DB instances by using AWS Batch
-<a name="automate-backups-for-amazon-rds-for-postgresql-db-instances-by-using-aws-batch"></a>
 
 *Kirankumar Chandrashekar, Amazon Web Services*
 

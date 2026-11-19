@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-tez.html
 ---
 
 # Apache Tez
-<a name="emr-tez"></a>
 
 Apache Tez is a framework that creates a complex directed acyclic graph (DAG) of tasks for processing data. You can use it as an alternative to Hadoop MapReduce for some use cases. For example, you can run Pig and Hive workflows with Hadoop MapReduce or you can use Tez as an execution engine. For more information, see [https://tez.apache.org/](https://tez.apache.org/). Amazon EMR releases 4.7.0 and higher include Tez.
 

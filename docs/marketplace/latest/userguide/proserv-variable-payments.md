@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/proserv-var
 ---
 
 # Pricing professional service products in AWS Marketplace
-<a name="proserv-variable-payments"></a>
 
 As an AWS Marketplace seller with a Professional Services product, you can choose from three contract pricing options: installment plan, upfront payment, and variable payments. Variable payments allow you to set a total contract amount when creating a private offer. Once buyers accept the contract, you send payment requests, up to the total contract amount, over the duration of the contract.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-m
 ---
 
 # sagemaker-model-multicontainer-private-registry
-<a name="sagemaker-model-multicontainer-private-registry"></a>
 
 This rule checks if SageMaker models with multi-container inference pipelines pull images from VPC-based private registry. The rule is NON\_COMPLIANT if any container configuration does not have ImageConfig or has RepositoryAccessMode set to Platform.
 

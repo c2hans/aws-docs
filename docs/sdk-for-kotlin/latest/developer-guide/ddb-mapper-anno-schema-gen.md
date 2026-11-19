@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Generate a schema from annotations
-<a name="ddb-mapper-anno-schema-gen"></a>
 
 The simplest way to use DynamoDB Mapper is to annotate your Kotlin classes and let the SDK generate their schemas for you at build time. You annotate a class with `@DynamoDbItem`, mark its key properties, and the **schema-generator Gradle plugin** inspects the annotated classes and emits a schema object and a convenience extension function for obtaining a typed table.
 

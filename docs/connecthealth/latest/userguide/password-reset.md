@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/password-
 ---
 
 # MyChart password reset
-<a name="password-reset"></a>
 
 MyChart password reset is part of the agentic capabilities for patient access. It helps a verified patient reset the password for their Epic MyChart account. The patient calls in, patient verification confirms the patient’s identity, and MyChart password reset sends a reset link to the email address or phone number on file. Callers reach it by phone. It supports English only.
 

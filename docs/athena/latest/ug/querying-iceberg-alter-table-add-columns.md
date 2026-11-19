@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-alter-
 ---
 
 # ALTER TABLE ADD COLUMNS
-<a name="querying-iceberg-alter-table-add-columns"></a>
 
 Adds one or more columns to an existing Iceberg table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # GetQueryResultsWorkloadInsightsTopContributors
-<a name="API_GetQueryResultsWorkloadInsightsTopContributors"></a>
 
 Return the data for a query with the Network Flow Monitor query interface. You specify the query that you want to return results for by providing a query ID and a monitor name.
 

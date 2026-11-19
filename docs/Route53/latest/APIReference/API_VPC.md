@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_VPC.html
 ---
 
 # VPC
-<a name="API_VPC"></a>
 
 (Private hosted zones only) A complex type that contains information about an Amazon VPC.
 

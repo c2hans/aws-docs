@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectKeyPhrasesItemResult
-<a name="API_BatchDetectKeyPhrasesItemResult"></a>
 
 The result of calling the [BatchDetectKeyPhrases](API_BatchDetectKeyPhrases.md) operation. The operation returns one object for each document that is successfully processed by the operation.
 

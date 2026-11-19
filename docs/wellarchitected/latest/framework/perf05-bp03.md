@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf05-
 ---
 
 # PERF05-BP03 Use automation to proactively remediate performance-related issues
-<a name="perf05-bp03"></a>
 
  Configure automated investigation as the first line of incident response so analysis starts when an alert or ticket meets your incident criteria. While an engineer responds to the page, the investigation correlates telemetry and topology and returns a root cause or evidence-backed hypotheses. Deterministic automation then handles well-understood, low-risk remediation. Reserve human judgment for uncertain or high-impact actions.
 

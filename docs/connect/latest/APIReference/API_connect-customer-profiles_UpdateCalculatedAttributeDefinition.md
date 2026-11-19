@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateCalculatedAttributeDefinition
-<a name="API_connect-customer-profiles_UpdateCalculatedAttributeDefinition"></a>
 
 Updates an existing calculated attribute definition. When updating the Conditions, note that increasing the date range of a calculated attribute will not trigger inclusion of historical data greater than the current date range.
 

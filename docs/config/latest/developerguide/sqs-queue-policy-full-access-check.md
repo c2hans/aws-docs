@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sqs-queue-p
 ---
 
 # sqs-queue-policy-full-access-check
-<a name="sqs-queue-policy-full-access-check"></a>
 
 Checks if the SQS queue access policy allows full access. The rule is NON\_COMPLIANT if the SQS policy contains `SQS:\*` within `Action` and `Effect` is `Allow`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-pa
 ---
 
 # Supported frameworks and AWS Regions
-<a name="distributed-model-parallel-support-v2"></a>
 
 Before using the SageMaker model parallelism library v2 (SMP v2), check the supported frameworks and instance types and determine if there are enough quotas in your AWS account and AWS Region.
 

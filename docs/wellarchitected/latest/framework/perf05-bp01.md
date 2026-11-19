@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf05-
 ---
 
 # PERF05-BP01 Use monitoring solutions to understand the areas where performance is most critical
-<a name="perf05-bp01"></a>
 
  Workload components contribute unequally to the customer experience, user-perceived latency, and operating cost. Instrument the workload to reveal those pressure points, and focus optimization on them.
 

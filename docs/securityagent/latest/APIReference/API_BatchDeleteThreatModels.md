@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchDeleteThreatModels
-<a name="API_BatchDeleteThreatModels"></a>
 
 Deletes one or more threat models from an agent space.
 

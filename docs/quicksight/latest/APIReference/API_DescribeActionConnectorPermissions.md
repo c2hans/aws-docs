@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeActionConnectorPermissions
-<a name="API_DescribeActionConnectorPermissions"></a>
 
 Retrieves the permissions configuration for an action connector, showing which users, groups, and namespaces have access and what operations they can perform.
 

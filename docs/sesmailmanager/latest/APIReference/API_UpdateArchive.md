@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_U
 ---
 
 # UpdateArchive
-<a name="API_UpdateArchive"></a>
 
 Updates the attributes of an existing email archive.
 

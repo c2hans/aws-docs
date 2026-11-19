@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2I
 ---
 
 # Ec2InstanceConnectEndpoint
-<a name="Ec2InstanceConnectEndpoint"></a>
 
 **Description**: EC2 Instance Connect endpoint policy to manage EC2 Instance Connect endpoints created by the customer
 

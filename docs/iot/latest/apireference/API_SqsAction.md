@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SqsAction.ht
 ---
 
 # SqsAction
-<a name="API_SqsAction"></a>
 
 Describes an action to publish data to an Amazon SQS queue.
 

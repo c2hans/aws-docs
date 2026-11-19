@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF06-BP03 Make sure that EUC network configurations don't interfere with service management connections
-<a name="eucperf06-bp03"></a>
 
  WorkSpaces Applications instances use a dedicated management network interface (eth0) for streaming and service management connections.
 

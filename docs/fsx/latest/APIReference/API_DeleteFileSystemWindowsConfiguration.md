@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystemWindowsConfiguration
-<a name="API_DeleteFileSystemWindowsConfiguration"></a>
 
 The configuration object for the Microsoft Windows file system used in the `DeleteFileSystem` operation.
 

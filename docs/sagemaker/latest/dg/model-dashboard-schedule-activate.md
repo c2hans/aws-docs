@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard-sche
 ---
 
 # Activate or deactivate a model monitor
-<a name="model-dashboard-schedule-activate"></a>
 
 Use the following procedure to activate or deactivate a model monitor.
 

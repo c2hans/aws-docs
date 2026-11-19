@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/adding--CloudWa
 ---
 
 # Manually add CloudWatch as a data source
-<a name="adding--CloudWatch-manual"></a>
 
 **To manually add the CloudWatch data source**
 

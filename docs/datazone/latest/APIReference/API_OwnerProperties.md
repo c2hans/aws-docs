@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OwnerPr
 ---
 
 # OwnerProperties
-<a name="API_OwnerProperties"></a>
 
 The properties of a domain unit's owner.
 

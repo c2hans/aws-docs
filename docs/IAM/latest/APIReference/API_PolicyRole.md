@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyRole.h
 ---
 
 # PolicyRole
-<a name="API_PolicyRole"></a>
 
 Contains information about a role that a managed policy is attached to.
 

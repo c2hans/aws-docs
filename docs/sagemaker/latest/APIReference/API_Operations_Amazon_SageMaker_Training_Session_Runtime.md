@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operat
 ---
 
 # Amazon SageMaker Training Session Runtime
-<a name="API_Operations_Amazon_SageMaker_Training_Session_Runtime"></a>
 
 The following actions are supported by Amazon SageMaker Training Session Runtime:
 +  [ExecuteSamplingOperation](API_training_session_runtime_ExecuteSamplingOperation.md)

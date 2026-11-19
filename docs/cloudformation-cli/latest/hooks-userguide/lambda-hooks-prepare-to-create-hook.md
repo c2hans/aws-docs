@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Prepare to create a Lambda Hook
-<a name="lambda-hooks-prepare-to-create-hook"></a>
 
 Before you create a Lambda Hook, you must complete the following prerequisites:
 + You must have already created a Lambda function. For more information, see the [Create Lambda functions for Hooks](lambda-hooks-create-lambda-function.md).

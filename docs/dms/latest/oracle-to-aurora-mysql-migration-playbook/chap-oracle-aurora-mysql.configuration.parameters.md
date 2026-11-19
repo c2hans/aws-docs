@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle instance parameters and Aurora MySQL parameter groups
-<a name="chap-oracle-aurora-mysql.configuration.parameters"></a>
 
 With AWS DMS, you can configure database settings to optimize performance, security, and resource utilization during and after migrating databases to Amazon Aurora. Oracle instance parameters and Aurora MySQL parameter groups define settings that govern database behavior, such as memory allocation, query optimization, and security policies.
 

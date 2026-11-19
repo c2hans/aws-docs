@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF04-BP02 Consider purpose-built databases for advertising workloads
-<a name="advperf04-bp02"></a>
 
  Purpose-built databases offer low latency and can meet the scaling needs of advertising workloads more efficiently than general-purpose relational databases. Use in-memory databases for sub-millisecond bid path data and OLTP databases for medium-latency transactional workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # TelemetryConfiguration
-<a name="API_TelemetryConfiguration"></a>
 
  A model representing the state of a resource within an account according to telemetry config.
 

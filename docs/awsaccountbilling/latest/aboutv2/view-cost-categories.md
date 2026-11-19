@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/view-co
 ---
 
 # Viewing cost categories
-<a name="view-cost-categories"></a>
 
 From the cost categories dashboard in AWS Billing and Cost Management, you can view comprehensive information about your category details and values by using details page. This section shows you how to navigate to the details page, understand values shown, and customize your view to show different cost types.
 

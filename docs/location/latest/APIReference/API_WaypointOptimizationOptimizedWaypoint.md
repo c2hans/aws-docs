@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationOptimizedWaypoint
-<a name="API_WaypointOptimizationOptimizedWaypoint"></a>
 
 The optimized waypoint.
 

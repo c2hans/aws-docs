@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityReservationTopology
-<a name="API_DescribeCapacityReservationTopology"></a>
 
 Describes a tree-based hierarchy that represents the physical host placement of your pending or active Capacity Reservations within an Availability Zone or Local Zone. You can use this information to determine the relative proximity of your capacity within the AWS network before it is launched and use this information to allocate capacity together to support your tightly coupled workloads.
 

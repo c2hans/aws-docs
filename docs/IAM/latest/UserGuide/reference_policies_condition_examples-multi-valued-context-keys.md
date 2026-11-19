@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # Multivalued context key examples
-<a name="reference_policies_condition_examples-multi-valued-context-keys"></a>
 
 The following set of policy examples demonstrate how to create policy conditions with multivalued context keys.
 

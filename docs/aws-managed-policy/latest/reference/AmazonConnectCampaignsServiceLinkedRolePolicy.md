@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonConnectCampaignsServiceLinkedRolePolicy
-<a name="AmazonConnectCampaignsServiceLinkedRolePolicy"></a>
 
 **Description**: Policy for Amazon Connect Campaigns service linked role
 

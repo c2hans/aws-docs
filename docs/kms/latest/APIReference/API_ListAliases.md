@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListAliases.
 ---
 
 # ListAliases
-<a name="API_ListAliases"></a>
 
 Gets a list of aliases in the caller's AWS account and region. For more information about aliases, see [CreateAlias](API_CreateAlias.md).
 

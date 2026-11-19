@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CompleteMigration
-<a name="API_CompleteMigration"></a>
 
 Completes the migration of data.
 

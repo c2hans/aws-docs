@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-rol
 ---
 
 # Update a role trust policy
-<a name="id_roles_update-role-trust-policy"></a>
 
 To change who can assume a role, you must modify the role's trust policy. You cannot modify the trust policy for a *[service-linked role](id_roles.md#iam-term-service-linked-role)*.
 

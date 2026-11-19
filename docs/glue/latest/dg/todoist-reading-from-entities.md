@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/todoist-reading-from-enti
 ---
 
 # Reading from Todoist entities
-<a name="todoist-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-runt
 ---
 
 # Lambda runtimes
-<a name="lambda-runtimes-component"></a>
 
 The Lambda runtimes component (`aws.greengrass.LambdaRuntimes`) provides the runtimes that Greengrass core devices use to run AWS Lambda functions.
 

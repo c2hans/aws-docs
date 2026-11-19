@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Knowl
 ---
 
 # KnowledgeBaseSortBy
-<a name="API_KnowledgeBaseSortBy"></a>
 
 The sort configuration for searching knowledge bases.
 

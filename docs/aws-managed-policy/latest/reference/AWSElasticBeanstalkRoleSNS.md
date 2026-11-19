@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkRoleSNS
-<a name="AWSElasticBeanstalkRoleSNS"></a>
 
 **Description**: (Elastic Beanstalk operations role) Allows an environment to enable Amazon SNS topic integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Setting up your HyperPod clusters for model deployment
-<a name="sagemaker-hyperpod-model-deployment-setup"></a>
 
 This guide shows you how to enable inference capabilities on Amazon SageMaker HyperPod clusters. You'll set up the infrastructure, permissions, and operators that machine learning engineers need to deploy and manage inference endpoints.
 

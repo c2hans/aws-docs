@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/select-retri
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Creating an index for an Amazon Q Business application
-<a name="select-retriever"></a>
 
 Before you can add data in your Amazon Q Business application, you need to connect it to the following components:
 + An **index** – This is where the data you add is stored and organized.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/connectors-overview
 ---
 
 # Manage connectors and credentials
-<a name="connectors-overview"></a>
 
 An Amazon Elastic VMware Service connector lets Amazon EVS communicate with one VMware Cloud Foundation (VCF) management appliance in your environment. Amazon EVS uses connectors to stay in sync with your VCF deployment and to track Windows Server entitlements. A connector that stops working affects your environment health.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchD
 ---
 
 # BatchDeleteBuilds
-<a name="API_BatchDeleteBuilds"></a>
 
 Deletes one or more builds.
 

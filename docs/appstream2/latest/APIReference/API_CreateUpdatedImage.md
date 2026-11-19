@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateUpdatedImage
-<a name="API_CreateUpdatedImage"></a>
 
 Creates a new image with the latest Windows operating system updates, driver updates, and WorkSpaces Applications agent software.
 

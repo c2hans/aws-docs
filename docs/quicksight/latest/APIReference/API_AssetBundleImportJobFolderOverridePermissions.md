@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobFolderOverridePermissions
-<a name="API_AssetBundleImportJobFolderOverridePermissions"></a>
 
 An object that contains a list of permissions to be applied to a list of folder IDs.
 

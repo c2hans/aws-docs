@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MariaDbDataP
 ---
 
 # MariaDbDataProviderSettings
-<a name="API_MariaDbDataProviderSettings"></a>
 
 Provides information that defines a MariaDB data provider.
 

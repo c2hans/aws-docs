@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-mode
 ---
 
 # Contributing training data in AWS Clean Rooms ML
-<a name="custom-model-training-data"></a>
 
 After the collaboration creator has created the collaboration and invited members have joined, you are ready to contribute training data to the collaboration. Any member can contribute training data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-log-
 ---
 
 # AWS CloudTrail data event log file examples for S3 Tables
-<a name="s3-tables-log-files"></a>
 
 A AWS CloudTrail log file includes information about the requested API operation, the date and time of the operation, request parameters, and so on. This topic provides example log files for CloudTrail data events for S3 Tables.
 

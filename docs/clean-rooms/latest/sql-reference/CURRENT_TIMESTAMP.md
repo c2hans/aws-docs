@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/CURRENT
 ---
 
 # CURRENT\_TIMESTAMP function
-<a name="CURRENT_TIMESTAMP"></a>
 
 CURRENT\_TIMESTAMP returns the current date and time, including the date, time, and (optionally) the milliseconds or microseconds.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayClusterAssociationSummary
-<a name="API_GatewayClusterAssociationSummary"></a>
 
 A summary of an association between a gateway and a cluster.
 

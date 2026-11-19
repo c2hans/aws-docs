@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-dss
 ---
 
 # Specifying dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)
-<a name="specifying-dsse-encryption"></a>
 
 You can apply encryption when you are either uploading a new object or copying an existing object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListIndexesForMembers
-<a name="API_ListIndexesForMembers"></a>
 
 Retrieves a list of a member's indexes in all AWS Regions that are currently collecting resource information for AWS Resource Explorer. Only the management account or a delegated administrator with service access enabled can invoke this API call.
 

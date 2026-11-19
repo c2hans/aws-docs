@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/feature-comparison.h
 ---
 
 # Amazon Chime SDK Voice Connector and Amazon Connect Customer feature comparison
-<a name="feature-comparison"></a>
 
 The following table compares the full capabilities of Amazon Chime SDK Voice Connector and Amazon Connect Customer.
 

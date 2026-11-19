@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_FilterE
 ---
 
 # FilterExpression
-<a name="API_FilterExpression"></a>
 
 A filter expression in Amazon DataZone.
 

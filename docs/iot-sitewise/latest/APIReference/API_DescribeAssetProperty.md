@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeAssetProperty
-<a name="API_DescribeAssetProperty"></a>
 
 Retrieves information about an asset property.
 

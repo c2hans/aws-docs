@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/harness-support.html
 ---
 
 # AWS Glue support for Harness
-<a name="harness-support"></a>
 
 AWS Glue supports Harness as follows:
 

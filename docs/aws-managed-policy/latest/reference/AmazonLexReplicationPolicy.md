@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLexReplicationPolicy
-<a name="AmazonLexReplicationPolicy"></a>
 
 **Description**: Allows Amazon Lex to replicate Lex resources across regions on your behalf.
 

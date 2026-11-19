@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api.html
 ---
 
 # Amazon Neptune Management API Reference
-<a name="api"></a>
 
 This chapter documents the Neptune API operations that you can use to manage and maintain your Neptune DB cluster.
 

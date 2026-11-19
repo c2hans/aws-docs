@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataExchangeDataGrantOwnerFullAccess
-<a name="AWSDataExchangeDataGrantOwnerFullAccess"></a>
 
 **Description**: Gives Data Grant owners access to AWS Data Exchange actions using the AWS Management Console and SDK.
 

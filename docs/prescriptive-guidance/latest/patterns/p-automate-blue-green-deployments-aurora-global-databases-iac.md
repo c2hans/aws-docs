@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/p-
 ---
 
 # Automate blue/green deployments of Amazon Aurora global databases by using IaC principles
-<a name="p-automate-blue-green-deployments-aurora-global-databases-iac"></a>
 
 *Ishwar Chauthaiwale, ANKIT JAIN, and Ramu Jagini, Amazon Web Services*
 

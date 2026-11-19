@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting S3 Batch Operations
-<a name="troubleshooting-batch-operations"></a>
 
 Amazon S3 Batch Operations allows you to perform large-scale operations on Amazon S3 objects. This guide helps you troubleshoot common issues you might encounter.
 

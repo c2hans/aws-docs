@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL10-BP01 Deploy the workload to multiple locations
-<a name="rel_fault_isolation_multiaz_region_system"></a>
 
  Distribute workload data and resources across multiple Availability Zones or, where necessary, across AWS Regions.
 

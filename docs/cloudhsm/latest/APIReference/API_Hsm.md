@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Hsm.htm
 ---
 
 # Hsm
-<a name="API_Hsm"></a>
 
 Contains information about a hardware security module (HSM) in an AWS CloudHSM cluster.
 

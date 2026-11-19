@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSec
 ---
 
 # CreateSecondaryNetwork
-<a name="API_CreateSecondaryNetwork"></a>
 
 Creates a secondary network.
 

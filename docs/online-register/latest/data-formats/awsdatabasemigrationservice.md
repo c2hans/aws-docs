@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS Database Migration Service
-<a name="awsdatabasemigrationservice"></a>
 
 AWS Database Migration Service provides the following APIs for data retrieval.
 

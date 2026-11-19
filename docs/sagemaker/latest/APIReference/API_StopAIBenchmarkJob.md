@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopAI
 ---
 
 # StopAIBenchmarkJob
-<a name="API_StopAIBenchmarkJob"></a>
 
 Stops a running AI benchmark job.
 

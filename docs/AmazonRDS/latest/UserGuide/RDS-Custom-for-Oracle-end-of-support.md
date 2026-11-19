@@ -3,10 +3,9 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-Custom-fo
 ---
 
 # RDS Custom for Oracle end of support
-<a name="RDS-Custom-for-Oracle-end-of-support"></a>
 
 **Note**
-End of support notice: On March 31, 2027, AWS will end support for Amazon RDS Custom for Oracle. After March 31, 2027, you will no longer be able to access the RDS Custom for Oracle console or RDS Custom for Oracle resources. For more information, see [RDS Custom for Oracle end of support](#RDS-Custom-for-Oracle-end-of-support).
+End of support notice: On March 31, 2027, AWS will end support for Amazon RDS Custom for Oracle. After March 31, 2027, you will no longer be able to access the RDS Custom for Oracle console or RDS Custom for Oracle resources. For more information, see [RDS Custom for Oracle end of support](RDS-Custom-for-Oracle-end-of-support.md).
 
 ## Overview
 <a name="RDS-Custom-for-Oracle-end-of-support-overview"></a>

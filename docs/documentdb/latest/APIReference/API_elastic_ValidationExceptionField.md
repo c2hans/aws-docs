@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ValidationExceptionField
-<a name="API_elastic_ValidationExceptionField"></a>
 
 A specific field in which a given validation exception occurred.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Items
 ---
 
 # ItemsLimitConfiguration
-<a name="API_ItemsLimitConfiguration"></a>
 
 The limit configuration of the visual display for an axis.
 

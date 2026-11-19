@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-cpt-2.h
 ---
 
 # Continued pre-training (CPT) on Nova 2.0 on SageMaker HyperPod
-<a name="nova-cpt-2"></a>
 
 Amazon Nova Lite 2.0 is a reasoning model trained on larger and more diverse datasets than Nova Lite 1.0. Despite being a larger model, Nova Lite 2.0 delivers faster inference than Nova Lite 1.0 while offering enhanced reasoning capabilities, longer context lengths, and improved multilingual performance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Migrate Amazon EBS volumes from gp2 to gp3
-<a name="ebs-migrate-gp2-gp3"></a>
 
 ## Overview
 <a name="ebs-migrate-gp2-gp3-overview"></a>

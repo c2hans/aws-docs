@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.EAC.7] Automate compute image generation and distribution
-<a name="dl.eac.7-automate-compute-image-generation-and-distribution"></a>
 
  **Category:** OPTIONAL
 

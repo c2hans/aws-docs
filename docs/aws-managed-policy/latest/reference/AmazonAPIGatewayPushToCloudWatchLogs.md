@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAPIGatewayPushToCloudWatchLogs
-<a name="AmazonAPIGatewayPushToCloudWatchLogs"></a>
 
 **Description**: Allows API Gateway to push logs to user's account.
 

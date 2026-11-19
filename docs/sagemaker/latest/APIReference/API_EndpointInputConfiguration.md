@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointInputConfiguration
-<a name="API_EndpointInputConfiguration"></a>
 
 The endpoint configuration for the load test.
 

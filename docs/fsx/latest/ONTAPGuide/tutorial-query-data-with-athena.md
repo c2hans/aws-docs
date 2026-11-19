@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/tutorial-query-dat
 ---
 
 # Query files with SQL using Amazon Athena
-<a name="tutorial-query-data-with-athena"></a>
 
 Enterprise systems frequently produce file-based output — log exports, transaction extracts, inventory snapshots, inter-system file drops — that lands on an NFS or SMB file share.
 

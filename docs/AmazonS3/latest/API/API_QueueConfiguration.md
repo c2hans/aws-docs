@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_QueueConfigurati
 ---
 
 # QueueConfiguration
-<a name="API_QueueConfiguration"></a>
 
 Specifies the configuration for publishing messages to an Amazon Simple Queue Service (Amazon SQS) queue when Amazon S3 detects specified events.
 

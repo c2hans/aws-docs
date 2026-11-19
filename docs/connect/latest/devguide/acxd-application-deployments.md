@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-application
 ---
 
 # Application deployments
-<a name="acxd-application-deployments"></a>
 
 Deploying an application pushes a successful build to the channels where users interact: chat, voice, IVR, website, mobile, or MCP clients. Only one build is live per application at a time. Deploying a new build deactivates the previous one. You can roll back to any previous build at any time.
 

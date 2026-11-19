@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostOffer
 ---
 
 # HostOffering
-<a name="API_HostOffering"></a>
 
 Details about the Dedicated Host Reservation offering.
 

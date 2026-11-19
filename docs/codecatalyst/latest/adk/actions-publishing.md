@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/actions-publishi
 ---
 
 # Publishing an action
-<a name="actions-publishing"></a>
 
 In CodeCatalyst, you can publish multiple versions of an action, retrieve action metadata, and manage your actions. You can publish the actions in your local catalog to the CodeCatalyst actions catalog so that other CodeCatalyst users can use them.
 

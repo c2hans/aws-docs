@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowHealthEntity
-<a name="API_MetaFlowHealthEntity"></a>
 
 Represents a single entity in the health status check for a WhatsApp Flow.
 

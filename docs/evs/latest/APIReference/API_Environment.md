@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_Environment.
 ---
 
 # Environment
-<a name="API_Environment"></a>
 
 An object that represents an Amazon EVS environment.
 

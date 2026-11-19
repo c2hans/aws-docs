@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Upda
 ---
 
 # UpdateServiceNetwork
-<a name="API_UpdateServiceNetwork"></a>
 
 Updates the specified service network.
 

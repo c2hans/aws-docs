@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Performance architecture
-<a name="performance-architecture"></a>
 
 | HCL\_PERF1. How do you encrypt data while ensuring performance? |
 | --- |

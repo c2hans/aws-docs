@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetManage
 ---
 
 # GetManagedThingMetaData
-<a name="API_GetManagedThingMetaData"></a>
 
 Get the metadata information for a managed thing.
 

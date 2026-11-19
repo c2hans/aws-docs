@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesFindingFieldsUpdateV2
-<a name="API_AutomationRulesFindingFieldsUpdateV2"></a>
 
 Allows you to define the structure for modifying specific fields in security findings.
 

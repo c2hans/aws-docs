@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DisassociateAccounts
-<a name="API_DisassociateAccounts"></a>
 
 Removes the specified list of account IDs from the given billing group.
 

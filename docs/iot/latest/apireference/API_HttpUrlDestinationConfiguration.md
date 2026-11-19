@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpUrlDesti
 ---
 
 # HttpUrlDestinationConfiguration
-<a name="API_HttpUrlDestinationConfiguration"></a>
 
 HTTP URL destination configuration used by the topic rule's HTTP action.
 

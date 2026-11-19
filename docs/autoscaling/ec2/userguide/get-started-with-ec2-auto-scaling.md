@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/get-started-wi
 ---
 
 # Get started with Amazon EC2 Auto Scaling
-<a name="get-started-with-ec2-auto-scaling"></a>
 
 To get started with Amazon EC2 Auto Scaling, you can follow tutorials that introduce you to the service.
 

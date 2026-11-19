@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-linux-
 ---
 
 # Bundling applications for the .NET Core on Linux Elastic Beanstalk platform
-<a name="dotnet-linux-platform-bundle-app"></a>
 
 You can deploy two types of .NET applications to the .NET Core on Linux platform: *runtime-dependent* applications, which use the .NET runtime that the platform provides, and *self-contained* applications, which include their own .NET runtime. The .NET documentation calls runtime-dependent applications *framework-dependent* applications.
 
@@ -13,6 +12,8 @@ Publish your application with the `dotnet publish` command on your computer or i
 <a name="dotnet-linux-platform-bundle-app-compare"></a>
 
 The following table compares runtime-dependent and self-contained applications on the .NET Core on Linux platform.
+
+**Comparison of runtime-dependent and self-contained applications**
 
 | Consideration | Runtime-dependent | Self-contained |
 | --- | --- | --- |
@@ -74,6 +75,8 @@ Create your source bundle from the contents of your publish folder, not from the
 + **Multiple applications** – Place each application in its own top-level folder, and include a [Procfile](dotnet-linux-procfile.md) at the root that starts each application.
 
 During deployment, Elastic Beanstalk finds each application by its `{{name}}.runtimeconfig.json` file, where {{name}} is your application's assembly name. Elastic Beanstalk reads the `runtimeOptions` section of the file to determine the application type, as shown in the following table.
+
+**How Elastic Beanstalk determines the application type**
 
 | Application type | `runtimeOptions` section | Expected file in the same folder | Command that Elastic Beanstalk runs if there's no `Procfile` |
 | --- | --- | --- | --- |

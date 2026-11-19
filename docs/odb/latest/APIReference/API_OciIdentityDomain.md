@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OciIdentityD
 ---
 
 # OciIdentityDomain
-<a name="API_OciIdentityDomain"></a>
 
 Information about an Oracle Cloud Infrastructure (OCI) identity domain configuration.
 

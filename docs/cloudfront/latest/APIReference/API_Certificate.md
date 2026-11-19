@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Certi
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 The AWS Certificate Manager (ACM) certificate associated with your distribution.
 

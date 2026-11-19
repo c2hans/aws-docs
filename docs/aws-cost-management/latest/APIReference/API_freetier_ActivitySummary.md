@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ActivitySummary
-<a name="API_freetier_ActivitySummary"></a>
 
  The summary of activities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorCheckSummary
-<a name="API_TrustedAdvisorCheckSummary"></a>
 
 A summary of a Trusted Advisor check result, including the alert status, last refresh, and number of resources examined.
 

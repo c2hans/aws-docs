@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/bp-application
 ---
 
 # AWS CloudHSM application integration best practices
-<a name="bp-application-integration"></a>
 
 Follow the best practices in this section to optimize how your application integrates with your AWS CloudHSM cluster.
 

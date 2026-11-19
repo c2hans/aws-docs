@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/compli
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Access control for the AWS Marketplace Compliance API
-<a name="compliance-api-access-control"></a>
 
 You can use the AWS Marketplace Compliance API to manage seller compliance in AWS Marketplace. However, first make sure your user or role can access the API functionality that you want to call.
 

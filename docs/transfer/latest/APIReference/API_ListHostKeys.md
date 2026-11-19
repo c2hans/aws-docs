@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListHos
 ---
 
 # ListHostKeys
-<a name="API_ListHostKeys"></a>
 
 Returns a list of host keys for the server that's specified by the `ServerId` parameter.
 

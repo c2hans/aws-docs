@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ScheduleM
 ---
 
 # ScheduleMaintenanceWindow
-<a name="API_ScheduleMaintenanceWindow"></a>
 
 Structure representing scheduling maintenance window.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchDe
 ---
 
 # BatchDeleteAutomationRules
-<a name="API_BatchDeleteAutomationRules"></a>
 
  Deletes one or more automation rules.
 

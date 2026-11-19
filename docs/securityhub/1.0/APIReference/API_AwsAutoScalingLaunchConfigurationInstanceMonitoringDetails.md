@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingLaunchConfigurationInstanceMonitoringDetails
-<a name="API_AwsAutoScalingLaunchConfigurationInstanceMonitoringDetails"></a>
 
 Information about the type of monitoring for instances in the group.
 

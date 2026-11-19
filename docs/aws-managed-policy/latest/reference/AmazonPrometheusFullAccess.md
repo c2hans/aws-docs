@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonPrometheusFullAccess
-<a name="AmazonPrometheusFullAccess"></a>
 
 **Description**: Grants full access to AWS Managed Prometheus resources
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Directory bucket naming rules
-<a name="directory-bucket-naming-rules"></a>
 
 When you create a directory bucket in Amazon S3, the following bucket naming rules apply. For general purpose bucket naming rules, see [General purpose bucket naming rules](bucketnamingrules.md).
 

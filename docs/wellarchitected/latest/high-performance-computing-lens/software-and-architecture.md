@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Software and architecture
-<a name="software-and-architecture"></a>
 
 | HPCSUS02: Have you complemented your architecture with a remote desktop solution? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/get-customer-i
 ---
 
 # Flow block in Connect Customer: Get customer input
-<a name="get-customer-input"></a>
 
 This topic defines the flow block for such tasks as capturing customer information, creating interactive phone menus for customer responses, and routing customers to specific paths within a flow.
 

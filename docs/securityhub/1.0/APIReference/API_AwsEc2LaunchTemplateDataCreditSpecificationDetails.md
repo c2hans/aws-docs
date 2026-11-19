@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataCreditSpecificationDetails
-<a name="API_AwsEc2LaunchTemplateDataCreditSpecificationDetails"></a>
 
  Specifies the credit option for CPU usage of a T2, T3, or T3a Amazon EC2 instance.
 

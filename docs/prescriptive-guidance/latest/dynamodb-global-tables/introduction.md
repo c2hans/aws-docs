@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # Using Amazon DynamoDB global tables
-<a name="introduction"></a>
 
 *Jason Hunter, Amazon Web Services*
 

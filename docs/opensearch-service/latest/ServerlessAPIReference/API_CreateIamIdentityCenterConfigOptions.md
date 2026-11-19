@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CreateIamIdentityCenterConfigOptions
-<a name="API_CreateIamIdentityCenterConfigOptions"></a>
 
 Describes IAM Identity Center options for creating an OpenSearch Serverless security configuration in the form of a key-value map.
 

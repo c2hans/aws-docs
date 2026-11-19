@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AnalysisResult
-<a name="API_AnalysisResult"></a>
 
 The analysis result for Network Firewall's stateless rule group analyzer. Every time you call [CreateRuleGroup](API_CreateRuleGroup.md), [UpdateRuleGroup](API_UpdateRuleGroup.md), or [DescribeRuleGroup](API_DescribeRuleGroup.md) on a stateless rule group, Network Firewall analyzes the stateless rule groups in your account and identifies the rules that might adversely effect your firewall's functionality. For example, if Network Firewall detects a rule that's routing traffic asymmetrically, which impacts the service's ability to properly process traffic, the service includes the rule in a list of analysis results.
 

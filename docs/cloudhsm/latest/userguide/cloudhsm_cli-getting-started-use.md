@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-g
 ---
 
 # Use the CloudHSM CLI
-<a name="cloudhsm_cli-getting-started-use"></a>
 
 Use the following commands to start and use the CloudHSM CLI.
 

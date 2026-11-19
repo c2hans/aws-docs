@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_EyeO
 ---
 
 # EyeOpen
-<a name="API_EyeOpen"></a>
 
 Indicates whether or not the eyes on the face are open, and the confidence level in the determination.
 

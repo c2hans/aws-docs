@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserConsoleFeatureConfigurations
-<a name="API_RegisteredUserConsoleFeatureConfigurations"></a>
 
 The feature configurations of an embedded Amazon Quick Sight console.
 

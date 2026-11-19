@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # UntagResource
-<a name="API_connect-app-integrations_UntagResource"></a>
 
 Removes the specified tags from the specified resource.
 

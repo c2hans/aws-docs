@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RebootRequest.
 ---
 
 # RebootRequest
-<a name="API_RebootRequest"></a>
 
 Describes the information used to reboot a WorkSpace.
 

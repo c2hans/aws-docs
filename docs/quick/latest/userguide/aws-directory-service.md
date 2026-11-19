@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/aws-directory-ser
 ---
 
 # Using Active Directory with AWS Quick Enterprise edition
-<a name="aws-directory-service"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateM
 ---
 
 # DateMeasureField
-<a name="API_DateMeasureField"></a>
 
 The measure type field with date type columns.
 

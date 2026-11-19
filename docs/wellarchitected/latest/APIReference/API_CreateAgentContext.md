@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateAgentContext
-<a name="API_CreateAgentContext"></a>
 
 Creates a context associated with an optimization profile. Contexts provide application and environment information used during recommendation generation.
 

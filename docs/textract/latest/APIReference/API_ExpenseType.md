@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Expense
 ---
 
 # ExpenseType
-<a name="API_ExpenseType"></a>
 
 An object used to store information about the Type detected by Amazon Textract.
 

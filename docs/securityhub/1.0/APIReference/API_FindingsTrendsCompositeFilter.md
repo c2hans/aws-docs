@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingsTrendsCompositeFilter
-<a name="API_FindingsTrendsCompositeFilter"></a>
 
 A filter structure that contains a logical combination of string filters and nested composite filters for findings trend data.
 
@@ -12,7 +11,7 @@ A filter structure that contains a logical combination of string filters and nes
 
  ** NestedCompositeFilters **   <a name="securityhub-Type-FindingsTrendsCompositeFilter-NestedCompositeFilters"></a>
 A list of nested composite filters that you can use to create complex filter conditions for findings trend data.
-Type: Array of [FindingsTrendsCompositeFilter](#API_FindingsTrendsCompositeFilter) objects
+Type: Array of [FindingsTrendsCompositeFilter](API_FindingsTrendsCompositeFilter.md) objects
 Required: No
 
  ** Operator **   <a name="securityhub-Type-FindingsTrendsCompositeFilter-Operator"></a>

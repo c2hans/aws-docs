@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-open
 ---
 
 # Bootstrap OpenSSL Provider
-<a name="configure-openssl-provider"></a>
 
 Use the configure-openssl-provider tool to bootstrap your OpenSSL Provider installation and connect it to your AWS CloudHSM cluster.
 

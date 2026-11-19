@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 ---
 
 # FND06-BP05 Establish organizational metrics to track optimization efforts
-<a name="fnd06-bp05"></a>
 
  Implement organization-wide metrics, goals, and tracking mechanisms to measure and optimize cloud spending across your accounts. This includes establishing standardized key performance indicators (KPIs), implementing full monitoring and reporting frameworks, and creating feedback loops for continuous optimization.
 

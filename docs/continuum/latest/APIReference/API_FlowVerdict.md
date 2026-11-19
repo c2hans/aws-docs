@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_FlowVe
 ---
 
 # FlowVerdict
-<a name="API_FlowVerdict"></a>
 
 Validation's verdict for one attack flow.
 

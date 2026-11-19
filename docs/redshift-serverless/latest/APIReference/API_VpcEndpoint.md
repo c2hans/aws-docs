@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # VpcEndpoint
-<a name="API_VpcEndpoint"></a>
 
 The connection endpoint for connecting to Amazon Redshift Serverless through the proxy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-
 ---
 
 # Generic top-level domains
-<a name="registrar-tld-list-generic"></a>
 
 *Generic top-level domains* (gTLDs) are global extensions that are used and recognized around the world, such as .com, .net, and .org. They also include specialty domains such as .bike, .condos, and .marketing.
 

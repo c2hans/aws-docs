@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/linux-info
 ---
 
 # Amazon Corretto 8 Guide for Linux
-<a name="linux-info"></a>
 
 The topics in this section describe installation instructions for Amazon Corretto 8 on Linux platforms.
 

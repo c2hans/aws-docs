@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
 Effective Solr cluster monitoring combines native tools (Admin UI and health APIs), Java Management Extensions (JMX) metrics for real-time performance data, external systems such as Prometheus or Grafana for visualization, custom scripts for resource tracking, and automated alerts for critical issues. This multi-layered approach provides comprehensive visibility into cluster health, performance, and potential problems. When you use Amazon OpenSearch Service, you get access to the same functionality through the managed service.
 

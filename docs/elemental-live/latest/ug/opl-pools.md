@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-pools.html
 ---
 
 # Output locking pools
-<a name="opl-pools"></a>
 
 The events that are locked together are in a *pool of locked events*. The outputs in these events are part of a *pool of locked outputs*. The encodes in the locked outputs are part of a *pool of locked encodes*.
 

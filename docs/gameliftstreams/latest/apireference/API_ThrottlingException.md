@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ThrottlingException
-<a name="API_ThrottlingException"></a>
 
 The request was denied due to request throttling. Retry the request after the suggested wait time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreateUserAccessLoggingSettings
-<a name="API_CreateUserAccessLoggingSettings"></a>
 
 Creates a user access logging settings resource that can be associated with a web portal.
 

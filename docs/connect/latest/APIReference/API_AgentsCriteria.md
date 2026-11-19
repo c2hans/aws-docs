@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentsCr
 ---
 
 # AgentsCriteria
-<a name="API_AgentsCriteria"></a>
 
 Can be used to define a list of preferred agents to target the contact to within the queue. Note that agents must have the queue in their routing profile in order to be offered the contact.
 

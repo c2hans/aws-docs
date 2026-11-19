@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/prepare-dat
 ---
 
 # Preparing data tables in Amazon Athena
-<a name="prepare-data-athena"></a>
 
 You can query data tables that have been created as AWS Glue Data Catalog (GDC) Views in Amazon Athena.
 

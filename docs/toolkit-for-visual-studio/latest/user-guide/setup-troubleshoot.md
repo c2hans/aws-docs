@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Troubleshooting installation issues for the AWS Toolkit for Visual Studio
-<a name="setup-troubleshoot"></a>
 
 The following information is known to resolve common installation issues while setting up the AWS Toolkit for Visual Studio.
 

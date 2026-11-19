@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-access
 ---
 
 # Accessing resources in other AWS accounts in Step Functions
-<a name="concepts-access-cross-acct-resources"></a>
 
 Step Functions provides cross-account access to resources configured in different AWS accounts in your workflows. Using Step Functions service integrations, you can invoke any cross-account AWS resource even if that AWS service does not support resource-based policies or cross-account calls.
 

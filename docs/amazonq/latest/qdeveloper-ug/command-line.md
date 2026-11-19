@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-lin
 ---
 
 # Using Amazon Q Developer on the command line
-<a name="command-line"></a>
 
 The Q CLI has become the Kiro CLI.
 

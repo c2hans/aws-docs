@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/monitoring-opt-out
 ---
 
 # Opting out of usage tracking for DLAMI instances
-<a name="monitoring-opt-out"></a>
 
 The following AWS Deep Learning AMIs operating system distributions include code that allows AWS to collect instance type, instance ID, DLAMI type, and OS information.
 

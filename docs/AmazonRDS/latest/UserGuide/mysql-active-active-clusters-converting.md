@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-active-
 ---
 
 # Converting an existing DB instance to an active-active cluster
-<a name="mysql-active-active-clusters-converting"></a>
 
 The DB engine version of the DB instance you want to migrate to an active-active cluster must be one of the following versions:
 + All MySQL 8.4 versions

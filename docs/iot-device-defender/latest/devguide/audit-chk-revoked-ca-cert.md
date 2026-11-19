@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Revoked CA certificate still active
-<a name="audit-chk-revoked-ca-cert"></a>
 
 A CA certificate was revoked, but is still active in AWS IoT.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteScheduledQuery
-<a name="API_DeleteScheduledQuery"></a>
 
 Deletes a scheduled query and stops all future executions. This operation also removes any configured actions and associated resources.
 

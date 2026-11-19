@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/repostprivate/latest/APIReference/API_Ch
 ---
 
 # ChannelData
-<a name="API_ChannelData"></a>
 
 A structure that contains some information about a channel in a private re:Post.
 

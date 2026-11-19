@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/edit-sa
 ---
 
 # Editing a Cost Explorer report
-<a name="edit-saved-ce-reports"></a>
 
 You can use the console to edit Cost Explorer reports.
 

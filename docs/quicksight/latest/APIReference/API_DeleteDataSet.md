@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteDataSet
-<a name="API_DeleteDataSet"></a>
 
 Deletes a dataset.
 

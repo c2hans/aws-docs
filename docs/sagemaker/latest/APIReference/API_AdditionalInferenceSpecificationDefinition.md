@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Additi
 ---
 
 # AdditionalInferenceSpecificationDefinition
-<a name="API_AdditionalInferenceSpecificationDefinition"></a>
 
 A structure of additional Inference Specification. Additional Inference Specification specifies details about inference jobs that can be run with models based on this model package
 

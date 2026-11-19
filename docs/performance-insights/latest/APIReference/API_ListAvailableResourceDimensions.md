@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ListAvailableResourceDimensions
-<a name="API_ListAvailableResourceDimensions"></a>
 
 Retrieve the dimensions that can be queried for each specified metric type on a specified DB instance.
 

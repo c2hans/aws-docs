@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Doc
 ---
 
 # Document History
-<a name="DocumentHistory"></a>
 
  The following table describes the documentation for this release of *Amazon SimpleDB*.
 

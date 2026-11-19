@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-preprocess-data.
 ---
 
 # Prepare a dataset
-<a name="ex1-preprocess-data"></a>
 
 In this step, you load the [Adult Census dataset](https://archive.ics.uci.edu/ml/datasets/adult) to your notebook instance using the SHAP (SHapley Additive exPlanations) Library, review the dataset, transform it, and upload it to Amazon S3. SHAP is a game theoretic approach to explain the output of any machine learning model. For more information about SHAP, see [Welcome to the SHAP documentation](https://shap.readthedocs.io/en/latest/).
 

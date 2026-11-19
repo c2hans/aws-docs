@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # On-request reports
-<a name="on-request-reporting"></a>
 
 **Topics**
 + [AMS host management reports](ams-host-man.md)

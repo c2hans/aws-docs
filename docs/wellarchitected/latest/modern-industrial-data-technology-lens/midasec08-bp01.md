@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC08-BP01 Align security controls with industry standards
-<a name="midasec08-bp01"></a>
 
  Implement security controls across industrial workloads, and map those controls to recognized industry standards such as NIST 800-82, ISO/IEC 27001, and IEC 62443.
 

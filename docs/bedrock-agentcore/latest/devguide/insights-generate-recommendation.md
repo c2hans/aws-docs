@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/insigh
 ---
 
 # Generate a recommendation from insights findings
-<a name="insights-generate-recommendation"></a>
 
 After reviewing your insights results, you can use the same agent traces to generate an improved system prompt. Point `StartRecommendation` at the completed batch evaluation that produced your insights findings.
 

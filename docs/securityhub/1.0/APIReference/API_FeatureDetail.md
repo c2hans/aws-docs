@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Feature
 ---
 
 # FeatureDetail
-<a name="API_FeatureDetail"></a>
 
 Contains the status and metadata for an opt-in feature.
 

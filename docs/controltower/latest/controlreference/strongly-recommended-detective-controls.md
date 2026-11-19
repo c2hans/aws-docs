@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/str
 ---
 
 # Strongly recommended controls with detective behavior
-<a name="strongly-recommended-detective-controls"></a>
 
 The following strongly recommended controls have detective behavior.
 

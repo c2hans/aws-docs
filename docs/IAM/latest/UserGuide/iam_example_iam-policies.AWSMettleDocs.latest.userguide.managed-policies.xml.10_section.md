@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam-pol
 ---
 
 # Allows the AWS Compute Optimizer Automation feature to apply recommended actions
-<a name="iam_example_iam-policies.AWSMettleDocs.latest.userguide.managed-policies.xml.10_section"></a>
 
 The following code example shows how to This permission-based policy allows the AWS Compute Optimizer Automation feature to apply recommended actions
 

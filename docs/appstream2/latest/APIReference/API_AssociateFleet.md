@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Assoc
 ---
 
 # AssociateFleet
-<a name="API_AssociateFleet"></a>
 
 Associates the specified fleet with the specified stack.
 

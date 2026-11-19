@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Verif
 ---
 
 # VerifyDevicePosition
-<a name="API_VerifyDevicePosition"></a>
 
 Verifies the integrity of the device's position by determining if it was reported behind a proxy, and by comparing it to an inferred position estimated based on the device's state.
 

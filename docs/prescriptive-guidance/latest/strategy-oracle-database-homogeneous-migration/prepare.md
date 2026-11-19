@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Phase 1: Prepare
-<a name="prepare"></a>
 
 During the preparation phase, assess your existing database and identify its dependencies. The following sections cover the main items to evaluate before you plan the migration.
 

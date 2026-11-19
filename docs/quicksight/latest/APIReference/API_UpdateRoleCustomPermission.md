@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateRoleCustomPermission
-<a name="API_UpdateRoleCustomPermission"></a>
 
 Updates the custom permissions that are associated with a role.
 

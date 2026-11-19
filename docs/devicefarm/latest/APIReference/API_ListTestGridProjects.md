@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTestGridProjects
-<a name="API_ListTestGridProjects"></a>
 
 Gets a list of all Selenium testing projects in your account.
 
@@ -66,7 +65,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [nextToken](#API_ListTestGridProjects_ResponseSyntax) **   <a name="devicefarm-ListTestGridProjects-response-nextToken"></a>
-Used for pagination. Pass into [ListTestGridProjects](#API_ListTestGridProjects) to get more results in a paginated request.
+Used for pagination. Pass into [ListTestGridProjects](API_ListTestGridProjects.md) to get more results in a paginated request.
 Type: String
 Length Constraints: Minimum length of 4. Maximum length of 1024.
 

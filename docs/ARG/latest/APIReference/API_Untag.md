@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_Untag.html
 ---
 
 # Untag
-<a name="API_Untag"></a>
 
 Deletes tags from a specified resource group.
 

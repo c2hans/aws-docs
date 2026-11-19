@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ev
 ---
 
 # Set up event-driven auto scaling in Amazon EKS by using Amazon EKS Pod Identity and KEDA
-<a name="event-driven-auto-scaling-with-eks-pod-identity-and-keda"></a>
 
 *Dipen Desai, Abhay Diwan, Kamal Joshi, and Mahendra Revanasiddappa, Amazon Web Services*
 

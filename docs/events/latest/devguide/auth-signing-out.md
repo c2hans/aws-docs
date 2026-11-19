@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/auth-signing-out.
 ---
 
 # Signing an attendee out
-<a name="auth-signing-out"></a>
 
  Discarding your copy of the tokens is not a sign-out. Three pieces of state are involved: your tokens, the AWS Builder ID browser session, and the session that brokers it. A complete sign-out clears all three.
 

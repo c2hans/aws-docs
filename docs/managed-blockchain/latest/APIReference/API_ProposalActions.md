@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # ProposalActions
-<a name="API_ProposalActions"></a>
 
  The actions to carry out if a proposal is `APPROVED`.
 

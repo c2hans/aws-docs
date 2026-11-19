@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/process-
 ---
 
 # Process and culture - User guidance
-<a name="process-and-culture-user-guidance"></a>
 
 | IOTSUS05: How do you educate users to encourage lower carbon footprint of their devices? |
 | --- |

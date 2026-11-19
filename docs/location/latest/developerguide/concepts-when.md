@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/concepts-
 ---
 
 # When (departure and arrival)
-<a name="concepts-when"></a>
 
 Specifies the time for route calculation. The time not only determines the timestamps for departure and arrival but also influences the traffic data to be used.
 

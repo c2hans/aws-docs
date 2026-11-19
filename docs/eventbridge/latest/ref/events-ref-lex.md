@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-lex.ht
 ---
 
 # Amazon Lex Model Building Service events
-<a name="events-ref-lex"></a>
 
 Amazon Lex MBS sends service events to EventBridge via AWS CloudTrail.
 

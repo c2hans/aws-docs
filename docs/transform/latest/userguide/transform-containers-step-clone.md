@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 2: Clone source code
-<a name="transform-containers-step-clone"></a>
 
 In this step, you provide your application source code to AWS Transform. You can provide source code from Git repositories or by uploading zip files.
 

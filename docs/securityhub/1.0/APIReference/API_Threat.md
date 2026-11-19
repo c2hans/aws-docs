@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Threat.
 ---
 
 # Threat
-<a name="API_Threat"></a>
 
 Provides information about the threat detected in a security finding and the file paths that were affected by the threat.
 

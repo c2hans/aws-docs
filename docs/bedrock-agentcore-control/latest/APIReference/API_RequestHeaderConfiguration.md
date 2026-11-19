@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RequestHeaderConfiguration
-<a name="API_RequestHeaderConfiguration"></a>
 
 Configuration for HTTP request headers that will be passed through to the runtime.
 

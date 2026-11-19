@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Storage.h
 ---
 
 # Storage
-<a name="API_Storage"></a>
 
 Describes the storage location for an instance store-backed AMI.
 

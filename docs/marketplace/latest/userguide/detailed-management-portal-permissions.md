@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-ma
 ---
 
 # Policies and permissions for AWS Marketplace sellers
-<a name="detailed-management-portal-permissions"></a>
 
  AWS Marketplace provides a set of managed policies for use with AWS Partner Central. In addition, you can use individual permissions to create your own AWS Identity and Access Management (IAM) policy.
 

@@ -3,9 +3,10 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Operation
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
++  [ConfigureTags](API_ConfigureTags.md)
++  [ConfigureTagsForOrganization](API_ConfigureTagsForOrganization.md)
 +  [DescribeAffectedAccountsForOrganization](API_DescribeAffectedAccountsForOrganization.md)
 +  [DescribeAffectedEntities](API_DescribeAffectedEntities.md)
 +  [DescribeAffectedEntitiesForOrganization](API_DescribeAffectedEntitiesForOrganization.md)
@@ -19,5 +20,15 @@ The following actions are supported:
 +  [DescribeEventTypes](API_DescribeEventTypes.md)
 +  [DescribeHealthServiceStatusForOrganization](API_DescribeHealthServiceStatusForOrganization.md)
 +  [DescribeServiceLifecycle](API_DescribeServiceLifecycle.md)
++  [DescribeTagKeys](API_DescribeTagKeys.md)
++  [DescribeTagKeysForOrganization](API_DescribeTagKeysForOrganization.md)
++  [DescribeTags](API_DescribeTags.md)
++  [DescribeTagsForOrganization](API_DescribeTagsForOrganization.md)
++  [DescribeTagsOnboardingStatus](API_DescribeTagsOnboardingStatus.md)
++  [DescribeTagsOnboardingStatusForOrganization](API_DescribeTagsOnboardingStatusForOrganization.md)
 +  [DisableHealthServiceAccessForOrganization](API_DisableHealthServiceAccessForOrganization.md)
++  [DisableTags](API_DisableTags.md)
++  [DisableTagsForOrganization](API_DisableTagsForOrganization.md)
 +  [EnableHealthServiceAccessForOrganization](API_EnableHealthServiceAccessForOrganization.md)
++  [EnableTags](API_EnableTags.md)
++  [EnableTagsForOrganization](API_EnableTagsForOrganization.md)

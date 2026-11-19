@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/dyna
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Using the DynamoDB Service Level APIs
-<a name="dynamodb-integration-lowlevelapi"></a>
 
 The Dynamo Service Level APIs allow you to create, update and delete tables. You can also perform typical create, read, update, and delete (CRUD) operations on items in a table using this API.
 

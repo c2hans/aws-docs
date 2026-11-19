@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/audio-renditions.htm
 ---
 
 # Audio rendition groups for HLS
-<a name="audio-renditions"></a>
 
 In MediaLive, you can set up an HLS output group to include an audio rendition group. An audio rendition group is a set of audio encodes (for example, a set of languages) that is associated with a video. Audio rendition groups let the downstream client player select a video and then select from among several audio encodes that all apply to that video.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisSt
 ---
 
 # KinesisStreamsOutputDescription
-<a name="API_KinesisStreamsOutputDescription"></a>
 
 For an SQL-based Kinesis Data Analytics application's output, describes the Kinesis data stream that is configured as its destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Entit
 ---
 
 # EntitledApplication
-<a name="API_EntitledApplication"></a>
 
 The application associated to an entitlement. Access is controlled based on user attributes.
 

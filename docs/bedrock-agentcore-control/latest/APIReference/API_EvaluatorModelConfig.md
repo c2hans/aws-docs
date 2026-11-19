@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EvaluatorModelConfig
-<a name="API_EvaluatorModelConfig"></a>
 
  The model configuration that specifies which foundation model to use for evaluation and how to configure it.
 

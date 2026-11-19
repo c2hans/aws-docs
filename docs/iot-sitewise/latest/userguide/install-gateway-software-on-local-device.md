@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/install-ga
 ---
 
 # Install the AWS IoT SiteWise Edge gateway software on your local device
-<a name="install-gateway-software-on-local-device"></a>
 
 After you've created an AWS IoT SiteWise Edge gateway, install the SiteWise Edge gateway software on your local device. SiteWise Edge gateway software can be installed on local devices that have Linux or Microsoft Windows server operating systems installed.
 

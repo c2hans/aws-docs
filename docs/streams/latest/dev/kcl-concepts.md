@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-concepts.html
 ---
 
 # KCL concepts
-<a name="kcl-concepts"></a>
 
 This section explains the core concepts and interactions of Kinesis Client Library (KCL). These concepts are fundamental to developing and managing KCL consumer applications.
 + **KCL consumer application** – a custom-built application designed to read and process records from Kinesis data streams using the Kinesis Client Library.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating your schema
-<a name="migrating-schema"></a>
 
 This section explains how you can migrate your Apache Solr schema configurations to Amazon OpenSearch Service. This migration process helps you transition your Solr schema configuration to OpenSearch Index.
 

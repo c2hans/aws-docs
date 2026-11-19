@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Amazon Bedrock Managed Knowledge Bases as Connector Target
-<a name="gateway-target-connector-managed-kb"></a>
 
 Amazon Bedrock Managed Knowledge Bases provides fully managed retrieval-augmented generation (RAG): Amazon Bedrock handles the vector store, data ingestion, and retrieval optimization, so there is no retrieval infrastructure for you to provision or operate. Amazon Bedrock AgentCore exposes a managed knowledge base as a native Gateway connector — you attach it to your AgentCore Gateway and your agents discover and query it with standard Model Context Protocol (MCP) calls, with no custom retrieval integration to build. For details on creating and managing a managed knowledge base, see [Knowledge bases for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) in the *Amazon Bedrock User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/java-image.html
 ---
 
 # Deploy Java Lambda Event Functions with container images
-<a name="java-image"></a>
 
 There are three ways to build a container image for a Java Lambda Event Function:
 + [Using an AWS base image for Java](#java-image-instructions)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/userguide/outposts-requi
 ---
 
 # Site requirements for Outposts racks
-<a name="outposts-requirements"></a>
 
 An Outpost site is the physical location where your Outpost operates. Sites are only available in select countries and territories. For more information, see, [AWS Outposts rack FAQs](https://aws.amazon.com/outposts/rack/faqs/). Refer to the question: **In which countries and territories is Outposts rack available?**
 

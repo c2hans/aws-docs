@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterSnapshotAttribute
-<a name="API_DBClusterSnapshotAttribute"></a>
 
 Contains the name and values of a manual DB cluster snapshot attribute.
 

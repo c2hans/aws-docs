@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-c
 ---
 
 # Custom
-<a name="kb-managed-ds-custom"></a>
 
 Instead of choosing a supported data source service, you can connect to a custom data source for the following advantages:
 + Flexibility and control over the data types that you want your knowledge base to have access to.

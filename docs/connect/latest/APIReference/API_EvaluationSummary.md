@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSummary
-<a name="API_EvaluationSummary"></a>
 
 Summary information about a contact evaluation.
 

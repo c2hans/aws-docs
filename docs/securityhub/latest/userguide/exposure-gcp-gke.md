@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-gc
 ---
 
 # Remediating exposures for GCP Google Kubernetes Engine clusters
-<a name="exposure-gcp-gke"></a>
 
 AWS Security Hub can generate exposure findings for GCP Google Kubernetes Engine (GKE) clusters.
 

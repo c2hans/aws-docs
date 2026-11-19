@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayMeteringPolicyEntries
-<a name="API_GetTransitGatewayMeteringPolicyEntries"></a>
 
 Retrieves the entries for a transit gateway metering policy.
 

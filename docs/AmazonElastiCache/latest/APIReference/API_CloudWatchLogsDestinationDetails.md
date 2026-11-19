@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CloudWatchLogsDestinationDetails
-<a name="API_CloudWatchLogsDestinationDetails"></a>
 
 The configuration details of the CloudWatch Logs destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # IssueDetected
-<a name="API_streaming_IssueDetected"></a>
 
 Lists the issues that were identified in your audio segment.
 

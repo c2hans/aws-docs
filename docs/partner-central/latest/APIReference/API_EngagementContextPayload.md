@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # EngagementContextPayload
-<a name="API_EngagementContextPayload"></a>
 
 Represents the payload of an Engagement context. The structure of this payload varies based on the context type specified in the EngagementContextDetails.
 

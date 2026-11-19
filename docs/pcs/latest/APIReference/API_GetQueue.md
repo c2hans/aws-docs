@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_GetQueue.htm
 ---
 
 # GetQueue
-<a name="API_GetQueue"></a>
 
 Returns detailed information about a queue. The information includes the compute node groups that the queue uses to schedule jobs.
 

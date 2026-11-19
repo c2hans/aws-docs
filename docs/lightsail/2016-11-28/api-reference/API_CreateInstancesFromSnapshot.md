@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateInstancesFromSnapshot
-<a name="API_CreateInstancesFromSnapshot"></a>
 
 Creates one or more new instances from a manual or automatic snapshot of an instance.
 

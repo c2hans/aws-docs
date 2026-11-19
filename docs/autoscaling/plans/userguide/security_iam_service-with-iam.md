@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/security_iam
 ---
 
 # How scaling plans work with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage who can create, access, and manage AWS Auto Scaling scaling plans, you should understand what IAM features are available to use with scaling plans.
 

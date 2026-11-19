@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UpdateP
 ---
 
 # UpdateProject
-<a name="API_UpdateProject"></a>
 
 Modifies the definition of an existing DataBrew project.
 

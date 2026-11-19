@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ImportCatalogToGl
 ---
 
 # ImportCatalogToGlue
-<a name="API_ImportCatalogToGlue"></a>
 
 Imports an existing Amazon Athena Data Catalog to AWS Glue.
 

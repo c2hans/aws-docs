@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Best practices for secure pg\_columnmask implementation
-<a name="AuroraPostgreSQL.Security.DynamicMasking.BestPractices"></a>
 
 The following section provides security best practices for implementing `pg_columnmask` in your Aurora PostgreSQL environment. Follow these recommendations to:
 + Establish a secure role-based access control architecture

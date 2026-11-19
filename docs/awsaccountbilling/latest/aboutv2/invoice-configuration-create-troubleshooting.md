@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/invoice
 ---
 
 # Troubleshooting creating invoice units
-<a name="invoice-configuration-create-troubleshooting"></a>
 
 The following sections provide information about how to resolve common issues when creating invoice units.
 

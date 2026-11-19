@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteThreatEntitySet
-<a name="API_DeleteThreatEntitySet"></a>
 
 Deletes the threat entity set that is associated with the specified `threatEntitySetId`.
 

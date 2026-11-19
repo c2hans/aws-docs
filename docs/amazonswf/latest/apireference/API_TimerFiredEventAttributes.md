@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TimerF
 ---
 
 # TimerFiredEventAttributes
-<a name="API_TimerFiredEventAttributes"></a>
 
 Provides the details of the `TimerFired` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Servic
 ---
 
 # ServiceCatalogProvisionedProductDetails
-<a name="API_ServiceCatalogProvisionedProductDetails"></a>
 
 Details of a provisioned service catalog product. For information about service catalog, see [What is AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html).
 

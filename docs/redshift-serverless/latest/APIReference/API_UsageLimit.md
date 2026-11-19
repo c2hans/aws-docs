@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UsageLimit
-<a name="API_UsageLimit"></a>
 
 The usage limit object.
 

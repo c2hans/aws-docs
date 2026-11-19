@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Detach or transfer a Lightsail web address
-<a name="amazon-lightsail-detach-transfer-web-address"></a>
 
 Detach a Lightsail web address when you no longer want it to serve a resource, or transfer it to a different resource, for example a new distribution that replaces your current one.
 

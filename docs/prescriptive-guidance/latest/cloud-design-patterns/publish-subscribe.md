@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Publish-subscribe pattern
-<a name="publish-subscribe"></a>
 
 ## Intent
 <a name="publish-subscribe-intent"></a>

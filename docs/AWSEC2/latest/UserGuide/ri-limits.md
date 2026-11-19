@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-limits.html
 ---
 
 # Reserved Instance quotas
-<a name="ri-limits"></a>
 
 You can purchase new Reserved Instances each month. The number of new Reserved Instances that you can purchase each month is determined by your monthly quota, as follows:
 

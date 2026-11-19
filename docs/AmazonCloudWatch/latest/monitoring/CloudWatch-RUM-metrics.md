@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # CloudWatch metrics that you can collect with CloudWatch RUM
-<a name="CloudWatch-RUM-metrics"></a>
 
 The tables in this section lists the metrics that you automatically collect with CloudWatch RUM from web applications, mobile applications, or both. You can see these metrics in the CloudWatch console. For more information, see [View available metrics](viewing_metrics_with_cloudwatch.md).
 

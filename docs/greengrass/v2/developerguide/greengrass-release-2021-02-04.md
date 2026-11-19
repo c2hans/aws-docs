@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Release: AWS IoT Greengrass Core v2.0.4 software update on February 04, 2021
-<a name="greengrass-release-2021-02-04"></a>
 
 This release provides version 2.0.4 of the Greengrass nucleus component. It includes the new `greengrassDataPlanePort` parameter to configure HTTPS communication over port 443 and fixes bugs. The minimal IAM policy now requires the `iam:GetPolicy` and `sts:GetCallerIdentity` when the AWS IoT Greengrass Core software installer is run with `--provision true`.
 

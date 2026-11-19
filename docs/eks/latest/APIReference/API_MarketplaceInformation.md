@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_MarketplaceI
 ---
 
 # MarketplaceInformation
-<a name="API_MarketplaceInformation"></a>
 
 Information about an Amazon EKS add-on from the AWS Marketplace.
 

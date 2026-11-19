@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-i
 ---
 
 # Using AWS IoT Device Defender with other AWS services
-<a name="dd-integration"></a>
 
 ## Using AWS IoT Device Defender with devices running AWS IoT Greengrass
 <a name="dd-gg-integration"></a>

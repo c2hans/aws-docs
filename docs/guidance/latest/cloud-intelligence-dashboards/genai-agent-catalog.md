@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Agent catalog
-<a name="genai-agent-catalog"></a>
 
 ## Choose your agent
 <a name="choose-your-agent"></a>

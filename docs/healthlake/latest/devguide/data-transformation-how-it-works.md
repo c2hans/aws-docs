@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # How Data Transformation Agent works
-<a name="data-transformation-how-it-works"></a>
 
 The following terms and concepts are essential for working with the AWS HealthLake Data Transformation Agent.
 + [Transformation profile](#data-transformation-how-it-works-profile)

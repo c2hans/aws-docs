@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeReco
 ---
 
 # DescribeRecoveryInstances
-<a name="API_DescribeRecoveryInstances"></a>
 
 Lists all Recovery Instances or multiple Recovery Instances by ID.
 

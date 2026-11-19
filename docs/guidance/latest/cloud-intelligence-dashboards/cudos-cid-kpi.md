@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # CUDOS, CID, KPI
-<a name="cudos-cid-kpi"></a>
 
 ## Feedback & Support
 <a name="cudos-cid-kpi-feedback-support"></a>

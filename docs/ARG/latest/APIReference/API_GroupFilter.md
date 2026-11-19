@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupFilter.
 ---
 
 # GroupFilter
-<a name="API_GroupFilter"></a>
 
 A filter collection that you can use to restrict the results from a `List` operation to only those you want to include.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/appstream-v
 ---
 
 # Configure a VPC for WorkSpaces Pools
-<a name="appstream-vpc"></a>
 
 When you set up WorkSpaces Pools, you must specify the virtual private cloud (VPC) and at least one subnet in which to launch your WorkSpaces. A VPC is a virtual network in your own logically isolated area within the Amazon Web Services Cloud. A subnet is a range of IP addresses in your VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-g
 ---
 
 # Kubernetes cluster pre-training tutorial (GPU)
-<a name="sagemaker-hyperpod-gpu-kubernetes-cluster-pretrain-tutorial"></a>
 
 There are two ways to launch a training job in a GPU Kubernetes cluster:
 + (Recommended) [HyperPod command-line tool](https://github.com/aws/sagemaker-hyperpod-cli)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy
-<a name="AWSMarketplaceSubsidiaryAuthorizationServiceRolePolicy"></a>
 
 **Description**: Enables AWS Marketplace to share Subsidiary Authorization entities across AWS accounts on the customer's behalf using AWS Resource Access Manager.
 

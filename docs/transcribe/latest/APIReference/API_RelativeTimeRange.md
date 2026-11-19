@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Relat
 ---
 
 # RelativeTimeRange
-<a name="API_RelativeTimeRange"></a>
 
 A time range, in percentage, between two points in your media file.
 

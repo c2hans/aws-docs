@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbInstanceDetails
-<a name="API_AwsRdsDbInstanceDetails"></a>
 
 Contains the details of an Amazon RDS DB instance.
 

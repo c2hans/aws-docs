@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobParameter
-<a name="API_JobParameter"></a>
 
 The details of job parameters.
 

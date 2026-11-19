@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableWAFV2Logging`
-<a name="automation-aws-enable-wafv2-logging"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DisassociateQAppFromUser
-<a name="API_qapps_DisassociateQAppFromUser"></a>
 
 Disassociates a Q App from a user removing the user's access to run the Q App.
 

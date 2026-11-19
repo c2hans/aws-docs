@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDomainNa
 ---
 
 # CreateDomainNameAccessAssociation
-<a name="API_CreateDomainNameAccessAssociation"></a>
 
  Creates a domain name access association resource between an access association source and a private custom domain name.
 

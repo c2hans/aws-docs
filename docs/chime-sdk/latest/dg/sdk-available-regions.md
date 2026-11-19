@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sdk-available-region
 ---
 
 # Available AWS Regions for the Amazon Chime SDK
-<a name="sdk-available-regions"></a>
 
 The following tables list the features of the Amazon Chime SDK service and the AWS Regions that provide each service.
 

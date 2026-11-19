@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/slr-replicati
 ---
 
 # Amazon ECR service-linked role for replication
-<a name="slr-replication"></a>
 
 Amazon ECR uses a service-linked role named **AWSServiceRoleForECRReplication** that allows Amazon ECR to replicate images across multiple accounts.
 

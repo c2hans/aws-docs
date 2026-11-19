@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/documen
 ---
 
 # Creating SSM document content
-<a name="documents-creating-content"></a>
 
 If the AWS Systems Manager public documents don't perform all the actions you want to perform on your AWS resources, you can create your own SSM documents. You can also clone SSM documents using the console. Cloning copies content from an existing document to a new document that you can modify. The content of the document must not exceed 64KB, including content specified for input parameters at runtime. For new `Command` or `Policy` documents, we recommend schema version 2.2 or later. This version supports document editing, automatic versioning, sequencing, and more.
 

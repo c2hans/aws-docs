@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Searchab
 ---
 
 # SearchableContactAttributesCriteria
-<a name="API_SearchableContactAttributesCriteria"></a>
 
 The search criteria based on user-defined contact attribute key and values to search on.
 

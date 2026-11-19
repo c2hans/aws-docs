@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Domain
 ---
 
 # DomainDetails
-<a name="API_DomainDetails"></a>
 
 Contains information about the domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # List all contacts for the current agent in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-listcontacts"></a>
 
 Lists all contacts for the current agent.
 

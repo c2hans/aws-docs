@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS04-BP02 Establish standardized tool integration protocols (MCP, A2A)
-<a name="agentops04-bp02"></a>
 
  Point-to-point integrations between every agent and every tool produce a maintenance burden that grows with the number of integrations. Standardized protocols like MCP and A2A replace this with a shared contract, which defaults to interoperability instead of tools that are custom-made for specific integrations.
 

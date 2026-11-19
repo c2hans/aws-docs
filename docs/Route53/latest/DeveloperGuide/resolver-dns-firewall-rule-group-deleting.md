@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Deleting a rule group
-<a name="resolver-dns-firewall-rule-group-deleting"></a>
 
 To delete a rule group, perform the following procedure.
 

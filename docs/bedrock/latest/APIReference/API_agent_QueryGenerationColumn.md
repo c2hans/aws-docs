@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Qu
 ---
 
 # QueryGenerationColumn
-<a name="API_agent_QueryGenerationColumn"></a>
 
 Contains information about a column in the current table for the query engine to consider.
 

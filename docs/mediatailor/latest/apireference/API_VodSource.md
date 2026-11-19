@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_VodS
 ---
 
 # VodSource
-<a name="API_VodSource"></a>
 
 VOD source configuration parameters.
 

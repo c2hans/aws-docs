@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkInsightsAnalysis
-<a name="API_DeleteNetworkInsightsAnalysis"></a>
 
 Deletes the specified network insights analysis.
 

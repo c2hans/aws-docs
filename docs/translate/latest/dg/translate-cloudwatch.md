@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/translate-cloudwatch
 ---
 
 # CloudWatch metrics and dimensions for Amazon Translate
-<a name="translate-cloudwatch"></a>
 
 To monitor your solution's performance, use the Amazon CloudWatch metrics and dimensions for Amazon Translate.
 

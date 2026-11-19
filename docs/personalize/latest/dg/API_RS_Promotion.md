@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RS_Promotion.h
 ---
 
 # Promotion
-<a name="API_RS_Promotion"></a>
 
 Contains information on a promotion. A promotion defines additional business rules that apply to a configurable subset of recommended items.
 

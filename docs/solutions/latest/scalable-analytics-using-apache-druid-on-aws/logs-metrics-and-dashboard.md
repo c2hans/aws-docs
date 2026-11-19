@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Logs, metrics, and dashboard
-<a name="logs-metrics-and-dashboard"></a>
 
 The guidance establishes a log group named `/aws/solutions/druid/<cluster name>` in CloudWatch for storing various logs collected from EC2 instances. These logs include:
 + Druid process logs from EC2 instances

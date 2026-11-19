@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-dns.html
 ---
 
 # Integrating DNS to RISE and Route 53
-<a name="rise-dns"></a>
 
 This documentation offers guidance on Domain Name System (DNS) integration options for “RISE with SAP” deployments on AWS, focusing on enterprise scenarios where customers want to enable name resolution between RISE with SAP workloads and their existing workloads across AWS and external environments.
 

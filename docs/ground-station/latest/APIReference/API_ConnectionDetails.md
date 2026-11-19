@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ConnectionDetails
-<a name="API_ConnectionDetails"></a>
 
 Egress address of AgentEndpoint with an optional mtu.
 

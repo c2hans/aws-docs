@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/dataflows.vpc-c
 ---
 
 # Set up and configure Amazon VPC
-<a name="dataflows.vpc-configuration"></a>
 
 A full guide to set up a VPC is beyond the scope of this guide. For an in-depth understanding please refer to the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
 

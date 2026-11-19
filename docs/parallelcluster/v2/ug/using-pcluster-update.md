@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/using-pcluster-upd
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Using `pcluster update`
-<a name="using-pcluster-update"></a>
 
 Starting with AWS ParallelCluster version 2.8.0, [`pcluster update`](pcluster.update.md) analyzes the settings used to create the current cluster and the settings in the configuration file for issues. If any issues are discovered, they are reported, and the steps to take to fix the issues are displayed. For example, if the [`compute_instance_type`](cluster-definition.md#compute-instance-type) setting is changed to a different instance type, the compute fleet must be stopped before an update can proceed. This issue is reported when it is discovered. If no blocking issues are reported, you are prompted whether you want to apply the changes.
 

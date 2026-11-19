@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-updating-t
 ---
 
 # Updating LF-Tags
-<a name="TBAC-updating-tags"></a>
 
 You update a LF-Tag that you have the `Alter` permission on by adding or deleting permitted key values. You can't change the LF-Tag key. To change the key, delete the LF-Tag and add one with the required key. In addition to `Alter` permission, you also need the `lakeformation:UpdateLFTag` IAM permission to update values.
 

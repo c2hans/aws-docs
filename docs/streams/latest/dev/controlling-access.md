@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/controlling-access.ht
 ---
 
 # Controlling access to Amazon Kinesis Data Streams resources using IAM
-<a name="controlling-access"></a>
 
 AWS Identity and Access Management (IAM) enables you to do the following:
 + Create users and groups under your AWS account

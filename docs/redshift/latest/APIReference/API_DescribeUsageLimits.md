@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeUsageLimits
-<a name="API_DescribeUsageLimits"></a>
 
 Shows usage limits on a cluster. Results are filtered based on the combination of input usage limit identifier, cluster identifier, and feature type parameters:
 + If usage limit identifier, cluster identifier, and feature type are not provided, then all usage limit objects for the current account in the current region are returned.
@@ -29,7 +28,7 @@ Valid Values: `spectrum | concurrency-scaling | cross-region-datasharing | extra
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeUsageLimits](#API_DescribeUsageLimits) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeUsageLimits](API_DescribeUsageLimits.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No
@@ -70,7 +69,7 @@ Type: String
 Length Constraints: Maximum length of 2147483647.
 
  **UsageLimits.member.N**
-Contains the output from the [DescribeUsageLimits](#API_DescribeUsageLimits) action.
+Contains the output from the [DescribeUsageLimits](API_DescribeUsageLimits.md) action.
 Type: Array of [UsageLimit](API_UsageLimit.md) objects
 
 ## Errors

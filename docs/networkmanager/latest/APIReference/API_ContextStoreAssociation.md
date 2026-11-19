@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ContextStoreAssociation
-<a name="API_ContextStoreAssociation"></a>
 
 Describes the association between a context store and a transit gateway.
 

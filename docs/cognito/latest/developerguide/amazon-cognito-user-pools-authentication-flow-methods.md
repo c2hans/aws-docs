@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cog
 ---
 
 # Authentication flows
-<a name="amazon-cognito-user-pools-authentication-flow-methods"></a>
 
 The process of authentication with Amazon Cognito user pools can best be described as a *flow* where users make an initial choice, submit credentials, and respond to additional challenges. When you implement managed login authentication in your application, Amazon Cognito manages the flow of these prompts and challenges. When you implement flows with an AWS SDK in your application back end, you must construct the logic of requests, prompt users for input, and respond to challenges.
 
@@ -454,7 +453,7 @@ Passkeys are *discoverable*. They can be automatically recognized and used by a 
 ### How does Amazon Cognito implement passkey authentication?
 <a name="amazon-cognito-user-pools-authentication-flow-methods-passkey-cognito"></a>
 
-Passkeys are an opt-in feature that's available in all [feature plans](cognito-sign-in-feature-plans.md) except for **Lite**. It is only available in the [choice-based authentication flow](authentication-flows-selection-sdk.md#authentication-flows-selection-choice). With [managed login](authentication-flows-selection-managedlogin.md), Amazon Cognito handles the logic of passkey authentication. You can also use the [Amazon Cognito user pools API in AWS SDKs](#amazon-cognito-user-pools-authentication-flow-methods) to do passkey authentication in your application back end.
+Passkeys are an opt-in feature that's available in all [feature plans](cognito-sign-in-feature-plans.md) except for **Lite**. It is only available in the [choice-based authentication flow](authentication-flows-selection-sdk.md#authentication-flows-selection-choice). With [managed login](authentication-flows-selection-managedlogin.md), Amazon Cognito handles the logic of passkey authentication. You can also use the [Amazon Cognito user pools API in AWS SDKs](amazon-cognito-user-pools-authentication-flow-methods.md) to do passkey authentication in your application back end.
 
 Amazon Cognito recognizes passkeys created using either of two asymmetric cryptographic algorithms, ES256(-7) and RS256(-257). Most authenticators support both algorithms. By default, users can set up any type of authenticators, for example hardware tokens, mobile smart phones, and software authenticator apps. Amazon Cognito doesn't currently support [attestation](https://csrc.nist.gov/glossary/term/attestation) enforcement.
 

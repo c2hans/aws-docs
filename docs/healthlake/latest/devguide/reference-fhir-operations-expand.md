@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Retrieving ValueSet Codes with `$expand`
-<a name="reference-fhir-operations-expand"></a>
 
 AWS HealthLake now supports the `$expand` operation for ValueSets that were ingested by you as a customer, enabling you to retrieve the complete list of codes contained within those ValueSet resource(s). This operation is particularly useful when you need to:
 + Retrieve all possible codes for validation purposes

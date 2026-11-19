@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # JobStats
-<a name="API_connect-customer-profiles_JobStats"></a>
 
 Statistics about the Identity Resolution Job.
 

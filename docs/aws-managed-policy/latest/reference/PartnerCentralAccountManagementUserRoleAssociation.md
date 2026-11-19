@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Part
 ---
 
 # PartnerCentralAccountManagementUserRoleAssociation
-<a name="PartnerCentralAccountManagementUserRoleAssociation"></a>
 
 **Description**: Provides access to associate and dissociate partner central users with IAM roles
 

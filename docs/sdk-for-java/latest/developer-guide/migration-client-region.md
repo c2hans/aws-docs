@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Region changes
-<a name="migration-client-region"></a>
 
 This section describes the changes implemented in the AWS SDK for Java 2.x for using the `Region` and `Regions` classes.
 

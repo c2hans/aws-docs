@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-workspa
 ---
 
 # Appendix: Workspace deletion procedure
-<a name="sd-workspace-deletion"></a>
 
 **Important**
 Deleting a workspace and its associated resources is irreversible. Before starting, confirm that you no longer need the datasets, imported and enriched data, pipeline executions, pipelines, tasks, application, or time series.

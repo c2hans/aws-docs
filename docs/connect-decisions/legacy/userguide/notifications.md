@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/notif
 ---
 
 # Notifications
-<a name="notifications"></a>
 
 You can receive a notification in the AWS Supply Chain web application or through email.
 

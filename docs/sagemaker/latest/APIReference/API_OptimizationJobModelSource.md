@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Optimi
 ---
 
 # OptimizationJobModelSource
-<a name="API_OptimizationJobModelSource"></a>
 
 The location of the source model to optimize with an optimization job.
 

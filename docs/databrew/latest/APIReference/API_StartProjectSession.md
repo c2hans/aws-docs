@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_StartPr
 ---
 
 # StartProjectSession
-<a name="API_StartProjectSession"></a>
 
 Creates an interactive session, enabling you to manipulate data in a DataBrew project.
 

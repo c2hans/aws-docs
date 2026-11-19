@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateInstanceProfile
-<a name="API_UpdateInstanceProfile"></a>
 
 Updates information about an existing private device instance profile.
 

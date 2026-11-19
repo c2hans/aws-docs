@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-d
 ---
 
 # Use case examples
-<a name="use-cases"></a>
 
 This guide covers two sample use cases for working around Terraform limitations on AWS:
 + Using Terraform to manage revisions in AWS Batch job definitions

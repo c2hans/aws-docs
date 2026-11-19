@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDB
 ---
 
 # Creating an Amazon RDS DB instance
-<a name="USER_CreateDBInstance"></a>
 
 The basic building block of Amazon RDS is the DB instance, where you create your databases. You choose the engine-specific characteristics of the DB instance when you create it. You also choose the storage capacity, CPU, memory, and so on of the AWS instance on which the database server runs.
 

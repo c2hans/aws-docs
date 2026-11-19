@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Use `CreateDistribution` with an AWS SDK or CLI
-<a name="example_cloudfront_CreateDistribution_section"></a>
 
 The following code examples show how to use `CreateDistribution`.
 

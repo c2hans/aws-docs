@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/probe.h
 ---
 
 # Probe
-<a name="probe"></a>
 
 ## URI
 <a name="probe-url"></a>

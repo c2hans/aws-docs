@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # SelectColumn
-<a name="API_query_SelectColumn"></a>
 
 Details of the column that is returned by the query.
 

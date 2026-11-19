@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # QuickResponseData
-<a name="API_amazon-q-connect_QuickResponseData"></a>
 
 Information about the quick response.
 

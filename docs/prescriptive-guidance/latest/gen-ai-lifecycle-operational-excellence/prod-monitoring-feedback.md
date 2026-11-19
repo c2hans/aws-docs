@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Architecting the production feedback loops
-<a name="prod-monitoring-feedback"></a>
 
 Balancing generative AI application autonomy with human oversight is central to good agent design. Generative AI applications should be able to work autonomously because independent operation is what makes it valuable. However, humans should retain control over how they achieve their objectives, especially for high-stake decisions. A foundation of continuous improvement is a well-architected data pipeline that captures and centralizes all forms of user feedback. This feedback is the most valuable source of ground truth data about the application's real-world performance. This section provides several approaches to involve humans in the generative AI application to validate that the agents are working within the defined operational parameters and are safe and reliable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 AWS Cloud Map is a fully managed service that you can use to create and maintain a map of the backend services and resources that your applications depend on. Here's how AWS Cloud Map works:
 

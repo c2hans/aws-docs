@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeClusterTracks
-<a name="API_DescribeClusterTracks"></a>
 
 Returns a list of all the available maintenance tracks.
 

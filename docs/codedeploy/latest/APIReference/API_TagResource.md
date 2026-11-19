@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_TagRe
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
  Associates the list of tags in the input `Tags` parameter with the resource identified by the `ResourceArn` input parameter.
 

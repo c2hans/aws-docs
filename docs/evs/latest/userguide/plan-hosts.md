@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-hosts.html
 ---
 
 # Choose versions, hosts, and size
-<a name="plan-hosts"></a>
 
 The hosts in an Amazon Elastic VMware Service environment are Amazon Elastic Compute Cloud (Amazon EC2) bare metal instances that run ESX. Make the host decisions in the following order, because each choice limits the next one. The VMware Cloud Foundation (VCF) version decides which instance types you can use, and the instance type affects how many hosts you need. The number of hosts then decides the capacity and the quotas that you request.
 

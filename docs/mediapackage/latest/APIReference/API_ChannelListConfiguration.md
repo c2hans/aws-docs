@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cha
 ---
 
 # ChannelListConfiguration
-<a name="API_ChannelListConfiguration"></a>
 
 The configuration of the channel.
 

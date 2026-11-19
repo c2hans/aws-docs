@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug
 ---
 
 # Local debug console
-<a name="local-debug-console-component"></a>
 
 The local debug console component (`aws.greengrass.LocalDebugConsole`) provides a local dashboard that displays information about your AWS IoT Greengrass core devices and its components. You can use this dashboard to debug your core device and manage local components.
 

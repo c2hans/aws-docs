@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Install the CloudWatch agent with Prometheus metrics collection on Amazon ECS clusters
-<a name="ContainerInsights-Prometheus-install-ECS"></a>
 
 This section explains how to set up the CloudWatch agent with Prometheus monitoring in a cluster running Amazon ECS. After you do this, the agent automatically scrapes and imports metrics for the following workloads running in that cluster.
 + AWS App Mesh

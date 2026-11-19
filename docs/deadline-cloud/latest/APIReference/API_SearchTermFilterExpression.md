@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SearchTermFilterExpression
-<a name="API_SearchTermFilterExpression"></a>
 
 Searches for a particular search term.
 

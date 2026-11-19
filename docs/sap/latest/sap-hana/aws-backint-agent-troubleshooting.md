@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-tr
 ---
 
 # Troubleshoot AWS Backint Agent for SAP HANA
-<a name="aws-backint-agent-troubleshooting"></a>
 
 The following documentation can help you troubleshoot problems that you might have with your AWS Backint Agent for SAP HANA installation or backups.
 

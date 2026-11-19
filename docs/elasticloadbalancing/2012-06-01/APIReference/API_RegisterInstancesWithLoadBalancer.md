@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # RegisterInstancesWithLoadBalancer
-<a name="API_RegisterInstancesWithLoadBalancer"></a>
 
 Adds the specified instances to the specified load balancer.
 

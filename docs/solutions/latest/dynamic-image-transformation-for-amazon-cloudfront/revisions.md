@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *June 2017 (last update: June 2026)*
 

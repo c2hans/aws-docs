@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PromptTe
 ---
 
 # PromptTemplate
-<a name="API_PromptTemplate"></a>
 
 The template for the prompt that's sent to the model for response generation.
 

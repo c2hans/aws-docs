@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-build-model-h
 ---
 
 # Build a model
-<a name="canvas-build-model-how-to"></a>
 
 The following sections show you how to build a model for each of the main types of custom models.
 + To build numeric prediction, 2 category prediction, or 3\+ category prediction models, see [Build a custom numeric or categorical prediction model](#canvas-build-model-numeric-categorical).

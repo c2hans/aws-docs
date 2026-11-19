@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateContinuousDeploymentPolicy
-<a name="API_CreateContinuousDeploymentPolicy"></a>
 
 Creates a continuous deployment policy that distributes traffic for a custom domain name to two different CloudFront distributions.
 

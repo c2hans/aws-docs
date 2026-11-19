@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/usubs-m
 ---
 
 # Manage subscription users for License Manager user-based subscriptions
-<a name="usubs-manage-users"></a>
 
 To ensure the accuracy of billing and reporting for Microsoft Office and Visual Studio product subscriptions in License Manager, and to prevent unauthorized access to subscription resources, you can manage user access as follows.
 

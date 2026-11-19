@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_
 ---
 
 # CloudWatch metrics that are available for your instances
-<a name="viewing_metrics_with_cloudwatch"></a>
 
 Amazon EC2 sends metrics to Amazon CloudWatch. You can use the AWS Management Console, the AWS CLI, or an API to list the metrics that Amazon EC2 sends to CloudWatch. By default, each data point covers the 5 minutes that follow the start time of activity for the instance. If you've enabled detailed monitoring, each default metric data point covers the next minute of activity from the start time. Metrics selected through metric categories use the period listed in the metric categories table. The `CPUUtilization10Sec` metric uses 10-second periods. Other Amazon EC2 metrics use a minimum period of 1 minute.
 

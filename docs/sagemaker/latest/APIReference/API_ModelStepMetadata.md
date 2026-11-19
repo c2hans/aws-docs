@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelS
 ---
 
 # ModelStepMetadata
-<a name="API_ModelStepMetadata"></a>
 
 Metadata for Model steps.
 

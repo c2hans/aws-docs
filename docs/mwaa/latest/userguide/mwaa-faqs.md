@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/mwaa-faqs.html
 ---
 
 # Amazon MWAA frequently asked questions
-<a name="mwaa-faqs"></a>
 
 This page describes common questions you can encounter when using Amazon Managed Workflows for Apache Airflow.
 

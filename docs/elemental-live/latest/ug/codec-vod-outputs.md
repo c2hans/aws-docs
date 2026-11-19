@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codec-vod-outpu
 ---
 
 # VOD outputs: Supported codecs
-<a name="codec-vod-outputs"></a>
 
 This table specifies the codecs that are supported in output groups that support VOD outputs.
 

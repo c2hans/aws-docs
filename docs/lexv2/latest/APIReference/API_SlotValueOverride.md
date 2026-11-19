@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotValueO
 ---
 
 # SlotValueOverride
-<a name="API_SlotValueOverride"></a>
 
 The slot values that Amazon Lex uses when it sets slot values in a dialog step.
 
@@ -23,7 +22,7 @@ Required: No
 
  ** values **   <a name="lexv2-Type-SlotValueOverride-values"></a>
 A list of one or more values that the user provided for the slot. For example, for a slot that elicits pizza toppings, the values might be "pepperoni" and "pineapple."
-Type: Array of [SlotValueOverride](#API_SlotValueOverride) objects
+Type: Array of [SlotValueOverride](API_SlotValueOverride.md) objects
 Required: No
 
 ## See Also

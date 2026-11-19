@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListImportEr
 ---
 
 # ListImportErrors
-<a name="API_ListImportErrors"></a>
 
 List import errors.
 

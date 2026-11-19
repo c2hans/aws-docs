@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # KmsConfiguration
-<a name="API_KmsConfiguration"></a>
 
 Contains the KMS configuration for a resource.
 

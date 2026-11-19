@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Health and AWS Organizations
-<a name="services-that-can-integrate-health"></a>
 
 AWS Health provides ongoing visibility into your resource performance and the availability of your AWS services and accounts. AWS Health delivers events when your AWS resources and services are impacted by an issue or will be affected by upcoming changes. After you enable organizational view, a user in the organization’s management account can aggregate AWS Health events across all accounts in the organization. Organizational view only shows AWS Health events delivered after the feature is enabled and retains them for 90 days.
 

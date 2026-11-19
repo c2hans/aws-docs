@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-concurren
 ---
 
 # Considerations for running multiple steps in parallel when you submit work to Amazon EMR
-<a name="emr-concurrent-steps"></a>
 
 Running multiple steps in parallel when you submit work to Amazon EMR requires preliminary decisions about resource planning and expectations regarding cluster behavior. These are covered in detail here.
 + Steps running in parallel may complete in any order, but pending steps in queue transition to running state in the order they were submitted.

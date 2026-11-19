@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-allo
 ---
 
 # Available actions for accounts
-<a name="accounts-allowed-actions"></a>
 
 Administrator and member accounts have access to the following Detective actions. In the table, the values have the following meanings:
 + **Any** – The account can perform the action for all of the accounts under the same Detective administrator account.

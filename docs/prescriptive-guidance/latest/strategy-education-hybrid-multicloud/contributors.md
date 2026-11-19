@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 + Kevin Arand, Senior Manager, Solutions Architecture, Education, AWS

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/share-accept-tgw.html
 ---
 
 # Accept an AWS Transit Gateway resource share using the AWS Resource Access Manager console
-<a name="share-accept-tgw"></a>
 
 If you were added to a resource share, you receive an invitation to join the resource share. You must accept the resource share through the AWS Resource Access Manager (AWS RAM) console before you can access the shared resources.
 

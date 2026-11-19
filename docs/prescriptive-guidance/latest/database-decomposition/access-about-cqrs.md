@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Controlling access with the CQRS pattern
-<a name="access-about-cqrs"></a>
 
 Another pattern that you can use to isolate external systems that connect to this central database is *command query responsibility segregation (CQRS)*. If some of the external systems are connecting to your central database primarily for reads, such as analytics, reporting, or other read-intensive operations, you can create separate read-optimized data stores.
 

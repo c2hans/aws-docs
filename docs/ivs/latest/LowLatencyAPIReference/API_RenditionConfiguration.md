@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Re
 ---
 
 # RenditionConfiguration
-<a name="API_RenditionConfiguration"></a>
 
 Object that describes which renditions should be recorded for a stream.
 

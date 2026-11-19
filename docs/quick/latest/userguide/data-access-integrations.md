@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-access-integ
 ---
 
 # Data access integrations
-<a name="data-access-integrations"></a>
 
 Data access integrations in AWS Quick establish secure connections to external data sources. They serve as the foundation for creating knowledge bases. Unlike connectors that perform actions, data access integrations focus on accessing and indexing content from third-party applications and services.
 

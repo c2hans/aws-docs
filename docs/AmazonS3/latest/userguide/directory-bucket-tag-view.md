@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Viewing directory bucket tags
-<a name="directory-bucket-tag-view"></a>
 
 You can view or list tags applied to S3 directory buckets. For more information about tags, see [Using tags with S3 directory buckets](directory-buckets-tagging.md).
 

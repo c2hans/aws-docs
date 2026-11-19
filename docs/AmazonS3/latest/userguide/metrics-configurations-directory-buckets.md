@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-config
 ---
 
 # Configuring request metrics for directory buckets
-<a name="metrics-configurations-directory-buckets"></a>
 
 You can configure request metrics for directory buckets to monitor the operational performance of your S3 Express One Zone storage. Request metrics are available at 1-minute intervals and help you quickly identify and act on operational issues.
 

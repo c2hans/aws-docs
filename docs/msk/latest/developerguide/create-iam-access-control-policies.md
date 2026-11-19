@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/create-iam-acc
 ---
 
 # Create authorization policies for the IAM role
-<a name="create-iam-access-control-policies"></a>
 
 Attach an authorization policy to the IAM role that corresponds to the client. In an authorization policy, you specify which actions to allow or deny for the role. If your client is on an Amazon EC2 instance, associate the authorization policy with the IAM role for that Amazon EC2 instance. Alternatively, you can configure your client to use a named profile, and then you associate the authorization policy with the role for that named profile. [Configure clients for IAM access control](configure-clients-for-iam-access-control.md) describes how to configure a client to use a named profile.
 

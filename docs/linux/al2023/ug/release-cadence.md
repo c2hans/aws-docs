@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/release-cadence.html
 ---
 
 # Release cadence
-<a name="release-cadence"></a>
 
 Amazon Linux 2023 (AL2023) was released in March 2023 and will be supported until June 30, 2029. There are two phases of support:
 + **Standard support** – During this phase, the release receives quarterly minor version updates. The standard support phase ends June 30, 2027.

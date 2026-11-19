@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/source-ports.html
 ---
 
 # Source ports on MediaConnect flows
-<a name="source-ports"></a>
 
 Each source on a flow must use a different port (for exceptions to this, see the note). Some protocols require additional ports for error correction. For sources that use these protocols, AWS Elemental MediaConnect automatically reserves the additional ports that are needed. All MediaConnect protocols use UDP ports, except RTMP Push and NDI, which use TCP. The following table lists which additional ports, if any, the service reserves.
 

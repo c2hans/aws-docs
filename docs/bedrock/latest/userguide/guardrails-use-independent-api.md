@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use-
 ---
 
 # Use the ApplyGuardrail API in your application
-<a name="guardrails-use-independent-api"></a>
 
 Guardrails is used to implement safeguards for your generative AI applications that are customized for your use cases and aligned with your responsible AI policies. Guardrails allows you to configure denied topics, filter harmful content, and remove sensitive information.
 

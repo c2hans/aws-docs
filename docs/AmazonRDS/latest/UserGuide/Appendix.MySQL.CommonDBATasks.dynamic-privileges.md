@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.MySQ
 ---
 
 # Dynamic privileges for RDS for MySQL
-<a name="Appendix.MySQL.CommonDBATasks.dynamic-privileges"></a>
 
 Dynamic privileges are MySQL privileges that you can explicitly grant by using the `GRANT` statement. Depending on your version of RDS for MySQL, RDS allows you to grant only specific dynamic privileges. RDS disallows some of these privileges because they can interfere with the specific database operations, such as replication and backup.
 

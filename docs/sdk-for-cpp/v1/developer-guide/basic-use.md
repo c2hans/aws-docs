@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/basic-use
 ---
 
 # Initializing and shutting down the AWS SDK for C\+\+
-<a name="basic-use"></a>
 
 Applications that use the AWS SDK for C\+\+ must initialize it. Similarly, before the application terminates, the SDK must be shut down. Both operations accept configuration options that affect the initialization and shutdown processes and subsequent calls to the SDK.
 

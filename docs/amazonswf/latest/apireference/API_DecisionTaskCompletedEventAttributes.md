@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decisi
 ---
 
 # DecisionTaskCompletedEventAttributes
-<a name="API_DecisionTaskCompletedEventAttributes"></a>
 
 Provides the details of the `DecisionTaskCompleted` event.
 

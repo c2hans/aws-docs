@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteH
 ---
 
 # DeleteHsmClientCertificate
-<a name="API_DeleteHsmClientCertificate"></a>
 
 Deletes the specified HSM client certificate.
 

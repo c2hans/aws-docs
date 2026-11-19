@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Configura
 ---
 
 # ConfigurationOverrides
-<a name="API_ConfigurationOverrides"></a>
 
 An object that overrides settings for a single email sending request. An override applies only to the message or messages in the request that contains it. It doesn't change your account-level settings, and it doesn't change the configuration set that the request uses.
 

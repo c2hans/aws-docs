@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/live-content.html
 ---
 
 # Delivering live content from AWS Elemental MediaPackage
-<a name="live-content"></a>
 
 AWS Elemental MediaPackage uses the following resources for live content:
 + *Channels* are the entry point for your live streams from upstream encoders.

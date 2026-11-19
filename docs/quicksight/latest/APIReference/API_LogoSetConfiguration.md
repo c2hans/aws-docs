@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LogoS
 ---
 
 # LogoSetConfiguration
-<a name="API_LogoSetConfiguration"></a>
 
 The logo set configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/LOG.htm
 ---
 
 # LOG function
-<a name="LOG"></a>
 
 Returns the logarithm of `expr` with `base`.
 

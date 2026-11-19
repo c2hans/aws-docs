@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateQueueQuickConnects
-<a name="API_DisassociateQueueQuickConnects"></a>
 
 Disassociates a set of quick connects from a queue.
 

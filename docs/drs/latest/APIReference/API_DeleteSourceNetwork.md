@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteSource
 ---
 
 # DeleteSourceNetwork
-<a name="API_DeleteSourceNetwork"></a>
 
 Delete Source Network resource.
 

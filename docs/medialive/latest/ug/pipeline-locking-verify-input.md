@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/pipeline-locking-ver
 ---
 
 # Input and output requirements
-<a name="pipeline-locking-verify-input"></a>
 
 In order for MediaLive to lock pipelines, the following conditions must be in effect in the channel. When pipeline locking isn't possible, processing continues. As soon as the required conditions are again in effect, MediaLive starts to lock again.
 

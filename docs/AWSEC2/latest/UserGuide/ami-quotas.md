@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-quotas.html
 ---
 
 # AMI quotas in Amazon EC2
-<a name="ami-quotas"></a>
 
 The following quotas apply to creating and sharing AMIs. The quotas apply per AWS Region.
 

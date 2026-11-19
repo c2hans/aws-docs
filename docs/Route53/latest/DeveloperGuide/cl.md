@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cl.html
 ---
 
 # .cl (Chile)
-<a name="cl"></a>
 
 **Important**
 You can no longer use Route 53 to register new .cl domains or transfer .cl domains to Route 53. We'll continue to support .cl domains that are already registered with Route 53.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disable
 ---
 
 # DisableSecurityHub
-<a name="API_DisableSecurityHub"></a>
 
 Disables Security Hub CSPM in your account only in the current AWS Region. To disable Security Hub CSPM in all Regions, you must submit one request per Region where you have enabled Security Hub CSPM.
 

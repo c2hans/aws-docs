@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaPipeline
-<a name="API_media-pipelines-chime_MediaPipeline"></a>
 
 A pipeline consisting of a media capture, media concatenation, or live-streaming pipeline.
 

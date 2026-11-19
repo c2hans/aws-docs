@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_PollFo
 ---
 
 # PollForDecisionTask
-<a name="API_PollForDecisionTask"></a>
 
 Used by deciders to get a [DecisionTask](API_DecisionTask.md) from the specified decision `taskList`. A decision task may be returned for any open workflow execution that is using the specified task list. The task includes a paginated view of the history of the workflow execution. The decider should use the workflow type and the history to determine how to properly handle the task.
 
@@ -70,7 +69,7 @@ Required: No
  ** [nextPageToken](#API_PollForDecisionTask_RequestSyntax) **   <a name="SWF-PollForDecisionTask-request-nextPageToken"></a>
 If `NextPageToken` is returned there are more results available. The value of `NextPageToken` is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return a `400` error: "`Specified token has exceeded its maximum lifetime`".
 The configured `maximumPageSize` determines how many results can be returned in a single call.
-The `nextPageToken` returned by this action cannot be used with [GetWorkflowExecutionHistory](API_GetWorkflowExecutionHistory.md) to get the next page. You must call [PollForDecisionTask](#API_PollForDecisionTask) again (with the `nextPageToken`) to retrieve the next page of history records. Calling [PollForDecisionTask](#API_PollForDecisionTask) with a `nextPageToken` doesn't return a new decision task.
+The `nextPageToken` returned by this action cannot be used with [GetWorkflowExecutionHistory](API_GetWorkflowExecutionHistory.md) to get the next page. You must call [PollForDecisionTask](API_PollForDecisionTask.md) again (with the `nextPageToken`) to retrieve the next page of history records. Calling [PollForDecisionTask](API_PollForDecisionTask.md) with a `nextPageToken` doesn't return a new decision task.
 Type: String
 Length Constraints: Maximum length of 2048.
 Required: No

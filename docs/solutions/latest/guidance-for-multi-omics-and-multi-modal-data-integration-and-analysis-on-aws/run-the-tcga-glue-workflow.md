@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Run the TCGA Glue workflow
-<a name="run-the-tcga-glue-workflow"></a>
 
  This guidance includes an example AWS Glue workflow to process the TCGA data. You can run the workflow using either the AWS Command Line Interface (AWS CLI) or the AWS Glue console.
 

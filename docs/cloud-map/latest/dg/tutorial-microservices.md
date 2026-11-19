@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/tutorial-microservic
 ---
 
 # Learn how to use AWS Cloud Map service discovery with custom attributes
-<a name="tutorial-microservices"></a>
 
 The following tutorial demonstrates how you can use AWS Cloud Map service discovery with custom attributes that are discoverable using the AWS Cloud Map API. The tutorial walks you through creating and running client applications using AWS CloudShell. The applications use two Lambda functions to write data to a DynamoDB table and then read from the table. The Lambda functions and DynamoDB table are registered in AWS Cloud Map as service instances. The code in the client applications and Lambda functions uses AWS Cloud Map custom attributes to discover the resources needed to perform the job.
 

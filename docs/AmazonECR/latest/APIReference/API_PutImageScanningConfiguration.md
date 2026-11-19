@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutIma
 ---
 
 # PutImageScanningConfiguration
-<a name="API_PutImageScanningConfiguration"></a>
 
 **Important**
 The `PutImageScanningConfiguration` API is being deprecated, in favor of specifying the image scanning configuration at the registry level. For more information, see [PutRegistryScanningConfiguration](API_PutRegistryScanningConfiguration.md).

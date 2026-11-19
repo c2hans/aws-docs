@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to frequently asked questions about integrating third-party services in the AWS Cloud.
 

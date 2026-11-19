@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Se
 ---
 
 # ServiceMetadata
-<a name="API_ServiceMetadata"></a>
 
  The metadata that's associated with the AWS service.
 

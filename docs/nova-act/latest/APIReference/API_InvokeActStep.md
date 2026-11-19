@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_InvokeA
 ---
 
 # InvokeActStep
-<a name="API_InvokeActStep"></a>
 
 Executes the next step of an act, processing tool call results and returning new tool calls if needed.
 

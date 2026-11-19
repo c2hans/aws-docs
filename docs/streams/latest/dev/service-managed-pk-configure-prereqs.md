@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Prerequisites
-<a name="service-managed-pk-configure-prereqs"></a>
 
 Before you configure service-managed record distribution, ensure the following:
 + Your stream uses **On-demand** capacity mode (On-demand Standard or On-demand Advantage). Service-managed record distribution is not supported on provisioned streams.

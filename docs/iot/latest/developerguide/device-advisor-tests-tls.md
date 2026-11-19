@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # TLS
-<a name="device-advisor-tests-tls"></a>
 
 Use these tests to determine if the transport layer security protocol (TLS) between your devices and AWS IoT is secure.
 

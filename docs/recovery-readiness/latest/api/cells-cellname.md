@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/cells-cell
 ---
 
 # GetCell, UpdateCell, DeleteCell
-<a name="cells-cellname"></a>
 
 ## URI
 <a name="cells-cellname-url"></a>

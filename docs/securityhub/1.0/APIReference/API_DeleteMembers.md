@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteM
 ---
 
 # DeleteMembers
-<a name="API_DeleteMembers"></a>
 
 Deletes the specified member accounts from Security Hub CSPM.
 

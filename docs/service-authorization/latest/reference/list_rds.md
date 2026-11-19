@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon RDS
-<a name="list_rds"></a>
 
 Amazon RDS (service prefix: `rds`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -301,6 +300,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ModifyDBInstance  **
   - **SDK client:** docdb
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [rds:CreateTenantDatabase](#list_rds-action-CreateTenantDatabase)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:ModifyDBInstance](#list_rds-action-ModifyDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** rds-preview.amazonaws.com, rds.amazonaws.com / **Access level:** Write
 
@@ -742,6 +742,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ModifyDBInstance  **
   - **SDK client:** neptune
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [rds:CreateTenantDatabase](#list_rds-action-CreateTenantDatabase)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:ModifyDBInstance](#list_rds-action-ModifyDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** rds-preview.amazonaws.com, rds.amazonaws.com / **Access level:** Write
 
@@ -1661,6 +1662,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ModifyDBInstance  **
   - **SDK client:** rds
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [rds:CreateTenantDatabase](#list_rds-action-CreateTenantDatabase)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:ModifyDBInstance](#list_rds-action-ModifyDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** rds-preview.amazonaws.com, rds.amazonaws.com / **Access level:** Write
 

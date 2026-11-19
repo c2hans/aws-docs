@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AiAgentI
 ---
 
 # AiAgentInput
-<a name="API_AiAgentInput"></a>
 
 The AI agent that participates in the contact, including its identifier.
 

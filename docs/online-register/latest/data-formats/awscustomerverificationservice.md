@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Customer Verification Service
-<a name="awscustomerverificationservice"></a>
 
 AWS Customer Verification Service provides the following APIs for data retrieval.
 

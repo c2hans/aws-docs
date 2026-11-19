@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost01-
 ---
 
 # COST01-BP02 Implement goals and targets
-<a name="cost01-bp02"></a>
 
  Set goals that state the outcome your organization expects, and set targets that make each goal specific, measurable, and time-bound. Teams can then track progress and hold themselves accountable.
 

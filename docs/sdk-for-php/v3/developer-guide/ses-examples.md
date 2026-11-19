@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-examp
 ---
 
 # Amazon SES examples using the AWS SDK for PHP Version 3
-<a name="ses-examples"></a>
 
 Amazon Simple Email Service (Amazon SES) is an email platform that provides an easy, money-saving way for you to send and receive email using your own email addresses and domains. For more information about Amazon SES, see the [Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/).
 

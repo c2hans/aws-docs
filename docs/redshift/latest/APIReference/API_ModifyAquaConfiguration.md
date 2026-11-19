@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyA
 ---
 
 # ModifyAquaConfiguration
-<a name="API_ModifyAquaConfiguration"></a>
 
 This operation is retired. Calling this operation does not change AQUA configuration. Amazon Redshift automatically determines whether to use AQUA (Advanced Query Accelerator).
 

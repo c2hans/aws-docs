@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Endpoints.ht
 ---
 
 # Finding connection endpoints in ElastiCache
-<a name="Endpoints"></a>
 
 Your application connects to your ElastiCache cluster using endpoints. An endpoint is a node or cluster's unique address.
 

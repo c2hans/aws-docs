@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/security-i
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Identity and Access Management and Amazon CodeCatalyst
-<a name="security-iam"></a>
 
 In Amazon CodeCatalyst, you create and use an AWS Builder ID in order to sign in and access your spaces and projects. An AWS Builder ID is not an identity in AWS Identity and Access Management (IAM) and does not exist in an AWS account. However, CodeCatalyst does integrate with IAM when verifying a space for billing purposes, and when connected to an AWS account to create and use resources in that AWS account.
 

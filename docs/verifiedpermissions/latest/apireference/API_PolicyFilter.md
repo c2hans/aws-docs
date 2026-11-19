@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # PolicyFilter
-<a name="API_PolicyFilter"></a>
 
 Contains information about a filter to refine policies returned in a query.
 

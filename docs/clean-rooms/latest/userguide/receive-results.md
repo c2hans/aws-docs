@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/receive-res
 ---
 
 # Receiving query results
-<a name="receive-results"></a>
 
 **Note**
 The **Results destination in Amazon S3** can't be within the same S3 bucket as any data source.

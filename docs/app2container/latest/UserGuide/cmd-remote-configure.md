@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/app2container/latest/UserGuide/cmd-remot
 AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), and AWS Microservice Extractor (ME) for .NET is no longer open to new customers. If you would like to use the service, sign up prior to November 7, 2025. Alternatively use [AWS Transform](https://aws.amazon.com/transform/), which is an agentic AI service developed to accelerate enterprise modernization of .NET.
 
 # app2container remote configure command
-<a name="cmd-remote-configure"></a>
 
 Run this command from a worker machine to configure the connections needed to run remote workflows on application servers. This interactive command prompts for the required information for each application server that you enter, or you can provide a JSON input file with your connection information by specifying the `--input-json` parameter when you run the command.
 

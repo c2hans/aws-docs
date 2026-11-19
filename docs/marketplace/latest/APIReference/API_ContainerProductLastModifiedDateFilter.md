@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerProductLastModifiedDateFilter
-<a name="API_ContainerProductLastModifiedDateFilter"></a>
 
 Object that allows filtering based on the last modified date of container products.
 

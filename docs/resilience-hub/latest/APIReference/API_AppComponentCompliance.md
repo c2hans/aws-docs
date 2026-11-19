@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppComponentCompliance
-<a name="API_AppComponentCompliance"></a>
 
 Defines the compliance of an AppComponent against the resiliency policy.
 

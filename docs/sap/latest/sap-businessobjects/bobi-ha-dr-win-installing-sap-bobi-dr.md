@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-ha-d
 ---
 
 # Installing SAP BusinessObjects BI Platform in the DR Region
-<a name="bobi-ha-dr-win-installing-sap-bobi-dr"></a>
 
 When you have selected the DR region, follow the steps in the [Preparing the OS](bobi-ha-dr-win-installing-for-ha.md#bobi-ha-dr-win-ha-preparing-os) section earlier in this guide to build SAP BusinessObjects BI Platform EC2 instances in that region.
 

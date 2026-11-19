@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Deploy using the daemon strategy
-<a name="CloudWatch-Application-Signals-ECS-Daemon"></a>
 
 ## Step 1: Enable Application Signals in your account
 <a name="Application-Signals-ECS-Grant-Daemon"></a>

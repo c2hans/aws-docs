@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/doc-h
 ---
 
 # Document history for Installation Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental Live.
 + **API version: 2.25 and later** 2.25

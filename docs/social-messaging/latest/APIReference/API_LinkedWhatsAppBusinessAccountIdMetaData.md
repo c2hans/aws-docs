@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # LinkedWhatsAppBusinessAccountIdMetaData
-<a name="API_LinkedWhatsAppBusinessAccountIdMetaData"></a>
 
 Contains your WhatsApp registration status and details of any unregistered WhatsApp phone number.
 

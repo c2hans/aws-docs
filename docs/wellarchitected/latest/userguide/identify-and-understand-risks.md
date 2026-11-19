@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/identif
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Identify and understand risks
-<a name="identify-and-understand-risks"></a>
 
  View identified risks as improvement opportunities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/event-publishing-send-emai
 ---
 
 # Step 3: Specify your configuration set when you send email
-<a name="event-publishing-send-email"></a>
 
 After you [create a configuration set](event-publishing-create-configuration-set.md) and [add an event destination](event-publishing-add-event-destination.md), the last step to event publishing is to send your emails.
 

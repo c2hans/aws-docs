@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/modify-max-ti
 ---
 
 # Modify the maximum AWS Client VPN session duration and timeout behavior
-<a name="modify-max-timeout"></a>
 
 Use the following steps to modify an existing Client VPN maximum VPN session duration and change the disconnect on session timeout behavior.
 

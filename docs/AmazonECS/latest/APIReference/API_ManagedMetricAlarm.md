@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedMetricAlarm
-<a name="API_ManagedMetricAlarm"></a>
 
 The CloudWatch metric alarm associated with the Express service's scaling policy.
 

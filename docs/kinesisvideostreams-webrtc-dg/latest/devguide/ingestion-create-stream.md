@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Create a video stream
-<a name="ingestion-create-stream"></a>
 
 Follow these procedures to create a stream that the media will be ingested to. If you have already created the destination stream, skip this step.
 

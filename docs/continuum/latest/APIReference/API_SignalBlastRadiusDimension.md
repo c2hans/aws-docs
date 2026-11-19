@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalBlastRadiusDimension
-<a name="API_SignalBlastRadiusDimension"></a>
 
 The assessed blast-radius dimension with the basis behind it.
 

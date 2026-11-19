@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping
 ---
 
 # AWS AppSync resolver mapping template reference for RDS
-<a name="resolver-mapping-template-reference-rds"></a>
 
 The AWS AppSync RDS resolver mapping templates allow developers to send SQL queries to a Data API for Amazon Aurora Serverless and get back the result of these queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon ElastiCache API contains several data types that various actions use. This section describes each data type in detail.
 
@@ -41,6 +40,8 @@ The following data types are supported:
 +  [GlobalReplicationGroup](API_GlobalReplicationGroup.md)
 +  [GlobalReplicationGroupInfo](API_GlobalReplicationGroupInfo.md)
 +  [GlobalReplicationGroupMember](API_GlobalReplicationGroupMember.md)
++  [Integration](API_Integration.md)
++  [IntegrationRequest](API_IntegrationRequest.md)
 +  [KinesisFirehoseDestinationDetails](API_KinesisFirehoseDestinationDetails.md)
 +  [LogDeliveryConfiguration](API_LogDeliveryConfiguration.md)
 +  [LogDeliveryConfigurationRequest](API_LogDeliveryConfigurationRequest.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/performance-tuning-s3-t
 ---
 
 # Optimize your tables
-<a name="performance-tuning-s3-throttling-optimizing-your-tables"></a>
 
 Structuring your data is important if you encounter throttling issues. Although Amazon S3 can handle large amounts of data, throttling sometimes occurs because of the way the data is structured.
 

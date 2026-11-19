@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeleteBatchEvaluation
-<a name="API_DeleteBatchEvaluation"></a>
 
 Deletes a batch evaluation and its associated results.
 

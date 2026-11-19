@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Exclusion
 ---
 
 # ExclusionByResourceTypes
-<a name="API_ExclusionByResourceTypes"></a>
 
 Specifies whether the configuration recorder excludes certain resource types from being recorded. Use the `resourceTypes` field to enter a comma-separated list of resource types you want to exclude from recording.
 

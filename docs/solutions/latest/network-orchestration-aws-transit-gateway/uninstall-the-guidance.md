@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Uninstall the Guidance
-<a name="uninstall-the-guidance"></a>
 
 You can uninstall the Guidance from the AWS Management Console or by using the AWS CLI. You must manually delete the transit gateway, Amazon S3 buckets, and global network created by this Guidance. AWS solutions don’t automatically delete these resources, in case you have stored data that you want to retain.
 

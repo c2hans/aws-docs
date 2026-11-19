@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpoint
-<a name="API_SourceEndpoint"></a>
 
 The details of a source endpoint in MediaConnect, including its configuration, state, and connection details.
 

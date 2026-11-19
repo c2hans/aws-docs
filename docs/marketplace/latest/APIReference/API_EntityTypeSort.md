@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Enti
 ---
 
 # EntityTypeSort
-<a name="API_EntityTypeSort"></a>
 
 Object containing all the sort fields per entity type.
 

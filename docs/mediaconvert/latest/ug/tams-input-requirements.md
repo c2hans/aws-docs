@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/tams-input-requir
 ---
 
 # Requirements for TAMS inputs
-<a name="tams-input-requirements"></a>
 
 To process content from TAMS servers with MediaConvert, you need the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/visible-re
 ---
 
 # Prerequisites for configuring visible Regions and services
-<a name="visible-regions-services-prereqs"></a>
 
 To view and change visible Regions and services settings, you need specific IAM permissions.
 + To view the settings, you need the `uxc:GetAccountCustomizations` permission.

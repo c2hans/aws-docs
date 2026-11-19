@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-c
 ---
 
 # Common performance issues
-<a name="performance-common-issues"></a>
 
 This section covers common performance issues you might encounter with Amazon DocumentDB and how to resolve them.
 

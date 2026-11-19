@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DomainFilter
-<a name="API_DomainFilter"></a>
 
 The domains to include in or exclude from the results. A root domain also matches its subdomains. For example, `example.com` also matches `docs.example.com`.
 

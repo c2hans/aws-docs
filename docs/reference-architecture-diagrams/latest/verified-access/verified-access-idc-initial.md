@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/v
 ---
 
 # With IAM Identity Center - Initial Request
-<a name="verified-access-idc-initial"></a>
 
 Publication date: **February 22, 2023 ([Diagram history](#vai-diagram-history))**
 

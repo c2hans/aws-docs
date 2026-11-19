@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetClassifiers.ht
 ---
 
 # GetClassifiers
-<a name="API_GetClassifiers"></a>
 
 Lists all classifier objects in the Data Catalog.
 

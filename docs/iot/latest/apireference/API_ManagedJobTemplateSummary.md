@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ManagedJobTe
 ---
 
 # ManagedJobTemplateSummary
-<a name="API_ManagedJobTemplateSummary"></a>
 
 An object that contains information about the managed template.
 

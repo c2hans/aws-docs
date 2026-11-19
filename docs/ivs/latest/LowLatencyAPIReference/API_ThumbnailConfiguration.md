@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Th
 ---
 
 # ThumbnailConfiguration
-<a name="API_ThumbnailConfiguration"></a>
 
 An object representing a configuration of thumbnails for recorded video.
 

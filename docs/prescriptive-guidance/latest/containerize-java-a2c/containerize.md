@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Containerize and migrate
-<a name="containerize"></a>
 
 If the application server meets all the prerequisites and can run all the AWS App2Container (A2C) tasks, follow the instructions in the [App2Container documentation](https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html).
 

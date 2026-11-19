@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sub
 ---
 
 # Submission hooks
-<a name="submission-hooks"></a>
 
 Submission hooks allow you to run custom scripts during the Deadline Cloud job submission workflow. Hooks run locally on the workstation that is submitting the job, before the job reaches the Deadline Cloud service. Hooks do not run on workers or in the AWS Cloud. Because hooks execute on your machine, they have access to local files, environment variables, and network resources available to the submitting user.
 

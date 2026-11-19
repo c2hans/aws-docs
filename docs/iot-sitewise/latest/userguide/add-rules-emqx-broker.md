@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-rules-
 ---
 
 # Add authorization rules through the EMQX Dashboard for users
-<a name="add-rules-emqx-broker"></a>
 
 You can add or update authorization rules using the EMQX Dashboard or the AWS IoT SiteWise EMQX CLI tool. The AWS IoT SiteWise EMQX CLI tool manages authorization using EMQX's built-in database.
 

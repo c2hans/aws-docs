@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_As
 ---
 
 # AsPathSegment
-<a name="API_AsPathSegment"></a>
 
 A segment of an autonomous system (AS) path.
 

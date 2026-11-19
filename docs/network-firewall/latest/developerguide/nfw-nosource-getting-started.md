@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Getting started with no-source-preservation mode
-<a name="nfw-nosource-getting-started"></a>
 
 This section walks you through creating a Network Firewall firewall in no-source-preservation mode using the AWS Management Console.
 

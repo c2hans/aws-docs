@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePa
 ---
 
 # UpdateParticipantRoleConfig
-<a name="API_UpdateParticipantRoleConfig"></a>
 
 Updates timeouts for when human chat participants are to be considered idle, and when agents are automatically disconnected from a chat due to idleness. You can set four timers:
 + Customer idle timeout

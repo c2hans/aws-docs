@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableStyleTarget
-<a name="API_TableStyleTarget"></a>
 
 The table style target.
 

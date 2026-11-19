@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-sec
 ---
 
 # Introduction to AWS Security Hub CSPM
-<a name="what-is-securityhub"></a>
 
 AWS Security Hub Cloud Security Posture Management (AWS Security Hub CSPM) provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices.
 

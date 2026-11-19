@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # UpdatePolicyStore
-<a name="API_UpdatePolicyStore"></a>
 
 Modifies the validation setting for a policy store.
 

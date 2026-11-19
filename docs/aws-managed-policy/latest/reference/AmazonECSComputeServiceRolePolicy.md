@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSComputeServiceRolePolicy
-<a name="AmazonECSComputeServiceRolePolicy"></a>
 
 **Description**: Policy to enable Amazon ECS Compute to manage your EC2 instances and related resources as part of ECS managed instances
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/encryption-in-
 ---
 
 # Encryption in transit in Connect Customer
-<a name="encryption-in-transit"></a>
 
 All data exchanged with Connect Customer is protected in transit between the user’s web browser and Connect Customer using industry-standard TLS encryption. [Which version of TLS?](infrastructure-security.md#supported-version-tls)
 

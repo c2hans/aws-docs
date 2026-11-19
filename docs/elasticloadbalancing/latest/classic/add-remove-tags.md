@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/add-
 ---
 
 # Tag your Classic Load Balancer
-<a name="add-remove-tags"></a>
 
 Tags help you to categorize your load balancers in different ways, for example, by purpose, owner, or environment.
 

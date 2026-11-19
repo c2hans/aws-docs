@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteVolume
 ---
 
 # DeleteVolumeOntapResponse
-<a name="API_DeleteVolumeOntapResponse"></a>
 
 The response object for the Amazon FSx for NetApp ONTAP volume being deleted in the `DeleteVolume` operation.
 

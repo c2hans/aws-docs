@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Session evidence
-<a name="agent-access-session-evidence"></a>
 
 *Session evidence* is the set of capabilities that you use to track what happened during an agent session. Session evidence gives you an audit-ready record of what the AI agent did, delivered to your own Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 ---
 
 # Using DynamoDB with LangChain
-<a name="ddb-langchain"></a>
 
 [LangChain](https://www.langchain.com/) is a framework for building applications with large language models (LLMs). Two LangChain integrations use DynamoDB: the `DynamoDBChatMessageHistory` class stores conversation history so a model can converse back and forth with a user across sessions, and the `DynamoDBVectorStore` class implements the LangChain vector store interface on DynamoDB vector indexes for similarity search.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon EC2 Image Builder
-<a name="list_imagebuilder"></a>
 
 Amazon EC2 Image Builder (service prefix: `imagebuilder`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

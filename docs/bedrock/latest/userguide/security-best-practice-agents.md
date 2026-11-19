@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/security-best-p
 ---
 
 # Preventative security best practice for agents
-<a name="security-best-practice-agents"></a>
 
 The following best practices for Amazon Bedrock service can help prevent security incidents:
 

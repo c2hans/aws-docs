@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AssessmentSummary
-<a name="API_AssessmentSummary"></a>
 
  Contains the summary of the assessment results.
 

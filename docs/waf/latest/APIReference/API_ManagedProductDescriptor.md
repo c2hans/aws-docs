@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedProdu
 ---
 
 # ManagedProductDescriptor
-<a name="API_ManagedProductDescriptor"></a>
 
 The properties of a managed product, such as an AWS Managed Rules rule group or an AWS Marketplace managed rule group.
 

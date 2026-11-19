@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Appro
 ---
 
 # ApprovalRuleOverriddenEventMetadata
-<a name="API_ApprovalRuleOverriddenEventMetadata"></a>
 
 Returns information about an override event for approval rules for a pull request.
 

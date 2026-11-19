@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtochang
 ---
 
 # Customizing the AWS access portal URL
-<a name="howtochangeURL"></a>
 
 By default, you can access the AWS access portal by using a URL that follows this format: `d-{{xxxxxxxxxx}}.awsapps.com/start`. You can customize the URL as follows: `{{your_subdomain}}.awsapps.com/start`.
 

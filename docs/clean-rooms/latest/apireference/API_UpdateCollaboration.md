@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateCollaboration
-<a name="API_UpdateCollaboration"></a>
 
 Updates collaboration metadata and can only be called by the collaboration owner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutAsset.html
 ---
 
 # PutAsset
-<a name="API_PutAsset"></a>
 
 Creates or updates an asset in AWS Glue Data Catalog. If the asset already exists, this operation updates it; otherwise, a new asset is created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotAliasTe
 ---
 
 # BotAliasTestExecutionTarget
-<a name="API_BotAliasTestExecutionTarget"></a>
 
 The target Amazon S3 location for the test set execution using a bot alias.
 

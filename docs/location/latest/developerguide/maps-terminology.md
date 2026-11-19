@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/maps-term
 ---
 
 # Maps terminology
-<a name="maps-terminology"></a>
 
 Understanding these key terms helps you effectively use Amazon Location Service mapping APIs and resources.
 

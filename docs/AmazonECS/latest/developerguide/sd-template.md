@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/sd-templ
 ---
 
 # Service definition template
-<a name="sd-template"></a>
 
 The following shows the JSON representation of an Amazon ECS service definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/scheduled-scal
 ---
 
 # Create a scheduled action
-<a name="scheduled-scaling-create-scheduled-action"></a>
 
 To create a scheduled action for your Auto Scaling group, use one of the following methods:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalTargetValueDimension
-<a name="API_SignalTargetValueDimension"></a>
 
 The assessed target-value dimension with the basis behind it.
 

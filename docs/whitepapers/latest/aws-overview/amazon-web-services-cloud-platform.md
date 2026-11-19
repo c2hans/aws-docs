@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-w
 ---
 
 # AWS services by category
-<a name="amazon-web-services-cloud-platform"></a>
 
 AWS consists of many cloud services that you can use in combinations tailored to your business or organizational needs. This section introduces the major AWS services by category. Choose a category to explore its services.
 

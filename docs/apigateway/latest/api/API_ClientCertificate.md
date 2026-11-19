@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_ClientCertific
 ---
 
 # ClientCertificate
-<a name="API_ClientCertificate"></a>
 
 Represents a client certificate used to configure client-side SSL authentication while sending requests to the integration endpoint.
 

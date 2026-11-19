@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Cloud connectivity with Matter
-<a name="cloud-connectivity-with-matter"></a>
 
 While Matter enables basic local device interoperability, you need additional cloud connectivity to support over-the-air updates, telemetry data, remote management, and integration with proprietary vendor services. Device makers have options, such as shipping a Matter gateway hub, using a household's Matter-certified hub, or integrating direct cloud connectivity into endpoints. Standards for Matter-to-cloud connectivity are emerging, but manufacturers still need to integrate additional connectivity software stacks into Matter devices. To support capabilities such as diagnostics and new feature updates, Matter manufacturers should consider cloud integration in addition to basic local operation.
 

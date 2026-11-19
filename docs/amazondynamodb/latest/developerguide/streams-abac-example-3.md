@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/str
 ---
 
 # Example 3: Deny stream access unless a specific tag is present
-<a name="streams-abac-example-3"></a>
 
 Using the `aws:TagKeys` condition key, you can deny tagging a stream unless a required tag key is included in the request.
 

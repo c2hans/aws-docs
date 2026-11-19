@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Serv
 ---
 
 # ServiceSettings
-<a name="API_ServiceSettings"></a>
 
 Settings configured for Quick Setup.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-storage.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Storage with Nitro Sandboxes
-<a name="sandboxing-storage"></a>
 
 Pods running in Nitro Sandboxes support several storage options through standard Kubernetes CSI drivers.
 

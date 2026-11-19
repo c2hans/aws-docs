@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Insig
 ---
 
 # InsightConfiguration
-<a name="API_InsightConfiguration"></a>
 
 The configuration of an insight visual.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-toggle.
 ---
 
 # JSON.TOGGLE
-<a name="json-toggle"></a>
 
 Toggles Boolean values between true and false at the path.
 

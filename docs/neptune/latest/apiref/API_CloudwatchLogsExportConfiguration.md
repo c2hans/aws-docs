@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CloudwatchLogs
 ---
 
 # CloudwatchLogsExportConfiguration
-<a name="API_CloudwatchLogsExportConfiguration"></a>
 
 The configuration setting for the log types to be enabled for export to CloudWatch Logs for a specific DB instance or DB cluster.
 

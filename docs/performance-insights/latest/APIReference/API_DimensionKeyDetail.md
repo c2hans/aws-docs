@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DimensionKeyDetail
-<a name="API_DimensionKeyDetail"></a>
 
 An object that describes the details for a specified dimension.
 

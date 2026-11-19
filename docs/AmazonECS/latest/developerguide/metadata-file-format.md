@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/metadata
 ---
 
 # Amazon ECS container metadata file format
-<a name="metadata-file-format"></a>
 
 The following information is stored in the container metadata JSON file.
 

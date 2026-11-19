@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # CreateOAuth2PublicClient
-<a name="API_dataplane-signin_CreateOAuth2PublicClient"></a>
 
 Dynamically registers an OAuth 2.0 public client for use with AWS Sign-In.
 

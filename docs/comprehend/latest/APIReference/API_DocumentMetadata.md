@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentMetadata
-<a name="API_DocumentMetadata"></a>
 
 Information about the document, discovered during text extraction.
 

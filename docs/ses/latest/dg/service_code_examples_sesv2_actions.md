@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/service_code_examples_sesv
 ---
 
 # Actions for Amazon SES API v2 using AWS SDKs
-<a name="service_code_examples_sesv2_actions"></a>
 
 The following code examples demonstrate how to perform individual Amazon SES API v2 actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

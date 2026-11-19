@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Customer Profiles
-<a name="API_Types_Amazon_Connect_Customer_Profiles"></a>
 
 The following data types are supported by Amazon Connect Customer Profiles:
 +  [AdditionalSearchKey](API_connect-customer-profiles_AdditionalSearchKey.md)

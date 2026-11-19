@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListU
 ---
 
 # ListUsersIndexCapacity
-<a name="API_ListUsersIndexCapacity"></a>
 
 Lists per-user index capacity consumption for an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Removing Patient Compartment Resources with `$purge`
-<a name="reference-fhir-operations-purge"></a>
 
 AWS HealthLake supports the `$purge` operation, enabling permanent deletion of all resources within a patient's compartment. This operation is particularly useful when you need to:
 + Remove all data associated with a patient

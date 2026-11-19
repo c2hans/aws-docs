@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Code optimization
-<a name="code-optimization"></a>
 
 As covered in the performance pillar, optimizing your serverless application can effectively improve the value it produces per execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationEcsCluster
-<a name="API_InvestigationEcsCluster"></a>
 
 Contains details about an Amazon ECS cluster.
 

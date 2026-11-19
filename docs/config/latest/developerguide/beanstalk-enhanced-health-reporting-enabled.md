@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/beanstalk-e
 ---
 
 # beanstalk-enhanced-health-reporting-enabled
-<a name="beanstalk-enhanced-health-reporting-enabled"></a>
 
 Checks if an AWS Elastic Beanstalk environment is configured for enhanced health reporting. The rule is COMPLIANT if the environment is configured for enhanced health reporting. The rule is NON\_COMPLIANT if the environment is configured for basic health reporting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/optimize-cdn-confi
 ---
 
 # Configure optimization strategies for CDN and MediaTailor integrations
-<a name="optimize-cdn-config"></a>
 
 When you complete your traffic estimation, configure your content delivery network (CDN) to optimize content delivery and ad personalization with AWS Elemental MediaTailor. These optimizations help ensure smooth playback while maintaining targeted advertising.
 

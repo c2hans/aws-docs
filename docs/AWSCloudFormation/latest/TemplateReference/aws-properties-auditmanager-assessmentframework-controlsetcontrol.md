@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AuditManager::AssessmentFramework ControlSetControl
-<a name="aws-properties-auditmanager-assessmentframework-controlsetcontrol"></a>
 
 <a name="aws-properties-auditmanager-assessmentframework-controlsetcontrol-description"></a>The `ControlSetControl` property type specifies Property description not available. for an [AWS::AuditManager::AssessmentFramework](aws-resource-auditmanager-assessmentframework.md).
 

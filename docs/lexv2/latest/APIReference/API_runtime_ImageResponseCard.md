@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Im
 ---
 
 # ImageResponseCard
-<a name="API_runtime_ImageResponseCard"></a>
 
 A card that is shown to the user by a messaging platform. You define the contents of the card, the card is displayed by the platform.
 

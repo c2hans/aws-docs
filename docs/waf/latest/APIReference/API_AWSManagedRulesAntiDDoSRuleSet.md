@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AWSManagedRu
 ---
 
 # AWSManagedRulesAntiDDoSRuleSet
-<a name="API_AWSManagedRulesAntiDDoSRuleSet"></a>
 
 Configures the use of the anti-DDoS managed rule group, `AWSManagedRulesAntiDDoSRuleSet`. This configuration is used in `ManagedRuleGroupConfig`.
 

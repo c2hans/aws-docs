@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pr
 ---
 
 # PrivacyConfiguration
-<a name="API_PrivacyConfiguration"></a>
 
 Information about the privacy configuration for a configured model algorithm association.
 

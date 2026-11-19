@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetABTest
-<a name="API_GetABTest"></a>
 
 Retrieves detailed information about an A/B test, including its configuration, status, and statistical results.
 

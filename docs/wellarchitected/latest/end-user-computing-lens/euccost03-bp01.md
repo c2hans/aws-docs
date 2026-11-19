@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST03-BP01 Determine the level of self-service capabilities to provide your users
-<a name="euccost03-bp01"></a>
 
  Amazon WorkSpaces offers self-service capabilities that you can enable for your users. Assess the impact of granting access to these self-service capabilities and selectively disable or enable them based on your requirements.
 

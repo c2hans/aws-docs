@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Creat
 ---
 
 # CreateScalingPlan
-<a name="API_CreateScalingPlan"></a>
 
 Creates a scaling plan.
 

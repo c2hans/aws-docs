@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-DNS
 ---
 
 # Troubleshoot DNS validation problems
-<a name="troubleshooting-DNS-validation"></a>
 
 Consult the following guidance if you are having trouble validating a certificate with DNS.
 

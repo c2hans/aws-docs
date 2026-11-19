@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_RenameObject.htm
 ---
 
 # RenameObject
-<a name="API_RenameObject"></a>
 
 Renames an existing object in a directory bucket that uses the S3 Express One Zone storage class. You can use `RenameObject` by specifying an existing object’s name as the source and the new name of the object as the destination within the same directory bucket.
 

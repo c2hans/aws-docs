@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.8acb9016-b62a-5be2-8099-5889ed646e3d"></a>

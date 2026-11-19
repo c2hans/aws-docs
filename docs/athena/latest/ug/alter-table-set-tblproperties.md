@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-set-tblprop
 ---
 
 # ALTER TABLE SET TBLPROPERTIES
-<a name="alter-table-set-tblproperties"></a>
 
 Adds custom or predefined metadata properties to a table and sets their assigned values. To see the properties in a table, use the [SHOW TBLPROPERTIES](show-tblproperties.md) command.
 

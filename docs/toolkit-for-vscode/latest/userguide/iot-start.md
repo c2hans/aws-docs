@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-
 ---
 
 # Working with AWS IoT in AWS Toolkit for Visual Studio Code
-<a name="iot-start"></a>
 
 AWS IoT in AWS Toolkit for Visual Studio Code allows you to interact with the AWS IoT service, while minimizing interruptions to your work flow in VS Code. This user guide is intended to help you get started using the AWS IoT service features that are available in the AWS Toolkit for Visual Studio Code. For additional information about the AWS IoT service, see the developer guide [What is AWS IoT?](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)
 

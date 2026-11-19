@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-integrat
 ---
 
 # Third-party integrations with Amazon EventBridge
-<a name="eb-integrations"></a>
 
 In addition to AWS services, Amazon EventBridge supports integration with custom and third-party systems and applications, both as event sources and targets.
 

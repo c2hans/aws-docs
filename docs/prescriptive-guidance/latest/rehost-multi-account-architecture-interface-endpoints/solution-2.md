@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-mult
 ---
 
 # Solution 2: Creating VPC endpoints in a central networking account for multiple Regions
-<a name="solution-2"></a>
 
 ## Use case
 <a name="use-case.5f3a939d-4975-583f-90b7-4d533e690ac5"></a>

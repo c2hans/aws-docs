@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/custom-requi
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Required attributes
-<a name="custom-required-attributes"></a>
 
 When you submit a document to Amazon Q using the `BatchPutDocument` API operation, you must provide the following two attributes for each document:
 + `_data_source_id` – The identifier of the data source. This is returned when you create the data source with either the console or the `CreateDataSource` API operation.

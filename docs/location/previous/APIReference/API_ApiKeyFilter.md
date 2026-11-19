@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ApiKe
 ---
 
 # ApiKeyFilter
-<a name="API_ApiKeyFilter"></a>
 
 Options for filtering API keys.
 

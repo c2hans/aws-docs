@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RunIdentifier.htm
 ---
 
 # RunIdentifier
-<a name="API_RunIdentifier"></a>
 
 A run identifier.
 

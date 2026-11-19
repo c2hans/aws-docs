@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentDeploymentConfig
-<a name="API_InferenceComponentDeploymentConfig"></a>
 
 The deployment configuration for an endpoint that hosts inference components. The configuration includes the desired deployment strategy and rollback settings.
 

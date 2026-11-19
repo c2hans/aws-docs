@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-taggin
 ---
 
 # AWS Resource Groups Tagging API events
-<a name="events-ref-tagging"></a>
 
 Resource Groups Tagging API sends service events to EventBridge via AWS CloudTrail.
 

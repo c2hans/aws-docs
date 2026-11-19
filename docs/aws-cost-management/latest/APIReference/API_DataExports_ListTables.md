@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListTables
-<a name="API_DataExports_ListTables"></a>
 
 Lists all available tables in data exports.
 

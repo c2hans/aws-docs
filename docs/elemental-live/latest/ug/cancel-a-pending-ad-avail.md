@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/cancel-a-pendin
 ---
 
 # Cancel a pending ad avail
-<a name="cancel-a-pending-ad-avail"></a>
 
 If you inserted an ad avail the start time has not yet passed, you can cancel the insertion. No SCTE-35 message will be inserted.
 

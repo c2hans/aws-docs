@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/blockcha
 ---
 
 # ![AWS Blockchain category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/blockchain-icon.jpg)Blockchain
-<a name="blockchain"></a>
 
 ------
 #### [ Amazon Managed Blockchain ]

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableAggregatedFieldWells
-<a name="API_TableAggregatedFieldWells"></a>
 
 The aggregated field well for the table.
 

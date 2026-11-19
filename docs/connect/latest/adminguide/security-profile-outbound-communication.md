@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security-profi
 ---
 
 # Security profile permissions for outbound communications in Connect Customer
-<a name="security-profile-outbound-communication"></a>
 
 To enable agents to make outbound calls, assign **Make outbound calls** permissions to the agent's security profile as shown in the following image:
 

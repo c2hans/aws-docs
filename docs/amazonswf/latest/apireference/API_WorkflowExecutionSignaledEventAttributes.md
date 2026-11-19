@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionSignaledEventAttributes
-<a name="API_WorkflowExecutionSignaledEventAttributes"></a>
 
 Provides the details of the `WorkflowExecutionSignaled` event.
 

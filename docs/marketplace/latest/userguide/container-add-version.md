@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-a
 ---
 
 # Adding a new version of your container product on AWS Marketplace
-<a name="container-add-version"></a>
 
 As an AWS Marketplace seller, you can add new versions of your container product, manage versions, and update version information. Your product might have several versions over its lifetime. Each version has a set of container images that are specific to that version. The following topics show you how to manage product versions for your container products.
 

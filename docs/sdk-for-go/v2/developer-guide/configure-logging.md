@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Logging
-<a name="configure-logging"></a>
 
  The AWS SDK for Go has logging facilities available that allow your application to enable debugging information for debugging and diagnosing request issues or failures. The [Logger](https://pkg.go.dev/github.com/aws/smithy-go/logging#Logger) interface and [ClientLogMode](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws#ClientLogMode) are the main components available to you for determining how and what should be logged by clients.
 

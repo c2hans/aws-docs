@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/examples-au
 ---
 
 # Examples of automation rules
-<a name="examples-automation-rules"></a>
 
 This section provides examples of automation rules for common Security Hub CSPM use cases. These examples correspond to rule templates that are available on the Security Hub CSPM console.
 

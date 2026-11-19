@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/participant-acti
 ---
 
 # DisconnectParticipant
-<a name="participant-actions-disconnectparticipant"></a>
 
 Disconnects the participant from the contact and stops this flow from running.
 

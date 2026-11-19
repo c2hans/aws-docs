@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/kubernetes-workflows
 ---
 
 # Kubernetes Orchestration
-<a name="kubernetes-workflows"></a>
 
 You can orchestrate your SageMaker training and inference jobs with SageMaker AI Operators for Kubernetes and SageMaker AI Components for Kubeflow Pipelines. SageMaker AI Operators for Kubernetes make it easier for developers and data scientists using Kubernetes to train, tune, and deploy machine learning (ML) models in SageMaker AI. SageMaker AI Components for Kubeflow Pipelines allow you to move your data processing and training jobs from the Kubernetes cluster to SageMaker AI’s machine learning-optimized managed service.
 

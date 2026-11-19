@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteWe
 ---
 
 # RouteWeightConstraint
-<a name="API_RouteWeightConstraint"></a>
 
 The weight constraint for the route.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 ---
 
 # Scope, strategy, and timeline
-<a name="scope-strategy-time"></a>
 
 Three key elements make up the building blocks of all programs and their relevance in large migrations: scope, strategy, and the timeline.
 

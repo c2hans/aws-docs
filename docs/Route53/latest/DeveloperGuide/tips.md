@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tips.html
 ---
 
 # .tips
-<a name="tips"></a>
 
 Used by those who want to share their knowledge and advice on virtually any topic.
 

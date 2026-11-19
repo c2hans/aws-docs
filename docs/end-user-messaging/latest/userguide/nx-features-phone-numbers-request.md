@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Request a phone number in AWS End User Messaging
-<a name="nx-features-phone-numbers-request"></a>
 
 Using the AWS End User Messaging console, we'll recommend one of the below origination identities depending on your use-case. Recommendations are based on your input criteria including if you require SMS, MMS, and/or voice capabilities, a two-way number, and estimate monthly messages.
 

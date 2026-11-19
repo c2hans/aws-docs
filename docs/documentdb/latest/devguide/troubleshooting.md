@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/troubleshooti
 ---
 
 # Troubleshooting Amazon DocumentDB
-<a name="troubleshooting"></a>
 
 The following sections provide information about how to troubleshoot problems that you might encounter when using Amazon DocumentDB (with MongoDB compatibility).
 

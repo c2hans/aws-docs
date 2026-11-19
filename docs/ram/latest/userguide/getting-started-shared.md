@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sha
 ---
 
 # Using shared AWS resources
-<a name="getting-started-shared"></a>
 
 To start using resources that were shared with your account using AWS Resource Access Manager, complete the following tasks.
 

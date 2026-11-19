@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateOrgE
 ---
 
 # UpdateOrgEc2DeepInspectionConfiguration
-<a name="API_UpdateOrgEc2DeepInspectionConfiguration"></a>
 
 Updates the Amazon Inspector deep inspection custom paths for your organization. You must be an Amazon Inspector delegated administrator to use this API.
 

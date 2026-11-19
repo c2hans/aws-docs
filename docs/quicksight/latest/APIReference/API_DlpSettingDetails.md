@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DlpSe
 ---
 
 # DlpSettingDetails
-<a name="API_DlpSettingDetails"></a>
 
 The full configuration details of a DLP setting.
 

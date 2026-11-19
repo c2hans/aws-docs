@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetInventory
-<a name="API_GetInventory"></a>
 
 Query inventory information. This includes managed node status, such as `Stopped` or `Terminated`.
 

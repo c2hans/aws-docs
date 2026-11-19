@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Transactions in Neptune openCypher
-<a name="access-graph-opencypher-transactions"></a>
 
 The openCypher implementation in Amazon Neptune uses the [transaction semantics defined by Neptune](transactions-neptune.md) However, isolation levels provided by the Bolt driver have some specific implications for Bolt transaction semantics, as described in the sections below.
 

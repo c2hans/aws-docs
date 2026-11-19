@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # FeatureValue
-<a name="API_feature_store_FeatureValue"></a>
 
 The value associated with a feature.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/AWS-Related-FAQ.html
 ---
 
 # Launch questions
-<a name="AWS-Related-FAQ"></a>
 
 This section contains answers to questions about launching test and cutover instances with AWS Transform MGN.
 

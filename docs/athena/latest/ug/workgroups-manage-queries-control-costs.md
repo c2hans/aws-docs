@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/workgroups-manage-queri
 ---
 
 # Use workgroups to control query access and costs
-<a name="workgroups-manage-queries-control-costs"></a>
 
 You can use Athena workgroups to separate workloads, control team access, enforce configuration, and track query metrics and control costs.
 

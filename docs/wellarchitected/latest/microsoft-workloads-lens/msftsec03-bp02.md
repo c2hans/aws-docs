@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTSEC03-BP02 Enable Always Encrypted feature for SQL Server
-<a name="msftsec03-bp02"></a>
 
  Microsoft SQL Server's *Always Encrypted* feature provides robust data protection using client-side encryption with certificates. This technology creates a clear separation between data owners who can view the information and data managers who shouldn't have access. It effectively safeguards sensitive data by encrypting it in the database, during transit, and even while being processed. Always Encrypted is available not only in on-premises SQL Server deployments but also in cloud environments, including Amazon RDS for SQL Server and SQL Server instances running on Amazon EC2. By implementing Always Encrypted, organizations can enhance their data security posture, particularly when handling sensitive information in Microsoft SQL Server environments on AWS.
 

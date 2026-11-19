@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Identifying presigned requests
-<a name="identifying-requests"></a>
 
 ## Identifying requests that used a presigned URL
 <a name="requests"></a>

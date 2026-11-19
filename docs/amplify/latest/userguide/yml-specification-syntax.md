@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/yml-specificati
 ---
 
 # Build specification reference
-<a name="yml-specification-syntax"></a>
 
 The build specification (buildspec) for an Amplify application is a collection of YAML settings and build commands that Amplify uses to run your build. The following list describes these settings and how they are used.
 

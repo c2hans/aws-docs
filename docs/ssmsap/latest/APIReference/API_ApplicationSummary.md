@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Applicati
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 The summary of the SAP application registered with AWS Systems Manager for SAP.
 

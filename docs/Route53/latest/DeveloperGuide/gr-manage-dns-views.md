@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-manage-
 ---
 
 # Managing DNS views with Route 53 Global Resolver
-<a name="gr-manage-dns-views"></a>
 
 You can manage ongoing Route 53 Global Resolver operations including updating DNS views to control which client device groups can resolve to internal resources and what domains to filter.
 

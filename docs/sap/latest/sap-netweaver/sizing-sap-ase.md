@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sizing-sap-ase.
 ---
 
 # Sizing
-<a name="sizing-sap-ase"></a>
 
 Sizing applies to three key areas - compute, network, and storage.
 

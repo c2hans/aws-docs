@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # UpdateSenderId
-<a name="API_UpdateSenderId"></a>
 
 Updates the configuration of an existing sender ID.
 

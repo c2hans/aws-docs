@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_forward_acce
 ---
 
 # Forward access sessions
-<a name="access_forward_access_sessions"></a>
 
 Forward access sessions (FAS) is an IAM technology used by AWS services to pass your identity, permissions, and session attributes when an AWS service makes a request on your behalf. FAS uses the permissions of the identity calling an AWS service, combined with an AWS service’s identity to make requests to downstream services. FAS requests are only made to AWS services on behalf of an IAM principal after a service has received a request that requires interactions with other AWS services or resources to complete. When a FAS request is made:
 + The service that receives the initial request from an IAM principal checks the permissions of the IAM principal.

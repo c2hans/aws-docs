@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-appli
 ---
 
 # Application inference profiles
-<a name="cost-mgmt-application-inference-profiles"></a>
 
 Application inference profiles (AIPs) let you attribute Amazon Bedrock costs by application, team, or workload for the Amazon Bedrock [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) and [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) APIs on the `bedrock-runtime` endpoint. Each AIP is model-specific and carries cost allocation tags that flow to AWS Cost Explorer and AWS Cost and Usage Reports (both classic CUR and CUR 2.0).
 

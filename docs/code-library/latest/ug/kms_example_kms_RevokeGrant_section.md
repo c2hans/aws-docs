@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kms_example_kms_R
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `RevokeGrant` with an AWS SDK or CLI
-<a name="kms_example_kms_RevokeGrant_section"></a>
 
 The following code examples show how to use `RevokeGrant`.
 

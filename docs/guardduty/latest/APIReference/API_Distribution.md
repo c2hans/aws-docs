@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Distri
 ---
 
 # Distribution
-<a name="API_Distribution"></a>
 
 Contains a breakdown of findings along a dimension, such as severity or finding type.
 

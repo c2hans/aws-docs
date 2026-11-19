@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_cross_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Detect faces in an image using an AWS SDK
-<a name="s3_example_cross_DetectFaces_section"></a>
 
 The following code example shows how to:
 + Save an image in an Amazon S3 bucket.

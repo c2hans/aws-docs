@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-s
 ---
 
 # AWS service logs from CloudWatch Logs
-<a name="aws-service-logs-from-cwl"></a>
 
 Intercepts log events from CloudWatch Logs that match the log event metadata configuration.
 

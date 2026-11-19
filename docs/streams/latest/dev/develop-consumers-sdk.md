@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/develop-consumers-sdk
 ---
 
 # Develop consumers with the AWS SDK for Java
-<a name="develop-consumers-sdk"></a>
 
  You can develop custom consumers using the Amazon Kinesis Data Streams APIs. This section describes using the Kinesis Data Streams APIs with the AWS SDK for Java.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteW
 ---
 
 # DeleteWorkflow
-<a name="API_DeleteWorkflow"></a>
 
 Deletes the specified workflow.
 

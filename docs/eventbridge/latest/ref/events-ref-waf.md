@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-waf.ht
 ---
 
 # AWS WAF events
-<a name="events-ref-waf"></a>
 
 AWS WAF sends service events to EventBridge via AWS CloudTrail.
 

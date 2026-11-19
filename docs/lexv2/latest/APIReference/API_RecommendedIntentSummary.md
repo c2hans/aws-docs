@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Recommende
 ---
 
 # RecommendedIntentSummary
-<a name="API_RecommendedIntentSummary"></a>
 
 An object that contains a summary of a recommended intent.
 

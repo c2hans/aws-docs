@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Remove
 ---
 
 # RemoveRoleFromDBInstance
-<a name="API_RemoveRoleFromDBInstance"></a>
 
 Disassociates an AWS Identity and Access Management (IAM) role from a DB instance.
 

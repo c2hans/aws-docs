@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
 Retrieves the current state of an asynchronous job, including its status and any resources that it created or updated.
 

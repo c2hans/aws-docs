@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DLM.7] Ensure data safety with automated backup processes
-<a name="ag.dlm.7-ensure-data-safety-with-automated-backup-processes"></a>
 
  **Category:** RECOMMENDED
 

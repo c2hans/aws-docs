@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTableAssociationAnalysisRulePolicyV1
-<a name="API_ConfiguredTableAssociationAnalysisRulePolicyV1"></a>
 
  Controls on the query specifications that can be run on an associated configured table.
 

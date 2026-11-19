@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # User management on a SageMaker HyperPod Slurm cluster
-<a name="sagemaker-hyperpod-slurm-user-management"></a>
 
 HyperPod Slurm clusters are typically used by multiple users — machine learning (ML) researchers, software engineers, data scientists, and cluster administrators — who each edit their own files and run their own jobs. This section describes how to create and manage users across the nodes of a Slurm cluster on SageMaker HyperPod.
 

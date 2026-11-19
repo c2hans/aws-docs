@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/delete-
 ---
 
 # Turn off a canary release
-<a name="delete-canary-deployment"></a>
 
 To turn off a canary release deployment is to set the [`canarySettings`](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html#canarySettings) to null to remove it from the stage.
 

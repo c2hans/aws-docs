@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS04-BP06 Implement operational procedures based on data classification and latency requirements
-<a name="advops04-bp06"></a>
 
  Establish tier-based procedures for low-latency data (bid requests), medium-latency data (campaign optimization), and high-latency data (historical analytics). Classify managed connectivity service metrics as low-latency operational data, and agentic AI agent traces as medium-latency operational data.
 

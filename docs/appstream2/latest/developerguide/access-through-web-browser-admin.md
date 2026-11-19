@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/access-
 ---
 
 # Provide Access Through a Web Browser
-<a name="access-through-web-browser-admin"></a>
 
 Your users can start an WorkSpaces Applications streaming session by using a web browser or the WorkSpaces Applications client application for a supported device. The following topics provide information to help you provide user access through a web browser.
 

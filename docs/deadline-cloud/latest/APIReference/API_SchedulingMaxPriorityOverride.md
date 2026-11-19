@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SchedulingMaxPriorityOverride
-<a name="API_SchedulingMaxPriorityOverride"></a>
 
 Defines the override behavior for jobs at the maximum priority (100) in weighted balanced scheduling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Hello Amazon Cognito
-<a name="cognito-identity-provider_example_cognito-identity-provider_Hello_section"></a>
 
 The following code examples show how to get started using Amazon Cognito.
 

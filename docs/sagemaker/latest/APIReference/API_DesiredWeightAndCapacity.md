@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Desire
 ---
 
 # DesiredWeightAndCapacity
-<a name="API_DesiredWeightAndCapacity"></a>
 
 Specifies weight and capacity values for a production variant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_SafetyLever.
 ---
 
 # SafetyLever
-<a name="API_SafetyLever"></a>
 
  Describes a safety lever.
 

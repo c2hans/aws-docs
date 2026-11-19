@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2CustomRequestHandlingDetails
-<a name="API_AwsWafv2CustomRequestHandlingDetails"></a>
 
  Custom request handling behavior that inserts custom headers into a web request. AWS WAF uses custom request handling when the rule action doesn't block the request.
 

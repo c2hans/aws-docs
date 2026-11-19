@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 ---
 
 # Stable Image Style Guide
-<a name="model-card-stability-ai-stable-image-style-guide"></a>
 
 ## ![Stability AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/stability.png) Stability AI — Stable Image Style Guide
 <a name="model-card-stability-ai-stable-image-style-guide-header"></a>

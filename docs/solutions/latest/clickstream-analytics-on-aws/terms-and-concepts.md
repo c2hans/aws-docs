@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Terms and concepts
-<a name="terms-and-concepts"></a>
 
 This section describes key concepts and defines terminology specific to this guidance:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_F
 ---
 
 # FileUploadCard
-<a name="API_qapps_FileUploadCard"></a>
 
 A card in an Amazon Q App that allows the user to upload a file.
 

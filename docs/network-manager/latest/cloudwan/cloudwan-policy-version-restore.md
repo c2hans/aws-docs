@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Restore an out-of-date AWS Cloud WAN core network policy version
-<a name="cloudwan-policy-version-restore"></a>
 
 An out-of-date policy can be restored as a new version of a policy.
 

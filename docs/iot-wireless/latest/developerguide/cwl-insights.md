@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-i
 ---
 
 # Use CloudWatch Insights to filter logs for AWS IoT Wireless
-<a name="cwl-insights"></a>
 
 While you can use CloudWatch Logs to create filter expressions, we recommend that you use CloudWatch insights to more effectively create and use filter expressions depending on your application.
 

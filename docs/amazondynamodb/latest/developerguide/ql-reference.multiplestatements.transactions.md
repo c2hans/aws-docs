@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # Performing transactions with PartiQL for DynamoDB
-<a name="ql-reference.multiplestatements.transactions"></a>
 
 This section describes how to use transactions with PartiQL for DynamoDB. PartiQL transactions are limited to 100 total statements (actions).
 

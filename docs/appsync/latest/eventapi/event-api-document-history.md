@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-docume
 ---
 
 # Document History for AWS AppSync Events
-<a name="event-api-document-history"></a>
 
 The following table describes the documentation for this release of AWS AppSync Events.
 + **API version: 1.1**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StateEnteredEventDetails
-<a name="API_StateEnteredEventDetails"></a>
 
 Contains details about a state entered during an execution.
 

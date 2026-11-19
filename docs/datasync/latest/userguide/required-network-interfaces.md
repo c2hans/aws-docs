@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/required-netwo
 ---
 
 # Network interfaces for AWS DataSync transfers
-<a name="required-network-interfaces"></a>
 
 For every task you create, AWS DataSync automatically generates and manages [network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) for data transfer traffic. How many network interfaces DataSync creates and where they’re created depends on the following details about your transfer task:
 + Whether your task [requires a DataSync agent](do-i-need-datasync-agent.md).

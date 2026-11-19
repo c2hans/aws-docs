@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ListHosts
-<a name="API_ListHosts"></a>
 
 Lists the hosts associated with your account.
 

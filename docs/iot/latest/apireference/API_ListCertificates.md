@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertific
 ---
 
 # ListCertificates
-<a name="API_ListCertificates"></a>
 
 Lists the certificates registered in your AWS account.
 

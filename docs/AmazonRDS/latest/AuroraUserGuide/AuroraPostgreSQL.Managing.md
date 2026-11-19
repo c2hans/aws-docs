@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Performance and scaling for Amazon Aurora PostgreSQL
-<a name="AuroraPostgreSQL.Managing"></a>
 
 The following section discusses managing performance and scaling for an Amazon Aurora PostgreSQL DB cluster. It also includes information about other maintenance tasks.
 

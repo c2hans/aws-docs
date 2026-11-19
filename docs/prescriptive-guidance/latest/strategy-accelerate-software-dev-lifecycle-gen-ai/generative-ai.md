@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Powering the software development experience with generative AI
-<a name="generative-ai"></a>
 
 The integration of generative AI into the software development lifecycle (SDLC) represents a paradigm shift in how entire software development teams conceive, design, implement, and maintain software solutions. Generative AI has the potential to revolutionize every phase of the SDLC, including project management, requirements gathering, design, coding, testing, deployment, and maintenance.
 

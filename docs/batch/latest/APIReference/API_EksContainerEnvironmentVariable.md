@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksContain
 ---
 
 # EksContainerEnvironmentVariable
-<a name="API_EksContainerEnvironmentVariable"></a>
 
 An environment variable.
 

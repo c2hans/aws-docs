@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cni.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure CNI for hybrid nodes
-<a name="hybrid-nodes-cni"></a>
 
 Cilium is the AWS-supported Container Networking Interface (CNI) for Amazon EKS Hybrid Nodes. You must install a CNI for hybrid nodes to become ready to serve workloads. Hybrid nodes appear with status `Not Ready` until a CNI is running. You can manage the CNI with your choice of tools such as Helm. The instructions on this page cover Cilium lifecycle management (install, upgrade, delete). See [Cilium Ingress and Cilium Gateway Overview](hybrid-nodes-ingress.md#hybrid-nodes-ingress-cilium), [Service type LoadBalancer](hybrid-nodes-ingress.md#hybrid-nodes-ingress-cilium-loadbalancer), and [Configure Kubernetes Network Policies for hybrid nodes](hybrid-nodes-network-policies.md) for how to configure Cilium for ingress, load balancing, and network policies.
 

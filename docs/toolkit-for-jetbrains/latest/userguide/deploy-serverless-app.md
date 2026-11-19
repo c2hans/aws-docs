@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/d
 ---
 
 # Creating an AWS serverless application by using the AWS Toolkit for JetBrains
-<a name="deploy-serverless-app"></a>
 
 To complete this procedure, you must first install the AWS Toolkit and, if you haven't yet, connect to an AWS account for the first time. Then with IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider already running, do the following."?>
 

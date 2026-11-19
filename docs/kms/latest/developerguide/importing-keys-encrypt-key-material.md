@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Step 3: Encrypt the key material
-<a name="importing-keys-encrypt-key-material"></a>
 
 After you [download the public key and import token](importing-keys-get-public-key-and-token.md), encrypt your key material using the public key that you downloaded and the wrapping algorithm that you specified. If you need to replace the public key or import token, or change the wrapping algorithm, you must download a new public key and import token. For information about the public keys and wrapping algorithms that AWS KMS supports, see [Select a wrapping public key spec](importing-keys-get-public-key-and-token.md#select-wrapping-key-spec) and [Select a wrapping algorithm](importing-keys-get-public-key-and-token.md#select-wrapping-algorithm).
 

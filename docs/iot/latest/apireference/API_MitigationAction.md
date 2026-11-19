@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MitigationAc
 ---
 
 # MitigationAction
-<a name="API_MitigationAction"></a>
 
 Describes which changes should be applied as part of a mitigation action.
 

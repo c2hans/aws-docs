@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DisableHe
 ---
 
 # DisableHealthServiceAccessForOrganization
-<a name="API_DisableHealthServiceAccessForOrganization"></a>
 
 Disables AWS Health from working with AWS Organizations. To call this operation, you must sign in to the organization's management account. For more information, see [Aggregating AWS Health events](https://docs.aws.amazon.com/health/latest/ug/aggregate-events.html) in the * AWS Health User Guide*.
 

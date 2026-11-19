@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/using-re
 ---
 
 # Using AWS Resilience Hub
-<a name="using-resilience-hub"></a>
 
 AWS Resilience Hub helps you improve the resiliency of your applications on AWS and reduce the recovery time in the event of application outages.
 

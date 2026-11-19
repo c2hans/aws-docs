@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/resourcese
 ---
 
 # GetResourceSet, UpdateResourceSet, DeleteResourceSet
-<a name="resourcesets-resourcesetname"></a>
 
 ## URI
 <a name="resourcesets-resourcesetname-url"></a>

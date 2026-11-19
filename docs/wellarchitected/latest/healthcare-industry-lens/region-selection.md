@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Region selection
-<a name="region-selection"></a>
 
 | HCL\_SUS1. How do you identify targets for sustainability improvement? |
 | --- |

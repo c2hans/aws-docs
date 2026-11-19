@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ServerDefinition
-<a name="API_ServerDefinition"></a>
 
  The MCP server definition with a schema version and inline content. The `schemaVersion` identifies the version of the MCP server configuration schema.
 

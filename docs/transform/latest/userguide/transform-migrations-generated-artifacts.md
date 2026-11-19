@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-mig
 ---
 
 # Understanding the generated network artifacts
-<a name="transform-migrations-generated-artifacts"></a>
 
 AWS Transform generates your target network as Infrastructure as Code (IaC) so you can review and deploy it using your own tools and processes. It produces the network in a fraction of the time, and you decide how and when to deploy it: check it against your own standards, adjust it to fit how your team works, deploy it the way you already deploy infrastructure, and keep it in version control so you can track changes and deploy again later.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-stream-tips-tr
 ---
 
 # Using Amazon Chime SDK media stream pipelines data
-<a name="media-stream-tips-tricks"></a>
 
 You can use the metadata in the notifications to get KVS ARNs, fragment numbers, and fragment timestamps. That information can help you to process the audio data in a KVS stream.
 

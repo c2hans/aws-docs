@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ListAWSDefaultServiceQuotas
-<a name="API_ListAWSDefaultServiceQuotas"></a>
 
 Lists the default values for the quotas for the specified AWS service. A default value does not reflect any quota increases.
 

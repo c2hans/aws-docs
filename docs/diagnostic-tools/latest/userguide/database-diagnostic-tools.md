@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/userguide/databa
 ---
 
 # Tools for managing and optimizing databases
-<a name="database-diagnostic-tools"></a>
 
 Databases tools in AWS Diagnostic Tools assist in diagnosing, monitoring, and optimizing Amazon Redshift and Amazon RDS database environments in an AWS account. These tools are designed to provide insights into various aspects of database clusters, instances, parameters, and performance metrics, allowing users to proactively address issues and monitor the operation of their database workloads.
 

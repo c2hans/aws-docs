@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/S3-bucket
 ---
 
 # Cross account bucket access
-<a name="S3-buckets-cross-account-access"></a>
 
 RES has the ability to mount buckets from other AWS accounts, provided these buckets have the right permissions. In the following scenario, a RES environment in Account A wants to mount an S3 bucket in Account B.
 

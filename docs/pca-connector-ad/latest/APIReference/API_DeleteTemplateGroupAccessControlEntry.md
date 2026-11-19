@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # DeleteTemplateGroupAccessControlEntry
-<a name="API_DeleteTemplateGroupAccessControlEntry"></a>
 
 Deletes a group access control entry.
 

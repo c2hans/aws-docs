@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-emp-troublesho
 ---
 
 # Troubleshoot MediaPackage, CDN, and MediaTailor integrations
-<a name="cdn-emp-troubleshooting"></a>
 
 AWS Elemental MediaTailor integration with AWS Elemental MediaPackage and content delivery network (CDN) can encounter common issues that affect playback, caching, or other integration functionality. Use this guide when you encounter playback problems, caching issues, or other integration-related errors.
 

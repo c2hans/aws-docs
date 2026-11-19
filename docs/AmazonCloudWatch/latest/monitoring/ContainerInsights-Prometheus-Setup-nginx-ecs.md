@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Sample NGINX workload for Amazon ECS clusters
-<a name="ContainerInsights-Prometheus-Setup-nginx-ecs"></a>
 
 The NGINX Prometheus exporter can scrape and expose NGINX data as Prometheus metrics. This example uses the exporter in tandem with the NGINX reverse proxy service for Amazon ECS.
 

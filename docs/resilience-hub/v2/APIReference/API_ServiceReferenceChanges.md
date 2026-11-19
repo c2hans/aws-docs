@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceReferenceChanges
-<a name="API_ServiceReferenceChanges"></a>
 
 Describes changes to service references.
 

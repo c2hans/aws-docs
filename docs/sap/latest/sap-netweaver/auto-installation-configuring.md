@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/auto-installati
 ---
 
 # Configuring automated SAP installation
-<a name="auto-installation-configuring"></a>
 
 The sections below contain detailed instructions on how to configure automated SAP NetWeaver on AWS installation.
 

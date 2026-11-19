@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # DescribeTask
-<a name="API_devicemanagement_DescribeTask"></a>
 
 Checks the metadata for a given task on a device.
 

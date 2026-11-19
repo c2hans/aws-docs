@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # EngineTranscribeMedicalSettings
-<a name="API_meeting-chime_EngineTranscribeMedicalSettings"></a>
 
 Settings specific to the Amazon Transcribe Medical engine.
 

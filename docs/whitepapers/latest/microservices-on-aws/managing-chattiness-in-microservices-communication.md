@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Managing chattiness in microservices communication
-<a name="managing-chattiness-in-microservices-communication"></a>
 
 *Chattiness* refers to excessive communication between microservices, which can cause inefficiency due to increased network latency. It's essential to manage chattiness effectively for a well-functioning system.
 

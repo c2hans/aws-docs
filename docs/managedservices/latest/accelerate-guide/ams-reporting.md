@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Reports and options
-<a name="ams-reporting"></a>
 
 AWS Managed Services (AMS) collates data from various native AWS services to provide value-added reports on major AMS offerings.
 

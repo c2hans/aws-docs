@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/storage.html
 ---
 
 # Storage in ROSA
-<a name="storage"></a>
 
  Red Hat OpenShift Service on AWS clusters store persistent data on AWS storage services through the Kubernetes persistent volume framework and the Container Storage Interface (CSI). This section describes the storage options that are available for your workloads, when to use each one, and how they behave on ROSA.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # DeleteTemplate
-<a name="API_DeleteTemplate"></a>
 
 Deletes a template. Certificates issued using the template are still valid until they are revoked or expired.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ExtendedKeyU
 ---
 
 # ExtendedKeyUsage
-<a name="API_ExtendedKeyUsage"></a>
 
 The Extended Key Usage X.509 v3 extension defines one or more purposes for which the public key can be used. This is in addition to or in place of the basic purposes specified by the Key Usage extension.
 

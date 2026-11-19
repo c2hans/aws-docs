@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TracingConfiguration
-<a name="API_TracingConfiguration"></a>
 
 Selects whether or not the state machine's AWS X-Ray tracing is enabled. Default is `false`
 

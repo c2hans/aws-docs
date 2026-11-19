@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/decide-local-d
 ---
 
 # Deciding the amount of local disk storage
-<a name="decide-local-disks-and-sizes"></a>
 
 When deploying an S3 File Gateway, consider how much cache disk to allocate. S3 File Gateway uses a least recently used algorithm to automatically evict data from the cache. The cache on an S3 File Gateway is shared between all of the file shares on that gateway. If you have multiple active shares, it's important to note that heavy utilization on one share could impact the amount of cache resources that another share has access to, possibly impacting performance.
 

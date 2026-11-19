@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS08-BP01 Continuously generate and maintain evidence
-<a name="lsops08-bp01"></a>
 
  Use appropriate IT tooling to generate evidence used for regulatory requirements. Maintain audit trails of the changes, approvals, and validations. Store the data in an immutable store. Generate reports as needed from the data. Enable immediate access to evidence during inspections or audits.
 

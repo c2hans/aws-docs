@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeStarNotifications::NotificationRule
-<a name="aws-resource-codestarnotifications-notificationrule"></a>
 
 Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as Amazon Simple Notification Service topics or Amazon Q Developer in chat applications clients configured for Slack) where you want to receive them.
 

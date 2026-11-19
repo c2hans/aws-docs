@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-ase-to-
 ---
 
 # Migration
-<a name="phases-of-migration"></a>
 
 When choosing a migration strategy, consider your business requirements, resources, time, and finances.
 

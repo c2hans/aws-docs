@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSSMManagedEC2InstanceDefaultPolicy
-<a name="AmazonSSMManagedEC2InstanceDefaultPolicy"></a>
 
 **Description**: This policy enables AWS Systems Manager functionality on EC2 instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Dual Stack Peering Connectivity for the Amazon Amazon VPC
-<a name="ipv6-vpc-peering"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-12-diagram-history))**
 

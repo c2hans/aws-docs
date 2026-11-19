@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ColumnCon
 ---
 
 # ColumnConfiguration
-<a name="API_ColumnConfiguration"></a>
 
 Provides information about how Amazon Kendra should use the columns of a database in an index.
 

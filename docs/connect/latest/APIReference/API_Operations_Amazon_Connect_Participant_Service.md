@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Connect Participant Service
-<a name="API_Operations_Amazon_Connect_Participant_Service"></a>
 
 The following actions are supported by Amazon Connect Participant Service:
 +  [CancelParticipantAuthentication](API_connect-participant_CancelParticipantAuthentication.md)

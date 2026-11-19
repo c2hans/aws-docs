@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientCon
 ---
 
 # ClientConnectResponseOptions
-<a name="API_ClientConnectResponseOptions"></a>
 
 The options for managing connection authorization for new client connections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeOptimizationJob
-<a name="API_DescribeOptimizationJob"></a>
 
 Provides the properties of the specified optimization job.
 

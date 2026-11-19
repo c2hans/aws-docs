@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluationform
 ---
 
 # Use a reference ID to represent questions in a report about contact center agent performance
-<a name="evaluationforms-referenceid"></a>
 
 A *reference ID* is a token that appears in the JSON output file. It represents a specific question. When building reports, you can use it in place of the exact wording of a question.
 

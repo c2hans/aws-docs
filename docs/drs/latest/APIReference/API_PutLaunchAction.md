@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_PutLaunchAct
 ---
 
 # PutLaunchAction
-<a name="API_PutLaunchAction"></a>
 
 Puts a resource launch action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-data-quality-moni
 ---
 
 # Monitoring data quality in the AWS Glue Data Catalog
-<a name="catalog-data-quality-monitoring"></a>
 
 With data quality monitoring at the catalog and database level, AWS Glue Data Quality evaluates the tables in your AWS Glue Data Catalog without data quality runs that you set up for each table. You create a data quality evaluation configuration at the catalog or database level, and AWS Glue Data Quality evaluates every table in scope, including tables that you add later. For a table that needs different checks, you can also create a configuration at the table level.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Paginated search with purpose-built databases
-<a name="paginated-search-databases"></a>
 
 Publication date: **August 25, 2022 ([Diagram history](diagram-history.md))**
 

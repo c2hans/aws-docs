@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/create-test-set-from-CSV
 ---
 
 # Creating a test set from a CSV file for Test Workbench
-<a name="create-test-set-from-CSV"></a>
 
 You can create a test set from the CSV file template provided in the Amazon Lex V2 console by entering the values directly by using a CSV spreadsheet editor. The test set is a comma-separated value (CSV) file consisting of single user utterances and multi-turn conversations recorded in the following columns:
 + **Line \#** – this column is an incremental counter that keeps track of the total filled rows to test.

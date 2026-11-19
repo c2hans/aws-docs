@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial
 ---
 
 # Tutorial: Send events to Datadog from Amazon EventBridge
-<a name="eb-tutorial-datadog"></a>
 
 You can use EventBridge to route [events](eb-events.md) to third-party services,such as [Datadog](https://www.datadoghq.com/).
 

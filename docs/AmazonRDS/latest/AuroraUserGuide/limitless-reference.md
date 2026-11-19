@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Aurora PostgreSQL Limitless Database reference
-<a name="limitless-reference"></a>
 
 We provide the following reference topics for Aurora PostgreSQL Limitless Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Creating a program management account
-<a name="creating-pma"></a>
 
 To create a program management account, you will need an AWS management account ID and an active channel program registration.
 

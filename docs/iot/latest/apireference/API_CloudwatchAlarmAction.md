@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CloudwatchAl
 ---
 
 # CloudwatchAlarmAction
-<a name="API_CloudwatchAlarmAction"></a>
 
 Describes an action that updates a CloudWatch alarm.
 

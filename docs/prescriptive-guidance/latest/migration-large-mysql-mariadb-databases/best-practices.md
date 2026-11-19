@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 ---
 
 # Best practices for migrating large MySQL and MariaDB databases
-<a name="best-practices"></a>
 
 In addition to the tool-specific best practices listed for each migration option, review the following general best practices. These best practices apply when migrating large, multi-terabyte MySQL and MariaDB databases, regardless of the tool you select:
 + Make sure that there is sufficient space on the source and destination databases to take and restore the backup.

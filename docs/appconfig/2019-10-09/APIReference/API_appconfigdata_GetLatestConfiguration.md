@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ap
 ---
 
 # GetLatestConfiguration
-<a name="API_appconfigdata_GetLatestConfiguration"></a>
 
 Retrieves the latest deployed configuration. This API may return empty configuration data if the client already has the latest version. For more information about this API action and to view example AWS CLI commands that show how to use it with the [StartConfigurationSession](API_appconfigdata_StartConfigurationSession.md) API action, see [Retrieving feature flags and configuration data in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-feature-flags.html) in the * AWS AppConfig User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IterableFormEntry
 ---
 
 # IterableFormEntry
-<a name="API_IterableFormEntry"></a>
 
 An iterable form available on an asset, identified by its form type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterIamRole
-<a name="API_AwsRedshiftClusterIamRole"></a>
 
 An IAM role that the cluster can use to access other AWS services.
 

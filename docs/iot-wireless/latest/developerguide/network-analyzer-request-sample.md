@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Sample Python code to generate presigned URL
-<a name="network-analyzer-request-sample"></a>
 
 The following code shows an example for generating the pre-signed URL using Python as the programming language.
 

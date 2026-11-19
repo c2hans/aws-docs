@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Layer
 ---
 
 # LayerMapVisual
-<a name="API_LayerMapVisual"></a>
 
 A layer map visual.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDefinitionTypeValue
-<a name="API_AutomatedReasoningPolicyDefinitionTypeValue"></a>
 
 Represents a single value within a custom type definition, including its identifier and description.
 

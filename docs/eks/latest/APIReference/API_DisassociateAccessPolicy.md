@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateAccessPolicy
-<a name="API_DisassociateAccessPolicy"></a>
 
 Disassociates an access policy from an access entry.
 

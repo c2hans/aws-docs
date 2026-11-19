@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troublesho
 ---
 
 # Spark Troubleshooting and Optimization Agents
-<a name="spark-troubleshoot"></a>
 
 The Apache Spark agents analyze your Apache Spark workloads on Amazon EMR and AWS Glue. You can use the agents from an MCP client with natural language prompts, or directly from the console. In either case, the `analyze_spark_workload` tool on the Amazon SageMaker Unified Studio remote MCP server is invoked and picks the analysis based on how the run ended:
 + For a failed run, the Apache Spark Troubleshooting Agent finds the root cause and recommends fixes.
@@ -14,9 +13,9 @@ The Apache Spark agents analyze your Apache Spark workloads on Amazon EMR and AW
 
 The following diagram shows how the Apache Spark agents work. The numbers show the order of the steps.
 
-![Architecture of the Apache Spark Troubleshooting and Optimization Agents.](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/images/spark-agents-architecture.png)
+![Architecture of the Apache Spark agents: you ask from an MCP client or the Analyze with AI button, and the Amazon SageMaker Unified Studio remote MCP server reads your Spark workload data, extracts features, and generates recommendations. For failed runs, it also generates code recommendations, and guardrails apply at every stage.](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/images/spark-agents-architecture.png)
 
-You start by asking about your job run in natural language (1) from an MCP client in your development environment, or by choosing the **Analyze with AI** button in the console (2). An MCP client connects through the [MCP Proxy for AWS](https://github.com/aws/mcp-proxy-for-aws). The proxy runs on your machine, signs each request with SigV4 using the credentials from your AWS CLI profile, and forwards it to the Amazon SageMaker Unified Studio remote MCP server. The remote MCP server reads your job run data (3), analyzes it (4), and returns recommendations with explanations (6).
+You start by asking about your job run in natural language (1) from an MCP client in your development environment, or by choosing the **Analyze with AI** button in the console (2). An MCP client connects through the [MCP Proxy for AWS](https://github.com/aws/mcp-proxy-for-aws). The proxy runs on your machine, signs each request with SigV4 using the credentials from your AWS CLI profile, and forwards it to the Amazon SageMaker Unified Studio remote MCP server. The remote MCP server reads your job run data (3), analyzes it (4), proposes code fixes for failed runs when the issue is in your code (5), and returns recommendations with explanations (6).
 
 ### How the agents use your identity
 <a name="spark-agents-identity"></a>
@@ -25,7 +24,7 @@ Both agents act as the IAM identity that your MCP client is configured with. Tha
 
 For each request, the remote MCP server uses short-lived credentials for your identity to call Amazon EMR, AWS Glue, Amazon S3, and Amazon CloudWatch Logs, and to read Spark History Server or Spark UI data. The server doesn't use access of its own to read your resources, and it doesn't store your credentials.
 
-Requests made through the server carry the condition keys `aws:ViaAWSMCPService` and `aws:CalledViaAWSMCP`. You can use these keys to scope what the agents can do. For more information, see [Condition keys for MCP server requests](spark-troubleshooting-agent-iam-setup.md#spark-troubleshooting-agent-mcp-permissions-change).
+Requests made through the server carry the condition keys `aws:ViaAWSMCPService` and `aws:CalledViaAWSMCP`. You can use these keys to scope what the agents can do. For more information, see [How can I get more fine-grained control over the agents' permissions?](spark-troubleshooting-agent-iam-setup.md#qa-fine-grained-permissions).
 
 The agents only read data. They don't modify, start, or stop your jobs. For the policies that each platform needs, see [IAM permissions for the Apache Spark agents](spark-troubleshooting-agent-iam-setup.md).
 
@@ -38,16 +37,16 @@ Both agents apply the following guardrails:
 
 Each agent adds its own checks, some of which are described in the following sections.
 
-### Troubleshooting Agent
+### Troubleshooting agent
 <a name="spark-agents-troubleshooting-flow"></a>
 
-The Troubleshooting Agent runs on failed runs on EMR on EC2, EMR Serverless, EMR on EKS, and AWS Glue.
+The troubleshooting agent runs on failed runs on Amazon EMR on EC2, EMR Serverless, EMR on EKS, and AWS Glue.
 
 **Extracts features and builds context (3)**
 
 The agent reads evidence about the failed run from your platform:
 + **EMR on EC2** – Step and container logs from Amazon S3, and the EMR persistent UI.
-+ **EMR Serverless** – Driver and executor logs from Amazon S3, and the Spark History Server.
++ **EMR Serverless** – Driver and executor logs from Amazon S3 or Amazon CloudWatch Logs, and the Spark History Server.
 + **EMR on EKS** – Logs from Amazon S3 or Amazon CloudWatch Logs, and the persistent UI.
 + **AWS Glue** – Amazon CloudWatch Logs, and the Glue Studio Spark UI, built from the event logs.
 
@@ -55,7 +54,7 @@ On every platform, the agent also reads the run's Spark configuration and extrac
 
 **Analyzes the failure and recommends fixes (4)**
 
-A fast classification pass first identifies the type of error. For well-understood error types, deterministic rules drive the analysis directly. Otherwise, the agent retrieves matching guidance from its curated Spark troubleshooting knowledge base and generates the root cause and recommended fixes.
+Deterministic rules drive the analysis, along with relevant guidance that the agent retrieves from its curated Spark troubleshooting knowledge base. The agent then generates the root cause and recommended fixes.
 
 You get back the root cause and recommendations, plus which artifacts the agent could and couldn't analyze (`artifacts_analyzed`). If no code change is needed, the analysis ends here. When code recommendations apply, the response tells your MCP client to call `spark_code_recommendation`.
 
@@ -63,16 +62,16 @@ You get back the root cause and recommendations, plus which artifacts the agent 
 
 Code recommendations apply to code-related errors in PySpark jobs.
 
-The tool maps the parts of your script that are relevant to the error, applies fix guidance specific to the error type, and proposes code changes, along with `spark-submit` argument changes when they're needed. These are proposals only. The tool doesn't apply them.
+The tool maps the parts of your script that are relevant to the error, applies fix guidance specific to the error type, and proposes code changes, along with `spark-submit` argument changes when they're needed. These are proposals only. The tool does not apply them.
 
-Code recommendations add their own guardrails. For example, sensitive data in your script and stack trace is masked before it reaches the model, and then restored in the proposed changes so that they're usable. A content guardrail also runs on code generation.
+Code recommendations add their own guardrails. For example, sensitive data in your script and stack trace is masked before it reaches the model, then restored in the proposed changes so they're usable. A content guardrail also runs on code generation.
 
 For more information, see [Apache Spark Troubleshooting Agent for Amazon EMR and AWS Glue](spark-troubleshooting-agent.md).
 
-### Optimization Agent
+### Optimization agent
 <a name="spark-agents-optimization-flow"></a>
 
-The Optimization Agent runs only on successful runs on EMR Serverless and AWS Glue.
+The optimization agent runs only on successful runs on Amazon EMR Serverless and AWS Glue.
 
 **Extracts features and builds context (3)**
 
@@ -88,7 +87,7 @@ The agent combines the following to produce recommendations:
   + **Data** – Skew, stragglers, too few partitions, oversized tasks, and slow reads.
   + **Capacity** – Idle or underused capacity, right-sizing, backlog against the capacity ceiling, and contention for shared capacity.
   + **Execution** – Fetch failures, killed containers, oversized execution plans, and adaptive query execution settings.
-+ **Intent** – Your goal, cost or performance, comes from your prompt. A cost goal means lowering what the run costs to execute, and a performance goal means speeding up runtime. If you don't state a goal, the agent optimizes for performance. With a baseline and no stated goal, the agent uses whichever metric regressed. Intent-based models use your goal to decide which recommendations are allowed and how capacity is sized.
++ **Intent** – Your goal, cost or performance, comes from your prompt. A cost goal means lowering what the run costs to execute, and a performance goal means speeding runtime. If you don't state a goal, the agent optimizes for performance. With a baseline and no stated goal, the agent uses whichever metric regressed. Intent-based models use your goal to decide which recommendations are allowed and how capacity is sized.
 + **Knowledge base** – Spark tuning guidance curated by AWS engineers from their experience running Spark at scale, matched to your platform, version, and the issues found.
 + **Baseline comparison** – A baseline comparison happens only when you name a baseline by its run ID. The baseline must be an earlier run of the same job (AWS Glue) or the same application (EMR Serverless). The agent compares configuration, metrics, stages, and capacity, and determines how to mitigate the regression. If the baseline can't be used, the agent analyzes the current run on its own.
 
@@ -98,11 +97,11 @@ Before the agent returns results, deterministic rules drop or adjust recommendat
 + They drop settings that can't take effect.
 + They block changes that work against your goal, such as changes that raise cost under a cost goal, or capacity cuts that could slow the job under a performance goal.
 + They withhold capacity changes when nothing shows that capacity is the problem.
-+ They ensure that each recommendation is valid for the platform that it's for.
++ They ensure that each recommendation is valid for the platform it's for.
 
 You get back a summary, prioritized recommendations tagged `[config]`, `[infra]`, or `[data]`, recommended Spark properties with their current and recommended values, and the baseline comparison when one was used.
 
-The Optimization Agent doesn't support code recommendations through the `spark_code_recommendation` tool.
+The optimization agent doesn't support code recommendations through the `spark_code_recommendation` tool.
 
 For more information, see [Apache Spark Optimization Agent for Amazon EMR and AWS Glue](spark-optimization-agent.md).
 
@@ -114,7 +113,7 @@ The Amazon SageMaker Unified Studio remote MCP server provides the following too
 | Tool | MCP server | Used by |
 | --- | --- | --- |
 | analyze\_spark\_workload | sagemaker-unified-studio-mcp-troubleshooting | Both agents |
-| spark\_code\_recommendation | sagemaker-unified-studio-mcp-code-rec | Troubleshooting Agent only |
+| spark\_code\_recommendation | sagemaker-unified-studio-mcp-code-rec | Troubleshooting agent only |
 
 Your MCP client calls these tools based on your prompt.
 
@@ -129,18 +128,31 @@ The following table lists the features that each agent supports.
 | Supported platforms | EMR on EC2, EMR Serverless, EMR on EKS, AWS Glue, and Amazon SageMaker notebooks | EMR Serverless and AWS Glue |
 | Output | Root cause analysis and code fixes | Performance and cost analysis, and configuration and data recommendations |
 | Code recommendations | Yes | No |
-| Entry points | MCP clients, the Troubleshoot with AI button (EMR on EC2 and EMR on EKS consoles), the Analyze with AI button (EMR Serverless and AWS Glue consoles), and the notebook Fix with AI button | MCP clients and the Analyze with AI button (EMR Serverless and AWS Glue consoles) |
+| Entry points | MCP clients, the Troubleshoot with AI button (EMR on EC2 and EMR on EKS consoles), the Analyze with AI button (EMR Serverless and AWS Glue consoles), and the notebook Fix with AI button | MCP clients, the Analyze with AI button (EMR Serverless and AWS Glue consoles), and the notebook Fix with AI button |
 
 ## Pricing
 <a name="spark-agents-pricing"></a>
 
-The Apache Spark agents are available at no additional cost as part of Amazon EMR and AWS Glue. The agents provide analysis and recommendations. You pay only for the Amazon EMR or AWS Glue resources that you use, including any runs that you start to validate a recommended change.
+The Apache Spark agents are available at no additional cost as part of Amazon EMR and AWS Glue. The agents provide analysis and recommendations. You pay only for the Amazon EMR or AWS Glue resources that you use, including any runs you start to validate a recommended change.
+
+## Available Regions
+<a name="spark-agents-available-regions"></a>
+
+The Apache Spark agents are available in the following Regions:
++ **Asia Pacific**: Tokyo (ap-northeast-1), Seoul (ap-northeast-2), Singapore (ap-southeast-1), Sydney (ap-southeast-2), Mumbai (ap-south-1), Osaka (ap-northeast-3), Hong Kong (ap-east-1), Taipei (ap-east-2), Hyderabad (ap-south-2), Jakarta (ap-southeast-3), Melbourne (ap-southeast-4), Malaysia (ap-southeast-5), New Zealand (ap-southeast-6), and Thailand (ap-southeast-7)
++ **North America**: Canada (ca-central-1), Calgary (ca-west-1), and Mexico (mx-central-1)
++ **Europe**: Stockholm (eu-north-1), Ireland (eu-west-1), London (eu-west-2), Paris (eu-west-3), Frankfurt (eu-central-1), Zurich (eu-central-2), Milan (eu-south-1), and Spain (eu-south-2)
++ **Middle East**: Tel Aviv (il-central-1)
++ **Africa**: Cape Town (af-south-1)
++ **South America**: São Paulo (sa-east-1)
++ **United States**: N. Virginia (us-east-1), Ohio (us-east-2), Oregon (us-west-2), and N. California (us-west-1)
 
 **Topics**
 + [Architecture](#spark-troubleshooting-agent-architecture)
 + [Tools](#spark-agents-tools)
 + [Feature list for each agent](#spark-agents-features)
 + [Pricing](#spark-agents-pricing)
++ [Available Regions](#spark-agents-available-regions)
 + [Set up the Apache Spark agents](spark-troubleshooting-agent-setup.md)
 + [IAM permissions for the Apache Spark agents](spark-troubleshooting-agent-iam-setup.md)
 + [Apache Spark Troubleshooting Agent for Amazon EMR and AWS Glue](spark-troubleshooting-agent.md)

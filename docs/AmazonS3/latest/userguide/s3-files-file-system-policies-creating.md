@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-file-
 ---
 
 # Creating file system policies
-<a name="s3-files-file-system-policies-creating"></a>
 
 You can use file system policies to grant or deny permissions for NFS clients to perform operations such as mounting, writing, and root access on your file systems. A file system either has an empty (default) file system policy or exactly one explicit policy. You can update your file system policy at any time after file system creation using the AWS Management Console, AWS CLI, or AWS SDK.
 

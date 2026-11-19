@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/Troublesh
 ---
 
 # Troubleshoot Direct Connect
-<a name="Troubleshooting"></a>
 
 The following troubleshooting information can help you diagnose and fix issues with your Direct Connect connection.
 

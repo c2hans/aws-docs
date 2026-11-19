@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteE
 ---
 
 # DeleteEnvironmentBlueprint
-<a name="API_DeleteEnvironmentBlueprint"></a>
 
 Deletes a blueprint in Amazon DataZone.
 

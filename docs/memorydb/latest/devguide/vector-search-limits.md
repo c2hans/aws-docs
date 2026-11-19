@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-l
 ---
 
 # Vector search features and limits
-<a name="vector-search-limits"></a>
 
 ## Vector search availability
 <a name="vector-search-availability"></a>

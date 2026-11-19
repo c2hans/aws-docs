@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSourceErrorInfo
-<a name="API_DataSourceErrorInfo"></a>
 
 Error information for the data source creation or update.
 

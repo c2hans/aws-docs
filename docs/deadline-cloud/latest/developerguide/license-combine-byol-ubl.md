@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/lic
 ---
 
 # Combining BYOL and UBL
-<a name="license-combine-byol-ubl"></a>
 
 You can combine BYOL and UBL so that your workers use your existing licenses first and automatically fall back to Deadline Cloud usage-based licenses when your BYOL licenses are exhausted. This approach is useful when you have a limited number of existing licenses but need to scale beyond that capacity during peak workloads.
 

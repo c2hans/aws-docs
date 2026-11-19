@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-agentc
 ---
 
 # Use your Step Functions workflows as tools for AI agents
-<a name="tutorial-agentcore-gateway"></a>
 
 You can let AI agents run your Step Functions workflows by exposing a state machine as Model Context Protocol (MCP) tools through Amazon Bedrock AgentCore Gateway. An agent connected to the gateway can start executions, check their status and output, read the event history, and stop executions. You don't need to write a Lambda function or define the tools yourself. The gateway creates the tool schemas and calls Step Functions for the agent.
 

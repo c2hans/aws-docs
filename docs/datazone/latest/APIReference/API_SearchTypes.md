@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchT
 ---
 
 # SearchTypes
-<a name="API_SearchTypes"></a>
 
 Searches for types in Amazon DataZone.
 

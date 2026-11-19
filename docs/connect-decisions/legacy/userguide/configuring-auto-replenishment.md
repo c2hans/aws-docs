@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/confi
 ---
 
 # Configuring Auto Replenishment
-<a name="configuring-auto-replenishment"></a>
 
 By using Auto Replenishment, you can view the amount of inventory to hold and when to order more inventory by automating inventory management.
 

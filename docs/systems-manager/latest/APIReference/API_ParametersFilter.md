@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ParametersFilter
-<a name="API_ParametersFilter"></a>
 
 This data type is deprecated. Instead, use [ParameterStringFilter](API_ParameterStringFilter.md).
 

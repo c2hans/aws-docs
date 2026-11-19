@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_MicrovmIma
 ---
 
 # MicrovmImageVersionSummary
-<a name="API_MicrovmImageVersionSummary"></a>
 
 Contains summary information about a version of a MicroVM image.
 

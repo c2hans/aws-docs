@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/join-ty
 ---
 
 # Join types
-<a name="join-types"></a>
 
 ## INNER
 <a name="inner-join"></a>

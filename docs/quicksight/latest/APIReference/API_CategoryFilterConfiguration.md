@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Categ
 ---
 
 # CategoryFilterConfiguration
-<a name="API_CategoryFilterConfiguration"></a>
 
 The configuration for a `CategoryFilter`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateS
 ---
 
 # TerminateServiceJobs
-<a name="API_TerminateServiceJobs"></a>
 
 Terminates up to 50 service jobs in a job queue. This is a bulk version of [TerminateServiceJob](API_TerminateServiceJob.md).
 

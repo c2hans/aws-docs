@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/service_co
 ---
 
 # Basic examples for Route 53 using AWS SDKs
-<a name="service_code_examples_route-53_basics"></a>
 
 The following code examples show how to use the basics of Amazon Route 53 with AWS SDKs.
 

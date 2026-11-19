@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 ---
 
 # Encryption at rest for AgentCore Evaluations
-<a name="evaluations-encryption"></a>
 
 **Note**
 This page covers customer managed key encryption for custom evaluators. For dataset encryption, see [Dataset encryption](datasets-encryption.md).

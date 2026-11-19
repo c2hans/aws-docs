@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-endpoint
 ---
 
 # Endpoint overrides
-<a name="odbc-v2-driver-endpoint-overrides"></a>
 
 ## Athena endpoint override
 <a name="odbc-v2-driver-endpoint-overrides-athena"></a>

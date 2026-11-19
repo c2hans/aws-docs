@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-use-a
 ---
 
 # Use the SageMaker model parallelism library v2
-<a name="model-parallel-use-api-v2"></a>
 
 On this page, you'll learn how to use the SageMaker model parallelism library v2 APIs and get started with running a PyTorch Fully Sharded Data Parallel (FSDP) training job in the SageMaker Training platform or on a SageMaker HyperPod cluster.
 

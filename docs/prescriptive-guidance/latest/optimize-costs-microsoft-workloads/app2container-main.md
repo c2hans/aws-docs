@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Replatform Windows applications with App2Container
-<a name="app2container-main"></a>
 
 ## Overview
 <a name="app2container-overview"></a>

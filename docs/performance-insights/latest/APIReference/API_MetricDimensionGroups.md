@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # MetricDimensionGroups
-<a name="API_MetricDimensionGroups"></a>
 
 The available dimension information for a metric type.
 

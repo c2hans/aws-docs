@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/ambbtc-dg/gett
 End of support notice: Amazon Managed Blockchain will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain. For more information, see [Amazon Managed Blockchain end of support](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
 
 # Getting started with Amazon Managed Blockchain (AMB) Access Bitcoin
-<a name="getting-started"></a>
 
 Use the step-by-step tutorials in this section to learn how to perform tasks by using Amazon Managed Blockchain (AMB) Access Bitcoin. These examples require you to complete some prerequisites. If you are new to AMB Access Bitcoin, review the *Setting up* section of this guide to make sure you have completed those prerequisites. For more information, see [Setting up Amazon Managed Blockchain (AMB) Access Bitcoin](bitcoin-setting-up.md).
 

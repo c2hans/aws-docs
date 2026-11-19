@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Architecture details
-<a name="components"></a>
 
 ## Migration automation server
 <a name="comp-mes"></a>

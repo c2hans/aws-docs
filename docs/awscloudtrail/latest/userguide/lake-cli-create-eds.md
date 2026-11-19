@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Create an event data store with the AWS CLI
-<a name="lake-cli-create-eds"></a>
 
 This section describes how to use the [`create-event-data-store`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html) command to create an event data store and provides examples of different types of event data stores that you can create.
 

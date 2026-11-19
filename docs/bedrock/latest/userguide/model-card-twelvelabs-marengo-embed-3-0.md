@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twel
 ---
 
 # Marengo Embed 3.0
-<a name="model-card-twelvelabs-marengo-embed-3-0"></a>
 
 ## ![TwelveLabs logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/twelvelabs.png) TwelveLabs — Marengo Embed 3.0
 <a name="model-card-twelvelabs-marengo-embed-3-0-header"></a>

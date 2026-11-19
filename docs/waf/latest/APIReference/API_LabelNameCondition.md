@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_LabelNameCon
 ---
 
 # LabelNameCondition
-<a name="API_LabelNameCondition"></a>
 
 A single label name condition for a [Condition](API_Condition.md) in a logging filter.
 

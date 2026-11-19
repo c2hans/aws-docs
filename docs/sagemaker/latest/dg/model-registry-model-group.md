@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-model
 ---
 
 # Create a Model Group
-<a name="model-registry-model-group"></a>
 
 A Model Group contains different versions of a model. You can create a Model Group that tracks all of the models that you train to solve a particular problem. Create a Model Group by using either the AWS SDK for Python (Boto3) or the Amazon SageMaker Studio console.
 

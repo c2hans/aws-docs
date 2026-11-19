@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateVpcCidrBlock
-<a name="API_DisassociateVpcCidrBlock"></a>
 
 Disassociates a CIDR block from a VPC. To disassociate the CIDR block, you must specify its association ID. You can get the association ID by using [DescribeVpcs](API_DescribeVpcs.md). You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.
 

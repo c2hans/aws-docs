@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ---
 
 # Enable Amazon GuardDuty conditionally by using AWS CloudFormation templates
-<a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

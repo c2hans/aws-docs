@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateCustomEntit
 ---
 
 # CreateCustomEntityType
-<a name="API_CreateCustomEntityType"></a>
 
 Creates a custom pattern that is used to detect sensitive data across the columns and rows of your structured data.
 

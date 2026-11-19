@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentCon
 ---
 
 # AgentConfig
-<a name="API_AgentConfig"></a>
 
 The distribution of agents between the instance and its replica(s).
 

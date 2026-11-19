@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayRouteTableAssociation
-<a name="aws-resource-ec2-transitgatewayroutetableassociation"></a>
 
 Associates the specified attachment with the specified transit gateway route table. You can associate one route table with an attachment.
 

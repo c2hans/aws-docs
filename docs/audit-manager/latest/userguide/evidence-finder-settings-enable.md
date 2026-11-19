@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Enabling evidence finder
-<a name="evidence-finder-settings-enable"></a>
 
 You can enable the evidence finder feature in Audit Manager to search for evidence in your AWS account. If you're a delegated administrator for Audit Manager, you can search for evidence for all member accounts in your organization.
 

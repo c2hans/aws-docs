@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # OpenTelemetry
-<a name="CloudWatch-OpenTelemetry-Sections"></a>
 
 **Tip**
 To learn more about OpenTelemetry on CloudWatch, check out the [Cloud Operations Enablement workshop and event series](https://aws-experience.com/amer/smb/events/series/Cloud-Operations-Enablement).

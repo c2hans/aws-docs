@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-restore.h
 ---
 
 # **eb restore**
-<a name="eb3-restore"></a>
 
 ## Description
 <a name="eb3-restoredescription"></a>

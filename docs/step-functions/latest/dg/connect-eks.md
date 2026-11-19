@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-eks.htm
 ---
 
 # Create and manage Amazon EKS clusters with Step Functions
-<a name="connect-eks"></a>
 
 Learn how to integrate Step Functions with Amazon EKS to manage Kubernetes clusters. Step Functions provides two types of service integration APIs for integrating with Amazon Elastic Kubernetes Service. One lets you use the Amazon EKS APIs to create and manage an Amazon EKS cluster. The other lets you interact with your cluster using the Kubernetes API and run jobs as part of your application’s workflow.
 
@@ -636,4 +635,4 @@ The following example templates show how AWS Step Functions generates IAM polici
 }
 ```
 
-For more information about using Amazon EKS with Step Functions, see [Create and manage Amazon EKS clusters with Step Functions](#connect-eks).
+For more information about using Amazon EKS with Step Functions, see [Create and manage Amazon EKS clusters with Step Functions](connect-eks.md).

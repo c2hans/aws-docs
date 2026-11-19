@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # UpdateServiceLevelObjective
-<a name="API_UpdateServiceLevelObjective"></a>
 
 Updates an existing service level objective (SLO). If you omit parameters, the previous values of those parameters are retained.
 

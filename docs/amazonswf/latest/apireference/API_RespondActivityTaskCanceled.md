@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Respon
 ---
 
 # RespondActivityTaskCanceled
-<a name="API_RespondActivityTaskCanceled"></a>
 
 Used by workers to tell the service that the [ActivityTask](API_ActivityTask.md) identified by the `taskToken` was successfully canceled. Additional `details` can be provided using the `details` argument.
 

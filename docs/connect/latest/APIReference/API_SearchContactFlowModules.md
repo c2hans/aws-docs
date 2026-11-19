@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCo
 ---
 
 # SearchContactFlowModules
-<a name="API_SearchContactFlowModules"></a>
 
 Searches the flow modules in an Connect Customer instance, with optional filtering.
 

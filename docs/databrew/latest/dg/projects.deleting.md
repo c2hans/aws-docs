@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/projects.deleting.htm
 ---
 
 # Deleting a project
-<a name="projects.deleting"></a>
 
 If you no longer need a project, you can delete it.
 

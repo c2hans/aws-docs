@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk introduces Amazon EventBridge integration on November 04, 2020
-<a name="release-2020-11-04-eventbridge"></a>
 
 AWS Elastic Beanstalk added integration with the Amazon EventBridge service. You can use EventBridge to detect and react to changes in the status of your Elastic Beanstalk resources.
 

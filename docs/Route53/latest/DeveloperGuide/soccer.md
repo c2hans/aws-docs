@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/soccer.htm
 ---
 
 # .soccer
-<a name="soccer"></a>
 
 Used for websites dedicated to the game of soccer.
 

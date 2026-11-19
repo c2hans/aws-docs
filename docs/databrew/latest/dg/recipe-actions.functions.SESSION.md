@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # SESSION
-<a name="recipe-actions.functions.SESSION"></a>
 
 Returns in a new column a session identifier based on a window created by column names from "group by" and "order by" statements.
 

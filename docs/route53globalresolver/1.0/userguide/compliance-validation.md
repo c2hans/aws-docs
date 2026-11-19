@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/comp
 ---
 
 # Compliance validation for Amazon Route 53 Global Resolver
-<a name="compliance-validation"></a>
 
 ## Amazon Route 53 Global Resolver compliance features
 <a name="compliance-features"></a>

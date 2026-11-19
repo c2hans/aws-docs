@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_TrendsM
 ---
 
 # TrendsMetricsResult
-<a name="API_TrendsMetricsResult"></a>
 
 Contains the findings trend metrics data for a specific time point in the requested time period.
 

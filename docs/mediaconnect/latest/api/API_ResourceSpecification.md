@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ResourceSpec
 ---
 
 # ResourceSpecification
-<a name="API_ResourceSpecification"></a>
 
  A definition of what is being billed for, including the type and amount.
 

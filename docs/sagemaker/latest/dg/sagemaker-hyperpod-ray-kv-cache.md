@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Managed tiered KV cache and routing
-<a name="sagemaker-hyperpod-ray-kv-cache"></a>
 
 Large language model serving spends compute rebuilding the key-value (KV) cache for tokens it has already processed. HyperPod adds a managed two-tier KV cache and prefix-aware routing to Ray Serve, which cut redundant recomputation and lower time to first token for long-context and multi-turn workloads.
 

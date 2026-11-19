@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/doc-hi
 ---
 
 # Document History for Conductor Live API Guide
-<a name="doc-history"></a>
 
 The following table describes the release history of this guide.
 + **API version:** 3.25

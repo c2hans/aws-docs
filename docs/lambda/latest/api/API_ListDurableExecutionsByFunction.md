@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListDurableExecuti
 ---
 
 # ListDurableExecutionsByFunction
-<a name="API_ListDurableExecutionsByFunction"></a>
 
 Returns a list of [durable executions](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html) for a specified Lambda function. You can filter the results by execution name, status, and start time range. This API supports pagination for large result sets.
 

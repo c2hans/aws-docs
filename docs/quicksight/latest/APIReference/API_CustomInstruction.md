@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomInstruction
-<a name="API_CustomInstruction"></a>
 
 A custom instruction that provides guidance on how the dataset should be consumed.
 

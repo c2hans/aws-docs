@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Creating a function
-<a name="functions-create"></a>
 
 A function is an account-level resource. Creating one has no effect on any feed and starts no processing – you attach it to a feed in a separate step. For more information, see [Attaching a function to a feed](functions-attach.md).
 

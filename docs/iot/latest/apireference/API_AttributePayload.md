@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AttributePay
 ---
 
 # AttributePayload
-<a name="API_AttributePayload"></a>
 
 The attribute payload.
 

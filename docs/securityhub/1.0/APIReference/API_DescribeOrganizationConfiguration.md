@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Describ
 ---
 
 # DescribeOrganizationConfiguration
-<a name="API_DescribeOrganizationConfiguration"></a>
 
 Returns information about the way your organization is configured in AWS Security Hub CSPM. Only the Security Hub CSPM administrator account can invoke this operation.
 

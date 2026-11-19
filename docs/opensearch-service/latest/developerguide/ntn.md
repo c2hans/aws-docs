@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Node-to-node encryption for Amazon OpenSearch Service
-<a name="ntn"></a>
 
 Node-to-node encryption provides an additional layer of security on top of the default features of Amazon OpenSearch Service.
 

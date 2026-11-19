@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/securi
 ---
 
 # Application Auto Scaling identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, a brand new user in your AWS account has no permissions to do anything. An IAM administrator must create and assign IAM policies that give an IAM identity (such as a user or role) permission to perform Application Auto Scaling API actions.
 

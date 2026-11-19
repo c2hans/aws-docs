@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DeviceInstance
-<a name="API_DeviceInstance"></a>
 
 Represents the device instance.
 

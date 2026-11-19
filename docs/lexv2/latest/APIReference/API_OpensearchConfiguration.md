@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Opensearch
 ---
 
 # OpensearchConfiguration
-<a name="API_OpensearchConfiguration"></a>
 
 Contains details about the configuration of the Amazon OpenSearch Service database used for the `AMAZON.QnAIntent`.
 

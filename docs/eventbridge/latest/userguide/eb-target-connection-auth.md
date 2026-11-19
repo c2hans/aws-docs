@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-c
 ---
 
 # Authorization methods for connections in EventBridge
-<a name="eb-target-connection-auth"></a>
 
 EventBridge connections support the following authorization methods:
 + Basic

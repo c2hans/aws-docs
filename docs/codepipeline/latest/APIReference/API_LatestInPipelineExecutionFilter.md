@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lat
 ---
 
 # LatestInPipelineExecutionFilter
-<a name="API_LatestInPipelineExecutionFilter"></a>
 
 The field that specifies to filter on the latest execution in the pipeline.
 

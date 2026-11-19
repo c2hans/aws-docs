@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/re
 ---
 
 # Real-time performance stats
-<a name="realtime-performance-stats"></a>
 
 Amazon GameLift Streams collects performance stats during active stream sessions, measuring resource utilization every second. Use these stats to monitor your application's performance, identify resource bottlenecks, and optimize your streaming experience.
 

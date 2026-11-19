@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Serv
 ---
 
 # ServerMigrationServiceRoleForInstanceValidation
-<a name="ServerMigrationServiceRoleForInstanceValidation"></a>
 
 **Description**: Permissions to allow the AWS SMS to run used data validation script and send script success/failure back to SMS
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Security OU – Log Archive account
-<a name="log-archive"></a>
 
 The following diagram illustrates the AWS security services that are configured in the Log Archive account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/UNHEX.h
 ---
 
 # UNHEX function
-<a name="UNHEX"></a>
 
 The UNHEX function converts a hexadecimal string back to its original string representation.
 

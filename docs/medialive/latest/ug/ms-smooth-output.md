@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ms-smooth-output.htm
 ---
 
 # Microsoft Smooth output
-<a name="ms-smooth-output"></a>
 
 In a Microsoft Smooth output, MediaLive supports SCTE 35 features as follows:
 + Passthrough of the SCTE 35 messages – Not applicable. SCTE 35 messages are never included in this output.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningJobConfig
-<a name="API_HyperParameterTuningJobConfig"></a>
 
 Configures a hyperparameter tuning job.
 

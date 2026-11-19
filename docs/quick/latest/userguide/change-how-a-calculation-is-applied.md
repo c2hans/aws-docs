@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/change-how-a-calc
 ---
 
 # Changing how a calculation is applied
-<a name="change-how-a-calculation-is-applied"></a>
 
 Use the following procedure to change the way a table calculation is applied to a pivot table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/usi
 ---
 
 # Presigned URLs and requests with AWS SDK for Swift
-<a name="using-presigning"></a>
 
 ## Overview
 <a name="presigned-overview"></a>

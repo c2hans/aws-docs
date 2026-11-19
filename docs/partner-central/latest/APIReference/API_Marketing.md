@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Marketing
-<a name="API_Marketing"></a>
 
 An object that contains marketing details for the `Opportunity`.
 

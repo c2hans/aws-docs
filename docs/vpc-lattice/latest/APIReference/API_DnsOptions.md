@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DnsO
 ---
 
 # DnsOptions
-<a name="API_DnsOptions"></a>
 
  The DNS configuration options.
 

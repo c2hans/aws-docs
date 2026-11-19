@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-ibm-db2-as40
 ---
 
 # Amazon Athena IBM Db2 AS/400 (Db2 iSeries) connector
-<a name="connectors-ibm-db2-as400"></a>
 
 The Amazon Athena connector for Db2 AS/400 enables Amazon Athena to run SQL queries on your IBM Db2 AS/400 (Db2 iSeries) databases using JDBC.
 

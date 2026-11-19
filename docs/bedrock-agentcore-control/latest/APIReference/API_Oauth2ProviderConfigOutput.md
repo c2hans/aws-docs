@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Oauth2ProviderConfigOutput
-<a name="API_Oauth2ProviderConfigOutput"></a>
 
 Contains the output configuration for an OAuth2 provider.
 

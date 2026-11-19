@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Targe
 ---
 
 # TargetedSentimentEntity
-<a name="API_TargetedSentimentEntity"></a>
 
 Information about one of the entities found by targeted sentiment analysis.
 

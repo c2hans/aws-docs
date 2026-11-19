@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Location.html
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 Describes an Amazon S3 location that will receive the results of the restore request.
 

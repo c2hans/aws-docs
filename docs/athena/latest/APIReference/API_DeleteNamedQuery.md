@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNam
 ---
 
 # DeleteNamedQuery
-<a name="API_DeleteNamedQuery"></a>
 
 Deletes the named query if you have access to the workgroup in which the query was saved.
 

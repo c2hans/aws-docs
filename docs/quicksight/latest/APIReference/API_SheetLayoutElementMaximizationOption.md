@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetLayoutElementMaximizationOption
-<a name="API_SheetLayoutElementMaximizationOption"></a>
 
 The sheet layout maximization options of a dashbaord.
 

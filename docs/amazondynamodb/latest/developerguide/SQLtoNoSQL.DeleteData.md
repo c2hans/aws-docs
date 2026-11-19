@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when deleting data from a table
-<a name="SQLtoNoSQL.DeleteData"></a>
 
 In SQL, the `DELETE` statement removes one or more rows from a table. Amazon DynamoDB uses the `DeleteItem` operation to delete one item at a time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/testing-simula
 ---
 
 # Observe block
-<a name="testing-simulation-observe-block"></a>
 
 The Observe block is a fundamental component of the testing framework that defines what system events you want to monitor during test execution. Think of it as setting up checkpoints in your test where you wait for specific things to happen before taking action.
 

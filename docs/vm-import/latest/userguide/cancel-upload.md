@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/cancel-upload
 ---
 
 # Cancel an import image task
-<a name="cancel-upload"></a>
 
 After you start an image import task using VM Import/Export, you can cancel the import operation if needed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ORDER_B
 ---
 
 # ORDER BY clause
-<a name="ORDER_BY_clause"></a>
 
 The ORDER BY clause sorts the result set of a query.
 

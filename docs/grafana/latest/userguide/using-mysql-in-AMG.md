@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-mysql-in-
 ---
 
 # Connect to a MySQL data source
-<a name="using-mysql-in-AMG"></a>
 
  Add the MySQL data source to be able to query and visualize data from a MySQL compatible database.
 

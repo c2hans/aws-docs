@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/watch.html
 ---
 
 # .watch
-<a name="watch"></a>
 
 Used for information about streaming websites, web TVs, video, or watches.
 

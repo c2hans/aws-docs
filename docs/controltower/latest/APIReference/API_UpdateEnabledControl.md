@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Upd
 ---
 
 # UpdateEnabledControl
-<a name="API_UpdateEnabledControl"></a>
 
 Updates the configuration of an already enabled control.
 

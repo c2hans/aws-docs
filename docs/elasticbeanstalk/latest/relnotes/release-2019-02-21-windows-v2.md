@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk Windows Server platform update to new major version 2 on February 21, 2019
-<a name="release-2019-02-21-windows-v2"></a>
 
 This release introduces Windows Server platform version 2 (v2)—a new major version that brings the platform closer to the Elastic Beanstalk Linux-based platforms.
 

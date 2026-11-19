@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_F
 ---
 
 # FormInputCardInput
-<a name="API_qapps_FormInputCardInput"></a>
 
 Represents a form input card for an Amazon Q App.
 

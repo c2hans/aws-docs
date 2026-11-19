@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PciId.htm
 ---
 
 # PciId
-<a name="API_PciId"></a>
 
 Describes the data that identifies an Amazon FPGA image (AFI) on the PCI bus.
 

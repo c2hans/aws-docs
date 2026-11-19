@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Dashboard Body Structure and Syntax
-<a name="CloudWatch-Dashboard-Body-Structure"></a>
 
 **Topics**
 + [Overall Structure](#Dashboard-Body-Overall-Structure)

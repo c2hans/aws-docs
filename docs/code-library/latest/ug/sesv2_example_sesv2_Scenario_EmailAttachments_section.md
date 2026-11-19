@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sesv2_example_ses
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Send emails with attachments using Amazon SES API v2
-<a name="sesv2_example_sesv2_Scenario_EmailAttachments_section"></a>
 
 The following code example shows how to send emails with attachments using Amazon SES API v2.
 + Create an email template for bulk sends.

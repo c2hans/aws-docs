@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_RackSpe
 ---
 
 # RackSpecificationDetails
-<a name="API_RackSpecificationDetails"></a>
 
 The physical specification details for a rack in a quote option.
 

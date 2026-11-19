@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/optimize-ram.ht
 ---
 
 # Updating cross-account data sharing version settings
-<a name="optimize-ram"></a>
 
  From time to time, AWS Lake Formation updates the cross-account data sharing settings to distinguish the changes made to the AWS RAM usage and to support updates made to the cross-account data sharing feature. When Lake Formation does this, it creates a new version of the **Cross account version settings**.
 

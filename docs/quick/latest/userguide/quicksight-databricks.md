@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-databr
 ---
 
 # Using Databricks in Quick Sight
-<a name="quicksight-databricks"></a>
 
 Use this section to learn how to connect from Quick Sight to Databricks.
 

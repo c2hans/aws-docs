@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ProblemD
 ---
 
 # ProblemDetail
-<a name="API_ProblemDetail"></a>
 
 Information about a problem detail.
 

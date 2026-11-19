@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/machine-lea
 ---
 
 # Machine learning components
-<a name="machine-learning-components"></a>
 
 AWS IoT Greengrass provides the following machine learning components that you can deploy to supported devices to [perform machine learning inference](perform-machine-learning-inference.md) using models trained in Amazon SageMaker AI or with your own pre-trained models that are stored in Amazon S3. <a name="ml-component-types"></a>
 

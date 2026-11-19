@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EpisodicReflectionOverride
-<a name="API_EpisodicReflectionOverride"></a>
 
 Contains configurations to override the default reflection step for the episodic memory strategy.
 

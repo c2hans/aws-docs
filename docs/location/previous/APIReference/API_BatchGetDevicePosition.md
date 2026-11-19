@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchGetDevicePosition
-<a name="API_BatchGetDevicePosition"></a>
 
 Lists the latest device positions for requested devices.
 

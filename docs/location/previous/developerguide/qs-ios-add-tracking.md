@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Add Amazon Location tracking to your application
-<a name="qs-ios-add-tracking"></a>
 
 The last step for your application is to add tracking functionality to your app. In this case, you will add start tracking, stop tracking, fetch and display tracker points on your app.
 

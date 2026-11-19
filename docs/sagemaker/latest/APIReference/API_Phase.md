@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Phase.
 ---
 
 # Phase
-<a name="API_Phase"></a>
 
 Defines the traffic pattern.
 

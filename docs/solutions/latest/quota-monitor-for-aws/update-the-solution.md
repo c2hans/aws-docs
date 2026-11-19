@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/u
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 If you previously deployed the solution, follow these procedures to get the latest version of the solution’s framework.
 

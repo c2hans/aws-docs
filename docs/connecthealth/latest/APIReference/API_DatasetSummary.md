@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Da
 ---
 
 # DatasetSummary
-<a name="API_DatasetSummary"></a>
 
 Summary information about a Dataset.
 

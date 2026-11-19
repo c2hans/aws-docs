@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/resource-configura
 ---
 
 # Resource configurations for VPC resources
-<a name="resource-configuration"></a>
 
 A resource configuration represents an individual resource, a group of resources, or a list of Classless Inter-Domain Routing (CIDR) ranges that you want to make accessible to clients in other VPCs and accounts. By defining a resource configuration, you can allow private, secure, unidirectional network connectivity to resources in your VPC from clients in other VPCs and accounts. A resource configuration is associated with a resource gateway through which it receives traffic. For a resource to be accessed from another VPC, it needs to have a resource configuration.
 

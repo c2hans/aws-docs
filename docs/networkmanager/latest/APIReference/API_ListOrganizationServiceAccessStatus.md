@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListOrganizationServiceAccessStatus
-<a name="API_ListOrganizationServiceAccessStatus"></a>
 
 Gets the status of the Service Linked Role (SLR) deployment for the accounts in a given Amazon Web Services Organization.
 

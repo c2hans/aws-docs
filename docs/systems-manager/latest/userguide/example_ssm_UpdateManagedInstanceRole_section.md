@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `UpdateManagedInstanceRole` with a CLI
-<a name="example_ssm_UpdateManagedInstanceRole_section"></a>
 
 The following code examples show how to use `UpdateManagedInstanceRole`.
 

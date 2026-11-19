@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/large-message-payloads.htm
 ---
 
 # Publishing large messages with Amazon SNS
-<a name="large-message-payloads"></a>
 
 Amazon SNS supports message payloads up to 1 MiB (1,048,576 bytes) when you configure the `MaximumMessageSize` topic attribute. By default, topics accept messages up to 256 KiB. Topics with `MaximumMessageSize` set above 256 KiB support Amazon Data Firehose, Amazon SQS, and AWS Lambda subscriptions, with up to 100 total subscriptions per topic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Cross-Region and cross-account data access
-<a name="application-cross-region-cross-account"></a>
 
 OpenSearch UI supports accessing data from OpenSearch domains across different AWS accounts and AWS Regions. You can choose from two approaches depending on your requirements. The following table compares the two approaches.
 

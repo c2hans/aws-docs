@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-channel-flows.
 ---
 
 # Using channel flows to process messages for Amazon Chime SDK messaging
-<a name="using-channel-flows"></a>
 
 You use channel flows to run business logic on in-flight messages before they're delivered to recipients in a messaging channel. Channel flows can perform actions such as removing government ID numbers, phone numbers, or profanity from messages. You can also use channel flows to perform functions such as aggregating responses to a poll before sending the results back to participants.
 

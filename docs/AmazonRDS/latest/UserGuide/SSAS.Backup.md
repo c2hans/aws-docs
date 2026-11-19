@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSAS.Backup.h
 ---
 
 # Backing up an SSAS database
-<a name="SSAS.Backup"></a>
 
 You can create SSAS database backup files only in the `D:\S3` folder on the DB instance. To move the backup files to your S3 bucket, use Amazon S3.
 

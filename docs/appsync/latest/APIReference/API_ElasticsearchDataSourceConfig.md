@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Elastics
 ---
 
 # ElasticsearchDataSourceConfig
-<a name="API_ElasticsearchDataSourceConfig"></a>
 
 Describes an OpenSearch data source configuration.
 

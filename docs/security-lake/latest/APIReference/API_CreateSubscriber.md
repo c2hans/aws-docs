@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cr
 ---
 
 # CreateSubscriber
-<a name="API_CreateSubscriber"></a>
 
 Creates a subscriber for accounts that are already enabled in Amazon Security Lake. You can create a subscriber with access to data in the current AWS Region.
 

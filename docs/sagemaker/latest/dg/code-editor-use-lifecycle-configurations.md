@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-use-life
 ---
 
 # Code Editor lifecycle configurations
-<a name="code-editor-use-lifecycle-configurations"></a>
 
 You can use Code Editor lifecycle configurations to automate customization for your Studio environment. This customization includes installing custom packages, configuring extensions, preloading datasets, and setting up source code repositories
 

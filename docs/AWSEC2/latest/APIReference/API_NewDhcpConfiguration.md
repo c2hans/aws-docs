@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NewDhcpCo
 ---
 
 # NewDhcpConfiguration
-<a name="API_NewDhcpConfiguration"></a>
 
 Describes a DHCP configuration option.
 

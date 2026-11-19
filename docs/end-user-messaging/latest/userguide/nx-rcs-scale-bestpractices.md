@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Best practices
-<a name="nx-rcs-scale-bestpractices"></a>
 
 RCS lets you send richer, more interactive messages than SMS, and the practices that make an RCS program successful are different as a result. Design your messages as conversations, reach every recipient with SMS fallback, keep your media efficient, and test before you launch. The following practices help you get the most from the channel.
 

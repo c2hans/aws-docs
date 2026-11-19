@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_XksProxyConf
 ---
 
 # XksProxyConfigurationType
-<a name="API_XksProxyConfigurationType"></a>
 
 Detailed information about the external key store proxy (XKS proxy). Your external key store proxy translates AWS KMS requests into a format that your external key manager can understand. These fields appear in a [DescribeCustomKeyStores](API_DescribeCustomKeyStores.md) response only when the `CustomKeyStoreType` is `EXTERNAL_KEY_STORE`.
 

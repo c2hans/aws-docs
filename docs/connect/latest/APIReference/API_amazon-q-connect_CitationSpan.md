@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # CitationSpan
-<a name="API_amazon-q-connect_CitationSpan"></a>
 
 Contains information about where the text with a citation begins and ends in the generated output.
 

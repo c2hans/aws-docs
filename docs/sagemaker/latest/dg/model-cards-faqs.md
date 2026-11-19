@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards-faqs.htm
 ---
 
 # Model card FAQs
-<a name="model-cards-faqs"></a>
 
 Refer to the following FAQ items for answers to commonly asked questions about Amazon SageMaker Model Card.
 

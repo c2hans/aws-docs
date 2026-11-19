@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGu
 ---
 
 # CreateGuardrail
-<a name="API_CreateGuardrail"></a>
 
 Creates a guardrail to detect and filter harmful content in your generative AI application.
 

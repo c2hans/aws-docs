@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # HTTP header modification for your Application Load Balancer
-<a name="header-modification"></a>
 
 HTTP header modification is supported by Application Load Balancers, for both request and response headers. Without having to update your application code, header modification allows you more control over your application's traffic and security.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterRestoreStatus
-<a name="API_AwsRedshiftClusterRestoreStatus"></a>
 
 Information about the status of a cluster restore action. It only applies if the cluster was created by restoring a snapshot.
 

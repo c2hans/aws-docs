@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationConfigRule
-<a name="API_OrganizationConfigRule"></a>
 
 An organization AWS Config rule that has information about AWS Config rules that AWS Config creates in member accounts.
 

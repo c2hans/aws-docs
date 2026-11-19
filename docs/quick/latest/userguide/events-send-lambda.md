@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/events-send-lambd
 ---
 
 # Creating rules to send AWS Quick Sight events to AWS Lambda
-<a name="events-send-lambda"></a>
 
 In this tutorial, you create an AWS Lambda function that logs the asset events in the AWS Quick Sight account. You then create a rule that runs the function whenever there is an asset change. This tutorial assumes that you already signed up for AWS Quick Sight.
 

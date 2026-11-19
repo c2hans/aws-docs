@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Amazon RDS on Outposts overview
-<a name="chap-sql-server-aurora-pg.tools.rdsoutposts"></a>
 
 This topic provides conceptual information about Amazon RDS on Outposts, a service that extends Amazon RDS capabilities to on-premises environments. You can learn about how this service enables you to run fully managed databases in your own data centers or co-location facilities, offering low-latency access to local systems and data processing capabilities.
 

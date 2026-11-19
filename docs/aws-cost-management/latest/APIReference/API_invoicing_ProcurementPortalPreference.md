@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProcurementPortalPreference
-<a name="API_invoicing_ProcurementPortalPreference"></a>
 
 Represents the full configuration of a procurement portal preference, including settings for e-invoice delivery and purchase order retrieval.
 

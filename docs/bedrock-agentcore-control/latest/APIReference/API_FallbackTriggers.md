@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # FallbackTriggers
-<a name="API_FallbackTriggers"></a>
 
 The conditions that trigger a fallback to the next target. A fallback occurs if the response matches any of the specified status codes or errors.
 

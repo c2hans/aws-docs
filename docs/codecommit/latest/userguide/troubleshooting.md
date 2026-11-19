@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting AWS CodeCommit
-<a name="troubleshooting"></a>
 
 The following information might help you troubleshoot common issues in AWS CodeCommit.
 

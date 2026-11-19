@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AzureScope
 ---
 
 # AzureScopeConfigurationInput
-<a name="API_AzureScopeConfigurationInput"></a>
 
 The scope of Azure resources to scan, defined separately for VM, container image, and serverless scanning. Provide this when you create or update an Azure connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetStepItem
-<a name="API_BatchGetStepItem"></a>
 
 The details of a step returned in a batch get operation.
 

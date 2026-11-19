@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting SQL code in Pro\*C applications with AWS Schema Conversion Tool
-<a name="CHAP_Converting.App.ProC"></a>
 
 For an Oracle to PostgreSQL conversion, you can use the AWS Schema Conversion Tool (AWS SCT) to convert SQL code embedded into your Pro\*C applications. This specific Pro\*C application converter understands the application logic. It collects statements that are located in different application objects, such as functions, parameters, local variables, and so on.
 

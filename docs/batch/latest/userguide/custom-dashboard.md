@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/custom-dashboard.
 ---
 
 # The AWS Batch widget dashboard
-<a name="custom-dashboard"></a>
 
 Through the AWS Batch dashboard, you can monitor recent jobs, job queues, and compute environments. By default, the following dashboard widgets are displayed:
 + **Job overview** – For more information about AWS Batch jobs, see [Jobs](jobs.md).

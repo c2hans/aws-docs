@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateDoma
 ---
 
 # CreateDomain
-<a name="API_connect-cases_CreateDomain"></a>
 
 Creates a domain, which is a container for all case data, such as cases, fields, templates and layouts. Each Connect Customer instance can be associated with only one Cases domain.
 

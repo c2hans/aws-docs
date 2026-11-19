@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/a
 ---
 
 # Activating a program management account
-<a name="activating-pma"></a>
 
 To activate a PMA, a channel handshake must be accepted by the AWS management account.
 

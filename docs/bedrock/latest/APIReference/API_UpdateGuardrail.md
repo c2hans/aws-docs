@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateGu
 ---
 
 # UpdateGuardrail
-<a name="API_UpdateGuardrail"></a>
 
 Updates a guardrail with the values you specify.
 + Specify a `name` and optional `description`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Ongoing security
-<a name="gamesec02"></a>
 
 |  GAMESEC02: How do you achieve, maintain, and monitor ongoing security best practices?  |
 | --- |

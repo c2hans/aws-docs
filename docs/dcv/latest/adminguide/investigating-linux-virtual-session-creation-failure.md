@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/investigating-linu
 ---
 
 # Investigating Virtual Session Creation Failure on Linux
-<a name="investigating-linux-virtual-session-creation-failure"></a>
 
 A virtual session is [created](managing-sessions-start.md#managing-sessions-start-manual) on Linux with the command:
 

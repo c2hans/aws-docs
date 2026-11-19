@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/deprecate-thin
 ---
 
 # Deprecate a thing type
-<a name="deprecate-thing-type"></a>
 
 Thing types are immutable. They can't be changed after they are defined. You can, however, deprecate a thing type to prevent users from associating any new things with it. All existing things associated with the thing type are unchanged.
 

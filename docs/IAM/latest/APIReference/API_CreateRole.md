@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.h
 ---
 
 # CreateRole
-<a name="API_CreateRole"></a>
 
 Creates a new role for your AWS account.
 

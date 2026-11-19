@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ShardCo
 ---
 
 # ShardConfiguration
-<a name="API_ShardConfiguration"></a>
 
 Shard configuration options. Each shard configuration has the following: Slots and ReplicaCount.
 

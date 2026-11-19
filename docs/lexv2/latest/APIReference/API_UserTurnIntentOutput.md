@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UserTurnIn
 ---
 
 # UserTurnIntentOutput
-<a name="API_UserTurnIntentOutput"></a>
 
 Contains information about the intent that is output for the turn by the test execution.
 

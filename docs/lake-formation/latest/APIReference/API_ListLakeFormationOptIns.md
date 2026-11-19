@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListLakeFormationOptIns
-<a name="API_ListLakeFormationOptIns"></a>
 
 Retrieve the current list of resources and principals that are opt in to enforce Lake Formation permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Strategic foundations for agentic AI
-<a name="foundation"></a>
 
 Agentic systems are not new. Software agents, including robotic process automation (RPA) and decision engines, have existed for decades. But they were simple and deterministic, designed to follow predefined rules and symbolic logic to execute repetitive, low-variation tasks. With the rise of generative AI, the game has changed. Large language models (LLMs) can now interpret complex inputs, generate responses dynamically, and quickly synthesize knowledge. You can now scale agency without brittle or hard-coded logic. Now, agents can reason, make decisions, invoke tools, adapt to context, and coordinate with other agents across workflows. They can operate autonomously toward goals, maintain memory, and reflect on outcomes.
 

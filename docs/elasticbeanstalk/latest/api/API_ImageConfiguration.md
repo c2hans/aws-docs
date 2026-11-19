@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ImageCon
 ---
 
 # ImageConfiguration
-<a name="API_ImageConfiguration"></a>
 
 The source of the container image for an application version: an image that you built and pushed to a container registry yourself, or settings for Elastic Beanstalk to build one from your source bundle.
 

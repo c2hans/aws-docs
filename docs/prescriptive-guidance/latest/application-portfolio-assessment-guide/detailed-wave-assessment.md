@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Detailed wave assessment
-<a name="detailed-wave-assessment"></a>
 
 The detailed assessment of applications, ahead of a migration wave and as a key enabler for migration, has the same requirements and recommendations as the [prioritized applications assessment](prioritized-applications-assessment.md) stage. The goals are to understand in detail the current state of the applications in a given wave, and to produce a future state architecture design and migration strategy, including operational aspects, tooling, and specific migration patterns.
 

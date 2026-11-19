@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/captions-supported-f
 ---
 
 # Captions features supported in a channel
-<a name="captions-supported-features"></a>
 
 This section provides information about the different features of captions that MediaLive supports.
 

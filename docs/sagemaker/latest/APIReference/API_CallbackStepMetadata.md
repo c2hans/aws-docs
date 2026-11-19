@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Callba
 ---
 
 # CallbackStepMetadata
-<a name="API_CallbackStepMetadata"></a>
 
 Metadata about a callback step.
 

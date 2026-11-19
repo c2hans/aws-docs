@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetWorkloadAccessTokenForJWT
-<a name="API_GetWorkloadAccessTokenForJWT"></a>
 
 Obtains a workload access token for agentic workloads acting on behalf of a user, using a JWT token.
 

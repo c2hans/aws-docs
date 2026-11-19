@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListBillingGroupAccountGrouping
-<a name="API_ListBillingGroupAccountGrouping"></a>
 
 Specifies if the billing group has the following features enabled.
 

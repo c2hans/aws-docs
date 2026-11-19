@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # ExternalUrlConfig
-<a name="API_connect-app-integrations_ExternalUrlConfig"></a>
 
 The external URL source for the application.
 

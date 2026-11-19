@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIBenc
 ---
 
 # AIBenchmarkTarget
-<a name="API_AIBenchmarkTarget"></a>
 
 The target for an AI benchmark job. This is a union type — specify one of the members.
 

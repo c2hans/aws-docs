@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshooting your Application Signals installation
-<a name="CloudWatch-Application-Signals-Enable-Troubleshoot"></a>
 
 This section contains troubleshooting tips for CloudWatch Application Signals.
 

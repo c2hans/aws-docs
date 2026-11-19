@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # Supported protocols and ciphers between viewers and CloudFront
-<a name="secure-connections-supported-viewer-protocols-ciphers"></a>
 
 When you [require HTTPS between viewers and your CloudFront distribution](DownloadDistValuesCacheBehavior.md#DownloadDistValuesViewerProtocolPolicy), you must choose a [security policy](DownloadDistValuesGeneral.md#DownloadDistValues-security-policy), which determines the following settings:
 + The minimum SSL/TLS protocol that CloudFront uses to communicate with viewers.

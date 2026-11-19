@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transform-C
 ---
 
 # Transforming code on the command line with Amazon Q Developer
-<a name="transform-CLI"></a>
 
 You can transform your applications from the command line with the Amazon Q Developer command line transformation tool. To transform your code, you provide the path to your source code and any necessary configuration files, and Amazon Q generates new code in a series of steps. Throughout the transformation, Amazon Q builds code on your local environment to verify changes. For more information, see [Building code in your local environment](#local-builds). Amazon Q creates a new branch in your repository where it commits the code changes. When the transformation is complete, you can merge the branch into your original branch to incorporate the changes into your codebase.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/facebook-step-3.html
 ---
 
 # Step 3: Complete Facebook integration with your Lex V2 bot
-<a name="facebook-step-3"></a>
 
 In this step, use the Facebook developer console to complete integration with Amazon Lex V2.
 

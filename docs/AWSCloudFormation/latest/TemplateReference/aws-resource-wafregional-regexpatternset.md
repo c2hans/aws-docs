@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFRegional::RegexPatternSet
-<a name="aws-resource-wafregional-regexpatternset"></a>
 
 The `RegexPatternSet` specifies the regular expression (regex) pattern that you want AWS WAF to search for, such as `B[a@]dB[o0]t`. You can then configure AWS WAF to reject those requests.
 
@@ -44,7 +43,7 @@ Properties:
 <a name="aws-resource-wafregional-regexpatternset-properties"></a>
 
 `Name`  <a name="cfn-wafregional-regexpatternset-name"></a>
-A friendly name or description of the [AWS::WAFRegional::RegexPatternSet](#aws-resource-wafregional-regexpatternset). You can't change `Name` after you create a `RegexPatternSet`.
+A friendly name or description of the [AWS::WAFRegional::RegexPatternSet](aws-resource-wafregional-regexpatternset.md). You can't change `Name` after you create a `RegexPatternSet`.
 *Required*: Yes
 *Type*: String
 *Pattern*: `.*\S.*`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/credit.htm
 ---
 
 # .credit
-<a name="credit"></a>
 
 Used by the credit industry.
 

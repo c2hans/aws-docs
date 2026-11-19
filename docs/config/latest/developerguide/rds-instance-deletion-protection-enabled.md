@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-instanc
 ---
 
 # rds-instance-deletion-protection-enabled
-<a name="rds-instance-deletion-protection-enabled"></a>
 
 Checks if an Amazon Relational Database Service (Amazon RDS) instance has deletion protection enabled. The rule is NON\_COMPLIANT if an Amazon RDS instance does not have deletion protection enabled; for example, deletionProtection is set to false.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/msk-cluster-auth.html
 ---
 
 # Configuring Amazon MSK cluster authentication methods in Lambda
-<a name="msk-cluster-auth"></a>
 
 Lambda needs permission to access your Amazon MSK cluster, retrieve records, and perform other tasks. Amazon MSK supports several ways to authenticate with your MSK cluster.
 

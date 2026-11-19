@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeAccoun
 ---
 
 # DescribeAccountModifications
-<a name="API_DescribeAccountModifications"></a>
 
 Retrieves a list that describes modifications to the configuration of Bring Your Own License (BYOL) for the specified account.
 

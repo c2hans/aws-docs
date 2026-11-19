@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/configlimit
 ---
 
 # Service Limits for AWS Config
-<a name="configlimits"></a>
 
 The following table describes limits within AWS Config. Unless noted otherwise, the quotas can be increased upon request. You can [request a quota increase](https://console.aws.amazon.com/servicequotas/home).
 

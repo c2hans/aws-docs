@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/volumes-drs.html
 ---
 
 # Amazon EBS volumes
-<a name="volumes-drs"></a>
 
 Set the default Amazon EBS volume type used by the replication servers, whether to use Amazon EBS encryption, and whether to automatically replicate newly added disks.
 

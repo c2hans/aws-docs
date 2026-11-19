@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMOPS01-BP01 Assess trade-offs between streaming architecture options and associated risks
-<a name="smops01-bp01"></a>
 
 When designing streaming video infrastructure, carefully evaluate the trade-offs between different architectural approaches and their associated risks. This includes considering factors such as performance, scalability, availability, security, and cost to determine the optimal solution for different streaming scenarios.
 

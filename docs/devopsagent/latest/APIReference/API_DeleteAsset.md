@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dele
 ---
 
 # DeleteAsset
-<a name="API_DeleteAsset"></a>
 
 Deletes an asset and all its files from the specified agent space
 

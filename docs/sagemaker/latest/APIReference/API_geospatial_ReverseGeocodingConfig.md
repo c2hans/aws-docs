@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ReverseGeocodingConfig
-<a name="API_geospatial_ReverseGeocodingConfig"></a>
 
 The input structure for Reverse Geocoding operation type.
 

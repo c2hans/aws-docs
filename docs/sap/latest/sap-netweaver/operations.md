@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/operations.html
 ---
 
 # Operations
-<a name="operations"></a>
 
 This section provides information on AWS services that help you with day-to-day operations of your SQL Server database for SAP applications.
 

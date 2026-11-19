@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_TracingConfigRespo
 ---
 
 # TracingConfigResponse
-<a name="API_TracingConfigResponse"></a>
 
 The function's AWS X-Ray tracing configuration.
 

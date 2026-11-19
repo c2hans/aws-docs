@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-container-trou
 ---
 
 # Troubleshoot multi-container endpoints
-<a name="multi-container-troubleshooting"></a>
 
 The following sections can help you troubleshoot errors with multi-container endpoints.
 

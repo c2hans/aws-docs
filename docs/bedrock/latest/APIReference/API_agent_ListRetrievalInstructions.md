@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListRetrievalInstructions
-<a name="API_agent_ListRetrievalInstructions"></a>
 
 Lists the retrieval instructions in the caller's account. Results are paginated. Use the nextToken parameter to retrieve additional results.
 

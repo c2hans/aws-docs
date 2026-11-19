@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_IamIdentityC
 ---
 
 # IamIdentityCenterForList
-<a name="API_IamIdentityCenterForList"></a>
 
  AWS IAM Identity Center credentials. For more information see, [AWS IAM Identity Center](http://aws.amazon.com/identity-center/) .
 

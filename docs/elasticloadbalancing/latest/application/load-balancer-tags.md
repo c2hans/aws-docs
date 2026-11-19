@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Tag an Application Load Balancer
-<a name="load-balancer-tags"></a>
 
 Tags help you to categorize your load balancers in different ways, for example, by purpose, owner, or environment.
 

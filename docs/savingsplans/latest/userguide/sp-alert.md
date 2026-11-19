@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-alert.h
 ---
 
 # Managing your Savings Plans alerts
-<a name="sp-alert"></a>
 
 You can track your Savings Plans expirations and upcoming queued Savings Plans in Cost Explorer. You can use Savings Plans alerts to receive advance email alerts 1, 7, 30, or 60 days before your Savings Plans expiration date, or in when a commitment is queued for purchase. These notifications also alert you on the expiration date, and can be sent to up to 10 email recipients.
 

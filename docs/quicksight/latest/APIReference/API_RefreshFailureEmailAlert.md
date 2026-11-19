@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refre
 ---
 
 # RefreshFailureEmailAlert
-<a name="API_RefreshFailureEmailAlert"></a>
 
 The configuration settings for the email alerts that are sent when a dataset refresh fails.
 

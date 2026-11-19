@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/create-cust
 ---
 
 # Tutorial: Develop a simple IDT test suite
-<a name="create-custom-tests"></a>
 
 A test suite combines the following:
 + Test executables that contain the test logic

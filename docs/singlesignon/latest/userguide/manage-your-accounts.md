@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-you
 ---
 
 # Configure access to AWS accounts
-<a name="manage-your-accounts"></a>
 
 Organization instances of IAM Identity Center are integrated with AWS Organizations. This enables you to centrally manage permissions across multiple AWS accounts without configuring access individually to each account.
 

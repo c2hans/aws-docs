@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/client
 ---
 
 # Client authentication methods
-<a name="client-auth-methods"></a>
 
 Client authentication method controls how the OAuth client authenticates with the authorization server’s token endpoint when requesting access tokens.
 

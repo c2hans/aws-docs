@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetHierarchyInfo
-<a name="API_AssetHierarchyInfo"></a>
 
 Contains information about a parent asset and a child asset that are related through an asset hierarchy.
 

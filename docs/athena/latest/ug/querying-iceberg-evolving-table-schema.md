@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-evolvi
 ---
 
 # Evolve Iceberg table schema
-<a name="querying-iceberg-evolving-table-schema"></a>
 
 Iceberg schema updates are metadata-only changes. No data files are changed when you perform a schema update.
 

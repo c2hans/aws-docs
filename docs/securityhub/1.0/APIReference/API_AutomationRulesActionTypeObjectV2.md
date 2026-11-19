@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesActionTypeObjectV2
-<a name="API_AutomationRulesActionTypeObjectV2"></a>
 
 Allows you to customize security response workflows.
 

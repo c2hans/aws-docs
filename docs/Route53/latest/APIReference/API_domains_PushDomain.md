@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # PushDomain
-<a name="API_domains_PushDomain"></a>
 
  Moves a domain from AWS to another registrar.
 

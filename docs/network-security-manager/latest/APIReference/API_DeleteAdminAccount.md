@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeleteAdminAccount
-<a name="API_DeleteAdminAccount"></a>
 
 Removes the specified AWS Network Security Manager administrator account.
 

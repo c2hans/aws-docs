@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FileSource
-<a name="API_agent-runtime_FileSource"></a>
 
 The source file of the content contained in the wrapper object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-destinations-emp
 ---
 
 # Collect the information for standard MediaPackage
-<a name="hls-destinations-emp-info"></a>
 
 For standard MediaPackage, the two URLs for a channel look like these examples:
 

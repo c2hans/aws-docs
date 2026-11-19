@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/managing-conversations.h
 ---
 
 # Understanding Amazon Lex V2 bot conversations
-<a name="managing-conversations"></a>
 
 After you build a bot, you integrate your client application with the Amazon Lex V2 runtime operations to hold conversations with your bot. When a user starts a conversation with your bot, Amazon Lex V2 creates a *session*. A session encapsulates the information exchanged between your application and the bot. For more information, see [Understanding Amazon Lex V2 bot sessions](managing-sessions.md).
 

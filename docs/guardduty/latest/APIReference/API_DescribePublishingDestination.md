@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Descri
 ---
 
 # DescribePublishingDestination
-<a name="API_DescribePublishingDestination"></a>
 
 Returns information about the publishing destination specified by the provided `destinationId`.
 

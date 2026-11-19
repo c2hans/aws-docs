@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ConnectAppAutho
 ---
 
 # ConnectAppAuthorization
-<a name="API_ConnectAppAuthorization"></a>
 
 Establishes a connection between AWS AppFabric and an application, which allows AppFabric to call the APIs of the application.
 

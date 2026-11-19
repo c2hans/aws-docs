@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/network
 ---
 
 # Amazon MQ network of brokers
-<a name="network-of-brokers"></a>
 
 Amazon MQ supports ActiveMQ's network of brokers feature.
 

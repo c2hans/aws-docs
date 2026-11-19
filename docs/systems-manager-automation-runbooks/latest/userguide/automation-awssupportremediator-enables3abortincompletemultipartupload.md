@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableS3AbortIncompleteMultipartUpload`
-<a name="automation-awssupportremediator-enables3abortincompletemultipartupload"></a>
 
 **Description**
 

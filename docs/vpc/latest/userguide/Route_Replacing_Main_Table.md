@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/Route_Replacing_Mai
 ---
 
 # Replace the main route table
-<a name="Route_Replacing_Main_Table"></a>
 
 This section describes how to change which route table is the main route table in your VPC.
 

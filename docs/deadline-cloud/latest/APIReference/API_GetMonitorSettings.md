@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetMonitorSettings
-<a name="API_GetMonitorSettings"></a>
 
 Gets the settings for a Deadline Cloud monitor.
 

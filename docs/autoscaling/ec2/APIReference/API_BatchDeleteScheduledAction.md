@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BatchDe
 ---
 
 # BatchDeleteScheduledAction
-<a name="API_BatchDeleteScheduledAction"></a>
 
 Deletes one or more scheduled actions for the specified Auto Scaling group.
 

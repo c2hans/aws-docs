@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive-differe
 ---
 
 # Differences and considerations for Hive on Amazon EMR
-<a name="emr-hive-differences"></a>
 
 ## Differences between Apache Hive on Amazon EMR and Apache Hive
 <a name="emr-hive-apache-diff"></a>

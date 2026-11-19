@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdatePullRequestDescription
-<a name="API_UpdatePullRequestDescription"></a>
 
 Replaces the contents of the description of a pull request.
 

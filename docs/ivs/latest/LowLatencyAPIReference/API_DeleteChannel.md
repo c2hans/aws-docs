@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_De
 ---
 
 # DeleteChannel
-<a name="API_DeleteChannel"></a>
 
 Deletes the specified channel and its associated stream keys.
 

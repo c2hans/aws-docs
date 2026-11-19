@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSStepFunctionsReadOnlyAccess
-<a name="AWSStepFunctionsReadOnlyAccess"></a>
 
 **Description**: An access policy for providing a user/role/etc read only access to the AWS StepFunctions service.
 

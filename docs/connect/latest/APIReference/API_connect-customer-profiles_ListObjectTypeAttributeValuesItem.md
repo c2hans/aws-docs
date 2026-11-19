@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListObjectTypeAttributeValuesItem
-<a name="API_connect-customer-profiles_ListObjectTypeAttributeValuesItem"></a>
 
 Represents an item in the list of object type attribute values with its associated metadata.
 

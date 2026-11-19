@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/ebs-sap-hana.html
 ---
 
 # Amazon EBS snapshots for SAP HANA
-<a name="ebs-sap-hana"></a>
 
 Amazon EBS snapshots provide point-in-time backups of your EBS volumes to Amazon S3. EBS snapshots are stored incrementally, which means that only the blocks that have changed after your last snapshot are saved, and you are billed only for the changed blocks.
 

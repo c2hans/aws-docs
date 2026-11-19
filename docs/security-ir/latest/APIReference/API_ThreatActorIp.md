@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Thre
 ---
 
 # ThreatActorIp
-<a name="API_ThreatActorIp"></a>
 
 ## Contents
 <a name="API_ThreatActorIp_Contents"></a>

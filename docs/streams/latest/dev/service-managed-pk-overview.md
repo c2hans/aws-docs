@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-ov
 ---
 
 # How service-managed record distribution works
-<a name="service-managed-pk-overview"></a>
 
 When you enable the service-managed record distribution strategy on a stream, Kinesis Data Streams takes over the responsibility of distributing records across shards. The service uses internal algorithms to spread records evenly and avoid hot shards. This eliminates common issues with customer-generated partition keys, such as uneven traffic distribution. It also prevents rotating hot key throttling.
 

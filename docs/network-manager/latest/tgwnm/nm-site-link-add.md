@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-site-lin
 ---
 
 # Add a link using AWS Network Manager
-<a name="nm-site-link-add"></a>
 
 Add a link to associated a device with a site.
 

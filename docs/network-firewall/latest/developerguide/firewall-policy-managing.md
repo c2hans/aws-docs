@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Managing your firewall policy in AWS Network Firewall
-<a name="firewall-policy-managing"></a>
 
 This section describes how to create, update, and delete your firewall policy in Network Firewall.
 

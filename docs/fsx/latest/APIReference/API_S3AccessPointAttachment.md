@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_S3AccessPoin
 ---
 
 # S3AccessPointAttachment
-<a name="API_S3AccessPointAttachment"></a>
 
 An S3 access point attached to an Amazon FSx volume.
 

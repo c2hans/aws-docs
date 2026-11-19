@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeEngineDefaultClusterParameters
-<a name="API_DescribeEngineDefaultClusterParameters"></a>
 
 Returns the default engine and system parameter information for the cluster database engine.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-launch
 ---
 
 # Create a cluster with Apache Spark
-<a name="emr-spark-launch"></a>
 
 The following procedure creates a cluster with [Spark](https://aws.amazon.com/big-data/what-is-spark/) installed using **Quick Options** in the Amazon EMR console.
 

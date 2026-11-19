@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantCoreDumpConfig
-<a name="API_ProductionVariantCoreDumpConfig"></a>
 
 Specifies configuration for a core dump from the model container when the process crashes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-scheduling-outlook
 ---
 
 # Scheduling meetings with the Add-In for Outlook
-<a name="chime-scheduling-outlook"></a>
 
 Amazon Chime provides two add-ins for Outlook: the Amazon Chime Add-In for Outlook on Windows and the Amazon Chime Add-In for Outlook. These add-ins offer the same scheduling features, but support different types of users.
 + **Amazon Chime Add-In for Outlook** – Recommended for Microsoft Office 365 subscribers, and for Amazon Chime delegates who use macOS.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Export AWS Backup reports from across an organization in AWS Organizations as a CSV file
-<a name="export-aws-backup-reports-from-across-an-organization-in-aws-organizations-as-a-csv-file"></a>
 
 *Aromal Raj Jayarajan, Prasobh S P, and Vishnu Unnikrishnan, Amazon Web Services*
 

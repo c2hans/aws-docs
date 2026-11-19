@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/al-output
 ---
 
 # Storage and outputs
-<a name="al-outputs"></a>
 
 **Topics**
 + [Storage](#al-storage)

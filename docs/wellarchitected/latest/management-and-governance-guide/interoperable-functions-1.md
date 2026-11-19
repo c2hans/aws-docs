@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Interoperable functions
-<a name="interoperable-functions-1"></a>
 
  The eight management and governance functions, supported by AWS services and AWS Partner solutions, work together and interoperate to reduce complexity. Outputs from functions are used to inform or integrate with other functions.
 

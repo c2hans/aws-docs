@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/best-practices
 ---
 
 # Best practices for AWS CloudHSM
-<a name="best-practices"></a>
 
 Perform the best practices in this topic to effectively use AWS CloudHSM.
 

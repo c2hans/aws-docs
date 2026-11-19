@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # CreateLogAnomalyDetector
-<a name="API_CreateLogAnomalyDetector"></a>
 
 Creates an *anomaly detector* that regularly scans one or more log groups and look for patterns and anomalies in the logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:deleteImage` – Delete an Amazon Machine Image
-<a name="automation-action-delete"></a>
 
 Deletes the specified Amazon Machine Image (AMI) and all related snapshots.
 

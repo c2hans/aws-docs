@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # View Amazon Athena queries
-<a name="view-amazon-athena-queries"></a>
 
 If you selected `Yes - Amazon Athena log parser` for the **Activate HTTP Flood Protection** or **Activate Scanner & Probe Protection** template parameters, this solution creates and runs Athena queries for CloudFront or ALB (`ScannersProbesLogParser`) or AWS WAF logs (`HTTPFloodLogParser`), parses the output, and updates AWS WAF accordingly.
 

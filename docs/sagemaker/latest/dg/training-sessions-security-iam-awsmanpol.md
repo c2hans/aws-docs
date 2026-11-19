@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-se
 ---
 
 # AWS managed policies for SageMaker AI training session APIs
-<a name="training-sessions-security-iam-awsmanpol"></a>
 
 Use these AWS managed policies to create and interact with Amazon SageMaker AI training session APIs. With `AmazonSageMakerTrainingSessionAccess`, you can manage training sessions and run training and sampling operations. With `AmazonSageMakerTrainingSessionFullAccess`, your training session execution role can access data in Amazon S3, use customer managed AWS Key Management Service (AWS KMS) keys, publish model packages, and manage Amazon VPC network interfaces.
 

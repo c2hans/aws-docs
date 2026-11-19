@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/monito
 ---
 
 # Example 1
-<a name="monitoring-query-alerts-messages-get-a-list-of-messages-example1"></a>
 
 This example requests all active messages for node 2.
 

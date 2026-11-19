@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterPatchScheduleDetails
-<a name="API_ClusterPatchScheduleDetails"></a>
 
 The schedule details for automatic patching, including the next scheduled patch date.
 

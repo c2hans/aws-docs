@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Partner Central Selling API:
 +  [Account](API_Account.md)

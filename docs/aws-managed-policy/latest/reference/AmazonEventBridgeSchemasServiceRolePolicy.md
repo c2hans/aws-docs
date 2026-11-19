@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgeSchemasServiceRolePolicy
-<a name="AmazonEventBridgeSchemasServiceRolePolicy"></a>
 
 **Description**: Grants permissions to Managed Rules created by Amazon EventBridge schemas.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-lambda
 ---
 
 # AWS Lambda events
-<a name="events-ref-lambda"></a>
 
 Lambda sends service events to EventBridge via AWS CloudTrail.
 

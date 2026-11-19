@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-co
 ---
 
 # Enable code review
-<a name="enable-code-review-scan"></a>
 
 Configure your Agent Space to enable code review by connecting source code from GitHub repositories or S3 buckets. Code review analyzes your source code for security vulnerabilities and compliance with your organization’s custom security requirements.
 

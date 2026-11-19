@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Dataset encryption
-<a name="datasets-encryption"></a>
 
 When you specify a `kmsKeyArn` on a dataset, the service encrypts all stored examples using S3 server-side encryption with KMS (SSE-KMS). This includes examples in the Draft and all published versions.
 

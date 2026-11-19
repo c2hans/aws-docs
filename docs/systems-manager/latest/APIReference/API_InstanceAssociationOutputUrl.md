@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstanceAssociationOutputUrl
-<a name="API_InstanceAssociationOutputUrl"></a>
 
 The URL of S3 bucket where you want to store the results of this request.
 

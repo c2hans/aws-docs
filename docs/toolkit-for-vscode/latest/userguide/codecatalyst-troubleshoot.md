@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/code
 ---
 
 # Troubleshooting Amazon CodeCatalyst and VS Code
-<a name="codecatalyst-troubleshoot"></a>
 
 The following topics address potential technical issues when working with Amazon CodeCatalyst and VS Code.
 

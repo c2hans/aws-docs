@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html
 ---
 
 # Generative voices
-<a name="generative-voices"></a>
 
 Amazon Polly's **generative** text-to-speech (TTS) engine offers the most human-like, emotionally engaged, and adaptive conversational voices available for the use via the Amazon Polly console.
 

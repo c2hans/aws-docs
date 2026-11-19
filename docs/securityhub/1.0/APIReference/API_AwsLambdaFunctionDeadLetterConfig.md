@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaFunctionDeadLetterConfig
-<a name="API_AwsLambdaFunctionDeadLetterConfig"></a>
 
 The dead-letter queue for failed asynchronous invocations.
 

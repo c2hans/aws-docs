@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListAvailabl
 ---
 
 # ListAvailableManagedRuleGroups
-<a name="API_ListAvailableManagedRuleGroups"></a>
 
 Retrieves an array of managed rule groups that are available for you to use. This list includes all AWS Managed Rules rule groups and all of the AWS Marketplace managed rule groups that you're subscribed to.
 

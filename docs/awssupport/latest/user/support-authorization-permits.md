@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # Managing support permits
-<a name="support-authorization-permits"></a>
 
 Support permits define the scope and conditions under which AWS Support can access information about your services. This topic describes how to create, view, list, and delete support permits.
 

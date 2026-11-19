@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListStorageConfigurations
-<a name="API_ListStorageConfigurations"></a>
 
 Gets summary information about all storage configurations in your account, in the AWS region where the API request is processed.
 

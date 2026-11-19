@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RedirectActionConfig
-<a name="API_RedirectActionConfig"></a>
 
 Information about a redirect action.
 

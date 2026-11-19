@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/micr
 ---
 
 # Step 4: Verify that the base test lab is operational
-<a name="microsoftadbasestep4"></a>
 
 Use the following procedure to verify that the test lab has been set up successfully before adding on additional test lab guide modules. This procedure verifies that your Windows Server is configured appropriately, can connect to the corp.example.com domain, and be used to administer your AWS Managed Microsoft AD forest.
 

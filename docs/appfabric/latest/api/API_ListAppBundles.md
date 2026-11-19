@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ListAppBundles.
 ---
 
 # ListAppBundles
-<a name="API_ListAppBundles"></a>
 
 Returns a list of app bundles.
 

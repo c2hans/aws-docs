@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC07-BP02 Clear confidence indicators and manipulation warnings
-<a name="agentsec07-bp02"></a>
 
  Workload-managed reviewers still make poor decisions when they lack the context to evaluate what the agent is recommending. Surfacing agent confidence, manipulation flags, and historical comparisons lets reviewers calibrate scrutiny to the actual risk of each decision.
 

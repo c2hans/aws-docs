@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS04-BP03 Use lifecycle policies to delete unnecessary data
-<a name="sus_sus_data_a4"></a>
 
  Manage the lifecycle of all your data and automatically enforce deletion timelines to minimize the total storage requirements of your workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/hom
 ---
 
 # AWS SDK for Swift Developer Guide
-<a name="home"></a>
 
 ## What is the AWS SDK for Swift?
 <a name="what-is-the-swift-sdk"></a>

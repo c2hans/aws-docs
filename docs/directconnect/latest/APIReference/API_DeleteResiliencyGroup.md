@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DeleteResiliencyGroup
-<a name="API_DeleteResiliencyGroup"></a>
 
 Deletes the specified resiliency group. Deletion is asynchronous: the resiliency group transitions through the `deleting` state before it reaches the `deleted` state. The response returns the resiliency group so you can observe its current state without a subsequent [GetResiliencyGroup](API_GetResiliencyGroup.md) call.
 

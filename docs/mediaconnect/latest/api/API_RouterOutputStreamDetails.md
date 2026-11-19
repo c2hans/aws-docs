@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutputStreamDetails
-<a name="API_RouterOutputStreamDetails"></a>
 
 Information about the router output's stream, including connection state and destination details. The specific details provided vary based on the router output type.
 

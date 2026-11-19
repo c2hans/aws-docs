@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops06.h
 ---
 
 # Create an effective event response
-<a name="ops06"></a>
 
  You should anticipate operational events, both planned (for example, sales promotions, deployments, and failure tests) and unplanned (for example, surges in utilization and component failures). Use your existing runbooks and playbooks to deliver consistent results when you respond to alerts. Specify ownership of defined alerts to a role or team that is accountable for the response and escalations. Understand the business impact of your system components, and use this to target efforts when needed. These practices support evidence collection, which becomes crucial when performing post-incident analysis (also known as root cause analysis (RCA)) after events, and then to help prevent recurrence of failures or to document workarounds.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/using-hints.html
 ---
 
 # Improving recognition of slot values with runtime hints in the conversation
-<a name="using-hints"></a>
 
 With *runtime hints* you can give Amazon Lex V2 a set of slot values based on context to get better recognition in audio conversations and improved slot resolutions. You can use runtime hints to provide a list of phrases at runtime that become candidates for the resolution of a slot value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/update-campaigns.h
 ---
 
 # Updating an Amazon Personalize campaign's configuration
-<a name="update-campaigns"></a>
 
 To change your campaign's [Minimum provisioned TPS](campaigns.md#min-tps-auto-scaling), manually deploy a new solution version, or modify a campaign's configuration, such as turning on the option to include metadata in recommendations, you must manually update the campaign.
 

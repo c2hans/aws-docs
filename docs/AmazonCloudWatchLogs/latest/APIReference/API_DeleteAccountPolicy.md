@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteAccountPolicy
-<a name="API_DeleteAccountPolicy"></a>
 
 Deletes a CloudWatch Logs account policy. This stops the account-wide policy from applying to log groups or data sources in the account. If you delete a data protection policy or subscription filter policy, any log-group level policies of those types remain in effect. If you delete a retention policy, the log groups that it applied to use their own retention setting, unless another retention policy applies to them. Deleting a retention policy does not restore log events that CloudWatch Logs has already deleted. This operation supports deletion of data source-based field index policies, including facet configurations, in addition to log group-based policies.
 

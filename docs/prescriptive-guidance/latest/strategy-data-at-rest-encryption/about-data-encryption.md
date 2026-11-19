@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # About data encryption
-<a name="about-data-encryption"></a>
 
 This section contains a high-level overview of encryption concepts and terminology. Data encryption helps you enforce data confidentiality. By implementing encryption and access controls, you can help protect the data in your enterprise.
 

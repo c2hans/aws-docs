@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListResolverDnssecConfigs
-<a name="API_route53resolver_ListResolverDnssecConfigs"></a>
 
 Lists the configurations for DNSSEC validation that are associated with the current AWS account.
 

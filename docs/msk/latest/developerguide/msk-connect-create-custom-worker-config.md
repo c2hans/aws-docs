@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-cr
 ---
 
 # Create a custom worker configuration
-<a name="msk-connect-create-custom-worker-config"></a>
 
 This procedure describes how to create a custom worker configuration using the AWS Management Console.
 

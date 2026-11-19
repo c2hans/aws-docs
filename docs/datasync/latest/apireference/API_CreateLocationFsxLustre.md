@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationFsxLustre
-<a name="API_CreateLocationFsxLustre"></a>
 
 Creates a transfer *location* for an Amazon FSx for Lustre file system. AWS DataSync can use this location as a source or destination for transferring data.
 

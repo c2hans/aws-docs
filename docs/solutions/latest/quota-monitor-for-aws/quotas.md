@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/q
 ---
 
 # Quotas
-<a name="quotas"></a>
 
 The solution uses Trusted Advisor and Service Quotas to check quotas against resource utilization.
 +  **Trusted Advisor** - This solution supports 50 quota checks offered by Trusted Advisor. For more information, refer to [Quota checks with Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/service-limits.html).

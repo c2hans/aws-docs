@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/exampl
 ---
 
 # Use `DescribeScalingActivities` with a CLI
-<a name="example_application-auto-scaling_DescribeScalingActivities_section"></a>
 
 The following code examples show how to use `DescribeScalingActivities`.
 

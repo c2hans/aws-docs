@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/getting-starte
 ---
 
 # Tutorial: Get started with Verified Access
-<a name="getting-started"></a>
 
 Use this tutorial to get started with AWS Verified Access. You'll learn how to create and configure Verified Access resources.
 

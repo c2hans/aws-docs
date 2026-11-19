@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_P
 ---
 
 # PrincipalFilter
-<a name="API_PrincipalFilter"></a>
 
 Specifies filter criteria for a principal.
 

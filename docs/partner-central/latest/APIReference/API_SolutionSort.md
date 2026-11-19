@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SolutionSort
-<a name="API_SolutionSort"></a>
 
 Configures the solutions' response sorting that enables partners to order solutions based on specified attributes.
 

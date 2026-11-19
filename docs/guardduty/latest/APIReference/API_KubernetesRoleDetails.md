@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesRoleDetails
-<a name="API_KubernetesRoleDetails"></a>
 
 Information about the Kubernetes role name and role type.
 

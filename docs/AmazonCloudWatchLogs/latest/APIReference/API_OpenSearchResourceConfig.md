@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # OpenSearchResourceConfig
-<a name="API_OpenSearchResourceConfig"></a>
 
 This structure contains configuration details about an integration between CloudWatch Logs and OpenSearch Service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # How failure mode assessments work
-<a name="next-gen-how-assessments-work"></a>
 
 When you run a failure mode assessment, Next generation Resilience Hub performs the following steps:
 

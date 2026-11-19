@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/doc-compressi
 ---
 
 # Managing collection-level document compression
-<a name="doc-compression"></a>
 
 Amazon DocumentDB collection-level document compression lowers storage and I/O costs by compressing the documents in your collections. You can enable compression for a collection or for all new collections in a cluster, and measure the storage savings with collection statistics.
 

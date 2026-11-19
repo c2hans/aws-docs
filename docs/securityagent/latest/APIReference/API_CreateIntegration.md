@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateIntegration
-<a name="API_CreateIntegration"></a>
 
 Creates a new integration with a third-party provider, such as GitHub, for code review and remediation.
 

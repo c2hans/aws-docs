@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # S3File
-<a name="API_S3File"></a>
 
 Contains information for the S3 bucket that contains media files.
 

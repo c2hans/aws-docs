@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_De
 ---
 
 # DeleteAdConfiguration
-<a name="API_DeleteAdConfiguration"></a>
 
 Deletes the specified ad configuration.
 

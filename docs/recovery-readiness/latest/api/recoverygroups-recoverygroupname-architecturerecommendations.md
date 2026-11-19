@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/recoverygr
 ---
 
 # GetArchitectureRecommendations
-<a name="recoverygroups-recoverygroupname-architecturerecommendations"></a>
 
 ## URI
 <a name="recoverygroups-recoverygroupname-architecturerecommendations-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Anti-corruption layer pattern
-<a name="acl"></a>
 
 ## Intent
 <a name="acl-intent"></a>

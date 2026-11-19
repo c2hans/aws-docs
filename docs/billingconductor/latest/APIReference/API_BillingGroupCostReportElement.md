@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # BillingGroupCostReportElement
-<a name="API_BillingGroupCostReportElement"></a>
 
 A summary report of actual AWS charges and calculated AWS charges, based on the associated pricing plan of a billing group.
 

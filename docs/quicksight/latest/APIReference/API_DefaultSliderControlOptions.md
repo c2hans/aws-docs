@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultSliderControlOptions
-<a name="API_DefaultSliderControlOptions"></a>
 
 The default options that correspond to the `Slider` filter control type.
 

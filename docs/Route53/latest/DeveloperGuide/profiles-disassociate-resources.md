@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles-d
 ---
 
 # Disassociating a resource from an Amazon Route 53 Profile
-<a name="profiles-disassociate-resources"></a>
 
 Before you delete a Profile, you must dissociate all resources from it.<a name="profiles-disassociate-resources-procedure"></a>
 

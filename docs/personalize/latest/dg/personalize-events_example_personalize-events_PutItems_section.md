@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize-events
 ---
 
 # Use `PutItems` with an AWS SDK
-<a name="personalize-events_example_personalize-events_PutItems_section"></a>
 
 The following code example shows how to use `PutItems`.
 

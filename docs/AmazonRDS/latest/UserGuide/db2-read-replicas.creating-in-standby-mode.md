@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-read-repl
 ---
 
 # Creating an RDS for Db2 replica in standby mode
-<a name="db2-read-replicas.creating-in-standby-mode"></a>
 
 By default, Db2 replicas are created in read-only mode. You can create a replica in standby mode for disaster recovery purposes. Standby replicas don't accept user connections but provide faster failover capabilities for cross-Region scenarios.
 

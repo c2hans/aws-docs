@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 11.2 – Plan and provision capacity for predictable workload usage
-<a name="best-practice-11.2---plan-and-provision-capacity-for-predictable-workload-usage."></a>
 
  For well-defined workloads, planning capacity ahead based on average usage pattern helps improve resource utilization and avoid over provisioning. For a spiky workload, set up automatic scaling to meet user and workload demand.
 

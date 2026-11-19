@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallPolicy
-<a name="API_UpdateFirewallPolicy"></a>
 
 Updates the properties of the specified firewall policy.
 

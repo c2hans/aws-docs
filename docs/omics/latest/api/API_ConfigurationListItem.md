@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ConfigurationListIt
 ---
 
 # ConfigurationListItem
-<a name="API_ConfigurationListItem"></a>
 
 Configuration list item with summary information.
 

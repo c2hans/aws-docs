@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstanceRetentionSettings
-<a name="API_AppInstanceRetentionSettings"></a>
 
 The details of the data-retention settings for an `AppInstance`.
 

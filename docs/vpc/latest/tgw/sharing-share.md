@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/sharing-share.html
 ---
 
 # Share a multicast domain in AWS Transit Gateway
-<a name="sharing-share"></a>
 
 When an owner shares a multicast domain with you, you can do the following:
 + Register and deregister group members or group sources

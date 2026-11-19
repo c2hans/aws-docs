@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_CreateConnec
 ---
 
 # CreateConnection
-<a name="API_CreateConnection"></a>
 
 Initiates the process to create a Connection across the specified Environment.
 

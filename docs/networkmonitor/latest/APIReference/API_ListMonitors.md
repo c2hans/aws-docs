@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_L
 ---
 
 # ListMonitors
-<a name="API_ListMonitors"></a>
 
 Returns a list of all of your monitors.
 

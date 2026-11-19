@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Understanding organization event data stores
-<a name="cloudtrail-lake-organizations"></a>
 
 **Note**
 AWS CloudTrail Lake will no longer be open to new customers starting May 31, 2026. If you would like to use CloudTrail Lake, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [CloudTrail Lake availability change](cloudtrail-lake-service-availability-change.md).
@@ -157,7 +156,7 @@ aws cloudtrail update-event-data-store --region us-east-1 \
 ## Default resource policy for delegated administrators
 <a name="cloudtrail-lake-organizations-eds-rbp"></a>
 
-CloudTrail automatically generates a resource policy named `DelegatedAdminResourcePolicy` for [organization event data stores](#cloudtrail-lake-organizations) that lists the actions that the delegated administrator accounts are allowed to perform on organization event data stores. The permissions in `DelegatedAdminResourcePolicy` are derived from the delegated administrator permissions in AWS Organizations.
+CloudTrail automatically generates a resource policy named `DelegatedAdminResourcePolicy` for [organization event data stores](cloudtrail-lake-organizations.md) that lists the actions that the delegated administrator accounts are allowed to perform on organization event data stores. The permissions in `DelegatedAdminResourcePolicy` are derived from the delegated administrator permissions in AWS Organizations.
 
 The purpose of `DelegatedAdminResourcePolicy` is to ensure that the delegated administrator accounts can manage the organization event data store on the behalf of the organization and are not unintentionally denied access to the organization event data store when a resource-based policy is attached to the organization event data store that allows or denies principals from performing an action on the organization event data store.
 

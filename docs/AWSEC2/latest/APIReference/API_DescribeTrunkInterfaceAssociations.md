@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTrunkInterfaceAssociations
-<a name="API_DescribeTrunkInterfaceAssociations"></a>
 
 Describes one or more network interface trunk associations.
 

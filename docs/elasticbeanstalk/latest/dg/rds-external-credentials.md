@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/rds-external-
 ---
 
 # Storing the Amazon RDS credentials in AWS Secrets Manager
-<a name="rds-external-credentials"></a>
 
 This topic explains how AWS Secrets Manager can improve your security posture for credential retrieval with Elastic Beanstalk. It also provides references to specific resources that can help you configure credentials for your Elastic Beanstalk application.
 

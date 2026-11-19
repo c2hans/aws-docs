@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAdd
 ---
 
 # EmailAddressSearchFilter
-<a name="API_EmailAddressSearchFilter"></a>
 
 Filters to be applied to search results.
 

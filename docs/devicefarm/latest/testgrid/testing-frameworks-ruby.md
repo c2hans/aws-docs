@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/testing-frame
 ---
 
 # Migrating a Ruby test suite to Device Farm desktop browser testing
-<a name="testing-frameworks-ruby"></a>
 
  Follow the steps in this topic to get your tests running on ruby.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveBooleanExpression
-<a name="API_ArchiveBooleanExpression"></a>
 
 A boolean expression to evaluate email attribute values.
 

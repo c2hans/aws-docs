@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchGetTaxExemptions
-<a name="API_taxSettings_BatchGetTaxExemptions"></a>
 
 Get the active tax exemptions for a given list of accounts. The IAM action is `tax:GetExemptions`.
 

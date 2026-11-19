@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMECOST01-BP01 Implement attribution of cost per player, game feature, and environment
-<a name="gamecost01-bp01"></a>
 
  Cost attribution for game servers is usually simpler to perform than game backend services because a game server is usually optimized to be able to host a specific number of concurrent players per instance which can be amortized across the cost of running the instance.
 

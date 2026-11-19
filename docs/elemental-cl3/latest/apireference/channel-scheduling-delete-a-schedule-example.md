@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # Example
-<a name="channel-scheduling-delete-a-schedule-example"></a>
 
 This request deletes the schedule with ID 5 on channel 1.
 

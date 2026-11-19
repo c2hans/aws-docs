@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Networ
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 Specifies the network configuration for an ECS task.
 

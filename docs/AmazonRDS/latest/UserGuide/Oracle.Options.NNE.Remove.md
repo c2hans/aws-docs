@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Removing the NATIVE\_NETWORK\_ENCRYPTION option
-<a name="Oracle.Options.NNE.Remove"></a>
 
 You can remove NNE from a DB instance.
 

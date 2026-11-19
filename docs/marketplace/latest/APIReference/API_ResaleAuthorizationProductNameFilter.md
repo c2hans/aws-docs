@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationProductNameFilter
-<a name="API_ResaleAuthorizationProductNameFilter"></a>
 
 Allows filtering on the `ProductName` of a ResaleAuthorization.
 

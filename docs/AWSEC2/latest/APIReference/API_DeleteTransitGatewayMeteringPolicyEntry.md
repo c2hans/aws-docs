@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayMeteringPolicyEntry
-<a name="API_DeleteTransitGatewayMeteringPolicyEntry"></a>
 
 Deletes an entry from a transit gateway metering policy.
 

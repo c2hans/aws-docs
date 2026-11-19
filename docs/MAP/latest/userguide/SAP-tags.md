@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/SAP-tags.html
 ---
 
 # SAP workload tags
-<a name="SAP-tags"></a>
 
 Use the following tables for migration plans using MAP 2.0 for SAP Migration.
 

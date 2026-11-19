@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UserStorage.ht
 ---
 
 # UserStorage
-<a name="API_UserStorage"></a>
 
 Describes the user volume for a WorkSpace bundle.
 

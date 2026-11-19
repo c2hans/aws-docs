@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_StartJo
 ---
 
 # StartJobRun
-<a name="API_StartJobRun"></a>
 
 Runs a DataBrew job.
 

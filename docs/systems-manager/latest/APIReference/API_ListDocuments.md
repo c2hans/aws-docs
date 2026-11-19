@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListDocuments
-<a name="API_ListDocuments"></a>
 
 Returns all Systems Manager (SSM) documents in the current AWS account and AWS Region. You can limit the results of this request by using a filter.
 

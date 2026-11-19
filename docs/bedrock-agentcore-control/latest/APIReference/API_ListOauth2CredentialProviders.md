@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListOauth2CredentialProviders
-<a name="API_ListOauth2CredentialProviders"></a>
 
 Lists all OAuth2 credential providers in your account.
 

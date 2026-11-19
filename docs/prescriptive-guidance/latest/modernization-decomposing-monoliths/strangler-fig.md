@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Strangler fig pattern
-<a name="strangler-fig"></a>
 
 The design patterns discussed so far in this guide apply to decomposing applications for greenfield projects. What about brownfield projects that involve big, monolithic applications? Applying the previous design patterns to them will be difficult, because breaking them into smaller pieces while they're being used actively is a big task.
 

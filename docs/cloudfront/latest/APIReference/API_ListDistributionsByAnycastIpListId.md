@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByAnycastIpListId
-<a name="API_ListDistributionsByAnycastIpListId"></a>
 
 Lists the distributions in your account that are associated with the specified `AnycastIpListId`.
 

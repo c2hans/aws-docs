@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Statement.html
 ---
 
 # Statement
-<a name="API_Statement"></a>
 
 The statement or request for a particular action to occur in a session.
 

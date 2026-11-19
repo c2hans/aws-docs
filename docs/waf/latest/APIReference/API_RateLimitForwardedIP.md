@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RateLimitFor
 ---
 
 # RateLimitForwardedIP
-<a name="API_RateLimitForwardedIP"></a>
 
 Specifies the first IP address in an HTTP header as an aggregate key for a rate-based rule. Each distinct forwarded IP address contributes to the aggregation instance.
 

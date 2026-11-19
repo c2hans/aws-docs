@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredCustomerManagedKey
-<a name="API_RegisteredCustomerManagedKey"></a>
 
 A customer managed key structure that contains the information listed below:
 +  `KeyArn` - The ARN of a AWS KMS key that is registered to a Quick Sight account for encryption and decryption use.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/sett
 ---
 
 # Getting Started with the AWS Toolkit for Visual Studio Code
-<a name="setting-up"></a>
 
 The AWS Toolkit for Visual Studio Code makes your AWS services and resources available, directly from your VS Code integrated development environment (IDE).
 

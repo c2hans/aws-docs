@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec02-b
 ---
 
 # SEC02-BP03 Store and use secrets securely
-<a name="sec02-bp03"></a>
 
  Workloads prove their identity to databases, APIs, and third-party services with secrets such as passwords, API keys, and tokens. A secret in source code, a configuration file, or an environment variable is easy to disclose and hard to rotate. A secrets service encrypts these credentials, controls access, and rotates them automatically.
 

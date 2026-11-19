@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 Follow the step-by-step instructions in this section to uninstall the solution into your account. You can use the AWS Management Console, AWS CLI, or [AWS CloudFormation](using-aws-cloudformation.md).
 

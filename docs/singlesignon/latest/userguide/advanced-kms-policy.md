@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/advanced-k
 ---
 
 # Advanced KMS key policy statements
-<a name="advanced-kms-policy"></a>
 
  Use advanced KMS key policy statements to implement more granular access controls for your customer managed KMS key. These policies build on the [Baseline KMS key policy](baseline-KMS-key-policy.md) by adding encryption context conditions and service-specific restrictions. Before deciding whether to use advanced KMS key policy statements, make sure to review the pertinent considerations.
 

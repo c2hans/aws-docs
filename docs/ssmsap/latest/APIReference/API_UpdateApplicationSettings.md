@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_UpdateApp
 ---
 
 # UpdateApplicationSettings
-<a name="API_UpdateApplicationSettings"></a>
 
 Updates the settings of an application registered with AWS Systems Manager for SAP.
 

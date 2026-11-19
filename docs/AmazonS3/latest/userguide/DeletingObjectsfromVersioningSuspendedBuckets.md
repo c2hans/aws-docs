@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/DeletingObject
 ---
 
 # Deleting objects from versioning-suspended buckets
-<a name="DeletingObjectsfromVersioningSuspendedBuckets"></a>
 
 You can delete objects from versioning-suspended buckets to remove an object with a null version ID.
 

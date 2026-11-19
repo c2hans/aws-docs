@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dance.html
 ---
 
 # .dance
-<a name="dance"></a>
 
 Used by dancers, dance instructors, and dance schools.
 

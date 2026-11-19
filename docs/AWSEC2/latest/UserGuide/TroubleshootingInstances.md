@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingI
 ---
 
 # Troubleshoot Amazon EC2 Linux instances with failed status checks
-<a name="TroubleshootingInstances"></a>
 
 The following information can help you troubleshoot issues if your Linux instance fails a status check. First determine whether your applications are exhibiting any problems. If you verify that the instance is not running your applications as expected, review the status check information and the system logs.
 

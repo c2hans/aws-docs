@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CvssScore.
 ---
 
 # CvssScore
-<a name="API_CvssScore"></a>
 
 The CVSS score for a finding.
 

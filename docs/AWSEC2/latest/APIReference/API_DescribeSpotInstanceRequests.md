@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSpotInstanceRequests
-<a name="API_DescribeSpotInstanceRequests"></a>
 
 Describes the specified Spot Instance requests.
 

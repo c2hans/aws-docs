@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # LiveConnectorSourceConfiguration
-<a name="API_media-pipelines-chime_LiveConnectorSourceConfiguration"></a>
 
 The data source configuration object of a streaming media pipeline.
 

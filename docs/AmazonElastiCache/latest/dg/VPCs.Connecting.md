@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VPCs.Connect
 ---
 
 # Connecting to a cache running in an Amazon VPC
-<a name="VPCs.Connecting"></a>
 
 This example shows how to launch an Amazon EC2 instance in your Amazon VPC. You can then log in to this instance and access the ElastiCache cache that is running in the Amazon VPC.
 

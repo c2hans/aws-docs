@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateFuotaTask
-<a name="API_CreateFuotaTask"></a>
 
 Creates a FUOTA task.
 

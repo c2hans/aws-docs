@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # S3MonitoringConfiguration
-<a name="API_S3MonitoringConfiguration"></a>
 
 The Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3.
 

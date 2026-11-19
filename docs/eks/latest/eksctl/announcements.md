@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/announcements.html
 ---
 
 # Announcements
-<a name="announcements"></a>
 
 This topic covers past annoucements of new Eksctl features.
 

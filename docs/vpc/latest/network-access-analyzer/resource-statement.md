@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/resou
 ---
 
 # Network Access Analyzer resource statements
-<a name="resource-statement"></a>
 
 A resource statement in Network Access Analyzer defines the network components for a match or exclude condition. Each resource statement includes resource IDs, resource ARNs, or resource types. A single resource statement can include either resource IDs or resource types, but not both.
 

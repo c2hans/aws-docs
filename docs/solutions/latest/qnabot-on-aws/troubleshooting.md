@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/troublesh
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides information about known issues with QnABot on AWS and instructions for resolving them.
 

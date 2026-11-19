@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_I
 ---
 
 # ItemFilters
-<a name="API_BKS_ItemFilters"></a>
 
 Item Filters represent all input item properties specified when the search was created.
 

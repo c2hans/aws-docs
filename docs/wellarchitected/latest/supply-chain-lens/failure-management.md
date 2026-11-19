@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Failure management
-<a name="failure-management"></a>
 
 | SCREL04: How do you synchronize inventory and order data in real-time across all nodes in the supply chain? |
 | --- |

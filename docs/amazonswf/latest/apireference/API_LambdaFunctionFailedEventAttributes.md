@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Lambda
 ---
 
 # LambdaFunctionFailedEventAttributes
-<a name="API_LambdaFunctionFailedEventAttributes"></a>
 
 Provides the details of the `LambdaFunctionFailed` event. It isn't set for other event types.
 

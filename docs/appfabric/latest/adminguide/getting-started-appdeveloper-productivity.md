@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/getting-star
 ---
 
 # Get started with AppFabric for productivity (preview) for application developers
-<a name="getting-started-appdeveloper-productivity"></a>
 
 |  |
 | --- |

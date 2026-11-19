@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_No
 ---
 
 # NodeCounts
-<a name="API_NodeCounts"></a>
 
 Information about the number of nodes and node types in a vehicle network.
 

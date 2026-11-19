@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteDomainAccessGrantForOrganization
-<a name="API_DeleteDomainAccessGrantForOrganization"></a>
 
 Removes an existing organization access grant, revoking the access it granted.
 

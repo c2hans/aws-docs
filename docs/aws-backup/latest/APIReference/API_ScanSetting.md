@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanS
 ---
 
 # ScanSetting
-<a name="API_ScanSetting"></a>
 
 Contains configuration settings for malware scanning, including the scanner type, target resource types, and scanner role.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Descri
 ---
 
 # DescribeICD10CMInferenceJob
-<a name="API_DescribeICD10CMInferenceJob"></a>
 
 Gets the properties associated with an InferICD10CM job. Use this operation to get the status of an inference job.
 

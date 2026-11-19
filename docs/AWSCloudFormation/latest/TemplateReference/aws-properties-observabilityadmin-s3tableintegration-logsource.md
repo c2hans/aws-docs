@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::S3TableIntegration LogSource
-<a name="aws-properties-observabilityadmin-s3tableintegration-logsource"></a>
 
 A data source with an S3 Table integration for query access in the `logs` namespace.
 

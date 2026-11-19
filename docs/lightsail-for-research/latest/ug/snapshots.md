@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/snapsho
 ---
 
 # Backup virtual computers and disks with Lightsail for Research snapshots
-<a name="snapshots"></a>
 
 Snapshots are a point-in-time copy of your data. You can create snapshots of your Amazon Lightsail for Research virtual computers and storage disks, and use them as baselines to create new computers or for data backup.
 

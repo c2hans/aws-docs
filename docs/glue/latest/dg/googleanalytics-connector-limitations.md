@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleanalytics-connector
 ---
 
 # Limitations and considerations
-<a name="googleanalytics-connector-limitations"></a>
 
 The following are limitations for the Google Analytics 4 connector:
 +  For the Core Report entity, only 9 dimension fields and 10 metric fields are allowed to send in a request. If the allowed number of fields is exceeded then request will fail and connector will throw an error message.

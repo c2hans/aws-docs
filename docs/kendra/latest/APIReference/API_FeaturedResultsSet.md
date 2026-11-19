@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FeaturedR
 ---
 
 # FeaturedResultsSet
-<a name="API_FeaturedResultsSet"></a>
 
 A set of featured results that are displayed at the top of your search results. Featured results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
 

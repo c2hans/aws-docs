@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Service-Linked Roles
-<a name="next-gen-org-slrs"></a>
 
 Service-Linked Roles (`AWSServiceRoleForResilienceHub`) are IAM roles that are automatically created in every member account when you enable trusted access for `resiliencehub.amazonaws.com` from the management account. These roles provide the delegated administrator with read-only cross-account visibility into member account resources without requiring manual IAM configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-attaching
 ---
 
 # Attaching to the remote RDS for Db2 DB instance
-<a name="db2-attaching-to-remote"></a>
 
 Use the following steps to attach to your remote RDS for Db2 DB instance and run `get snapshot` operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/mc-gettin
 ---
 
 # Getting started with medical coding
-<a name="mc-getting-started"></a>
 
 This tutorial walks you through a single medical coding job from end to end. Each step links to a topic with full detail. Use this page to understand the flow, and the linked topics as reference when you build.
 

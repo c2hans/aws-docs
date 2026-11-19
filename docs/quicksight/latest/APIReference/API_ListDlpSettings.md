@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListD
 ---
 
 # ListDlpSettings
-<a name="API_ListDlpSettings"></a>
 
 Lists all DLP settings in an AWS account.
 

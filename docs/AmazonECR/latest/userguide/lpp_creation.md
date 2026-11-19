@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/lpp_creation.
 ---
 
 # Creating a lifecycle policy preview in Amazon ECR
-<a name="lpp_creation"></a>
 
 You can use a lifecycle policy preview to see the impact of a lifecycle policy on an image repository before you apply it. It is considered best practice to do a preview before applying a lifecycle policy to a repository.
 

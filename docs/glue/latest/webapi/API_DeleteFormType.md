@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteFormType.ht
 ---
 
 # DeleteFormType
-<a name="API_DeleteFormType"></a>
 
 Deletes a form type from AWS Glue Data Catalog. A form type cannot be deleted if it is still referenced by an asset type.
 

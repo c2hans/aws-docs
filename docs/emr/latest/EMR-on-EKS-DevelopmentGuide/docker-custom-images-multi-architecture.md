@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/d
 ---
 
 # Work with multi-architecture images
-<a name="docker-custom-images-multi-architecture"></a>
 
 Amazon EMR on EKS supports multi-architecture container images for Amazon Elastic Container Registry (Amazon ECR). For more information, see [Introducing multi-architecture container images for Amazon ECR](https://aws.amazon.com/blogs/containers/introducing-multi-architecture-container-images-for-amazon-ecr/).
 

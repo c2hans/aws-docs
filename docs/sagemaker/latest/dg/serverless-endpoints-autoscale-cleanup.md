@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Clean up
-<a name="serverless-endpoints-autoscale-cleanup"></a>
 
  After you have finished using autoscaling for your serverless endpoint with Provisioned Concurrency, you should clean up the resources you created. This involves deleting the scaling policy and deregistering the model from Application Auto Scaling. Cleaning up ensures that you don't incur unnecessary costs for resources you're no longer using.
 

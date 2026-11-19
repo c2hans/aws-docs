@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # When to create multiple systems
-<a name="next-gen-when-multiple-systems"></a>
 
 Create **separate systems** when:
 + Applications or services are independently operated by different teams.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_list.html
 ---
 
 # View IAM users
-<a name="id_users_list"></a>
 
 You can list the IAM users in your AWS account or in a specific IAM group, and list all the IAM groups that a user is in. For information about the permissions that you need in order to list users, see [Permissions required to access IAM resources](access_permissions-required.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetAssetType.html
 ---
 
 # GetAssetType
-<a name="API_GetAssetType"></a>
 
 Retrieves an asset type in AWS Glue Data Catalog by its identifier.
 

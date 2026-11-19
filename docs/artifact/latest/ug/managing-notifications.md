@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/managing-notification
 ---
 
 # Configuring email notifications in AWS Artifact
-<a name="managing-notifications"></a>
 
 **Note**
 The content of this page is only applicable to commercial AWS [Regions](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs#region), and does not currently apply to AWS GovCloud (US) Regions.

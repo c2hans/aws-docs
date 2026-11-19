@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/configura
 ---
 
 # Configuration
-<a name="configurations-configuration-id"></a>
 
 A configuration contains all of the settings for your broker. For more information, see [Amazon MQ for RabbitMQ broker configurations](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-broker-configuration-parameters.html) and [Amazon MQ for ActiveMQ broker configurations](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html) in the Amazon MQ Developer Guide.
 

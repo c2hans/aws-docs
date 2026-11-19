@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Edit a Lightsail DNS zone
-<a name="amazon-lightsail-edit-or-delete-a-dns-zone"></a>
 
 Edit the DNS records in your domain's DNS zone. You can also delete your domain's DNS zone in Amazon Lightsail if you want to transfer management of your domain's DNS records to another DNS hosting provider or back to the registrar where you registered your domain. For more information, see [Delete a DNS zone in Lightsail](lightsail-delete-dns-zone.md)
 

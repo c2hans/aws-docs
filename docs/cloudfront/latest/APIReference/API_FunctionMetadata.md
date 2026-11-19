@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Funct
 ---
 
 # FunctionMetadata
-<a name="API_FunctionMetadata"></a>
 
 Contains metadata about a CloudFront function.
 

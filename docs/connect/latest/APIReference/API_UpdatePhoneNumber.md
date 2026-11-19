@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePh
 ---
 
 # UpdatePhoneNumber
-<a name="API_UpdatePhoneNumber"></a>
 
 Updates your claimed phone number from its current Connect Customer instance or traffic distribution group to another Connect Customer instance or traffic distribution group in the same AWS Region.
 

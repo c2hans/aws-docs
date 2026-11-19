@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # AnswerMachineDetectionConfig
-<a name="API_connect-outbound-campaigns_AnswerMachineDetectionConfig"></a>
 
 Contains information about answering machine detection.
 

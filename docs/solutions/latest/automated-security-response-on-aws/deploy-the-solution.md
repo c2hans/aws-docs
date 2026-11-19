@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 **Important**
 If the [consolidated control findings](deciding-where-to-deploy-each-stack.md#consolidated-controls-findings) feature is turned on in AWS Security Hub, only enable the Security Control (SC) playbook when deploying this solution. If the feature is not turned on, **only** enable the playbooks for the security standards that are enabled in Security Hub. Consolidated control findings is enabled by default if you enable Security Hub CSPM on or after February 23, 2023.

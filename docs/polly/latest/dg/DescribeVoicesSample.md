@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/DescribeVoicesSample.htm
 ---
 
 # DescribeVoices
-<a name="DescribeVoicesSample"></a>
 
 The following Java code sample show how to use Java-based applications to produce a list of the voices that are available for use when requesting speech synthesis. You can optionally specify a language code to filter the available voices. For example, if you specify en-US, the operation returns a list of all available US English voices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Using the agentic experience with AWS Glue Data Catalog
-<a name="catalog-integration-glue-agentic"></a>
 
 After you connect to AWS Glue Data Catalog, choose **Explore data** on the data source to launch the agentic experience.
 

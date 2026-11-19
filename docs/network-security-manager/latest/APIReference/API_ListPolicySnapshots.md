@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListPolicySnapshots
-<a name="API_ListPolicySnapshots"></a>
 
 Lists the snapshots of the specified policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Focus area 1: Clarify agent intent and scope
-<a name="focus-areas-agent-intent-scope"></a>
 
 *Job to be done: "Help me make sure that each agent solves a real problem with clear boundaries, not just a cool demo."*
 

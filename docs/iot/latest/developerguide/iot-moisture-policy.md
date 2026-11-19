@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-moisture-p
 ---
 
 # Step 1: Create the AWS IoT policy
-<a name="iot-moisture-policy"></a>
 
 Create an AWS IoT policy that allows your Raspberry Pi to connect and send messages to AWS IoT.
 

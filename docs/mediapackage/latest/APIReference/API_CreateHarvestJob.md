@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cre
 ---
 
 # CreateHarvestJob
-<a name="API_CreateHarvestJob"></a>
 
 Creates a new harvest job to export content from a MediaPackage v2 channel to an S3 bucket.
 

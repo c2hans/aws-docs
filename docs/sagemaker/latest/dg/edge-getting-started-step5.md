@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-getting-started
 ---
 
 # Run Agent
-<a name="edge-getting-started-step5"></a>
 
 In this section you will run the agent as a binary using gRPC, and check that both your device and fleet are working and collecting sample data.
 

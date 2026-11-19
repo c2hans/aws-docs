@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualMenuOption
-<a name="API_VisualMenuOption"></a>
 
 The menu options for a visual.
 

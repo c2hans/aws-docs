@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteGr
 ---
 
 # DeleteGraphqlApi
-<a name="API_DeleteGraphqlApi"></a>
 
 Deletes a `GraphqlApi` object.
 

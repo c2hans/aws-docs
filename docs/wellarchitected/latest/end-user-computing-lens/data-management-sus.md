@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Data management
-<a name="data-management-sus"></a>
 
 |  EUCSUS07: How do you manage data within EUC services to promote efficient resource usage?  |
 | --- |

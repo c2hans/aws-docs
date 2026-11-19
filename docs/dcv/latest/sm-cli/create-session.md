@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/create-session.html
 ---
 
 # create-session
-<a name="create-session"></a>
 
 Creates a new Amazon DCV session with the specified details.
 

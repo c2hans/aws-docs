@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Endpoint
 ---
 
 # Finding the endpoint of your RDS for Oracle DB instance
-<a name="USER_Endpoint"></a>
 
 Each Amazon RDS DB instance has an endpoint, and each endpoint has the DNS name and port number for the DB instance. To connect to your DB instance using a SQL client application, you need the DNS name and port number for your DB instance.
 

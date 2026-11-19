@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-free-form.
 ---
 
 # AMAZON.FreeFormInput
-<a name="built-in-slot-free-form"></a>
 
 `AMAZON.FreeFormInput` can be used to capture free form input from the end user. It recognizes strings that consist of words or characters. The resolved value is the entire input utterance.
 

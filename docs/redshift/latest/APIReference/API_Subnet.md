@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Subnet.
 ---
 
 # Subnet
-<a name="API_Subnet"></a>
 
 Describes a subnet.
 

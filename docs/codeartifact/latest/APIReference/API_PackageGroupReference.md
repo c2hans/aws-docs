@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageGroupReference
-<a name="API_PackageGroupReference"></a>
 
 Information about the identifiers of a package group.
 

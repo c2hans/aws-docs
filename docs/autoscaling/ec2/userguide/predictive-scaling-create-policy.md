@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-sca
 ---
 
 # Create a predictive scaling policy for an Auto Scaling group
-<a name="predictive-scaling-create-policy"></a>
 
 The following procedures help you create a predictive scaling policy using the AWS Management Console or AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-servi
 ---
 
 # AWS services that work with IAM
-<a name="reference_aws-services-that-work-with-iam"></a>
 
 The AWS services listed below are grouped alphabetically and include information about what IAM features they support:
 + **Service** – You can choose the name of a service to view the AWS documentation about IAM authorization and access for that service.

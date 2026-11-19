@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ColumnS
 ---
 
 # ColumnSelector
-<a name="API_ColumnSelector"></a>
 
 Selector of a column from a dataset for profile job configuration. One selector includes either a column name or a regular expression.
 

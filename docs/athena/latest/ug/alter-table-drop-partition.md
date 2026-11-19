@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-drop-partit
 ---
 
 # ALTER TABLE DROP PARTITION
-<a name="alter-table-drop-partition"></a>
 
 Drops one or more specified partitions for the named table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-privat
 ---
 
 # OIDC IdP Workforces
-<a name="sms-workforce-private-use-oidc"></a>
 
 Create a private workforce using an OpenID Connect (OIDC) Identity Provider (IdP) when you want to manage and authenticate your workers using your own OIDC IdP. Individual worker credentials and other data will be kept private. Ground Truth and Amazon A2I will only have visibility into worker information you provide through the claims that you send to these services. To create a workforce using an OIDC IdP, your IdP must support *groups* because Ground Truth and Amazon A2I map one or more groups in your IdP to a work team. To learn more, see [Send Required and Optional Claims to Ground Truth and Amazon A2I](sms-workforce-create-private-oidc.md#sms-workforce-create-private-oidc-configure-idp).
 

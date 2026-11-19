@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/life-cycle-eve
 ---
 
 # Lifecycle events
-<a name="life-cycle-events"></a>
 
 AWS IoT can publish lifecycle events on the MQTT topics. These events are available by default and they can't be disabled.
 

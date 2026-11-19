@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/configure-efa-cli
 ---
 
 # Configuring EFA clients
-<a name="configure-efa-clients"></a>
 
 Use the following procedures to set up your Lustre client to access an FSx for Lustre file system via Elastic Fabric Adapter (EFA).
 

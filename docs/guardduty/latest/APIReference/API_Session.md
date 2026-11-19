@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Sessio
 ---
 
 # Session
-<a name="API_Session"></a>
 
 Contains information about the authenticated session.
 

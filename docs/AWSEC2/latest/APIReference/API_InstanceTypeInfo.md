@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTypeInfo
-<a name="API_InstanceTypeInfo"></a>
 
 Describes the instance type.
 

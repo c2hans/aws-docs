@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Vul
 ---
 
 # VulnerablePackage
-<a name="API_VulnerablePackage"></a>
 
 Information about a vulnerable package that Amazon Inspector identifies in a finding.
 

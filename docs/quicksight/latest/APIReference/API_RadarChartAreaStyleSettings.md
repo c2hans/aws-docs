@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Radar
 ---
 
 # RadarChartAreaStyleSettings
-<a name="API_RadarChartAreaStyleSettings"></a>
 
 The configured style settings of a radar chart.
 

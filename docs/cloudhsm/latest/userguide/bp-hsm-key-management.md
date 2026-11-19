@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/bp-hsm-key-man
 ---
 
 # AWS CloudHSM key management best practices
-<a name="bp-hsm-key-management"></a>
 
 Follow the best practices in this section when managing keys in AWS CloudHSM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/fms-webacl-
 ---
 
 # fms-webacl-rulegroup-association-check
-<a name="fms-webacl-rulegroup-association-check"></a>
 
 **Note**
 This rule is currently in the deprecation process. We do not recommend that you use them directly.

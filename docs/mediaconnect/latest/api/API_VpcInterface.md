@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VpcInterface
 ---
 
 # VpcInterface
-<a name="API_VpcInterface"></a>
 
  The settings for a VPC source.
 

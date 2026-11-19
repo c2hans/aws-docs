@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAc
 ---
 
 # DeleteAccessGrant
-<a name="API_control_DeleteAccessGrant"></a>
 
 Deletes the access grant from the S3 Access Grants instance. You cannot undo an access grant deletion and the grantee will no longer have access to the S3 data.
 

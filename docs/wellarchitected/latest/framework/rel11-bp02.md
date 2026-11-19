@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP02 Fail over to healthy resources
-<a name="rel11-bp02"></a>
 
  When one resource fails, healthy resources keep serving requests. Distribute load across independent resources, Availability Zones, or Regions so that any single impairment removes only part of your capacity. Then add mechanisms to detect the impairment and shift traffic away from it, so a localized fault does not spread to the whole workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-sp-managi
 ---
 
 # Stored procedures for databases for RDS for Db2
-<a name="db2-sp-managing-databases"></a>
 
 The built-in stored procedures described in this topic manage databases for Amazon RDS for Db2. To run these procedures, the master user must first connect to the `rdsadmin` database.
 

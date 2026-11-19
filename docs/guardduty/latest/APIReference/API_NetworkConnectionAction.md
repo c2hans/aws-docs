@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkConnectionAction
-<a name="API_NetworkConnectionAction"></a>
 
 Contains information about the NETWORK\_CONNECTION action described in the finding.
 

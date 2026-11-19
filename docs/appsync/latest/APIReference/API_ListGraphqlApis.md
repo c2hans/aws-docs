@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListGrap
 ---
 
 # ListGraphqlApis
-<a name="API_ListGraphqlApis"></a>
 
 Lists your GraphQL APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-feature
 ---
 
 # Creating an Elastic Beanstalk environment
-<a name="using-features.environments"></a>
 
 The following procedure launches a new environment running the default application. These steps are simplified to get your environment up and running quickly, using default option values.
 

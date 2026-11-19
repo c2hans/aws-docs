@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/conf
 ---
 
 # Configuring service clients in code for the AWS SDK for Java 2.x
-<a name="configuring-service-clients-code"></a>
 
 As an alternative to—or in addition to—[configuring service clients externally](configuring-service-clients-ext.md), you can configure them programmatically in code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # EmailGenerativeAnswerChunkDataDetails
-<a name="API_amazon-q-connect_EmailGenerativeAnswerChunkDataDetails"></a>
 
 Details of streaming chunk data for email generative answers including completion text and references.
 

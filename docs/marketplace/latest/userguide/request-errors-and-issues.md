@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/request-err
 ---
 
 # Troubleshooting common errors for change requests on AWS Marketplace
-<a name="request-errors-and-issues"></a>
 
 When you make changes to your product's information on AWS Marketplace, you might run into errors. This topic explains some common errors and provides suggestions for how to fix them.
 + **Scanning your AMI** – Several issues could happen when scanning your AMI:

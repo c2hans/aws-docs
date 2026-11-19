@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Sig
 ---
 
 # SignInOptions
-<a name="API_SignInOptions"></a>
 
 A structure that describes the sign-in options for an application portal.
 

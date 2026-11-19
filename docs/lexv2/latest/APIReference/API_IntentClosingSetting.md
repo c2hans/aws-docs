@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentClos
 ---
 
 # IntentClosingSetting
-<a name="API_IntentClosingSetting"></a>
 
 Provides a statement the Amazon Lex conveys to the user when the intent is successfully fulfilled.
 

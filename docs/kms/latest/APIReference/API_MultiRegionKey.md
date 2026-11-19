@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_MultiRegionK
 ---
 
 # MultiRegionKey
-<a name="API_MultiRegionKey"></a>
 
 Describes the primary or replica key in a multi-Region key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ListContextStores
-<a name="API_ListContextStores"></a>
 
 Lists the active context stores that are associated with your firewalls. A context store records network resources that can be used to evaluate context-aware rules. You can list the following resource types: VPCs, subnets, security groups, and transit gateway attachments.
 

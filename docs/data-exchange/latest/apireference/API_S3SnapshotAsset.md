@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_S3
 ---
 
 # S3SnapshotAsset
-<a name="API_S3SnapshotAsset"></a>
 
 The Amazon S3 object that is the asset.
 

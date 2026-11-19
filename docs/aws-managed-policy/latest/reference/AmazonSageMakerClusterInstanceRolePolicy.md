@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerClusterInstanceRolePolicy
-<a name="AmazonSageMakerClusterInstanceRolePolicy"></a>
 
 **Description**: This policy grants permissions commonly needed to use Amazon SageMaker Cluster.
 

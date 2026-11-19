@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Automatically address security threats with predefined response and remediation actions in AWS Security Hub
-<a name="solution-overview"></a>
 
 This implementation guide provides an overview of the Automated Security Response on AWS solution, its reference architecture and components, considerations for planning the deployment, configuration steps for deploying the Automated Security Response on AWS solution to the Amazon Web Services (AWS) Cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-table-f
 ---
 
 # Use Linux Foundation Delta Lake tables in Athena for Spark
-<a name="notebooks-spark-table-formats-linux-foundation-delta-lake"></a>
 
 [Linux Foundation Delta Lake](https://delta.io/) is a table format that you can use for big data analytics. You can use Athena for Spark to read Delta Lake tables stored in Amazon S3 directly.
 

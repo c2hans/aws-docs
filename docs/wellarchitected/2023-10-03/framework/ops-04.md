@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS 4. How do you implement observability in your workload?
-<a name="ops-04"></a>
 
 Implement observability in your workload so that you can understand its state and make data-driven decisions based on business requirements.
 

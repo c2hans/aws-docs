@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Driving adoption of your disaster recovery strategy
-<a name="driving-adoption"></a>
 
 When your DR strategy is in place, you can drive adoption of the strategy throughout your organization. When your strategy reaches 100 percent adoption, all applications and their databases would be in a position to handle an adverse DR event and can pursue DR maturity through testing.
 

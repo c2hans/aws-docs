@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Learning to Rank for Amazon OpenSearch Service
-<a name="learning-to-rank"></a>
 
 OpenSearch uses a probabilistic ranking framework called BM-25 to calculate relevance scores. If a distinctive keyword appears more frequently in a document, BM-25 assigns a higher relevance score to that document. This framework, however, doesn’t take into account user behavior like click-through data, which can further improve relevance.
 

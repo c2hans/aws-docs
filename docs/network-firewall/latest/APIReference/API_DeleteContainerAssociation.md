@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteContainerAssociation
-<a name="API_DeleteContainerAssociation"></a>
 
 Deletes a container association. The resource transitions to a `DELETING` state. Deletion is asynchronous - Network Firewall returns immediately while cleanup proceeds in the background. You can't delete a container association while a rule group references it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/getting
 ---
 
 # Get started providing agents with access to WorkSpaces Applications
-<a name="getting-started-agent-access"></a>
 
 To enable AI agents to operate desktop applications through Amazon WorkSpaces Applications, you create a stack with access enabled for agents, generate a streaming URL, and connect your agent to the managed MCP server. You can also enable agent access on an image builder, so that an agent can install and test applications before you create an image.
 

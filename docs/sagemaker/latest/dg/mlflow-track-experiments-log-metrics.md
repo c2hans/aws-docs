@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-track-experim
 ---
 
 # Log metrics, parameters, and MLflow models during training
-<a name="mlflow-track-experiments-log-metrics"></a>
 
 After connecting to your MLflow Tracking Server, you can use the MLflow SDK to log metrics, parameters, and MLflow models.
 

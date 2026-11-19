@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association MCPServerSigV4Configuration
-<a name="aws-properties-devopsagent-association-mcpserversigv4configuration"></a>
 
 Configuration for SigV4-authenticated MCP server integration. Specifies the available tools to enable the Agent Space to interact with an MCP server that authenticates requests using AWS Signature Version 4.
 

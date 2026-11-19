@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StartNoteboo
 ---
 
 # StartNotebookExecution
-<a name="API_StartNotebookExecution"></a>
 
 Starts a notebook execution.
 

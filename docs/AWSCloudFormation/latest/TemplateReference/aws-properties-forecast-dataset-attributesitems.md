@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Forecast::Dataset AttributesItems
-<a name="aws-properties-forecast-dataset-attributesitems"></a>
 
 <a name="aws-properties-forecast-dataset-attributesitems-description"></a>The `AttributesItems` property type specifies Property description not available. for an [AWS::Forecast::Dataset](aws-resource-forecast-dataset.md).
 

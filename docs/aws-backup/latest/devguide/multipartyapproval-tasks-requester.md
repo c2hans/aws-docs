@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapp
 ---
 
 # Requester tasks
-<a name="multipartyapproval-tasks-requester"></a>
 
 ## Associate a Multi-party approval team with a logically air-gapped vault
 <a name="associate-multipartyapproval-team"></a>

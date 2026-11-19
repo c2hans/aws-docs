@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_Sort.html
 ---
 
 # Sort
-<a name="API_connect-cases_Sort"></a>
 
 A structured set of sort terms.
 

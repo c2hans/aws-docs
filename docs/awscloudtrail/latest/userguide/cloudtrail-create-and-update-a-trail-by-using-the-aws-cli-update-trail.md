@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Using the `update-trail` command to update a trail
-<a name="cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-update-trail"></a>
 
 **Important**
 As of November 22, 2021, AWS CloudTrail changed how trails capture global service events. Now, events created by Amazon CloudFront, AWS Identity and Access Management, and AWS STS are recorded in the Region in which they were created, the US East (N. Virginia) Region, us-east-1. This makes how CloudTrail treats these services consistent with that of other AWS global services. To continue receiving global service events outside of US East (N. Virginia), be sure to convert *single-Region trails* using global service events outside of US East (N. Virginia) into *multi-Region trails*. For more information about capturing global service events, see [Enabling and disabling global service event logging](#cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-examples-gses) later in this section.

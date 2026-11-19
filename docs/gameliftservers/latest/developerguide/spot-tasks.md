@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/sp
 ---
 
 # Build a queue for Spot Instances
-<a name="spot-tasks"></a>
 
 You can achieve potentially significant savings in hosting costs by using Spot fleets. For more details about Spot fleets and how to use them, see [On-Demand Instances versus Spot Instances](gamelift-compute.md#gamelift-compute-spot).
 

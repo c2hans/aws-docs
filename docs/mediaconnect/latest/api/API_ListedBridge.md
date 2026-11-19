@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedBridge
 ---
 
 # ListedBridge
-<a name="API_ListedBridge"></a>
 
  Displays details of the selected bridge.
 

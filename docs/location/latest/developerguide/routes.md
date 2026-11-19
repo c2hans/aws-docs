@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/routes.ht
 ---
 
 # Amazon Location Service Routes
-<a name="routes"></a>
 
 ![An overview of Amazon Location Service Routes.](https://docs.aws.amazon.com/location/latest/developerguide/images/routesV2/route-banner.png)
 

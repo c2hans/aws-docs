@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldSortOptions
-<a name="API_FieldSortOptions"></a>
 
 The field sort options in a chart configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RestartRoute
 ---
 
 # RestartRouterInput
-<a name="API_RestartRouterInput"></a>
 
 Restarts a router input. This operation can be used to recover from errors or refresh the input state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/s
 ---
 
 # Sharing AWS Network Firewall resources
-<a name="sharing"></a>
 
 You can share Network Firewall firewalls, firewall policies, rule groups, and container associations with other AWS accounts. When you share a firewall, other accounts can use your firewall's protections in their VPCs through VPC endpoint associations. When you share firewall policies or rule groups, other accounts can use these resources in their own firewalls.
 

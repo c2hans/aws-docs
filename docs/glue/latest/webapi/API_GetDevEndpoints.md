@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDevEndpoints.h
 ---
 
 # GetDevEndpoints
-<a name="API_GetDevEndpoints"></a>
 
 Retrieves all the development endpoints in this AWS account.
 

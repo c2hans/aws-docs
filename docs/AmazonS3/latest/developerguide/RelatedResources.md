@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RelatedRe
 ---
 
 # Amazon S3 Resources
-<a name="RelatedResources"></a>
 
 Following is a table that lists related resources that you'll find useful as you work with this service.
 

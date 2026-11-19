@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # PromQL alarms
-<a name="alarm-promql"></a>
 
 A PromQL alarm monitors metrics using a Prometheus Query Language (PromQL) instant query. The query selects metrics ingested through the CloudWatch OTLP endpoint, and all matching time series returned by the query are considered to be breaching. The alarm evaluates the query at a regular interval and tracks each breaching time series independently as a *contributor*.
 

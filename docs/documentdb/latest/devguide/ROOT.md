@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ROOT.html
 ---
 
 # $ROOT
-<a name="ROOT"></a>
 
 The `$ROOT` operator in Amazon DocumentDB is used to reference the entire input document within an aggregation pipeline. It allows you to access and manipulate the complete document, including all its nested fields and structures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Client-side and server-side encryption
-<a name="client-server-side"></a>
 
 |  |
 | --- |

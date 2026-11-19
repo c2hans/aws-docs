@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # RemoveGroupMember
-<a name="API_RemoveGroupMember"></a>
 
  Removes a member from a group.
 

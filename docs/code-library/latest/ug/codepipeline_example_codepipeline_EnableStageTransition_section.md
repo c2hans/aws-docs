@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/codepipeline_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `EnableStageTransition` with a CLI
-<a name="codepipeline_example_codepipeline_EnableStageTransition_section"></a>
 
 The following code examples show how to use `EnableStageTransition`.
 

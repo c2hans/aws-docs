@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/say-as-tag.html
 ---
 
 # Controlling how special types of words are spoken
-<a name="say-as-tag"></a>
 
 *<say-as>*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDataSet
-<a name="API_UpdateDataSet"></a>
 
 Updates a dataset. Partial updates are not supported by this operation.
 

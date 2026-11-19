@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/error-logs.html
 ---
 
 # Logging errors with error logs in Lex V2
-<a name="error-logs"></a>
 
 You enable *error logs* to store bot interactions. You can use these error logs to review the performance of your bot and to troubleshoot errors with conversations.
 

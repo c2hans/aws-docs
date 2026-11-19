@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceC
 ---
 
 # ResourceCount
-<a name="API_ResourceCount"></a>
 
 An object that contains the resource type and the number of resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mq-broker-g
 ---
 
 # mq-broker-general-logging-enabled
-<a name="mq-broker-general-logging-enabled"></a>
 
 Checks if Amazon MQ brokers have general logging enabled. The rule is NON\_COMPLIANT if configuration.Logs.General is false.
 

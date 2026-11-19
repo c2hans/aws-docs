@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Vm.html
 ---
 
 # Vm
-<a name="API_Vm"></a>
 
 Contains details about a VM instance involved in a finding.
 

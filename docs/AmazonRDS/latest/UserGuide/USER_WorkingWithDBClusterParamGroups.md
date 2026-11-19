@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Working with DB cluster parameter groups for Multi-AZ DB clusters
-<a name="USER_WorkingWithDBClusterParamGroups"></a>
 
 Multi-AZ DB clusters use DB cluster parameter groups. The following sections describe configuring and managing DB cluster parameter groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonPodIden
 ---
 
 # AddonPodIdentityConfiguration
-<a name="API_AddonPodIdentityConfiguration"></a>
 
 Information about how to configure IAM for an add-on.
 

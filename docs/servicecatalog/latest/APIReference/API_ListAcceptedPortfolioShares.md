@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListAcceptedPortfolioShares
-<a name="API_ListAcceptedPortfolioShares"></a>
 
 Lists all imported portfolios for which account-to-account shares were accepted by this account. By specifying the `PortfolioShareType`, you can list portfolios for which organizational shares were accepted by this account.
 

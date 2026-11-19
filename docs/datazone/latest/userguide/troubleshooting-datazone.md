@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting Amazon DataZone
-<a name="troubleshooting-datazone"></a>
 
 If you encounter access-denied issues or similar difficulties when working with Amazon DataZone consult the topics in this section.
 

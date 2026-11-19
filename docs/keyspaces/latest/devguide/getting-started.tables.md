@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Create a table in Amazon Keyspaces
-<a name="getting-started.tables"></a>
 
 In this section, you create a table using the console, `cqlsh`, or the AWS CLI.
 

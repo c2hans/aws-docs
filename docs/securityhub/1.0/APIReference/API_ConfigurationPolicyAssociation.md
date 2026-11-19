@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Configu
 ---
 
 # ConfigurationPolicyAssociation
-<a name="API_ConfigurationPolicyAssociation"></a>
 
  Provides details about the association between an AWS Security Hub CSPM configuration and a target account, organizational unit, or the root. An association can exist between a target and a configuration policy, or between a target and self-managed behavior.
 

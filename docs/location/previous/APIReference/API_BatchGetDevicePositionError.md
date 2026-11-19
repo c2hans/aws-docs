@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchGetDevicePositionError
-<a name="API_BatchGetDevicePositionError"></a>
 
 Contains error details for each device that didn't return a position.
 

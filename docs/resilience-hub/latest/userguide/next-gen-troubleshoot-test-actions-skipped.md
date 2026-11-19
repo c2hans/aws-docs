@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Test run completes with all actions skipped
-<a name="next-gen-troubleshoot-test-actions-skipped"></a>
 
 **Symptom:** A test run completes but no faults were injected. All actions show `skipped`.
 

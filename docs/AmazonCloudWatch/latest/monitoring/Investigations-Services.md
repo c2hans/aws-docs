@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # AWS services where investigations are supported
-<a name="Investigations-Services"></a>
 
 You can launch investigations from telemetry data (such as CloudWatch metrics, alarms, and logs), review generated anomaly signals, and explore hypotheses on investigations. CloudWatch investigations work best when helping you with automated troubleshooting guidance on the AWS services listed below:
 + Amazon API Gateway

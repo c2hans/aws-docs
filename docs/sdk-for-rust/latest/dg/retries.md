@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/retries.html
 ---
 
 # Configuring retries in the AWS SDK for Rust
-<a name="retries"></a>
 
 The AWS SDK for Rust provides a default retry behavior for service requests and customizable configuration options. Calls to AWS services occasionally return unexpected exceptions. Certain types of errors, such as throttling or transient errors, might be successful if the call is retried.
 

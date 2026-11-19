@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Using Elastic IP Addresses in Amazon EC2
-<a name="examples-ec2-elastic-ip"></a>
 
 ## Prerequisites
 <a name="codeExamplePrereq"></a>

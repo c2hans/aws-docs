@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Troubleshooting Amazon OpenSearch Service
-<a name="handling-errors"></a>
 
 This topic describes how to identify and solve common Amazon OpenSearch Service issues. Consult the information in this section before contacting [AWS Support](https://aws.amazon.com/premiumsupport/).
 

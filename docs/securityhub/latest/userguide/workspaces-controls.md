@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/workspaces-
 ---
 
 # Security Hub CSPM controls for WorkSpaces
-<a name="workspaces-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon WorkSpaces service and resources.
 

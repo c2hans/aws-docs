@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/aws-datasources
 ---
 
 # Use the AWS Data Sources plugin to find AWS data
-<a name="aws-datasources-plugin"></a>
 
 AWS provides an application plugin to make it easier to discover and use AWS resources as data sources in your Amazon Managed Grafana workspace. The *AWS Data Sources* plugin is installed by default in a new workspace.
 

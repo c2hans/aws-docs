@@ -5,13 +5,12 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/cluster-definition
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `[cluster]` section
-<a name="cluster-definition"></a>
 
 Defines a cluster template that can be used to create a cluster. A config file can contain multiple `[cluster]` sections.
 
 The same cluster template can be used to create multiple clusters.
 
-The format is `[cluster {{cluster-template-name}}]`. The [`[cluster]` section](#cluster-definition) named by the [`cluster_template`](global.md#cluster-template) setting in the [`[global]` section](global.md) is used by default, but can be overridden on the [`pcluster`](pcluster.md) command line.
+The format is `[cluster {{cluster-template-name}}]`. The [`[cluster]` section](cluster-definition.md) named by the [`cluster_template`](global.md#cluster-template) setting in the [`[global]` section](global.md) is used by default, but can be overridden on the [`pcluster`](pcluster.md) command line.
 
 {{cluster-template-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
@@ -832,7 +831,7 @@ proxy_server = http://{{10.11.12.13:8080}}
 **(Optional)** Specifies that the cluster uses queues instead of a homogeneous compute fleet, and which [`[queue]` sections](queue-section.md) are used. The first [`[queue]` section](queue-section.md) listed is the default scheduler queue. The `queue` section names must start with a lowercase letter, contain no more than 30 characters, and only contain lowercase letters, numbers, and hyphens (-).
 
 **Important**
-[`queue_settings`](#queue-settings) is only supported when [`scheduler`](#scheduler) is set to `slurm`. The [`cluster_type`](#cluster-type), [`compute_instance_type`](#compute-instance-type), [`initial_queue_size`](#configuration-initial-queue-size), [`maintain_initial_size`](#maintain-initial-size), [`max_queue_size`](#configuration-max-queue-size), [`placement`](#placement), [`placement_group`](#placement-group), and [`spot_price`](#spot-price) settings must not be specified. The [`disable_hyperthreading`](#disable-hyperthreading) and [`enable_efa`](#enable-efa) settings can either be specified in the [`[cluster]` section](#cluster-definition) or the [`[queue]` sections](queue-section.md), but not both.
+[`queue_settings`](#queue-settings) is only supported when [`scheduler`](#scheduler) is set to `slurm`. The [`cluster_type`](#cluster-type), [`compute_instance_type`](#compute-instance-type), [`initial_queue_size`](#configuration-initial-queue-size), [`maintain_initial_size`](#maintain-initial-size), [`max_queue_size`](#configuration-max-queue-size), [`placement`](#placement), [`placement_group`](#placement-group), and [`spot_price`](#spot-price) settings must not be specified. The [`disable_hyperthreading`](#disable-hyperthreading) and [`enable_efa`](#enable-efa) settings can either be specified in the [`[cluster]` section](cluster-definition.md) or the [`[queue]` sections](queue-section.md), but not both.
 
 Up to five (5) [`[queue]` sections](queue-section.md) are supported.
 

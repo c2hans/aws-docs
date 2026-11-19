@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_TagResour
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to an AWS IoT Greengrass resource. If a tag already exists for the resource, this operation updates the tag's value.
 

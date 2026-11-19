@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Firewall rules reference for Lightsail instances
-<a name="amazon-lightsail-firewall-rules-reference"></a>
 
 You can add rules to an Amazon Lightsail instance's firewall that reflects the role of the instance. For example, an instance that's configured as a web server needs firewall rules that allow inbound HTTP and HTTPS access. A database instance needs rules that allow access for the type of database, such as access over port 3306 for MySQL. For more information about firewalls, see [Instance firewalls in Lightsail](understanding-firewall-and-port-mappings-in-amazon-lightsail.md).
 

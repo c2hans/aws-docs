@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Uninstalling the Flink Kubernetes operator for Amazon EMR on EKS
-<a name="jobruns-flink-kubernetes-operator-uninstall"></a>
 
 Follow these steps to uninstall the Flink Kubernetes operator.
 

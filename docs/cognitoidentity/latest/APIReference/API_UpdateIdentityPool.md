@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # UpdateIdentityPool
-<a name="API_UpdateIdentityPool"></a>
 
 Updates the configuration of an identity pool.
 

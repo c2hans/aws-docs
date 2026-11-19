@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DDBELTCatalogAddi
 ---
 
 # DDBELTCatalogAdditionalOptions
-<a name="API_DDBELTCatalogAdditionalOptions"></a>
 
 Specifies additional options for DynamoDB ELT catalog operations.
 

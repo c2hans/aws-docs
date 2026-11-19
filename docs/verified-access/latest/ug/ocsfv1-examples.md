@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/ocsfv1-example
 ---
 
 # OCSF version 1.0.0-rc.2 log examples for Verified Access
-<a name="ocsfv1-examples"></a>
 
 The following are sample logs using OCSF version 1.0.0-rc.2.
 

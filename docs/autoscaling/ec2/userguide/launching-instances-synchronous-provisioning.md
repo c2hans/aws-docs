@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launching-inst
 ---
 
 # Launching instances with synchronous provisioning
-<a name="launching-instances-synchronous-provisioning"></a>
 
 You can use the LaunchInstances API to synchronously launch a specific number of instances in your Auto Scaling group. The API launches instances in the Availability Zone or subnet that you specify and immediately returns the instance IDs or error information.
 

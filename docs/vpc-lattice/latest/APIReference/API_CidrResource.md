@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Cidr
 ---
 
 # CidrResource
-<a name="API_CidrResource"></a>
 
 Describes a CIDR resource, which represents a network segment as one or more CIDR ranges.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSessio
 ---
 
 # GetSessionStatus
-<a name="API_GetSessionStatus"></a>
 
 Gets the current status of a session.
 

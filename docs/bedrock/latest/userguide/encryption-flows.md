@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-flow
 ---
 
 # Encryption of Amazon Bedrock Flows resources
-<a name="encryption-flows"></a>
 
 Amazon Bedrock encrypts your data at rest. By default, Amazon Bedrock encrypts this data using an AWS managed key. Optionally, you can encrypt the data using a customer managed key.
 

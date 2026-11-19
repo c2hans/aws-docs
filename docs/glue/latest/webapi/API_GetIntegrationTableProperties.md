@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetIntegrationTab
 ---
 
 # GetIntegrationTableProperties
-<a name="API_GetIntegrationTableProperties"></a>
 
 This API is used to retrieve optional override properties for the tables that need to be replicated. These properties can include properties for filtering and partition for source and target tables.
 

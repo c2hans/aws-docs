@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateSessionLogger
-<a name="API_UpdateSessionLogger"></a>
 
 Updates the details of a session logger.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/gs-device-trou
 ---
 
 # Troubleshoot problems with the sample application
-<a name="gs-device-troubleshoot"></a>
 
 If you encounter an error when you try to run the sample app, here are some things to check.
 

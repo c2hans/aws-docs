@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/insert-an-end-t
 ---
 
 # Insert an end time in an existing ad avail
-<a name="insert-an-end-time-in-an-existing-ad-avail"></a>
 
 You can insert an end time in the following situations:
 + To add an end time to a message that has not yet started if an end time was not initially included.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_iot_GettingStarted
 ---
 
 # Getting started with internet of things device protection
-<a name="example_iot_GettingStarted_079_section"></a>
 
 The following code example shows how to:
 + Create Required IAM Roles

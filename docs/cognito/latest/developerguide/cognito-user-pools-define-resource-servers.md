@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Scopes, M2M, and resource servers
-<a name="cognito-user-pools-define-resource-servers"></a>
 
 After you configure a domain for your user pool, Amazon Cognito automatically provisions an OAuth 2.0 authorization server and a hosted web UI with sign-up and sign-in pages that your app can present to your users. For more information see [User pool managed login](cognito-user-pools-managed-login.md). You can choose the scopes that you want the authorization server to add to access tokens. Scopes authorize access to resource servers and user data.
 

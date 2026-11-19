@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/destinatio
 ---
 
 # Add an AWS IoT SiteWise Edge real-time destination
-<a name="destinations-real-time"></a>
 
 The real-time destination type enables you to stream IoT data directly from your devices and gateways into AWS IoT SiteWise storage in real-time. This option is ideal for use cases that require immediate ingestion and processing of data as it is generated, without the need for batching or buffering. You can only have one real-time destination configured in each gateway, as it streams data continuously to AWS IoT SiteWise.
 

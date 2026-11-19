@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start-nixl.h
 ---
 
 # Get started with EFA and NIXL for inference workloads on Amazon EC2
-<a name="efa-start-nixl"></a>
 
 The NVIDIA Inference Xfer Library (NIXL) is a high-throughput, low-latency communication library designed specifically for disaggregated inference workloads. NIXL can be used together with EFA and Libfabric to support KV-cache transfer between prefill and decode nodes, and it enables efficient KV-cache movement between various storage layers. For more information, see the [NIXL](https://github.com/ai-dynamo/nixl) website.
 

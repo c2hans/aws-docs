@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/cost.h
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of AWS services that you use while operating this solution. As of this revision, the monthly cost of operating this solution for a small group of 25 users with limited model training and evaluation demand is about USD $7.71 for each user (or USD $192.70 total).
 

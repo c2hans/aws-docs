@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS11-BP05 Define drivers for improvement
-<a name="ops_evolve_ops_drivers_for_imp"></a>
 
  Identify drivers for improvement to help you evaluate and prioritize opportunities.
 

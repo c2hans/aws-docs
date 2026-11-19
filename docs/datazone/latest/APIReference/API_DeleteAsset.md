@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAsset
-<a name="API_DeleteAsset"></a>
 
 Deletes an asset in Amazon DataZone.
 + --domain-identifier must refer to a valid and existing domain.

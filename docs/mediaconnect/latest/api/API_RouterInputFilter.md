@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputF
 ---
 
 # RouterInputFilter
-<a name="API_RouterInputFilter"></a>
 
 A filter that can be used to retrieve a list of router inputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BasicAuthenticati
 ---
 
 # BasicAuthenticationCredentials
-<a name="API_BasicAuthenticationCredentials"></a>
 
 For supplying basic auth credentials when not providing a `SecretArn` value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/whatis-features.html
 ---
 
 # Amazon SageMaker AI Features
-<a name="whatis-features"></a>
 
 Amazon SageMaker AI includes the following features.
 

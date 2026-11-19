@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::App
-<a name="aws-resource-pinpoint-app"></a>
 
 An *app* is an Amazon Pinpoint application, also referred to as a *project*. An application is a collection of related settings, customer information, segments, campaigns, and other types of Amazon Pinpoint resources.
 

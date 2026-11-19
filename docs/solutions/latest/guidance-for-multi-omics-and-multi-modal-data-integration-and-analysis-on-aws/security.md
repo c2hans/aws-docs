@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Security
-<a name="security"></a>
 
  This guidance is preconfigured with all of the IAM policies and roles necessary to run the guidance with least privileges.
 

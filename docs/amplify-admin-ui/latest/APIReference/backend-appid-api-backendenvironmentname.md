@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Api backendEnvironmentName
-<a name="backend-appid-api-backendenvironmentname"></a>
 
 The data model for your Amplify project. This resource is used to access data from your project.
 

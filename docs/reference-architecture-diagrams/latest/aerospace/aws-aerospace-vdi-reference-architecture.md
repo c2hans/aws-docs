@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Aerospace Virtual Desktop Infrastructure (VDI) and High Performance Computing (HPC) on AWS
-<a name="aws-aerospace-vdi-reference-architecture"></a>
 
 Publication date: **January 26, 2023 ([Diagram history](diagram-history.md))**
 

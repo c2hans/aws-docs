@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/vpc-ip-family.html
 ---
 
 # IPv6 Support
-<a name="vpc-ip-family"></a>
 
 ## Define IP Family
 <a name="_define_ip_family"></a>

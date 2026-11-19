@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/cost-us
 ---
 
 # Cost and usage estimates in Lightsail for Research
-<a name="cost-usage-estimates"></a>
 
 Amazon Lightsail for Research offers cost and usage estimates for your AWS resources. You can use these estimates to help you plan how you spend, find cost saving opportunities, and make informed decisions when using Lightsail for Research.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Setting up with the MediaLive console
-<a name="functions-medialive-console"></a>
 
 1. In Elemental Inference, create the function, then create the feed with the function output and the access role. For more information, see [Creating a function](functions-create.md) and [Attaching a function to a feed](functions-attach.md). Make a note of the feed ARN, and leave the feed unassociated – a feed can be associated with only one resource.
 

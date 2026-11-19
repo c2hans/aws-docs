@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DailyVolu
 ---
 
 # DailyVolume
-<a name="API_DailyVolume"></a>
 
 An object that contains information about the volume of email sent on each day of the analysis period.
 

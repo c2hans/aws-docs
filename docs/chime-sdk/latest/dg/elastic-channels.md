@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/elastic-channels.htm
 ---
 
 # Using elastic channels to host live events in Amazon Chime SDK meetings
-<a name="elastic-channels"></a>
 
 Elastic channels support large-scale chat experiences with up to 1-million members. Typical uses include watch parties for sporting or political events. You can use elastic channels only in the US East (N. Virginia) region.
 

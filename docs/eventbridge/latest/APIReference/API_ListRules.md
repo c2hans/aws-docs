@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListRules
-<a name="API_ListRules"></a>
 
 Lists your Amazon EventBridge rules. You can either list all the rules or you can provide a prefix to match to the rule names.
 

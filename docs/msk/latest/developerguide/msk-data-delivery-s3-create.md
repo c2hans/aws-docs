@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Create a Channel
-<a name="msk-data-delivery-s3-create"></a>
 
 ## Using the AWS Management Console
 <a name="msk-data-delivery-s3-create-console"></a>

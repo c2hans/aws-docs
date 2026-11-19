@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ImportKeyMat
 ---
 
 # ImportKeyMaterial
-<a name="API_ImportKeyMaterial"></a>
 
 Imports or reimports key material into an existing KMS key that was created without key material. You can also use this operation to set or update the expiration model and expiration date of the imported key material.
 
@@ -198,7 +197,7 @@ HTTP Status Code: 400
 
  ** InvalidCiphertextException **
 From the [Decrypt](API_Decrypt.md) or [ReEncrypt](API_ReEncrypt.md) operation, the request was rejected because the specified ciphertext, or additional authenticated data incorporated into the ciphertext, such as the encryption context, is corrupted, missing, or otherwise invalid.
-From the [ImportKeyMaterial](#API_ImportKeyMaterial) operation, the request was rejected because AWS KMS could not decrypt the encrypted (wrapped) key material.
+From the [ImportKeyMaterial](API_ImportKeyMaterial.md) operation, the request was rejected because AWS KMS could not decrypt the encrypted (wrapped) key material.
 From the [Decapsulate](API_Decapsulate.md) operation, the request was rejected because the length of the `SharedSecretCiphertextBlob` is inconsistent with the specified ML-KEM key spec.
 HTTP Status Code: 400
 

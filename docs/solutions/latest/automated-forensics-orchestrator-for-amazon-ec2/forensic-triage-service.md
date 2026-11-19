@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Forensic triage service
-<a name="forensic-triage-service"></a>
 
 The diagram below represents the logical interaction view of the forensic triage service. A security event (Application security event) is reported by the Threat Detection Engine. The Threat Detection Engine initiates triaging function to determine the severity of threat based on the threat and infrastructure information. The triaging function initiates forensic acquisition and investigation flow for further analysis.
 

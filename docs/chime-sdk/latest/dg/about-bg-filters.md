@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/about-bg-filters.htm
 ---
 
 # About using background filters for the Amazon Chime SDK
-<a name="about-bg-filters"></a>
 
 Background filters can be CPU-intensive and GPU-intensive. Some mobile devices and lower-specification laptop or desktop computers may not have the power to run the filters along with multiple video streams.
 

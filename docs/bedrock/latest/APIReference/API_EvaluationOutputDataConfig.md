@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationOutputDataConfig
-<a name="API_EvaluationOutputDataConfig"></a>
 
 The Amazon S3 location where the results of your evaluation job are saved.
 

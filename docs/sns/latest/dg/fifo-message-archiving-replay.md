@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-message-archiving-rep
 ---
 
 # Amazon SNS message archiving and replay for FIFO topics
-<a name="fifo-message-archiving-replay"></a>
 
 ## What is message archiving and replay?
 <a name="what-is-message-archiving-and-replay"></a>

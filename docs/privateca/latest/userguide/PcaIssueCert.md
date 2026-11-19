@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaIssueCert.
 ---
 
 # Issue private end-entity certificates
-<a name="PcaIssueCert"></a>
 
 With a private CA in place, you can request private end-entity certificates from either AWS Certificate Manager (ACM) or AWS Private CA. The capabilities of both services are compared in the following table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_Hello_sectio
 ---
 
 # Hello AWS Glue
-<a name="example_glue_Hello_section"></a>
 
 The following code examples show how to get started using AWS Glue.
 

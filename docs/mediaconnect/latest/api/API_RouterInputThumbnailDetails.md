@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputT
 ---
 
 # RouterInputThumbnailDetails
-<a name="API_RouterInputThumbnailDetails"></a>
 
 The details of a thumbnail associated with a router input, including the thumbnail messages, the thumbnail image, the timecode, and the timestamp.
 

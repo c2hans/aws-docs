@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeploymentWarningEntry
-<a name="API_DeploymentWarningEntry"></a>
 
 A warning about a potential issue with a deployment.
 

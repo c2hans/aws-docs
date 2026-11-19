@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Foundati
 ---
 
 # FoundationModelSummary
-<a name="API_FoundationModelSummary"></a>
 
 Summary information for a foundation model.
 

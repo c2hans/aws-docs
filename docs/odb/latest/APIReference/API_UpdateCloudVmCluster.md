@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateCloudV
 ---
 
 # UpdateCloudVmCluster
-<a name="API_UpdateCloudVmCluster"></a>
 
 Updates the properties of the specified VM cluster.
 

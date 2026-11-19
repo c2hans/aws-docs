@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateTransitGatewayPeering
-<a name="API_CreateTransitGatewayPeering"></a>
 
 Creates a transit gateway peering connection.
 

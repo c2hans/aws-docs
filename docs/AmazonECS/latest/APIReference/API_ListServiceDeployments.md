@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListSe
 ---
 
 # ListServiceDeployments
-<a name="API_ListServiceDeployments"></a>
 
 This operation lists all the service deployments that meet the specified filter criteria.
 

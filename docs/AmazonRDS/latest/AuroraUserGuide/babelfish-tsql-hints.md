@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Using T-SQL query hints to improve Babelfish query performance
-<a name="babelfish-tsql-hints"></a>
 
 Starting with version 2.3.0, Babelfish supports the use of query hints using `pg_hint_plan`. In Aurora PostgreSQL, `pg_hint_plan` is installed by default. For more information about the PostgreSQL extension `pg_hint_plan`, see [https://github.com/ossc-db/pg_hint_plan](https://github.com/ossc-db/pg_hint_plan). For details about the version of this extension supported by Aurora PostgreSQL, see [Extension versions for Amazon Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Extensions.html) in *Release Notes for Aurora PostgreSQL*.
 

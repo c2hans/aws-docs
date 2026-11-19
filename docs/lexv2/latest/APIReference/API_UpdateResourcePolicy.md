@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateReso
 ---
 
 # UpdateResourcePolicy
-<a name="API_UpdateResourcePolicy"></a>
 
 Replaces the existing resource policy for a bot or bot alias with a new one. If the policy doesn't exist, Amazon Lex returns an exception.
 

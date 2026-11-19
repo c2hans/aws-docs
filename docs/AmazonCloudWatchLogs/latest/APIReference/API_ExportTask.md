@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ExportTask
-<a name="API_ExportTask"></a>
 
 Represents an export task.
 

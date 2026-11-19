@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::CloudConnector ConfigurationTargets
-<a name="aws-properties-ssm-cloudconnector-configurationtargets"></a>
 
 The targets for the cloud connector. If you omit this property, the connector targets the entire Azure tenant.
 

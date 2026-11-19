@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListOtaTa
 ---
 
 # ListOtaTaskExecutions
-<a name="API_ListOtaTaskExecutions"></a>
 
 List all of the over-the-air (OTA) task executions.
 

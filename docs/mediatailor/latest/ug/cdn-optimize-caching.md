@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-optimize-cachi
 ---
 
 # Caching optimization for CDN and MediaTailor integrations
-<a name="cdn-optimize-caching"></a>
 
 AWS Elemental MediaTailor caching requirements vary by workflow type and content format. Proper caching configuration is critical for optimal performance, cost efficiency, and viewer experience. The following sections provide detailed caching guidance for different MediaTailor implementations.
 
@@ -94,7 +93,7 @@ For channel assembly workflows, manifests can be cached for short periods, while
 + Set up cache behaviors that include time-shift parameters in the cache key if you support time-shifted viewing
 + Include query parameters in the cache key to properly handle time-shifted viewing requests
 
-For detailed TTL configuration settings and best practices, see [Caching optimization for CDN and MediaTailor integrations](#cdn-optimize-caching).
+For detailed TTL configuration settings and best practices, see [Caching optimization for CDN and MediaTailor integrations](cdn-optimize-caching.md).
 
 ## Combined SSAI and channel assembly caching
 <a name="combined-workflow-caching"></a>

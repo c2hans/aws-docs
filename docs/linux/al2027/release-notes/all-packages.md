@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/all-packages.
 ---
 
 # All Amazon Linux 2027 packages
-<a name="all-packages"></a>
 
 This section includes lists of all packages in Amazon Linux 2027.
 

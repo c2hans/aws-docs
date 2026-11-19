@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_RemoteNetwor
 ---
 
 # RemoteNetworkConfigResponse
-<a name="API_RemoteNetworkConfigResponse"></a>
 
 The configuration in the cluster for EKS Hybrid Nodes. You can add, change, or remove this configuration after the cluster is created.
 

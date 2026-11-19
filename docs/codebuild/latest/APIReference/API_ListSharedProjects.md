@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListSh
 ---
 
 # ListSharedProjects
-<a name="API_ListSharedProjects"></a>
 
  Gets a list of projects that are shared with other AWS accounts or users.
 

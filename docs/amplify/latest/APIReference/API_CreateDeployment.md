@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CreateDe
 ---
 
 # CreateDeployment
-<a name="API_CreateDeployment"></a>
 
 Creates a deployment for a manually deployed Amplify app. Manually deployed apps are not connected to a Git repository.
 

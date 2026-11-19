@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/extension-s
 ---
 
 # SDK extension supported by DCV
-<a name="extension-sdk"></a>
 
 DCV enables high-performance remote access to WorkSpaces instances for a wide range of workloads and use cases. With the Amazon DCV Extension SDK, developers can customize DCV WorkSpaces experience for end users, including:
 + Facilitating custom hardware support.

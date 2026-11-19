@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropa
 ---
 
 # User background sessions
-<a name="trustedidentitypropagation-user-background-sessions"></a>
 
 User background sessions continue even when the user is no longer active. These allow for long-running jobs that can continue even after the user has logged off. This can be enabled through SageMaker AI's trusted identity propagation. The following page explains the configuration options and behaviors for user background sessions.
 

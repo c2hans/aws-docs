@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # ParameterGroup
-<a name="API_dax_ParameterGroup"></a>
 
 A named set of parameters that are applied to all of the nodes in a DAX cluster.
 

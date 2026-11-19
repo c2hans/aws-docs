@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/dry-run.html
 ---
 
 # Dry Run
-<a name="dry-run"></a>
 
 The dry-run feature allows you to inspect and change the instances matched by the instance selector before proceeding to creating a nodegroup.
 

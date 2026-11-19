@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-o
 ---
 
 # Offer target data feed
-<a name="data-feed-offer-target"></a>
 
 This data feed lists targets of an offer's revision for all offers you've created as the seller of record. If a single offer has multiple revisions, all revisions are included in the data feed.
 

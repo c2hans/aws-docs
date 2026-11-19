@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use BMC Discovery queries to extract migration data for migration planning
-<a name="use-bmc-discovery-queries-to-extract-migration-data-for-migration-planning"></a>
 
 *Ben Tailor-Hamblin, Emma Baldry, Simon Cunningham, and Shabnam Khan, Amazon Web Services*
 

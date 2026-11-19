@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # Prerequisites
-<a name="sap-hana-pacemaker-rhel-prerequisites"></a>
 
 **Topics**
 + [AWS Infrastructure Setup](sap-hana-pacemaker-rhel-infra-setup.md)

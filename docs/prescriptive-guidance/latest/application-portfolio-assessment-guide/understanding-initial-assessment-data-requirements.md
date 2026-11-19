@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Understanding initial assessment data requirements
-<a name="understanding-initial-assessment-data-requirements"></a>
 
 Data collection can take a significant amount of time and easily become a blocker when there is no clarity about what data is needed and when it is needed. The key is to understand the balance between what is too little and what is too much data for the outcomes of this stage. To focus on the data and the fidelity level required for this early stage of portfolio assessment, adopt an iterative approach to data collection.
 

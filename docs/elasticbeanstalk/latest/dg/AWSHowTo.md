@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.html
 ---
 
 # Using Elastic Beanstalk with other AWS services
-<a name="AWSHowTo"></a>
 
 The topics in this section describe the many ways you can use additional AWS services with your Elastic Beanstalk application. To implement your application's environments, Elastic Beanstalk manages resources of other AWS services or uses their functionality. In addition, Elastic Beanstalk integrates with AWS services that it doesn't use directly as part of your environments.
 

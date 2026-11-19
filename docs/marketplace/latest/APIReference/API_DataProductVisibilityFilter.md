@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Data
 ---
 
 # DataProductVisibilityFilter
-<a name="API_DataProductVisibilityFilter"></a>
 
 Object that allows filtering on the visibility of the product in the AWS Marketplace.
 

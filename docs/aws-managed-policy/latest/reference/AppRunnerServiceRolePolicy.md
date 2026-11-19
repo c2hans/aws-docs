@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppR
 ---
 
 # AppRunnerServiceRolePolicy
-<a name="AppRunnerServiceRolePolicy"></a>
 
 **Description**: Allows AWS AppRunner to manage related AWS resources on your behalf.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Configuring approval notifications
-<a name="workflows-approval-notify"></a>
 
 You can have CodeCatalyst send a notification to a Slack channel informing users that a workflow run requires an approval. Users see the notification and click the link inside of it. The link takes them to a CodeCatalyst approvals page where they can either approve or reject the workflow.
 

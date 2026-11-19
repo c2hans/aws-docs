@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-javascr
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Gremlin JavaScript
-<a name="gremlin-javascript-iam-auth"></a>
 
 ## Overview
 <a name="gremlin-javascript-iam-auth-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CatalogResource
-<a name="API_CatalogResource"></a>
 
 A structure for the catalog object.
 

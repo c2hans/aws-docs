@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEma
 ---
 
 # DeleteEmailTemplate
-<a name="API_DeleteEmailTemplate"></a>
 
 Deletes an email template.
 

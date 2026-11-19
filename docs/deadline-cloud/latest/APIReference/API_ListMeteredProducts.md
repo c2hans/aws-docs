@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListMeteredProducts
-<a name="API_ListMeteredProducts"></a>
 
 Lists metered products.
 

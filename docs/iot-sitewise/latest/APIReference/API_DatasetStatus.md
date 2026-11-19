@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DatasetStatus
-<a name="API_DatasetStatus"></a>
 
 The status of the dataset. This contains the state and any error messages. The state is `ACTIVE` when ready to use.
 

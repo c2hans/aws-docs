@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListAttached
 ---
 
 # ListAttachedLinksItem
-<a name="API_ListAttachedLinksItem"></a>
 
 A structure that contains information about one link attached to this monitoring account sink.
 

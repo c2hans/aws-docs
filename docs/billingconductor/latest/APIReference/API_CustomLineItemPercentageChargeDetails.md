@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CustomLineItemPercentageChargeDetails
-<a name="API_CustomLineItemPercentageChargeDetails"></a>
 
 A representation of the charge details that are associated with a percentage custom line item.
 

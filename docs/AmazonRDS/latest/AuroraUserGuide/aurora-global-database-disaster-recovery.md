@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Using switchover or failover in Amazon Aurora Global Database
-<a name="aurora-global-database-disaster-recovery"></a>
 
  The Aurora Global Database feature provides more business continuity and disaster recovery (BCDR) protection than the standard [high availability](Concepts.AuroraHighAvailability.md) provided by an Aurora DB cluster in a single AWS Region. By using Aurora Global Database, you can plan for faster recovery from rare, unplanned Regional disasters or complete service-level outages quickly.
 

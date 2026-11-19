@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/issues.html
 ---
 
 # Issues
-<a name="issues"></a>
 
  **Not sending requests from the correct context.**
 

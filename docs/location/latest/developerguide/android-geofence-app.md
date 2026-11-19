@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/android-g
 ---
 
 # Create an Android application
-<a name="android-geofence-app"></a>
 
 Follow these procedures to build an iOS application using Amazon Location Service.
 

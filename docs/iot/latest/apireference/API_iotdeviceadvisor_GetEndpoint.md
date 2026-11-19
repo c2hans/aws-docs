@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # GetEndpoint
-<a name="API_iotdeviceadvisor_GetEndpoint"></a>
 
 Gets information about an Device Advisor endpoint.
 

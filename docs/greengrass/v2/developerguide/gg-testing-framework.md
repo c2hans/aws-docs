@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-testing-
 ---
 
 # Use AWS IoT Greengrass Testing Framework
-<a name="gg-testing-framework"></a>
 
 Greengrass Testing Framework (GTF) is a collection of building blocks that supports end-to-end automation from the customer perspective. GTF uses [Cucumber](https://cucumber.io) as the feature driver. AWS IoT Greengrass uses the same building blocks to qualify software changes on various devices. For more information, see [Greengrass Testing Framework on Github](https://github.com/aws-greengrass/aws-greengrass-testing/tree/dev_v1).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-PutPo
 ---
 
 # PutPolicy
-<a name="JavaApi-PutPolicy"></a>
 
 The following Java sample shows how to use the [PutPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPolicy.html) operation.
 

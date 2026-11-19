@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Viewing parameter values for a DB cluster parameter group
-<a name="USER_WorkingWithParamGroups.ViewingCluster"></a>
 
 You can get a list of all parameters in a DB cluster parameter group and their values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/getting-s
 ---
 
 # Customizing the Service Quotas dashboard
-<a name="getting-started"></a>
 
 When you open the Service Quotas console, the dashboard displays cards for up to nine AWS services. Each card lists the number of service quotas for that AWS service. Choosing a card opens a page displaying the quotas for the service. You can modify which services appear on the dashboard.
 

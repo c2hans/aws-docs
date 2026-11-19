@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-comp
 ---
 
 # component
-<a name="gg-cli-component"></a>
 
 Use the `component` command to interact with local components on your core device.
 

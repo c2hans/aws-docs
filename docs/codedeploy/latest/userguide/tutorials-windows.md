@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-wi
 ---
 
 # Tutorial: Deploy a "hello, world\!" application with CodeDeploy (Windows Server)
-<a name="tutorials-windows"></a>
 
 In this tutorial, you deploy a single webpage to a single Windows Server Amazon EC2 instance running Internet Information Services (IIS) as its web server. This webpage displays a simple "Hello, World\!" message.
 

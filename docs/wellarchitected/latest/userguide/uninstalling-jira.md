@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/uninsta
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Uninstalling the connector
-<a name="uninstalling-jira"></a>
 
  To fully uninstall the AWS Well-Architected Tool Connector for Jira, perform the following tasks:
 +  Turn off Jira sync in any workloads that override account-level sync settings

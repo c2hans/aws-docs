@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/attio-support.html
 ---
 
 # AWS Glue support for Attio
-<a name="attio-support"></a>
 
 AWS Glue supports Attio as follows:
 

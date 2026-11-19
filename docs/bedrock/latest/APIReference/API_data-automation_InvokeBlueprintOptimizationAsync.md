@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # InvokeBlueprintOptimizationAsync
-<a name="API_data-automation_InvokeBlueprintOptimizationAsync"></a>
 
 Starts an asynchronous job to optimize a blueprint using sample data.
 

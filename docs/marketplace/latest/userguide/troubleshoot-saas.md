@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/troubleshoo
 ---
 
 # Troubleshooting SaaS products
-<a name="troubleshoot-saas"></a>
 
 The following topics explain how to troubleshoot common SaaS product issues and error messages in AWS Marketplace.
 

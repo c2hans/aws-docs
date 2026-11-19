@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetV2Logging
 ---
 
 # GetV2LoggingOptions
-<a name="API_GetV2LoggingOptions"></a>
 
 Gets the fine grained logging options.
 

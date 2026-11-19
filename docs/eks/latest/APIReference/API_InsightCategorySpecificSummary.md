@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_InsightCateg
 ---
 
 # InsightCategorySpecificSummary
-<a name="API_InsightCategorySpecificSummary"></a>
 
 Summary information that relates to the category of the insight. Currently only returned with certain insights having category `UPGRADE_READINESS`.
 

@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # What's new in the AWS Tools for PowerShell
-<a name="whats-new"></a>
 
 For high-level information about new developments related to the AWS Tools for PowerShell, see the product page at [https://aws.amazon.com/powershell/](https://aws.amazon.com/powershell/) and the [change logs](https://github.com/aws/aws-tools-for-powershell/tree/v4.1/changelogs).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Polly is a web service that makes it easy to synthesize speech from text.
 
@@ -11,4 +10,4 @@ The Amazon Polly service provides API operations for synthesizing high-quality s
 
 Authenticated API calls must be signed using the Signature Version 4 Signing Process. For more information, see [Signing AWS API Requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html) in the *IAM User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/netw
 ---
 
 # Data retrieval APIs for Network Flow Monitor
-<a name="networkflowmonitor"></a>
 
 Network Flow Monitor provides the following APIs for data retrieval.
 

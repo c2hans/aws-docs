@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Outpost
 ---
 
 # Outpost
-<a name="API_Outpost"></a>
 
 Information about an Outpost.
 

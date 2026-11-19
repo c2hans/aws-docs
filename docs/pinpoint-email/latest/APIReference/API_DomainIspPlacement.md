@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DomainIspPlacement
-<a name="API_DomainIspPlacement"></a>
 
 An object that contains inbox placement data for email sent from one of your email domains to a specific email provider.
 

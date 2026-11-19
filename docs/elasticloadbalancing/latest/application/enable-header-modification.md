@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Enable HTTP header modification for your Application Load Balancer
-<a name="enable-header-modification"></a>
 
 Header modification is turned off by default and must be enabled on each listener. For more information, see [HTTP header modification](header-modification.md).
 

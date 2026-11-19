@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_C
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates an account access manager instance and its AWS account access application in the associated IAM Identity Center instance. This operation is idempotent; calling it multiple times with the same parameters returns the existing application.
 

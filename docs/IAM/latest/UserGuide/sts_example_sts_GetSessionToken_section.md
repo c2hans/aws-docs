@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_sts_Get
 ---
 
 # Use `GetSessionToken` with an AWS SDK or CLI
-<a name="sts_example_sts_GetSessionToken_section"></a>
 
 The following code examples show how to use `GetSessionToken`.
 

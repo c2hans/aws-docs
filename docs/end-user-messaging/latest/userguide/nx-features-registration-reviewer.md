@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Registration reviewer
-<a name="nx-features-registration-reviewer"></a>
 
 **Note**
 The registration reviewer is designed to provide early feedback on the quality of your registration submissions with generative AI. It may from time-to-time produce inaccurate feedback. You are still responsible to ensure your registrations meet the compliance bar for the phone number or sender ID you're registering. If you disagree with the feedback, you can submit the registration for downstream review without implementing the feedback.

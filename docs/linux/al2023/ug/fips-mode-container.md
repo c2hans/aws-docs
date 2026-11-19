@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/fips-mode-container.html
 ---
 
 # Enable FIPS Mode in an AL2023 Container
-<a name="fips-mode-container"></a>
 
 This section explains how to enable Federal Information Processing Standards (FIPS) in an AL2023 container. For more information about FIPS, see:
 + [Federal Information Processing Standard (FIPS)](https://aws.amazon.com/compliance/fips/)

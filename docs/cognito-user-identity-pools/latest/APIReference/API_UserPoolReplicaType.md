@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UserPoolReplicaType
-<a name="API_UserPoolReplicaType"></a>
 
 Contains information about a replica user pool, including Region, status, role, and ARN.
 

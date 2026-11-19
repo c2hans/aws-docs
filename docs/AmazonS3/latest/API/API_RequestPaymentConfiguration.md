@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_RequestPaymentCo
 ---
 
 # RequestPaymentConfiguration
-<a name="API_RequestPaymentConfiguration"></a>
 
 Container for Payer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filterin
 ---
 
 # Using custom vocabulary filters to delete, mask, or flag words
-<a name="vocabulary-filtering"></a>
 
 A custom vocabulary filter is a text file that contains a custom list of individual words that you want to modify in your transcription output.
 

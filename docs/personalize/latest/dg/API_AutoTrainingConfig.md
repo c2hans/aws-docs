@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_AutoTrainingCo
 ---
 
 # AutoTrainingConfig
-<a name="API_AutoTrainingConfig"></a>
 
 The automatic training configuration to use when `performAutoTraining` is true.
 

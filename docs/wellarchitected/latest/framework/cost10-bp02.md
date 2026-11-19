@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost10-
 ---
 
 # COST10-BP02 Use generative AI services and solutions for efficiency
-<a name="cost10-bp02"></a>
 
  Cost management generates a large amount of data that your teams must interpret and act on. Generative AI can shorten that work. It answers questions in natural language, summarizes spend, and surfaces optimization opportunities that would take an analyst hours to find. With clear goals and human review, it makes routine cost analysis faster.
 

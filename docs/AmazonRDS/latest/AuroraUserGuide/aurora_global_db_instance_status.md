@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_global\_db\_instance\_status
-<a name="aurora_global_db_instance_status"></a>
 
 Displays the status of all Aurora instances, including replicas in an Aurora global DB cluster.
 

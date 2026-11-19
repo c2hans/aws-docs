@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Golden image methods
-<a name="methods"></a>
 
 At a high level, you can choose between two methods for creating a golden image that includes the Greengrass directory tree:
 + Take a snapshot of the entire Greengrass directory tree on the golden device.

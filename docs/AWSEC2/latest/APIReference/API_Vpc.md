@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Vpc.html
 ---
 
 # Vpc
-<a name="API_Vpc"></a>
 
 Describes a VPC.
 

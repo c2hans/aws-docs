@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSEC04-BP02 Encrypt content ingest traffic using TLS
-<a name="smsec04-bp02"></a>
 
 AWS Elemental Media Services require HTTPS connections where possible. Use HTTPS over HTTP wherever possible and avoid outdated security ciphers. Using up to date versions of TLS encryption keeps traffic secure in transit either coming into your workflows or leaving your workflows.
 

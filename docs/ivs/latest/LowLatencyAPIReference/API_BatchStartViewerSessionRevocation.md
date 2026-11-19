@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ba
 ---
 
 # BatchStartViewerSessionRevocation
-<a name="API_BatchStartViewerSessionRevocation"></a>
 
 Performs [StartViewerSessionRevocation](API_StartViewerSessionRevocation.md) on multiple channel ARN and viewer ID pairs simultaneously.
 

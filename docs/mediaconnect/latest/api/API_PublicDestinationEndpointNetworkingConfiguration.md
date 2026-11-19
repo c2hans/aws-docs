@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicDestin
 ---
 
 # PublicDestinationEndpointNetworkingConfiguration
-<a name="API_PublicDestinationEndpointNetworkingConfiguration"></a>
 
 The networking configuration for a publicly accessible destination endpoint, including the CIDR blocks that are allowed to connect.
 

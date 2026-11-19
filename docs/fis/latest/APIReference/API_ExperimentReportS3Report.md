@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentRe
 ---
 
 # ExperimentReportS3Report
-<a name="API_ExperimentReportS3Report"></a>
 
 Describes the S3 destination for the report.
 

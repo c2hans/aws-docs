@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessToolUseBlockDelta
-<a name="API_HarnessToolUseBlockDelta"></a>
 
 Delta payload for tool use input.
 

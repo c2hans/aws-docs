@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListRe
 ---
 
 # ListReplicationBackfills
-<a name="API_ListReplicationBackfills"></a>
 
 Lists the replication backfills for a registry, including their status and progress.
 

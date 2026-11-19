@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/add-nat-gat
 ---
 
 # Add a NAT Gateway to an Existing VPC
-<a name="add-nat-gateway-existing-vpc"></a>
 
 If you have already configured a VPC, complete the following steps to add a NAT gateway to your VPC. If you need to create a new VPC, see [Create and Configure a New VPC](create-configure-new-vpc-with-private-public-subnets-nat.md).
 

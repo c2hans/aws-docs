@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPr
 ---
 
 # GetIpamPrefixListResolverRules
-<a name="API_GetIpamPrefixListResolverRules"></a>
 
 Retrieves the CIDR selection rules for an IPAM prefix list resolver. Use this operation to view the business logic that determines which CIDRs are selected for synchronization with prefix lists.
 

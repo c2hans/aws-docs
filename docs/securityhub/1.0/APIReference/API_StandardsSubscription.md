@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # StandardsSubscription
-<a name="API_StandardsSubscription"></a>
 
 A resource that represents your subscription to a supported standard.
 

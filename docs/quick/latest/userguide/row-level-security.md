@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/row-level-securit
 ---
 
 # Using row-level security in AWS Quick
-<a name="row-level-security"></a>
 
 |  |
 | --- |

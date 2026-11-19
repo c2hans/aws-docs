@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/using-the-api.html
 ---
 
 # Using the Amazon Comprehend API
-<a name="using-the-api"></a>
 
 The Amazon Comprehend API supports operations to perform real-time (synchronous) analysis and operations to start and manage asynchronous analysis jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/tags-operations.html
 ---
 
 # Use API and AWS CLI tag operations
-<a name="tags-operations"></a>
 
 Use the following tag operations to add, remove, or list tags on a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/broad
 ---
 
 # CloudWatch pipelines configuration for Broadcom Carbon Black
-<a name="broadcom-carbonblack-pipeline-setup"></a>
 
 The Broadcom Carbon Black setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

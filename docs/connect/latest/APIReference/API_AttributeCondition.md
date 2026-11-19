@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attribut
 ---
 
 # AttributeCondition
-<a name="API_AttributeCondition"></a>
 
 An object to specify the predefined attribute condition.
 

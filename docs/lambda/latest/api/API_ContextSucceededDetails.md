@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ContextSucceededDe
 ---
 
 # ContextSucceededDetails
-<a name="API_ContextSucceededDetails"></a>
 
 Details about a context that succeeded.
 

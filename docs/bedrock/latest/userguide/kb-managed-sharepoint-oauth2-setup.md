@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-shar
 ---
 
 # Set up OAuth 2.0 authentication for SharePoint
-<a name="kb-managed-sharepoint-oauth2-setup"></a>
 
 OAuth 2.0 authentication (`OAUTH2_APP`) authenticates with an application client ID and secret together with the user name and password of a Microsoft 365 user account, using the OAuth 2.0 resource-owner password credentials (ROPC) flow. The connector signs in as that user to read content.
 

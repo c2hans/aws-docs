@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/display
 ---
 
 # Display a map in your application with Amazon Location
-<a name="display-map"></a>
 
 This section provides tutorials on how to use map rendering tools to display a map in your mobile or web application when using Amazon Location APIs. As mentioned in the [How to use Amazon Location Service](using-amazon-location.md) topic, you have a choice of libraries to use when rendering maps with Amazon Location, including Amplify, MapLibre, and Tangram.
 

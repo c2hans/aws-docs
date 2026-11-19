@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldFolder
-<a name="API_FieldFolder"></a>
 
 A FieldFolder element is a folder that contains fields and nested subfolders.
 

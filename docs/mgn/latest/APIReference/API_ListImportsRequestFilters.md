@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListImportsR
 ---
 
 # ListImportsRequestFilters
-<a name="API_ListImportsRequestFilters"></a>
 
 List imports request filters.
 

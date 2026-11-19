@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # A vision of success
-<a name="vision-of-success"></a>
 
 To successfully unlock the value of your data, your organization must develop a scalable ML framework that achieves your business outcomes while aligning to the AWS best practices defined in this strategy. Such a framework could help your organization achieve the following:
 + A self-service process for creating standardized production-level infrastructure for developing advanced analytics, data science-based workloads, and a clear DevOps-driven route to live for those workloads

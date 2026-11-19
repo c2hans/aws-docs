@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnaSrdUdp
 ---
 
 # EnaSrdUdpSpecificationRequest
-<a name="API_EnaSrdUdpSpecificationRequest"></a>
 
 Configures ENA Express for UDP network traffic from your launch template.
 

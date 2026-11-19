@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/supported-output-
 ---
 
 # Maximum supported output resolutions
-<a name="supported-output-resolution-maximums-by-codec"></a>
 
 The following table shows the maximum output resolution AWS Elemental MediaConvert supports for each output codec.
 

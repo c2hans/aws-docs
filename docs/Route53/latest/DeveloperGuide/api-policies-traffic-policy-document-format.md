@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-polici
 ---
 
 # Traffic Policy Document Format
-<a name="api-policies-traffic-policy-document-format"></a>
 
 When you create a traffic policy programmatically by using the Amazon Route 53 API, one of the AWS SDKs, the AWS CLI, or AWS Tools for Windows PowerShell, you specify the definition of the traffic policy in a `Document` element in JSON format.
 

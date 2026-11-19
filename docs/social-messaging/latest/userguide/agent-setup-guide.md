@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/agent-
 ---
 
 # Agent setup guide
-<a name="agent-setup-guide"></a>
 
 AI coding agents can accelerate WhatsApp development. They guide you through workflows that historically required navigating multiple documentation pages, such as connecting a WhatsApp Business Account, adding a tester, sending your first message, and managing templates. AWS End User Messaging Social publishes an agent skill that gives your agent step-by-step, validated guidance for these tasks. An agent configured with your AWS credentials can also run the underlying API calls. Without credentials, the skill provides guidance only.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Review
-<a name="review"></a>
 
 | CMPERF\_10: Have you considered the implementation of scalable, cost-effective, and low-maintenance managed services for high-performance computing workloads to process diverse data types (such as high and low fidelity data, logs, and commands) collected from vehicles?  |
 | --- |

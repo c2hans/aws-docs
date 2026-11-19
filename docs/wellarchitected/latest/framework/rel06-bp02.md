@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP02 Define and calculate metrics (Aggregation)
-<a name="rel06-bp02"></a>
 
  Raw telemetry from individual components rarely answers the questions that matter during an incident. Aggregation turns scattered logs and metrics into a coherent view of how the workload behaves. When you calculate metrics that span components and enrich them with context, you can detect anomalies, correlate failures, and find the cause of a problem faster.
 

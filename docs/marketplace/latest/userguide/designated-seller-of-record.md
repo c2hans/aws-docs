@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/designated-
 ---
 
 # What is the Designated Seller of Record (DSOR) program?
-<a name="designated-seller-of-record"></a>
 
 The Designated Seller of Record (DSOR) program enables independent software vendors (ISVs) to authorize AWS partners to create and manage software as a service (SaaS) listings on AWS Marketplace. These authorized partners can act as intermediaries between ISVs and their customers, providing an additional way to bring their software to market and scale their channel business.
 

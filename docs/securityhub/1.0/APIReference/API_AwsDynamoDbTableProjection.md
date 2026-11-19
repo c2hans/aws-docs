@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableProjection
-<a name="API_AwsDynamoDbTableProjection"></a>
 
 For global and local secondary indexes, identifies the attributes that are copied from the table into the index.
 

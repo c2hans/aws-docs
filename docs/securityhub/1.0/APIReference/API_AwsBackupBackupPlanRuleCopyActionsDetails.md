@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupBackupPlanRuleCopyActionsDetails
-<a name="API_AwsBackupBackupPlanRuleCopyActionsDetails"></a>
 
 An array of `CopyAction` objects, each of which contains details of the copy operation.
 

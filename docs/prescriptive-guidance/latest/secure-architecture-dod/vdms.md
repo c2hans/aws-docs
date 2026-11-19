@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # Virtual Data Center Managed Services
-<a name="vdms"></a>
 
 The purpose of Virtual Data Center Managed Services (VDMS) is to provide host security and shared data center services. The functions of VDMS can either run in the hub of your SCCA, or the mission owner can deploy parts of it in their own AWS accounts. This component can be provided within your AWS environment. For more information about the VDMS, see the [DoD Cloud Computing Security Requirements Guide](https://public.cyber.mil/dccs/dccs-documents/).
 

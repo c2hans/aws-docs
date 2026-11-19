@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/wo
 ---
 
 # Tag a workflow
-<a name="workflows-tags"></a>
 
 You can assign tags to each Amazon MWAA Serverless workflow to help you manage resources. This section provides an overview of the tag functions and shows you how to create tags.
 

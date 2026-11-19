@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/regex-serde.html
 ---
 
 # Regex SerDe
-<a name="regex-serde"></a>
 
 The Regex SerDe uses a regular expression (regex) to deserialize data by extracting regex groups into table columns.
 

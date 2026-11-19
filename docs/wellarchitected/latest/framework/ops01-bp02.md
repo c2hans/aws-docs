@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops01-b
 ---
 
 # OPS01-BP02 Develop user experience telemetry
-<a name="ops01-bp02"></a>
 
  User experience telemetry measures how real people experience your application. *Real user monitoring* captures what happens in the sessions of actual users, and *synthetic monitoring* runs scripted interactions on a schedule to test critical paths. Together they show what users experience now and whether important functionality still works when traffic is low.
 

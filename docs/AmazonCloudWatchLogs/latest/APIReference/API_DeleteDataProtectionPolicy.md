@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteDataProtectionPolicy
-<a name="API_DeleteDataProtectionPolicy"></a>
 
 Deletes the data protection policy from the specified log group.
 

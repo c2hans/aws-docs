@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListExports.
 ---
 
 # ListExports
-<a name="API_ListExports"></a>
 
 List exports.
 

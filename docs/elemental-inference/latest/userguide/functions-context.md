@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # What a function can read
-<a name="functions-context"></a>
 
 Your request expression is evaluated against a single object named `media`. Each field of `media` is one kind of context that Elemental Inference can supply, as the following table shows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeBackupVault
-<a name="API_DescribeBackupVault"></a>
 
 Returns metadata about a backup vault specified by its name.
 

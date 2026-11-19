@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # EngagementCustomer
-<a name="API_EngagementCustomer"></a>
 
 Contains details about the customer associated with the Engagement Invitation, including company information and industry.
 

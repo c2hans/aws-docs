@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateQueueQuickConnects
-<a name="API_AssociateQueueQuickConnects"></a>
 
 Associates a set of quick connects with a queue.
 

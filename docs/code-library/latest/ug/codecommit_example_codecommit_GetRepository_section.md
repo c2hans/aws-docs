@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/codecommit_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetRepository` with a CLI
-<a name="codecommit_example_codecommit_GetRepository_section"></a>
 
 The following code examples show how to use `GetRepository`.
 

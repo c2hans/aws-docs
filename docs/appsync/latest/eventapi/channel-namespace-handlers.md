@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/channel-namespac
 ---
 
 # Process real-time events with AWS AppSync event handlers
-<a name="channel-namespace-handlers"></a>
 
 **Topics**
 + [Overview](#event-handlers-overview)

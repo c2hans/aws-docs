@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 7. Validate the data model
-<a name="step7"></a>
 
 ## Objective
 <a name="obj7"></a>

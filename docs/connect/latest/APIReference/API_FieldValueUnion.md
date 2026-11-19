@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FieldVal
 ---
 
 # FieldValueUnion
-<a name="API_FieldValueUnion"></a>
 
 Object to store union of Field values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvi
 ---
 
 # GetSAMLProvider
-<a name="API_GetSAMLProvider"></a>
 
 Returns the SAML provider metadocument that was uploaded when the IAM SAML provider resource object was created or updated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_ListMoun
 ---
 
 # ListMountTargets
-<a name="API_S3Files_ListMountTargets"></a>
 
 Returns resource information for all mount targets with optional filtering by file system, access point, and VPC.
 

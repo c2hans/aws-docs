@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/disaster-
 ---
 
 # Resilience in Amazon Security Lake
-<a name="disaster-recovery-resiliency"></a>
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones. AWS Regions provide multiple physically separated and isolated Availability Zones, which are connected with low-latency, high-throughput, and highly redundant networking. These Availability Zones offer you an effective way to design and operate applications and databases. Availability Zones are more highly available, fault tolerant, and scalable than traditional single or multiple data center infrastructures.
 

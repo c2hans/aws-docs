@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateServiceAt
 ---
 
 # UpdateServiceAttributes
-<a name="API_UpdateServiceAttributes"></a>
 
 Submits a request to update a specified service to add service-level attributes.
 

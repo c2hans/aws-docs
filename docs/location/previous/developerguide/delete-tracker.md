@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/delete-
 ---
 
 # Tutorial: Delete a tracker with Amazon Location
-<a name="delete-tracker"></a>
 
 You can delete a tracker from your AWS account using the Amazon Location console, the AWS CLI, or the Amazon Location APIs:
 

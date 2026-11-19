@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpPat
 ---
 
 # HttpPathMatch
-<a name="API_HttpPathMatch"></a>
 
 An object representing the path to match in the request.
 

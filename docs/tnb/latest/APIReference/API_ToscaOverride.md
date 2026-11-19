@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ToscaOverrid
 ---
 
 # ToscaOverride
-<a name="API_ToscaOverride"></a>
 
 Overrides of the TOSCA node.
 

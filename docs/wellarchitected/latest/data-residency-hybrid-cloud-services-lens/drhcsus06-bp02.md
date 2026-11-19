@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCSUS06-BP02 Track AWS Outposts roadmaps, and structure contracts to enable timely upgrades to the latest EC2 instances
-<a name="drhcsus06-bp02"></a>
 
  When new more powerful and efficient AWS Outposts offerings are on the near-term roadmap you should consider refreshing at the end of your current AWS Outposts term, or consider using a shorter term with the existing generation if current needs must be met before the next generation is available.
 

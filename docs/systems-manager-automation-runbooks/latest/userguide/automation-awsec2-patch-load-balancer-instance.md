@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSEC2-PatchLoadBalancerInstance`
-<a name="automation-awsec2-patch-load-balancer-instance"></a>
 
 **Description**
 

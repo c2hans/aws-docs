@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Cost-effective resources
-<a name="cost-effective-resources"></a>
 
 | COST 1: How do you optimize your costs?  |
 | --- |

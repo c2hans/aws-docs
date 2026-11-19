@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-user-defi
 ---
 
 # Amazon RDS for Db2 user-defined function reference
-<a name="db2-user-defined-functions"></a>
 
 The following user-defined functions are available for Amazon RDS DB instances running the Db2 engine.
 

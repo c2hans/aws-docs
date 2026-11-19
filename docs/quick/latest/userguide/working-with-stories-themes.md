@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-stor
 ---
 
 # Adding themes and animations to a data story in AWS Quick Sight
-<a name="working-with-stories-themes"></a>
 
 You can add themes and animations to the stories that you generate. To add a theme or animation to a data story, choose the **Story style** icon.
 

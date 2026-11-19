@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Architecture details
-<a name="pm-architecture-details"></a>
 
 Amazon Redshift stores vehicle telemetry data from connected fleets, with AWS Lambda querying tire pressure readings hourly via Redshift Data API, while AWS Glue ETL jobs transform raw sensor data into standardized formats for downstream processing.
 

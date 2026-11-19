@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalys
 ---
 
 # Text analysis batch APIs
-<a name="textanalysis-batchapi"></a>
 
 Use Amazon Comprehend Medical to analyze medical text stored in an Amazon S3 bucket. Analyze up to 10 GB of documents in one batch. You use the console to create and manage batch analysis jobs, or use batch APIs to detect medical entities, including protected health information (PHI). The APIs start, stop, list, and describe ongoing batch analysis jobs.
 

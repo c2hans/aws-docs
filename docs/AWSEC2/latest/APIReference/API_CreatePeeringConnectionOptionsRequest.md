@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreatePee
 ---
 
 # CreatePeeringConnectionOptionsRequest
-<a name="API_CreatePeeringConnectionOptionsRequest"></a>
 
 The VPC peering connection options to apply to the requester VPC when you create a VPC peering connection.
 

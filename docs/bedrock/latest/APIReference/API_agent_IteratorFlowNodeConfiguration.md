@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_It
 ---
 
 # IteratorFlowNodeConfiguration
-<a name="API_agent_IteratorFlowNodeConfiguration"></a>
 
 Contains configurations for an iterator node in a flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output.
 

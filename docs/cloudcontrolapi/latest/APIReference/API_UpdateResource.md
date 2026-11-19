@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 ---
 
 # UpdateResource
-<a name="API_UpdateResource"></a>
 
 Updates the specified property values in the resource.
 

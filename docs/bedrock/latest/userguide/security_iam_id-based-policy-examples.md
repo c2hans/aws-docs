@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id
 ---
 
 # Identity-based policy examples for Amazon Bedrock
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Amazon Bedrock resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

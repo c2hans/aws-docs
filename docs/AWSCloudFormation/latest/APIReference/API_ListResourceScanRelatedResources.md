@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListResourceScanRelatedResources
-<a name="API_ListResourceScanRelatedResources"></a>
 
 Lists the related resources for a list of resources from a resource scan. The response indicates whether each returned resource is already managed by CloudFormation.
 

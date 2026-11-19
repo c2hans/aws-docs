@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-
 ---
 
 # Organization Labels
-<a name="work-order-labels"></a>
 
 As an administrator, you can customize the order labels.
 

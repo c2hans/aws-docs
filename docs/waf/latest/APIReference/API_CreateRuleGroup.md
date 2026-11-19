@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateRuleGr
 ---
 
 # CreateRuleGroup
-<a name="API_CreateRuleGroup"></a>
 
 Creates a [RuleGroup](API_RuleGroup.md) per the specifications provided.
 

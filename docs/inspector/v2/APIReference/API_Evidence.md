@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Evidence.h
 ---
 
 # Evidence
-<a name="API_Evidence"></a>
 
 Details of the evidence for a vulnerability identified in a finding.
 

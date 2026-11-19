@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListDoma
 ---
 
 # ListDomainNames
-<a name="API_ListDomainNames"></a>
 
 Lists multiple custom domain names.
 

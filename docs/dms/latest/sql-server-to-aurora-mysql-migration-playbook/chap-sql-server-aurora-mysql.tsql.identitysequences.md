@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Identity and sequences for T-SQL
-<a name="chap-sql-server-aurora-mysql.tsql.identitysequences"></a>
 
 This topic provides reference content comparing identity and sequence features between Microsoft SQL Server 2019 and Amazon Aurora MySQL. You can understand the key differences and similarities in how these database systems handle automatic enumeration functions and columns, which are commonly used for generating surrogate keys.
 

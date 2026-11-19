@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/be
 ---
 
 # Best practices arranged by pillars
-<a name="best-practices-arranged-by-pillars"></a>
 
 ## Operational excellence pillar best practices
 <a name="operational-excellence-pillar-best-practices"></a>

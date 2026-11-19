@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Auror
 ---
 
 # AuroraParameters
-<a name="API_AuroraParameters"></a>
 
 Parameters for Amazon Aurora.
 

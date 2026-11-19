@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-creating
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Creating an Amazon Q index on behalf of a customer
-<a name="isv-creating-index"></a>
 
 We recommend creating one Amazon Q Business application environment per customer for better security and data segregation. Alternatively, you can create one Amazon Q Business application environment and share it with multiple customers. This is only recommended when you index documents that are visible to all users in your application.
 

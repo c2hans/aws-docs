@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/disable-windows-sup
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Disable Windows support
-<a name="disable-windows-support"></a>
 
 1. If your cluster contains Amazon Linux nodes and you use [security groups for Pods](security-groups-for-pods.md) with them, then skip this step.
 

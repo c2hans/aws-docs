@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/encryption-srt-pa
 ---
 
 # Setting up SRT password encryption using AWS Elemental MediaConnect
-<a name="encryption-srt-password-set-up"></a>
 
 Before you can create a flow or a router I/O that uses SRT password encryption, you must perform the following steps:
 

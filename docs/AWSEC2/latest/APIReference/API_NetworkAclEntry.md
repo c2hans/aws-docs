@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkAc
 ---
 
 # NetworkAclEntry
-<a name="API_NetworkAclEntry"></a>
 
 Describes an entry in a network ACL.
 

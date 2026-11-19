@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AutomaticEnd
 ---
 
 # AutomaticEndpointEncryptionConfiguration
-<a name="API_AutomaticEndpointEncryptionConfiguration"></a>
 
 The configuration for automatic endpoint encryption. In this mode, MediaConnect determines the encryption key when the endpoint connects. This type does not require any additional settings.
 

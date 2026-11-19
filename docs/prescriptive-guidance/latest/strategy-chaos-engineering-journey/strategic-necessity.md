@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Transitioning from ROI to chaos engineering as a strategic necessity
-<a name="strategic-necessity"></a>
 
 Although it's tempting to monitor ROI, the challenges in measuring chaos engineering's value often lead organizations to prioritize immediate, short-term efficiencies over strategic resilience investments. This approach overlooks chaos engineering as a key driver of resilience and the competitive advantages of avoiding outages. The real value of chaos engineering is in preventing future failures. Chaos engineering supports long-term business continuity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionExecutionInput
-<a name="API_ActionExecutionInput"></a>
 
 Input information used for an action execution.
 

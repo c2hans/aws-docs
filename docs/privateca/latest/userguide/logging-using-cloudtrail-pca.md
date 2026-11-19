@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/logging-using
 ---
 
 # Logging AWS Private Certificate Authority API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail-pca"></a>
 
 AWS Private Certificate Authority is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in AWS Private CA. CloudTrail captures API calls and signing operations for AWS Private CA as events. The calls captured include calls from the AWS Private CA console and code calls to the AWS Private CA API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for AWS Private CA. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to AWS Private CA, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

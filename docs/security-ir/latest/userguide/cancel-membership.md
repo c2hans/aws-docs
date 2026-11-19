@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/cancel-memb
 ---
 
 # Cancel Membership
-<a name="cancel-membership"></a>
 
  A role having the CancelMembership permission for AWS Security Incident Response can cancel the membership from the console, the API, or AWS Command Line Interface.
 

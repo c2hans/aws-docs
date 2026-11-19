@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # SSEDescription
-<a name="API_dax_SSEDescription"></a>
 
 The description of the server-side encryption status on the specified DAX cluster.
 

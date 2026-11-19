@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMemoryRetrievalConfig
-<a name="API_agent-runtime_AgenticRetrieveMemoryRetrievalConfig"></a>
 
 The long-term memory namespace that the agent might retrieve memory records from, and the filters applied to that retrieval. You must specify either namespace or namespacePath.
 

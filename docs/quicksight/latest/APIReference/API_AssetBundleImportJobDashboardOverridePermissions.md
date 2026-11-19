@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDashboardOverridePermissions
-<a name="API_AssetBundleImportJobDashboardOverridePermissions"></a>
 
 An object that contains a list of permissions to be applied to a list of dashboard IDs.
 

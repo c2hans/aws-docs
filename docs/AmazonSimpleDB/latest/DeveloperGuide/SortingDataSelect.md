@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Sor
 ---
 
 # Sort
-<a name="SortingDataSelect"></a>
 
 Amazon SimpleDB supports sorting data on a single attribute or the item names, in ascending (default) or descending order. This section describes how to sort the result set returned from `Select`.
 

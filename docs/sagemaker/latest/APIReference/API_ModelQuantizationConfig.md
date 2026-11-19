@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelQ
 ---
 
 # ModelQuantizationConfig
-<a name="API_ModelQuantizationConfig"></a>
 
 Settings for the model quantization technique that's applied by a model optimization job.
 

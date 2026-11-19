@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_LogA
 ---
 
 # LogAnomalyClass
-<a name="API_LogAnomalyClass"></a>
 
  Information about an anomalous log event found within a log group.
 

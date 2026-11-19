@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Change.h
 ---
 
 # Change
-<a name="API_Change"></a>
 
 The information for each resource record set that you want to change.
 

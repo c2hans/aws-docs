@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # Best practices for VPC Resolver
-<a name="best-practices-resolver"></a>
 
 This section provides best practices for optimizing Route 53 VPC Resolver, covering the following topics:
 

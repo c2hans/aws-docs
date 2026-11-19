@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateCustomRoutingAcceleratorAttributes
-<a name="API_UpdateCustomRoutingAcceleratorAttributes"></a>
 
 Update the attributes for a custom routing accelerator.
 

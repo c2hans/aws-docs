@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cw-dimensions.h
 ---
 
 # Neptune CloudWatch Dimensions
-<a name="cw-dimensions"></a>
 
 The metrics for Amazon Neptune are qualified by the values for the account, graph name, or operation. You can use the Amazon CloudWatch console to retrieve Neptune data along with any of the dimensions in the following table.
 

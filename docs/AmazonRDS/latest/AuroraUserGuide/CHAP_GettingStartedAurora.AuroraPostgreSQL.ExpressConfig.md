@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Ge
 ---
 
 # Create with express configuration
-<a name="CHAP_GettingStartedAurora.AuroraPostgreSQL.ExpressConfig"></a>
 
 You can create and connect to an Aurora PostgreSQL serverless database in seconds using express configuration which provides a streamlined database creation experience with preconfigured defaults to help you get started easily and quickly.
 

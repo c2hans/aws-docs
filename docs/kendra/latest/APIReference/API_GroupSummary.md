@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_GroupSumm
 ---
 
 # GroupSummary
-<a name="API_GroupSummary"></a>
 
 Summary information for groups.
 

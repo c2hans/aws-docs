@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/exampl
 ---
 
 # Use `RegisterScalableTarget` with an AWS SDK or CLI
-<a name="example_application-auto-scaling_RegisterScalableTarget_section"></a>
 
 The following code examples show how to use `RegisterScalableTarget`.
 

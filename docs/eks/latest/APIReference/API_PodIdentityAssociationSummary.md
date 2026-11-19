@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_PodIdentityA
 ---
 
 # PodIdentityAssociationSummary
-<a name="API_PodIdentityAssociationSummary"></a>
 
 The summarized description of the association.
 

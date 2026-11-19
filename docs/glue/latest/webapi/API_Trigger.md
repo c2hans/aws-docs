@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Trigger.html
 ---
 
 # Trigger
-<a name="API_Trigger"></a>
 
 Information about a specific trigger.
 

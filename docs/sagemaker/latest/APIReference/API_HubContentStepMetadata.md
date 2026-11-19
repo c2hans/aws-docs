@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HubCon
 ---
 
 # HubContentStepMetadata
-<a name="API_HubContentStepMetadata"></a>
 
 The hub and the hub content that a HubContent step imported.
 

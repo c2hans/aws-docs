@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetContextStoreAssociation
-<a name="API_GetContextStoreAssociation"></a>
 
 Returns information about the association between a context store and a transit gateway.
 

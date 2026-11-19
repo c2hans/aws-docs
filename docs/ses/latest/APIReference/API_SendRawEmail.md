@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SendRawEmail
 ---
 
 # SendRawEmail
-<a name="API_SendRawEmail"></a>
 
 Composes an email message and immediately queues it for sending.
 

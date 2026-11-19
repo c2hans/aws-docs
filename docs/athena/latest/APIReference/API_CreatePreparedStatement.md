@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreatePre
 ---
 
 # CreatePreparedStatement
-<a name="API_CreatePreparedStatement"></a>
 
 Creates a prepared statement for use with SQL queries in Athena.
 

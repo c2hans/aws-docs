@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-target.html
 ---
 
 # Configuring a target for a zero-ETL integration
-<a name="zero-etl-target"></a>
 
 There are several options offered by AWS Glue when configuring a target for a zero-ETL integration. The target may be an encrypted Amazon Redshift data warehouse or a Lakehouse architecture of Amazon SageMaker.
 

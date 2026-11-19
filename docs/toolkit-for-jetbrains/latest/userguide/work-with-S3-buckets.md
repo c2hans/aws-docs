@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/w
 ---
 
 # Working with Amazon S3 buckets by using the AWS Toolkit for JetBrains
-<a name="work-with-S3-buckets"></a>
 
 Every object you store in Amazon S3 resides in a bucket. You can use buckets to group related objects in the same way that you use a directory to group files in a file system.
 

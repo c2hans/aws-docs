@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/stripe-configuring-connec
 ---
 
 # Configuring Stripe connections
-<a name="stripe-configuring-connections"></a>
 
  Stripe supports custom authentication. For more information on generating the required API keys for custom authorization, see [STRIPE REST API Documentation](https://docs.stripe.com/api/authentication).
 

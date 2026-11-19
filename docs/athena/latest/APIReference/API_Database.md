@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Database.
 ---
 
 # Database
-<a name="API_Database"></a>
 
 Contains metadata information for a database in a data catalog.
 

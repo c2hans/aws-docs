@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Document history
-<a name="document_history"></a>
 
 To be notified about updates to this whitepaper, subscribe to the RSS feed.
 

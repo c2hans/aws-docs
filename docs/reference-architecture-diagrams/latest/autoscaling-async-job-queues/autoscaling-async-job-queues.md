@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Autoscaling Asynchronous Job Queues
-<a name="autoscaling-async-job-queues"></a>
 
 Publication date: **April 15, 2021 ([Diagram history](#diagram-history))**
 

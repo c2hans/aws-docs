@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Applicati
 ---
 
 # ApplicationDPUSizes
-<a name="API_ApplicationDPUSizes"></a>
 
 Contains the application runtime IDs and their supported DPU sizes.
 

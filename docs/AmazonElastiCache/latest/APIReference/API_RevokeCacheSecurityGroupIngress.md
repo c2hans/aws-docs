@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # RevokeCacheSecurityGroupIngress
-<a name="API_RevokeCacheSecurityGroupIngress"></a>
 
 Revokes ingress from a cache security group. Use this operation to disallow access from an Amazon EC2 security group that had been previously authorized.
 

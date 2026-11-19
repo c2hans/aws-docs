@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_G
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # GetFacet
-<a name="API_GetFacet"></a>
 
 Gets details of the [Facet](API_Facet.md), such as facet name, attributes, [Rule](API_Rule.md)s, or `ObjectType`. You can call this on all kinds of schema facets -- published, development, or applied.
 

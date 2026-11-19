@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-eventb
 ---
 
 # MediaConnect router input events
-<a name="monitoring-eventbridge-router-input-events"></a>
 
 AWS Elemental MediaConnect publishes the following EventBridge events for router inputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon DynamoDB Accelerator (DAX)
-<a name="amazondynamodbacceleratordax"></a>
 
 Amazon DynamoDB Accelerator (DAX) provides the following APIs for data retrieval.
 

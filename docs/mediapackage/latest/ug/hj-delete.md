@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/hj-delete.html
 ---
 
 # Deleting a harvest job
-<a name="hj-delete"></a>
 
 You can't delete a harvest job.
 + To create a harvest job with different settings, see [Creating a harvest job](hj-create.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Slack
 ---
 
 # SlackWorkspaceConfiguration
-<a name="API_SlackWorkspaceConfiguration"></a>
 
 The configuration for a Slack workspace that you added to an AWS account.
 

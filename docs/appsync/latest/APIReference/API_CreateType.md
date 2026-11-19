@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateTy
 ---
 
 # CreateType
-<a name="API_CreateType"></a>
 
 Creates a `Type` object.
 

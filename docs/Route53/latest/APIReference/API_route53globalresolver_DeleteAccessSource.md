@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DeleteAccessSource
-<a name="API_route53globalresolver_DeleteAccessSource"></a>
 
 Deletes an access source. This operation cannot be undone.
 

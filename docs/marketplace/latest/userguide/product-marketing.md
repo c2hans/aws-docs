@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/product-mar
 ---
 
 # Marketing your product on AWS Marketplace
-<a name="product-marketing"></a>
 
 You can contribute to the success of your product by driving awareness of AWS Marketplace and by driving traffic directly to your product pages on AWS Marketplace. The following sections provide information and support to help you market the product or products that you have listed on AWS Marketplace.
 

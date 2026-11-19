@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-entry-c
 ---
 
 # Create a policy table entry in AWS Transit Gateway
-<a name="tgw-policy-tables-entry-create"></a>
 
 Add one or more rules to the policy table. Each rule specifies match criteria and a target route table. All match attributes are optional; omitting an attribute defaults it to Any (`*`).
 

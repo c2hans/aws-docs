@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_TagR
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tags a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlanServer
-<a name="API_RecoveryPlanServer"></a>
 
 A server associated with a Recovery Plan Step.
 

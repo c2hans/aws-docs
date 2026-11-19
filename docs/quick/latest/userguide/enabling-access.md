@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/enabling-access.h
 ---
 
 # Authorizing connections from AWS Quick Sight to AWS data stores
-<a name="enabling-access"></a>
 
 |  |
 | --- |

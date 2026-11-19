@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetCloudVmCl
 ---
 
 # GetCloudVmCluster
-<a name="API_GetCloudVmCluster"></a>
 
 Returns information about the specified VM cluster.
 

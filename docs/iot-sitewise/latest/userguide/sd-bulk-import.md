@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-bulk-im
 ---
 
 # CreateBulkImportJob for Scenario Discovery
-<a name="sd-bulk-import"></a>
 
 ## Prerequisites
 <a name="sd-bulk-import-prereqs"></a>

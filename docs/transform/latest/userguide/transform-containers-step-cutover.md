@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 9: Deploy cutover infrastructure
-<a name="transform-containers-step-cutover"></a>
 
 In this final step, AWS Transform deploys the finalized infrastructure for production use. The cutover deployment uses the same infrastructure templates that you validated during the test deployment step.
 

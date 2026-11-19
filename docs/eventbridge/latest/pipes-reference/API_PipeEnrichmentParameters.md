@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeEnrichmentParameters
-<a name="API_PipeEnrichmentParameters"></a>
 
 The parameters required to set up enrichment on your pipe.
 

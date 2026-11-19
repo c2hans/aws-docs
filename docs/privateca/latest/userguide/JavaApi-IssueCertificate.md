@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Issue
 ---
 
 # IssueCertificate
-<a name="JavaApi-IssueCertificate"></a>
 
 The following Java sample shows how to use the [IssueCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_IssueCertificate.html) operation.
 

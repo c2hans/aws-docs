@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-account-guardr
 ---
 
 # Account permissions and guardrails
-<a name="plan-account-guardrails"></a>
 
 Amazon Elastic VMware Service creates and manages resources in your AWS account, so the permissions and policies in that account decide whether a deployment succeeds. Prepare the AWS Identity and Access Management (IAM) permissions and check the guardrails on the account before you create an environment.
 

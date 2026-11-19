@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Operational architecture
-<a name="operational-architecture"></a>
 
 In their scaling strategies, Solr and OpenSearch are optimized for distinct operational patterns and deployment scenarios. These differences reflect their design philosophies and target use cases in enterprise environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Descri
 ---
 
 # DescribeWorkflowType
-<a name="API_DescribeWorkflowType"></a>
 
 Returns information about the specified *workflow type*. This includes configuration settings specified when the type was registered and other information such as creation date, current status, etc.
 

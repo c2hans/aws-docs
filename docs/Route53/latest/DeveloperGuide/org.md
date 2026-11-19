@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/org.html
 ---
 
 # .org
-<a name="org"></a>
 
 Used by all kinds of organizations.
 

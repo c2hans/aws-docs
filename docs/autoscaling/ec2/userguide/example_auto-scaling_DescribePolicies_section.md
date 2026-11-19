@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/example_auto-s
 ---
 
 # Use `DescribePolicies` with a CLI
-<a name="example_auto-scaling_DescribePolicies_section"></a>
 
 The following code examples show how to use `DescribePolicies`.
 

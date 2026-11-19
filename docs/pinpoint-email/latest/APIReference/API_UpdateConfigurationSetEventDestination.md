@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_U
 ---
 
 # UpdateConfigurationSetEventDestination
-<a name="API_UpdateConfigurationSetEventDestination"></a>
 
 Update the configuration of an event destination for a configuration set.
 

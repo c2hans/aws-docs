@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/enroll-acc
 ---
 
 # About enrolling existing accounts
-<a name="enroll-account"></a>
 
 You can extend AWS Control Tower governance to an individual, existing AWS account when you *enroll* it into an organizational unit (OU) that's already governed by AWS Control Tower. Eligible accounts exist in *unregistered OUs that are part of the same AWS Organizations organization* as the AWS Control Tower OU.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SessionsStatisticsResources
-<a name="API_SessionsStatisticsResources"></a>
 
 Specifies the fleet IDs or queue IDs to return statistics. You can specify only fleet IDs or queue IDS, not both.
 

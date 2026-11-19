@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/creat
 ---
 
 # Creating an opportunity
-<a name="creating-opportunity"></a>
 
 Opportunities can be added individually, by [bulk import](https://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html) or managed through a [CRM integration](https://docs.aws.amazon.com/partner-central/latest/crm/aws-partner-crm-integration.html). We encourage AWS Partners to submit opportunities early in the sales cycle and let the agent help qualify and strengthen the opportunity as the deal progresses.
 

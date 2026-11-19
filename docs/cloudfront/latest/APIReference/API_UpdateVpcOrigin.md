@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateVpcOrigin
-<a name="API_UpdateVpcOrigin"></a>
 
 Update an Amazon CloudFront VPC origin in your account.
 

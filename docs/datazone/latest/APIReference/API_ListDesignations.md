@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListDes
 ---
 
 # ListDesignations
-<a name="API_ListDesignations"></a>
 
 Lists the designations in a domain. The response returns system-managed designations first, followed by user-created designations in alphabetical order by name. Results are paginated. Use `nextToken` to retrieve additional pages of results.
 

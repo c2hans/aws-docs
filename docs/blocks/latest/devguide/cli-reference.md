@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/cli-reference.htm
 ---
 
 # CLI reference
-<a name="cli-reference"></a>
 
  AWS Blocks uses standard npm scripts for all development and deployment workflows. After scaffolding a project, all commands run from your project root.
 

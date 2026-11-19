@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-c
 ---
 
 # Use connectors and dependencies
-<a name="how-zeppelin-connectors"></a>
 
 Connectors enable you to read and write data across various technologies. Managed Service for Apache Flink bundles three default connectors with your Studio notebook. You can also use custom connectors. For more information about connectors, see [Table & SQL Connectors](https://ci.apache.org/projects/flink/flink-docs-release-1.13/docs/connectors/table/overview/) in the Apache Flink documentation.
 

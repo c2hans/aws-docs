@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # EnrollmentFlagsV4
-<a name="API_EnrollmentFlagsV4"></a>
 
 Template configurations for v4 template schema.
 

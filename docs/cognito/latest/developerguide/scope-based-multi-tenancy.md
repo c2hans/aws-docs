@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/scope-base
 ---
 
 # Custom scope multi-tenancy best practices
-<a name="scope-based-multi-tenancy"></a>
 
 Amazon Cognito supports custom OAuth 2.0 scopes for [resource servers](cognito-user-pools-define-resource-servers.md). You can implement app client multi-tenancy in user pools for machine-to-machine (M2M) authorization models with custom scopes. Scope-based multi-tenancy reduces the effort required to implement M2M multi-tenancy by defining access in your app client or application configuration.
 

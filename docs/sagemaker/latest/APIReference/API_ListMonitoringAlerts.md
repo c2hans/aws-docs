@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListMonitoringAlerts
-<a name="API_ListMonitoringAlerts"></a>
 
 Gets the alerts for a single monitoring schedule.
 

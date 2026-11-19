@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListLimits
-<a name="API_ListLimits"></a>
 
 Gets a list of limits defined in the specified farm.
 

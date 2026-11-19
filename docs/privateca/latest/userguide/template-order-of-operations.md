@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/template-orde
 ---
 
 # AWS Private CA template order of operations
-<a name="template-order-of-operations"></a>
 
 Information contained in an issued certificate can come from four sources: the template definition, API passthrough, CSR passthrough, and the CA configuration.
 

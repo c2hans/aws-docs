@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Hardware specifications for DB instance classes for Aurora
-<a name="Concepts.DBInstanceClass.Summary"></a>
 
 In the table in this section, you can find hardware details about the Amazon RDS DB instance classes for Aurora.
 

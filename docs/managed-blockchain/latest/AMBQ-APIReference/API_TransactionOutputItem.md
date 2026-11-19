@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # TransactionOutputItem
-<a name="API_TransactionOutputItem"></a>
 
 The container of the transaction output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Manage tags for an opt-out list in AWS End User Messaging
-<a name="nx-features-opt-out-lists-tags"></a>
 
 Tags are pairs of keys and values that you can optionally apply to your AWS resources to control access or usage. Adding a tag to a resource can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. You can use tags to easily find existing resources, or to control which users can access specific resources.
 

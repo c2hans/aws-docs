@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/maintaining-i
 ---
 
 # Maintaining indexes
-<a name="maintaining-indexes"></a>
 
 ## Index bloat
 <a name="maintaining-indexes-bloat"></a>

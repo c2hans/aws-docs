@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/understandi
 ---
 
 # Understanding metadata sensitivity
-<a name="understanding-metadata-sensitivity"></a>
 
  While Security Incident Response doesn't collect your application data, the metadata it collects across all three categories can reveal sensitive information about your environment and potentially your users. Consider the following examples:
 +  Resource names such as `patient-database-prod` or `financial-records-2026` indicate the purpose and sensitivity of resources.

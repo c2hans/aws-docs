@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TrackedActio
 ---
 
 # TrackedActionLastAccessed
-<a name="API_TrackedActionLastAccessed"></a>
 
 Contains details about the most recent attempt to access an action within the service.
 

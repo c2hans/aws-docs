@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupPatchPolicyBaselineAccess
-<a name="AWSQuickSetupPatchPolicyBaselineAccess"></a>
 
 **Description**: Provides read-only permissions to access patch baselines that have been configured by an administrator in the current AWS account or organization using Quick Setup.
 

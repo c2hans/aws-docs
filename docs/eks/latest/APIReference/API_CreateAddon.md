@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAddon.
 ---
 
 # CreateAddon
-<a name="API_CreateAddon"></a>
 
 Creates an Amazon EKS add-on.
 

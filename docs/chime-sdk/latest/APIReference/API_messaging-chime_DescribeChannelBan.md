@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DescribeChannelBan
-<a name="API_messaging-chime_DescribeChannelBan"></a>
 
 Returns the full details of a channel ban.
 

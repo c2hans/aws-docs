@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Downlo
 ---
 
 # DownloadDBLogFilePortion
-<a name="API_DownloadDBLogFilePortion"></a>
 
 Downloads all or a portion of the specified log file, up to 1 MB in size.
 

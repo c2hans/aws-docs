@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/security-best-
 ---
 
 # Security best practices in AWS IoT Core
-<a name="security-best-practices"></a>
 
 This section contains information about security best practices for AWS IoT Core. For information about security rules for Industrial IoT solutions, see [Ten security golden rules for Industrial IoT solutions](https://aws.amazon.com/blogs/iot/ten-security-golden-rules-for-industrial-iot-solutions/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribePartners
-<a name="API_DescribePartners"></a>
 
 Returns information about the partner integrations defined for a cluster.
 

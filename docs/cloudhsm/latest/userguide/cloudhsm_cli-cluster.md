@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # The cluster category in CloudHSM CLI
-<a name="cloudhsm_cli-cluster"></a>
 
 In the CloudHSM CLI, **cluster** is a parent category for a group of commands that, when combined with the parent category, create a command specific to clusters. Currently, the cluster category consists of the following commands:
 

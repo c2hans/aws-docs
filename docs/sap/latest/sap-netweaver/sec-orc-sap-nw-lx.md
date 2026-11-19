@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sec-orc-sap-nw-
 ---
 
 # Security and compliance
-<a name="sec-orc-sap-nw-lx"></a>
 
 The following are additional AWS security resources to help you achieve the optimum level of security for your SAP NetWeaver environment on AWS:
 +  [AWS Cloud Security](https://aws.amazon.com/security/)

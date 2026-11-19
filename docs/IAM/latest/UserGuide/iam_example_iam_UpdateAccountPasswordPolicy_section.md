@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Upd
 ---
 
 # Use `UpdateAccountPasswordPolicy` with a CLI
-<a name="iam_example_iam_UpdateAccountPasswordPolicy_section"></a>
 
 The following code examples show how to use `UpdateAccountPasswordPolicy`.
 

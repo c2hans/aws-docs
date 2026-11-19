@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/how-it-works.html
 ---
 
 # How Multi-party approval works
-<a name="how-it-works"></a>
 
 To help you understand Multi-party approval, this topic describes the three-step approval process.
 

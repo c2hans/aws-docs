@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableVersionSummary
-<a name="API_IntermediateTableVersionSummary"></a>
 
 Contains summary information about a version of an intermediate table.
 

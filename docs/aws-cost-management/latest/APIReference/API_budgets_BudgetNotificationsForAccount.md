@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BudgetNotificationsForAccount
-<a name="API_budgets_BudgetNotificationsForAccount"></a>
 
  The budget name and associated notifications for an account.
 

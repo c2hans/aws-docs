@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualCustomizationFieldsConfiguration
-<a name="API_VisualCustomizationFieldsConfiguration"></a>
 
 The configuration that controls field customization options available to dashboard readers for a visual.
 

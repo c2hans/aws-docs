@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/choose-best-training
 ---
 
 # Reserve the best training plan
-<a name="choose-best-training-plan"></a>
 
 The search of a training plan has returned offerings that fit your capacity needs and budget.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Ancho
 ---
 
 # Anchor
-<a name="API_Anchor"></a>
 
 The definition of the Anchor.
 

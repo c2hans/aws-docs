@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_LogConfi
 ---
 
 # LogConfig
-<a name="API_LogConfig"></a>
 
 The Amazon CloudWatch Logs configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateDa
 ---
 
 # UpdateDataTablePrimaryValues
-<a name="API_UpdateDataTablePrimaryValues"></a>
 
 Updates the primary values for a record. This operation affects all existing values that are currently associated to the record and its primary values. Users that have restrictions on attributes and/or primary values are not authorized to use this endpoint. The combination of new primary values must be unique within the table.
 

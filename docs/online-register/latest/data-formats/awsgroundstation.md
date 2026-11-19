@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsg
 ---
 
 # Data retrieval APIs for AWS Ground Station
-<a name="awsgroundstation"></a>
 
 AWS Ground Station provides the following APIs for data retrieval.
 

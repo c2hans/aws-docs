@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/eventbridge-events.html
 ---
 
 # Event samples
-<a name="eventbridge-events"></a>
 
 The following are sample MGN events in EventBridge:
 

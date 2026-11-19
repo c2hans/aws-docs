@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/monitor-snapshot-lo
 ---
 
 # Monitor Amazon EBS snapshot lock
-<a name="monitor-snapshot-lock"></a>
 
 You can monitor actions related to Amazon EBS snapshot lock using the following tools:
 

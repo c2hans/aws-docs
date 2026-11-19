@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-traffic-
 ---
 
 # Create traffic distribution groups for your Connect Customer instance
-<a name="setup-traffic-distribution-groups"></a>
 
 You can create a traffic distribution group for your existing Connect Customer instance by using the [CreateTrafficDistributionGroup](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTrafficDistributionGroup.html) API.
 

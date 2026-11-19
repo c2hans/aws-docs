@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.FILL_W
 ---
 
 # FILL\_WITH\_NULL
-<a name="recipe-actions.FILL_WITH_NULL"></a>
 
 Returns a column with data values replaced by null.
 

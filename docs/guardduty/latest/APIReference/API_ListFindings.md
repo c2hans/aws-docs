@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFi
 ---
 
 # ListFindings
-<a name="API_ListFindings"></a>
 
 Lists GuardDuty findings for the specified detector ID.
 

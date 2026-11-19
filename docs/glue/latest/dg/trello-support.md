@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/trello-support.html
 ---
 
 # AWS Glue support for Trello
-<a name="trello-support"></a>
 
 AWS Glue supports Trello as follows:
 

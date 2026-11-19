@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapSnappedGeometry
-<a name="API_RoadSnapSnappedGeometry"></a>
 
 Interpolated geometry for the snapped route that is overlay-able onto a map.
 

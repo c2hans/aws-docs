@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/vegas.html
 ---
 
 # .vegas
-<a name="vegas"></a>
 
 Used to promote the city of Las Vegas and the Las Vegas lifestyle.
 

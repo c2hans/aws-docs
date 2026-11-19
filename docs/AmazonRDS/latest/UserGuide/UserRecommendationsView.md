@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UserRecommend
 ---
 
 # Viewing Amazon RDS recommendations
-<a name="UserRecommendationsView"></a>
 
 Using the Amazon RDS console, you can view Amazon RDS recommendations for your database resources.
 

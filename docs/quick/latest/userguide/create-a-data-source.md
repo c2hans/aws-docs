@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-data-sou
 ---
 
 # Creating a data source
-<a name="create-a-data-source"></a>
 
 |  |
 | --- |

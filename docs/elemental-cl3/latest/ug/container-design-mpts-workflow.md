@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/container-design
 ---
 
 # Designing an MPTS workflow
-<a name="container-design-mpts-workflow"></a>
 
 This section describes how to design a standard MPTS, and how to augment that standard MPTS by including passthrough elements.
 

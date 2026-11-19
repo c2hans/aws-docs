@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-admin-condi
 ---
 
 # IAM condition keys for administering Amazon Neptune
-<a name="iam-admin-condition-keys"></a>
 
 [Using condition keys](security-iam-access-manage.md#iam-using-condition-keys), you can specify conditions in an IAM policy statement so that the statement takes effect only when the conditions are true. The condition keys that you can use in Neptune administrative policy statements fall into the following categories:
 + [Global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html)   –   These are defined by AWS for general use with AWS services. Most can be used in Neptune administrative policy statements.

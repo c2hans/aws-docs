@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load
 ---
 
 # Target groups for your Network Load Balancers
-<a name="load-balancer-target-groups"></a>
 
 Each *target group* is used to route requests to one or more registered targets. When you create a listener, you specify a target group for its default action. Traffic is forwarded to the target group specified in the listener rule. You can create different target groups for different types of requests. For example, create one target group for general requests and other target groups for requests to the microservices for your application. For more information, see [Network Load Balancer components](introduction.md#network-load-balancer-components).
 

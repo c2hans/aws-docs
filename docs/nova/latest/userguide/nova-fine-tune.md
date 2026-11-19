@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-fine-tune.htm
 ---
 
 # Supervised fine-tuning (SFT)
-<a name="nova-fine-tune"></a>
 
 The SFT training process consists of two main stages:
 + **Data Preparation**: Follow established guidelines to create, clean, or reformat datasets into the required structure. Ensure that inputs, outputs, and auxiliary information (such as reasoning traces or metadata) are properly aligned and formatted.

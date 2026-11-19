@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSU
 ---
 
 # AWSUserAttributeCostAllocationPolicy
-<a name="AWSUserAttributeCostAllocationPolicy"></a>
 
 **Description**: Provides read-only access to user attributes from AWS IAM Identity Center for the user attributes that the customer has opted in to.
 

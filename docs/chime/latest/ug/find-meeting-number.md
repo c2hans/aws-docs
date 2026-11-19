@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/find-meeting-number.html
 ---
 
 # Finding meeting IDs
-<a name="find-meeting-number"></a>
 
 Look in the following locations for meeting IDs:
 + If the meeting appears on your calendar, open the meeting invitation. The ID appears under the link to the meeting.

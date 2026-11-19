@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library-configure-c
 ---
 
 # Managing AWS CDK Toolkit Library cloud assembly sources
-<a name="toolkit-library-configure-ca"></a>
 
 Use the AWS CDK Toolkit Library to configure cloud assembly sources and customize how you deploy your CDK applications. This guide shows you how to configure cloud assembly sources to meet your deployment requirements and workflow needs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/folk-connection-options.h
 ---
 
 # Folk connection options
-<a name="folk-connection-options"></a>
 
 The following are connection options for Folk:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Folk object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_cre
 ---
 
 # Create compute node group for running compute jobs in AWS PCS
-<a name="getting-started_create-cng_workers"></a>
 
  In this step, you will launch a compute node group that scales elastically to run jobs submitted to the cluster.
 

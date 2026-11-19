@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-traffic
 ---
 
 # ec2-traffic-mirror-filter-description
-<a name="ec2-traffic-mirror-filter-description"></a>
 
 Checks if Amazon EC2 traffic mirror filters have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist.
 

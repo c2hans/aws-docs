@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/livechatai-support.html
 ---
 
 # AWS Glue support for LiveChatAI
-<a name="livechatai-support"></a>
 
 AWS Glue supports LiveChatAI as follows:
 

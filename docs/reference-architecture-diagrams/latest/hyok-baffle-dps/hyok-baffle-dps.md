@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # Protect Your Data with HYOK Solutions by Baffle DPS
-<a name="hyok-baffle-dps"></a>
 
 Publication date: **May 28, 2021 ([Diagram history](#diagram-history))**
 

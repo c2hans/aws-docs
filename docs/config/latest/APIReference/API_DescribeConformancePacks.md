@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConformancePacks
-<a name="API_DescribeConformancePacks"></a>
 
 Returns a list of one or more conformance packs.
 

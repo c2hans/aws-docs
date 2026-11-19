@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/securityhub-integr
 ---
 
 # Amazon Inspector integration with AWS Security Hub CSPM
-<a name="securityhub-integration"></a>
 
  Security Hub CSPM provides a comprehensive view of your security state in AWS. This helps you check your environment against security industry standards and best practices. Security Hub CSPM collects security data from AWS accounts, services, and supported products. You can use this information to analyze security trends and identify security issues. When you activate the Amazon Inspector integration with Security Hub CSPM, Amazon Inspector can send findings to Security Hub CSPM, and Security Hub CSPM can analyze those findings as part of your security posture.
 

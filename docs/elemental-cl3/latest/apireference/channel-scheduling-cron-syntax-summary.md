@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # CRON Syntax Summary
-<a name="channel-scheduling-cron-syntax-summary"></a>
 
 The CRON expression is composed of five parts, separated by spaces, representing minute, hour, day of month, month, and day of week respectively, as illustrated below.
 

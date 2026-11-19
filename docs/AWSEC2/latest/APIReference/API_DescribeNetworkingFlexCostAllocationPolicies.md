@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeN
 ---
 
 # DescribeNetworkingFlexCostAllocationPolicies
-<a name="API_DescribeNetworkingFlexCostAllocationPolicies"></a>
 
 Describes one or more of your flex cost allocation policies. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-enfo
 ---
 
 # Apply cross-account safeguards with Amazon Bedrock Guardrails enforcements
-<a name="guardrails-enforcements"></a>
 
 Amazon Bedrock Guardrails allows you to automatically apply safeguards across multiple accounts in an organization through [AWS Organizations Amazon Bedrock policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_bedrock.html). This enables uniform protection across all accounts with centralized control and management. Additionally, this capability also offers flexibility to apply account-level and application-specific controls depending on use-case requirements.
 

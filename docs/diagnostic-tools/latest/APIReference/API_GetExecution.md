@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # GetExecution
-<a name="API_GetExecution"></a>
 
 Retrieve an execution by its id.
 

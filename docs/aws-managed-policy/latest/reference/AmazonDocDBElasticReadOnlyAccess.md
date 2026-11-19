@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDocDBElasticReadOnlyAccess
-<a name="AmazonDocDBElasticReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to Amazon DocDB-Elastic and CloudWatch metrics.
 

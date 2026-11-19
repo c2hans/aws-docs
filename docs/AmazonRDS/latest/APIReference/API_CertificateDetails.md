@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Certif
 ---
 
 # CertificateDetails
-<a name="API_CertificateDetails"></a>
 
 The details of the DB instance’s server certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputeNodeExecutionStatus
-<a name="API_ComputeNodeExecutionStatus"></a>
 
 Current execution status of a compute node within a pipeline execution.
 

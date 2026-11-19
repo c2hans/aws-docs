@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # CodeInterpreterInvocationInput
-<a name="API_agent-runtime_CodeInterpreterInvocationInput"></a>
 
 Contains information about the code interpreter being invoked.
 

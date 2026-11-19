@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamPolicies
-<a name="API_DescribeIpamPolicies"></a>
 
 Describes one or more IPAM policies.
 

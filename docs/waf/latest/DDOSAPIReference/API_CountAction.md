@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_CountAct
 ---
 
 # CountAction
-<a name="API_CountAction"></a>
 
 Specifies that Shield Advanced should configure its AWS WAF rules with the AWS WAF `Count` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhi
 ---
 
 # Getting FHIR export job properties
-<a name="exporting-fhir-data-describe"></a>
 
 Use `DescribeFHIRExportJob` to get export job properties from a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`DescribeFHIRExportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeFHIRExportJob.html) in the *AWS HealthLake API Reference*.
 

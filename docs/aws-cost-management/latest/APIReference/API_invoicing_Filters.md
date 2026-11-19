@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Filters
-<a name="API_invoicing_Filters"></a>
 
 An optional input to the list API. If multiple filters are specified, the returned list will be a configuration that match all of the provided filters. Supported filter types are `InvoiceReceivers`, `Names`, and `Accounts`.
 

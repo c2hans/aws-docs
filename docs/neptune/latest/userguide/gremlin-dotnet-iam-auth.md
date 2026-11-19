@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-dotnet-
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Gremlin .NET
-<a name="gremlin-dotnet-iam-auth"></a>
 
 ## Overview
 <a name="gremlin-dotnet-iam-auth-overview"></a>

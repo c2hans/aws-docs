@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ecr.
 ---
 
 # Working with Amazon Elastic Container Registry
-<a name="ecr"></a>
 
 Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container-registry service that's secure, and scalable. Several Amazon ECR service functions are accessible from the Toolkit for VS Code Explorer.
 + Creating a repository.

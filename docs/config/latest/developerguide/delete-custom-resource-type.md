@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/delete-cust
 ---
 
 # Delete Third-Party Resources from AWS Config using the AWS CLI
-<a name="delete-custom-resource-type"></a>
 
 Enter the following command to delete a third-party resource:
 

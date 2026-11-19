@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-commit
 ---
 
 # Requirements for the EMRFS S3-optimized committer
-<a name="emr-spark-committer-reqs"></a>
 
 The EMRFS S3-optimized committer is used when the following conditions are met:
 + You run Spark jobs that use Spark, DataFrames, or Datasets to write files to Amazon S3. Starting with Amazon EMR 6.4.0, this committer can be used for all common formats including parquet, ORC, and text-based formats (including CSV and JSON). For releases prior to Amazon EMR 6.4.0, only the Parquet format is supported.

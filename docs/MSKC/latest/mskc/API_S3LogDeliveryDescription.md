@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_S3LogDeliveryDescri
 ---
 
 # S3LogDeliveryDescription
-<a name="API_S3LogDeliveryDescription"></a>
 
 The description of the details about delivering logs to Amazon S3.
 

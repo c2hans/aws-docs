@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineDeclaration
-<a name="API_PipelineDeclaration"></a>
 
 Represents the structure of actions and stages to be performed in the pipeline.
 

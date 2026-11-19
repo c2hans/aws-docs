@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/product-pre
 ---
 
 # Preparing your product for AWS Marketplace
-<a name="product-preparation"></a>
 
 The following topics explain how to prepare your software products for sale through AWS Marketplace. Preparing your product involves configuring your package, setting a pricing scheme, determining the categories in which to list your product, and adding keywords so your product appears in relevant searches. If you are an independent software vendor (ISV), channel partner, managed services provider (MSP), or individual who has something to offer that works with AWS products and services, you can use this process to prepare to publish a product on AWS Marketplace.
 

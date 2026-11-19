@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-ad-auth
 ---
 
 # Using Active Directory authentication for Amazon RDS for MySQL
-<a name="mysql-ad-authentication"></a>
 
  You can use Active Directory (AD) authentication to authenticate users when they connect to your MySQL DB instance. The DB instance works with AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) to enable Active Directory authentication. When users authenticate with a MySQL DB instance joined to the trusting domain, authentication requests are forwarded. Forwarded requests go to the domain directory that you create with Directory Service.
 

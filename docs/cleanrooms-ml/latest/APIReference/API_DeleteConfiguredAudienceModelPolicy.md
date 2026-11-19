@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteConfiguredAudienceModelPolicy
-<a name="API_DeleteConfiguredAudienceModelPolicy"></a>
 
 Deletes the specified configured audience model policy.
 

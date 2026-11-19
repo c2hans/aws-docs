@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gradi
 ---
 
 # GradientColor
-<a name="API_GradientColor"></a>
 
 Determines the gradient color settings.
 

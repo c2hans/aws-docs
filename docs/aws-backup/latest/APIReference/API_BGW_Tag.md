@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_T
 ---
 
 # Tag
-<a name="API_BGW_Tag"></a>
 
 A key-value pair you can use to manage, filter, and search for your resources. Allowed characters include UTF-8 letters, numbers, and the following characters: \+ - = . \_ : /. Spaces are not allowed in tag values.
 

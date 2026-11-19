@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Performance optimization
-<a name="gateway-advanced-performance"></a>
 
 To optimize the performance of your Gateway implementations, consider the following best practices:
 

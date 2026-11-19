@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PaymentCredentialProviderItem
-<a name="API_PaymentCredentialProviderItem"></a>
 
 Contains summary information about a payment credential provider.
 

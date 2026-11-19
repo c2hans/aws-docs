@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # References
-<a name="references"></a>
 +  [AWS Architecture Center](https://aws.amazon.com/architecture/)
 +  [Architecture Best Practices for Machine Learning](https://aws.amazon.com/architecture/machine-learning/)
 +  [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)

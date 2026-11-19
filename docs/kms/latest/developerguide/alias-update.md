@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-update.h
 ---
 
 # Update aliases
-<a name="alias-update"></a>
 
 Because an alias is an independent resource, you can change the KMS key associated with an alias. For example, if the `test-key` alias is associated with one KMS key, you can use the [UpdateAlias](https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) operation to associate it with a different KMS key. This is one of several ways to [manually rotate a KMS key](rotate-keys.md) without changing its key material. You might also update a KMS key so that an application that was using one KMS key for new resources is now using a different KMS key.
 

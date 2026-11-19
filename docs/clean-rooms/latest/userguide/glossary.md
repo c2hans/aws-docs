@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/glossary.ht
 ---
 
 # AWS Clean Rooms Glossary
-<a name="glossary"></a>
 
 Consult this glossary to become familiar with terminology that is used for AWS Clean Rooms.
 

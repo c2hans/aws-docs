@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Add your wireless device to AWS IoT Core for LoRaWAN
-<a name="lorawan-end-devices-add"></a>
 
 If you're adding your wireless device for the first time, we recommend that you use the console. Navigate to the [AWS IoT Core for LoRaWAN](https://console.aws.amazon.com/iot/home#/wireless/landing) **Intro** page of the AWS IoT console, choose **Get started**, and then choose **Add device**. If you've already added a device, choose **View device** to view the gateway that you added. If you would like to add more devices, choose **Add device**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiLegDetails
-<a name="API_RouteTaxiLegDetails"></a>
 
 Populated when the Leg type is Taxi, and provides additional information that is specific to taxi travel.
 

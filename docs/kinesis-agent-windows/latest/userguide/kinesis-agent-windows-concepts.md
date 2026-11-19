@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/k
 ---
 
 # Amazon Kinesis Agent for Microsoft Windows Concepts
-<a name="kinesis-agent-windows-concepts"></a>
 
 Understanding the key concepts of Amazon Kinesis Agent for Microsoft Windows (Kinesis Agent for Windows) can make it easier for you to collect and stream data on desktop and server fleets to the remainder of the data pipeline for processing.
 

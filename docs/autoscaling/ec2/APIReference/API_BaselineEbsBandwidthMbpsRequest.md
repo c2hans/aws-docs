@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Baselin
 ---
 
 # BaselineEbsBandwidthMbpsRequest
-<a name="API_BaselineEbsBandwidthMbpsRequest"></a>
 
 Specifies the minimum and maximum for the `BaselineEbsBandwidthMbps` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

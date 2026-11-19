@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/google-search-console-sup
 ---
 
 # AWS Glue support for Google Search Console
-<a name="google-search-console-support"></a>
 
 AWS Glue supports Google Search Console as follows:
 

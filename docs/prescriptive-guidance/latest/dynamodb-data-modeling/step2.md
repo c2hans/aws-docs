@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 2. Create a preliminary cost estimation
-<a name="step2"></a>
 
 ## Objective
 <a name="obj2"></a>

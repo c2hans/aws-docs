@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Kuberne
 ---
 
 # KubernetesResourceType
-<a name="API_KubernetesResourceType"></a>
 
 Defines the type of Kubernetes resource to scale in an Amazon EKS cluster.
 

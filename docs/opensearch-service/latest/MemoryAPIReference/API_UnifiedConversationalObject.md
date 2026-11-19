@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # UnifiedConversationalObject
-<a name="API_UnifiedConversationalObject"></a>
 
 Conversation turns.
 

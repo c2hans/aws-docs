@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # ConnectionCredentials
-<a name="API_connect-participant_ConnectionCredentials"></a>
 
 Connection credentials.
 

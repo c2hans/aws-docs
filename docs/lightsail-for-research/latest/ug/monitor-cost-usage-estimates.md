@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/monitor
 ---
 
 # View cost and usage estimates for your resources in Lightsail for Research
-<a name="monitor-cost-usage-estimates"></a>
 
 Month to date cost and usage estimates for your Lightsail for Research resources are displayed in the following areas of the [Lightsail for Research console](https://lfr.console.aws.amazon.com/ls/research).
 

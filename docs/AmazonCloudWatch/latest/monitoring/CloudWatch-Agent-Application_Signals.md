@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Enable CloudWatch Application Signals
-<a name="CloudWatch-Agent-Application_Signals"></a>
 
 Use CloudWatch Application Signals to automatically instrument your applications on AWS so that you can track application performance against your business objectives. Application Signals provides you a unified, application-centric view of your Java applications, their dependencies, and their edges. For more information, see [Application Signals](CloudWatch-Application-Monitoring-Sections.md).
 

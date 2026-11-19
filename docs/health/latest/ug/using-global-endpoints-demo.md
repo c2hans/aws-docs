@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/using-global-endpoints-
 ---
 
 # Demos: Retrieving the last seven days of AWS Health event data programmatically
-<a name="using-global-endpoints-demo"></a>
 
 In the following code examples, AWS Health uses a DNS lookup against the global endpoint to determine the active regional endpoint and signing Region. AWS Health uses this information to retrieve a report of the last seven days of event data. The code restarts the workflow if the active endpoint changes.
 

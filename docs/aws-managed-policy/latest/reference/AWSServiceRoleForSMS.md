@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForSMS
-<a name="AWSServiceRoleForSMS"></a>
 
 **Description**: Provides access to AWS services and resources necessary to migrate service instances into AWS including EC2, S3 and Cloudformation.
 

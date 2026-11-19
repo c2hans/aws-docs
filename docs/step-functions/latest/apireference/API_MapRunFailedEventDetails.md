@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MapRunFailedEventDetails
-<a name="API_MapRunFailedEventDetails"></a>
 
 Contains details about a Map Run failure event that occurred during a state machine execution.
 

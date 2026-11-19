@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ValidateRdsNetworkConfiguration`
-<a name="automation-aws-validate-rds-network-configuration"></a>
 
  **Description**
 

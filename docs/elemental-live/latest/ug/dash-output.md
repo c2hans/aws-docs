@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/dash-output.htm
 ---
 
 # DASH output
-<a name="dash-output"></a>
 
 DASH ISO output does not support passthrough of the SCTE-35 messages or manifest decoration. Therefore, the only workable option is the default behavior:
 

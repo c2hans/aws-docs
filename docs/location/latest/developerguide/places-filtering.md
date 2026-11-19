@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/places-fi
 ---
 
 # Filtering
-<a name="places-filtering"></a>
 
 Amazon Location Service Places API offers filtering options to narrow down search results based on specific criteria. These parameters refine results by including or excluding criteria such as geographic constraints, administrative areas, business chains, POI categories, and food types.
 

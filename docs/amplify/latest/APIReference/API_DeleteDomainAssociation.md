@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteDo
 ---
 
 # DeleteDomainAssociation
-<a name="API_DeleteDomainAssociation"></a>
 
 Deletes a domain association for an Amplify app.
 

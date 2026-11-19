@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/autoscaling
 ---
 
 # autoscaling-launchconfig-requires-imdsv2
-<a name="autoscaling-launchconfig-requires-imdsv2"></a>
 
 Checks whether only IMDSv2 is enabled. This rule is NON\_COMPLIANT if the Metadata version is not included in the launch configuration or if both Metadata V1 and V2 are enabled.
 

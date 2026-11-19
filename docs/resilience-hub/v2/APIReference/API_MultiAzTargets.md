@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Multi
 ---
 
 # MultiAzTargets
-<a name="API_MultiAzTargets"></a>
 
 Defines the multi-AZ disaster recovery targets for a resilience policy.
 

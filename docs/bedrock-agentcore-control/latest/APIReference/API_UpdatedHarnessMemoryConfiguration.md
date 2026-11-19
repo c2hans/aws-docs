@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatedHarnessMemoryConfiguration
-<a name="API_UpdatedHarnessMemoryConfiguration"></a>
 
 Wrapper for updating the memory configuration.
 

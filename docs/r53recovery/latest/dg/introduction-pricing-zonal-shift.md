@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/introduction-prici
 ---
 
 # Pricing for zonal shift in ARC
-<a name="introduction-pricing-zonal-shift"></a>
 
 For zonal shift, you can start a zonal shift for supported resources, to recover your application from an issue in an Availability Zone. There is no additional charge for using zonal shift.
 

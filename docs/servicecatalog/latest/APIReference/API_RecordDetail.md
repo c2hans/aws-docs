@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_R
 ---
 
 # RecordDetail
-<a name="API_RecordDetail"></a>
 
 Information about a request operation.
 

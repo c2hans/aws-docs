@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiMediaInfo
 ---
 
 # NdiMediaInfo
-<a name="API_NdiMediaInfo"></a>
 
  Metadata about the audio and video media that is part of the NDI® source content. This includes details about the individual media streams.
 

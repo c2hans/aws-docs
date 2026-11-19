@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetails"></a>
 
 A file that contain environment variables to pass to a container.
 

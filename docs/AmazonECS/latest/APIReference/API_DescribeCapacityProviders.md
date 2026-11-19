@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeCapacityProviders
-<a name="API_DescribeCapacityProviders"></a>
 
 Describes one or more of your capacity providers.
 

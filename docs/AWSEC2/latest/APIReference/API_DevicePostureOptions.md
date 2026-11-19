@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DevicePos
 ---
 
 # DevicePostureOptions
-<a name="API_DevicePostureOptions"></a>
 
 Describes the device posture options for a Client VPN endpoint. Device posture options specify the device trust providers that the endpoint uses to evaluate the security posture of connecting devices.
 

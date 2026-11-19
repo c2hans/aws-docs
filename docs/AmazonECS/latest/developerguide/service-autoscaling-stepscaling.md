@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Use predefined increments based on CloudWatch alarms to scale Amazon ECS services
-<a name="service-autoscaling-stepscaling"></a>
 
 With step scaling policies, you create and manage the CloudWatch alarms that invoke the scaling process. When an alarm is breached, Amazon ECS initiates the scaling policy associated with that alarm. The step scaling policy scales tasks using a set of adjustments, known as step adjustments. The size of the adjustment varies based on the magnitude of the alarm breach.
 + If the breach exceeds the first threshold, Amazon ECS applies the first step adjustment.

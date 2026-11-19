@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeDetail
 ---
 
 # NodeDetails
-<a name="API_NodeDetails"></a>
 
 An object that represents the details of a multi-node parallel job node.
 

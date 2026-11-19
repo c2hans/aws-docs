@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrieveAndGenerateStream
-<a name="API_agent-runtime_RetrieveAndGenerateStream"></a>
 
 Queries a knowledge base and generates responses based on the retrieved results, with output in streaming format.
 

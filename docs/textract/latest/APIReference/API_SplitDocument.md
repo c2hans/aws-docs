@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_SplitDo
 ---
 
 # SplitDocument
-<a name="API_SplitDocument"></a>
 
 Contains information about the pages of a document, defined by logical boundary.
 

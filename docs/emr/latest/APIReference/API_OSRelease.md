@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_OSRelease.ht
 ---
 
 # OSRelease
-<a name="API_OSRelease"></a>
 
 The Amazon Linux release specified for a cluster in the RunJobFlow request.
 

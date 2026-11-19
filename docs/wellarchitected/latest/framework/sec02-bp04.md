@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec02-b
 ---
 
 # SEC02-BP04 Rely on a centralized identity provider for users and machines
-<a name="sec02-bp04"></a>
 
  When each application manages its own identities, users juggle multiple logins and security teams lose a single view of who has access. A centralized identity provider makes one system the source of truth for authentication, authorization, and lifecycle management across your workloads. This applies to machine identities as well as people, so service-to-service calls authenticate through the same governed system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Predictive Maintenance
-<a name="predictive-maintenance"></a>
 
 ## Overview
 <a name="overview"></a>

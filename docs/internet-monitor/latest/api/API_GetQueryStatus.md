@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetQuery
 ---
 
 # GetQueryStatus
-<a name="API_GetQueryStatus"></a>
 
 Returns the current status of a query for the Internet Monitor query interface, for a specified query ID and monitor. When you run a query, check the status to make sure that the query has `SUCCEEDED` before you review the results.
 +  `QUEUED`: The query is scheduled to run.

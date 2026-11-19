@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-a
 ---
 
 # Working with AWS Secrets Manager access token authentication
-<a name="channel-assembly-access-configuration-access-token"></a>
 
 MediaTailor supports *Secrets Manager access token authentication*. With AWS Secrets Manager access token authentication, MediaTailor uses an AWS Key Management Service (AWS KMS) customer managed key and an AWS Secrets Manager secret that you create, own, and manage to authenticate requests to your origin.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Child
 ---
 
 # ChildBlock
-<a name="API_ChildBlock"></a>
 
 Nested block contained within a block.
 

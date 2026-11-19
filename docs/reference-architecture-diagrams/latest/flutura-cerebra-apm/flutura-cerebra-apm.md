@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/f
 ---
 
 # Flutura Cerebra Asset Performance Management on AWS
-<a name="flutura-cerebra-apm"></a>
 
 Publication date: **November 21, 2022 ([Diagram history](#fca-diagram-history))**
 

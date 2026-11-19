@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowTraceDependencyEvent
-<a name="API_agent-runtime_FlowTraceDependencyEvent"></a>
 
 Contains information about a dependency trace event in the flow.
 

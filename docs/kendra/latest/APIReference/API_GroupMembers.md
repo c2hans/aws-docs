@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_GroupMemb
 ---
 
 # GroupMembers
-<a name="API_GroupMembers"></a>
 
 A list of users that belong to a group. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents.
 

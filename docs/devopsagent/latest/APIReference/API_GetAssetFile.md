@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetA
 ---
 
 # GetAssetFile
-<a name="API_GetAssetFile"></a>
 
 Gets a file from an asset
 

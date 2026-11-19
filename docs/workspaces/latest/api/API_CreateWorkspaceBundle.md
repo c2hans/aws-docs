@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspac
 ---
 
 # CreateWorkspaceBundle
-<a name="API_CreateWorkspaceBundle"></a>
 
 Creates the specified WorkSpace bundle. For more information about creating WorkSpace bundles, see [ Create a Custom WorkSpaces Image and Bundle](https://docs.aws.amazon.com/workspaces/latest/adminguide/create-custom-bundle.html).
 

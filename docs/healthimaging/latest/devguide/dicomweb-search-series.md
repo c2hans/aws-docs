@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-s
 ---
 
 # Searching for DICOM series in HealthImaging
-<a name="dicomweb-search-series"></a>
 
 Use the `SearchDICOMSeries` API to search for DICOM series in a HealthImaging [data store](getting-started-concepts.md#concept-data-store). You can search for DICOM series in HealthImaging by constructing a URL that includes supported DICOM data elements (attributes). Series search results are returned in JSON format, ordered by ascending (oldest to latest).
 

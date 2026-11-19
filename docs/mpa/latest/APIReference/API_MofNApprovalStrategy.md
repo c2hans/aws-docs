@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_MofNApproval
 ---
 
 # MofNApprovalStrategy
-<a name="API_MofNApprovalStrategy"></a>
 
 Strategy for how an approval team grants approval.
 

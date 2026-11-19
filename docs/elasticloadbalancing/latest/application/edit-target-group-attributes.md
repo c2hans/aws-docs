@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Edit target group attributes for your Application Load Balancer
-<a name="edit-target-group-attributes"></a>
 
 After you create a target group for you Application Load Balancer, you can edit its target group attributes.
 

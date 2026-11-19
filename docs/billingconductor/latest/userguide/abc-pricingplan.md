@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/abc-pr
 ---
 
 # Pricing plans
-<a name="abc-pricingplan"></a>
 
 You can use pricing plans in AWS Billing Conductor to customize the output of your billing details across your billing groups.
 

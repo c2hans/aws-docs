@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Automation and access control
-<a name="automation-access-control"></a>
 
 ## Automation
 <a name="automation"></a>

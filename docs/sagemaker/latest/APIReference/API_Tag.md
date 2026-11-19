@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag object that consists of a key and an optional value, used to manage metadata for SageMaker AWS resources.
 

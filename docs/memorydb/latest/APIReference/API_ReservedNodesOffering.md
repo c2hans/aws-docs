@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Reserve
 ---
 
 # ReservedNodesOffering
-<a name="API_ReservedNodesOffering"></a>
 
 The offering type of this node.
 

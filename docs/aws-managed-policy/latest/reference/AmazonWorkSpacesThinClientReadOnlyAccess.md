@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesThinClientReadOnlyAccess
-<a name="AmazonWorkSpacesThinClientReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to Amazon WorkSpaces Thin Client and its dependencies
 

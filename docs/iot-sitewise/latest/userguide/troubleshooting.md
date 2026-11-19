@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troublesho
 ---
 
 # Troubleshooting AWS IoT SiteWise
-<a name="troubleshooting"></a>
 
 Use the following information to troubleshoot issues with AWS IoT SiteWise.
 

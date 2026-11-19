@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # IdentityResolutionJob
-<a name="API_connect-customer-profiles_IdentityResolutionJob"></a>
 
 Information about the Identity Resolution Job.
 

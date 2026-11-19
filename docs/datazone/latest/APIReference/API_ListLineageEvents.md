@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListLin
 ---
 
 # ListLineageEvents
-<a name="API_ListLineageEvents"></a>
 
 Lists lineage events.
 

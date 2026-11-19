@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/o
 ---
 
 # Omni-channel public services
-<a name="omni-channel-public-services"></a>
 
  Public-facing government services should have online and offline options to verify that they are inclusive and accessible by all. In many cases, this requirement will be legislated. If a digital service is built in isolation to a phone or in-person channel, then you might have a duplication of functions and increased management costs, as well as potential inconsistency across channels. Inconsistency can lead to inequities, especially given the reality of many government services being either mandatory (such as submitting a tax return) or a last resort for people at their most vulnerable (such as emergency payments or social services).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # AWS Enterprise Transformation Framework
-<a name="framework"></a>
 
 The AWS Enterprise Transformation Framework is designed to develop executable and actionable strategies that drive top-line growth, increase profitability, and accelerate time to value as companies take advantage of digital products and services. The framework is industry-agnostic and globally relevant. It builds organizational momentum by holistically addressing the top barriers to cloud value success through proven diagnostics, assessments, accelerators, and experiential learning methods that are tailored to the enterprise's unique cloud journey and business objectives.
 

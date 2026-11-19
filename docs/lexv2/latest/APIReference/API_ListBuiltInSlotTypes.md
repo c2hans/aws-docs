@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBuiltI
 ---
 
 # ListBuiltInSlotTypes
-<a name="API_ListBuiltInSlotTypes"></a>
 
 Gets a list of built-in slot types that meet the specified criteria.
 

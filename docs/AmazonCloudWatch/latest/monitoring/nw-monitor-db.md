@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # Monitor dashboards
-<a name="nw-monitor-db"></a>
 
 You can use the monitor dashboard in Network Synthetic Monitor to view the network health indicator (NHI), as well as probe round-trip time and packet loss at a monitor level. That is, a monitor dashboard shows this information for all the probes created for the monitor.
 

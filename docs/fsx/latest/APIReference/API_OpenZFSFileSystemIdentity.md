@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSFileS
 ---
 
 # OpenZFSFileSystemIdentity
-<a name="API_OpenZFSFileSystemIdentity"></a>
 
 Specifies the file system user identity that will be used for authorizing all file access requests that are made using the S3 access point.
 

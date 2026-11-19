@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_DataM
 ---
 
 # DataModelConfiguration
-<a name="API_DataModelConfiguration"></a>
 
 ## Contents
 <a name="API_DataModelConfiguration_Contents"></a>

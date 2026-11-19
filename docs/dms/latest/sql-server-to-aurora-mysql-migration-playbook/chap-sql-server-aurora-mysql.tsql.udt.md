@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # User-defined types for T-SQL
-<a name="chap-sql-server-aurora-mysql.tsql.udt"></a>
 
 This topic provides reference information about user-defined types and table-valued parameters in Microsoft SQL Server and their compatibility with Amazon Aurora MySQL. It explains the differences in feature support between SQL Server and Aurora MySQL, highlighting that Aurora MySQL does not currently support user-defined types or table-valued parameters.
 

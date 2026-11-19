@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapTracePoint
-<a name="API_RoadSnapTracePoint"></a>
 
 TracePoint indices for which the provided notice code corresponds to.
 

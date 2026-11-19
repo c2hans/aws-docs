@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 ---
 
 # Disaster recovery and Amazon DocumentDB global clusters
-<a name="global-clusters-disaster-recovery"></a>
 
 **Topics**
 + [Performing a managed failover for an Amazon DocumentDB global cluster](#managed-failover)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/vectorSearch.
 ---
 
 # $vectorSearch
-<a name="vectorSearch"></a>
 
 New from version 8.0
 

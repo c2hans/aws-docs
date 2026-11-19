@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-managi
 ---
 
 # Modifying the storage for an RDS Custom for SQL Server DB instance
-<a name="custom-managing-sqlserver.storage-modify"></a>
 
 Modifying storage for an RDS Custom for SQL Server DB instance is similar to modifying storage for an Amazon RDS DB instance, but you can only do the following:
 + Increase the allocated storage size.

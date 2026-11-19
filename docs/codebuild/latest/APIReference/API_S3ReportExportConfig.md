@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_S3Repo
 ---
 
 # S3ReportExportConfig
-<a name="API_S3ReportExportConfig"></a>
 
  Information about the S3 bucket where the raw data of a report are exported.
 

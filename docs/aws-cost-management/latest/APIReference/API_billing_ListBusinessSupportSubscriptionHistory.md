@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBusinessSupportSubscriptionHistory
-<a name="API_billing_ListBusinessSupportSubscriptionHistory"></a>
 
 Returns the history of Business Support subscription contracts across accounts.
 

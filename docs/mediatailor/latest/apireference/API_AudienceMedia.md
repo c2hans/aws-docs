@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Audi
 ---
 
 # AudienceMedia
-<a name="API_AudienceMedia"></a>
 
 An AudienceMedia object contains an Audience and a list of AlternateMedia.
 

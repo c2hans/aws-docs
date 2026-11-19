@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ActiveViolat
 ---
 
 # ActiveViolation
-<a name="API_ActiveViolation"></a>
 
 Information about an active Device Defender security profile behavior violation.
 

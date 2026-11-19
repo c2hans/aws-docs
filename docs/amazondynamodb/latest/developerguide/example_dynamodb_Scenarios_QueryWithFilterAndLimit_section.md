@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table with a filter expression and limit with an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithFilterAndLimit_section"></a>
 
 The following code examples show how to query a table with a filter expression and limit.
 + Apply filter expressions to query results with a limit on items evaluated.

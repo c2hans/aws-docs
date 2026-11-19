@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ResumeC
 ---
 
 # ResumeCluster
-<a name="API_ResumeCluster"></a>
 
 Resumes a paused cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/data-protection-en
 ---
 
 # Protecting data using encryption
-<a name="data-protection-encryption"></a>
 
 Data protection refers to protecting data while in transit (as it travels to and from ROSA) and at rest (while it is stored on disks in AWS data centers).
 

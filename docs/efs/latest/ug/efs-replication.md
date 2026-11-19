@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html
 ---
 
 # Replicating EFS file systems
-<a name="efs-replication"></a>
 
 For expanded resilience and data protection, you can replicate your EFS file system in an AWS Region. When you enable replication on an EFS file system, Amazon EFS automatically and transparently replicates the data and metadata on the source file system to a destination file system. In the event of a disaster or when performing game day exercises, you can fail over to your replica file system. To resume operations, you can then fail back to the primary file system.
 

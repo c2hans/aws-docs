@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ExecutionResumedDe
 ---
 
 # ExecutionResumedDetails
-<a name="API_ExecutionResumedDetails"></a>
 
 Details about a [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html) that resumed. The event timestamp is when the execution resumed.
 

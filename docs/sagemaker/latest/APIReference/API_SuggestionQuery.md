@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Sugges
 ---
 
 # SuggestionQuery
-<a name="API_SuggestionQuery"></a>
 
 Specified in the [GetSearchSuggestions](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetSearchSuggestions.html) request. Limits the property names that are included in the response.
 

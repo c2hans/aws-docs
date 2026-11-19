@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/delete-thing-t
 ---
 
 # Delete a thing type
-<a name="delete-thing-types"></a>
 
 You can delete thing types only after they have been deprecated. To delete a thing type, use the **DeleteThingType** command:
 

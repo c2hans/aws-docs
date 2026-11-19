@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # AddListenerCertificates
-<a name="API_AddListenerCertificates"></a>
 
 Adds the specified SSL server certificate to the certificate list for the specified HTTPS or TLS listener.
 

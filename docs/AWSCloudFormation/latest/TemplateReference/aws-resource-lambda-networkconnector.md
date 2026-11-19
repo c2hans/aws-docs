@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::NetworkConnector
-<a name="aws-resource-lambda-networkconnector"></a>
 
 The `AWS::Lambda::NetworkConnector` resource creates a network connector that enables Lambda MicroVMs and WebFunction compute resources to reach resources in a virtual private cloud (VPC). A network connector provisions elastic network interfaces (ENIs) in the subnets you specify, providing a managed network path to private resources such as databases, caches, and internal APIs.
 

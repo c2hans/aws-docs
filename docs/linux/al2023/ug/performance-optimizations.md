@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/performance-optimization
 ---
 
 # Performance and operational optimizations
-<a name="performance-optimizations"></a>
 
 **Amazon Linux 6.1 kernel**
 + AL2023 uses the latest drivers for Elastic Network Adapter (ENA) and Elastic Fabric Adapter (EFA) devices. AL2023 focuses on performance and functionality backports for hardware in Amazon EC2 infrastructure.

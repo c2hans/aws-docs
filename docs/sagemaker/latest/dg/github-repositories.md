@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/github-repositories.
 ---
 
 # GitHub repositories
-<a name="github-repositories"></a>
 
 To launch a training job, you utilize files from two distinct GitHub repositories:
 + [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes)

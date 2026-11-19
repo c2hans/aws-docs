@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/health-check
 ---
 
 # Health checks for Managed Endpoints
-<a name="health-checks-for-managed-endpoints"></a>
 
 RTB Fabric health checks let you configure application-level health checking for Auto Scaling group (ASG)-backed responder endpoints. When enabled, RTB Fabric continuously probes each Amazon EC2 instance in your ASGs using HTTP or HTTPS health checks and routes traffic only to instances that are confirmed healthy. This reduces error rates during different instance lifecycle stages such as deployments, scaling events, instance failures, and decommissioning.
 

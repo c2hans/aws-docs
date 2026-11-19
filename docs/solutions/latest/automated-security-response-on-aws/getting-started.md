@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Getting started
-<a name="getting-started"></a>
 
  **Time to deploy:** Approximately 30 minutes per account.
 

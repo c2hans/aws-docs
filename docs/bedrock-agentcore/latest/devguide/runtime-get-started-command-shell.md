@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Interactive Shells (Terminals)
-<a name="runtime-get-started-command-shell"></a>
 
 The `InvokeAgentRuntimeCommandShell` operation opens a persistent, interactive terminal session inside a running AgentCore Runtime session over WebSocket. Unlike one-shot command execution, shell sessions maintain state — environment variables, working directory, and command history carry across inputs. This enables debugging, environment inspection, and building terminal experiences in your application.
 

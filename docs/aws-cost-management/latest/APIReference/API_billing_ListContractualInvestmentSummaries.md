@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListContractualInvestmentSummaries
-<a name="API_billing_ListContractualInvestmentSummaries"></a>
 
 Lists the investment summaries within a specific private pricing contract. This operation is read-only and paginated.
 

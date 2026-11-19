@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/add-member.
 ---
 
 # Adding members to a collaboration
-<a name="add-member"></a>
 
 **Prerequisites**
 + An AWS account with permissions to manage collaborations

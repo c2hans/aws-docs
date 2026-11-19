@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-kb.h
 ---
 
 # Encryption of knowledge base resources
-<a name="encryption-kb"></a>
 
 Amazon Bedrock encrypts resources related to your knowledge bases. By default, Amazon Bedrock encrypts this data using an AWS-owned key. Optionally, you can encrypt the model artifacts using a customer managed key.
 

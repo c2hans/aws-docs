@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AcceptNetworkFirewallTransitGatewayAttachment
-<a name="API_AcceptNetworkFirewallTransitGatewayAttachment"></a>
 
 Accepts a transit gateway attachment request for Network Firewall. When you accept the attachment request, Network Firewall creates the necessary routing components to enable traffic flow between the transit gateway and firewall endpoints.
 

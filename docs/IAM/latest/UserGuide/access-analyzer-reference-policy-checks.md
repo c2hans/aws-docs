@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-ref
 ---
 
 # IAM policy validation check reference
-<a name="access-analyzer-reference-policy-checks"></a>
 
 You can validate your policies using AWS Identity and Access Management Access Analyzer policy validation. You can create or edit a policy using the AWS CLI, AWS API, or JSON policy editor in the IAM console. IAM Access Analyzer validates your policy against IAM [policy grammar](reference_policies_grammar.md) and [AWS best practices](best-practices.md). You can view policy validation check findings that include security warnings, errors, general warnings, and suggestions for your policy. These findings provide actionable recommendations that help you author policies that are functional and conform to security best practices. The list of basic policy checks provided by IAM Access Analyzer are shared below. There is no additional charge associated with running the policy validation checks. To learn more about validating policies using policy validation, see [Validate policies with IAM Access Analyzer](access-analyzer-policy-validation.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Calling the Amazon RDS Data API from a Python application
-<a name="data-api.calling.python"></a>
 
 You can call the Amazon RDS Data API (Data API) from a Python application.
 

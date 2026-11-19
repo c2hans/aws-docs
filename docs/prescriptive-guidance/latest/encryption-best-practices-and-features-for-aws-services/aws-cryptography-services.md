@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-
 ---
 
 # AWS approach to cryptography
-<a name="aws-cryptography-services"></a>
 
 *Cryptographic algorithms *are mathematical constructions designed to provide security services like confidentiality (encryption), authenticity (message authentication codes and digital signatures), and non-repudiation (digital signatures). If you are new to cryptography, encryption, and related terminology, read [About data encryption](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-at-rest-encryption/about-data-encryption.html) before you proceed with this guide.
 

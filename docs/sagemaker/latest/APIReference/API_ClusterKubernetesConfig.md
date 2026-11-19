@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterKubernetesConfig
-<a name="API_ClusterKubernetesConfig"></a>
 
 Kubernetes configuration that specifies labels and taints to be applied to cluster nodes in an instance group.
 

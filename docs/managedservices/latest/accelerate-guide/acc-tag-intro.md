@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Tags in AMS Accelerate
-<a name="acc-tag-intro"></a>
 
 **Contents**
 + [What are tags?](#acc-tag-what-is)

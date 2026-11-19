@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisAttachment
-<a name="API_RealTimeContactAnalysisAttachment"></a>
 
 Object that describes attached file.
 

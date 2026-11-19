@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_DatabaseC
 ---
 
 # DatabaseConnection
-<a name="API_DatabaseConnection"></a>
 
 The connection specifications for the database.
 

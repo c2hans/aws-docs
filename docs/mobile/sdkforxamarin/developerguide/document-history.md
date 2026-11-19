@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/docu
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Document History
-<a name="document-history"></a>
 
 The following table describes the important changes to the documentation since the last release of the AWS Mobile SDK for .NET and Xamarin.
 +  **API Version**: 2015-08-27

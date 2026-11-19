@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Discover containers on a container fleet
-<a name="containers-discovery"></a>
 
 On an Amazon GameLift Servers container fleet, each instance can run multiple containers. For example, you can run several replicas of your game server container group. You can also run a per-instance container group that provides shared, instance-wide services.
 

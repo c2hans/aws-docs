@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 ---
 
 # Performing logical replication for Amazon RDS for PostgreSQL
-<a name="PostgreSQL.Concepts.General.FeatureSupport.LogicalReplication"></a>
 
 Starting with version 10.4, RDS for PostgreSQL supports the publication and subscription SQL syntax that was introduced in PostgreSQL 10. To learn more, see [Logical replication](https://www.postgresql.org/docs/current/logical-replication.html) in the PostgreSQL documentation.
 

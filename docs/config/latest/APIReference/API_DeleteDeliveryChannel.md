@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteDel
 ---
 
 # DeleteDeliveryChannel
-<a name="API_DeleteDeliveryChannel"></a>
 
 Deletes the delivery channel.
 

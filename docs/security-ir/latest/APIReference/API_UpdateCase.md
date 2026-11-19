@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Upda
 ---
 
 # UpdateCase
-<a name="API_UpdateCase"></a>
 
 Updates an existing case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AudioFille
 ---
 
 # AudioFillerSettings
-<a name="API_AudioFillerSettings"></a>
 
 Configuration that plays background filler audio during speech-to-speech interactions to mask processing delays and improve the perceived responsiveness of the bot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # EntityItem
-<a name="API_EntityItem"></a>
 
 Contains information about an entity that can be referenced in a Cedar policy.
 

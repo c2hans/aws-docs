@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomExtractionConfigurationInput
-<a name="API_CustomExtractionConfigurationInput"></a>
 
 Input for a custom extraction configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregato
 ---
 
 # AggregatorFilterResourceType
-<a name="API_AggregatorFilterResourceType"></a>
 
 An object to filter the configuration recorders based on the resource types in scope for recording.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-advancved-faq.h
 ---
 
 # Advanced FAQ
-<a name="drs-advancved-faq"></a>
 
 ## Does AWS DRS support Nutanix?
 <a name="drs-support-Nutanix"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudformat
 ---
 
 # cloudformation-stack-service-role-check
-<a name="cloudformation-stack-service-role-check"></a>
 
 Checks if AWS CloudFormation stacks are using service roles. The rule is NON\_COMPLIANT if a CloudFormation stack does not have service role associated with it.
 

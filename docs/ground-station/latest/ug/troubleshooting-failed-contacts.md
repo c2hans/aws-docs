@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/troubleshooting
 ---
 
 # Troubleshoot FAILED contacts
-<a name="troubleshooting-failed-contacts"></a>
 
 A contact will have a terminal contact status of **FAILED** when AWS Ground Station detects an issue with your resource configuration. The common use cases that can cause **FAILED** contacts are provided below, along with steps to help troubleshoot.
 

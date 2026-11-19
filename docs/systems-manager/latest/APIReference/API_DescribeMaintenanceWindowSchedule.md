@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeMaintenanceWindowSchedule
-<a name="API_DescribeMaintenanceWindowSchedule"></a>
 
 Retrieves information about upcoming executions of a maintenance window.
 

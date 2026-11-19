@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Recommen
 ---
 
 # RecommenderConfig
-<a name="API_RecommenderConfig"></a>
 
 Configuration for the recommender used to generate personalized recommendations included in an outbound web notification.
 

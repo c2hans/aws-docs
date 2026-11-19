@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/installing-vcenter-reques-
 ---
 
 # VMware limitations
-<a name="installing-vcenter-reques-mgn"></a>
 
 **Important**
 Agentless replication is no longer available for new deployments. We recommend agent-based replication for all migrations. To learn more, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).

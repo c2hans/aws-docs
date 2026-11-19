@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Create a configuration set in AWS End User Messaging SMS
-<a name="configuration-set-create"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to create a configuration set. After you have created a configuration set you should add an [event destination](configuration-sets-event-destinations.md#configuration-sets-event-destinations.title) and [protect configuration](protect-configuration.md#protect-configuration.title).
 

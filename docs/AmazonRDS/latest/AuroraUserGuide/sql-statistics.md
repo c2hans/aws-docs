@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/sql-sta
 ---
 
 # SQL statistics for Performance Insights
-<a name="sql-statistics"></a>
 
 *SQL statistics* are performance-related metrics about SQL queries. These detailed per-query metrics are exposed through the Performance Insights API, which gathers statistics for each second that a query is running and for each SQL call. The SQL statistics are an average for the selected time range.
 

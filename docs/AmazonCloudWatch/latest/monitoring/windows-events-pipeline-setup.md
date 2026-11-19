@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/windo
 ---
 
 # CloudWatch pipelines configuration for Microsoft Windows Events
-<a name="windows-events-pipeline-setup"></a>
 
 Collects log data from Microsoft Windows Event logs using OAuth2 authentication.
 

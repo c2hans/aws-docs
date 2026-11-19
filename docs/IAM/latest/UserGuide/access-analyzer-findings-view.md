@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-fin
 ---
 
 # Review IAM Access Analyzer findings
-<a name="access-analyzer-findings-view"></a>
 
 After you enable IAM Access Analyzer, the next step is to review any findings to determine whether the access identified in the finding is intentional or unintentional. You can also review findings to determine similar findings for access that is intended, and then [create an archive rule](access-analyzer-archive-rules.md) to automatically archive those findings. You can also review archived and resolved findings.
 

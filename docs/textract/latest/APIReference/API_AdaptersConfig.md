@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Adapter
 ---
 
 # AdaptersConfig
-<a name="API_AdaptersConfig"></a>
 
 Contains information about adapters used when analyzing a document, with each adapter specified using an AdapterId and version
 

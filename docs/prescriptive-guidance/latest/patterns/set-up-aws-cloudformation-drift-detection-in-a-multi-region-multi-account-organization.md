@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up CloudFormation drift detection in a multi-Region, multi-account organization
-<a name="set-up-aws-cloudformation-drift-detection-in-a-multi-region-multi-account-organization"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

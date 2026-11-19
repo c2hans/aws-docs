@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeClusterDbRevisions
-<a name="API_DescribeClusterDbRevisions"></a>
 
 Returns an array of `ClusterDbRevision` objects.
 

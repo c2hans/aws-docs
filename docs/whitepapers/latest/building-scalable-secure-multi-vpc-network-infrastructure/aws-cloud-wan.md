@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # AWS Cloud WAN
-<a name="aws-cloud-wan"></a>
 
  AWS Cloud WAN is a new way to connect networks together that we were previously able to do with Transit Gateways, VPC Peering, and IPSEC VPN tunnels. Previously you would configure one or more VPCs, connect them together with one of the previous methods, and use IPSEC VPN or Direct Connect to connect to on-premises networks. You would have your network and security posture constructs defined in one place, and your networks in another. Cloud WAN allows you to centralize all of these constructs in a single place. By policy, you can segment your networks to determine who can talk to who, and isolate production traffic via these segments from development or test workloads, or your on premises networks.
 

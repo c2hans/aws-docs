@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-deploy.htm
 ---
 
 # Deploy a Model
-<a name="jumpstart-deploy"></a>
 
 When you deploy a model from JumpStart, SageMaker AI hosts the model and deploys an endpoint that you can use for inference. JumpStart also provides an example notebook that you can use to access the model after it's deployed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_PutGroupConf
 ---
 
 # PutGroupConfiguration
-<a name="API_PutGroupConfiguration"></a>
 
 Attaches a service configuration to the specified group. This occurs asynchronously, and can take time to complete. You can use [GetGroupConfiguration](API_GetGroupConfiguration.md) to check the status of the update.
 

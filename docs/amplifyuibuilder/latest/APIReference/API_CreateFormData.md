@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CreateFormData
-<a name="API_CreateFormData"></a>
 
 Represents all of the information that is required to create a form.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # ReplicationGroupUpdate
-<a name="API_ReplicationGroupUpdate"></a>
 
 Represents one of the following:
 + A new replica to be added to an existing regional table or global table. This request invokes the `CreateTableReplica` action in the destination Region.

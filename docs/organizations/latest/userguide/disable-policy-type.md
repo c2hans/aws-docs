@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/disable-p
 ---
 
 # Disabling a policy type
-<a name="disable-policy-type"></a>
 
 If you no longer want to use a certain policy type in your organization, you can disable that type to prevent its accidental use. You can disable a policy type from only the organization's management account or a member account designated as a delegated administrator..
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Host network mode
-<a name="managed-instances-host-modes"></a>
 
 In `host` mode, tasks share the host's network namespace directly. The container's networking configuration is tied to the underlying Amazon ECS Managed Instances host instance that you specify using the `networkConfiguration` parameter when you create an Amazon ECS Managed Instances capacity provider.``
 

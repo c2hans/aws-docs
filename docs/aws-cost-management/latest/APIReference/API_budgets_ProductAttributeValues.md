@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProductAttributeValues
-<a name="API_budgets_ProductAttributeValues"></a>
 
 The product attribute values used for filtering the costs by key and value pairs. Product attributes are supported for Amazon Bedrock only.
 

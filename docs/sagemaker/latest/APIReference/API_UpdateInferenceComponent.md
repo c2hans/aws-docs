@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateInferenceComponent
-<a name="API_UpdateInferenceComponent"></a>
 
 Updates an inference component.
 

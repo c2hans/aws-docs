@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sendgrid-limitations.html
 ---
 
 # SendGrid limitations
-<a name="sendgrid-limitations"></a>
 
 The following are limitations or notes for SendGrid:
 + Incremental pull is only supported by the Stats entity on the `start_date` field and by the Contact entity on the `event_timestamp` field.

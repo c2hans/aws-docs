@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Resour
 ---
 
 # ResourceDistribution
-<a name="API_ResourceDistribution"></a>
 
 Contains the number of findings for a resource.
 

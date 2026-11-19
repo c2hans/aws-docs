@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMPERF03-BP02 Optimize cache-control headers for your content
-<a name="smperf03-bp02"></a>
 
 Set cache-control headers at the origin so each content type (live
 

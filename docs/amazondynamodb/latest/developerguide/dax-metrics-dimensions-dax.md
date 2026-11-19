@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax
 ---
 
 # Viewing DAX metrics and dimensions
-<a name="dax-metrics-dimensions-dax"></a>
 
  When you interact with Amazon DynamoDB, it sends metrics and dimensions to Amazon CloudWatch. You can use the following procedures to view the metrics for DynamoDB Accelerator (DAX).
 

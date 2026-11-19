@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/view-errors-test-sets.ht
 ---
 
 # View test validation errors in test workbench
-<a name="view-errors-test-sets"></a>
 
 You can correct test sets that report validation errors. These validation errors are generated when a test set is not ready to be tested. The Test Workbench can show you which required columns in the test set input CSV file did not have a value in the expected format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/updating-ou
 ---
 
 # Updating OU Associations
-<a name="updating-ou-associations"></a>
 
 To manage your membership coverage:
 

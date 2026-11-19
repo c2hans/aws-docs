@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DesiredPlayerSession
-<a name="API_DesiredPlayerSession"></a>
 
 Player information for use when creating player sessions using a game session placement request.
 

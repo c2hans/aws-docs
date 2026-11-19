@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DeleteBlueprint
-<a name="API_data-automation_DeleteBlueprint"></a>
 
 Deletes a blueprint or blueprint version.
 

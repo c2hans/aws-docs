@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/what-is-limits.html
 ---
 
 # Guidelines and quotas
-<a name="what-is-limits"></a>
 
 The following sections contain information about Amazon Translate guidelines and quotas.
 

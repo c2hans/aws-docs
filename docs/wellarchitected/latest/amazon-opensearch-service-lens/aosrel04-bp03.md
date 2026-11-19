@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSREL04-BP03 Enable index replication for your critical indices
-<a name="aosrel04-bp03"></a>
 
  Provide high availability and improved performance in Amazon OpenSearch Service by enabling index replication for critical indices, allowing replicas to handle read operations alongside primaries. This setup maintains access to data and minimizes downtime in case of primary shard unavailability.
 

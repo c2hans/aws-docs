@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Du
 ---
 
 # DuplicateConnectionsFlowValidationDetails
-<a name="API_agent_DuplicateConnectionsFlowValidationDetails"></a>
 
 Details about duplicate connections found between two nodes in the flow.
 

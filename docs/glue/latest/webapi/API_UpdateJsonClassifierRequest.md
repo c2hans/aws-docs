@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateJsonClassif
 ---
 
 # UpdateJsonClassifierRequest
-<a name="API_UpdateJsonClassifierRequest"></a>
 
 Specifies a JSON classifier to be updated.
 

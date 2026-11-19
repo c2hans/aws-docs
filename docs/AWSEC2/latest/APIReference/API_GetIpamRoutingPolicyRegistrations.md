@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRo
 ---
 
 # GetIpamRoutingPolicyRegistrations
-<a name="API_GetIpamRoutingPolicyRegistrations"></a>
 
 Retrieves routing policy registrations for an IPAM internet registry association. Each registration represents a Route Origin Authorization (ROA) that has been created or is pending publication to the RPKI. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

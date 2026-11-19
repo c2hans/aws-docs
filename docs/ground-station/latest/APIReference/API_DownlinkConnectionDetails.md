@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DownlinkConnectionDetails
-<a name="API_DownlinkConnectionDetails"></a>
 
 Connection details for Ground Station to Agent and Agent to customer
 

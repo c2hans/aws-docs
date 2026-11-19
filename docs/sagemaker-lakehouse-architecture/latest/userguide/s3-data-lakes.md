@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Amazon S3 data lakes for the lakehouse architecture of Amazon SageMaker
-<a name="s3-data-lakes"></a>
 
 Amazon S3 serves as the foundational storage layer for your lakehouse architecture, providing unified access to data across Amazon S3 data lakes, Amazon S3 Tables, and Amazon Redshift data warehouses. This unified architecture enables you to build analytics and machine learning applications on a single copy of data, without data movement or duplication. You can also connect to federated data sources such as DynamoDB, Google BigQuery, and Snowflake.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillScenarioSummary
-<a name="API_AWSBCMPricingCalculator_BillScenarioSummary"></a>
 
  Provides a summary of a bill scenario.
 

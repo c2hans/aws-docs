@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Flagge
 ---
 
 # FlaggedIpAddressDetail
-<a name="API_FlaggedIpAddressDetail"></a>
 
 Contains information on suspicious IP addresses identified as indicators of compromise. This indicator is derived from AWS threat intelligence.
 

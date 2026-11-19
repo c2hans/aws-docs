@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/roleb
 ---
 
 # Role-based access control
-<a name="rolebased"></a>
 
 AWS Supply Chain Demand Planning offers two default access levels:
 + Manage Access

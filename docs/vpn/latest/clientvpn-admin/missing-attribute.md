@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/missing-attri
 ---
 
 # Troubleshooting AWS Client VPN: Client software returns user name and password errors — federated authentication
-<a name="missing-attribute"></a>
 
 **Problem**
 Trying to log in with a user name and password with federated authentication and getting the error "The credentials received were incorrect. Contact your IT administrator."

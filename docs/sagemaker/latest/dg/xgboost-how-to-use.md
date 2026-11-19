@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost-how-to-use.h
 ---
 
 # How to use SageMaker AI XGBoost
-<a name="xgboost-how-to-use"></a>
 
 With SageMaker AI, you can use XGBoost as a built-in algorithm or framework. When XGBoost as a framework, you have more flexibility and access to more advanced scenarios because you can customize your own training scripts. The following sections describe how to use XGBoost with the SageMaker Python SDK, and the input/output interface for the XGBoost algorithm. For information on how to use XGBoost from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 

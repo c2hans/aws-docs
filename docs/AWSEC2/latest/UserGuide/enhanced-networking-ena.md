@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-network
 ---
 
 # Enable enhanced networking with ENA on your EC2 instances
-<a name="enhanced-networking-ena"></a>
 
 Amazon EC2 provides enhanced networking capabilities through the Elastic Network Adapter (ENA). To use enhanced networking, you must use an AMI that includes the required ENA driver or manually install it. Then you can enable ENA support on your instance.
 

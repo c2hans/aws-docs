@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListChats
-<a name="API_ListChats"></a>
 
 Retrieves a paginated list of the user's recent chat executions
 

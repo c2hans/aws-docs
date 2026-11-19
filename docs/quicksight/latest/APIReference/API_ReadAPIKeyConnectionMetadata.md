@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadA
 ---
 
 # ReadAPIKeyConnectionMetadata
-<a name="API_ReadAPIKeyConnectionMetadata"></a>
 
 Read-only authentication metadata for API key-based connections, containing non-sensitive configuration details.
 

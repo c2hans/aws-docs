@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-refre
 ---
 
 # How an instance refresh works in an Auto Scaling group
-<a name="instance-refresh-overview"></a>
 
 This topic describes how an instance refresh works and introduces the key concepts you need to understand to use it effectively.
 

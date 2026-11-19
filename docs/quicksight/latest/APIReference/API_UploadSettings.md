@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Uploa
 ---
 
 # UploadSettings
-<a name="API_UploadSettings"></a>
 
 Information about the format for a source file or files.
 

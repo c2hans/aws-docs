@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Basic monitoring and detailed monitoring in CloudWatch
-<a name="cloudwatch-metrics-basic-detailed"></a>
 
 CloudWatch provides two categories of monitoring: *basic monitoring* and *detailed monitoring*.
 

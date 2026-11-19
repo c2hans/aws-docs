@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/cr
 ---
 
 # Credentials providers
-<a name="credential-providers"></a>
 
 **Important**
  **The order in which the default credential provider chain resolves credentials changed with version 1.4.0. For details, see the note below.**

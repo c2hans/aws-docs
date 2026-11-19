@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-map-stat
 ---
 
 # Process data from a queue with a Map state in Step Functions
-<a name="sample-map-state"></a>
 
 In this sample workflow, a [Map workflow state](state-map.md) state processes data from a queue, sending messages to subscribers and storing them in a database.
 

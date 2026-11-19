@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3f
 ---
 
 # Integrating DynamoDB with Amazon S3
-<a name="S3forDynamoDB"></a>
 
 Amazon DynamoDB import and export capabilities provide a simple and efficient way to move data between Amazon S3 and DynamoDB tables without writing any code.
 

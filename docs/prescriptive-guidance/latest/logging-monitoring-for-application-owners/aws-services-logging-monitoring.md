@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # AWS services for logging and monitoring
-<a name="aws-services-logging-monitoring"></a>
 
 This guide focuses on logging and monitoring applications deployed in the AWS Cloud. You can use AWS services to implement your logging and monitoring plan, or you can use them to augment your current solutions. For example, if you are troubleshooting an issue with your application, you might:
 + Triage the application logs with the VPC Flow Logs feature in Amazon Virtual Private Cloud (Amazon VPC) and view the network traffic that corresponds to the issue.

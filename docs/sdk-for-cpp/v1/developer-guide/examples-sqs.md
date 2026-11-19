@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Amazon SQS code examples using the AWS SDK for C\+\+
-<a name="examples-sqs"></a>
 
 Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications. You can use the following examples to program [Amazon SQS](https://aws.amazon.com/sqs) using the AWS SDK for C\+\+.
 

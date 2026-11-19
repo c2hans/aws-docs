@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListServiceActions
-<a name="API_ListServiceActions"></a>
 
 Lists all self-service actions.
 

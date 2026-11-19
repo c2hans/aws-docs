@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomExtractionConfiguration
-<a name="API_CustomExtractionConfiguration"></a>
 
 Contains custom extraction configuration information.
 

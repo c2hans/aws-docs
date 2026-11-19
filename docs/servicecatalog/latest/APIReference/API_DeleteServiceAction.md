@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DeleteServiceAction
-<a name="API_DeleteServiceAction"></a>
 
 Deletes a self-service action.
 

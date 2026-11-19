@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateApplicationWithTokenExchangeGrant
-<a name="API_UpdateApplicationWithTokenExchangeGrant"></a>
 
 Updates an Quick application with a token exchange grant. This operation only supports Quick applications that are registered with IAM Identity Center.
 

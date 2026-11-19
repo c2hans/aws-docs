@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/cons
 ---
 
 # Other considerations
-<a name="considerations"></a>
 
 The following list contains other considerations with EMR Serverless.
 + EMR Serverless is available in the following AWS Regions:

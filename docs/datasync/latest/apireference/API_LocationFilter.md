@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Locatio
 ---
 
 # LocationFilter
-<a name="API_LocationFilter"></a>
 
 Narrow down the list of resources returned by `ListLocations`. For example, to see all your Amazon S3 locations, create a filter using `"Name": "LocationType"`, `"Operator": "Equals"`, and `"Values": "S3"`.
 

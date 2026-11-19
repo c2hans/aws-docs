@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_PersistentAp
 ---
 
 # PersistentAppUI
-<a name="API_PersistentAppUI"></a>
 
 Holds persistent application user interface information. Applications installed on the Amazon EMR cluster publish user interfaces as web sites to monitor cluster activity.
 

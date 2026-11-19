@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Tutorial: configure cross-account access for Redshift federated catalog table
-<a name="configure-cross-account-access"></a>
 
 This tutorial provides step-by-step instructions on how to configure cross account sharing of Redshift federated catalog tables using Lake Formation permissions. For more information, see [Sharing a data lake using Lake Formation fine-grained access control](https://docs.aws.amazon.com/lake-formation/latest/dg/share-dl-fgac-tutorial.html).
 

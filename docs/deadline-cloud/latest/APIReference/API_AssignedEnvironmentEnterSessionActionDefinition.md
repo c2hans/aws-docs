@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssignedEnvironmentEnterSessionActionDefinition
-<a name="API_AssignedEnvironmentEnterSessionActionDefinition"></a>
 
 The assigned starting environment for a worker during session.
 

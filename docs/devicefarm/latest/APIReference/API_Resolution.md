@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Resol
 ---
 
 # Resolution
-<a name="API_Resolution"></a>
 
 Represents the screen resolution of a device in height and width, expressed in pixels.
 

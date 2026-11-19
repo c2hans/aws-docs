@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/using-amazon-efs-utils.htm
 ---
 
 # Installing the Amazon EFS client
-<a name="using-amazon-efs-utils"></a>
 
 We recommend that you install the Amazon EFS client (`amazon-efs-utils`), an open-source collection of tools for Amazon EFS. The Amazon EFS client includes a *mount helper*, which is a program that helps simplify mounting EFS file systems. The client also enables the ability to use Amazon CloudWatch to monitor an EFS file system's mount status, and it includes tooling that makes it easier to perform encryption of data in transit for Amazon EFS file systems.
 

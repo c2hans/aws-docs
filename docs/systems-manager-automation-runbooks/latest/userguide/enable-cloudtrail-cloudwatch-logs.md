@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-EnableCloudTrailCloudWatchLogs`
-<a name="enable-cloudtrail-cloudwatch-logs"></a>
 
 **Description**
 

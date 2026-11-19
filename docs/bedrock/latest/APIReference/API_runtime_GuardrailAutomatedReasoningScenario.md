@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningScenario
-<a name="API_runtime_GuardrailAutomatedReasoningScenario"></a>
 
 Represents a logical scenario where claims can be evaluated as true or false, containing specific logical assignments.
 

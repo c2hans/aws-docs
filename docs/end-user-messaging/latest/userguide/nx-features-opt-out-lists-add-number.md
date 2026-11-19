@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Add a destination phone number to an opt-out list in AWS End User Messaging
-<a name="nx-features-opt-out-lists-add-number"></a>
 
 Use the AWS End User Messaging console or AWS CLI to add a destination phone number to an opt-out list. When you add a phone number to an opt-out list that phone number will no longer receive messages sent from an origination identity that is linked to the opt-out list.
 

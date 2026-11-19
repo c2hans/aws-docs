@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ListAvailableM
 ---
 
 # ListAvailableManagementCidrRanges
-<a name="API_ListAvailableManagementCidrRanges"></a>
 
 Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable Bring Your Own License (BYOL).
 

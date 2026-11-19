@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Get an Amazon S3 object from a Multi-Region Access Point by using an AWS SDK
-<a name="s3_example_s3_GetObject_MRAP_section"></a>
 
 The following code example shows how to get an object from a Multi-Region Access Point.
 

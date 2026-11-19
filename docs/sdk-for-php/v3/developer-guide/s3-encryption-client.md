@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-encryp
 ---
 
 # Amazon S3 client-side encryption in the AWS SDK for PHP Version 3
-<a name="s3-encryption-client"></a>
 
 With client-side encryption, data is encrypted and decrypted directly in your environment. This means that this data is encrypted before it’s transferred to Amazon S3, and you don’t rely on an external service to handle encryption for you. For new implementations, we suggest the use of `S3EncryptionClientV3` and `S3EncryptionMultipartUploaderV3` over the `S3EncryptionClientV2` and `S3EncryptionMultipartUploaderV2` and the deprecated `S3EncryptionClient` and `S3EncryptionMultipartUploader`. It is recommended that older implementations still using the deprecated versions attempt to migrate. `S3EncryptionClientV3` maintains support for decrypting data that was encrypted using the legacy `S3EncryptionClient`.
 

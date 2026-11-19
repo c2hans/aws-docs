@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # TextMessage
-<a name="API_amazon-q-connect_TextMessage"></a>
 
 The message data in text type.
 

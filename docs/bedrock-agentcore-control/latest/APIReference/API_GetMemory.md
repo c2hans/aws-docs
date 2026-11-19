@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetMemory
-<a name="API_GetMemory"></a>
 
 Retrieve an existing Amazon Bedrock AgentCore Memory resource.
 

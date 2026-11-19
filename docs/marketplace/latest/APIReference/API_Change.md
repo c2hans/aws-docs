@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Chan
 ---
 
 # Change
-<a name="API_Change"></a>
 
 An object that contains the `ChangeType`, `Details`, and `Entity`.
 

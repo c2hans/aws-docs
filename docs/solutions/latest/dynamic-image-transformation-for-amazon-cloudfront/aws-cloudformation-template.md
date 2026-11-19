@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # AWS CloudFormation templates
-<a name="aws-cloudformation-template"></a>
 
 This solution provides two CloudFormation templates, each designed for a specific deployment architecture:
 

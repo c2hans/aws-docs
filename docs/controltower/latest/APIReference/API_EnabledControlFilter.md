@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlFilter
-<a name="API_EnabledControlFilter"></a>
 
 A structure that returns a set of control identifiers, the control status for each control in the set, and the drift status for each control in the set.
 

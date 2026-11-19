@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/DeletingMet
 ---
 
 # Deleting a metric filter
-<a name="DeletingMetricFilter"></a>
 
 A policy is identified by its name and the log group it belongs to.
 

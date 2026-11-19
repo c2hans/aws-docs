@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/delete
 ---
 
 # Delete a step scaling policy for Application Auto Scaling using the AWS CLI
-<a name="delete-step-scaling-policy"></a>
 
 When you no longer need a step scaling policy, you can delete it. To delete both the scaling policy and the associated CloudWatch alarm, complete the following tasks.
 

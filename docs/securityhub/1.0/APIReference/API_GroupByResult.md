@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GroupBy
 ---
 
 # GroupByResult
-<a name="API_GroupByResult"></a>
 
 Represents finding statistics grouped by `GroupedByField`.
 

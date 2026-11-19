@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PinpointEmail::ConfigurationSetEventDestination SnsDestination
-<a name="aws-properties-pinpointemail-configurationseteventdestination-snsdestination"></a>
 
 An object that defines an Amazon SNS destination for email events. You can use Amazon SNS to send notification when certain email events occur.
 

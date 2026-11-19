@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # IPSet
-<a name="API_IPSet"></a>
 
 A list of IP addresses and address ranges, in CIDR notation. This is part of a [RuleVariables](API_RuleVariables.md).
 

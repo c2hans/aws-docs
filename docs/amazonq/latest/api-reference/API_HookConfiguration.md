@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_HookCon
 ---
 
 # HookConfiguration
-<a name="API_HookConfiguration"></a>
 
 Provides the configuration information for invoking a Lambda function in AWS Lambda to alter document metadata and content when ingesting documents into Amazon Q Business.
 

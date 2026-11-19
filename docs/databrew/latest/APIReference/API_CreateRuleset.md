@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_CreateR
 ---
 
 # CreateRuleset
-<a name="API_CreateRuleset"></a>
 
 Creates a new ruleset that can be used in a profile job to validate the data quality of a dataset.
 

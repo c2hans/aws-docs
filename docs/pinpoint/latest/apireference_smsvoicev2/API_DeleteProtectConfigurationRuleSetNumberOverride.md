@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteProtectConfigurationRuleSetNumberOverride
-<a name="API_DeleteProtectConfigurationRuleSetNumberOverride"></a>
 
 Permanently delete the protect configuration rule set number override.
 

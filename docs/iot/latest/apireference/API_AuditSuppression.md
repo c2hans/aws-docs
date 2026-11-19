@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuditSuppres
 ---
 
 # AuditSuppression
-<a name="API_AuditSuppression"></a>
 
  Filters out specific findings of a Device Defender audit.
 

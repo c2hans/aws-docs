@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ConnectActio
 ---
 
 # ConnectAction
-<a name="API_ConnectAction"></a>
 
 When included in a receipt rule, this action parses the received message and starts an email contact in Amazon Connect on your behalf.
 

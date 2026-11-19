@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-auto
 ---
 
 # What are Automated Reasoning checks in Amazon Bedrock Guardrails?
-<a name="guardrails-automated-reasoning-checks"></a>
 
 ## What Automated Reasoning checks do
 <a name="automated-reasoning-what-it-does"></a>

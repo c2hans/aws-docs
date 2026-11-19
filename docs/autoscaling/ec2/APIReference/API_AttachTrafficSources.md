@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AttachT
 ---
 
 # AttachTrafficSources
-<a name="API_AttachTrafficSources"></a>
 
 Attaches one or more traffic sources to the specified Auto Scaling group.
 

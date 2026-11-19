@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateTopicReviewedAnswer
-<a name="API_CreateTopicReviewedAnswer"></a>
 
 The definition for a `CreateTopicReviewedAnswer`.
 

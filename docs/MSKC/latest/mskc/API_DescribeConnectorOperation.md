@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_DescribeConnectorOp
 ---
 
 # DescribeConnectorOperation
-<a name="API_DescribeConnectorOperation"></a>
 
 Returns information about the specified connector's operations.
 

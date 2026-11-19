@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SplunkD
 ---
 
 # SplunkDestinationUpdate
-<a name="API_SplunkDestinationUpdate"></a>
 
 Describes an update for a destination in Splunk.
 

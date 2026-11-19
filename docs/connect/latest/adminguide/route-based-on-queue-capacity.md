@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/route-based-on
 ---
 
 # Route contacts based on queue capacity using Connect Customer
-<a name="route-based-on-queue-capacity"></a>
 
 To define routing decisions based on queue capacity, use a [Transfer to queue](transfer-to-queue.md) block to check whether a queue is full ([Maximum contacts in queue](set-maximum-queue-limit.md)), and then route the contact accordingly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Setting up cluster access permissions with IAM roles for service accounts (IRSA)
-<a name="spark-operator-security-irsa"></a>
 
 This section uses an example to demonstrate how to configure a Kubernetes service account to assume an AWS Identity and Access Management role. Pods that use the service account can then access any AWS service that the role has permissions to access.
 

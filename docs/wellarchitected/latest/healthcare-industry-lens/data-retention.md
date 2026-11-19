@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Data retention
-<a name="data-retention"></a>
 
 | HCL\_COST1. How do you define and enforce data retention policies? |
 | --- |

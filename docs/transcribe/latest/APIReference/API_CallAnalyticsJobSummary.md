@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CallA
 ---
 
 # CallAnalyticsJobSummary
-<a name="API_CallAnalyticsJobSummary"></a>
 
 Provides detailed information about a specific Call Analytics job.
 

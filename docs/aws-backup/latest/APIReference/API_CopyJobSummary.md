@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_CopyJ
 ---
 
 # CopyJobSummary
-<a name="API_CopyJobSummary"></a>
 
 This is a summary of copy jobs created or running within the most recent 14 days.
 

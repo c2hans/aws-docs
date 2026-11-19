@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Framework integrations for AgentCore payments
-<a name="payments-framework-integrations"></a>
 
 AgentCore payments integrates with popular agent frameworks to provide automated payment processing. Each framework uses a different integration pattern:
 +  ** [Strands Agents](#payments-framework-strands) ** — Plugin-based integration using hooks

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ProgramNumbe
 ---
 
 # ProgramNumberConfiguration
-<a name="API_ProgramNumberConfiguration"></a>
 
 The configuration settings for the program number.
 

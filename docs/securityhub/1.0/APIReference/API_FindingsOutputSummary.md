@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingsOutputSummary
-<a name="API_FindingsOutputSummary"></a>
 
 A summary of the output configuration for a findings export, returned by `ListExportJobsV2`. Unlike the configuration returned by `GetExportJobV2`, it reports only the output format.
 

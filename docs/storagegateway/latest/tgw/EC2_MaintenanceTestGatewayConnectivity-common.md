@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/EC2_Maintenanc
 ---
 
 # Testing gateway network connectivity
-<a name="EC2_MaintenanceTestGatewayConnectivity-common"></a>
 
 You can use your gateway's local console to test your network connectivity. This test can be useful when you are troubleshooting network issues with your gateway.
 

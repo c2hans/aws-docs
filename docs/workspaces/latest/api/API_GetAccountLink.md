@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_GetAccountLink
 ---
 
 # GetAccountLink
-<a name="API_GetAccountLink"></a>
 
 Retrieves account link information.
 

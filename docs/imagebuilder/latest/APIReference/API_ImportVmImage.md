@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Imp
 ---
 
 # ImportVmImage
-<a name="API_ImportVmImage"></a>
 
 Creates an Image Builder image resource from an Amazon EC2 VM import task. The response returns as soon as Image Builder creates the image resource in the `PENDING` state. Image Builder then monitors the import task asynchronously. When the task completes, Image Builder records the AMI that it produced as the new image's output resource and marks the image `AVAILABLE`. You can then use the imported image as the base image for your recipes.
 

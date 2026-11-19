@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Getting help and support
-<a name="ppi-support"></a>
 
 AWS provides several ways to get help with Performance Indicators. Use the following resources to open support cases, submit data correction requests, attend enablement sessions, and work with your Partner Development Manager (PDM).
 

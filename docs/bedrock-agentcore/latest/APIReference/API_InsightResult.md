@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InsightResult
-<a name="API_InsightResult"></a>
 
 An insight that groups related failures found across the sessions in a batch evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Transparent data encryption Aurora MySQL
-<a name="chap-sql-server-aurora-mysql.security.transparentdataencryption"></a>
 
 This topic provides reference information about data encryption capabilities in Microsoft SQL Server and Amazon Aurora MySQL. You can understand how Transparent Data Encryption (TDE) works in SQL Server to protect data at rest without requiring application changes.
 

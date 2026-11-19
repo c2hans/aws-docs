@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/welcome-related.html
 ---
 
 # AWS services commonly used with Amazon SNS
-<a name="welcome-related"></a>
 
 Integrate Amazon SNS with multiple AWS Cloud services to boost message handling, improve access control, enable event-driven processing, and automate resources. This integration optimizes performance, strengthens security, and streamlines operations.
 

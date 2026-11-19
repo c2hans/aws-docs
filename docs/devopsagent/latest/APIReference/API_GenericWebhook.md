@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Gene
 ---
 
 # GenericWebhook
-<a name="API_GenericWebhook"></a>
 
 Generic webhook configuration for services that support webhook notifications.
 

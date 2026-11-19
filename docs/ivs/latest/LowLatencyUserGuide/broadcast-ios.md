@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # IVS Broadcast SDK: iOS Guide \| Low-Latency Streaming
-<a name="broadcast-ios"></a>
 
 The IVS Low-Latency Streaming iOS Broadcast SDK provides the interfaces required to broadcast to Amazon IVS on iOS.
 

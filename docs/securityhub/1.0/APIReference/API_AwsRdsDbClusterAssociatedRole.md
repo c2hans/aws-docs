@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbClusterAssociatedRole
-<a name="API_AwsRdsDbClusterAssociatedRole"></a>
 
 An IAM role that is associated with the Amazon RDS DB cluster.
 

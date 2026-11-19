@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSupportPlansFullAccess
-<a name="AWSSupportPlansFullAccess"></a>
 
 **Description**: Provides full access to supportplans.
 

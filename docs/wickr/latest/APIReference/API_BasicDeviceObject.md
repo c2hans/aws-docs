@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BasicDevic
 ---
 
 # BasicDeviceObject
-<a name="API_BasicDeviceObject"></a>
 
 Represents a device where a user has logged into Wickr, containing information about the device's type, status, and login history.
 

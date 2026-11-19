@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Set up a mobile application to use CloudWatch RUM
-<a name="CloudWatch-RUM-web-mobile"></a>
 
 To monitor mobile applications, you create an app monitor, configure it for mobile platforms, and integrate the AWS Distro for OpenTelemetry (ADOT) SDK into your application. Mobile RUM uses the OpenTelemetry Protocol (OTLP) to send telemetry data to a dedicated OTLP endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/python-lambd
 ---
 
 # Apply the CodeGuru Profiler function decorator to your handler function
-<a name="python-lambda-command-line"></a>
 
 Pull your `codeguru_profiler_agent` dependency to your local environment through `pip` and include it in the .zip file for Lambda.
 

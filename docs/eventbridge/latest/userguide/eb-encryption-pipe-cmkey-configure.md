@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-encrypti
 ---
 
 # Configuring encryption in EventBridge Pipes
-<a name="eb-encryption-pipe-cmkey-configure"></a>
 
 You can specify the KMS key for EventBridge to use when you create or update a pipe.
 

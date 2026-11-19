@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/setting-up
 ---
 
 # Setting up trusted identity propagation with Amazon EMR Studio
-<a name="setting-up-tip-emr"></a>
 
 The following procedure walks you through setting up Amazon EMR Studio for trusted identity propagation in queries against an Amazon Athena workgroups or Amazon EMR clusters running Apache Spark.
 

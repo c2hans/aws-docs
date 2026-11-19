@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SuggestedMessageReference
-<a name="API_amazon-q-connect_SuggestedMessageReference"></a>
 
 Reference information for a suggested message.
 

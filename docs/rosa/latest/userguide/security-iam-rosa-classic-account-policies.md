@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/security-iam-rosa-
 ---
 
 # ROSA classic account policies
-<a name="security-iam-rosa-classic-account-policies"></a>
 
 This section provides details about the account policies that are required for ROSA classic. These permissions are needed for ROSA classic to manage the AWS resources that clusters run on and enable Red Hat site reliability engineer support for clusters. You can assign a custom prefix to the policy names, but these policies should otherwise be named as defined on this page (for example, `ManagedOpenShift-Installer-Role-Policy`).
 

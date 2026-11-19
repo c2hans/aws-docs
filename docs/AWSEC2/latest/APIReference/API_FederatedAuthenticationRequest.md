@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Federated
 ---
 
 # FederatedAuthenticationRequest
-<a name="API_FederatedAuthenticationRequest"></a>
 
 The IAM SAML identity provider used for federated authentication.
 

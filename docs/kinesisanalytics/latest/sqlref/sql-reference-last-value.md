@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # LAST\_VALUE
-<a name="sql-reference-last-value"></a>
 
 ```
 LAST_VALUE ( <value-expression> )  OVER <window-specification>

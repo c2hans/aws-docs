@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ItemValue
-<a name="API_ItemValue"></a>
 
 Describes a related item.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateAccountSettings
-<a name="update-account-settings"></a>
 
 Use the `UpdateAccountSettings` API operation to update the AWS Quick Sight settings in your AWS account. Following is an example AWS CLI command for this operation.
 

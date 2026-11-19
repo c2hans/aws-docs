@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListCont
 ---
 
 # ListContactEvaluations
-<a name="API_ListContactEvaluations"></a>
 
 Lists contact evaluations in the specified Connect Customer instance.
 

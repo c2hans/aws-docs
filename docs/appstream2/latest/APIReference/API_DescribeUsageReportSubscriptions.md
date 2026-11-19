@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeUsageReportSubscriptions
-<a name="API_DescribeUsageReportSubscriptions"></a>
 
 Retrieves a list that describes one or more usage report subscriptions.
 

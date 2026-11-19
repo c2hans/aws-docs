@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Agentic AI
-<a name="aurora-faq-agentic-ai"></a>
 
 **Topics**
 + [What is pgvector and how does it work with Amazon Aurora?](#aurora-faq-what-is-pgvector-and-how-does-it-work-with-amazon-aurora)

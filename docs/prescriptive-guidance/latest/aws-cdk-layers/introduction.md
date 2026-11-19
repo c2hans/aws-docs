@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # The AWS CDK layer guide
-<a name="introduction"></a>
 
 *Steven Guggenheimer, Amazon Web Services*
 

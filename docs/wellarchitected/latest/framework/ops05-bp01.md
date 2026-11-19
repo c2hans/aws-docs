@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05-b
 ---
 
 # OPS05-BP01 Develop and test runbooks to perform procedures
-<a name="ops05-bp01"></a>
 
  A runbook is a documented procedure that produces the same outcome every time, no matter who runs it. Teams use runbooks for routine and high-stakes work, from onboarding an engineer to deploying a release or recovering from an incident. Without them, operations depend on memory and habit, which produces inconsistent results and more errors.
 

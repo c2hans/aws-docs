@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_LambdaDev
 ---
 
 # LambdaDeviceMount
-<a name="API_LambdaDeviceMount"></a>
 
 Contains information about a device that Linux processes in a container can access.
 

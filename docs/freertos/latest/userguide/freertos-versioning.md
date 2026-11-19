@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-versi
 ---
 
 # FreeRTOS versions
-<a name="freertos-versioning"></a>
 
 Individual libraries use x.y.z style version numbers, similar to semantic versioning. x is the major version number, y the minor version number, and starting from 2022, z is a patch number. Before 2022, z was a point release number, which required the first LTS libraries to have a patch number of the form *"x.y.z LTS Patch 2"*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Cloud-native Contact Center for Multilingual IT Service Desk
-<a name="cloud-native-contact-center-multilingual"></a>
 
 Publication date: **January 6, 2021 ([Diagram history](diagram-history.md))**
 

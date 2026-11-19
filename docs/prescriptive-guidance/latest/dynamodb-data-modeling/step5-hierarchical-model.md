@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 5: Create a DynamoDB data model
-<a name="step5-hierarchical-model"></a>
 
 Define the partition keys for your base table and global secondary indexes (GSIs):
 + Following the key design best practices, use `ComponentId` as the partition key for the base table in this example. Because it's unique, `ComponentId` can offer granularity. DynamoDB uses the hash value of your partition key to determine the partition where the data is stored physically. The unique component ID generates a different hash value, which can facilitate distribution of data inside the table. You can query the base table by using a `ComponentId` partition key.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ListBatchEvaluations
-<a name="API_ListBatchEvaluations"></a>
 
 Lists all batch evaluations in the account, providing summary information about each evaluation's status and configuration.
 

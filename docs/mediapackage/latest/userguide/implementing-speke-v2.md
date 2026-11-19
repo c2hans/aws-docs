@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/implementi
 ---
 
 # Implementing SPEKE with AWS Elemental MediaPackage
-<a name="implementing-speke-v2"></a>
 
 This topic supplements the [SPEKE API v2 — Customizations and constraints to the DASH-IF specification](https://docs.aws.amazon.com/speke/latest/documentation/speke-constraints-v2.html) with practical implementation guidance verified through production integration testing with AWS Elemental MediaPackage v2.
 

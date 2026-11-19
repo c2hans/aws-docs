@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProvider.h
 ---
 
 # CapacityProvider
-<a name="API_CapacityProvider"></a>
 
 A capacity provider manages compute resources for Lambda functions.
 

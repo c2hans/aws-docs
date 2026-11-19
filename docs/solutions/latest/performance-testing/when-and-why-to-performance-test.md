@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/whe
 ---
 
 # When and Why to Performance Test
-<a name="when-and-why-to-performance-test"></a>
 
 Every team that invests in performance testing arrives with a specific question. Some are preparing for a launch that cannot afford to fail. Others have inherited a system that occasionally degrades under load and need to understand why. Some are migrating workloads to AWS and need proof that the new architecture meets or exceeds what they had on premises. The question you bring determines where you focus first, but the discipline you build serves all of them.
 

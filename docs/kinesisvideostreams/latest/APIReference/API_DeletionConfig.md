@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DeletionConfig
-<a name="API_DeletionConfig"></a>
 
 The configuration details required to delete the connection of the stream from the Edge Agent.
 

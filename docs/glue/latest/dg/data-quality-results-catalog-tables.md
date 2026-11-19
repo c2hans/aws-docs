@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-results-cata
 ---
 
 # Writing data quality results to Data Catalog tables
-<a name="data-quality-results-catalog-tables"></a>
 
 You can configure AWS Glue Data Quality evaluation runs to automatically write results to Apache Iceberg tables in the AWS Glue Data Catalog. After you enable results output, you can query your data quality results directly using , build dashboards with visualization tools, and maintain a centralized history of data quality outcomes across your account.
 

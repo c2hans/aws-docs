@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # InferenceResourceConfig
-<a name="API_InferenceResourceConfig"></a>
 
 Defines the resources used to perform model inference.
 

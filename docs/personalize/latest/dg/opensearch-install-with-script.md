@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensearch-install
 ---
 
 # Creating a new cluster and installing the plugin with a script
-<a name="opensearch-install-with-script"></a>
 
 If you haven't created an OpenSearch cluster, you can use a quickstart bash script to create one. This script sets up an OpenSearch cluster in a Docker container, sets up credentials using your default AWS profile, and installs the Amazon Personalize Search Ranking plugin.
 

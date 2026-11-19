@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/tutoria
 ---
 
 # Launch and use JupyterLab on Lightsail for Research
-<a name="tutorial-jupyter-notebook"></a>
 
 In this tutorial, we show you how to get started with managing and using your JupyterLab virtual computer in Amazon Lightsail for Research.
 

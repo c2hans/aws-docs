@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Cross-Accou
 ---
 
 # Step 2: Update the existing destination access policy
-<a name="Cross-Account-Log_Subscription-Update-policy-Account"></a>
 
 After you have updated the subscription filters in all of the sender accounts, you can update the destination access policy in the recipient account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-duckdb-loc
 ---
 
 # Using a DAG to run DuckDB queries in memory
-<a name="samples-duckdb-local"></a>
 
 You can use the following code example to write a directed acyclic graph (DAG) that runs DuckDB SQL in memory on your Amazon MWAA environment's workers, without reading from or writing to other AWS services.
 

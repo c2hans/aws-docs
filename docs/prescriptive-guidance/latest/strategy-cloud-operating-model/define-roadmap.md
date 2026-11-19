@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Define a roadmap
-<a name="define-roadmap"></a>
 
 You might have seen the following quote from Werner Vogels, VP and CTO at Amazon: "*You build it, you run it.*"
 

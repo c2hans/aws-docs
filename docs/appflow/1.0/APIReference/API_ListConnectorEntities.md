@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ListConnect
 ---
 
 # ListConnectorEntities
-<a name="API_ListConnectorEntities"></a>
 
  Returns the list of available connector entities supported by Amazon AppFlow. For example, you can query Salesforce for *Account* and *Opportunity* entities, or query ServiceNow for the *Incident* entity.
 

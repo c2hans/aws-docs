@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/salesforce-
 ---
 
 # Pricing
-<a name="pricing"></a>
 
 Cost considerations for the solutions described in this guide depend on various factors, such as scale, consumed bandwidth, selected products, and vendor discounts. When pricing the various components, consider the following:
 + Direct Connect – The price varies based on Region, port type, capacity, and data transferred. Use the [AWS Pricing Calculator](https://calculator.aws/) to estimate your costs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LaunchTemplateSource
-<a name="API_LaunchTemplateSource"></a>
 
 The source of the launch template configuration for a capacity provider. The `launchParameters` member specifies the operating system, instance requirements, and other settings used to launch instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-find-s
 ---
 
 # Find and Subscribe to Algorithms and Model Packages on AWS Marketplace
-<a name="sagemaker-mkt-find-subscribe"></a>
 
 With AWS Marketplace, you can browse and search for hundreds of machine learning algorithms and models in a broad range of categories, such as computer vision, natural language processing, speech recognition, text, data, voice, image, video analysis, fraud detection, predictive analysis, and more.
 

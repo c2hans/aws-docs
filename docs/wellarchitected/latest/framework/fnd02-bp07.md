@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP07 Implement data perimeter controls to help prevent unintended access
-<a name="fnd02-bp07"></a>
 
  Data perimeter controls verify that only your trusted identities access trusted resources from expected networks. They are always-on, organization-wide permission guardrails that complement fine-grained access controls. By enforcing a set of security standards across identities, resources, and networks, data perimeter controls help prevent unintended data movement outside your organization's trust boundaries.
 

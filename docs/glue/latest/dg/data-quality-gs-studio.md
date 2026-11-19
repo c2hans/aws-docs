@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.ht
 ---
 
 # Evaluating data quality with AWS Glue Studio
-<a name="data-quality-gs-studio"></a>
 
  AWS Glue Data Quality evaluates and monitors the quality of your data based on rules that you define. This makes it easy to identify the data that needs action. In AWS Glue Studio, you can add data quality nodes to your visual job to create data quality rules on tables in your Data Catalog. You can then monitor and evaluate changes to your datasets as they evolve over time. For an overview of how to work with AWS Glue Data Quality in AWS Glue Studio, see the following video.
 

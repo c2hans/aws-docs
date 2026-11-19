@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDatabases.html
 ---
 
 # GetDatabases
-<a name="API_GetDatabases"></a>
 
 Retrieves all databases defined in a given Data Catalog.
 

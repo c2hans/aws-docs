@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-serv
 ---
 
 # Logging requests for S3 Tables using server access logging
-<a name="s3-tables-server-logs"></a>
 
 Server access logging for S3 Tables provides detailed records for the requests that are made to a table bucket. When you enable server access logging on a table bucket, Amazon S3 generates a log record for every request that is made to that table bucket, and delivers the log files to a general purpose bucket that you specify. These logs can help you with security and access auditing, access analysis, and cost attribution.
 

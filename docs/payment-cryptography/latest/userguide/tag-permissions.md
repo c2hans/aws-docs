@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ta
 ---
 
 # Controlling access to tags
-<a name="tag-permissions"></a>
 
 To add, view, and delete tags by using the API, principals need tagging permissions in IAM policies.
 

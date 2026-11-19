@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/descri
 ---
 
 # Describe step scaling policies for Application Auto Scaling using the AWS CLI
-<a name="describe-step-scaling-policy"></a>
 
 You can describe all scaling policies for a service namespace using the [describe-scaling-policies](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/describe-scaling-policies.html) command. The following example describes all scaling policies for all Amazon ECS services. To list them for a specific Amazon ECS service only add the `--resource-id` option.
 

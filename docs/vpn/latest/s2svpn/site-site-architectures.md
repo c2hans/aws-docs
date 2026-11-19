@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/site-site-architecture
 ---
 
 # AWS Site-to-Site VPN architectural scenarios
-<a name="site-site-architectures"></a>
 
 The following are scenarios in which you might create multiple VPN connections with one or more customer gateway devices.
 

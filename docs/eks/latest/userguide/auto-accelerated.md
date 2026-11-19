@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-accelerated.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy an accelerated workload
-<a name="auto-accelerated"></a>
 
 This tutorial demonstrates how Amazon EKS Auto Mode simplifies launching hardware-accelerated workloads. Amazon EKS Auto Mode streamlines operations beyond the cluster itself by automating key infrastructure components providing compute, networking, load balancing, storage, and Identity and Access Management capabilities out of the box.
 
@@ -208,7 +207,7 @@ kubectl delete -f pod.yaml
 ## Deploy an accelerated workload with Dynamic Resource Allocation
 <a name="auto-accelerated-dra"></a>
 
-The walkthrough in [Deploy an accelerated workload](#auto-accelerated) requests a GPU as the `nvidia.com/gpu` extended resource, which the NVIDIA device plugin advertises. On Kubernetes version 1.36 and later, you can instead request devices through Dynamic Resource Allocation (DRA). DRA lets you select devices by attributes such as GPU model or memory, constrain a GPU and an EFA device to the same PCIe root for distributed training, and share one GPU across several Pods.
+The walkthrough in [Deploy an accelerated workload](auto-accelerated.md) requests a GPU as the `nvidia.com/gpu` extended resource, which the NVIDIA device plugin advertises. On Kubernetes version 1.36 and later, you can instead request devices through Dynamic Resource Allocation (DRA). DRA lets you select devices by attributes such as GPU model or memory, constrain a GPU and an EFA device to the same PCIe root for distributed training, and share one GPU across several Pods.
 
 EKS Auto Mode includes the NVIDIA DRA driver and the EFA DRA driver (DRANET) in the node runtime, so there are no drivers to install. You do need to create the `DeviceClass` objects that your claims reference, which a driver’s Helm chart would otherwise create for you.
 
@@ -219,7 +218,7 @@ EKS Auto Mode keeps DRA and device plugins from managing the same device type on
 + A Kubernetes cluster with Amazon EKS Auto Mode configured, running **Kubernetes version 1.36 or later**. DRA is not available on EKS Auto Mode clusters running earlier versions. To check your cluster version, run `kubectl version`. For information about updating a cluster, see [Update existing cluster to new Kubernetes version](update-cluster.md).
 + A `default` EKS Node class as created when the `general-purpose` or `system` Managed Node Pools are enabled.
 +  `kubectl` configured to communicate with your cluster, see [Install or update `kubectl`](install-kubectl.md#kubectl-install-update) for more information.
-+ A GPU instance family that EKS Auto Mode has DRA device metadata for. The `g7e` instance family is not supported with DRA and dynamic capacity provisioning. Use the NVIDIA device plugin for `g7e` GPUs, as shown in [Deploy an accelerated workload](#auto-accelerated).
++ A GPU instance family that EKS Auto Mode has DRA device metadata for. The `g7e` instance family is not supported with DRA and dynamic capacity provisioning. Use the NVIDIA device plugin for `g7e` GPUs, as shown in [Deploy an accelerated workload](auto-accelerated.md).
 + For EFA devices with dynamic capacity provisioning, use an instance type with NVIDIA GPUs. EKS Auto Mode doesn’t yet have EFA DRA device metadata for EFA-enabled instance types without GPUs. Examples include `hpc7a` and `c6in`. Support for these instance types is coming soon. For more information, see [aws/karpenter-provider-aws\#9879](https://github.com/aws/karpenter-provider-aws/pull/9879) on GitHub. Until then, use static capacity provisioning or the EFA device plugin for them.
 
 ### Step 1: Create the DeviceClass
@@ -342,7 +341,7 @@ spec:
     operator: Exists
 ```
 
-Note that the Pod requests the GPU through `resources.claims` and `resourceClaims`, rather than through the `nvidia.com/gpu` extended resource used in [Deploy an accelerated workload](#auto-accelerated). The `NodePool` also sets a taint that only allows Pods with tolerations for NVIDIA GPUs to be scheduled.
+Note that the Pod requests the GPU through `resources.claims` and `resourceClaims`, rather than through the `nvidia.com/gpu` extended resource used in [Deploy an accelerated workload](auto-accelerated.md). The `NodePool` also sets a taint that only allows Pods with tolerations for NVIDIA GPUs to be scheduled.
 
 Apply the `NodePool` and workload to your cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DisableDNSView
-<a name="API_route53globalresolver_DisableDNSView"></a>
 
 Disables a DNS view, preventing it from serving DNS queries.
 

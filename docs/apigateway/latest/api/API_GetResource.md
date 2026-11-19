@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetResource.ht
 ---
 
 # GetResource
-<a name="API_GetResource"></a>
 
 Lists information about a resource.
 

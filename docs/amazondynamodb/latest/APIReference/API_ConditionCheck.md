@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # ConditionCheck
-<a name="API_ConditionCheck"></a>
 
 Represents a request to perform a check that an item exists or to check the condition of specific attributes of the item.
 

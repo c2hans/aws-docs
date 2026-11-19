@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/informati
 ---
 
 # Information assistance
-<a name="information-assistance"></a>
 
 Information assistance is part of the agentic capabilities for patient access. It answers general, non-clinical questions, such as facility hours, directions, parking, departments, and help with navigating the patient portal. It answers from a knowledge base (KB) that you provide. Callers reach it by phone. It supports English only.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # DocumentText
-<a name="API_amazon-q-connect_DocumentText"></a>
 
 The text of the document.
 

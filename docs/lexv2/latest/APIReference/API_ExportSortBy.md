@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExportSort
 ---
 
 # ExportSortBy
-<a name="API_ExportSortBy"></a>
 
 Provides information about sorting a list of exports.
 

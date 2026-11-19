@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/content-switchi
 ---
 
 # Using the REST API
-<a name="content-switching-api"></a>
 
 **Topics**
 + [List of commands](list-of-commands.md)

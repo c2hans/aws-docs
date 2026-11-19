@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_AwsVpc
 ---
 
 # AwsVpcConfiguration
-<a name="API_AwsVpcConfiguration"></a>
 
 An object representing the networking details for a task or service. For example `awsVpcConfiguration={subnets=["subnet-12344321"],securityGroups=["sg-12344321"]}`.
 

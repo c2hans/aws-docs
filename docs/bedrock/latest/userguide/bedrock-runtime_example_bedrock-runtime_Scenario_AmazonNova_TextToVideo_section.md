@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Use Amazon Nova Reel to generate a video from a text prompt
-<a name="bedrock-runtime_example_bedrock-runtime_Scenario_AmazonNova_TextToVideo_section"></a>
 
 The following code examples show how to use Amazon Nova Reel to generate a video from a text prompt.
 

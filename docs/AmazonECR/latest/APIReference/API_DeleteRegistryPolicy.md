@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeleteRegistryPolicy
-<a name="API_DeleteRegistryPolicy"></a>
 
 Deletes the registry permissions policy.
 

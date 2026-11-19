@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListAuto
 ---
 
 # ListAutomatedReasoningPolicyTestResults
-<a name="API_ListAutomatedReasoningPolicyTestResults"></a>
 
 Lists test results for an Automated Reasoning policy, showing how the policy performed against various test scenarios and validation checks.
 

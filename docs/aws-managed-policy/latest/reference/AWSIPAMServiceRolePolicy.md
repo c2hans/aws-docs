@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIPAMServiceRolePolicy
-<a name="AWSIPAMServiceRolePolicy"></a>
 
 **Description**: Allows VPC IP Address Manager to access VPC resources and integrate with AWS Organizations on your behalf.
 

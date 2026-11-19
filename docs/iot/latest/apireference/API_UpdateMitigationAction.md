@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateMitiga
 ---
 
 # UpdateMitigationAction
-<a name="API_UpdateMitigationAction"></a>
 
 Updates the definition for the specified mitigation action.
 

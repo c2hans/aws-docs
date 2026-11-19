@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_UserGroup
 ---
 
 # UserGroupResolutionConfiguration
-<a name="API_UserGroupResolutionConfiguration"></a>
 
 Provides the configuration information to get users and groups from an AWS IAM Identity Center identity source. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents. You can also use the [PutPrincipalMapping](https://docs.aws.amazon.com/kendra/latest/dg/API_PutPrincipalMapping.html) API to map users to their groups so that you only need to provide the user ID when you issue the query.
 

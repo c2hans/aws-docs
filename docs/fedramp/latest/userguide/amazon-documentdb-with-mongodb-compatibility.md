@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/amazon-document
 ---
 
 # Amazon DocumentDB (with MongoDB compatibility)
-<a name="amazon-documentdb-with-mongodb-compatibility"></a>
 
 This guide provides security configuration requirements and implementation examples for Amazon DocumentDB (with MongoDB compatibility) in accordance with FedRAMP requirements.
 

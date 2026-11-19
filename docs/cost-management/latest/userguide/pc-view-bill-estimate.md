@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-view
 ---
 
 # Viewing your Bill estimate
-<a name="pc-view-bill-estimate"></a>
 
 This page describes the information displayed in the key sections of your Bill estimate. If you are part of an AWS Organization, this page displays pre-tax cost and usage for your consolidated bill family. If you are a standalone account, this page displays pre-tax cost and usage for your account. For information about how to generate a bill estimate, see [Creating a bill estimate](pc-create-bill-estimate.md).
 

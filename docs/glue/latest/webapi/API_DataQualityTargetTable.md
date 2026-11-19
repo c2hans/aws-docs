@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityTarget
 ---
 
 # DataQualityTargetTable
-<a name="API_DataQualityTargetTable"></a>
 
 An object representing an AWS Glue table.
 

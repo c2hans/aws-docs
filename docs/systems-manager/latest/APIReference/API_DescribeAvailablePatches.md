@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeAvailablePatches
-<a name="API_DescribeAvailablePatches"></a>
 
 Lists all patches eligible to be included in a patch baseline.
 

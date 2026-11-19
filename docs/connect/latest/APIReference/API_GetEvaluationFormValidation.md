@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetEvalu
 ---
 
 # GetEvaluationFormValidation
-<a name="API_GetEvaluationFormValidation"></a>
 
 Retrieves the status and results of a validation process started by [StartEvaluationFormValidation](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEvaluationFormValidation.html). Returns the current execution status (`IN_PROGRESS`, `COMPLETED`, or `FAILED`), the validated form version, and when completed, a list of findings that identify structural issues and quality improvements for the evaluation form, and may include suggested fixes. If the validation failed, a reason is provided indicating the cause of the failure.
 

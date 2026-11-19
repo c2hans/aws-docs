@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Sample data models for NoSQL Workbench
-<a name="workbench.SampleModels"></a>
 
 The home page for the modeler displays a number of sample models that ship with the NoSQL Workbench. This section describes these models and their potential uses.
 

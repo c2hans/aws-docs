@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_StartDa
 ---
 
 # StartDataSourceRun
-<a name="API_StartDataSourceRun"></a>
 
 Start the run of the specified data source in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Li
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Lists the environments for an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelImp
 ---
 
 # CancelImportTask
-<a name="API_CancelImportTask"></a>
 
 Cancels an in-process import virtual machine or import snapshot task.
 

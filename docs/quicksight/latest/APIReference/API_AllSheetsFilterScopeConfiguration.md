@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AllSh
 ---
 
 # AllSheetsFilterScopeConfiguration
-<a name="API_AllSheetsFilterScopeConfiguration"></a>
 
 An empty object that represents that the `AllSheets` option is the chosen value for the `FilterScopeConfiguration` parameter. This structure applies the filter to all visuals on all sheets of an Analysis, Dashboard, or Template.
 

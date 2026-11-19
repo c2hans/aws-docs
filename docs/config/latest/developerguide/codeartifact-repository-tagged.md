@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/codeartifac
 ---
 
 # codeartifact-repository-tagged
-<a name="codeartifact-repository-tagged"></a>
 
 Checks if AWS CodeArtifact repository resources have tags. Optionally, required tag keys can be specified. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

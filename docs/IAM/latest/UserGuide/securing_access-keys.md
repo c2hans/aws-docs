@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/securing_access-key
 ---
 
 # Secure access keys
-<a name="securing_access-keys"></a>
 
 Anyone who has your access keys has the same level of access to your AWS resources that you do. Consequently, AWS goes to significant lengths to protect your access keys, and, in keeping with our [shared-responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/), you should as well.
 

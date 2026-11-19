@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/tutorial-stream-vi
 ---
 
 # Stream video using CloudFront
-<a name="tutorial-stream-video-with-cloudfront"></a>
 
 Media workflows commonly store finished content — video on demand (VOD) files, HTTP Live Streaming (HLS) packages, images, and graphics — on an FSx for ONTAP volume that editors, producers, and automation systems write to using NFS or SMB.
 

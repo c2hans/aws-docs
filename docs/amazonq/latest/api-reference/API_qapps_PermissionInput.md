@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_P
 ---
 
 # PermissionInput
-<a name="API_qapps_PermissionInput"></a>
 
 The permission to grant or revoke for a Amazon Q App.
 

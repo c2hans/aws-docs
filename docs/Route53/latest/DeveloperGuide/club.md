@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/club.html
 ---
 
 # .club
-<a name="club"></a>
 
 Used by any type of club or organization.
 

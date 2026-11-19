@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_R
 ---
 
 # ResourceUtilization
-<a name="API_ResourceUtilization"></a>
 
 The resource utilization for memory, storage, and vCPU for jobs.
 

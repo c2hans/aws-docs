@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools.html
 ---
 
 # Neptune tools and utilities
-<a name="tools"></a>
 
 Amazon Neptune provides a number of tools and utilities that can simplify and automate your work with a graph. Among these are the following:
 

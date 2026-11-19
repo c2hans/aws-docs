@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationVersionFilter
-<a name="API_RegistrationVersionFilter"></a>
 
 The filter definition for filtering registration versions that meets a specified criteria.
 

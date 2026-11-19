@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerServicePower
-<a name="API_ContainerServicePower"></a>
 
 Describes the powers that can be specified for an Amazon Lightsail container service.
 

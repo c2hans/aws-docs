@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cluster_param
 ---
 
 # Deleting Amazon DocumentDB cluster parameter groups
-<a name="cluster_parameter_groups-delete"></a>
 
 You can delete a custom Amazon DocumentDB cluster parameter group using the AWS Management Console or the AWS Command Line Interface (AWS CLI). You can't delete the `default.docdb4.0` cluster parameter group.
 

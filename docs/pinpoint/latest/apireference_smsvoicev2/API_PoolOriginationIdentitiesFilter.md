@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PoolOriginationIdentitiesFilter
-<a name="API_PoolOriginationIdentitiesFilter"></a>
 
 Information about origination identities associated with a pool that meets a specified criteria.
 

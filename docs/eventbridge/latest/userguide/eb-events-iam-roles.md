@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-i
 ---
 
 # IAM roles for sending events to targets in Amazon EventBridge
-<a name="eb-events-iam-roles"></a>
 
 To relay events to targets, EventBridge needs an IAM role.
 

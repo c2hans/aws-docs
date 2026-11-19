@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Building, tagging, and pushing a container image
-<a name="containers-build-push"></a>
 
 Build the image for the processor architecture used by your fleet. Linux service-managed fleets with the Docker software add-on use the `linux/amd64` platform. Give each image version a tag that identifies its contents, such as an application version or source revision.
 

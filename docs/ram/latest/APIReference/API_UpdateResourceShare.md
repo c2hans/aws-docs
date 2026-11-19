@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_UpdateResour
 ---
 
 # UpdateResourceShare
-<a name="API_UpdateResourceShare"></a>
 
 Modifies some of the properties of the specified resource share.
 

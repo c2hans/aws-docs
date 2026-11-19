@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kinesis::Channel DeadLetterQueueS3Configuration
-<a name="aws-properties-kinesis-channel-deadletterqueues3configuration"></a>
 
 The Amazon S3 dead-letter queue configuration for records that cannot be delivered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_AWSBCMPricingCalculator_TagResource"></a>
 
  Adds one or more tags to a specified resource.
 

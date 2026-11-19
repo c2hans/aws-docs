@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-ot-slot
 ---
 
 # Create overtime slots for contact center agents in Connect Customer
-<a name="create-ot-slots"></a>
 
 You can create overtime slots for specific activities. This feature applies to activities that aren't the **Work** sub-type. Activities with the **Work** sub-type are not available in the Activity list dropdown where a user requests overtime.
 

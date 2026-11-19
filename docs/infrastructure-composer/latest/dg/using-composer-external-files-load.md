@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Load a project with an external file reference in Infrastructure Composer
-<a name="using-composer-external-files-load"></a>
 
 Follow the steps listed on this page to load an Infrastructure Composer project with an external file reference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # FlexMatch property expressions
-<a name="match-rules-reference-property-expression"></a>
 
 Property expressions can be used to define certain matchmaking-related properties. They allow you to use calculations and logic when defining a property value. Property expressions generally result in one of two forms:
 + Individual player data.

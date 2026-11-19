@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAnnotat
 ---
 
 # PutObjectAnnotation
-<a name="API_PutObjectAnnotation"></a>
 
 Attaches an annotation to an Amazon S3 object. An annotation is a named payload of 1 byte to 1 MiB that you can associate with a specific object or object version. Each object can have up to 1,000 annotations.
 

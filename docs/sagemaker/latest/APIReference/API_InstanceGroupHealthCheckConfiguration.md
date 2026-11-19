@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstanceGroupHealthCheckConfiguration
-<a name="API_InstanceGroupHealthCheckConfiguration"></a>
 
 The configuration of deep health checks for an instance group.
 

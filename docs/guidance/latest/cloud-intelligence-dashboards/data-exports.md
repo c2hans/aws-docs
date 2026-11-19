@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Data Exports
-<a name="data-exports"></a>
 
 ## Introduction
 <a name="introduction"></a>

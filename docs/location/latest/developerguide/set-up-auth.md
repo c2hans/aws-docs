@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/set-up-au
 ---
 
 # Use the Amazon Location Service console to authenticate
-<a name="set-up-auth"></a>
 
 **Note**
 To learn more about authentication, see [Authenticate with Amazon Location Service](access.md).

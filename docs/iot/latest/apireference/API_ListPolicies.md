@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListPolicies
 ---
 
 # ListPolicies
-<a name="API_ListPolicies"></a>
 
 Lists your policies.
 

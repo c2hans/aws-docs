@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DescribeLoadBalancerPolicies
-<a name="API_DescribeLoadBalancerPolicies"></a>
 
 Describes the specified policies.
 

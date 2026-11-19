@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OwnerPr
 ---
 
 # OwnerPropertiesOutput
-<a name="API_OwnerPropertiesOutput"></a>
 
 The ID of the domain unit owners group.
 

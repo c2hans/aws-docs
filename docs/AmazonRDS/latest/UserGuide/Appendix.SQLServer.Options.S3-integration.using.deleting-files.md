@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Deleting files on the RDS DB instance
-<a name="Appendix.SQLServer.Options.S3-integration.using.deleting-files"></a>
 
 To delete the files available on the DB instance, use the Amazon RDS stored procedure `msdb.dbo.rds_delete_from_filesystem` with the following parameters.
 

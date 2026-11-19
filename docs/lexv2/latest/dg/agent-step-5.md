@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/agent-step-5.html
 ---
 
 # Step 5: Deploy Your Bot as a Web Application
-<a name="agent-step-5"></a>
 
 **To deploy your bot as a web application**
 

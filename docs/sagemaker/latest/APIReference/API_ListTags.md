@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTa
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Returns the tags for the specified SageMaker resource.
 

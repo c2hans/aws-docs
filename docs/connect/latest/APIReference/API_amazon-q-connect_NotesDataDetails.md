@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # NotesDataDetails
-<a name="API_amazon-q-connect_NotesDataDetails"></a>
 
 Details about notes data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_Create
 ---
 
 # Use `CreateContactList` with an AWS SDK
-<a name="sesv2_example_sesv2_CreateContactList_section"></a>
 
 The following code examples show how to use `CreateContactList`.
 

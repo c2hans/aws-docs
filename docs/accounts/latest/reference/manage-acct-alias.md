@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-al
 ---
 
 # Create an AWS account alias
-<a name="manage-acct-alias"></a>
 
 These instructions are for how to create an AWS account alias if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
 

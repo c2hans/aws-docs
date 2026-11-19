@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/servicenow.h
 ---
 
 # Configure ServiceNow for AppFabric
-<a name="servicenow"></a>
 
 ServiceNow is a leading provider of cloud-based services that automate enterprise IT operations. ServiceNow’s ITOM gives enterprises complete visibility and control of their entire IT environment – including virtualized and cloud infrastructure. It simplifies service mapping, delivery and assurance, consolidating IT service and infrastructure data into a single system of record. It also automates and streamlines key processes — including event, incident, problem, configuration and change management.
 

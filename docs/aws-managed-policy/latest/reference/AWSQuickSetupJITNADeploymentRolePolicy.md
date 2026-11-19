@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupJITNADeploymentRolePolicy
-<a name="AWSQuickSetupJITNADeploymentRolePolicy"></a>
 
 **Description**: This policy allows Quick Setup to deploy the configuration type required to set up just-in-time node access.
 

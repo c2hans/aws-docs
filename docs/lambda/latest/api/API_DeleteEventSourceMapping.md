@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteEventSourceM
 ---
 
 # DeleteEventSourceMapping
-<a name="API_DeleteEventSourceMapping"></a>
 
 Deletes an [event source mapping](https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-modes.html). You can get the identifier of a mapping from the output of [ListEventSourceMappings](API_ListEventSourceMappings.md).
 

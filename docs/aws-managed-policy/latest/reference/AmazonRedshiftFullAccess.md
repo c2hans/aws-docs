@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRedshiftFullAccess
-<a name="AmazonRedshiftFullAccess"></a>
 
 **Description**: Provides full access to Amazon Redshift via the AWS Management Console.
 

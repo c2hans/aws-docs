@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-statmux/latest/configguide/not
 This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
 
 # Configure Sendmail Relay Server
-<a name="notification-email-sendmail"></a>
 
 Use this procedure to set up a Sendmail relay server if your network doesn't accept open relay messages.
 

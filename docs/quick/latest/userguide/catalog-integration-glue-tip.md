@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Setting up trusted identity propagation for AWS Glue Data Catalog
-<a name="catalog-integration-glue-tip"></a>
 
 Trusted identity propagation enables AWS services to access resources based on the end user's identity context. When you configure Quick, AWS Glue Data Catalog, Amazon S3 Access Grants, and Lake Formation with AWS IAM Identity Center, the signed-in user's identity is propagated across services. Lake Formation and S3 Access Grants make authorization decisions based on permissions defined for that user or their group membership from your identity provider.
 

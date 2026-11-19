@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAclGroup
-<a name="API_DocumentAclGroup"></a>
 
 Represents a group in the document's ACL, used to define access permissions for multiple users collectively.
 

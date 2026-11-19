@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # UpdateGlobalResolver
-<a name="API_route53globalresolver_UpdateGlobalResolver"></a>
 
 Updates the configuration of a Route 53 Global Resolver instance. You can modify the name, description, observability Region, and the public IP connectivity setting (`publicIpStatus`) that controls whether DNS clients can reach the resolver over the internet.
 

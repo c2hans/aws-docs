@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeSenderIds
-<a name="API_DescribeSenderIds"></a>
 
 Describes the specified SenderIds or all SenderIds associated with your AWS account.
 

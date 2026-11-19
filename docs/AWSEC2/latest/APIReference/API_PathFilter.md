@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PathFilte
 ---
 
 # PathFilter
-<a name="API_PathFilter"></a>
 
 Describes a set of filters for a path analysis. Use path filters to scope the analysis when there can be multiple resulting paths.
 

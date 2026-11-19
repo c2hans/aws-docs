@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # GetRepositoryLink
-<a name="API_GetRepositoryLink"></a>
 
 Returns details about a repository link. A repository link allows Git sync to monitor and sync changes from files in a specified Git repository.
 

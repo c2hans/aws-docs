@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Understand patch management in AMS Accelerate
-<a name="acc-patching"></a>
 
 **Important**
 Accelerate Patch reporting periodically deploys an AWS Glue resource-based policy. Be advised that AMS updates to the patching system overwrite existing AWS Glue resource-based policies.

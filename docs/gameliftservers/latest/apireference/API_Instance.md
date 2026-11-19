@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 Represents a virtual computing instance that runs game server processes and hosts game sessions. In Amazon GameLift Servers, one or more instances make up a managed EC2 fleet.
 

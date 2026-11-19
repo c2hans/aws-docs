@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/jupyterlab-
 ---
 
 # Using Amazon Q Developer with JupyterLab
-<a name="jupyterlab-setup"></a>
 
 This page describes how to set up and activate Amazon Q Developer for JupyterLab. Once activated, Amazon Q can make code recommendations automatically as you write your code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetBucketsAg
 ---
 
 # GetBucketsAggregation
-<a name="API_GetBucketsAggregation"></a>
 
 Aggregates on indexed data with search queries pertaining to particular fields.
 

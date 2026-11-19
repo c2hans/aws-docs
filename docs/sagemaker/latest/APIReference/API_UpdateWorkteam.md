@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateWorkteam
-<a name="API_UpdateWorkteam"></a>
 
 Updates an existing work team with new member definitions or description.
 

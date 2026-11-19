@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-mcp-
 ---
 
 # Amazon ECS MCP server
-<a name="ecs-mcp-introduction"></a>
 
 The Amazon ECS MCP server is a fully managed service enabling AI-powered experiences for development and operations. [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) provides a standardized interface that enriches AI agents and applications with real-time, contextual knowledge of your Amazon ECS workloads, enabling more accurate, context-aware responses and AI-powered workflows to inspect, troubleshoot, and optimize your Amazon ECS workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cw-metrics.html
 ---
 
 # Neptune CloudWatch Metrics
-<a name="cw-metrics"></a>
 
 **Note**
 Amazon Neptune sends metrics to CloudWatch only when they have a non-zero value.

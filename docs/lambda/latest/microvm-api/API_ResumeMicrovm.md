@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ResumeMicr
 ---
 
 # ResumeMicrovm
-<a name="API_ResumeMicrovm"></a>
 
 Resumes a suspended MicroVM, restoring it to RUNNING state with all state intact. The MicroVM must be in SUSPENDED state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_MetricAttr
 ---
 
 # MetricAttribution
-<a name="API_UBS_MetricAttribution"></a>
 
 Contains information about a metric attribution associated with an event. For more information about metric attributions, see [Measuring impact of recommendations](https://docs.aws.amazon.com/personalize/latest/dg/measuring-recommendation-impact.html).
 

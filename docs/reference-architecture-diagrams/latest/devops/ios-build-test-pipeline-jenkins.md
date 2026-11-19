@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # iOS build and test pipeline using Jenkins
-<a name="ios-build-test-pipeline-jenkins"></a>
 
 Publication date: **November 23, 2021 ([Diagram history](diagram-history.md))**
 

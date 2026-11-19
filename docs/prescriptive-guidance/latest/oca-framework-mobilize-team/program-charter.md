@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.1 OCA program charter
-<a name="program-charter"></a>
 
 ## Overview
 <a name="charter-overview"></a>

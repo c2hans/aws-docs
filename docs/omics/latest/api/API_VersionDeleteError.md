@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VersionDeleteError.
 ---
 
 # VersionDeleteError
-<a name="API_VersionDeleteError"></a>
 
  The error preventing deletion of the annotation store version.
 

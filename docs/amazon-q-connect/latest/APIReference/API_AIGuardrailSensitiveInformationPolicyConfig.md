@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIGuardrailSensitiveInformationPolicyConfig
-<a name="API_amazon-q-connect_AIGuardrailSensitiveInformationPolicyConfig"></a>
 
 Contains details about PII entities and regular expressions to configure for the AI Guardrail.
 

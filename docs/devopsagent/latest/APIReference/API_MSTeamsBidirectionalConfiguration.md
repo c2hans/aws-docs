@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MSTe
 ---
 
 # MSTeamsBidirectionalConfiguration
-<a name="API_MSTeamsBidirectionalConfiguration"></a>
 
 Configuration for bidirectional communication with a Microsoft Teams channel. When enabled, the agent receives and responds to mentions in the configured channel in addition to sending notifications.
 

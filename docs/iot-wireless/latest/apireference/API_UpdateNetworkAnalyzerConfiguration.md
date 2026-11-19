@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateNetworkAnalyzerConfiguration
-<a name="API_UpdateNetworkAnalyzerConfiguration"></a>
 
 Update network analyzer configuration.
 

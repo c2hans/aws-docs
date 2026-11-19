@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/ace-productio
 ---
 
 # Production checklist
-<a name="ace-production-checklist"></a>
 
 Follow these steps to complete the production installation of your AWS Partner CRM connector.
 

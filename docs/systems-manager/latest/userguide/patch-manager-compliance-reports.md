@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Working with patch compliance reports
-<a name="patch-manager-compliance-reports"></a>
 
 Use the information in the following topics to help you generate and work with patch compliance reports in Patch Manager.
 

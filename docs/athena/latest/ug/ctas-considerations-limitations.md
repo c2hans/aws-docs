@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-considerations-lim
 ---
 
 # Considerations and limitations for CTAS queries
-<a name="ctas-considerations-limitations"></a>
 
 The following sections describe considerations and limitations to keep in mind when you use `CREATE TABLE AS SELECT` (CTAS) queries in Athena.
 

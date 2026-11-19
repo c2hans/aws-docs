@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateA
 ---
 
 # UpdateACL
-<a name="API_UpdateACL"></a>
 
 Changes the list of users that belong to the Access Control List.
 

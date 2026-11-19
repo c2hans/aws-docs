@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/using-condition-keys.
 ---
 
 # Using IAM condition keys for AWS Artifact reports
-<a name="using-condition-keys"></a>
 
 You can use IAM condition keys to provide fine-grained access to reports on AWS Artifact, based on specific report categories and series.
 

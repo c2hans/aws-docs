@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/faq.
 ---
 
 # Frequently asked questions (FAQs)
-<a name="faq"></a>
 
 The following information can help you troubleshoot common issues in enabling IAM Identity Center.
 

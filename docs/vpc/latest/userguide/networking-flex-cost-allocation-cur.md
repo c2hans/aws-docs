@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Understand Networking Flexible Cost Allocation in your Cost and Usage Reports
-<a name="networking-flex-cost-allocation-cur"></a>
 
 After you associate a policy with a resource and turn on the data, Cost and Usage Reports that include split cost allocation data break down the shared resource's usage. The report keeps a summary line item for the shared resource and adds an allocated line item for each resource that generated usage, in the same split cost allocation columns that Amazon ECS and Amazon EKS use. Reports that don't include split cost allocation data are unchanged. The breakdown doesn't change your total charges or the account billed for the usage.
 

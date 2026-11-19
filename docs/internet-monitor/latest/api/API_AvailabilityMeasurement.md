@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Availabi
 ---
 
 # AvailabilityMeasurement
-<a name="API_AvailabilityMeasurement"></a>
 
 Internet Monitor calculates measurements about the availability for your application's internet traffic between client locations and AWS. AWS has substantial historical data about internet performance and availability between AWS services and different network providers and geographies. By applying statistical analysis to the data, Internet Monitor can detect when the performance and availability for your application has dropped, compared to an estimated baseline that's already calculated. To make it easier to see those drops, we report that information to you in the form of health scores: a performance score and an availability score.
 

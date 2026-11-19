@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_CallingSet
 ---
 
 # CallingSettings
-<a name="API_CallingSettings"></a>
 
 Defines the calling feature permissions and settings for users in a security group, controlling what types of calls users can initiate and participate in.
 

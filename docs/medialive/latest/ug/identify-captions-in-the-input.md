@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/identify-captions-in
 ---
 
 # Create captions selectors in the inputs
-<a name="identify-captions-in-the-input"></a>
 
 This section describes the first step for setting up for captions in MediaLive. You must identify the captions that you want to use and assign each to a captions selector. If you don't create any captions selectors, you can't include captions in the output. All the captions will be removed from the media.
 

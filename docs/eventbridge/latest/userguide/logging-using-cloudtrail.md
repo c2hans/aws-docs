@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/logging-usi
 ---
 
 # Logging Amazon EventBridge API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon EventBridge is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html). CloudTrail records the actions taken by a user, role, or an AWS service. It captures all API calls for EventBridge as events. These include calls from the EventBridge console and calls to the EventBridge API operations. The information that CloudTrail collects shows you the request that was made to EventBridge, the source IP address, the time of the request, and more.
 

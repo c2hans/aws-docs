@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attestable-ami.h
 ---
 
 # Attestable AMIs
-<a name="attestable-ami"></a>
 
 An Attestable AMI is an Amazon Machine Image (AMI) with a corresponding cryptographic hash that represents all of its contents. The hash is generated during the AMI creation process, and it is calculated based on the entire contents of that AMI, including the applications, code, and boot process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_In
 ---
 
 # IntOptions
-<a name="API_IntOptions"></a>
 
 ## Description
 <a name="API_IntOptions_Description"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Bedroc
 ---
 
 # BedrockGuardrailDetails
-<a name="API_BedrockGuardrailDetails"></a>
 
 Contains information about the Bedrock guardrail that was involved in a finding.
 

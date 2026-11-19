@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginMtlsConfig
-<a name="API_OriginMtlsConfig"></a>
 
 Configures mutual TLS authentication between CloudFront and your origin server.
 

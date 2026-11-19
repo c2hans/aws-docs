@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StateTra
 ---
 
 # StateTransition
-<a name="API_StateTransition"></a>
 
 Information about the state transition of a supervisor.
 

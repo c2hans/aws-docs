@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.modi
 ---
 
 # Modifying Amazon RDS zero-ETL integrations
-<a name="zero-etl.modifying"></a>
 
 You can modify only the name, description, and data filtering options for a zero-ETL integration in a supported data warehouse. You can't modify the AWS KMS key used to encrypt the integration, or the source or target databases.
 

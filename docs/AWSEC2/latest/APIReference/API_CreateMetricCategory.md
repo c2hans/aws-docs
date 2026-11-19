@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateMet
 ---
 
 # CreateMetricCategory
-<a name="API_CreateMetricCategory"></a>
 
 Creates a metric category. A metric category is a set of additional metrics that you can associate with an instance that has detailed monitoring enabled.
 

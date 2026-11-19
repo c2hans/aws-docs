@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-g
 ---
 
 # Appendix A: GitHub (via OAuth app) source actions
-<a name="appendix-github-oauth"></a>
 
 This appendix provides information about the GitHub (via OAuth app) action in CodePipeline.
 

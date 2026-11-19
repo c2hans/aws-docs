@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListRunTasks.html
 ---
 
 # ListRunTasks
-<a name="API_ListRunTasks"></a>
 
 Returns a list of tasks and status information within their specified run. Use this operation to monitor runs and to identify which specific tasks have failed.
 

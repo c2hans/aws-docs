@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_S3
 ---
 
 # S3DataAccessDetails
-<a name="API_S3DataAccessDetails"></a>
 
 Extra details specific to the affected scope in this S3 Data Access data set.
 

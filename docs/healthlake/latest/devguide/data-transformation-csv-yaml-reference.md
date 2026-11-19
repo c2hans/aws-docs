@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # Understanding CSV profiles
-<a name="data-transformation-csv-yaml-reference"></a>
 
 A CSV transformation profile is a declarative YAML document that tells Data Transformation Agent how to turn your relational CSV tables into FHIR R4 resources. You can have the Data Transformation AI agent generate this for you from sample files, or author and edit it by hand. This section explains the structure and every building block so you can write or refine a mapping yourself.
 

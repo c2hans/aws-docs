@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/hardware-informat
 ---
 
 # Snow Family device hardware description
-<a name="hardware-information"></a>
 
 The Snowball Edge is a single unit with a built‐in rugged box. On the outside of the box is an LCD display that can be used to manage network connections and get service status information. Network and power connections are built in to the box. The device can be used to physically transport and analyze data without using the internet.
 

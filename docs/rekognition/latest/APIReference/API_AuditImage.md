@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Audi
 ---
 
 # AuditImage
-<a name="API_AuditImage"></a>
 
 An image that is picked from the Face Liveness video and returned for audit trail purposes, returned as Base64-encoded bytes.
 

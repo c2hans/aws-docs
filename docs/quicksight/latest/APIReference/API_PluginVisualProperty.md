@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualProperty
-<a name="API_PluginVisualProperty"></a>
 
 The key value pair of the persisted property.
 

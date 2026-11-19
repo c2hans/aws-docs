@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/cu
 ---
 
 # Customize to your game hosting solution
-<a name="customize-solution-intro"></a>
 
 With a basic game hosting solution in place, use the following topics to customize and enhance it to improve the player experience, optimize costs, and add advanced functionality. This section covers various customization options organized by the component they primarily affect. Choose the customizations that best fit your game's requirements and player base.
 

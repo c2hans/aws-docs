@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-automat
 ---
 
 # Automation
-<a name="net-win-automation"></a>
 
 ## Automation using Infrastructure as Code with AWS CloudFormation
 <a name="net-win-automation-using-infrastructure-as-code-with-aws-cloudformation"></a>

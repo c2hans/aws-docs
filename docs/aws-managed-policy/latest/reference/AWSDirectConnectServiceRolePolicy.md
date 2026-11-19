@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDirectConnectServiceRolePolicy
-<a name="AWSDirectConnectServiceRolePolicy"></a>
 
 **Description**: Provides AWS Direct Connect permission to create and manage AWS resources on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/one-time-admin-t
 ---
 
 # One-time file system setup tasks using the Amazon FSx CLI for remote management on PowerShell
-<a name="one-time-admin-tasks"></a>
 
 Use the following Amazon FSx CLI for Remote Management on PowerShell commands to quickly implement the file system administration tasks following our best practices.
 

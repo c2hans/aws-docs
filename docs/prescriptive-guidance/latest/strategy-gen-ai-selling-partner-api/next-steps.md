@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide is intended for Amazon sellers and vendors who want to use analytics and generative AI capabilities to drive growth for their business. Using the recommendations and strategies in this guide, you can:
 + Build the cloud application in house

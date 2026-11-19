@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF04-BP02 Identify all user types, and deploy required fleet types and instance types as needed
-<a name="eucperf04-bp02"></a>
 
  Not all end users necessarily require the same level of performance. Users who perform routine tasks such as data entry, document review, or customer service may need a low level of performance, while content or video editors, investment and securities traders, or graphics users may require performant desktops. Other users may require moderate levels of performance as their workloads may be unpredictable.
 

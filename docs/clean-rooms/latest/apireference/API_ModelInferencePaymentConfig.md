@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Mode
 ---
 
 # ModelInferencePaymentConfig
-<a name="API_ModelInferencePaymentConfig"></a>
 
 An object representing the collaboration member's model inference payment responsibilities set by the collaboration creator.
 

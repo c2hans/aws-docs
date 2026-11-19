@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/certifi
 ---
 
 # Certificates arn
-<a name="certificates-arn"></a>
 
 ## URI
 <a name="certificates-arn-url"></a>

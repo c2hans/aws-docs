@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Lambda
 ---
 
 # LambdaFunctionTimedOutEventAttributes
-<a name="API_LambdaFunctionTimedOutEventAttributes"></a>
 
 Provides details of the `LambdaFunctionTimedOut` event.
 

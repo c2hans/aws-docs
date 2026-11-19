@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/service_code_
 ---
 
 # Basic examples for Amazon RDS using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Relational Database Service with AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Au
 ---
 
 # AudioExtractionConfiguration
-<a name="API_agent_AudioExtractionConfiguration"></a>
 
 Configuration for audio extraction.
 

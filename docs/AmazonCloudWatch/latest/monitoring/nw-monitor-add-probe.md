@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # Add a probe to a monitor
-<a name="nw-monitor-add-probe"></a>
 
 You can add a probe to an existing monitor in Network Synthetic Monitor. Note that when you add probes to a monitor, your billing structure is updated to include the new probe.
 

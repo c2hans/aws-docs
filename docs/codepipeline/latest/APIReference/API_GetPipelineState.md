@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Get
 ---
 
 # GetPipelineState
-<a name="API_GetPipelineState"></a>
 
 Returns information about the state of a pipeline, including the stages and actions.
 

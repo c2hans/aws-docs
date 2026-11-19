@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteEventSub
 ---
 
 # DeleteEventSubscription
-<a name="API_DeleteEventSubscription"></a>
 
 Deletes an event notification subscription.
 

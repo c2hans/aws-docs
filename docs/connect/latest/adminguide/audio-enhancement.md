@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/audio-enhancem
 ---
 
 # Enable Audio Enhancement for agents in Connect Customer
-<a name="audio-enhancement"></a>
 
 Audio Enhancement improves audio quality and reliability on the agent's side by reducing background noise and isolating the agent's voice during calls. This feature includes two enhancement modes: noise suppression and voice isolation.
 

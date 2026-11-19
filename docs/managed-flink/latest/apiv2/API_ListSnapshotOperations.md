@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListSnaps
 ---
 
 # ListSnapshotOperations
-<a name="API_ListSnapshotOperations"></a>
 
 Lists the operations that were performed on the specified enhanced snapshot, such as `CreateSnapshot`, `ImportSnapshot`, and `ExportSnapshot`. The response includes a summary of each operation.
 

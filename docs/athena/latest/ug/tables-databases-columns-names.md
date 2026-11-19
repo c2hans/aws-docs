@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/tables-databases-column
 ---
 
 # Name databases, tables, and columns
-<a name="tables-databases-columns-names"></a>
 
 Use these guidelines for naming databases, tables, and columns in Athena.
 

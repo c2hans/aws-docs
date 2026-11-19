@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateRo
 ---
 
 # CreateRoom
-<a name="API_CreateRoom"></a>
 
 Creates a room that allows clients to connect and pass messages.
 

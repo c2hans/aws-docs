@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # GetItem
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-getitem"></a>
 
 The `GetItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a `GetItem` request to DynamoDB, and enables you to specify:
 + The key of the item in DynamoDB

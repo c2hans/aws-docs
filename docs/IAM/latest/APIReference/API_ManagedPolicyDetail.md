@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ManagedPolic
 ---
 
 # ManagedPolicyDetail
-<a name="API_ManagedPolicyDetail"></a>
 
 Contains information about a managed policy, including the policy's ARN, versions, and the number of principal entities (users, groups, and roles) that the policy is attached to.
 

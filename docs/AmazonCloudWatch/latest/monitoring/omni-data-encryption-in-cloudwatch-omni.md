@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Data encryption in CloudWatch Omni
-<a name="omni-data-encryption-in-cloudwatch-omni"></a>
 
 CloudWatch Omni encrypts your data at rest and in transit. This page describes what is encrypted, which keys are used, and what your AWS KMS key policy must allow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkRoleRDS
-<a name="AWSElasticBeanstalkRoleRDS"></a>
 
 **Description**: (Elastic Beanstalk operations role) Allows an environment to integrate an Amazon RDS instance.
 

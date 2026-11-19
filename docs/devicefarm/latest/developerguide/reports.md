@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/reports
 ---
 
 # Reports in AWS Device Farm
-<a name="reports"></a>
 
 The following sections provide information about Device Farm test reports.
 

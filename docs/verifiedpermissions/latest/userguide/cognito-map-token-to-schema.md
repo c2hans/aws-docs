@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/cog
 ---
 
 # Mapping Amazon Cognito tokens to schema
-<a name="cognito-map-token-to-schema"></a>
 
 You might find that you want to add an identity source to a policy store and map provider claims, or tokens, to your policy store schema. You can automate this process, by using the [Guided setup](policy-stores-create.md) to create your policy store with an identity source, or update your schema manually after the policy store is created. Once you have mapped the tokens to the schema you can create policies that reference them.
 

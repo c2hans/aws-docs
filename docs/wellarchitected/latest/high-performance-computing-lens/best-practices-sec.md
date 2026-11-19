@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Best practices
-<a name="best-practices-sec"></a>
 
 ** Infrastructure protection **
 + [ HPCSEC01-BP01 Separate HPC cluster components in different network layers ](infrastructure-protection.md#hpcsec01-bp01)

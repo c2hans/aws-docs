@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdateBillingGroup
-<a name="API_UpdateBillingGroup"></a>
 
 This updates an existing billing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_JSONOutput.html
 ---
 
 # JSONOutput
-<a name="API_JSONOutput"></a>
 
 Specifies JSON as request's output serialization format.
 

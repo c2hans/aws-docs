@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-run-optimize.
 ---
 
 # Run optimization for a private HealthOmics workflow
-<a name="workflows-run-optimize"></a>
 
 You can optimize runs for total cost, total run time, or a combination of both. HealthOmics provides data and tools to help you with run optimization decisions. Run optimization doesn't apply to Ready2Run workflows, because you don't have any control over how the service manages resource provisioning for these workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-delete.html
 ---
 
 # Delete an Amazon Bedrock knowledge base
-<a name="kb-delete"></a>
 
 You can delete or remove a knowledge base that you no longer use or need. When you delete a knowledge base, you should also carry out the following actions to fully delete all resources associated with the knowledge base.
 + Dissociate the knowledge base from any agents it's associated with.

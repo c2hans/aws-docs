@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Updating the DRAFT of a question set
-<a name="custom-questions-update"></a>
 
 To change your questions, use the `update-question-set` command. This command changes only `DRAFT`. It never changes a published version.
 

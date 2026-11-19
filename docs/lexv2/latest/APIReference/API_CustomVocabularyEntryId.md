@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CustomVoca
 ---
 
 # CustomVocabularyEntryId
-<a name="API_CustomVocabularyEntryId"></a>
 
 The unique entry identifier for the custom vocabulary items.
 

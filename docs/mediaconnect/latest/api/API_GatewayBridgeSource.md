@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GatewayBridg
 ---
 
 # GatewayBridgeSource
-<a name="API_GatewayBridgeSource"></a>
 
  The source configuration for cloud flows receiving a stream from a bridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_StopI
 ---
 
 # StopImageBuilder
-<a name="API_StopImageBuilder"></a>
 
 Stops the specified image builder.
 

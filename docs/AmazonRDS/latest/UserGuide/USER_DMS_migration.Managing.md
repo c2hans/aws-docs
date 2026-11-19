@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DMS_migr
 ---
 
 # Managing data migrations
-<a name="USER_DMS_migration.Managing"></a>
 
 After using the **Migrate data from EC2 database** action from the RDS console, RDS starts the migration automatically.
 

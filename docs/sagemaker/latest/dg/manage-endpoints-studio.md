@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/manage-endpoints-stu
 ---
 
 # View endpoint details in SageMaker Studio
-<a name="manage-endpoints-studio"></a>
 
 In Amazon SageMaker Studio, you can view and manage your SageMaker AI Hosting endpoints. To learn more about Studio, see [Amazon SageMaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html).
 

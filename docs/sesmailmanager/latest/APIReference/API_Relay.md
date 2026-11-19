@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # Relay
-<a name="API_Relay"></a>
 
 The relay resource that can be used as a rule to relay receiving emails to the destination relay server.
 

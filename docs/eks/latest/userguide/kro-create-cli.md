@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kro-create-cli.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create a kro capability using the AWS CLI
-<a name="kro-create-cli"></a>
 
 Create a kro capability on your Amazon EKS cluster using the AWS CLI. This procedure walks you through creating an IAM role and verifying the capability is active.
 

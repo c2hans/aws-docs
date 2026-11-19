@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS rePost Private
-<a name="awsrepostprivate"></a>
 
 AWS rePost Private provides the following APIs for data retrieval.
 

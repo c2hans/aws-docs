@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/dynamo-exa
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Getting Amazon DynamoDB Table Items Using Expression Builder
-<a name="dynamo-example-scan-table-item"></a>
 
 The following example uses the DynamoDB [Scan](https://docs.aws.amazon.com/sdk-for-go/api/service/dynamodb/#DynamoDB.Scan) operation to get items with a `rating` greater than **4.0** in the `year` **2013** in the `Movies` table in your default region.
 

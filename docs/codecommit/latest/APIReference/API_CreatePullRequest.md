@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Creat
 ---
 
 # CreatePullRequest
-<a name="API_CreatePullRequest"></a>
 
 Creates a pull request in the specified repository.
 

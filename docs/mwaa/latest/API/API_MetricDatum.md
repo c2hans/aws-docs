@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_MetricDatum.html
 ---
 
 # MetricDatum
-<a name="API_MetricDatum"></a>
 
  *This data type has been deprecated.*
 

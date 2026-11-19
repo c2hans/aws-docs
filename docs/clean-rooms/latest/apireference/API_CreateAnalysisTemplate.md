@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateAnalysisTemplate
-<a name="API_CreateAnalysisTemplate"></a>
 
 Creates a new analysis template.
 

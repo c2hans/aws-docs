@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/health_example_he
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DescribeEvents` with a CLI
-<a name="health_example_health_DescribeEvents_section"></a>
 
 The following code examples show how to use `DescribeEvents`.
 

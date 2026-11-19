@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AnalysisA
 ---
 
 # AnalysisAclRule
-<a name="API_AnalysisAclRule"></a>
 
 Describes a network access control (ACL) rule.
 

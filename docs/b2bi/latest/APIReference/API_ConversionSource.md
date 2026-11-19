@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_ConversionS
 ---
 
 # ConversionSource
-<a name="API_ConversionSource"></a>
 
 Describes the input for an outbound transformation.
 

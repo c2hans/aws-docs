@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/org_troub
 ---
 
 # Troubleshooting service control policies (SCPs) with AWS Organizations
-<a name="org_troubleshoot_policies"></a>
 
 Use the information here to help you diagnose and fix common errors found in service control policies (SCPs).
 

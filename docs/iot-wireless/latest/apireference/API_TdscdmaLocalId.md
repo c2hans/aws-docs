@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tds
 ---
 
 # TdscdmaLocalId
-<a name="API_TdscdmaLocalId"></a>
 
 TD-SCDMA local identification (local Id) information.
 

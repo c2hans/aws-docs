@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetJobTa
 ---
 
 # GetJobTagging
-<a name="API_control_GetJobTagging"></a>
 
 Returns the tags on an S3 Batch Operations job.
 

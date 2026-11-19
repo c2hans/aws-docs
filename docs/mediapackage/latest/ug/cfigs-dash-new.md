@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-dash-new.ht
 ---
 
 # General settings fields
-<a name="cfigs-dash-new"></a>
 
 Provide general settings that apply to the entire packaging configuration.
 

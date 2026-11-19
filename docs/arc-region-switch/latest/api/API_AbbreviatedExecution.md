@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Abbrevi
 ---
 
 # AbbreviatedExecution
-<a name="API_AbbreviatedExecution"></a>
 
 A summarized representation of a plan execution. This structure contains key information about an execution without all the detailed step data.
 

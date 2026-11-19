@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # vFunction
-<a name="discovery-vfunction"></a>
 
 *Last update: October 22, 2024*
 

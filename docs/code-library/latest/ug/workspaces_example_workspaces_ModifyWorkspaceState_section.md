@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/workspaces_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ModifyWorkspaceState` with a CLI
-<a name="workspaces_example_workspaces_ModifyWorkspaceState_section"></a>
 
 The following code examples show how to use `ModifyWorkspaceState`.
 

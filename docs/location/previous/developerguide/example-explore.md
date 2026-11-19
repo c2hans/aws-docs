@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Explore app
-<a name="example-explore"></a>
 
 ![Routes panel showing map with route path, origin and destination markers, and travel options.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/ExploreSample_small.png)
 

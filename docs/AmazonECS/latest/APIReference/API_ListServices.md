@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListSe
 ---
 
 # ListServices
-<a name="API_ListServices"></a>
 
 Returns a list of services. You can filter the results by cluster, launch type, and scheduling strategy.
 

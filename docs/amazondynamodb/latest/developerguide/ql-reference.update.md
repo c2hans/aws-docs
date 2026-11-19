@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL update statements for DynamoDB
-<a name="ql-reference.update"></a>
 
 Use the `UPDATE` statement to modify the value of one or more attributes within an item in an Amazon DynamoDB table.
 

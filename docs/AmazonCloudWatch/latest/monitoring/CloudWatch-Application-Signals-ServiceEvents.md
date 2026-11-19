@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Monitor service events
-<a name="CloudWatch-Application-Signals-ServiceEvents"></a>
 
 Service Events provides automated deep observability for services monitored with CloudWatch Application Signals. It captures error metrics, function-level performance data, incident snapshots (when requests exceed latency thresholds or throw exceptions), and deployment events — without additional code changes.
 

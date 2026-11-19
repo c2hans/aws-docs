@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Client identification controls for managing bots
-<a name="client-identification-controls"></a>
 
 If attack-related traffic cannot be easily recognized through static attributes, then detection needs to be able to accurately identify the client making the request. For example, rate-based rules are often more effective and harder to evade when the attribute being rate-limited is application-specific, such as a cookie or token. Using a cookie tied to a session prevents botnet operators from being able to duplicate similar request flows across many bots.
 

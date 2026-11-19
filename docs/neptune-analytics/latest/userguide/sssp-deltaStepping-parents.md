@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/sssp-
 ---
 
 # Delta-stepping single source shortest path (SSSP) parents algorithm
-<a name="sssp-deltaStepping-parents"></a>
 
 The `.sssp.deltaStepping.parents` algorithm computes the shortest path distances from a single source vertex to all other vertices in the graph using a [delta-stepping](https://en.wikipedia.org/wiki/Parallel_single-source_shortest_path_algorithm#Delta_stepping_algorithm) algorithm.
 

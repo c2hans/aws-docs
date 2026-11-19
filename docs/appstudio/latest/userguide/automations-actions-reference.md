@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/automations-a
 ---
 
 # Automation actions reference
-<a name="automations-actions-reference"></a>
 
 The following is the reference documentation for automation actions used in App Studio.
 

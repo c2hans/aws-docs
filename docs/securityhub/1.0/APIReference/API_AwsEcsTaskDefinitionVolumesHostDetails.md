@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionVolumesHostDetails
-<a name="API_AwsEcsTaskDefinitionVolumesHostDetails"></a>
 
 Information about a bind mount host volume.
 

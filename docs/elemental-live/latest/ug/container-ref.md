@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/container-ref.h
 ---
 
 # Reference Information
-<a name="container-ref"></a>
 
 This chapter provides reference information about AWS Elemental Live.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Creating tables for ANSI SQL
-<a name="chap-sql-server-aurora-mysql.sql.creatingtables"></a>
 
 This topic provides reference content comparing the creation of tables in Microsoft SQL Server 2019 and Amazon Aurora MySQL. You can understand the similarities and differences in table creation syntax, features, and capabilities between these two database systems.
 

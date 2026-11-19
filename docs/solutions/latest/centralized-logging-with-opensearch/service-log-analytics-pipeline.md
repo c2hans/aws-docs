@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Service log analytics pipeline
-<a name="service-log-analytics-pipeline"></a>
 
 Centralized Logging with OpenSearch supports log analysis for AWS services, such as Amazon S3 Access Logs, and Application Load Balancer access logs. For a complete list of supported AWS services, refer to [Supported AWS Services](supported-aws-services.md).
 

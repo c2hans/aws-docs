@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_LoginA
 ---
 
 # LoginAttribute
-<a name="API_LoginAttribute"></a>
 
 Information about the login attempts.
 

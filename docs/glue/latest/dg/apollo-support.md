@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/apollo-support.html
 ---
 
 # AWS Glue support for Apollo
-<a name="apollo-support"></a>
 
 AWS Glue supports Apollo as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportECSServiceRecommendations
-<a name="API_ExportECSServiceRecommendations"></a>
 
  Exports optimization recommendations for Amazon ECS services on Fargate.
 

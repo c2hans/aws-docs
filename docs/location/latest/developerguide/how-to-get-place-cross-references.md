@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get cross-references for a place
-<a name="how-to-get-place-cross-references"></a>
 
 Use `CrossReferences` in the `AdditionalFeatures` parameter to retrieve third-party supplier identifiers for a place. This enables you to correlate the place with entries in external systems such as Yelp and TripAdvisor.
 

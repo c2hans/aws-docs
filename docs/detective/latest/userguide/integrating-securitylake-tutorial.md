@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/integrating-s
 ---
 
 # Enabling Detective integration with Security Lake
-<a name="integrating-securitylake-tutorial"></a>
 
 To integrate Detective with Security Lake, you must complete the following steps.
 

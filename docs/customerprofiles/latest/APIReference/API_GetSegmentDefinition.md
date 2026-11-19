@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetSegmentDefinition
-<a name="API_connect-customer-profiles_GetSegmentDefinition"></a>
 
 Gets a segment definition from the domain.
 

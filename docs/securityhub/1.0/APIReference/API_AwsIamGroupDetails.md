@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamG
 ---
 
 # AwsIamGroupDetails
-<a name="API_AwsIamGroupDetails"></a>
 
 Contains details about an IAM group.
 

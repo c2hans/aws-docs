@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CompactionConfigu
 ---
 
 # CompactionConfiguration
-<a name="API_CompactionConfiguration"></a>
 
 The configuration for a compaction optimizer. This configuration defines how data files in your table will be compacted to improve query performance and reduce storage costs.
 

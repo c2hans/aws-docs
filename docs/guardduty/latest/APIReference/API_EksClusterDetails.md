@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EksClu
 ---
 
 # EksClusterDetails
-<a name="API_EksClusterDetails"></a>
 
 Details about the EKS cluster involved in a Kubernetes finding.
 

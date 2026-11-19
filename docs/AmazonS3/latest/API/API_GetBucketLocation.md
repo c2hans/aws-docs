@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocatio
 ---
 
 # GetBucketLocation
-<a name="API_GetBucketLocation"></a>
 
 **Important**
 Using the `GetBucketLocation` operation is no longer a best practice. To return the Region that a bucket resides in, we recommend that you use the [HeadBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadBucket.html) operation instead. For backward compatibility, Amazon S3 continues to support the `GetBucketLocation` operation.

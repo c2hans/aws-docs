@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_InstanceProf
 ---
 
 # InstanceProfile
-<a name="API_InstanceProfile"></a>
 
 Contains information about an instance profile.
 

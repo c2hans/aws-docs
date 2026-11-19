@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateCon
 ---
 
 # UpdateConfigurationSet
-<a name="API_UpdateConfigurationSet"></a>
 
 Updates an existing configuration set.
 

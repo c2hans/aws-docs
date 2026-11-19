@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Kinesis
-<a name="sam-property-function-kinesis"></a>
 
 The object describing a `Kinesis` event source type. For more information, see [Using AWS Lambda with Amazon Kinesis](https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html) in the *AWS Lambda Developer Guide*.
 

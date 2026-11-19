@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/marketing-d
 ---
 
 # Dashboards for marketing
-<a name="marketing-dashboards"></a>
 
 AWS Marketplace provides multiple dashboards to help you track your marketing data.
 

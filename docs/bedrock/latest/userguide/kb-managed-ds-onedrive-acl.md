@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-o
 ---
 
 # Document-level access controls
-<a name="kb-managed-ds-onedrive-acl"></a>
 
 OneDrive data sources optionally support document-level access control. When enabled, Bedrock Managed Knowledge Base syncs access control lists (ACLs) from OneDrive during each crawl and verifies each user's permissions at query time, so users only see results from documents they are authorized to access in OneDrive. For the overview of ACL awareness across all connectors, see [Access Control Lists awareness enablement](kb-managed-acl.md).
 

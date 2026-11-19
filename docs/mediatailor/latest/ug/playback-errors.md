@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/playback-errors.ht
 ---
 
 # Troubleshooting playback from MediaTailor
-<a name="playback-errors"></a>
 
 This section provides information about the HTTP error codes that you might receive while testing your player software and during the normal processing of player requests.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection ConnectionConfiguration
-<a name="aws-properties-datazone-connection-connectionconfiguration"></a>
 
 <a name="aws-properties-datazone-connection-connectionconfiguration-description"></a>The `ConnectionConfiguration` property type specifies Property description not available. for an [AWS::DataZone::Connection](aws-resource-datazone-connection.md).
 

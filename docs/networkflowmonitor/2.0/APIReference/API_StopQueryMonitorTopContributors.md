@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # StopQueryMonitorTopContributors
-<a name="API_StopQueryMonitorTopContributors"></a>
 
 Stop a top contributors query for a monitor. Specify the query that you want to stop by providing a query ID and a monitor name.
 

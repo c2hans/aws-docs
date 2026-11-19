@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/exampl
 ---
 
 # Guardrail policy examples
-<a name="example-policies-guardrails"></a>
 
 The policies in this section decide from a signal that a Bedrock guardrail computes while the request is being authorized. The guardrail reads the content you point it at, returns a confidence score per category, and the policy compares that score against a threshold.
 

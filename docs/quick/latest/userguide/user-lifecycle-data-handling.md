@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/user-lifecycle-da
 ---
 
 # User lifecycle and data handling in AWS Quick
-<a name="user-lifecycle-data-handling"></a>
 
 What happens to a user's data and assets in AWS Quick depends on how the user is removed. This page describes the three removal paths and their effect on a user's assets. It also covers the cleanup steps you must complete as an administrator.
 

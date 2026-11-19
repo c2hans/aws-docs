@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS Architecture
-<a name="ecs-architecture-planning"></a>
 
 This high-performance container-based architecture supports demanding workloads and provides access to the solution’s full feature set.
 

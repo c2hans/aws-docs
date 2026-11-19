@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesPolicyViolation
-<a name="API_KubernetesPolicyViolation"></a>
 
 Contains an assessment of a Kubernetes policy violation.
 

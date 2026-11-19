@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # AWS IoT Greengrass Development Kit Command-Line Interface
-<a name="greengrass-development-kit-cli"></a>
 
 The AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) provides features that help you develop [custom Greengrass components](develop-greengrass-components.md). You can use the GDK CLI to create, build, and publish custom components. When you create a component repository with the GDK CLI, you can start from a template or a community component from the [Greengrass Software Catalog](greengrass-software-catalog.md). Then, you can choose a build system that packages files as ZIP archives, uses a Maven or Gradle build script, or runs a custom build command. After you create a component, you can use the GDK CLI to publish it to the AWS IoT Greengrass service, so you can use the AWS IoT Greengrass console or API to deploy the component to your Greengrass core devices.
 

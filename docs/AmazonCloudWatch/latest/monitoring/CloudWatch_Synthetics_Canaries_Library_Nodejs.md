@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Library functions available for Node.js canary scripts using Puppeteer
-<a name="CloudWatch_Synthetics_Canaries_Library_Nodejs"></a>
 
 This section describes the library functions available for Node.js canary scripts.
 

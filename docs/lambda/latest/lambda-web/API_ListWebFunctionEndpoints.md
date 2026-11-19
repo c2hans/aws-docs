@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_ListWebFunc
 ---
 
 # ListWebFunctionEndpoints
-<a name="API_ListWebFunctionEndpoints"></a>
 
 Lists endpoints for a web function. Use pagination to ensure that the operation returns quickly and successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateReceip
 ---
 
 # CreateReceiptRuleSet
-<a name="API_CreateReceiptRuleSet"></a>
 
 Creates an empty receipt rule set.
 

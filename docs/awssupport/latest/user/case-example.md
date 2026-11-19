@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/case-example.html
 ---
 
 # Example: Create a support case for account and billing
-<a name="case-example"></a>
 
 The following example is a support case for a billing and account issue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # IssueDetectionConfiguration
-<a name="API_media-pipelines-chime_IssueDetectionConfiguration"></a>
 
 A structure that contains the configuration settings for an issue detection task.
 

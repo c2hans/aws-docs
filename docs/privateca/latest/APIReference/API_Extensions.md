@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Extens
 ---
 
 # Extensions
-<a name="API_Extensions"></a>
 
 Contains X.509 extension information for a certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetResourceEventConfiguration
-<a name="API_GetResourceEventConfiguration"></a>
 
 Get the event configuration for a particular resource identifier.
 

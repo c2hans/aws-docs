@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Resources
-<a name="resources"></a>
 + [Implement Amazon RDS for SQL Server Standard edition cross-Region disaster recovery using access to transaction log backups feature](https://aws.amazon.com/blogs/database/implement-amazon-rds-for-sql-server-standard-edition-cross-region-disaster-recovery-using-access-to-transaction-log-backups-feature/) (blog post)
 + [Managed disaster recovery with Amazon RDS for Oracle cross-Region automated backups – Part 1](https://aws.amazon.com/blogs/database/managed-disaster-recovery-with-amazon-rds-for-oracle-cross-region-automated-backups-part-1/) (blog post)
 + [Rethink Oracle Standard Edition Two on Amazon RDS for Oracle](https://aws.amazon.com/blogs/database/rethink-oracle-standard-edition-two-on-amazon-rds-for-oracle/) (blog post)

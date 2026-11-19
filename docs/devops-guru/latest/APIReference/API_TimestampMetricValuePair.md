@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Time
 ---
 
 # TimestampMetricValuePair
-<a name="API_TimestampMetricValuePair"></a>
 
 A pair that contains metric values at the respective timestamp.
 

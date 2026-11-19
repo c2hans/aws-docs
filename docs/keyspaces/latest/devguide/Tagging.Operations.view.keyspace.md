@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 ---
 
 # View the tags of a keyspace
-<a name="Tagging.Operations.view.keyspace"></a>
 
 The following examples show how to read tags using the console, CQL or the AWS CLI.
 

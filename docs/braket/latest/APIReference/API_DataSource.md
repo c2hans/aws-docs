@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_DataSourc
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 Information about the source of the input data used by the Amazon Braket hybrid job.
 

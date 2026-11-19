@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Types_
 ---
 
 # Amazon Sagemaker Edge Manager
-<a name="API_Types_Amazon_Sagemaker_Edge_Manager"></a>
 
 The following data types are supported by Amazon Sagemaker Edge Manager:
 +  [Checksum](API_edge_Checksum.md)

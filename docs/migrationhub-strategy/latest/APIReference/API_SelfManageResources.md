@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # SelfManageResources
-<a name="API_SelfManageResources"></a>
 
  Self-managed resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Saudi Arabia registration
-<a name="nx-country-reg-sa"></a>
 
 The following registrations are available for Saudi Arabia.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Limiting a user to viewing specific canaries
-<a name="CloudWatch_Synthetics_Canaries_Restricted"></a>
 
 You can limit a user's ability to view information about canaries, so that they can only see information about the canaries you specify. To do this, use an IAM policy with a ` Condition` statement similar to the following, and attach this policy to a user or an IAM role.
 

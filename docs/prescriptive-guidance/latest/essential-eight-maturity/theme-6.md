@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 6: Automate backups
-<a name="theme-6"></a>
 
 **Essential Eight strategy covered**: Regular backups
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribePodI
 ---
 
 # DescribePodIdentityAssociation
-<a name="API_DescribePodIdentityAssociation"></a>
 
 Returns descriptive information about an EKS Pod Identity association.
 

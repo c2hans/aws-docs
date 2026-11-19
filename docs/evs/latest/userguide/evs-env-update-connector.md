@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-update-conn
 ---
 
 # Update a connector
-<a name="evs-env-update-connector"></a>
 
 Update a connector to change the appliance fully qualified domain name (FQDN) or to point the connector to a different AWS Secrets Manager secret. For example, you update the FQDN when the appliance endpoint changes. You can update a connector of any type with the Amazon Elastic VMware Service console or the AWS CLI.
 

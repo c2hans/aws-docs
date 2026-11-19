@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-remove-a
 ---
 
 # Removing a product
-<a name="ml-remove-a-product"></a>
 
  You can remove (sunset) your published product from AWS Marketplace. Once removed, new customers cannot subscribe, but you must support existing customers for at least 90 days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_InventoryEncrypt
 ---
 
 # InventoryEncryption
-<a name="API_InventoryEncryption"></a>
 
 Contains the type of server-side encryption used to encrypt the S3 Inventory results.
 

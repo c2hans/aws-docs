@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/rhel-ase-ha-operati
 ---
 
 # Analysis and maintenance
-<a name="rhel-ase-ha-operations-topics"></a>
 
 This section covers the following topics.
 

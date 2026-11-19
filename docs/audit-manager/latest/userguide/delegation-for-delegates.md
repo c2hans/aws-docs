@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegatio
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Understanding the different delegation tasks for delegates
-<a name="delegation-for-delegates"></a>
 
 As a delegate in AWS Audit Manager, you play an important role in supporting audit owners during the assessment process. While [audit owners](https://docs.aws.amazon.com/audit-manager/latest/userguide/concepts.html#audit-owner) are responsible for managing assessments and ensuring overall compliance, they might sometimes need assistance from subject matter experts with reviewing and interpreting specific technical evidence that falls outside their areas of expertise. In such scenarios, your knowledge and skills become invaluable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ElastiCacheReservedInstancesConfiguration
-<a name="API_CostOptimizationHub_ElastiCacheReservedInstancesConfiguration"></a>
 
 The ElastiCache reserved instances configuration used for recommendations.
 

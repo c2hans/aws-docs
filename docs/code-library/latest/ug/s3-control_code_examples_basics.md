@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3-control_code_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon S3 Control using AWS SDKs
-<a name="s3-control_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon S3 Control with AWS SDKs.
 

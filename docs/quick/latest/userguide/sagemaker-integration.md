@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sagemaker-integra
 ---
 
 # Integrating Amazon SageMaker AI models with AWS Quick Sight
-<a name="sagemaker-integration"></a>
 
 **Note**
 You don't need any technical experience in machine learning (ML) to author analyses and dashboards that use the ML-powered features in AWS Quick Sight.

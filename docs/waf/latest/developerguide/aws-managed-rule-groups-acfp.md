@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group
-<a name="aws-managed-rule-groups-acfp"></a>
 
 This section explains what the AWS WAF Fraud Control account creation fraud prevention (ACFP) managed rule group does.
 

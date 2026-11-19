@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Implementation
-<a name="implementation"></a>
 
 **Topics**
 + [Getting started with your multi-account environment](#getting-started-with-your-multi-account-environment)

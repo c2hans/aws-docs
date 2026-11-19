@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Snowflake Programmatic Access Token
-<a name="mes-partner-SnowflakePat"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c55b3"></a>

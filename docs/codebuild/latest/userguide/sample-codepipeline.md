@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-codepi
 ---
 
 # AWS CodePipeline samples for CodeBuild
-<a name="sample-codepipeline"></a>
 
 This section describes sample integrations between CodePipeline and CodeBuild.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Migrating data from an RDS for MySQL DB instance to an Amazon Aurora MySQL DB cluster
-<a name="AuroraMySQL.Migrating.RDSMySQL"></a>
 
 You can migrate (copy) data to an Amazon Aurora MySQL DB cluster from an RDS for MySQL DB instance.
 

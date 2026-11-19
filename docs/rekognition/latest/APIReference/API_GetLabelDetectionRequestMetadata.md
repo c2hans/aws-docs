@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetL
 ---
 
 # GetLabelDetectionRequestMetadata
-<a name="API_GetLabelDetectionRequestMetadata"></a>
 
 Contains metadata about a label detection request, including the SortBy and AggregateBy options.
 

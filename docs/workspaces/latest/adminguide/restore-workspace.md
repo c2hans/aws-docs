@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/restore-wor
 ---
 
 # Restore a WorkSpace in WorkSpaces Personal
-<a name="restore-workspace"></a>
 
 Restoring a WorkSpace recreates both the root volume and user volume using a snapshot of each volume that was taken when the WorkSpace was healthy. Restoring a WorkSpace rolls back the data on both the root and user volumes to the point in time when the snapshots were created. Rebuilding a WorkSpace only rolls back the data on the user volume. This means that restoring requires you to have snapshots of both the root volume and user volume, while rebuilding a WorkSpace only requires a snapshot of the user volume. To rebuild a WorkSpace, see [Rebuild a WorkSpace in WorkSpaces Personal](rebuild-workspace.md).
 

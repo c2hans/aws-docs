@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowAttributeAndCondition
-<a name="API_ContactFlowAttributeAndCondition"></a>
 
  A list of conditions which would be applied together with an AND condition.
 

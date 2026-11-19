@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-full-
 ---
 
 # Manage SageMaker AI resources with AWS Batch
-<a name="iam-example-full-access-service-environment"></a>
 
 This policy allows AWS Batch to manage SageMaker AI resources.
 

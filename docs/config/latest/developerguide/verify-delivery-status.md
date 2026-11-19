@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/verify-deli
 ---
 
 # Verifying Delivery Status
-<a name="verify-delivery-status"></a>
 
 Enter the [`describe-delivery-channel-status`](http://docs.aws.amazon.com/cli/latest/reference/configservice/describe-delivery-channel-status.html) command to verify that the AWS Config has started delivering the configurations to the specified delivery channel:
 

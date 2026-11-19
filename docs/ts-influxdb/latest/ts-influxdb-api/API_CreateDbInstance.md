@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_C
 ---
 
 # CreateDbInstance
-<a name="API_CreateDbInstance"></a>
 
 Creates a new Timestream for InfluxDB DB instance.
 

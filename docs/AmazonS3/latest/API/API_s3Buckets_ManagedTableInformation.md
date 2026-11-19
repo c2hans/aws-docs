@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Manage
 ---
 
 # ManagedTableInformation
-<a name="API_s3Buckets_ManagedTableInformation"></a>
 
 Contains information about tables that are managed by S3 Tables, including replication information for replica tables.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CodeErro
 ---
 
 # CodeErrorLocation
-<a name="API_CodeErrorLocation"></a>
 
 Describes the location of the error in a code sample.
 

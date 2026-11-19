@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMA
 ---
 
 # IAMAccessAdvisorReadOnly
-<a name="IAMAccessAdvisorReadOnly"></a>
 
 **Description**: This policy grants access to read all access information provided by IAM access advisor such as service last accessed information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/administer-
 ---
 
 # Administer WorkSpaces Personal
-<a name="administer-workspaces"></a>
 
 You can administer your WorkSpaces using the WorkSpaces console.
 

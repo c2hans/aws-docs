@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegratedDocument
-<a name="API_IntegratedDocument"></a>
 
 A reference to a document in a third-party provider, such as a Confluence page linked via an integration.
 

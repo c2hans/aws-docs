@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CapabilityBaseResponseConfig
-<a name="API_CapabilityBaseResponseConfig"></a>
 
 The base configuration returned for a registered capability.
 

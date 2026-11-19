@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET List: Get a List of Nodes in the Cluster
-<a name="set-up-nodes-get-list-of-nodes"></a>
 
 Get the list of the nodes in the cluster, including the Conductor Live node and the individual AWS Elemental Live and AWS Elemental Statmux nodes.
 

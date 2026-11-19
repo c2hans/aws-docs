@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Generative AI represents a transformative opportunity for enterprises to innovate, optimize operations, and create new value for customers. However, the journey from experimentation to enterprise-wide adoption requires a strategic approach that balances innovation with security, governance, and operational excellence.
 

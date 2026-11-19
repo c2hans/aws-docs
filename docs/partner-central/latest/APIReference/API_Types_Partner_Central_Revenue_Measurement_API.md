@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Partner Central Revenue Measurement API
-<a name="API_Types_Partner_Central_Revenue_Measurement_API"></a>
 
 The following data types are supported by Partner Central Revenue Measurement API:
 +  [AttributionSummary](API_prm_AttributionSummary.md)

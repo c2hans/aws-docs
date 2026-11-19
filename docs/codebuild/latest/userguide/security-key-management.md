@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/security-key-
 ---
 
 # Key management
-<a name="security-key-management"></a>
 
 You can protect your content from unauthorized use through encryption. Store your encryption keys in AWS Secrets Manager, and then give the CodeBuild service role associated with the build project permission to obtain the encryption keys from your Secrets Manager account. For more information, see [Encrypt build outputs using a customer managed key](setting-up-kms.md), [Create a build project in AWS CodeBuild](create-project.md), [Run AWS CodeBuild builds manually](run-build.md), and [Tutorial: Storing and retrieving a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/tutorials_basic.html).
 

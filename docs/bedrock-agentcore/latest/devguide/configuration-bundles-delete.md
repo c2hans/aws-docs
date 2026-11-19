@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Delete a configuration bundle
-<a name="configuration-bundles-delete"></a>
 
 Delete a configuration bundle and all of its versions. Deletion is asynchronous — the API returns immediately with a `DELETING` status, and the service removes the bundle and its version history in the background.
 

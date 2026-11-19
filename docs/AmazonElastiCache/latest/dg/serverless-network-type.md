@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-n
 ---
 
 # Choosing a network type for serverless caches
-<a name="serverless-network-type"></a>
 
 ElastiCache serverless caches support the Internet Protocol versions 4 and 6 (IPv4 and IPv6). When creating a serverless cache, you choose one of the following network types:
 + **IPv4** – The cache accepts only IPv4 connections.

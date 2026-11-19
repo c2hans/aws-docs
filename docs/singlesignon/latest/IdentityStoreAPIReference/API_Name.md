@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # Name
-<a name="API_Name"></a>
 
 The full name of the user.
 

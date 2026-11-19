@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/connections-secret
 ---
 
 # Configuring an Apache Airflow connection using a AWS Secrets Manager secret
-<a name="connections-secrets-manager"></a>
 
 AWS Secrets Manager is a supported alternative Apache Airflow backend on an Amazon Managed Workflows for Apache Airflow environment. This topic explains how to use AWS Secrets Manager to securely store secrets for Apache Airflow variables and an Apache Airflow connection on Amazon Managed Workflows for Apache Airflow.
 

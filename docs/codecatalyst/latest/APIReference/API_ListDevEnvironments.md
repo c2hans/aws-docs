@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListDevEnvironments
-<a name="API_ListDevEnvironments"></a>
 
 Retrieves a list of Dev Environments in a project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3HyperDirectTarg
 ---
 
 # S3HyperDirectTarget
-<a name="API_S3HyperDirectTarget"></a>
 
 Specifies a HyperDirect data target that writes to Amazon S3.
 

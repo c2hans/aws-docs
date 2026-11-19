@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/dynamodb-typed-v
 ---
 
 # Type system (response mapping)
-<a name="dynamodb-typed-values-responses"></a>
 
 When receiving a response from DynamoDB, AWS AppSync automatically converts it into JSON primitive types. Each attribute in DynamoDB is decoded and returned in the response handler's context.
 

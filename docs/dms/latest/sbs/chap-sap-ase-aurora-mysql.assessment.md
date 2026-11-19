@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-sap-ase-aurora-mysql
 ---
 
 # Preparation and assessment for migrating from SAP ASE to Amazon Aurora MySQL
-<a name="chap-sap-ase-aurora-mysql.assessment"></a>
 
 Preparation and assessment of your source database is the initial phase. Before you start moving data, you should monitor and analyze the source database schema for the data lifecycle. To provide the best migration solution, you should have a good understanding on the workload, data access patterns, and data dependencies. Make sure to consider the following items:
 + Character set.

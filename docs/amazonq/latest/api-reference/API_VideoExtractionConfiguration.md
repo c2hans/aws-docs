@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_VideoEx
 ---
 
 # VideoExtractionConfiguration
-<a name="API_VideoExtractionConfiguration"></a>
 
 Configuration settings for video content extraction and processing.
 

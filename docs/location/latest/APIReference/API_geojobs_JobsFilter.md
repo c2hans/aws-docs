@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # JobsFilter
-<a name="API_geojobs_JobsFilter"></a>
 
 Criteria for filtering jobs.
 

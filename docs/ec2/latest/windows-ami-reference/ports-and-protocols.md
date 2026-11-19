@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/ports-a
 ---
 
 # Ports and Protocols for AWS Windows AMIs
-<a name="ports-and-protocols"></a>
 
 The following tables list the ports, protocols, and directions by workload for AWS Windows Amazon Machine Images (AMIs).
 

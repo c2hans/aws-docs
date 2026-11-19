@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/getting-started-ste
 ---
 
 # Manual tagging
-<a name="getting-started-step2-Manual"></a>
 
 You can manually tag your migrated resources using the AWS Management Console.
 

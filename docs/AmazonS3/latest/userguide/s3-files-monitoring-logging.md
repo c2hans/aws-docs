@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-monit
 ---
 
 # Monitoring and auditing S3 Files
-<a name="s3-files-monitoring-logging"></a>
 
 S3 Files integrates with the following AWS services to help you monitor your file systems:
 

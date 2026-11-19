@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-hyb
 ---
 
 # Hybrid search with Amazon S3 Vectors
-<a name="s3-vectors-hybrid-search"></a>
 
 Hybrid search in Amazon S3 Vectors combines full-text search with vector similarity search in a single query. S3 Vectors runs both searches, fuses the two rankings with Reciprocal Rank Fusion (RRF), and returns one ranked list of results. You get matches on both the meaning of a query and the exact terms it contains, using the same S3 Vectors API operations and the elasticity, durability, and pay-per-use economics of Amazon S3.
 

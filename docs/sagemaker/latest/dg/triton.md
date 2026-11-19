@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/triton.html
 ---
 
 # Resources for using Triton Inference Server with Amazon SageMaker AI
-<a name="triton"></a>
 
 SageMaker AI enables customers to deploy a model using custom code with NVIDIA Triton Inference Server. Use the following resources to learn how to use Triton Inference Server with SageMaker AI.
 

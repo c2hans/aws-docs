@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Block
 ---
 
 # Block
-<a name="API_Block"></a>
 
 Information about each word or line of text in the input document.
 

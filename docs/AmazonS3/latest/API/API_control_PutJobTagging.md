@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutJobTa
 ---
 
 # PutJobTagging
-<a name="API_control_PutJobTagging"></a>
 
 Sets the supplied tag-set on an S3 Batch Operations job.
 

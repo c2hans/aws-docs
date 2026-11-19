@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/working-with-streams.
 ---
 
 # Create and manage Kinesis data streams
-<a name="working-with-streams"></a>
 
 Amazon Kinesis Data Streams ingests a large amount of data in real time, durably stores the data, and makes the data available for consumption. The unit of data stored by Kinesis Data Streams is a *data record*. A *data stream* represents a group of data records. The data records in a data stream are distributed into shards.
 

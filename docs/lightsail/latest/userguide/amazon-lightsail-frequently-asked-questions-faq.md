@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Get answers to frequently asked questions in Lightsail
-<a name="amazon-lightsail-frequently-asked-questions-faq"></a>
 
 This section covers common questions and answers related to Lightsail, organized into the following categories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRem
 ---
 
 # DeleteRemediationExceptions
-<a name="API_DeleteRemediationExceptions"></a>
 
 Deletes one or more remediation exceptions mentioned in the resource keys.
 

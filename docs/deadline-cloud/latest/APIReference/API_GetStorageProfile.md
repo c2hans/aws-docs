@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetStorageProfile
-<a name="API_GetStorageProfile"></a>
 
 Gets a storage profile.
 

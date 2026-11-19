@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/wha
 ---
 
 # What Is Elemental Inference?
-<a name="what-is"></a>
 
 AWS Elemental Inference is a real-time service that applies machine learning models to your video, audio, and image content. You can use Elemental Inference to analyze and classify your content, and to generate insights from it. Elemental Inference has the following features:
 + **Smart crop** – Identifies the regions of interest in your video frames.

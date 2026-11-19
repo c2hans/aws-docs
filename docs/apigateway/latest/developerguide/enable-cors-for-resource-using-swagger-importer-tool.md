@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/enable-
 ---
 
 # Enable CORS on a resource using the API Gateway import API
-<a name="enable-cors-for-resource-using-swagger-importer-tool"></a>
 
 If you are using the [API Gateway Import API](api-gateway-import-api.md), you can set up CORS support using an OpenAPI file. You must first define an `OPTIONS` method in your resource that returns the required headers.
 

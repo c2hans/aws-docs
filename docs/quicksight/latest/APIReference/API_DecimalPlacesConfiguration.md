@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Decim
 ---
 
 # DecimalPlacesConfiguration
-<a name="API_DecimalPlacesConfiguration"></a>
 
 The option that determines the decimal places configuration.
 

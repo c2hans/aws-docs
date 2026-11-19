@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/rev
 ---
 
 # How can administrators review compliance?
-<a name="review-compliance"></a>
 
 Compliance with detective controls is determined according to data retrieved from the AWS Config aggregator in the AWS Control Tower Audit account. You can review compliance status in the AWS Control Tower console, by subscribing to SNS topics that send email messages to the Audit account, or both.
 

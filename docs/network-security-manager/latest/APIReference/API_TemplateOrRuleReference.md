@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # TemplateOrRuleReference
-<a name="API_TemplateOrRuleReference"></a>
 
 A reference to either a template or a rule in a create or update request. Set exactly one of `templateIdentifier` or `ruleIdentifier`.
 

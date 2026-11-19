@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # LocationModel
-<a name="API_LocationModel"></a>
 
 Properties of a location, which can include its name, ARN (for custom locations), and ping beacon information.
 

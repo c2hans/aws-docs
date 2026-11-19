@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBIn
 ---
 
 # Modifying an Amazon RDS DB instance
-<a name="Overview.DBInstance.Modifying"></a>
 
 You can change the settings of a DB instance to accomplish tasks such as adding additional storage or changing the DB instance class. In this topic, you can find out how to modify an Amazon RDS DB instance and learn about the settings for DB instances.
 

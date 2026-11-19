@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/troubleshooting-consu
 ---
 
 # Troubleshoot Kinesis Data Streams consumers
-<a name="troubleshooting-consumers"></a>
 
 **Topics**
 + [Compilation error with the LeaseManagementConfig constructor](#compilation-error-leasemanagementconfig)

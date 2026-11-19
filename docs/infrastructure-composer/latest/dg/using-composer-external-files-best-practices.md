@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Best practices for Infrastructure Composer external reference files
-<a name="using-composer-external-files-best-practices"></a>
 
 ## Use Infrastructure Composer with a local IDE
 <a name="using-composer-external-files-best-practices-ide"></a>

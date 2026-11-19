@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BodyS
 ---
 
 # BodySectionRepeatPageBreakConfiguration
-<a name="API_BodySectionRepeatPageBreakConfiguration"></a>
 
 The page break configuration to apply for each repeating instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_St
 ---
 
 # StructuredMessageListDefinition
-<a name="API_StructuredMessageListDefinition"></a>
 
 Represents a list type node of the complex data structure.
 

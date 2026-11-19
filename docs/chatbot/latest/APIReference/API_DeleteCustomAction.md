@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteCu
 ---
 
 # DeleteCustomAction
-<a name="API_DeleteCustomAction"></a>
 
 Deletes a custom action.
 

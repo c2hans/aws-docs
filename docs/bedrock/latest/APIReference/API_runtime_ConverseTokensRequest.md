@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ConverseTokensRequest
-<a name="API_runtime_ConverseTokensRequest"></a>
 
 The inputs from a `Converse` API request for token counting.
 

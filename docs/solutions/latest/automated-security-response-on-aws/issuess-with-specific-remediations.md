@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Issues with specific remediations
-<a name="issuess-with-specific-remediations"></a>
 
  **SetSSLBucketPolicy fails with AccessDenied error**
 

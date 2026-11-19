@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Elastic Kubernetes Service
 <a name="Welcome_Amazon_Elastic_Kubernetes_Service"></a>

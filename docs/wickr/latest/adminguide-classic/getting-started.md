@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide-classic/getting-
 This guide documents the classic version of the AWS Wickr administration console, released before March 13, 2025. For documentation on the new AWS Wickr administration console, see [ Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Getting started with AWS Wickr
-<a name="getting-started"></a>
 
 In this guide, we show you how to get started with Wickr by creating a network, configuring your network, and creating users.
 

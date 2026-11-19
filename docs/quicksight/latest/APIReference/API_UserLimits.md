@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UserL
 ---
 
 # UserLimits
-<a name="API_UserLimits"></a>
 
 The effective limits for an Amazon Quick Sight user.
 

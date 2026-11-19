@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListContainerRecipes
-<a name="API_ListContainerRecipes"></a>
 
 Returns a list of container recipes.
 

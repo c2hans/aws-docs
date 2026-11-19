@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CLI_Log.html
 ---
 
 # Specifying log delivery using the AWS CLI
-<a name="CLI_Log"></a>
 
 **Slow Log**
 

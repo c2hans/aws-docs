@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolNetwo
 ---
 
 # ListSolNetworkInstanceMetadata
-<a name="API_ListSolNetworkInstanceMetadata"></a>
 
 Metadata details for a network instance.
 

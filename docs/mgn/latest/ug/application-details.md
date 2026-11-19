@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/application-details.html
 ---
 
 # Access details for an application
-<a name="application-details"></a>
 
 There are several ways you can access the **Application details** view.
 

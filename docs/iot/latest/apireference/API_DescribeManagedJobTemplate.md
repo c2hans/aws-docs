@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeMana
 ---
 
 # DescribeManagedJobTemplate
-<a name="API_DescribeManagedJobTemplate"></a>
 
 View details of a managed job template.
 

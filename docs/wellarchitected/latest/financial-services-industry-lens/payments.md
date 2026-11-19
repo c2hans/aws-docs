@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Payments
-<a name="payments"></a>
 
  Payment gateways facilitate financial services to make online transactions between customers and merchants. To secure these transactions, payment gateways rely on secure cloud technology. AWS provides a secure and reliable environment for payment processing and storage of payment card information, as well as a number of encryption options for sensitive data, including encryption at rest and in transit.
 

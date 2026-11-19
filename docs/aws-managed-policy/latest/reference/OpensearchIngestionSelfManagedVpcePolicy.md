@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Open
 ---
 
 # OpensearchIngestionSelfManagedVpcePolicy
-<a name="OpensearchIngestionSelfManagedVpcePolicy"></a>
 
 **Description**: Allows Amazon OpenSearch Ingestion to describe network resources and write service metrics to cloudwatch
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hex-connection-options.ht
 ---
 
 # Hex connection options
-<a name="hex-connection-options"></a>
 
 The following are connection options for Hex:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Hex object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_IAMPo
 ---
 
 # IAMPolicyAssignmentSummary
-<a name="API_IAMPolicyAssignmentSummary"></a>
 
 IAM policy assignment summary.
 

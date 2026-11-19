@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::EnvironmentActions
-<a name="aws-resource-datazone-environmentactions"></a>
 
 The details about the specified action configured for an environment. For example, the details of the specified console links for an analytics tool that is available in this environment.
 

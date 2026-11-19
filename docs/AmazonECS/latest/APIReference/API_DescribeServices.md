@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeServices
-<a name="API_DescribeServices"></a>
 
 Describes the specified services running in your cluster.
 

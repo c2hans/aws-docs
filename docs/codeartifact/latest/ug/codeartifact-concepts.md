@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/codeartifact-conc
 ---
 
 # AWS CodeArtifact concepts
-<a name="codeartifact-concepts"></a>
 
  Here are some concepts and terms to know when you use CodeArtifact.
 

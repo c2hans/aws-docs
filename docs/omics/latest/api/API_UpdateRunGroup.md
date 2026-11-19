@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_UpdateRunGroup.html
 ---
 
 # UpdateRunGroup
-<a name="API_UpdateRunGroup"></a>
 
 Updates the settings of a run group and returns a response with no body if the operation is successful.
 

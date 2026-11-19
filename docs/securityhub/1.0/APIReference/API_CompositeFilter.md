@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Composi
 ---
 
 # CompositeFilter
-<a name="API_CompositeFilter"></a>
 
 Enables the creation of filtering criteria for security findings.
 
@@ -32,7 +31,7 @@ Required: No
 
  ** NestedCompositeFilters **   <a name="securityhub-Type-CompositeFilter-NestedCompositeFilters"></a>
  Provides an additional level of filtering, creating a three-layer nested structure. The first layer is a `CompositeFilters` array with a `CompositeOperator` (`AND`/`OR`). The second layer is a `CompositeFilter` object that contains direct filters and `NestedCompositeFilters`. The third layer is `NestedCompositeFilters`, which contains additional filter conditions.
-Type: Array of [CompositeFilter](#API_CompositeFilter) objects
+Type: Array of [CompositeFilter](API_CompositeFilter.md) objects
 Required: No
 
  ** NumberFilters **   <a name="securityhub-Type-CompositeFilter-NumberFilters"></a>

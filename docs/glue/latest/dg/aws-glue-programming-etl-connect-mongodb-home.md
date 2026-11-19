@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # MongoDB connections
-<a name="aws-glue-programming-etl-connect-mongodb-home"></a>
 
 You can use AWS Glue for Spark to read from and write to tables in MongoDB and MongoDB Atlas in AWS Glue 4.0 and later versions. You can connect to MongoDB using username and password credentials credentials stored in AWS Secrets Manager through a AWS Glue connection.
 

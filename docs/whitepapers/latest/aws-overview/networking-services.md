@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networki
 ---
 
 # ![AWS Networking and Content Delivery category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/networking-content-delivery-icon.jpg)Networking and content delivery
-<a name="networking-services"></a>
 
  AWS offers a broad set of networking and content delivery services that provide the highest level of reliability, security, and performance in the cloud.
 

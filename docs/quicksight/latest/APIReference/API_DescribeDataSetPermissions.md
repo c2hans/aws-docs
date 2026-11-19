@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDataSetPermissions
-<a name="API_DescribeDataSetPermissions"></a>
 
 Describes the permissions on a dataset.
 

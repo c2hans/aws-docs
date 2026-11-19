@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_TextTr
 ---
 
 # TextTranslationJobFilter
-<a name="API_TextTranslationJobFilter"></a>
 
 Provides information for filtering a list of translation jobs. For more information, see [ListTextTranslationJobs](API_ListTextTranslationJobs.md).
 

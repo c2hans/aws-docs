@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 ---
 
 # ResourceRequestStatusFilter
-<a name="API_ResourceRequestStatusFilter"></a>
 
 The filter criteria to use in determining the requests returned.
 

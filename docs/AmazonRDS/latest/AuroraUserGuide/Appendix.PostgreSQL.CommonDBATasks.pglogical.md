@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Using pglogical to synchronize data across instances
-<a name="Appendix.PostgreSQL.CommonDBATasks.pglogical"></a>
 
 All currently available Aurora PostgreSQL versions support the `pglogical` extension. The pglogical extension predates the functionally similar logical replication feature that was introduced by PostgreSQL in version 10. For more information, see [Overview of PostgreSQL logical replication with Aurora](AuroraPostgreSQL.Replication.Logical.md).
 

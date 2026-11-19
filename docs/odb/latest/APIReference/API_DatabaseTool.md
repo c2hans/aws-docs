@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DatabaseTool
 ---
 
 # DatabaseTool
-<a name="API_DatabaseTool"></a>
 
 Information about a database management tool for an Autonomous Database.
 

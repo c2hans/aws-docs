@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GreeceAdditionalInfo
-<a name="API_taxSettings_GreeceAdditionalInfo"></a>
 
 Additional tax information to specify for a TRN in Greece.
 

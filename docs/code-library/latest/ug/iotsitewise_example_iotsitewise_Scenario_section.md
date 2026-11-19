@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iotsitewise_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn the basics of AWS IoT SiteWise with an AWS SDK
-<a name="iotsitewise_example_iotsitewise_Scenario_section"></a>
 
 The following code examples show how to:
 + Create an AWS IoT SiteWise Asset Model.

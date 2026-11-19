@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DataReplicatio
 ---
 
 # DataReplicationSettings
-<a name="API_DataReplicationSettings"></a>
 
 Describes the data replication settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_run
 ---
 
 # Run a single node job in AWS PCS
-<a name="getting-started_run-job"></a>
 
  To run a job using Slurm, you prepare a submission script specifying job requirements and submit it to a queue with the `sbatch` command. Typically, this is done from a shared directory so the login and compute nodes have a common space for accessing files.
 

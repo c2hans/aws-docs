@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListWaves.ht
 ---
 
 # ListWaves
-<a name="API_ListWaves"></a>
 
 Retrieves all waves or multiple waves by ID.
 

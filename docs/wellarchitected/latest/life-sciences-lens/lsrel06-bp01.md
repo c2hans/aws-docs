@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL06-BP01 Orchestrate workflows with checkpointing and failure isolation
-<a name="lsrel06-bp01"></a>
 
  Implement workflow orchestration with built-in checkpoints, retries, and error isolation. By persisting intermediate results and enabling targeted retries, failed tasks can be reprocessed independently without requiring full pipeline reruns. Event-driven reprocessing further improves efficiency, allowing workflows to resume from the last successful step.
 

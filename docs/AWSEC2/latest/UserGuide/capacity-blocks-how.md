@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-
 ---
 
 # How Amazon EC2 Capacity Blocks work
-<a name="capacity-blocks-how"></a>
 
 You can reserve a Capacity Block with the following specifications:
 + Reserve a start time up to 8 weeks in advance

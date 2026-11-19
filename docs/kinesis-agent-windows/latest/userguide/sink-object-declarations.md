@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/s
 ---
 
 # Sink Declarations
-<a name="sink-object-declarations"></a>
 
 *Sink declarations* specify where and in what form logs, events, and metrics should be sent to various AWS services. The following sections describe configurations for the built-in sink types that are available in Amazon Kinesis Agent for Microsoft Windows. Because Kinesis Agent for Windows is extensible, you can add custom sink types. Each sink type typically requires unique key-value pairs in the configuration declarations that are relevant for that sink type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linu
 ---
 
 # Document Revisions
-<a name="bobi-linux-document-revisions"></a>
 
 | Date | Change |
 | --- | --- |

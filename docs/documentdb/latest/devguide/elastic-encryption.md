@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/elastic-encry
 ---
 
 # Data encryption at rest for Amazon DocumentDB elastic clusters
-<a name="elastic-encryption"></a>
 
 The following topics help you learn about, create, and monitor AWS Key Management Service encryption keys for Amazon DocumentDB elastic clusters:
 

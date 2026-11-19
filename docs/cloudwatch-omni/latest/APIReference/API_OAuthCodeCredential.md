@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # OAuthCodeCredential
-<a name="API_OAuthCodeCredential"></a>
 
 Credentials for an OAuth 2.0 authorization-code grant, supplied when completing the authorization of an integration.
 

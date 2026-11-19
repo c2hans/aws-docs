@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGat
 ---
 
 # GrpcGatewayRoute
-<a name="API_GrpcGatewayRoute"></a>
 
 An object that represents a gRPC gateway route.
 

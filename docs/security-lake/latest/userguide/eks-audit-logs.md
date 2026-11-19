@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/eks-audit
 ---
 
 # Amazon EKS Audit Logs in Security Lake
-<a name="eks-audit-logs"></a>
 
 When you add Amazon EKS Audit Logs as a source, Security Lake starts collecting in-depth information about the activities performed on the Kubernetes resources running in your Elastic Kubernetes Service (EKS) clusters. EKS Audit Logs help you detect potentially suspicious activities in your EKS clusters within the Amazon Elastic Kubernetes Service.
 

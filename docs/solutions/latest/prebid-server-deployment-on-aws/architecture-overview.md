@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This section provides a reference implementation architecture diagram for the components deployed with this solution and a summary of AWS Well-Architected design considerations.
 

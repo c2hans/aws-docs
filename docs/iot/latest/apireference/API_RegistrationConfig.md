@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Registration
 ---
 
 # RegistrationConfig
-<a name="API_RegistrationConfig"></a>
 
 The registration configuration.
 

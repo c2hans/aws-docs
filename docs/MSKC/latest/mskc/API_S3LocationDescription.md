@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_S3LocationDescripti
 ---
 
 # S3LocationDescription
-<a name="API_S3LocationDescription"></a>
 
 The description of the location of an object in Amazon S3.
 

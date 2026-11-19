@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMessag
 ---
 
 # GetMessageInsights
-<a name="API_GetMessageInsights"></a>
 
 Provides information about a specific message, including the from address, the subject, the recipient address, email tags, as well as events associated with the message.
 

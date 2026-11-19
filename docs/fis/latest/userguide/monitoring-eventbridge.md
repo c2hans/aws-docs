@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/monitoring-eventbri
 ---
 
 # Monitor AWS FIS experiments using Amazon EventBridge
-<a name="monitoring-eventbridge"></a>
 
 When the state of an experiment changes, AWS FIS emits a notification. These notifications are made available as events through Amazon EventBridge (formerly called CloudWatch Events). AWS FIS emits these events on a best effort basis. Events are delivered to EventBridge in near real time.
 

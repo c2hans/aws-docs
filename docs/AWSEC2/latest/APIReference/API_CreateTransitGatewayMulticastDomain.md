@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayMulticastDomain
-<a name="API_CreateTransitGatewayMulticastDomain"></a>
 
 Creates a multicast domain using the specified transit gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTable
-<a name="API_IntermediateTable"></a>
 
 Contains the details of an intermediate table in AWS Clean Rooms. An intermediate table stores a query definition and its materialized results within a collaboration.
 

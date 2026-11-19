@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Static controls for managing bots
-<a name="static-controls"></a>
 
 To take an action,* static controls* evaluate static information from the HTTP(S) request, such as its IP address or its headers. These controls can be useful for low-sophistication bad bot activity or for expected beneficial bot traffic that needs to be verified and managed. Static control techniques include: allow listing, IP-based controls, and intrinsic checks.
 

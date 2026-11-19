@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Boolean
 ---
 
 # BooleanConfigurationOptions
-<a name="API_BooleanConfigurationOptions"></a>
 
  The options for customizing a security control parameter with a boolean. For a boolean parameter, the options are `true` and `false`.
 

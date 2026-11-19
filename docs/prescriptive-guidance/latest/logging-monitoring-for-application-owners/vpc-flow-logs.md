@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # VPC Flow Logs
-<a name="vpc-flow-logs"></a>
 
 [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) is a feature of Amazon Virtual Private Cloud (Amazon VPC) that helps you capture information about the IP traffic going to and from network interfaces in your VPC.
 

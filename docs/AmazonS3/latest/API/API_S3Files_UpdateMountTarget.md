@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_UpdateMo
 ---
 
 # UpdateMountTarget
-<a name="API_S3Files_UpdateMountTarget"></a>
 
 Updates the mount target resource, specifically security group configurations.
 

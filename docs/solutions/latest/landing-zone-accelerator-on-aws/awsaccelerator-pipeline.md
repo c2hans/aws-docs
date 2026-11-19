@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Core pipeline
-<a name="awsaccelerator-pipeline"></a>
 
 The solution uses CodeBuild as an orchestration engine for each action completed after the **Source** stage in this pipeline. These actions run a CDK application, which deploys CloudFormation stacks across each of the Landing Zone Accelerator on AWS solution-managed AWS accounts and Regions, unless otherwise specified:
 

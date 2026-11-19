@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateC
 ---
 
 # CreateCluster
-<a name="API_CreateCluster"></a>
 
 Creates a new AWS CloudHSM cluster.
 

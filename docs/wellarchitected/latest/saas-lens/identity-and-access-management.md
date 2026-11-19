@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/identit
 ---
 
 # Identity and access management
-<a name="identity-and-access-management"></a>
 
 | SaaS SEC 1: How are you associating tenant context with users and applying that context within your SaaS architecture? |
 | --- |

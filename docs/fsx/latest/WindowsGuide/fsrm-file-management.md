@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-file-manage
 ---
 
 # File Management Tasks
-<a name="fsrm-file-management"></a>
 
 Amazon FSx for Windows File Server does not support FSRM file management tasks. However, you can achieve common use cases such as data archiving and retention policies by using native PowerShell commands from client machines that have network access to your file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_UpdateGroup.html
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
 Updates a group resource.
 

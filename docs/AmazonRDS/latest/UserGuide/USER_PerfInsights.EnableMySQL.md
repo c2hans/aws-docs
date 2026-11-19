@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 ---
 
 # Overview of the Performance Schema for Database Insights in Amazon RDS for MariaDB or MySQL
-<a name="USER_PerfInsights.EnableMySQL"></a>
 
 The Performance Schema is an optional feature for monitoring Amazon RDS for MariaDB or MySQL runtime performance at a low level of detail. The Performance Schema is designed to have minimal impact on database performance. Database Insights is a separate feature that you can use with or without the Performance Schema.
 

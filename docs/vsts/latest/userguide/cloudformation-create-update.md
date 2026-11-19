@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/cloudformation-cre
 ---
 
 # AWS CloudFormation Create/Update Stack task
-<a name="cloudformation-create-update"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

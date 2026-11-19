@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CancelledChangeProperty
-<a name="API_CancelledChangeProperty"></a>
 
 A property change that was cancelled for an Amazon OpenSearch Service domain.
 

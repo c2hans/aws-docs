@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Test your serverless application with AWS SAM
-<a name="serverless-test-and-debug"></a>
 
 After writing and building your application, you will be ready to test your application to verify that it functions correctly. With the AWS SAM command line interface (CLI), you can locally test your serverless application before uploading it to the AWS Cloud. Testing your application helps you confirm the application’s functionality, reliability, and performance all while identifying issues (bugs) that will need to be addressed.
 

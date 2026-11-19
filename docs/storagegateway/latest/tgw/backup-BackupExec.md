@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/backup-BackupE
 ---
 
 # Testing Your Setup by Using Veritas Backup Exec
-<a name="backup-BackupExec"></a>
 
 You can back up your data to virtual tapes, archive the tapes, and manage your virtual tape library (VTL) devices by using Veritas Backup Exec. In this topic, you can find basic documentation needed to perform backup and restore operations using Backup Exec.
 

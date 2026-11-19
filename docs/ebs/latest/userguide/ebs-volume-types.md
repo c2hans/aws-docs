@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.ht
 ---
 
 # Amazon EBS volume types
-<a name="ebs-volume-types"></a>
 
 Amazon EBS provides the following volume types, which differ in performance characteristics and price, so that you can tailor your storage performance and cost to the needs of your applications.
 

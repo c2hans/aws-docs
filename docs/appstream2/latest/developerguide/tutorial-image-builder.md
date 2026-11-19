@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/tutoria
 ---
 
 # Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console
-<a name="tutorial-image-builder"></a>
 
 This tutorial describes how to create WorkSpaces Applications images that are based on Microsoft Windows Server operating systems. If you want to create custom images that are based on the Rocky Linux or Red Hat Enterprise Linux operating systems, see [Tutorial: Create a Custom Linux-Based WorkSpaces Applications Image](tutorial-create-linux-image.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/mes-onboarding/sec
 ---
 
 # Secrets Manager managed external secrets partner onboarding guide
-<a name="secrets-manager-mes-onboarding"></a>
 
 This guide provides the information you need to become a partner with AWS Secrets Manager managed external secrets. When you integrate with managed external secrets, your customers can securely manage their credentials through AWS.
 

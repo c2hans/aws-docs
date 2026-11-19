@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListTrustStores
-<a name="API_ListTrustStores"></a>
 
 Retrieves a list of trust stores.
 

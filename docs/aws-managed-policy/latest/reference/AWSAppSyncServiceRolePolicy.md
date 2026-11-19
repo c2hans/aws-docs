@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppSyncServiceRolePolicy
-<a name="AWSAppSyncServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and resources used or managed by AppSync
 

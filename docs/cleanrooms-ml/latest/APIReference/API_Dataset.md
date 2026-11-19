@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Da
 ---
 
 # Dataset
-<a name="API_Dataset"></a>
 
 Defines where the training dataset is located, what type of data it contains, and how to access the data.
 

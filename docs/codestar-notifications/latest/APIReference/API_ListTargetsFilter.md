@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListTargetsFilter
-<a name="API_ListTargetsFilter"></a>
 
 Information about a filter to apply to the list of returned targets. You can filter by target type, address, or status. For example, to filter results to notification rules that have active Amazon Q Developer in chat applications topics as targets, you could specify a ListTargetsFilter Name as `TargetType` and a Value of `SNS`, and a Name of `TARGET_STATUS` and a Value of `ACTIVE`.
 

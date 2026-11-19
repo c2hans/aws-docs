@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c-the-query-plan.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Creating and interpreting a query plan
-<a name="c-the-query-plan"></a>
 
 You can use the query plan to get information on the individual operations required to run a query. Before you work with a query plan, we recommend that you first understand how Amazon Redshift handles processing queries and creating query plans. For more information, see [Query planning and execution workflow](c-query-planning.md).
 

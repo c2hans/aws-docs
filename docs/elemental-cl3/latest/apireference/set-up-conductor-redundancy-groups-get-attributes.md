@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET: Get the Attributes of the Conductor Redundancy Group
-<a name="set-up-conductor-redundancy-groups-get-attributes"></a>
 
 Get a list of all Conductor redundancy groups, including the attributes of each group. There is only ever one Conductor redundancy group, so the list contains only one item. However, you cannot assume its ID is always going to be 1: if you create a Conductor redundancy group and then delete it and then create another one, the ID of the new group will be 2.
 

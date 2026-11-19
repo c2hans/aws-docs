@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AccountInfo
-<a name="API_automation_AccountInfo"></a>
 
  Contains information about an AWS account's enrollment and association status with Compute Optimizer Automation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stop-protect
 ---
 
 # Enable stop protection for your EC2 instances
-<a name="ec2-stop-protection"></a>
 
 To prevent an instance from being accidentally stopped, you can enable stop protection for the instance. Stop protection also protects your instance from accidental termination.
 

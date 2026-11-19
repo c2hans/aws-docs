@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_KeyPh
 ---
 
 # KeyPhrase
-<a name="API_KeyPhrase"></a>
 
 Describes a key noun phrase.
 

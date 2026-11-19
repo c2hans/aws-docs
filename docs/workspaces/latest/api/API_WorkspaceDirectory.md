@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceDirec
 ---
 
 # WorkspaceDirectory
-<a name="API_WorkspaceDirectory"></a>
 
 Describes a directory that is used with Amazon WorkSpaces.
 

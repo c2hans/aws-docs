@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kinesis::Channel EncryptionConfiguration
-<a name="aws-properties-kinesis-channel-encryptionconfiguration"></a>
 
 <a name="aws-properties-kinesis-channel-encryptionconfiguration-description"></a>The `EncryptionConfiguration` property type specifies Property description not available. for an [AWS::Kinesis::Channel](aws-resource-kinesis-channel.md).
 

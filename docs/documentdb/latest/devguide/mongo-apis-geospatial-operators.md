@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mongo-apis-ge
 ---
 
 # Geospatial
-<a name="mongo-apis-geospatial-operators"></a>
 
 This section provides detailed information about geospatial operators supported by Amazon DocumentDB.
 

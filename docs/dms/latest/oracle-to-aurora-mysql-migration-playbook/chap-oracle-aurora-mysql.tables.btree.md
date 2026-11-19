@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL B-tree indexes
-<a name="chap-oracle-aurora-mysql.tables.btree"></a>
 
 With AWS DMS, you can efficiently migrate data from your Oracle database to Aurora MySQL , while preserving existing B-tree indexes.
 

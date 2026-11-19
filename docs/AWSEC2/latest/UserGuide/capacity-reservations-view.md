@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # View the state of a Capacity Reservation
-<a name="capacity-reservations-view"></a>
 
 Amazon EC2 constantly monitors the state of your Capacity Reservations.
 

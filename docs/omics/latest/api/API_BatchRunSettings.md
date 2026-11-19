@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_BatchRunSettings.ht
 ---
 
 # BatchRunSettings
-<a name="API_BatchRunSettings"></a>
 
 A union type representing per-run configurations for the batch. Specify exactly one of the following members.
 

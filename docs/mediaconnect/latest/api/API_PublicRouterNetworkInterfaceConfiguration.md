@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicRouter
 ---
 
 # PublicRouterNetworkInterfaceConfiguration
-<a name="API_PublicRouterNetworkInterfaceConfiguration"></a>
 
 The configuration settings for a public router network interface, including the list of allowed CIDR blocks.
 

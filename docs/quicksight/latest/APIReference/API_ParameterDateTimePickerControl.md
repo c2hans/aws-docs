@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterDateTimePickerControl
-<a name="API_ParameterDateTimePickerControl"></a>
 
 A control from a date parameter that specifies date and time.
 

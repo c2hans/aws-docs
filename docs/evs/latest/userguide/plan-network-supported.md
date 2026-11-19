@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-network-suppor
 ---
 
 # Supported network configurations
-<a name="plan-network-supported"></a>
 
 Amazon Elastic VMware Service supports the following network connections and VPC configurations in both deployment modes. The tables also list what Amazon EVS doesn’t support. In each table, the **Supported** column shows `Yes`, `No`, or `Required`, and the **Notes** column gives the condition or the alternative.
 

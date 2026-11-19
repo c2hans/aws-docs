@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteUsageLimit
-<a name="API_DeleteUsageLimit"></a>
 
 Deletes a usage limit from Amazon Redshift Serverless.
 

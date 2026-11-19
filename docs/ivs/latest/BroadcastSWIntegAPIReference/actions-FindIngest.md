@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # FindIngest
-<a name="actions-FindIngest"></a>
 
 Returns a list of available ingest endpoints.
 

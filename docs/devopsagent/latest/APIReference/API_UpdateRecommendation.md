@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateRecommendation
-<a name="API_UpdateRecommendation"></a>
 
 Updates an existing recommendation with new content, status, or metadata
 

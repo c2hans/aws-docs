@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Message Delivery Service
-<a name="amazonmessagedeliveryservice"></a>
 
 Amazon Message Delivery Service provides the following APIs for data retrieval.
 

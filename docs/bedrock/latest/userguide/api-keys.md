@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html
 ---
 
 # API keys
-<a name="api-keys"></a>
 
 Amazon Bedrock API keys let you authenticate API requests using a bearer token instead of AWS credentials. There are two types:
 + **Short-term** – Lasts up to 12 hours (or the duration of your session, whichever is shorter). Inherits permissions from the IAM principal used to generate it. Recommended for production use.

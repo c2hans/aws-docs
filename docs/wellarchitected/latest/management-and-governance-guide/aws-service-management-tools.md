@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # AWS service management tools
-<a name="aws-service-management-tools"></a>
 
  The AWS Management & Governance product suite allows you to enable, provision, and operate AWS resources to determine the health and predictability of your cloud workloads. The following AWS services can be used to help you meet the prescribed benefits of the M&G Guide, establish a cloud operational baseline, and align to your ITSM solution implementation:
 

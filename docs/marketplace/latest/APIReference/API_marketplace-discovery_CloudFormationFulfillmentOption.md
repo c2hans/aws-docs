@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # CloudFormationFulfillmentOption
-<a name="API_marketplace-discovery_CloudFormationFulfillmentOption"></a>
 
 Describes an AWS CloudFormation template fulfillment option for infrastructure deployment.
 

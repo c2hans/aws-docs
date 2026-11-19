@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/quotas.html
 ---
 
 # Amazon Inspector quotas
-<a name="quotas"></a>
 
  This section lists Amazon Inspector quotas per AWS Region.
 

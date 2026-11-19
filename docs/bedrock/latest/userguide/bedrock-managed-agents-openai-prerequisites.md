@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Set up permissions and prerequisites
-<a name="bedrock-managed-agents-openai-prerequisites"></a>
 
 Before using Amazon Bedrock Managed Agents, powered by OpenAI, configure an AWS identity, select a supported Region and model, and prepare an execution environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateBridge
 ---
 
 # UpdateBridgeNetworkOutputRequest
-<a name="API_UpdateBridgeNetworkOutputRequest"></a>
 
 Update an existing network output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/suppo
 ---
 
 # Supported operating systems
-<a name="supported-operating-systems"></a>
 
 The CloudWatch agent is supported on the following operating systems:
 

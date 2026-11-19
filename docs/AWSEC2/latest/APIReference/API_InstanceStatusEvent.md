@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceStatusEvent
-<a name="API_InstanceStatusEvent"></a>
 
 Describes a scheduled event for an instance.
 

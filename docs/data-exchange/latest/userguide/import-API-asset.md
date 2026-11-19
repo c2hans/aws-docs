@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/import-AP
 ---
 
 # Importing AWS Data Exchange assets from an Amazon API Gateway API
-<a name="import-API-asset"></a>
 
 AWS Data Exchange subscribers can use their IAM credentials and AWS SDKs to call APIs from data providers. AWS Data Exchange manages access to APIs by handling authentication and subscription entitlements.
 

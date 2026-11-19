@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Ena
 ---
 
 # EnableLDAPS
-<a name="API_EnableLDAPS"></a>
 
 Activates the switch for the specific directory to always use LDAP secure calls.
 

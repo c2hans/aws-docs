@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/quotas.html
 ---
 
 # Quotas for Amazon Keyspaces (for Apache Cassandra)
-<a name="quotas"></a>
 
 This section describes current quotas and default values for Amazon Keyspaces (for Apache Cassandra).
 

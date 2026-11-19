@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportAs2805KeyCryptogram
-<a name="API_ExportAs2805KeyCryptogram"></a>
 
 Parameter information for key material export using AS2805 key cryptogram format.
 

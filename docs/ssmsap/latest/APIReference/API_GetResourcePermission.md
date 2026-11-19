@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetResour
 ---
 
 # GetResourcePermission
-<a name="API_GetResourcePermission"></a>
 
 Gets permissions associated with the target database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/connect
 ---
 
 # Connect to a Lightsail for Research virtual computer using Secure Shell
-<a name="connect-using-ssh"></a>
 
 You can connect to a virtual computer in Amazon Lightsail for Research using the Secure Shell Protocol (SSH). You can use SSH to manage your virtual computer remotely so that you can sign in to your computer over the internet and run commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/configure-idt-
 ---
 
 # Configure device information for IDT
-<a name="configure-idt-sample2"></a>
 
 Configure your device information for IDT to run the test. You must update the `device.json` template located in the `{{<device-tester-extract-location>}}/configs` folder with the following information.
 

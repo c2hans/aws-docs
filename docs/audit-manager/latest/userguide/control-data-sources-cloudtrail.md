@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/control-d
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # AWS CloudTrail event names supported by AWS Audit Manager
-<a name="control-data-sources-cloudtrail"></a>
 
 You can use Audit Manager to capture AWS CloudTrail [management events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-management-events) and [global service events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-global-service-events) as evidence for audits. When you create or edit a custom control, you can specify one or more CloudTrail event names as a data source mapping for evidence collection. Audit Manager then filters your CloudTrail logs based on your chosen keywords, and imports the results as user activity evidence.
 

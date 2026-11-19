@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/anyElementTru
 ---
 
 # $anyElementTrue
-<a name="anyElementTrue"></a>
 
 New from version 4.0
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Update a brand profile
-<a name="nx-features-brand-profiles-update"></a>
 
 Update a brand profile to change its name or its deletion protection setting. To change the brand identity information stored on the profile, update its attributes instead (see [Update a brand profile attribute](nx-features-brand-profiles-attr-update.md)).
 

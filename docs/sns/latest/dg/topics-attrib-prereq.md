@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/topics-attrib-prereq.html
 ---
 
 # Prerequisites for delivery status logging
-<a name="topics-attrib-prereq"></a>
 
 This topic outlines the necessary IAM permissions for enabling Amazon SNS to write delivery logs to CloudWatch and explains the default log group naming convention. This ensures you have the correct setup and access to monitor and analyze message delivery logs in CloudWatch logs.
 

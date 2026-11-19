@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CopyFro
 ---
 
 # CopyFromSource
-<a name="API_CopyFromSource"></a>
 
 The source reference for an existing attachment.
 

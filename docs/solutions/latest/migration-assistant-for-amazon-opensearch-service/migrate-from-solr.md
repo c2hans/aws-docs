@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Migrate from Apache Solr
-<a name="migrate-from-solr"></a>
 
 This page describes how to migrate an Apache Solr source to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection using the Migration Assistant for Amazon OpenSearch Service solution. The solution supports two migration modes for Apache Solr sources:
 +  **Backfill** — Migrates your existing documents and schema field types from a Solr backup into the target.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd01-b
 ---
 
 # FND01-BP02 Establish ownership for billing, security, and operations
-<a name="fnd01-bp02"></a>
 
  Every resource in your workload needs a named owner so that changes, troubleshooting, and cost decisions have a clear point of contact. Assign owners for workloads, accounts, infrastructure, shared services, and applications. Record that ownership in a central register or as metadata on the resource.
 

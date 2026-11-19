@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/targ
 ---
 
 # Tag a target group for your Network Load Balancer
-<a name="target-group-tags"></a>
 
 Tags help you to categorize your target groups in different ways, for example, by purpose, owner, or environment.
 

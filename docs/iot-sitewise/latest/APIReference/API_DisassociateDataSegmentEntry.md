@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dis
 ---
 
 # DisassociateDataSegmentEntry
-<a name="API_DisassociateDataSegmentEntry"></a>
 
 Contains information about a data segment entry to disassociate from a dataset.
 

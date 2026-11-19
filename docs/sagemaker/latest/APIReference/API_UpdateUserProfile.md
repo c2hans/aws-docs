@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateUserProfile
-<a name="API_UpdateUserProfile"></a>
 
 Updates a user profile.
 

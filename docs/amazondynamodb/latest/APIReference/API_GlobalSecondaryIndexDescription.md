@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalSecondaryIndexDescription
-<a name="API_GlobalSecondaryIndexDescription"></a>
 
 Represents the properties of a global secondary index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-r
 ---
 
 # Getting a DICOM instance from HealthImaging
-<a name="dicomweb-retrieve-instance"></a>
 
 Use the `GetDICOMInstance` action to retrieve a DICOM instance (`.dcm` file) from a HealthImaging [data store](getting-started-concepts.md#concept-data-store) by specifying the Series, Study, and Instance UIDs associated with the resource. The API will only return instances from primary image sets unless the optional [image set parameter](getting-started-concepts.md#concept-image-set) is provided. You can retrieve any instance (from primary or non-primary image sets) in the data store by specifying the `imageSetId` as a query parameter. DICOM data can be retrieved in either its stored transfer syntax or as uncompressed (ELE) format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Metric dimensions
-<a name="msk-data-delivery-s3-metric-dimensions"></a>
 
 | Dimension | Description |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Tagging your API Gateway resources
-<a name="apigateway-tagging"></a>
 
 A *tag* is a metadata label that you assign or that AWS assigns to an AWS resource. Each tag has two parts:
 + A *tag key* (for example, `CostCenter`, `Environment`, or `Project`). Tag keys are case sensitive.

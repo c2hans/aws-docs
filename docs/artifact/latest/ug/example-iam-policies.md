@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/example-iam-policies.
 ---
 
 # Example IAM policies for AWS Artifact in commercial AWS Regions
-<a name="example-iam-policies"></a>
 
 You can create permissions policies that grant permissions to IAM users. You can grant users access to AWS Artifact reports and the ability to accept and download agreements on behalf of either a single account or an organization.
 

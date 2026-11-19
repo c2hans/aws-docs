@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Grap
 ---
 
 # GraphSummary
-<a name="API_GraphSummary"></a>
 
 Summary details about a graph.
 

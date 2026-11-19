@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset JsonOptions
-<a name="aws-properties-databrew-dataset-jsonoptions"></a>
 
 Represents the JSON-specific options that define how input is to be interpreted by AWS Glue DataBrew.
 

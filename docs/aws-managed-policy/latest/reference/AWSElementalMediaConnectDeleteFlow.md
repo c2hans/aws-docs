@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaConnectDeleteFlow
-<a name="AWSElementalMediaConnectDeleteFlow"></a>
 
 **Description**: Provides full access to delete MediaConnect Flows and all its associated sub-resources.
 

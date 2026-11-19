@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TypeConfigurationIdentifier
-<a name="API_TypeConfigurationIdentifier"></a>
 
 Identifying information for the configuration of a CloudFormation extension.
 

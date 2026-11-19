@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-global-dbs.
 ---
 
 # Neptune Global Database API
-<a name="api-global-dbs"></a>
 
 **Actions:**
 + [CreateGlobalCluster (action)](#CreateGlobalCluster)

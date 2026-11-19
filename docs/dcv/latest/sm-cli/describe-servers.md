@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/describe-servers.html
 ---
 
 # describe-servers
-<a name="describe-servers"></a>
 
 Describe the specified Amazon DCV server.
 
