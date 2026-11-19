@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-push-pull.htm
 ---
 
 # Push and pull AWS Cloud inputs
-<a name="inputs-push-pull"></a>
 
 When an input is being [deployed in the AWS Cloud](inputs-emla.md), it is categorized in terms of how MediaLive and the upstream system negotiate delivery:
 + Push input with handshake.

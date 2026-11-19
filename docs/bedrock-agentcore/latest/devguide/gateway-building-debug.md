@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Debug and assess your gateway
-<a name="gateway-building-debug"></a>
 
 You can use different tools to help debug your gateway before putting it into a production environment, including built-in AWS and AgentCore Gateway tools, as well as external tools such as the MCP inspector.
 

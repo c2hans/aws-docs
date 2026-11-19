@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroupStateChangeReason
-<a name="API_InstanceGroupStateChangeReason"></a>
 
 The status change reason details for the instance group.
 

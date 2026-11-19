@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayConnectPeers
-<a name="API_DescribeTransitGatewayConnectPeers"></a>
 
 Describes one or more Connect peers.
 

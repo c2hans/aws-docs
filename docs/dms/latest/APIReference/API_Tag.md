@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A user-defined key-value pair that describes metadata added to an AWS DMS resource and that is used by operations such as the following:
 +  `AddTagsToResource`

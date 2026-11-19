@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Glob
 ---
 
 # GlobalAcceleratorFullAccess
-<a name="GlobalAcceleratorFullAccess"></a>
 
 **Description**: Allow GlobalAccelerator Users full Access to all APIs
 

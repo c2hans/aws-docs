@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGe
 ---
 
 # BatchGetSecurityControls
-<a name="API_BatchGetSecurityControls"></a>
 
  Provides details about a batch of security controls for the current AWS account and AWS Region.
 

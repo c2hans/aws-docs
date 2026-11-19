@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Actions, resources, and condition keys for the Custom Event Bus
-<a name="eb-custom-bus-access-actions"></a>
 
 Use this page when you write an IAM policy. It lists every `events:` action for the Custom Event Bus, the resource ARN each one is checked against, whether another account can be granted it, and the condition keys you can add. For example, you can limit a role to subscribers whose `METADATA` filter matches `tenant` to `acme` alone. To do so, grant `events:CreateSubscriber` and `events:UpdateSubscriber` on the bus with `Null` and `ForAllValues:StringEquals` conditions on `events:Metadata/tenant`.
 

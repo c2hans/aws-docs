@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/request-q
 ---
 
 # Requesting a quota increase
-<a name="request-quota-increase"></a>
 
 For adjustable quotas, you can request a quota increase at the *account-level* or the *resource-level*. Smaller increases are usually automatically approved while larger requests are submitted to Support. Larger increase requests take time to review, process, approve, and deploy. You can track your request case in the Support console.
 

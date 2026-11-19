@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/security-instance-replac
 ---
 
 # Deterministic updates via instance replacement
-<a name="security-instance-replacement"></a>
 
  The [Deterministic upgrades through versioned repositories on AL2023](deterministic-upgrades.md) feature of Amazon Linux 2023 makes instance replacement an easy way to deterministically and safely roll out updated versions of AL2023. Deterministic updates mean that as a new version is progressively rolled out, if any issue is found, it's simple to revert to the previous AMI while determining the cause of the issue.
 

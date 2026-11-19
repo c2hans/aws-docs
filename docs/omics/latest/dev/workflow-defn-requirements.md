@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-defn-requireme
 ---
 
 # HealthOmics workflow definition requirements
-<a name="workflow-defn-requirements"></a>
 
 The HealthOmics workflow definition files must meet the following requirements:
 + Tasks must define input/output parameters, Amazon ECR container repositories, and runtime specifications such as memory or CPU allocation.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Flow control for T-SQL
-<a name="chap-sql-server-aurora-mysql.tsql.flowcontrol"></a>
 
 This topic provides reference information about flow control in SQL Server and Amazon Aurora MySQL, comparing their respective capabilities and syntax differences. You can use this guide to understand how to adapt your existing SQL Server flow control statements when migrating to Aurora MySQL.
 

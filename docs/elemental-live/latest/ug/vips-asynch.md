@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vips-asynch.htm
 ---
 
 # Virtual input switching using asynchronous ESAM messages
-<a name="vips-asynch"></a>
 
 ## Input types
 <a name="vips-asynch-inputs"></a>

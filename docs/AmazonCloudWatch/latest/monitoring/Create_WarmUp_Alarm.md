@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 ---
 
 # Create an alarm that uses a warm-up period
-<a name="Create_WarmUp_Alarm"></a>
 
 Create a metric alarm or log alarm with a warm-up period to delay evaluation after creation. For more information about warm-up periods, see [Alarm warm-up periods](alarm-warm-up.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UtilizationByTime
-<a name="API_UtilizationByTime"></a>
 
 The amount of utilization, in hours.
 

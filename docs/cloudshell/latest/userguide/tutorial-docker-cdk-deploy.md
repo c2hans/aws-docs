@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorial-doc
 ---
 
 # Deploying a Lambda function using the AWS CDK in CloudShell
-<a name="tutorial-docker-cdk-deploy"></a>
 
 This tutorial shows you how to deploy a Lambda function to your account using the AWS Cloud Development Kit (AWS CDK) in CloudShell.
 

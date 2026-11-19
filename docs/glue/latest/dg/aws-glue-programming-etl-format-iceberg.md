@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using the Iceberg framework in AWS Glue
-<a name="aws-glue-programming-etl-format-iceberg"></a>
 
 AWS Glue 3.0 and later supports the Apache Iceberg framework for data lakes. Iceberg provides a high-performance table format that works just like a SQL table. This topic covers available features for using your data in AWS Glue when you transport or store your data in an Iceberg table. To learn more about Iceberg, see the official [Apache Iceberg documentation](https://iceberg.apache.org/docs/latest/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cwl-slrpoli
 ---
 
 # CloudWatch Logs updates to AWS service linked roles
-<a name="cwl-slrpolicy-updates"></a>
 
 View details about updates to AWS service linked role for CloudWatch Logs since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the CloudWatch Logs Document history page.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Customer
 ---
 
 # CustomerQualityMetrics
-<a name="API_CustomerQualityMetrics"></a>
 
 Information about the quality of the Customer's media connection
 

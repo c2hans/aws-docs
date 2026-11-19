@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ServiceNowM
 ---
 
 # ServiceNowMetadata
-<a name="API_ServiceNowMetadata"></a>
 
  The connector metadata specific to ServiceNow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_ListFile
 ---
 
 # ListFileSystems
-<a name="API_S3Files_ListFileSystems"></a>
 
 Returns a list of all S3 File Systems owned by the account with optional filtering by bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dm-postgresql-next-steps.
 ---
 
 # PostgreSQL database to Amazon RDS post-migration clean-up
-<a name="dm-postgresql-next-steps"></a>
 
 After you migrate your PostgreSQL database to Amazon RDS for PostgreSQL using homogeneous data migrations in AWS DMS, you can explore several other resources:
 + Use DMS Fleet Advisor to inventory your source databases and discover other candidates to move to the cloud. For more information, see the [DMS Fleet Advisor User Guide](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_FleetAdvisor.html).

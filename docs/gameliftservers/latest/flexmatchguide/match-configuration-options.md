@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Add optional elements
-<a name="match-configuration-options"></a>
 
 In addition to these minimum requirements, you can configure your matchmaker with the following additional options. If you are using FlexMatch with an Amazon GameLift Servers hosting solution, many features are built in. If you're using FlexMatch as a standalone matchmaking service, you might want to build these features into your system.
 

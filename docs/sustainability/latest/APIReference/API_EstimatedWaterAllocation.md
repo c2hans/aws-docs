@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_E
 ---
 
 # EstimatedWaterAllocation
-<a name="API_EstimatedWaterAllocation"></a>
 
 Contains estimated water allocation data for a specific time period and dimension grouping.
 

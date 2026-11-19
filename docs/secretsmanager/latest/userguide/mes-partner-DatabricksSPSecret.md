@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Databricks Service Principal OAuth Client Secret
-<a name="mes-partner-DatabricksSPSecret"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c23b3"></a>

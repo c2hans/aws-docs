@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceImagePermissions
-<a name="API_DescribeWorkspaceImagePermissions"></a>
 
 Describes the permissions that the owner of an image has granted to other AWS accounts for an image.
 

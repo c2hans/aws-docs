@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PutGatewayResp
 ---
 
 # PutGatewayResponse
-<a name="API_PutGatewayResponse"></a>
 
 Creates a customization of a GatewayResponse of a specified response type and status code on the given RestApi.
 

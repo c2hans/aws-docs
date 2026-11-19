@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-conversatio
 ---
 
 # Conversations
-<a name="acxd-conversations"></a>
 
 Access conversation history and transcripts.
 

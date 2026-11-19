@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Configure an OAuth client
-<a name="identity-oauth-client"></a>
 
 An OAuth client enables your agent to securely access external services on behalf of users without requiring them to share their credentials directly. For example, your agent can access a user’s Google Drive files or Microsoft calendar events through OAuth authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/configuri
 ---
 
 # Configuring SSH access
-<a name="configuring-ssh-access"></a>
 
 Administrators can enable or disable SSH for the RES environment from the **Environment boundaries** section. SSH Access to VDIs is facilitated through a bastion host. When you activate this toggle, RES deploys a bastion host and makes the SSH Access Instructions page visible for users. When you deactivate the toggle, RES disables SSH access, terminates the bastion host and removes the SSH access instructions page for users. This toggle is deactivated by default.
 

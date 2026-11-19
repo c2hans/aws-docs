@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelFlows
-<a name="API_messaging-chime_ListChannelFlows"></a>
 
 Returns a paginated lists of all the channel flows created under a single Chime. This is a developer API.
 

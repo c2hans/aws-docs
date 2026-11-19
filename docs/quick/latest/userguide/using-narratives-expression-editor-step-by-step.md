@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-narratives-
 ---
 
 # Use the narrative expression editor
-<a name="using-narratives-expression-editor-step-by-step"></a>
 
 The following walkthrough shows an example of how to customize a narrative. For this example, we use a period over period computation type.
 

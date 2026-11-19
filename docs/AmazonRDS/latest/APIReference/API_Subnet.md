@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Subnet
 ---
 
 # Subnet
-<a name="API_Subnet"></a>
 
 This data type is used as a response element for the `DescribeDBSubnetGroups` operation.
 

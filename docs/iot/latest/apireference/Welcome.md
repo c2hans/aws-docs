@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS IoT
 <a name="Welcome_AWS_IoT"></a>

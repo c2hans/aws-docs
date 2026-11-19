@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Managing the generative AI prompt lifecycle
-<a name="dev-experimenting-prompt-lifecycle"></a>
 
 As central components of a generative AI system, prompts cannot be treated as simple text files that are unplanned and unmanaged. They are critical software artifacts that demand a rigorous, disciplined lifecycle management process, similar to application code. Establishing a formal lifecycle drives quality, reproducibility, collaboration, and safe deployment of prompt changes.
 

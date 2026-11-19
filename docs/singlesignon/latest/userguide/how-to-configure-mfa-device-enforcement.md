@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-con
 ---
 
 # Configure MFA device enforcement
-<a name="how-to-configure-mfa-device-enforcement"></a>
 
 Use the following procedure to determine whether your users must have a registered MFA device when signing in to the AWS access portal.
 

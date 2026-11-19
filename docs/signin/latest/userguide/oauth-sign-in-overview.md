@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-ov
 ---
 
 # Sign-In with OAuth 2.0
-<a name="oauth-sign-in-overview"></a>
 
 ## OAuth overview
 <a name="oauth-sign-in-overview-intro"></a>
